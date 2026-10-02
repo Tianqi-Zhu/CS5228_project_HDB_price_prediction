@@ -1,0 +1,14 @@
+name: cs5228-hdb
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pandas
+  - numpy<3
+  - scikit-learn
+  - matplotlib
+  - pillow
+  - pip
+  - pip:
+      - catboost==1.2.10
+      - lightgbm==4.7.0

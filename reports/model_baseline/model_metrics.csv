@@ -1,0 +1,5 @@
+model,n_validation,rmse_sgd,mae_sgd,bias_sgd
+mean_constant,35158,846.7549,690.6026,-531.4419
+A_property,35158,761.4192,647.2221,-534.0557
+B_property_time,35158,529.9588,397.8580,-49.9055
+C_property_time_town,35158,487.2160,364.0906,-48.2931

@@ -1,0 +1,5 @@
+model,n_validation,rmse_sgd,mae_sgd,bias_sgd
+ridge,35158,624.8788,468.1809,361.9869
+random_forest,35158,493.7719,370.1899,-56.6483
+lightgbm,35158,485.0928,361.4078,-42.6781
+C_property_time_town,35158,487.2160,364.0906,-48.2931
