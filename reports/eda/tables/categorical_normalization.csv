@@ -1,0 +1,6 @@
+field,raw_unique,normalized_unique,missing,top_normalized_values,normalized_label_collapses
+TOWN,26,26,0,jurong west | tampines | sengkang | bedok | ang mo kio | bukit merah | yishun | woodlands,0
+FLAT_TYPE,11,6,0,4 room | 3 room | 5 room | executive | 2 room | 1 room,5
+FLAT_MODEL,20,20,0,improved | model a | new generation | premium apartment | simplified | standard | apartment | maisonette,0
+STREET,1146,576,0,ang mo kio avenue 3 | ang mo kio avenue 10 | yishun ring road | bedok reservoir road | lorong 1 toa payoh | punggol field | ang mo kio avenue 4 | tampines street 21,570
+BLOCK,2720,2720,0,2 | 1 | 4 | 8 | 5 | 3 | 9 | 6,0
