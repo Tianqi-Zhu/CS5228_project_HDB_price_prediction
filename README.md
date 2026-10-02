@@ -19,14 +19,16 @@
 analysis/
   eda_train_test.py          主数据 EDA 运行入口
   eda_auxiliary_data.py      辅助数据 EDA 运行入口
+  eda_temporal_correlations.py  租金与经济指标的月度相关性图表
   train_baseline.py          CatBoost 特征比较运行入口
   compare_model_families.py  模型家族比较运行入口
+  compare_auxiliary_features.py  辅助特征逐步消融实验入口
   config.py                  路径、验证时间点、特征组和固定模型参数
   data.py                    数据校验、特征构造、时间划分和地址规范化
   evaluation.py              RMSE、MAE、平均偏差及分组误差
   modeling.py                模型输入预处理与模型管线
   eda/                       两套 EDA 的实现
-  experiments/               两组模型实验的实现
+  experiments/               三组模型实验的实现
 data/                         Kaggle 原始数据
 reports/                      可重建的统计摘要、图表和实验指标
 midterm_report.md             中期分析、实验结果与后续计划
@@ -58,11 +60,17 @@ python -m pip install -r requirements-model.txt
 ```powershell
 python analysis/eda_train_test.py
 python analysis/eda_auxiliary_data.py
+python analysis/eda_temporal_correlations.py
 python analysis/train_baseline.py
 python analysis/compare_model_families.py
+python analysis/compare_auxiliary_features.py
 ```
 
-最后一个脚本读取前一个模型脚本生成的 CatBoost 结果，因此要先运行 `train_baseline.py`。各脚本只把结果写到对应的 `reports/` 子目录。
+`compare_model_families.py` 读取 `train_baseline.py` 的 CatBoost 结果，因此要先运行后者。`compare_auxiliary_features.py` 可独立运行，采用 2024-04 时间切分，依次加入楼栋、周边设施、COE、股票和交互特征。每次运行固定使用同一种模型：环境中有 LightGBM 时使用 LightGBM，否则使用 scikit-learn 的 HistGradientBoosting。输出写入 `reports/auxiliary_ablation/`：`ablation_metrics.csv`、`monthly_errors.csv`、`feature_coverage.csv`、`feature_importance.csv`、`ablation_rmse.png` 和 `results.json`。运行小型功能检查：`python -m unittest discover -s tests`。
+
+经济特征采用审批月之前 1、3、6 个日历月的数值，适用于逐月更新预测的情景；若在训练截止月一次性预测以后所有月份，不能把之后公布的经济数据当作已知。设施表是当前快照，缺少历史开通日期，因此相关特征仅作地理代理变量解释。
+
+`eda_temporal_correlations.py` 在 `reports/temporal_correlations/` 输出标准化水平、月度变化、相关矩阵和滞后相关性四张图，以及月度数据、相关系数和分析说明。相关系数仅使用 2024-04 之前的月份；后续月份只用于描述性时间序列图。租金组合调整模型只使用房型、房屋模型、Town、面积和租约开始年份，不使用审批月份。
 
 ## 当前进度
 
