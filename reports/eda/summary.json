@@ -1,0 +1,240 @@
+{
+  "project": "CS5228 HDB monthly rent prediction",
+  "script": "scripts/eda_analysis.py",
+  "inputs": {
+    "train_rows": 150000,
+    "test_rows": 50000,
+    "train_columns": [
+      "RENT_APPROVAL_DATE",
+      "TOWN",
+      "BLOCK",
+      "STREET",
+      "FLAT_TYPE",
+      "FLAT_MODEL",
+      "FLOOR_AREA_SQM",
+      "FURNISHED",
+      "LEASE_COMMENCE_DATE",
+      "FEE",
+      "MONTHLY_RENT"
+    ],
+    "test_columns": [
+      "RENT_APPROVAL_DATE",
+      "TOWN",
+      "BLOCK",
+      "STREET",
+      "FLAT_TYPE",
+      "FLAT_MODEL",
+      "FLOOR_AREA_SQM",
+      "FURNISHED",
+      "LEASE_COMMENCE_DATE",
+      "FEE"
+    ],
+    "train_date_min": "2021-01-01",
+    "train_date_max": "2025-03-01",
+    "test_date_min": "2025-03-01",
+    "test_date_max": "2026-07-01",
+    "test_row_count_and_order_preserved": true
+  },
+  "target": {
+    "count": 150000,
+    "mean": 2719.0368933333334,
+    "std": 749.7310963564264,
+    "skew": 0.386402453947892,
+    "quantiles": {
+      "0.0": 300.0,
+      "0.01": 1300.0,
+      "0.05": 1650.0,
+      "0.25": 2100.0,
+      "0.5": 2700.0,
+      "0.75": 3200.0,
+      "0.95": 4000.0,
+      "0.99": 4600.0,
+      "1.0": 7600.0
+    },
+    "negative_or_zero_count": 0
+  },
+  "property": {
+    "area_sqm": {
+      "min": 31.0,
+      "median": 92.0,
+      "max": 215.0,
+      "spearman_approx": 0.31770262255974446
+    },
+    "years_since_lease_commencement": {
+      "min": -1,
+      "median": 34.0,
+      "max": 59,
+      "negative_count": 1,
+      "missing_count": 0
+    }
+  },
+  "spatial": {
+    "mrt_statuses": [
+      "open",
+      "planned"
+    ],
+    "open_station_locations": 192,
+    "nonopen_station_locations": 11,
+    "mall_locations": 113,
+    "school_locations_all": 333,
+    "school_locations_primary": 177,
+    "cbd_reference": {
+      "label": "Raffles Place MRT approximate point",
+      "latitude": 1.284,
+      "longitude": 103.851
+    },
+    "block_join": {
+      "source_block_rows": 9464,
+      "unique_join_keys": 9464,
+      "duplicate_key_rows": 0,
+      "duplicate_keys_with_coordinate_conflict": 0,
+      "train_matched_rows": 150000,
+      "train_rows": 150000,
+      "test_matched_rows": 50000,
+      "test_rows": 50000
+    },
+    "interpretation_caution": "Unadjusted distance-rent associations mix town, flat type, area and time; they are descriptive, not causal effects."
+  },
+  "macro_auxiliary": {
+    "coe": {
+      "rows": 539,
+      "date_range_year": [
+        2021,
+        2026
+      ],
+      "premium_parse_rate": 1.0,
+      "categories": 4,
+      "rounds_per_month_values": [
+        1,
+        2
+      ]
+    },
+    "stocks": {
+      "rows": 91642,
+      "date_range": [
+        "2021-01-04",
+        "2026-07-30"
+      ],
+      "symbols": 77,
+      "companies": 77
+    },
+    "leakage_note": "Economic series need a date-aware aggregation using only information available by approval date; same-month observations may be published later. No macro features are merged in this EDA."
+  },
+  "repeated_feature_combinations": 13434,
+  "repeated_feature_combinations_with_multiple_rents": 13191,
+  "baseline_validation": [
+    {
+      "split": "temporal_2024plus",
+      "fit_period_end": "2023-12",
+      "validation_period": "2024-01 to 2025-03",
+      "validation_rows": 44163,
+      "baseline": "training_median",
+      "mae": 822.286891741956,
+      "rmse": 977.3923466958247,
+      "median_absolute_error": 800.0
+    },
+    {
+      "split": "temporal_2024plus",
+      "fit_period_end": "2023-12",
+      "validation_period": "2024-01 to 2025-03",
+      "validation_rows": 44163,
+      "baseline": "train_only_town_flat_median",
+      "mae": 786.9974865837919,
+      "rmse": 887.7725494661489,
+      "median_absolute_error": 800.0
+    },
+    {
+      "split": "temporal_2024plus",
+      "fit_period_end": "2023-12",
+      "validation_period": "2024-01 to 2025-03",
+      "validation_rows": 44163,
+      "baseline": "previous_12m_town_flat_median",
+      "mae": 384.1528428775219,
+      "rmse": 518.2783336054526,
+      "median_absolute_error": 300.0
+    },
+    {
+      "split": "recent_2025Q1",
+      "fit_period_end": "2024-12",
+      "validation_period": "2025-01 to 2025-03",
+      "validation_rows": 8924,
+      "baseline": "training_median",
+      "mae": 691.3292245629763,
+      "rmse": 844.5981513140127,
+      "median_absolute_error": 600.0
+    },
+    {
+      "split": "recent_2025Q1",
+      "fit_period_end": "2024-12",
+      "validation_period": "2025-01 to 2025-03",
+      "validation_rows": 8924,
+      "baseline": "train_only_town_flat_median",
+      "mae": 612.7752129090094,
+      "rmse": 712.9186068109374,
+      "median_absolute_error": 600.0
+    },
+    {
+      "split": "recent_2025Q1",
+      "fit_period_end": "2024-12",
+      "validation_period": "2025-01 to 2025-03",
+      "validation_rows": 8924,
+      "baseline": "previous_12m_town_flat_median",
+      "mae": 345.29179740026893,
+      "rmse": 490.8893213982575,
+      "median_absolute_error": 250.0
+    },
+    {
+      "split": "random_80_20_seed5228",
+      "fit_period_end": "mixed dates",
+      "validation_period": "random 20% of labeled rows",
+      "validation_rows": 30000,
+      "baseline": "training_median",
+      "mae": 616.8979666666667,
+      "rmse": 748.628415904713,
+      "median_absolute_error": 600.0
+    },
+    {
+      "split": "random_80_20_seed5228",
+      "fit_period_end": "mixed dates",
+      "validation_period": "random 20% of labeled rows",
+      "validation_rows": 30000,
+      "baseline": "train_only_town_flat_median",
+      "mae": 566.642,
+      "rmse": 668.3556388131497,
+      "median_absolute_error": 500.0
+    }
+  ],
+  "interpretation_notes": [
+    "Random validation mixes historical regimes and should not stand in for future-period performance.",
+    "Distance correlations are unadjusted associations.",
+    "Years since lease commencement is approval calendar year minus lease commencement year; one row is negative.",
+    "KS and Jensen-Shannon results describe distribution distance; no significance tests are reported."
+  ],
+  "source_sha256_before": {
+    "data/train.csv": "6d7a417de72112361f8353659ba6fe44a442b07465b488aff1b03f7ec1ea3ba6",
+    "data/test.csv": "dfc407406d957bbf7c2f005e5d9852b1bfc6546cd4186f07e6824d8e03e64cfc",
+    "data/auxiliary/sg-coe-prices.csv": "e32fccd39da32780b6b7f35d069c813ed3edb0c110ea60761656bcee58d501a5",
+    "data/auxiliary/sg-hdb-block.csv": "e6ccc60c1f901f8f476eb6fe14c07ef5941d2afd06a081a1e4c00f717da27f83",
+    "data/auxiliary/sg-mrt-stations.csv": "899460b39fb251bd6883fffc9e6a772081f8e5217a657550afc3c49cfdcd3227",
+    "data/auxiliary/sg-schools.csv": "118c7ce8d96bbc934bd53655e73e6d0848c27853a625394ecc6a67a5af54f192",
+    "data/auxiliary/sg-shopping-malls.csv": "00e05b0176ac412695fc4ce1fc5a5338a1993593ffaffe26156dc2ea04ddf2c8",
+    "data/auxiliary/sg-stock-prices.csv": "c52fef9f33cfcb11285e2b9546124e02f32488e563af44e9fb3a505d10e2edff"
+  },
+  "source_sha256_after": {
+    "data/train.csv": "6d7a417de72112361f8353659ba6fe44a442b07465b488aff1b03f7ec1ea3ba6",
+    "data/test.csv": "dfc407406d957bbf7c2f005e5d9852b1bfc6546cd4186f07e6824d8e03e64cfc",
+    "data/auxiliary/sg-coe-prices.csv": "e32fccd39da32780b6b7f35d069c813ed3edb0c110ea60761656bcee58d501a5",
+    "data/auxiliary/sg-hdb-block.csv": "e6ccc60c1f901f8f476eb6fe14c07ef5941d2afd06a081a1e4c00f717da27f83",
+    "data/auxiliary/sg-mrt-stations.csv": "899460b39fb251bd6883fffc9e6a772081f8e5217a657550afc3c49cfdcd3227",
+    "data/auxiliary/sg-schools.csv": "118c7ce8d96bbc934bd53655e73e6d0848c27853a625394ecc6a67a5af54f192",
+    "data/auxiliary/sg-shopping-malls.csv": "00e05b0176ac412695fc4ce1fc5a5338a1993593ffaffe26156dc2ea04ddf2c8",
+    "data/auxiliary/sg-stock-prices.csv": "c52fef9f33cfcb11285e2b9546124e02f32488e563af44e9fb3a505d10e2edff"
+  },
+  "source_files_unchanged": true,
+  "duplicate_audit": {
+    "exact_duplicate_rows": 425,
+    "feature_groups_repeated": 13434,
+    "rows_in_repeated_feature_groups": 28981,
+    "repeated_groups_with_multiple_rents": 13191
+  }
+}
