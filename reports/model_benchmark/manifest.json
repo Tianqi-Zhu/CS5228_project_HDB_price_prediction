@@ -1,0 +1,62 @@
+{
+  "source": "data/processed/train_spatial_features.csv",
+  "source_sha256": "43867d0ba111b8c0bbd3a269b6ff4ac39e1a976517c08542b9f49f9f38611d43",
+  "validation_start": "2024-04",
+  "training_end": "2024-03",
+  "validation_end": "2025-03",
+  "n_source": 150000,
+  "n_train": 114842,
+  "n_validation": 35158,
+  "target": "MONTHLY_RENT",
+  "units": "SGD per month",
+  "seed": 42,
+  "base_features": [
+    "TOWN_CLEAN",
+    "FLAT_TYPE_CLEAN",
+    "FLAT_MODEL_CLEAN",
+    "FURNISHED_CLEAN",
+    "FLOOR_AREA_SQM",
+    "APPROVAL_MONTH_INDEX",
+    "APPROVAL_MONTH_SIN",
+    "APPROVAL_MONTH_COS",
+    "YEARS_SINCE_LEASE_COMMENCEMENT"
+  ],
+  "spatial_and_building_features_added": [
+    "LATITUDE",
+    "LONGITUDE",
+    "MAX_FLOOR",
+    "BUILDING_AGE_YEARS",
+    "NEAREST_OPEN_MRT_KM",
+    "OPEN_MRT_COUNT_500M",
+    "OPEN_MRT_COUNT_1000M",
+    "OPEN_MRT_COUNT_2000M",
+    "NEAREST_MALL_KM",
+    "MALL_COUNT_500M",
+    "MALL_COUNT_1000M",
+    "MALL_COUNT_2000M",
+    "NEAREST_PRIMARY_SCHOOL_KM",
+    "PRIMARY_SCHOOL_COUNT_500M",
+    "PRIMARY_SCHOOL_COUNT_1000M",
+    "PRIMARY_SCHOOL_COUNT_2000M",
+    "DISTANCE_TO_CBD_KM"
+  ],
+  "excluded": [
+    "FEE",
+    "SOURCE_ROW_ID",
+    "BLOCK",
+    "STREET",
+    "NEAREST_PLANNED_MRT_KM"
+  ],
+  "knn_fit_rows": 12000,
+  "knn_sampling": "uniform random training-only sample",
+  "versions": {
+    "python": "3.11.16",
+    "numpy": "2.4.6",
+    "pandas": "3.0.6",
+    "scipy": "1.17.1",
+    "scikit_learn": "1.9.1",
+    "catboost": "1.2.10",
+    "lightgbm": "4.7.0"
+  },
+  "interpretation": "Exploratory single chronological holdout; previous project EDA examined all labeled rows."
+}

@@ -1,0 +1,520 @@
+{
+  "raw_sha256": {
+    "data/train.csv": "6d7a417de72112361f8353659ba6fe44a442b07465b488aff1b03f7ec1ea3ba6",
+    "data/test.csv": "dfc407406d957bbf7c2f005e5d9852b1bfc6546cd4186f07e6824d8e03e64cfc",
+    "data/auxiliary/sg-hdb-block.csv": "e6ccc60c1f901f8f476eb6fe14c07ef5941d2afd06a081a1e4c00f717da27f83",
+    "data/auxiliary/sg-mrt-stations.csv": "899460b39fb251bd6883fffc9e6a772081f8e5217a657550afc3c49cfdcd3227",
+    "data/auxiliary/sg-schools.csv": "118c7ce8d96bbc934bd53655e73e6d0848c27853a625394ecc6a67a5af54f192",
+    "data/auxiliary/sg-shopping-malls.csv": "00e05b0176ac412695fc4ce1fc5a5338a1993593ffaffe26156dc2ea04ddf2c8"
+  },
+  "splits": {
+    "train": {
+      "rows": 150000,
+      "matched_block_rows": 150000,
+      "join_coverage": 1.0,
+      "original_columns_order_hash": "df8dce44336383d37fe92772f7328c6174e5192d4e5718f57720dc025e5cb139",
+      "output_sha256": "43867d0ba111b8c0bbd3a269b6ff4ac39e1a976517c08542b9f49f9f38611d43",
+      "negative_age_rows": {
+        "LEASE_AGE_NEGATIVE_FLAG": 1,
+        "BUILDING_AGE_NEGATIVE_FLAG": 0
+      },
+      "missing_by_feature": {
+        "RENT_APPROVAL_DATE": 0,
+        "TOWN": 0,
+        "BLOCK": 0,
+        "STREET": 0,
+        "FLAT_TYPE": 0,
+        "FLAT_MODEL": 0,
+        "FLOOR_AREA_SQM": 0,
+        "FURNISHED": 0,
+        "LEASE_COMMENCE_DATE": 0,
+        "FEE": 0,
+        "MONTHLY_RENT": 0,
+        "SOURCE_ROW_ID": 0,
+        "TOWN_CLEAN": 0,
+        "BLOCK_CLEAN": 0,
+        "STREET_CLEAN": 0,
+        "FLAT_TYPE_CLEAN": 0,
+        "FLAT_MODEL_CLEAN": 0,
+        "FURNISHED_CLEAN": 0,
+        "LATITUDE": 0,
+        "LONGITUDE": 0,
+        "MAX_FLOOR": 159,
+        "YEAR_COMPLETED": 159,
+        "SUBZONE": 0,
+        "PLANNING_AREA": 0,
+        "REGION": 0,
+        "NEAREST_OPEN_MRT_KM": 0,
+        "OPEN_MRT_COUNT_500M": 0,
+        "OPEN_MRT_COUNT_1000M": 0,
+        "OPEN_MRT_COUNT_2000M": 0,
+        "NEAREST_PLANNED_MRT_KM": 0,
+        "NEAREST_MALL_KM": 0,
+        "MALL_COUNT_500M": 0,
+        "MALL_COUNT_1000M": 0,
+        "MALL_COUNT_2000M": 0,
+        "NEAREST_PRIMARY_SCHOOL_KM": 0,
+        "PRIMARY_SCHOOL_COUNT_500M": 0,
+        "PRIMARY_SCHOOL_COUNT_1000M": 0,
+        "PRIMARY_SCHOOL_COUNT_2000M": 0,
+        "DISTANCE_TO_CBD_KM": 0,
+        "APPROVAL_YEAR": 0,
+        "APPROVAL_MONTH": 0,
+        "APPROVAL_MONTH_INDEX": 0,
+        "APPROVAL_MONTH_SIN": 0,
+        "APPROVAL_MONTH_COS": 0,
+        "LEASE_AGE_NEGATIVE_FLAG": 0,
+        "YEARS_SINCE_LEASE_COMMENCEMENT": 1,
+        "BUILDING_AGE_NEGATIVE_FLAG": 0,
+        "BUILDING_AGE_YEARS": 159
+      },
+      "dtypes": {
+        "RENT_APPROVAL_DATE": "object",
+        "TOWN": "object",
+        "BLOCK": "object",
+        "STREET": "object",
+        "FLAT_TYPE": "object",
+        "FLAT_MODEL": "object",
+        "FLOOR_AREA_SQM": "float64",
+        "FURNISHED": "object",
+        "LEASE_COMMENCE_DATE": "int64",
+        "FEE": "float64",
+        "MONTHLY_RENT": "int64",
+        "SOURCE_ROW_ID": "int64",
+        "TOWN_CLEAN": "string",
+        "BLOCK_CLEAN": "string",
+        "STREET_CLEAN": "string",
+        "FLAT_TYPE_CLEAN": "string",
+        "FLAT_MODEL_CLEAN": "string",
+        "FURNISHED_CLEAN": "string",
+        "LATITUDE": "float64",
+        "LONGITUDE": "float64",
+        "MAX_FLOOR": "float64",
+        "YEAR_COMPLETED": "float64",
+        "SUBZONE": "string",
+        "PLANNING_AREA": "string",
+        "REGION": "string",
+        "NEAREST_OPEN_MRT_KM": "float64",
+        "OPEN_MRT_COUNT_500M": "float64",
+        "OPEN_MRT_COUNT_1000M": "float64",
+        "OPEN_MRT_COUNT_2000M": "float64",
+        "NEAREST_PLANNED_MRT_KM": "float64",
+        "NEAREST_MALL_KM": "float64",
+        "MALL_COUNT_500M": "float64",
+        "MALL_COUNT_1000M": "float64",
+        "MALL_COUNT_2000M": "float64",
+        "NEAREST_PRIMARY_SCHOOL_KM": "float64",
+        "PRIMARY_SCHOOL_COUNT_500M": "float64",
+        "PRIMARY_SCHOOL_COUNT_1000M": "float64",
+        "PRIMARY_SCHOOL_COUNT_2000M": "float64",
+        "DISTANCE_TO_CBD_KM": "float64",
+        "APPROVAL_YEAR": "int32",
+        "APPROVAL_MONTH": "int32",
+        "APPROVAL_MONTH_INDEX": "int32",
+        "APPROVAL_MONTH_SIN": "float64",
+        "APPROVAL_MONTH_COS": "float64",
+        "LEASE_AGE_NEGATIVE_FLAG": "int8",
+        "YEARS_SINCE_LEASE_COMMENCEMENT": "float64",
+        "BUILDING_AGE_NEGATIVE_FLAG": "int8",
+        "BUILDING_AGE_YEARS": "float64"
+      }
+    },
+    "test": {
+      "rows": 50000,
+      "matched_block_rows": 50000,
+      "join_coverage": 1.0,
+      "original_columns_order_hash": "acbde816dfecd77a68e47838b8deaae488fb7ed6eb2119403aa78128db8bd016",
+      "output_sha256": "e04e5f394ac6773f0c97f6c92341ebb9ce9c48b7137d8dee7fcb44e07c151c15",
+      "negative_age_rows": {
+        "LEASE_AGE_NEGATIVE_FLAG": 0,
+        "BUILDING_AGE_NEGATIVE_FLAG": 0
+      },
+      "missing_by_feature": {
+        "RENT_APPROVAL_DATE": 0,
+        "TOWN": 0,
+        "BLOCK": 0,
+        "STREET": 0,
+        "FLAT_TYPE": 0,
+        "FLAT_MODEL": 0,
+        "FLOOR_AREA_SQM": 0,
+        "FURNISHED": 0,
+        "LEASE_COMMENCE_DATE": 0,
+        "FEE": 0,
+        "SOURCE_ROW_ID": 0,
+        "TOWN_CLEAN": 0,
+        "BLOCK_CLEAN": 0,
+        "STREET_CLEAN": 0,
+        "FLAT_TYPE_CLEAN": 0,
+        "FLAT_MODEL_CLEAN": 0,
+        "FURNISHED_CLEAN": 0,
+        "LATITUDE": 0,
+        "LONGITUDE": 0,
+        "MAX_FLOOR": 0,
+        "YEAR_COMPLETED": 0,
+        "SUBZONE": 0,
+        "PLANNING_AREA": 0,
+        "REGION": 0,
+        "NEAREST_OPEN_MRT_KM": 0,
+        "OPEN_MRT_COUNT_500M": 0,
+        "OPEN_MRT_COUNT_1000M": 0,
+        "OPEN_MRT_COUNT_2000M": 0,
+        "NEAREST_PLANNED_MRT_KM": 0,
+        "NEAREST_MALL_KM": 0,
+        "MALL_COUNT_500M": 0,
+        "MALL_COUNT_1000M": 0,
+        "MALL_COUNT_2000M": 0,
+        "NEAREST_PRIMARY_SCHOOL_KM": 0,
+        "PRIMARY_SCHOOL_COUNT_500M": 0,
+        "PRIMARY_SCHOOL_COUNT_1000M": 0,
+        "PRIMARY_SCHOOL_COUNT_2000M": 0,
+        "DISTANCE_TO_CBD_KM": 0,
+        "APPROVAL_YEAR": 0,
+        "APPROVAL_MONTH": 0,
+        "APPROVAL_MONTH_INDEX": 0,
+        "APPROVAL_MONTH_SIN": 0,
+        "APPROVAL_MONTH_COS": 0,
+        "LEASE_AGE_NEGATIVE_FLAG": 0,
+        "YEARS_SINCE_LEASE_COMMENCEMENT": 0,
+        "BUILDING_AGE_NEGATIVE_FLAG": 0,
+        "BUILDING_AGE_YEARS": 0
+      },
+      "dtypes": {
+        "RENT_APPROVAL_DATE": "object",
+        "TOWN": "object",
+        "BLOCK": "object",
+        "STREET": "object",
+        "FLAT_TYPE": "object",
+        "FLAT_MODEL": "object",
+        "FLOOR_AREA_SQM": "float64",
+        "FURNISHED": "object",
+        "LEASE_COMMENCE_DATE": "int64",
+        "FEE": "float64",
+        "SOURCE_ROW_ID": "int64",
+        "TOWN_CLEAN": "string",
+        "BLOCK_CLEAN": "string",
+        "STREET_CLEAN": "string",
+        "FLAT_TYPE_CLEAN": "string",
+        "FLAT_MODEL_CLEAN": "string",
+        "FURNISHED_CLEAN": "string",
+        "LATITUDE": "float64",
+        "LONGITUDE": "float64",
+        "MAX_FLOOR": "float64",
+        "YEAR_COMPLETED": "float64",
+        "SUBZONE": "string",
+        "PLANNING_AREA": "string",
+        "REGION": "string",
+        "NEAREST_OPEN_MRT_KM": "float64",
+        "OPEN_MRT_COUNT_500M": "float64",
+        "OPEN_MRT_COUNT_1000M": "float64",
+        "OPEN_MRT_COUNT_2000M": "float64",
+        "NEAREST_PLANNED_MRT_KM": "float64",
+        "NEAREST_MALL_KM": "float64",
+        "MALL_COUNT_500M": "float64",
+        "MALL_COUNT_1000M": "float64",
+        "MALL_COUNT_2000M": "float64",
+        "NEAREST_PRIMARY_SCHOOL_KM": "float64",
+        "PRIMARY_SCHOOL_COUNT_500M": "float64",
+        "PRIMARY_SCHOOL_COUNT_1000M": "float64",
+        "PRIMARY_SCHOOL_COUNT_2000M": "float64",
+        "DISTANCE_TO_CBD_KM": "float64",
+        "APPROVAL_YEAR": "int32",
+        "APPROVAL_MONTH": "int32",
+        "APPROVAL_MONTH_INDEX": "int32",
+        "APPROVAL_MONTH_SIN": "float64",
+        "APPROVAL_MONTH_COS": "float64",
+        "LEASE_AGE_NEGATIVE_FLAG": "int8",
+        "YEARS_SINCE_LEASE_COMMENCEMENT": "int64",
+        "BUILDING_AGE_NEGATIVE_FLAG": "int8",
+        "BUILDING_AGE_YEARS": "float64"
+      }
+    }
+  },
+  "limitations": [
+    "Amenities represent supplied current snapshots, not approval-date historical availability.",
+    "Primary schools include MAINLEVEL_CODE containing primary or p1.",
+    "Location counts deduplicate exact coordinate pairs; distinct sites with slightly differing coordinates remain distinct.",
+    "No target-derived values, fitted scaling, or imputation."
+  ],
+  "cbd_reference": {
+    "latitude": 1.284,
+    "longitude": 103.851,
+    "definition": "Approximate Raffles Place reference chosen for this analysis, not an authoritative CBD boundary."
+  },
+  "unique_amenity_locations": {
+    "OPEN_MRT": 192,
+    "PLANNED_MRT": 11,
+    "MALL": 113,
+    "PRIMARY_SCHOOL": 180
+  },
+  "open_planned_colocated_coordinates": 11,
+  "feature_definitions": [
+    {
+      "feature": "LATITUDE",
+      "source": "sg-hdb-block.csv",
+      "formula": "normalized town/block/street many-to-one join; negative numeric sentinels removed",
+      "units": "degrees",
+      "explanation": "Supplied block metadata; categorical whitespace/case/sentinels normalized"
+    },
+    {
+      "feature": "LONGITUDE",
+      "source": "sg-hdb-block.csv",
+      "formula": "normalized town/block/street many-to-one join; negative numeric sentinels removed",
+      "units": "degrees",
+      "explanation": "Supplied block metadata; categorical whitespace/case/sentinels normalized"
+    },
+    {
+      "feature": "MAX_FLOOR",
+      "source": "sg-hdb-block.csv",
+      "formula": "normalized town/block/street many-to-one join; negative numeric sentinels removed",
+      "units": "floors",
+      "explanation": "Supplied block metadata; categorical whitespace/case/sentinels normalized"
+    },
+    {
+      "feature": "YEAR_COMPLETED",
+      "source": "sg-hdb-block.csv",
+      "formula": "normalized town/block/street many-to-one join; negative numeric sentinels removed",
+      "units": "year",
+      "explanation": "Supplied block metadata; categorical whitespace/case/sentinels normalized"
+    },
+    {
+      "feature": "SUBZONE",
+      "source": "sg-hdb-block.csv",
+      "formula": "normalized town/block/street many-to-one join; negative numeric sentinels removed",
+      "units": "category",
+      "explanation": "Supplied block metadata; categorical whitespace/case/sentinels normalized"
+    },
+    {
+      "feature": "PLANNING_AREA",
+      "source": "sg-hdb-block.csv",
+      "formula": "normalized town/block/street many-to-one join; negative numeric sentinels removed",
+      "units": "category",
+      "explanation": "Supplied block metadata; categorical whitespace/case/sentinels normalized"
+    },
+    {
+      "feature": "REGION",
+      "source": "sg-hdb-block.csv",
+      "formula": "normalized town/block/street many-to-one join; negative numeric sentinels removed",
+      "units": "category",
+      "explanation": "Supplied block metadata; categorical whitespace/case/sentinels normalized"
+    },
+    {
+      "feature": "NEAREST_OPEN_MRT_KM",
+      "source": "open_mrt snapshot",
+      "formula": "minimum haversine distance; Earth radius 6371.0088 km",
+      "units": "km",
+      "explanation": "Current snapshot, not historical availability at approval date"
+    },
+    {
+      "feature": "OPEN_MRT_COUNT_500M",
+      "source": "open_mrt snapshot",
+      "formula": "unique coordinate pairs within inclusive 500 m haversine radius",
+      "units": "locations",
+      "explanation": "Co-located records counted once; missing block coordinates produce missing count"
+    },
+    {
+      "feature": "OPEN_MRT_COUNT_1000M",
+      "source": "open_mrt snapshot",
+      "formula": "unique coordinate pairs within inclusive 1000 m haversine radius",
+      "units": "locations",
+      "explanation": "Co-located records counted once; missing block coordinates produce missing count"
+    },
+    {
+      "feature": "OPEN_MRT_COUNT_2000M",
+      "source": "open_mrt snapshot",
+      "formula": "unique coordinate pairs within inclusive 2000 m haversine radius",
+      "units": "locations",
+      "explanation": "Co-located records counted once; missing block coordinates produce missing count"
+    },
+    {
+      "feature": "NEAREST_PLANNED_MRT_KM",
+      "source": "planned_mrt snapshot",
+      "formula": "minimum haversine distance; Earth radius 6371.0088 km",
+      "units": "km",
+      "explanation": "Current snapshot, not historical availability at approval date"
+    },
+    {
+      "feature": "NEAREST_MALL_KM",
+      "source": "mall snapshot",
+      "formula": "minimum haversine distance; Earth radius 6371.0088 km",
+      "units": "km",
+      "explanation": "Current snapshot, not historical availability at approval date"
+    },
+    {
+      "feature": "MALL_COUNT_500M",
+      "source": "mall snapshot",
+      "formula": "unique coordinate pairs within inclusive 500 m haversine radius",
+      "units": "locations",
+      "explanation": "Co-located records counted once; missing block coordinates produce missing count"
+    },
+    {
+      "feature": "MALL_COUNT_1000M",
+      "source": "mall snapshot",
+      "formula": "unique coordinate pairs within inclusive 1000 m haversine radius",
+      "units": "locations",
+      "explanation": "Co-located records counted once; missing block coordinates produce missing count"
+    },
+    {
+      "feature": "MALL_COUNT_2000M",
+      "source": "mall snapshot",
+      "formula": "unique coordinate pairs within inclusive 2000 m haversine radius",
+      "units": "locations",
+      "explanation": "Co-located records counted once; missing block coordinates produce missing count"
+    },
+    {
+      "feature": "NEAREST_PRIMARY_SCHOOL_KM",
+      "source": "primary_school snapshot",
+      "formula": "minimum haversine distance; Earth radius 6371.0088 km",
+      "units": "km",
+      "explanation": "Current snapshot, not historical availability at approval date"
+    },
+    {
+      "feature": "PRIMARY_SCHOOL_COUNT_500M",
+      "source": "primary_school snapshot",
+      "formula": "unique coordinate pairs within inclusive 500 m haversine radius",
+      "units": "locations",
+      "explanation": "Co-located records counted once; missing block coordinates produce missing count"
+    },
+    {
+      "feature": "PRIMARY_SCHOOL_COUNT_1000M",
+      "source": "primary_school snapshot",
+      "formula": "unique coordinate pairs within inclusive 1000 m haversine radius",
+      "units": "locations",
+      "explanation": "Co-located records counted once; missing block coordinates produce missing count"
+    },
+    {
+      "feature": "PRIMARY_SCHOOL_COUNT_2000M",
+      "source": "primary_school snapshot",
+      "formula": "unique coordinate pairs within inclusive 2000 m haversine radius",
+      "units": "locations",
+      "explanation": "Co-located records counted once; missing block coordinates produce missing count"
+    },
+    {
+      "feature": "DISTANCE_TO_CBD_KM",
+      "source": "chosen approximate Raffles Place reference",
+      "formula": "minimum haversine distance; Earth radius 6371.0088 km",
+      "units": "km",
+      "explanation": "Haversine distance to (1.2840, 103.8510); not distance to CBD boundary"
+    },
+    {
+      "feature": "SOURCE_ROW_ID",
+      "source": "input row order",
+      "formula": "zero-based original row position",
+      "units": "row",
+      "explanation": "Stable identifier within each split"
+    },
+    {
+      "feature": "TOWN_CLEAN",
+      "source": "original TOWN",
+      "formula": "strip, lowercase, collapse whitespace; nil/-1/empty to missing",
+      "units": "category",
+      "explanation": "Original source column retained unchanged"
+    },
+    {
+      "feature": "BLOCK_CLEAN",
+      "source": "original BLOCK",
+      "formula": "strip, lowercase, collapse whitespace; nil/-1/empty to missing",
+      "units": "category",
+      "explanation": "Original source column retained unchanged"
+    },
+    {
+      "feature": "STREET_CLEAN",
+      "source": "original STREET",
+      "formula": "strip, lowercase, collapse whitespace; nil/-1/empty to missing",
+      "units": "category",
+      "explanation": "Original source column retained unchanged"
+    },
+    {
+      "feature": "FLAT_TYPE_CLEAN",
+      "source": "original FLAT_TYPE",
+      "formula": "strip, lowercase, collapse whitespace; nil/-1/empty to missing; hyphens replaced with spaces, then whitespace collapsed",
+      "units": "category",
+      "explanation": "Original source column retained unchanged"
+    },
+    {
+      "feature": "FLAT_MODEL_CLEAN",
+      "source": "original FLAT_MODEL",
+      "formula": "strip, lowercase, collapse whitespace; nil/-1/empty to missing",
+      "units": "category",
+      "explanation": "Original source column retained unchanged"
+    },
+    {
+      "feature": "FURNISHED_CLEAN",
+      "source": "original FURNISHED",
+      "formula": "strip, lowercase, collapse whitespace; nil/-1/empty to missing",
+      "units": "category",
+      "explanation": "Original source column retained unchanged"
+    },
+    {
+      "feature": "APPROVAL_YEAR",
+      "source": "approval date and property metadata",
+      "formula": "approval date year",
+      "units": "year",
+      "explanation": "Year-granularity age; missing dates/metadata propagate to ages"
+    },
+    {
+      "feature": "APPROVAL_MONTH",
+      "source": "approval date and property metadata",
+      "formula": "approval date month",
+      "units": "month",
+      "explanation": "Year-granularity age; missing dates/metadata propagate to ages"
+    },
+    {
+      "feature": "APPROVAL_MONTH_INDEX",
+      "source": "approval date and property metadata",
+      "formula": "(year-2021)*12+month-1; 0 = January 2021",
+      "units": "month",
+      "explanation": "Year-granularity age; missing dates/metadata propagate to ages"
+    },
+    {
+      "feature": "APPROVAL_MONTH_SIN",
+      "source": "approval date and property metadata",
+      "formula": "sin(2*pi*(month-1)/12)",
+      "units": "unitless",
+      "explanation": "Year-granularity age; missing dates/metadata propagate to ages"
+    },
+    {
+      "feature": "APPROVAL_MONTH_COS",
+      "source": "approval date and property metadata",
+      "formula": "cos(2*pi*(month-1)/12)",
+      "units": "unitless",
+      "explanation": "Year-granularity age; missing dates/metadata propagate to ages"
+    },
+    {
+      "feature": "YEARS_SINCE_LEASE_COMMENCEMENT",
+      "source": "approval date and property metadata",
+      "formula": "approval year - lease commencement year; negative to missing",
+      "units": "years",
+      "explanation": "Year-granularity age; missing dates/metadata propagate to ages"
+    },
+    {
+      "feature": "BUILDING_AGE_YEARS",
+      "source": "approval date and property metadata",
+      "formula": "approval year - year completed; negative to missing",
+      "units": "years",
+      "explanation": "Year-granularity age; missing dates/metadata propagate to ages"
+    },
+    {
+      "feature": "LEASE_AGE_NEGATIVE_FLAG",
+      "source": "approval date and property metadata",
+      "formula": "1 if raw lease age <0 else 0",
+      "units": "binary",
+      "explanation": "Year-granularity age; missing dates/metadata propagate to ages"
+    },
+    {
+      "feature": "BUILDING_AGE_NEGATIVE_FLAG",
+      "source": "approval date and property metadata",
+      "formula": "1 if raw building age <0 else 0",
+      "units": "binary",
+      "explanation": "Year-granularity age; missing dates/metadata propagate to ages"
+    }
+  ],
+  "raw_sha256_after_build": {
+    "data/train.csv": "6d7a417de72112361f8353659ba6fe44a442b07465b488aff1b03f7ec1ea3ba6",
+    "data/test.csv": "dfc407406d957bbf7c2f005e5d9852b1bfc6546cd4186f07e6824d8e03e64cfc",
+    "data/auxiliary/sg-hdb-block.csv": "e6ccc60c1f901f8f476eb6fe14c07ef5941d2afd06a081a1e4c00f717da27f83",
+    "data/auxiliary/sg-mrt-stations.csv": "899460b39fb251bd6883fffc9e6a772081f8e5217a657550afc3c49cfdcd3227",
+    "data/auxiliary/sg-schools.csv": "118c7ce8d96bbc934bd53655e73e6d0848c27853a625394ecc6a67a5af54f192",
+    "data/auxiliary/sg-shopping-malls.csv": "00e05b0176ac412695fc4ce1fc5a5338a1993593ffaffe26156dc2ea04ddf2c8"
+  },
+  "raw_files_unchanged": true
+}
