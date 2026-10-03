@@ -1,0 +1,62 @@
+{
+  "target": "Monthly mean and median MONTHLY_RENT (SGD) by group",
+  "geography": "PLANNING_AREA from the HDB block table is a district proxy, not an official postal district",
+  "monthly_minimum_rentals": 20,
+  "correlation_minimum_paired_months": 24,
+  "correlation_period": "Before 2024-04",
+  "correlation_target": "Within-group month-on-month mean/median rent change",
+  "prediction_scenario": "Monthly-updated one-step-ahead; prior-month group rent and market observations known",
+  "model": "Per-group Ridge(alpha=10) with training-only median imputation and standardization",
+  "baseline_predictors": [
+    "rent_lag1",
+    "month_index",
+    "season_sin",
+    "season_cos"
+  ],
+  "feature_variants": {
+    "rent_history": [],
+    "plus_coe": [
+      "COE_A_GROWTH_LAG1",
+      "COE_C_GROWTH_LAG1",
+      "COE_C_BID_PRESSURE_LAG1"
+    ],
+    "plus_stocks": [
+      "SG_STOCK_RETURN_LAG1",
+      "SG_STOCK_RETURN_3M_LAG1"
+    ],
+    "plus_both": [
+      "COE_A_GROWTH_LAG1",
+      "COE_C_GROWTH_LAG1",
+      "COE_C_BID_PRESSURE_LAG1",
+      "SG_STOCK_RETURN_LAG1",
+      "SG_STOCK_RETURN_3M_LAG1"
+    ]
+  },
+  "folds": [
+    [
+      "2023-01",
+      "2023-07"
+    ],
+    [
+      "2023-07",
+      "2024-04"
+    ],
+    [
+      "2024-04",
+      "2025-04"
+    ]
+  ],
+  "source_sha256": {
+    "train.csv": "6d7a417de72112361f8353659ba6fe44a442b07465b488aff1b03f7ec1ea3ba6",
+    "auxiliary\\sg-hdb-block.csv": "e6ccc60c1f901f8f476eb6fe14c07ef5941d2afd06a081a1e4c00f717da27f83",
+    "auxiliary\\sg-coe-prices.csv": "e32fccd39da32780b6b7f35d069c813ed3edb0c110ea60761656bcee58d501a5",
+    "auxiliary\\sg-stock-prices.csv": "c52fef9f33cfcb11285e2b9546124e02f32488e563af44e9fb3a505d10e2edff"
+  },
+  "limitations": [
+    "The market signal has one observation per calendar month, not one independent observation per group.",
+    "Correlations are exploratory across many groups/signals; no multiple-testing significance claim is made.",
+    "Monthly group means and medians can change with property mix; no within-group hedonic adjustment is made.",
+    "Validation uses actual previous-month group rent, so it is one-step-ahead, not a fixed-origin multi-month forecast.",
+    "The 2024-04 holdout has already been examined in earlier experiments."
+  ]
+}

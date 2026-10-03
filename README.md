@@ -61,6 +61,8 @@ python -m pip install -r requirements-model.txt
 python analysis/eda_train_test.py
 python analysis/eda_auxiliary_data.py
 python analysis/eda_temporal_correlations.py
+python analysis/eda_economic_signals.py
+python analysis/eda_group_temporal_panel.py
 python analysis/train_baseline.py
 python analysis/compare_model_families.py
 python analysis/compare_auxiliary_features.py
