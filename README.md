@@ -24,6 +24,7 @@ analysis/
   compare_model_families.py  模型家族比较运行入口
   compare_auxiliary_features.py  辅助特征逐步消融实验入口
   compare_spatiotemporal_hybrid.py  固定起点时空混合模型评估与预测入口
+  compare_neural_tabm.py       TabM 风格神经网络及树模型融合实验入口
   config.py                  路径、验证时间点、特征组和固定模型参数
   data.py                    数据校验、特征构造、时间划分和地址规范化
   evaluation.py              RMSE、MAE、平均偏差及分组误差
@@ -68,11 +69,14 @@ python analysis/train_baseline.py
 python analysis/compare_model_families.py
 python analysis/compare_auxiliary_features.py
 python analysis/compare_spatiotemporal_hybrid.py
+python analysis/compare_neural_tabm.py
 ```
 
 `compare_model_families.py` 读取 `train_baseline.py` 的 CatBoost 结果，因此要先运行后者。`compare_auxiliary_features.py` 可独立运行，采用 2024-04 时间切分，依次加入楼栋、周边设施、COE、股票和交互特征。每次运行固定使用同一种模型：环境中有 LightGBM 时使用 LightGBM，否则使用 scikit-learn 的 HistGradientBoosting。输出写入 `reports/auxiliary_ablation/`：`ablation_metrics.csv`、`monthly_errors.csv`、`feature_coverage.csv`、`feature_importance.csv`、`ablation_rmse.png` 和 `results.json`。运行小型功能检查：`python -m unittest discover -s tests`。
 
 `compare_spatiotemporal_hybrid.py` 使用多个固定预测起点比较空间基线、仅使用历史租金特征、递归时空残差校正及两者组合。验证期标签不会作为滞后特征反馈给模型。结果和最终测试集预测写入 `reports/spatiotemporal_hybrid/`。
+
+`compare_neural_tabm.py` 使用类别嵌入和参数高效集成 MLP 比较历史树模型、神经网络及两者融合。默认运行三个固定起点折并在全部训练数据上生成测试集预测；可用 `--epochs`、`--device` 和 `--skip-final` 控制训练。输出写入 `reports/neural_tabm/`。
 
 经济特征采用审批月之前 1、3、6 个日历月的数值，适用于逐月更新预测的情景；若在训练截止月一次性预测以后所有月份，不能把之后公布的经济数据当作已知。设施表是当前快照，缺少历史开通日期，因此相关特征仅作地理代理变量解释。
 
