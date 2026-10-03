@@ -1,6 +1,10 @@
+# Modeling environment; includes all EDA dependencies below.
 -r requirements-eda.txt
+
+# Keep NumPy below the next major release for compiled model compatibility.
 numpy<3
 catboost==1.2.10
 lightgbm==4.7.0
 matplotlib
 scikit-learn
+joblib>=1.3

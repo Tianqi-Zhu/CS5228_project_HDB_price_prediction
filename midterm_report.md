@@ -4,17 +4,19 @@
 
 根据新加坡 HDB 组屋的属性、地址和租赁审批时间预测每月租金（SGD），评价指标为均方根误差（RMSE）。本报告记录目前完成的主数据与六份辅助数据的探索性分析，以及**未使用辅助特征**的第一轮传统机器学习实验。现有分数均来自训练集内部的时间验证，尚无 Kaggle 测试集分数。
 
-代码按数据处理、特征、评估与模型设置拆分在 [`analysis/`](analysis/) 中，并保留四个可直接运行的入口。运行方法和项目结构见 [README](README.md)。
+代码已经统一到 [`analysis/`](analysis/)，按数据、模型、训练、评估、EDA 和实验拆分。运行方法见 [README](README.md)，模块职责见 [项目结构说明](docs/project_structure.md)。
+
+更新后的仓库还保留了[综合 EDA](reports/eda/report.md)及 15 页 PDF，包括分布漂移、设施距离关联和近期中位数基线。它使用的统计基线验证窗口与本报告的四模型窗口不同，分数不能直接混排。统一管线已具备全量重训和 `Id,Predicted` 文件生成能力，迁移核验产生的预测仅用于检查行数、顺序和模型保存，不是新模型效果实验或 Kaggle 成绩。
 
 ## 主数据 EDA（train/test）
 
-`analysis/eda_train_test.py` 只读取 `data/train.csv` 和 `data/test.csv`，不修改原始文件。它生成[数据检查与划分摘要](reports/train_test_eda/summary.json)和五张适合用于幻灯片的图：
+`analysis/eda/audits/main_data.py` 只读取 `data/train.csv` 和 `data/test.csv`，不修改原始文件。它生成[数据检查与划分摘要](reports/eda/supplementary/train_test/summary.json)和五张适合用于幻灯片的图：
 
-1. [月租分布](reports/train_test_eda/01_rent_distribution.png)
-2. [各月租金中位数与验证时间段](reports/train_test_eda/02_monthly_median.png)
-3. [不同房型的租金](reports/train_test_eda/03_flat_type.png)
-4. [不同 Town 的租金](reports/train_test_eda/04_town_median.png)
-5. [面积与租金](reports/train_test_eda/05_floor_area.png)
+1. [月租分布](reports/eda/supplementary/train_test/01_rent_distribution.png)
+2. [各月租金中位数与验证时间段](reports/eda/supplementary/train_test/02_monthly_median.png)
+3. [不同房型的租金](reports/eda/supplementary/train_test/03_flat_type.png)
+4. [不同 Town 的租金](reports/eda/supplementary/train_test/04_town_median.png)
+5. [面积与租金](reports/eda/supplementary/train_test/05_floor_area.png)
 
 ### 初步发现
 
@@ -35,7 +37,7 @@
 
 ## 辅助数据 EDA（auxiliary_data）
 
-`analysis/eda_auxiliary_data.py` 对六个 auxiliary CSV 做了数据质量、时间覆盖、地址匹配和设施距离检查。完整数字、三张图与逐文件预处理建议见[辅助数据 EDA 报告](reports/auxiliary_data_eda/report.md)及[机器可读摘要](reports/auxiliary_data_eda/summary.json)。主要发现如下：
+`analysis/eda/audits/auxiliary.py` 对六个 auxiliary CSV 做了数据质量、时间覆盖、地址匹配和设施距离检查。完整数字、三张图与逐文件预处理建议见[辅助数据 EDA 报告](reports/eda/supplementary/auxiliary/report.md)及[机器可读摘要](reports/eda/supplementary/auxiliary/summary.json)。主要发现如下：
 
 - 规范化 `TOWN + BLOCK + STREET` 后，楼栋表能匹配训练集和测试集的全部记录。9,464 条楼栋记录中有 285 条邮编为 `NIL`，11 条最高楼层及完工年份为 `-1`；这些占位值需要转成缺失值。
 - MRT、商场和学校坐标可用于计算楼栋到设施的直线距离，但文件缺少设施的历史开通／开办日期。MRT 的 243 条线路记录仅对应 192 个独立地点，计算附近站点数时需要去重。
@@ -49,19 +51,19 @@
 
 ```powershell
 conda activate cs5228
-python analysis/train_baseline.py
+python -m analysis.main baseline
 ```
 
-`analysis/train_baseline.py` 读取原始 CSV，在内存中生成新特征，并在训练后核对原始文件的 SHA-256 哈希。它使用上述时间划分，固定 CatBoost 参数，比较三组特征：
+`analysis/experiments/baseline.py` 读取原始 CSV，在内存中生成新特征，并在训练后核对原始文件的 SHA-256 哈希。它使用上述时间划分，固定 CatBoost 参数，比较三组特征：
 
 | 模型 | 使用的特征 | 验证 RMSE（SGD） | 平均预测值减真实值（SGD） |
 | --- | --- | ---: | ---: |
 | 训练期租金均值 | 不使用房屋特征 | 846.75 | -531.44 |
 | A：房屋属性 | 统一写法后的房型、房屋模型、面积 | 761.42 | -534.06 |
-| B：房屋属性 + 时间相关特征 | A 加审批月份序号、年内月份、楼龄 | 529.96 | -49.91 |
+| B：房屋属性 + 时间相关特征 | A 加审批月份序号、年内月份、距租约起始的年数 | 529.96 | -49.91 |
 | C：B + Town | B 加 Town | **487.22** | -48.29 |
 
-A 到 B 的改进较大，与验证期租金明显高于早期训练期相符；但 B 同时加入审批时间和楼龄，不能把改进单独归因于某一个特征。C 在这组三种 CatBoost 模型中 RMSE 最低，不过每个验证月份仍平均低估约 S$5–S$84，见[逐月误差图](reports/model_baseline/monthly_validation_error.png)。在样本量较充足的房型中，Executive 的 RMSE 最高（S$594.62，1,778 条）。
+A 到 B 的改进较大，与验证期租金明显高于早期训练期相符；但 B 同时加入审批时间和租约年数，不能把改进单独归因于某一个特征。C 在这组三种 CatBoost 模型中 RMSE 最低，不过每个验证月份仍平均低估约 S$5–S$84，见[逐月误差图](reports/model_baseline/monthly_validation_error.png)。在样本量较充足的房型中，Executive 的 RMSE 最高（S$594.62，1,778 条）。
 
 详细结果见[模型指标](reports/model_baseline/model_metrics.csv)、[逐月误差](reports/model_baseline/monthly_errors.csv)、[分房型误差](reports/model_baseline/flat_type_errors.csv)及[运行参数与完整结果](reports/model_baseline/results.json)。这些数值来自一次时间验证，**不是 Kaggle 测试集分数**。
 

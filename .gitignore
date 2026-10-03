@@ -216,3 +216,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Local model artifacts, submission files and migration verification runs
+*.joblib
+output/submissions/
+reports/validation/**/predictions.csv
+reports/runs/**/submission.csv
+.integration-work/

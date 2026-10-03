@@ -1,4 +1,7 @@
-name: cs5228-hdb
+# Canonical Conda environment for the complete project workflow.
+# Create with: conda env create -f environment.yml
+# Update with: conda env update -n cs5228 -f environment.yml --prune
+name: cs5228
 channels:
   - conda-forge
 dependencies:
@@ -8,6 +11,9 @@ dependencies:
   - scikit-learn
   - matplotlib
   - pillow
+  - joblib
+  - openpyxl
+  - reportlab
   - pip
   - pip:
       - catboost==1.2.10

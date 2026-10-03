@@ -1,4 +1,6 @@
+# Core dependencies for data loading, EDA, plots, and preprocessing.
 numpy>=1.24
 pandas>=2.0
 matplotlib>=3.7
 Pillow>=9.0
+scikit-learn>=1.3

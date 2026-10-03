@@ -60,8 +60,8 @@
       "model": "random_forest",
       "n_validation": 35158,
       "rmse_sgd": 493.7718838822359,
-      "mae_sgd": 370.18992413549387,
-      "bias_sgd": -56.64829408580732
+      "mae_sgd": 370.1899241354939,
+      "bias_sgd": -56.64829408580735
     },
     {
       "model": "lightgbm",
@@ -78,6 +78,6 @@
       "bias_sgd": -48.29310100031218
     }
   ],
-  "catboost_source": "reports/model_baseline/results.json",
+  "catboost_source": "C:\\Users\\Lenovo\\Desktop\\CS5228\\CS5228_project_HDB_price_prediction\\reports\\model_baseline\\results.json",
   "note": "Single temporal holdout. Model parameters were chosen as simple fixed baselines, not tuned on this holdout."
 }
