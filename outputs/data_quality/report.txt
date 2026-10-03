@@ -1,0 +1,52 @@
+训练数据质量分析
+数据源：data/train.csv（原文件保留）
+总记录：150,000；列数：11；删除异常记录：874；清洗后记录：149,126
+定位：issues.csv 的 csv_row 包含表头，第一条数据是第 2 行。
+
+以下字段统计、重复统计及数值范围均为单元格规范化后、删除异常行之前。
+字段检查（原始空白 / 原始缺失标记 / 修改单元格 / 规范化后空值）：
+RENT_APPROVAL_DATE: 0 / 0 / 0 / 0
+TOWN: 0 / 0 / 0 / 0
+BLOCK: 0 / 0 / 0 / 0
+STREET: 0 / 0 / 30781 / 0
+FLAT_TYPE: 0 / 0 / 35331 / 0
+FLAT_MODEL: 0 / 0 / 0 / 0
+FLOOR_AREA_SQM: 0 / 0 / 0 / 0
+FURNISHED: 0 / 0 / 0 / 0
+LEASE_COMMENCE_DATE: 0 / 0 / 1 / 1
+FEE: 0 / 0 / 0 / 0
+MONTHLY_RENT: 0 / 0 / 0 / 0
+
+处理规则与解释：
+1. 统一文字大小写和空白；将 4 room 等统一为 4-room。楼栋编号保留为文本。
+2. 空白及 NA/N/A/NaN/null/None/?/-/unknown 识别为缺失；0 不是缺失。
+3. 非法日期、非有限/无法解析数字、非正面积/租金、非法地契年份设为空并记日志。
+4. 地契年份晚于出租年份属于时间矛盾：无法判断哪个源字段错，将地契年份暂设为空，保留整行和租金。
+5. FURNISHED 与 FEE 为常量，保留原列；当前 baseline 不使用它们。
+6. 无房屋单元编号，不单独去重；满足 IQR 删除条件的重复行同样删除。
+7. 按用户要求，租金或面积任一超出 1.5 IQR 范围即删除整行；边界值保留。阈值仅计算一次。
+8. 没有填补或裁剪目标值。baseline 同时排除关键字段缺失和 IQR 异常训练行。
+9. 导出和最终训练使用全训练集阈值；时间验证仅用较早训练部分估计阈值并删训练行，验证集和测试集不按 IQR 删行。
+10. 本次未对地址真实性和房屋属性逐条外部核验；通过规则不代表所有记录都完全正确。
+
+问题计数（可以重叠）：{'format': 66112, 'temporal_inconsistency': 1, 'repeated_record': 641, 'iqr_outlier': 882}
+原始重复：{'groups': 411, 'rows_in_groups': 836, 'excess_rows': 425}
+清洗后重复：{'groups': 620, 'rows_in_groups': 1261, 'excess_rows': 641}
+excess_rows 表示每组保留第一条后多出的行数；rows_in_groups 包含每组第一条。
+相同全部输入但不同租金：{'groups': 17900, 'rows': 39540}；可能是同楼栋不同单元，保留。
+关键字段缺失记录：0
+两类异常重叠：8 行；合计删除：874 行。
+
+删除前数值范围及异常统计：
+FLOOR_AREA_SQM: 最小 31.0，中位数 92.0，最大 215.0
+LEASE_COMMENCE_DATE: 最小 1966.0，中位数 1988.0，最大 2022.0
+FEE: 最小 0.0，中位数 0.0，最大 0.0
+MONTHLY_RENT: 最小 300.0，中位数 2700.0，最大 7600.0
+FLOOR_AREA_SQM: IQR 范围 [5.0, 173.0]；130 行满足删除条件。
+MONTHLY_RENT: IQR 范围 [450.0, 4850.0]；752 行满足删除条件。
+
+运行：python3 data_quality.py 生成本报告和清洗副本；python3 baseline.py 使用相同清洗规则训练。
+对照：python3 baseline.py --raw 运行原 baseline；默认运行会删除训练部分的 IQR 异常。
+
+具体错误记录：
+{'csv_row': 31741, 'field': 'LEASE_COMMENCE_DATE', 'issue': 'temporal_inconsistency', 'original': '2022', 'cleaned': '', 'action': 'set_empty', 'detail': 'Lease start year exceeds rental approval year; correct year unknown'}

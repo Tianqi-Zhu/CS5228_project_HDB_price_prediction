@@ -223,3 +223,8 @@ output/submissions/
 reports/validation/**/predictions.csv
 reports/runs/**/submission.csv
 .integration-work/
+
+# ReLU experiment: generated training copies and local OS metadata
+.DS_Store
+outputs/data_quality/*.csv
+outputs/baseline*-submission.csv

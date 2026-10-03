@@ -134,3 +134,19 @@ python -m analysis.main predict --model-path models/lightgbm_C_property_time_tow
 ```powershell
 python -m unittest discover -s tests -v
 ```
+
+## ReLU 神经网络实验
+
+本分支新增独立的 ReLU 回归实验，完整说明见 [README-neural.md](README-neural.md)。已有 `analysis/` 流程及其环境配置保留。
+
+```bash
+conda env create -f environment-neural.yml
+conda activate cs5228-hdb
+python data_quality.py
+python -m unittest -v test_data_quality.py test_neural.py
+python train_relu.py
+```
+
+网络使用 128、64 两层 ReLU 隐藏层。先用 2024 年第四季度选训练轮数，再在 2025 年第一季度的 8,924 条完整记录上评估：MAE **334.26**、RMSE **463.97**。验证时间区间与原有实验不同，不应直接跨区间比较分数。训练集按 IQR 规则移除 874 条记录后，使用 149,126 条记录重训并生成测试预测。
+
+已记录的结果见 [指标](outputs/neural_network/metrics.json)、[预测文件](outputs/neural_network/submission.csv) 和 [评估图](outputs/neural_network/model_evaluation.png)。这些是历史验证结果及无标签测试集的预测，不是测试集成绩。

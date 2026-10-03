@@ -1,0 +1,147 @@
+{
+  "seed": 42,
+  "architecture": [
+    128,
+    64,
+    1
+  ],
+  "hidden_activation": "relu",
+  "output_activation": "identity",
+  "optimizer": "adam",
+  "loss": "squared_error_on_standardized_rent",
+  "epochs": 2,
+  "numeric_features": [
+    "area",
+    "lease_year",
+    "lease_age",
+    "lease_missing",
+    "month_index",
+    "month_sin",
+    "month_cos"
+  ],
+  "categorical_features": [
+    "TOWN",
+    "STREET",
+    "FLAT_TYPE",
+    "FLAT_MODEL"
+  ],
+  "excluded_features": [
+    "FURNISHED (constant)",
+    "FEE (constant)",
+    "BLOCK (ambiguous without street)"
+  ],
+  "auxiliary_data_used": false,
+  "raw_rows": 150000,
+  "cell_issues": 66113,
+  "invalid_key_rows": 0,
+  "selection_fit": {
+    "input_rows": 132802,
+    "invalid_key_rows": 0,
+    "iqr_removed": 770,
+    "retained_rows": 132032,
+    "iqr_bounds": {
+      "FLOOR_AREA_SQM": [
+        7.5,
+        171.5
+      ],
+      "MONTHLY_RENT": [
+        450.0,
+        4850.0
+      ]
+    }
+  },
+  "selection_validation_range": [
+    "2024-10",
+    "2024-12"
+  ],
+  "holdout_fit": {
+    "input_rows": 141076,
+    "invalid_key_rows": 0,
+    "iqr_removed": 796,
+    "retained_rows": 140280,
+    "iqr_bounds": {
+      "FLOOR_AREA_SQM": [
+        5.0,
+        173.0
+      ],
+      "MONTHLY_RENT": [
+        450.0,
+        4850.0
+      ]
+    }
+  },
+  "holdout_range": [
+    "2025-01",
+    "2025-03"
+  ],
+  "holdout_rows": 8924,
+  "relu": {
+    "MAE": 334.2570879763554,
+    "RMSE": 463.97194036186323,
+    "R2": 0.48633730486651505
+  },
+  "baseline": {
+    "MAE": 356.0159436994103,
+    "RMSE": 491.2667412046303,
+    "R2": 0.42412354859958057
+  },
+  "holdout_by_month": [
+    {
+      "month": "2025-01",
+      "rows": 2870,
+      "MAE": 339.99279009268486,
+      "RMSE": 477.2402580257303,
+      "R2": 0.46659817708508133
+    },
+    {
+      "month": "2025-02",
+      "rows": 3022,
+      "MAE": 332.4909997544538,
+      "RMSE": 460.0085699388954,
+      "R2": 0.5045318010940651
+    },
+    {
+      "month": "2025-03",
+      "rows": 3032,
+      "MAE": 330.58810827078867,
+      "RMSE": 455.0812113557915,
+      "R2": 0.4860218543104218
+    }
+  ],
+  "final_fit": {
+    "input_rows": 150000,
+    "invalid_key_rows": 0,
+    "iqr_removed": 874,
+    "retained_rows": 149126,
+    "iqr_bounds": {
+      "FLOOR_AREA_SQM": [
+        5.0,
+        173.0
+      ],
+      "MONTHLY_RENT": [
+        450.0,
+        4850.0
+      ]
+    }
+  },
+  "test_rows": 50000,
+  "test_prediction_summary": {
+    "min": 1839.326461883058,
+    "median": 3115.0961008122395,
+    "mean": 3123.528385071322,
+    "max": 4520.878552325346
+  },
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "sklearn": "1.9.1",
+    "joblib": "1.6.0"
+  },
+  "input_sha256": {
+    "train.csv": "6d7a417de72112361f8353659ba6fe44a442b07465b488aff1b03f7ec1ea3ba6",
+    "test.csv": "dfc407406d957bbf7c2f005e5d9852b1bfc6546cd4186f07e6824d8e03e64cfc",
+    "example-submission.csv": "ab751676b2bfc6121ac3543075d4f2c8978a6d73a14a3442a1bb7bdbf7867678"
+  },
+  "seconds": 8.332717332988977
+}

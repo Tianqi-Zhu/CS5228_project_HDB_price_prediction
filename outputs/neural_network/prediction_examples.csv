@@ -1,0 +1,11 @@
+Id,RENT_APPROVAL_DATE,TOWN,BLOCK,STREET,FLAT_TYPE,FLAT_MODEL,FLOOR_AREA_SQM,FURNISHED,LEASE_COMMENCE_DATE,FEE,Predicted
+0,2025-03,kallang/whampoa,74,whampoa drive,3-room,improved,66.0,yes,1981,0.0,2630.52
+1,2025-03,bukit timah,6,farrer road,4-room,improved,91.0,yes,1974,0.0,3601.65
+2,2025-03,pasir ris,755,pasir ris street 71,4-room,model a,105.0,yes,1996,0.0,3200.46
+3,2025-03,punggol,299,punggol central,4-room,premium apartment,94.0,yes,2003,0.0,3047.63
+4,2025-03,tampines,869a,tampines avenue 8,4-room,model a,92.0,yes,2015,0.0,3351.44
+5,2025-03,woodlands,313,woodlands street 31,4-room,model a,103.0,yes,1993,0.0,2972.01
+6,2025-03,bedok,115,bedok reservoir road,executive,maisonette,150.0,yes,1985,0.0,3662.53
+7,2025-03,hougang,110,hougang avenue 1,3-room,new generation,67.0,yes,1982,0.0,2616.01
+8,2025-03,marine parade,27,marine crescent,5-room,standard,126.0,yes,1975,0.0,3919.22
+9,2025-03,yishun,277,yishun street 22,executive,maisonette,146.0,yes,1985,0.0,3360.77
