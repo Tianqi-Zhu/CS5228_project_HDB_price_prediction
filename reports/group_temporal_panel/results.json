@@ -5,6 +5,10 @@
   "correlation_minimum_paired_months": 24,
   "correlation_period": "Before 2024-04",
   "correlation_target": "Within-group month-on-month mean/median rent change",
+  "planning_area_chart_targets": [
+    "Month-on-month mean rent change",
+    "Month-on-month median rent change"
+  ],
   "prediction_scenario": "Monthly-updated one-step-ahead; prior-month group rent and market observations known",
   "model": "Per-group Ridge(alpha=10) with training-only median imputation and standardization",
   "baseline_predictors": [

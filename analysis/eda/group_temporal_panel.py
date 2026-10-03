@@ -185,9 +185,11 @@ def pooled_scores(predictions: pd.DataFrame) -> pd.DataFrame:
     return pooled
 
 
-def plot_correlations(correlations: pd.DataFrame) -> None:
+def plot_correlations(correlations: pd.DataFrame, rent_stat: str) -> None:
+    if rent_stat not in ("mean", "median"):
+        raise ValueError(f"Unsupported rent statistic: {rent_stat}")
     part = correlations[(correlations["grain"] == "planning_area") &
-                        (correlations["rent_stat"] == "median")]
+                        (correlations["rent_stat"] == rent_stat)]
     if part.empty:
         return
     wide = part.pivot(index="group", columns="signal", values="pearson_r").reindex(columns=SIGNALS)
@@ -197,10 +199,11 @@ def plot_correlations(correlations: pd.DataFrame) -> None:
     ax.set_yticks(range(len(wide)), wide.index, fontsize=8)
     ax.set_xticks(range(len(wide.columns)), ["COE A growth", "COE C growth", "COE C bid pressure",
                                                   "SG return", "SG 3m return"], rotation=30, ha="right")
-    ax.set(title="Planning-area median-rent growth vs prior-month market signals",
+    ax.set(title=f"Planning-area {rent_stat}-rent growth vs prior-month market signals",
            xlabel="Pre-2024-04 Pearson r; each shown pair has at least 24 months")
     fig.colorbar(im, ax=ax, shrink=.7, label="Pearson r")
-    fig.savefig(OUT / "01_planning_area_correlations.png", dpi=160, facecolor="white")
+    name = "01_planning_area_correlations.png" if rent_stat == "mean" else "04_planning_area_median_correlations.png"
+    fig.savefig(OUT / name, dpi=160, facecolor="white")
     plt.close(fig)
 
 
@@ -261,7 +264,8 @@ def main() -> None:
     correlations.to_csv(OUT / "group_correlations.csv", index=False, float_format="%.4f")
     scores.to_csv(OUT / "group_forward_scores.csv", index=False, float_format="%.4f")
     pooled.to_csv(OUT / "pooled_forward_scores.csv", index=False, float_format="%.4f")
-    plot_correlations(correlations)
+    plot_correlations(correlations, "mean")
+    plot_correlations(correlations, "median")
     plot_flat_type_correlations(correlations)
     plot_validation(pooled)
     after = {str(p.relative_to(DATA)): sha256(p) for p in SOURCES}
@@ -274,6 +278,7 @@ def main() -> None:
         "correlation_minimum_paired_months": MIN_CORRELATION_MONTHS,
         "correlation_period": f"Before {VALIDATION_START}",
         "correlation_target": "Within-group month-on-month mean/median rent change",
+        "planning_area_chart_targets": ["Month-on-month mean rent change", "Month-on-month median rent change"],
         "prediction_scenario": "Monthly-updated one-step-ahead; prior-month group rent and market observations known",
         "model": "Per-group Ridge(alpha=10) with training-only median imputation and standardization",
         "baseline_predictors": BASE, "feature_variants": VARIANTS,
