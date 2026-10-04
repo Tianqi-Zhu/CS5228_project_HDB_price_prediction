@@ -151,6 +151,7 @@ activemq-data/
 .env
 .envrc
 .venv
+.venv-model-benchmark/
 env/
 venv/
 ENV/
@@ -224,6 +225,7 @@ __marimo__/
 output/submissions/
 reports/validation/**/predictions.csv
 reports/runs/**/submission.csv
+reports/runs/
 .integration-work/
 reports/deep_learning/*/predictions.csv
 reports/deep_learning/*/history.csv

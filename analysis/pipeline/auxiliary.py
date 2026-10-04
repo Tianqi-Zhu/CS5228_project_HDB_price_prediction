@@ -180,8 +180,10 @@ def _legacy_spatial_aliases(frame: pd.DataFrame) -> pd.DataFrame:
     result = frame.copy()
     aliases = {
         "NEAREST_MRT_KM": "MRT_DIST_KM",
+        "NEAREST_OPEN_MRT_KM": "MRT_DIST_KM",
         "NEAREST_MALL_KM": "MALL_DIST_KM",
         "NEAREST_SCHOOL_KM": "PRIMARY_SCHOOL_DIST_KM",
+        "NEAREST_PRIMARY_SCHOOL_KM": "PRIMARY_SCHOOL_DIST_KM",
         "DISTANCE_TO_CBD_KM": "CBD_DIST_KM",
         "BUILDING_AGE_FROM_COMPLETION": "BUILDING_AGE_YEARS",
     }
@@ -192,6 +194,13 @@ def _legacy_spatial_aliases(frame: pd.DataFrame) -> pd.DataFrame:
             legacy = f"{prefix}_COUNT_{radius:.1f}KM"
             current = f"{source}_COUNT_{str(radius).replace('.', '_')}KM"
             result[legacy] = result[current]
+            metres = int(radius * 1000)
+            spatial_prefix = "OPEN_MRT" if prefix == "MRT" else (
+                "PRIMARY_SCHOOL" if prefix == "SCHOOL" else prefix
+            )
+            result[f"{spatial_prefix}_COUNT_{metres}M"] = result[current]
+    if "PLANNED_MRT_DIST_KM" in result:
+        result["NEAREST_PLANNED_MRT_KM"] = result["PLANNED_MRT_DIST_KM"]
     result["MRT_ACCESS_SCORE"] = 1.0 / (1.0 + result["NEAREST_MRT_KM"])
     result["AMENITY_DENSITY_1KM"] = (
         result["MRT_COUNT_1.0KM"] + result["MALL_COUNT_1.0KM"] + result["SCHOOL_COUNT_1.0KM"]
@@ -230,9 +239,12 @@ def add_spatial_features(
     if len(joined) != len(frame) or not np.array_equal(joined.pop("_ROW_ORDER"), row_order):
         raise AssertionError("Auxiliary join changed row count or order")
     points = joined[["LATITUDE", "LONGITUDE"]]
-    open_mrt = mrt.loc[mrt["STATUS"].astype(str).str.casefold().eq("open")]
+    status = mrt["STATUS"].astype(str).str.casefold()
+    open_mrt = mrt.loc[status.eq("open")]
+    planned_mrt = mrt.loc[status.eq("planned")]
     school_points = primary_schools(schools, include_mixed=True)
-    for places, prefix in ((open_mrt, "MRT"), (malls, "MALL"), (school_points, "PRIMARY_SCHOOL")):
+    for places, prefix in ((open_mrt, "MRT"), (planned_mrt, "PLANNED_MRT"),
+                           (malls, "MALL"), (school_points, "PRIMARY_SCHOOL")):
         joined = pd.concat([joined, _facility_features(points, places, prefix)], axis=1)
     cbd = pd.DataFrame({"LATITUDE": [1.2840], "LONGITUDE": [103.8510]})
     joined["CBD_DIST_KM"] = _facility_features(points, cbd, "CBD")["CBD_DIST_KM"]
@@ -242,7 +254,9 @@ def add_spatial_features(
     return _legacy_spatial_aliases(joined)
 
 
-def build_auxiliary_features(raw: pd.DataFrame, *, include_macro: bool = False) -> pd.DataFrame:
+def build_auxiliary_features(
+    raw: pd.DataFrame, *, include_macro: bool = False, include_mixed_primary: bool = False,
+) -> pd.DataFrame:
     """Return row-preserving property, time, block and facility features."""
     frame = prepare_main(raw)
     keys = _normalized_keys(frame)
@@ -290,11 +304,16 @@ def build_auxiliary_features(raw: pd.DataFrame, *, include_macro: bool = False) 
     joined["AREA_PER_ROOM"] = joined["FLOOR_AREA_SQM"] / joined["ROOM_COUNT"].replace(0, np.nan)
 
     mrt = pd.read_csv(AUX / "sg-mrt-stations.csv")
-    mrt = mrt.loc[mrt["STATUS"].astype(str).str.casefold().eq("open")]
+    status = mrt["STATUS"].astype(str).str.casefold()
+    open_mrt = mrt.loc[status.eq("open")]
+    planned_mrt = mrt.loc[status.eq("planned")]
     malls = pd.read_csv(AUX / "sg-shopping-malls.csv")
-    schools = primary_schools(pd.read_csv(AUX / "sg-schools.csv"), include_mixed=False)
+    schools = primary_schools(
+        pd.read_csv(AUX / "sg-schools.csv"), include_mixed=include_mixed_primary,
+    )
     point_columns = joined[["LATITUDE", "LONGITUDE"]]
-    for places, prefix in ((mrt, "MRT"), (malls, "MALL"), (schools, "PRIMARY_SCHOOL")):
+    for places, prefix in ((open_mrt, "MRT"), (planned_mrt, "PLANNED_MRT"),
+                           (malls, "MALL"), (schools, "PRIMARY_SCHOOL")):
         joined = pd.concat([joined, _facility_features(point_columns, places, prefix)], axis=1)
 
     cbd = pd.DataFrame({"LATITUDE": [1.2840], "LONGITUDE": [103.8510]})

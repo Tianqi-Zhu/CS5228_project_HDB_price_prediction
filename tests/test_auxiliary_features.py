@@ -40,6 +40,24 @@ class AuxiliaryFeatureTests(unittest.TestCase):
         self.assertTrue(pd.isna(result.loc[0, "MAX_FLOOR"]))
         self.assertTrue(pd.isna(result.loc[0, "POSTAL_CODE"]))
 
+    def test_planned_mrt_and_spatial_branch_aliases(self):
+        rentals = pd.DataFrame({"RENT_APPROVAL_DATE": ["2024-01"], "TOWN": ["Foo"],
+                                "BLOCK": ["1"], "STREET": ["Main Road"]})
+        blocks = pd.DataFrame({"TOWN": ["foo"], "BLOCK": ["1"], "STREET": ["main road"],
+                               "POSTAL_CODE": ["123456"], "LATITUDE": [1.30], "LONGITUDE": [103.80],
+                               "MAX_FLOOR": [12], "YEAR_COMPLETED": [1990], "SUBZONE": ["foo"],
+                               "PLANNING_AREA": ["foo"], "REGION": ["central"]})
+        mrt = pd.DataFrame({"STATUS": ["open", "planned"], "LATITUDE": [1.30, 1.31],
+                            "LONGITUDE": [103.80, 103.81]})
+        malls = pd.DataFrame({"LATITUDE": [1.30], "LONGITUDE": [103.80]})
+        schools = pd.DataFrame({"MAINLEVEL_CODE": ["p1"], "LATITUDE": [1.30],
+                                "LONGITUDE": [103.80]})
+        result = add_spatial_features(rentals, blocks, mrt, malls, schools)
+        self.assertEqual(result.loc[0, "NEAREST_OPEN_MRT_KM"], 0)
+        self.assertGreater(result.loc[0, "NEAREST_PLANNED_MRT_KM"], 0)
+        self.assertEqual(result.loc[0, "OPEN_MRT_COUNT_500M"], 1)
+        self.assertEqual(result.loc[0, "PRIMARY_SCHOOL_COUNT_500M"], 1)
+
     def test_stock_feature_uses_month_end_close_returns(self):
         rentals = pd.DataFrame({"RENT_APPROVAL_DATE": ["2021-03"]})
         stocks = pd.DataFrame({

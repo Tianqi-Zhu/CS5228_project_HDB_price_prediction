@@ -31,6 +31,7 @@ analysis/
   eda/
     run.py                   EDA 统一入口
     overview.py              综合 EDA：11 图、18 表和摘要
+    spatial_controls.py      空间描述、固定效应、匹配分析总入口
     pdf_report.py            15 页阶段 PDF
     audits/main_data.py      train/test 专项审计
     audits/auxiliary.py      六份辅助数据专项审计
@@ -39,6 +40,10 @@ analysis/
     compare_models.py        四模型同切分比较
     deep_learning.py         GPU 类别嵌入与特征 Transformer
     auxiliary_boosting.py    同辅助特征的 LightGBM 对照
+    auxiliary_ablation.py    空间与宏观辅助特征逐组消融
+    spatiotemporal_hybrid.py  只使用预测时点之前记录的历史空间模型
+    neural_tabm.py           TabM 风格神经网络及树模型融合
+    relu_mlp.py              嵌套时间验证的 sklearn ReLU MLP
 data/                        原始数据
 reports/eda/                 EDA 主报告、图表、表格及补充分析
 reports/model_*/             历史模型实验指标与图表
@@ -99,6 +104,20 @@ python -m analysis.main validate --model catboost --features C --fit-window-mont
 
 # 重建综合 EDA 的阶段 PDF（不包含全部 ML 实验）
 python -m analysis.main report
+
+# 四类互补空间分析共用一次内存特征构建，不生成 processed CSV
+python -m analysis.main spatial-controls
+
+# 时间、经济和历史空间分析
+python -m analysis.main aux-ablation
+python -m analysis.main economic-signals
+python -m analysis.main economic-ablation
+python -m analysis.main group-temporal
+python -m analysis.main spatiotemporal
+
+# 两条独立神经网络路线
+python -m analysis.main tabm
+python -m analysis.main relu
 ```
 
 `compare` 若没有 CatBoost 结果会先生成；已有结果时会检查源文件、特征组和验证窗口是否一致。`validate` 记录模型配置、版本、源文件哈希、RMSE/MAE/偏差，以及按月份、Town、户型分组的误差。
@@ -136,7 +155,7 @@ python -m analysis.main predict --model-path models/lightgbm_C_property_time_tow
 
 ## 已有成果与边界
 
-已经保留主数据和六份辅助数据的第一轮 EDA、设施距离与租金关联分析、近期中位数基线，以及 Ridge、Random Forest、CatBoost、LightGBM 的固定参数比较。A/B/C 模型目前只使用主数据特征；辅助数据尚未进入这些监督学习实验。宏观特征及设施历史开放日期仍需按预测时点审查。
+已经保留主数据和六份辅助数据的 EDA、设施距离的固定效应与重叠分层分析、近期中位数基线，以及 Ridge、Random Forest、CatBoost、LightGBM、深度网络、TabM 风格网络和 ReLU MLP。辅助楼栋、空间与历史租金特征已进入独立监督学习实验；同月宏观特征未进入最终组合，设施开放日期仍需按预测时点审查。
 
 已有数字、验证区间、局限和后续实验见 [中期报告](midterm_report.md)及 [EDA 主报告](reports/eda/report.md)。逐文件辅助数据审计位于 [补充报告](reports/eda/supplementary/auxiliary/report.md)，目录和统计口径见 [EDA 目录说明](reports/eda/README.md)。[阶段 PDF](reports/eda/progress_report.pdf) 展示综合 EDA，完整 ML 实验以中期报告为准。保存的结果均为本地验证分数，并不保证参数最优或代表 Kaggle 测试成绩。
 
@@ -145,6 +164,8 @@ python -m analysis.main predict --model-path models/lightgbm_C_property_time_tow
 代码职责、EDA 文件命名和两套统计口径详见 [项目结构说明](docs/project_structure.md)。
 
 整合前后的指标、数据完整性及完整预测流程核验记录见 [整合核验](docs/integration_verification.md)。
+
+五个工作分支的来源映射、保留/排除内容和指标可比性见 [分支整合说明](docs/branch_integration.md)。
 
 ```powershell
 python -m unittest discover -s tests -v

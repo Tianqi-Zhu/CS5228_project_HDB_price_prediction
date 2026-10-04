@@ -168,6 +168,11 @@ class PipelineChecks(unittest.TestCase):
             "analysis.eda.economic_signals",
             "analysis.eda.group_temporal_panel",
             "analysis.eda.temporal_correlations",
+            "analysis.eda.spatial_controls",
+            "analysis.eda.analyze_spatial_features",
+            "analysis.eda.analyze_mrt_adjusted",
+            "analysis.eda.analyze_mrt_matched",
+            "analysis.eda.analyze_amenities_adjusted",
         ]
         for module in modules:
             with self.subTest(module=module):

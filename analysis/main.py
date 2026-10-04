@@ -115,6 +115,7 @@ def main(argv=None):
     commands.add_parser("economic-signals", help="Run prior-month economic signal analysis")
     commands.add_parser("economic-ablation", help="Compare engineered economic features")
     commands.add_parser("group-temporal", help="Run grouped temporal panel analysis")
+    commands.add_parser("spatial-controls", help="Run spatial overview, fixed-effect and matching studies")
     commands.add_parser("spatiotemporal", help="Run expanding-window historical/spatial forecasts")
     tabm = commands.add_parser("tabm", help="Run the TabM-style neural/tree experiment")
     tabm.add_argument("--epochs", type=positive_integer, default=40)
@@ -194,6 +195,9 @@ def main(argv=None):
         return run()
     if args.command == "group-temporal":
         from analysis.eda.group_temporal_panel import main as run
+        return run()
+    if args.command == "spatial-controls":
+        from analysis.eda.spatial_controls import main as run
         return run()
     if args.command == "spatiotemporal":
         from analysis.experiments.spatiotemporal_hybrid import main as run

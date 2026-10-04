@@ -24,11 +24,17 @@ analysis/
 │   ├── auxiliary_boosting.py # 同辅助特征的 LightGBM 对照
 │   ├── auxiliary_catboost.py # 同辅助特征的 CatBoost 对照
 │   ├── historical_priors.py # 只使用过去月份的层级租金先验
+│   ├── auxiliary_ablation.py # 空间／宏观辅助特征消融
+│   ├── economic_feature_ablation.py # 经济特征对照
+│   ├── spatiotemporal_hybrid.py # 固定预测原点的历史空间模型
+│   ├── neural_tabm.py       # TabM 风格网络及树模型融合
+│   ├── relu_mlp.py          # 嵌套时间验证 ReLU MLP
 │   └── summarize_deep_learning.py # 深度、历史与混合集成汇总
 ├── eda/
 │   ├── run.py              # EDA 唯一入口
 │   ├── overview.py         # 综合 EDA：11 图、18 表和摘要
 │   ├── pdf_report.py       # 15 页阶段 PDF
+│   ├── spatial_controls.py # 空间描述、固定效应、匹配分析总入口
 │   └── audits/
 │       ├── main_data.py    # train/test 专项审计和 5 张补充图
 │       └── auxiliary.py    # 六份辅助数据审计和 3 张补充图
@@ -77,6 +83,12 @@ python -m analysis.main baseline
 python -m analysis.main compare
 python -m analysis.main validate --model lightgbm --features C
 python -m analysis.main report
+python -m analysis.main spatial-controls
+python -m analysis.main aux-ablation
+python -m analysis.main economic-ablation
+python -m analysis.main spatiotemporal
+python -m analysis.main tabm
+python -m analysis.main relu
 ```
 
 | 命令 | 默认输出 |
@@ -93,6 +105,12 @@ python -m analysis.main report
 | `deep` | `reports/deep_learning/<实验名>/` |
 | `aux-boost` | `reports/deep_learning/aux_lightgbm/` |
 | `deep-summary` | `reports/deep_learning/summary/` |
+| `spatial-controls` | `reports/spatial_features/` |
+| `aux-ablation` | `reports/auxiliary_ablation/` |
+| `economic-ablation` | `reports/economic_feature_ablation/` |
+| `spatiotemporal` | `reports/spatiotemporal_hybrid/` |
+| `tabm` | `reports/neural_tabm/` |
+| `relu` | `reports/relu_mlp/` |
 
 辅助楼栋、设施距离和历史租金特征已进入独立实验；COE 与股票月度特征也完成对照，
 但因验证 RMSE 变差而未进入选择的集成。设施开放日期和同月宏观数据的可用时点仍需
