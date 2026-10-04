@@ -22,7 +22,7 @@ from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 from threadpoolctl import threadpool_limits
 
-from analysis.pipeline.config import DATA, DATE, REPORTS, TARGET
+from analysis.pipeline.config import DATA, DATE, EXPERIMENT_REPORTS, TARGET
 from analysis.pipeline.data import check_output_path, load_main, norm_text, protect_sources
 from analysis.pipeline.workflow import submission_frame
 
@@ -30,7 +30,8 @@ from analysis.pipeline.workflow import submission_frame
 CATEGORICAL = ["TOWN_CLEAN", "STREET_CLEAN", "FLAT_TYPE_CLEAN", "FLAT_MODEL_CLEAN"]
 NUMERIC = [
     "FLOOR_AREA_SQM", "LEASE_COMMENCE_DATE", "FLAT_AGE_YEARS",
-    "APPROVAL_MONTH_INDEX", "APPROVAL_MONTH_SIN", "APPROVAL_MONTH_COS",
+    "LEASE_MISSING", "APPROVAL_MONTH_INDEX", "APPROVAL_MONTH_SIN",
+    "APPROVAL_MONTH_COS",
 ]
 
 
@@ -40,6 +41,10 @@ def feature_frame(raw: pd.DataFrame) -> pd.DataFrame:
 
     frame = prepare_main(raw)
     dates = pd.to_datetime(frame[DATE], format="%Y-%m", errors="raise")
+    lease = pd.to_numeric(frame["LEASE_COMMENCE_DATE"], errors="coerce")
+    invalid_lease = lease > dates.dt.year
+    frame.loc[invalid_lease, "LEASE_COMMENCE_DATE"] = np.nan
+    frame["LEASE_MISSING"] = frame["LEASE_COMMENCE_DATE"].isna().astype(float)
     frame["STREET_CLEAN"] = norm_text(frame["STREET"]).fillna("unknown")
     frame["APPROVAL_MONTH_SIN"] = np.sin(2 * np.pi * dates.dt.month / 12)
     frame["APPROVAL_MONTH_COS"] = np.cos(2 * np.pi * dates.dt.month / 12)
@@ -133,7 +138,7 @@ def fit_epochs(frame: pd.DataFrame, *, epochs: int, seed: int):
 
 
 def run(
-    output_dir: Path = REPORTS / "relu_mlp",
+    output_dir: Path = EXPERIMENT_REPORTS / "relu_mlp",
     *, max_epochs: int = 80,
     patience: int = 12,
     seed: int = 42,
@@ -142,7 +147,8 @@ def run(
     output_dir = check_output_path(Path(output_dir)); output_dir.mkdir(parents=True, exist_ok=True)
     sources = [DATA / "train.csv", DATA / "test.csv", DATA / "example-submission.csv"]
     started = time.time()
-    with protect_sources(sources) as hashes, threadpool_limits(limits=4):
+    # Two numerical threads preserve the source branch's deterministic MLP run.
+    with protect_sources(sources) as hashes, threadpool_limits(limits=2):
         train = feature_frame(load_main(DATA / "train.csv", require_target=True))
         selection_fit = train.loc[train[DATE] < "2024-10"].copy()
         tuning = train.loc[(train[DATE] >= "2024-10") & (train[DATE] < "2025-01")].copy()
@@ -204,7 +210,7 @@ def main(argv=None):
     parser.add_argument("--write-submission", action="store_true")
     args = parser.parse_args(argv)
     return run(
-        args.output_dir or REPORTS / "relu_mlp", max_epochs=args.max_epochs,
+        args.output_dir or EXPERIMENT_REPORTS / "relu_mlp", max_epochs=args.max_epochs,
         patience=args.patience, seed=args.seed, write_submission=args.write_submission,
     )
 

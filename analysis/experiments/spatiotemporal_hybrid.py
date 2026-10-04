@@ -30,13 +30,13 @@ from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 
 from analysis.pipeline.auxiliary import build_auxiliary_features
-from analysis.pipeline.config import AUX, DATA, FEATURE_SETS, REPORTS
+from analysis.pipeline.config import AUX, DATA, EXPERIMENT_REPORTS, FEATURE_SETS
 from analysis.pipeline.data import sha256
 from analysis.pipeline.evaluation import metrics
 from analysis.experiments.auxiliary_ablation import AMENITIES, BLOCK
 
 
-OUT = REPORTS / "spatiotemporal_hybrid"
+OUT = EXPERIMENT_REPORTS / "spatiotemporal_hybrid"
 TARGET = "MONTHLY_RENT"
 MONTH = "_MONTH"
 GROUP_KEYS = ["PLANNING_AREA", "FLAT_TYPE_CLEAN"]

@@ -16,10 +16,10 @@ from analysis.pipeline.data import check_output_path
 import pandas as pd
 from PIL import Image, ImageDraw, ImageFont
 
-from analysis.pipeline.config import DATA, REPORTS, VALIDATION_START
+from analysis.pipeline.config import DATA, EDA_REPORTS, VALIDATION_START
 from analysis.pipeline.data import temporal_split
 
-DEFAULT_OUT = REPORTS / "eda" / "supplementary" / "train_test"
+DEFAULT_OUT = EDA_REPORTS / "supplementary" / "train_test"
 OUT = DEFAULT_OUT
 
 WIDTH, HEIGHT = 1600, 900

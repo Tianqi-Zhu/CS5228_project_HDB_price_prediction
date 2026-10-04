@@ -9,7 +9,9 @@ import sys
 if __package__ in (None, ""):
     sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from analysis.pipeline.config import FEATURE_SETS, MODEL_FAMILIES, REPORTS, VALIDATION_START
+from analysis.pipeline.config import (
+    EXPERIMENT_REPORTS, FEATURE_SETS, MODEL_FAMILIES, VALIDATION_START,
+)
 from analysis.pipeline.data import check_output_path
 from analysis.pipeline.training import TrainerConfig
 
@@ -47,7 +49,10 @@ def run_baseline(output_dir=None):
 
 def run_compare(output_dir=None, baseline_dir=None):
     from analysis.experiments.compare_models import main as compare
-    baseline_dir = Path(baseline_dir) if baseline_dir is not None else REPORTS / "model_baseline"
+    baseline_dir = (
+        Path(baseline_dir) if baseline_dir is not None
+        else EXPERIMENT_REPORTS / "model_baseline"
+    )
     if not (baseline_dir / "results.json").exists():
         run_baseline(baseline_dir)
     return compare(output_dir=output_dir, baseline_dir=baseline_dir)
@@ -111,6 +116,8 @@ def main(argv=None):
     boost.add_argument("--output-dir", type=Path)
     deep_summary = commands.add_parser("deep-summary", help="Summarize deep models and rebuild ensembles")
     deep_summary.add_argument("--output-dir", type=Path)
+    verify = commands.add_parser("verify", help="Audit environment and saved-result consistency")
+    verify.add_argument("--output", type=Path, help="Optional JSON audit output")
     commands.add_parser("aux-ablation", help="Run staged spatial/economic feature ablation")
     commands.add_parser("economic-signals", help="Run prior-month economic signal analysis")
     commands.add_parser("economic-ablation", help="Compare engineered economic features")
@@ -175,29 +182,32 @@ def main(argv=None):
                   if key not in ("command", "output_dir")}
         config = ExperimentConfig(**values)
         label = f"{config.variant}_{config.architecture}_seed{config.seed}"
-        return train(config, args.output_dir or REPORTS / "deep_learning" / label)
+        return train(config, args.output_dir or EXPERIMENT_REPORTS / "deep_learning" / label)
     if args.command == "aux-boost":
         from analysis.experiments.auxiliary_boosting import run
-        return run(args.output_dir or REPORTS / "deep_learning" / "aux_lightgbm",
+        return run(args.output_dir or EXPERIMENT_REPORTS / "deep_learning" / "aux_lightgbm",
                    num_leaves=args.num_leaves, seed=args.seed,
                    target_encoding=not args.without_target_encoding)
     if args.command == "deep-summary":
         from analysis.experiments.summarize_deep_learning import run
         return run(output=args.output_dir)
+    if args.command == "verify":
+        from analysis.verification import main as verify_main
+        return verify_main([] if args.output is None else ["--output", str(args.output)])
     if args.command == "aux-ablation":
         from analysis.experiments.auxiliary_ablation import main as run
         return run()
     if args.command == "economic-signals":
-        from analysis.eda.economic_signals import main as run
+        from analysis.studies.economic_signals import main as run
         return run()
     if args.command == "economic-ablation":
         from analysis.experiments.economic_feature_ablation import main as run
         return run()
     if args.command == "group-temporal":
-        from analysis.eda.group_temporal_panel import main as run
+        from analysis.studies.group_temporal_panel import main as run
         return run()
     if args.command == "spatial-controls":
-        from analysis.eda.spatial_controls import main as run
+        from analysis.studies.spatial.run import main as run
         return run()
     if args.command == "spatiotemporal":
         from analysis.experiments.spatiotemporal_hybrid import main as run
@@ -218,7 +228,7 @@ def main(argv=None):
     if args.command == "relu":
         from analysis.experiments.relu_mlp import run
         return run(
-            args.output_dir or REPORTS / "relu_mlp", max_epochs=args.max_epochs,
+            args.output_dir or EXPERIMENT_REPORTS / "relu_mlp", max_epochs=args.max_epochs,
             patience=args.patience, seed=args.seed, write_submission=args.write_submission,
         )
     run_dir = args.run_dir

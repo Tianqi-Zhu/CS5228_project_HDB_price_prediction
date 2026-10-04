@@ -20,13 +20,13 @@ from sklearn.linear_model import Ridge
 from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import StandardScaler
 
-from analysis.pipeline.config import AUX, DATA, REPORTS, VALIDATION_START
+from analysis.pipeline.config import AUX, DATA, STUDY_REPORTS, VALIDATION_START
 from analysis.pipeline.data import normalized_address, prepare_main, sha256
-from analysis.eda.economic_signals import attach_prior_month, monthly_market
+from analysis.studies.economic_signals import attach_prior_month, monthly_market
 from analysis.pipeline.evaluation import metrics
 
 
-OUT = REPORTS / "group_temporal_panel"
+OUT = STUDY_REPORTS / "group_temporal_panel"
 MIN_MONTH_RECORDS = 20
 MIN_CORRELATION_MONTHS = 24
 SOURCES = [DATA / "train.csv", AUX / "sg-hdb-block.csv",

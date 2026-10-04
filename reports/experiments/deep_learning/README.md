@@ -47,11 +47,11 @@ excluded from Git.
 ```powershell
 python -m pip install -r requirements-deep.txt
 
-python -m analysis.main deep --architecture transformer --width 64 --blocks 3 --batch-size 512 --learning-rate 0.0005 --recency-half-life 0 --target-encoding --seed 42 --output-dir reports/deep_learning/aux_transformer_te18_seed42
-python -m analysis.main deep --architecture transformer --width 64 --blocks 3 --batch-size 512 --learning-rate 0.0005 --recency-half-life 0 --target-encoding --seed 77 --output-dir reports/deep_learning/aux_transformer_te18_seed77
-python -m analysis.main deep --architecture resnet --recency-half-life 0 --target-encoding --seed 77 --output-dir reports/deep_learning/aux_resnet_te18_seed77
-python -m analysis.main aux-boost --output-dir reports/deep_learning/aux_lightgbm_l31
-python -m analysis.main deep --architecture transformer --width 64 --blocks 3 --batch-size 512 --learning-rate 0.0005 --recency-half-life 0 --target-encoding --residual-baseline --seed 42 --output-dir reports/deep_learning/aux_transformer_residual_te18_seed42
+python -m analysis.main deep --architecture transformer --width 64 --blocks 3 --batch-size 512 --learning-rate 0.0005 --recency-half-life 0 --target-encoding --seed 42 --output-dir reports/experiments/deep_learning/aux_transformer_te18_seed42
+python -m analysis.main deep --architecture transformer --width 64 --blocks 3 --batch-size 512 --learning-rate 0.0005 --recency-half-life 0 --target-encoding --seed 77 --output-dir reports/experiments/deep_learning/aux_transformer_te18_seed77
+python -m analysis.main deep --architecture resnet --recency-half-life 0 --target-encoding --seed 77 --output-dir reports/experiments/deep_learning/aux_resnet_te18_seed77
+python -m analysis.main aux-boost --output-dir reports/experiments/deep_learning/aux_lightgbm_l31
+python -m analysis.main deep --architecture transformer --width 64 --blocks 3 --batch-size 512 --learning-rate 0.0005 --recency-half-life 0 --target-encoding --residual-baseline --seed 42 --output-dir reports/experiments/deep_learning/aux_transformer_residual_te18_seed42
 python -m analysis.experiments.historical_priors
 python -m analysis.main deep-summary
 ```

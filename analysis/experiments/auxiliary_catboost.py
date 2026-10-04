@@ -13,7 +13,7 @@ from sklearn.metrics import mean_absolute_error, mean_squared_error
 
 from analysis.experiments.deep_learning import AUX_CATEGORICAL, AUX_NUMERIC, add_target_encodings
 from analysis.pipeline.auxiliary import MACRO_NUMERIC, build_auxiliary_features
-from analysis.pipeline.config import DATA, DATE, REPORTS, TARGET, VALIDATION_START
+from analysis.pipeline.config import DATA, DATE, EXPERIMENT_REPORTS, TARGET, VALIDATION_START
 from analysis.pipeline.data import check_output_path, load_main, protect_sources, temporal_split
 
 
@@ -132,7 +132,7 @@ def main(argv=None):
     parser.add_argument("--output-dir", type=Path)
     args = parser.parse_args(argv)
     output = check_output_path(
-        args.output_dir or REPORTS / "deep_learning" / f"aux_catboost_{args.task_type.lower()}"
+        args.output_dir or EXPERIMENT_REPORTS / "deep_learning" / f"aux_catboost_{args.task_type.lower()}"
     )
     return run(
         output,

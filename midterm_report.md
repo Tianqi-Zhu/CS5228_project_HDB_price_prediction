@@ -63,9 +63,9 @@ python -m analysis.main baseline
 | B：房屋属性 + 时间相关特征 | A 加审批月份序号、年内月份、距租约起始的年数 | 529.96 | -49.91 |
 | C：B + Town | B 加 Town | **487.22** | -48.29 |
 
-A 到 B 的改进较大，与验证期租金明显高于早期训练期相符；但 B 同时加入审批时间和租约年数，不能把改进单独归因于某一个特征。C 在这组三种 CatBoost 模型中 RMSE 最低，不过每个验证月份仍平均低估约 S$5–S$84，见[逐月误差图](reports/model_baseline/monthly_validation_error.png)。在样本量较充足的房型中，Executive 的 RMSE 最高（S$594.62，1,778 条）。
+A 到 B 的改进较大，与验证期租金明显高于早期训练期相符；但 B 同时加入审批时间和租约年数，不能把改进单独归因于某一个特征。C 在这组三种 CatBoost 模型中 RMSE 最低，不过每个验证月份仍平均低估约 S$5–S$84，见[逐月误差图](reports/experiments/model_baseline/monthly_validation_error.png)。在样本量较充足的房型中，Executive 的 RMSE 最高（S$594.62，1,778 条）。
 
-详细结果见[模型指标](reports/model_baseline/model_metrics.csv)、[逐月误差](reports/model_baseline/monthly_errors.csv)、[分房型误差](reports/model_baseline/flat_type_errors.csv)及[运行参数与完整结果](reports/model_baseline/results.json)。这些数值来自一次时间验证，**不是 Kaggle 测试集分数**。
+详细结果见[模型指标](reports/experiments/model_baseline/model_metrics.csv)、[逐月误差](reports/experiments/model_baseline/monthly_errors.csv)、[分房型误差](reports/experiments/model_baseline/flat_type_errors.csv)及[运行参数与完整结果](reports/experiments/model_baseline/results.json)。这些数值来自一次时间验证，**不是 Kaggle 测试集分数**。
 
 ### 传统机器学习模型比较
 
@@ -80,7 +80,7 @@ A 到 B 的改进较大，与验证期租金明显高于早期训练期相符；
 | CatBoost C | 487.22 | -48.29 |
 | LightGBM | **485.09** | -42.68 |
 
-Ridge 在较晚的验证期明显高估租金；逐月偏差与历史上涨趋势被外推过强的解释一致，但尚未通过单独实验验证原因。LightGBM 在这次验证中的 RMSE 最低，比 CatBoost 低约 S$2.1。一次划分产生的这点差距不足以证明它通常更好；更长的测试期也可能改变模型排名。见[逐月模型比较图](reports/model_families/model_comparison_by_month.png)、[模型比较指标](reports/model_families/family_metrics.csv)和[运行详情](reports/model_families/results.json)。
+Ridge 在较晚的验证期明显高估租金；逐月偏差与历史上涨趋势被外推过强的解释一致，但尚未通过单独实验验证原因。LightGBM 在这次验证中的 RMSE 最低，比 CatBoost 低约 S$2.1。一次划分产生的这点差距不足以证明它通常更好；更长的测试期也可能改变模型排名。见[逐月模型比较图](reports/experiments/model_families/model_comparison_by_month.png)、[模型比较指标](reports/experiments/model_families/family_metrics.csv)和[运行详情](reports/experiments/model_families/results.json)。
 
 ## 后续工作：辅助数据与模型改进计划
 

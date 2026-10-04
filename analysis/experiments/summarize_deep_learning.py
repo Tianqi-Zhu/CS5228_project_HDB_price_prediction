@@ -9,7 +9,7 @@ import numpy as np
 import pandas as pd
 from sklearn.metrics import mean_absolute_error, mean_squared_error
 
-from analysis.pipeline.config import DATE, REPORTS
+from analysis.pipeline.config import DATE, EXPERIMENT_REPORTS
 from analysis.pipeline.data import check_output_path
 
 
@@ -49,7 +49,7 @@ def load_members(root: Path, names: list[str]):
     return frames
 
 
-def run(root=REPORTS / "deep_learning", output=None):
+def run(root=EXPERIMENT_REPORTS / "deep_learning", output=None):
     root = Path(root)
     output = check_output_path(Path(output) if output else root / "summary")
     output.mkdir(parents=True, exist_ok=True)

@@ -34,4 +34,4 @@ E + both has lower monthly RMSE in 4 of 33 validation months; it is worse in all
 The E scores reproduce the earlier forward E baseline within 0.00004 SGD RMSE over 4 matching folds.
 This is a fixed-model comparison, not proof that economic signals lack predictive value. There are few independent market months, the last holdout has been examined previously, and the supplied stock-basket membership is a snapshot. Reported row-level errors do not establish causal effects.
 
-Run python analysis/compare_economic_features.py in the 5228_hw environment. See forward_scores.csv for RMSE, MAE and bias, monthly_errors.csv for temporal drift, feature_coverage.csv for missingness, and results.json for exact feature sets and source hashes.
+Run `python -m analysis.main economic-ablation` in the `cs5228` environment. See `forward_scores.csv` for RMSE, MAE and bias, `monthly_errors.csv` for temporal drift, `feature_coverage.csv` for missingness, and `results.json` for exact feature sets and source hashes.

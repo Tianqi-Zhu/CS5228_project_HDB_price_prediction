@@ -7,10 +7,10 @@
 | 来源分支 | 保留的独有内容 | 统一后的落点 |
 | --- | --- | --- |
 | `feature/midterm-eda-models` | 主数据 EDA、A/B/C 特征、四模型比较、时间验证、提交管线 | `analysis/pipeline/`、`analysis/eda/`、基础实验 |
-| `feature/temporal-auxiliary-analysis` | 辅助特征消融、滞后经济信号、分组时间面板、固定预测原点的历史空间模型 | `auxiliary_ablation.py`、`economic_*`、`group_temporal_panel.py`、`spatiotemporal_hybrid.py` |
+| `feature/temporal-auxiliary-analysis` | 辅助特征消融、滞后经济信号、分组时间面板、固定预测原点的历史空间模型 | `analysis/experiments/auxiliary_ablation.py`、`analysis/studies/`、`spatiotemporal_hybrid.py` |
 | `feature/neural-tabm-experiment` | TabM 风格网络以及与历史树模型的融合 | `analysis/experiments/neural_tabm.py` |
 | `relu-rental-prediction` | 嵌套时间验证、仅拟合集 IQR 清理的 ReLU MLP | `analysis/experiments/relu_mlp.py` |
-| `ziyuan——spatialfeatures` | 空间特征字典、描述分析、固定效应、设施联合控制、重叠分层匹配 | `analysis/eda/analyze_*` 与统一入口 `spatial-controls` |
+| `ziyuan——spatialfeatures` | 空间特征字典、描述分析、固定效应、设施联合控制、重叠分层匹配 | `analysis/studies/spatial/` 与统一入口 `spatial-controls` |
 
 `main` 没有相对上述祖先提交的独有项目内容，因此不复制空壳结构。
 
@@ -33,7 +33,7 @@
 | TabM＋历史树 | 468.83 | 固定原点首折 | 仅 6% 神经权重；三折 pooled RMSE 542.78 |
 | ReLU MLP | 463.97 | 2025-01 至 2025-03 | 只有 3 个月且采用嵌套选 epoch，不能与 12 个月数字直接排名 |
 
-空间固定效应和匹配分析是解释性研究，不产生可与预测 RMSE 排名的分数。原空间分支的重复 LightGBM/CatBoost 基准未整包复制，因为统一辅助消融已覆盖同一问题。
+空间固定效应和匹配分析是解释性研究，不产生可与预测 RMSE 排名的分数。原空间分支的模型二进制和逐行预测未复制，但 LightGBM、CatBoost 与 KNN 的精简指标已保存在 `reports/experiments/spatial_benchmark/`。ReLU 原分支的精简历史指标保存在 `reports/experiments/relu_mlp/historical_results.json`。
 
 ## 推荐复现顺序
 

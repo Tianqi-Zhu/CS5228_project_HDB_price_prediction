@@ -31,10 +31,14 @@ analysis/
   eda/
     run.py                   EDA 统一入口
     overview.py              综合 EDA：11 图、18 表和摘要
-    spatial_controls.py      空间描述、固定效应、匹配分析总入口
     pdf_report.py            15 页阶段 PDF
     audits/main_data.py      train/test 专项审计
     audits/auxiliary.py      六份辅助数据专项审计
+  studies/
+    economic_signals.py      先行经济信号分析
+    temporal_correlations.py 时间序列相关与滞后分析
+    group_temporal_panel.py  分组时间面板
+    spatial/                 空间描述、固定效应和匹配分析
   experiments/
     baseline.py              CatBoost A/B/C 特征比较
     compare_models.py        四模型同切分比较
@@ -45,8 +49,9 @@ analysis/
     neural_tabm.py           TabM 风格神经网络及树模型融合
     relu_mlp.py              嵌套时间验证的 sklearn ReLU MLP
 data/                        原始数据
-reports/eda/                 EDA 主报告、图表、表格及补充分析
-reports/model_*/             历史模型实验指标与图表
+reports/eda/                 核心 EDA、专项审计和阶段 PDF
+reports/studies/             解释性时间与空间研究
+reports/experiments/         预测实验指标、图表和精简历史结果
 models/                      本地模型产物（.joblib 不提交 Git）
 output/submissions/          本地预测文件（不提交 Git）
 tests/                       数据完整性和管线回归检查
@@ -118,6 +123,9 @@ python -m analysis.main spatiotemporal
 # 两条独立神经网络路线
 python -m analysis.main tabm
 python -m analysis.main relu
+
+# 检查环境、源数据哈希、必需报告和跨报告指标一致性
+python -m analysis.main verify
 ```
 
 `compare` 若没有 CatBoost 结果会先生成；已有结果时会检查源文件、特征组和验证窗口是否一致。`validate` 记录模型配置、版本、源文件哈希、RMSE/MAE/偏差，以及按月份、Town、户型分组的误差。
@@ -125,7 +133,7 @@ python -m analysis.main relu
 一次完成 EDA、两组历史模型实验和 PDF，另存结果以保留历史快照：
 
 ```powershell
-python -m analysis.main all --run-dir reports/runs/run01
+python -m analysis.main all --run-dir reports/experiments/runs/run01
 ```
 
 不指定 `--run-dir` 会重建对应默认输出目录。`all` 默认不会生成提交文件；增加 `--submit` 可在上述步骤之后重训并生成本地预测。
@@ -134,7 +142,7 @@ python -m analysis.main all --run-dir reports/runs/run01
 
 深度实验将 HDB 楼栋属性、经纬度、MRT／商场／小学距离和密度加入主表，并使用只从拟合集计算的留一目标编码。固定时间验证仍为 2024-04 至 2025-03，不使用测试标签或验证期后的经济数据。
 
-当前两个特征 Transformer 与一个类别嵌入 ResNet 的等权集成 RMSE 为 **469.98**；加入辅助 LightGBM 后为 469.18。进一步使用只依赖过去月份的楼栋历史先验训练残差 Transformer，并按固定权重融合后达到 **466.47**（MAE 341.14），相比原主表 LightGBM 的 485.09 下降 18.62（3.84%）。由于模型选择反复使用同一个验证窗口，最终选择前还应增加滚动时间验证。完整配置、逐模型指标和月度误差见 [`reports/deep_learning/`](reports/deep_learning/README.md)。
+当前两个特征 Transformer 与一个类别嵌入 ResNet 的等权集成 RMSE 为 **469.98**；加入辅助 LightGBM 后为 469.18。进一步使用只依赖过去月份的楼栋历史先验训练残差 Transformer，并按固定权重融合后达到 **466.47**（MAE 341.14），相比原主表 LightGBM 的 485.09 下降 18.62（3.84%）。由于模型选择反复使用同一个验证窗口，最终选择前还应增加滚动时间验证。完整配置、逐模型指标和月度误差见 [`reports/experiments/deep_learning/`](reports/experiments/deep_learning/README.md)。
 
 ```powershell
 python -m analysis.main deep-summary
@@ -167,6 +175,9 @@ python -m analysis.main predict --model-path models/lightgbm_C_property_time_tow
 
 五个工作分支的来源映射、保留/排除内容和指标可比性见 [分支整合说明](docs/branch_integration.md)。
 
+报告总索引见 [reports/README.md](reports/README.md)，跨实验结果差异和原因见 [结果一致性检查](docs/result_consistency.md)，当前 `cs5228` 环境的实际运行清单见 [运行核验](docs/runtime_verification.md)。
+
 ```powershell
 python -m unittest discover -s tests -v
+python -m analysis.main verify
 ```

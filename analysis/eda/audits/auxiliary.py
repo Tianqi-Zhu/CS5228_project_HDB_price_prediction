@@ -22,10 +22,10 @@ import numpy as np
 import pandas as pd
 from analysis.pipeline.spatial import EARTH_RADIUS_KM, nearest_distances, primary_schools
 
-from analysis.pipeline.config import AUX, DATA, REPORTS, ROOT
+from analysis.pipeline.config import AUX, DATA, EDA_REPORTS, ROOT
 from analysis.pipeline.data import normalized_address, sha256
 
-DEFAULT_OUT = REPORTS / "eda" / "supplementary" / "auxiliary"
+DEFAULT_OUT = EDA_REPORTS / "supplementary" / "auxiliary"
 OUT = DEFAULT_OUT
 AUX_NAMES = (
     "sg-hdb-block.csv",

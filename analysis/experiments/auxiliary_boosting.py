@@ -16,7 +16,7 @@ from analysis.experiments.deep_learning import (
     AUX_CATEGORICAL, AUX_NUMERIC, add_target_encodings,
 )
 from analysis.pipeline.auxiliary import build_auxiliary_features
-from analysis.pipeline.config import DATA, DATE, REPORTS, TARGET, VALIDATION_START
+from analysis.pipeline.config import DATA, DATE, EXPERIMENT_REPORTS, TARGET, VALIDATION_START
 from analysis.pipeline.data import check_output_path, load_main, protect_sources, temporal_split
 
 
@@ -89,7 +89,9 @@ def main(argv=None):
     parser.add_argument("--without-target-encoding", action="store_true")
     parser.add_argument("--output-dir", type=Path)
     args = parser.parse_args(argv)
-    output = check_output_path(args.output_dir or REPORTS / "deep_learning" / "aux_lightgbm")
+    output = check_output_path(
+        args.output_dir or EXPERIMENT_REPORTS / "deep_learning" / "aux_lightgbm"
+    )
     return run(output, num_leaves=args.num_leaves, seed=args.seed,
                target_encoding=not args.without_target_encoding)
 

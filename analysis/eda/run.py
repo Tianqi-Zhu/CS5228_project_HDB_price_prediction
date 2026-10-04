@@ -10,14 +10,14 @@ from __future__ import annotations
 import argparse
 from pathlib import Path
 
-from analysis.pipeline.config import DATA, REPORTS
+from analysis.pipeline.config import DATA, EDA_REPORTS
 from analysis.pipeline.data import check_output_path, protect_sources
 
 from analysis.eda import overview
 from analysis.eda.audits import auxiliary, main_data
 
 
-DEFAULT_OUT = REPORTS / "eda"
+DEFAULT_OUT = EDA_REPORTS
 
 
 def main(scope: str = "all", output_dir: Path | str | None = None) -> None:

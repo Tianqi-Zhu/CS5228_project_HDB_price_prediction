@@ -4,7 +4,7 @@ import unittest
 
 import pandas as pd
 
-from analysis.eda.economic_signals import FOLDS, attach_prior_month, monthly_market
+from analysis.studies.economic_signals import FOLDS, attach_prior_month, monthly_market
 from analysis.experiments.auxiliary_ablation import FEATURE_STAGES
 from analysis.experiments.economic_feature_ablation import (
     COE_ENGINEERED, E_FEATURES, SG_STOCK_ENGINEERED, VARIANTS, score_deltas,

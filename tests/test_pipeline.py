@@ -60,6 +60,16 @@ class PipelineChecks(unittest.TestCase):
         self.assertTrue(pd.isna(result.loc[8, "FLAT_AGE_YEARS"]))
         self.assertEqual(raw.loc[8, "LEASE_COMMENCE_DATE"], 2024)
 
+    def test_relu_preserves_source_branch_lease_missing_feature(self):
+        from analysis.experiments.relu_mlp import feature_frame
+
+        raw = sample()
+        raw.loc[8, "LEASE_COMMENCE_DATE"] = 2024
+        result = feature_frame(raw)
+        self.assertTrue(pd.isna(result.loc[8, "LEASE_COMMENCE_DATE"]))
+        self.assertTrue(pd.isna(result.loc[8, "FLAT_AGE_YEARS"]))
+        self.assertEqual(result.loc[8, "LEASE_MISSING"], 1.0)
+
     def test_models_handle_unseen_categories_and_roundtrip(self):
         prepared = HDBPreprocessor().transform(sample())
         fitting, validation = temporal_split(prepared)
@@ -165,18 +175,24 @@ class PipelineChecks(unittest.TestCase):
             "analysis.experiments.spatiotemporal_hybrid",
             "analysis.experiments.neural_tabm",
             "analysis.experiments.relu_mlp",
-            "analysis.eda.economic_signals",
-            "analysis.eda.group_temporal_panel",
-            "analysis.eda.temporal_correlations",
-            "analysis.eda.spatial_controls",
-            "analysis.eda.analyze_spatial_features",
-            "analysis.eda.analyze_mrt_adjusted",
-            "analysis.eda.analyze_mrt_matched",
-            "analysis.eda.analyze_amenities_adjusted",
+            "analysis.verification",
+            "analysis.studies.economic_signals",
+            "analysis.studies.group_temporal_panel",
+            "analysis.studies.temporal_correlations",
+            "analysis.studies.spatial.run",
+            "analysis.studies.spatial.overview",
+            "analysis.studies.spatial.mrt_fixed_effects",
+            "analysis.studies.spatial.mrt_matching",
+            "analysis.studies.spatial.amenities_fixed_effects",
         ]
         for module in modules:
             with self.subTest(module=module):
                 self.assertTrue(callable(importlib.import_module(module).main))
+
+    def test_saved_result_consistency(self):
+        from analysis.verification import audit_results
+        result = audit_results()
+        self.assertTrue(result["ok"], result)
 
     def test_single_analysis_package(self):
         self.assertFalse(Path("src").exists())

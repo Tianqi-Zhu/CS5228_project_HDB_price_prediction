@@ -1,7 +1,7 @@
 """Measure the incremental value of supplied auxiliary features.
 
 Run from the repository root:
-    python analysis/compare_auxiliary_features.py
+    python -m analysis.main aux-ablation
 
 Every stage uses the same rows, validation months, LightGBM settings, and
 target. Economic lags describe a monthly-updated prediction scenario.
@@ -28,12 +28,14 @@ except ImportError:
 from analysis.pipeline.auxiliary import (
     add_economic_features, build_auxiliary_features, candidate_interactions,
 )
-from analysis.pipeline.config import AUX, DATA, FAMILY_SETTINGS, FEATURE_SETS, REPORTS, VALIDATION_START
+from analysis.pipeline.config import (
+    AUX, DATA, EXPERIMENT_REPORTS, FAMILY_SETTINGS, FEATURE_SETS, VALIDATION_START,
+)
 from analysis.pipeline.data import sha256, temporal_split
 from analysis.pipeline.evaluation import grouped_errors, metrics
 
 
-OUT = REPORTS / "auxiliary_ablation"
+OUT = EXPERIMENT_REPORTS / "auxiliary_ablation"
 BASE = FEATURE_SETS["C_property_time_town"]
 BLOCK = [
     "LATITUDE", "LONGITUDE", "MAX_FLOOR", "YEAR_COMPLETED",

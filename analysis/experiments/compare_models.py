@@ -19,7 +19,7 @@ import pandas as pd
 import sklearn
 
 from analysis.pipeline.config import (
-    CATEGORICAL, DATA, FAMILY_SETTINGS, FEATURE_SETS, REPORTS, SOURCES,
+    CATEGORICAL, DATA, EXPERIMENT_REPORTS, FAMILY_SETTINGS, FEATURE_SETS, SOURCES,
     VALIDATION_START,
 )
 from analysis.pipeline.data import check_output_path, prepare_main, sha256, temporal_split
@@ -27,8 +27,8 @@ from analysis.pipeline.evaluation import grouped_errors, metrics, plot_model_com
 from analysis.pipeline.training import HDBTrainer, TrainerConfig
 
 
-CATBOOST_OUT = REPORTS / "model_baseline"
-OUT = REPORTS / "model_families"
+CATBOOST_OUT = EXPERIMENT_REPORTS / "model_baseline"
+OUT = EXPERIMENT_REPORTS / "model_families"
 FEATURES = FEATURE_SETS["C_property_time_town"]
 MODEL_SETTINGS = FAMILY_SETTINGS
 

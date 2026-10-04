@@ -9,8 +9,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
-from analysis.eda.analyze_mrt_adjusted import fit, t_critical, test as test_fit
-from analysis.eda.spatial_common import OUTPUT, SOURCE, load_spatial_training
+from analysis.studies.spatial.mrt_fixed_effects import fit, t_critical, test as test_fit
+from analysis.studies.spatial.common import OUTPUT, SOURCE, load_spatial_training
 from analysis.pipeline.data import sha256
 
 

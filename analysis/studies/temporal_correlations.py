@@ -24,11 +24,11 @@ from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 
 from analysis.pipeline.auxiliary import add_economic_features
-from analysis.pipeline.config import AUX, DATA, REPORTS, VALIDATION_START
+from analysis.pipeline.config import AUX, DATA, STUDY_REPORTS, VALIDATION_START
 from analysis.pipeline.data import prepare_main, sha256
 
 
-OUT = REPORTS / "temporal_correlations"
+OUT = STUDY_REPORTS / "temporal_correlations"
 SOURCE_FILES = [DATA / "train.csv", AUX / "sg-coe-prices.csv", AUX / "sg-stock-prices.csv"]
 COE_CATEGORIES = ("A", "B", "C", "E")
 LEVEL_COLUMNS = {

@@ -5,7 +5,7 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
-from analysis.eda.spatial_common import OUTPUT, load_spatial_training
+from analysis.studies.spatial.common import OUTPUT, load_spatial_training
 
 OUT = OUTPUT
 TABLES = OUT / 'tables'

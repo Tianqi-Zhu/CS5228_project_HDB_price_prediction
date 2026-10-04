@@ -5,12 +5,12 @@ from __future__ import annotations
 import numpy as np
 
 from analysis.pipeline.auxiliary import build_auxiliary_features
-from analysis.pipeline.config import DATA, REPORTS
+from analysis.pipeline.config import DATA, STUDY_REPORTS
 from analysis.pipeline.data import load_main
 
 
 SOURCE = DATA / "train.csv"
-OUTPUT = REPORTS / "spatial_features"
+OUTPUT = STUDY_REPORTS / "spatial_features"
 
 
 def load_spatial_training():

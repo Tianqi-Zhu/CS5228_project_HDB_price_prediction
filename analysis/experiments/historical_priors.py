@@ -11,7 +11,7 @@ import pandas as pd
 from sklearn.metrics import mean_absolute_error, mean_squared_error
 
 from analysis.pipeline.auxiliary import build_auxiliary_features
-from analysis.pipeline.config import DATA, DATE, REPORTS, TARGET
+from analysis.pipeline.config import DATA, DATE, EXPERIMENT_REPORTS, TARGET
 from analysis.pipeline.data import check_output_path, load_main, temporal_split
 
 
@@ -118,7 +118,7 @@ def search(frame, validation_start="2024-04"):
     return fitting, validation, sorted(rows, key=lambda row: row["rmse"])
 
 
-def run(output_dir=REPORTS / "deep_learning" / "historical_priors"):
+def run(output_dir=EXPERIMENT_REPORTS / "deep_learning" / "historical_priors"):
     output_dir = check_output_path(Path(output_dir)); output_dir.mkdir(parents=True, exist_ok=True)
     frame = build_auxiliary_features(load_main(DATA / "train.csv", require_target=True))
     fitting, validation, rows = search(frame)
@@ -145,7 +145,7 @@ def main(argv=None):
     parser = argparse.ArgumentParser()
     parser.add_argument("--output-dir", type=Path)
     args = parser.parse_args(argv)
-    return run(args.output_dir or REPORTS / "deep_learning" / "historical_priors")
+    return run(args.output_dir or EXPERIMENT_REPORTS / "deep_learning" / "historical_priors")
 
 
 if __name__ == "__main__":

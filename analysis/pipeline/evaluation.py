@@ -9,7 +9,7 @@ import numpy as np
 import pandas as pd
 from sklearn.metrics import r2_score
 
-from analysis.pipeline.config import REPORTS, TARGET
+from analysis.pipeline.config import EXPERIMENT_REPORTS, TARGET
 
 
 def metrics(actual: np.ndarray, predicted: np.ndarray) -> dict[str, float]:
@@ -72,7 +72,7 @@ class HDBEvaluator:
 class HDBVisualizer:
     """Small reusable plot set for exploratory model inspection."""
 
-    def __init__(self, output_dir: str | Path = REPORTS / "figures"):
+    def __init__(self, output_dir: str | Path = EXPERIMENT_REPORTS / "figures"):
         self.output_dir = Path(output_dir)
         self.output_dir.mkdir(parents=True, exist_ok=True)
 
@@ -114,7 +114,7 @@ class HDBVisualizer:
 
 
 def make_monthly_error_figure(monthly: pd.DataFrame, model: str,
-                              output_dir=REPORTS / "model_baseline") -> None:
+                              output_dir=EXPERIMENT_REPORTS / "model_baseline") -> None:
     part = monthly[monthly["model"] == model].sort_values("group")
     months = part["group"].tolist()
     x = np.arange(len(months))
@@ -140,7 +140,7 @@ def make_monthly_error_figure(monthly: pd.DataFrame, model: str,
 
 
 def plot_model_comparison(monthly: pd.DataFrame,
-                          output_dir=REPORTS / "model_families") -> None:
+                          output_dir=EXPERIMENT_REPORTS / "model_families") -> None:
     labels = ["ridge", "random_forest", "lightgbm", "C_property_time_town"]
     display = {
         "ridge": "Ridge", "random_forest": "Random forest",

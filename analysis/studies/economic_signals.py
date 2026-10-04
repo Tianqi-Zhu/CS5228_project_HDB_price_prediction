@@ -1,6 +1,6 @@
 """Compare lagged COE and Singapore-stock signals with rent and forward RMSE.
 
-Run ``python analysis/eda_economic_signals.py`` from the repository root.
+Run ``python -m analysis.main economic-signals`` from the repository root.
 Market features describe a monthly-updated forecast: approval month t uses
 market observations through t-1, never market observations from t.
 """
@@ -17,16 +17,16 @@ import numpy as np
 import pandas as pd
 from sklearn.ensemble import HistGradientBoostingRegressor
 
-from analysis.pipeline.config import AUX, DATA, REPORTS, VALIDATION_START
+from analysis.pipeline.config import AUX, DATA, STUDY_REPORTS, VALIDATION_START
 from analysis.pipeline.data import sha256
-from analysis.eda.temporal_correlations import mix_adjusted_monthly
+from analysis.studies.temporal_correlations import mix_adjusted_monthly
 from analysis.pipeline.evaluation import metrics
 from analysis.experiments.auxiliary_ablation import (
     AMENITIES, BASE, BLOCK, feature_frame, model_inputs,
 )
 
 
-OUT = REPORTS / "economic_signals"
+OUT = STUDY_REPORTS / "economic_signals"
 SOURCES = [
     DATA / "train.csv", AUX / "sg-coe-prices.csv", AUX / "sg-stock-prices.csv",
     AUX / "sg-hdb-block.csv", AUX / "sg-mrt-stations.csv",

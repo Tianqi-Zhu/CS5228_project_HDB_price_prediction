@@ -4,7 +4,7 @@ import unittest
 
 import pandas as pd
 
-from analysis.eda.economic_signals import attach_prior_month, monthly_market
+from analysis.studies.economic_signals import attach_prior_month, monthly_market
 
 
 class EconomicSignalTests(unittest.TestCase):

@@ -7,7 +7,7 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
-from analysis.eda.spatial_common import OUTPUT, load_spatial_training
+from analysis.studies.spatial.common import OUTPUT, load_spatial_training
 
 OUT = OUTPUT / 'mrt_matched'
 LABELS = ['[0,0.3]', '(0.3,0.6]', '(0.6,1.0]', '(1.0,1.5]', '(1.5,2.0]', '(2.0,inf)']

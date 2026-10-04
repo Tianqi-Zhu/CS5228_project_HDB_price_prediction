@@ -8,6 +8,7 @@
 ```text
 analysis/
 ├── main.py                 # 唯一 CLI
+├── verification.py         # 环境、报告和指标一致性检查
 ├── pipeline/
 │   ├── config.py           # 路径、特征组和固定模型参数
 │   ├── data.py             # 读取、清理、特征构造、时间划分和源文件保护
@@ -34,10 +35,19 @@ analysis/
 │   ├── run.py              # EDA 唯一入口
 │   ├── overview.py         # 综合 EDA：11 图、18 表和摘要
 │   ├── pdf_report.py       # 15 页阶段 PDF
-│   ├── spatial_controls.py # 空间描述、固定效应、匹配分析总入口
 │   └── audits/
 │       ├── main_data.py    # train/test 专项审计和 5 张补充图
 │       └── auxiliary.py    # 六份辅助数据审计和 3 张补充图
+└── studies/
+    ├── economic_signals.py # 先行经济信号
+    ├── temporal_correlations.py # 时间序列相关和滞后
+    ├── group_temporal_panel.py # 分组时间面板
+    └── spatial/
+        ├── run.py          # 四类空间研究统一入口
+        ├── overview.py     # 空间描述与相关性
+        ├── mrt_fixed_effects.py # MRT 固定效应
+        ├── mrt_matching.py # 重叠分层匹配
+        └── amenities_fixed_effects.py # 联合设施控制
 ```
 
 合并后的职责关系：
@@ -89,6 +99,7 @@ python -m analysis.main economic-ablation
 python -m analysis.main spatiotemporal
 python -m analysis.main tabm
 python -m analysis.main relu
+python -m analysis.main verify
 ```
 
 | 命令 | 默认输出 |
@@ -97,20 +108,23 @@ python -m analysis.main relu
 | `eda --scope overview` | `reports/eda/` 主报告图表 |
 | `eda --scope main` | `reports/eda/supplementary/train_test/` |
 | `eda --scope auxiliary` | `reports/eda/supplementary/auxiliary/` |
-| `baseline` | `reports/model_baseline/` |
-| `compare` | `reports/model_families/` |
-| `validate` | `reports/validation/<模型_特征_切点_窗口>/` |
+| `baseline` | `reports/experiments/model_baseline/` |
+| `compare` | `reports/experiments/model_families/` |
+| `validate` | `reports/experiments/validation/<模型_特征_切点_窗口>/` |
 | `report` | `reports/eda/progress_report.pdf` |
 | `submit` | `output/submissions/` 和 `models/` |
-| `deep` | `reports/deep_learning/<实验名>/` |
-| `aux-boost` | `reports/deep_learning/aux_lightgbm/` |
-| `deep-summary` | `reports/deep_learning/summary/` |
-| `spatial-controls` | `reports/spatial_features/` |
-| `aux-ablation` | `reports/auxiliary_ablation/` |
-| `economic-ablation` | `reports/economic_feature_ablation/` |
-| `spatiotemporal` | `reports/spatiotemporal_hybrid/` |
-| `tabm` | `reports/neural_tabm/` |
-| `relu` | `reports/relu_mlp/` |
+| `deep` | `reports/experiments/deep_learning/<实验名>/` |
+| `aux-boost` | `reports/experiments/deep_learning/aux_lightgbm/` |
+| `deep-summary` | `reports/experiments/deep_learning/summary/` |
+| `spatial-controls` | `reports/studies/spatial_features/` |
+| `economic-signals` | `reports/studies/economic_signals/` |
+| `group-temporal` | `reports/studies/group_temporal_panel/` |
+| `aux-ablation` | `reports/experiments/auxiliary_ablation/` |
+| `economic-ablation` | `reports/experiments/economic_feature_ablation/` |
+| `spatiotemporal` | `reports/experiments/spatiotemporal_hybrid/` |
+| `tabm` | `reports/experiments/neural_tabm/` |
+| `relu` | `reports/experiments/relu_mlp/` |
+| `verify` | 默认只打印，不修改报告；可用 `--output` 保存 JSON |
 
 辅助楼栋、设施距离和历史租金特征已进入独立实验；COE 与股票月度特征也完成对照，
 但因验证 RMSE 变差而未进入选择的集成。设施开放日期和同月宏观数据的可用时点仍需

@@ -19,14 +19,14 @@ import numpy as np
 import pandas as pd
 
 from analysis.pipeline.config import (
-    CATEGORICAL, CATBOOST_SETTINGS, DATA, FEATURE_SETS, REPORTS, SOURCES,
+    CATEGORICAL, CATBOOST_SETTINGS, DATA, EXPERIMENT_REPORTS, FEATURE_SETS, SOURCES,
     VALIDATION_START,
 )
 from analysis.pipeline.data import check_output_path, prepare_main, sha256, temporal_split
 from analysis.pipeline.evaluation import grouped_errors, make_monthly_error_figure, metrics
 from analysis.pipeline.training import HDBTrainer, TrainerConfig
 
-OUT = REPORTS / "model_baseline"
+OUT = EXPERIMENT_REPORTS / "model_baseline"
 MODEL_SETTINGS = CATBOOST_SETTINGS
 
 

@@ -1,6 +1,6 @@
 """Compare the E amenity baseline with targeted, prior-month market signals.
 
-Run python analysis/compare_economic_features.py from the repository root.
+Run ``python -m analysis.main economic-ablation`` from the repository root.
 Every variant uses the same HistGradientBoosting settings, rental rows, and
 expanding-window folds. Approval month t uses market data no later than t-1.
 """
@@ -13,9 +13,9 @@ import numpy as np
 import pandas as pd
 from sklearn.ensemble import HistGradientBoostingRegressor
 
-from analysis.pipeline.config import AUX, REPORTS
+from analysis.pipeline.config import AUX, EXPERIMENT_REPORTS, STUDY_REPORTS
 from analysis.pipeline.data import sha256
-from analysis.eda.economic_signals import (
+from analysis.studies.economic_signals import (
     FOLDS, SETTINGS, SOURCES, attach_prior_month, monthly_market,
 )
 from analysis.pipeline.evaluation import grouped_errors, metrics
@@ -24,7 +24,7 @@ from analysis.experiments.auxiliary_ablation import (
 )
 
 
-OUT = REPORTS / "economic_feature_ablation"
+OUT = EXPERIMENT_REPORTS / "economic_feature_ablation"
 E_FEATURES = BASE + BLOCK + AMENITIES
 COE_ENGINEERED = [
     "COE_A_PREMIUM_LAG1", "COE_C_PREMIUM_LAG1",
@@ -59,7 +59,7 @@ def score_deltas(scores: pd.DataFrame) -> pd.DataFrame:
 
 def prior_e_check(scores: pd.DataFrame) -> dict:
     """Check that E matches the earlier forward experiment."""
-    path = REPORTS / "economic_signals" / "forward_scores.csv"
+    path = STUDY_REPORTS / "economic_signals" / "forward_scores.csv"
     if not path.exists():
         return {"available": False}
     old = pd.read_csv(path)
@@ -127,7 +127,7 @@ def write_report(scores: pd.DataFrame, monthly: pd.DataFrame, check: dict) -> No
         reproduction,
         "This is a fixed-model comparison, not proof that economic signals lack predictive value. There are few independent market months, the last holdout has been examined previously, and the supplied stock-basket membership is a snapshot. Reported row-level errors do not establish causal effects.",
         "",
-        "Run python analysis/compare_economic_features.py in the 5228_hw environment. See forward_scores.csv for RMSE, MAE and bias, monthly_errors.csv for temporal drift, feature_coverage.csv for missingness, and results.json for exact feature sets and source hashes.",
+        "Run `python -m analysis.main economic-ablation` in the `cs5228` environment. See forward_scores.csv for RMSE, MAE and bias, monthly_errors.csv for temporal drift, feature_coverage.csv for missingness, and results.json for exact feature sets and source hashes.",
         "",
     ]
     (OUT / "report.md").write_text("\n".join(lines), encoding="utf-8")

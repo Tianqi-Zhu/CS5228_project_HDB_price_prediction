@@ -10,7 +10,9 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-from analysis.pipeline.config import DATA, DATE, MODELS, REPORTS, SOURCES, SUBMISSIONS, TARGET
+from analysis.pipeline.config import (
+    DATA, DATE, EXPERIMENT_REPORTS, MODELS, SOURCES, SUBMISSIONS, TARGET,
+)
 from analysis.pipeline.data import HDBPreprocessor, PreprocessorConfig, check_output_path, load_main, protect_sources
 from analysis.pipeline.evaluation import grouped_errors, make_monthly_error_figure, metrics
 from analysis.pipeline.training import HDBTrainer, TrainerConfig
@@ -29,7 +31,10 @@ def run_validation(config: TrainerConfig, output_dir=None):
         raise ValueError("The validation workflow uses time splits; random splits are a separate diagnostic")
     window = "all_history" if config.fit_window_months is None else f"last_{config.fit_window_months}m"
     label = f"{config.model_family}_{config.feature_set}_{config.validation_start}_{window}"
-    out = check_output_path(Path(output_dir) if output_dir is not None else REPORTS / "validation" / label)
+    out = check_output_path(
+        Path(output_dir) if output_dir is not None
+        else EXPERIMENT_REPORTS / "validation" / label
+    )
     with protect_sources(SOURCES) as hashes:
         processor = HDBPreprocessor(PreprocessorConfig(feature_set=config.feature_set))
         frame = processor.transform(load_main(DATA / "train.csv", require_target=True))

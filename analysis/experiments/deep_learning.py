@@ -19,7 +19,7 @@ import pandas as pd
 from sklearn.metrics import mean_absolute_error, mean_squared_error
 
 from analysis.pipeline.auxiliary import MACRO_NUMERIC, build_auxiliary_features
-from analysis.pipeline.config import DATA, DATE, REPORTS, TARGET, VALIDATION_START
+from analysis.pipeline.config import DATA, DATE, EXPERIMENT_REPORTS, TARGET, VALIDATION_START
 from analysis.pipeline.data import check_output_path, load_main, protect_sources, temporal_split
 
 
@@ -457,7 +457,7 @@ def parse_args(argv=None):
 
 def main(argv=None):
     args = parse_args(argv)
-    output = args.output_dir or REPORTS / "deep_learning" / (
+    output = args.output_dir or EXPERIMENT_REPORTS / "deep_learning" / (
         f"{args.variant}_{args.architecture}_seed{args.seed}"
     )
     output = check_output_path(output)

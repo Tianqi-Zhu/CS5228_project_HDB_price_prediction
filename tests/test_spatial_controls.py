@@ -5,8 +5,8 @@ import unittest
 import numpy as np
 import pandas as pd
 
-from analysis.eda.analyze_mrt_adjusted import fit
-from analysis.eda.analyze_mrt_matched import LABELS, compare, prepare
+from analysis.studies.spatial.mrt_fixed_effects import fit
+from analysis.studies.spatial.mrt_matching import LABELS, compare, prepare
 
 
 class SpatialControlTests(unittest.TestCase):

@@ -4,7 +4,7 @@ import unittest
 
 import pandas as pd
 
-from analysis.eda.group_temporal_panel import add_planning_area, monthly_panel
+from analysis.studies.group_temporal_panel import add_planning_area, monthly_panel
 
 
 class GroupTemporalPanelTests(unittest.TestCase):

@@ -5,7 +5,7 @@ import unittest
 import numpy as np
 import pandas as pd
 
-from analysis.eda.temporal_correlations import lag_correlations
+from analysis.studies.temporal_correlations import lag_correlations
 
 
 class TemporalCorrelationTests(unittest.TestCase):
