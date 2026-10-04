@@ -1,0 +1,50 @@
+{
+  "source": "data/processed/train_spatial_features.csv",
+  "source_sha256_before": "43867d0ba111b8c0bbd3a269b6ff4ac39e1a976517c08542b9f49f9f38611d43",
+  "source_sha256_after": "43867d0ba111b8c0bbd3a269b6ff4ac39e1a976517c08542b9f49f9f38611d43",
+  "source_rows": 150000,
+  "common_complete_rows": 149841,
+  "excluded_rows": 159,
+  "missing_by_required_column": {
+    "MONTHLY_RENT": 0,
+    "NEAREST_OPEN_MRT_KM": 0,
+    "NEAREST_MALL_KM": 0,
+    "NEAREST_PRIMARY_SCHOOL_KM": 0,
+    "FLOOR_AREA_SQM": 0,
+    "BUILDING_AGE_YEARS": 159,
+    "MAX_FLOOR": 159,
+    "DISTANCE_TO_CBD_KM": 0,
+    "APPROVAL_MONTH_INDEX": 0,
+    "FLAT_TYPE_CLEAN": 0,
+    "TOWN_CLEAN": 0,
+    "STREET_CLEAN": 0,
+    "BLOCK_CLEAN": 0
+  },
+  "model": {
+    "n": 149841,
+    "clusters": 9395,
+    "full_design_rank": 329,
+    "slope_rank": 19,
+    "fe_rank": 310,
+    "projection_iterations": 21
+  },
+  "month_type_levels": 285,
+  "town_levels": 26,
+  "distance_bins_km": "right-closed [0,0.5], (0.5,1], (1,infinity)",
+  "reference": "MRT <=0.5 km and mall <=0.5 km",
+  "interaction_formula": "joint(mrt,mall)-joint(mrt,near_mall)-joint(near_mrt,mall)+joint(near_mrt,near_mall)",
+  "controls": [
+    "approval month × flat type FE",
+    "town FE",
+    "primary school six bins",
+    "area z and square",
+    "building age z and square",
+    "max building floor z",
+    "CBD distance z"
+  ],
+  "cluster": "town|street|block building; finite-sample sandwich correction",
+  "interval": "pointwise 95% t, df=building clusters minus one, third-order Cornish-Fisher critical value",
+  "sparse_rule": "omit plot estimate if fewer than 100 transactions OR 30 buildings; CSV retains estimate",
+  "sparse_cells": 0,
+  "interpretation": "descriptive conditional association, not causal effect or prediction validation"
+}
