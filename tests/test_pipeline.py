@@ -160,6 +160,14 @@ class PipelineChecks(unittest.TestCase):
             "analysis.experiments.auxiliary_catboost",
             "analysis.experiments.historical_priors",
             "analysis.experiments.summarize_deep_learning",
+            "analysis.experiments.auxiliary_ablation",
+            "analysis.experiments.economic_feature_ablation",
+            "analysis.experiments.spatiotemporal_hybrid",
+            "analysis.experiments.neural_tabm",
+            "analysis.experiments.relu_mlp",
+            "analysis.eda.economic_signals",
+            "analysis.eda.group_temporal_panel",
+            "analysis.eda.temporal_correlations",
         ]
         for module in modules:
             with self.subTest(module=module):

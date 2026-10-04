@@ -111,6 +111,31 @@ def main(argv=None):
     boost.add_argument("--output-dir", type=Path)
     deep_summary = commands.add_parser("deep-summary", help="Summarize deep models and rebuild ensembles")
     deep_summary.add_argument("--output-dir", type=Path)
+    commands.add_parser("aux-ablation", help="Run staged spatial/economic feature ablation")
+    commands.add_parser("economic-signals", help="Run prior-month economic signal analysis")
+    commands.add_parser("economic-ablation", help="Compare engineered economic features")
+    commands.add_parser("group-temporal", help="Run grouped temporal panel analysis")
+    commands.add_parser("spatiotemporal", help="Run expanding-window historical/spatial forecasts")
+    tabm = commands.add_parser("tabm", help="Run the TabM-style neural/tree experiment")
+    tabm.add_argument("--epochs", type=positive_integer, default=40)
+    tabm.add_argument("--batch-size", type=positive_integer, default=2048)
+    tabm.add_argument("--ensemble-size", type=positive_integer, default=8)
+    tabm.add_argument("--hidden-dim", type=positive_integer, default=256)
+    tabm.add_argument("--depth", type=positive_integer, default=3)
+    tabm.add_argument("--dropout", type=float, default=0.10)
+    tabm.add_argument("--learning-rate", type=float, default=1e-3)
+    tabm.add_argument("--weight-decay", type=float, default=1e-5)
+    tabm.add_argument("--seed", type=int, default=42)
+    tabm.add_argument("--device", choices=("auto", "cpu", "cuda"), default="auto")
+    tabm.add_argument("--max-folds", type=int, choices=(1, 2, 3))
+    tabm.add_argument("--skip-final", action="store_true")
+    tabm.add_argument("--output-dir", type=Path)
+    relu = commands.add_parser("relu", help="Run nested-validation sklearn ReLU MLP")
+    relu.add_argument("--max-epochs", type=positive_integer, default=80)
+    relu.add_argument("--patience", type=positive_integer, default=12)
+    relu.add_argument("--seed", type=int, default=42)
+    relu.add_argument("--write-submission", action="store_true")
+    relu.add_argument("--output-dir", type=Path)
     all_steps = commands.add_parser("all", help="Run all EDA, both historical experiments and the PDF report")
     all_steps.add_argument("--run-dir", type=Path, help="Write a fresh run separately from historical reports")
     all_steps.add_argument("--submit", action="store_true", help="Also refit and write a local competition submission")
@@ -158,6 +183,40 @@ def main(argv=None):
     if args.command == "deep-summary":
         from analysis.experiments.summarize_deep_learning import run
         return run(output=args.output_dir)
+    if args.command == "aux-ablation":
+        from analysis.experiments.auxiliary_ablation import main as run
+        return run()
+    if args.command == "economic-signals":
+        from analysis.eda.economic_signals import main as run
+        return run()
+    if args.command == "economic-ablation":
+        from analysis.experiments.economic_feature_ablation import main as run
+        return run()
+    if args.command == "group-temporal":
+        from analysis.eda.group_temporal_panel import main as run
+        return run()
+    if args.command == "spatiotemporal":
+        from analysis.experiments.spatiotemporal_hybrid import main as run
+        return run()
+    if args.command == "tabm":
+        from analysis.experiments.neural_tabm import main as run
+        values = vars(args).copy(); values.pop("command")
+        argv = []
+        for key, value in values.items():
+            if value is None or value is False:
+                continue
+            flag = "--" + key.replace("_", "-")
+            if value is True:
+                argv.append(flag)
+            else:
+                argv.extend([flag, str(value)])
+        return run(argv)
+    if args.command == "relu":
+        from analysis.experiments.relu_mlp import run
+        return run(
+            args.output_dir or REPORTS / "relu_mlp", max_epochs=args.max_epochs,
+            patience=args.patience, seed=args.seed, write_submission=args.write_submission,
+        )
     run_dir = args.run_dir
     run_eda(output_dir=None if run_dir is None else run_dir / "eda")
     base_dir = None if run_dir is None else run_dir / "model_baseline"

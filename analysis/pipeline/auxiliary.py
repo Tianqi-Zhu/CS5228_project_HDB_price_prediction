@@ -106,6 +106,142 @@ def _monthly_macro_features() -> pd.DataFrame:
     return monthly.reset_index()
 
 
+def add_economic_features(
+    frame: pd.DataFrame,
+    coe: pd.DataFrame | None = None,
+    stocks: pd.DataFrame | None = None,
+) -> pd.DataFrame:
+    """Attach prior-month economic lags for monthly-updated experiments.
+
+    Unlike ``include_macro=True``, these features never use observations from
+    the approval month itself.  They reproduce the temporal auxiliary branch's
+    causal comparison without introducing a second data-preparation pipeline.
+    """
+    result = frame.copy()
+    periods = pd.to_datetime(result["RENT_APPROVAL_DATE"], format="%Y-%m").dt.to_period("M")
+    series = []
+    if coe is not None:
+        values = coe.copy()
+        dates = pd.to_datetime(
+            values["YEAR"].astype(str) + "-" + values["MONTH"].astype(str).str[:3] + "-01",
+            format="%Y-%b-%d", errors="coerce",
+        )
+        values["_period"] = dates.dt.to_period("M")
+        values["QUOTA_PREMIUM"] = _money_number(values["QUOTA_PREMIUM"])
+        values["CATEGORY"] = values["CATEGORY"].astype(str).str.upper()
+        wide = values.groupby(["_period", "CATEGORY"])["QUOTA_PREMIUM"].median().unstack("CATEGORY")
+        wide.columns = [f"COE_{str(column).upper()}_MEDIAN" for column in wide.columns]
+        series.append(wide)
+    if stocks is not None:
+        values = stocks.copy()
+        values["DATE"] = pd.to_datetime(values["DATE"], errors="coerce")
+        values["ADJUSTED_CLOSE"] = pd.to_numeric(values["ADJUSTED_CLOSE"], errors="coerce")
+        values = values.dropna(subset=["DATE", "ADJUSTED_CLOSE"]).sort_values(["SYMBOL", "DATE"])
+        values["_period"] = values["DATE"].dt.to_period("M")
+        closes = values.groupby(["SYMBOL", "_period"])["ADJUSTED_CLOSE"].last().unstack("_period").T
+        returns = closes.pct_change(fill_method=None)
+        series.append(pd.DataFrame({
+            "STOCK_MEDIAN_RETURN": returns.median(axis=1),
+            "STOCK_RETURN_VOLATILITY": returns.std(axis=1),
+        }))
+    if not series:
+        return result
+    monthly = pd.concat(series, axis=1).sort_index()
+    full_months = pd.period_range(
+        min(monthly.index.min(), periods.min()), max(monthly.index.max(), periods.max()), freq="M",
+    )
+    monthly = monthly.reindex(full_months)
+    lagged = pd.concat({
+        f"{column}_LAG{lag}": monthly[column].shift(lag)
+        for column in monthly for lag in (1, 3, 6)
+    }, axis=1)
+    lagged.index.name = "_period"
+    result["_period"] = periods
+    return result.join(lagged, on="_period").drop(columns="_period")
+
+
+def candidate_interactions(frame: pd.DataFrame) -> pd.DataFrame:
+    """Create the interpretable interaction candidates used in ablations."""
+    result = frame.copy()
+    if "FLOOR_AREA_SQM" in result:
+        age = result["FLAT_AGE_YEARS"].fillna(0) if "FLAT_AGE_YEARS" in result else 0
+        result["AREA_X_AGE"] = result["FLOOR_AREA_SQM"] * age
+    if "NEAREST_MRT_KM" in result:
+        result["AREA_X_MRT_ACCESS"] = result["FLOOR_AREA_SQM"] / (1 + result["NEAREST_MRT_KM"])
+    if "FLAT_TYPE_CLEAN" in result and "TOWN_CLEAN" in result:
+        result["TOWN_X_FLAT_TYPE"] = (
+            result["TOWN_CLEAN"].astype(str) + "__" + result["FLAT_TYPE_CLEAN"].astype(str)
+        )
+    return result
+
+
+def _legacy_spatial_aliases(frame: pd.DataFrame) -> pd.DataFrame:
+    """Expose the earlier branch's names without recomputing its features."""
+    result = frame.copy()
+    aliases = {
+        "NEAREST_MRT_KM": "MRT_DIST_KM",
+        "NEAREST_MALL_KM": "MALL_DIST_KM",
+        "NEAREST_SCHOOL_KM": "PRIMARY_SCHOOL_DIST_KM",
+        "DISTANCE_TO_CBD_KM": "CBD_DIST_KM",
+        "BUILDING_AGE_FROM_COMPLETION": "BUILDING_AGE_YEARS",
+    }
+    for target, source in aliases.items():
+        result[target] = result[source]
+    for prefix, source in (("MRT", "MRT"), ("MALL", "MALL"), ("SCHOOL", "PRIMARY_SCHOOL")):
+        for radius in (0.5, 1.0, 2.0):
+            legacy = f"{prefix}_COUNT_{radius:.1f}KM"
+            current = f"{source}_COUNT_{str(radius).replace('.', '_')}KM"
+            result[legacy] = result[current]
+    result["MRT_ACCESS_SCORE"] = 1.0 / (1.0 + result["NEAREST_MRT_KM"])
+    result["AMENITY_DENSITY_1KM"] = (
+        result["MRT_COUNT_1.0KM"] + result["MALL_COUNT_1.0KM"] + result["SCHOOL_COUNT_1.0KM"]
+    )
+    return result
+
+
+def add_spatial_features(
+    frame: pd.DataFrame,
+    blocks: pd.DataFrame,
+    mrt: pd.DataFrame,
+    malls: pd.DataFrame,
+    schools: pd.DataFrame,
+) -> pd.DataFrame:
+    """Compatibility API for injected-data tests and historical experiments."""
+    keys = _normalized_keys(frame)
+    block_values = blocks.copy()
+    block_keys = _normalized_keys(block_values)
+    block_values = pd.concat([block_keys, block_values.drop(columns=BLOCK_KEYS)], axis=1)
+    if block_values.duplicated(["TOWN_KEY", "BLOCK_KEY", "STREET_KEY"]).any():
+        raise ValueError("Normalized auxiliary block keys are not unique")
+    for column in ("LATITUDE", "LONGITUDE", "MAX_FLOOR", "YEAR_COMPLETED"):
+        block_values[column] = pd.to_numeric(block_values[column], errors="coerce")
+    block_values[["MAX_FLOOR", "YEAR_COMPLETED"]] = block_values[
+        ["MAX_FLOOR", "YEAR_COMPLETED"]
+    ].replace(-1, np.nan)
+    if "POSTAL_CODE" in block_values:
+        block_values["POSTAL_CODE"] = block_values["POSTAL_CODE"].replace({"NIL": pd.NA})
+    row_order = np.arange(len(frame))
+    joined = pd.concat([frame.reset_index(drop=True), keys.reset_index(drop=True)], axis=1)
+    joined["_ROW_ORDER"] = row_order
+    joined = joined.merge(
+        block_values, on=["TOWN_KEY", "BLOCK_KEY", "STREET_KEY"], how="left",
+        validate="many_to_one", sort=False,
+    ).sort_values("_ROW_ORDER", kind="stable").reset_index(drop=True)
+    if len(joined) != len(frame) or not np.array_equal(joined.pop("_ROW_ORDER"), row_order):
+        raise AssertionError("Auxiliary join changed row count or order")
+    points = joined[["LATITUDE", "LONGITUDE"]]
+    open_mrt = mrt.loc[mrt["STATUS"].astype(str).str.casefold().eq("open")]
+    school_points = primary_schools(schools, include_mixed=True)
+    for places, prefix in ((open_mrt, "MRT"), (malls, "MALL"), (school_points, "PRIMARY_SCHOOL")):
+        joined = pd.concat([joined, _facility_features(points, places, prefix)], axis=1)
+    cbd = pd.DataFrame({"LATITUDE": [1.2840], "LONGITUDE": [103.8510]})
+    joined["CBD_DIST_KM"] = _facility_features(points, cbd, "CBD")["CBD_DIST_KM"]
+    approval = pd.to_datetime(joined["RENT_APPROVAL_DATE"], format="%Y-%m", errors="raise")
+    joined["BUILDING_AGE_YEARS"] = approval.dt.year - joined["YEAR_COMPLETED"]
+    joined.loc[joined["BUILDING_AGE_YEARS"] < 0, "BUILDING_AGE_YEARS"] = np.nan
+    return _legacy_spatial_aliases(joined)
+
+
 def build_auxiliary_features(raw: pd.DataFrame, *, include_macro: bool = False) -> pd.DataFrame:
     """Return row-preserving property, time, block and facility features."""
     frame = prepare_main(raw)
@@ -163,6 +299,7 @@ def build_auxiliary_features(raw: pd.DataFrame, *, include_macro: bool = False) 
 
     cbd = pd.DataFrame({"LATITUDE": [1.2840], "LONGITUDE": [103.8510]})
     joined["CBD_DIST_KM"] = _facility_features(point_columns, cbd, "CBD")["CBD_DIST_KM"]
+    joined = _legacy_spatial_aliases(joined)
     if include_macro:
         before = len(joined)
         joined = joined.merge(

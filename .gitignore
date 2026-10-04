@@ -230,3 +230,7 @@ reports/deep_learning/*/history.csv
 reports/deep_learning/*/results.json
 reports/deep_learning/summary/*_predictions.csv
 !reports/deep_learning/summary/results.json
+reports/**/submission.csv
+reports/**/test_predictions.csv
+reports/**/validation_predictions.csv
+reports/**/holdout_predictions.csv
