@@ -74,6 +74,10 @@ python analysis/compare_spatiotemporal_hybrid.py
 
 `compare_spatiotemporal_hybrid.py` 使用多个固定预测起点比较空间基线、仅使用历史租金特征、递归时空残差校正及两者组合。验证期标签不会作为滞后特征反馈给模型。结果和最终测试集预测写入 `reports/spatiotemporal_hybrid/`。
 
+`python analysis/compare_local_comparable_graph.py` evaluates a block-level nearby-comparable graph against the historical-rent baseline. It uses fixed-origin 6-, 9-, 12-, and 16-month validation windows and writes metrics, coverage, settings, and a concise report to `reports/local_comparable_graph/`. The final 16-month window overlaps the earlier windows and is evaluated separately.
+
+`python analysis/compare_bayesian_amenity_factors.py` evaluates a Gaussian Bayesian additive model with separate MRT and mall distance curves, pooled town/subzone effects, a monthly random-walk effect, and optional rent histories. It compares four ablations with the historical tree baseline on the same forward windows. Posterior-mean RMSE, sampled 90% interval coverage, amenity contrasts, priors, and limitations are saved in `reports/bayesian_amenity_factors/`. It uses the existing SciPy dependency; PyMC is not required.
+
 经济特征采用审批月之前 1、3、6 个日历月的数值，适用于逐月更新预测的情景；若在训练截止月一次性预测以后所有月份，不能把之后公布的经济数据当作已知。设施表是当前快照，缺少历史开通日期，因此相关特征仅作地理代理变量解释。
 
 `eda_temporal_correlations.py` 在 `reports/temporal_correlations/` 输出标准化水平、月度变化、相关矩阵和滞后相关性四张图，以及月度数据、相关系数和分析说明。相关系数仅使用 2024-04 之前的月份；后续月份只用于描述性时间序列图。租金组合调整模型只使用房型、房屋模型、Town、面积和租约开始年份，不使用审批月份。

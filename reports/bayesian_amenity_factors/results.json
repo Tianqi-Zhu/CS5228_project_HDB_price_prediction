@@ -1,0 +1,514 @@
+{
+  "folds": [
+    [
+      "2023-01",
+      "2023-07"
+    ],
+    [
+      "2023-07",
+      "2024-04"
+    ],
+    [
+      "2024-04",
+      "2025-04"
+    ],
+    [
+      "2023-12",
+      "2025-04"
+    ]
+  ],
+  "variants": [
+    "property_location_time",
+    "plus_amenities",
+    "plus_town_mrt_slope",
+    "plus_history"
+  ],
+  "mrt_knots_km": [
+    0.3,
+    0.6,
+    1.0,
+    1.5
+  ],
+  "mall_knots_km": [
+    0.5,
+    1.0,
+    1.5,
+    2.0
+  ],
+  "history_columns": [
+    "HIST_SIGNATURE_LAST_MEAN",
+    "HIST_SIGNATURE_COUNT",
+    "HIST_SIGNATURE_RECENCY_MONTHS",
+    "HIST_BLOCK_FLAT_LAST_MEAN",
+    "HIST_BLOCK_FLAT_COUNT",
+    "HIST_AREA_FLAT_LAST_MEAN",
+    "HIST_AREA_FLAT_COUNT"
+  ],
+  "prior_precision": {
+    "intercept": 0.0001,
+    "property_numeric": 3.0,
+    "property_category": 8.0,
+    "town": 25.0,
+    "subzone": 60.0,
+    "cbd": 15.0,
+    "season": 20.0,
+    "amenity": 25.0,
+    "town_mrt_slope": 150.0,
+    "history": 8.0,
+    "month_anchor": 0.05,
+    "month_difference": 80.0
+  },
+  "variance_prior_shape": 2.0,
+  "variance_prior_scale": 90000.0,
+  "fold_scores": [
+    {
+      "validation_start": "2023-01",
+      "variant": "historical_tree",
+      "n_validation": 17754,
+      "horizon_months": 6,
+      "interval_90_coverage": null,
+      "rmse_sgd": 639.0232,
+      "mae_sgd": 524.7246,
+      "bias_sgd": -72.0104
+    },
+    {
+      "validation_start": "2023-01",
+      "variant": "property_location_time",
+      "n_validation": 17754,
+      "horizon_months": 6,
+      "interval_90_coverage": 0.6797,
+      "rmse_sgd": 661.1662,
+      "mae_sgd": 549.4989,
+      "bias_sgd": -121.1505
+    },
+    {
+      "validation_start": "2023-01",
+      "variant": "plus_amenities",
+      "n_validation": 17754,
+      "horizon_months": 6,
+      "interval_90_coverage": 0.673,
+      "rmse_sgd": 660.3445,
+      "mae_sgd": 549.0504,
+      "bias_sgd": -121.484
+    },
+    {
+      "validation_start": "2023-01",
+      "variant": "plus_town_mrt_slope",
+      "n_validation": 17754,
+      "horizon_months": 6,
+      "interval_90_coverage": 0.6753,
+      "rmse_sgd": 660.2789,
+      "mae_sgd": 548.8902,
+      "bias_sgd": -121.6938
+    },
+    {
+      "validation_start": "2023-01",
+      "variant": "plus_history",
+      "n_validation": 17754,
+      "horizon_months": 6,
+      "interval_90_coverage": 0.696,
+      "rmse_sgd": 644.5926,
+      "mae_sgd": 534.0262,
+      "bias_sgd": -63.1886
+    },
+    {
+      "validation_start": "2023-07",
+      "variant": "historical_tree",
+      "n_validation": 26905,
+      "horizon_months": 9,
+      "interval_90_coverage": null,
+      "rmse_sgd": 563.3529,
+      "mae_sgd": 437.0364,
+      "bias_sgd": 6.9166
+    },
+    {
+      "validation_start": "2023-07",
+      "variant": "property_location_time",
+      "n_validation": 26905,
+      "horizon_months": 9,
+      "interval_90_coverage": 0.839,
+      "rmse_sgd": 580.4817,
+      "mae_sgd": 458.0246,
+      "bias_sgd": -33.1506
+    },
+    {
+      "validation_start": "2023-07",
+      "variant": "plus_amenities",
+      "n_validation": 26905,
+      "horizon_months": 9,
+      "interval_90_coverage": 0.837,
+      "rmse_sgd": 579.2848,
+      "mae_sgd": 457.4655,
+      "bias_sgd": -33.6793
+    },
+    {
+      "validation_start": "2023-07",
+      "variant": "plus_town_mrt_slope",
+      "n_validation": 26905,
+      "horizon_months": 9,
+      "interval_90_coverage": 0.8387,
+      "rmse_sgd": 579.1054,
+      "mae_sgd": 457.4001,
+      "bias_sgd": -34.0445
+    },
+    {
+      "validation_start": "2023-07",
+      "variant": "plus_history",
+      "n_validation": 26905,
+      "horizon_months": 9,
+      "interval_90_coverage": 0.845,
+      "rmse_sgd": 573.3026,
+      "mae_sgd": 455.5258,
+      "bias_sgd": -51.2423
+    },
+    {
+      "validation_start": "2024-04",
+      "variant": "historical_tree",
+      "n_validation": 35158,
+      "horizon_months": 12,
+      "interval_90_coverage": null,
+      "rmse_sgd": 469.6138,
+      "mae_sgd": 341.5701,
+      "bias_sgd": 15.127
+    },
+    {
+      "validation_start": "2024-04",
+      "variant": "property_location_time",
+      "n_validation": 35158,
+      "horizon_months": 12,
+      "interval_90_coverage": 0.9243,
+      "rmse_sgd": 493.8477,
+      "mae_sgd": 367.1903,
+      "bias_sgd": -47.1551
+    },
+    {
+      "validation_start": "2024-04",
+      "variant": "plus_amenities",
+      "n_validation": 35158,
+      "horizon_months": 12,
+      "interval_90_coverage": 0.924,
+      "rmse_sgd": 492.5351,
+      "mae_sgd": 365.8005,
+      "bias_sgd": -46.2904
+    },
+    {
+      "validation_start": "2024-04",
+      "variant": "plus_town_mrt_slope",
+      "n_validation": 35158,
+      "horizon_months": 12,
+      "interval_90_coverage": 0.9257,
+      "rmse_sgd": 492.2353,
+      "mae_sgd": 365.485,
+      "bias_sgd": -46.0387
+    },
+    {
+      "validation_start": "2024-04",
+      "variant": "plus_history",
+      "n_validation": 35158,
+      "horizon_months": 12,
+      "interval_90_coverage": 0.927,
+      "rmse_sgd": 484.6389,
+      "mae_sgd": 360.2547,
+      "bias_sgd": -47.509
+    },
+    {
+      "validation_start": "2023-12",
+      "variant": "historical_tree",
+      "n_validation": 47171,
+      "horizon_months": 16,
+      "interval_90_coverage": null,
+      "rmse_sgd": 489.5991,
+      "mae_sgd": 358.6927,
+      "bias_sgd": 39.8113
+    },
+    {
+      "validation_start": "2023-12",
+      "variant": "property_location_time",
+      "n_validation": 47171,
+      "horizon_months": 16,
+      "interval_90_coverage": 0.907,
+      "rmse_sgd": 513.9687,
+      "mae_sgd": 392.7434,
+      "bias_sgd": -77.1437
+    },
+    {
+      "validation_start": "2023-12",
+      "variant": "plus_amenities",
+      "n_validation": 47171,
+      "horizon_months": 16,
+      "interval_90_coverage": 0.9087,
+      "rmse_sgd": 512.865,
+      "mae_sgd": 391.9589,
+      "bias_sgd": -77.9835
+    },
+    {
+      "validation_start": "2023-12",
+      "variant": "plus_town_mrt_slope",
+      "n_validation": 47171,
+      "horizon_months": 16,
+      "interval_90_coverage": 0.9073,
+      "rmse_sgd": 512.7133,
+      "mae_sgd": 391.903,
+      "bias_sgd": -78.2913
+    },
+    {
+      "validation_start": "2023-12",
+      "variant": "plus_history",
+      "n_validation": 47171,
+      "horizon_months": 16,
+      "interval_90_coverage": 0.913,
+      "rmse_sgd": 501.2974,
+      "mae_sgd": 378.9169,
+      "bias_sgd": -52.0267
+    }
+  ],
+  "amenity_effects": [
+    {
+      "validation_start": "2023-01",
+      "variant": "plus_amenities",
+      "factor": "mrt",
+      "near_km": 0.25,
+      "far_km": 1.0,
+      "near_minus_far_sgd": 78.02136627003011,
+      "lower_90_sgd": 66.08056107990137,
+      "upper_90_sgd": 89.96217146015886
+    },
+    {
+      "validation_start": "2023-01",
+      "variant": "plus_amenities",
+      "factor": "mall",
+      "near_km": 0.25,
+      "far_km": 1.0,
+      "near_minus_far_sgd": 55.43569173829228,
+      "lower_90_sgd": 43.10964539356263,
+      "upper_90_sgd": 67.76173808302192
+    },
+    {
+      "validation_start": "2023-01",
+      "variant": "plus_town_mrt_slope",
+      "factor": "mrt",
+      "near_km": 0.25,
+      "far_km": 1.0,
+      "near_minus_far_sgd": 70.87846643161225,
+      "lower_90_sgd": 42.96871333786781,
+      "upper_90_sgd": 98.7882195253567
+    },
+    {
+      "validation_start": "2023-01",
+      "variant": "plus_town_mrt_slope",
+      "factor": "mall",
+      "near_km": 0.25,
+      "far_km": 1.0,
+      "near_minus_far_sgd": 58.923081175801556,
+      "lower_90_sgd": 46.20856173723659,
+      "upper_90_sgd": 71.63760061436652
+    },
+    {
+      "validation_start": "2023-01",
+      "variant": "plus_history",
+      "factor": "mrt",
+      "near_km": 0.25,
+      "far_km": 1.0,
+      "near_minus_far_sgd": 78.95419388791878,
+      "lower_90_sgd": 67.03689382161879,
+      "upper_90_sgd": 90.87149395421876
+    },
+    {
+      "validation_start": "2023-01",
+      "variant": "plus_history",
+      "factor": "mall",
+      "near_km": 0.25,
+      "far_km": 1.0,
+      "near_minus_far_sgd": 53.259651332686246,
+      "lower_90_sgd": 40.980494061231795,
+      "upper_90_sgd": 65.5388086041407
+    },
+    {
+      "validation_start": "2023-07",
+      "variant": "plus_amenities",
+      "factor": "mrt",
+      "near_km": 0.25,
+      "far_km": 1.0,
+      "near_minus_far_sgd": 74.96619970107395,
+      "lower_90_sgd": 62.55604540645008,
+      "upper_90_sgd": 87.37635399569781
+    },
+    {
+      "validation_start": "2023-07",
+      "variant": "plus_amenities",
+      "factor": "mall",
+      "near_km": 0.25,
+      "far_km": 1.0,
+      "near_minus_far_sgd": 59.98063253083221,
+      "lower_90_sgd": 47.202299137509065,
+      "upper_90_sgd": 72.75896592415536
+    },
+    {
+      "validation_start": "2023-07",
+      "variant": "plus_town_mrt_slope",
+      "factor": "mrt",
+      "near_km": 0.25,
+      "far_km": 1.0,
+      "near_minus_far_sgd": 72.44909983081305,
+      "lower_90_sgd": 41.10753299757203,
+      "upper_90_sgd": 103.79066666405407
+    },
+    {
+      "validation_start": "2023-07",
+      "variant": "plus_town_mrt_slope",
+      "factor": "mall",
+      "near_km": 0.25,
+      "far_km": 1.0,
+      "near_minus_far_sgd": 65.39633824832012,
+      "lower_90_sgd": 52.20185959373459,
+      "upper_90_sgd": 78.59081690290566
+    },
+    {
+      "validation_start": "2023-07",
+      "variant": "plus_history",
+      "factor": "mrt",
+      "near_km": 0.25,
+      "far_km": 1.0,
+      "near_minus_far_sgd": 77.76404152496261,
+      "lower_90_sgd": 65.39751802245634,
+      "upper_90_sgd": 90.13056502746888
+    },
+    {
+      "validation_start": "2023-07",
+      "variant": "plus_history",
+      "factor": "mall",
+      "near_km": 0.25,
+      "far_km": 1.0,
+      "near_minus_far_sgd": 56.912524532450234,
+      "lower_90_sgd": 44.20160588068383,
+      "upper_90_sgd": 69.62344318421664
+    },
+    {
+      "validation_start": "2024-04",
+      "variant": "plus_amenities",
+      "factor": "mrt",
+      "near_km": 0.25,
+      "far_km": 1.0,
+      "near_minus_far_sgd": 76.63178944675626,
+      "lower_90_sgd": 64.89779067779378,
+      "upper_90_sgd": 88.36578821571874
+    },
+    {
+      "validation_start": "2024-04",
+      "variant": "plus_amenities",
+      "factor": "mall",
+      "near_km": 0.25,
+      "far_km": 1.0,
+      "near_minus_far_sgd": 66.25862071467665,
+      "lower_90_sgd": 54.215118173297284,
+      "upper_90_sgd": 78.30212325605602
+    },
+    {
+      "validation_start": "2024-04",
+      "variant": "plus_town_mrt_slope",
+      "factor": "mrt",
+      "near_km": 0.25,
+      "far_km": 1.0,
+      "near_minus_far_sgd": 73.81439255757897,
+      "lower_90_sgd": 41.34809771147037,
+      "upper_90_sgd": 106.28068740368757
+    },
+    {
+      "validation_start": "2024-04",
+      "variant": "plus_town_mrt_slope",
+      "factor": "mall",
+      "near_km": 0.25,
+      "far_km": 1.0,
+      "near_minus_far_sgd": 73.41805793043048,
+      "lower_90_sgd": 60.96861902688889,
+      "upper_90_sgd": 85.86749683397207
+    },
+    {
+      "validation_start": "2024-04",
+      "variant": "plus_history",
+      "factor": "mrt",
+      "near_km": 0.25,
+      "far_km": 1.0,
+      "near_minus_far_sgd": 79.99987439011142,
+      "lower_90_sgd": 68.32523927311728,
+      "upper_90_sgd": 91.67450950710555
+    },
+    {
+      "validation_start": "2024-04",
+      "variant": "plus_history",
+      "factor": "mall",
+      "near_km": 0.25,
+      "far_km": 1.0,
+      "near_minus_far_sgd": 63.21993545859242,
+      "lower_90_sgd": 51.25799252403445,
+      "upper_90_sgd": 75.18187839315038
+    },
+    {
+      "validation_start": "2023-12",
+      "variant": "plus_amenities",
+      "factor": "mrt",
+      "near_km": 0.25,
+      "far_km": 1.0,
+      "near_minus_far_sgd": 76.99548235990807,
+      "lower_90_sgd": 64.83424699852712,
+      "upper_90_sgd": 89.15671772128901
+    },
+    {
+      "validation_start": "2023-12",
+      "variant": "plus_amenities",
+      "factor": "mall",
+      "near_km": 0.25,
+      "far_km": 1.0,
+      "near_minus_far_sgd": 63.78801198716855,
+      "lower_90_sgd": 51.27713710251481,
+      "upper_90_sgd": 76.29888687182229
+    },
+    {
+      "validation_start": "2023-12",
+      "variant": "plus_town_mrt_slope",
+      "factor": "mrt",
+      "near_km": 0.25,
+      "far_km": 1.0,
+      "near_minus_far_sgd": 76.49458563332732,
+      "lower_90_sgd": 44.162323840226804,
+      "upper_90_sgd": 108.82684742642783
+    },
+    {
+      "validation_start": "2023-12",
+      "variant": "plus_town_mrt_slope",
+      "factor": "mall",
+      "near_km": 0.25,
+      "far_km": 1.0,
+      "near_minus_far_sgd": 69.9463778191625,
+      "lower_90_sgd": 57.01971585934963,
+      "upper_90_sgd": 82.87303977897538
+    },
+    {
+      "validation_start": "2023-12",
+      "variant": "plus_history",
+      "factor": "mrt",
+      "near_km": 0.25,
+      "far_km": 1.0,
+      "near_minus_far_sgd": 80.04527441213958,
+      "lower_90_sgd": 67.9412725199928,
+      "upper_90_sgd": 92.14927630428636
+    },
+    {
+      "validation_start": "2023-12",
+      "variant": "plus_history",
+      "factor": "mall",
+      "near_km": 0.25,
+      "far_km": 1.0,
+      "near_minus_far_sgd": 60.78107179432097,
+      "lower_90_sgd": 48.35133308591095,
+      "upper_90_sgd": 73.210810502731
+    }
+  ],
+  "source_sha256": {
+    "train.csv": "2fe38ce9e0d8a02e9786f066d4a10d575d91f34be1d9111f0142e3f43fbfc8a5",
+    "auxiliary\\sg-hdb-block.csv": "2255ad61ba6895456a39aec81d12583796d717ef88fe102ee9de71b3796fc223",
+    "auxiliary\\sg-mrt-stations.csv": "4757278b94c2d05627a941377d51de60882e3e1477de01758ef37070b716b889",
+    "auxiliary\\sg-shopping-malls.csv": "cce36a0175433f768d209b74e2e5376aad16befe1ad4f1313da0b18ed6d91a3b",
+    "auxiliary\\sg-schools.csv": "9bf28c6a2e5511c5cada178d221dfaac12beb3651425b3b86c37815e35de71cb"
+  }
+}
