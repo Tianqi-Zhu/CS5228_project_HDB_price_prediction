@@ -19,7 +19,7 @@
 \setbeamercolor{block body}{fg=ink,bg=teal!8}
 \setbeamertemplate{navigation symbols}{}
 \setbeamertemplate{itemize item}{\color{orange}$\bullet$}
-\setbeamertemplate{footline}{\hfill\color{muted}\insertframenumber\,/\,15\hspace{0.55cm}\vspace{0.25cm}}
+\setbeamertemplate{footline}{\hfill\color{muted}\insertframenumber\,/\,19\hspace{0.55cm}\vspace{0.25cm}}
 \setbeamerfont{frametitle}{size=\Large,series=\bfseries}
 \setbeamerfont{title}{size=\huge,series=\bfseries}
 \setbeamerfont{subtitle}{size=\Large}
@@ -314,17 +314,100 @@
 \end{frame}
 
 % 15
+\begin{frame}{Historical rent summaries improve every fixed-origin window}
+  \small
+  \begin{columns}[T,onlytextwidth]
+  \begin{column}{0.55\textwidth}
+    \textbf{Row-level RMSE by forecast origin}\par\vspace{0.09cm}
+    \begin{tabular}{@{}lrrr@{}}
+      \toprule
+      Start / horizon & Spatial & Historical & Change \\
+      \midrule
+      Jan 2023 / 6 mo & 642.74 & 639.02 & $-3.71$ \\
+      Jul 2023 / 9 mo & 567.69 & 563.35 & $-4.34$ \\
+      Apr 2024 / 12 mo & 478.82 & 469.61 & $-9.21$ \\
+      \bottomrule
+    \end{tabular}\par\vspace{0.15cm}
+    Pooled RMSE falls from \textbf{549.10} to \textbf{543.10}, a SGD 6.01 improvement. Signature, block--flat-type and area--flat-type summaries use only earlier labels and remain frozen after each origin.
+  \end{column}
+  \begin{column}{0.42\textwidth}
+    \textbf{Spatiotemporal residual correction}\par\vspace{0.09cm}
+    Planning-area $\times$ flat-type residual forecasts use group, seasonal and nearby-area lags. They reduce pooled RMSE by only SGD 0.27.
+    \par\vspace{0.10cm}
+    Combining the correction with historical features gives 543.13, slightly worse than historical features alone.
+    \par\vspace{0.10cm}
+    \textbf{Risk:} target histories need repeat observations. New properties require fallback estimates, and careless construction can leak future rent.
+  \end{column}
+  \end{columns}
+  \takeaway{Leakage-safe historical rent features provide the clearest new gain.}
+  \src{reports/spatiotemporal_hybrid/fold_metrics.csv; reports/spatiotemporal_hybrid/pooled_metrics.csv}
+\end{frame}
+
+% 16
+\begin{frame}{The neural model does not beat the historical tree}
+  \begin{columns}[T,onlytextwidth]
+  \begin{column}{0.56\textwidth}
+    \includegraphics[width=\linewidth]{../neural_tabm/model_comparison.png}
+  \end{column}
+  \begin{column}{0.41\textwidth}
+    \small
+    \textbf{TabM-style embedding ensemble}\par\vspace{0.07cm}
+    Block and property embeddings help fit the training rows, but pooled fixed-origin RMSE is \textbf{646.37}. Mean bias is $-133.30$ SGD.
+    \par\vspace{0.10cm}
+    A 50/50 tree--neural blend scores 567.63. An out-of-fold-selected blend assigns 94\% to the tree and 6\% to the neural model, reaching \textbf{542.78}.
+    \par\vspace{0.10cm}
+    The SGD 0.31 gain is selected and measured on the same folds. It worsens the first fold by SGD 1.33, so it is not an unbiased improvement estimate.
+  \end{column}
+  \end{columns}
+  \takeaway{Keep the tree as the primary model. Treat the 6\% neural blend as an experiment.}
+  \src{reports/neural_tabm/pooled_metrics.csv; reports/neural_tabm/fold_metrics.csv}
+\end{frame}
+
+% 17
+\begin{frame}{Trade-offs in row-level models and spatial features}
+  \small
+  \begin{tabular}{@{}p{2.35cm}p{5.20cm}p{5.20cm}@{}}
+    \toprule
+    Method & Why it helps & Main limitation \\
+    \midrule
+    Ridge & Fast, transparent baseline with standardized coefficients. & Misses nonlinear property effects and shows +SGD 362 bias on the core task. \\[0.04cm]
+    Random forest & Handles nonlinearities with little preprocessing. & RMSE 493.77 trails boosting. Tree thresholds do not extend future rent trends. \\[0.04cm]
+    Boosted trees & Best standalone row models with strong mixed-type handling. & Results vary by time split, and extrapolation beyond fitted time levels remains weak. \\[0.04cm]
+    Block and amenities & Add local detail. E improves over town-only C by SGD 6.89. & Facility data are current snapshots and describe predictive proxies, not historical amenity effects. \\
+    \bottomrule
+  \end{tabular}
+  \src{reports/model_families/family_metrics.csv; reports/auxiliary_ablation/ablation_metrics.csv}
+\end{frame}
+
+% 18
+\begin{frame}{Trade-offs in temporal and neural extensions}
+  \scriptsize
+  \begin{tabular}{@{}p{2.70cm}p{4.65cm}p{5.35cm}@{}}
+    \toprule
+    Method & Why it helps & Main limitation \\
+    \midrule
+    Economic lags & Add interpretable market context. & About 37 independent prevalidation months exist. Tested variants show no stable gain. \\[0.04cm]
+    Historical targets & Improve all three fixed-origin windows. & Need repeat entities and leakage controls. Unseen properties require fallback estimates. \\[0.04cm]
+    Spatiotemporal residuals & Share nearby-area trends under a fixed origin. & Improve pooled RMSE by only SGD 0.27. Recursion can accumulate error. \\[0.04cm]
+    TabM & Learns property and location embeddings. & Standalone RMSE is 646.37. Training is costly, and temporal bias is unstable. \\[0.04cm]
+    94/6 blend & Adds a small amount of neural error diversity. & The SGD 0.31 gain reuses the scoring folds and worsens the first fold. \\
+    \bottomrule
+  \end{tabular}
+  \src{reports/economic_feature_ablation/report.md; reports/spatiotemporal_hybrid/report.md; reports/neural_tabm/report.md}
+\end{frame}
+
+% 19
 \begin{frame}{Current conclusion and next experiments}
   \small
   \textbf{Current evidence}\par\vspace{0.09cm}
-  Property, time/age, block and amenity features improve the current row-level baseline. Some economic indicators show monthly associations and a late grouped one-step gain, but the tested economic feature sets have not delivered a stable row-level forward improvement.\par\vspace{0.20cm}
+  Historical boosted trees are the primary candidate. Pooled fixed-origin RMSE is 543.10, and the latest 12-month fold reaches 469.61. Static block and amenity features remain useful. The standalone neural model and economic lags do not improve forward accuracy consistently.\par\vspace{0.15cm}
   \textbf{Next experiments}\par\vspace{0.06cm}
   \begin{enumerate}\setlength\itemsep{0.10cm}
-    \item Keep E as the feature benchmark; test leading model families on the same expanded set.
-    \item Repeat fixed-origin splits at a horizon near the future test span; test recency and group trends without future observed rent.
-    \item Revisit only availability-safe economic lags if they improve those tests; audit historical amenity coverage and sparse groups before final refit.
+    \item Keep the historical tree primary until nested blend selection and multiple neural seeds confirm that the 94/6 blend is stable.
+    \item Improve extrapolation with detrended targets or direct horizon prediction. Keep target histories frozen at the forecast origin.
+    \item Retain only availability-safe external variables that improve several forward windows, then audit sparse and unseen groups before final refit.
   \end{enumerate}
-  \src{reports/auxiliary_ablation/results.json; reports/group_temporal_panel/report.md; reports/economic_feature_ablation/forward_scores.csv}
+  \src{reports/spatiotemporal_hybrid/report.md; reports/neural_tabm/report.md}
 \end{frame}
 
 \end{document}
