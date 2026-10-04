@@ -83,6 +83,34 @@ def main(argv=None):
     report = commands.add_parser("report", help="Rebuild the preserved EDA progress PDF")
     report.add_argument("--eda-dir", type=Path)
     report.add_argument("--output", type=Path)
+    deep = commands.add_parser("deep", help="Train a GPU tabular deep-learning experiment")
+    deep.add_argument("--variant", choices=("main", "auxiliary"), default="auxiliary")
+    deep.add_argument("--architecture", choices=("resnet", "mlp", "transformer"), default="resnet")
+    deep.add_argument("--validation-start", default=VALIDATION_START)
+    deep.add_argument("--fit-window-months", type=positive_integer)
+    deep.add_argument("--recency-half-life", type=float, default=24.0)
+    deep.add_argument("--target-encoding", action="store_true")
+    deep.add_argument("--target-encoding-window", type=positive_integer, default=18)
+    deep.add_argument("--macro-auxiliary", action="store_true")
+    deep.add_argument("--residual-baseline", action="store_true")
+    deep.add_argument("--residual-warmup-months", type=positive_integer, default=12)
+    deep.add_argument("--width", type=positive_integer, default=256)
+    deep.add_argument("--blocks", type=positive_integer, default=3)
+    deep.add_argument("--dropout", type=float, default=0.10)
+    deep.add_argument("--batch-size", type=positive_integer, default=1024)
+    deep.add_argument("--epochs", type=positive_integer, default=40)
+    deep.add_argument("--learning-rate", type=float, default=1e-3)
+    deep.add_argument("--weight-decay", type=float, default=1e-4)
+    deep.add_argument("--patience", type=positive_integer, default=7)
+    deep.add_argument("--seed", type=int, default=42)
+    deep.add_argument("--output-dir", type=Path)
+    boost = commands.add_parser("aux-boost", help="Train the auxiliary LightGBM benchmark")
+    boost.add_argument("--num-leaves", type=positive_integer, default=31)
+    boost.add_argument("--seed", type=int, default=42)
+    boost.add_argument("--without-target-encoding", action="store_true")
+    boost.add_argument("--output-dir", type=Path)
+    deep_summary = commands.add_parser("deep-summary", help="Summarize deep models and rebuild ensembles")
+    deep_summary.add_argument("--output-dir", type=Path)
     all_steps = commands.add_parser("all", help="Run all EDA, both historical experiments and the PDF report")
     all_steps.add_argument("--run-dir", type=Path, help="Write a fresh run separately from historical reports")
     all_steps.add_argument("--submit", action="store_true", help="Also refit and write a local competition submission")
@@ -115,6 +143,21 @@ def main(argv=None):
         return predict_saved(args.model_path, args.output)
     if args.command == "report":
         return run_report(args.eda_dir, args.output)
+    if args.command == "deep":
+        from analysis.experiments.deep_learning import ExperimentConfig, train
+        values = {key: value for key, value in vars(args).items()
+                  if key not in ("command", "output_dir")}
+        config = ExperimentConfig(**values)
+        label = f"{config.variant}_{config.architecture}_seed{config.seed}"
+        return train(config, args.output_dir or REPORTS / "deep_learning" / label)
+    if args.command == "aux-boost":
+        from analysis.experiments.auxiliary_boosting import run
+        return run(args.output_dir or REPORTS / "deep_learning" / "aux_lightgbm",
+                   num_leaves=args.num_leaves, seed=args.seed,
+                   target_encoding=not args.without_target_encoding)
+    if args.command == "deep-summary":
+        from analysis.experiments.summarize_deep_learning import run
+        return run(output=args.output_dir)
     run_dir = args.run_dir
     run_eda(output_dir=None if run_dir is None else run_dir / "eda")
     base_dir = None if run_dir is None else run_dir / "model_baseline"

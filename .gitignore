@@ -219,7 +219,14 @@ __marimo__/
 
 # Local model artifacts, submission files and migration verification runs
 *.joblib
+*.pt
+*.cbm
 output/submissions/
 reports/validation/**/predictions.csv
 reports/runs/**/submission.csv
 .integration-work/
+reports/deep_learning/*/predictions.csv
+reports/deep_learning/*/history.csv
+reports/deep_learning/*/results.json
+reports/deep_learning/summary/*_predictions.csv
+!reports/deep_learning/summary/results.json

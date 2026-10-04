@@ -37,6 +37,8 @@ analysis/
   experiments/
     baseline.py              CatBoost A/B/C 特征比较
     compare_models.py        四模型同切分比较
+    deep_learning.py         GPU 类别嵌入与特征 Transformer
+    auxiliary_boosting.py    同辅助特征的 LightGBM 对照
 data/                        原始数据
 reports/eda/                 EDA 主报告、图表、表格及补充分析
 reports/model_*/             历史模型实验指标与图表
@@ -47,6 +49,7 @@ docs/project_structure.md    合并对应关系与工作流程
 midterm_report.md            中期分析、已跑结果和后续实验计划
 environment.yml              完整 Conda 环境
 requirements.txt             完整 pip 依赖入口
+requirements-deep.txt        可选的 CUDA 深度学习依赖
 ```
 
 ## 环境
@@ -68,6 +71,8 @@ conda activate cs5228
 也可以只使用 pip：激活目标环境后运行 `python -m pip install -r requirements.txt`。
 
 依赖文件按用途逐层包含：`requirements-eda.txt` 提供数据分析和预处理依赖；`requirements-model.txt` 在其基础上增加建模依赖；`requirements.txt` 是完整入口，再增加 PDF 报告和 Excel 读取依赖。使用 Conda 时优先以 `environment.yml` 为准，无需另建 venv。
+
+GPU 深度学习实验另需安装 `python -m pip install -r requirements-deep.txt`。该文件使用 PyTorch CUDA 12.8 wheel；没有兼容 NVIDIA GPU 时应改装适合本机平台的 PyTorch 版本。
 
 ## 统一运行方式
 
@@ -105,6 +110,16 @@ python -m analysis.main all --run-dir reports/runs/run01
 ```
 
 不指定 `--run-dir` 会重建对应默认输出目录。`all` 默认不会生成提交文件；增加 `--submit` 可在上述步骤之后重训并生成本地预测。
+
+## 辅助特征与深度学习实验
+
+深度实验将 HDB 楼栋属性、经纬度、MRT／商场／小学距离和密度加入主表，并使用只从拟合集计算的留一目标编码。固定时间验证仍为 2024-04 至 2025-03，不使用测试标签或验证期后的经济数据。
+
+当前两个特征 Transformer 与一个类别嵌入 ResNet 的等权集成 RMSE 为 **469.98**；加入辅助 LightGBM 后为 469.18。进一步使用只依赖过去月份的楼栋历史先验训练残差 Transformer，并按固定权重融合后达到 **466.47**（MAE 341.14），相比原主表 LightGBM 的 485.09 下降 18.62（3.84%）。由于模型选择反复使用同一个验证窗口，最终选择前还应增加滚动时间验证。完整配置、逐模型指标和月度误差见 [`reports/deep_learning/`](reports/deep_learning/README.md)。
+
+```powershell
+python -m analysis.main deep-summary
+```
 
 ## 最终训练与预测
 

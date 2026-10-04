@@ -5,9 +5,9 @@
 | 目录／文件 | 职责 |
 | --- | --- |
 | `main.py` | 唯一对外 CLI；运行 EDA、实验、验证、报告和提交 |
-| `pipeline/` | 数据处理、模型、训练、评估和预测流程 |
+| `pipeline/` | 数据处理、辅助特征、模型、训练、评估和预测流程 |
 | `eda/` | 综合 EDA、专项审计和 PDF 报告 |
-| `experiments/` | 已报告的基线和四模型比较 |
+| `experiments/` | 已报告的基线、四模型比较、辅助深度模型、历史先验与集成 |
 
 依赖方向固定为：
 
@@ -25,4 +25,6 @@ python -m analysis.main eda
 python -m analysis.main baseline
 python -m analysis.main compare
 python -m analysis.main validate --model lightgbm --features C
+python -m analysis.main deep --architecture transformer --target-encoding --residual-baseline
+python -m analysis.main deep-summary
 ```

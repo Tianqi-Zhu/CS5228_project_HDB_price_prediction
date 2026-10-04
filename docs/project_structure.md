@@ -15,10 +15,16 @@ analysis/
 │   ├── training.py         # 训练器和模型保存／加载
 │   ├── workflow.py         # 验证、重训、提交文件和保存模型预测
 │   ├── evaluation.py       # 指标、分组误差、评估接口和误差绘图
-│   └── spatial.py          # 设施筛选与球面距离
+│   ├── spatial.py          # 设施筛选与球面距离
+│   └── auxiliary.py        # 楼栋、设施距离与可选月度宏观特征
 ├── experiments/
 │   ├── baseline.py         # 均值与 CatBoost A/B/C 特征比较
-│   └── compare_models.py   # Ridge、RF、CatBoost、LightGBM 比较
+│   ├── compare_models.py   # Ridge、RF、CatBoost、LightGBM 比较
+│   ├── deep_learning.py    # 类别嵌入 ResNet 与特征 Transformer
+│   ├── auxiliary_boosting.py # 同辅助特征的 LightGBM 对照
+│   ├── auxiliary_catboost.py # 同辅助特征的 CatBoost 对照
+│   ├── historical_priors.py # 只使用过去月份的层级租金先验
+│   └── summarize_deep_learning.py # 深度、历史与混合集成汇总
 ├── eda/
 │   ├── run.py              # EDA 唯一入口
 │   ├── overview.py         # 综合 EDA：11 图、18 表和摘要
@@ -84,6 +90,10 @@ python -m analysis.main report
 | `validate` | `reports/validation/<模型_特征_切点_窗口>/` |
 | `report` | `reports/eda/progress_report.pdf` |
 | `submit` | `output/submissions/` 和 `models/` |
+| `deep` | `reports/deep_learning/<实验名>/` |
+| `aux-boost` | `reports/deep_learning/aux_lightgbm/` |
+| `deep-summary` | `reports/deep_learning/summary/` |
 
-辅助特征尚未进入已报告的四模型实验。设施开放日期及宏观数据的预测时点仍需在后续
-特征工程中审查。
+辅助楼栋、设施距离和历史租金特征已进入独立实验；COE 与股票月度特征也完成对照，
+但因验证 RMSE 变差而未进入选择的集成。设施开放日期和同月宏观数据的可用时点仍需
+按最终部署或比赛规则审查。

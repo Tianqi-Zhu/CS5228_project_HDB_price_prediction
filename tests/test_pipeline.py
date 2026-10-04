@@ -9,6 +9,7 @@ import numpy as np
 import pandas as pd
 
 from analysis.pipeline.config import DATA, DATE, FEATURE_SETS, TARGET
+from analysis.pipeline.auxiliary import build_auxiliary_features
 from analysis.pipeline.data import HDBPreprocessor, check_output_path, protect_sources, temporal_split
 from analysis.pipeline.models import build_model
 from analysis.pipeline.spatial import nearest_distances, primary_schools
@@ -118,6 +119,32 @@ class PipelineChecks(unittest.TestCase):
         self.assertEqual(len(primary_schools(schools, include_mixed=False)), 1)
         self.assertEqual(len(primary_schools(schools)), 2)
 
+    def test_auxiliary_features_preserve_rows_and_target_encodings_do_not_use_validation_target(self):
+        from analysis.experiments.deep_learning import add_target_encodings
+        from analysis.experiments.historical_priors import hierarchical_prediction
+
+        raw = sample()
+        prepared = build_auxiliary_features(raw)
+        self.assertEqual(len(prepared), len(raw))
+        self.assertEqual(prepared[DATE].tolist(), raw[DATE].tolist())
+        fitting, validation = temporal_split(prepared)
+        _, encoded, columns = add_target_encodings(fitting, validation, window_months=18)
+        changed = validation.copy()
+        changed[TARGET] += 10000
+        _, encoded_changed, changed_columns = add_target_encodings(fitting, changed, window_months=18)
+        self.assertEqual(columns, changed_columns)
+        pd.testing.assert_frame_equal(encoded[columns], encoded_changed[columns])
+        self.assertTrue(np.isfinite(encoded[columns].to_numpy(float)).all())
+        prior, _ = hierarchical_prediction(
+            fitting, validation, base_method="constant", base_months=1,
+            premium_window=24, alpha_scale=1.0,
+        )
+        changed_prior, _ = hierarchical_prediction(
+            fitting, changed, base_method="constant", base_months=1,
+            premium_window=24, alpha_scale=1.0,
+        )
+        np.testing.assert_allclose(prior, changed_prior)
+
     def test_public_modules_import(self):
         modules = [
             "analysis.main",
@@ -128,6 +155,11 @@ class PipelineChecks(unittest.TestCase):
             "analysis.eda.audits.auxiliary",
             "analysis.experiments.baseline",
             "analysis.experiments.compare_models",
+            "analysis.experiments.deep_learning",
+            "analysis.experiments.auxiliary_boosting",
+            "analysis.experiments.auxiliary_catboost",
+            "analysis.experiments.historical_priors",
+            "analysis.experiments.summarize_deep_learning",
         ]
         for module in modules:
             with self.subTest(module=module):
