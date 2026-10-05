@@ -1,5 +1,11 @@
 # CS5228 HDB 月租预测
 
+The [revised dynamic rental surface experiment plan](EXPERIMENT_PLAN_DYNAMIC_SURFACE.md) prioritizes a stronger historical row model and a coarse market-index test before any grid/PCA hybrid.
+
+The completed [full-history tree, market-index, and coarse-surface experiment](reports/dynamic_market_index/report.md) selects CatBoost without a market correction. Its strict February 2025-origin candidate submission is in `reports/dynamic_market_index/submission_strict_feb2025.csv`.
+
+The [factored dynamic rental-surface experiment](reports/factored_rental_surface/report.md) evaluates monthly smoothed surfaces, PCA factors, fixed-origin temporal forecasts, and direct/residual CatBoost hybrids. The residual hybrid improves pooled RMSE by S$1.23 but is less consistent across folds, so the selected candidate remains full-history CatBoost.
+
 根据新加坡 HDB 组屋的属性、位置和租赁审批时间预测每月租金（SGD）。项目使用 Kaggle 提供的训练集、测试集与辅助数据；比赛评价指标为均方根误差（RMSE）。
 
 ## 数据与任务

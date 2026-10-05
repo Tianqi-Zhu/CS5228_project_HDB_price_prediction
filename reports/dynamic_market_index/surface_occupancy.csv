@@ -1,0 +1,5 @@
+validation_start,n_months,supported_cells,common_flat_types,observed_cell_type_months,empty_fraction,median_transactions_per_observed_cell_type_month,validation_rows_with_two_window_local_history_pct
+2023-01,24,115,4,8033,0.2724,6.0000,98.6933
+2023-07,30,115,4,10062,0.2709,6.0000,98.9742
+2024-04,39,115,4,13120,0.2687,5.0000,99.2576
+2023-12,35,115,4,11753,0.2700,5.0000,99.1520
