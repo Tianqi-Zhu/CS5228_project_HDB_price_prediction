@@ -1,0 +1,6 @@
+# Preserve snapshot bytes and hashes across Windows/Linux checkouts.
+*.csv -text
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.txt text eol=lf

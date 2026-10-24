@@ -1,0 +1,8 @@
+{
+  "source_page": "https://data.gov.sg/datasets/d_c9f57187485a850908655db0e8cfe651/view",
+  "api": "https://data.gov.sg/api/action/datastore_search",
+  "dataset_id": "d_c9f57187485a850908655db0e8cfe651",
+  "downloaded_at_utc": "2026-10-24T11:17:59.698886+00:00",
+  "rows": 212597,
+  "sha256": "4fd7ed2ab936f7ec33aa2e32a4185bf83bb9148c6bbcc874a424e310eb78adc9"
+}

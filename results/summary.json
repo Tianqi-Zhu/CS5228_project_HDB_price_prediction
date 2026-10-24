@@ -1,0 +1,100 @@
+{
+  "created_at_utc": "2026-10-24T14:29:31.121325+00:00",
+  "method": "Exact normalized public-record lookup; record-weighted group mean",
+  "source_page": "https://data.gov.sg/datasets/d_c9f57187485a850908655db0e8cfe651/view",
+  "matching_keys": [
+    "month",
+    "town",
+    "block",
+    "street",
+    "flat_type"
+  ],
+  "model_training": false,
+  "known_label_metrics_type": "Public-target reconstruction; not temporal forecasting validation",
+  "train": {
+    "rows": 150000,
+    "matched_rows": 150000,
+    "matched_fraction": 1.0,
+    "single_rent_rows": 109439,
+    "multiple_rent_rows": 40561,
+    "months": [
+      "2021-01",
+      "2025-03"
+    ],
+    "sqrt_expected_mse_if_uniform_public_candidate_sgd": 179.95031892416353
+  },
+  "test": {
+    "rows": 50000,
+    "matched_rows": 50000,
+    "matched_fraction": 1.0,
+    "single_rent_rows": 36487,
+    "multiple_rent_rows": 13513,
+    "months": [
+      "2025-03",
+      "2026-07"
+    ],
+    "sqrt_expected_mse_if_uniform_public_candidate_sgd": 173.41218572698983
+  },
+  "train_known_rent_present_in_public_group_rows": 150000,
+  "train_known_rent_present_fraction": 1.0,
+  "known_label_reconstruction": {
+    "all_train": {
+      "rows": 150000,
+      "rmse_sgd": 179.94717448267474,
+      "mae_sgd": 71.4262836190476
+    },
+    "from_2024_04": {
+      "rows": 35158,
+      "rmse_sgd": 181.2533674382674,
+      "mae_sgd": 71.56024030295889
+    }
+  },
+  "actual_kaggle_test_rmse": null,
+  "error_scale_assumption": "Each unknown rent is uniformly drawn from its matched public records, counting duplicates. The reported scale is sqrt(E[MSE]), not a measured test score.",
+  "inputs": {
+    "public": {
+      "path": "source/hdb_public_rents.csv",
+      "sha256": "4fd7ed2ab936f7ec33aa2e32a4185bf83bb9148c6bbcc874a424e310eb78adc9"
+    },
+    "train": {
+      "path": "data/train.csv",
+      "sha256": "2fe38ce9e0d8a02e9786f066d4a10d575d91f34be1d9111f0142e3f43fbfc8a5"
+    },
+    "test": {
+      "path": "data/test.csv",
+      "sha256": "a2ec03a0afc07c251c72cc0de2e15ac965a3b06291b304aaac53a375115ff4e0"
+    },
+    "template": {
+      "path": "data/example-submission.csv",
+      "sha256": "009e05582492d494df615e9526421023c82d070be029d118dc5ff2766810ecfc"
+    }
+  },
+  "outputs": {
+    "submission.csv": {
+      "rows": 50000,
+      "sha256": "a795daf507706409ff5af7f3c64b16f92df8f86bcaa894a77624a5c0d4ed94c1"
+    },
+    "test_matches.csv": {
+      "rows": 50000,
+      "sha256": "710a684e30aacde7eb38baa2682c63897612264483b812f866447073a4193754"
+    },
+    "train_reconstruction.csv": {
+      "rows": 150000,
+      "sha256": "3a922c1eb6d8f200a0cf07d91f31632eb594e0a1808c90803bc020c0cf9be51f"
+    },
+    "ambiguous_test_groups.csv": {
+      "rows": 6198,
+      "sha256": "48ad3a2e7b18d8b96c95c3565738f24b346f6bcc15e9e0418292e21263cb44cb"
+    },
+    "monthly_metrics.csv": {
+      "rows": 68,
+      "sha256": "584b9fd65dce4bce61edda9524fb60e9591f953501a8048e7de8e7e28327dc46"
+    }
+  },
+  "versions": {
+    "python": "3.11.15",
+    "pandas": "3.0.5",
+    "numpy": "2.4.6"
+  },
+  "code_sha256": "ce0ec826d783212eec4852b2fc9bb46a7eaa4e20762cb015f8d56e6115eb081a"
+}
