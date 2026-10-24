@@ -1,0 +1,26 @@
+{
+  "verified_date": "2026-10-24",
+  "tested_branch": "experiment/public-rent-lookup",
+  "tested_source_commit": "da70c53c02c7ae110d39b1704dca2c3d7d435b0e",
+  "procedure": "Local clean git clone containing only versioned branch files; fresh venv populated solely from requirements.txt; regenerate outputs without copied predictions or caches.",
+  "fresh_venv_include_system_site_packages": false,
+  "analysis_module_available": false,
+  "all_four_input_hashes_match": true,
+  "all_five_generated_csv_hashes_match_reference": true,
+  "known_label_metrics_match_reference_exactly": true,
+  "tests_passed": 9,
+  "submission_rows": 50000,
+  "submission_ids_correct": true,
+  "submission_finite": true,
+  "submission_sha256": "a795daf507706409ff5af7f3c64b16f92df8f86bcaa894a77624a5c0d4ed94c1",
+  "code_sha256": "ce0ec826d783212eec4852b2fc9bb46a7eaa4e20762cb015f8d56e6115eb081a",
+  "versions": {
+    "python": "3.11.15",
+    "numpy": "2.4.6",
+    "pandas": "3.0.5",
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0",
+    "tzdata": "2026.2"
+  },
+  "actual_kaggle_test_rmse": null
+}

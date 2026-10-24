@@ -3,6 +3,7 @@
 本分支只包含公开租金记录匹配方法、所需四份 CSV、检查代码及复现说明。
 不依赖其他分支的 `analysis/`、模型权重、特征缓存、GPU 或 Kaggle 凭据。
 完整思路和逐步代码解读见 [docs/method.md](docs/method.md)。
+独立环境与干净克隆的实测复现记录见 [docs/reproduction.md](docs/reproduction.md)。
 
 ## 快速复现
 
@@ -61,8 +62,10 @@ source/
   hdb_public_rents.json       # 来源、下载时间、哈希
 results/
   summary.json               # 固定快照的参考运行统计
+  reproduction_check.json    # 干净克隆、输入输出哈希一致的检查记录
 docs/
   method.md                  # 数据来源、思路、示例、公式、代码步骤与边界
+  reproduction.md            # 实测独立复现的过程及结果
 ```
 
 `outputs/` 是重新生成的结果目录，被 Git 忽略：
