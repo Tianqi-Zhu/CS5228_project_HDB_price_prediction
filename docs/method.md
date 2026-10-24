@@ -136,6 +136,107 @@ MARKET→MKT
 在“目标是从对应组的原始记录中等概率抽取”的假设下，组均值使期望平方误差最小。
 这解释了使用均值与 RMSE 指标之间的关系；该抽样假设不是已经确认的比赛数据生成规则。
 
+### 5.1 真实样本：从 test.csv 第 0 行到提交结果
+
+下面使用本分支固定数据中的**第一条测试记录**。它是第 0 行数据，不含 CSV 表头，
+对应提交文件的 `Id=0`。此例的地址、候选租金和最终输出均已实际核对。
+
+**第一步：读取这条记录，规范化五个匹配字段。**
+
+| 匹配字段 | `data/test.csv` 的原始值 | `canonical_keys()` 的结果 |
+| --- | --- | --- |
+| 月份 | `2025-03` | `2025-03` |
+| 市镇 | `kallang/whampoa` | `KALLANG/WHAMPOA` |
+| 楼栋 | `74` | `74` |
+| 街道 | `Whampoa Drive` | `WHAMPOA DR` |
+| 户型 | `3-room` | `3ROOM` |
+
+因此，本行的匹配键为：
+
+```text
+(2025-03, KALLANG/WHAMPOA, 74, WHAMPOA DR, 3ROOM)
+```
+
+这条测试记录没有真实租金。预测使用的候选租金来自接下来匹配的官方公开记录。
+
+**第二步：对官方数据做同样的规范化，再按五个字段完全相等筛选。**
+
+`source/hdb_public_rents.csv` 中匹配到 5 条记录，其租金分布为：
+
+| 官方月租金（SGD） | 原始记录次数 |
+| --- | ---: |
+| 2400 | 1 |
+| 3200 | 1 |
+| 3300 | 3 |
+| 合计 | 5 |
+
+候选列表展开后是 `[2400, 3200, 3300, 3300, 3300]`，共有 5 条记录、3 种不同租金。
+三个 3300 对应三条官方记录，需要保留各自的次数。
+
+**第三步：按全部原始记录求算术平均。**
+
+```text
+public_mean = (2400 + 3200 + 3300 + 3300 + 3300) / 5
+            = 15500 / 5
+            = 3100
+```
+
+如果先把不同租金去重，再算 `(2400 + 3200 + 3300) / 3`，会得到约 2966.67，
+与本方法不同。本方法保留原始记录次数，不训练额外的候选权重。
+
+**第四步：检查逐行明细，按原始位置导出结果。**
+
+运行后，`outputs/test_matches.csv` 中本行的关键字段应为：
+
+```text
+source_row = 0
+Id = 0
+public_count = 5
+public_unique_rents = 3
+public_mean = 3100.0
+match_type = multiple_rents_mean
+```
+
+再按提交模板的原始 ID 顺序，写入 `outputs/submission.csv`：
+
+```csv
+Id,Predicted
+0,3100.0
+```
+
+**第五步：自己重新核对候选记录。**
+
+安装依赖后，可以在本分支根目录用该虚拟环境执行下面的 Python 片段。
+它从四份已包含的输入中读取本例需要的数据，通过正式匹配函数重新计算，
+不读取已经生成的预测文件：
+
+```python
+import pandas as pd
+from public_rent_lookup.run import (
+    canonical_keys, build_statistics, lookup, make_submission,
+)
+
+test = pd.read_csv("data/test.csv", dtype={"BLOCK": "string"})
+public = pd.read_csv("source/hdb_public_rents.csv", dtype={"block": "string"})
+template = pd.read_csv("data/example-submission.csv")
+example = test.iloc[[0]]
+
+key = canonical_keys(example).iloc[0]
+public_keys = canonical_keys(public, public=True)
+mask = public_keys.eq(key, axis="columns").all(axis=1)
+rents = pd.to_numeric(public.loc[mask, "monthly_rent"])
+print("匹配键：", key.to_dict())
+print("候选租金：", sorted(rents.tolist()))
+
+matched = lookup(example, build_statistics(public))
+prediction = matched["public_mean"].to_numpy(float)
+submission_row = make_submission(template.iloc[[0]], prediction)
+print(submission_row.to_csv(index=False).strip())
+```
+
+预期候选租金为 `[2400, 3200, 3300, 3300, 3300]`，最后两行输出为 `Id,Predicted` 和 `0,3100.0`。
+这里能核对的是匹配过程与输出值；测试真实标签仍不可见，因此不能据此断言本行预测误差为零。
+
 ## 6. 程序实际按什么顺序运行
 
 执行 `python -m public_rent_lookup.run` 后：

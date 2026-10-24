@@ -99,6 +99,7 @@ python -m public_rent_lookup.run --public-data source/hdb_public_rents_latest.cs
 ## 组员阅读顺序
 
 1. 阅读 [完整方法说明](docs/method.md)，先了解低误差来自哪些信息。
+   第 5.1 节用测试第 0 行演示完整过程：原始地址 → 规范化匹配键 → 五条公开候选租金 → 均值 3100 → 提交 CSV。
 2. 安装依赖并运行检查，再执行一遍 `public_rent_lookup.run`。
 3. 比较新生成的 `outputs/summary.json` 与 `results/summary.json` 的指标和输入哈希。
 4. 打开 `outputs/test_matches.csv`，分别找一条 `single_rent` 与 `multiple_rents_mean` 记录，
