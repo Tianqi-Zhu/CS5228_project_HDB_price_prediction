@@ -1,0 +1,3 @@
+# CPU/macOS recurrent market experiment; separate from CUDA requirements-deep.txt.
+-r requirements-model.txt
+torch==2.14.1

@@ -1,0 +1,16 @@
+{
+  "lookback": 3,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "cutoffs": {
+    "2022-01": "2021-10",
+    "2022-07": "2022-04"
+  },
+  "validation": "2024-04..2025-03",
+  "scenario": "Monthly updated; actual prior-month rental summaries required",
+  "interpretation": "Exploratory reused holdout, not unbiased selection. Each cutoff changes encoder history and rental fitting size. Compare to its own no-latent baseline.",
+  "exports": "Both cutoffs, fixed seed 42; earlier published CSVs remain unchanged."
+}

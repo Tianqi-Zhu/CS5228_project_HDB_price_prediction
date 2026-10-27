@@ -1,0 +1,8 @@
+{
+  "repeated_observed_groups": 3169,
+  "rows_in_repeated_groups": 6951,
+  "median_within_group_rent_range": 400.0,
+  "note": "Descriptive only; different units/contracts can share these fields. Not an irreducible-error estimate.",
+  "train_target_std": 744.5816785694058,
+  "validation_target_std": 659.2235836845024
+}

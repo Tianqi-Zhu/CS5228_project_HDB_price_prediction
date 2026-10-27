@@ -1,0 +1,21 @@
+{
+  "windows": [
+    3,
+    6,
+    9,
+    12
+  ],
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "encoder_target_start": "2022-01",
+  "encoder_fit_end": "2022-09",
+  "encoder_tune": "2022-10..2022-12",
+  "rental_selection_fit": "2023-01..2023-09",
+  "window_selection": "2023-10..2024-03",
+  "outer_evaluation": "2024-04..2025-03",
+  "selection_rule": "minimum mean rental RMSE over the three seeds, separately per architecture",
+  "note": "Outer period previously inspected in other experiments; not a pristine test set. Monthly-updated scenario."
+}

@@ -1,0 +1,177 @@
+[
+  {
+    "file": "latest/rental_metrics.csv",
+    "source": "reports/experiments/market_latent/run-2026-10-26/rental_metrics.csv",
+    "sha256": "4bd0274539a730af5ea44b33ea0627eabb44b77cf65474a04b192d8e62b0ba3c"
+  },
+  {
+    "file": "latest/results.json",
+    "source": "reports/experiments/market_latent/run-2026-10-26/results.json",
+    "sha256": "0ee62b5d5dbfe3c48a35ddea59927ac07cc18ab13588af5540112f3d7c671c3a"
+  },
+  {
+    "file": "latest/train_validation_gap.csv",
+    "source": "reports/experiments/market_latent/run-2026-10-26/train_validation_gap.csv",
+    "sha256": "4e097a29b788c56081fa5c873f04db508959d78ebb247420a09605fe26d1ccde"
+  },
+  {
+    "file": "latest/error_slices.csv",
+    "source": "reports/experiments/market_latent/run-2026-10-26/error_slices.csv",
+    "sha256": "12be8d018535e5a037bc0c61e8b98d4d12fe133cde40bc5977bc2f22068f7c58"
+  },
+  {
+    "file": "latest/error_concentration.csv",
+    "source": "reports/experiments/market_latent/run-2026-10-26/error_concentration.csv",
+    "sha256": "63594741b54788911f03e9985908729ddc79fb2ee8ab49105f355519a658d0a6"
+  },
+  {
+    "file": "latest/diagnostic_context.json",
+    "source": "reports/experiments/market_latent/run-2026-10-26/diagnostic_context.json",
+    "sha256": "88e0837e00ac53e9d0fdf28c9af4d14ee74da317cf6443190dc249077061a9b5"
+  },
+  {
+    "file": "windows/window_selection.csv",
+    "source": "reports/experiments/market_window_search/run-2026-10-24/window_selection.csv",
+    "sha256": "9b1d839b2a1e9d62bd81b474ba04973d20cf0932ce2e4bb1e493f8912d01168c"
+  },
+  {
+    "file": "windows/selected_outer_metrics.csv",
+    "source": "reports/experiments/market_window_search/run-2026-10-24/selected_outer_metrics.csv",
+    "sha256": "724238805b96e5cac04ff2cfe305be0e8fc382d8d4fe55c38b9cfd87da8907c2"
+  },
+  {
+    "file": "windows/protocol.json",
+    "source": "reports/experiments/market_window_search/run-2026-10-24/protocol.json",
+    "sha256": "cf1bc7a70ab7e08fad7650b9950cc61fab95102b994ad0ccffdff2b322f516cb"
+  },
+  {
+    "file": "cutoffs/cutoff_comparison.csv",
+    "source": "reports/experiments/market_early_cutoff/run-2026-10-24/cutoff_comparison.csv",
+    "sha256": "d656b0fcc973ff057c9d69199838a9e1a1a982fb02b75661a72f58b38d345527"
+  },
+  {
+    "file": "cutoffs/protocol.json",
+    "source": "reports/experiments/market_early_cutoff/run-2026-10-24/protocol.json",
+    "sha256": "43b0293eb5e1d7879be2f62eb746cb698bb1d5fdda19958459a9e968004c8f7a"
+  },
+  {
+    "file": "mlp/metrics.csv",
+    "source": "reports/experiments/market_latent_mlp/run-2026-10-26/metrics.csv",
+    "sha256": "bff6625503faa416112a768dabfb3a4eccec9eae4ee9db35291917a06d956fa9"
+  },
+  {
+    "file": "mlp/protocol.json",
+    "source": "reports/experiments/market_latent_mlp/run-2026-10-26/protocol.json",
+    "sha256": "02275b9e833341ed178df4302d2e285dd29add93f63af064ee7383c72b2bf465"
+  },
+  {
+    "file": "initial_six_month/rental_metrics.csv",
+    "source": "reports/experiments/market_latent/run-2026-10-24/rental_metrics.csv",
+    "sha256": "b778d1b65ec99da157df9d57c366cf133a7c7d3917658ed09046c661d4a26ce8"
+  },
+  {
+    "file": "initial_six_month/results.json",
+    "source": "reports/experiments/market_latent/run-2026-10-24/results.json",
+    "sha256": "f6fa192b8ce3b26a7561206090376da52dec5ff50edaf1b35888fba1a79e2a13"
+  },
+  {
+    "file": "features/rnn_features_from_2022-01.csv",
+    "source": "reports/experiments/market_early_cutoff/run-2026-10-24/rnn_features_from_2022-01.csv",
+    "sha256": "099601417120899cc7057ad6ddc415a04f7c3e34b688690ff4eae4c65efa7e42"
+  },
+  {
+    "file": "features/rnn_windows_from_2022-01.csv",
+    "source": "reports/experiments/market_early_cutoff/run-2026-10-24/rnn_windows_from_2022-01.csv",
+    "sha256": "0d2f2896db901eae40f6fc044703d3e468ff766db19b52afbaa7110da709cd38"
+  },
+  {
+    "file": "features/rnn_features_from_2022-07.csv",
+    "source": "reports/experiments/market_early_cutoff/run-2026-10-24/rnn_features_from_2022-07.csv",
+    "sha256": "ca27f596ba204512453f1fe117b4668b5b5d066a14161493c9a17cd11fb79d80"
+  },
+  {
+    "file": "features/rnn_windows_from_2022-07.csv",
+    "source": "reports/experiments/market_early_cutoff/run-2026-10-24/rnn_windows_from_2022-07.csv",
+    "sha256": "0b7a378da76a0faf49175ccf9379cdb14347d8e14a7dc6c44c372ec567c2d713"
+  },
+  {
+    "file": "latest/rnn_42_latent.csv",
+    "source": "reports/experiments/market_latent/run-2026-10-26/rnn_42_latent.csv",
+    "sha256": "2e79c3e7d242bfaa2c2e1146d562b1dee21f7d3fbe1ef897549732fcb4b928d1"
+  },
+  {
+    "file": "latest/rnn_42_epochs.csv",
+    "source": "reports/experiments/market_latent/run-2026-10-26/rnn_42_epochs.csv",
+    "sha256": "a4a7fa25a1741036cfe2c250b45fa1daa30b14fcf7547494492dfdde9b1da815"
+  },
+  {
+    "file": "latest/rnn_43_latent.csv",
+    "source": "reports/experiments/market_latent/run-2026-10-26/rnn_43_latent.csv",
+    "sha256": "53ab8337c2245c882b97e265ae14a80f88f77472d0796e55ea2d1feb9e380e3e"
+  },
+  {
+    "file": "latest/rnn_43_epochs.csv",
+    "source": "reports/experiments/market_latent/run-2026-10-26/rnn_43_epochs.csv",
+    "sha256": "8186e124be2f3c408e45635316267d0d810259dc1de7b47e275110f9e4795889"
+  },
+  {
+    "file": "latest/rnn_44_latent.csv",
+    "source": "reports/experiments/market_latent/run-2026-10-26/rnn_44_latent.csv",
+    "sha256": "384519bcb90614fb1861a3303b13b387231f38ac29b30daaed7290a86a7983ea"
+  },
+  {
+    "file": "latest/rnn_44_epochs.csv",
+    "source": "reports/experiments/market_latent/run-2026-10-26/rnn_44_epochs.csv",
+    "sha256": "df62b759fec27bbf19c7575a961f9a1c2ef5c6a8b36b7e1ab32bcd2dcbf8e6a1"
+  },
+  {
+    "file": "features/lstm_features_from_2022-01.csv",
+    "source": "reports/experiments/market_early_cutoff/run-2026-10-24/lstm_features_from_2022-01.csv",
+    "sha256": "d3649b68e5feffaf7de53813e9d543490706573987901ccc83b4563ea9b4077d"
+  },
+  {
+    "file": "features/lstm_windows_from_2022-01.csv",
+    "source": "reports/experiments/market_early_cutoff/run-2026-10-24/lstm_windows_from_2022-01.csv",
+    "sha256": "0d2f2896db901eae40f6fc044703d3e468ff766db19b52afbaa7110da709cd38"
+  },
+  {
+    "file": "features/lstm_features_from_2022-07.csv",
+    "source": "reports/experiments/market_early_cutoff/run-2026-10-24/lstm_features_from_2022-07.csv",
+    "sha256": "311fa6c62f5010984af32aa893dc73650734c6ab87d3337cbc75fa77cadc6b53"
+  },
+  {
+    "file": "features/lstm_windows_from_2022-07.csv",
+    "source": "reports/experiments/market_early_cutoff/run-2026-10-24/lstm_windows_from_2022-07.csv",
+    "sha256": "0b7a378da76a0faf49175ccf9379cdb14347d8e14a7dc6c44c372ec567c2d713"
+  },
+  {
+    "file": "latest/lstm_42_latent.csv",
+    "source": "reports/experiments/market_latent/run-2026-10-26/lstm_42_latent.csv",
+    "sha256": "edc20fbef21873443690be60e925074fa32aa9a5728a9c064cb2b41790346188"
+  },
+  {
+    "file": "latest/lstm_42_epochs.csv",
+    "source": "reports/experiments/market_latent/run-2026-10-26/lstm_42_epochs.csv",
+    "sha256": "80a353cf38d0d3f2c6d181ca17133e552f7737496395aadcb674765d46a50d51"
+  },
+  {
+    "file": "latest/lstm_43_latent.csv",
+    "source": "reports/experiments/market_latent/run-2026-10-26/lstm_43_latent.csv",
+    "sha256": "489d8ebef2dcb1f09ccb8261fb982a555d537e982c28cdfc15eb3040b2d30c42"
+  },
+  {
+    "file": "latest/lstm_43_epochs.csv",
+    "source": "reports/experiments/market_latent/run-2026-10-26/lstm_43_epochs.csv",
+    "sha256": "eec06a989558dca84d2fe0782cc61ba4cee4ccbc92d0229a10ffcb04f31f80de"
+  },
+  {
+    "file": "latest/lstm_44_latent.csv",
+    "source": "reports/experiments/market_latent/run-2026-10-26/lstm_44_latent.csv",
+    "sha256": "a08bd9a96c03d194d3b5a8f49f54405b13516e386040618065b24913c8096b07"
+  },
+  {
+    "file": "latest/lstm_44_epochs.csv",
+    "source": "reports/experiments/market_latent/run-2026-10-26/lstm_44_epochs.csv",
+    "sha256": "a83082cfa7aa799ed14cc3091354ad61281dae58527031be95e7b872b53e40c9"
+  }
+]
