@@ -1,0 +1,12 @@
+{
+  "model_version": "v3",
+  "training_window_months": 12,
+  "context_rows": 50000,
+  "n_estimators": 1,
+  "batch_size": 500,
+  "seed": 42,
+  "fit_mode": "fit_with_cache",
+  "prepared_manifest_sha256": "ca523532716eac0d077816822ef870427a7da124277332f86647ba061c7e9833",
+  "runner_sha256": "aff56fcee85ae30ab39c9b5f81418fedf2ba6bd563a004a3251ced1d8d231b1b",
+  "fit_helper_sha256": "db91351d1d0b0c08dc0c8c7205b6547b7d76144c4a3735a0296b64d93de25fda"
+}

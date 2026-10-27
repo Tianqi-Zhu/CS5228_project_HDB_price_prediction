@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "validation_rows": 79817,
+  "historical_query_tasks": 24000,
+  "origins": 11,
+  "head_fits": 12,
+  "checks": [
+    "source/code hashes",
+    "cached array hashes",
+    "context before query",
+    "query/source labels and dates",
+    "forecast horizons",
+    "unique/disjoint outer rows",
+    "pooled RMSE recomputation",
+    "inner/outer chronological head partitions",
+    "head artifact hashes"
+  ]
+}

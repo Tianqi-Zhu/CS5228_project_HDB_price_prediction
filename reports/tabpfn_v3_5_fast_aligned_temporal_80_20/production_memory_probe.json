@@ -1,0 +1,10 @@
+{
+  "context_rows": 121005,
+  "query_rows": 400,
+  "batch_size": 200,
+  "peak_pytorch_allocated_gib": 7.219371795654297,
+  "peak_pytorch_reserved_gib": 15.904296875,
+  "gpu_physical_gib": 15.99169921875,
+  "max_prediction_difference_sgd": 4.977664502803236e-09,
+  "purpose": "Production-only memory probe excluding the rejected 1000-row batch; replay first 400 predictions"
+}

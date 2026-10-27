@@ -1,0 +1,8 @@
+{
+  "environment": {
+    "OMP_NUM_THREADS": "1",
+    "TABPFN_MAX_BATCHED_ESTIMATOR_ROWS": "0"
+  },
+  "reason": "Run estimators sequentially to avoid Windows GPU memory paging at 50,000 context rows. Ensemble count, contexts and features are unchanged.",
+  "initial_default_batching_attempt": "Stopped before any validation fold completed; nearly all 16 GB GPU memory was occupied and predictions were very slow."
+}

@@ -1,0 +1,3 @@
+baseline,rmse_sgd,mae_sgd,bias_sgd
+previous_local,499.17374584,369.44587322,-31.35919415
+dynamic_composition_adjusted,487.46012310,360.12419987,-33.83103146

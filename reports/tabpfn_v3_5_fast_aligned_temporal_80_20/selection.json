@@ -1,0 +1,5 @@
+{
+  "criterion": "development holdout RMSE",
+  "model": "tabpfn_aligned_residual",
+  "rmse_sgd": 455.86289685276813
+}

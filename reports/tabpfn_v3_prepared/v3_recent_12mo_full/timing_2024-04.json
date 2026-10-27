@@ -1,0 +1,10 @@
+{
+  "fit_seconds": 2.7142739999690093,
+  "predict_seconds": 23.814111699990463,
+  "peak_vram_gib": 5.86334753036499,
+  "model_path": "C:\\Users\\auror\\Code\\CS5228_project_HDB_price_prediction\\.cache\\tabpfn\\tabpfn-v3-regressor-v3_default.ckpt",
+  "checkpoint_sha256": "311ce18d97e9533d8585eaadafe040fbdd8070533209ed8696641dadc97a7301",
+  "training_rows": 35882,
+  "first_train_month": "2023-04",
+  "last_train_month": "2024-03"
+}

@@ -216,3 +216,43 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# TabPFN experiments
+# .cache above already covers downloaded weights, auth caches, feature bundles,
+# embeddings, and partial downloads. Also cover the SDK's fallback model folder
+# and checkpoints downloaded directly into the repository root.
+/.tabpfn_models/
+/tabpfn*.ckpt
+/tabpfn*.safetensors
+/tabpfn*.ckpt.*
+/tabpfn*.safetensors.*
+
+# Keep experiment code, reports, small figures, metrics, settings, timing, and
+# audit JSON files. Exclude reproducible row-level outputs and feature exports.
+/reports/tabpfn*/**/*prediction*.csv
+/reports/tabpfn*/**/baseline_*.csv
+!/reports/tabpfn*/**/baseline_diagnostics.csv
+/reports/tabpfn*/**/temporal_features_*.csv
+/reports/tabpfn*/**/forecast_bank.csv
+/reports/tabpfn*/**/submission*.csv
+
+# Fitted heads, saved models, embeddings, and other binary experiment artifacts.
+/reports/tabpfn*/**/*.joblib
+/reports/tabpfn*/**/*.pkl
+/reports/tabpfn*/**/*.pickle
+/reports/tabpfn*/**/*.npy
+/reports/tabpfn*/**/*.npz
+/reports/tabpfn*/**/*.pt
+/reports/tabpfn*/**/*.pth
+/reports/tabpfn*/**/*.ckpt
+/reports/tabpfn*/**/*.safetensors
+/reports/tabpfn*/**/*.part
+/reports/tabpfn*/**/*.incomplete
+/reports/tabpfn*/**/*.lock
+
+# Mutable progress and resume markers; final summaries remain versionable.
+/reports/tabpfn*/**/status.json
+/reports/tabpfn*/**/*_status.json
+/reports/tabpfn*/**/progress.json
+/reports/tabpfn*/**/progress_*.json
+/reports/tabpfn*/**/completed_*.json

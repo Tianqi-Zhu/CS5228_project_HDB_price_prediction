@@ -6,6 +6,112 @@ The completed [full-history tree, market-index, and coarse-surface experiment](r
 
 The [factored dynamic rental-surface experiment](reports/factored_rental_surface/report.md) evaluates monthly smoothed surfaces, PCA factors, fixed-origin temporal forecasts, and direct/residual CatBoost hybrids. The residual hybrid improves pooled RMSE by S$1.23 but is less consistent across folds, so the selected candidate remains full-history CatBoost.
 
+## TabPFN experiment
+
+The chronological 80/20 follow-up uses January 2021-May 2024 as context
+(121,005 rows) and June 2024-March 2025 as validation (28,995 rows).
+The [aligned temporal residual experiment](reports/tabpfn_v3_5_fast_aligned_temporal_80_20/report.md)
+scores S$455.86 RMSE. Its histories and temporal forecasts share the same
+information cutoff for every context row.
+
+The [comprehensive temporal experiment](reports/tabpfn_v3_5_fast_dynamic_temporal_80_20/report.md)
+tests a property-adjusted monthly market index, short and long trends,
+seasonality, local activity and volatility, and optional lagged category-A COE
+effects. Earlier forecast periods select the temporal corrections. The saved
+candidate scores S$457.97 RMSE and worsens all ten validation months against
+the aligned residual model, which remains the selected TabPFN setup.
+The feature bundle contains raw rent labels: train TabPFN on
+`y_train - train_baseline` and reconstruct with
+`predicted_residual + query_baseline`. Run
+`.venv/Scripts/python.exe analysis/compare_tabpfn_dynamic_temporal_80_20.py`
+or add `--prepare-only` to save features without GPU inference. These 80/20
+scores are development results and are not directly comparable with the
+multi-fold scores below.
+
+The completed [TabPFN context comparison](reports/tabpfn/comparison_report.md)
+retains **CatBoost at S$539.29 pooled RMSE**. TabPFN-3.5 with rental histories
+scores S$545.76 with 20,000 context rows and S$541.46 with 50,000. The best
+forward blend scores S$540.13. The larger context improves TabPFN, but neither
+standalone model nor blend beats CatBoost on pooled RMSE. Detailed reports
+include fold/monthly scores, plots, timings, memory and verified row predictions.
+
+The subsequent [feature-engineering and frozen-head experiment](reports/tabpfn_adaptation/report.md)
+uses a matched single-estimator/10,000-context backbone. Recent rent features
+improve its pooled RMSE from **S$546.55 to S$538.58**, slightly below CatBoost's
+S$539.29. The gain is S$0.71 and the second/third folds worsen, so the
+prespecified consistency rule retains CatBoost. Frozen embedding Ridge and MLP
+heads score S$628.41 and S$630.54; every residual head worsens every fold.
+The conditional backbone-gradient pilot was not triggered. The
+[experiment plan](EXPERIMENT_PLAN_TABPFN_ADAPTATION.md) records the design and
+gate before scoring. This follow-up verifies 24,000 historical query tasks,
+79,817 outer rows and chronological inner-head selection.
+
+`analysis/compare_tabpfn.py` compares local TabPFN-3.5 with spatial-only inputs,
+TabPFN with strictly earlier rental histories, and full-history CatBoost on the
+same three disjoint fixed-origin folds. A CatBoost/TabPFN-history blend learns
+its weight only from earlier folds; the first fold uses CatBoost alone.
+Reports, row predictions, source hashes, package versions, GPU memory and
+timings are written to `reports/tabpfn/`. No future COE/stock observations enter
+the experiment. The existing CatBoost submission candidate is retained.
+
+Install into the project virtual environment and authenticate interactively:
+
+```powershell
+uv pip install --python .venv/Scripts/python.exe torch==2.11.0 --index-url https://download.pytorch.org/whl/cu128
+uv pip install --python .venv/Scripts/python.exe -r requirements-tabpfn.txt
+.venv/Scripts/python.exe analysis/authenticate_tabpfn.py
+$env:OMP_NUM_THREADS = '1'
+.venv/Scripts/python.exe analysis/compare_tabpfn.py --check-access
+$env:TABPFN_MAX_BATCHED_ESTIMATOR_ROWS = $null
+.venv/Scripts/python.exe analysis/compare_tabpfn.py --resume
+.venv/Scripts/python.exe analysis/plot_tabpfn.py --input reports/tabpfn
+
+# Larger-context comparison, with estimators evaluated sequentially.
+$env:TABPFN_MAX_BATCHED_ESTIMATOR_ROWS = '0'
+.venv/Scripts/python.exe analysis/compare_tabpfn.py --context-rows 50000 --batch-size 200 --output reports/tabpfn_50k --resume
+.venv/Scripts/python.exe analysis/plot_tabpfn.py --input reports/tabpfn_50k
+.venv/Scripts/python.exe analysis/summarize_tabpfn_contexts.py
+```
+
+The default uses four estimators, 20,000 context rows per estimator and cached
+prediction in 500-row batches. The initial 2,000-row prediction batch exceeded
+the RTX 4080's memory; a 500-row probe passed with the same context and estimators.
+A context of `0` uses full history. Use a
+different output directory for different settings, for example
+`--context-rows 50000 --batch-size 200 --output reports/tabpfn_50k`. The larger
+run uses `TABPFN_MAX_BATCHED_ESTIMATOR_ROWS=0` to limit simultaneous estimator
+memory without changing the ensemble count. `--baseline-only` runs the
+matched CatBoost controls without requiring TabPFN access. Completed folds can
+be resumed only with matching settings, source/code hashes and prediction hashes.
+Model weights are cached under the ignored `.cache/` directory. Authentication
+uses the upstream package's user-local token cache; credentials are never
+included in experiment artifacts.
+
+If the browser login fails, open `https://platform.priorlabs.ai` directly,
+sign in, accept the TabPFN-3.5 license under Licenses, and copy your API key.
+The authentication helper prompts for the key with hidden input by default;
+it does not use a localhost callback. `--api-key` explicitly selects this same
+mode. Upstream TabPFN 9.2.0 uses `select.select()` on terminal input in its
+browser flow, which is incompatible with Windows console handles; `--browser`
+retains that optional flow for other environments.
+
+Run the feature/head follow-up using the same installed dependencies:
+
+```powershell
+$env:OMP_NUM_THREADS = '1'
+.venv/Scripts/python.exe analysis/compare_tabpfn_adaptation.py --smoke
+.venv/Scripts/python.exe analysis/compare_tabpfn_adaptation.py --resume
+.venv/Scripts/python.exe analysis/plot_tabpfn_adaptation.py
+```
+
+The follow-up caches query embeddings under ignored `.cache/tabpfn_adaptation/`.
+It saves feature/head metrics, source-row predictions, fitted residual heads,
+learning curves and context/query audits under `reports/tabpfn_adaptation/`.
+Ridge and MLP each have numeric-only and embedding controls. The heads use
+quarterly historical origins with 1/3/6/12-month horizons; the final three
+pre-outer months select hyperparameters. Query rents never enter their labelled
+TabPFN context, and outer labels never train or select a head.
+
 根据新加坡 HDB 组屋的属性、位置和租赁审批时间预测每月租金（SGD）。项目使用 Kaggle 提供的训练集、测试集与辅助数据；比赛评价指标为均方根误差（RMSE）。
 
 ## 数据与任务
