@@ -1,0 +1,68 @@
+{
+  "catboost_settings": {
+    "iterations": 600,
+    "depth": 7,
+    "learning_rate": 0.05,
+    "l2_leaf_reg": 5.0,
+    "loss_function": "RMSE",
+    "verbose": false,
+    "thread_count": 4,
+    "random_seed": 42,
+    "allow_writing_files": false
+  },
+  "catboost_variants": [
+    "cb68",
+    "cb77raw",
+    "cb77residual"
+  ],
+  "tabpfn_variants": [
+    "integer",
+    "categorical"
+  ],
+  "origins": [
+    "2022-09",
+    "2023-07"
+  ],
+  "calibration_query_rows_per_month": 200,
+  "calibration_weights": "month population / sampled count",
+  "forecast_horizons": [
+    1,
+    10
+  ],
+  "outer_context_rows": 121005,
+  "outer_validation_rows": 28995,
+  "aligned_artifact_sha256": "639f5d0a3cda8570b86f927c0e29b5d58c874d91976af590790c32cc62a481da",
+  "original_artifact_sha256": "8e271f74c0ba87edf9108ba67dbbc9371c4b817258d2a56d135076d386d84a0c",
+  "inner_artifacts": {
+    "2022-09": "c46af1c5d411cc206174ae38d2389f67b99f7e97a2274e7c8f32a5730c344fae",
+    "2023-07": "f93b6e7ed610ad1df01ae987ddb8fe260c9f5ab15d218aca406a08536f5518b6"
+  },
+  "input_predictions_sha256": {
+    "integer": "7659ca9f1d754d87e2083b77c737b2a653fe2ed8fec8abb48fd03cd22da48b05",
+    "categorical": "6ae63cf3d00073220a77f05e547efcc601dcbdae151dc4260c8b72c21a9d83b6",
+    "cb68": "9b289c5f663cfdbfb47304c96917b7214cf0c7585f50751402045726eb47fce8",
+    "inner_2022-09_integer": "e75dd51c8579512b5fb9d3164cff4da17b9376f13dcfc8d5b06370c6af865532",
+    "inner_2022-09_categorical": "822894e91df602be722406fca489bb273d06ea523dbf2358ee2c02ba939b35ea",
+    "inner_2023-07_integer": "bbb267501d8c49594c713a477f81f5ec59258ad42941929bfded068a110c544b",
+    "inner_2023-07_categorical": "f555eaa41bf2b5d4fa7ab64189822c0ae44c1bd4f5888d3e756806d4d67af770"
+  },
+  "code_sha256": {
+    "analysis/compare_tabpfn_catboost_ensemble.py": "a8f7b60b59934fe993484ead59f6c3761755aa2dc96c1cdb9e83452492d3a371",
+    "analysis/experiments/prediction_blending.py": "f64bc79b89b4937f4f26e10362481051e39860f3f3170adaaac699b04e5940f6",
+    "analysis/experiments/dynamic_market_index.py": "9b26c1ebcfaf1f13905f37fb4e0c1d55ae73995d1d42069bc1df1ed3e04e34f4",
+    "analysis/compare_tabpfn_calendar_80_20.py": "e88eb31412feea17db8d5987ad30983e214d4fbfbc96a9708cccf8e7c5a4a052",
+    "analysis/evaluation.py": "a7a81b63717b8ce1b59e51a969b98560112da0a0a090c8f0d24d50ed041efe97"
+  },
+  "versions": {
+    "catboost": "1.2.10",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "tabpfn": "9.2.0"
+  },
+  "blend": "w * TabPFN raw-rent prediction + (1-w) * CatBoost raw-rent prediction; no intercept; 0<=w<=1",
+  "weight_fitting": "earlier out-of-time queries only; exact weighted least squares",
+  "selection_rule": "at least 0.25% earlier pooled RMSE gain over integer TabPFN; neither earlier fold >0.5% worse; simpler within 0.1% of best",
+  "preference_order": "equal before fitted; integer before categorical; cb68 before cb77raw before cb77residual",
+  "fallback_ensemble_for_reporting": "integer_cb68_equal",
+  "outer_labels_used_for_weight_fitting": false
+}

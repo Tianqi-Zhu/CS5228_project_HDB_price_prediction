@@ -1,0 +1,9 @@
+{
+  "fit_seconds": 91.70967300003394,
+  "predict_seconds": 0.08502479997696355,
+  "context_rows": 121005,
+  "features": 77,
+  "target": "raw rent",
+  "model_artifact": ".cache/tabpfn_ensemble/outer_cb77raw.cbm",
+  "sha256": "d3f14ecd77d3e1ed2e1076d4726343d5b967dc6e7d4a79c71fe222da9bfe437c"
+}

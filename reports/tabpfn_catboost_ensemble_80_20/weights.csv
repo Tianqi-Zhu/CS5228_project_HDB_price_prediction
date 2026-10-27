@@ -1,0 +1,13 @@
+model,tabpfn,catboost,weight_tabpfn,weight_catboost,weight_mode
+integer_cb68_equal,integer,cb68,0.500000000000,0.500000000000,equal
+integer_cb77raw_equal,integer,cb77raw,0.500000000000,0.500000000000,equal
+integer_cb77residual_equal,integer,cb77residual,0.500000000000,0.500000000000,equal
+categorical_cb68_equal,categorical,cb68,0.500000000000,0.500000000000,equal
+categorical_cb77raw_equal,categorical,cb77raw,0.500000000000,0.500000000000,equal
+categorical_cb77residual_equal,categorical,cb77residual,0.500000000000,0.500000000000,equal
+integer_cb68_fitted,integer,cb68,0.663028345752,0.336971654248,fitted
+integer_cb77raw_fitted,integer,cb77raw,0.591312794979,0.408687205021,fitted
+integer_cb77residual_fitted,integer,cb77residual,0.719835611723,0.280164388277,fitted
+categorical_cb68_fitted,categorical,cb68,0.721846357457,0.278153642543,fitted
+categorical_cb77raw_fitted,categorical,cb77raw,0.674980688800,0.325019311200,fitted
+categorical_cb77residual_fitted,categorical,cb77residual,0.895960734410,0.104039265590,fitted

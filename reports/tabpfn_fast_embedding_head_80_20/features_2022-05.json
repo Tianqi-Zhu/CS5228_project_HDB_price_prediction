@@ -1,0 +1,13 @@
+{
+  "artifact": ".cache/tabpfn_fast_embedding_head/features_2022-05.joblib",
+  "sha256": "d3d5a48655f8ba994bb925eadf3393e413ecaa2d52f1905a1e1512f7e64603b6",
+  "origin": "2022-05",
+  "last_context_month": "2022-04",
+  "context_rows": 49389,
+  "query_rows": 2000,
+  "first_query_month": "2022-05",
+  "last_query_month": "2023-02",
+  "context_query_disjoint": true,
+  "query_sampling": "200 per target month, seed 42, label independent",
+  "feature_generation": "strict origin-1 rent histories and temporal forecast"
+}

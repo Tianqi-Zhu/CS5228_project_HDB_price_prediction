@@ -1,0 +1,46 @@
+{
+  "validation_rows": 28995,
+  "unique_ids": true,
+  "all_predictions_finite": true,
+  "metrics_recomputed": true,
+  "mse_recomputed": true,
+  "convex_reconstruction_verified": true,
+  "all_fitted_weights_independently_recomputed_from_earlier_queries_only": true,
+  "calibration_queries": 4000,
+  "calibration_represented_rows": 57909.0,
+  "cached_resume_without_refitting": true,
+  "new_tests_passed": 7,
+  "catboost_model_hashes": {
+    ".cache/tabpfn_ensemble/inner_2022-09_cb68.cbm": "05640b9992bf00fff0405a80c4f8ac88b7cad1ac5a30a5f3d0eb44bb43956afd",
+    ".cache/tabpfn_ensemble/inner_2022-09_cb77raw.cbm": "c8aef7b7cd631269d1a69bae184899ddde3ae917e269523ed24f4cf8e994a203",
+    ".cache/tabpfn_ensemble/inner_2022-09_cb77residual.cbm": "140ce2e92c9a173418eb1f48b52c223ef32b478a86a82edba76aba909bd8bbb5",
+    ".cache/tabpfn_ensemble/inner_2023-07_cb68.cbm": "05e72a917ff9755778ccdcf81ad4638dd9c5fbc80b9c3cda6799dce1fc77f389",
+    ".cache/tabpfn_ensemble/inner_2023-07_cb77raw.cbm": "19de317fe2231462401ab20111db3268b408db1edd4f925c78c2569e9974d89d",
+    ".cache/tabpfn_ensemble/inner_2023-07_cb77residual.cbm": "8f3b9c8c67842ed1b73dfee8517c3bf2ff36ad6056c9794814d1897acdf65d1e",
+    ".cache/tabpfn_ensemble/outer_cb77raw.cbm": "d3f14ecd77d3e1ed2e1076d4726343d5b967dc6e7d4a79c71fe222da9bfe437c",
+    ".cache/tabpfn_ensemble/outer_cb77residual.cbm": "25a897034f20d5e513d77e85b6b31269592a2a2836fbfc5634d35c60c0d8b32b"
+  },
+  "earlier_selected": "integer_cb68_fitted",
+  "selected_blend_months_improved_vs_integer": 3,
+  "best_outer_blend_exploratory": {
+    "model": "categorical_cb77residual_fitted",
+    "tabpfn": "categorical",
+    "catboost": "cb77residual",
+    "weight_tabpfn": 0.89596073441023,
+    "weight_catboost": 0.10403926558976995,
+    "weight_mode": "fitted",
+    "rmse_sgd": 455.76244471,
+    "mse_sgd2": 207719.40601207
+  },
+  "prediction_files_sha256": {
+    "predictions_inner_2022-09_cb68.csv": "12e36fe0a341b6c5238f30ae2fe70f8f28b3cbed45d51d7e172dc7d4506d7a07",
+    "predictions_inner_2022-09_cb77raw.csv": "e6ca10b2fda643c0f844cb420b5d2e1b72d0d44b6b5aee99a6920bafc7a169ba",
+    "predictions_inner_2022-09_cb77residual.csv": "417cf44d07e0d35ba826b45efccc72eb129bae214f523d90303fd081ca7da49f",
+    "predictions_inner_2023-07_cb68.csv": "9a844b1787e58e1aada32d445aaa65b9b01c9118362578294808697b65cd77dd",
+    "predictions_inner_2023-07_cb77raw.csv": "65437bea177e610ca5c00652c5e5667390c4b8cc2ae3374d1b098f51ba82cbfd",
+    "predictions_inner_2023-07_cb77residual.csv": "fd5495486961bd9f6c16b9d775a0c1ead0eaecb85e4a0deb68bf4a5fca51d856",
+    "predictions_outer_cb77raw.csv": "927fbe06aa241ddb7829707364c932cbbf07f8990dcb4af80685ce2818e464d6",
+    "predictions_outer_cb77residual.csv": "cd73daeba354f94c5543982913f436d74dc52b837f8e5b76a70c86f26339b7ab",
+    "validation_predictions.csv": "ac5ca06e8a3ea8044371e159b829b0d0250dd8ab373a128d322b5d36bbc6f306"
+  }
+}

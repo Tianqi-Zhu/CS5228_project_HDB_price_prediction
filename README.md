@@ -28,6 +28,45 @@ or add `--prepare-only` to save features without GPU inference. These 80/20
 scores are development results and are not directly comparable with the
 multi-fold scores below.
 
+The [controlled month-encoding and calendar experiment](reports/tabpfn_v3_5_fast_calendar_80_20/report.md)
+holds the aligned residual baseline and non-month features fixed. Categorical
+month scores S$455.81 RMSE, effectively tied with the S$455.86 integer control.
+Cyclical month, intake-window proxies, and school interactions score S$459.07,
+S$457.03, and S$457.42 respectively. The earlier-selected calendar candidate
+fails outer confirmation, so the integer control remains recommended. All new
+features are complete in context and validation; 35 tests passed. Reproduce
+with `.venv/Scripts/python.exe analysis/compare_tabpfn_calendar_80_20.py`.
+
+The [TabPFN/CatBoost ensemble experiment](reports/tabpfn_catboost_ensemble_80_20/report.md)
+fits blend weights on earlier out-of-time forecasts. The selected blend uses
+66.3% aligned TabPFN and 33.7% original-feature CatBoost and scores S$456.01
+validation RMSE (MSE 207,942.32), slightly worse than TabPFN alone. The 50/50
+blend scores S$456.63. The best observed alternative scores S$455.76 but was
+not the pair selected on earlier data and improves its TabPFN component by
+only S$0.05. Retain the original aligned TabPFN. Reproduce with
+`.venv/Scripts/python.exe analysis/compare_tabpfn_catboost_ensemble.py`.
+
+The [frozen Fast embedding-head experiment](reports/tabpfn_fast_embedding_head_80_20/report.md)
+uses the numerically best categorical-month setup, all 121,005 context rows,
+and 10,800 earlier out-of-time query embeddings to train and select an MLP.
+The selected raw-embedding MLP improves historical calibration RMSE from
+S$544.60 to S$525.56, but raises the complete 80/20 holdout RMSE from
+**S$455.81 to S$460.90**; all ten validation months worsen. Its learned
+downward correction follows a historical TabPFN overprediction bias that
+largely disappears on the outer holdout. Retain the frozen TabPFN baseline.
+Reproduce with
+`.venv/Scripts/python.exe analysis/compare_tabpfn_fast_embedding_head_80_20.py`.
+
+The [TabPFN Kaggle submission](reports/tabpfn_fast_final_submission/report.md)
+fits the categorical-month Fast regressor on all 150,000 labeled training rows
+and writes 50,000 predictions to
+`reports/tabpfn_fast_final_submission/submission_tabpfn_fast_150k.csv`.
+March 2025 test histories stop at February; later test histories stop at
+March 2025. The temporal forecast is held at its month-ten level for the
+18,077 test rows beyond its validated range. The test set has no rent labels,
+so this file has no measurable test RMSE. Reproduce with
+`.venv/Scripts/python.exe analysis/train_tabpfn_fast_submission.py`.
+
 The completed [TabPFN context comparison](reports/tabpfn/comparison_report.md)
 retains **CatBoost at S$539.29 pooled RMSE**. TabPFN-3.5 with rental histories
 scores S$545.76 with 20,000 context rows and S$541.46 with 50,000. The best
