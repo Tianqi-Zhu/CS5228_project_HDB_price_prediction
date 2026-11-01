@@ -1,0 +1,26 @@
+{
+  "model": "TabPFN-3.5-Fast DiagScale full-train refit",
+  "seed": 42,
+  "selected_epochs": 2,
+  "selected_inner_mse": 266801.61353622767,
+  "base_bundle_sha256": "fba84757b6e23280d2b27eab0ca5d86a427ac19ca33c6b12b5b2dcc4194a0059",
+  "reference_sha256": "6ae63cf3d00073220a77f05e547efcc601dcbdae151dc4260c8b72c21a9d83b6",
+  "backbone_sha256": "14e0b81285bca7a6d1ef121169f27f651f76dff49cad6c0b8779d5c836018550",
+  "learning_rate": 0.03,
+  "weight_decay": 0.01,
+  "task_size": 4096,
+  "query_fraction": 0.2,
+  "n_estimators": 1,
+  "autocast_dtype": "bfloat16",
+  "gpu": "NVIDIA GeForce RTX 4080",
+  "versions": {
+    "tabpfn": "9.2.0",
+    "torch": "2.11.0+cu128",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6"
+  },
+  "code_sha256": {
+    "analysis\\refit_tabpfn_diagscale_80_20.py": "72995bb8384255442cfdd4c09f9db0f7d1997ac218e71d1a691c652ca94eee6d",
+    "analysis\\experiments\\diagscale_tabpfn.py": "bf5c4b41028ab3911636f29a236025d5b1e6b58685e8eca55b8975faef374221"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "stage": "inner_2023-07",
+  "name": "economy_all_selected",
+  "added_columns": [
+    "CENSUS2020_POPULATION",
+    "CENSUS2020_AGE65_SHARE",
+    "CENSUS2020_UNAVAILABLE",
+    "FOOD_KDE_200M_KM2",
+    "MALL_KDE_200M_KM2",
+    "LOCAL_500M_6M_SHRUNK",
+    "LOCAL_500M_6M_COUNT",
+    "LOCAL_500M_12M_SHRUNK",
+    "LOCAL_500M_12M_COUNT",
+    "LOCAL_1000M_6M_SHRUNK",
+    "LOCAL_1000M_6M_COUNT",
+    "LOCAL_1000M_12M_SHRUNK",
+    "LOCAL_1000M_12M_COUNT",
+    "LOCAL_KERNEL_SHRUNK",
+    "LOCAL_KERNEL_MASS",
+    "LOCAL_KERNEL_PPSM",
+    "LOCAL_HISTORY_UNAVAILABLE"
+  ],
+  "context_ids_sha256": "81d0bc5bee8df1016bd243965afdabc5a07bec1da25e6c4290c7fdf7a40890c3",
+  "query_ids_sha256": "ce220471827c4ddb46e4bf6a7389462c4b543cb28b4df82d2f6c895126bff650",
+  "prepared_sha256": "6824cffb93e47efd97abd2050fd4b4fcaf04f8cbf40d0a4bcd0ccdd0fa4b3a5e",
+  "code_sha256": "192eaf9a05c1ebf672fa1c38aaa23797a2ccd0300ba83d495a872c4b6f726b47",
+  "checkpoint_sha256": "14e0b81285bca7a6d1ef121169f27f651f76dff49cad6c0b8779d5c836018550",
+  "smoke": false
+}

@@ -1,0 +1,16 @@
+{
+  "experiment": "tabpfn_local_economy_landscape_80_20_income",
+  "datasets": {
+    "income2022": {
+      "id": "d_2d6793de474551149c438ba349a108fd",
+      "format": "csv",
+      "agency": "SingStat",
+      "observation_end": "2020-12-31",
+      "publication_date": "2022-07-28",
+      "available_at": "2022-08-01",
+      "spatial_support": "planning area; original published income bands; no interpolation",
+      "update_frequency": "decennial census",
+      "policy": "Use the archived 2022 dataset mirror, not the separate income series revised in 2026; conservatively available from August 2022 origins"
+    }
+  }
+}

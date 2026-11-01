@@ -1,0 +1,37 @@
+{
+  "model": "TabPFN-3.5-Fast adapted DiagScale",
+  "backbone_sha256": "14e0b81285bca7a6d1ef121169f27f651f76dff49cad6c0b8779d5c836018550",
+  "base_bundle_sha256": "fba84757b6e23280d2b27eab0ca5d86a427ac19ca33c6b12b5b2dcc4194a0059",
+  "reference_sha256": "6ae63cf3d00073220a77f05e547efcc601dcbdae151dc4260c8b72c21a9d83b6",
+  "train_csv_sha256": "2fe38ce9e0d8a02e9786f066d4a10d575d91f34be1d9111f0142e3f43fbfc8a5",
+  "code_sha256": {
+    "analysis/compare_tabpfn_diagscale_80_20.py": "257ceb29869345456658296a98b42186f3933c9fb15e3c16fd761f4a4c92ab07",
+    "analysis/experiments/diagscale_tabpfn.py": "bf5c4b41028ab3911636f29a236025d5b1e6b58685e8eca55b8975faef374221",
+    "analysis/experiments/aligned_temporal_features.py": "1f0b886ca3398dd7c681b0dc8c7b73092652323f148ad6bc40aa13ea1e20ba74",
+    "analysis/experiments/calendar_encoding.py": "3cdf03e2f6772d7530231caf5d56bbc668d13aa9307d9c0346308940c5fd2f20"
+  },
+  "paper_url": "https://arxiv.org/pdf/2610.12005",
+  "reference_code_url": "https://github.com/kanghui-learning/test-time-compute-for-tabular-foundation-models",
+  "reference_commit": "45fb141b2acf15518e70885aa149c8e1898cd15c",
+  "architecture_note": "paper tests TabPFN-3; this is an extension to installed TabPFN-3.5-Fast",
+  "inner_origin": "2023-12",
+  "outer_origin": "2024-06",
+  "inner_queries_per_month": 100,
+  "outer_batch_size": 200,
+  "learning_rate": 0.03,
+  "max_epochs": 5,
+  "training_task_size": 4096,
+  "training_query_fraction": 0.2,
+  "validation_fallback": true,
+  "n_estimators": 1,
+  "month_encoding": "categorical",
+  "seed": 42,
+  "gpu": "NVIDIA GeForce RTX 4080",
+  "versions": {
+    "tabpfn": "9.2.0",
+    "torch": "2.11.0+cu128",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.0"
+  }
+}

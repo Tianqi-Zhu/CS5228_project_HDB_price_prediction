@@ -1,0 +1,29 @@
+{
+  "inputs": {
+    "config_sha256": "3343c62cd9cf6da0fb42eee012870dbf242071f32f486f5836f9134fd6a1abdc",
+    "buildings_sha256": "0768c6637c380aaa4c37f16f8554eb981e704d6ceac094fa2d9dbfe5b5b877ab",
+    "code_sha256": "6c8275bb367a49ddb95278ac9e1b5f13f062d64db0ce22a239269e3ca3619e69",
+    "source_sha256": {
+      "2020": "585bab1761aacc5490847a31b684d336d086ee8ce56a96c3b4b4ef5dc12379a3",
+      "2021": "24f5c220bc195e2d9e136666901cafad26b8e16790ac19a9a6d7016199c1bfdf"
+    }
+  },
+  "outputs": {
+    "2020": {
+      "path": ".cache\\tabpfn_worldcover_tree_cover_80_20\\building_features_2020.csv",
+      "sha256": "f474c2a79cf9c98d1a8d9eee4563dc16499c929a88f201b7edbd8d40446b0f5b",
+      "buildings": 9464
+    },
+    "2021": {
+      "path": ".cache\\tabpfn_worldcover_tree_cover_80_20\\building_features_2021.csv",
+      "sha256": "2fbf3af0155eba9fc33431dbf45899760be639239843afe6d1cac1d89e17cdef",
+      "buildings": 9464
+    }
+  },
+  "method": "EPSG:3414 10 m nearest-neighbour grid; pixel centres inside metric circles; valid-pixel denominator",
+  "tree_classes": [
+    10
+  ],
+  "mangroves_included": false,
+  "minimum_valid_fraction": 0.95
+}

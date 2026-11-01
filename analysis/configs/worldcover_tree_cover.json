@@ -1,0 +1,17 @@
+{
+  "experiment": "tabpfn_worldcover_tree_cover_80_20",
+  "parent_experiment": "tabpfn_local_economy_landscape_80_20",
+  "radii_m": [100, 300],
+  "projected_crs": "EPSG:3414",
+  "pixel_size_m": 10,
+  "tree_classes": [10],
+  "minimum_valid_fraction": 0.95,
+  "maximum_download_mib": 100,
+  "tile": "N00E102",
+  "source_url": "https://esa-worldcover.org/en/data-access",
+  "release_source_url": "https://eo4society.esa.int/2022/11/11/2021-worldcover-product/",
+  "products": [
+    {"year": 2020, "version": "v100", "published_at": "2021-10-20", "available_at": "2021-11-01"},
+    {"year": 2021, "version": "v200", "published_at": "2022-10-28", "available_at": "2022-11-01"}
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "selected": {
+    "icl": "icl_rank2",
+    "head": "regression_head",
+    "loss_control": "diag_crps_mse",
+    "loss_mse": "diag_mse_only"
+  },
+  "outer_labels_used_for_selection": false
+}

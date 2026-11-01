@@ -1,0 +1,40 @@
+{
+  "2020": {
+    "year": 2020,
+    "version": "v100",
+    "published_at": "2021-10-20",
+    "available_at": "2021-11-01",
+    "url": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v100/2020/map/ESA_WorldCover_10m_2020_v100_N00E102_Map.tif",
+    "documentation_url": "https://esa-worldcover.org/en/data-access",
+    "release_source_url": "https://eo4society.esa.int/2022/11/11/2021-worldcover-product/",
+    "license": "CC-BY-4.0",
+    "attribution": "ESA WorldCover project 2020; contains modified Copernicus Sentinel data (2020) processed by ESA WorldCover consortium",
+    "path": ".cache\\tabpfn_worldcover_tree_cover_80_20\\sources\\ESA_WorldCover_10m_2020_v100_N00E102_Map.tif",
+    "bytes": 42791583,
+    "sha256": "585bab1761aacc5490847a31b684d336d086ee8ce56a96c3b4b4ef5dc12379a3",
+    "retrieved_at": "2026-10-30T13:57:17.903129+00:00",
+    "crs": "EPSG:4326",
+    "width": 36000,
+    "height": 36000,
+    "nodata": 0.0
+  },
+  "2021": {
+    "year": 2021,
+    "version": "v200",
+    "published_at": "2022-10-28",
+    "available_at": "2022-11-01",
+    "url": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N00E102_Map.tif",
+    "documentation_url": "https://esa-worldcover.org/en/data-access",
+    "release_source_url": "https://eo4society.esa.int/2022/11/11/2021-worldcover-product/",
+    "license": "CC-BY-4.0",
+    "attribution": "ESA WorldCover project 2021; contains modified Copernicus Sentinel data (2021) processed by ESA WorldCover consortium",
+    "path": ".cache\\tabpfn_worldcover_tree_cover_80_20\\sources\\ESA_WorldCover_10m_2021_v200_N00E102_Map.tif",
+    "bytes": 36505930,
+    "sha256": "24f5c220bc195e2d9e136666901cafad26b8e16790ac19a9a6d7016199c1bfdf",
+    "retrieved_at": "2026-10-30T13:57:46.414429+00:00",
+    "crs": "EPSG:4326",
+    "width": 36000,
+    "height": 36000,
+    "nodata": 0.0
+  }
+}

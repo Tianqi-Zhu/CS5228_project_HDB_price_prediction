@@ -1,0 +1,12 @@
+split,group,rows,available_rows,missing_fraction
+train,commercial_snapshot,121005,121005,0.0
+train,park_snapshot,121005,121005,0.0
+train,published_census,121005,88309,0.27020371059047144
+train,lagged_market,121005,108823,0.10067352588736
+query,commercial_snapshot,28995,28995,0.0
+query,park_snapshot,28995,28995,0.0
+query,published_census,28995,28982,0.00044835316433866623
+query,lagged_market,28995,28991,0.00013795481979650415
+unlabelled_test,published_census_at_last_labelled_month,50000,49986,0.00027999999999994696
+unlabelled_test,commercial_snapshot,50000,50000,0.0
+unlabelled_test,park_snapshot,50000,50000,0.0

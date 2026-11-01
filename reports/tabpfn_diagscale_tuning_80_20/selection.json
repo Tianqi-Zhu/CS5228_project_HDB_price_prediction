@@ -1,0 +1,13 @@
+{
+  "selected": "loss_crps_mse_2view_lr01",
+  "metric": "weighted earlier-month RMSE",
+  "candidate_scores": {
+    "loss_crps_mse_1view_lr03": 525.332021729999,
+    "loss_crps_mse_1view_lr01": 523.187965458578,
+    "loss_crps_mse_2view_lr01": 521.1364372458313
+  },
+  "unavailable_candidates": [
+    "loss_crps_mse_2view_lr03"
+  ],
+  "outer_labels_used": false
+}

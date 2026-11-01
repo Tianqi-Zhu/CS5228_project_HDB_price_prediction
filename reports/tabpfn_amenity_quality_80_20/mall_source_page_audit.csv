@@ -1,0 +1,81 @@
+mall,year,source_file,pdf_page,scope,extraction,visual_pdf_page
+Bedok Mall,2019,cict_2019.pdf,136.0,whole standalone retail property,curated published portfolio row,137.0
+Bedok Mall,2020,cict_2020.pdf,123.0,whole standalone retail property,standalone profile current-year column,123.0
+Bedok Mall,2021,cict_2021.pdf,77.0,whole standalone retail property,standalone profile current-year column,77.0
+Bedok Mall,2022,cict_2022.pdf,116.0,whole standalone retail property,standalone profile current-year column,116.0
+Bedok Mall,2023,cict_2023.pdf,59.0,whole standalone retail property,standalone profile current-year column,59.0
+Bugis Junction,2019,cict_2019.pdf,136.0,whole standalone retail property,curated published portfolio row,136.0
+Bugis Junction,2020,cict_2020.pdf,125.0,whole standalone retail property,standalone profile current-year column,125.0
+Bugis Junction,2021,cict_2021.pdf,79.0,whole standalone retail property,standalone profile current-year column,79.0
+Bugis Junction,2022,cict_2022.pdf,117.0,whole standalone retail property,standalone profile current-year column,117.0
+Bugis Junction,2023,cict_2023.pdf,60.0,whole standalone retail property,standalone profile current-year column,60.0
+Bugis+,2019,cict_2019.pdf,136.0,whole standalone retail property,curated published portfolio row,137.0
+Bugis+,2020,cict_2020.pdf,124.0,whole standalone retail property,standalone profile current-year column,124.0
+Bugis+,2021,cict_2021.pdf,78.0,whole standalone retail property,standalone profile current-year column,78.0
+Bugis+,2022,cict_2022.pdf,124.0,whole standalone retail property,standalone profile current-year column,124.0
+Bugis+,2023,cict_2023.pdf,67.0,whole standalone retail property,standalone profile current-year column,67.0
+Bukit Panjang Plaza,2019,cict_2019.pdf,136.0,whole standalone retail property,curated published portfolio row,137.0
+Bukit Panjang Plaza,2020,cict_2020.pdf,132.0,whole standalone retail property,standalone profile current-year column,132.0
+Bukit Panjang Plaza,2021,cict_2021.pdf,86.0,whole standalone retail property,standalone profile current-year column,86.0
+Bukit Panjang Plaza,2022,cict_2022.pdf,125.0,whole standalone retail property,standalone profile current-year column,125.0
+Bukit Panjang Plaza,2023,cict_2023.pdf,68.0,whole standalone retail property,standalone profile current-year column,68.0
+Causeway Point,2019,fct_2019.pdf,52.0,whole standalone retail property,labelled profile and owner gross-revenue table; not tenant sales,52.0
+Causeway Point,2020,fct_2020.pdf,54.0,whole standalone retail property,labelled profile and owner gross-revenue table; not tenant sales,54.0
+Causeway Point,2021,fct_2021.pdf,56.0,whole standalone retail property,labelled profile and owner gross-revenue table; not tenant sales,56.0
+Causeway Point,2022,fct_2022.pdf,60.0,whole standalone retail property,labelled profile and owner gross-revenue table; not tenant sales,60.0
+Causeway Point,2023,fct_2023.pdf,70.0,whole standalone retail property,labelled profile and owner gross-revenue table; not tenant sales,70.0
+Century Square,2021,fct_2021.pdf,66.0,whole standalone retail property,labelled profile and owner gross-revenue table; not tenant sales,66.0
+Century Square,2022,fct_2022.pdf,72.0,whole standalone retail property,labelled profile and owner gross-revenue table; not tenant sales,72.0
+Century Square,2023,fct_2023.pdf,84.0,whole standalone retail property,labelled profile and owner gross-revenue table; not tenant sales,84.0
+Changi City Point,2019,fct_2019.pdf,58.0,whole standalone retail property,labelled profile and owner gross-revenue table; not tenant sales,58.0
+Changi City Point,2020,fct_2020.pdf,60.0,whole standalone retail property,labelled profile and owner gross-revenue table; not tenant sales,60.0
+Changi City Point,2021,fct_2021.pdf,68.0,whole standalone retail property,labelled profile and owner gross-revenue table; not tenant sales,68.0
+Changi City Point,2022,fct_2022.pdf,74.0,whole standalone retail property,labelled profile and owner gross-revenue table; not tenant sales,74.0
+Changi City Point,2023,fct_2023.pdf,82.0,whole standalone retail property,labelled profile and owner gross-revenue table; not tenant sales,82.0
+Funan,2019,cict_2019.pdf,136.0,retail component only; office/warehouse/stake revenue excluded,curated labelled retail NLA; no mixed-use revenue,136.0
+Hougang Mall,2021,fct_2021.pdf,70.0,whole standalone retail property,labelled profile and owner gross-revenue table; not tenant sales,70.0
+Hougang Mall,2022,fct_2022.pdf,76.0,whole standalone retail property,labelled profile and owner gross-revenue table; not tenant sales,76.0
+Hougang Mall,2023,fct_2023.pdf,86.0,whole standalone retail property,labelled profile and owner gross-revenue table; not tenant sales,86.0
+IMM,2019,cict_2019.pdf,136.0,retail component only; office/warehouse/stake revenue excluded,curated labelled retail NLA; no mixed-use revenue,136.0
+Junction 8,2019,cict_2019.pdf,136.0,whole standalone retail property,curated published portfolio row,136.0
+Junction 8,2020,cict_2020.pdf,128.0,whole standalone retail property,standalone profile current-year column,128.0
+Junction 8,2021,cict_2021.pdf,82.0,whole standalone retail property,standalone profile current-year column,82.0
+Junction 8,2022,cict_2022.pdf,120.0,whole standalone retail property,standalone profile current-year column,120.0
+Junction 8,2023,cict_2023.pdf,63.0,whole standalone retail property,standalone profile current-year column,63.0
+Jurong Point,2022,jurong_point_2022.html,,whole mall approximate disclosed NLA,Link REIT 28 December 2022 acquisition release; approximate NLA as published,
+Lot 1,2019,cict_2019.pdf,136.0,whole standalone retail property,curated published portfolio row,137.0
+Lot 1,2020,cict_2020.pdf,129.0,whole standalone retail property,standalone profile current-year column,129.0
+Lot 1,2021,cict_2021.pdf,83.0,whole standalone retail property,standalone profile current-year column,83.0
+Lot 1,2022,cict_2022.pdf,121.0,whole standalone retail property,standalone profile current-year column,121.0
+Lot 1,2023,cict_2023.pdf,64.0,whole standalone retail property,standalone profile current-year column,64.0
+NEX,2023,fct_2023.pdf,68.0,whole standalone retail property,labelled profile and owner gross-revenue table; not tenant sales,68.0
+Plaza Singapura,2019,cict_2019.pdf,136.0,whole standalone retail property,curated published portfolio row,136.0
+Plaza Singapura,2020,cict_2020.pdf,143.0,whole standalone retail property,standalone profile current-year column,143.0
+Plaza Singapura,2021,cict_2021.pdf,97.0,whole standalone retail property,standalone profile current-year column,97.0
+Plaza Singapura,2022,cict_2022.pdf,138.0,whole standalone retail property,standalone profile current-year column,138.0
+Plaza Singapura,2023,cict_2023.pdf,81.0,whole standalone retail property,standalone profile current-year column,81.0
+Raffles City,2019,cict_2019.pdf,136.0,retail component only; office/warehouse/stake revenue excluded,curated labelled retail NLA; no mixed-use revenue,137.0
+Tampines 1,2021,fct_2021.pdf,60.0,whole standalone retail property,labelled profile and owner gross-revenue table; not tenant sales,60.0
+Tampines 1,2022,fct_2022.pdf,64.0,whole standalone retail property,labelled profile and owner gross-revenue table; not tenant sales,64.0
+Tampines 1,2023,fct_2023.pdf,74.0,whole standalone retail property,labelled profile and owner gross-revenue table; not tenant sales,74.0
+Tampines Mall,2019,cict_2019.pdf,136.0,whole standalone retail property,curated published portfolio row,136.0
+Tampines Mall,2020,cict_2020.pdf,130.0,whole standalone retail property,standalone profile current-year column,130.0
+Tampines Mall,2021,cict_2021.pdf,84.0,whole standalone retail property,standalone profile current-year column,84.0
+Tampines Mall,2022,cict_2022.pdf,122.0,whole standalone retail property,standalone profile current-year column,122.0
+Tampines Mall,2023,cict_2023.pdf,65.0,whole standalone retail property,standalone profile current-year column,65.0
+Tiong Bahru Plaza,2021,fct_2021.pdf,64.0,whole standalone retail property,labelled profile and owner gross-revenue table; not tenant sales,64.0
+Tiong Bahru Plaza,2022,fct_2022.pdf,68.0,whole standalone retail property,labelled profile and owner gross-revenue table; not tenant sales,68.0
+Tiong Bahru Plaza,2023,fct_2023.pdf,78.0,whole standalone retail property,labelled profile and owner gross-revenue table; not tenant sales,78.0
+Waterway Point,2019,fct_2019.pdf,56.0,whole standalone retail property,labelled profile and owner gross-revenue table; not tenant sales,56.0
+Waterway Point,2020,fct_2020.pdf,58.0,whole standalone retail property,labelled profile and owner gross-revenue table; not tenant sales,58.0
+Waterway Point,2021,fct_2021.pdf,58.0,whole standalone retail property,labelled profile and owner gross-revenue table; not tenant sales,58.0
+Waterway Point,2022,fct_2022.pdf,62.0,whole standalone retail property,labelled profile and owner gross-revenue table; not tenant sales,62.0
+Waterway Point,2023,fct_2023.pdf,72.0,whole standalone retail property,labelled profile and owner gross-revenue table; not tenant sales,72.0
+Westgate,2019,cict_2019.pdf,136.0,whole standalone retail property,curated published portfolio row,137.0
+Westgate,2020,cict_2020.pdf,131.0,whole standalone retail property,standalone profile current-year column,131.0
+Westgate,2021,cict_2021.pdf,85.0,whole standalone retail property,standalone profile current-year column,85.0
+Westgate,2022,cict_2022.pdf,123.0,whole standalone retail property,standalone profile current-year column,123.0
+Westgate,2023,cict_2023.pdf,66.0,whole standalone retail property,standalone profile current-year column,66.0
+White Sands,2021,fct_2021.pdf,72.0,whole standalone retail property,labelled profile and owner gross-revenue table; not tenant sales,72.0
+White Sands,2022,fct_2022.pdf,78.0,whole standalone retail property,labelled profile and owner gross-revenue table; not tenant sales,78.0
+White Sands,2023,fct_2023.pdf,88.0,whole standalone retail property,labelled profile and owner gross-revenue table; not tenant sales,88.0

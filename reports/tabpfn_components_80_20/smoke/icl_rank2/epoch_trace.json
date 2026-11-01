@@ -1,0 +1,12 @@
+[
+  {
+    "epoch": -1,
+    "weighted_rmse_sgd": 775.2255762580091,
+    "mean_train_loss": null
+  },
+  {
+    "epoch": 0,
+    "weighted_rmse_sgd": 775.1328356422335,
+    "mean_train_loss": 0.945286750793457
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "sha256": "554fec4c4bf84af483387c9aba7bdd2e192957ab26a0fc45d36796d019c1131a",
+  "columns": [
+    "TREE_CLASS_FRACTION_100M",
+    "TREE_CLASS_FRACTION_300M",
+    "TREE_COVER_UNAVAILABLE"
+  ],
+  "stages": [
+    "outer",
+    "inner_2022-09",
+    "inner_2023-07"
+  ],
+  "parent_prepared_sha256": "6824cffb93e47efd97abd2050fd4b4fcaf04f8cbf40d0a4bcd0ccdd0fa4b3a5e",
+  "selection": "Three fixed ablations; no selection on outer labels",
+  "test_predictions_generated": false
+}

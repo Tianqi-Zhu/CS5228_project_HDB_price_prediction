@@ -1,0 +1,12 @@
+{
+  "config": {
+    "component": "head",
+    "lr": 3e-05
+  },
+  "epochs": 1,
+  "task_rows": 512,
+  "train_views": 2,
+  "checkpoint_views": 1,
+  "seed": 42,
+  "smoke": true
+}

@@ -1,0 +1,11 @@
+{
+  "groups": [
+    "schools",
+    "malls",
+    "transport",
+    "combined"
+  ],
+  "static_sensitivity": "combined",
+  "uses_outer_labels_to_select": false,
+  "config_sha256": "20ce4d730b8b14e097e091f999076f9ce933ec014a0afbd74dd5960d88f9bd93"
+}

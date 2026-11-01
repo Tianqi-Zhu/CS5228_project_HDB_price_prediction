@@ -1,0 +1,21 @@
+{
+  "experiment": "tabpfn_amenity_quality_80_20",
+  "baseline": ".cache/tabpfn_v3_features/calendar_80_20_categorical.joblib",
+  "baseline_sha256": "fba84757b6e23280d2b27eab0ca5d86a427ac19ca33c6b12b5b2dcc4194a0059",
+  "baseline_predictions": "reports/tabpfn_v3_5_fast_calendar_80_20/predictions_outer_categorical.csv",
+  "seed": 42,
+  "school_radius_m": 1000,
+  "school_decay_m": 500,
+  "mall_radius_m": 2000,
+  "mall_decay_m": 750,
+  "station_named_bus_radius_m": 500,
+  "station_bus_radius_m": 400,
+  "ridership_available_at": "2024-01-01",
+  "inner_stages": ["inner_2022-09", "inner_2023-07"],
+  "inner_queries_per_fold": 600,
+  "outer_variants": ["schools", "malls", "transport", "combined"],
+  "strict_policy": "Use only external observations released by each pseudo-origin / fixed query origin; January 2021 warmup uses previous calendar month for label-free external data. Modern underlying location tables are inherited and not certified historical snapshots.",
+  "retrospective_sensitivity": "Freeze school/mall/usage/bus measurements at May 2024 for all rows, while preserving the contemporaneous operational rail graph. Report separately; never select the primary candidate on this sensitivity.",
+  "selection": "Feature definitions and four outer groups fixed before outer scoring; earlier folds diagnose stability, with all baseline rows retained. No outer tuning.",
+  "mall_scope": "Only verified whole-mall retail NLA. Owner property gross revenue is not tenant sales; grouped revenue, partial ownership revenue, and partial mall wings are omitted. Unknown metrics remain missing with coverage features."
+}

@@ -1,0 +1,19 @@
+{
+  "query_rows": 28995,
+  "unique_query_ids": 28995,
+  "context_rows_partitioned": 121005,
+  "all_predictions_finite": true,
+  "query_order_preserved": true,
+  "all_labels_and_months_match": true,
+  "all_contexts_same_flat_type": true,
+  "all_contexts_unsubsampled": true,
+  "all_parameter_versions_unchanged": true,
+  "prediction_files_sha256": {
+    "1-room": "d730c8423dcdfa54ccf61197754c25c44aae9f25948ffffab8c64a631327e6b8",
+    "2-room": "de79fa7407018a9cdb13d71871f8d36ef967f8c7595f13437e0acec9ccca2702",
+    "3-room": "a7cb720a1e1aca12e2ccf99268c3eb85dc10fbc7caca342b80b18abda330c7f1",
+    "4-room": "04f3c8c4c4c16507147be0287a89e607420091e9ae5ed55ed2de2ff681de6ecf",
+    "5-room": "66f7569ac1d004522e25787e62b9c2eb69cbc0b8ce7835fdffbc58fc6f7f6b83",
+    "executive": "55cfbb7a5316538374f2c4d09f9295bf5a9ecedd4515463bb5b2bcc31c417de8"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "weighted_rmse_sgd": 522.2583976615589,
+  "rmse_sgd": 521.6214441034855,
+  "mae_sgd": 395.339882819868,
+  "bias_sgd": 17.010046944976597,
+  "context_rows": 102829,
+  "query_rows": 600,
+  "deployment_views": 1
+}
