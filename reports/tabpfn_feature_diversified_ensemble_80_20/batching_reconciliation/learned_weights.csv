@@ -1,0 +1,13 @@
+origin,model,baseline_weight,spatial_weight,temporal_weight,active_members,fit_label_max,cold_start
+2022-09,optimized,1.0,0.0,0.0,1,none; cold-start baseline,True
+2022-09,opt_baseline_spatial,1.0,0.0,0.0,1,none; cold-start baseline,True
+2022-09,opt_baseline_temporal,1.0,0.0,0.0,1,none; cold-start baseline,True
+2022-09,opt_spatial_temporal,1.0,0.0,0.0,1,none; cold-start baseline,True
+2023-07,optimized,0.29297164766441436,0.0,0.7070283523355857,2,2023-06,False
+2023-07,opt_baseline_spatial,1.0,0.0,0.0,1,2023-06,False
+2023-07,opt_baseline_temporal,0.29297164766435124,0.0,0.7070283523356488,2,2023-06,False
+2023-07,opt_spatial_temporal,0.0,0.0,1.0,1,2023-06,False
+2024-06,optimized,0.4916964715040252,0.2516885221939232,0.25661500630205164,3,2024-04,False
+2024-06,opt_baseline_spatial,0.5838140258264698,0.41618597417353015,0.0,2,2024-04,False
+2024-06,opt_baseline_temporal,0.6097190945782821,0.0,0.39028090542171784,2,2024-04,False
+2024-06,opt_spatial_temporal,0.0,0.5525642083304583,0.44743579166954167,2,2024-04,False

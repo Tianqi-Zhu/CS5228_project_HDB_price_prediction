@@ -1,0 +1,12 @@
+{
+  "train": {
+    "rows": 120761,
+    "feature_count": 77,
+    "export_values_and_ids_match_binary": true
+  },
+  "query": {
+    "rows": 28995,
+    "feature_count": 77,
+    "export_values_and_ids_match_binary": true
+  }
+}

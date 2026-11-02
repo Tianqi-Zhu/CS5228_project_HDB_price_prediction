@@ -1,0 +1,4 @@
+{
+  "reason": "Cached baseline disabled estimator batching via TABPFN_MAX_BATCHED_ESTIMATOR_ROWS=0; all new feature/seed runs used native defaults. Recompute baseline with matched default batching in every fold and rerun unchanged earlier-only weight optimizer. No feature design,validation split,regularization or decision threshold changes.",
+  "outer_targets_used_for_reselection": false
+}

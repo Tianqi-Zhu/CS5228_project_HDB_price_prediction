@@ -1,0 +1,29 @@
+{
+  "origin": "2023-07",
+  "member": "standard6",
+  "n_estimators": 6,
+  "external_models": 3,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "execution": "Sequential3x2-view same-feature seed ensemble; not one six-estimator object",
+  "features": 77,
+  "context_rows": 87937,
+  "query_rows": 2000,
+  "fit_seconds": 48.73255010007415,
+  "predict_seconds": 133.46581310010515,
+  "peak_vram_gib": 7.0370893478393555,
+  "parameters_unchanged": true,
+  "gradients_prohibited": true,
+  "no_adapters": true,
+  "subsampling": false,
+  "cached_prediction_reused": false,
+  "source_predictions": {
+    "baseline": "95d38ccb1ade70caf2381c2d4ddfd2bcc38fca30edb6d0673181e26526454c5b",
+    "seed43": "66b38a5aab80bfc4cd67dadfe22052abe485086d1d49d2ce9b3221dfa3e8edfc",
+    "seed44": "e9b6df7515dc5da69440b6aafebd135ca5e390cec8ffd9650d826396406b5a47"
+  },
+  "prediction_sha256": "001386c420cd4b4ed62583c21bb3210d01d3aea491d2c0bc62157b9879bb4b11"
+}

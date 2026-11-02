@@ -1,0 +1,38 @@
+{
+  "duplicate_identity": "All source fields including approval month and raw SGD rent, after existing type/model/address canonicalization; retain first source row",
+  "split": "Original chronological cutoff June2024; original28995 validation rows preserved for primary comparison",
+  "context_history": "All37 history inputs and9 temporal inputs/baselines rebuilt using deduplicated permitted history; original pseudo-origins and stable row IDs retained",
+  "static_features": "Original31 static/calendar/categorical inputs unchanged; existingMRT source issue not mixed into this ablation",
+  "model": "Frozen pretrained TabPFN-3.5-Fast; no DiagScale adaptation or CatBoost correction",
+  "inference": {
+    "n_estimators": 1,
+    "seed": 42,
+    "context_subsampling": false,
+    "batch_size": 200,
+    "preprocessing": "native fitted on retained context"
+  },
+  "source_sha256": {
+    ".cache/tabpfn_v3_features/calendar_80_20_categorical.joblib": "fba84757b6e23280d2b27eab0ca5d86a427ac19ca33c6b12b5b2dcc4194a0059",
+    "reports/tabpfn_v3_5_fast_calendar_80_20/predictions_outer_categorical.csv": "6ae63cf3d00073220a77f05e547efcc601dcbdae151dc4260c8b72c21a9d83b6",
+    ".cache/tabpfn/tabpfn-v3.5-fast-20260909.safetensors": "14e0b81285bca7a6d1ef121169f27f651f76dff49cad6c0b8779d5c836018550",
+    "data/train.csv": "2fe38ce9e0d8a02e9786f066d4a10d575d91f34be1d9111f0142e3f43fbfc8a5",
+    "data/test.csv": "a2ec03a0afc07c251c72cc0de2e15ac965a3b06291b304aaac53a375115ff4e0",
+    "reports/tabpfn_diagscale_mse_final_submission/submission_tabpfn_diagscale_mse_150k.csv": "5616125166abed5a353ab4d2f8a9788109a0b8078480ce622bbf8c7e8fb80500",
+    ".cache/tabpfn_diagscale_mse_final_submission/adapter.pt": "90e1d85f781051550570a2cb41bcba13e0cd9cb20350f4cf4c90d8e4848003d8"
+  },
+  "code_sha256": {
+    "analysis/compare_tabpfn_deduplicated_77_80_20.py": "4e527a6a593fdcc4bb6de777b678ab5bd67964a0186e60734452d9814a5d48f1",
+    "analysis/experiments/canonical_rental_dedup.py": "f832f53a1fbf3102abe353cbf36410b36d6699593c9b5419ce613f1eb1a6b6c2",
+    "analysis/experiments/aligned_temporal_features.py": "1f0b886ca3398dd7c681b0dc8c7b73092652323f148ad6bc40aa13ea1e20ba74",
+    "analysis/experiments/spatiotemporal_hybrid.py": "9f275e624dc244dd0aef1085c5c76bec8808552ae6a1b01ce1738d8c24dfca10",
+    "analysis/experiments/recent_history.py": "98348baf4e8816397c766f660e4fce5ba6ffb449bd674adc7ea645aaf035db0f",
+    "analysis/experiments/tabpfn_adaptation_features.py": "7138a0c0a5465d7027a0b90030f5ffbadcad8b71836c08ceb907d31db61022a9",
+    "analysis/compare_local_economy_landscape.py": "192eaf9a05c1ebf672fa1c38aaa23797a2ccd0300ba83d495a872c4b6f726b47"
+  },
+  "packages": {
+    "tabpfn": "9.2.0",
+    "torch": "2.11.0+cu128",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6"
+  }
+}

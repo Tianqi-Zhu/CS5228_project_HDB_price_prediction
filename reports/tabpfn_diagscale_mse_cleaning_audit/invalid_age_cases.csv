@@ -1,0 +1,2 @@
+split,row_id,issue,RENT_APPROVAL_DATE,TOWN,BLOCK,STREET,FLAT_TYPE,FLAT_MODEL,FLOOR_AREA_SQM,FURNISHED,LEASE_COMMENCE_DATE,FEE,MONTHLY_RENT
+train,31739,lease year later than approval year; derived lease age correctly masked,2021-11,bedok,153b,Bedok South Road,5 room,improved,113.0,yes,2022,0.0,3200

@@ -8,6 +8,10 @@ The [factored dynamic rental-surface experiment](reports/factored_rental_surface
 
 ## TabPFN experiment
 
+The [TabPFN API workflow for the original 77 features](TABPFN_API_77.md) supports
+newer managed model variants, Thinking mode, cost estimates, resumable fits and
+inference, chronological validation, and separate submission CSVs.
+
 The chronological 80/20 follow-up uses January 2021-May 2024 as context
 (121,005 rows) and June 2024-March 2025 as validation (28,995 rows).
 The [aligned temporal residual experiment](reports/tabpfn_v3_5_fast_aligned_temporal_80_20/report.md)

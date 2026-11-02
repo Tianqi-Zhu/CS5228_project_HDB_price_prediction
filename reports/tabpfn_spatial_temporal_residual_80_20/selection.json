@@ -1,0 +1,131 @@
+{
+  "selected": "E2",
+  "models": {
+    "E1": {
+      "model": "E1",
+      "columns": [
+        "TABPFN_RENT",
+        "FLAT_TYPE_CLEAN",
+        "FLOOR_AREA_SQM",
+        "FLAT_AGE_YEARS",
+        "LATITUDE",
+        "LONGITUDE",
+        "TOWN_CLEAN",
+        "APPROVAL_MONTH_INDEX",
+        "APPROVAL_MONTH_OF_YEAR",
+        "TEMP_FORECAST_HORIZON"
+      ],
+      "categorical": [
+        "FLAT_TYPE_CLEAN",
+        "TOWN_CLEAN"
+      ],
+      "iterations": 4,
+      "strength": 0.5,
+      "early_stop_fit_rows": 34039,
+      "early_stop_rows": 8711,
+      "residual_training_rows": 42750,
+      "validation_rows": 18176,
+      "final_refit_rows": 60926,
+      "validation_model_sha256": "32513c37f54d88f7798a87d4d86d26b0ba7146208cb9bda11b4f5da7af86b60e",
+      "final_model_sha256": "1ec908b3cb3c3e68a7dd41c714f53bc589c80ce77033f99a645a20ef41b5b275",
+      "seconds": 2.9916559999110177,
+      "validation_train_ids_sha256": "72b139557259825dd8e98fdc20376de043ef5b5b79f5bb90099db1928a0fbd7a",
+      "validation_ids_sha256": "3769ff95b11a0f66ee5a01d2b8e8052d21742b80f8173be9d7139f139d5d9764",
+      "final_train_ids_sha256": "7a4bbcf00796ddef34d3ec606075642d7e8bb3eb3ccfaa167dda147832129afc",
+      "outer_targets_used": false,
+      "correction_sign": "actual minus base in SGD",
+      "curve": [
+        {
+          "strength": 0.0,
+          "rmse_sgd": 525.9842550184719
+        },
+        {
+          "strength": 0.25,
+          "rmse_sgd": 525.3489781415444
+        },
+        {
+          "strength": 0.5,
+          "rmse_sgd": 525.3415249395646
+        },
+        {
+          "strength": 0.75,
+          "rmse_sgd": 525.961922102469
+        },
+        {
+          "strength": 1.0,
+          "rmse_sgd": 527.2079531475739
+        }
+      ]
+    },
+    "E2": {
+      "model": "E2",
+      "columns": [
+        "TABPFN_RENT",
+        "FLAT_TYPE_CLEAN",
+        "FLOOR_AREA_SQM",
+        "FLAT_AGE_YEARS",
+        "LATITUDE",
+        "LONGITUDE",
+        "TOWN_CLEAN",
+        "APPROVAL_MONTH_INDEX",
+        "APPROVAL_MONTH_OF_YEAR",
+        "TEMP_FORECAST_HORIZON",
+        "LOCAL_HIST_MEDIAN",
+        "LOCAL_GROWTH_3M",
+        "LOCAL_COUNT_6M"
+      ],
+      "categorical": [
+        "FLAT_TYPE_CLEAN",
+        "TOWN_CLEAN"
+      ],
+      "iterations": 4,
+      "strength": 0.5,
+      "early_stop_fit_rows": 34039,
+      "early_stop_rows": 8711,
+      "residual_training_rows": 42750,
+      "validation_rows": 18176,
+      "final_refit_rows": 60926,
+      "validation_model_sha256": "7a674611df623c4d568efac8d277086b1098862d20659dd254a40c895ba45f97",
+      "final_model_sha256": "ed98a91d20edcaaa5d08d4ee3ffcfa3c0b61a922cd97db3115b88cd0cd5245c4",
+      "seconds": 2.399154599988833,
+      "validation_train_ids_sha256": "72b139557259825dd8e98fdc20376de043ef5b5b79f5bb90099db1928a0fbd7a",
+      "validation_ids_sha256": "3769ff95b11a0f66ee5a01d2b8e8052d21742b80f8173be9d7139f139d5d9764",
+      "final_train_ids_sha256": "7a4bbcf00796ddef34d3ec606075642d7e8bb3eb3ccfaa167dda147832129afc",
+      "outer_targets_used": false,
+      "correction_sign": "actual minus base in SGD",
+      "curve": [
+        {
+          "strength": 0.0,
+          "rmse_sgd": 525.9842550184719
+        },
+        {
+          "strength": 0.25,
+          "rmse_sgd": 525.2957692781475
+        },
+        {
+          "strength": 0.5,
+          "rmse_sgd": 525.2485897608125
+        },
+        {
+          "strength": 0.75,
+          "rmse_sgd": 525.8428890837463
+        },
+        {
+          "strength": 1.0,
+          "rmse_sgd": 527.0764973741265
+        }
+      ]
+    }
+  },
+  "criterion": "minimum December2023-May2024 RMSE; ties prefer simpler model",
+  "baseline_validation": {
+    "rmse_sgd": 525.9842550184719,
+    "mae_sgd": 396.7990551851934,
+    "bias_sgd": 24.737561544533563,
+    "r2": 0.411611940388262
+  },
+  "outer_labels_used": false,
+  "validation_row_ids_sha256": "3769ff95b11a0f66ee5a01d2b8e8052d21742b80f8173be9d7139f139d5d9764",
+  "final_residual_train_last_month": "2024-05",
+  "oof_rows": 60926
+}

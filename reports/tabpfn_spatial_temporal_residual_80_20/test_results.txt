@@ -1,0 +1,20 @@
+test_fallback_and_unobserved_group_zero_count (tests.test_spatial_temporal_residual.ResidualTests.test_fallback_and_unobserved_group_zero_count) ... ok
+test_fixed_batch_history_ignores_current_future_and_query_labels (tests.test_spatial_temporal_residual.ResidualTests.test_fixed_batch_history_ignores_current_future_and_query_labels) ... ok
+test_lambda_zero_exact_and_sgd_scale (tests.test_spatial_temporal_residual.ResidualTests.test_lambda_zero_exact_and_sgd_scale) ... ok
+test_query_context_overlap_duplicate_and_time_leak_rejected (tests.test_spatial_temporal_residual.ResidualTests.test_query_context_overlap_duplicate_and_time_leak_rejected) ... ok
+test_schema_and_row_ids_preserved (tests.test_spatial_temporal_residual.ResidualTests.test_schema_and_row_ids_preserved) ... ok
+test_sparse_growth_remains_missing (tests.test_spatial_temporal_residual.ResidualTests.test_sparse_growth_remains_missing) ... ok
+test_strength_selection_uses_supplied_validation_only (tests.test_spatial_temporal_residual.ResidualTests.test_strength_selection_uses_supplied_validation_only) ... ok
+test_all_histories_are_frozen_at_the_selected_origin (tests.test_aligned_temporal_features.AlignedTemporalTests.test_all_histories_are_frozen_at_the_selected_origin) ... ok
+test_context_origins_cover_the_validation_horizon_without_overlap (tests.test_aligned_temporal_features.AlignedTemporalTests.test_context_origins_cover_the_validation_horizon_without_overlap) ... ok
+test_forecast_and_tuning_cannot_see_future_rents (tests.test_aligned_temporal_features.AlignedTemporalTests.test_forecast_and_tuning_cannot_see_future_rents) ... ok
+test_new_area_uses_flat_type_forecast_without_a_local_premium (tests.test_aligned_temporal_features.AlignedTemporalTests.test_new_area_uses_flat_type_forecast_without_a_local_premium) ... ok
+test_head_identity_schema_reload_and_gradients (tests.test_tabpfn_component_adaptation.ComponentTests.test_head_identity_schema_reload_and_gradients) ... ok
+test_icl_only_zero_identity_and_frozen_backbone (tests.test_tabpfn_component_adaptation.ComponentTests.test_icl_only_zero_identity_and_frozen_backbone) ... ok
+test_last_blocks_only (tests.test_tabpfn_component_adaptation.ComponentTests.test_last_blocks_only) ... ok
+test_zero_adapter_preserves_scaling_and_only_delta_trains (tests.test_diagscale_tabpfn.DiagScaleTest.test_zero_adapter_preserves_scaling_and_only_delta_trains) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 2.075s
+
+OK

@@ -1,0 +1,26 @@
+{
+  "protected_file_hashes": {
+    "data/train.csv": "2fe38ce9e0d8a02e9786f066d4a10d575d91f34be1d9111f0142e3f43fbfc8a5",
+    "data/test.csv": "a2ec03a0afc07c251c72cc0de2e15ac965a3b06291b304aaac53a375115ff4e0",
+    ".cache/tabpfn_fast_final_submission/features.joblib": "b7d5de3b3bb7b75a689cdb30408f3d4fd26da948cd46dc82c8896b1008bbad1c",
+    "reports/tabpfn_diagscale_mse_final_submission/submission_tabpfn_diagscale_mse_150k.csv": "5616125166abed5a353ab4d2f8a9788109a0b8078480ce622bbf8c7e8fb80500",
+    ".cache/tabpfn_diagscale_mse_final_submission/adapter.pt": "90e1d85f781051550570a2cb41bcba13e0cd9cb20350f4cf4c90d8e4848003d8"
+  },
+  "audit_code_sha256": "039b9463d0dc0e3a364777a477a50c61373738ca79aaf246b1c1413d3dd07115",
+  "protected_artifacts_unchanged": true,
+  "raw_dates_and_values_valid": true,
+  "spatial_joins_and_cache_values_verified": true,
+  "categorical_normalization_verified": true,
+  "cached_mrt_distances_reproduced": true,
+  "submission_schema_and_rows_verified": true,
+  "target_reconstruction_sgd_verified": true,
+  "query_history_origins_verified": true,
+  "property_variability_by_block_type": {
+    "FLOOR_AREA_SQM": 1,
+    "FLAT_MODEL_CLEAN": 1,
+    "LEASE_COMMENCE_DATE": 1
+  },
+  "future_mrt_source": "https://www.lta.gov.sg/content/ltagov/en/newsroom/2025/3/news-releases/expanding_our_rail_network_and_strengthening_rail_reliability.html",
+  "confirmed_future_only_locations": 34,
+  "scope": "Read-only audit; temporal MRT correctness finding remains unresolved in the existing77-feature model"
+}

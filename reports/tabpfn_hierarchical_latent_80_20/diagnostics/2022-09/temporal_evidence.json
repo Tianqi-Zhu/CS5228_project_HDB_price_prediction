@@ -1,0 +1,6 @@
+{
+  "months": 4,
+  "lag1_monthly_mean_acf": 0.9446078285497401,
+  "enabled": false,
+  "interpretation": "Descriptive historical temporal evidence; subsequent forecast validation determines usefulness"
+}

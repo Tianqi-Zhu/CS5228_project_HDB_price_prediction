@@ -1,0 +1,21 @@
+{
+  "verified": true,
+  "samples": [
+    {
+      "origin": "2021-06",
+      "rows": 40,
+      "maximum_absolute_difference": 0.0
+    },
+    {
+      "origin": "2022-12",
+      "rows": 40,
+      "maximum_absolute_difference": 0.0
+    },
+    {
+      "origin": "2024-05",
+      "rows": 40,
+      "maximum_absolute_difference": 0.0
+    }
+  ],
+  "changed_labels": false
+}

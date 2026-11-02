@@ -1,0 +1,10 @@
+{
+  "verified": true,
+  "prediction_alignment": true,
+  "finite_predictions": true,
+  "earlier_only_weights": true,
+  "all_context_rows_retained": true,
+  "original_targets_and_baselines": true,
+  "source_hashes_unchanged": true,
+  "no_submission_writes": true
+}

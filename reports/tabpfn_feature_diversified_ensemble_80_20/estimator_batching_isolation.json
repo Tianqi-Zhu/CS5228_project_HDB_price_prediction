@@ -1,0 +1,10 @@
+{
+  "verified": true,
+  "rows": 400,
+  "sequential_override": 0,
+  "sequential_probe_vs_original_sequential_max_error_sgd": 0.0,
+  "sequential_vs_current_native_max_difference_sgd": 0.2952122769347625,
+  "checkpoint_weights_unchanged": true,
+  "only_estimator_batching_override_changed": true,
+  "conclusion": "Original sequential cached baseline reproduced by plain class with rows0 override. All final feature/seed/baseline comparisons use matched native-default batching."
+}

@@ -1,0 +1,7 @@
+{
+  "independent_reload": true,
+  "full_context_rows": 150000,
+  "replay_rows": 400,
+  "max_absolute_difference_sgd": 0.0,
+  "verified": true
+}

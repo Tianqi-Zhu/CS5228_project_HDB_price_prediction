@@ -1,0 +1,20 @@
+{
+  "source": "plain two-estimator600-query earlier calibration; all beforeJune2024",
+  "rows": 600,
+  "monthly_residual_means": {
+    "2023-12": -46.404562202236534,
+    "2024-01": -88.85084583761308,
+    "2024-02": -42.14560070349245,
+    "2024-03": 49.34336337304483,
+    "2024-04": -13.039477686459916,
+    "2024-05": 76.20851384519034
+  },
+  "lag1_monthly_mean_autocorrelation": 0.26455713653921326,
+  "E1_fit_seconds": 0.008105000015348196,
+  "E1_sparse_system_shape": [
+    1261,
+    661
+  ],
+  "E1_training_reconstruction_rmse": 511.23893187083786,
+  "use": "diagnostic only; not out-of-time latent validation or evidence of future improvement"
+}

@@ -1,0 +1,6 @@
+{
+  "reason": "Consistent post-memory-fix baseline timing, readable cost plot labels, independent audit references; no statistical selection changes",
+  "all_original_reporting_decision_rules_unchanged": true,
+  "original_plan_sha256": "ebc22522cc45a5677e170bf33f41f8636202fa34f98c9eb9bcc2f10e08149376",
+  "new_plan_sha256": "432039aa995f5a1b2c8340017d9c6f151e18497e2d0e0f24c30f974561e494fb"
+}

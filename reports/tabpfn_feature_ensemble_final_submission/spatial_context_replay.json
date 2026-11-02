@@ -1,0 +1,7 @@
+{
+  "verified": true,
+  "rows": 121005,
+  "features": 12,
+  "maximum_difference": 8.185452315956354e-12,
+  "later_training_labels_do_not_change_earlier_context_features": true
+}
