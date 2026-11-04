@@ -8,3 +8,6 @@ team_review/three_submissions/submissions/*.csv -text
 team_review/**/*.npz binary
 team_review/**/*.json -text
 team_review/**/*.csv -text
+# Keep exact Windows-exported bytes while checking actual whitespace errors.
+team_review/**/*.json whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+team_review/**/*.csv whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
