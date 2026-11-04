@@ -27,3 +27,11 @@ RTDL数值嵌入、FT骨干及XGBoost在本次运行中从此独立工作区自�
 - [测试摘要](checks/test_summary.json)
 
 大型新训练权重和运行输出位于此工作区的 `output/`，未纳入Git提交。三份真实提交及小型重组输入纳入分支，供队友不运行训练也可核查。
+
+## 上传前的额外干净环境检查
+
+从已提交Git内容导出全新目录，确认无原工作区缓存和模型权重。新建Python 3.11.15虚拟环境，仅从官方PyPI安装NumPy 2.4.6，三份预测核验与重组通过；最大数值差异约9.1e-13 SGD，低于1e-8的检查容差。新环境没有安装Pandas或PyTorch，CPU审阅不依赖训练环境。
+
+另对 `environment.training.yml` 中全部pip依赖执行官方PyPI/PyTorch索引的安装解析dry-run，通过；该步骤没有安装CUDA训练环境。完整训练可运行的依据仍为上面在现有Conda环境中实际完成的16模型全量拟合和重载记录。
+
+证据：[干净环境上传前核查](checks/pre_push_check.json)、[训练环境依赖解析](checks/training_dependencies_resolved.json)。

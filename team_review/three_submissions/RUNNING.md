@@ -50,4 +50,4 @@ conda run -n cs5228-final-training python team_review/three_submissions/train.py
 4. [evidence/](evidence/)：模型对照、特征阶梯、融合增量和此前复现核查。
 5. [source_manifest.json](source_manifest.json)：本分支保留的相关训练代码快照及来源哈希。
 
-当前分支只做本地整理，不自动推送或发送给任何人。
+分支名为 `results/hdb-rental-final-ensemble`。上述核查、重组与训练命令在本地执行，不包含自动Git推送。

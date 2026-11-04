@@ -1,6 +1,6 @@
 # 三份 Kaggle 提交的队友审阅入口
 
-本地分支：`review/three-kaggle-submissions-20261105`。本分支整理三份真实提交、准确分数、训练代码快照、已学习的融合权重、CPU预测重组入口和全量重训入口。
+分支：`results/hdb-rental-final-ensemble`。本分支整理三份真实提交、准确分数、训练代码快照、已学习的融合权重、CPU预测重组入口和全量重训入口。
 
 先读 [三种方案的实现原理](team_review/three_submissions/README.md)。执行命令见 [运行指南](team_review/three_submissions/RUNNING.md)，报告写作主线见 [METHODS.md](team_review/three_submissions/METHODS.md)。
 

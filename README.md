@@ -1,8 +1,6 @@
-# Three-submission review branch
+# CS5228 HDB 月租预测：最终融合与三份提交对照
 
-Start here: [TEAM_REVIEW.md](TEAM_REVIEW.md).
-
-# CS5228 HDB 月租预测
+本分支为 `results/hdb-rental-final-ensemble`。三份提交的方法、分数、环境与复现入口从 [TEAM_REVIEW.md](TEAM_REVIEW.md) 开始；内层README讲实现原理，RUNNING.md讲执行方法。后文保留基础项目说明。
 
 根据新加坡 HDB 组屋的房屋属性、位置和租赁审批月份预测月租金（SGD）。项目使用比赛提供的训练集、测试集和六份辅助数据，主要评价指标为 RMSE。
 
