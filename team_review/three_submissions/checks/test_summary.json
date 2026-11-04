@@ -1,0 +1,12 @@
+{
+  "command": "python -m unittest tests.test_ninth_wave tests.test_tenth_wave",
+  "passed": 9,
+  "yaml_files_parsed": [
+    "environment.yml",
+    "environment.review.yml",
+    "environment.training.yml"
+  ],
+  "executed_conda_environment": "cs5228",
+  "new_conda_environment_created": false,
+  "full_refit_seconds": 552.9420081999997
+}

@@ -1,0 +1,23 @@
+{
+  "reproduced": [
+    {
+      "file": "output/team_review_reproduced/kaggle_best_history.csv",
+      "rows": 50000,
+      "max_abs_difference": 0.0
+    },
+    {
+      "file": "output/team_review_reproduced/kaggle_best_macro.csv",
+      "rows": 50000,
+      "max_abs_difference": 0.0
+    },
+    {
+      "file": "output/team_review_reproduced/kaggle_structure_blend.csv",
+      "rows": 50000,
+      "max_abs_difference": 0.0
+    }
+  ],
+  "python": "3.11.15",
+  "numpy": "2.4.6",
+  "executable": "D:\\miniconda3\\envs\\cs5228\\python.exe",
+  "mode": "frozen-model-forecast replay; no training or network"
+}

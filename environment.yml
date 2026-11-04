@@ -1,21 +1,8 @@
-# Canonical Conda environment for the complete project workflow.
-# Create with: conda env create -f environment.yml
-# Update with: conda env update -n cs5228 -f environment.yml --prune
-name: cs5228
+name: cs5228-review
 channels:
   - conda-forge
 dependencies:
   - python=3.11
-  - pandas
-  - numpy<3
-  - scikit-learn
-  - matplotlib
-  - pillow
-  - joblib
-  - openpyxl
-  - reportlab
   - pip
   - pip:
-      - catboost==1.2.10
-      - lightgbm==4.7.0
-      - torch>=2.1
+      - numpy==2.4.6

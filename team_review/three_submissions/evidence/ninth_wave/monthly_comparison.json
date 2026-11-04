@@ -1,0 +1,25 @@
+{
+  "results": [
+    {
+      "stage": "outer",
+      "delta_rmse_sgd": -0.565975669291106,
+      "month_block_interval_95": [
+        -0.8808705546039164,
+        -0.3241941238803179
+      ],
+      "months_improved": 10,
+      "months": 12
+    },
+    {
+      "stage": "june",
+      "delta_rmse_sgd": -0.7441092555738464,
+      "month_block_interval_95": [
+        -1.0773689432133438,
+        -0.4844542083116039
+      ],
+      "months_improved": 10,
+      "months": 10
+    }
+  ],
+  "note": "Descriptive development-window resampling after configuration search; not independent confirmatory evidence."
+}

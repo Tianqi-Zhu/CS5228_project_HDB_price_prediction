@@ -1,0 +1,65 @@
+{
+  "submissions": [
+    {
+      "file": "submissions/kaggle_best_history.csv",
+      "sha256": "b113a4ccbeb9a890d8e885c2c2815a177b8fa544c4b03d05bfd8a4cad49d5b85",
+      "rows": 50000,
+      "kaggle_score": 415.86912,
+      "local_annual_rmse": 451.1810257119484,
+      "local_recent_rmse": 442.9024826164729,
+      "method": "历史特征主融合"
+    },
+    {
+      "file": "submissions/kaggle_best_macro.csv",
+      "sha256": "9b54b51c4d551b5686bed1dbd1b99c92602f5669325700423d1b0a44ed2fa5e5",
+      "rows": 50000,
+      "kaggle_score": 415.78232,
+      "local_annual_rmse": 451.20805134222724,
+      "local_recent_rmse": 442.88921226230013,
+      "method": "比赛所给宏观增强"
+    },
+    {
+      "file": "submissions/kaggle_structure_blend.csv",
+      "sha256": "386a12fac6a8e9e94892b338c29f38b7efd842811517d4aa487126922a6b7e92",
+      "rows": 50000,
+      "kaggle_score": 415.37529,
+      "local_annual_rmse": 451.02950249165616,
+      "local_recent_rmse": 441.8345348836222,
+      "method": "分组融合＋PLR-FT"
+    }
+  ],
+  "reconstruction_inputs": [
+    {
+      "file": "components.npz",
+      "sha256": "06494ca69731c1f2740920dae8f96f0afe0782e65ddff7d9fbfe01545f4cf452"
+    },
+    {
+      "file": "weights.json",
+      "sha256": "072c9c0a0fa548520896c4427964f22fb813d62f47e0394970bf42df13e3fd4a"
+    },
+    {
+      "file": "provenance.json",
+      "sha256": "3298a8a7770beb5d782f0eb9d99274e6c060442b13e97f5ef8ef0a606b6e6fb7"
+    },
+    {
+      "file": "training_recipes.json",
+      "sha256": "caa47f002f07906ca50c5f8cba4cdd73601916fbff9ea9619c2d6c94f7826513"
+    },
+    {
+      "file": "source_manifest.json",
+      "sha256": "66b2aa27120dcd1e447d58c32ff00e102a0482d02484e56b5a996b6411165bed"
+    }
+  ],
+  "logical_base_predictions": 13,
+  "source_files": 36,
+  "score_evidence": {
+    "source": "User-provided Kaggle submission-list screenshot in this conversation",
+    "observed_on": "2026-11-05",
+    "precision": "5 decimal places",
+    "leaderboard_partition": null,
+    "source_note": "The screenshot shows filename and displayed score, but does not label public/private split. No API verification or new upload by the assistant."
+  },
+  "base_training_rows": 150000,
+  "test_rows": 50000,
+  "bundled_model_checkpoints": false
+}

@@ -1,1 +1,10 @@
 *.pdf binary
+
+# Portable source hashes and exact original submission bytes
+analysis/**/*.py text eol=lf
+tests/**/*.py text eol=lf
+team_review/**/*.py text eol=lf
+team_review/three_submissions/submissions/*.csv -text
+team_review/**/*.npz binary
+team_review/**/*.json -text
+team_review/**/*.csv -text

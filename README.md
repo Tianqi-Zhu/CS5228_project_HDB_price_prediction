@@ -1,3 +1,7 @@
+# Three-submission review branch
+
+Start here: [TEAM_REVIEW.md](TEAM_REVIEW.md).
+
 # CS5228 HDB 月租预测
 
 根据新加坡 HDB 组屋的房屋属性、位置和租赁审批月份预测月租金（SGD）。项目使用比赛提供的训练集、测试集和六份辅助数据，主要评价指标为 RMSE。

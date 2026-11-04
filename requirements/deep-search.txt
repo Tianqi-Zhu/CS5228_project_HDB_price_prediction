@@ -1,0 +1,5 @@
+# Install with --no-deps into .cache/deep-deps; use existing PyTorch CUDA env.
+tabm==0.0.3
+rtdl_num_embeddings==0.0.12
+pytabkit==1.8.0
+# Existing .cache/model-deps provides rtdl_revisiting_models==0.0.2.

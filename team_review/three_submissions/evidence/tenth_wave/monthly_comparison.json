@@ -1,0 +1,25 @@
+{
+  "results": [
+    {
+      "stage": "outer",
+      "delta_rmse_sgd": 0.16445455770190165,
+      "month_block_interval_95": [
+        -0.04254020713985509,
+        0.3123624493334205
+      ],
+      "months_improved": 5,
+      "months": 12
+    },
+    {
+      "stage": "june",
+      "delta_rmse_sgd": -0.12454753971809396,
+      "month_block_interval_95": [
+        -0.2260715475237589,
+        -0.08494607406998966
+      ],
+      "months_improved": 7,
+      "months": 10
+    }
+  ],
+  "note": "Descriptive reused development evidence after model/configuration selection."
+}

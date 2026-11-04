@@ -235,3 +235,7 @@ reports/**/submission.csv
 reports/**/test_predictions.csv
 reports/**/validation_predictions.csv
 reports/**/holdout_predictions.csv
+
+# Local team-review replay, checkpoints and dependencies
+output/
+.cache/
