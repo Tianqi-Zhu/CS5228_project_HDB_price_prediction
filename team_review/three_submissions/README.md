@@ -1,63 +1,197 @@
-# 三份提交：分数、方法与运行入口
+# 三份提交的实现原理：历史特征、模型与融合
 
-## 先看结果
+本页解释三种方案如何从原始数据得到最终预测。环境安装和执行命令见 [RUNNING.md](RUNNING.md)，实际运行检查见 [CHECKS.md](CHECKS.md)，报告写作思路见 [METHODS.md](METHODS.md)。
 
-| 原始提交文件 | 年度本地RMSE | 近期本地RMSE | Kaggle显示分数 | 用途 |
-|---|---:|---:|---:|---|
-| [历史版](submissions/kaggle_best_history.csv) | 451.1810 | 442.9025 | 415.86912 | 强基线 |
-| [宏观版](submissions/kaggle_best_macro.csv) | 451.2081 | 442.8892 | 415.78232 | 宏观信息消融 |
-| [结构融合版](submissions/kaggle_structure_blend.csv) | 451.0295 | 441.8345 | **415.37529** | **推荐final** |
+## 1. 预测任务与三种方案的关系
 
-Kaggle分数由用户提供的提交列表截图读取；截图未标明public/private类型。三份均为50,000行、`Id,Predicted`格式，原文件哈希见[manifest.json](manifest.json)。结构融合版比历史版低0.49383，比宏观版低0.40703；这只是三份候选的比较，不代表独立统计显著性结论。
+目标是预测每条租赁记录的月租金，单位为SGD，评价指标为RMSE。数据包括150,000条带租金标签的训练记录、50,000条无标签测试记录，以及比赛所给楼栋、MRT、学校、商场、COE和股票辅助表。
 
-年度窗口为2024-04至2025-03、35,158行；近期窗口为2024-06至2025-03、28,995行，二者重叠且反复用于开发。本地分数与Kaggle分数分别报告，不采用固定减20的换算。
-
-## 三种运行方式
-
-从本分支仓库根目录运行。
-
-### 1. 核查原始提交：仅需Python
-
-```powershell
-python team_review/three_submissions/verify.py
+```text
+房屋、区位、时间及过去租金
+  └─ 原始租金 / 相对市场价格 / 历史基准残差三种建模视角
+      ├─ 10个成员固定权重组合 ────────────── 历史版
+      │    └─ 再与给定宏观CatBoost加权 ───── 宏观版
+      └─ 原10个成员＋FT四种子均值＋PLR-FT
+           └─ 按历史覆盖情况学习分组权重 ─── 结构融合版（final）
 ```
 
-检查三份CSV的SHA-256、50,000行、完整ID顺序、有限预测值，以及重组输入和代码快照哈希；不需要GPU、训练缓存或网络。
+**宏观版是独立对照分支；final没有把宏观版的输出再串联进去。** 包内保存三份方案所需基础预测的并集，共13路，因此 `components.npz` 中的预测矩阵有13列；final只使用其中12路。
 
-### 2. 独立重组预测：CPU、只需NumPy
+## 2. 共同特征：把过去的可比租金变成输入
 
-```powershell
-conda env create -f environment.review.yml
-conda run -n cs5228-review python team_review/three_submissions/reproduce.py
+### 2.1 房屋、时间和区位
+
+清洗户型、房屋类型、地址和区域字段，连接所给楼栋与设施表。输入包含面积、户型、月份、楼龄代理、地理位置，以及到设施的距离和周边数量等。楼栋最高楼层是楼栋属性，不当成该出租单元的实际楼层。
+
+### 2.2 普通历史与相对市场历史
+
+按“楼栋×户型”“区域×户型”等分组，生成过去均价、样本数、最近均价、距最近记录月数等统计，为模型提供局部可比价格。
+
+另将历史租金除以其所在历史月份、同户型的市场平均租金，形成相对价格比例，分别描述整体市场水平和房屋相对市场的高低。预测查询所需参考水平来自已知过去，不使用待预测月份的真实平均租金。
+
+### 2.3 12/24/36个月同期历史
+
+对目标月份向前12、24、36个月查询同楼栋、同户型记录。`exact`使用精确同月；`window`使用该月份前后各一个月；`broad`扩展同期统计范围。每组统计包括记录数`N`、平均租金`RENT`、相对当时市场的平均比例`RATIO`、比例波动`SD`、较低相对租金记录比例`LOW`。
+
+这些是同期可比记录，不能认定为同一套房或同一租客的续租，因为数据缺少相应身份信息。
+
+固定模型设置的近期窗口对照如下；每列内部使用相同模型参数、轮数和28,995条验证记录：
+
+| 特征组 | CatBoost RMSE | LightGBM RMSE |
+|---|---:|---:|
+| 19列：房屋、时间、位置与设施 | 473.11 | 474.18 |
+| 27列：加入普通历史 | 458.60 | 459.15 |
+| 47列：加入相对市场历史 | 458.06 | 458.43 |
+| 62列：再加入同期统计 | 446.16 | 447.17 |
+
+这组结果支持将普通历史和同期历史作为主线；相对市场历史的单独增量较小。证据见[固定特征阶梯](evidence/report_selection/controlled_feature_ladder.csv)。这些分数来自固定设置的单模型对照，不直接等于下面融合成员的分数。
+
+### 2.4 时间截止与缺失处理
+
+训练行的历史统计只查严格更早月份；本地验证在预测原点冻结历史，不在验证期间加入真实租金。未知历史组保留缺失值或计数0，不回填未来租金。类别词表、数值变换和缺失填充值仅从拟合数据学习。
+
+正式提交使用比赛提供的全部训练标签；测试月份与训练末月部分重合，但历史统计仍排除查询月份本身的记录。预测函数不读取测试租金。
+
+实现入口：[普通历史编码](../../analysis/pipeline/features.py)、[相对市场与分布统计](../../analysis/experiments/frontier_search.py)、[同期历史](../../analysis/experiments/second_wave_anniversary.py)。
+
+## 3. 历史版：三种目标表示的10成员组合
+
+### 3.1 训练目标与预测还原
+
+各成员最后都输出SGD月租，但拟合目标不同：
+
+| 视角 | 训练目标 | 预测还原 | 作用 |
+|---|---|---|---|
+| 原始租金 | `y` | 直接输出租金 | 学习属性与历史统计到租金的非线性关系 |
+| 市场比例 | `y / 当时同户型市场均值` | 预测比例 × 已知历史推算的市场水平 | 分开表达市场水平与房屋相对价格 |
+| 历史基准残差 | `y - baseline` | `baseline + 模型预测的残差` | 先给出历史参考价，再学习偏离 |
+
+比例模型的训练目标使用已知训练月份的市场均值；推理改用过去已知市场水平，不能使用查询月份的真实均值。该成员的训练样本权重为`(训练市场水平 / 3000)²`，使比例目标的误差对应租金尺度的误差。
+
+残差基准取24个月同期租金比例，并向长期楼栋比例收缩。楼栋长期比例缺失时退回区域比例，再缺失则取1：
+
+```text
+shrunk_ratio = (n24 × cohort_ratio24 + 2 × long_run_ratio) / (n24 + 2)
+baseline = past_market_3m × shrunk_ratio
+residual_target = rent - baseline
+predicted_rent = baseline + predicted_residual
 ```
 
-使用包内 `components.npz` 的13路已训练基础预测和 `weights.json` 的已学习权重，重新生成三份CSV。逐行与原始提交比较，容差为1e-8 SGD；浮点运算和文本格式可能令重新写出的文件字节不同。此模式不训练模型、不读取目标答案，也不依赖原工作区、原始数据或大型检查点。
+样本少时更依赖长期参考，样本多时更依赖同期记录。`past_market_3m`缺失时，对冷启动行使用面积×30的固定回退值。基准及5列相关派生量见 [adjusted_baseline / inputs](../../analysis/experiments/third_wave_training.py)。
 
-### 3. 从原始训练数据重训全部基础模型：CUDA GPU
+### 3.2 10个成员与固定加权
 
-```powershell
-conda env create -f environment.training.yml
-conda run -n cs5228-final-training python team_review/three_submissions/train.py
+| 模型家族 | 成员数 | 目标与输入差异 |
+|---|---:|---|
+| LightGBM | 6 | 1个22列市场比例模型；5个62/87列历史统计模型 |
+| CatBoost | 1 | 62列历史输入，直接预测租金 |
+| XGBoost | 2 | 62列原始租金模型、67列历史基准残差模型 |
+| FT-Transformer | 1 | 67列候选输入，学习历史基准残差 |
+
+成员采用不同历史范围、模型容量和目标表示。原始历史版用已学习的固定非负权重，将10个已还原为SGD的预测求加权和：
+
+```text
+history_prediction[i] = sum_k(history_weight[k] × model_prediction[i,k])
 ```
 
-训练配方固定在 [training_recipes.json](training_recipes.json)。入口直接使用仓库 `data/train.csv` 和所给辅助表，训练历史版10个基础模型、4个删减36月字段的FT种子、新PLR-FT及宏观CatBoost，共16个基础预测器，随后应用已学习融合权重生成三份新CSV。模型权重和输出保存在 `output/team_review_trained/`，不覆盖包内原始提交。
+权重不是等权。例如原CatBoost占31.5561%，原FT占15.9872%。完整成员、权重、输入数量和固定训练轮数见 [weights.json 的 history 部分](weights.json)及 [training_recipes.json](training_recipes.json)。组合提供互补，是否有效由验证结果判断。
 
-这是最终管线的基础模型重训，不是从零重跑数百个历史开发实验，也不重新搜索融合权重。CUDA重训可能有数值差异，415.37529等分数属于包内原始提交，新训练文件需另行提交才知道分数。此分支不包含大型 `.joblib`、`.pt` 检查点，检查点由训练入口生成。
+## 4. 宏观版：历史版加一条给定宏观信息预测
 
-重训后可运行 `python team_review/three_submissions/check_trained.py`，重新加载16份检查点核对保存的逐行预测。本机本次全量重训的三份预测数值与原提交完全一致；重新序列化的换行或浮点文本格式可能不同，详见检查记录。
+宏观CatBoost使用原62列历史输入，再加入12个比赛所给宏观变量，共74列：COE各类价格、均价与需求比例，股票市场、银行、REIT、地产水平，以及市场/REIT的3个月动量。模型深度8，固定训练498轮。
 
-## Conda与测试
+```text
+macro_prediction = 0.8673768172467663 × history_prediction
+                 + 0.13262318275323373 × macro_catboost_prediction
+```
 
-- `environment.review.yml`：Python 3.11＋NumPy 2.4.6，供CPU重组。
-- `environment.training.yml`：完整训练依赖及CUDA版PyTorch；版本根据原 `cs5228` 环境记录。
-- 实际本机验证使用的Python、NumPy、GPU与通过项记录在 `CHECKS.md`、`checks/` 中。环境文件的创建命令不等于已在新机器上创建测试。
+这些系数由早期实验选择，宏观模型也经过实际训练。该方案单列为比赛给定信息条件下的对照，因为预测月份COE/股票观测不一定能在真实提前部署时获得。实现见 [fourth_wave_known_macro.py](../../analysis/experiments/fourth_wave_known_macro.py)。
 
-## 队友建议先读
+## 5. 结构融合版：新增神经预测，按历史覆盖学习权重
 
-1. [METHODS.md](METHODS.md)：三种方案的差异、时间边界和报告主线。
-2. [comparison.csv](comparison.csv)：准确分数和文件对应。
-3. [weights.json](weights.json)：原始历史权重、宏观权重、最终分组权重。
-4. [evidence/](evidence/)：模型对照、特征阶梯、融合增量和此前复现核查。
-5. [source_manifest.json](source_manifest.json)：本分支保留的相关训练代码快照及来源哈希。
+### 5.1 新增的两路预测
 
-当前分支只做本地整理，不自动推送或发送给任何人。
+原10个成员保留，再增加：
+
+1. **删减36月字段的FT四种子均值。** 从原67列候选输入删除5列`ANN_BLOCK_36_...`字段，保留62列。以42/43/44/45四个种子分别训练3个epoch，再平均预测。此处62列与树模型的62列内容不同。删减仅用于这些新增神经模型，原树成员仍可使用36月历史。
+2. **PLR-FT。** 使用相同删减后的候选输入，将数值特征映射为可学习的sin/cos周期基函数，再投影成128维token，与类别token一起输入3个注意力块。学习率0.0001，较早窗口选定10个epoch，后续固定10个epoch训练。它也预测历史基准残差。周期嵌入作用于数值特征，不是在假定租金按某个固定周期变化。
+
+神经网络的类别编码、缺失填充、标准化/分位数变换及目标均值和标准差均在拟合数据中确定，编码后还包括缺失标记。FT骨干和数值嵌入使用已记录版本的作者包，模型在本数据上实际训练。
+
+final共12路预测：原10路＋FT均值1路＋PLR-FT 1路。FT均值内部含4个模型，底层共15个预测器。宏观版另需1个模型，所以生成三份提交的重训入口合计拟合16个基础预测器。
+
+### 5.2 分组依据
+
+不同记录能够查询到的历史数量不同。只根据已有历史计数，为每条记录构造两个布尔值：
+
+```text
+support24 = ANN_BLOCK_24_R1_N > 0
+support36 = ANN_BLOCK_36_R1_N > 0
+group = (support24, support36)
+```
+
+对应“均无”“仅36月”“仅24月”“均有”四种情况。计数不依赖该条记录的真实租金。分组权重允许不同历史条件采用不同组合；这是一项经过比较的建模选择，不意味着某组一定更容易预测。
+
+### 5.3 权重怎样训练
+
+收集在各历史预测原点之外生成的基础模型预测，再用已观测历史标签拟合融合。全量提交使用2023-10至2024-03的17,977行，以及2024-04至2025-03的35,158行，共53,135行；两个预测原点的总损失权重各占50%。
+
+拟合时，对每路模型误差减去当月平均误差，减弱整体月份水平偏差对权重选择的影响：
+
+```text
+error[i,k] = (prediction[i,k] - rent[i]) / 1000
+centered_error[i,k] = error[i,k] - weighted_month_mean(error[:,k])
+
+minimize_w:
+    sum_i sample_weight[i] × (sum_k w[k] × centered_error[i,k])²
+    + 0.003 × sum_k (w[k] - prior[k])²
+
+subject to: w[k] >= 0, sum_k w[k] = 1, w[k] <= 0.6
+```
+
+分两步求解：
+
+- **全局权重：** 以FT四种子替换版作为权重先验，新增PLR初值为0；原FT的初始权重转给FT均值，但原FT仍可被重新分配权重。用上述目标学习全局组合。
+- **分组权重：** 对每组单独拟合，按该组内部的月份重新中心化误差，并向已学全局权重收缩，正则仍为0.003。拟合样本少于500条的组不单独学习；此类组和未知组在预测时回退到全局权重。
+
+代码用SLSQP求解这一受约束二次目标。月均误差只在历史拟合阶段计算；推理阶段不计算测试租金误差，而是查保存的组权重：
+
+```text
+final_prediction[i] = sum_k(group_weight[group[i],k] × prediction[i,k])
+```
+
+参数保存在 [weights.json 的 structure 部分](weights.json)。权重拟合与分组逻辑见 [ninth_wave_blending.py](../../analysis/experiments/ninth_wave_blending.py)，新增神经结构见 [tenth_wave_structures.py](../../analysis/experiments/tenth_wave_structures.py)。
+
+## 6. 开发、全量重训与预测重组
+
+| 步骤 | 做什么 | 对应内容 |
+|---|---|---|
+| 历史开发 | 用时间划分选择模型设置和轮数；用历史样本外预测学习融合权重 | 相关源码、配方、权重和对照证据 |
+| 正式提交重训 | 全部训练标签按固定设置拟合基础模型，再加载已学融合权重 | `train.py`；不重新搜索融合权重 |
+| CPU预测重组 | 加载已训练模型输出向量，按保存权重重算三份预测 | `reproduce.py` 与 `components.npz` |
+
+`components.npz` 保存模型输出及历史覆盖标记，不是测试真实租金。完整重训入口不读取这份预测缓存，而是从训练数据拟合16个基础模型。本机独立工作区的重训和检查点重载均通过，三份结果数值与原提交逐行一致，见 [CHECKS.md](CHECKS.md)。
+
+## 7. 实测结果与final选择
+
+| 提交 | 年度本地RMSE | 近期本地RMSE | Kaggle显示分数 |
+|---|---:|---:|---:|
+| [历史版](submissions/kaggle_best_history.csv) | 451.1810 | 442.9025 | 415.86912 |
+| [宏观版](submissions/kaggle_best_macro.csv) | 451.2081 | 442.8892 | 415.78232 |
+| [结构融合版](submissions/kaggle_structure_blend.csv) | 451.0295 | 441.8345 | **415.37529** |
+
+推荐结构融合版作为三份已提交候选中的final：相对历史版Kaggle降低0.49383，相对宏观版降低0.40703。截图未标明public/private类型，因此记录为“Kaggle显示分数”。
+
+三份提交比较的是整套管线，不能将全部提升归因于PLR。单独增加PLR的本地对照，近期441.9591→441.8345，年度450.8650→451.0295，存在窗口取舍；全部新增网络一起加入的近期结果为442.5100。见[融合对照](evidence/tenth_wave/blend_comparison.csv)。
+
+本地年度为2024-04至2025-03、35,158行，近期为2024-06至2025-03、28,995行，窗口重叠且多轮用于开发。最终也参考了提交分数，结果不作为独立盲测或统计显著性证明；本地与Kaggle分数分别报告，不使用固定分差换算。
+
+## 8. 继续查实现
+
+- [RUNNING.md](RUNNING.md)：Conda、核查、预测重组、重训与输出位置。
+- [training_recipes.json](training_recipes.json)：模型设置、固定轮数及数据哈希。
+- [weights.json](weights.json)：历史、宏观、final三套融合参数。
+- [reproduce.py](reproduce.py)：三套融合公式的直接实现。
+- [train.py](train.py)：16个基础模型的全量拟合及组合。
+- [manifest.json](manifest.json)、[provenance.json](provenance.json)：提交哈希、基础预测来源及分数证据。
+- [source_manifest.json](source_manifest.json)：相关源码快照；[evidence/](evidence/)保存模型、特征和融合对照。
