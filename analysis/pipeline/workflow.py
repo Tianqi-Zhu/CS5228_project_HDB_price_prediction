@@ -94,8 +94,8 @@ def run_submission(config: TrainerConfig, output_path=None, model_path=None):
     preprocessor configuration, feature names and training provenance.
     """
     label = f"{config.model_family}_{config.feature_set}"
-    output = check_output_path(Path(output_path) if output_path is not None else SUBMISSIONS / f"{label}.csv")
-    artifact = check_output_path(Path(model_path) if model_path is not None else MODELS / f"{label}.joblib")
+    output = check_output_path(Path(output_path) if output_path is not None else SUBMISSIONS / "baselines" / f"{label}.csv")
+    artifact = check_output_path(Path(model_path) if model_path is not None else MODELS / "baseline_submissions" / f"{label}.joblib")
     if output.suffix.lower() != ".csv" or artifact.suffix.lower() != ".joblib":
         raise ValueError("Submission path must end in .csv and model path in .joblib")
     with protect_sources(SOURCES) as hashes:
@@ -136,7 +136,7 @@ def run_submission(config: TrainerConfig, output_path=None, model_path=None):
 
 def predict_saved(model_path, output_path=None):
     bundle = HDBTrainer.load_model(model_path)
-    output = check_output_path(Path(output_path) if output_path is not None else SUBMISSIONS / "saved_model.csv")
+    output = check_output_path(Path(output_path) if output_path is not None else SUBMISSIONS / "baselines" / "saved_model.csv")
     if output.suffix.lower() != ".csv":
         raise ValueError("Submission path must end in .csv")
     if not isinstance(bundle, dict) or "preprocessor_config" not in bundle:

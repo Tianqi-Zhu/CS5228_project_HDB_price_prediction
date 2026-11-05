@@ -1,0 +1,61 @@
+{
+  "source_page": "https://data.gov.sg/datasets/d_c9f57187485a850908655db0e8cfe651/view",
+  "public_rows": 212597,
+  "public_months": [
+    "2021-01",
+    "2026-09"
+  ],
+  "public_sha256": "4fd7ed2ab936f7ec33aa2e32a4185bf83bb9148c6bbcc874a424e310eb78adc9",
+  "competition_source_sha256": {
+    "C:\\Users\\Lenovo\\Desktop\\CS5228\\CS5228_project_HDB_price_prediction\\data\\train.csv": "2fe38ce9e0d8a02e9786f066d4a10d575d91f34be1d9111f0142e3f43fbfc8a5",
+    "C:\\Users\\Lenovo\\Desktop\\CS5228\\CS5228_project_HDB_price_prediction\\data\\test.csv": "a2ec03a0afc07c251c72cc0de2e15ac965a3b06291b304aaac53a375115ff4e0"
+  },
+  "results": {
+    "train": {
+      "rows": 150000,
+      "matched_rows": 150000,
+      "key_match_fraction": 1.0,
+      "single_rent_value_rows": 109439,
+      "ambiguous_rent_rows": 40561,
+      "label_present_in_public_group_rows": 150000,
+      "label_present_fraction": 1.0,
+      "public_group_mean_reconstruction_matched_rmse_sgd": 179.94717448267474,
+      "latest_known_label_matched_rows": 35158,
+      "latest_public_mean_reconstruction_rmse_sgd": 181.2533674382674,
+      "latest_public_lookup_with_model_fallback_rmse_sgd": 181.2533674382674,
+      "latest_remove_own_public_rent_then_model_fallback_rmse_sgd": 517.8777799663295
+    },
+    "test": {
+      "rows": 50000,
+      "matched_rows": 50000,
+      "key_match_fraction": 1.0,
+      "single_rent_value_rows": 36487,
+      "ambiguous_rent_rows": 13513
+    }
+  },
+  "interpretation": "Public-label reconstruction audit, not a valid past-only forecasting score. Matching uses only month, town, block, canonical street and flat type. No test labels are supplied by the competition files, and no Kaggle submission is generated.",
+  "rules_status": "Source reconstruction is an audit, not an assertion that target recovery is permitted. See competition_context.json for verified site wording.",
+  "competition_context": {
+    "competition_url": "https://www.kaggle.com/competitions/cs-5228-2610-project",
+    "verified_date": "2026-10-24",
+    "verification_method": "Read visible authenticated Kaggle competition pages through the user's browser; no submissions or messages sent.",
+    "evaluation": "RMSE on individual monthly rental rates in SGD",
+    "leaderboard_type": "Public",
+    "public_test_fraction_description": "Approximately 50% of the test data; private leaderboard uses the other 50%.",
+    "observed_top_scores": [
+      172.4264,
+      172.43499,
+      172.93685,
+      172.93685,
+      173.19192,
+      173.45426,
+      179.12191,
+      182.7167,
+      183.18108
+    ],
+    "observed_rank_10_score": 411.75928,
+    "overview_external_data_policy": "The Additional Data Collection section welcomes participants collecting their own data to generate useful additional data/features.",
+    "competition_specific_rules_summary": "The rules page lists general instructions to avoid cheating, apply oneself and have fun, followed by Kaggle foundational rules.",
+    "direct_target_recovery_authorization": "Not explicitly established by the visible competition text. Additional course/project requirements or organizer clarification may govern this use. No claim is made about any team's actual method."
+  }
+}

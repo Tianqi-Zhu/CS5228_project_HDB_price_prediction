@@ -81,7 +81,7 @@ class HDBTrainer:
     def fit_frame(self, frame: pd.DataFrame):
         return self.train(self.build_pipeline(), frame[self.features], frame[TARGET])
 
-    def save_model(self, model, path: str | Path = MODELS / "hdb_rent_model.joblib"):
+    def save_model(self, model, path: str | Path = MODELS / "baseline_submissions" / "hdb_rent_model.joblib"):
         path = check_output_path(Path(path))
         path.parent.mkdir(parents=True, exist_ok=True)
         joblib.dump(model, path)

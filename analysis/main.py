@@ -12,8 +12,6 @@ if __package__ in (None, ""):
 from analysis.pipeline.config import (
     EXPERIMENT_REPORTS, FEATURE_SETS, MODEL_FAMILIES, VALIDATION_START,
 )
-from analysis.pipeline.data import check_output_path
-from analysis.pipeline.training import TrainerConfig
 
 
 def feature_set(value):
@@ -51,7 +49,7 @@ def run_compare(output_dir=None, baseline_dir=None):
     from analysis.experiments.compare_models import main as compare
     baseline_dir = (
         Path(baseline_dir) if baseline_dir is not None
-        else EXPERIMENT_REPORTS / "model_baseline"
+        else EXPERIMENT_REPORTS / "baseline_mean_catboost"
     )
     if not (baseline_dir / "results.json").exists():
         run_baseline(baseline_dir)
@@ -66,9 +64,23 @@ def run_report(eda_dir=None, output_path=None):
 def main(argv=None):
     parser = argparse.ArgumentParser(description="CS5228 HDB rent: EDA, experiments, temporal validation and submission")
     commands = parser.add_subparsers(dest="command")
-    eda = commands.add_parser("eda", help="Run consolidated EDA into one reports/eda tree")
+    from analysis.experiment_catalog import GROUPS
+    experiment_list = commands.add_parser("experiment-list", help="List local experiment modules without running them")
+    experiment_list.add_argument("--group", choices=GROUPS)
+    experiment_list.add_argument("--json", action="store_true", dest="as_json")
+    from analysis.resource_preflight import PROFILES
+    preflight = commands.add_parser("preflight", help="Check resources without importing models, installing or training")
+    preflight.add_argument("--profile", choices=PROFILES, default="core")
+    preflight.add_argument("--json", action="store_true", dest="as_json")
+    artifacts = commands.add_parser("artifact-list", help="List current model files, fusion parameters and metric references without loading models")
+    artifacts.add_argument("--json", action="store_true", dest="as_json")
+    artifacts.add_argument("--hashes", action="store_true")
+    artifacts.add_argument("--write", action="store_true")
+    artifacts.add_argument("--usage", choices=("all", "final", "development", "submission_component", "discarded"), default="all")
+    commands.add_parser("experiment-refresh", aliases=["reports-refresh"], help="Refresh selected experiment summaries from existing results; no training")
+    eda = commands.add_parser("eda", help="Run consolidated EDA into one experiment/eda tree")
     eda.add_argument("--scope", choices=("main", "auxiliary", "overview", "all"), default="all")
-    eda.add_argument("--output-dir", type=Path, help="EDA root directory; defaults to reports/eda")
+    eda.add_argument("--output-dir", type=Path, help="EDA root directory; defaults to experiment/eda")
     baseline = commands.add_parser("baseline", help="Reproduce the mean and CatBoost A/B/C feature comparison")
     baseline.add_argument("--output-dir", type=Path)
     compare = commands.add_parser("compare", help="Compare Ridge, Random Forest, CatBoost and LightGBM")
@@ -118,6 +130,30 @@ def main(argv=None):
     deep_summary.add_argument("--output-dir", type=Path)
     verify = commands.add_parser("verify", help="Audit environment and saved-result consistency")
     verify.add_argument("--output", type=Path, help="Optional JSON audit output")
+    feature_selection = commands.add_parser("feature-select", help="Compare feature policies with one LightGBM model and fixed-origin folds")
+    feature_selection.add_argument("--output-dir", type=Path)
+    feature_optimization = commands.add_parser("feature-optimize", help="Audit redundancy and test causal history and market representations")
+    feature_optimization.add_argument("--output-dir", type=Path)
+    feature_optimization.add_argument("--stage", choices=("features", "market", "refined", "audit", "all"), default="all")
+    feature_evidence = commands.add_parser("feature-evidence", help="Retrain single-column/group deletions and report temporal error diagnostics")
+    feature_evidence.add_argument("--output-dir", type=Path)
+    common_models = commands.add_parser("common-models", help="Compare architectures with the same 27 feature inputs and outer training rows")
+    common_models.add_argument("--output-dir", type=Path)
+    common_models.add_argument("--device", choices=("cpu", "cuda"), default="cuda")
+    canonical = commands.add_parser("canonical-submit", help="Refit the fixed 27-feature LightGBM baseline and export locally (no upload)")
+    canonical.add_argument("--output-dir", type=Path)
+    commands.add_parser("project-review", help="Build the current project report and evidence index from completed results")
+    model_search = commands.add_parser("model-search", help="Nested temporal comparison of tree and official neural models")
+    model_search.add_argument("action", choices=("prepare", "run", "summarize", "diagnose", "blend", "report"))
+    model_search.add_argument("--fold", choices=("2024-04", "2023-04", "2022-04", "2023-12"), default="2024-04")
+    model_search.add_argument("--families", nargs="+")
+    model_search.add_argument("--max-epochs", type=positive_integer, default=40)
+    model_search.add_argument("--device", choices=("cuda", "cpu"), default="cuda")
+    model_search.add_argument("--output-dir", type=Path)
+    source_audit = commands.add_parser("source-audit", help="Audit overlap with public HDB rental disclosures, separate from forecasting")
+    source_audit.add_argument("--download", action="store_true")
+    source_audit.add_argument("--cache", type=Path)
+    source_audit.add_argument("--output-dir", type=Path)
     commands.add_parser("aux-ablation", help="Run staged spatial/economic feature ablation")
     commands.add_parser("economic-signals", help="Run prior-month economic signal analysis")
     commands.add_parser("economic-ablation", help="Compare engineered economic features")
@@ -152,6 +188,24 @@ def main(argv=None):
     if args.command is None:
         parser.print_help()
         return
+    if args.command == "experiment-list":
+        from analysis.experiment_catalog import show
+        return show(args.group, args.as_json)
+    if args.command in ("experiment-refresh", "reports-refresh"):
+        from analysis.report_bundle import refresh
+        return refresh()
+    if args.command == "preflight":
+        from analysis.resource_preflight import main as preflight_main
+        return preflight_main(["--profile", args.profile] + (["--json"] if args.as_json else []))
+    if args.command == "artifact-list":
+        from analysis.artifact_catalog import main as artifacts_main
+        options = ["--usage", args.usage]
+        for flag in ("json", "hashes", "write"):
+            if getattr(args, "as_json" if flag == "json" else flag):
+                options.append("--" + flag)
+        return artifacts_main(options)
+    from analysis.pipeline.data import check_output_path
+    from analysis.pipeline.training import TrainerConfig
     # Validate destination paths before expensive training or directory creation.
     for attr in ("output_dir", "baseline_dir", "output", "run_dir", "model_path"):
         value = getattr(args, attr, None)
@@ -182,10 +236,10 @@ def main(argv=None):
                   if key not in ("command", "output_dir")}
         config = ExperimentConfig(**values)
         label = f"{config.variant}_{config.architecture}_seed{config.seed}"
-        return train(config, args.output_dir or EXPERIMENT_REPORTS / "deep_learning" / label)
+        return train(config, args.output_dir or EXPERIMENT_REPORTS / "baseline_deep_models" / label)
     if args.command == "aux-boost":
         from analysis.experiments.auxiliary_boosting import run
-        return run(args.output_dir or EXPERIMENT_REPORTS / "deep_learning" / "aux_lightgbm",
+        return run(args.output_dir or EXPERIMENT_REPORTS / "baseline_deep_models" / "aux_lightgbm",
                    num_leaves=args.num_leaves, seed=args.seed,
                    target_encoding=not args.without_target_encoding)
     if args.command == "deep-summary":
@@ -194,6 +248,44 @@ def main(argv=None):
     if args.command == "verify":
         from analysis.verification import main as verify_main
         return verify_main([] if args.output is None else ["--output", str(args.output)])
+    if args.command == "feature-select":
+        from analysis.experiments.feature_selection import run
+        return run(args.output_dir or EXPERIMENT_REPORTS / "features_selection")
+    if args.command == "feature-optimize":
+        from analysis.experiments.feature_optimization import main as optimize
+        options = ["--stage", args.stage]
+        if args.output_dir is not None:
+            options += ["--output-dir", str(args.output_dir)]
+        return optimize(options)
+    if args.command == "feature-evidence":
+        from analysis.experiments.feature_evidence import run
+        return run(args.output_dir or EXPERIMENT_REPORTS / "features_ablation_evidence")
+    if args.command == "common-models":
+        from analysis.experiments.common_feature_models import run
+        return run(args.output_dir or EXPERIMENT_REPORTS / "comparison_same_27_features", args.device)
+    if args.command == "canonical-submit":
+        from analysis.experiments.canonical_final import run
+        from analysis.pipeline.config import ROOT
+        return run(args.output_dir or ROOT / "output/submissions/baselines/baseline_27_features")
+    if args.command == "project-review":
+        from analysis.project_review import run
+        return run()
+    if args.command == "model-search":
+        from analysis.experiments.model_search import main as search
+        options = [args.action, "--fold", args.fold, "--max-epochs", str(args.max_epochs), "--device", args.device]
+        if args.output_dir is not None:
+            options += ["--output-dir", str(args.output_dir)]
+        if args.families is not None:
+            options += ["--families", *args.families]
+        return search(options)
+    if args.command == "source-audit":
+        from analysis.studies.source_overlap import main as audit_source
+        options = ["--download"] if args.download else []
+        if args.cache is not None:
+            options += ["--cache", str(args.cache)]
+        if args.output_dir is not None:
+            options += ["--output-dir", str(args.output_dir)]
+        return audit_source(options)
     if args.command == "aux-ablation":
         from analysis.experiments.auxiliary_ablation import main as run
         return run()
@@ -228,14 +320,14 @@ def main(argv=None):
     if args.command == "relu":
         from analysis.experiments.relu_mlp import run
         return run(
-            args.output_dir or EXPERIMENT_REPORTS / "relu_mlp", max_epochs=args.max_epochs,
+            args.output_dir or EXPERIMENT_REPORTS / "baseline_relu_mlp", max_epochs=args.max_epochs,
             patience=args.patience, seed=args.seed, write_submission=args.write_submission,
         )
     run_dir = args.run_dir
     run_eda(output_dir=None if run_dir is None else run_dir / "eda")
-    base_dir = None if run_dir is None else run_dir / "model_baseline"
+    base_dir = None if run_dir is None else run_dir / "baseline_mean_catboost"
     run_baseline(base_dir)
-    run_compare(None if run_dir is None else run_dir / "model_families", base_dir)
+    run_compare(None if run_dir is None else run_dir / "baseline_classical_models", base_dir)
     run_report(None if run_dir is None else run_dir / "eda",
                None if run_dir is None else run_dir / "eda" / "progress_report.pdf")
     if args.submit:

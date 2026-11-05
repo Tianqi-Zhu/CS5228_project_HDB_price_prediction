@@ -114,7 +114,7 @@ class HDBVisualizer:
 
 
 def make_monthly_error_figure(monthly: pd.DataFrame, model: str,
-                              output_dir=EXPERIMENT_REPORTS / "model_baseline") -> None:
+                              output_dir=EXPERIMENT_REPORTS / "baseline_mean_catboost") -> None:
     part = monthly[monthly["model"] == model].sort_values("group")
     months = part["group"].tolist()
     x = np.arange(len(months))
@@ -140,7 +140,7 @@ def make_monthly_error_figure(monthly: pd.DataFrame, model: str,
 
 
 def plot_model_comparison(monthly: pd.DataFrame,
-                          output_dir=EXPERIMENT_REPORTS / "model_families") -> None:
+                          output_dir=EXPERIMENT_REPORTS / "baseline_classical_models") -> None:
     labels = ["ridge", "random_forest", "lightgbm", "C_property_time_town"]
     display = {
         "ridge": "Ridge", "random_forest": "Random forest",

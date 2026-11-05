@@ -1,4 +1,0 @@
-# GPU deep-learning experiments. CUDA 12.8 works with the project's RTX setup.
---extra-index-url https://download.pytorch.org/whl/cu128
--r requirements-model.txt
-torch==2.11.0+cu128

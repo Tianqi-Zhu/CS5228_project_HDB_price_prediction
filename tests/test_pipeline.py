@@ -190,6 +190,9 @@ class PipelineChecks(unittest.TestCase):
                 self.assertTrue(callable(importlib.import_module(module).main))
 
     def test_saved_result_consistency(self):
+        from analysis.pipeline.config import EXPERIMENT_REPORTS
+        if not EXPERIMENT_REPORTS.exists():
+            self.skipTest('Local saved-result integration check: prepare experiment outputs first; see preflight --profile reports.')
         from analysis.verification import audit_results
         result = audit_results()
         self.assertTrue(result["ok"], result)

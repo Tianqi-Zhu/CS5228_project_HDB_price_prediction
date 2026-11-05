@@ -1,0 +1,28 @@
+﻿feature,group,type,source,definition,reason_to_test,availability_and_limit
+FLAT_TYPE_CLEAN,房屋属性,category,main,统一空格和连字符的户型类别,不同户型可能代表不同居住容量,主表审批月已知字段
+FLAT_MODEL_CLEAN,房屋属性,category,main,统一大小写与空格的房屋模型,用设计类型描述房屋差异,主表审批月已知字段
+TOWN_CLEAN,区位,category,main,规范化市镇类别,表示较粗的区位差异,主表审批月已知字段
+PLANNING_AREA_CLEAN,区位,category,block,通过规范化地址匹配规划区,补充市镇边界之外的区位划分,所给楼栋静态快照；不作历史时点完整性承诺
+FLOOR_AREA_SQM,房屋属性,numeric,main,原始面积，平方米,描述房屋规模，不与户型的价值混为一谈,主表审批月已知字段
+FLAT_AGE_YEARS,房屋属性,numeric,main,审批年份减租约起始年份；负值置缺失,作为房龄代理，不能当作装修年份,主表审批月已知字段
+MAX_FLOOR,房屋属性,numeric,block,楼栋表最高楼层，非法占位值置缺失,描述楼栋形态；并不是出租单元的实际楼层,所给楼栋静态快照；不作历史时点完整性承诺
+LATITUDE,区位,numeric,block,楼栋纬度,提供连续空间定位，允许模型学习地理变化,所给楼栋静态快照；不作历史时点完整性承诺
+LONGITUDE,区位,numeric,block,楼栋经度,与纬度共同表示位置，可与距离代理共享信息,所给楼栋静态快照；不作历史时点完整性承诺
+APPROVAL_MONTH_INDEX,时间,numeric,main,自2021-01起的月份序号,表示市场时间位置；树模型不保证外推趋势,主表审批月已知字段
+APPROVAL_MONTH_SIN,时间,numeric,main,sin(2π×审批月份/12),周期编码避免12月与1月数值相距过远,主表审批月已知字段
+APPROVAL_MONTH_COS,时间,numeric,main,cos(2π×审批月份/12),与sin共同标识年内月份；季节性需实测,主表审批月已知字段
+CBD_DIST_KM,区位,numeric,block,楼栋到代码中 CBD 参考点的球面距离，km,作为中心性代理；不是通勤时间,所给楼栋静态快照；不作历史时点完整性承诺
+MRT_DIST_KM,MRT,numeric,block + facility,去重设施坐标后的最近球面距离（km）,最近距离描述可达性代理，计数描述附近选择数量；二者需联合验证,所给静态设施快照；历史开通日期不完整
+MALL_DIST_KM,商场,numeric,block + facility,去重设施坐标后的最近球面距离（km）,最近距离描述可达性代理，计数描述附近选择数量；二者需联合验证,所给静态设施快照；历史开通日期不完整
+PRIMARY_SCHOOL_DIST_KM,小学,numeric,block + facility,去重设施坐标后的最近球面距离（km）,最近距离描述可达性代理，计数描述附近选择数量；二者需联合验证,所给静态设施快照；历史开通日期不完整
+MRT_COUNT_1_0KM,MRT,numeric,block + facility,球面距离1km内去重设施坐标数量,最近距离描述可达性代理，计数描述附近选择数量；二者需联合验证,所给静态设施快照；历史开通日期不完整
+MALL_COUNT_1_0KM,商场,numeric,block + facility,球面距离1km内去重设施坐标数量,最近距离描述可达性代理，计数描述附近选择数量；二者需联合验证,所给静态设施快照；历史开通日期不完整
+PRIMARY_SCHOOL_COUNT_1_0KM,小学,numeric,block + facility,球面距离1km内去重设施坐标数量,最近距离描述可达性代理，计数描述附近选择数量；二者需联合验证,所给静态设施快照；历史开通日期不完整
+HIST_BLOCK_FLAT_MEAN,楼栋×户型历史,numeric,fitting rents only,严格过去月份的全部记录均价,表示已观察的租金水平,只用拟合集且严格早于该行审批月的标签；验证/测试期间冻结
+HIST_BLOCK_FLAT_COUNT,楼栋×户型历史,numeric,fitting rents only,严格过去记录数；未知组为0,描述统计支持量，不把小样本均值视作同等可靠,只用拟合集且严格早于该行审批月的标签；验证/测试期间冻结
+HIST_BLOCK_FLAT_LAST_MEAN,楼栋×户型历史,numeric,fitting rents only,严格过去最近有记录月份的组均价,描述最近水平与长期水平的差异,只用拟合集且严格早于该行审批月的标签；验证/测试期间冻结
+HIST_BLOCK_FLAT_RECENCY_MONTHS,楼栋×户型历史,numeric,fitting rents only,距过去最近有记录月份的月数,描述历史陈旧程度；不能用未来标签更新,只用拟合集且严格早于该行审批月的标签；验证/测试期间冻结
+HIST_AREA_FLAT_MEAN,规划区×户型历史,numeric,fitting rents only,严格过去月份的全部记录均价,表示已观察的租金水平,只用拟合集且严格早于该行审批月的标签；验证/测试期间冻结
+HIST_AREA_FLAT_COUNT,规划区×户型历史,numeric,fitting rents only,严格过去记录数；未知组为0,描述统计支持量，不把小样本均值视作同等可靠,只用拟合集且严格早于该行审批月的标签；验证/测试期间冻结
+HIST_AREA_FLAT_LAST_MEAN,规划区×户型历史,numeric,fitting rents only,严格过去最近有记录月份的组均价,描述最近水平与长期水平的差异,只用拟合集且严格早于该行审批月的标签；验证/测试期间冻结
+HIST_AREA_FLAT_RECENCY_MONTHS,规划区×户型历史,numeric,fitting rents only,距过去最近有记录月份的月数,描述历史陈旧程度；不能用未来标签更新,只用拟合集且严格早于该行审批月的标签；验证/测试期间冻结
