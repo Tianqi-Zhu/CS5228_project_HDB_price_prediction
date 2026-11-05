@@ -2073,6 +2073,14 @@
       "sha256": "b6715e25bebc1ceb47dc60798439c83d25e0481ed8a0af8a44c20b0a8012daa9"
     },
     {
+      "path": "reproduction/f1/validate.py",
+      "sha256": "69ac3a2e92d1b9c1e42895295b7d216579b229e1477df57ea7487db19d426d8f"
+    },
+    {
+      "path": "reproduction/f1/validation_recipe.json",
+      "sha256": "dace053eb269276546b4ffc72d90ecd1bd6a91fce6600a778ff7210a22d6d054"
+    },
+    {
       "path": "reproduction/f1/verify.py",
       "sha256": "48a9c5f992c6d2bf34ad2abcd5d7f6be7c869c812cb5ccfc726409a1c3c47354"
     },
@@ -2135,6 +2143,10 @@
     {
       "path": "tests/test_concat_portability.py",
       "sha256": "bc9f3ca79cf45b63ac0d27d3f732ae16b9651f53d68c3cc58becdfb775763fa6"
+    },
+    {
+      "path": "tests/test_f1_validation.py",
+      "sha256": "6c2aa682348f882da8d71d559dc3e3fe6602bcb6030447d9e06f104a12f052f5"
     },
     {
       "path": "tests/test_feature_evidence.py",

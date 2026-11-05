@@ -1,0 +1,260 @@
+{
+  "windows": {
+    "Y": {
+      "blend": {
+        "spec": {
+          "name": "followup_support_pair_centered_0.003",
+          "objective": "month_centered",
+          "ridge": 0.003,
+          "group_ridge": 0.003,
+          "gate": "support_pair",
+          "update": true
+        },
+        "global_weights": [
+          0.07393758145677214,
+          0.14361934039427082,
+          0.04486340949033916,
+          0.1393132152922786,
+          0.030523543287208077,
+          0.165755711460827,
+          0.0019198641442667239,
+          0.022094870467490608,
+          0.0962516140833779,
+          0.08354009569389667,
+          0.0972018621641208,
+          0.10097889206515132
+        ],
+        "group_weights": {
+          "False|False": {
+            "weights": [
+              0.07050398993356655,
+              0.24690603729183377,
+              0.0,
+              0.01639306955278814,
+              0.0,
+              0.0,
+              0.006908193032578132,
+              0.01879352964617241,
+              0.1295319638363202,
+              0.2446605127127599,
+              0.0,
+              0.266302703993981
+            ],
+            "rows": 3720
+          },
+          "False|True": {
+            "weights": [
+              0.32330672307378894,
+              1.0857919207887624e-17,
+              0.27604781961961866,
+              0.0,
+              1.0388434329829367e-18,
+              0.008066984610675844,
+              8.972587555068259e-19,
+              0.19072528106340805,
+              0.0,
+              0.024162220123855167,
+              0.17769097150865337,
+              8.880989662694623e-18
+            ],
+            "rows": 1013
+          },
+          "True|False": {
+            "weights": [
+              0.025680342979659113,
+              0.2177045234158657,
+              0.0012905728170752757,
+              0.12421978951534945,
+              0.046516544539928185,
+              0.13692727701828042,
+              3.606570962456145e-19,
+              0.05251925835199813,
+              0.08871974835172493,
+              0.1176602365496526,
+              0.07382815140938956,
+              0.11493355505107668
+            ],
+            "rows": 7981
+          },
+          "True|True": {
+            "weights": [
+              0.06424978748965325,
+              0.051202012446947893,
+              0.1608406177824873,
+              0.15039505809828757,
+              0.08656104788963472,
+              0.12283127670219086,
+              0.021218331252439788,
+              0.0017982315515789275,
+              0.10737471526628156,
+              0.0,
+              0.07561905186458319,
+              0.15790986965591514
+            ],
+            "rows": 5263
+          }
+        },
+        "threshold": null,
+        "names": [
+          "second_wave/normalized_market/compact_ratio15_market_last",
+          "second_wave/anniversary/broad_lgb15",
+          "second_wave/anniversary/broad_lgb63",
+          "second_wave/anniversary/exact_lgb15",
+          "second_wave/anniversary/exact_lgb63",
+          "second_wave/anniversary/window_cat6",
+          "second_wave/anniversary/window_lgb63",
+          "third_wave/models/ft_transformer",
+          "third_wave/models/xgb5_residual",
+          "third_wave/models/xgb7",
+          "ft_no36_seedmean",
+          "tenth/ft_plr_128_3"
+        ],
+        "fit_rows": 17977,
+        "fit_months": [
+          "2023-10",
+          "2023-11",
+          "2023-12",
+          "2024-01",
+          "2024-02",
+          "2024-03"
+        ],
+        "fit_last_month": "2024-03"
+      },
+      "source_record": "output/experiment_runs/round_10_plr_transformer_final/ensemble/outer/only_ft_plr/results.json",
+      "source_prediction": "output/models/round_10_plr_transformer_final/ensemble/outer/only_ft_plr/predictions.csv",
+      "provenance": "Frozen historical pre-origin weights, not refitted in new validation. Recipe choice was retrospective development selection."
+    },
+    "J": {
+      "blend": {
+        "spec": {
+          "name": "followup_support_pair_centered_0.003",
+          "objective": "month_centered",
+          "ridge": 0.003,
+          "group_ridge": 0.003,
+          "gate": "support_pair",
+          "update": true
+        },
+        "global_weights": [
+          0.040223710112938876,
+          0.06987299506069933,
+          0.04340893257734297,
+          0.160852485701789,
+          0.07782158577333256,
+          0.22181928744492835,
+          3.0673791754636226e-19,
+          0.024687124299657165,
+          0.15026859993234665,
+          0.06341273857830021,
+          0.08506684972003219,
+          0.06256569079863279
+        ],
+        "group_weights": {
+          "False|False": {
+            "weights": [
+              0.10415393112388803,
+              0.014103588781350644,
+              0.0,
+              0.06490487958143261,
+              0.0,
+              0.21483431515228082,
+              6.621657746375336e-18,
+              0.1370603539744561,
+              0.2133064881090504,
+              0.24278625408794652,
+              0.008850189189594923,
+              0.0
+            ],
+            "rows": 4657
+          },
+          "False|True": {
+            "weights": [
+              0.1055137475355476,
+              2.1885722606622152e-18,
+              0.1771643415190274,
+              0.04170112540143787,
+              0.07931686488019524,
+              0.244504700873618,
+              0.0,
+              0.044876080995025505,
+              0.056439872978740896,
+              0.062102792777012666,
+              0.09857220429535657,
+              0.08980826874403822
+            ],
+            "rows": 1740
+          },
+          "True|False": {
+            "weights": [
+              0.0,
+              0.13916394025447362,
+              0.023393959062615738,
+              0.14515123004024083,
+              0.03884478138966446,
+              0.16635752503009915,
+              2.0246026878360725e-19,
+              0.033268076525686766,
+              0.19573422256907183,
+              0.08481967379553425,
+              0.07484976383537237,
+              0.09841682749724112
+            ],
+            "rows": 9172
+          },
+          "True|True": {
+            "weights": [
+              0.0,
+              0.024560838381888668,
+              0.055457313769310394,
+              0.2071885867897772,
+              0.17344193653536003,
+              0.14449848913261523,
+              1.2174354196192216e-18,
+              0.01219263041994156,
+              0.1732806368937253,
+              0.016983764087736566,
+              0.0025012489463932665,
+              0.1898945550432517
+            ],
+            "rows": 8571
+          }
+        },
+        "threshold": null,
+        "names": [
+          "second_wave/normalized_market/compact_ratio15_market_last",
+          "second_wave/anniversary/broad_lgb15",
+          "second_wave/anniversary/broad_lgb63",
+          "second_wave/anniversary/exact_lgb15",
+          "second_wave/anniversary/exact_lgb63",
+          "second_wave/anniversary/window_cat6",
+          "second_wave/anniversary/window_lgb63",
+          "third_wave/models/ft_transformer",
+          "third_wave/models/xgb5_residual",
+          "third_wave/models/xgb7",
+          "ft_no36_seedmean",
+          "tenth/ft_plr_128_3"
+        ],
+        "fit_rows": 24140,
+        "fit_months": [
+          "2023-10",
+          "2023-11",
+          "2023-12",
+          "2024-01",
+          "2024-02",
+          "2024-03",
+          "2024-04",
+          "2024-05"
+        ],
+        "fit_last_month": "2024-05"
+      },
+      "source_record": "output/experiment_runs/round_10_plr_transformer_final/ensemble/june/only_ft_plr/results.json",
+      "source_prediction": "output/models/round_10_plr_transformer_final/ensemble/june/only_ft_plr/predictions.csv",
+      "provenance": "Frozen historical pre-origin weights, not refitted in new validation. Recipe choice was retrospective development selection."
+    }
+  },
+  "base_recipe": "training_recipes.json",
+  "base_recipe_sha256": "b6715e25bebc1ceb47dc60798439c83d25e0481ed8a0af8a44c20b0a8012daa9",
+  "historical_archive_sha256": "31ee1e712c9c9b1ea47190d592f9dbfccb4f81535aae9a7a91c5c5a3dec88f81",
+  "full_f1_specification_fixed": true,
+  "normalizer_target_policy": "Fit-month observed level only transforms fitting labels; query level forecast strictly pre-origin.",
+  "new_validation_targets_not_available_to_fit": true
+}
