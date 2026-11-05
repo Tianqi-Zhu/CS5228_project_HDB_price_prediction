@@ -1,0 +1,9 @@
+[
+  {
+    "file": "kaggle_structure_blend.csv",
+    "rows": 50000,
+    "ids_match": true,
+    "all_finite": true,
+    "max_abs_difference_fresh_vs_original": 0.0
+  }
+]

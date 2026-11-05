@@ -1,0 +1,7 @@
+Training ridge
+ridge: RMSE=624.88 SGD; bias=361.99 SGD
+Training random_forest
+random_forest: RMSE=493.77 SGD; bias=-56.65 SGD
+Training lightgbm
+lightgbm: RMSE=485.09 SGD; bias=-42.68 SGD
+Saved model-family comparison in C:\Users\Lenovo\Desktop\CS5228\CS5228_project_HDB_price_prediction\output\repository_review\push-validation\main-clean\output\smoke_compare

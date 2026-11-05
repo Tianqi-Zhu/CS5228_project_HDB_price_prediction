@@ -1,0 +1,18 @@
+{
+  "family": "xgboost",
+  "profile": "compact",
+  "settings": {
+    "max_depth": 4,
+    "reg_lambda": 10.0
+  },
+  "selected_iterations": 448,
+  "inner_scores": {
+    "rmse_sgd": 540.0495456709822,
+    "mae_sgd": 412.0723772856897,
+    "bias_sgd": 34.911296840450646
+  },
+  "n_fit": 96865,
+  "n_inner_validation": 17977,
+  "elapsed_seconds": 7.751274800000829,
+  "trial_index": 0
+}

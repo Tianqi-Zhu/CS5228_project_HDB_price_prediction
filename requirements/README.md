@@ -15,7 +15,7 @@ conda activate cs5228
 版本来自本机已运行的环境及隔离依赖，见审核记录；本次不会自动安装或更新当前环境。
 其他硬件使用者需要选择兼容的PyTorch构建。
 
-可执行 `python -m analysis.main preflight --profile core` 查看核心版本和元数据所在位置；
+可执行 `python -m analysis.resource_preflight --profile core` 查看核心版本和元数据所在位置；
 `--profile wave06`、`--profile wave07`检查可选路线。预检不安装或导入模型，完整使用边界见[运行指南](../docs/guides/running_experiments.md)。
 
 ## 可选扩展
@@ -33,7 +33,7 @@ python -m pip install --no-deps --target .cache/transformer-deps -r requirements
 ```
 
 可选实验继续沿用作者源码、公开权重及既有 `.cache/foundation-deps/` 共享支持包的准备流程，
-见[运行指南](../docs/guides/running_experiments.md)和[逐轮实验说明](../experiment/04_optimization_history/README.md)。
+见[运行指南](../docs/guides/running_experiments.md)和appendix 分支的 `experiment/appendix/X06/README.md`。
 可选TXT用于专项隔离安装；源码、权重和共享支持包仍是相应路线的复现前置条件。
 
 旧的profiles/extras分层清单与根requirements.txt已按审核稿移除，

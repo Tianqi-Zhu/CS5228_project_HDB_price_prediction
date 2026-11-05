@@ -1,0 +1,12 @@
+{
+  "returncode": 0,
+  "seconds": 95.85689550000097,
+  "command": [
+    "python",
+    "-m",
+    "analysis.main",
+    "ladder",
+    "--stage",
+    "outer"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "family": "lightgbm",
+  "profile": "compact",
+  "settings": {
+    "num_leaves": 63,
+    "min_child_samples": 60,
+    "reg_lambda": 10.0
+  },
+  "selected_iterations": 108,
+  "inner_scores": {
+    "rmse_sgd": 541.4200074463839,
+    "mae_sgd": 415.05862362628466,
+    "bias_sgd": 18.19921849855213
+  },
+  "n_fit": 96865,
+  "n_inner_validation": 17977,
+  "elapsed_seconds": 2.9738967000012053,
+  "trial_index": 2
+}

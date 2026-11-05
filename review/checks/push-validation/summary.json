@@ -1,0 +1,62 @@
+{
+  "date": "2026-11-06",
+  "branch": "main",
+  "result": "passed within the explicitly listed scope",
+  "tests": {
+    "total": 57,
+    "passed": 57,
+    "skipped": 0,
+    "skip_reason": null
+  },
+  "data": {
+    "csv_files": 9,
+    "train_rows": 150000,
+    "test_rows": 50000,
+    "all_architecture_directories_preserved": true,
+    "environment_files_preserved": [
+      "environment.yml",
+      "environment.review.yml",
+      "environment.training.yml"
+    ],
+    "provenance": "See structure.json. Frozen CRLF input bytes match recipes; normalized values/rows match original LF Git blobs."
+  },
+  "runtime": {
+    "python": "3.11.15",
+    "cuda_gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "core_preflight_passed": true,
+    "environment": "Existing cs5228 plus third-party-only .cache/deep-deps and .cache/model-deps on PYTHONPATH; no old trained checkpoints or feature caches copied into exports.",
+    "fresh_conda_install_verified": false
+  },
+  "cpu_replay": {
+    "submissions": 1,
+    "rows_each": 50000,
+    "max_abs_difference": 0.0,
+    "external_project_caches_required": false
+  },
+  "fresh_raw_data_training": {
+    "model_count": 15,
+    "training_rows_each": 150000,
+    "seconds": 484.76357970000026,
+    "all_checkpoints_reloaded": true,
+    "max_checkpoint_prediction_difference": 0.0,
+    "fresh_vs_original": "fresh-vs-original.json",
+    "recipe_and_runtime_match_executed_snapshot": true
+  },
+  "bounded_additional_runs": {
+    "eda_all_scopes": true,
+    "mean_catboost_ABC_baselines": true,
+    "ridge_random_forest_lightgbm_comparison": true,
+    "common_27_refit_families": [
+      "lightgbm"
+    ],
+    "all_ten_frozen_inner_selections_validated": true,
+    "outer_feature_ladder_fits": 8
+  },
+  "limits": [
+    "The full historical searches and every optional exploration were not rerun.",
+    "Core environment metadata/runtime checked; fresh Conda installation not performed.",
+    "F2 generator, matched comparison and remaining planned experiments remain pending.",
+    "No new Kaggle evaluation or upload."
+  ],
+  "source_snapshot_manifest_sha256": "01384663c70fba044c7ea47f8917c15960294c5a606350ed536adec5bff98127"
+}

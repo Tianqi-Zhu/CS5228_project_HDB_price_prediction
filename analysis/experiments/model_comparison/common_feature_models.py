@@ -27,6 +27,7 @@ from analysis.pipeline.features import FEATURE_CANDIDATES, build_feature_frame, 
 
 OUT = EXPERIMENT_REPORTS / "comparison_same_27_features"
 SEARCH = EXPERIMENT_REPORTS / "comparison_model_search" / "2024-04"
+ARCHIVED_SELECTIONS = Path(__file__).resolve().parents[3] / "experiment/main/M05/selection_records"
 FAMILIES = ("lightgbm", "catboost", "xgboost", "hist_gradient_boosting", "extra_trees",
             "embedding_mlp", "embedding_resnet", "ft_transformer", "ft_transformer_default", "tabnet")
 
@@ -36,6 +37,15 @@ def choose_compact(trials):
     if not eligible:
         raise ValueError("No completed compact-profile inner trials")
     return min(eligible, key=lambda t: t["inner_scores"]["rmse_sgd"])
+
+
+def selection_source(family):
+    """Use local trials when present, otherwise the shipped frozen selections."""
+    for root in (SEARCH, ARCHIVED_SELECTIONS):
+        directory=root/family
+        if (directory/'results.json').is_file() and any(directory.glob('trial_*/results.json')):
+            return directory
+    raise FileNotFoundError(f'Missing earlier-only selection for {family}; restore selection_records or run the original inner search.')
 
 
 def write_json(path, result):
@@ -63,10 +73,11 @@ def run(output_dir=OUT, device="cuda"):
         stage = {"x_fit": x_fit, "x_val": x_val, "y_fit": fit[TARGET].to_numpy(float), "y_val": actual}
         rows, predictions = [], {}
         for family in FAMILIES:
+            selected_source=selection_source(family)
             trials = [json.loads(p.read_text(encoding="utf-8"))
-                      for p in (SEARCH / family).glob("trial_*/results.json")]
+                      for p in selected_source.glob("trial_*/results.json")]
             selected = choose_compact(trials)
-            old = json.loads((SEARCH / family / "results.json").read_text(encoding="utf-8"))
+            old = json.loads((selected_source / "results.json").read_text(encoding="utf-8"))
             if source_digests(old["source_sha256"]) != source_digests(hashes):
                 raise ValueError("Original search source hashes differ; rerun search first")
             directory = out / family

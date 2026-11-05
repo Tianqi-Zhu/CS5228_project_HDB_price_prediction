@@ -1,0 +1,50 @@
+[
+  {
+    "model": "mean_constant",
+    "scope": "smoke_baseline",
+    "rmse_sgd": 846.7548764601373,
+    "difference_from_archived_rmse": 0.0
+  },
+  {
+    "model": "A_property",
+    "scope": "smoke_baseline",
+    "rmse_sgd": 761.4192470994691,
+    "difference_from_archived_rmse": 0.0
+  },
+  {
+    "model": "B_property_time",
+    "scope": "smoke_baseline",
+    "rmse_sgd": 529.9588042062293,
+    "difference_from_archived_rmse": 0.0
+  },
+  {
+    "model": "C_property_time_town",
+    "scope": "smoke_baseline",
+    "rmse_sgd": 487.2160049568078,
+    "difference_from_archived_rmse": 0.0
+  },
+  {
+    "model": "ridge",
+    "scope": "smoke_compare",
+    "rmse_sgd": 624.8788251272626,
+    "difference_from_archived_rmse": 0.0
+  },
+  {
+    "model": "random_forest",
+    "scope": "smoke_compare",
+    "rmse_sgd": 493.7718838822359,
+    "difference_from_archived_rmse": 0.0
+  },
+  {
+    "model": "lightgbm",
+    "scope": "smoke_compare",
+    "rmse_sgd": 485.09281617236115,
+    "difference_from_archived_rmse": 0.0
+  },
+  {
+    "model": "C_property_time_town",
+    "scope": "smoke_compare",
+    "rmse_sgd": 487.2160049568078,
+    "difference_from_archived_rmse": 0.0
+  }
+]

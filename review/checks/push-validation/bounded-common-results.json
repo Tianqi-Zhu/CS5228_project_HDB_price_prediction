@@ -1,0 +1,76 @@
+{
+  "source_sha256": {
+    "C:\\Users\\Lenovo\\Desktop\\CS5228\\CS5228_project_HDB_price_prediction\\output\\repository_review\\push-validation\\main-clean\\data\\train.csv": "2fe38ce9e0d8a02e9786f066d4a10d575d91f34be1d9111f0142e3f43fbfc8a5",
+    "C:\\Users\\Lenovo\\Desktop\\CS5228\\CS5228_project_HDB_price_prediction\\output\\repository_review\\push-validation\\main-clean\\data\\test.csv": "a2ec03a0afc07c251c72cc0de2e15ac965a3b06291b304aaac53a375115ff4e0",
+    "C:\\Users\\Lenovo\\Desktop\\CS5228\\CS5228_project_HDB_price_prediction\\output\\repository_review\\push-validation\\main-clean\\data\\auxiliary\\sg-hdb-block.csv": "2255ad61ba6895456a39aec81d12583796d717ef88fe102ee9de71b3796fc223",
+    "C:\\Users\\Lenovo\\Desktop\\CS5228\\CS5228_project_HDB_price_prediction\\output\\repository_review\\push-validation\\main-clean\\data\\auxiliary\\sg-mrt-stations.csv": "4757278b94c2d05627a941377d51de60882e3e1477de01758ef37070b716b889",
+    "C:\\Users\\Lenovo\\Desktop\\CS5228\\CS5228_project_HDB_price_prediction\\output\\repository_review\\push-validation\\main-clean\\data\\auxiliary\\sg-shopping-malls.csv": "cce36a0175433f768d209b74e2e5376aad16befe1ad4f1313da0b18ed6d91a3b",
+    "C:\\Users\\Lenovo\\Desktop\\CS5228\\CS5228_project_HDB_price_prediction\\output\\repository_review\\push-validation\\main-clean\\data\\auxiliary\\sg-schools.csv": "9bf28c6a2e5511c5cada178d221dfaac12beb3651425b3b86c37815e35de71cb"
+  },
+  "feature_spec": {
+    "columns": [
+      "FLAT_TYPE_CLEAN",
+      "FLAT_MODEL_CLEAN",
+      "TOWN_CLEAN",
+      "PLANNING_AREA_CLEAN",
+      "FLOOR_AREA_SQM",
+      "FLAT_AGE_YEARS",
+      "MAX_FLOOR",
+      "LATITUDE",
+      "LONGITUDE",
+      "APPROVAL_MONTH_INDEX",
+      "APPROVAL_MONTH_SIN",
+      "APPROVAL_MONTH_COS",
+      "CBD_DIST_KM",
+      "MRT_DIST_KM",
+      "MALL_DIST_KM",
+      "PRIMARY_SCHOOL_DIST_KM",
+      "MRT_COUNT_1_0KM",
+      "MALL_COUNT_1_0KM",
+      "PRIMARY_SCHOOL_COUNT_1_0KM"
+    ],
+    "categorical": [
+      "FLAT_TYPE_CLEAN",
+      "FLAT_MODEL_CLEAN",
+      "TOWN_CLEAN",
+      "PLANNING_AREA_CLEAN"
+    ],
+    "use_history": true,
+    "history_policies": [],
+    "history_grains": [
+      "BLOCK_FLAT",
+      "AREA_FLAT"
+    ],
+    "market_context": false
+  },
+  "fitting_rows": 114842,
+  "validation_rows": 35158,
+  "validation_months": [
+    "2024-04",
+    "2025-03"
+  ],
+  "selection": "Choose only compact inner trials (2023-10..2024-03) by their inner RMSE, then fix iterations for pre-2024-04 outer refit. No residual offsets or warmup row removal.",
+  "metrics": [
+    {
+      "family": "lightgbm",
+      "n_features": 27,
+      "n_fit": 114842,
+      "n_validation": 35158,
+      "iterations": 108,
+      "inner_rmse_sgd": 541.4200074463839,
+      "origin": "new outer refit using compact-only inner selection",
+      "rmse_sgd": 468.868361683178,
+      "mae_sgd": 340.7079354111621,
+      "bias_sgd": 11.665001321665864,
+      "delta_rmse_vs_lightgbm": 0.0,
+      "month_block_p025": 0.0,
+      "month_block_p975": 0.0
+    }
+  ],
+  "limitations": [
+    "Same inputs and rows, but model-specific preprocessing and unequal finite hyperparameter budgets remain.",
+    "One seed per architecture and one outer window; not a universal architecture ranking.",
+    "Previously examined labels; no new independent holdout.",
+    "Paired 3-month block intervals reflect only fixed-prediction month sensitivity, without multiple-comparison correction."
+  ]
+}

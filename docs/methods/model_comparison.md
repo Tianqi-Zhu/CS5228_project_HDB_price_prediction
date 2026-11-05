@@ -1,13 +1,13 @@
 # 早期模型搜索：协议、配置与复现
 
 本页保留各模型可选择自身特征/残差表示的完整管线搜索口径。
-新增的 [同27列模型对照](../../experiment/03_model_comparison/PROTOCOL.md) 固定输入和拟合行，
+新增的 [同27列模型对照](../../experiment/main/M05/common_27/PROTOCOL.md) 固定输入和拟合行，
 更适合讨论架构差异；当前整体叙述见 [项目报告](../../experiment/main/M03/README.md)。不把两张表拼成同一架构排名。
 
 本轮比较单条 HDB 月租金，所有最终误差均反变换为 SGD 后计算 RMSE。
 不将区域均价、标准化目标误差或对数误差当作该指标。
 
-该阶段结果在 [`output/experiment_runs/comparison_model_search/model_metrics.csv`](../../output/experiment_runs/comparison_model_search/model_metrics.csv)，
+该阶段结果在 `output/experiment_runs/comparison_model_search/model_metrics.csv`，
 汇总与目标是否达到的状态在 `summary.json`，图表为 `model_comparison.png`。
 每个模型目录保留选中的参数、特征版本、内部验证分数、固定重训轮数和外层分数。
 

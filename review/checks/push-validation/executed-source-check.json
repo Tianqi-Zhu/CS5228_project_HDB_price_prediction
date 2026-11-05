@@ -1,0 +1,198 @@
+[
+  {
+    "path": "reproduction/f1/check_trained.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/f1/comparison.csv",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/f1/components.npz",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/f1/manifest.json",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/f1/provenance.json",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/f1/README.md",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/f1/reproduce.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/f1/source_manifest.json",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/f1/train.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/f1/training_recipes.json",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/f1/verify.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/f1/weights.json",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/f1/runtime/analysis/__init__.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/f1/runtime/analysis/experiments/best_ensemble_submission.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/f1/runtime/analysis/experiments/canonical_final.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/f1/runtime/analysis/experiments/eighth_wave_submission.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/f1/runtime/analysis/experiments/feature_selection.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/f1/runtime/analysis/experiments/final_submission_selection.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/f1/runtime/analysis/experiments/fourth_wave_diagnostics.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/f1/runtime/analysis/experiments/fourth_wave_known_macro.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/f1/runtime/analysis/experiments/frontier_compact.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/f1/runtime/analysis/experiments/frontier_search.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/f1/runtime/analysis/experiments/ninth_wave_blending.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/f1/runtime/analysis/experiments/ninth_wave_report.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/f1/runtime/analysis/experiments/second_wave_anniversary.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/f1/runtime/analysis/experiments/second_wave_cohort_extensions.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/f1/runtime/analysis/experiments/second_wave_normalized.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/f1/runtime/analysis/experiments/second_wave_report.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/f1/runtime/analysis/experiments/second_wave_stacking.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/f1/runtime/analysis/experiments/sixth_wave_deep.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/f1/runtime/analysis/experiments/tenth_wave_ensemble.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/f1/runtime/analysis/experiments/tenth_wave_report.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/f1/runtime/analysis/experiments/tenth_wave_structures.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/f1/runtime/analysis/experiments/tenth_wave_trees.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/f1/runtime/analysis/experiments/third_wave_models.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/f1/runtime/analysis/experiments/third_wave_training.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/f1/runtime/analysis/experiments/__init__.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/f1/runtime/analysis/pipeline/auxiliary.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/f1/runtime/analysis/pipeline/config.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/f1/runtime/analysis/pipeline/data.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/f1/runtime/analysis/pipeline/evaluation.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/f1/runtime/analysis/pipeline/features.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/f1/runtime/analysis/pipeline/models.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/f1/runtime/analysis/pipeline/neural_models.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/f1/runtime/analysis/pipeline/spatial.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/f1/runtime/analysis/pipeline/__init__.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/f1/runtime/tests/test_ninth_wave.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/f1/runtime/tests/test_tenth_wave.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/f1/submissions/kaggle_structure_blend.csv",
+    "matches_executed_snapshot": true
+  }
+]

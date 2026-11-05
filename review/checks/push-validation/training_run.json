@@ -1,0 +1,101 @@
+{
+  "mode": "Fresh base-model training with frozen selected hyperparameters and learned fusion weights",
+  "trained_model_count": 15,
+  "models": [
+    {
+      "name": "second_wave/normalized_market/compact_ratio15_market_last",
+      "rounds_or_epochs": 496,
+      "training_rows": 150000
+    },
+    {
+      "name": "second_wave/anniversary/broad_lgb15",
+      "rounds_or_epochs": 405,
+      "training_rows": 150000
+    },
+    {
+      "name": "second_wave/anniversary/broad_lgb63",
+      "rounds_or_epochs": 95,
+      "training_rows": 150000
+    },
+    {
+      "name": "second_wave/anniversary/exact_lgb15",
+      "rounds_or_epochs": 401,
+      "training_rows": 150000
+    },
+    {
+      "name": "second_wave/anniversary/exact_lgb63",
+      "rounds_or_epochs": 213,
+      "training_rows": 150000
+    },
+    {
+      "name": "second_wave/anniversary/window_cat6",
+      "rounds_or_epochs": 833,
+      "training_rows": 150000
+    },
+    {
+      "name": "second_wave/anniversary/window_lgb63",
+      "rounds_or_epochs": 165,
+      "training_rows": 150000
+    },
+    {
+      "name": "third_wave/models/ft_transformer",
+      "rounds_or_epochs": 3,
+      "training_rows": 150000
+    },
+    {
+      "name": "third_wave/models/xgb5_residual",
+      "rounds_or_epochs": 315,
+      "training_rows": 150000
+    },
+    {
+      "name": "third_wave/models/xgb7",
+      "rounds_or_epochs": 225,
+      "training_rows": 150000
+    },
+    {
+      "name": "ft_no36_seed42",
+      "rounds_or_epochs": 3,
+      "training_rows": 150000
+    },
+    {
+      "name": "ft_no36_seed43",
+      "rounds_or_epochs": 3,
+      "training_rows": 150000
+    },
+    {
+      "name": "ft_no36_seed44",
+      "rounds_or_epochs": 3,
+      "training_rows": 150000
+    },
+    {
+      "name": "ft_no36_seed45",
+      "rounds_or_epochs": 3,
+      "training_rows": 150000
+    },
+    {
+      "name": "ft_plr_128_3",
+      "rounds_or_epochs": 10,
+      "training_rows": 150000
+    }
+  ],
+  "outputs": [
+    {
+      "file": "output/review_f1_trained/kaggle_structure_blend.csv",
+      "rows": 50000,
+      "sha256": "58b549a328370c5a1a7779f24db0521f168f6875704e70c862e47a3ad046e155"
+    }
+  ],
+  "seconds": 484.76357970000026,
+  "source_sha256": {
+    "data\\train.csv": "2fe38ce9e0d8a02e9786f066d4a10d575d91f34be1d9111f0142e3f43fbfc8a5",
+    "data\\auxiliary\\sg-coe-prices.csv": "c8f934ec6e82dad633afa34e466414fd7b572c580fa28dd6c866e76e4be533e0",
+    "data\\auxiliary\\sg-hdb-block.csv": "2255ad61ba6895456a39aec81d12583796d717ef88fe102ee9de71b3796fc223",
+    "data\\auxiliary\\sg-mrt-stations.csv": "4757278b94c2d05627a941377d51de60882e3e1477de01758ef37070b716b889",
+    "data\\auxiliary\\sg-schools.csv": "9bf28c6a2e5511c5cada178d221dfaac12beb3651425b3b86c37815e35de71cb",
+    "data\\auxiliary\\sg-shopping-malls.csv": "cce36a0175433f768d209b74e2e5376aad16befe1ad4f1313da0b18ed6d91a3b",
+    "data\\auxiliary\\sg-stock-prices.csv": "e03802bedbebedab27caafb6755ce055f1654cc17b3fc5fc6e3e7ee6ab2c23b7",
+    "data/test.csv": "a2ec03a0afc07c251c72cc0de2e15ac965a3b06291b304aaac53a375115ff4e0"
+  },
+  "actual_kaggle_scores_for_these_new_files": null,
+  "note": "The screenshot scores belong to the original F1 submission. GPU refits can vary; fresh outputs have no observed Kaggle score."
+}

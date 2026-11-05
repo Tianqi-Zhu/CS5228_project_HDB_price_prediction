@@ -1,0 +1,32 @@
+Running main EDA -> C:\Users\Lenovo\Desktop\CS5228\CS5228_project_HDB_price_prediction\output\repository_review\push-validation\main-clean\output\smoke_eda\supplementary\train_test
+Wrote audit, validation design, and five figures to C:\Users\Lenovo\Desktop\CS5228\CS5228_project_HDB_price_prediction\output\repository_review\push-validation\main-clean\output\smoke_eda\supplementary\train_test
+Running auxiliary EDA -> C:\Users\Lenovo\Desktop\CS5228\CS5228_project_HDB_price_prediction\output\repository_review\push-validation\main-clean\output\smoke_eda\supplementary\auxiliary
+Wrote auxiliary audit and three figures to C:\Users\Lenovo\Desktop\CS5228\CS5228_project_HDB_price_prediction\output\repository_review\push-validation\main-clean\output\smoke_eda\supplementary\auxiliary
+HDB joins: train 100.0%, test 100.0%
+Stock rows with all quote fields missing: 85
+Running overview EDA -> C:\Users\Lenovo\Desktop\CS5228\CS5228_project_HDB_price_prediction\output\repository_review\push-validation\main-clean\output\smoke_eda
+{
+  "output": "C:\\Users\\Lenovo\\Desktop\\CS5228\\CS5228_project_HDB_price_prediction\\output\\repository_review\\push-validation\\main-clean\\output\\smoke_eda",
+  "tables": 18,
+  "figures": 11,
+  "train_rows": 150000,
+  "test_rows": 50000,
+  "train_dates": [
+    "2021-01-01",
+    "2025-03-01"
+  ],
+  "test_dates": [
+    "2025-03-01",
+    "2026-07-01"
+  ],
+  "block_coverage": {
+    "source_block_rows": 9464,
+    "unique_join_keys": 9464,
+    "duplicate_key_rows": 0,
+    "duplicate_keys_with_coordinate_conflict": 0,
+    "train_matched_rows": 150000,
+    "train_rows": 150000,
+    "test_matched_rows": 50000,
+    "test_rows": 50000
+  }
+}

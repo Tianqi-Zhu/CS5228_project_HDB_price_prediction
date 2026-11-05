@@ -1,0 +1,18 @@
+{
+  "family": "catboost",
+  "profile": "compact",
+  "settings": {
+    "depth": 6,
+    "l2_leaf_reg": 10.0
+  },
+  "selected_iterations": 814,
+  "inner_scores": {
+    "rmse_sgd": 538.985548300272,
+    "mae_sgd": 411.12977540350283,
+    "bias_sgd": 35.88144080437732
+  },
+  "n_fit": 96865,
+  "n_inner_validation": 17977,
+  "elapsed_seconds": 123.39373839999826,
+  "trial_index": 0
+}

@@ -1,0 +1,8 @@
+Training A_property with 3 features
+Training B_property_time with 6 features
+Training C_property_time_town with 7 features
+mean_constant: RMSE=846.75 SGD; bias=-531.44 SGD
+A_property: RMSE=761.42 SGD; bias=-534.06 SGD
+B_property_time: RMSE=529.96 SGD; bias=-49.91 SGD
+C_property_time_town: RMSE=487.22 SGD; bias=-48.29 SGD
+Saved results in C:\Users\Lenovo\Desktop\CS5228\CS5228_project_HDB_price_prediction\output\repository_review\push-validation\main-clean\output\smoke_baseline

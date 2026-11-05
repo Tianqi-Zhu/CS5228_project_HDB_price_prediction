@@ -1,0 +1,80 @@
+{
+  "family": "embedding_mlp",
+  "validation_start": "2024-04",
+  "validation_end_exclusive": "2025-04",
+  "selection": {
+    "family": "embedding_mlp",
+    "profile": "compact",
+    "settings": {
+      "max_epochs": 40,
+      "patience": 7,
+      "seed": 42,
+      "width": 256,
+      "lr": 0.001,
+      "quantile": true
+    },
+    "selected_iterations": 29,
+    "inner_scores": {
+      "rmse_sgd": 563.5694831698682,
+      "mae_sgd": 429.36377265640056,
+      "bias_sgd": 50.86529770594216
+    },
+    "n_fit": 96865,
+    "n_inner_validation": 17977,
+    "elapsed_seconds": 57.58074359999955,
+    "trial_index": 0
+  },
+  "scores": {
+    "rmse_sgd": 483.7170274453013,
+    "mae_sgd": 358.21342231548795,
+    "bias_sgd": -11.831686191978068
+  },
+  "fitting_rows": 114842,
+  "validation_rows": 35158,
+  "source_sha256": {
+    "C:\\Users\\Lenovo\\Desktop\\CS5228\\CS5228_project_HDB_price_prediction\\data\\train.csv": "2fe38ce9e0d8a02e9786f066d4a10d575d91f34be1d9111f0142e3f43fbfc8a5",
+    "C:\\Users\\Lenovo\\Desktop\\CS5228\\CS5228_project_HDB_price_prediction\\data\\test.csv": "a2ec03a0afc07c251c72cc0de2e15ac965a3b06291b304aaac53a375115ff4e0",
+    "C:\\Users\\Lenovo\\Desktop\\CS5228\\CS5228_project_HDB_price_prediction\\data\\auxiliary\\sg-hdb-block.csv": "2255ad61ba6895456a39aec81d12583796d717ef88fe102ee9de71b3796fc223",
+    "C:\\Users\\Lenovo\\Desktop\\CS5228\\CS5228_project_HDB_price_prediction\\data\\auxiliary\\sg-mrt-stations.csv": "4757278b94c2d05627a941377d51de60882e3e1477de01758ef37070b716b889",
+    "C:\\Users\\Lenovo\\Desktop\\CS5228\\CS5228_project_HDB_price_prediction\\data\\auxiliary\\sg-shopping-malls.csv": "cce36a0175433f768d209b74e2e5376aad16befe1ad4f1313da0b18ed6d91a3b",
+    "C:\\Users\\Lenovo\\Desktop\\CS5228\\CS5228_project_HDB_price_prediction\\data\\auxiliary\\sg-schools.csv": "9bf28c6a2e5511c5cada178d221dfaac12beb3651425b3b86c37815e35de71cb"
+  },
+  "feature_spec": {
+    "columns": [
+      "FLAT_TYPE_CLEAN",
+      "FLAT_MODEL_CLEAN",
+      "TOWN_CLEAN",
+      "PLANNING_AREA_CLEAN",
+      "FLOOR_AREA_SQM",
+      "FLAT_AGE_YEARS",
+      "MAX_FLOOR",
+      "LATITUDE",
+      "LONGITUDE",
+      "APPROVAL_MONTH_INDEX",
+      "APPROVAL_MONTH_SIN",
+      "APPROVAL_MONTH_COS",
+      "CBD_DIST_KM",
+      "MRT_DIST_KM",
+      "MALL_DIST_KM",
+      "PRIMARY_SCHOOL_DIST_KM",
+      "MRT_COUNT_1_0KM",
+      "MALL_COUNT_1_0KM",
+      "PRIMARY_SCHOOL_COUNT_1_0KM"
+    ],
+    "categorical": [
+      "FLAT_TYPE_CLEAN",
+      "FLAT_MODEL_CLEAN",
+      "TOWN_CLEAN",
+      "PLANNING_AREA_CLEAN"
+    ],
+    "use_history": true,
+    "history_policies": [],
+    "history_grains": [
+      "BLOCK_FLAT",
+      "AREA_FLAT"
+    ],
+    "market_context": false
+  },
+  "refit_seconds": 52.490975500000786,
+  "note": "Epochs/iterations and profile selected only on the inner six-month time holdout; outer targets never used for early stopping."
+}

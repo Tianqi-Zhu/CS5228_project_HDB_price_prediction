@@ -2,7 +2,7 @@
 
 本轮完成 18 组特征消融、3 组精简复验、4 组市场基准分解；每组覆盖三个年度窗口和
 一个十六个月窗口，共 100 次固定配置 LightGBM 训练。参数、源文件哈希和完整结果在
-[`output/experiment_runs/features_history_optimization/`](../../output/experiment_runs/features_history_optimization)。
+`output/experiment_runs/features_history_optimization`。
 
 结论：默认方案由 31 列精简到 **27 列**，性能保持相同。历史溢价有小幅潜力，但精简后
 优势不够稳定，暂作为研究选项。更大的改善来自市场基准分解，需要单独验证市场转折期。
@@ -14,7 +14,7 @@
 逐行完全相同：均价、计数、最近月份均价、距最近月份的月数。
 
 审计对全部训练行执行数值完全相等检查，结果见
-[`redundancy_audit.json`](../../output/experiment_runs/features_history_optimization/redundancy_audit.json)。
+`output/experiment_runs/features_history_optimization/redundancy_audit.json`。
 删除四列后，四个窗口的 RMSE 均与原方案完全相同。
 
 新的默认 `RentalFeatureEngineer()` 对应 `compact_history_27`：
@@ -28,7 +28,7 @@
 
 ## 2. 历史覆盖率揭示的瓶颈
 
-详见 [`history_support.csv`](../../output/experiment_runs/features_history_optimization/history_support.csv)。
+详见 `output/experiment_runs/features_history_optimization/history_support.csv`。
 2024-04 起的验证窗中，楼栋 + 户型历史覆盖率为 98.83%，历史样本数中位数为 11，
 12.14% 的验证行最多只有 3 条历史记录。规划区 + 户型则完全覆盖，历史样本数中位数为
 1,899。细粒度历史的距离最近记录月数中位数为 10，十六个月窗口中为 12。
@@ -76,7 +76,7 @@ m < t 的拟合集月份，因此当月同户型均值不会泄露到 t 的输�
 但不能直接认为新增十二列都有效：部分统计与原列重复，而重复分组经过层级平滑后
 还会形成不同的收缩程度。进一步精简为 31 列后，汇总 RMSE 仅从 591.9623 降到
 591.9048，早期年度从 711.08 变差到 712.24。详见
-[`refined/`](../../output/experiment_runs/features_history_optimization/refined)。
+`output/experiment_runs/features_history_optimization/refined`。
 因此，保留 `compact_premium_research` 作为可复现实验配置，默认采用更简单的 27 列。
 
 ### “更近期”并没有稳定胜出
