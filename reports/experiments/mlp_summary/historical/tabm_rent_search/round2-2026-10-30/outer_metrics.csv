@@ -1,0 +1,2 @@
+model,epochs,inner_rmse,n_fit,n_validation,rmse_sgd,mae_sgd,bias_sgd
+adjusted_plus_raw,4,538.3545475109661,114842,35158,479.6854246903468,343.6313030438874,99.5497462147162

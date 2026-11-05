@@ -1,0 +1,6 @@
+model,epochs,inner_rmse
+embedding_mlp,10,603.441860969043
+embedding_history,11,565.4502802361355
+quantile_history,1,578.7153652319956
+resnet_history,11,572.9903581102253
+full_history_mlp,10,547.2394021408704

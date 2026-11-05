@@ -1,0 +1,5 @@
+{
+  "model": "full_history_mlp",
+  "epochs": 10,
+  "inner_rmse": 547.2394021408704
+}

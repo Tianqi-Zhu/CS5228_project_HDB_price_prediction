@@ -1,0 +1,60 @@
+{
+  "candidates": [
+    {
+      "name": "identity",
+      "kind": "identity"
+    },
+    {
+      "name": "recent_mean_0.25",
+      "kind": "recent_mean",
+      "weight": 0.25
+    },
+    {
+      "name": "recent_mean_0.5",
+      "kind": "recent_mean",
+      "weight": 0.5
+    },
+    {
+      "name": "recent_mean_1.0",
+      "kind": "recent_mean",
+      "weight": 1.0
+    },
+    {
+      "name": "low_tail_0.5",
+      "kind": "low_tail",
+      "weight": 0.5
+    },
+    {
+      "name": "low_tail_1.0",
+      "kind": "low_tail",
+      "weight": 1.0
+    },
+    {
+      "name": "low_tail_2.0",
+      "kind": "low_tail",
+      "weight": 2.0
+    },
+    {
+      "name": "raw_mean_0.1",
+      "kind": "raw_mean",
+      "weight": 0.1
+    },
+    {
+      "name": "raw_mean_0.25",
+      "kind": "raw_mean",
+      "weight": 0.25
+    },
+    {
+      "name": "raw_mean_0.5",
+      "kind": "raw_mean",
+      "weight": 0.5
+    }
+  ],
+  "selection": "minimum December-2023 RMSE, .25% gain required else identity",
+  "prediction_cap_sgd": 600,
+  "source_dir": "reports/experiments/neural_ensemble_uncertainty/run-2026-11-02",
+  "oof_dir": "reports/experiments/historical_risk_correction/run-2026-11-03",
+  "source_sha256": "6d7a417de72112361f8353659ba6fe44a442b07465b488aff1b03f7ec1ea3ba6",
+  "code_sha256": "8914da7300e30223f14b30b9e12d4285e464ba1c6400811f1779fc0360d8e3fc",
+  "limits": "Second exploratory round motivated by inspected outer case. No outer labels choose weights; all candidates are descriptive diagnostics, not new outer-selected winners."
+}

@@ -1,0 +1,67 @@
+{
+  "source_dir": "reports/experiments/neural_ensemble_uncertainty/run-2026-11-02",
+  "source_train_sha256": "6d7a417de72112361f8353659ba6fe44a442b07465b488aff1b03f7ec1ea3ba6",
+  "candidates": [
+    {
+      "name": "identity",
+      "kind": "identity"
+    },
+    {
+      "name": "history_0.1",
+      "kind": "history_blend",
+      "weight": 0.1,
+      "cap": 600
+    },
+    {
+      "name": "history_0.25",
+      "kind": "history_blend",
+      "weight": 0.25,
+      "cap": 600
+    },
+    {
+      "name": "history_0.5",
+      "kind": "history_blend",
+      "weight": 0.5,
+      "cap": 600
+    },
+    {
+      "name": "ridge_100",
+      "kind": "ridge",
+      "alpha": 100,
+      "cap": 600
+    },
+    {
+      "name": "ridge_1000",
+      "kind": "ridge",
+      "alpha": 1000,
+      "cap": 600
+    },
+    {
+      "name": "ridge_10000",
+      "kind": "ridge",
+      "alpha": 10000,
+      "cap": 600
+    },
+    {
+      "name": "mlp_10",
+      "kind": "mlp",
+      "alpha": 10,
+      "cap": 600
+    },
+    {
+      "name": "mlp_100",
+      "kind": "mlp",
+      "alpha": 100,
+      "cap": 600
+    }
+  ],
+  "code_sha256": "6d44c5a8293e547c91315ff73c8a15e5cdd6d6bf87473c59db675474aba65a7e",
+  "source_protocol_sha256": "3a25640574db5dec23173c2a934b7fb8f6367785bef92fe7e55db079c72dd7ed",
+  "selection": "October-November 2023 correction fit; December 2023 RMSE selection; minimum .25% gain else identity",
+  "correction_refit": "October-December 2023 out-of-time residuals only",
+  "base_oof_origin": "2023-09; inherited fixed 3/4-epoch schedules, no new epoch selection",
+  "calibration": "2024-01..2024-03; prediction intervals only",
+  "outer": "2024-04..2025-03, unchanged 35158 rows",
+  "limits": "Exploratory; design motivated by previously inspected outer cases. No outer label fits correction or sets thresholds. OOF-to-refit distribution shift possible.",
+  "promotion_rule": "Outer RMSE must improve by >=1 SGD and MAE must not worsen; otherwise retain old predictions."
+}

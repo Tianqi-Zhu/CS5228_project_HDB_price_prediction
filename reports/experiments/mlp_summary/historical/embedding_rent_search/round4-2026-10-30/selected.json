@@ -1,0 +1,5 @@
+{
+  "model": "aux_resnet_wide",
+  "epochs": 9,
+  "inner_rmse": 541.936858053349
+}

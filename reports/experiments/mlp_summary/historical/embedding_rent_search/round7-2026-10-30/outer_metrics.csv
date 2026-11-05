@@ -1,0 +1,2 @@
+model,epochs,inner_rmse,n_fit,n_validation,train_rmse,rmse_sgd,mae_sgd,bias_sgd
+adjusted_residual,4,541.6429898806344,114842,35158,479.95088426650625,470.6375811170776,344.8497666161531,4.50610368908615

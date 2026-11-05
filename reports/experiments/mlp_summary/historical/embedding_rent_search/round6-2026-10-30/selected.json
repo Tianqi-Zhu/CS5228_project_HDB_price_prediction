@@ -1,0 +1,5 @@
+{
+  "model": "adjusted_resnet",
+  "epochs": 8,
+  "inner_rmse": 541.905974365488
+}

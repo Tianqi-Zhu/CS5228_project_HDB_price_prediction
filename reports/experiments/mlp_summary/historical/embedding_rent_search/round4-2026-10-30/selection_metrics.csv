@@ -1,0 +1,6 @@
+model,epochs,inner_rmse
+aux_resnet_regularized,13,546.1840835161137
+aux_resnet_slow,26,546.3838660338567
+aux_resnet_wide,9,541.936858053349
+aux_resnet_recency,10,543.2278358048803
+aux_resnet_strong_task,12,542.6059913200689

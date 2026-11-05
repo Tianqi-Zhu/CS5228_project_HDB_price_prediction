@@ -1,0 +1,5 @@
+{
+  "model": "periodic_01",
+  "epochs": 5,
+  "inner_rmse": 538.6567304710551
+}

@@ -1,0 +1,6 @@
+model,epochs,inner_rmse
+piecewise32_wide,6,539.8923430754322
+piecewise32_members32,8,539.3303669024449
+adjusted_only,5,539.4336409563458
+adjusted_plus_raw,4,538.3545475109661
+standard_piecewise,1,548.2737074098076

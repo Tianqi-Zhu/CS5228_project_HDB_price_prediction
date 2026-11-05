@@ -1,0 +1,5 @@
+model,epochs,inner_rmse
+adjusted_resnet,8,541.905974365488
+adjusted_with_raw,7,547.1296140463091
+adjusted_mlp,9,557.1792335505107
+adjusted_wide,13,545.4293572201062

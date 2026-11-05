@@ -1,0 +1,5 @@
+model,epochs,inner_rmse
+tabm_plain,12,527.455214900267
+tabm_piecewise,5,525.510215737749
+tabm_supervised_bins,5,525.651096028177
+tabm_piecewise_16,8,524.635040640864

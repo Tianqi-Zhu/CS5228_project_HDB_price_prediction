@@ -1,0 +1,5 @@
+{
+  "model": "raw_time_adjusted",
+  "epochs": 8,
+  "inner_rmse": 541.389769286379
+}

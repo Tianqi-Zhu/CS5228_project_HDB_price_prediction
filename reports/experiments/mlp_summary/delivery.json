@@ -1,0 +1,106 @@
+{
+  "date": "2026-11-05",
+  "primary_reference": "predictions/uncleaned_hybrid_test_intervals.csv",
+  "mlp_cleaning_candidate": "predictions/obvious_low_mlp_test_intervals.csv",
+  "lowest_interval_rmse_candidate": "predictions/risk_corrected_hybrid_test_intervals.csv",
+  "test_predictions": [
+    {
+      "path": "predictions/uncleaned_mlp_test_intervals.csv",
+      "model": "mlp",
+      "policy": "uncleaned",
+      "development_rmse_sgd": 471.80419980291106,
+      "fit_end": "2023-12",
+      "rows": 50000,
+      "test_labels_available": false
+    },
+    {
+      "path": "predictions/uncleaned_hybrid_test_intervals.csv",
+      "model": "hybrid",
+      "policy": "uncleaned",
+      "development_rmse_sgd": 467.0319684853353,
+      "fit_end": "2023-12",
+      "rows": 50000,
+      "test_labels_available": false
+    },
+    {
+      "path": "predictions/obvious_low_mlp_test_intervals.csv",
+      "model": "mlp",
+      "policy": "obvious_low",
+      "development_rmse_sgd": 471.2608983260081,
+      "fit_end": "2023-12",
+      "rows": 50000,
+      "test_labels_available": false
+    },
+    {
+      "path": "predictions/obvious_low_hybrid_test_intervals.csv",
+      "model": "hybrid",
+      "policy": "obvious_low",
+      "development_rmse_sgd": 468.79136456694346,
+      "fit_end": "2023-12",
+      "rows": 50000,
+      "test_labels_available": false
+    },
+    {
+      "path": "predictions/highest_only_hybrid_test_intervals.csv",
+      "model": "hybrid",
+      "policy": "highest_only",
+      "development_rmse_sgd": 476.24966592600373,
+      "fit_end": "2023-12",
+      "rows": 50000,
+      "test_labels_available": false
+    },
+    {
+      "path": "predictions/risk_corrected_hybrid_test_intervals.csv",
+      "model": "hybrid",
+      "policy": "historical_risk_correction",
+      "development_rmse_sgd": 465.34067396909956,
+      "fit_end": "2023-12",
+      "rows": 50000,
+      "test_labels_available": false
+    }
+  ],
+  "validation_artifacts": [
+    {
+      "path": "validation/best_point_blend_outer.csv",
+      "rmse_sgd": 464.2120658135066,
+      "rows": 35158,
+      "period": "2024-04..2025-03"
+    },
+    {
+      "path": "validation/uncleaned_mlp_outer.csv",
+      "rmse_sgd": 471.80419980291106,
+      "rows": 35158,
+      "period": "2024-04..2025-03"
+    },
+    {
+      "path": "validation/uncleaned_hybrid_outer.csv",
+      "rmse_sgd": 467.0319684853353,
+      "rows": 35158,
+      "period": "2024-04..2025-03"
+    },
+    {
+      "path": "validation/obvious_low_mlp_outer.csv",
+      "rmse_sgd": 471.2608983260081,
+      "rows": 35158,
+      "period": "2024-04..2025-03"
+    },
+    {
+      "path": "validation/risk_corrected_hybrid_outer.csv",
+      "rmse_sgd": 465.34067396909956,
+      "rows": 35158,
+      "period": "2024-04..2025-03"
+    }
+  ],
+  "raw_data_sha256": {
+    "data/train.csv": "6d7a417de72112361f8353659ba6fe44a442b07465b488aff1b03f7ec1ea3ba6",
+    "data/test.csv": "dfc407406d957bbf7c2f005e5d9852b1bfc6546cd4186f07e6824d8e03e64cfc",
+    "data/example-submission.csv": "ab751676b2bfc6121ac3543075d4f2c8978a6d73a14a3442a1bb7bdbf7867678"
+  },
+  "limits": [
+    "All test exports use the December-2023 frozen fitting origin, not all 150000 labels.",
+    "The 464.21 historical point blend has validation evidence but no matching test interval export in this bundle.",
+    "Intervals are empirically calibrated on January-March 2024; time drift can change coverage.",
+    "These are development holdouts, not Kaggle leaderboard scores.",
+    "Model weights and preprocessors are local caches; reproduction commands train new models."
+  ]
+}

@@ -1,0 +1,7 @@
+model,epochs,inner_rmse
+wide_history_standard,20,575.209537170168
+wide_history_quantile,5,547.4239617856865
+recency12_quantile,5,547.7212496961863
+recency6_standard,6,579.1872734646851
+recent2023,6,672.743095567284
+recent2022,8,585.3077848962315

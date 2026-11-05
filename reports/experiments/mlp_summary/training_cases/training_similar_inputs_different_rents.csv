@@ -1,0 +1,11 @@
+CASE_GROUP,SOURCE_ROW,ORIGINAL_CSV_LINE,RENT_APPROVAL_DATE,TOWN,BLOCK,STREET,FLAT_TYPE,FLAT_MODEL,FLOOR_AREA_SQM,FURNISHED,LEASE_COMMENCE_DATE,FEE,MONTHLY_RENT
+central_2023_06,86942,86944,2023-06,central,1c,cantonment road,4-room,type s1,94,yes,2011,0,1500
+central_2023_06,86596,86598,2023-06,central,1c,cantonment road,4-room,type s1,94,yes,2011,0,5000
+central_2023_06,85956,85958,2023-06,central,1c,cantonment road,4-room,type s1,94,yes,2011,0,5200
+jurong_east_2023_06,85000,85002,2023-06,jurong east,285d,toh guan road,executive,apartment,143,yes,1998,0,2700
+jurong_east_2023_06,86775,86777,2023-06,jurong east,285d,toh guan road,executive,apartment,143,yes,1998,0,3800
+jurong_east_2023_06,87064,87066,2023-06,jurong east,285d,toh guan road,executive,apartment,143,yes,1998,0,5200
+jurong_east_2023_06,85796,85798,2023-06,jurong east,285d,toh guan road,executive,apartment,143,yes,1998,0,5350
+kallang_2023_12,103679,103681,2023-12,kallang/whampoa,9,Boon Keng Road,5-room,dbss,119,yes,2011,0,3150
+kallang_2023_12,103926,103928,2023-12,kallang/whampoa,9,boon keng road,5-room,dbss,119,yes,2011,0,5500
+kallang_2023_12,103506,103508,2023-12,kallang/whampoa,9,boon keng road,5-room,dbss,119,yes,2011,0,5600

@@ -1,0 +1,5 @@
+source_row,RENT_APPROVAL_DATE,TOWN,BLOCK,STREET,FLAT_TYPE,FLAT_MODEL,FLOOR_AREA_SQM,FURNISHED,LEASE_COMMENCE_DATE,FEE,MONTHLY_RENT,kind,csv_line,town_type_month_median,ratio_to_town_type_month_median
+147330,2025-03,bukit merah,112a,depot road,5-room,improved,115.0,yes,2006,0.0,650,5-room,147332,4200.0,0.15476190476190477
+123066,2024-06,jurong west,654b,jurong west street 61,5-room,improved,110.0,yes,2002,0.0,950,5-room,123068,3500.0,0.2714285714285714
+123120,2024-06,jurong west,654b,jurong west street 61,5-room,improved,110.0,yes,2002,0.0,1300,5-room,123122,3500.0,0.37142857142857144
+124930,2024-07,choa chu kang,756,choa chu kang north 5,executive,maisonette,146.0,yes,1995,0.0,900,executive,124932,3400.0,0.2647058823529412

@@ -1,0 +1,5 @@
+{
+  "model": "tabm_piecewise_16",
+  "epochs": 8,
+  "inner_rmse": 524.635040640864
+}

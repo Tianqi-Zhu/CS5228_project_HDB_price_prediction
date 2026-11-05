@@ -1,0 +1,2 @@
+model,epochs,inner_rmse,n_fit,n_validation,rmse_sgd,mae_sgd,bias_sgd
+distribution_slow,6,539.0194811336837,114842,35158,468.160546141055,338.0085669346681,31.93948614418971

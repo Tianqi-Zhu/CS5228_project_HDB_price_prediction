@@ -1,0 +1,5 @@
+{
+  "epochs": 4,
+  "selection_rmse_sgd": 553.5698595292846,
+  "selection_seed": 42
+}

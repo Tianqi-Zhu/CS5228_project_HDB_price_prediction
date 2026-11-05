@@ -1,0 +1,84 @@
+[
+  {
+    "query": {
+      "rent_approval_date": "2025-03",
+      "block": "112A"
+    },
+    "url": "https://data.gov.sg/api/action/datastore_search?resource_id=d_c9f57187485a850908655db0e8cfe651&filters=%7B%22rent_approval_date%22%3A+%222025-03%22%2C+%22block%22%3A+%22112A%22%7D&limit=100",
+    "success": true,
+    "total": 1,
+    "records": [
+      {
+        "_id": 154079,
+        "rent_approval_date": "2025-03",
+        "town": "BUKIT MERAH",
+        "block": "112A",
+        "street_name": "DEPOT RD",
+        "flat_type": "5-ROOM",
+        "monthly_rent": "650"
+      }
+    ],
+    "filter_verified": true
+  },
+  {
+    "query": {
+      "rent_approval_date": "2024-06",
+      "block": "654B"
+    },
+    "url": "https://data.gov.sg/api/action/datastore_search?resource_id=d_c9f57187485a850908655db0e8cfe651&filters=%7B%22rent_approval_date%22%3A+%222024-06%22%2C+%22block%22%3A+%22654B%22%7D&limit=100",
+    "success": true,
+    "total": 3,
+    "records": [
+      {
+        "_id": 125243,
+        "rent_approval_date": "2024-06",
+        "town": "JURONG WEST",
+        "block": "654B",
+        "street_name": "JURONG WEST ST 61",
+        "flat_type": "5-ROOM",
+        "monthly_rent": "950"
+      },
+      {
+        "_id": 125436,
+        "rent_approval_date": "2024-06",
+        "town": "JURONG WEST",
+        "block": "654B",
+        "street_name": "JURONG WEST ST 61",
+        "flat_type": "5-ROOM",
+        "monthly_rent": "4500"
+      },
+      {
+        "_id": 127470,
+        "rent_approval_date": "2024-06",
+        "town": "JURONG WEST",
+        "block": "654B",
+        "street_name": "JURONG WEST ST 61",
+        "flat_type": "5-ROOM",
+        "monthly_rent": "1300"
+      }
+    ],
+    "filter_verified": true
+  },
+  {
+    "query": {
+      "rent_approval_date": "2024-07",
+      "block": "756",
+      "town": "CHOA CHU KANG"
+    },
+    "url": "https://data.gov.sg/api/action/datastore_search?resource_id=d_c9f57187485a850908655db0e8cfe651&filters=%7B%22rent_approval_date%22%3A+%222024-07%22%2C+%22block%22%3A+%22756%22%2C+%22town%22%3A+%22CHOA+CHU+KANG%22%7D&limit=100",
+    "success": true,
+    "total": 1,
+    "records": [
+      {
+        "_id": 128967,
+        "rent_approval_date": "2024-07",
+        "town": "CHOA CHU KANG",
+        "block": "756",
+        "street_name": "CHOA CHU KANG NTH 5",
+        "flat_type": "EXECUTIVE",
+        "monthly_rent": "900"
+      }
+    ],
+    "filter_verified": true
+  }
+]

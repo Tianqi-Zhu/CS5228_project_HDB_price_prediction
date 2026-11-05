@@ -1,0 +1,2 @@
+model,epochs,inner_rmse,n_fit,n_validation,rmse_sgd,mae_sgd,bias_sgd
+tabm_piecewise_16,5,540.2868913096675,114842,35158,467.9406222348955,337.40377533151684,28.68207310347218

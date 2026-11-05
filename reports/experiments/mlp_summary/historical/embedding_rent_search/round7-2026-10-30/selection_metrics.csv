@@ -1,0 +1,4 @@
+model,epochs,inner_rmse
+adjusted_residual,4,541.6429898806344
+adjusted_residual_mlp,3,543.6418882001776
+adjusted_residual_wide,5,542.2479011768778

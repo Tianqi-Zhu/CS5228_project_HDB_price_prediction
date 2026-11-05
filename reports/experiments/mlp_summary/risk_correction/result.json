@@ -1,0 +1,13 @@
+{
+  "selected": "ridge_10000",
+  "promoted": false,
+  "baseline_rmse": 467.0319684853353,
+  "corrected_rmse": 465.34067396909956,
+  "case_base_prediction": 3539.213401046562,
+  "case_corrected_prediction": 3541.265818007144,
+  "case_base_rmse": 2052.7391115542932,
+  "case_corrected_rmse": 2054.0287435720866,
+  "outer_rows": 35158,
+  "test_rows": 50000,
+  "raw_source_unchanged": true
+}

@@ -1,0 +1,5 @@
+{
+  "model": "per_sqm_slow",
+  "epochs": 11,
+  "inner_rmse": 539.7949940815317
+}

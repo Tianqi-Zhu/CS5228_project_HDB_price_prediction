@@ -1,0 +1,67 @@
+{
+  "n": 35158,
+  "rmse": 467.0319684853353,
+  "top_5pct_n": 1758,
+  "top_5pct_sse_share": 0.4152992765512236,
+  "bias": -16.260967719241705,
+  "oracle_bias_removed_rmse": 466.74879808749483,
+  "mlp_tabm_error_correlation": 0.9712686268706167,
+  "best_vs_current_error_correlation": 0.9928843158035668,
+  "rent_bands": [
+    {
+      "band": "<=1900",
+      "n": 1306,
+      "share_rows": 0.03714659536947494,
+      "rmse": 1244.0824180127606,
+      "bias": 1138.6667506513534,
+      "share_sse": 0.2635870694797018
+    },
+    {
+      "band": "1900..3800",
+      "n": 29622,
+      "share_rows": 0.8425393935946299,
+      "rmse": 377.72247813610227,
+      "bias": -7.564839710214147,
+      "share_sse": 0.5511155411643227
+    },
+    {
+      "band": ">3800",
+      "n": 4230,
+      "share_rows": 0.1203140110358951,
+      "rmse": 579.5930334083987,
+      "bias": -433.73905378907887,
+      "share_sse": 0.1852973893559756
+    }
+  ],
+  "identical_features": {
+    "groups_with_different_rents": 4024,
+    "rows_in_those_groups": 9114,
+    "empirical_collision_rmse_lower_bound": 178.2190450914648,
+    "note": "Retrospective validation-label lower bound only for deterministic functions of these observed inputs; not an estimate of irreducible population error."
+  },
+  "monthly_rmse_min_max": [
+    430.1915624524251,
+    503.45468525359877
+  ],
+  "retrospective_band_coverage": [
+    {
+      "rent_band": "<=1900",
+      "n": 1306,
+      "coverage90": 0.29402756508422667,
+      "coverage95": 0.49387442572741197
+    },
+    {
+      "rent_band": "1900..3800",
+      "n": 29622,
+      "coverage90": 0.963979474714739,
+      "coverage95": 0.9854500033758693
+    },
+    {
+      "rent_band": ">3800",
+      "n": 4230,
+      "coverage90": 0.8711583924349882,
+      "coverage95": 0.9513002364066194
+    }
+  ],
+  "sse_reduction_required_to_450": 0.07160710273673909
+}

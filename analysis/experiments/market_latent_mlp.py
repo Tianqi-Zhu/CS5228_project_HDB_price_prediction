@@ -17,6 +17,12 @@ from analysis.pipeline.data import check_output_path,sha256
 from analysis.pipeline.evaluation import metrics
 from analysis.experiments.auxiliary_ablation import BASE,BLOCK,AMENITIES,CATEGORICAL
 
+ARCHITECTURES = {
+    'shallow': (128, 64),
+    'deep': (128, 128, 64, 32),
+    'six': (128, 128, 128, 64, 64, 32),
+    'eight': (128, 128, 128, 128, 64, 64, 32, 16),
+}
 
 def setup(fit,features,layers,seed):
     cats=[c for c in features if c in CATEGORICAL];nums=[c for c in features if c not in cats]
@@ -34,6 +40,7 @@ def main():
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('--latent-dir',type=Path,required=True);p.add_argument('--output-dir',type=Path,required=True)
     p.add_argument('--max-epochs',type=int,default=60)
+    p.add_argument('--depths', nargs='+', choices=ARCHITECTURES, default=['shallow', 'deep'])
     a=p.parse_args();out=check_output_path(a.output_dir)
     if out.exists() and any(out.iterdir()):p.error('Use an empty output directory')
     out.mkdir(parents=True,exist_ok=True)
@@ -49,7 +56,8 @@ def main():
     fit=frame[frame.RENT_APPROVAL_DATE<'2024-04'];val=frame[frame.RENT_APPROVAL_DATE>='2024-04']
     predictions=val[['RENT_APPROVAL_DATE','MONTHLY_RENT']].copy();predictions['source_row']=val.index
     rows=[]
-    for depth,layers in [('shallow',(128,64)),('deep',(128,128,64,32))]:
+    for depth in a.depths:
+        layers = ARCHITECTURES[depth]
         for kind,columns in extras.items():
             name=f'{depth}_{kind}';features=BASE+BLOCK+AMENITIES+columns
             print('Fitting',name,flush=True)
@@ -82,6 +90,7 @@ def main():
     (out/'protocol.json').write_text(json.dumps({'seed':42,'features':'same 29 spatial features, optionally 3 latent coordinates',
         'training_filter':'no IQR filter, identical rows to previous tree comparison','inner_fit':'2022-01..2023-09',
         'epoch_selection':'2023-10..2024-03','outer_fit':'2022-01..2024-03','outer_validation':'2024-04..2025-03',
+        'architectures':{key:ARCHITECTURES[key] for key in a.depths},
         'max_epochs':a.max_epochs,'patience':8,'min_improvement_sgd':.1,'raw_train_sha256':before,
         'caveat':'Previously reused outer period; exploratory one-seed depth ablation. Monthly-updated latent inputs.'},indent=2))
 

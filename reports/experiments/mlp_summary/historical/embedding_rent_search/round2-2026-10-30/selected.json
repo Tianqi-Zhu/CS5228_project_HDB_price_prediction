@@ -1,0 +1,5 @@
+{
+  "model": "wide_history_quantile",
+  "epochs": 5,
+  "inner_rmse": 547.4239617856865
+}

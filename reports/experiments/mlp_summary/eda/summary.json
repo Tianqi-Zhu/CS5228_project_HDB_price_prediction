@@ -1,0 +1,58 @@
+{
+  "model": "latest_risk_corrected_candidate_not_promoted",
+  "n": 35158,
+  "rmse": 465.34067396909956,
+  "worst5_n": 1758,
+  "worst5_abs_error_threshold": 930.8627245074945,
+  "worst5_sse_share": 0.4086878460385038,
+  "flag_profiles": {
+    "low_rent_but_prediction_at_least_2800": {
+      "n": 402,
+      "row_share": 0.011434097502702087,
+      "sse_share": 0.1438309003550461
+    },
+    "low_rent_area_at_least_90": {
+      "n": 340,
+      "row_share": 0.009670629728653507,
+      "sse_share": 0.11810600805148072
+    },
+    "high_rent_underpredicted": {
+      "n": 3722,
+      "row_share": 0.10586495250014222,
+      "sse_share": 0.178230892357397
+    },
+    "absolute_error_at_least_1000": {
+      "n": 1422,
+      "row_share": 0.04044598668866261,
+      "sse_share": 0.3676799303146701
+    },
+    "large_error_and_small_disagreement": {
+      "n": 1182,
+      "row_share": 0.03361965982137778,
+      "sse_share": 0.3041505176125072
+    }
+  },
+  "worst5_vs_all": {
+    "median_area": [
+      95.0,
+      92.0
+    ],
+    "median_past_count": [
+      9.0,
+      10.0
+    ],
+    "median_disagreement": [
+      63.5006056693632,
+      60.04738303856143
+    ],
+    "low_rent_share": [
+      0.4379977246871445,
+      0.03714659536947494
+    ]
+  },
+  "disagreement_spearman_abs_error": 0.019217329787052914,
+  "disagreement_auc_worst5": 0.5393717854393603,
+  "overlap_worst5_with_old_best_464": 0.9135381114903299,
+  "old_best_rmse": 464.2120658135066,
+  "limitations": "Descriptive overlapping groups, not causal attribution; true-rent bands are post-hoc, unavailable to inference; larger absolute errors can reflect rent scale."
+}

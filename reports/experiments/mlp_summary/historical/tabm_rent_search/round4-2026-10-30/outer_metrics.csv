@@ -1,0 +1,2 @@
+model,epochs,inner_rmse,n_fit,n_validation,rmse_sgd,mae_sgd,bias_sgd
+per_sqm_slow,11,539.7949940815317,114842,35158,467.8553985993527,342.1991030099605,2.1459350278335623

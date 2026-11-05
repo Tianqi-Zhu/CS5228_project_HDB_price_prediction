@@ -1,0 +1,6 @@
+{
+  "valid": false,
+  "reason": "Local variable selected overwritten by expert predictions, invalidating epoch selection. Stopped with KeyboardInterrupt; no outer score accepted.",
+  "replacement_run": "reports/experiments/tabm_rent_search/round5-mixture-fixed-2026-10-30",
+  "preserve": "Partial traces retained; never resume this run."
+}

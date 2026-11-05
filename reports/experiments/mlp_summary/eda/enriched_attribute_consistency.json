@@ -1,0 +1,8 @@
+{
+  "repeated_address_type_groups": 13758,
+  "groups_one_area": 13758,
+  "groups_one_model": 13758,
+  "groups_one_lease_year": 13758,
+  "groups_with_multiple_areas": 0,
+  "warning": "Repeated values do not prove incorrect enrichment or room rental; official six-column source cannot verify unit-level floor area."
+}

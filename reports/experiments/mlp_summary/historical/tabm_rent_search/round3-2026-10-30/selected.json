@@ -1,0 +1,5 @@
+{
+  "model": "distribution_slow",
+  "epochs": 6,
+  "inner_rmse": 539.0194811336837
+}

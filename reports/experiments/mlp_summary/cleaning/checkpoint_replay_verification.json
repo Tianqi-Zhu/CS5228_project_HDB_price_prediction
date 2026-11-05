@@ -1,0 +1,26 @@
+{
+  "obvious_low": {
+    "mlp": {
+      "n": 100,
+      "max_difference_sgd": 4.547473508864641e-13,
+      "query_target_absent": true
+    },
+    "tabm": {
+      "n": 100,
+      "max_difference_sgd": 0.000244140625,
+      "query_target_absent": true
+    }
+  },
+  "highest_only": {
+    "mlp": {
+      "n": 100,
+      "max_difference_sgd": 4.547473508864641e-13,
+      "query_target_absent": true
+    },
+    "tabm": {
+      "n": 100,
+      "max_difference_sgd": 0.0,
+      "query_target_absent": true
+    }
+  }
+}

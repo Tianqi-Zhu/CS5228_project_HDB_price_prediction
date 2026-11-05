@@ -1,0 +1,2 @@
+model,epochs,inner_rmse,n_fit,n_validation,rmse_sgd,mae_sgd,bias_sgd
+periodic_01,5,538.6567304710551,114842,35158,469.00243616343334,343.9756366780298,-5.789084325302474

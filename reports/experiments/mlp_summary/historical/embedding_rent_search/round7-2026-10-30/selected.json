@@ -1,0 +1,5 @@
+{
+  "model": "adjusted_residual",
+  "epochs": 4,
+  "inner_rmse": 541.6429898806344
+}
