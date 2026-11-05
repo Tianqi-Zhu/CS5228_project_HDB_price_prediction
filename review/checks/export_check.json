@@ -1,0 +1,39 @@
+{
+  "exported_commit": "9881111e48816809f922195d53c43c3134482941",
+  "clean_directory": "output/repository_review/clean_exports/appendix-9881111e48",
+  "git_archive_only": true,
+  "original_project_cache_available": false,
+  "PYTHONPATH_removed": true,
+  "checks": [
+    {
+      "command": [
+        "D:\\miniconda3\\envs\\cs5228\\python.exe",
+        "review.py",
+        "verify"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"branch\": \"review/appendix-experiments\",\n  \"files_checked\": 436,\n  \"experiments\": 13,\n  \"failures\": [],\n  \"training_performed\": false,\n  \"pending\": [\n    \"X11\"\n  ]\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "D:\\miniconda3\\envs\\cs5228\\python.exe",
+        "reproduction/three_submissions/verify.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"verified\": [\n    {\n      \"file\": \"submissions/kaggle_best_history.csv\",\n      \"rows\": 50000,\n      \"kaggle_score\": 415.86912,\n      \"sha256\": \"b113a4ccbeb9a890d8e885c2c2815a177b8fa544c4b03d05bfd8a4cad49d5b85\"\n    },\n    {\n      \"file\": \"submissions/kaggle_best_macro.csv\",\n      \"rows\": 50000,\n      \"kaggle_score\": 415.78232,\n      \"sha256\": \"9b54b51c4d551b5686bed1dbd1b99c92602f5669325700423d1b0a44ed2fa5e5\"\n    },\n    {\n      \"file\": \"submissions/kaggle_structure_blend.csv\",\n      \"rows\": 50000,\n      \"kaggle_score\": 415.37529,\n      \"sha256\": \"386a12fac6a8e9e94892b338c29f38b7efd842811517d4aa487126922a6b7e92\"\n    }\n  ],\n  \"input_hashes_valid\": true,\n  \"source_files_checked\": 36\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "D:\\miniconda3\\envs\\cs5228\\python.exe",
+        "reproduction/three_submissions/reproduce.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"verified\": [\n    {\n      \"file\": \"submissions/kaggle_best_history.csv\",\n      \"rows\": 50000,\n      \"kaggle_score\": 415.86912,\n      \"sha256\": \"b113a4ccbeb9a890d8e885c2c2815a177b8fa544c4b03d05bfd8a4cad49d5b85\"\n    },\n    {\n      \"file\": \"submissions/kaggle_best_macro.csv\",\n      \"rows\": 50000,\n      \"kaggle_score\": 415.78232,\n      \"sha256\": \"9b54b51c4d551b5686bed1dbd1b99c92602f5669325700423d1b0a44ed2fa5e5\"\n    },\n    {\n      \"file\": \"submissions/kaggle_structure_blend.csv\",\n      \"rows\": 50000,\n      \"kaggle_score\": 415.37529,\n      \"sha256\": \"386a12fac6a8e9e94892b338c29f38b7efd842811517d4aa487126922a6b7e92\"\n    }\n  ],\n  \"input_hashes_valid\": true,\n  \"source_files_checked\": 36\n}\n{\n  \"reproduced\": [\n    {\n      \"file\": \"output/review_three_submissions_reproduced/kaggle_best_history.csv\",\n      \"rows\": 50000,\n      \"max_abs_difference\": 0.0\n    },\n    {\n      \"file\": \"output/review_three_submissions_reproduced/kaggle_best_macro.csv\",\n      \"rows\": 50000,\n      \"max_abs_difference\": 0.0\n    },\n    {\n      \"file\": \"output/review_three_submissions_reproduced/kaggle_structure_blend.csv\",\n      \"rows\": 50000,\n      \"max_abs_difference\": 0.0\n    }\n  ],\n  \"python\": \"3.11.15\",\n  \"numpy\": \"2.4.6\",\n  \"executable\": \"D:\\\\miniconda3\\\\envs\\\\cs5228\\\\python.exe\",\n  \"mode\": \"frozen-model-forecast replay; no training or network\"\n}\n",
+      "stderr": ""
+    }
+  ],
+  "all_passed": true,
+  "note": "Standard-library integrity and NumPy CPU forecast replay from committed files; no training, network or cached model weights."
+}
