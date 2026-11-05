@@ -1,0 +1,21 @@
+{
+  "stage": "inner_2022-09",
+  "group": "transport",
+  "mode": "dated",
+  "added_columns": [
+    "AQ_MRT_NEAREST_OPERATIONAL_KM",
+    "AQ_MRT_NEAREST_LINE_COUNT",
+    "AQ_MRT_NEAREST_HARMONIC_CENTRALITY",
+    "AQ_MRT_NEAREST_CBD_HOPS",
+    "AQ_MRT_NAMED_BUS_SERVICES_LOG",
+    "AQ_MRT_NEARBY_BUS_SERVICES_LOG",
+    "AQ_MRT_NEAREST_DAILY_TAPS_LOG",
+    "AQ_MRT_BUS_SOURCE_UNKNOWN",
+    "AQ_MRT_PASSENGER_SOURCE_UNKNOWN"
+  ],
+  "context_ids_sha256": "b3a244196866edb52b7bdfd4fb857e9367a890478cf4cc0965dcea57345da797",
+  "query_ids_sha256": "4d5b7b8296608a43bdeedff352dd70e3cd13051caee492ead96eb3b8acd1da73",
+  "prepared_sha256": "e4d9de5c9f29714e7354d616002e410e2ceb937e3a030caf520628cc4fad39d8",
+  "checkpoint_sha256": "14e0b81285bca7a6d1ef121169f27f651f76dff49cad6c0b8779d5c836018550",
+  "code_sha256": "429a6ed4de8c20a709a1c9a4c0dd1fecebc1806b9efabdadffa367e953ce74ca"
+}

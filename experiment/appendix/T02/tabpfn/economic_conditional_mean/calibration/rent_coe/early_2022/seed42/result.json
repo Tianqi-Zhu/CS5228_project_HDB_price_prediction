@@ -1,0 +1,20 @@
+{
+  "fold": "early_2022",
+  "design": "rent_coe",
+  "seed": 42,
+  "best_epoch": 3,
+  "epochs_run": 8,
+  "weighted_rmse_sgd": 648.6912421226075,
+  "bias_sgd": 38.568613215495475,
+  "mae_sgd": 521.2215289814801,
+  "rows": 2000,
+  "parameters": 1674771,
+  "seconds": 32.37411430000793,
+  "peak_allocated_vram_gib": 0.3041820526123047,
+  "checkpoint_sha256": "aa2d873f1fc2512408070b533f57e20607219a7f0aed2ea0c3bc388db8bf3899",
+  "predictions_sha256": "ee62c5f6660aa9528c54ab79257681e3e6ca1613d01f0d256e8b897c77a4c421",
+  "preprocessors_sha256": "154fdb8b6db6a5ed6db776b3635044aa2f8aa19219257f3e00a13e2e9a95c898",
+  "checkpoint_replay_max_difference": 0.0,
+  "outer_labels_used_for_selection": false,
+  "all_parameters_jointly_trainable": true
+}

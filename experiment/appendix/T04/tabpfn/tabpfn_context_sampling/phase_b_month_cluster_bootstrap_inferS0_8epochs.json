@@ -1,0 +1,24 @@
+{
+  "S2_minus_S1": {
+    "median_sgd": -0.5594287745285556,
+    "interval_95_sgd": [
+      -1.094534673898751,
+      -0.0630749420796882
+    ]
+  },
+  "S3_minus_S1": {
+    "median_sgd": -2.401374238156734,
+    "interval_95_sgd": [
+      -3.4691711370502603,
+      -1.3171929905494473
+    ]
+  },
+  "S4_minus_S1": {
+    "median_sgd": -1.9581902339152464,
+    "interval_95_sgd": [
+      -3.1785479034984774,
+      -0.5105287500485705
+    ]
+  },
+  "design": "20,000 paired draws of 10 validation months; inference context S0; 8 training epochs per compared strategy"
+}

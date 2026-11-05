@@ -1,0 +1,21 @@
+{
+  "source_document": "https://links.sgx.com/1.0.0/corporate-announcements/453E6FXS2LCL8VUR/649560_Nikko_AM-Semi_Annual_Report_31122020.pdf",
+  "source_announcement": "https://links.sgx.com/1.0.0/corporate-announcements/453E6FXS2LCL8VUR",
+  "observation_date": "2020-12-31",
+  "published_at_singapore": "2021-02-25 17:40:19",
+  "source_pages_zero_based": [9, 10],
+  "reported_portfolio_value_sgd": 478159013,
+  "reported_net_assets_sgd": 470652925,
+  "source_weight_basis": "Nikko AM Singapore STI ETF investment fair values. The fund describes replication in substantially the same weights as the STI. Holdings are a proxy for historical index capitalisation weights, not direct issuer free-float shares.",
+  "sp_methodology": "https://www.spglobal.com/spdji/en/methodology/article/index-mathematics-methodology/",
+  "sti_methodology": "https://www.lseg.com/en/ftse-russell/indices/sgx-st",
+  "custom_index_name": "Historical-cap-seeded Singapore return index",
+  "custom_index_policy": "Intersect documented December 2020 holdings with Singapore-listed stock series present at January 2021 month end. Renormalize matched fair values. Initialize fixed notional index units at January 2021 month-end adjusted closes, base 100. Units stay fixed and value weights drift with adjusted returns. No later-period market caps or future constituents are used. January-February 2021 are a descriptive backcast because the holdings were published on 25 February 2021.",
+  "limitations": [
+    "This is not an official STI or exact S&P-style free-float index: the supplied data omit historical issuer shares, free-float factors and corporate-action divisor updates.",
+    "Only constituents present in the supplied price file are retained; excluded weights and coverage are reported.",
+    "Frozen initial units omit subsequent index reconstitutions, share issuance and free-float revisions. Adjusted closes approximate reinvested distributions and splits; they are not a fully audited total-return series.",
+    "The 2020 weight snapshot is published before all 2022-onward model fits and evaluated forecasts. The exact index paths are reconstructed from later-vintage adjusted prices.",
+    "A government mirror of STI history was checked but its current download only covered dates after the rental labels; it is not used as a benchmark or backfilled into this experiment."
+  ]
+}

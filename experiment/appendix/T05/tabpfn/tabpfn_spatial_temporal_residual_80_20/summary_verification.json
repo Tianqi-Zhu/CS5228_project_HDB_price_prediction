@@ -1,0 +1,10 @@
+{
+  "saved_model_replay_bit_exact": true,
+  "lambda_zero_bit_exact": true,
+  "all_fold_artifact_hashes_verified": true,
+  "all_protected_source_hashes_verified": true,
+  "tests_passed": 15,
+  "e2_market_feature_split_count": 0,
+  "summarizer_sha256": "c341ff568cfc1a7e684a3fac43d55431c017f9d4d448c2c85e58af1637059a7c",
+  "report_sha256": "56071c1d6ad17e9efcab25acd2e573fcb5012adb1585e502cdd08f01cbda45af"
+}

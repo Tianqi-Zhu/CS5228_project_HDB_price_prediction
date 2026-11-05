@@ -1,0 +1,2544 @@
+{
+  "selection": "last 12 observed target months; equal horizon weights; conservative 1% rule",
+  "max_horizon": 10,
+  "parameters": [
+    {
+      "origin_index": 0,
+      "phi": null,
+      "shrink": 30.0,
+      "decay": 0.9,
+      "rmse_by_horizon": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "audit": {
+        "origin": "2021-01",
+        "last_tuning_target_month": null,
+        "rolling_forecast_pairs": 0
+      }
+    },
+    {
+      "origin_index": 1,
+      "phi": null,
+      "shrink": 30.0,
+      "decay": 0.9,
+      "rmse_by_horizon": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "audit": {
+        "origin": "2021-02",
+        "last_tuning_target_month": null,
+        "rolling_forecast_pairs": 0
+      }
+    },
+    {
+      "origin_index": 2,
+      "phi": null,
+      "shrink": 30.0,
+      "decay": 0.9,
+      "rmse_by_horizon": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "audit": {
+        "origin": "2021-03",
+        "last_tuning_target_month": null,
+        "rolling_forecast_pairs": 0
+      }
+    },
+    {
+      "origin_index": 3,
+      "phi": null,
+      "shrink": 30.0,
+      "decay": 0.9,
+      "rmse_by_horizon": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "audit": {
+        "origin": "2021-04",
+        "last_tuning_target_month": null,
+        "rolling_forecast_pairs": 0
+      }
+    },
+    {
+      "origin_index": 4,
+      "phi": null,
+      "shrink": 30.0,
+      "decay": 0.9,
+      "rmse_by_horizon": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "audit": {
+        "origin": "2021-05",
+        "last_tuning_target_month": null,
+        "rolling_forecast_pairs": 0
+      }
+    },
+    {
+      "origin_index": 5,
+      "phi": null,
+      "shrink": 30.0,
+      "decay": 0.9,
+      "rmse_by_horizon": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "audit": {
+        "origin": "2021-06",
+        "last_tuning_target_month": null,
+        "rolling_forecast_pairs": 0
+      }
+    },
+    {
+      "origin_index": 6,
+      "phi": null,
+      "shrink": 30.0,
+      "decay": 0.9,
+      "rmse_by_horizon": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "audit": {
+        "origin": "2021-07",
+        "last_tuning_target_month": null,
+        "rolling_forecast_pairs": 0
+      }
+    },
+    {
+      "origin_index": 7,
+      "phi": null,
+      "shrink": 30.0,
+      "decay": 0.9,
+      "rmse_by_horizon": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "audit": {
+        "origin": "2021-08",
+        "last_tuning_target_month": null,
+        "rolling_forecast_pairs": 0
+      }
+    },
+    {
+      "origin_index": 8,
+      "phi": null,
+      "shrink": 30.0,
+      "decay": 0.9,
+      "rmse_by_horizon": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "audit": {
+        "origin": "2021-09",
+        "last_tuning_target_month": null,
+        "rolling_forecast_pairs": 0
+      }
+    },
+    {
+      "origin_index": 9,
+      "phi": null,
+      "shrink": 30.0,
+      "decay": 0.9,
+      "rmse_by_horizon": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "audit": {
+        "origin": "2021-10",
+        "last_tuning_target_month": null,
+        "rolling_forecast_pairs": 0
+      }
+    },
+    {
+      "origin_index": 10,
+      "phi": null,
+      "shrink": 30.0,
+      "decay": 0.9,
+      "rmse_by_horizon": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "audit": {
+        "origin": "2021-11",
+        "last_tuning_target_month": null,
+        "rolling_forecast_pairs": 0
+      }
+    },
+    {
+      "origin_index": 11,
+      "phi": null,
+      "shrink": 30.0,
+      "decay": 0.9,
+      "rmse_by_horizon": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "audit": {
+        "origin": "2021-12",
+        "last_tuning_target_month": null,
+        "rolling_forecast_pairs": 0
+      }
+    },
+    {
+      "origin_index": 12,
+      "phi": 0.5,
+      "shrink": 10.0,
+      "decay": 0.9,
+      "rmse_by_horizon": [
+        100.2676466339164,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "audit": {
+        "origin": "2022-01",
+        "last_tuning_target_month": "2022-01",
+        "rolling_forecast_pairs": 1,
+        "global_candidates": [
+          {
+            "phi": null,
+            "rmse": 64.70321813543553
+          },
+          {
+            "phi": 0.5,
+            "rmse": 49.473927097032806
+          },
+          {
+            "phi": 0.8,
+            "rmse": 49.473927097032806
+          },
+          {
+            "phi": 0.95,
+            "rmse": 49.473927097032806
+          }
+        ],
+        "local_candidates": [
+          {
+            "shrink": null,
+            "decay": 1.0,
+            "rmse": 189.0436468098153
+          },
+          {
+            "shrink": 100.0,
+            "decay": 0.9,
+            "rmse": 134.80540114191885
+          },
+          {
+            "shrink": 100.0,
+            "decay": 1.0,
+            "rmse": 134.80540114191885
+          },
+          {
+            "shrink": 30.0,
+            "decay": 0.9,
+            "rmse": 112.19987509709377
+          },
+          {
+            "shrink": 30.0,
+            "decay": 1.0,
+            "rmse": 112.19987509709377
+          },
+          {
+            "shrink": 10.0,
+            "decay": 0.9,
+            "rmse": 100.2676466339164
+          },
+          {
+            "shrink": 10.0,
+            "decay": 1.0,
+            "rmse": 100.2676466339164
+          }
+        ]
+      }
+    },
+    {
+      "origin_index": 13,
+      "phi": 0.95,
+      "shrink": 10.0,
+      "decay": 1.0,
+      "rmse_by_horizon": [
+        99.7469822998446,
+        117.32243585839154,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "audit": {
+        "origin": "2022-02",
+        "last_tuning_target_month": "2022-02",
+        "rolling_forecast_pairs": 3,
+        "global_candidates": [
+          {
+            "phi": null,
+            "rmse": 86.03548552872185
+          },
+          {
+            "phi": 0.5,
+            "rmse": 65.33898904571069
+          },
+          {
+            "phi": 0.8,
+            "rmse": 62.758041619345626
+          },
+          {
+            "phi": 0.95,
+            "rmse": 61.50624636817038
+          }
+        ],
+        "local_candidates": [
+          {
+            "shrink": null,
+            "decay": 1.0,
+            "rmse": 193.8864577631493
+          },
+          {
+            "shrink": 100.0,
+            "decay": 0.9,
+            "rmse": 143.1126704704484
+          },
+          {
+            "shrink": 100.0,
+            "decay": 1.0,
+            "rmse": 141.20174122413394
+          },
+          {
+            "shrink": 30.0,
+            "decay": 0.9,
+            "rmse": 121.4064995795543
+          },
+          {
+            "shrink": 30.0,
+            "decay": 1.0,
+            "rmse": 119.62850827450126
+          },
+          {
+            "shrink": 10.0,
+            "decay": 0.9,
+            "rmse": 109.98968748935098
+          },
+          {
+            "shrink": 10.0,
+            "decay": 1.0,
+            "rmse": 108.88988574167922
+          }
+        ]
+      }
+    },
+    {
+      "origin_index": 14,
+      "phi": 0.95,
+      "shrink": 10.0,
+      "decay": 1.0,
+      "rmse_by_horizon": [
+        100.25900633640285,
+        112.53534098175012,
+        136.49396648057026,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "audit": {
+        "origin": "2022-03",
+        "last_tuning_target_month": "2022-03",
+        "rolling_forecast_pairs": 6,
+        "global_candidates": [
+          {
+            "phi": null,
+            "rmse": 113.99588156554687
+          },
+          {
+            "phi": 0.5,
+            "rmse": 87.50365972007077
+          },
+          {
+            "phi": 0.8,
+            "rmse": 81.03872782411331
+          },
+          {
+            "phi": 0.95,
+            "rmse": 77.47123462574196
+          }
+        ],
+        "local_candidates": [
+          {
+            "shrink": null,
+            "decay": 1.0,
+            "rmse": 193.1324310450831
+          },
+          {
+            "shrink": 100.0,
+            "decay": 0.9,
+            "rmse": 147.76369995972917
+          },
+          {
+            "shrink": 100.0,
+            "decay": 1.0,
+            "rmse": 144.52024147390603
+          },
+          {
+            "shrink": 30.0,
+            "decay": 0.9,
+            "rmse": 128.8844620891885
+          },
+          {
+            "shrink": 30.0,
+            "decay": 1.0,
+            "rmse": 126.09518924023166
+          },
+          {
+            "shrink": 10.0,
+            "decay": 0.9,
+            "rmse": 118.85181086122299
+          },
+          {
+            "shrink": 10.0,
+            "decay": 1.0,
+            "rmse": 117.39772031722006
+          }
+        ]
+      }
+    },
+    {
+      "origin_index": 15,
+      "phi": 0.95,
+      "shrink": 10.0,
+      "decay": 1.0,
+      "rmse_by_horizon": [
+        103.15944974659843,
+        114.25619024373994,
+        133.143807260799,
+        150.81806577572164,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "audit": {
+        "origin": "2022-04",
+        "last_tuning_target_month": "2022-04",
+        "rolling_forecast_pairs": 10,
+        "global_candidates": [
+          {
+            "phi": null,
+            "rmse": 117.20688685081376
+          },
+          {
+            "phi": 0.5,
+            "rmse": 89.94924847582728
+          },
+          {
+            "phi": 0.8,
+            "rmse": 81.29575111482274
+          },
+          {
+            "phi": 0.95,
+            "rmse": 76.35966164331634
+          }
+        ],
+        "local_candidates": [
+          {
+            "shrink": null,
+            "decay": 1.0,
+            "rmse": 194.88152141111766
+          },
+          {
+            "shrink": 100.0,
+            "decay": 0.9,
+            "rmse": 153.82581882563332
+          },
+          {
+            "shrink": 100.0,
+            "decay": 1.0,
+            "rmse": 149.42176266393955
+          },
+          {
+            "shrink": 30.0,
+            "decay": 0.9,
+            "rmse": 137.2862526642845
+          },
+          {
+            "shrink": 30.0,
+            "decay": 1.0,
+            "rmse": 133.4689430557666
+          },
+          {
+            "shrink": 10.0,
+            "decay": 0.9,
+            "rmse": 128.76842833094102
+          },
+          {
+            "shrink": 10.0,
+            "decay": 1.0,
+            "rmse": 126.65870623181155
+          }
+        ]
+      }
+    },
+    {
+      "origin_index": 16,
+      "phi": 0.95,
+      "shrink": 10.0,
+      "decay": 1.0,
+      "rmse_by_horizon": [
+        109.40765993786732,
+        117.39874920661282,
+        132.84587506834032,
+        149.1963417579431,
+        191.0391425360393,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "audit": {
+        "origin": "2022-05",
+        "last_tuning_target_month": "2022-05",
+        "rolling_forecast_pairs": 15,
+        "global_candidates": [
+          {
+            "phi": null,
+            "rmse": 151.63285039648562
+          },
+          {
+            "phi": 0.5,
+            "rmse": 119.92547286432087
+          },
+          {
+            "phi": 0.8,
+            "rmse": 105.55027602472242
+          },
+          {
+            "phi": 0.95,
+            "rmse": 95.76724422953453
+          }
+        ],
+        "local_candidates": [
+          {
+            "shrink": null,
+            "decay": 1.0,
+            "rmse": 210.40917397302843
+          },
+          {
+            "shrink": 100.0,
+            "decay": 0.9,
+            "rmse": 173.34803219620147
+          },
+          {
+            "shrink": 100.0,
+            "decay": 1.0,
+            "rmse": 167.6685116266746
+          },
+          {
+            "shrink": 30.0,
+            "decay": 0.9,
+            "rmse": 157.12828037820353
+          },
+          {
+            "shrink": 30.0,
+            "decay": 1.0,
+            "rmse": 151.3182834392257
+          },
+          {
+            "shrink": 10.0,
+            "decay": 0.9,
+            "rmse": 147.7223194775348
+          },
+          {
+            "shrink": 10.0,
+            "decay": 1.0,
+            "rmse": 142.93777056179962
+          }
+        ]
+      }
+    },
+    {
+      "origin_index": 17,
+      "phi": 0.95,
+      "shrink": 10.0,
+      "decay": 1.0,
+      "rmse_by_horizon": [
+        112.28767104931445,
+        121.53776125756278,
+        131.93395829311075,
+        147.00605023712345,
+        180.0543654458795,
+        226.038844339525,
+        null,
+        null,
+        null,
+        null
+      ],
+      "audit": {
+        "origin": "2022-06",
+        "last_tuning_target_month": "2022-06",
+        "rolling_forecast_pairs": 21,
+        "global_candidates": [
+          {
+            "phi": null,
+            "rmse": 189.4863672619655
+          },
+          {
+            "phi": 0.5,
+            "rmse": 154.65096825304354
+          },
+          {
+            "phi": 0.8,
+            "rmse": 135.2738895308081
+          },
+          {
+            "phi": 0.95,
+            "rmse": 120.46479930370283
+          }
+        ],
+        "local_candidates": [
+          {
+            "shrink": null,
+            "decay": 1.0,
+            "rmse": 221.61178597907147
+          },
+          {
+            "shrink": 100.0,
+            "decay": 0.9,
+            "rmse": 187.89326561832928
+          },
+          {
+            "shrink": 100.0,
+            "decay": 1.0,
+            "rmse": 181.4535480778349
+          },
+          {
+            "shrink": 30.0,
+            "decay": 0.9,
+            "rmse": 172.58365187162374
+          },
+          {
+            "shrink": 30.0,
+            "decay": 1.0,
+            "rmse": 165.8107812510897
+          },
+          {
+            "shrink": 10.0,
+            "decay": 0.9,
+            "rmse": 163.79330156966458
+          },
+          {
+            "shrink": 10.0,
+            "decay": 1.0,
+            "rmse": 158.06666858473235
+          }
+        ]
+      }
+    },
+    {
+      "origin_index": 18,
+      "phi": 0.95,
+      "shrink": 10.0,
+      "decay": 1.0,
+      "rmse_by_horizon": [
+        124.65168454739701,
+        137.0379855822045,
+        150.2111913898141,
+        163.18198548915237,
+        194.26703350971962,
+        240.20469416444743,
+        319.3929304086248,
+        null,
+        null,
+        null
+      ],
+      "audit": {
+        "origin": "2022-07",
+        "last_tuning_target_month": "2022-07",
+        "rolling_forecast_pairs": 28,
+        "global_candidates": [
+          {
+            "phi": null,
+            "rmse": 245.6383870626448
+          },
+          {
+            "phi": 0.5,
+            "rmse": 208.55794795874203
+          },
+          {
+            "phi": 0.8,
+            "rmse": 184.42063505758622
+          },
+          {
+            "phi": 0.95,
+            "rmse": 163.81652963042677
+          }
+        ],
+        "local_candidates": [
+          {
+            "shrink": null,
+            "decay": 1.0,
+            "rmse": 261.54757601643735
+          },
+          {
+            "shrink": 100.0,
+            "decay": 0.9,
+            "rmse": 232.16295618232814
+          },
+          {
+            "shrink": 100.0,
+            "decay": 1.0,
+            "rmse": 224.6225481683748
+          },
+          {
+            "shrink": 30.0,
+            "decay": 0.9,
+            "rmse": 218.00622003913136
+          },
+          {
+            "shrink": 30.0,
+            "decay": 1.0,
+            "rmse": 208.85414798896713
+          },
+          {
+            "shrink": 10.0,
+            "decay": 0.9,
+            "rmse": 209.58287347966052
+          },
+          {
+            "shrink": 10.0,
+            "decay": 1.0,
+            "rmse": 200.342219272842
+          }
+        ]
+      }
+    },
+    {
+      "origin_index": 19,
+      "phi": 0.95,
+      "shrink": 10.0,
+      "decay": 1.0,
+      "rmse_by_horizon": [
+        128.7820887494608,
+        146.34365357599708,
+        161.26049402769166,
+        177.99513264422794,
+        202.33157115046595,
+        242.96297958509007,
+        303.1107685403713,
+        360.2763596549583,
+        null,
+        null
+      ],
+      "audit": {
+        "origin": "2022-08",
+        "last_tuning_target_month": "2022-08",
+        "rolling_forecast_pairs": 36,
+        "global_candidates": [
+          {
+            "phi": null,
+            "rmse": 289.95434911436007
+          },
+          {
+            "phi": 0.5,
+            "rmse": 250.59068538632653
+          },
+          {
+            "phi": 0.8,
+            "rmse": 221.92360460837907
+          },
+          {
+            "phi": 0.95,
+            "rmse": 195.1947875926265
+          }
+        ],
+        "local_candidates": [
+          {
+            "shrink": null,
+            "decay": 1.0,
+            "rmse": 284.56330747408236
+          },
+          {
+            "shrink": 100.0,
+            "decay": 0.9,
+            "rmse": 259.16694216030714
+          },
+          {
+            "shrink": 100.0,
+            "decay": 1.0,
+            "rmse": 251.7326444217418
+          },
+          {
+            "shrink": 30.0,
+            "decay": 0.9,
+            "rmse": 246.43156063652998
+          },
+          {
+            "shrink": 30.0,
+            "decay": 1.0,
+            "rmse": 236.98191434526933
+          },
+          {
+            "shrink": 10.0,
+            "decay": 0.9,
+            "rmse": 238.48893833961102
+          },
+          {
+            "shrink": 10.0,
+            "decay": 1.0,
+            "rmse": 228.40008016859946
+          }
+        ]
+      }
+    },
+    {
+      "origin_index": 20,
+      "phi": 0.95,
+      "shrink": 10.0,
+      "decay": 1.0,
+      "rmse_by_horizon": [
+        134.6199587828927,
+        153.20265353095536,
+        173.92863978525747,
+        193.4160279980901,
+        219.1686754866583,
+        251.11423487992488,
+        302.4243365192697,
+        349.878541053001,
+        421.4477179296228,
+        null
+      ],
+      "audit": {
+        "origin": "2022-09",
+        "last_tuning_target_month": "2022-09",
+        "rolling_forecast_pairs": 45,
+        "global_candidates": [
+          {
+            "phi": null,
+            "rmse": 327.53308988384913
+          },
+          {
+            "phi": 0.5,
+            "rmse": 286.06461885243016
+          },
+          {
+            "phi": 0.8,
+            "rmse": 253.08621705281672
+          },
+          {
+            "phi": 0.95,
+            "rmse": 219.79927447271874
+          }
+        ],
+        "local_candidates": [
+          {
+            "shrink": null,
+            "decay": 1.0,
+            "rmse": 311.50749137568295
+          },
+          {
+            "shrink": 100.0,
+            "decay": 0.9,
+            "rmse": 289.32079788214884
+          },
+          {
+            "shrink": 100.0,
+            "decay": 1.0,
+            "rmse": 282.08505687321554
+          },
+          {
+            "shrink": 30.0,
+            "decay": 0.9,
+            "rmse": 278.0170494643342
+          },
+          {
+            "shrink": 30.0,
+            "decay": 1.0,
+            "rmse": 268.6700025288873
+          },
+          {
+            "shrink": 10.0,
+            "decay": 0.9,
+            "rmse": 270.90101262090303
+          },
+          {
+            "shrink": 10.0,
+            "decay": 1.0,
+            "rmse": 260.73431283507983
+          }
+        ]
+      }
+    },
+    {
+      "origin_index": 21,
+      "phi": 0.95,
+      "shrink": 10.0,
+      "decay": 1.0,
+      "rmse_by_horizon": [
+        140.40611432902952,
+        158.61884307000597,
+        181.17588486615324,
+        210.64222896740233,
+        238.9614407271484,
+        273.57707753752527,
+        313.8427659486675,
+        359.0124449774104,
+        421.95405768216557,
+        512.4296798007076
+      ],
+      "audit": {
+        "origin": "2022-10",
+        "last_tuning_target_month": "2022-10",
+        "rolling_forecast_pairs": 55,
+        "global_candidates": [
+          {
+            "phi": null,
+            "rmse": 385.5648350931491
+          },
+          {
+            "phi": 0.5,
+            "rmse": 342.2722205371688
+          },
+          {
+            "phi": 0.8,
+            "rmse": 305.27813398300526
+          },
+          {
+            "phi": 0.95,
+            "rmse": 264.8737615013563
+          }
+        ],
+        "local_candidates": [
+          {
+            "shrink": null,
+            "decay": 1.0,
+            "rmse": 352.72287122320455
+          },
+          {
+            "shrink": 100.0,
+            "decay": 0.9,
+            "rmse": 333.22608172598416
+          },
+          {
+            "shrink": 100.0,
+            "decay": 1.0,
+            "rmse": 325.8029334059226
+          },
+          {
+            "shrink": 30.0,
+            "decay": 0.9,
+            "rmse": 322.70189923319157
+          },
+          {
+            "shrink": 30.0,
+            "decay": 1.0,
+            "rmse": 312.3596797242136
+          },
+          {
+            "shrink": 10.0,
+            "decay": 0.9,
+            "rmse": 315.72035694468013
+          },
+          {
+            "shrink": 10.0,
+            "decay": 1.0,
+            "rmse": 303.6498431795526
+          }
+        ]
+      }
+    },
+    {
+      "origin_index": 22,
+      "phi": 0.95,
+      "shrink": 10.0,
+      "decay": 1.0,
+      "rmse_by_horizon": [
+        144.65791946831493,
+        162.0282934845136,
+        184.5140952390459,
+        215.7917513290783,
+        253.8246065243764,
+        289.97457075383306,
+        330.6357514488123,
+        364.9346675183914,
+        418.3880393084252,
+        488.1882806467064
+      ],
+      "audit": {
+        "origin": "2022-11",
+        "last_tuning_target_month": "2022-11",
+        "rolling_forecast_pairs": 65,
+        "global_candidates": [
+          {
+            "phi": null,
+            "rmse": 404.23149005509373
+          },
+          {
+            "phi": 0.5,
+            "rmse": 355.4987659559294
+          },
+          {
+            "phi": 0.8,
+            "rmse": 313.10395355898385
+          },
+          {
+            "phi": 0.95,
+            "rmse": 266.0293689523342
+          }
+        ],
+        "local_candidates": [
+          {
+            "shrink": null,
+            "decay": 1.0,
+            "rmse": 353.00912594203186
+          },
+          {
+            "shrink": 100.0,
+            "decay": 0.9,
+            "rmse": 333.841212908231
+          },
+          {
+            "shrink": 100.0,
+            "decay": 1.0,
+            "rmse": 326.7837964388552
+          },
+          {
+            "shrink": 30.0,
+            "decay": 0.9,
+            "rmse": 323.49716346706447
+          },
+          {
+            "shrink": 30.0,
+            "decay": 1.0,
+            "rmse": 313.76740162989654
+          },
+          {
+            "shrink": 10.0,
+            "decay": 0.9,
+            "rmse": 316.60532714479643
+          },
+          {
+            "shrink": 10.0,
+            "decay": 1.0,
+            "rmse": 305.31564910582284
+          }
+        ]
+      }
+    },
+    {
+      "origin_index": 23,
+      "phi": 0.95,
+      "shrink": 10.0,
+      "decay": 1.0,
+      "rmse_by_horizon": [
+        149.3022470151325,
+        166.02114436035484,
+        187.4613193123301,
+        219.11026140865093,
+        259.10518174475806,
+        307.0812875836002,
+        348.8605647545227,
+        385.7499098778365,
+        423.9019297715456,
+        482.3799614110944
+      ],
+      "audit": {
+        "origin": "2022-12",
+        "last_tuning_target_month": "2022-12",
+        "rolling_forecast_pairs": 75,
+        "global_candidates": [
+          {
+            "phi": null,
+            "rmse": 421.9518726198234
+          },
+          {
+            "phi": 0.5,
+            "rmse": 368.74988871399046
+          },
+          {
+            "phi": 0.8,
+            "rmse": 322.2678269493819
+          },
+          {
+            "phi": 0.95,
+            "rmse": 270.2577982331529
+          }
+        ],
+        "local_candidates": [
+          {
+            "shrink": null,
+            "decay": 1.0,
+            "rmse": 361.81751372664206
+          },
+          {
+            "shrink": 100.0,
+            "decay": 0.9,
+            "rmse": 342.29270850141785
+          },
+          {
+            "shrink": 100.0,
+            "decay": 1.0,
+            "rmse": 334.87567537636926
+          },
+          {
+            "shrink": 30.0,
+            "decay": 0.9,
+            "rmse": 331.7350929289614
+          },
+          {
+            "shrink": 30.0,
+            "decay": 1.0,
+            "rmse": 321.41547457535955
+          },
+          {
+            "shrink": 10.0,
+            "decay": 0.9,
+            "rmse": 324.677571553116
+          },
+          {
+            "shrink": 10.0,
+            "decay": 1.0,
+            "rmse": 312.62271294149036
+          }
+        ]
+      }
+    },
+    {
+      "origin_index": 24,
+      "phi": 0.95,
+      "shrink": 10.0,
+      "decay": 1.0,
+      "rmse_by_horizon": [
+        155.65376031999156,
+        167.40720015316396,
+        187.66336291738955,
+        217.41451060232103,
+        255.7191156424598,
+        302.7270997619988,
+        351.7154027425603,
+        388.41698428632424,
+        426.1189511123263,
+        467.94910137537255
+      ],
+      "audit": {
+        "origin": "2023-01",
+        "last_tuning_target_month": "2023-01",
+        "rolling_forecast_pairs": 84,
+        "global_candidates": [
+          {
+            "phi": null,
+            "rmse": 425.44989028813006
+          },
+          {
+            "phi": 0.5,
+            "rmse": 368.99786903158116
+          },
+          {
+            "phi": 0.8,
+            "rmse": 319.83941779739814
+          },
+          {
+            "phi": 0.95,
+            "rmse": 264.94691365522
+          }
+        ],
+        "local_candidates": [
+          {
+            "shrink": null,
+            "decay": 1.0,
+            "rmse": 362.9654866875782
+          },
+          {
+            "shrink": 100.0,
+            "decay": 0.9,
+            "rmse": 342.4343987906324
+          },
+          {
+            "shrink": 100.0,
+            "decay": 1.0,
+            "rmse": 334.4821991778093
+          },
+          {
+            "shrink": 30.0,
+            "decay": 0.9,
+            "rmse": 331.3450206965
+          },
+          {
+            "shrink": 30.0,
+            "decay": 1.0,
+            "rmse": 320.23452297161003
+          },
+          {
+            "shrink": 10.0,
+            "decay": 0.9,
+            "rmse": 323.94395008056404
+          },
+          {
+            "shrink": 10.0,
+            "decay": 1.0,
+            "rmse": 310.95032307196436
+          }
+        ]
+      }
+    },
+    {
+      "origin_index": 25,
+      "phi": 0.95,
+      "shrink": 10.0,
+      "decay": 1.0,
+      "rmse_by_horizon": [
+        161.38600518364814,
+        171.86831565299843,
+        187.08100719118497,
+        214.09278322024554,
+        249.26458709353764,
+        292.78001015297156,
+        340.7585226250136,
+        386.24219951693107,
+        423.79384625392464,
+        464.02529921421336
+      ],
+      "audit": {
+        "origin": "2023-02",
+        "last_tuning_target_month": "2023-02",
+        "rolling_forecast_pairs": 92,
+        "global_candidates": [
+          {
+            "phi": null,
+            "rmse": 428.3305268922025
+          },
+          {
+            "phi": 0.5,
+            "rmse": 368.5217869637922
+          },
+          {
+            "phi": 0.8,
+            "rmse": 316.8967064793739
+          },
+          {
+            "phi": 0.95,
+            "rmse": 259.7634389435315
+          }
+        ],
+        "local_candidates": [
+          {
+            "shrink": null,
+            "decay": 1.0,
+            "rmse": 362.083518325959
+          },
+          {
+            "shrink": 100.0,
+            "decay": 0.9,
+            "rmse": 340.4870216930477
+          },
+          {
+            "shrink": 100.0,
+            "decay": 1.0,
+            "rmse": 332.03180297340856
+          },
+          {
+            "shrink": 30.0,
+            "decay": 0.9,
+            "rmse": 328.85215001983653
+          },
+          {
+            "shrink": 30.0,
+            "decay": 1.0,
+            "rmse": 317.04443879235686
+          },
+          {
+            "shrink": 10.0,
+            "decay": 0.9,
+            "rmse": 321.09128984073885
+          },
+          {
+            "shrink": 10.0,
+            "decay": 1.0,
+            "rmse": 307.3259283334347
+          }
+        ]
+      }
+    },
+    {
+      "origin_index": 26,
+      "phi": 0.95,
+      "shrink": 10.0,
+      "decay": 1.0,
+      "rmse_by_horizon": [
+        167.66132725303873,
+        177.68553186849786,
+        192.2914365495576,
+        210.41150794351046,
+        241.8535800783166,
+        281.2705542187522,
+        324.41003775523467,
+        367.6280429953945,
+        411.4509475731831,
+        449.8156452160764
+      ],
+      "audit": {
+        "origin": "2023-03",
+        "last_tuning_target_month": "2023-03",
+        "rolling_forecast_pairs": 99,
+        "global_candidates": [
+          {
+            "phi": null,
+            "rmse": 421.7199292593782
+          },
+          {
+            "phi": 0.5,
+            "rmse": 359.07653971306104
+          },
+          {
+            "phi": 0.8,
+            "rmse": 305.81504788186425
+          },
+          {
+            "phi": 0.95,
+            "rmse": 248.37454759102152
+          }
+        ],
+        "local_candidates": [
+          {
+            "shrink": null,
+            "decay": 1.0,
+            "rmse": 354.9237781418142
+          },
+          {
+            "shrink": 100.0,
+            "decay": 0.9,
+            "rmse": 331.96081131756625
+          },
+          {
+            "shrink": 100.0,
+            "decay": 1.0,
+            "rmse": 323.16038805799957
+          },
+          {
+            "shrink": 30.0,
+            "decay": 0.9,
+            "rmse": 319.95808959702185
+          },
+          {
+            "shrink": 30.0,
+            "decay": 1.0,
+            "rmse": 307.9038125630552
+          },
+          {
+            "shrink": 10.0,
+            "decay": 0.9,
+            "rmse": 312.19101258230353
+          },
+          {
+            "shrink": 10.0,
+            "decay": 1.0,
+            "rmse": 298.4218481507714
+          }
+        ]
+      }
+    },
+    {
+      "origin_index": 27,
+      "phi": 0.95,
+      "shrink": 10.0,
+      "decay": 1.0,
+      "rmse_by_horizon": [
+        171.82773732212183,
+        180.6884276084542,
+        195.4653782212334,
+        214.1406800480837,
+        238.16986524969573,
+        273.7324242200268,
+        312.3240215069223,
+        350.79924537204937,
+        392.55925082994776,
+        438.90119334527924
+      ],
+      "audit": {
+        "origin": "2023-04",
+        "last_tuning_target_month": "2023-04",
+        "rolling_forecast_pairs": 105,
+        "global_candidates": [
+          {
+            "phi": null,
+            "rmse": 416.5052531011782
+          },
+          {
+            "phi": 0.5,
+            "rmse": 350.5378113276617
+          },
+          {
+            "phi": 0.8,
+            "rmse": 295.3878959710986
+          },
+          {
+            "phi": 0.95,
+            "rmse": 238.04350704947112
+          }
+        ],
+        "local_candidates": [
+          {
+            "shrink": null,
+            "decay": 1.0,
+            "rmse": 350.6777786724708
+          },
+          {
+            "shrink": 100.0,
+            "decay": 0.9,
+            "rmse": 326.26986427589577
+          },
+          {
+            "shrink": 100.0,
+            "decay": 1.0,
+            "rmse": 316.96091701186043
+          },
+          {
+            "shrink": 30.0,
+            "decay": 0.9,
+            "rmse": 313.4756308173078
+          },
+          {
+            "shrink": 30.0,
+            "decay": 1.0,
+            "rmse": 300.75260078234044
+          },
+          {
+            "shrink": 10.0,
+            "decay": 0.9,
+            "rmse": 305.18791006816593
+          },
+          {
+            "shrink": 10.0,
+            "decay": 1.0,
+            "rmse": 290.7290451258436
+          }
+        ]
+      }
+    },
+    {
+      "origin_index": 28,
+      "phi": 0.95,
+      "shrink": 10.0,
+      "decay": 1.0,
+      "rmse_by_horizon": [
+        173.3183918484265,
+        182.51733172586177,
+        197.01138454997388,
+        216.36208181076663,
+        240.44259782627853,
+        267.6984771712258,
+        302.10710599871186,
+        336.0919151412986,
+        372.60243542131195,
+        415.83822192832355
+      ],
+      "audit": {
+        "origin": "2023-05",
+        "last_tuning_target_month": "2023-05",
+        "rolling_forecast_pairs": 110,
+        "global_candidates": [
+          {
+            "phi": null,
+            "rmse": 409.5749149980515
+          },
+          {
+            "phi": 0.5,
+            "rmse": 340.1919111220918
+          },
+          {
+            "phi": 0.8,
+            "rmse": 283.3976813108331
+          },
+          {
+            "phi": 0.95,
+            "rmse": 227.97661015439908
+          }
+        ],
+        "local_candidates": [
+          {
+            "shrink": null,
+            "decay": 1.0,
+            "rmse": 344.62802922253087
+          },
+          {
+            "shrink": 100.0,
+            "decay": 0.9,
+            "rmse": 318.55407642911155
+          },
+          {
+            "shrink": 100.0,
+            "decay": 1.0,
+            "rmse": 308.56444031012626
+          },
+          {
+            "shrink": 30.0,
+            "decay": 0.9,
+            "rmse": 305.17813600765055
+          },
+          {
+            "shrink": 30.0,
+            "decay": 1.0,
+            "rmse": 291.76566136180287
+          },
+          {
+            "shrink": 10.0,
+            "decay": 0.9,
+            "rmse": 296.75070906592066
+          },
+          {
+            "shrink": 10.0,
+            "decay": 1.0,
+            "rmse": 281.8569629381094
+          }
+        ]
+      }
+    },
+    {
+      "origin_index": 29,
+      "phi": 0.95,
+      "shrink": 10.0,
+      "decay": 1.0,
+      "rmse_by_horizon": [
+        176.49508848518457,
+        184.82142944405464,
+        199.15893985251722,
+        220.5477686720839,
+        244.86164042706824,
+        271.2668943233104,
+        296.2315988831654,
+        326.07341413151676,
+        358.3682493732045,
+        396.36675754378865
+      ],
+      "audit": {
+        "origin": "2023-06",
+        "last_tuning_target_month": "2023-06",
+        "rolling_forecast_pairs": 114,
+        "global_candidates": [
+          {
+            "phi": null,
+            "rmse": 401.04312767967315
+          },
+          {
+            "phi": 0.5,
+            "rmse": 328.8200355660728
+          },
+          {
+            "phi": 0.8,
+            "rmse": 271.2319198775016
+          },
+          {
+            "phi": 0.95,
+            "rmse": 220.2042739086803
+          }
+        ],
+        "local_candidates": [
+          {
+            "shrink": null,
+            "decay": 1.0,
+            "rmse": 344.155248625379
+          },
+          {
+            "shrink": 100.0,
+            "decay": 0.9,
+            "rmse": 315.9470811207001
+          },
+          {
+            "shrink": 100.0,
+            "decay": 1.0,
+            "rmse": 304.9188716970601
+          },
+          {
+            "shrink": 30.0,
+            "decay": 0.9,
+            "rmse": 301.74494524992633
+          },
+          {
+            "shrink": 30.0,
+            "decay": 1.0,
+            "rmse": 287.0814829448106
+          },
+          {
+            "shrink": 10.0,
+            "decay": 0.9,
+            "rmse": 292.9401826325361
+          },
+          {
+            "shrink": 10.0,
+            "decay": 1.0,
+            "rmse": 276.90602553282434
+          }
+        ]
+      }
+    },
+    {
+      "origin_index": 30,
+      "phi": 0.95,
+      "shrink": 10.0,
+      "decay": 1.0,
+      "rmse_by_horizon": [
+        173.63282188133056,
+        182.90078241072104,
+        196.48862567740798,
+        218.25146906220496,
+        242.17741491721316,
+        268.344486386424,
+        291.338681900914,
+        317.68014008374985,
+        345.7460735686827,
+        379.0937980461256
+      ],
+      "audit": {
+        "origin": "2023-07",
+        "last_tuning_target_month": "2023-07",
+        "rolling_forecast_pairs": 117,
+        "global_candidates": [
+          {
+            "phi": null,
+            "rmse": 391.5347343231783
+          },
+          {
+            "phi": 0.5,
+            "rmse": 316.4415060641746
+          },
+          {
+            "phi": 0.8,
+            "rmse": 257.7226935548568
+          },
+          {
+            "phi": 0.95,
+            "rmse": 211.29029936672254
+          }
+        ],
+        "local_candidates": [
+          {
+            "shrink": null,
+            "decay": 1.0,
+            "rmse": 341.7454926628824
+          },
+          {
+            "shrink": 100.0,
+            "decay": 0.9,
+            "rmse": 311.38749667885736
+          },
+          {
+            "shrink": 100.0,
+            "decay": 1.0,
+            "rmse": 299.2544660429462
+          },
+          {
+            "shrink": 30.0,
+            "decay": 0.9,
+            "rmse": 296.3941112532725
+          },
+          {
+            "shrink": 30.0,
+            "decay": 1.0,
+            "rmse": 280.3892176725789
+          },
+          {
+            "shrink": 10.0,
+            "decay": 0.9,
+            "rmse": 287.34026094258877
+          },
+          {
+            "shrink": 10.0,
+            "decay": 1.0,
+            "rmse": 270.1023055362362
+          }
+        ]
+      }
+    },
+    {
+      "origin_index": 31,
+      "phi": 0.95,
+      "shrink": 10.0,
+      "decay": 1.0,
+      "rmse_by_horizon": [
+        173.65860928163838,
+        179.14247453185524,
+        192.82740843348657,
+        212.894163903229,
+        237.63230457791803,
+        266.52670791553487,
+        291.1335417274674,
+        316.54933337415287,
+        341.33410257266564,
+        369.87229971817476
+      ],
+      "audit": {
+        "origin": "2023-08",
+        "last_tuning_target_month": "2023-08",
+        "rolling_forecast_pairs": 119,
+        "global_candidates": [
+          {
+            "phi": null,
+            "rmse": 378.75601676790774
+          },
+          {
+            "phi": 0.5,
+            "rmse": 302.5575670963992
+          },
+          {
+            "phi": 0.8,
+            "rmse": 244.70120769818482
+          },
+          {
+            "phi": 0.95,
+            "rmse": 206.04884482933105
+          }
+        ],
+        "local_candidates": [
+          {
+            "shrink": null,
+            "decay": 1.0,
+            "rmse": 341.6918357631242
+          },
+          {
+            "shrink": 100.0,
+            "decay": 0.9,
+            "rmse": 309.53326881322886
+          },
+          {
+            "shrink": 100.0,
+            "decay": 1.0,
+            "rmse": 296.511292071514
+          },
+          {
+            "shrink": 30.0,
+            "decay": 0.9,
+            "rmse": 293.87082349480846
+          },
+          {
+            "shrink": 30.0,
+            "decay": 1.0,
+            "rmse": 276.89836570685657
+          },
+          {
+            "shrink": 10.0,
+            "decay": 0.9,
+            "rmse": 284.4861364112651
+          },
+          {
+            "shrink": 10.0,
+            "decay": 1.0,
+            "rmse": 266.5591826769173
+          }
+        ]
+      }
+    },
+    {
+      "origin_index": 32,
+      "phi": 0.95,
+      "shrink": 10.0,
+      "decay": 1.0,
+      "rmse_by_horizon": [
+        171.5019985838827,
+        176.5569250049447,
+        187.0951408408486,
+        205.1465503102981,
+        228.9192440231093,
+        259.5345690480138,
+        289.9783006715482,
+        317.2733502196582,
+        340.6073870866138,
+        367.52198053825913
+      ],
+      "audit": {
+        "origin": "2023-09",
+        "last_tuning_target_month": "2023-09",
+        "rolling_forecast_pairs": 120,
+        "global_candidates": [
+          {
+            "phi": null,
+            "rmse": 364.74527578276184
+          },
+          {
+            "phi": 0.5,
+            "rmse": 288.76828559170514
+          },
+          {
+            "phi": 0.8,
+            "rmse": 233.25414457775003
+          },
+          {
+            "phi": 0.95,
+            "rmse": 204.4647080081828
+          }
+        ],
+        "local_candidates": [
+          {
+            "shrink": null,
+            "decay": 1.0,
+            "rmse": 340.4717146547187
+          },
+          {
+            "shrink": 100.0,
+            "decay": 0.9,
+            "rmse": 306.89466462772816
+          },
+          {
+            "shrink": 100.0,
+            "decay": 1.0,
+            "rmse": 293.05664323196834
+          },
+          {
+            "shrink": 30.0,
+            "decay": 0.9,
+            "rmse": 290.9957072592744
+          },
+          {
+            "shrink": 30.0,
+            "decay": 1.0,
+            "rmse": 273.23831388247606
+          },
+          {
+            "shrink": 10.0,
+            "decay": 0.9,
+            "rmse": 281.70815858900244
+          },
+          {
+            "shrink": 10.0,
+            "decay": 1.0,
+            "rmse": 263.3007381052492
+          }
+        ]
+      }
+    },
+    {
+      "origin_index": 33,
+      "phi": 0.95,
+      "shrink": 10.0,
+      "decay": 1.0,
+      "rmse_by_horizon": [
+        168.55109875958345,
+        173.44849621859424,
+        181.93581055601226,
+        193.11619040624677,
+        214.49464083715415,
+        244.4727676800276,
+        277.2712245086829,
+        311.68982862758963,
+        337.06372561003286,
+        361.58781267198634
+      ],
+      "audit": {
+        "origin": "2023-10",
+        "last_tuning_target_month": "2023-10",
+        "rolling_forecast_pairs": 120,
+        "global_candidates": [
+          {
+            "phi": null,
+            "rmse": 343.31685972335043
+          },
+          {
+            "phi": 0.5,
+            "rmse": 267.6959002846338
+          },
+          {
+            "phi": 0.8,
+            "rmse": 214.56998434721694
+          },
+          {
+            "phi": 0.95,
+            "rmse": 197.21589119822607
+          }
+        ],
+        "local_candidates": [
+          {
+            "shrink": null,
+            "decay": 1.0,
+            "rmse": 336.1664355142945
+          },
+          {
+            "shrink": 100.0,
+            "decay": 0.9,
+            "rmse": 300.3883611789518
+          },
+          {
+            "shrink": 100.0,
+            "decay": 1.0,
+            "rmse": 285.2499627318697
+          },
+          {
+            "shrink": 30.0,
+            "decay": 0.9,
+            "rmse": 284.0360034451456
+          },
+          {
+            "shrink": 30.0,
+            "decay": 1.0,
+            "rmse": 264.92884996698547
+          },
+          {
+            "shrink": 10.0,
+            "decay": 0.9,
+            "rmse": 274.882074763911
+          },
+          {
+            "shrink": 10.0,
+            "decay": 1.0,
+            "rmse": 255.54859099273267
+          }
+        ]
+      }
+    },
+    {
+      "origin_index": 34,
+      "phi": 0.95,
+      "shrink": 10.0,
+      "decay": 1.0,
+      "rmse_by_horizon": [
+        166.02241052373572,
+        171.54651411797693,
+        179.44603627240102,
+        189.90772062366577,
+        201.21694447279498,
+        228.2498083551091,
+        259.5831482385344,
+        297.23217076894474,
+        331.1468713722642,
+        357.45313988538607
+      ],
+      "audit": {
+        "origin": "2023-11",
+        "last_tuning_target_month": "2023-11",
+        "rolling_forecast_pairs": 120,
+        "global_candidates": [
+          {
+            "phi": null,
+            "rmse": 319.06992381559894
+          },
+          {
+            "phi": 0.5,
+            "rmse": 244.2999867698166
+          },
+          {
+            "phi": 0.8,
+            "rmse": 193.66550932350466
+          },
+          {
+            "phi": 0.95,
+            "rmse": 187.09006085523032
+          }
+        ],
+        "local_candidates": [
+          {
+            "shrink": null,
+            "decay": 1.0,
+            "rmse": 332.887972008477
+          },
+          {
+            "shrink": 100.0,
+            "decay": 0.9,
+            "rmse": 294.9046381513188
+          },
+          {
+            "shrink": 100.0,
+            "decay": 1.0,
+            "rmse": 278.5578299828255
+          },
+          {
+            "shrink": 30.0,
+            "decay": 0.9,
+            "rmse": 277.5356181809456
+          },
+          {
+            "shrink": 30.0,
+            "decay": 1.0,
+            "rmse": 257.01603942631954
+          },
+          {
+            "shrink": 10.0,
+            "decay": 0.9,
+            "rmse": 267.6901371101421
+          },
+          {
+            "shrink": 10.0,
+            "decay": 1.0,
+            "rmse": 247.18516848075927
+          }
+        ]
+      }
+    },
+    {
+      "origin_index": 35,
+      "phi": 0.8,
+      "shrink": 10.0,
+      "decay": 1.0,
+      "rmse_by_horizon": [
+        162.30083982553452,
+        166.6779722295352,
+        171.62519583302998,
+        177.4213749237504,
+        183.73290366507717,
+        198.83916767102838,
+        230.0150683774409,
+        270.3388046870184,
+        315.08584175436164,
+        357.6828865815927
+      ],
+      "audit": {
+        "origin": "2023-12",
+        "last_tuning_target_month": "2023-12",
+        "rolling_forecast_pairs": 120,
+        "global_candidates": [
+          {
+            "phi": null,
+            "rmse": 288.80975771195153
+          },
+          {
+            "phi": 0.5,
+            "rmse": 215.27796452129874
+          },
+          {
+            "phi": 0.8,
+            "rmse": 167.50403212831188
+          },
+          {
+            "phi": 0.95,
+            "rmse": 173.13639996666933
+          }
+        ],
+        "local_candidates": [
+          {
+            "shrink": null,
+            "decay": 1.0,
+            "rmse": 321.07711206171626
+          },
+          {
+            "shrink": 100.0,
+            "decay": 0.9,
+            "rmse": 282.2757359159151
+          },
+          {
+            "shrink": 100.0,
+            "decay": 1.0,
+            "rmse": 266.41680488903893
+          },
+          {
+            "shrink": 30.0,
+            "decay": 0.9,
+            "rmse": 263.9236668546
+          },
+          {
+            "shrink": 30.0,
+            "decay": 1.0,
+            "rmse": 243.83240409127185
+          },
+          {
+            "shrink": 10.0,
+            "decay": 0.9,
+            "rmse": 253.0671286680747
+          },
+          {
+            "shrink": 10.0,
+            "decay": 1.0,
+            "rmse": 232.71389981609846
+          }
+        ]
+      }
+    },
+    {
+      "origin_index": 36,
+      "phi": 0.8,
+      "shrink": 10.0,
+      "decay": 1.0,
+      "rmse_by_horizon": [
+        157.48067903195425,
+        161.55091953449624,
+        165.53068775856224,
+        171.00671192698005,
+        174.47925846846024,
+        182.93879428587323,
+        200.5923608100575,
+        238.21163974873323,
+        282.09615892011425,
+        326.77392971997216
+      ],
+      "audit": {
+        "origin": "2024-01",
+        "last_tuning_target_month": "2024-01",
+        "rolling_forecast_pairs": 120,
+        "global_candidates": [
+          {
+            "phi": null,
+            "rmse": 261.36028511255796
+          },
+          {
+            "phi": 0.5,
+            "rmse": 190.142038498035
+          },
+          {
+            "phi": 0.8,
+            "rmse": 146.50034820926473
+          },
+          {
+            "phi": 0.95,
+            "rmse": 163.72047265131636
+          }
+        ],
+        "local_candidates": [
+          {
+            "shrink": null,
+            "decay": 1.0,
+            "rmse": 305.85286961116554
+          },
+          {
+            "shrink": 100.0,
+            "decay": 0.9,
+            "rmse": 264.4383255501415
+          },
+          {
+            "shrink": 100.0,
+            "decay": 1.0,
+            "rmse": 247.2981078479017
+          },
+          {
+            "shrink": 30.0,
+            "decay": 0.9,
+            "rmse": 245.2926648344849
+          },
+          {
+            "shrink": 30.0,
+            "decay": 1.0,
+            "rmse": 224.0172439143698
+          },
+          {
+            "shrink": 10.0,
+            "decay": 0.9,
+            "rmse": 234.23310425979668
+          },
+          {
+            "shrink": 10.0,
+            "decay": 1.0,
+            "rmse": 213.2589286816445
+          }
+        ]
+      }
+    },
+    {
+      "origin_index": 37,
+      "phi": 0.8,
+      "shrink": 10.0,
+      "decay": 1.0,
+      "rmse_by_horizon": [
+        154.7715251047825,
+        159.1387843538131,
+        163.07509616932782,
+        167.67082231438516,
+        169.73758083277545,
+        174.70701641579944,
+        183.31917307037148,
+        205.38205323575198,
+        246.51393056672842,
+        289.9579799315473
+      ],
+      "audit": {
+        "origin": "2024-02",
+        "last_tuning_target_month": "2024-02",
+        "rolling_forecast_pairs": 120,
+        "global_candidates": [
+          {
+            "phi": null,
+            "rmse": 231.08123692649536
+          },
+          {
+            "phi": 0.5,
+            "rmse": 161.77305326047207
+          },
+          {
+            "phi": 0.8,
+            "rmse": 122.97478330937749
+          },
+          {
+            "phi": 0.95,
+            "rmse": 155.15507472563814
+          }
+        ],
+        "local_candidates": [
+          {
+            "shrink": null,
+            "decay": 1.0,
+            "rmse": 293.3798263609751
+          },
+          {
+            "shrink": 100.0,
+            "decay": 0.9,
+            "rmse": 249.23378963706816
+          },
+          {
+            "shrink": 100.0,
+            "decay": 1.0,
+            "rmse": 230.69330074145833
+          },
+          {
+            "shrink": 30.0,
+            "decay": 0.9,
+            "rmse": 229.1026169525073
+          },
+          {
+            "shrink": 30.0,
+            "decay": 1.0,
+            "rmse": 206.42052851283003
+          },
+          {
+            "shrink": 10.0,
+            "decay": 0.9,
+            "rmse": 217.7454888651186
+          },
+          {
+            "shrink": 10.0,
+            "decay": 1.0,
+            "rmse": 195.9469857749642
+          }
+        ]
+      }
+    },
+    {
+      "origin_index": 38,
+      "phi": 0.8,
+      "shrink": 10.0,
+      "decay": 1.0,
+      "rmse_by_horizon": [
+        152.3013749549585,
+        155.36915575308134,
+        159.54292030053256,
+        168.00334956358097,
+        168.7201543809523,
+        171.65376176439824,
+        176.1592888271195,
+        189.03490832422946,
+        212.81698256537976,
+        252.96176200694114
+      ],
+      "audit": {
+        "origin": "2024-03",
+        "last_tuning_target_month": "2024-03",
+        "rolling_forecast_pairs": 120,
+        "global_candidates": [
+          {
+            "phi": null,
+            "rmse": 203.82699809309844
+          },
+          {
+            "phi": 0.5,
+            "rmse": 137.3081026415636
+          },
+          {
+            "phi": 0.8,
+            "rmse": 104.79036884560306
+          },
+          {
+            "phi": 0.95,
+            "rmse": 150.46030369557803
+          }
+        ],
+        "local_candidates": [
+          {
+            "shrink": null,
+            "decay": 1.0,
+            "rmse": 287.914302706734
+          },
+          {
+            "shrink": 100.0,
+            "decay": 0.9,
+            "rmse": 241.4893806533038
+          },
+          {
+            "shrink": 100.0,
+            "decay": 1.0,
+            "rmse": 221.50967515431418
+          },
+          {
+            "shrink": 30.0,
+            "decay": 0.9,
+            "rmse": 219.63266366429292
+          },
+          {
+            "shrink": 30.0,
+            "decay": 1.0,
+            "rmse": 194.91535477268525
+          },
+          {
+            "shrink": 10.0,
+            "decay": 0.9,
+            "rmse": 206.87907692400321
+          },
+          {
+            "shrink": 10.0,
+            "decay": 1.0,
+            "rmse": 183.02810423225117
+          }
+        ]
+      }
+    },
+    {
+      "origin_index": 39,
+      "phi": 0.8,
+      "shrink": 10.0,
+      "decay": 1.0,
+      "rmse_by_horizon": [
+        149.54044297251244,
+        153.6574231414311,
+        157.0770191297733,
+        165.7320541467807,
+        167.89122445118335,
+        169.32640050360573,
+        172.09998775618695,
+        180.83461645360006,
+        194.28494770563745,
+        215.34025461767638
+      ],
+      "audit": {
+        "origin": "2024-04",
+        "last_tuning_target_month": "2024-04",
+        "rolling_forecast_pairs": 120,
+        "global_candidates": [
+          {
+            "phi": null,
+            "rmse": 176.12522802189335
+          },
+          {
+            "phi": 0.5,
+            "rmse": 114.34152464221677
+          },
+          {
+            "phi": 0.8,
+            "rmse": 91.47311260738708
+          },
+          {
+            "phi": 0.95,
+            "rmse": 149.71520918469042
+          }
+        ],
+        "local_candidates": [
+          {
+            "shrink": null,
+            "decay": 1.0,
+            "rmse": 282.2984844275994
+          },
+          {
+            "shrink": 100.0,
+            "decay": 0.9,
+            "rmse": 234.02352909434543
+          },
+          {
+            "shrink": 100.0,
+            "decay": 1.0,
+            "rmse": 212.8861659718925
+          },
+          {
+            "shrink": 30.0,
+            "decay": 0.9,
+            "rmse": 211.3338821956552
+          },
+          {
+            "shrink": 30.0,
+            "decay": 1.0,
+            "rmse": 185.4363359904971
+          },
+          {
+            "shrink": 10.0,
+            "decay": 0.9,
+            "rmse": 198.1704666960298
+          },
+          {
+            "shrink": 10.0,
+            "decay": 1.0,
+            "rmse": 173.61157078199025
+          }
+        ]
+      }
+    },
+    {
+      "origin_index": 40,
+      "phi": 0.8,
+      "shrink": 10.0,
+      "decay": 1.0,
+      "rmse_by_horizon": [
+        147.3657080737779,
+        151.4570976045253,
+        155.7067691664379,
+        163.75027751487195,
+        165.92943279616674,
+        169.28268523303527,
+        170.07023950077593,
+        176.68137457001245,
+        185.78781184662924,
+        195.87381560127264
+      ],
+      "audit": {
+        "origin": "2024-05",
+        "last_tuning_target_month": "2024-05",
+        "rolling_forecast_pairs": 120,
+        "global_candidates": [
+          {
+            "phi": null,
+            "rmse": 150.2893360857529
+          },
+          {
+            "phi": 0.5,
+            "rmse": 95.32582869866829
+          },
+          {
+            "phi": 0.8,
+            "rmse": 84.01911030555866
+          },
+          {
+            "phi": 0.95,
+            "rmse": 149.78645435390587
+          }
+        ],
+        "local_candidates": [
+          {
+            "shrink": null,
+            "decay": 1.0,
+            "rmse": 280.91757099636686
+          },
+          {
+            "shrink": 100.0,
+            "decay": 0.9,
+            "rmse": 231.3872261433771
+          },
+          {
+            "shrink": 100.0,
+            "decay": 1.0,
+            "rmse": 209.45572119490242
+          },
+          {
+            "shrink": 30.0,
+            "decay": 0.9,
+            "rmse": 207.87976864182713
+          },
+          {
+            "shrink": 30.0,
+            "decay": 1.0,
+            "rmse": 181.04340436709572
+          },
+          {
+            "shrink": 10.0,
+            "decay": 0.9,
+            "rmse": 194.11514247174594
+          },
+          {
+            "shrink": 10.0,
+            "decay": 1.0,
+            "rmse": 168.7980204332519
+          }
+        ]
+      }
+    }
+  ]
+}

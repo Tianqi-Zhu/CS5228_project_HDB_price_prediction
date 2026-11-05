@@ -4,3 +4,9 @@
 data/*.csv -text -diff
 data/auxiliary/*.csv -text -diff
 reproduction/**/submissions/*.csv -text -diff
+
+# Preserve historical TabPFN sources/results verbatim.
+workflows/tabpfn/** -whitespace
+experiment/main/M07/tabpfn/** -whitespace
+experiment/appendix/T*/** -whitespace
+data/processed/** -text -diff -whitespace

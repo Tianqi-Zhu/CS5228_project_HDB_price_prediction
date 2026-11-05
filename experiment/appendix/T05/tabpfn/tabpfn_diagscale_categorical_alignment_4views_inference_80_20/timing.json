@@ -1,0 +1,11 @@
+{
+  "train_views": 4,
+  "checkpoint_views": 4,
+  "deployment_views": 4,
+  "context_rows": 121005,
+  "validation_rows": 28995,
+  "cache_on_device": true,
+  "fit_predict_seconds": 1082.1891771999653,
+  "peak_vram_gib": 17.917123317718506,
+  "outer_labels_used_for_selection": false
+}

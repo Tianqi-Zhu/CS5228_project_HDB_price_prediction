@@ -1,0 +1,8 @@
+{
+  "context_rows": 2048,
+  "query_rows": 48,
+  "max_absolute_residual_difference": 0.0,
+  "rmse_residual_difference": 0.0,
+  "seed": 42,
+  "inference_views": 1
+}

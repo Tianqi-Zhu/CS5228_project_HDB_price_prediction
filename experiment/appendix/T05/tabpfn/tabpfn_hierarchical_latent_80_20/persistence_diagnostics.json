@@ -1,0 +1,22 @@
+[
+  {
+    "group": "building",
+    "common_groups": 313,
+    "minimum_cases_per_period": 2,
+    "pearson": -0.10300324117805112,
+    "spearman": -0.0743065871675383,
+    "earlier_months": "May2022-April2023",
+    "later_months": "May2023-May2024",
+    "interpretation": "Independent target-month periods; descriptive persistence, not forecast performance"
+  },
+  {
+    "group": "submarket",
+    "common_groups": 95,
+    "minimum_cases_per_period": 5,
+    "pearson": -0.317909556355319,
+    "spearman": -0.29718645016797307,
+    "earlier_months": "May2022-April2023",
+    "later_months": "May2023-May2024",
+    "interpretation": "Independent target-month periods; descriptive persistence, not forecast performance"
+  }
+]

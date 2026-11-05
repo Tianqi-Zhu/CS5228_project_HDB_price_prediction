@@ -1,0 +1,8 @@
+{
+  "fold": "early_2022",
+  "design": "rent",
+  "seed": 42,
+  "epochs": null,
+  "phase": "smoke_cpu",
+  "device": "cpu"
+}

@@ -1,0 +1,38 @@
+{
+  "baseline_checkpoint_hash_verified": true,
+  "source_hashes_verified": true,
+  "prepared_cache_hash_verified": true,
+  "all_77_baseline_columns_labels_and_residual_baselines_verified": true,
+  "baseline_replay_verified": true,
+  "existing_submission_hash_verified": true,
+  "identical_evaluation_rows_verified": true,
+  "finite_predictions_verified": true,
+  "no_parameter_updates_verified": true,
+  "complete_outer_models": [
+    "F0_baseline",
+    "commercial_fixed",
+    "F1_economy",
+    "F2_landscape",
+    "F3_combined",
+    "regional_income",
+    "strict_incremental",
+    "commercial_kde_selected",
+    "market_selected"
+  ],
+  "prediction_hashes": {
+    "predictions_outer_baseline_smoke.csv": "f5d497b43d4d7978cd6c5dd528ac8dda909602b49a1d62a1f484740323f9ab1b",
+    "predictions_outer_commercial_fixed.csv": "a8a308dff51727bc9891818df52a496fe8d8fa051789bd3c0937e741a2afdbfa",
+    "predictions_outer_F1_economy.csv": "53dff247d5ad0b074d1e1ed8dd745c37af2a1435e4df36668623e00edf1ffa21",
+    "predictions_outer_F2_landscape.csv": "abc91c7655c03c95e944698d35ca07d754dfefeecc51ef61a4cfb83170c2e2c3",
+    "predictions_outer_F3_combined.csv": "f82f27c21e341ad178e3dae2ca2928c84f5688e413f7c5bcfd7fdbf026fd0cc1",
+    "predictions_outer_regional_income.csv": "433ddf9734faa9428b0ca6af49f8c2f9ea2aa1920663141124ebb7320b90b550",
+    "predictions_outer_strict_incremental.csv": "189cc05571c59863cb12e06155ddf9c3a10e37437933230b4653c4f5e6b76918"
+  },
+  "code_hashes": {
+    "analysis\\compare_local_economy_landscape.py": "192eaf9a05c1ebf672fa1c38aaa23797a2ccd0300ba83d495a872c4b6f726b47",
+    "analysis\\summarize_local_economy_landscape.py": "15204b52ff7b21563ae9118a2df99c585047f23e22cb1c1a8311b679303e4996",
+    "analysis\\experiments\\local_market_fields.py": "004c5ccf498f38c5f7447ad0ed648c3e15e0e3cf3ab8cdc991a0acda4eb2da4f",
+    "analysis\\experiments\\local_spatial_features.py": "40b338b36fb44069f53948ddde085edd0dc02978b013d938a39a8b525b9b2408",
+    "analysis\\experiments\\satellite_feature_import.py": "eb3203454606a5b434fb76ed54501153a1ec5eb3c54cfa53ca49ba81180cbc1c"
+  }
+}

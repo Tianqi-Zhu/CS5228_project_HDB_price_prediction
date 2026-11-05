@@ -1,0 +1,50 @@
+{
+  "verified": true,
+  "submissions": {
+    "ABCDE_equal": {
+      "file": "submission_tabpfn_ABCDE_equal_150k.csv",
+      "sha256": "ef1c3efc55a5b7bd6f3717870a1d07a0cbda78a4f9f153db89e189aa50c00488",
+      "rows": 50000,
+      "weights": [
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2
+      ],
+      "source_development_rmse_sgd": 454.70398730500875,
+      "minimum_sgd": 1664.9231199419214,
+      "maximum_sgd": 6088.096990131542,
+      "mean_sgd": 3211.2067550268043,
+      "maximum_csv_rounding_error_sgd": 4.999524207960349e-07
+    },
+    "ABDE": {
+      "file": "submission_tabpfn_ABDE_weighted_150k.csv",
+      "sha256": "5c0fe66ab127ddbf63d1923e4002e2154460167ab2a47ae5f4047b923c37cdd5",
+      "rows": 50000,
+      "weights": [
+        0.410715799104646,
+        0.13922914525091346,
+        0.0,
+        0.1996296313112111,
+        0.25042542433322945
+      ],
+      "source_development_rmse_sgd": 454.78741202702514,
+      "minimum_sgd": 1708.1699835313616,
+      "maximum_sgd": 6145.097697276813,
+      "mean_sgd": 3218.6578498534773,
+      "maximum_csv_rounding_error_sgd": 4.99991983815562e-07
+    }
+  },
+  "all_members_use150000_context_rows": true,
+  "all50000_sample_ids_exactly_aligned": true,
+  "finite_positive_predictions": true,
+  "convex_hull_checks_passed": true,
+  "baseline_added_once_per_member": true,
+  "original_weights_preserved": true,
+  "original_submissions_and_sources_unchanged": true,
+  "test_labels_available": false,
+  "test_rmse_available": false,
+  "uploaded_to_kaggle": false,
+  "predictions_members_sha256": "65245a5f00ca223ada5b0ff2492e944e376f77260d239e5e7f918538fba5ec4b"
+}

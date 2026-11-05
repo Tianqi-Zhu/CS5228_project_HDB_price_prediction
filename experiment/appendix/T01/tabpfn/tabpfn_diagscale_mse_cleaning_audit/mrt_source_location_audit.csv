@@ -1,0 +1,193 @@
+LATITUDE,LONGITUDE,codes,names,jrl_crl_only
+1.440689,103.800933,ns10,admiralty mrt station,False
+1.316389,103.882778,ew9,aljunied mrt station,False
+1.370017,103.84945,ns16,ang mo kio mrt station,False
+1.37,104.003056,cr2,aviation park mrt station,True
+1.345422,103.702542,js7,bahar junction mrt station,True
+1.3425,103.88,cc12,bartley mrt station,False
+1.2825,103.859444,"cc34,dt16",bayfront mrt station,False
+1.314722,103.943611,te29,bayshore mrt station,False
+1.341111,103.775833,dt5,beauty world mrt station,False
+1.324039,103.930036,ew5,bedok mrt station,False
+1.336389,103.917778,dt29,bedok north mrt station,False
+1.336389,103.933056,dt30,bedok reservoir mrt station,False
+1.316667,103.948333,te30,bedok south mrt station,False
+1.298889,103.850278,dt21,bencoolen mrt station,False
+1.313611,103.863056,dt23,bendemeer mrt station,False
+1.351111,103.848333,"ns17,cc15",bishan mrt station,False
+1.319444,103.861667,ne9,boon keng mrt station,False
+1.338611,103.705833,ew27,boon lay mrt station,False
+1.3225,103.815278,"cc19,dt9",botanic gardens mrt station,False
+1.340339,103.846725,ns18,braddell mrt station,False
+1.296944,103.850556,cc2,bras basah mrt station,False
+1.368611,103.749444,ns3a,brickland mrt station,False
+1.363889,103.834722,te7,bright hill mrt station,False
+1.382778,103.893056,ne15,buangkok mrt station,False
+1.300278,103.856111,"ew12,dt14",bugis mrt station,False
+1.349167,103.749722,ns2,bukit batok mrt station,False
+1.345556,103.739722,je3,bukit batok west mrt station,True
+1.333611,103.83,cc18,bukit brown mrt station,False
+1.358611,103.751667,ns3,bukit gombak mrt station,False
+1.378611,103.761667,"dt1,bp6",bukit panjang mrt/lrt station,False
+1.307333,103.790028,"ew21,cc22",buona vista mrt station,False
+1.337778,103.839444,"cc17,te9",caldecott mrt station,False
+1.443056,103.829722,ns12,canberra mrt station,False
+1.272778,103.836667,cc31,cantonment mrt station,False
+1.368889,103.764722,dt2,cashew mrt station,False
+1.3575,103.988333,cg2,changi airport mrt station,False
+1.324444,103.992778,"te32,cr1",changi terminal 5 mrt station,False
+1.285,103.843889,"ne4,dt19",chinatown mrt station,False
+1.3425,103.7325,ew25,chinese garden mrt station,False
+1.385,103.744444,"ns4,bp1",choa chu kang mrt/lrt station,False
+1.378889,103.739444,js2,choa chu kang west mrt station,True
+1.293333,103.852222,"ns25,ew13",city hall mrt station,False
+1.288611,103.846667,ne5,clarke quay mrt station,False
+1.315303,103.765244,ew23,clementi mrt station,False
+1.3025,103.798056,ew20,commonwealth mrt station,False
+1.353056,103.713889,js5,corporation mrt station,True
+1.308333,103.888611,cc8,dakota mrt station,False
+1.399722,103.7525,de1,de1 mrt station,False
+1.362222,103.898889,cr7,defu mrt station,True
+1.299444,103.845,"ns24,ne6,cc1",dhoby ghaut mrt station,False
+1.311314,103.778658,ew22,dover mrt station,False
+1.279444,103.853056,dt17,downtown mrt station,False
+1.383889,103.938056,cp2,elias mrt station,True
+1.332778,103.708611,js9,enterprise mrt station,True
+1.293333,103.855556,cc3,esplanade mrt station,False
+1.319722,103.903056,ew7,eunos mrt station,False
+1.335278,103.961944,"cg1,dt35",expo mrt station,False
+1.312222,103.854167,ne8,farrer park mrt station,False
+1.317222,103.8075,cc20,farrer road mrt station,False
+1.2925,103.844444,dt20,fort canning mrt station,False
+1.290833,103.869167,te22a,founders' memorial mrt station,False
+1.278333,103.868056,te22,gardens by the bay mrt station,False
+1.348333,103.698056,jw1,gek poh mrt station,True
+1.321389,103.871389,dt24,geylang bahru mrt station,False
+1.295,103.833333,te15,great world mrt station,False
+1.3212,103.6657,ew30,gul circle mrt station,False
+1.265278,103.822222,"ne1,cc29",harbourfront mrt station,False
+1.287778,103.833611,te16,havelock mrt station,False
+1.282778,103.781667,cc25,haw par villa mrt station,False
+1.3625,103.7675,dt3,hillview mrt station,False
+1.311944,103.796111,cc21,holland village mrt station,False
+1.358056,103.725833,js4,hong kah mrt station,True
+1.371389,103.892222,ne14,hougang mrt station,False
+1.354444,103.769167,dt4,hume mrt station,False
+1.305556,103.855278,dt22,jalan besar mrt station,False
+1.327739,103.678486,ew29,joo koon mrt station,False
+1.333333,103.742222,"ns1,ew24",jurong east mrt station,False
+1.318611,103.710278,js11,jurong hill mrt station,True
+1.327222,103.739167,cr19,jurong lake district mrt station,True
+1.313056,103.710278,"js12,cr21",jurong pier mrt station,True
+1.326111,103.746111,je6,jurong town hall mrt station,True
+1.349167,103.708333,js6,jurong west mrt station,True
+1.335,103.908889,dt28,kaki bukit mrt station,False
+1.311469,103.8714,ew10,kallang mrt station,False
+1.297778,103.885278,te24,katong park mrt station,False
+1.321111,103.913333,ew6,kembangan mrt station,False
+1.293333,103.784444,cc24,kent ridge mrt station,False
+1.27,103.831111,cc30,keppel mrt station,False
+1.417167,103.8329,ns14,khatib mrt station,False
+1.335833,103.783611,dt6,king albert park mrt station,False
+1.360278,103.885,ne13,kovan mrt station,False
+1.425047,103.761853,ns7,kranji mrt station,False
+1.272222,103.802778,cc27,labrador park mrt station,False
+1.344589,103.721139,ew26,lakeside mrt station,False
+1.307167,103.863008,ew11,lavender mrt station,False
+1.384722,103.836667,te5,lentor mrt station,False
+1.306667,103.849722,"ne7,dt12",little india mrt station,False
+1.351667,103.863889,cc14,lorong chuan mrt station,False
+1.371944,103.971944,cr3,loyang mrt station,True
+1.326667,103.89,"cc10,dt26",macpherson mrt station,False
+1.328333,103.776944,cr16,maju mrt station,True
+1.275278,103.854722,"ns27,cc33,te20",marina bay mrt station,False
+1.273889,103.863056,te21,marina south mrt station,False
+1.270944,103.86325,ns28,marina south pier mrt station,False
+1.3025,103.905,te26,marine parade mrt station,False
+1.306667,103.915,te27,marine terrace mrt station,False
+1.432636,103.774283,ns8,marsiling mrt station,False
+1.349167,103.839444,cc16,marymount mrt station,False
+1.327222,103.882778,dt25,mattar mrt station,False
+1.280278,103.843889,te18,maxwell mrt station,False
+1.3725,103.837222,te6,mayflower mrt station,False
+1.328611,103.835556,te10,mount pleasant mrt station,False
+1.306389,103.8825,cc7,mountbatten mrt station,False
+1.348333,103.680833,jw4,nanyang crescent mrt station,True
+1.353611,103.686667,jw3,nanyang gateway mrt station,True
+1.306667,103.818889,te12,napier mrt station,False
+1.313056,103.838333,"ns21,dt11",newton mrt station,False
+1.299722,103.863611,cc5,nicoll highway mrt station,False
+1.320394,103.843689,ns20,novena mrt station,False
+1.299444,103.786944,cc23,one-north mrt station,False
+1.3025,103.823889,te13,orchard boulevard mrt station,False
+1.303056,103.831389,"ns22,te14",orchard mrt station,False
+1.280556,103.84,"ew16,ne3,te17",outram park mrt station,False
+1.32,103.745,je7,pandan reservoir mrt station,True
+1.276111,103.791389,cc26,pasir panjang mrt station,False
+1.366111,103.961111,cr4,pasir ris east mrt station,True
+1.372411,103.949369,ew1,pasir ris mrt station,False
+1.317778,103.8925,"ew8,cc9",paya lebar mrt station,False
+1.343333,103.678611,jw5,peng kang hill mrt station,True
+1.337578,103.697217,ew28,pioneer mrt station,False
+1.331111,103.869167,ne10,potong pasir mrt station,False
+1.273333,103.847222,cc32,prince edward road mrt station,False
+1.2925,103.860833,"cc4,dt15",promenade mrt station,False
+1.415278,103.911111,ne18,punggol coast mrt station,False
+1.405278,103.9025,"ne17,cp4,ptc",punggol mrt/lrt station,False
+1.294442,103.806114,ew19,queenstown mrt station,False
+1.283889,103.851389,"ns26,ew14",raffles place mrt station,False
+1.289722,103.816667,ew18,redhill mrt station,False
+1.394444,103.916111,"cp3,pe4",riviera mrt/lrt station,False
+1.303764,103.852581,dt13,rochor mrt station,False
+1.449025,103.820153,ns11,sembawang mrt station,False
+1.391667,103.895556,"ne16,stc",sengkang mrt/lrt station,False
+1.349167,103.873611,"ne12,cc13",serangoon mrt station,False
+1.370556,103.873611,cr9,serangoon north mrt station,True
+1.2775,103.850833,te19,shenton way mrt station,False
+1.309722,103.928889,te28,siglap mrt station,False
+1.343444,103.953172,ew3,simei mrt station,False
+1.330833,103.7975,dt7,sixth avenue mrt station,False
+1.300514,103.839028,ns23,somerset mrt station,False
+1.397778,103.818333,te4,springleaf mrt station,False
+1.302778,103.875278,cc6,stadium mrt station,False
+1.32,103.826111,"dt10,te11",stevens mrt station,False
+1.320278,103.956944,"dt37,te31",sungei bedok mrt station,False
+1.413333,103.748889,"ns6,de2",sungei kadut mrt station,False
+1.335833,103.887778,cc11,tai seng mrt station,False
+1.356389,103.954722,dt33,tampines east mrt station,False
+1.355,103.943889,"ew2,dt32",tampines mrt station,False
+1.369167,103.937778,cr6,tampines north mrt station,True
+1.345556,103.938333,dt31,tampines west mrt station,False
+1.326111,103.807222,dt8,tan kah kee mrt station,False
+1.327358,103.946344,ew4,tanah merah mrt station,False
+1.299167,103.8975,te25,tanjong katong mrt station,False
+1.276439,103.845711,ew15,tanjong pagar mrt station,False
+1.297222,103.873333,te23,tanjong rhu mrt station,False
+1.37,103.863333,cr10,tavistock mrt station,True
+1.350556,103.691944,jw2,tawas mrt station,True
+1.365556,103.843611,cr12,teck ghee mrt station,True
+1.282222,103.848333,dt18,telok ayer mrt station,False
+1.270556,103.809722,cc28,telok blangah mrt station,False
+1.366389,103.73,js3,tengah mrt station,True
+1.352222,103.736667,je2,tengah park mrt station,True
+1.357222,103.733333,je1,tengah plantation mrt station,True
+1.286081,103.826958,ew17,tiong bahru mrt station,False
+1.332778,103.8475,ns19,toa payoh mrt station,False
+1.339722,103.7425,je4,toh guan mrt station,True
+1.321139,103.649,ew31,tuas crescent mrt station,False
+1.340278,103.636806,ew33,tuas link mrt station,False
+1.330056,103.639611,ew32,tuas west road mrt station,False
+1.325278,103.709167,js10,tukang mrt station,True
+1.340833,103.794444,cr14,turf city mrt station,True
+1.33,103.9,dt27,ubi mrt station,False
+1.341944,103.961389,dt34,upper changi mrt station,False
+1.354167,103.833333,te8,upper thomson mrt station,False
+1.310833,103.757778,cr18,west coast mrt station,True
+1.437094,103.786483,"ns9,te2",woodlands mrt station,False
+1.448333,103.785,"te1,rts",woodlands north mrt station,False
+1.427222,103.793889,te3,woodlands south mrt station,False
+1.339167,103.870833,ne11,woodleigh mrt station,False
+1.328889,103.965,dt36,xilin mrt station,False
+1.3975,103.7475,ns5,yew tee mrt station,False
+1.381906,103.844817,ns15,yio chu kang mrt station,False
+1.429464,103.835239,ns13,yishun mrt station,False

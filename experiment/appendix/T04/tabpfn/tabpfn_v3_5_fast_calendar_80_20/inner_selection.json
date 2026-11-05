@@ -1,0 +1,9 @@
+{
+  "model": "calendar",
+  "calendar_encoding": "cyclical",
+  "eligible_models": [
+    "categorical",
+    "calendar"
+  ],
+  "selected_before_new_outer_scoring": true
+}

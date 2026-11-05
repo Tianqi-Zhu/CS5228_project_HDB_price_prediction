@@ -1,0 +1,64 @@
+{
+  "origin": "2024-06",
+  "E1": {
+    "outer_origin": "2024-06",
+    "model": "E1",
+    "config": {
+      "block_penalty": 100.0,
+      "group_penalty": 100.0
+    },
+    "alpha": 0.0,
+    "cv_rmse_sgd": 616.7193650046315,
+    "baseline_cv_rmse_sgd": 616.7193650046315,
+    "cold_start": false,
+    "selection_seconds": 1.4189857000019401,
+    "validation_origins": [
+      "2022-09",
+      "2023-01",
+      "2023-05",
+      "2023-07",
+      "2023-08",
+      "2024-02"
+    ],
+    "validation_case_rows": 10800,
+    "maximum_selection_label_month": "2024-05"
+  },
+  "E2": {
+    "outer_origin": "2024-06",
+    "model": "E2",
+    "config": {
+      "block_penalty": 100.0,
+      "group_penalty": 100.0,
+      "rho": 0.0,
+      "state_penalty": 100.0
+    },
+    "alpha": 0.0,
+    "cv_rmse_sgd": 616.7193650046315,
+    "baseline_cv_rmse_sgd": 616.7193650046315,
+    "cold_start": false,
+    "selection_seconds": 3.706231700023636,
+    "validation_origins": [
+      "2022-09",
+      "2023-01",
+      "2023-05",
+      "2023-07",
+      "2023-08",
+      "2024-02"
+    ],
+    "validation_case_rows": 10800,
+    "maximum_selection_label_month": "2024-05"
+  },
+  "dynamic_gate": {
+    "months": 25,
+    "lag1_monthly_mean_acf": 0.8806541065207549,
+    "enabled": true,
+    "interpretation": "Descriptive historical temporal evidence; subsequent forecast validation determines usefulness"
+  },
+  "selected_family": "E0",
+  "family_tie_policy": "Prefer E0 then E1 then E2 within0.1% of best inner RMSE",
+  "residual_fit_rows": 11925,
+  "residual_fit_last_label_month": "2024-05",
+  "residual_fit_ids_sha256": "9360fbf75e3f1eabb587aa5990110b408d257b0c1a907415cc4d5b671fbf914f",
+  "evaluation_ids_sha256": "8452546a17ec266e405b692de53ff0cc0fcf68f2565c7092d8444e4ecf2edf1b",
+  "outer_targets_used": false
+}

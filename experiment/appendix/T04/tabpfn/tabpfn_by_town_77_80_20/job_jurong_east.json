@@ -1,0 +1,8 @@
+{
+  "town": "jurong east",
+  "context_rows": 3268,
+  "query_rows": 756,
+  "context_ids_sha256": "a6ee325fa0826424cd17384452dc16029059fb31f88f612b47c87be874ed7945",
+  "query_ids_sha256": "afd7fd39cbbe31a60c1449376269a2777dd16c5496afce178a17505a0f7a6aed",
+  "settings_sha256": "7ec7fcf4dc279912e4ccac47faafbe82887e1d344fe25f59350c4dbcbc3e5916"
+}

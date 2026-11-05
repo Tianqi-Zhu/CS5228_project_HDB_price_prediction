@@ -1,0 +1,9 @@
+origin,model,condition,alpha,cv_rmse_sgd,baseline_cv_rmse_sgd,config,inner_forecast_R2
+2023-07,E1,positive_alpha,0.25,649.6206845895848,643.8404023942281,"{""block_penalty"": 100.0, ""group_penalty"": 25.0}",-0.018036237973321212
+2023-07,E1,alpha1,1.0,673.613243354611,643.8404023942281,"{""block_penalty"": 100.0, ""group_penalty"": 100.0}",-0.09462353505271959
+2023-07,E2,positive_alpha,0.25,649.5738183652052,643.8404023942281,"{""block_penalty"": 100.0, ""group_penalty"": 100.0, ""rho"": 0.0, ""state_penalty"": 25.0}",-0.017889352891494514
+2023-07,E2,alpha1,1.0,673.3225721653342,643.8404023942281,"{""block_penalty"": 100.0, ""group_penalty"": 100.0, ""rho"": 0.0, ""state_penalty"": 25.0}",-0.0936790557692675
+2024-06,E1,positive_alpha,0.25,621.3731371835413,616.7193650046315,"{""block_penalty"": 100.0, ""group_penalty"": 100.0}",-0.015148967767295796
+2024-06,E1,alpha1,1.0,639.1969877052591,616.7193650046315,"{""block_penalty"": 100.0, ""group_penalty"": 100.0}",-0.07422255860392268
+2024-06,E2,positive_alpha,0.25,621.0482218310567,616.7193650046315,"{""block_penalty"": 100.0, ""group_penalty"": 100.0, ""rho"": 0.9, ""state_penalty"": 25.0}",-0.01408760470179149
+2024-06,E2,alpha1,1.0,639.2675622459316,616.7193650046315,"{""block_penalty"": 100.0, ""group_penalty"": 100.0, ""rho"": 0.0, ""state_penalty"": 100.0}",-0.07445978421794441

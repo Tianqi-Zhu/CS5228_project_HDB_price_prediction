@@ -1,0 +1,20 @@
+{
+  "design": "conditioned_innovations",
+  "fold": "outer",
+  "seed": 44,
+  "best_epoch": 2,
+  "epochs_run": 2,
+  "rows": 28995,
+  "parameters": 14690,
+  "weighted_rmse_sgd": 461.70469325778055,
+  "rmse_sgd": 461.70469325778055,
+  "mae_sgd": 332.875808207576,
+  "bias_sgd": 16.09099511013382,
+  "mean_correction_sgd": 36.9805793762207,
+  "peak_allocated_vram_gib": 0.041316986083984375,
+  "seconds": 4.517912499955855,
+  "checkpoint_sha256": "859d4093aa1007471d0c1a31404679d3fc2eb004353924d9a13ffe6c0f70004c",
+  "predictions_sha256": "aa0d043234286c966411b0ef191b25f18e861213088de848aecbf0a3d2535cf2",
+  "base_checkpoint_sha256": "fd35812795b23df61e87ef2d86d762475fb150f8a4668a52e429a715ec8e9cfc",
+  "outer_labels_used_for_selection": false
+}

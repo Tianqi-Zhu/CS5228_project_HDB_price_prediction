@@ -1,0 +1,15 @@
+{
+  "fit_seconds": 1.217380900052376,
+  "predict_seconds": 0.6454356999602169,
+  "peak_vram_gib": 2.3694844245910645,
+  "context_rows": 6415,
+  "query_rows": 1498,
+  "features": 77,
+  "batch_size": 200,
+  "subsampling": false,
+  "parameter_versions_unchanged": true,
+  "town": "yishun",
+  "rmse_sgd": 436.18043162708085,
+  "mae_sgd": 316.56632350746185,
+  "bias_sgd": -22.012621139098655
+}

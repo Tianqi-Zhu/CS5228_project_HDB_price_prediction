@@ -1,0 +1,12 @@
+{
+  "config": {
+    "component": "diagscale",
+    "lr": 0.01
+  },
+  "epochs": 8,
+  "task_rows": 1024,
+  "train_views": 2,
+  "checkpoint_views": 1,
+  "seed": 42,
+  "smoke": false
+}

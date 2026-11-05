@@ -1,0 +1,45 @@
+{
+  "artifact": ".cache/tabpfn_v3_features/holdout_80_20_2024-06_temporal.joblib",
+  "sha256": "c9a6040602b2b39dcf0b72264594df446ec9f7f07b0f4b03bf1e8276ac17df18",
+  "base_artifact_sha256": "8e271f74c0ba87edf9108ba67dbbc9371c4b817258d2a56d135076d386d84a0c",
+  "context_rows": 121005,
+  "validation_rows": 28995,
+  "base_feature_count": 68,
+  "feature_count": 76,
+  "added_features": [
+    "TEMP_FLAT_RECENT3_MEAN",
+    "TEMP_FLAT_RECENT12_MEAN",
+    "TEMP_FLAT_DAMPED_FORECAST",
+    "TEMP_FLAT_MODEL_FORECAST",
+    "TEMP_FLAT_MODEL_DELTA",
+    "TEMP_FORECAST_HORIZON",
+    "TEMP_FLAT_HISTORY_COUNT_3M",
+    "TEMP_FLAT_LAST_OBSERVATION_AGE"
+  ],
+  "maximum_training_forecast_horizon": 17,
+  "minimum_model_history_months": 18,
+  "training_forecast_missing_fraction": {
+    "TEMP_FLAT_RECENT3_MEAN": 0.02587496384446924,
+    "TEMP_FLAT_RECENT12_MEAN": 0.02587496384446924,
+    "TEMP_FLAT_DAMPED_FORECAST": 0.02587496384446924,
+    "TEMP_FLAT_MODEL_FORECAST": 0.45459278542209,
+    "TEMP_FLAT_MODEL_DELTA": 0.45459278542209,
+    "TEMP_FORECAST_HORIZON": 0.025858435601834633,
+    "TEMP_FLAT_HISTORY_COUNT_3M": 0.02587496384446924,
+    "TEMP_FLAT_LAST_OBSERVATION_AGE": 0.02587496384446924
+  },
+  "validation_forecast_missing_fraction": {
+    "TEMP_FLAT_RECENT3_MEAN": 0.0,
+    "TEMP_FLAT_RECENT12_MEAN": 0.0,
+    "TEMP_FLAT_DAMPED_FORECAST": 0.0,
+    "TEMP_FLAT_MODEL_FORECAST": 0.0,
+    "TEMP_FLAT_MODEL_DELTA": 0.0,
+    "TEMP_FORECAST_HORIZON": 0.0,
+    "TEMP_FLAT_HISTORY_COUNT_3M": 0.0,
+    "TEMP_FLAT_LAST_OBSERVATION_AGE": 0.0
+  },
+  "first_train_month": "2021-01",
+  "last_train_month": "2024-05",
+  "first_validation_month": "2024-06",
+  "last_validation_month": "2025-03"
+}

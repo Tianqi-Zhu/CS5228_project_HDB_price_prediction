@@ -1,0 +1,47 @@
+{
+  "source_hashes_match": true,
+  "test_labels_used": false,
+  "row_predictions_verified": {
+    "diag_crps_mse": {
+      "rows": 28995,
+      "sha256": "4cff493494848d1a862303d901e39ca889cebfb17a50ad55240ad9808aa3c734"
+    },
+    "diag_mse_only": {
+      "rows": 28995,
+      "sha256": "ae40d5b1aa0ae54ed25e185986f1540d49d3b9296d5bca1ebfbf549cf621fb2e"
+    },
+    "icl_rank2": {
+      "rows": 28995,
+      "sha256": "d66fafdb15308ff83999614763b7fc3344a8e07b89899812e18d0e4474b1fbbd"
+    },
+    "original_diag_2view": {
+      "rows": 28995,
+      "sha256": "cbc77e2361d9d9875858457323ea61c32e36ab7987b563ef9ed5a1e4484548bc"
+    },
+    "original_diag_4view": {
+      "rows": 28995,
+      "sha256": "988162b72a9db541c39818c91fe56bdb5f0f5656e8dc5521a482ba543870823e"
+    },
+    "regression_head": {
+      "rows": 28995,
+      "sha256": "2efe2b4439153192867b16fdf2099f69be40e523c7e80fa812eee2857d27ce9b"
+    }
+  },
+  "adapter_hashes_match": {
+    "diag_crps_mse": true,
+    "diag_mse_only": true,
+    "icl_last2_rank4": true,
+    "icl_rank2": true,
+    "icl_rank4": true,
+    "regression_head": true
+  },
+  "frozen_parameters_unchanged": {
+    "diag_crps_mse": true,
+    "diag_mse_only": true,
+    "icl_last2_rank4": true,
+    "icl_rank2": true,
+    "icl_rank4": true,
+    "regression_head": true
+  },
+  "scoring_runner_sha256": "1269b789595ebfc3eef6183ace251c4370c4b2bb2b1ffc647837d381fc2490ae"
+}

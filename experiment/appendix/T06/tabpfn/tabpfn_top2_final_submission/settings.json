@@ -1,0 +1,91 @@
+{
+  "purpose": "User-requested submission candidates: two lowest observed development RMSE ensembles",
+  "selection_limit": "Retrospective development ranking; neither candidate was the earlier-selected family. User explicitly requested preparation; original experimental gate and artifacts remain unchanged.",
+  "member_order": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+  ],
+  "members": {
+    "A": "MSE-only DiagScale77; one view; fresh full-data adapter already fitted",
+    "B": "frozen baseline77; two views",
+    "C": "frozen relative-history77; two views",
+    "D": "frozen seasonal84; two views",
+    "E": "frozen spatial89; two views"
+  },
+  "weights": {
+    "ABCDE_equal": [
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2
+    ],
+    "ABDE": [
+      0.410715799104646,
+      0.13922914525091346,
+      0.0,
+      0.1996296313112111,
+      0.25042542433322945
+    ]
+  },
+  "source_development_rmse_sgd": {
+    "ABCDE_equal": 454.70398730500875,
+    "ABDE": 454.78741202702514
+  },
+  "weight_policy": "Keep original fixed weights; no reoptimization on training residuals or test predictions",
+  "context_rows": 150000,
+  "test_rows": 50000,
+  "batch_size": 200,
+  "random_state": 42,
+  "C_policy": "Frozen V3_5_FAST; two estimators; native default estimator batching; all rows; no subsampling or adaptation",
+  "targets": "Original rent minus unchanged train baseline; add original query baseline once per member",
+  "full_data_reuse": "Reuse verified full150000 fits and full precision predictions for A/B/D/E; newly fit C",
+  "test_targets_available": false,
+  "kaggle_upload": false,
+  "source_sha256": {
+    "data/train.csv": "2fe38ce9e0d8a02e9786f066d4a10d575d91f34be1d9111f0142e3f43fbfc8a5",
+    "data/test.csv": "a2ec03a0afc07c251c72cc0de2e15ac965a3b06291b304aaac53a375115ff4e0",
+    "data/example-submission.csv": "009e05582492d494df615e9526421023c82d070be029d118dc5ff2766810ecfc",
+    ".cache/tabpfn/tabpfn-v3.5-fast-20260909.safetensors": "14e0b81285bca7a6d1ef121169f27f651f76dff49cad6c0b8779d5c836018550",
+    ".cache/tabpfn_fast_final_submission/features.joblib": "b7d5de3b3bb7b75a689cdb30408f3d4fd26da948cd46dc82c8896b1008bbad1c",
+    "reports/tabpfn_abcde_ensemble/weights.csv": "1927a77e950b2b29034cd43fce6e1d7c3529b3dbb8a26bafe1cc45d4964c0896",
+    "reports/tabpfn_abcde_ensemble/scores.csv": "68ecdd8a66efe3e45a85f65babe360964dd0f9a9a645178d99103342469b9ed9",
+    "reports/tabpfn_abcde_ensemble/independent_audit.json": "7d9f99fcd227948c7545c20a0171b8469d24b1fb71f39b4078834d3d98aaa7f6",
+    "reports/tabpfn_abcde_ensemble/candidate_gate.json": "fae1129192d611b116069e0bc7b4fc7b532cc6a6fc5424e6b963c06c0d6b780c",
+    "reports/tabpfn_temporal_view_ensembles_80_20/features_2024-06_relative_history.json": "845654ee54f38ddf7f7c2cb12e8ee479c1b0121de469911e8fdbc52933ab143b",
+    "reports/tabpfn_feature_ensemble_final_submission/settings.json": "80d7623c55951be5bd5092e6de9361860d3860a81a1b5ba0c2c48aa415881529",
+    "reports/tabpfn_feature_ensemble_final_submission/verification.json": "00848ceb04d29918c2592dc6b2646004183eb6f7fca8805ac52d3dc0664c32f2",
+    "reports/tabpfn_feature_ensemble_final_submission/final_verification.json": "093a28d309a204cc24e997a83211c2a85c3014ccec013d3058e0ae490f3202fb",
+    "reports/tabpfn_feature_ensemble_final_submission/submission_tabpfn_optimized_ensemble_150k.csv": "c67f5374040c74314110afc8dd631ae180bb63a54ef65abd7069be109796cea9",
+    "reports/tabpfn_diagscale_mse_final_submission/settings.json": "1aff58e8828e1cd0900850005a838b2f4af20ed889dc70a267f4bbbc679754d9",
+    "reports/tabpfn_diagscale_mse_final_submission/verification.json": "83b5e14e68b437eb0dfd29ad9adb55d9ee6a46712f9af33f2946e543601451ca",
+    "reports/tabpfn_diagscale_mse_final_submission/training.json": "c888a0e102686111e168c3d6abbb5afa71494f7aed874b31d50f82d2ca6e5372",
+    "reports/tabpfn_diagscale_mse_final_submission/inference_settings.json": "941007646a4d6611c4b07e19bf53c71f0a47f1d08fc3bfd05e2a8c3d2c0969e2",
+    "reports/tabpfn_diagscale_mse_final_submission/inference_timing.json": "6b7c2e4cd7940e77f0d54075852b304a6811d68aa3763ea40496480b7524d976",
+    "reports/tabpfn_diagscale_mse_final_submission/submission_tabpfn_diagscale_mse_150k.csv": "5616125166abed5a353ab4d2f8a9788109a0b8078480ce622bbf8c7e8fb80500",
+    ".cache/tabpfn_diagscale_mse_final_submission/adapter.pt": "90e1d85f781051550570a2cb41bcba13e0cd9cb20350f4cf4c90d8e4848003d8",
+    ".cache/tabpfn_diagscale_mse_final_submission/predictions.npy": "fa7b96452b839de3381b3a81b2c334a86edec694c7b645fde798dd0c57fd3a9b",
+    "reports/tabpfn_feature_ensemble_final_submission/predictions_baseline.csv": "007bffe9846e1ccf0ccc96375fc1b352a6ccc0af78670b293dc893628a4d7e36",
+    "reports/tabpfn_feature_ensemble_final_submission/timing_baseline.json": "fe259121b4f69aeeb6ebf3758ace3dfe25bed0f38e3f06e27613e42542b50135",
+    "reports/tabpfn_feature_ensemble_final_submission/predictions_temporal.csv": "7884af841c7492e9023d6bca35dc2bfb054fb759e63e1f038b84242c97f78028",
+    "reports/tabpfn_feature_ensemble_final_submission/timing_temporal.json": "be3ba3197a270a43e705e37e8482f68d5339375a808e5f4982aeebcb295a6455",
+    "reports/tabpfn_feature_ensemble_final_submission/predictions_spatial.csv": "440828508cbc34ebf03982af2568ef0194cda3f3f79ac0479a2ab9a552362271",
+    "reports/tabpfn_feature_ensemble_final_submission/timing_spatial.json": "974130e20f0c0a7d77a753a758d8a71f07f146ab9b8a4a6d3a9a60b3f95c4f47"
+  },
+  "code_sha256": {
+    "analysis/train_tabpfn_top2_submission.py": "9cca4ccdff77aa5568b67896cf8ab5fe6a185b44190389202f6d20eacdc17555",
+    "analysis/experiments/temporal_feature_views.py": "f344680909fdca87be9da3214474f08f08c047eedbb89143e2fe9912b83efa99",
+    "analysis/experiments/feature_diversified_ensemble.py": "39457d27f1441dc9e55c96706c6fa764e679792fcb0d010a294def612b0cb812",
+    "analysis/train_tabpfn_feature_ensemble_submission.py": "c0702b58c38bed2ec74b984d5744d430bd89d8e30e5675da6468fa842945e47a",
+    "analysis/train_tabpfn_diagscale_mse_submission.py": "6c7469156c86db8f55f9769480bc302ab9ef7b009be0dd2d6ff8a9f8e01fbf86"
+  },
+  "packages": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "torch": "2.11.0+cu128",
+    "tabpfn": "9.2.0"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "verified": [
+    {
+      "file": "submissions/kaggle_best_history.csv",
+      "rows": 50000,
+      "kaggle_score": 415.86912,
+      "sha256": "b113a4ccbeb9a890d8e885c2c2815a177b8fa544c4b03d05bfd8a4cad49d5b85"
+    },
+    {
+      "file": "submissions/kaggle_best_macro.csv",
+      "rows": 50000,
+      "kaggle_score": 415.78232,
+      "sha256": "9b54b51c4d551b5686bed1dbd1b99c92602f5669325700423d1b0a44ed2fa5e5"
+    },
+    {
+      "file": "submissions/kaggle_structure_blend.csv",
+      "rows": 50000,
+      "kaggle_score": 415.37529,
+      "sha256": "386a12fac6a8e9e94892b338c29f38b7efd842811517d4aa487126922a6b7e92"
+    }
+  ],
+  "input_hashes_valid": true,
+  "source_files_checked": 36
+}
+{
+  "reproduced": [
+    {
+      "file": "output/review_three_submissions_reproduced/kaggle_best_history.csv",
+      "rows": 50000,
+      "max_abs_difference": 0.0
+    },
+    {
+      "file": "output/review_three_submissions_reproduced/kaggle_best_macro.csv",
+      "rows": 50000,
+      "max_abs_difference": 0.0
+    },
+    {
+      "file": "output/review_three_submissions_reproduced/kaggle_structure_blend.csv",
+      "rows": 50000,
+      "max_abs_difference": 0.0
+    }
+  ],
+  "python": "3.11.15",
+  "numpy": "2.4.6",
+  "executable": "D:\\miniconda3\\envs\\cs5228\\python.exe",
+  "mode": "frozen-model-forecast replay; no training or network"
+}

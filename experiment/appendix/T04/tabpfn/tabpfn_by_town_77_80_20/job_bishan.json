@@ -1,0 +1,8 @@
+{
+  "town": "bishan",
+  "context_rows": 2678,
+  "query_rows": 628,
+  "context_ids_sha256": "89e70aa2479e1f8a91e0ff536aacc17c0f0f22f716bb26af1a93ef95e081d949",
+  "query_ids_sha256": "daf875ecdc7da185ec887f4531af0db4c0297aa874b0e5259f7339d780efd4a8",
+  "settings_sha256": "7ec7fcf4dc279912e4ccac47faafbe82887e1d344fe25f59350c4dbcbc3e5916"
+}

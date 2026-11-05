@@ -1,0 +1,13 @@
+{
+  "all_28995_queries_covered_once": true,
+  "all_row_labels_months_match": true,
+  "recent_context_rows": 60926,
+  "full_context_rows": 121005,
+  "query_rows": 28995,
+  "recent_context_min_month": "2022-09",
+  "recent_context_max_month": "2024-05",
+  "all_contexts_unsubsampled": true,
+  "all_parameter_versions_unchanged": true,
+  "combined_predictions_sha256": "b23d2a94db9a20cbdc8a9e9ffa899867a2a42e34e0b7e6e359159bdc2c0b628c",
+  "full_type_reference_sha256": "62a9112ea97fb10e8107a84fa00ccb3e9440b85ee56065618cdd2d7a1d6a3f5e"
+}

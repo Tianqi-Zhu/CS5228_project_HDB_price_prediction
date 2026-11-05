@@ -1,0 +1,6 @@
+{
+  "test_amenity_quality_features.QualityTests.test_archived_school_columns_pre_and_post_rule_change": [
+    ".cache/tabpfn_amenity_quality_80_20/sources/schools_2020_all.html",
+    ".cache/tabpfn_amenity_quality_80_20/sources/schools_2023_all.html"
+  ]
+}

@@ -1,0 +1,125 @@
+[
+  {
+    "epoch_seed": 42,
+    "sampler_config": {
+      "context_size": 820,
+      "tau_months": 6.0,
+      "local_fraction": 0.4,
+      "recent_fraction": 0.35,
+      "spatial_scale_km": 2.0,
+      "age_scale_months": 12.0,
+      "area_scale_log": 0.2,
+      "building_age_scale_years": 10.0,
+      "spatial_weight": 1.0,
+      "time_weight": 0.3,
+      "area_weight": 0.5,
+      "building_age_weight": 0.2,
+      "flat_weight": 1.0,
+      "town_weight": 0.5,
+      "nearest_candidates_per_query": 256
+    },
+    "episode_config": {
+      "support_rows": 820,
+      "query_rows": 204,
+      "episodes_per_epoch": 5,
+      "first_query_month": "2022-01"
+    },
+    "episodes": [
+      {
+        "episode": 0,
+        "query_month": "2023-07",
+        "query_ids_sha256": "8e64cd20f6b898895fa1ae0b2607fd1990c0cdf71e5d3b25d630eb3c96c052fa",
+        "support_ids_sha256": "5dfcb9f0fe7c4dd2fbd1a75a689a8de59ab32bf8639acc4d53c04a95cb6c3ada",
+        "strategy": "S1",
+        "information_policy": "historical_only",
+        "seed": 42000,
+        "query_rows": 204,
+        "eligible_rows_after_policy": 87937,
+        "requested_budget": 820,
+        "effective_size": 820,
+        "cutoff_month": "2023-07",
+        "component_counts": {
+          "uniform": 820
+        },
+        "median_context_age_months": 16.0,
+        "retrieval_seconds": 0.02735500002745539
+      },
+      {
+        "episode": 1,
+        "query_month": "2022-11",
+        "query_ids_sha256": "b3109d8a007ba72441132eeb1095a13b3b138b5d85fe3338360dc3b9362edd97",
+        "support_ids_sha256": "dff2cd363da7b6dcff099a8fd7ff21f2251a6c9ed0821bdba3054d93a8b4fb2a",
+        "strategy": "S1",
+        "information_policy": "historical_only",
+        "seed": 42001,
+        "query_rows": 204,
+        "eligible_rows_after_policy": 64977,
+        "requested_budget": 820,
+        "effective_size": 820,
+        "cutoff_month": "2022-11",
+        "component_counts": {
+          "uniform": 820
+        },
+        "median_context_age_months": 12.0,
+        "retrieval_seconds": 0.02018969994969666
+      },
+      {
+        "episode": 2,
+        "query_month": "2023-08",
+        "query_ids_sha256": "696dcb2c6dd74c78eb980d12d76cbe41507981347cdd93078570f4928f1158f3",
+        "support_ids_sha256": "1914d9348548ddda6b3e9c0d8b7799239bf5f86d7502f8b1c959b1a6c0e944a6",
+        "strategy": "S1",
+        "information_policy": "historical_only",
+        "seed": 42002,
+        "query_rows": 204,
+        "eligible_rows_after_policy": 91144,
+        "requested_budget": 820,
+        "effective_size": 820,
+        "cutoff_month": "2023-08",
+        "component_counts": {
+          "uniform": 820
+        },
+        "median_context_age_months": 17.0,
+        "retrieval_seconds": 0.024382199975661933
+      },
+      {
+        "episode": 3,
+        "query_month": "2023-05",
+        "query_ids_sha256": "f197662806d492cf5e4c0c2436215b63f4fc0399d308b149d9899dda1a4d9243",
+        "support_ids_sha256": "539cddb6053fa5ed6950fbcbdaf2849dd6fdd490e5d6402dd54d406888943f5f",
+        "strategy": "S1",
+        "information_policy": "historical_only",
+        "seed": 42003,
+        "query_rows": 204,
+        "eligible_rows_after_policy": 81924,
+        "requested_budget": 820,
+        "effective_size": 820,
+        "cutoff_month": "2023-05",
+        "component_counts": {
+          "uniform": 820
+        },
+        "median_context_age_months": 15.0,
+        "retrieval_seconds": 0.0161699999589473
+      },
+      {
+        "episode": 4,
+        "query_month": "2022-03",
+        "query_ids_sha256": "5de58b77260ad52fe12fcbf63731d13bc290d64a8d6251abbbe56b8c8592727b",
+        "support_ids_sha256": "e95e04f1d5696e14b2e1814f4c7c3e786b3b1c16ca1ab12974c87cd35f94638f",
+        "strategy": "S1",
+        "information_policy": "historical_only",
+        "seed": 42004,
+        "query_rows": 204,
+        "eligible_rows_after_policy": 43538,
+        "requested_budget": 820,
+        "effective_size": 820,
+        "cutoff_month": "2022-03",
+        "component_counts": {
+          "uniform": 820
+        },
+        "median_context_age_months": 8.0,
+        "retrieval_seconds": 0.01733449997846037
+      }
+    ]
+  }
+]

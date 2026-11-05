@@ -1,0 +1,5 @@
+variant,n,rmse_sgd,mae_sgd,bias_sgd,delta_rmse_vs_spatial_baseline_sgd
+historical,79817,543.0956,414.4900,-7.0229,-6.0052
+historical_spatiotemporal,79817,543.1307,413.6300,1.6586,-5.9700
+spatial_spatiotemporal,79817,548.8282,425.7396,-50.4698,-0.2726
+spatial_baseline,79817,549.1007,426.3631,-53.0208,0.0000

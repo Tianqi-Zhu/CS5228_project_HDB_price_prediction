@@ -1,0 +1,4 @@
+{
+  "reason": "Release unused CUDA allocator cache between batches to reduce WDDM paging. Statistical settings,context,checkpoint,feature matrices,weights and row order unchanged. Strict first200-row replay required for a resumed prediction.",
+  "main_predictions_evaluated_for_selection": false
+}

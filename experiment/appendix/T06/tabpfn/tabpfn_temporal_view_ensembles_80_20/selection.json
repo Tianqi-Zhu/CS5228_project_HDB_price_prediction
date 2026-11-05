@@ -1,0 +1,121 @@
+{
+  "evaluation_labels_used": false,
+  "maximum_selection_label_month": "2024-04",
+  "selection_cases": 4000,
+  "selection_ids_sha256": "9f8382b77b8657f7147a9668a9487d0568f95577e04b28062642d3856346aa5e",
+  "models": {
+    "dynamics_optimized": {
+      "members": [
+        "baseline",
+        "relative_history",
+        "horizon_dynamics"
+      ],
+      "weights": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "weighted_mse_sgd2": 358577.14303098514,
+      "active_members": 1,
+      "solver": "Exact active-face convex MSE; nonnegative sum-to-one; no intercept"
+    },
+    "macro_optimized": {
+      "members": [
+        "baseline",
+        "coe_origin",
+        "stocks_origin"
+      ],
+      "weights": [
+        0.8624817004745519,
+        0.03840081283727148,
+        0.09911748668817666
+      ],
+      "weighted_mse_sgd2": 362264.58717523597,
+      "active_members": 3,
+      "solver": "Exact active-face convex MSE; nonnegative sum-to-one; no intercept"
+    },
+    "all_optimized": {
+      "members": [
+        "baseline",
+        "relative_history",
+        "horizon_dynamics",
+        "coe_origin",
+        "stocks_origin"
+      ],
+      "weights": [
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "weighted_mse_sgd2": 358577.14303098514,
+      "active_members": 1,
+      "solver": "Exact active-face convex MSE; nonnegative sum-to-one; no intercept"
+    },
+    "blend_relative_history": {
+      "members": [
+        "baseline",
+        "relative_history"
+      ],
+      "weights": [
+        0.0,
+        1.0
+      ],
+      "weighted_mse_sgd2": 358577.14303098514,
+      "active_members": 1,
+      "solver": "Exact active-face convex MSE; nonnegative sum-to-one; no intercept"
+    },
+    "blend_horizon_dynamics": {
+      "members": [
+        "baseline",
+        "horizon_dynamics"
+      ],
+      "weights": [
+        1.0,
+        0.0
+      ],
+      "weighted_mse_sgd2": 362324.17818663106,
+      "active_members": 1,
+      "solver": "Exact active-face convex MSE; nonnegative sum-to-one; no intercept"
+    },
+    "blend_coe_origin": {
+      "members": [
+        "baseline",
+        "coe_origin"
+      ],
+      "weights": [
+        0.9283071104289085,
+        0.0716928895710916
+      ],
+      "weighted_mse_sgd2": 362307.7947187957,
+      "active_members": 2,
+      "solver": "Exact active-face convex MSE; nonnegative sum-to-one; no intercept"
+    },
+    "blend_stocks_origin": {
+      "members": [
+        "baseline",
+        "stocks_origin"
+      ],
+      "weights": [
+        0.8922409541090748,
+        0.10775904589092529
+      ],
+      "weighted_mse_sgd2": 362268.9322868347,
+      "active_members": 2,
+      "solver": "Exact active-face convex MSE; nonnegative sum-to-one; no intercept"
+    }
+  },
+  "prediction_sha256": {
+    "2022-09_baseline": "818f6c7fdeba711a36bc848c8de377846d619b6724991fd27fbaa070e2f03c38",
+    "2022-09_relative_history": "81a53fee9104a27e5ddc21d094460842ca4caef917126fb4e958ac7031ab0a94",
+    "2022-09_horizon_dynamics": "e47ca915efe76b5e29d58fdf172cdd21808a455a82aaa3b4ed65ce5e72b0e5a5",
+    "2022-09_coe_origin": "44e5d063277b7bd1e12662d9ecad5243e74d8bfcaa1aeff7d28f0f0d5fd57d67",
+    "2022-09_stocks_origin": "522b3e0572fcce1fbe8eb1502bca96bba77d7507cbfa1aa4bdf48af51a3d7a98",
+    "2023-07_baseline": "95d38ccb1ade70caf2381c2d4ddfd2bcc38fca30edb6d0673181e26526454c5b",
+    "2023-07_relative_history": "7353928cbb000599285fd36be584a7e52844832500f058b2c85dd7861e315057",
+    "2023-07_horizon_dynamics": "e5d3873c897b23d0b97b4de03bd82aaecd41d43bda38ed37a5c210975e64ac75",
+    "2023-07_coe_origin": "922fb9e037847b39dc895191aae55367e20b35b9d09308d377a0e6582102121b",
+    "2023-07_stocks_origin": "2951465879ef78bb548135e6862f48b8106a7294aab9fbe9e9b5e7f1d76db4d3"
+  }
+}

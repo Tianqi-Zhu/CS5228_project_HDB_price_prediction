@@ -1,0 +1,8 @@
+{
+  "town": "punggol",
+  "context_rows": 5300,
+  "query_rows": 1368,
+  "context_ids_sha256": "e2d176bcf0620b24f132aa7dd1558ccc8ca6e83282a70d59eb324cc28afbc433",
+  "query_ids_sha256": "3e49b3994b3c28543f6da4b22a62f9eaf5e890c0fca05a1fcde843155b41952a",
+  "settings_sha256": "7ec7fcf4dc279912e4ccac47faafbe82887e1d344fe25f59350c4dbcbc3e5916"
+}

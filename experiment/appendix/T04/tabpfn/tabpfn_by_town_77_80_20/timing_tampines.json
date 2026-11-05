@@ -1,0 +1,15 @@
+{
+  "fit_seconds": 1.2491389999631792,
+  "predict_seconds": 0.8310967000434175,
+  "peak_vram_gib": 2.90771484375,
+  "context_rows": 8113,
+  "query_rows": 1829,
+  "features": 77,
+  "batch_size": 200,
+  "subsampling": false,
+  "parameter_versions_unchanged": true,
+  "town": "tampines",
+  "rmse_sgd": 433.54296266749594,
+  "mae_sgd": 311.79485643352643,
+  "bias_sgd": 10.091637655731917
+}

@@ -1,0 +1,64 @@
+{
+  "setup": "complete",
+  "cpu_preparation": "complete",
+  "targeted_tests_passed": 29,
+  "cpu_smoke": "all model families passed",
+  "cuda_smoke_completed": [
+    "T0",
+    "T1",
+    "T2",
+    "T3",
+    "C1",
+    "C3"
+  ],
+  "cuda_smoke_replay": "exact for completed runs",
+  "max_cuda_smoke_allocated_gib": 0.29184961318969727,
+  "gpu_capacity": {
+    "state": "ready",
+    "gpu": {
+      "index": 0,
+      "name": "NVIDIA GeForce RTX 4080",
+      "total_gib": 15.9921875,
+      "free_gib": 13.6357421875,
+      "utilization_pct": 0.0
+    },
+    "stable_samples": 2,
+    "required_free_gib": 8.0,
+    "max_utilization_pct": 35.0,
+    "wait_seconds": 15.1
+  },
+  "queue_launcher": {
+    "max_gpu_utilization": 35,
+    "started": "2026-11-02T17:25:11.0239289+08:00",
+    "min_free_gib": 8,
+    "pid": 47808,
+    "stderr": "C:\\Users\\auror\\Code\\CS5228_project_HDB_price_prediction\\reports\\spatial_temporal_transformer\\worker.stderr.log",
+    "stdout": "C:\\Users\\auror\\Code\\CS5228_project_HDB_price_prediction\\reports\\spatial_temporal_transformer\\worker.stdout.log"
+  },
+  "primary_experiments": "T0/T1/T2/T3, seeds 42/43/44",
+  "additional_experiments": "LSTM and linear-lag controls, 6-month window and full-month delay sensitivities, 16-month stress window",
+  "full_matrix_results": "complete",
+  "submissions_unchanged": true,
+  "completion_verification": {
+    "completed_fits": 47,
+    "outer_models": 20,
+    "checkpoint_and_prediction_hashes": "verified",
+    "checkpoint_replay": "exact for every fit",
+    "source_code_submission_hashes": "unchanged",
+    "all_variants": [
+      "T0",
+      "T1",
+      "T2",
+      "T3",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "S1",
+      "S2",
+      "S3",
+      "S4"
+    ]
+  },
+  "queue_state": "completed"
+}

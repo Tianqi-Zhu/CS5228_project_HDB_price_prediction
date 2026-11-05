@@ -1,0 +1,12 @@
+{
+  "stage": "outer",
+  "variant": "baseline",
+  "smoke": true,
+  "added_columns": [],
+  "context_ids_sha256": "98813f363d04c121ef6396d316d7720ea30dde9711656099e028587d96e8c160",
+  "query_ids_sha256": "ab9183a6fdb4cc81c3f5f6a8dce35af4f049f6502fce83226e7f5aafab1a5423",
+  "features_sha256": "554fec4c4bf84af483387c9aba7bdd2e192957ab26a0fc45d36796d019c1131a",
+  "checkpoint_sha256": "14e0b81285bca7a6d1ef121169f27f651f76dff49cad6c0b8779d5c836018550",
+  "settings_sha256": "c535d3393ffa2e683e1e007d43ad1df5fa67c75ec74acf514efee651db6a686f",
+  "frozen_predict_code_sha256": "192eaf9a05c1ebf672fa1c38aaa23797a2ccd0300ba83d495a872c4b6f726b47"
+}

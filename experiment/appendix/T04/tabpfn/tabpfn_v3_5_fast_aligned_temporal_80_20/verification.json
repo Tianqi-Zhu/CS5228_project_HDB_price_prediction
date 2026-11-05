@@ -1,0 +1,15 @@
+{
+  "new_unit_tests_passed": 4,
+  "unit_test_command": ".venv/Scripts/python.exe -m unittest tests.test_aligned_temporal_features -q",
+  "validation_rows_verified_against_source_csv": 28995,
+  "row_ids_unique": true,
+  "all_predictions_finite": true,
+  "saved_rmse_recomputed": true,
+  "source_block_history_rows_independently_checked": [
+    70183,
+    70184,
+    70185
+  ],
+  "residual_months_improved_vs_previous": 9,
+  "production_probe": "production_memory_probe.json"
+}

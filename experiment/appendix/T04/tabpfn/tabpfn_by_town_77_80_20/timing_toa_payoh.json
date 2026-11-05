@@ -1,0 +1,15 @@
+{
+  "fit_seconds": 1.0893051999155432,
+  "predict_seconds": 0.4329019000288099,
+  "peak_vram_gib": 1.881814956665039,
+  "context_rows": 4868,
+  "query_rows": 1120,
+  "features": 77,
+  "batch_size": 200,
+  "subsampling": false,
+  "parameter_versions_unchanged": true,
+  "town": "toa payoh",
+  "rmse_sgd": 489.70790925164783,
+  "mae_sgd": 390.5981811481761,
+  "bias_sgd": -119.56842007383997
+}

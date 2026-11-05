@@ -1,0 +1,8 @@
+{
+  "chosen": "balanced",
+  "earlier_mean_delta": {
+    "balanced": -4.165135333313458,
+    "long2": 2.0049394131204963
+  },
+  "outer_labels_used": false
+}

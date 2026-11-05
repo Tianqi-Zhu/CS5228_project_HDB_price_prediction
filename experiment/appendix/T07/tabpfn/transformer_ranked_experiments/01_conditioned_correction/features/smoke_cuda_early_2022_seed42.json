@@ -1,0 +1,8 @@
+{
+  "sha256": "5eae693fbf66c19a3fb46c5cc2b4477bcb375bd972583a68344ad3eec13f9322",
+  "source_checkpoint_sha256": "1c6fce00f0dd7c50da6f3adeb07d6f94a612ed08f6b22c7700cbf7ed62883acb",
+  "rows_train": 512,
+  "rows_query": 64,
+  "base_replay": true,
+  "smoke": true
+}

@@ -1,0 +1,15 @@
+{
+  "code_sha256": "fec0ebc398ce6bf1436f6e2515d3c68d11aea1a4533c2719a5bbe908c2e2eb48",
+  "bootstrap_replicates": 3000,
+  "bootstrap_seed": 42,
+  "clusters": [
+    "month",
+    "building"
+  ],
+  "primary_model": "optimized",
+  "primary_reference": "baseline",
+  "compute_reference": "standard6",
+  "advancement_rule": "Candidate for independent confirmation only if optimized beats baseline by>=0.1%, improves July2023 nested-transfer RMSE, month and building paired95% upper limits<0, and does not lose to standard6. No automatic deployment or Kaggle submission.",
+  "untouched_labeled_test_available": false,
+  "no_outer_weight_optimization": true
+}

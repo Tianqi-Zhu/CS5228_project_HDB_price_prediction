@@ -1,0 +1,13 @@
+{
+  "query_cases": 10800,
+  "unique_row_ids": 10271,
+  "head_train_cases": 8200,
+  "calibration_cases": 2600,
+  "first_target_month": "2022-05",
+  "last_target_month": "2024-05",
+  "head_train_last_month": "2023-11",
+  "calibration_first_month": "2023-12",
+  "outer_labels_used": false,
+  "head_train_calibration_row_overlap": false,
+  "calibration_tabpfn_rmse_sgd": 544.6009406043612
+}

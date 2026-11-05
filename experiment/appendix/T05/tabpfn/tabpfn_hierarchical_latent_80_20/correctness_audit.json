@@ -1,0 +1,48 @@
+{
+  "assertions": [
+    {
+      "origin": "2022-09",
+      "fit_rows": 800,
+      "evaluation_rows": 2000,
+      "fit_targets_strictly_past": true,
+      "context_evaluation_disjoint": true,
+      "row_alignment": true,
+      "finite_predictions": true,
+      "alpha_zero_exact": true,
+      "loaded_model_replay": true,
+      "query_target_poison_invariant": true,
+      "selection_excludes_outer_targets": true
+    },
+    {
+      "origin": "2023-07",
+      "fit_rows": 5331,
+      "evaluation_rows": 2000,
+      "fit_targets_strictly_past": true,
+      "context_evaluation_disjoint": true,
+      "row_alignment": true,
+      "finite_predictions": true,
+      "alpha_zero_exact": true,
+      "loaded_model_replay": true,
+      "query_target_poison_invariant": true,
+      "selection_excludes_outer_targets": true
+    },
+    {
+      "origin": "2024-06",
+      "fit_rows": 11925,
+      "evaluation_rows": 28995,
+      "fit_targets_strictly_past": true,
+      "context_evaluation_disjoint": true,
+      "row_alignment": true,
+      "finite_predictions": true,
+      "alpha_zero_exact": true,
+      "loaded_model_replay": true,
+      "query_target_poison_invariant": true,
+      "selection_excludes_outer_targets": true
+    }
+  ],
+  "source_hashes_unchanged": true,
+  "baseline_and_historical_parameter_hashes_unchanged": true,
+  "autograd_calls_prohibited": true,
+  "geography_availability_caveat": "Original static MRT snapshot not point-in-time certified; held fixed, no new external inputs",
+  "feature_tests": "See tests.log for pseudo-origin and fixed-origin future-target mutation tests"
+}

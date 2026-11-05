@@ -1,0 +1,8 @@
+{
+  "town": "jurong west",
+  "context_rows": 8441,
+  "query_rows": 2041,
+  "context_ids_sha256": "5982f78dae2d9a031ba906842c82612588ac900eecae17de5a2b5f37bdca711f",
+  "query_ids_sha256": "621f48f7943380a5bd69585e9b02c2787c3de8e883bbcd2e0dae82e83d0ced0d",
+  "settings_sha256": "7ec7fcf4dc279912e4ccac47faafbe82887e1d344fe25f59350c4dbcbc3e5916"
+}

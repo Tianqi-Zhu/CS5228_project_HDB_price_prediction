@@ -1,0 +1,6 @@
+{
+  "current_usage": 145201,
+  "usage_limit": 20000000,
+  "reset_time_utc": "2026-12-01 00:00:00 UTC",
+  "note": "Account usage read after both completed runs; API quota units, not monetary cost."
+}

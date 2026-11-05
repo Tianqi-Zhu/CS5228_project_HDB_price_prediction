@@ -1,0 +1,185 @@
+[
+  {
+    "origin": "2021-07",
+    "context_last_month": "2021-06",
+    "query_months": [
+      "2021-07",
+      "2021-09",
+      "2021-12",
+      "2022-06"
+    ],
+    "query_rows": 2400,
+    "context_query_overlap": 0,
+    "fit_seconds": 2.3894491999817546,
+    "predict_embedding_seconds": 2.069207799999276,
+    "peak_allocated_gib": 3.649000644683838,
+    "context_population": 19250,
+    "embedding_width": 1024
+  },
+  {
+    "origin": "2021-10",
+    "context_last_month": "2021-09",
+    "query_months": [
+      "2021-10",
+      "2021-12",
+      "2022-03",
+      "2022-09"
+    ],
+    "query_rows": 2400,
+    "context_query_overlap": 0,
+    "fit_seconds": 1.5857359999790788,
+    "predict_embedding_seconds": 2.0733730000210926,
+    "peak_allocated_gib": 3.648878574371338,
+    "context_population": 28466,
+    "embedding_width": 1024
+  },
+  {
+    "origin": "2022-01",
+    "context_last_month": "2021-12",
+    "query_months": [
+      "2022-01",
+      "2022-03",
+      "2022-06",
+      "2022-12"
+    ],
+    "query_rows": 2400,
+    "context_query_overlap": 0,
+    "fit_seconds": 1.5686838999972679,
+    "predict_embedding_seconds": 2.0023709000088274,
+    "peak_allocated_gib": 3.648878574371338,
+    "context_population": 37619,
+    "embedding_width": 1024
+  },
+  {
+    "origin": "2022-04",
+    "context_last_month": "2022-03",
+    "query_months": [
+      "2022-04",
+      "2022-06",
+      "2022-09",
+      "2023-03"
+    ],
+    "query_rows": 2400,
+    "context_query_overlap": 0,
+    "fit_seconds": 1.8238241999933962,
+    "predict_embedding_seconds": 1.9797235000005458,
+    "peak_allocated_gib": 3.648878574371338,
+    "context_population": 46756,
+    "embedding_width": 1024
+  },
+  {
+    "origin": "2022-07",
+    "context_last_month": "2022-06",
+    "query_months": [
+      "2022-07",
+      "2022-09",
+      "2022-12",
+      "2023-06"
+    ],
+    "query_rows": 2400,
+    "context_query_overlap": 0,
+    "fit_seconds": 1.758336099999724,
+    "predict_embedding_seconds": 1.9868480000004638,
+    "peak_allocated_gib": 3.648878574371338,
+    "context_population": 55008,
+    "embedding_width": 1024
+  },
+  {
+    "origin": "2022-10",
+    "context_last_month": "2022-09",
+    "query_months": [
+      "2022-10",
+      "2022-12",
+      "2023-03",
+      "2023-09"
+    ],
+    "query_rows": 2400,
+    "context_query_overlap": 0,
+    "fit_seconds": 1.9429495999938808,
+    "predict_embedding_seconds": 1.9778966000012588,
+    "peak_allocated_gib": 3.648878574371338,
+    "context_population": 62441,
+    "embedding_width": 1024
+  },
+  {
+    "origin": "2023-01",
+    "context_last_month": "2022-12",
+    "query_months": [
+      "2023-01",
+      "2023-03",
+      "2023-06",
+      "2023-12"
+    ],
+    "query_rows": 2400,
+    "context_query_overlap": 0,
+    "fit_seconds": 2.0339416000060737,
+    "predict_embedding_seconds": 1.9832801999873482,
+    "peak_allocated_gib": 3.648878574371338,
+    "context_population": 70183,
+    "embedding_width": 1024
+  },
+  {
+    "origin": "2023-04",
+    "context_last_month": "2023-03",
+    "query_months": [
+      "2023-04",
+      "2023-06",
+      "2023-09",
+      "2024-03"
+    ],
+    "query_rows": 2400,
+    "context_query_overlap": 0,
+    "fit_seconds": 2.0265626999898814,
+    "predict_embedding_seconds": 2.018364499992458,
+    "peak_allocated_gib": 3.648878574371338,
+    "context_population": 78960,
+    "embedding_width": 1024
+  },
+  {
+    "origin": "2023-07",
+    "context_last_month": "2023-06",
+    "query_months": [
+      "2023-07",
+      "2023-09",
+      "2023-12"
+    ],
+    "query_rows": 1800,
+    "context_query_overlap": 0,
+    "fit_seconds": 2.07243619998917,
+    "predict_embedding_seconds": 1.5917720000143163,
+    "peak_allocated_gib": 3.648878574371338,
+    "context_population": 87937,
+    "embedding_width": 1024
+  },
+  {
+    "origin": "2023-10",
+    "context_last_month": "2023-09",
+    "query_months": [
+      "2023-10",
+      "2023-12",
+      "2024-03"
+    ],
+    "query_rows": 1800,
+    "context_query_overlap": 0,
+    "fit_seconds": 2.185064900026191,
+    "predict_embedding_seconds": 1.574767599988263,
+    "peak_allocated_gib": 3.648878574371338,
+    "context_population": 96865,
+    "embedding_width": 1024
+  },
+  {
+    "origin": "2024-01",
+    "context_last_month": "2023-12",
+    "query_months": [
+      "2024-01",
+      "2024-03"
+    ],
+    "query_rows": 1200,
+    "context_query_overlap": 0,
+    "fit_seconds": 2.415181599993957,
+    "predict_embedding_seconds": 1.0872373000020161,
+    "peak_allocated_gib": 3.648878574371338,
+    "context_population": 105837,
+    "embedding_width": 1024
+  }
+]

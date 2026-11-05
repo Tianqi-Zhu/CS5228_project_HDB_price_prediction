@@ -1,0 +1,14 @@
+{
+  "config": {
+    "component": "diagscale",
+    "lr": 0.01,
+    "crps": 0
+  },
+  "adapter_sha256": "bacda0eec45a0ca6b3a769330929f740b658fcfb3e51a81600b8fb256279c979",
+  "views": 1,
+  "context_rows": 121005,
+  "query_rows": 28995,
+  "query_ids_sha256": "8452546a17ec266e405b692de53ff0cc0fcf68f2565c7092d8444e4ecf2edf1b",
+  "batch_rows": 200,
+  "seed": 42
+}

@@ -1,0 +1,11 @@
+{
+  "individual_consistency": {
+    "A1": false,
+    "B1": false,
+    "A2": false
+  },
+  "A3_eligible": false,
+  "B3_eligible": false,
+  "reason": "Combine only independently consistent gains; B2 unavailable",
+  "no_outer_selected_feature_search": true
+}

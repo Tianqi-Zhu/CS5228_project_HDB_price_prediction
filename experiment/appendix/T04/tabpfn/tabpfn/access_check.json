@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "gpu": "NVIDIA GeForce RTX 4080",
+  "model_version": "v3.5",
+  "model_file": "tabpfn-v3.5-20260909.safetensors",
+  "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+  "predictions": [
+    998.939428849375,
+    1019.5540126176459
+  ],
+  "note": "Tiny synthetic table; initial fit duration included the model download."
+}

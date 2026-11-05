@@ -1,0 +1,5 @@
+model,n,rmse_sgd,mae_sgd,bias_sgd
+catboost+flat_type_damped,79817,537.4407,409.5708,9.5022
+catboost,79817,539.2882,413.6053,-26.7357
+catboost+flat_type_damped+local_16x16,79817,542.0692,413.8184,8.8832
+catboost+local_16x16,79817,543.8798,417.8393,-27.3547

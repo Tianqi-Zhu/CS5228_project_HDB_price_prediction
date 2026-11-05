@@ -1,0 +1,15 @@
+{
+  "fit_seconds": 1.0891977000283077,
+  "predict_seconds": 0.5737570999190211,
+  "peak_vram_gib": 1.913048267364502,
+  "context_rows": 4905,
+  "query_rows": 1210,
+  "features": 77,
+  "batch_size": 200,
+  "subsampling": false,
+  "parameter_versions_unchanged": true,
+  "town": "queenstown",
+  "rmse_sgd": 494.2084928426541,
+  "mae_sgd": 351.9358453643102,
+  "bias_sgd": -29.718798574448552
+}

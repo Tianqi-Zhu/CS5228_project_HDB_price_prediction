@@ -1,0 +1,127 @@
+{
+  "objective": "Test focused temporal representations and isolated origin-frozen COE/stock views without changing residual target",
+  "origins": [
+    "2022-09",
+    "2023-07",
+    "2024-06"
+  ],
+  "new_members": [
+    "relative_history",
+    "horizon_dynamics",
+    "coe_origin",
+    "stocks_origin"
+  ],
+  "definitions": {
+    "relative_history": "Replace19 absolute historical/forecast rent levels by level minus original per-row residual baseline;77 features",
+    "horizon_dynamics": "Retain77 plus log horizon, type momentum x log horizon, horizon-decayed local/block premiums, area momentum and block support;83 features",
+    "coe_origin": "Retain77 plus category A/C log premiums,3-month log changes,bid pressures,two damped-horizon momentum interactions,missing flag;86 features",
+    "stocks_origin": "Retain77 plus .SI basket1/3-month returns,3-month volatility,coverage,damped-horizon momentum,missing flag;83 features"
+  },
+  "feature_counts": {
+    "relative_history": 77,
+    "horizon_dynamics": 83,
+    "coe_origin": 86,
+    "stocks_origin": 83
+  },
+  "prespecified_ensembles": {
+    "dynamics_optimized": [
+      "baseline",
+      "relative_history",
+      "horizon_dynamics"
+    ],
+    "macro_optimized": [
+      "baseline",
+      "coe_origin",
+      "stocks_origin"
+    ],
+    "all_optimized": [
+      "baseline",
+      "relative_history",
+      "horizon_dynamics",
+      "coe_origin",
+      "stocks_origin"
+    ],
+    "blend_relative_history": [
+      "baseline",
+      "relative_history"
+    ],
+    "blend_horizon_dynamics": [
+      "baseline",
+      "horizon_dynamics"
+    ],
+    "blend_coe_origin": [
+      "baseline",
+      "coe_origin"
+    ],
+    "blend_stocks_origin": [
+      "baseline",
+      "stocks_origin"
+    ]
+  },
+  "primary_comparisons": [
+    "dynamics_optimized",
+    "macro_optimized"
+  ],
+  "secondary_comparison": "all_optimized has up to10 internal views, exceeds six-view control budget",
+  "inference": "Frozen V3_5_FAST,seed42,two estimators,full unchanged context,native default estimator batching,batch200,original residual target/baseline",
+  "selection": "Nonnegative sum-to-one MSE weights from earlier fixed-origin predictions only; no outer selection or calibration",
+  "nested_protocol": "September2022 baseline fallback;July2023 uses only September2022;June2024 uses both earlier disjoint windows",
+  "macro_availability": "Use market observations <= original per-row forecast_origin minus1month; no target-month refresh,backfill or future realized market values",
+  "macro_warmup": "Native numeric NaN plus explicit history-missing flag; no future-filled startup history",
+  "macro_limitations": "Supplied snapshot,not archived vintages; .SI basket is not the STI; adjusted closes/basket membership may be revised; extra month buffers unknown release timing",
+  "evaluation": "Repeatedly examined development backtests,not untouched test;earlier200 queries/month with population weights;outer28995 queries;all contexts retained",
+  "decision": "Report both primary ensembles without outer-based winner selection;candidate only if >=0.1% main RMSE gain,July nested transfer improves,month/building bootstrap upper95<0,and does not lose to six-view control;no deployment",
+  "source_sha256": {
+    ".cache/tabpfn/tabpfn-v3.5-fast-20260909.safetensors": "14e0b81285bca7a6d1ef121169f27f651f76dff49cad6c0b8779d5c836018550",
+    ".cache/tabpfn_v3_features/calendar_80_20_categorical.joblib": "fba84757b6e23280d2b27eab0ca5d86a427ac19ca33c6b12b5b2dcc4194a0059",
+    "data/auxiliary/sg-coe-prices.csv": "c8f934ec6e82dad633afa34e466414fd7b572c580fa28dd6c866e76e4be533e0",
+    "data/auxiliary/sg-stock-prices.csv": "e03802bedbebedab27caafb6755ce055f1654cc17b3fc5fc6e3e7ee6ab2c23b7",
+    "reports/tabpfn_feature_diversified_ensemble_80_20/settings.json": "558d80c8100cde592b093f09a61f1f5c34fc3d0e9462a518b165fc56452221e5",
+    "reports/tabpfn_feature_diversified_ensemble_80_20/selection.json": "56b77baa971187168a28c4ced8769830e3ced1de1a2b1fbf41cc85863513f72f",
+    ".cache/tabpfn_fast_embedding_head/features_2022-09.joblib": "0708f513519ea1fd36a3f7a1037585e087a9aa273a5bf7c07b3f48a6186844ca",
+    "reports/tabpfn_fast_embedding_head_80_20/features_2022-09.json": "95c615b9ef05835314346e4c9e833e189a6ff92f5a7d9daafd746e1a5bb5bc7e",
+    ".cache/tabpfn_v3_features/calendar_inner_2023-07.joblib": "f93b6e7ed610ad1df01ae987ddb8fe260c9f5ab15d218aca406a08536f5518b6",
+    "reports/tabpfn_v3_5_fast_calendar_80_20/inner_features_2023-07.json": "a70512a492e4977cb62279ec6e24f2e711122555c35bad97d35b8c227b54e0a1",
+    "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2022-09_baseline.csv": "818f6c7fdeba711a36bc848c8de377846d619b6724991fd27fbaa070e2f03c38",
+    "reports/tabpfn_feature_diversified_ensemble_80_20/timing_2022-09_baseline.json": "2e75c9651788f109a9de8b9f3cdc33faf0b6a8fae28ff8886cf9182939e33ed9",
+    "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2022-09_temporal.csv": "2071e1be331ed7abcd068dc1229f4dba894546bb60c355437ce8ef39302f8240",
+    "reports/tabpfn_feature_diversified_ensemble_80_20/timing_2022-09_temporal.json": "c223fe7bc6d913cdfc1ee279ec00bbb2fb4ac6856150704bd1b84822b19da348",
+    "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2022-09_spatial.csv": "ba6896fb9b0d60a13c15899b4d42ac9d6fbc21d8c059a6ae54485fc3120efe94",
+    "reports/tabpfn_feature_diversified_ensemble_80_20/timing_2022-09_spatial.json": "33270fe338f95a10822c5377779e0e121f6715fc23b05e7d7518a8a84d72a8e2",
+    "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2022-09_standard6.csv": "b3b8688e7a0b817ee818fab45751d5d8e51ecd8b316f22a4b974c5009c7cb336",
+    "reports/tabpfn_feature_diversified_ensemble_80_20/timing_2022-09_standard6.json": "58d46f4e26e657629e4917f5e1ad794d42d1068473ea842f8667a263fa398451",
+    "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2023-07_baseline.csv": "95d38ccb1ade70caf2381c2d4ddfd2bcc38fca30edb6d0673181e26526454c5b",
+    "reports/tabpfn_feature_diversified_ensemble_80_20/timing_2023-07_baseline.json": "70c926426a5b7573e0691a17546c87f6b401d53422741fac56b2c66dc23e7614",
+    "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2023-07_temporal.csv": "20dbfe3fc9a2acacf7b2432a4f012e68f26df51d7df196a41c1b02360e871da2",
+    "reports/tabpfn_feature_diversified_ensemble_80_20/timing_2023-07_temporal.json": "19221e817b3a1e8373f99079e0f5a3952e286f032e92b346f332bbb535926633",
+    "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2023-07_spatial.csv": "5b074ff9633624e246838474d30721b5808fee15bc40d211a9b55498f8c84b25",
+    "reports/tabpfn_feature_diversified_ensemble_80_20/timing_2023-07_spatial.json": "d7bd9df5e652253bc67935d951288c2a2e7d351fee11bc54d81c505f6a436ebb",
+    "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2023-07_standard6.csv": "001386c420cd4b4ed62583c21bb3210d01d3aea491d2c0bc62157b9879bb4b11",
+    "reports/tabpfn_feature_diversified_ensemble_80_20/timing_2023-07_standard6.json": "8f4c2ee6f7f1cac78716587cd2761fa3f420f067498c16d607e78afe843b860f",
+    "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2024-06_baseline.csv": "bdb86d06a20514723e32e9341c4952099812c2398547cb3040d12d190b11a533",
+    "reports/tabpfn_feature_diversified_ensemble_80_20/timing_2024-06_baseline.json": "7956b19354542c5275fcb86aecfd07d7548e475185c2da87b3304b4dad72c788",
+    "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2024-06_temporal.csv": "b322b05927dedaae3f529dd2a53a2b6e07cd111f846eaf2b584230329caf50af",
+    "reports/tabpfn_feature_diversified_ensemble_80_20/timing_2024-06_temporal.json": "fd3e682ad0a107c097d0cd3dccb09faf69dad4be82d73158bcce389bac57b047",
+    "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2024-06_spatial.csv": "e9bd0ccd5ccde327e45fc9fc14ea040a8a84a2b70f06e1b775f1e2e95ae0186a",
+    "reports/tabpfn_feature_diversified_ensemble_80_20/timing_2024-06_spatial.json": "57ee8fb534ba8d5f805dd6b924f9777c49683460b7ddb2f7c51eb7e23ccf828e",
+    "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2024-06_standard6.csv": "802989574c94d071c3631a6de73e3e31add15a1de7acf64d53e9f0721b2822c4",
+    "reports/tabpfn_feature_diversified_ensemble_80_20/timing_2024-06_standard6.json": "495fc0a70a6dc1750d18714aa904efaa157342be09ebc2b22f136ad2cb10462a",
+    "reports/tabpfn_diagscale_mse_final_submission/submission_tabpfn_diagscale_mse_150k.csv": "5616125166abed5a353ab4d2f8a9788109a0b8078480ce622bbf8c7e8fb80500"
+  },
+  "code_sha256": {
+    "analysis/compare_tabpfn_temporal_view_ensembles.py": "e3d8b133248668b28863b92d71d588781ad153175257a6d48e84f51fe48818dd",
+    "analysis/experiments/temporal_feature_views.py": "f344680909fdca87be9da3214474f08f08c047eedbb89143e2fe9912b83efa99",
+    "analysis/experiments/origin_macro_views.py": "3f972e8dbdf6b6813cb56e58a97989504faa88994037c0b33a7d98bdc49ebba2",
+    "analysis/eda/economic_signals.py": "c5141f45a0704aed7edb7d6d920caa3fbe9b17ef8435e4201f80da7478e96390",
+    "analysis/compare_tabpfn_feature_ensemble.py": "835d540a9382c60190566feec70f4f6f911d036767bd4cee50f1bac0cb7e58af",
+    "analysis/compare_tabpfn_hierarchical_latent.py": "9a347137236cfaa42b1d3e0b026e03a68ca4cc17fbecac00d1edb526b40e6fea",
+    "analysis/experiments/feature_diversified_ensemble.py": "39457d27f1441dc9e55c96706c6fa764e679792fcb0d010a294def612b0cb812"
+  },
+  "packages": {
+    "numpy": "2.5.3",
+    "pandas": "2.3.3",
+    "torch": "2.11.0+cu128",
+    "tabpfn": "9.2.0",
+    "scipy": "1.18.1"
+  }
+}

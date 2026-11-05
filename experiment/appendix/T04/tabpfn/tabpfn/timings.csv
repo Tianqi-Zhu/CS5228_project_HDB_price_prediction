@@ -1,0 +1,10 @@
+validation_start,model,fit_predict_seconds,fit_seconds,predict_seconds,peak_vram_gib,model_path,checkpoint_sha256
+2023-01,catboost,49.212327699991874,,,,,
+2023-01,tabpfn_spatial,,5.774402500013821,38.92125339998165,7.169501781463623,C:\Users\auror\Code\CS5228_project_HDB_price_prediction\.cache\tabpfn\tabpfn-v3.5-20260909.safetensors,ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3
+2023-01,tabpfn_history,,5.758288399985759,39.48103809999884,7.181248188018799,C:\Users\auror\Code\CS5228_project_HDB_price_prediction\.cache\tabpfn\tabpfn-v3.5-20260909.safetensors,ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3
+2023-07,catboost,58.40766649998841,,,,,
+2023-07,tabpfn_spatial,,5.563857500004815,58.818825199996354,7.169448375701904,C:\Users\auror\Code\CS5228_project_HDB_price_prediction\.cache\tabpfn\tabpfn-v3.5-20260909.safetensors,ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3
+2023-07,tabpfn_history,,6.0589892999851145,60.403684800025076,7.181774616241455,C:\Users\auror\Code\CS5228_project_HDB_price_prediction\.cache\tabpfn\tabpfn-v3.5-20260909.safetensors,ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3
+2024-04,catboost,67.3274469000171,,,,,
+2024-04,tabpfn_spatial,,5.319927500007907,77.44464390000212,7.1699748039245605,C:\Users\auror\Code\CS5228_project_HDB_price_prediction\.cache\tabpfn\tabpfn-v3.5-20260909.safetensors,ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3
+2024-04,tabpfn_history,,5.843591800017748,78.016415399994,7.182301044464111,C:\Users\auror\Code\CS5228_project_HDB_price_prediction\.cache\tabpfn\tabpfn-v3.5-20260909.safetensors,ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3

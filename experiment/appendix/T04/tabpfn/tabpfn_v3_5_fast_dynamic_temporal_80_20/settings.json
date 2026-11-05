@@ -1,0 +1,41 @@
+{
+  "model_version": "v3.5-fast",
+  "n_estimators": 1,
+  "seed": 42,
+  "context_rows": 121005,
+  "subsampling": false,
+  "batch_size": 200,
+  "target": "residual around composition-adjusted dynamic baseline",
+  "checkpoint_sha256": "14e0b81285bca7a6d1ef121169f27f651f76dff49cad6c0b8779d5c836018550",
+  "source_sha256": {
+    "data/train.csv": "2fe38ce9e0d8a02e9786f066d4a10d575d91f34be1d9111f0142e3f43fbfc8a5",
+    "data/test.csv": "a2ec03a0afc07c251c72cc0de2e15ac965a3b06291b304aaac53a375115ff4e0",
+    "data/auxiliary/sg-hdb-block.csv": "2255ad61ba6895456a39aec81d12583796d717ef88fe102ee9de71b3796fc223",
+    "data/auxiliary/sg-mrt-stations.csv": "4757278b94c2d05627a941377d51de60882e3e1477de01758ef37070b716b889",
+    "data/auxiliary/sg-shopping-malls.csv": "cce36a0175433f768d209b74e2e5376aad16befe1ad4f1313da0b18ed6d91a3b",
+    "data/auxiliary/sg-schools.csv": "9bf28c6a2e5511c5cada178d221dfaac12beb3651425b3b86c37815e35de71cb",
+    "data/auxiliary/sg-coe-prices.csv": "c8f934ec6e82dad633afa34e466414fd7b572c580fa28dd6c866e76e4be533e0"
+  },
+  "source_aligned_artifact_sha256": "639f5d0a3cda8570b86f927c0e29b5d58c874d91976af590790c32cc62a481da",
+  "code_sha256": {
+    "analysis/compare_tabpfn_dynamic_temporal_80_20.py": "3bdc7a752eeb13a2caeb959588489fcec29ad1c0d89a2e39d6c8d2fb026857de",
+    "analysis/experiments/comprehensive_temporal.py": "08cd4d8dfd8c84d71977439d32a8603f57174f4f3adb86b46b4f79258e9b1fd6",
+    "analysis/experiments/aligned_temporal_features.py": "1f0b886ca3398dd7c681b0dc8c7b73092652323f148ad6bc40aa13ea1e20ba74",
+    "analysis/experiments/flat_type_economic_forecast.py": "12d46c32d7ee4bca38aa5ba89c219c6640d54d6750bccd6ffc5400406ea5faa7",
+    "analysis/compare_tabpfn_v3_5_fast_80_20.py": "baa7fffeae8895a9ea4914aca98e460ead281438b3e2a148b3cb2f00e99e9260",
+    "analysis/data.py": "fefdfd0c1cec930a993183e68d127be32821a7407118b27fcd1c2fbb9221f1b9"
+  },
+  "reference_predictions_sha256": {
+    "previous_best_residual": "7659ca9f1d754d87e2083b77c737b2a653fe2ed8fec8abb48fd03cd22da48b05",
+    "previous_aligned_features": "fce1707ccbc08cc1aedb4831b1d9d234a65e5110dd89cbe61f67c8fee54c8bfb",
+    "original_fast": "bc64ebc966b67ca0041fbd1dc857285779523c720aa015dbf12d30dfb61e20ff"
+  },
+  "versions": {
+    "tabpfn": "9.2.0",
+    "torch": "2.11.0+cu128",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.0"
+  },
+  "gpu": "NVIDIA GeForce RTX 4080"
+}

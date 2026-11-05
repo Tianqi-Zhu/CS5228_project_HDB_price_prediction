@@ -1,0 +1,261 @@
+{
+  "verified": true,
+  "feature_checks": [
+    {
+      "origin": "2022-09",
+      "member": "relative_history",
+      "split": "train",
+      "rows": 60079,
+      "columns": 77,
+      "original_surviving_columns_exact": true,
+      "targets_and_baselines_exact": true
+    },
+    {
+      "origin": "2022-09",
+      "member": "relative_history",
+      "split": "query",
+      "rows": 2000,
+      "columns": 77,
+      "original_surviving_columns_exact": true,
+      "targets_and_baselines_exact": true
+    },
+    {
+      "origin": "2022-09",
+      "member": "horizon_dynamics",
+      "split": "train",
+      "rows": 60079,
+      "columns": 83,
+      "original_surviving_columns_exact": true,
+      "targets_and_baselines_exact": true
+    },
+    {
+      "origin": "2022-09",
+      "member": "horizon_dynamics",
+      "split": "query",
+      "rows": 2000,
+      "columns": 83,
+      "original_surviving_columns_exact": true,
+      "targets_and_baselines_exact": true
+    },
+    {
+      "origin": "2022-09",
+      "member": "coe_origin",
+      "split": "train",
+      "rows": 60079,
+      "columns": 86,
+      "original_surviving_columns_exact": true,
+      "targets_and_baselines_exact": true
+    },
+    {
+      "origin": "2022-09",
+      "member": "coe_origin",
+      "split": "query",
+      "rows": 2000,
+      "columns": 86,
+      "original_surviving_columns_exact": true,
+      "targets_and_baselines_exact": true
+    },
+    {
+      "origin": "2022-09",
+      "member": "stocks_origin",
+      "split": "train",
+      "rows": 60079,
+      "columns": 83,
+      "original_surviving_columns_exact": true,
+      "targets_and_baselines_exact": true
+    },
+    {
+      "origin": "2022-09",
+      "member": "stocks_origin",
+      "split": "query",
+      "rows": 2000,
+      "columns": 83,
+      "original_surviving_columns_exact": true,
+      "targets_and_baselines_exact": true
+    },
+    {
+      "origin": "2023-07",
+      "member": "relative_history",
+      "split": "train",
+      "rows": 87937,
+      "columns": 77,
+      "original_surviving_columns_exact": true,
+      "targets_and_baselines_exact": true
+    },
+    {
+      "origin": "2023-07",
+      "member": "relative_history",
+      "split": "query",
+      "rows": 2000,
+      "columns": 77,
+      "original_surviving_columns_exact": true,
+      "targets_and_baselines_exact": true
+    },
+    {
+      "origin": "2023-07",
+      "member": "horizon_dynamics",
+      "split": "train",
+      "rows": 87937,
+      "columns": 83,
+      "original_surviving_columns_exact": true,
+      "targets_and_baselines_exact": true
+    },
+    {
+      "origin": "2023-07",
+      "member": "horizon_dynamics",
+      "split": "query",
+      "rows": 2000,
+      "columns": 83,
+      "original_surviving_columns_exact": true,
+      "targets_and_baselines_exact": true
+    },
+    {
+      "origin": "2023-07",
+      "member": "coe_origin",
+      "split": "train",
+      "rows": 87937,
+      "columns": 86,
+      "original_surviving_columns_exact": true,
+      "targets_and_baselines_exact": true
+    },
+    {
+      "origin": "2023-07",
+      "member": "coe_origin",
+      "split": "query",
+      "rows": 2000,
+      "columns": 86,
+      "original_surviving_columns_exact": true,
+      "targets_and_baselines_exact": true
+    },
+    {
+      "origin": "2023-07",
+      "member": "stocks_origin",
+      "split": "train",
+      "rows": 87937,
+      "columns": 83,
+      "original_surviving_columns_exact": true,
+      "targets_and_baselines_exact": true
+    },
+    {
+      "origin": "2023-07",
+      "member": "stocks_origin",
+      "split": "query",
+      "rows": 2000,
+      "columns": 83,
+      "original_surviving_columns_exact": true,
+      "targets_and_baselines_exact": true
+    },
+    {
+      "origin": "2024-06",
+      "member": "relative_history",
+      "split": "train",
+      "rows": 121005,
+      "columns": 77,
+      "original_surviving_columns_exact": true,
+      "targets_and_baselines_exact": true
+    },
+    {
+      "origin": "2024-06",
+      "member": "relative_history",
+      "split": "query",
+      "rows": 28995,
+      "columns": 77,
+      "original_surviving_columns_exact": true,
+      "targets_and_baselines_exact": true
+    },
+    {
+      "origin": "2024-06",
+      "member": "horizon_dynamics",
+      "split": "train",
+      "rows": 121005,
+      "columns": 83,
+      "original_surviving_columns_exact": true,
+      "targets_and_baselines_exact": true
+    },
+    {
+      "origin": "2024-06",
+      "member": "horizon_dynamics",
+      "split": "query",
+      "rows": 28995,
+      "columns": 83,
+      "original_surviving_columns_exact": true,
+      "targets_and_baselines_exact": true
+    },
+    {
+      "origin": "2024-06",
+      "member": "coe_origin",
+      "split": "train",
+      "rows": 121005,
+      "columns": 86,
+      "original_surviving_columns_exact": true,
+      "targets_and_baselines_exact": true
+    },
+    {
+      "origin": "2024-06",
+      "member": "coe_origin",
+      "split": "query",
+      "rows": 28995,
+      "columns": 86,
+      "original_surviving_columns_exact": true,
+      "targets_and_baselines_exact": true
+    },
+    {
+      "origin": "2024-06",
+      "member": "stocks_origin",
+      "split": "train",
+      "rows": 121005,
+      "columns": 83,
+      "original_surviving_columns_exact": true,
+      "targets_and_baselines_exact": true
+    },
+    {
+      "origin": "2024-06",
+      "member": "stocks_origin",
+      "split": "query",
+      "rows": 28995,
+      "columns": 83,
+      "original_surviving_columns_exact": true,
+      "targets_and_baselines_exact": true
+    }
+  ],
+  "weight_checks": [
+    {
+      "model": "dynamics_optimized",
+      "independent_slsqp_agrees": true,
+      "normalized_objective_difference": -3.3306690738754696e-16
+    },
+    {
+      "model": "macro_optimized",
+      "independent_slsqp_agrees": true,
+      "normalized_objective_difference": 1.1102230246251565e-16
+    },
+    {
+      "model": "all_optimized",
+      "independent_slsqp_agrees": true,
+      "normalized_objective_difference": -3.3306690738754696e-16
+    },
+    {
+      "model": "blend_relative_history",
+      "independent_slsqp_agrees": true,
+      "normalized_objective_difference": 0.0
+    },
+    {
+      "model": "blend_horizon_dynamics",
+      "independent_slsqp_agrees": true,
+      "normalized_objective_difference": -3.3306690738754696e-16
+    },
+    {
+      "model": "blend_coe_origin",
+      "independent_slsqp_agrees": true,
+      "normalized_objective_difference": -2.220446049250313e-16
+    },
+    {
+      "model": "blend_stocks_origin",
+      "independent_slsqp_agrees": true,
+      "normalized_objective_difference": 2.220446049250313e-16
+    }
+  ],
+  "independently_recomputed_metric_rows": 54,
+  "inherited_source_hashes_verified": true,
+  "unchanged_submission_hash_verified": true
+}

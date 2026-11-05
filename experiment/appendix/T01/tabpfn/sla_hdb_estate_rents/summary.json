@@ -1,0 +1,17 @@
+{
+  "source_name": "Singapore Land Authority, Computerised HDB Estates, updated 7 August 2023",
+  "source_url": "https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf",
+  "source_config_sha256": "8a22c0e9e2824b04a8778f5458155b3b75558db01b1cfbb2ddd2f636093eac98",
+  "rental_sha256": "2fe38ce9e0d8a02e9786f066d4a10d575d91f34be1d9111f0142e3f43fbfc8a5",
+  "block_sha256": "2255ad61ba6895456a39aec81d12583796d717ef88fe102ee9de71b3796fc223",
+  "named_estates_sampled": 27,
+  "listed_addresses": 243,
+  "matched_local_addresses": 170,
+  "addresses_with_rentals": 169,
+  "rental_rows_all": 2936,
+  "rental_rows_validation_window": 631,
+  "validation_month_type_cells_observed": 340,
+  "validation_cells_ge3_and_ge2_blocks": 60,
+  "validation_supported_cell_median_iqr_sgd": 250.0,
+  "validation_supported_cell_p90_iqr_sgd": 655.0000000000001
+}

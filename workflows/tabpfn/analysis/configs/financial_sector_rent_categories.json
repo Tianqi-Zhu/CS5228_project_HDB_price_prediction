@@ -1,0 +1,13 @@
+{
+  "dimensions": {"room_type": "FLAT_TYPE_CLEAN", "flat_model": "FLAT_MODEL_CLEAN"},
+  "reference_end": "2021-12",
+  "minimum_reference_rentals_per_month": 20,
+  "minimum_analysis_rentals_per_month": 20,
+  "growth_windows_months": [1, 3],
+  "primary_hypothesis": "Previous-month equal-weight DBS/OCBC/UOB returns versus monthly arithmetic mean-rent growth within each eligible room type. Raw means are primary; property-composition-adjusted means are sensitivity checks.",
+  "exploratory_scope": "Flat-model categories, individual financial stocks, broader finance baskets and 3/6-month delays. All category levels/counts are retained, including categories too sparse for inference.",
+  "eligibility": "A category must have at least 20 rentals in EACH of the twelve 2021 reference months. This rule uses no later rent outcomes. Later cells with fewer than 20 rentals remain disclosed but are masked before growth, regression and forecasting; missing months are never filled or bridged.",
+  "multiple_testing": "Primary BY correction across eligible room types and both rent targets for adjusted-close bank lag-1 full-control development regressions. Exploratory BY corrections span BOTH category dimensions, all eligible categories, stocks/baskets, lags, price fields and rent targets, separately for each control specification. Equality-test BY correction spans all basket/target/dimension tests.",
+  "forecast": "Reuse the national experiment's expanding Ridge alpha 10, same complete cases across models, minimum 12 mature monthly targets. Earlier January 2023-May 2024 forecasts select candidates. June 2024-March 2025 is reused validation, not an untouched test.",
+  "heterogeneity": "Compare full-control development slopes between categories using synchronized three-month block resampling, 2000 repeats, centered max-|t| omnibus tests and within-test simultaneous pairwise intervals. Different individual p-values do not establish different category slopes."
+}

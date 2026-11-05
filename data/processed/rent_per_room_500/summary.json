@@ -1,0 +1,12 @@
+{
+  "source": "data/train.csv",
+  "total_rows": 150000,
+  "room_count_rule": "Use the numeric flat-type label; e.g. 4-room is divided by 4",
+  "executive_room_count": null,
+  "minimum_rent_per_room_sgd_inclusive": 500.0,
+  "cleaned_rows": 123705,
+  "removed_below_500_rows": 18061,
+  "executive_unclassified_rows": 8234,
+  "executive_address_model_area_groups": 1867,
+  "equal_to_500_rows_retained": 5938
+}

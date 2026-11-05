@@ -1,0 +1,10 @@
+{
+  "fit_seconds": 29.267913799965754,
+  "predict_seconds": 115.28194810007699,
+  "peak_pytorch_vram_gib": 8.869318008422852,
+  "context_rows": 117560,
+  "validation_rows": 28995,
+  "n_estimators": 2,
+  "subsampling": false,
+  "prediction_sha256": "66dd988dbaf08a9f28e761e7cb827d598f99c061f81e6ec3ddf82d03d8bd7939"
+}

@@ -1,0 +1,773 @@
+{
+  "economic_features": false,
+  "origins": [
+    {
+      "origin": "2021-01",
+      "history_months": 1,
+      "last_available_rental_month": "2021-01",
+      "model_available": false
+    },
+    {
+      "origin": "2021-02",
+      "history_months": 2,
+      "last_available_rental_month": "2021-02",
+      "model_available": false
+    },
+    {
+      "origin": "2021-03",
+      "history_months": 3,
+      "last_available_rental_month": "2021-03",
+      "model_available": false
+    },
+    {
+      "origin": "2021-04",
+      "history_months": 4,
+      "last_available_rental_month": "2021-04",
+      "model_available": false
+    },
+    {
+      "origin": "2021-05",
+      "history_months": 5,
+      "last_available_rental_month": "2021-05",
+      "model_available": false
+    },
+    {
+      "origin": "2021-06",
+      "history_months": 6,
+      "last_available_rental_month": "2021-06",
+      "model_available": false
+    },
+    {
+      "origin": "2021-07",
+      "history_months": 7,
+      "last_available_rental_month": "2021-07",
+      "model_available": false
+    },
+    {
+      "origin": "2021-08",
+      "history_months": 8,
+      "last_available_rental_month": "2021-08",
+      "model_available": false
+    },
+    {
+      "origin": "2021-09",
+      "history_months": 9,
+      "last_available_rental_month": "2021-09",
+      "model_available": false
+    },
+    {
+      "origin": "2021-10",
+      "history_months": 10,
+      "last_available_rental_month": "2021-10",
+      "model_available": false
+    },
+    {
+      "origin": "2021-11",
+      "history_months": 11,
+      "last_available_rental_month": "2021-11",
+      "model_available": false
+    },
+    {
+      "origin": "2021-12",
+      "history_months": 12,
+      "last_available_rental_month": "2021-12",
+      "model_available": false
+    },
+    {
+      "origin": "2022-01",
+      "history_months": 13,
+      "last_available_rental_month": "2022-01",
+      "model_available": false
+    },
+    {
+      "origin": "2022-02",
+      "history_months": 14,
+      "last_available_rental_month": "2022-02",
+      "model_available": false
+    },
+    {
+      "origin": "2022-03",
+      "history_months": 15,
+      "last_available_rental_month": "2022-03",
+      "model_available": false
+    },
+    {
+      "origin": "2022-04",
+      "history_months": 16,
+      "last_available_rental_month": "2022-04",
+      "model_available": false
+    },
+    {
+      "origin": "2022-05",
+      "history_months": 17,
+      "last_available_rental_month": "2022-05",
+      "model_available": false
+    },
+    {
+      "origin": "2022-06",
+      "history_months": 18,
+      "last_available_rental_month": "2022-06",
+      "model_available": true,
+      "alpha": 1000.0,
+      "training_examples": 125,
+      "training_months": 18,
+      "last_target_month": "2022-06",
+      "last_feature_origin": "2022-05",
+      "tuning": []
+    },
+    {
+      "origin": "2022-07",
+      "history_months": 19,
+      "last_available_rental_month": "2022-07",
+      "model_available": true,
+      "alpha": 1000.0,
+      "training_examples": 160,
+      "training_months": 19,
+      "last_target_month": "2022-07",
+      "last_feature_origin": "2022-06",
+      "tuning": []
+    },
+    {
+      "origin": "2022-08",
+      "history_months": 20,
+      "last_available_rental_month": "2022-08",
+      "model_available": true,
+      "alpha": 1000.0,
+      "training_examples": 200,
+      "training_months": 20,
+      "last_target_month": "2022-08",
+      "last_feature_origin": "2022-07",
+      "tuning": []
+    },
+    {
+      "origin": "2022-09",
+      "history_months": 21,
+      "last_available_rental_month": "2022-09",
+      "model_available": true,
+      "alpha": 1000.0,
+      "training_examples": 254,
+      "training_months": 21,
+      "last_target_month": "2022-09",
+      "last_feature_origin": "2022-08",
+      "tuning": []
+    },
+    {
+      "origin": "2022-10",
+      "history_months": 22,
+      "last_available_rental_month": "2022-10",
+      "model_available": true,
+      "alpha": 1000.0,
+      "training_examples": 304,
+      "training_months": 22,
+      "last_target_month": "2022-10",
+      "last_feature_origin": "2022-09",
+      "tuning": []
+    },
+    {
+      "origin": "2022-11",
+      "history_months": 23,
+      "last_available_rental_month": "2022-11",
+      "model_available": true,
+      "alpha": 1000.0,
+      "training_examples": 370,
+      "training_months": 23,
+      "last_target_month": "2022-11",
+      "last_feature_origin": "2022-10",
+      "tuning": []
+    },
+    {
+      "origin": "2022-12",
+      "history_months": 24,
+      "last_available_rental_month": "2022-12",
+      "model_available": true,
+      "alpha": 100.0,
+      "training_examples": 430,
+      "training_months": 24,
+      "last_target_month": "2022-12",
+      "last_feature_origin": "2022-11",
+      "tuning": [
+        {
+          "alpha": 100.0,
+          "weighted_mean_rmse_sgd": 175.3751465743553
+        },
+        {
+          "alpha": 1000.0,
+          "weighted_mean_rmse_sgd": 236.7720131077216
+        },
+        {
+          "alpha": 10000.0,
+          "weighted_mean_rmse_sgd": 328.2557765887259
+        },
+        {
+          "alpha": 100000.0,
+          "weighted_mean_rmse_sgd": 362.01906312440894
+        },
+        {
+          "alpha": 1000000.0,
+          "weighted_mean_rmse_sgd": 366.37514100276326
+        }
+      ]
+    },
+    {
+      "origin": "2023-01",
+      "history_months": 25,
+      "last_available_rental_month": "2023-01",
+      "model_available": true,
+      "alpha": 100.0,
+      "training_examples": 508,
+      "training_months": 25,
+      "last_target_month": "2023-01",
+      "last_feature_origin": "2022-12",
+      "tuning": [
+        {
+          "alpha": 100.0,
+          "weighted_mean_rmse_sgd": 108.40224080353234
+        },
+        {
+          "alpha": 1000.0,
+          "weighted_mean_rmse_sgd": 163.18650397031925
+        },
+        {
+          "alpha": 10000.0,
+          "weighted_mean_rmse_sgd": 284.2904685455312
+        },
+        {
+          "alpha": 100000.0,
+          "weighted_mean_rmse_sgd": 341.60302403416335
+        },
+        {
+          "alpha": 1000000.0,
+          "weighted_mean_rmse_sgd": 349.5225451575376
+        }
+      ]
+    },
+    {
+      "origin": "2023-02",
+      "history_months": 26,
+      "last_available_rental_month": "2023-02",
+      "model_available": true,
+      "alpha": 100.0,
+      "training_examples": 592,
+      "training_months": 26,
+      "last_target_month": "2023-02",
+      "last_feature_origin": "2023-01",
+      "tuning": [
+        {
+          "alpha": 100.0,
+          "weighted_mean_rmse_sgd": 76.55669806631282
+        },
+        {
+          "alpha": 1000.0,
+          "weighted_mean_rmse_sgd": 106.32354056804716
+        },
+        {
+          "alpha": 10000.0,
+          "weighted_mean_rmse_sgd": 239.52342162576332
+        },
+        {
+          "alpha": 100000.0,
+          "weighted_mean_rmse_sgd": 321.3891436858319
+        },
+        {
+          "alpha": 1000000.0,
+          "weighted_mean_rmse_sgd": 333.6505900965463
+        }
+      ]
+    },
+    {
+      "origin": "2023-03",
+      "history_months": 27,
+      "last_available_rental_month": "2023-03",
+      "model_available": true,
+      "alpha": 100.0,
+      "training_examples": 682,
+      "training_months": 27,
+      "last_target_month": "2023-03",
+      "last_feature_origin": "2023-02",
+      "tuning": [
+        {
+          "alpha": 100.0,
+          "weighted_mean_rmse_sgd": 57.34501235773262
+        },
+        {
+          "alpha": 1000.0,
+          "weighted_mean_rmse_sgd": 65.58549330256298
+        },
+        {
+          "alpha": 10000.0,
+          "weighted_mean_rmse_sgd": 178.2115090635286
+        },
+        {
+          "alpha": 100000.0,
+          "weighted_mean_rmse_sgd": 283.05489563731146
+        },
+        {
+          "alpha": 1000000.0,
+          "weighted_mean_rmse_sgd": 300.1093950276565
+        }
+      ]
+    },
+    {
+      "origin": "2023-04",
+      "history_months": 28,
+      "last_available_rental_month": "2023-04",
+      "model_available": true,
+      "alpha": 100.0,
+      "training_examples": 778,
+      "training_months": 28,
+      "last_target_month": "2023-04",
+      "last_feature_origin": "2023-03",
+      "tuning": [
+        {
+          "alpha": 100.0,
+          "weighted_mean_rmse_sgd": 86.65632549400553
+        },
+        {
+          "alpha": 1000.0,
+          "weighted_mean_rmse_sgd": 105.80124251613063
+        },
+        {
+          "alpha": 10000.0,
+          "weighted_mean_rmse_sgd": 98.35024583394019
+        },
+        {
+          "alpha": 100000.0,
+          "weighted_mean_rmse_sgd": 232.12665922363
+        },
+        {
+          "alpha": 1000000.0,
+          "weighted_mean_rmse_sgd": 256.5894252543908
+        }
+      ]
+    },
+    {
+      "origin": "2023-05",
+      "history_months": 29,
+      "last_available_rental_month": "2023-05",
+      "model_available": true,
+      "alpha": 10000.0,
+      "training_examples": 863,
+      "training_months": 29,
+      "last_target_month": "2023-05",
+      "last_feature_origin": "2023-04",
+      "tuning": [
+        {
+          "alpha": 100.0,
+          "weighted_mean_rmse_sgd": 113.04358616526511
+        },
+        {
+          "alpha": 1000.0,
+          "weighted_mean_rmse_sgd": 158.01991792241648
+        },
+        {
+          "alpha": 10000.0,
+          "weighted_mean_rmse_sgd": 56.226278494527534
+        },
+        {
+          "alpha": 100000.0,
+          "weighted_mean_rmse_sgd": 177.8504131151887
+        },
+        {
+          "alpha": 1000000.0,
+          "weighted_mean_rmse_sgd": 208.81403595375116
+        }
+      ]
+    },
+    {
+      "origin": "2023-06",
+      "history_months": 30,
+      "last_available_rental_month": "2023-06",
+      "model_available": true,
+      "alpha": 100.0,
+      "training_examples": 965,
+      "training_months": 30,
+      "last_target_month": "2023-06",
+      "last_feature_origin": "2023-05",
+      "tuning": [
+        {
+          "alpha": 100.0,
+          "weighted_mean_rmse_sgd": 173.1692146500694
+        },
+        {
+          "alpha": 1000.0,
+          "weighted_mean_rmse_sgd": 235.5032331041635
+        },
+        {
+          "alpha": 10000.0,
+          "weighted_mean_rmse_sgd": 237.87713993178346
+        },
+        {
+          "alpha": 100000.0,
+          "weighted_mean_rmse_sgd": 258.87803254230465
+        },
+        {
+          "alpha": 1000000.0,
+          "weighted_mean_rmse_sgd": 271.9712232228448
+        }
+      ]
+    },
+    {
+      "origin": "2023-07",
+      "history_months": 31,
+      "last_available_rental_month": "2023-07",
+      "model_available": true,
+      "alpha": 100.0,
+      "training_examples": 1050,
+      "training_months": 31,
+      "last_target_month": "2023-07",
+      "last_feature_origin": "2023-06",
+      "tuning": [
+        {
+          "alpha": 100.0,
+          "weighted_mean_rmse_sgd": 128.3092077297165
+        },
+        {
+          "alpha": 1000.0,
+          "weighted_mean_rmse_sgd": 190.43354031488786
+        },
+        {
+          "alpha": 10000.0,
+          "weighted_mean_rmse_sgd": 211.19756766129
+        },
+        {
+          "alpha": 100000.0,
+          "weighted_mean_rmse_sgd": 240.89133965631422
+        },
+        {
+          "alpha": 1000000.0,
+          "weighted_mean_rmse_sgd": 256.51780829744496
+        }
+      ]
+    },
+    {
+      "origin": "2023-08",
+      "history_months": 32,
+      "last_available_rental_month": "2023-08",
+      "model_available": true,
+      "alpha": 100.0,
+      "training_examples": 1135,
+      "training_months": 32,
+      "last_target_month": "2023-08",
+      "last_feature_origin": "2023-07",
+      "tuning": [
+        {
+          "alpha": 100.0,
+          "weighted_mean_rmse_sgd": 130.3024767675656
+        },
+        {
+          "alpha": 1000.0,
+          "weighted_mean_rmse_sgd": 170.27820257879057
+        },
+        {
+          "alpha": 10000.0,
+          "weighted_mean_rmse_sgd": 193.0400917025861
+        },
+        {
+          "alpha": 100000.0,
+          "weighted_mean_rmse_sgd": 225.68327778106234
+        },
+        {
+          "alpha": 1000000.0,
+          "weighted_mean_rmse_sgd": 242.6954616616813
+        }
+      ]
+    },
+    {
+      "origin": "2023-09",
+      "history_months": 33,
+      "last_available_rental_month": "2023-09",
+      "model_available": true,
+      "alpha": 100.0,
+      "training_examples": 1220,
+      "training_months": 33,
+      "last_target_month": "2023-09",
+      "last_feature_origin": "2023-08",
+      "tuning": [
+        {
+          "alpha": 100.0,
+          "weighted_mean_rmse_sgd": 123.33417694374826
+        },
+        {
+          "alpha": 1000.0,
+          "weighted_mean_rmse_sgd": 133.4494727620789
+        },
+        {
+          "alpha": 10000.0,
+          "weighted_mean_rmse_sgd": 145.99774552824616
+        },
+        {
+          "alpha": 100000.0,
+          "weighted_mean_rmse_sgd": 203.78653449840309
+        },
+        {
+          "alpha": 1000000.0,
+          "weighted_mean_rmse_sgd": 224.23424736327502
+        }
+      ]
+    },
+    {
+      "origin": "2023-10",
+      "history_months": 34,
+      "last_available_rental_month": "2023-10",
+      "model_available": true,
+      "alpha": 10000.0,
+      "training_examples": 1322,
+      "training_months": 34,
+      "last_target_month": "2023-10",
+      "last_feature_origin": "2023-09",
+      "tuning": [
+        {
+          "alpha": 100.0,
+          "weighted_mean_rmse_sgd": 159.8047010721946
+        },
+        {
+          "alpha": 1000.0,
+          "weighted_mean_rmse_sgd": 162.1218190652046
+        },
+        {
+          "alpha": 10000.0,
+          "weighted_mean_rmse_sgd": 115.59970269272802
+        },
+        {
+          "alpha": 100000.0,
+          "weighted_mean_rmse_sgd": 167.56366385253378
+        },
+        {
+          "alpha": 1000000.0,
+          "weighted_mean_rmse_sgd": 191.94572680267368
+        }
+      ]
+    },
+    {
+      "origin": "2023-11",
+      "history_months": 35,
+      "last_available_rental_month": "2023-11",
+      "model_available": true,
+      "alpha": 10000.0,
+      "training_examples": 1407,
+      "training_months": 35,
+      "last_target_month": "2023-11",
+      "last_feature_origin": "2023-10",
+      "tuning": [
+        {
+          "alpha": 100.0,
+          "weighted_mean_rmse_sgd": 186.87015885147355
+        },
+        {
+          "alpha": 1000.0,
+          "weighted_mean_rmse_sgd": 192.64765711080975
+        },
+        {
+          "alpha": 10000.0,
+          "weighted_mean_rmse_sgd": 105.09853374174035
+        },
+        {
+          "alpha": 100000.0,
+          "weighted_mean_rmse_sgd": 129.4394659065011
+        },
+        {
+          "alpha": 1000000.0,
+          "weighted_mean_rmse_sgd": 157.81983730819198
+        }
+      ]
+    },
+    {
+      "origin": "2023-12",
+      "history_months": 36,
+      "last_available_rental_month": "2023-12",
+      "model_available": true,
+      "alpha": 100000.0,
+      "training_examples": 1509,
+      "training_months": 36,
+      "last_target_month": "2023-12",
+      "last_feature_origin": "2023-11",
+      "tuning": [
+        {
+          "alpha": 100.0,
+          "weighted_mean_rmse_sgd": 228.54666704823742
+        },
+        {
+          "alpha": 1000.0,
+          "weighted_mean_rmse_sgd": 247.05604895525198
+        },
+        {
+          "alpha": 10000.0,
+          "weighted_mean_rmse_sgd": 148.2524789886879
+        },
+        {
+          "alpha": 100000.0,
+          "weighted_mean_rmse_sgd": 85.29033649427492
+        },
+        {
+          "alpha": 1000000.0,
+          "weighted_mean_rmse_sgd": 113.55709902110088
+        }
+      ]
+    },
+    {
+      "origin": "2024-01",
+      "history_months": 37,
+      "last_available_rental_month": "2024-01",
+      "model_available": true,
+      "alpha": 100000.0,
+      "training_examples": 1594,
+      "training_months": 37,
+      "last_target_month": "2024-01",
+      "last_feature_origin": "2023-12",
+      "tuning": [
+        {
+          "alpha": 100.0,
+          "weighted_mean_rmse_sgd": 248.31121263272618
+        },
+        {
+          "alpha": 1000.0,
+          "weighted_mean_rmse_sgd": 261.8136786868473
+        },
+        {
+          "alpha": 10000.0,
+          "weighted_mean_rmse_sgd": 179.71178974772295
+        },
+        {
+          "alpha": 100000.0,
+          "weighted_mean_rmse_sgd": 87.07285517446142
+        },
+        {
+          "alpha": 1000000.0,
+          "weighted_mean_rmse_sgd": 102.20527327618021
+        }
+      ]
+    },
+    {
+      "origin": "2024-02",
+      "history_months": 38,
+      "last_available_rental_month": "2024-02",
+      "model_available": true,
+      "alpha": 100000.0,
+      "training_examples": 1696,
+      "training_months": 38,
+      "last_target_month": "2024-02",
+      "last_feature_origin": "2024-01",
+      "tuning": [
+        {
+          "alpha": 100.0,
+          "weighted_mean_rmse_sgd": 252.95338605436163
+        },
+        {
+          "alpha": 1000.0,
+          "weighted_mean_rmse_sgd": 265.19900237629594
+        },
+        {
+          "alpha": 10000.0,
+          "weighted_mean_rmse_sgd": 189.41066811992437
+        },
+        {
+          "alpha": 100000.0,
+          "weighted_mean_rmse_sgd": 82.26348765897119
+        },
+        {
+          "alpha": 1000000.0,
+          "weighted_mean_rmse_sgd": 89.63188769864396
+        }
+      ]
+    },
+    {
+      "origin": "2024-03",
+      "history_months": 39,
+      "last_available_rental_month": "2024-03",
+      "model_available": true,
+      "alpha": 100000.0,
+      "training_examples": 1798,
+      "training_months": 39,
+      "last_target_month": "2024-03",
+      "last_feature_origin": "2024-02",
+      "tuning": [
+        {
+          "alpha": 100.0,
+          "weighted_mean_rmse_sgd": 240.34828445170606
+        },
+        {
+          "alpha": 1000.0,
+          "weighted_mean_rmse_sgd": 244.33763770353366
+        },
+        {
+          "alpha": 10000.0,
+          "weighted_mean_rmse_sgd": 161.65513529213504
+        },
+        {
+          "alpha": 100000.0,
+          "weighted_mean_rmse_sgd": 73.08213706125349
+        },
+        {
+          "alpha": 1000000.0,
+          "weighted_mean_rmse_sgd": 84.8188271735343
+        }
+      ]
+    },
+    {
+      "origin": "2024-04",
+      "history_months": 40,
+      "last_available_rental_month": "2024-04",
+      "model_available": true,
+      "alpha": 100000.0,
+      "training_examples": 1900,
+      "training_months": 40,
+      "last_target_month": "2024-04",
+      "last_feature_origin": "2024-03",
+      "tuning": [
+        {
+          "alpha": 100.0,
+          "weighted_mean_rmse_sgd": 252.33874006073336
+        },
+        {
+          "alpha": 1000.0,
+          "weighted_mean_rmse_sgd": 247.59739103583522
+        },
+        {
+          "alpha": 10000.0,
+          "weighted_mean_rmse_sgd": 147.94007891928234
+        },
+        {
+          "alpha": 100000.0,
+          "weighted_mean_rmse_sgd": 53.533447001489385
+        },
+        {
+          "alpha": 1000000.0,
+          "weighted_mean_rmse_sgd": 71.8452267694695
+        }
+      ]
+    },
+    {
+      "origin": "2024-05",
+      "history_months": 41,
+      "last_available_rental_month": "2024-05",
+      "model_available": true,
+      "alpha": 100000.0,
+      "training_examples": 1985,
+      "training_months": 41,
+      "last_target_month": "2024-05",
+      "last_feature_origin": "2024-04",
+      "tuning": [
+        {
+          "alpha": 100.0,
+          "weighted_mean_rmse_sgd": 266.1508078057116
+        },
+        {
+          "alpha": 1000.0,
+          "weighted_mean_rmse_sgd": 254.48673618162996
+        },
+        {
+          "alpha": 10000.0,
+          "weighted_mean_rmse_sgd": 146.25745125206512
+        },
+        {
+          "alpha": 100000.0,
+          "weighted_mean_rmse_sgd": 46.731281973407654
+        },
+        {
+          "alpha": 1000000.0,
+          "weighted_mean_rmse_sgd": 63.18748650902209
+        }
+      ]
+    }
+  ]
+}

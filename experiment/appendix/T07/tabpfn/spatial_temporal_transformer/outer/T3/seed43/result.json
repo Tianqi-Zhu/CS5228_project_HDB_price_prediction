@@ -1,0 +1,21 @@
+{
+  "run": "outer/T3/seed43",
+  "variant": "T3",
+  "seed": 43,
+  "best_epoch": 5,
+  "epochs_run": 5,
+  "weighted_rmse_sgd": 467.06770500678454,
+  "rmse_sgd": 467.06770500678454,
+  "mae_sgd": 332.2459988532409,
+  "bias_sgd": 72.60330530259326,
+  "rows": 28995,
+  "parameters": 1739331,
+  "sequence_gate": 0.10152389854192734,
+  "seconds": 42.91203190002125,
+  "peak_allocated_vram_gib": 0.30460309982299805,
+  "checkpoint_replay_max_difference": 0.0,
+  "checkpoint_sha256": "8568a9bcd1f6af43571f9852cb4f63b62089851b55c6a5881e51091c928789c7",
+  "predictions_sha256": "b83104fec1d4d697b247ec2652e46a3fdb784dd41c846b1be62ab4d52305443f",
+  "preprocessors_sha256": "7d5b91813c76f42f4b97847cdf6753254f4441876d74d3cd4733be6bef8e87d1",
+  "outer_labels_used_for_selection": false
+}

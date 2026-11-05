@@ -1,0 +1,7 @@
+target,scenario,check,model,outer_rmse_sgd
+adjusted_mean_rent,rolling,seed43,lstm__rent_coe__w6,46.840273516491635
+adjusted_mean_rent,rolling,seed44,lstm__rent_coe__w6,35.8294740644219
+adjusted_mean_rent,rolling,extra_month_delay,lstm__rent_coe__w6,53.18878183365561
+adjusted_mean_rent,fixed_origin,seed43,lstm__rent_coe__w12,24.3334461090926
+adjusted_mean_rent,fixed_origin,seed44,lstm__rent_coe__w12,33.30187282461779
+adjusted_mean_rent,fixed_origin,extra_month_delay,lstm__rent_coe__w12,49.11790601776431

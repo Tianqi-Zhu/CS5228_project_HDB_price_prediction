@@ -1,0 +1,10 @@
+{
+  "adapter_sha256": "90e1d85f781051550570a2cb41bcba13e0cd9cb20350f4cf4c90d8e4848003d8",
+  "features_sha256": "b7d5de3b3bb7b75a689cdb30408f3d4fd26da948cd46dc82c8896b1008bbad1c",
+  "checkpoint_sha256": "14e0b81285bca7a6d1ef121169f27f651f76dff49cad6c0b8779d5c836018550",
+  "context_ids_sha256": "91429acb076e790b2eb5c752c44f90c6653ad178fbfa80017475fd71d56241fb",
+  "test_ids_sha256": "33236cc6bd19fa6b89e06d441d3fcd8eb37dc8540f6a4f2b627b20af10894a41",
+  "batch_size": 200,
+  "inference_views": 1,
+  "context_rows": 150000
+}

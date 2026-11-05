@@ -1,0 +1,24 @@
+{
+  "sources_sha256": {
+    "C:\\Users\\auror\\Code\\CS5228_project_HDB_price_prediction\\analysis\\run_transformer_gaussian_nll.py": "6ab00c736167a1f60b47608b05200a30e2d04d48aa3ef720a2f8ae4d77738bdc",
+    "C:\\Users\\auror\\Code\\CS5228_project_HDB_price_prediction\\analysis\\experiments\\spatial_temporal_transformer.py": "1f15e0e50fef5709ff6f1587da70f91ad20ff72c01f9ed16be4bd0e969677656",
+    "C:\\Users\\auror\\Code\\CS5228_project_HDB_price_prediction\\.cache\\spatial_temporal_transformer\\prepared.joblib": "683987abe171fabd9e26d29a6b4e8c39205a8eed7f18297a99d20b444cdfdf9c"
+  },
+  "designs": [
+    "gaussian"
+  ],
+  "variance_clamp": [
+    -4.0,
+    4.0
+  ],
+  "variance_penalty": 0.001,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "selection_folds": [
+    "early_2022",
+    "early_2023"
+  ]
+}

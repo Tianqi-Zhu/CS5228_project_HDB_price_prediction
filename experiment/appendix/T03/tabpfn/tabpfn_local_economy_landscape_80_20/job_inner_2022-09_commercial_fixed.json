@@ -1,0 +1,16 @@
+{
+  "stage": "inner_2022-09",
+  "name": "commercial_fixed",
+  "added_columns": [
+    "FOOD_COUNT_300M",
+    "FOOD_COUNT_500M",
+    "FOOD_COUNT_1000M",
+    "MALL_COUNT_300M"
+  ],
+  "context_ids_sha256": "b3a244196866edb52b7bdfd4fb857e9367a890478cf4cc0965dcea57345da797",
+  "query_ids_sha256": "4d5b7b8296608a43bdeedff352dd70e3cd13051caee492ead96eb3b8acd1da73",
+  "prepared_sha256": "6824cffb93e47efd97abd2050fd4b4fcaf04f8cbf40d0a4bcd0ccdd0fa4b3a5e",
+  "code_sha256": "192eaf9a05c1ebf672fa1c38aaa23797a2ccd0300ba83d495a872c4b6f726b47",
+  "checkpoint_sha256": "14e0b81285bca7a6d1ef121169f27f651f76dff49cad6c0b8779d5c836018550",
+  "smoke": false
+}

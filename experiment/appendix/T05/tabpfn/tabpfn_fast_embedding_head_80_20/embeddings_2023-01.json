@@ -1,0 +1,14 @@
+{
+  "artifact": ".cache/tabpfn_fast_embedding_head/embeddings_2023-01.npz",
+  "sha256": "51384bf824282b845d8ebdfc0eadc5f2612d4355f1119c33cf14baf7e3451411",
+  "rows": 2000,
+  "width": 1024,
+  "context_rows": 70183,
+  "fit_seconds": 6.931387000018731,
+  "total_seconds": 13.572649599984288,
+  "peak_vram_gib": 6.9045090675354,
+  "n_estimators": 1,
+  "subsampled": false,
+  "backbone_frozen": true,
+  "saved_prediction_replay": false
+}

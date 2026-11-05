@@ -1,0 +1,222 @@
+{
+  "verified": true,
+  "checks": [
+    {
+      "origin": "2022-09",
+      "split": "train",
+      "member": "coe_origin",
+      "feature_origin": "2021-01",
+      "latest_market_month": "2020-12",
+      "rows": 20,
+      "unavailable_market_poisoning_no_effect": true
+    },
+    {
+      "origin": "2022-09",
+      "split": "train",
+      "member": "coe_origin",
+      "feature_origin": "2021-07",
+      "latest_market_month": "2021-06",
+      "rows": 20,
+      "unavailable_market_poisoning_no_effect": true
+    },
+    {
+      "origin": "2022-09",
+      "split": "train",
+      "member": "coe_origin",
+      "feature_origin": "2022-01",
+      "latest_market_month": "2021-12",
+      "rows": 20,
+      "unavailable_market_poisoning_no_effect": true
+    },
+    {
+      "origin": "2022-09",
+      "split": "query",
+      "member": "coe_origin",
+      "feature_origin": "2022-08",
+      "latest_market_month": "2022-07",
+      "rows": 20,
+      "unavailable_market_poisoning_no_effect": true
+    },
+    {
+      "origin": "2022-09",
+      "split": "train",
+      "member": "stocks_origin",
+      "feature_origin": "2021-01",
+      "latest_market_month": "2020-12",
+      "rows": 20,
+      "unavailable_market_poisoning_no_effect": true
+    },
+    {
+      "origin": "2022-09",
+      "split": "train",
+      "member": "stocks_origin",
+      "feature_origin": "2021-07",
+      "latest_market_month": "2021-06",
+      "rows": 20,
+      "unavailable_market_poisoning_no_effect": true
+    },
+    {
+      "origin": "2022-09",
+      "split": "train",
+      "member": "stocks_origin",
+      "feature_origin": "2022-01",
+      "latest_market_month": "2021-12",
+      "rows": 20,
+      "unavailable_market_poisoning_no_effect": true
+    },
+    {
+      "origin": "2022-09",
+      "split": "query",
+      "member": "stocks_origin",
+      "feature_origin": "2022-08",
+      "latest_market_month": "2022-07",
+      "rows": 20,
+      "unavailable_market_poisoning_no_effect": true
+    },
+    {
+      "origin": "2023-07",
+      "split": "train",
+      "member": "coe_origin",
+      "feature_origin": "2021-01",
+      "latest_market_month": "2020-12",
+      "rows": 20,
+      "unavailable_market_poisoning_no_effect": true
+    },
+    {
+      "origin": "2023-07",
+      "split": "train",
+      "member": "coe_origin",
+      "feature_origin": "2021-10",
+      "latest_market_month": "2021-09",
+      "rows": 20,
+      "unavailable_market_poisoning_no_effect": true
+    },
+    {
+      "origin": "2023-07",
+      "split": "train",
+      "member": "coe_origin",
+      "feature_origin": "2022-07",
+      "latest_market_month": "2022-06",
+      "rows": 20,
+      "unavailable_market_poisoning_no_effect": true
+    },
+    {
+      "origin": "2023-07",
+      "split": "query",
+      "member": "coe_origin",
+      "feature_origin": "2023-06",
+      "latest_market_month": "2023-05",
+      "rows": 20,
+      "unavailable_market_poisoning_no_effect": true
+    },
+    {
+      "origin": "2023-07",
+      "split": "train",
+      "member": "stocks_origin",
+      "feature_origin": "2021-01",
+      "latest_market_month": "2020-12",
+      "rows": 20,
+      "unavailable_market_poisoning_no_effect": true
+    },
+    {
+      "origin": "2023-07",
+      "split": "train",
+      "member": "stocks_origin",
+      "feature_origin": "2021-10",
+      "latest_market_month": "2021-09",
+      "rows": 20,
+      "unavailable_market_poisoning_no_effect": true
+    },
+    {
+      "origin": "2023-07",
+      "split": "train",
+      "member": "stocks_origin",
+      "feature_origin": "2022-07",
+      "latest_market_month": "2022-06",
+      "rows": 20,
+      "unavailable_market_poisoning_no_effect": true
+    },
+    {
+      "origin": "2023-07",
+      "split": "query",
+      "member": "stocks_origin",
+      "feature_origin": "2023-06",
+      "latest_market_month": "2023-05",
+      "rows": 20,
+      "unavailable_market_poisoning_no_effect": true
+    },
+    {
+      "origin": "2024-06",
+      "split": "train",
+      "member": "coe_origin",
+      "feature_origin": "2021-01",
+      "latest_market_month": "2020-12",
+      "rows": 20,
+      "unavailable_market_poisoning_no_effect": true
+    },
+    {
+      "origin": "2024-06",
+      "split": "train",
+      "member": "coe_origin",
+      "feature_origin": "2022-02",
+      "latest_market_month": "2022-01",
+      "rows": 20,
+      "unavailable_market_poisoning_no_effect": true
+    },
+    {
+      "origin": "2024-06",
+      "split": "train",
+      "member": "coe_origin",
+      "feature_origin": "2023-03",
+      "latest_market_month": "2023-02",
+      "rows": 20,
+      "unavailable_market_poisoning_no_effect": true
+    },
+    {
+      "origin": "2024-06",
+      "split": "query",
+      "member": "coe_origin",
+      "feature_origin": "2024-05",
+      "latest_market_month": "2024-04",
+      "rows": 20,
+      "unavailable_market_poisoning_no_effect": true
+    },
+    {
+      "origin": "2024-06",
+      "split": "train",
+      "member": "stocks_origin",
+      "feature_origin": "2021-01",
+      "latest_market_month": "2020-12",
+      "rows": 20,
+      "unavailable_market_poisoning_no_effect": true
+    },
+    {
+      "origin": "2024-06",
+      "split": "train",
+      "member": "stocks_origin",
+      "feature_origin": "2022-02",
+      "latest_market_month": "2022-01",
+      "rows": 20,
+      "unavailable_market_poisoning_no_effect": true
+    },
+    {
+      "origin": "2024-06",
+      "split": "train",
+      "member": "stocks_origin",
+      "feature_origin": "2023-03",
+      "latest_market_month": "2023-02",
+      "rows": 20,
+      "unavailable_market_poisoning_no_effect": true
+    },
+    {
+      "origin": "2024-06",
+      "split": "query",
+      "member": "stocks_origin",
+      "feature_origin": "2024-05",
+      "latest_market_month": "2024-04",
+      "rows": 20,
+      "unavailable_market_poisoning_no_effect": true
+    }
+  ],
+  "raw_query_targets_never_accepted": true
+}

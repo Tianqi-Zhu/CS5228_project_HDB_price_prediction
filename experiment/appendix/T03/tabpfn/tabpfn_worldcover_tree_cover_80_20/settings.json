@@ -1,0 +1,34 @@
+{
+  "config_sha256": "3343c62cd9cf6da0fb42eee012870dbf242071f32f486f5836f9134fd6a1abdc",
+  "parent_prepared_sha256": "6824cffb93e47efd97abd2050fd4b4fcaf04f8cbf40d0a4bcd0ccdd0fa4b3a5e",
+  "extraction_manifest_sha256": "351134c2de3d02b332f095ff0c0fb990d1baa87f1c89b675cd236fa88e537f8f",
+  "links_sha256": "303444f287ae7abef034ce596935f4eea2c48cb5b65d2262f958d1e77f9b9af7",
+  "code_sha256": {
+    "analysis\\compare_worldcover_tree_cover.py": "0747c46a93f52a4d572993953c9212db6cc38e4502d4a77814d14b1f38c0ca56",
+    "analysis\\experiments\\worldcover_tree_cover.py": "6c8275bb367a49ddb95278ac9e1b5f13f062d64db0ce22a239269e3ca3619e69"
+  },
+  "variants": {
+    "baseline": [],
+    "tree_100m": [
+      "TREE_CLASS_FRACTION_100M",
+      "TREE_COVER_UNAVAILABLE"
+    ],
+    "tree_300m": [
+      "TREE_CLASS_FRACTION_300M",
+      "TREE_COVER_UNAVAILABLE"
+    ],
+    "tree_100m_300m": [
+      "TREE_CLASS_FRACTION_100M",
+      "TREE_CLASS_FRACTION_300M",
+      "TREE_COVER_UNAVAILABLE"
+    ]
+  },
+  "policy": "Latest published product at original pseudo-origin; conservative next-month availability; class 10 only",
+  "packages": {
+    "rasterio": "1.4.4",
+    "pyproj": "3.7.2",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "tabpfn": "9.2.0"
+  }
+}

@@ -1,0 +1,15 @@
+# TabPFN-3.5 Plus: full-data77-feature Kaggle submission
+
+Upload [submission_tabpfn_api.csv](submission_tabpfn_api.csv):50,000 rows, exactly `Id,Predicted`, in the supplied test/sample order. Every prediction is finite and positive.
+
+The managed Prior Labs API fits on all150,000 supplied labelled rows with the original77 features and nine explicit categorical columns. It uses `model_path="v3.5_default"`, eight internal estimators, seed42, `fit_mode="fit_preprocessors"`, mean regression predictions and `SUBSAMPLE_SAMPLES=None`. The official [model-selector documentation](https://docs.priorlabs.ai/models/selecting-model-version) identifies this hosted selector as TabPFN-3.5 Plus. Thinking is disabled, and no local DiagScale adapter is transferred. API fitting conditions the pretrained model on the data; it is not a new neural-weight fine-tuning run.
+
+All200,000 feature rows were compared with the original saved full-data bundle, checking exact numeric values, category values/codes/order, intentional missingness and transaction IDs. The portable Parquet inputs bridge the project pandas3 environment and the API client's pandas2 environment without changing values. Only training features/residual labels and query features are supplied to the service. The target remains raw rent minus the original training temporal baseline; each returned residual receives the original query baseline once.
+
+The existing forecasting policy is preserved. March2025 test histories endFebruary2025; later test histories endMarch2025. All supplied labels remain in the requested context. There are18,077 test rows beyond the validated ten-month local forecast range, with maximum horizon16; the inherited baseline forecast plateaus at horizon10 while actual month, horizon and history age remain accurate.
+
+The service quote was103,136 quota_v3 units, within the recorded account allowance. quote.json,usage_before.json,usage_after.json,server_settings.json andserver_timings.json record metering and execution. Settings,source hashes,input_audit.json andverification.json record provenance; saved fit and completed inference references are under.cache/tabpfn_api_77/submission_v3.5_plus_77_150k/. Credentials are not included in reports.
+
+All50,000 output IDs and values were reloaded and checked against the complete cached predictions and supplied sample. Prediction range: S$1,493.85–S$6,172.52; mean S$3,202.97. All original submissions are unchanged. The test set has no rent labels, so test RMSE is unavailable. This eight-estimator full-data configuration has no newly measured validation score; previous one-estimator validation scores must not be assigned to it. The CSV has been prepared locally and has not been uploaded to Kaggle.
+
+Reproduce/resume using the dedicated API environment: `.cache/tabpfn_api_env/Scripts/python.exe analysis/tabpfn_api_77.py --stage run --split submission --model v3.5_default --n-estimators 8 --run-name submission_v3.5_plus_77_150k`. In this environment, unset the stale HTTP_PROXY/HTTPS_PROXY/ALL_PROXY variables for that process. Audit with `.venv/Scripts/python.exe analysis/audit_tabpfn_plus_submission.py --stage final`.

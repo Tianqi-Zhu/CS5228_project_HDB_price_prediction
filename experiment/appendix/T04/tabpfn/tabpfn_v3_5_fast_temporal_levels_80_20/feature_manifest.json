@@ -1,0 +1,16 @@
+{
+  "artifact": ".cache/tabpfn_v3_features/holdout_80_20_2024-06_temporal_levels.joblib",
+  "sha256": "e417a79b0b3f984e4bdc9f5663f6c058fa61b16be882a567480d09e083f5c44b",
+  "source_enriched_bundle_sha256": "c9a6040602b2b39dcf0b72264594df446ec9f7f07b0f4b03bf1e8276ac17df18",
+  "feature_count": 74,
+  "added_features": [
+    "TEMP_FLAT_RECENT3_MEAN",
+    "TEMP_FLAT_RECENT12_MEAN",
+    "TEMP_FLAT_DAMPED_FORECAST",
+    "TEMP_FORECAST_HORIZON",
+    "TEMP_FLAT_HISTORY_COUNT_3M",
+    "TEMP_FLAT_LAST_OBSERVATION_AGE"
+  ],
+  "context_rows": 121005,
+  "validation_rows": 28995
+}

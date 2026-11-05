@@ -1,0 +1,107 @@
+{
+  "selected": "integer_cb68_fitted",
+  "primary_ensemble": "integer_cb68_fitted",
+  "weights": [
+    {
+      "model": "integer_cb68_equal",
+      "tabpfn": "integer",
+      "catboost": "cb68",
+      "weight_tabpfn": 0.5,
+      "weight_catboost": 0.5,
+      "weight_mode": "equal"
+    },
+    {
+      "model": "integer_cb77raw_equal",
+      "tabpfn": "integer",
+      "catboost": "cb77raw",
+      "weight_tabpfn": 0.5,
+      "weight_catboost": 0.5,
+      "weight_mode": "equal"
+    },
+    {
+      "model": "integer_cb77residual_equal",
+      "tabpfn": "integer",
+      "catboost": "cb77residual",
+      "weight_tabpfn": 0.5,
+      "weight_catboost": 0.5,
+      "weight_mode": "equal"
+    },
+    {
+      "model": "categorical_cb68_equal",
+      "tabpfn": "categorical",
+      "catboost": "cb68",
+      "weight_tabpfn": 0.5,
+      "weight_catboost": 0.5,
+      "weight_mode": "equal"
+    },
+    {
+      "model": "categorical_cb77raw_equal",
+      "tabpfn": "categorical",
+      "catboost": "cb77raw",
+      "weight_tabpfn": 0.5,
+      "weight_catboost": 0.5,
+      "weight_mode": "equal"
+    },
+    {
+      "model": "categorical_cb77residual_equal",
+      "tabpfn": "categorical",
+      "catboost": "cb77residual",
+      "weight_tabpfn": 0.5,
+      "weight_catboost": 0.5,
+      "weight_mode": "equal"
+    },
+    {
+      "model": "integer_cb68_fitted",
+      "tabpfn": "integer",
+      "catboost": "cb68",
+      "weight_tabpfn": 0.6630283457516614,
+      "weight_catboost": 0.33697165424833864,
+      "weight_mode": "fitted"
+    },
+    {
+      "model": "integer_cb77raw_fitted",
+      "tabpfn": "integer",
+      "catboost": "cb77raw",
+      "weight_tabpfn": 0.5913127949785978,
+      "weight_catboost": 0.4086872050214022,
+      "weight_mode": "fitted"
+    },
+    {
+      "model": "integer_cb77residual_fitted",
+      "tabpfn": "integer",
+      "catboost": "cb77residual",
+      "weight_tabpfn": 0.7198356117231511,
+      "weight_catboost": 0.28016438827684886,
+      "weight_mode": "fitted"
+    },
+    {
+      "model": "categorical_cb68_fitted",
+      "tabpfn": "categorical",
+      "catboost": "cb68",
+      "weight_tabpfn": 0.7218463574570316,
+      "weight_catboost": 0.27815364254296837,
+      "weight_mode": "fitted"
+    },
+    {
+      "model": "categorical_cb77raw_fitted",
+      "tabpfn": "categorical",
+      "catboost": "cb77raw",
+      "weight_tabpfn": 0.6749806888003552,
+      "weight_catboost": 0.3250193111996448,
+      "weight_mode": "fitted"
+    },
+    {
+      "model": "categorical_cb77residual_fitted",
+      "tabpfn": "categorical",
+      "catboost": "cb77residual",
+      "weight_tabpfn": 0.89596073441023,
+      "weight_catboost": 0.10403926558976995,
+      "weight_mode": "fitted"
+    }
+  ],
+  "outer_labels_used": false,
+  "selection_origins": [
+    "2022-09",
+    "2023-07"
+  ]
+}

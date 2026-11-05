@@ -1,0 +1,62 @@
+{
+  "E1": {
+    "month": {
+      "clusters": 10,
+      "resamples": 5000,
+      "seed": 42,
+      "rmse_delta_interval_95": [
+        0.8162763828189867,
+        1.967229724837182
+      ],
+      "mae_delta_interval_95": [
+        4.6044445610648035,
+        5.693460299969601
+      ],
+      "interpretation": "paired descriptive development-period uncertainty; does not adjust for feature selection or repeated outer-holdout reuse"
+    },
+    "building": {
+      "clusters": 8210,
+      "resamples": 5000,
+      "seed": 42,
+      "rmse_delta_interval_95": [
+        1.0467015016885455,
+        1.6932353464270278
+      ],
+      "mae_delta_interval_95": [
+        4.828875006262511,
+        5.447378634905111
+      ],
+      "interpretation": "paired descriptive development-period uncertainty; does not adjust for feature selection or repeated outer-holdout reuse"
+    }
+  },
+  "E2": {
+    "month": {
+      "clusters": 10,
+      "resamples": 5000,
+      "seed": 42,
+      "rmse_delta_interval_95": [
+        0.8521232095171684,
+        2.010144836038493
+      ],
+      "mae_delta_interval_95": [
+        4.66342642528772,
+        5.799536843654495
+      ],
+      "interpretation": "paired descriptive development-period uncertainty; does not adjust for feature selection or repeated outer-holdout reuse"
+    },
+    "building": {
+      "clusters": 8210,
+      "resamples": 5000,
+      "seed": 42,
+      "rmse_delta_interval_95": [
+        1.0907915656067046,
+        1.755313669310287
+      ],
+      "mae_delta_interval_95": [
+        4.935897157492554,
+        5.566997361653045
+      ],
+      "interpretation": "paired descriptive development-period uncertainty; does not adjust for feature selection or repeated outer-holdout reuse"
+    }
+  }
+}

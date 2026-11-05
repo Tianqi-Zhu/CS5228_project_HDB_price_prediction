@@ -1,0 +1,56 @@
+[
+  {
+    "check": "help",
+    "args": [
+      "--help"
+    ],
+    "returncode": 0,
+    "expected_returncode": 0,
+    "passed": true
+  },
+  {
+    "check": "aligned-help",
+    "args": [
+      "run",
+      "aligned",
+      "--",
+      "--help"
+    ],
+    "returncode": 0,
+    "expected_returncode": 0,
+    "passed": true
+  },
+  {
+    "check": "components-help",
+    "args": [
+      "run",
+      "components",
+      "--",
+      "--help"
+    ],
+    "returncode": 0,
+    "expected_returncode": 0,
+    "passed": true
+  },
+  {
+    "check": "explicit-run-arguments",
+    "args": [
+      "run",
+      "aligned"
+    ],
+    "returncode": 2,
+    "expected_returncode": 2,
+    "passed": true
+  },
+  {
+    "check": "protected-workspace",
+    "args": [
+      "prepare",
+      "--workspace",
+      "data"
+    ],
+    "returncode": 1,
+    "expected_returncode": 1,
+    "passed": true
+  }
+]

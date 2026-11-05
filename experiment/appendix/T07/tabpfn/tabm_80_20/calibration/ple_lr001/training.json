@@ -1,0 +1,32 @@
+{
+  "name": "calibration/ple_lr001",
+  "config": {
+    "embedding": "ple",
+    "lr": 0.001,
+    "k": 32
+  },
+  "seed": 42,
+  "best_epoch": 2,
+  "epochs_run": 14,
+  "calibration_rmse_sgd": 521.1876526472678,
+  "seconds": 72.42916489997879,
+  "parameters": 3717600,
+  "peak_vram_gib": 1.2361993789672852,
+  "fit_rows": 102829,
+  "processed_numeric_features": 112,
+  "category_cardinalities": [
+    7,
+    20,
+    13,
+    27,
+    157,
+    32,
+    6,
+    9257,
+    575
+  ],
+  "model_sha256": "760115628aa75081f22351677a8fccc386e4747fdc3ae2ba8f6ae1401cac95c7",
+  "preprocessor_sha256": "760a663cc58f4fffa2183808cc56daa011ef0953fd47afc47a50a782b6837dac",
+  "outer_labels_used_for_selection": false,
+  "checkpoint_replay_max_difference": 0.0
+}

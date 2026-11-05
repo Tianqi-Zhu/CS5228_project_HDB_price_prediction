@@ -1,0 +1,66 @@
+{
+  "model": "TabPFN-3.5-Fast with MSE-only DiagScale",
+  "configuration": {
+    "component": "diagscale",
+    "lr": 0.01,
+    "crps": 0
+  },
+  "epochs": 1,
+  "learning_rate": 0.01,
+  "weight_decay": 0.01,
+  "training_task_rows": 1024,
+  "training_query_fraction": 0.2,
+  "training_views": 2,
+  "inference_views": 1,
+  "trainable_parameters": 8576,
+  "seed": 42,
+  "batch_size": 200,
+  "training_pool_rows": 150000,
+  "test_rows": 50000,
+  "features": 77,
+  "validation_split_ratio": 0,
+  "early_stopping": false,
+  "initialization": "original pretrained checkpoint, new adapter trained on full labelled data; no warm-start from development adapter",
+  "target": "raw rent minus train_baseline; add query_baseline exactly once",
+  "query_policy": {
+    "artifact": ".cache/tabpfn_fast_final_submission/features.joblib",
+    "sha256": "b7d5de3b3bb7b75a689cdb30408f3d4fd26da948cd46dc82c8896b1008bbad1c",
+    "context_rows": 150000,
+    "test_rows": 50000,
+    "features": 77,
+    "march_test_origin": "2025-02",
+    "later_test_origin": "2025-03",
+    "long_horizon_policy": "local forecast held at month 10; actual horizon, age and calendar month retained",
+    "beyond_ten_month_rows": 18077,
+    "query_baseline_finite": true,
+    "train_categorical_month_complete": true,
+    "query_categorical_month_complete": true
+  },
+  "subsampling": false,
+  "test_labels_available": false,
+  "source_validation_rmse_sgd": 455.0710283636764,
+  "source_sha256": {
+    "data/train.csv": "2fe38ce9e0d8a02e9786f066d4a10d575d91f34be1d9111f0142e3f43fbfc8a5",
+    "data/test.csv": "a2ec03a0afc07c251c72cc0de2e15ac965a3b06291b304aaac53a375115ff4e0",
+    "data/example-submission.csv": "009e05582492d494df615e9526421023c82d070be029d118dc5ff2766810ecfc",
+    ".cache/tabpfn_fast_final_submission/features.joblib": "b7d5de3b3bb7b75a689cdb30408f3d4fd26da948cd46dc82c8896b1008bbad1c",
+    ".cache/tabpfn/tabpfn-v3.5-fast-20260909.safetensors": "14e0b81285bca7a6d1ef121169f27f651f76dff49cad6c0b8779d5c836018550",
+    "reports/tabpfn_components_80_20/candidates/diag_mse_only/calibration.json": "c99dbc22fcee293fda27c38dce1529a7f6bb68eb06abeb4f0aeee963b6e2909d",
+    ".cache/tabpfn_components_80_20/candidates/diag_mse_only/adapter.pt": "bacda0eec45a0ca6b3a769330929f740b658fcfb3e51a81600b8fb256279c979",
+    "reports/tabpfn_fast_final_submission/submission_tabpfn_fast_150k.csv": "6a9d195f288d3a38663ce8138bb183d6b205c4ba288829712ef5d37134671ad5",
+    "reports/tabpfn_components_80_20/outer/diag_mse_only/predictions.csv": "ae40d5b1aa0ae54ed25e185986f1540d49d3b9296d5bca1ebfbf549cf621fb2e"
+  },
+  "code_sha256": {
+    "analysis/train_tabpfn_diagscale_mse_submission.py": "6c7469156c86db8f55f9769480bc302ab9ef7b009be0dd2d6ff8a9f8e01fbf86",
+    "analysis/experiments/tabpfn_component_adaptation.py": "285d7d44da0529a0f410a30577f21d14c4b2697df7dc1cf5239974175df2628e",
+    "analysis/compare_tabpfn_components_80_20.py": "e8a851c3a8c87dc37ab3a237c6bb4ae439f46867a9a7864eb5460b93000790aa",
+    "analysis/check_diagscale_categorical_alignment_80_20.py": "f49c667ea3ded46bc0d005c06481ae4379f8fe629c64f6d5046dce1d5ba16a00"
+  },
+  "gpu": "NVIDIA GeForce RTX 4080",
+  "versions": {
+    "tabpfn": "9.2.0",
+    "torch": "2.11.0+cu128",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6"
+  }
+}

@@ -20,3 +20,16 @@
 
 - [X05: spatial, rental-history and macro sequence encoding](X05/concat_explorations/README.md)
 - [X06: early Transformer, matched cross-attention and TabFM attempts](X06/concat_explorations/README.md)
+
+## Imported TabPFN explorations
+
+| ID | Role |
+|---|---|
+| [T01](T01/README.md) | TabPFN data/EDA/cleaning alternatives |
+| [T02](T02/README.md) | TabPFN temporal and economic alternatives |
+| [T03](T03/README.md) | TabPFN spatial/external feature alternatives |
+| [T04](T04/README.md) | TabPFN context and feature representations |
+| [T05](T05/README.md) | TabPFN adaptation and residual alternatives |
+| [T06](T06/README.md) | Historical TabPFN ensembles and submission recipes |
+| [T07](T07/README.md) | TabM and from-scratch Transformer alternatives |
+| [T08](T08/README.md) | TabPFN environment and merge provenance |

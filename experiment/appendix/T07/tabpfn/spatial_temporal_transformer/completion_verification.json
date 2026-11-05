@@ -1,0 +1,21 @@
+{
+  "completed_fits": 47,
+  "outer_models": 20,
+  "checkpoint_and_prediction_hashes": "verified",
+  "checkpoint_replay": "exact for every fit",
+  "source_code_submission_hashes": "unchanged",
+  "all_variants": [
+    "T0",
+    "T1",
+    "T2",
+    "T3",
+    "C1",
+    "C2",
+    "C3",
+    "C4",
+    "S1",
+    "S2",
+    "S3",
+    "S4"
+  ]
+}

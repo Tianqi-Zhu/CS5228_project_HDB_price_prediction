@@ -1,0 +1,15 @@
+{
+  "fit_seconds": 1.1536933000897989,
+  "predict_seconds": 0.37131859990768135,
+  "peak_vram_gib": 1.1845030784606934,
+  "context_rows": 2678,
+  "query_rows": 628,
+  "features": 77,
+  "batch_size": 200,
+  "subsampling": false,
+  "parameter_versions_unchanged": true,
+  "town": "bishan",
+  "rmse_sgd": 492.23833980843676,
+  "mae_sgd": 358.50245358293375,
+  "bias_sgd": 2.2450174303744173
+}

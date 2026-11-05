@@ -1,0 +1,15 @@
+{
+  "sha256": "c9af8f9c3a94c0771010e7adceaf4b456fa51685816f94f65f18478a11857203",
+  "columns": [
+    "CENSUS2020_POPULATION",
+    "CENSUS2020_AGE65_SHARE",
+    "CENSUS2020_UNAVAILABLE",
+    "CENSUS_INCOME_NO_EMPLOYED_SHARE",
+    "CENSUS_INCOME_BELOW3000_SHARE",
+    "CENSUS_INCOME_GE10000_SHARE",
+    "CENSUS_INCOME_UNAVAILABLE"
+  ],
+  "geographic_support": "planning area, assigned using existing polygon-audited labels; no interpolation",
+  "income_source": "https://data.gov.sg/datasets/d_2d6793de474551149c438ba349a108fd/view",
+  "availability": "2022-08-01, conservative next-month cutoff after the source's July 28 2022 metadata date"
+}

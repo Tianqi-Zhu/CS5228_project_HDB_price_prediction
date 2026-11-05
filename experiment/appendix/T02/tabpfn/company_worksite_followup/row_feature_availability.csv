@@ -1,0 +1,46 @@
+origin,split,scenario,site_id,rows,available_rows,future_signal_rows,latest_used_stock_month,cutoff
+2022-09,context,historical,kulicke_soffa_serangoon,60079,37658,0,2022-02,each approval month minus fixed lag
+2022-09,context,historical,st_engineering_amk,60079,47564,0,2022-05,each approval month minus fixed lag
+2022-09,context,historical,venture_woodlands,60079,47564,0,2022-05,each approval month minus fixed lag
+2022-09,context,historical,flex_changi,60079,47564,0,2022-05,each approval month minus fixed lag
+2022-09,context,historical,seatrium_admiralty,60079,54270,0,2022-07,each approval month minus fixed lag
+2022-09,query,monthly_updated,kulicke_soffa_serangoon,2000,2000,0,2022-12,each approval month minus fixed lag
+2022-09,query,monthly_updated,st_engineering_amk,2000,2000,0,2023-03,each approval month minus fixed lag
+2022-09,query,monthly_updated,venture_woodlands,2000,2000,0,2023-03,each approval month minus fixed lag
+2022-09,query,monthly_updated,flex_changi,2000,2000,0,2023-03,each approval month minus fixed lag
+2022-09,query,monthly_updated,seatrium_admiralty,2000,2000,0,2023-05,each approval month minus fixed lag
+2022-09,query,fixed_origin,kulicke_soffa_serangoon,2000,1200,800,2022-08,2022-08
+2022-09,query,fixed_origin,st_engineering_amk,2000,600,1400,2022-08,2022-08
+2022-09,query,fixed_origin,venture_woodlands,2000,600,1400,2022-08,2022-08
+2022-09,query,fixed_origin,flex_changi,2000,600,1400,2022-08,2022-08
+2022-09,query,fixed_origin,seatrium_admiralty,2000,200,1800,2022-08,2022-08
+2023-07,context,historical,kulicke_soffa_serangoon,87937,65516,0,2022-12,each approval month minus fixed lag
+2023-07,context,historical,st_engineering_amk,87937,75422,0,2023-03,each approval month minus fixed lag
+2023-07,context,historical,venture_woodlands,87937,75422,0,2023-03,each approval month minus fixed lag
+2023-07,context,historical,flex_changi,87937,75422,0,2023-03,each approval month minus fixed lag
+2023-07,context,historical,seatrium_admiralty,87937,82128,0,2023-05,each approval month minus fixed lag
+2023-07,query,monthly_updated,kulicke_soffa_serangoon,2000,2000,0,2023-10,each approval month minus fixed lag
+2023-07,query,monthly_updated,st_engineering_amk,2000,2000,0,2024-01,each approval month minus fixed lag
+2023-07,query,monthly_updated,venture_woodlands,2000,2000,0,2024-01,each approval month minus fixed lag
+2023-07,query,monthly_updated,flex_changi,2000,2000,0,2024-01,each approval month minus fixed lag
+2023-07,query,monthly_updated,seatrium_admiralty,2000,2000,0,2024-03,each approval month minus fixed lag
+2023-07,query,fixed_origin,kulicke_soffa_serangoon,2000,1200,800,2023-06,2023-06
+2023-07,query,fixed_origin,st_engineering_amk,2000,600,1400,2023-06,2023-06
+2023-07,query,fixed_origin,venture_woodlands,2000,600,1400,2023-06,2023-06
+2023-07,query,fixed_origin,flex_changi,2000,600,1400,2023-06,2023-06
+2023-07,query,fixed_origin,seatrium_admiralty,2000,200,1800,2023-06,2023-06
+2024-06,context,historical,kulicke_soffa_serangoon,121005,98584,0,2023-11,each approval month minus fixed lag
+2024-06,context,historical,st_engineering_amk,121005,108490,0,2024-02,each approval month minus fixed lag
+2024-06,context,historical,venture_woodlands,121005,108490,0,2024-02,each approval month minus fixed lag
+2024-06,context,historical,flex_changi,121005,108490,0,2024-02,each approval month minus fixed lag
+2024-06,context,historical,seatrium_admiralty,121005,115196,0,2024-04,each approval month minus fixed lag
+2024-06,query,monthly_updated,kulicke_soffa_serangoon,28995,28995,0,2024-09,each approval month minus fixed lag
+2024-06,query,monthly_updated,st_engineering_amk,28995,28995,0,2024-12,each approval month minus fixed lag
+2024-06,query,monthly_updated,venture_woodlands,28995,28995,0,2024-12,each approval month minus fixed lag
+2024-06,query,monthly_updated,flex_changi,28995,28995,0,2024-12,each approval month minus fixed lag
+2024-06,query,monthly_updated,seatrium_admiralty,28995,28995,0,2025-02,each approval month minus fixed lag
+2024-06,query,fixed_origin,kulicke_soffa_serangoon,28995,17175,11820,2024-05,2024-05
+2024-06,query,fixed_origin,st_engineering_amk,28995,9089,19906,2024-05,2024-05
+2024-06,query,fixed_origin,venture_woodlands,28995,9089,19906,2024-05,2024-05
+2024-06,query,fixed_origin,flex_changi,28995,9089,19906,2024-05,2024-05
+2024-06,query,fixed_origin,seatrium_admiralty,28995,3011,25984,2024-05,2024-05

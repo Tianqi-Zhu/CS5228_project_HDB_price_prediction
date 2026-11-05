@@ -1,0 +1,13 @@
+{
+  "context_rows": 20000,
+  "n_estimators": 4,
+  "features": 29,
+  "training_rows": 70183,
+  "fit_seconds": 8.03,
+  "predict_500_seconds": 1.86,
+  "peak_vram_gib": 7.169501781463623,
+  "chosen_batch_size": 500,
+  "initial_batch_size": 2000,
+  "initial_result": "CUDA out of memory during prediction",
+  "note": "Synthetic access check and batch probe did not choose settings based on validation RMSE."
+}

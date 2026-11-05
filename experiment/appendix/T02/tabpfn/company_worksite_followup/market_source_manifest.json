@@ -1,0 +1,17 @@
+{
+  "download_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=SP500%2CNASDAQCOM%2CNASDAQSOX%2CDEXSIUS&cosd=2020-12-01&coed=2025-03-31",
+  "retrieved_at": "2026-11-02T07:07:35.720063+00:00",
+  "download_sha256": "03e40634d8dfc0bf523f5218ffb0a91c37d91912fd909cce31cf9778154e2882",
+  "series": {
+    "SP500": "https://fred.stlouisfed.org/series/SP500",
+    "NASDAQCOM": "https://fred.stlouisfed.org/series/NASDAQCOM",
+    "NASDAQSOX": "https://fred.stlouisfed.org/series/NASDAQSOX",
+    "DEXSIUS": "https://fred.stlouisfed.org/series/DEXSIUS"
+  },
+  "monthly_levels_path": ".cache\\company_worksite_followup\\fred_month_end_levels.csv",
+  "monthly_levels_sha256": "f1bfc3143fd90311f42e6f449b1e27ec825dbcd15389e7e6dbc8cdc1cc0625c4",
+  "monthly_returns_sha256": "8bfd0c5ae8014ac331a055172092dcf752b2896e44b4cf263c9710d9fe0b52e6",
+  "start": "2020-12",
+  "end": "2025-03",
+  "interpretation": "US stock indexes are price indices; DEXSIUS is SGD per USD. Later-vintage historical data, not point-in-time release archives. Only dates no later than March 2025 are retained."
+}

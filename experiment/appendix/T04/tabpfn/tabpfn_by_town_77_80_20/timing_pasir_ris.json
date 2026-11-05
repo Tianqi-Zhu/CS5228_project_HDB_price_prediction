@@ -1,0 +1,15 @@
+{
+  "fit_seconds": 1.0037130999844521,
+  "predict_seconds": 0.3097313001053408,
+  "peak_vram_gib": 1.4142122268676758,
+  "context_rows": 3353,
+  "query_rows": 736,
+  "features": 77,
+  "batch_size": 200,
+  "subsampling": false,
+  "parameter_versions_unchanged": true,
+  "town": "pasir ris",
+  "rmse_sgd": 479.7034437204315,
+  "mae_sgd": 372.6279431967351,
+  "bias_sgd": -69.50013694459604
+}

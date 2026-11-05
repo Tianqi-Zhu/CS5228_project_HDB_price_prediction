@@ -1,0 +1,22 @@
+{
+  "verified": true,
+  "checks": [
+    {
+      "cutoff": "2022-08",
+      "future_rents_and_coe_poisoned": true,
+      "forecast_replay_exact": true
+    },
+    {
+      "cutoff": "2023-06",
+      "future_rents_and_coe_poisoned": true,
+      "forecast_replay_exact": true
+    },
+    {
+      "cutoff": "2024-04",
+      "future_rents_and_coe_poisoned": true,
+      "forecast_replay_exact": true
+    }
+  ],
+  "reference_adjustment_fitted_2021_only": true,
+  "no_macro_forecast_uses_post_April2024_labels": true
+}

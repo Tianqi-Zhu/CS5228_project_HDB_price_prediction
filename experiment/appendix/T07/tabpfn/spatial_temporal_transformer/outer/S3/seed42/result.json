@@ -1,0 +1,21 @@
+{
+  "run": "outer/S3/seed42",
+  "variant": "S3",
+  "seed": 42,
+  "best_epoch": 8,
+  "epochs_run": 8,
+  "weighted_rmse_sgd": 460.97648640787594,
+  "rmse_sgd": 460.97648640787594,
+  "mae_sgd": 335.9137985034145,
+  "bias_sgd": -7.976762108895038,
+  "rows": 28995,
+  "parameters": 1739331,
+  "sequence_gate": 0.09721748530864716,
+  "seconds": 67.97540330002084,
+  "peak_allocated_vram_gib": 0.30460309982299805,
+  "checkpoint_replay_max_difference": 0.0,
+  "checkpoint_sha256": "eca00f58134a70f07c20269ff482adfd3164b166bb63535be1d73d1693805859",
+  "predictions_sha256": "7d1d2c5051258f6eade92981297e0d2d4644744d6adf38bd9eb0989733c87618",
+  "preprocessors_sha256": "9022e6b4dbdacd9fe86e078426f1cfd2ca3a334dbc20e98bb28d03fc33bbc96f",
+  "outer_labels_used_for_selection": false
+}

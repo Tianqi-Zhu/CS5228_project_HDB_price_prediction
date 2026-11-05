@@ -1,0 +1,26 @@
+{
+  "source_hashes": {
+    ".cache\\spatial_temporal_transformer\\prepared.joblib": "683987abe171fabd9e26d29a6b4e8c39205a8eed7f18297a99d20b444cdfdf9c",
+    "analysis\\run_conditioned_rent_corrections.py": "bee22aed4775530435624e9650ba26a994e485152aeeb4481a2f67b0f967cfaf",
+    "analysis\\experiments\\conditioned_rent_correction.py": "c9033c50f595731943d75552d2ef32d62713efa718bda1182dfc23528316dd87",
+    "analysis\\experiments\\spatial_temporal_transformer.py": "1f15e0e50fef5709ff6f1587da70f91ad20ff72c01f9ed16be4bd0e969677656",
+    "reports\\spatial_temporal_transformer\\prepared.json": "04c8bf26ac4adf792b74e7abadb4a7ef915832cecdda879fa0fdda79064a5914",
+    ".cache\\spatial_temporal_transformer\\calibration\\T0\\early_2022\\model.pt": "1c6fce00f0dd7c50da6f3adeb07d6f94a612ed08f6b22c7700cbf7ed62883acb",
+    ".cache\\spatial_temporal_transformer\\calibration\\T0\\early_2022\\preprocessors.joblib": "154fdb8b6db6a5ed6db776b3635044aa2f8aa19219257f3e00a13e2e9a95c898",
+    "reports\\spatial_temporal_transformer\\calibration\\T0\\early_2022\\predictions.csv": "529190cb9edb9d5cee6152abdb056b68fc59ebc4bd033e5820c98ada005276df",
+    ".cache\\spatial_temporal_transformer\\calibration\\T0\\early_2023\\model.pt": "e9d6e547b4817e61f294494d4583a4b45d1d728c574bce1127bb413067ba17c3",
+    ".cache\\spatial_temporal_transformer\\calibration\\T0\\early_2023\\preprocessors.joblib": "14bcfd8ccf1f297c284b4ef56a9b988c21be6eca938ce2deb7eec103d76ee94d",
+    "reports\\spatial_temporal_transformer\\calibration\\T0\\early_2023\\predictions.csv": "a1e26ba6c258b4f8335d643aa606510ec2414eabdd0166fbdea71db907e5c169",
+    ".cache\\spatial_temporal_transformer\\outer\\T0\\seed42\\model.pt": "87a693e3adb1da12ab1d98c9105636ac8b0004d921df910e56320f2a81cd5567",
+    ".cache\\spatial_temporal_transformer\\outer\\T0\\seed42\\preprocessors.joblib": "7d5b91813c76f42f4b97847cdf6753254f4441876d74d3cd4733be6bef8e87d1",
+    "reports\\spatial_temporal_transformer\\outer\\T0\\seed42\\predictions.csv": "908507a55eeb63d1cce453a3f15d26ed43ca4c580e0a9f77b5c0f2736241e3e4",
+    ".cache\\spatial_temporal_transformer\\outer\\T0\\seed43\\model.pt": "d7b5db99b9e45f97ba88d596d349df48de470447047c7f375a5bcccb4607c73f",
+    ".cache\\spatial_temporal_transformer\\outer\\T0\\seed43\\preprocessors.joblib": "7d5b91813c76f42f4b97847cdf6753254f4441876d74d3cd4733be6bef8e87d1",
+    "reports\\spatial_temporal_transformer\\outer\\T0\\seed43\\predictions.csv": "2ff5c643576755459bd89fc03e356e7d02a149e58353a33c7a4757879f1522cf",
+    ".cache\\spatial_temporal_transformer\\outer\\T0\\seed44\\model.pt": "fd35812795b23df61e87ef2d86d762475fb150f8a4668a52e429a715ec8e9cfc",
+    ".cache\\spatial_temporal_transformer\\outer\\T0\\seed44\\preprocessors.joblib": "7d5b91813c76f42f4b97847cdf6753254f4441876d74d3cd4733be6bef8e87d1",
+    "reports\\spatial_temporal_transformer\\outer\\T0\\seed44\\predictions.csv": "897f494f5e53accaddf5d7b19a90bffb3b45aaacc6ee6cf8ce163ad48e85bdf1"
+  },
+  "frozen_backbone": true,
+  "outer_labels_used_for_selection": false
+}

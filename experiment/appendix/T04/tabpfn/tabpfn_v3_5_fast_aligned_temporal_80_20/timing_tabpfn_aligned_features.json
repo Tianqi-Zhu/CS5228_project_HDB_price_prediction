@@ -1,0 +1,13 @@
+{
+  "fit_seconds": 14.955965200031642,
+  "predict_seconds": 1181.8739742999896,
+  "peak_vram_gib": 17.721623420715332,
+  "context_rows": 121005,
+  "subsampling": false,
+  "keep_cache_on_device": true,
+  "batch_size": 200,
+  "batch_agreement": false,
+  "batch_max_difference_sgd": 0.7306209924545328,
+  "target_mode": "raw",
+  "memory_retries": []
+}

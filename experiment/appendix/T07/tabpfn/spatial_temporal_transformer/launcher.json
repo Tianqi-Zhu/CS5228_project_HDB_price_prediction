@@ -1,0 +1,8 @@
+﻿{
+    "max_gpu_utilization":  35,
+    "started":  "2026-11-02T17:25:11.0239289+08:00",
+    "min_free_gib":  8,
+    "pid":  47808,
+    "stderr":  "C:\\Users\\auror\\Code\\CS5228_project_HDB_price_prediction\\reports\\spatial_temporal_transformer\\worker.stderr.log",
+    "stdout":  "C:\\Users\\auror\\Code\\CS5228_project_HDB_price_prediction\\reports\\spatial_temporal_transformer\\worker.stdout.log"
+}

@@ -1,0 +1,17 @@
+{
+  "spec": {
+    "name": "S3",
+    "information": "rent",
+    "processor": "transformer",
+    "window": 12,
+    "delay": 1
+  },
+  "seed": 42,
+  "validation": false,
+  "epochs": 8,
+  "smoke": false,
+  "device": "cuda",
+  "fit_rows": 121005,
+  "query_rows": 28995,
+  "preparation_sha256": "683987abe171fabd9e26d29a6b4e8c39205a8eed7f18297a99d20b444cdfdf9c"
+}

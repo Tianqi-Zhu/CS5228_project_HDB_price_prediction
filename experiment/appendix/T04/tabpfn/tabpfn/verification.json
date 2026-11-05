@@ -1,0 +1,22 @@
+[
+  {
+    "run": "reports\\tabpfn",
+    "rows": 79817,
+    "source_hashes": "passed",
+    "unique_source_row_ids": "passed",
+    "disjoint_windows": "passed",
+    "source_labels": "passed",
+    "prediction_hashes": "passed",
+    "pooled_rmse": "passed"
+  },
+  {
+    "run": "reports\\tabpfn_50k",
+    "rows": 79817,
+    "source_hashes": "passed",
+    "unique_source_row_ids": "passed",
+    "disjoint_windows": "passed",
+    "source_labels": "passed",
+    "prediction_hashes": "passed",
+    "pooled_rmse": "passed"
+  }
+]

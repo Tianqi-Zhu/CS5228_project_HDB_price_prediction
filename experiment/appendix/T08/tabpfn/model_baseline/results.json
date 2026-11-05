@@ -1,0 +1,101 @@
+{
+  "validation_rule": "fit month < 2024-04; validate month >= 2024-04",
+  "fitting_rows": 114842,
+  "validation_rows": 35158,
+  "fitting_months": [
+    "2021-01",
+    "2024-03"
+  ],
+  "validation_months": [
+    "2024-04",
+    "2025-03"
+  ],
+  "source_sha256": {
+    "train.csv": "2fe38ce9e0d8a02e9786f066d4a10d575d91f34be1d9111f0142e3f43fbfc8a5",
+    "test.csv": "a2ec03a0afc07c251c72cc0de2e15ac965a3b06291b304aaac53a375115ff4e0",
+    "example-submission.csv": "009e05582492d494df615e9526421023c82d070be029d118dc5ff2766810ecfc"
+  },
+  "versions": {
+    "pandas": "3.0.5",
+    "numpy": "2.4.6",
+    "catboost": "1.2.10"
+  },
+  "model_settings": {
+    "iterations": 400,
+    "depth": 6,
+    "learning_rate": 0.05,
+    "l2_leaf_reg": 3.0,
+    "loss_function": "RMSE",
+    "random_seed": 42,
+    "thread_count": 4,
+    "verbose": false,
+    "allow_writing_files": false
+  },
+  "feature_sets": {
+    "A_property": [
+      "FLAT_TYPE_CLEAN",
+      "FLAT_MODEL_CLEAN",
+      "FLOOR_AREA_SQM"
+    ],
+    "B_property_time": [
+      "FLAT_TYPE_CLEAN",
+      "FLAT_MODEL_CLEAN",
+      "FLOOR_AREA_SQM",
+      "APPROVAL_MONTH_INDEX",
+      "APPROVAL_MONTH_OF_YEAR",
+      "FLAT_AGE_YEARS"
+    ],
+    "C_property_time_town": [
+      "FLAT_TYPE_CLEAN",
+      "FLAT_MODEL_CLEAN",
+      "FLOOR_AREA_SQM",
+      "APPROVAL_MONTH_INDEX",
+      "APPROVAL_MONTH_OF_YEAR",
+      "FLAT_AGE_YEARS",
+      "TOWN_CLEAN"
+    ]
+  },
+  "categorical_features": [
+    "FLAT_MODEL_CLEAN",
+    "FLAT_TYPE_CLEAN",
+    "TOWN_CLEAN"
+  ],
+  "age_anomalies_set_to_missing": 1,
+  "scores": [
+    {
+      "model": "mean_constant",
+      "n_validation": 35158,
+      "rmse_sgd": 846.7548764601373,
+      "mae_sgd": 690.6025969356431,
+      "bias_sgd": -531.4418577541677
+    },
+    {
+      "model": "A_property",
+      "n_validation": 35158,
+      "rmse_sgd": 761.4192470994691,
+      "mae_sgd": 647.2220546615137,
+      "bias_sgd": -534.0556594167848
+    },
+    {
+      "model": "B_property_time",
+      "n_validation": 35158,
+      "rmse_sgd": 529.9588042062293,
+      "mae_sgd": 397.8579620195461,
+      "bias_sgd": -49.905457578080224
+    },
+    {
+      "model": "C_property_time_town",
+      "n_validation": 35158,
+      "rmse_sgd": 487.2160049568078,
+      "mae_sgd": 364.0905838325552,
+      "bias_sgd": -48.29310100031218
+    }
+  ],
+  "lowest_rmse_on_this_holdout": "C_property_time_town",
+  "notes": [
+    "Mean baseline uses only the fitting-period target mean.",
+    "CatBoost settings and validation rows are identical across A/B/C.",
+    "No preprocessing or model uses Kaggle test target values.",
+    "Scores are from one temporal holdout and should not be treated as final test performance."
+  ]
+}

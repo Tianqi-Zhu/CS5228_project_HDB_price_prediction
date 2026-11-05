@@ -1,0 +1,15 @@
+{
+  "fit_seconds": 1.283025600016117,
+  "predict_seconds": 0.6121366999577731,
+  "peak_vram_gib": 2.2758264541625977,
+  "context_rows": 6122,
+  "query_rows": 1455,
+  "features": 77,
+  "batch_size": 200,
+  "subsampling": false,
+  "parameter_versions_unchanged": true,
+  "town": "woodlands",
+  "rmse_sgd": 460.58124797109605,
+  "mae_sgd": 327.0703487508784,
+  "bias_sgd": 27.11973518700572
+}

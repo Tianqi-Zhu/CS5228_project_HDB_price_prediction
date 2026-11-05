@@ -1,0 +1,7 @@
+{
+  "verified": true,
+  "previously_computed_rows": 1600,
+  "maximum_absolute_difference_sgd": 0.0,
+  "source": "spatial_before_allocator_revision.npy",
+  "only_memory_allocator_changed": true
+}

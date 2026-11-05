@@ -1,0 +1,9 @@
+# Uses the existing CUDA PyTorch installation; no additional neural package required.
+numpy
+pandas
+scikit-learn
+scipy
+joblib
+threadpoolctl
+matplotlib
+torch

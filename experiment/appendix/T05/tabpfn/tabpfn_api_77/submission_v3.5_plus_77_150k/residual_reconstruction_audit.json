@@ -1,0 +1,8 @@
+{
+  "verified": true,
+  "rows": 50000,
+  "raw_api_residual_sha256": "d1bd5b364345913e803197be11e6a8a23adf660676018b9feb41da5882bd1eea",
+  "source": "Result retrieval from the same accepted completed job; no new fit or prediction submitted",
+  "original_query_baseline_added_exactly_once": true,
+  "maximum_difference_sgd": 0.0
+}

@@ -1,0 +1,30 @@
+{
+  "source": "data/train.csv",
+  "total_rows": 150000,
+  "eligibility": [
+    "3-room",
+    "4-room",
+    "5-room",
+    "executive"
+  ],
+  "ratio_threshold_strictly_below": 0.5,
+  "minimum_town_type_quarter_rows": 30,
+  "minimum_block_layout_year_rows": 5,
+  "broad_candidates": 921,
+  "conservative_candidates_removed": 305,
+  "retained_rows": 149695,
+  "removed_by_year": {
+    "2021": 3,
+    "2022": 23,
+    "2023": 128,
+    "2024": 148,
+    "2025": 3
+  },
+  "removed_by_flat_type": {
+    "3 room": 2,
+    "3-room": 213,
+    "4-room": 64,
+    "5 room": 1,
+    "5-room": 25
+  }
+}

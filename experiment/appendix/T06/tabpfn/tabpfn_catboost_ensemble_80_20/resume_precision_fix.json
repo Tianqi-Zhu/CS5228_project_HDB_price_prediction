@@ -1,0 +1,19 @@
+{
+  "change": "Fresh CatBoost predictions are reloaded at persisted CSV precision before calibration, matching resumed runs. Model fitting parameters and data did not change. Initial fingerprint is archived.",
+  "previous_code_sha256": {
+    "analysis/compare_tabpfn_catboost_ensemble.py": "cc701a1c0527549104b10878646064c9742e500ca9579db69e687d1482b951b1",
+    "analysis/experiments/prediction_blending.py": "f64bc79b89b4937f4f26e10362481051e39860f3f3170adaaac699b04e5940f6",
+    "analysis/experiments/dynamic_market_index.py": "9b26c1ebcfaf1f13905f37fb4e0c1d55ae73995d1d42069bc1df1ed3e04e34f4",
+    "analysis/compare_tabpfn_calendar_80_20.py": "e88eb31412feea17db8d5987ad30983e214d4fbfbc96a9708cccf8e7c5a4a052",
+    "analysis/evaluation.py": "a7a81b63717b8ce1b59e51a969b98560112da0a0a090c8f0d24d50ed041efe97"
+  },
+  "current_code_sha256": {
+    "analysis/compare_tabpfn_catboost_ensemble.py": "a8f7b60b59934fe993484ead59f6c3761755aa2dc96c1cdb9e83452492d3a371",
+    "analysis/experiments/prediction_blending.py": "f64bc79b89b4937f4f26e10362481051e39860f3f3170adaaac699b04e5940f6",
+    "analysis/experiments/dynamic_market_index.py": "9b26c1ebcfaf1f13905f37fb4e0c1d55ae73995d1d42069bc1df1ed3e04e34f4",
+    "analysis/compare_tabpfn_calendar_80_20.py": "e88eb31412feea17db8d5987ad30983e214d4fbfbc96a9708cccf8e7c5a4a052",
+    "analysis/evaluation.py": "a7a81b63717b8ce1b59e51a969b98560112da0a0a090c8f0d24d50ed041efe97"
+  },
+  "regression_test_passed": true,
+  "cached_full_experiment_replay_passed": true
+}

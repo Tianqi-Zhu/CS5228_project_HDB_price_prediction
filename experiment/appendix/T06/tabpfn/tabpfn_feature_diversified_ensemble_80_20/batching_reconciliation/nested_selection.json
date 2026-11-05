@@ -1,0 +1,89 @@
+{
+  "2022-09": {
+    "cold_start": true,
+    "models": {
+      "optimized": {
+        "weights": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "opt_baseline_spatial": {
+        "weights": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "opt_baseline_temporal": {
+        "weights": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "opt_spatial_temporal": {
+        "weights": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  "2023-07": {
+    "cold_start": false,
+    "maximum_selection_label_month": "2023-06",
+    "models": {
+      "optimized": {
+        "weights": [
+          0.29297164766441436,
+          0.0,
+          0.7070283523355857
+        ],
+        "weighted_mse_sgd2": 401708.2149939488,
+        "weighted_rmse_sgd": 633.804555832434,
+        "active_members": 2,
+        "solver": "Exact active-face convex quadratic optimization",
+        "intercept": false
+      },
+      "opt_baseline_spatial": {
+        "weights": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "weighted_mse_sgd2": 403337.37314192776,
+        "weighted_rmse_sgd": 635.0884766250508,
+        "active_members": 1,
+        "solver": "Exact active-face convex quadratic optimization",
+        "intercept": false
+      },
+      "opt_baseline_temporal": {
+        "weights": [
+          0.29297164766435124,
+          0.0,
+          0.7070283523356488
+        ],
+        "weighted_mse_sgd2": 401708.2149939488,
+        "weighted_rmse_sgd": 633.804555832434,
+        "active_members": 2,
+        "solver": "Exact active-face convex quadratic optimization",
+        "intercept": false
+      },
+      "opt_spatial_temporal": {
+        "weights": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "weighted_mse_sgd2": 401987.946106458,
+        "weighted_rmse_sgd": 634.0251935897012,
+        "active_members": 1,
+        "solver": "Exact active-face convex quadratic optimization",
+        "intercept": false
+      }
+    }
+  }
+}

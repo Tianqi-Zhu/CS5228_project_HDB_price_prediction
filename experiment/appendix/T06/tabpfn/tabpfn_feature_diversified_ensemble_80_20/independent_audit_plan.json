@@ -1,0 +1,5 @@
+{
+  "code_sha256": "f3bcc06f72a50f812cb5440e9ad842c7fa6becb12667f5b7536c3f43237e6100",
+  "no_model_or_weight_selection": true,
+  "test": "Spatial numerical replay and poison every unavailable fitting label at query and context pseudo-origins"
+}

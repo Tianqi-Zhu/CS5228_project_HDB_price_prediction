@@ -1,0 +1,32 @@
+{
+  "verified": true,
+  "submission": "reports/tabpfn_api_77/submission_v3.5_plus_77_150k/submission_tabpfn_api.csv",
+  "submission_sha256": "df198400d00b57deeba40cd44a6c38ce5b17fde1c3726731b08b028117c3cf44",
+  "model": "Hosted TabPFN-3.5 Plus",
+  "model_path": "v3.5_default",
+  "n_estimators": 8,
+  "seed": 42,
+  "context_rows": 150000,
+  "test_rows": 50000,
+  "features": 77,
+  "categorical_columns": 9,
+  "full_training_upload_and_no_context_subsampling_requested": true,
+  "saved_fit_metadata_training_rows_verified": true,
+  "complete_predictions_and_exact_sample_ids_order_verified": true,
+  "all_predictions_positive_and_finite": true,
+  "csv_matches_full_precision_prediction_cache_exactly": true,
+  "original_features_targets_baselines_and_submissions_unchanged": true,
+  "baseline_added_once_by_verified_existing_runner": true,
+  "test_labels_available": false,
+  "test_rmse_available": false,
+  "uploaded_to_kaggle": false,
+  "minimum_sgd": 1493.8480112359175,
+  "maximum_sgd": 6172.5249205088785,
+  "mean_sgd": 3202.9708909637093,
+  "test_month_range": [
+    "2025-03",
+    "2026-07"
+  ],
+  "beyond_validated10month_rows": 18077,
+  "maximum_horizon": 16
+}

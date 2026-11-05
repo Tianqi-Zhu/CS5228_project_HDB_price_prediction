@@ -1,0 +1,15 @@
+{
+  "verified": true,
+  "original77_columns_labels_baselines_preserved": true,
+  "original_submissions_unchanged": true,
+  "query_ids_and_labels_aligned": true,
+  "future_macro_poisoning_replayed": true,
+  "earlier_only_selection": true,
+  "all_context_rows_retained": true,
+  "test_labels_used": false,
+  "unit_tests_passed": 13,
+  "independently_recomputed_primary_forecasts": 131980,
+  "independently_recomputed_diagscale_queries": 28995,
+  "plain_control_replay_exact": true,
+  "all_nine_feature_bundles_reconstructed": true
+}

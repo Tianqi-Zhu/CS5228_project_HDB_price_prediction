@@ -1,0 +1,3 @@
+split,rows,raw_missing_cells,raw_exact_duplicate_excess,canonical_duplicate_excess,canonical_duplicate_affected_rows,flat_type_alias_rows,invalid_lease_age_rows,missing_block_metadata_rows,unseen_block_id_rows,constants_excluded,minimum_floor_area,maximum_floor_area,minimum_rent,maximum_rent,nonpositive_rent_rows,rent_at_most_500_rows
+train,150000,0,425,641,1261,35331,1,159,0,"FURNISHED,FEE",31.0,215.0,300.0,7600.0,0.0,49.0
+test,50000,0,5508,7764,13973,0,0,0,102,"FURNISHED,FEE",31.0,215.0,,,,

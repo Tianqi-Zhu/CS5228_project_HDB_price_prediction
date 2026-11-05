@@ -1,0 +1,17 @@
+{
+  "strategy": "S2",
+  "sampler_train": "S2",
+  "sampler_inference": "S4",
+  "query_rows": 28995,
+  "context_rows": 10000,
+  "train_views": 2,
+  "checkpoint_views": 2,
+  "deployment_views": 1,
+  "learning_rate": 0.01,
+  "seed": 42,
+  "fit_predict_seconds": 13.666712400037795,
+  "peak_vram_gib": 3.629425525665283,
+  "rmse_sgd": 456.0037406807476,
+  "mae_sgd": 331.3973703588443,
+  "bias_sgd": -3.437638778400705
+}

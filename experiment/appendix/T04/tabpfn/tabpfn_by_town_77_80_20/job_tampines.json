@@ -1,0 +1,8 @@
+{
+  "town": "tampines",
+  "context_rows": 8113,
+  "query_rows": 1829,
+  "context_ids_sha256": "22a8c59bdd489e296d4672c8e492677f6123fae0ea9bad985010a74a45cebd84",
+  "query_ids_sha256": "f26136baf08a6aa07dbe3d4bc1521a27d5d4f2a6eef7a74a6a9b02568167f19f",
+  "settings_sha256": "7ec7fcf4dc279912e4ccac47faafbe82887e1d344fe25f59350c4dbcbc3e5916"
+}

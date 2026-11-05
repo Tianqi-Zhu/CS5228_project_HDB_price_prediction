@@ -1,0 +1,126 @@
+{
+  "baseline": "MSE-only DiagScale, numerically lowest existing declared 80/20 result",
+  "baseline_selection_caveat": "No unique global winner selected by one earlier-only rule; README retains older frozen control. Numerical-best adapted model chosen before this residual study; outer is a repeatedly inspected development holdout.",
+  "folds": [
+    [
+      "2022-09",
+      "2023-01"
+    ],
+    [
+      "2023-01",
+      "2023-05"
+    ],
+    [
+      "2023-05",
+      "2023-09"
+    ],
+    [
+      "2023-09",
+      "2023-12"
+    ],
+    [
+      "2023-12",
+      "2024-06"
+    ]
+  ],
+  "adapter_recipe": {
+    "component": "diagscale",
+    "lr": 0.01,
+    "crps": 0,
+    "epochs": 1,
+    "train_views": 2,
+    "deployment_views": 1,
+    "task_rows": 1024,
+    "query_fraction": 0.2,
+    "weight_decay": 0.01
+  },
+  "residual_early_stop": [
+    "2023-09",
+    "2023-12"
+  ],
+  "residual_validation": [
+    "2023-12",
+    "2024-06"
+  ],
+  "outer": [
+    "2024-06",
+    "2025-04"
+  ],
+  "strengths": [
+    0,
+    0.25,
+    0.5,
+    0.75,
+    1
+  ],
+  "catboost": {
+    "iterations": 800,
+    "depth": 5,
+    "learning_rate": 0.04,
+    "loss_function": "RMSE",
+    "l2_leaf_reg": 5,
+    "random_seed": 42,
+    "verbose": false,
+    "thread_count": -1,
+    "allow_writing_files": false
+  },
+  "features": {
+    "E1": [
+      "TABPFN_RENT",
+      "FLAT_TYPE_CLEAN",
+      "FLOOR_AREA_SQM",
+      "FLAT_AGE_YEARS",
+      "LATITUDE",
+      "LONGITUDE",
+      "TOWN_CLEAN",
+      "APPROVAL_MONTH_INDEX",
+      "APPROVAL_MONTH_OF_YEAR",
+      "TEMP_FORECAST_HORIZON"
+    ],
+    "E2": [
+      "TABPFN_RENT",
+      "FLAT_TYPE_CLEAN",
+      "FLOOR_AREA_SQM",
+      "FLAT_AGE_YEARS",
+      "LATITUDE",
+      "LONGITUDE",
+      "TOWN_CLEAN",
+      "APPROVAL_MONTH_INDEX",
+      "APPROVAL_MONTH_OF_YEAR",
+      "TEMP_FORECAST_HORIZON",
+      "LOCAL_HIST_MEDIAN",
+      "LOCAL_GROWTH_3M",
+      "LOCAL_COUNT_6M"
+    ]
+  },
+  "seed": 42,
+  "market_policy": "Fixed batch origin; only labels strictly before origin. Town x flat history median minimum20; flat-type then global fallback. Growth adjacent 3-month medians minimum10 at same fallback level. Six-month same-group count.",
+  "adapter_selection": "Fixed existing one-epoch recipe; no OOF query targets used for gradient updates, early stopping or checkpoint selection. Existing full/pre-Dec2023 adapters not reused for earlier OOF.",
+  "final_test_available": false,
+  "development_evaluation": true,
+  "source_sha256": {
+    ".cache\\tabpfn_v3_features\\calendar_80_20_categorical.joblib": "fba84757b6e23280d2b27eab0ca5d86a427ac19ca33c6b12b5b2dcc4194a0059",
+    ".cache\\tabpfn_components_80_20\\candidates\\diag_mse_only\\adapter.pt": "bacda0eec45a0ca6b3a769330929f740b658fcfb3e51a81600b8fb256279c979",
+    ".cache\\tabpfn\\tabpfn-v3.5-fast-20260909.safetensors": "14e0b81285bca7a6d1ef121169f27f651f76dff49cad6c0b8779d5c836018550",
+    "reports\\tabpfn_components_80_20\\outer\\diag_mse_only\\predictions.csv": "ae40d5b1aa0ae54ed25e185986f1540d49d3b9296d5bca1ebfbf549cf621fb2e",
+    "data\\train.csv": "2fe38ce9e0d8a02e9786f066d4a10d575d91f34be1d9111f0142e3f43fbfc8a5",
+    "data\\test.csv": "a2ec03a0afc07c251c72cc0de2e15ac965a3b06291b304aaac53a375115ff4e0",
+    "reports\\tabpfn_fast_final_submission\\submission_tabpfn_fast_150k.csv": "6a9d195f288d3a38663ce8138bb183d6b205c4ba288829712ef5d37134671ad5",
+    "reports\\tabpfn_components_80_20\\report.md": "5af2adacbe121d831b7a2241e6d913e921a2fb5c3a9dfafe8e61cc9df0df3b3c",
+    "reports\\tabpfn_components_80_20\\plan.json": "3c272772a9a8f4597990f174a6be26acd515da532013cdf13c43f26f04592d95",
+    "analysis\\experiments\\aligned_temporal_features.py": "1f0b886ca3398dd7c681b0dc8c7b73092652323f148ad6bc40aa13ea1e20ba74",
+    "analysis\\experiments\\spatiotemporal_hybrid.py": "9f275e624dc244dd0aef1085c5c76bec8808552ae6a1b01ce1738d8c24dfca10",
+    "analysis\\experiments\\tabpfn_component_adaptation.py": "285d7d44da0529a0f410a30577f21d14c4b2697df7dc1cf5239974175df2628e"
+  },
+  "implementation_sha256": {
+    "analysis\\compare_tabpfn_spatial_temporal_residual.py": "2a9c9208e71a768067d745de18d03a517c6dec89d9bbf49b2e1fb0e78336dee5",
+    "analysis\\experiments\\spatial_temporal_residual.py": "3a94231d65c389bbc88c93a7495626378fdfd69da546d0483253c0ae9543f5e0"
+  },
+  "versions": {
+    "tabpfn": "9.2.0",
+    "torch": "2.11.0+cu128",
+    "catboost": "1.2.10",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6"
+  }
+}

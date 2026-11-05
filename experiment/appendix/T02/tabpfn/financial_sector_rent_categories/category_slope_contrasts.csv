@@ -1,0 +1,277 @@
+dimension,signal,target,lag,period,controls,category_a,category_b,difference_per_10pct_stock,simultaneous_ci_low,simultaneous_ci_high
+room_type,banks_equal,mean_rent,1,development,full_controls,2-room,3-room,-0.49444079745767416,-18.605117873371096,17.616236278455744
+room_type,banks_equal,mean_rent,1,development,full_controls,2-room,4-room,-1.537393895777162,-19.441932588538,16.367144796983673
+room_type,banks_equal,mean_rent,1,development,full_controls,2-room,5-room,-1.3103499653929638,-19.47776008737639,16.85706015659046
+room_type,banks_equal,mean_rent,1,development,full_controls,2-room,executive,-0.8632072380454228,-18.345379190145444,16.6189647140546
+room_type,banks_equal,mean_rent,1,development,full_controls,3-room,4-room,-1.042953098319488,-5.7985257432454675,3.7126195466064926
+room_type,banks_equal,mean_rent,1,development,full_controls,3-room,5-room,-0.8159091679352896,-5.771024475559285,4.1392061396887065
+room_type,banks_equal,mean_rent,1,development,full_controls,3-room,executive,-0.3687664405877486,-9.748072921547625,9.010540040372128
+room_type,banks_equal,mean_rent,1,development,full_controls,4-room,5-room,0.22704393038419826,-4.296583247327457,4.750671108095854
+room_type,banks_equal,mean_rent,1,development,full_controls,4-room,executive,0.6741866577317392,-8.493693837294334,9.842067152757814
+room_type,banks_equal,mean_rent,1,development,full_controls,5-room,executive,0.44714272734754096,-7.599186109624303,8.493471564319385
+room_type,banks_equal,adjusted_mean_rent,1,development,full_controls,2-room,3-room,-0.38648278779374157,-20.054007836036877,19.281042260449397
+room_type,banks_equal,adjusted_mean_rent,1,development,full_controls,2-room,4-room,-1.3427797490349669,-20.32450254980669,17.63894305173676
+room_type,banks_equal,adjusted_mean_rent,1,development,full_controls,2-room,5-room,-1.3486101044747356,-20.685547809436,17.988327600486528
+room_type,banks_equal,adjusted_mean_rent,1,development,full_controls,2-room,executive,-0.8637255884215589,-18.477368946096803,16.74991776925368
+room_type,banks_equal,adjusted_mean_rent,1,development,full_controls,3-room,4-room,-0.9562969612412253,-5.77356183216483,3.860967909682379
+room_type,banks_equal,adjusted_mean_rent,1,development,full_controls,3-room,5-room,-0.962127316680994,-5.3482438168583855,3.4239891834963982
+room_type,banks_equal,adjusted_mean_rent,1,development,full_controls,3-room,executive,-0.47724280062781727,-9.458877581952631,8.504391980696996
+room_type,banks_equal,adjusted_mean_rent,1,development,full_controls,4-room,5-room,-0.0058303554397686926,-4.050591350657242,4.038930639777705
+room_type,banks_equal,adjusted_mean_rent,1,development,full_controls,4-room,executive,0.47905416061340805,-8.146953776003016,9.105062097229833
+room_type,banks_equal,adjusted_mean_rent,1,development,full_controls,5-room,executive,0.48488451605317673,-7.491857411388168,8.461626443494524
+room_type,finance_equal,mean_rent,1,development,full_controls,2-room,3-room,-0.8608317193976884,-17.88600305633336,16.164339617537983
+room_type,finance_equal,mean_rent,1,development,full_controls,2-room,4-room,-2.999643929864639,-19.215810361828684,13.216522502099407
+room_type,finance_equal,mean_rent,1,development,full_controls,2-room,5-room,-3.6247475775615325,-18.930081890386525,11.680586735263457
+room_type,finance_equal,mean_rent,1,development,full_controls,2-room,executive,-2.58789283481295,-19.47650357559312,14.300717905967224
+room_type,finance_equal,mean_rent,1,development,full_controls,3-room,4-room,-2.1388122104669502,-6.589929903867179,2.312305482933278
+room_type,finance_equal,mean_rent,1,development,full_controls,3-room,5-room,-2.763915858163844,-7.937830074936172,2.409998358608484
+room_type,finance_equal,mean_rent,1,development,full_controls,3-room,executive,-1.7270611154152617,-9.217352787320614,5.7632305564900905
+room_type,finance_equal,mean_rent,1,development,full_controls,4-room,5-room,-0.6251036476968935,-5.4380661268104085,4.18785883141662
+room_type,finance_equal,mean_rent,1,development,full_controls,4-room,executive,0.4117510950516887,-7.3631497593977455,8.186651949501123
+room_type,finance_equal,mean_rent,1,development,full_controls,5-room,executive,1.0368547427485824,-6.800269616630231,8.873979102127397
+room_type,finance_equal,adjusted_mean_rent,1,development,full_controls,2-room,3-room,-0.34193564285796313,-16.850062375338204,16.16619108962228
+room_type,finance_equal,adjusted_mean_rent,1,development,full_controls,2-room,4-room,-2.4260053426384522,-18.564489624265306,13.7124789389884
+room_type,finance_equal,adjusted_mean_rent,1,development,full_controls,2-room,5-room,-3.0029807232909493,-18.023460679473835,12.017499232891938
+room_type,finance_equal,adjusted_mean_rent,1,development,full_controls,2-room,executive,-2.1481494441825526,-19.013231499709562,14.716932611344456
+room_type,finance_equal,adjusted_mean_rent,1,development,full_controls,3-room,4-room,-2.084069699780489,-6.320542977437815,2.1524035778768367
+room_type,finance_equal,adjusted_mean_rent,1,development,full_controls,3-room,5-room,-2.661045080432986,-7.300368601210772,1.9782784403448
+room_type,finance_equal,adjusted_mean_rent,1,development,full_controls,3-room,executive,-1.8062138013245894,-8.869894178897168,5.257466576247989
+room_type,finance_equal,adjusted_mean_rent,1,development,full_controls,4-room,5-room,-0.5769753806524972,-4.728391844730796,3.5744410834258007
+room_type,finance_equal,adjusted_mean_rent,1,development,full_controls,4-room,executive,0.27785589845589986,-6.872017964800016,7.427729761711817
+room_type,finance_equal,adjusted_mean_rent,1,development,full_controls,5-room,executive,0.8548312791083972,-6.732900577985728,8.442563136202523
+room_type,banks_cap_seeded,mean_rent,1,development,full_controls,2-room,3-room,-0.6511659016227862,-14.27167167558754,12.969339872341967
+room_type,banks_cap_seeded,mean_rent,1,development,full_controls,2-room,4-room,-1.7944767850949188,-17.611672823542726,14.022719253352886
+room_type,banks_cap_seeded,mean_rent,1,development,full_controls,2-room,5-room,-1.5124491152961579,-15.157663247393621,12.132765016801304
+room_type,banks_cap_seeded,mean_rent,1,development,full_controls,2-room,executive,-1.0004206708567875,-12.837314719892358,10.836473378178784
+room_type,banks_cap_seeded,mean_rent,1,development,full_controls,3-room,4-room,-1.1433108834721326,-9.079378111268678,6.792756344324412
+room_type,banks_cap_seeded,mean_rent,1,development,full_controls,3-room,5-room,-0.8612832136733716,-5.396176473479561,3.673610046132817
+room_type,banks_cap_seeded,mean_rent,1,development,full_controls,3-room,executive,-0.3492547692340012,-8.280040102733212,7.58153056426521
+room_type,banks_cap_seeded,mean_rent,1,development,full_controls,4-room,5-room,0.2820276697987611,-7.188607228701521,7.752662568299042
+room_type,banks_cap_seeded,mean_rent,1,development,full_controls,4-room,executive,0.7940561142381314,-10.236264103859241,11.824376332335502
+room_type,banks_cap_seeded,mean_rent,1,development,full_controls,5-room,executive,0.5120284444393702,-6.5650927880647085,7.58914967694345
+room_type,banks_cap_seeded,adjusted_mean_rent,1,development,full_controls,2-room,3-room,-0.5983749109546647,-15.659170004870239,14.462420182960908
+room_type,banks_cap_seeded,adjusted_mean_rent,1,development,full_controls,2-room,4-room,-1.6532197606047323,-16.793548561021893,13.48710903981243
+room_type,banks_cap_seeded,adjusted_mean_rent,1,development,full_controls,2-room,5-room,-1.5696519020786626,-16.747314413669464,13.608010609512139
+room_type,banks_cap_seeded,adjusted_mean_rent,1,development,full_controls,2-room,executive,-1.0534292606828366,-14.658580612027357,12.551722090661682
+room_type,banks_cap_seeded,adjusted_mean_rent,1,development,full_controls,3-room,4-room,-1.0548448496500675,-6.153962590488165,4.04427289118803
+room_type,banks_cap_seeded,adjusted_mean_rent,1,development,full_controls,3-room,5-room,-0.9712769911239981,-5.440135742709629,3.497581760461632
+room_type,banks_cap_seeded,adjusted_mean_rent,1,development,full_controls,3-room,executive,-0.455054349728172,-9.48891229292699,8.578803593470646
+room_type,banks_cap_seeded,adjusted_mean_rent,1,development,full_controls,4-room,5-room,0.08356785852606952,-4.06810496526091,4.235240682313049
+room_type,banks_cap_seeded,adjusted_mean_rent,1,development,full_controls,4-room,executive,0.5997904999218955,-8.166302138829028,9.365883138672821
+room_type,banks_cap_seeded,adjusted_mean_rent,1,development,full_controls,5-room,executive,0.5162226413958261,-7.75569657650709,8.788141859298742
+flat_model,banks_equal,mean_rent,1,development,full_controls,apartment,improved,-0.729588698859165,-11.601562197843437,10.14238480012511
+flat_model,banks_equal,mean_rent,1,development,full_controls,apartment,maisonette,-0.44576599193429317,-14.20173867719043,13.310206693321845
+flat_model,banks_equal,mean_rent,1,development,full_controls,apartment,model a,-1.2704861200575497,-11.501379630095858,8.96040738998076
+flat_model,banks_equal,mean_rent,1,development,full_controls,apartment,model a2,-1.3913342195309617,-27.657991433627174,24.87532299456525
+flat_model,banks_equal,mean_rent,1,development,full_controls,apartment,new generation,-0.4600911393848934,-10.730024914421227,9.80984263565144
+flat_model,banks_equal,mean_rent,1,development,full_controls,apartment,premium apartment,-0.9720942000442687,-10.268073405207144,8.323885005118605
+flat_model,banks_equal,mean_rent,1,development,full_controls,apartment,simplified,-1.141440834918024,-17.47695593341833,15.194074263582282
+flat_model,banks_equal,mean_rent,1,development,full_controls,apartment,standard,1.010314612660894,-19.076708199524692,21.09733742484648
+flat_model,banks_equal,mean_rent,1,development,full_controls,improved,maisonette,0.2838227069248718,-15.39329728070124,15.960942694550983
+flat_model,banks_equal,mean_rent,1,development,full_controls,improved,model a,-0.5408974211983846,-7.0939248639740216,6.012130021577253
+flat_model,banks_equal,mean_rent,1,development,full_controls,improved,model a2,-0.6617455206717967,-21.900600313963608,20.577109272620014
+flat_model,banks_equal,mean_rent,1,development,full_controls,improved,new generation,0.26949755947427156,-5.678524636167294,6.217519755115837
+flat_model,banks_equal,mean_rent,1,development,full_controls,improved,premium apartment,-0.24250550118510378,-8.855917810905144,8.370906808534937
+flat_model,banks_equal,mean_rent,1,development,full_controls,improved,simplified,-0.4118521360588592,-11.889873659570297,11.066169387452577
+flat_model,banks_equal,mean_rent,1,development,full_controls,improved,standard,1.739903311520059,-13.496473087713468,16.976279710753587
+flat_model,banks_equal,mean_rent,1,development,full_controls,maisonette,model a,-0.8247201281232565,-14.104811245757464,12.455370989510952
+flat_model,banks_equal,mean_rent,1,development,full_controls,maisonette,model a2,-0.9455682275966686,-30.448821813562162,28.557685358368825
+flat_model,banks_equal,mean_rent,1,development,full_controls,maisonette,new generation,-0.014325147450600257,-14.738169711362545,14.709519416461344
+flat_model,banks_equal,mean_rent,1,development,full_controls,maisonette,premium apartment,-0.5263282081099756,-13.487297330441223,12.434640914221271
+flat_model,banks_equal,mean_rent,1,development,full_controls,maisonette,simplified,-0.695674842983731,-16.183901276517343,14.792551590549879
+flat_model,banks_equal,mean_rent,1,development,full_controls,maisonette,standard,1.456080604595187,-19.08047464953692,21.992635858727294
+flat_model,banks_equal,mean_rent,1,development,full_controls,model a,model a2,-0.12084809947341212,-21.54202741563076,21.300331216683936
+flat_model,banks_equal,mean_rent,1,development,full_controls,model a,new generation,0.8103949806726561,-4.768089215361975,6.388879176707288
+flat_model,banks_equal,mean_rent,1,development,full_controls,model a,premium apartment,0.29839192001328085,-6.613387288410715,7.210171128437277
+flat_model,banks_equal,mean_rent,1,development,full_controls,model a,simplified,0.12904528513952537,-11.34555472598358,11.603645296262632
+flat_model,banks_equal,mean_rent,1,development,full_controls,model a,standard,2.2808007327184434,-11.569391757178511,16.1309932226154
+flat_model,banks_equal,mean_rent,1,development,full_controls,model a2,new generation,0.9312430801460683,-21.359961850119674,23.222448010411814
+flat_model,banks_equal,mean_rent,1,development,full_controls,model a2,premium apartment,0.419240019486693,-22.475578550267763,23.314058589241153
+flat_model,banks_equal,mean_rent,1,development,full_controls,model a2,simplified,0.2498933846129375,-23.983826261711467,24.48361303093734
+flat_model,banks_equal,mean_rent,1,development,full_controls,model a2,standard,2.401648832191855,-18.318148396248787,23.121446060632497
+flat_model,banks_equal,mean_rent,1,development,full_controls,new generation,premium apartment,-0.5120030606593753,-7.249659008605238,6.225652887286485
+flat_model,banks_equal,mean_rent,1,development,full_controls,new generation,simplified,-0.6813496955331307,-10.510154189562154,9.147454798495893
+flat_model,banks_equal,mean_rent,1,development,full_controls,new generation,standard,1.4704057520457872,-13.09660190565013,16.037413409741706
+flat_model,banks_equal,mean_rent,1,development,full_controls,premium apartment,simplified,-0.16934663487375545,-11.179492456351948,10.840799186604439
+flat_model,banks_equal,mean_rent,1,development,full_controls,premium apartment,standard,1.9824088127051627,-14.317768457432171,18.282586082842496
+flat_model,banks_equal,mean_rent,1,development,full_controls,simplified,standard,2.151755447578918,-13.912357538874684,18.21586843403252
+flat_model,banks_equal,adjusted_mean_rent,1,development,full_controls,apartment,improved,-0.4956763277914627,-11.5397167603324,10.548364104749476
+flat_model,banks_equal,adjusted_mean_rent,1,development,full_controls,apartment,maisonette,0.02424645232176061,-13.83167344427446,13.880166348917978
+flat_model,banks_equal,adjusted_mean_rent,1,development,full_controls,apartment,model a,-0.7597937274057993,-10.875743854335711,9.356156399524112
+flat_model,banks_equal,adjusted_mean_rent,1,development,full_controls,apartment,model a2,-1.2587198942544482,-27.544507637884976,25.027067849376078
+flat_model,banks_equal,adjusted_mean_rent,1,development,full_controls,apartment,new generation,-0.3399901115554049,-9.965182869596429,9.285202646485619
+flat_model,banks_equal,adjusted_mean_rent,1,development,full_controls,apartment,premium apartment,-1.1424104487078939,-10.164085039996351,7.8792641425805625
+flat_model,banks_equal,adjusted_mean_rent,1,development,full_controls,apartment,simplified,-0.1867573031578355,-15.525098962399385,15.151584356083715
+flat_model,banks_equal,adjusted_mean_rent,1,development,full_controls,apartment,standard,1.5951138034561425,-17.224260391140547,20.414487998052834
+flat_model,banks_equal,adjusted_mean_rent,1,development,full_controls,improved,maisonette,0.5199227801132233,-15.354173790227586,16.394019350454034
+flat_model,banks_equal,adjusted_mean_rent,1,development,full_controls,improved,model a,-0.2641173996143366,-5.790802157998482,5.262567358769808
+flat_model,banks_equal,adjusted_mean_rent,1,development,full_controls,improved,model a2,-0.7630435664629852,-21.541174822241775,20.0150876893158
+flat_model,banks_equal,adjusted_mean_rent,1,development,full_controls,improved,new generation,0.15568621623605786,-4.659869563485889,4.971241995958004
+flat_model,banks_equal,adjusted_mean_rent,1,development,full_controls,improved,premium apartment,-0.6467341209164311,-8.923242612658434,7.629774370825573
+flat_model,banks_equal,adjusted_mean_rent,1,development,full_controls,improved,simplified,0.3089190246336272,-11.019504714594877,11.63734276386213
+flat_model,banks_equal,adjusted_mean_rent,1,development,full_controls,improved,standard,2.090790131247605,-11.332879389944985,15.514459652440195
+flat_model,banks_equal,adjusted_mean_rent,1,development,full_controls,maisonette,model a,-0.7840401797275599,-14.758684074026828,13.190603714571706
+flat_model,banks_equal,adjusted_mean_rent,1,development,full_controls,maisonette,model a2,-1.2829663465762087,-31.173351619056138,28.607418925903723
+flat_model,banks_equal,adjusted_mean_rent,1,development,full_controls,maisonette,new generation,-0.3642365638771655,-15.1617876313512,14.433314503596868
+flat_model,banks_equal,adjusted_mean_rent,1,development,full_controls,maisonette,premium apartment,-1.1666569010296546,-13.661863428453573,11.328549626394265
+flat_model,banks_equal,adjusted_mean_rent,1,development,full_controls,maisonette,simplified,-0.21100375547959613,-15.582491832855409,15.160484321896215
+flat_model,banks_equal,adjusted_mean_rent,1,development,full_controls,maisonette,standard,1.570867351134382,-19.106258872523068,22.247993574791828
+flat_model,banks_equal,adjusted_mean_rent,1,development,full_controls,model a,model a2,-0.49892616684864866,-21.77632063505515,20.77846830135785
+flat_model,banks_equal,adjusted_mean_rent,1,development,full_controls,model a,new generation,0.41980361585039444,-4.298376711089695,5.137983942790484
+flat_model,banks_equal,adjusted_mean_rent,1,development,full_controls,model a,premium apartment,-0.38261672130209456,-7.317485734072803,6.552252291468615
+flat_model,banks_equal,adjusted_mean_rent,1,development,full_controls,model a,simplified,0.5730364242479639,-10.553399997849322,11.69947284634525
+flat_model,banks_equal,adjusted_mean_rent,1,development,full_controls,model a,standard,2.354907530861942,-11.762762822074896,16.472577883798778
+flat_model,banks_equal,adjusted_mean_rent,1,development,full_controls,model a2,new generation,0.918729782699043,-21.112848683861102,22.950308249259184
+flat_model,banks_equal,adjusted_mean_rent,1,development,full_controls,model a2,premium apartment,0.11630944554655416,-23.20671672995973,23.439335621052837
+flat_model,banks_equal,adjusted_mean_rent,1,development,full_controls,model a2,simplified,1.0719625910966124,-23.539813057832085,25.683738240025313
+flat_model,banks_equal,adjusted_mean_rent,1,development,full_controls,model a2,standard,2.8538336977105905,-19.087317691295286,24.794985086716466
+flat_model,banks_equal,adjusted_mean_rent,1,development,full_controls,new generation,premium apartment,-0.8024203371524891,-7.083247902033715,5.478407227728736
+flat_model,banks_equal,adjusted_mean_rent,1,development,full_controls,new generation,simplified,0.15323280839756936,-9.79117416395678,10.097639780751923
+flat_model,banks_equal,adjusted_mean_rent,1,development,full_controls,new generation,standard,1.9351039150115474,-11.834101710176366,15.704309540199462
+flat_model,banks_equal,adjusted_mean_rent,1,development,full_controls,premium apartment,simplified,0.9556531455500584,-9.013639835025462,10.924946126125576
+flat_model,banks_equal,adjusted_mean_rent,1,development,full_controls,premium apartment,standard,2.7375242521640364,-12.649545618563799,18.124594122891875
+flat_model,banks_equal,adjusted_mean_rent,1,development,full_controls,simplified,standard,1.781871106613978,-14.378455802846824,17.94219801607478
+flat_model,finance_equal,mean_rent,1,development,full_controls,apartment,improved,-0.7783200656968332,-12.085698956350862,10.529058824957195
+flat_model,finance_equal,mean_rent,1,development,full_controls,apartment,maisonette,0.8935700006115774,-31.314616307522112,33.101756308745266
+flat_model,finance_equal,mean_rent,1,development,full_controls,apartment,model a,-0.3705403246353004,-12.429660444658847,11.688579795388247
+flat_model,finance_equal,mean_rent,1,development,full_controls,apartment,model a2,1.9688686135204532,-28.633348321176065,32.57108554821698
+flat_model,finance_equal,mean_rent,1,development,full_controls,apartment,new generation,1.6182945335851828,-7.870819685872679,11.107408753043044
+flat_model,finance_equal,mean_rent,1,development,full_controls,apartment,premium apartment,0.006556920503690121,-9.84587000312908,9.858983844136464
+flat_model,finance_equal,mean_rent,1,development,full_controls,apartment,simplified,1.6917562633903294,-13.713407296413457,17.096919823194117
+flat_model,finance_equal,mean_rent,1,development,full_controls,apartment,standard,1.7460107220464758,-19.8669402186395,23.35896166273245
+flat_model,finance_equal,mean_rent,1,development,full_controls,improved,maisonette,1.6718900663084104,-29.32990571324272,32.67368584585954
+flat_model,finance_equal,mean_rent,1,development,full_controls,improved,model a,0.40777974106153275,-7.3575760144915,8.173135496614567
+flat_model,finance_equal,mean_rent,1,development,full_controls,improved,model a2,2.7471886792172864,-23.334866627718743,28.829243986153312
+flat_model,finance_equal,mean_rent,1,development,full_controls,improved,new generation,2.396614599282016,-4.843030942913399,9.63626014147743
+flat_model,finance_equal,mean_rent,1,development,full_controls,improved,premium apartment,0.7848769862005233,-6.975609911806784,8.54536388420783
+flat_model,finance_equal,mean_rent,1,development,full_controls,improved,simplified,2.4700763290871626,-7.638284011619877,12.578436669794204
+flat_model,finance_equal,mean_rent,1,development,full_controls,improved,standard,2.5243307877433088,-12.791027352703523,17.83968892819014
+flat_model,finance_equal,mean_rent,1,development,full_controls,maisonette,model a,-1.2641103252468777,-30.874893104692905,28.34667245419915
+flat_model,finance_equal,mean_rent,1,development,full_controls,maisonette,model a2,1.0752986129088757,-41.53128949070348,43.68188671652123
+flat_model,finance_equal,mean_rent,1,development,full_controls,maisonette,new generation,0.7247245329736054,-29.772894850238263,31.222343916185473
+flat_model,finance_equal,mean_rent,1,development,full_controls,maisonette,premium apartment,-0.8870130801078873,-31.48689632580889,29.712870165593113
+flat_model,finance_equal,mean_rent,1,development,full_controls,maisonette,simplified,0.798186262778752,-29.920901378092253,31.51727390364976
+flat_model,finance_equal,mean_rent,1,development,full_controls,maisonette,standard,0.8524407214348984,-32.32712164876757,34.03200309163737
+flat_model,finance_equal,mean_rent,1,development,full_controls,model a,model a2,2.3394089381557537,-23.466488834856502,28.145306711168008
+flat_model,finance_equal,mean_rent,1,development,full_controls,model a,new generation,1.9888348582204831,-3.7906673296722686,7.768337046113236
+flat_model,finance_equal,mean_rent,1,development,full_controls,model a,premium apartment,0.3770972451389905,-5.374987250195488,6.129181740473469
+flat_model,finance_equal,mean_rent,1,development,full_controls,model a,simplified,2.06229658802563,-10.513113372312167,14.637706548363429
+flat_model,finance_equal,mean_rent,1,development,full_controls,model a,standard,2.116551046681776,-12.60533130114094,16.838433394504495
+flat_model,finance_equal,mean_rent,1,development,full_controls,model a2,new generation,-0.3505740799352704,-27.535710250094642,26.8345620902241
+flat_model,finance_equal,mean_rent,1,development,full_controls,model a2,premium apartment,-1.962311693016763,-28.117064013346074,24.192440627312546
+flat_model,finance_equal,mean_rent,1,development,full_controls,model a2,simplified,-0.2771123501301237,-30.001739594259995,29.44751489399975
+flat_model,finance_equal,mean_rent,1,development,full_controls,model a2,standard,-0.22285789147397742,-25.50825700282836,25.06254121988041
+flat_model,finance_equal,mean_rent,1,development,full_controls,new generation,premium apartment,-1.6117376130814927,-6.5921583345472925,3.368683108384307
+flat_model,finance_equal,mean_rent,1,development,full_controls,new generation,simplified,0.07346172980514667,-10.984482942607336,11.131406402217632
+flat_model,finance_equal,mean_rent,1,development,full_controls,new generation,standard,0.12771618846129298,-16.961405291101922,17.216837668024507
+flat_model,finance_equal,mean_rent,1,development,full_controls,premium apartment,simplified,1.6851993428866394,-10.044569447547833,13.41496813332111
+flat_model,finance_equal,mean_rent,1,development,full_controls,premium apartment,standard,1.7394538015427856,-14.705646711633866,18.18455431471944
+flat_model,finance_equal,mean_rent,1,development,full_controls,simplified,standard,0.054254458656146295,-17.564707881251408,17.6732167985637
+flat_model,finance_equal,adjusted_mean_rent,1,development,full_controls,apartment,improved,-0.4168381979006525,-12.350439710553086,11.516763314751781
+flat_model,finance_equal,adjusted_mean_rent,1,development,full_controls,apartment,maisonette,1.2277019015226398,-22.692307327869337,25.147711130914615
+flat_model,finance_equal,adjusted_mean_rent,1,development,full_controls,apartment,model a,0.03284606411567002,-11.688191579809574,11.753883708040915
+flat_model,finance_equal,adjusted_mean_rent,1,development,full_controls,apartment,model a2,2.2294389242436514,-29.611620315453006,34.070498163940314
+flat_model,finance_equal,adjusted_mean_rent,1,development,full_controls,apartment,new generation,1.2847211504412643,-8.342152572984533,10.911594873867063
+flat_model,finance_equal,adjusted_mean_rent,1,development,full_controls,apartment,premium apartment,-0.08539599341680562,-9.773161523494924,9.60236953666131
+flat_model,finance_equal,adjusted_mean_rent,1,development,full_controls,apartment,simplified,2.0491537578395365,-12.909711383554617,17.00801889923369
+flat_model,finance_equal,adjusted_mean_rent,1,development,full_controls,apartment,standard,1.863013315812949,-17.24940085545219,20.975427487078086
+flat_model,finance_equal,adjusted_mean_rent,1,development,full_controls,improved,maisonette,1.6445400994232926,-20.436790239305783,23.72587043815237
+flat_model,finance_equal,adjusted_mean_rent,1,development,full_controls,improved,model a,0.4496842620163225,-6.26587235357976,7.165240877612405
+flat_model,finance_equal,adjusted_mean_rent,1,development,full_controls,improved,model a2,2.646277122144304,-23.8986139518219,29.191168196110507
+flat_model,finance_equal,adjusted_mean_rent,1,development,full_controls,improved,new generation,1.701559348341917,-5.0055589425824,8.408677639266234
+flat_model,finance_equal,adjusted_mean_rent,1,development,full_controls,improved,premium apartment,0.33144220448384687,-7.614913344695231,8.277797753662924
+flat_model,finance_equal,adjusted_mean_rent,1,development,full_controls,improved,simplified,2.465991955740189,-7.6273978698101565,12.559381781290533
+flat_model,finance_equal,adjusted_mean_rent,1,development,full_controls,improved,standard,2.2798515137136017,-10.792815173199221,15.352518200626424
+flat_model,finance_equal,adjusted_mean_rent,1,development,full_controls,maisonette,model a,-1.19485583740697,-21.837380914448374,19.447669239634436
+flat_model,finance_equal,adjusted_mean_rent,1,development,full_controls,maisonette,model a2,1.0017370227210118,-36.26946907420028,38.272943119642306
+flat_model,finance_equal,adjusted_mean_rent,1,development,full_controls,maisonette,new generation,0.05701924891862442,-21.477910891956228,21.591949389793477
+flat_model,finance_equal,adjusted_mean_rent,1,development,full_controls,maisonette,premium apartment,-1.3130978949394456,-23.28221336859197,20.656017578713083
+flat_model,finance_equal,adjusted_mean_rent,1,development,full_controls,maisonette,simplified,0.8214518563168969,-21.09377454232265,22.73667825495644
+flat_model,finance_equal,adjusted_mean_rent,1,development,full_controls,maisonette,standard,0.6353114142903091,-23.968647115581344,25.23926994416196
+flat_model,finance_equal,adjusted_mean_rent,1,development,full_controls,model a,model a2,2.1965928601279816,-24.804311105298982,29.197496825554946
+flat_model,finance_equal,adjusted_mean_rent,1,development,full_controls,model a,new generation,1.2518750863255945,-3.57615867020387,6.079908842855059
+flat_model,finance_equal,adjusted_mean_rent,1,development,full_controls,model a,premium apartment,-0.11824205753247564,-5.626029133080252,5.3895450180153
+flat_model,finance_equal,adjusted_mean_rent,1,development,full_controls,model a,simplified,2.0163076937238666,-9.633602744389757,13.66621813183749
+flat_model,finance_equal,adjusted_mean_rent,1,development,full_controls,model a,standard,1.8301672516972791,-12.470102759400337,16.130437262794896
+flat_model,finance_equal,adjusted_mean_rent,1,development,full_controls,model a2,new generation,-0.9447177738023874,-29.154637133192534,27.26520158558776
+flat_model,finance_equal,adjusted_mean_rent,1,development,full_controls,model a2,premium apartment,-2.3148349176604572,-30.149553638023367,25.519883802702452
+flat_model,finance_equal,adjusted_mean_rent,1,development,full_controls,model a2,simplified,-0.18028516640411496,-30.046951722350066,29.686381389541836
+flat_model,finance_equal,adjusted_mean_rent,1,development,full_controls,model a2,standard,-0.36642560843070265,-27.846030338240286,27.113179121378877
+flat_model,finance_equal,adjusted_mean_rent,1,development,full_controls,new generation,premium apartment,-1.3701171438580702,-6.018227227947691,3.2779929402315515
+flat_model,finance_equal,adjusted_mean_rent,1,development,full_controls,new generation,simplified,0.7644326073982725,-9.754170289938077,11.283035504734624
+flat_model,finance_equal,adjusted_mean_rent,1,development,full_controls,new generation,standard,0.5782921653716847,-14.963109404863689,16.119693735607058
+flat_model,finance_equal,adjusted_mean_rent,1,development,full_controls,premium apartment,simplified,2.1345497512563423,-9.24536949030233,13.514468992815015
+flat_model,finance_equal,adjusted_mean_rent,1,development,full_controls,premium apartment,standard,1.9484093092297547,-13.619090906224905,17.515909524684417
+flat_model,finance_equal,adjusted_mean_rent,1,development,full_controls,simplified,standard,-0.1861404420265877,-16.54495495483774,16.172674070784563
+flat_model,banks_cap_seeded,mean_rent,1,development,full_controls,apartment,improved,-0.7689533186306557,-11.136443341630331,9.598536704369021
+flat_model,banks_cap_seeded,mean_rent,1,development,full_controls,apartment,maisonette,-0.422092965276802,-14.254492870808818,13.410306940255214
+flat_model,banks_cap_seeded,mean_rent,1,development,full_controls,apartment,model a,-1.4382842110049225,-11.113397124015922,8.236828702006079
+flat_model,banks_cap_seeded,mean_rent,1,development,full_controls,apartment,model a2,-1.9207989705986281,-26.348649355055347,22.507051413858097
+flat_model,banks_cap_seeded,mean_rent,1,development,full_controls,apartment,new generation,-0.5500225301607224,-10.172661443209698,9.072616382888253
+flat_model,banks_cap_seeded,mean_rent,1,development,full_controls,apartment,premium apartment,-1.1067257967269784,-9.886099926489917,7.67264833303596
+flat_model,banks_cap_seeded,mean_rent,1,development,full_controls,apartment,simplified,-1.1400893501163647,-16.662256551194105,14.382077850961375
+flat_model,banks_cap_seeded,mean_rent,1,development,full_controls,apartment,standard,1.0838207648782203,-18.41804268892272,20.585684218679166
+flat_model,banks_cap_seeded,mean_rent,1,development,full_controls,improved,maisonette,0.34686035335385373,-15.059150918941958,15.752871625649664
+flat_model,banks_cap_seeded,mean_rent,1,development,full_controls,improved,model a,-0.6693308923742669,-7.259242599331488,5.920580814582954
+flat_model,banks_cap_seeded,mean_rent,1,development,full_controls,improved,model a2,-1.1518456519679725,-21.62095980020451,19.317268496268568
+flat_model,banks_cap_seeded,mean_rent,1,development,full_controls,improved,new generation,0.21893078846993327,-5.569483455412387,6.007345032352253
+flat_model,banks_cap_seeded,mean_rent,1,development,full_controls,improved,premium apartment,-0.33777247809632266,-9.43442715568221,8.758882199489564
+flat_model,banks_cap_seeded,mean_rent,1,development,full_controls,improved,simplified,-0.3711360314857089,-11.764343294642494,11.022071231671077
+flat_model,banks_cap_seeded,mean_rent,1,development,full_controls,improved,standard,1.8527740835088762,-13.29724316505464,17.002791332072395
+flat_model,banks_cap_seeded,mean_rent,1,development,full_controls,maisonette,model a,-1.0161912457281206,-14.242610200767722,12.21022770931148
+flat_model,banks_cap_seeded,mean_rent,1,development,full_controls,maisonette,model a2,-1.4987060053218262,-29.30115336401857,26.30374135337492
+flat_model,banks_cap_seeded,mean_rent,1,development,full_controls,maisonette,new generation,-0.12792956488392046,-14.237467807568173,13.981608677800333
+flat_model,banks_cap_seeded,mean_rent,1,development,full_controls,maisonette,premium apartment,-0.6846328314501764,-13.42787432652924,12.058608663628888
+flat_model,banks_cap_seeded,mean_rent,1,development,full_controls,maisonette,simplified,-0.7179963848395626,-15.019656959909625,13.583664190230499
+flat_model,banks_cap_seeded,mean_rent,1,development,full_controls,maisonette,standard,1.5059137301550223,-18.274281660302993,21.286109120613038
+flat_model,banks_cap_seeded,mean_rent,1,development,full_controls,model a,model a2,-0.48251475959370554,-20.64925787281477,19.684228353627354
+flat_model,banks_cap_seeded,mean_rent,1,development,full_controls,model a,new generation,0.8882616808442002,-4.335170675240866,6.111694036929266
+flat_model,banks_cap_seeded,mean_rent,1,development,full_controls,model a,premium apartment,0.33155841427794425,-6.931360880875257,7.594477709431145
+flat_model,banks_cap_seeded,mean_rent,1,development,full_controls,model a,simplified,0.29819486088855796,-11.248105931577566,11.844495653354684
+flat_model,banks_cap_seeded,mean_rent,1,development,full_controls,model a,standard,2.522104975883143,-11.48370497818557,16.527914929951855
+flat_model,banks_cap_seeded,mean_rent,1,development,full_controls,model a2,new generation,1.3707764404379055,-19.901407146648193,22.642960027524005
+flat_model,banks_cap_seeded,mean_rent,1,development,full_controls,model a2,premium apartment,0.8140731738716498,-21.24396384806957,22.87211019581287
+flat_model,banks_cap_seeded,mean_rent,1,development,full_controls,model a2,simplified,0.7807096204822636,-23.385753341761443,24.947172582725972
+flat_model,banks_cap_seeded,mean_rent,1,development,full_controls,model a2,standard,3.0046197354768482,-16.929309320976152,22.938548791929847
+flat_model,banks_cap_seeded,mean_rent,1,development,full_controls,new generation,premium apartment,-0.5567032665662559,-7.4986403942373,6.385233861104787
+flat_model,banks_cap_seeded,mean_rent,1,development,full_controls,new generation,simplified,-0.5900668199556421,-10.09123091984604,8.911097279934756
+flat_model,banks_cap_seeded,mean_rent,1,development,full_controls,new generation,standard,1.6338432950389425,-12.637551692550053,15.90523828262794
+flat_model,banks_cap_seeded,mean_rent,1,development,full_controls,premium apartment,simplified,-0.03336355338938626,-11.508307089773082,11.44157998299431
+flat_model,banks_cap_seeded,mean_rent,1,development,full_controls,premium apartment,standard,2.1905465616051987,-14.297587609261528,18.67868073247193
+flat_model,banks_cap_seeded,mean_rent,1,development,full_controls,simplified,standard,2.223910114994585,-13.415914699921482,17.863734929910652
+flat_model,banks_cap_seeded,adjusted_mean_rent,1,development,full_controls,apartment,improved,-0.5533708254257946,-11.134666843165927,10.02792519231434
+flat_model,banks_cap_seeded,adjusted_mean_rent,1,development,full_controls,apartment,maisonette,0.03488707796028326,-13.86033312334337,13.930107279263936
+flat_model,banks_cap_seeded,adjusted_mean_rent,1,development,full_controls,apartment,model a,-0.9601169822771874,-10.49882787569571,8.578593911141336
+flat_model,banks_cap_seeded,adjusted_mean_rent,1,development,full_controls,apartment,model a2,-1.8181951120869972,-25.953126359682173,22.31673613550818
+flat_model,banks_cap_seeded,adjusted_mean_rent,1,development,full_controls,apartment,new generation,-0.4298522589031692,-9.535165760214648,8.675461242408309
+flat_model,banks_cap_seeded,adjusted_mean_rent,1,development,full_controls,apartment,premium apartment,-1.2610939389160363,-9.608917674628564,7.086729796796493
+flat_model,banks_cap_seeded,adjusted_mean_rent,1,development,full_controls,apartment,simplified,-0.24937820915804434,-14.59121111412456,14.092454695808469
+flat_model,banks_cap_seeded,adjusted_mean_rent,1,development,full_controls,apartment,standard,1.7177809092871679,-16.330087227308315,19.76564904588265
+flat_model,banks_cap_seeded,adjusted_mean_rent,1,development,full_controls,improved,maisonette,0.5882579033860779,-14.900821549261352,16.07733735603351
+flat_model,banks_cap_seeded,adjusted_mean_rent,1,development,full_controls,improved,model a,-0.4067461568513929,-6.1254248694434015,5.311932555740617
+flat_model,banks_cap_seeded,adjusted_mean_rent,1,development,full_controls,improved,model a2,-1.2648242866612027,-21.179287078373942,18.649638505051538
+flat_model,banks_cap_seeded,adjusted_mean_rent,1,development,full_controls,improved,new generation,0.12351856652262544,-4.812918383761356,5.059955516806606
+flat_model,banks_cap_seeded,adjusted_mean_rent,1,development,full_controls,improved,premium apartment,-0.7077231134902418,-9.208848339120273,7.7934021121397885
+flat_model,banks_cap_seeded,adjusted_mean_rent,1,development,full_controls,improved,simplified,0.30399261626775026,-10.810063656509971,11.418048889045474
+flat_model,banks_cap_seeded,adjusted_mean_rent,1,development,full_controls,improved,standard,2.2711517347129626,-10.7281353060774,15.270438775503326
+flat_model,banks_cap_seeded,adjusted_mean_rent,1,development,full_controls,maisonette,model a,-0.9950040602374707,-14.74692432908269,12.756916208607747
+flat_model,banks_cap_seeded,adjusted_mean_rent,1,development,full_controls,maisonette,model a2,-1.8530821900472805,-29.718478289495067,26.012313909400508
+flat_model,banks_cap_seeded,adjusted_mean_rent,1,development,full_controls,maisonette,new generation,-0.4647393368634524,-14.735048653763046,13.805569980036143
+flat_model,banks_cap_seeded,adjusted_mean_rent,1,development,full_controls,maisonette,premium apartment,-1.2959810168763195,-13.481823781499582,10.889861747746943
+flat_model,banks_cap_seeded,adjusted_mean_rent,1,development,full_controls,maisonette,simplified,-0.2842652871183276,-14.246070333667362,13.677539759430704
+flat_model,banks_cap_seeded,adjusted_mean_rent,1,development,full_controls,maisonette,standard,1.6828938313268846,-17.889286704125542,21.25507436677931
+flat_model,banks_cap_seeded,adjusted_mean_rent,1,development,full_controls,model a,model a2,-0.8580781298098098,-20.77879115287293,19.062634893253307
+flat_model,banks_cap_seeded,adjusted_mean_rent,1,development,full_controls,model a,new generation,0.5302647233740183,-4.159029972304108,5.219559419052144
+flat_model,banks_cap_seeded,adjusted_mean_rent,1,development,full_controls,model a,premium apartment,-0.3009769566388489,-7.39017619426757,6.788222280989873
+flat_model,banks_cap_seeded,adjusted_mean_rent,1,development,full_controls,model a,simplified,0.7107387731191432,-10.320778913292928,11.742256459531214
+flat_model,banks_cap_seeded,adjusted_mean_rent,1,development,full_controls,model a,standard,2.677897891564355,-11.235356946230652,16.591152729359365
+flat_model,banks_cap_seeded,adjusted_mean_rent,1,development,full_controls,model a2,new generation,1.388342853183828,-19.401846175250252,22.17853188161791
+flat_model,banks_cap_seeded,adjusted_mean_rent,1,development,full_controls,model a2,premium apartment,0.5571011731709609,-21.54471960968464,22.65892195602656
+flat_model,banks_cap_seeded,adjusted_mean_rent,1,development,full_controls,model a2,simplified,1.5688169029289527,-22.660399066839997,25.7980328726979
+flat_model,banks_cap_seeded,adjusted_mean_rent,1,development,full_controls,model a2,standard,3.535976021374165,-16.926086559410653,23.99803860215898
+flat_model,banks_cap_seeded,adjusted_mean_rent,1,development,full_controls,new generation,premium apartment,-0.8312416800128671,-7.1593949838291895,5.496911623803456
+flat_model,banks_cap_seeded,adjusted_mean_rent,1,development,full_controls,new generation,simplified,0.18047404974512482,-9.331239596306592,9.692187695796841
+flat_model,banks_cap_seeded,adjusted_mean_rent,1,development,full_controls,new generation,standard,2.1476331681903367,-11.045998274614966,15.341264610995639
+flat_model,banks_cap_seeded,adjusted_mean_rent,1,development,full_controls,premium apartment,simplified,1.0117157297579922,-9.032117970004357,11.05554942952034
+flat_model,banks_cap_seeded,adjusted_mean_rent,1,development,full_controls,premium apartment,standard,2.978874848203204,-11.972743428207417,17.930493124613825
+flat_model,banks_cap_seeded,adjusted_mean_rent,1,development,full_controls,simplified,standard,1.967159118445212,-13.203683424754322,17.138001661644747

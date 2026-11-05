@@ -1,0 +1,15 @@
+{
+  "verified": true,
+  "rows": 32995,
+  "later_rows": 28995,
+  "member_predictions_and_population_weights_exact": true,
+  "original_BDE_reproduced": true,
+  "historical_A_query_labels_excluded_from_adapter_fit_and_selection": true,
+  "all_scores_recomputed": true,
+  "weights_earlier_only": true,
+  "selected": "CDE",
+  "no_main_period_oracle_weights": true,
+  "submissions_unchanged": true,
+  "reporting_code_sha256": "d97649d2c634c4d452769311d94cccba54d4cfd2cbb695670ea21321df5a0624",
+  "audit_code_sha256": "e3275bf19e824a74cb481592ebbf0bc926d62f16be4b841a78cd4cded3a8999f"
+}

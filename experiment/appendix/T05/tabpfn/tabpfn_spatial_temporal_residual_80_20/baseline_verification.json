@@ -1,0 +1,11 @@
+{
+  "rmse_sgd": 455.0710283636764,
+  "mae_sgd": 330.78978114524807,
+  "bias_sgd": -8.427615551174402,
+  "rows": 28995,
+  "checkpoint": ".cache/tabpfn/tabpfn-v3.5-fast-20260909.safetensors",
+  "adapter": ".cache/tabpfn_components_80_20/candidates/diag_mse_only/adapter.pt",
+  "features": 77,
+  "target": "raw rent minus original train_baseline; original query_baseline added once",
+  "competition_test_labels": false
+}

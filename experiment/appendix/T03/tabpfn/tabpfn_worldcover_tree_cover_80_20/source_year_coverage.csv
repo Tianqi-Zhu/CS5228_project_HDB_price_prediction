@@ -1,0 +1,12 @@
+stage,split,source_year,rows
+outer,train,2020,43218
+outer,train,2021,40483
+outer,train,unavailable,37304
+outer,query,2021,28995
+inner_2022-09,train,unavailable,37304
+inner_2022-09,train,2020,22775
+inner_2022-09,query,2020,600
+inner_2023-07,train,2020,42279
+inner_2023-07,train,unavailable,37304
+inner_2023-07,train,2021,8354
+inner_2023-07,query,2021,600

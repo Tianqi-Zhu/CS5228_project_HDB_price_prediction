@@ -1,0 +1,17 @@
+{
+  "strategy": "S3",
+  "sampler_train": "S3",
+  "sampler_inference": "S0",
+  "query_rows": 28995,
+  "context_rows": 121005,
+  "train_views": 2,
+  "checkpoint_views": 2,
+  "deployment_views": 1,
+  "learning_rate": 0.01,
+  "seed": 42,
+  "fit_predict_seconds": 581.0411200999515,
+  "peak_vram_gib": 7.219405174255371,
+  "rmse_sgd": 457.2398007267225,
+  "mae_sgd": 332.2396589078956,
+  "bias_sgd": 1.3122985775675176
+}

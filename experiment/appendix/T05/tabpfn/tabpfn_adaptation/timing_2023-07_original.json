@@ -1,0 +1,8 @@
+{
+  "fit_seconds": 1.5583138999936637,
+  "predict_embedding_seconds": 9.890865699999267,
+  "peak_allocated_gib": 2.6741013526916504,
+  "context_population": 87937,
+  "query_rows": 26905,
+  "embedding_width": 0
+}

@@ -1,0 +1,18 @@
+{
+  "selected_views": 4,
+  "scores": [
+    {
+      "views": 1,
+      "weighted_rmse_sgd": 520.848215460587
+    },
+    {
+      "views": 2,
+      "weighted_rmse_sgd": 518.1455630765379
+    },
+    {
+      "views": 4,
+      "weighted_rmse_sgd": 517.1554132389051
+    }
+  ],
+  "outer_labels_used_for_selection": false
+}

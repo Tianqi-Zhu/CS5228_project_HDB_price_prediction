@@ -1,0 +1,11 @@
+{
+  "train_rows": 121005,
+  "selected_epochs": 2,
+  "inner_epoch_selection_mse": 266801.61353622767,
+  "adapter_modules": 12,
+  "trainable_parameters": 8576,
+  "delta_l2": 13.792889971036818,
+  "fit_seconds": 51.387631300021894,
+  "peak_fit_vram_gib": 3.178051471710205,
+  "outer_labels_used_for_selection_or_training": false
+}

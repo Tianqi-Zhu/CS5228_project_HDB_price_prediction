@@ -1,0 +1,20 @@
+{
+  "new_tests_passed": 14,
+  "existing_related_tests_passed": 15,
+  "test_modules": [
+    "tests.test_spatial_temporal_transformer",
+    "tests.test_temporal_sequence_ablation",
+    "tests.test_tabm_regression",
+    "tests.test_aligned_temporal_features"
+  ],
+  "python_compilation": "passed",
+  "powershell_launcher_syntax": "passed",
+  "git_diff_whitespace_check": "passed",
+  "cpu_smoke_processors": [
+    "none",
+    "transformer",
+    "lstm",
+    "linear"
+  ],
+  "cpu_checkpoint_replay": "exact"
+}

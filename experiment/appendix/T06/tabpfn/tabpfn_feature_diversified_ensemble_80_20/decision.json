@@ -1,0 +1,9 @@
+{
+  "candidate_for_independent_confirmation": false,
+  "production_submission_unchanged": true,
+  "untouched_test_available": false,
+  "best_frozen_reference_rmse_sgd": 455.3959272763664,
+  "optimized_rmse_sgd": 455.1718734783953,
+  "standard6_rmse_sgd": 455.21515954276526,
+  "deployment_recommendation": "Retain existing model; specified feature-diversified ensemble lacks sufficient stable evidence"
+}

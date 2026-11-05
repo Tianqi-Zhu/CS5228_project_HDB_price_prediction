@@ -1,0 +1,8 @@
+{
+  "town": "central",
+  "context_rows": 1855,
+  "query_rows": 423,
+  "context_ids_sha256": "9ba585a893917b317a3e19bf579b6a4c35bd54b60807f0b9b4c6df1d5bcccb76",
+  "query_ids_sha256": "f4919234977ee5a1d87bf317778f2fac47ce9f3be179ac242e74b2a063158e88",
+  "settings_sha256": "7ec7fcf4dc279912e4ccac47faafbe82887e1d344fe25f59350c4dbcbc3e5916"
+}

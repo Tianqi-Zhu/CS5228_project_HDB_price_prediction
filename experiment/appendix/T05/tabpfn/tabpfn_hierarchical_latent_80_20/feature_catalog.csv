@@ -1,0 +1,78 @@
+position,name,family,categorical
+0,FLAT_TYPE_CLEAN,Static/calendar/identity,True
+1,FLAT_MODEL_CLEAN,Static/calendar/identity,True
+2,FLOOR_AREA_SQM,Static/calendar/identity,False
+3,APPROVAL_MONTH_INDEX,Static/calendar/identity,False
+4,APPROVAL_MONTH_OF_YEAR,Static/calendar/identity,True
+5,FLAT_AGE_YEARS,Static/calendar/identity,False
+6,TOWN_CLEAN,Static/calendar/identity,True
+7,LATITUDE,Static/calendar/identity,False
+8,LONGITUDE,Static/calendar/identity,False
+9,MAX_FLOOR,Static/calendar/identity,False
+10,YEAR_COMPLETED,Static/calendar/identity,False
+11,BUILDING_AGE_FROM_COMPLETION,Static/calendar/identity,False
+12,SUBZONE,Static/calendar/identity,True
+13,PLANNING_AREA,Static/calendar/identity,True
+14,REGION,Static/calendar/identity,True
+15,NEAREST_MRT_KM,Static/calendar/identity,False
+16,NEAREST_MALL_KM,Static/calendar/identity,False
+17,NEAREST_SCHOOL_KM,Static/calendar/identity,False
+18,DISTANCE_TO_CBD_KM,Static/calendar/identity,False
+19,AMENITY_DENSITY_1KM,Static/calendar/identity,False
+20,MRT_COUNT_0.5KM,Static/calendar/identity,False
+21,MRT_COUNT_1.0KM,Static/calendar/identity,False
+22,MRT_COUNT_2.0KM,Static/calendar/identity,False
+23,MALL_COUNT_0.5KM,Static/calendar/identity,False
+24,MALL_COUNT_1.0KM,Static/calendar/identity,False
+25,MALL_COUNT_2.0KM,Static/calendar/identity,False
+26,SCHOOL_COUNT_0.5KM,Static/calendar/identity,False
+27,SCHOOL_COUNT_1.0KM,Static/calendar/identity,False
+28,SCHOOL_COUNT_2.0KM,Static/calendar/identity,False
+29,HIST_SIGNATURE_MEAN,Causal rental history,False
+30,HIST_SIGNATURE_COUNT,Causal rental history,False
+31,HIST_SIGNATURE_LAST_MEAN,Causal rental history,False
+32,HIST_SIGNATURE_RECENCY_MONTHS,Causal rental history,False
+33,HIST_BLOCK_FLAT_MEAN,Causal rental history,False
+34,HIST_BLOCK_FLAT_COUNT,Causal rental history,False
+35,HIST_BLOCK_FLAT_LAST_MEAN,Causal rental history,False
+36,HIST_BLOCK_FLAT_RECENCY_MONTHS,Causal rental history,False
+37,HIST_AREA_FLAT_MEAN,Causal rental history,False
+38,HIST_AREA_FLAT_COUNT,Causal rental history,False
+39,HIST_AREA_FLAT_LAST_MEAN,Causal rental history,False
+40,HIST_AREA_FLAT_RECENCY_MONTHS,Causal rental history,False
+41,BLOCK_ID,Static/calendar/identity,True
+42,STREET_ID,Static/calendar/identity,True
+43,RECENT_BLOCK_FLAT_3M_MEAN,Causal rental history,False
+44,RECENT_BLOCK_FLAT_3M_COUNT,Causal rental history,False
+45,RECENT_BLOCK_FLAT_6M_MEAN,Causal rental history,False
+46,RECENT_BLOCK_FLAT_6M_COUNT,Causal rental history,False
+47,RECENT_BLOCK_FLAT_12M_MEAN,Causal rental history,False
+48,RECENT_BLOCK_FLAT_12M_COUNT,Causal rental history,False
+49,RECENT_AREA_FLAT_3M_MEAN,Causal rental history,False
+50,RECENT_AREA_FLAT_3M_COUNT,Causal rental history,False
+51,RECENT_AREA_FLAT_6M_MEAN,Causal rental history,False
+52,RECENT_AREA_FLAT_6M_COUNT,Causal rental history,False
+53,RECENT_AREA_FLAT_12M_MEAN,Causal rental history,False
+54,RECENT_AREA_FLAT_12M_COUNT,Causal rental history,False
+55,RECENT_BLOCK_FLAT_3M_SHRUNK_MEAN,Causal rental history,False
+56,RECENT_BLOCK_FLAT_6M_SHRUNK_MEAN,Causal rental history,False
+57,RECENT_BLOCK_FLAT_12M_SHRUNK_MEAN,Causal rental history,False
+58,RECENT_BLOCK_FLAT_3M_STD,Causal rental history,False
+59,RECENT_BLOCK_FLAT_6M_STD,Causal rental history,False
+60,RECENT_BLOCK_FLAT_12M_STD,Causal rental history,False
+61,RECENT_AREA_FLAT_3M_STD,Causal rental history,False
+62,RECENT_AREA_FLAT_6M_STD,Causal rental history,False
+63,RECENT_AREA_FLAT_12M_STD,Causal rental history,False
+64,AREA_RECENT_MINUS_LONG,Causal rental history,False
+65,BLOCK_RECENT_MINUS_LONG,Causal rental history,False
+66,BLOCK_MINUS_AREA_RECENT,Causal rental history,False
+67,AREA_LAST_MINUS_RECENT,Causal rental history,False
+68,TEMP_FLAT_RECENT3_MEAN,Temporal forecast,False
+69,TEMP_FLAT_RECENT12_MEAN,Temporal forecast,False
+70,TEMP_FLAT_DAMPED_FORECAST,Temporal forecast,False
+71,TEMP_FORECAST_HORIZON,Temporal forecast,False
+72,TEMP_FLAT_HISTORY_COUNT_3M,Temporal forecast,False
+73,TEMP_FLAT_LAST_OBSERVATION_AGE,Temporal forecast,False
+74,TEMP_LOCAL_FORECAST,Temporal forecast,False
+75,TEMP_LOCAL_WEIGHT,Temporal forecast,False
+76,TEMP_FORECAST_RMSE,Temporal forecast,False

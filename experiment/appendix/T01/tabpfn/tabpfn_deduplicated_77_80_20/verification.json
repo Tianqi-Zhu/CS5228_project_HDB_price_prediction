@@ -1,0 +1,17 @@
+{
+  "source_hashes_unchanged": true,
+  "processed_export_hashes_verified": true,
+  "checkpoint_unchanged": true,
+  "kaggle_submission_unchanged": true,
+  "all77_feature_names_preserved": true,
+  "static_features_unchanged": true,
+  "history_and_baselines_rebuilt_from_unique_context": true,
+  "unchanged_data_feature_replay_verified": true,
+  "stable_row_ids_and_pseudo_origins_preserved": true,
+  "validation_ids_and_labels_unchanged": true,
+  "inference_parameters_unchanged": true,
+  "full_retained_context_used": true,
+  "validation_rows": 28995,
+  "retained_context_rows": 120761,
+  "predictions_finite": true
+}

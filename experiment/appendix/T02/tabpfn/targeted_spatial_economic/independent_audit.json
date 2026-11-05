@@ -1,0 +1,12 @@
+{
+  "verified": true,
+  "inference_cases": 18,
+  "original_inputs_targets_baselines_rows_and_categories_unchanged": true,
+  "baseline_ensemble_weights_match_existing_all_origins": true,
+  "all_appended_feature_cutoffs_precede_target_months": true,
+  "source_submission_checkpoint_and_prediction_hashes_verified": true,
+  "archived_supply_totals_and_feature_replay_verified": true,
+  "historical_residual_rows": 4000,
+  "in_sample_or_later_residuals_used": false,
+  "audit_code_sha256": "e1cd4221455ecc3cc29ef8e0a72287ff553d2f4e95548ef3195df20152a10c29"
+}

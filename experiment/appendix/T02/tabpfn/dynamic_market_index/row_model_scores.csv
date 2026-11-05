@@ -1,0 +1,4 @@
+model,n,rmse_sgd,mae_sgd,bias_sgd
+catboost,79817,539.2882,413.6053,-26.7357
+hist_gradient_boosting,79817,543.0956,414.4900,-7.0229
+lightgbm,79817,545.8289,416.0327,-7.1763

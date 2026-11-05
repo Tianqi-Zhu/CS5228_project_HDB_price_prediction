@@ -1,0 +1,14 @@
+{
+  "verified": true,
+  "variants": [
+    "relative_history",
+    "horizon_dynamics",
+    "coe_origin",
+    "stocks_origin"
+  ],
+  "origins": [
+    "2022-09",
+    "2023-07",
+    "2024-06"
+  ]
+}

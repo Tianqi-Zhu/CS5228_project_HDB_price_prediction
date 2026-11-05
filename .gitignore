@@ -38,3 +38,7 @@ experiment/**/submission.csv
 experiment/**/history.csv
 experiment/**/model.zip
 # All detailed experiment runs now live under the ignored output/ tree.
+
+# Frozen source-branch evidence is intentional; regenerated outputs stay in output/.
+!experiment/main/M07/tabpfn/**
+!experiment/appendix/T*/tabpfn/**

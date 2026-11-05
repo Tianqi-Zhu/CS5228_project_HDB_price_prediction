@@ -1,0 +1,54 @@
+{
+  "school_archive": {
+    "url": "https://sgschooling.com/year/2020/all",
+    "publisher": "SG Schooling, historical tabulations of MOE registration facts",
+    "caveat": "demand proxy only; not an official quality/reputation rank; historical source-version integrity unverified"
+  },
+  "school_framework": {
+    "url": "https://www.moe.gov.sg/-/media/files/news/press/2021/faqs-changes-to-p1-registration-framework.pdf",
+    "publisher": "MOE",
+    "use": "Phase 2C reserved-seat rule change; current features rank latest available observations, potentially mixing years for archive gaps. Strict within-year normalization remains a follow-up."
+  },
+  "rail_dates": {
+    "url": "https://www.lta.gov.sg/content/ltagov/en/upcoming_projects/rail_expansion/thomson_east_coast_line.html/1000",
+    "publisher": "LTA",
+    "facts": {
+      "TEL1": "2020-01-31",
+      "TEL2": "2021-08-28",
+      "TEL3": "2022-11-13",
+      "TEL4": "2024-06-23"
+    },
+    "policy": "verified operational dates; after-cutoff additions excluded"
+  },
+  "rail_branch": {
+    "url": "https://file.go.gov.sg/tel3.pdf",
+    "publisher": "LTA",
+    "use": "historical network and interchange structure; CE1/CE2 vs later CC34/CC33 source labels"
+  },
+  "lta_volume_api": {
+    "url": "https://datamall.lta.gov.sg/content/datamall/en/dynamic-data.html",
+    "publisher": "LTA",
+    "caveat": "API key not configured; a dated public archive supplies Aug?Oct 2023 entry/exit counts"
+  },
+  "bus_archive": {
+    "url": "https://github.com/cheeaun/sgbusdata",
+    "attribution": "BusRouter SG / cheeaun; underlying data LTA, OneMap and OSM, not blanket MIT dataset licensing",
+    "use": "git-versioned stop/service facts; unique routes count not bus frequency"
+  },
+  "cict_reports": {
+    "url": "https://investor.cict.com.sg/ar.html",
+    "publisher": "CICT/CMT",
+    "policy": "retail-only NLA; combined Bugis+/BPP revenue and mixed-use/partial-interest revenue excluded"
+  },
+  "fct_reports": {
+    "url": "https://fct.frasersproperty.com/ar.html",
+    "publisher": "FCT",
+    "policy": "standalone whole-mall NLA and reported traffic; JV stakeholder revenue excluded"
+  },
+  "jurong_point": {
+    "url": "https://www.linkreit.com/en/media/news-releases/link-enters-singapore-through-the-acquisition-of-jurong-point-and-swing-by-thomson-plaza/",
+    "publisher": "Link REIT",
+    "available_at": "2023-01-01",
+    "policy": "approximate published NLA only; partial Thomson Plaza acquisition excluded"
+  }
+}

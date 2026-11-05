@@ -1,0 +1,23 @@
+test_annual_completion_and_actual_publication (tests.test_local_spatial_experiments.SatelliteTests.test_annual_completion_and_actual_publication) ... ok
+test_pca_fits_only_training_and_keeps_missing_missing (tests.test_local_spatial_experiments.SatelliteTests.test_pca_fits_only_training_and_keeps_missing_missing) ... ok
+test_canonical_exact_address_and_coordinates (tests.test_local_spatial_experiments.SpatialTests.test_canonical_exact_address_and_coordinates) ... ok
+test_census_publication_and_suppression (tests.test_local_spatial_experiments.SpatialTests.test_census_publication_and_suppression) ... ok
+test_feature_rows_and_original_inputs_preserved (tests.test_local_spatial_experiments.SpatialTests.test_feature_rows_and_original_inputs_preserved) ... ok
+test_histories_are_origin_safe_under_target_mutation (tests.test_local_spatial_experiments.SpatialTests.test_histories_are_origin_safe_under_target_mutation) ... ok
+test_income_bands_keep_regional_support_and_publication_cutoff (tests.test_local_spatial_experiments.SpatialTests.test_income_bands_keep_regional_support_and_publication_cutoff) ... ok
+test_metres_counts_and_normalized_kde (tests.test_local_spatial_experiments.SpatialTests.test_metres_counts_and_normalized_kde) ... ok
+test_own_month_is_never_included (tests.test_local_spatial_experiments.SpatialTests.test_own_month_is_never_included) ... ok
+test_polygon_support_and_no_overlap_double_count (tests.test_local_spatial_experiments.SpatialTests.test_polygon_support_and_no_overlap_double_count) ... ok
+test_all_histories_are_frozen_at_the_selected_origin (tests.test_aligned_temporal_features.AlignedTemporalTests.test_all_histories_are_frozen_at_the_selected_origin) ... ok
+test_context_origins_cover_the_validation_horizon_without_overlap (tests.test_aligned_temporal_features.AlignedTemporalTests.test_context_origins_cover_the_validation_horizon_without_overlap) ... ok
+test_forecast_and_tuning_cannot_see_future_rents (tests.test_aligned_temporal_features.AlignedTemporalTests.test_forecast_and_tuning_cannot_see_future_rents) ... ok
+test_new_area_uses_flat_type_forecast_without_a_local_premium (tests.test_aligned_temporal_features.AlignedTemporalTests.test_new_area_uses_flat_type_forecast_without_a_local_premium) ... ok
+test_future_labels_cannot_change_fitting_or_tuning (tests.test_tabpfn_temporal_features.TemporalFeatureTests.test_future_labels_cannot_change_fitting_or_tuning) ... ok
+test_historical_origins_are_earlier_and_independent_of_row_order (tests.test_tabpfn_temporal_features.TemporalFeatureTests.test_historical_origins_are_earlier_and_independent_of_row_order) ... ok
+test_join_preserves_original_values_row_order_and_unseen_groups (tests.test_tabpfn_temporal_features.TemporalFeatureTests.test_join_preserves_original_values_row_order_and_unseen_groups) ... ok
+test_validation_uses_one_fixed_cutoff (tests.test_tabpfn_temporal_features.TemporalFeatureTests.test_validation_uses_one_fixed_cutoff) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 1.866s
+
+OK

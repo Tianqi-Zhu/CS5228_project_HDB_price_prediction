@@ -1,0 +1,53 @@
+{
+  "checkpoint_sha256": "14e0b81285bca7a6d1ef121169f27f651f76dff49cad6c0b8779d5c836018550",
+  "aligned_bundle_sha256": "639f5d0a3cda8570b86f927c0e29b5d58c874d91976af590790c32cc62a481da",
+  "outer_bundle_sha256": "fba84757b6e23280d2b27eab0ca5d86a427ac19ca33c6b12b5b2dcc4194a0059",
+  "reference_sha256": "6ae63cf3d00073220a77f05e547efcc601dcbdae151dc4260c8b72c21a9d83b6",
+  "code_sha256": {
+    "analysis/compare_tabpfn_fast_embedding_head_80_20.py": "0f309e549fd9fb97831c1976c99314bcb40cd99adbfffbc3cd78d64ac821ef5d",
+    "analysis/experiments/tabpfn_embedding_head.py": "0f597819c710bd1de5d75906fbe56c05d91c14293b811122af49041dab73ede7",
+    "analysis/experiments/aligned_temporal_features.py": "1f0b886ca3398dd7c681b0dc8c7b73092652323f148ad6bc40aa13ea1e20ba74",
+    "analysis/experiments/calendar_encoding.py": "3cdf03e2f6772d7530231caf5d56bbc668d13aa9307d9c0346308940c5fd2f20"
+  },
+  "origins": [
+    "2022-05",
+    "2022-09",
+    "2023-01",
+    "2023-05",
+    "2023-08",
+    "2024-02"
+  ],
+  "outer_origin": "2024-06",
+  "calibration_start": "2023-12",
+  "horizon_months": 10,
+  "queries_per_month": 200,
+  "batch_size": 200,
+  "month_encoding": "categorical",
+  "head_train_uses": "strict earlier target months",
+  "head_selection_uses": "Dec 2023-May 2024 historical queries only",
+  "shrinkage_grid": [
+    0,
+    0.25,
+    0.5,
+    1
+  ],
+  "embedding_pca_components": 32,
+  "mlp": {
+    "hidden": 32,
+    "dropout": 0.2,
+    "lr": 0.0003,
+    "weight_decay": 0.01,
+    "max_epochs": 80,
+    "patience": 10,
+    "seed": 42
+  },
+  "head_selection_gate": "embedding MLP >=1% weighted calibration RMSE gain over TabPFN",
+  "versions": {
+    "tabpfn": "9.2.0",
+    "torch": "2.11.0+cu128",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.0"
+  },
+  "gpu": "NVIDIA GeForce RTX 4080"
+}

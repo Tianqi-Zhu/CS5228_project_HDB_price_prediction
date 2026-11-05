@@ -1,0 +1,10 @@
+{
+  "original_validation_rows": 28995,
+  "identical_row_ids_order_months_and_labels": true,
+  "predictions_finite": true,
+  "prediction_sha256": {
+    "reports\\tabpfn_v3_5_fast_calendar_80_20\\predictions_outer_categorical.csv": "6ae63cf3d00073220a77f05e547efcc601dcbdae151dc4260c8b72c21a9d83b6",
+    "reports\\tabpfn_api_77\\validation_v3.5_default_standard_e1\\predictions.csv": "0986ec8fb79f1a6875d8ff32aaaaf7cdb21fd4ebba233945a8372bcdd8186c47",
+    "reports\\tabpfn_api_77\\validation_v3.5_default_medium_e1\\predictions.csv": "0024795c7f26cdf3f05134f8c45739e08d5c28792470e3ed121c2615cdbc240a"
+  }
+}

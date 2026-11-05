@@ -1,0 +1,15 @@
+{
+  "fold": "long16",
+  "design": "group02",
+  "seed": 42,
+  "best_epoch": 14,
+  "rows": 47171,
+  "weighted_rmse_sgd": 492.08654962952073,
+  "rmse_sgd": 492.08654962952073,
+  "mae_sgd": 363.81905360708237,
+  "bias_sgd": 17.638056309433267,
+  "peak_allocated_vram_gib": 0.30435991287231445,
+  "checkpoint_sha256": "00de529aff18ef7e04421af4691e44800072de2e792887d4923a3017edc3769a",
+  "predictions_sha256": "fd149119d4dad0ccb23e1d47d003c20b7f5f2691d0fe73b3be47acec16d67d32",
+  "outer_labels_used_for_selection": false
+}

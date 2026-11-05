@@ -1,0 +1,4 @@
+model,fit_seconds,predict_seconds,peak_vram_gib,context_rows,subsampling,keep_cache_on_device,training_rows
+tabpfn_full_context,16.427282400021795,90.72822459996678,6.248207092285156,121005.0,False,True,
+tabpfn_recent_year,2.594898499955889,32.6393676000298,5.864761829376221,36103.0,False,True,
+catboost_matched,93.09249759995146,0.10260790004394948,,,,,121005.0

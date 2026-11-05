@@ -1,0 +1,8 @@
+{
+  "code_sha256": "f6d1b226a43fcbd0bbd23f0ae44d340d10137aba8cfd34600457e0cd0df2f97b",
+  "purpose": "Full E0 timing under same final allocator policy as new members; predictions and locked weights remain unchanged",
+  "seed": 42,
+  "n_estimators": 2,
+  "batch_size": 200,
+  "tolerance_sgd": 1e-05
+}

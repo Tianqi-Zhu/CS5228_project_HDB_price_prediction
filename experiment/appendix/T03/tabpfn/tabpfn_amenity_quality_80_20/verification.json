@@ -1,0 +1,36 @@
+{
+  "source_hashes_verified": true,
+  "code_hashes_verified": true,
+  "checkpoint_unchanged": true,
+  "all_77_baseline_columns_unchanged": true,
+  "targets_and_residual_baselines_unchanged": true,
+  "evaluation_rows_identical": true,
+  "predictions_finite": true,
+  "baseline_replay": {
+    "verified": true,
+    "rows": 400,
+    "max_abs_difference": 4.944240572513081e-09
+  },
+  "canonical_bus_names_verified": true,
+  "refinement_sha256": "f118505e8d75f2d6b12e907d27a6e853aaf591694830ce1f1653e94d3e45a94e",
+  "submission_preservation": {
+    "path": "reports\\tabpfn_fast_final_submission\\submission_tabpfn_fast_150k.csv",
+    "sha256": "6a9d195f288d3a38663ce8138bb183d6b205c4ba288829712ef5d37134671ad5"
+  },
+  "prediction_sha256": {
+    "predictions_outer_baseline_dated_smoke.csv": "7518d2b841f69cfe0eb718f4d0e8205d111b1cca2dc8aec77ebf5dde87af3327",
+    "predictions_outer_combined_canonical_dated.csv": "85c2cc91044fa3f136bac43169aa83ce3e4cbe9bbd006c9d9c5abf12c7fd50b2",
+    "predictions_outer_combined_canonical_static_weights.csv": "5ece6e27f99aa2bb1b4973922d3ecb82e351f7d4a24d31f73a395f9d9bea664c",
+    "predictions_outer_malls_dated.csv": "8ccacb79afdbfee28050558b2a7070aa33290d4c1fbe99b84b9eae2ae3223a4e",
+    "predictions_outer_schools_dated.csv": "0c485b0662b405876b4b5f3a16ca660b59999ca816cb2eca84275ee8067e3b80",
+    "predictions_outer_transport_canonical_dated.csv": "aea29a68bcfe50444ead87220b526cb5a38975996ee86e060188f04080adb866"
+  },
+  "completed_models": [
+    "baseline",
+    "combined_canonical_dated",
+    "combined_canonical_static_weights",
+    "malls_dated",
+    "schools_dated",
+    "transport_canonical_dated"
+  ]
+}

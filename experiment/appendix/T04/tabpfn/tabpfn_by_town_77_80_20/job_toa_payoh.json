@@ -1,0 +1,8 @@
+{
+  "town": "toa payoh",
+  "context_rows": 4868,
+  "query_rows": 1120,
+  "context_ids_sha256": "44c508f851384d5259ccbd79f641ed2ef5fd299093b605e07da88dd59164203e",
+  "query_ids_sha256": "d2f7b94fc67221952cc85c107c3d9fc9a329753285f452b9bb623e359b354388",
+  "settings_sha256": "7ec7fcf4dc279912e4ccac47faafbe82887e1d344fe25f59350c4dbcbc3e5916"
+}

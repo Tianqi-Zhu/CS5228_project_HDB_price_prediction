@@ -1,0 +1,17 @@
+{
+  "strategy": "S4",
+  "information_policy": "historical_only",
+  "seed": 42,
+  "query_rows": 28995,
+  "eligible_rows_after_policy": 121005,
+  "requested_budget": 10000,
+  "effective_size": 10000,
+  "cutoff_month": "2024-06",
+  "component_counts": {
+    "local": 4000,
+    "recent": 3500,
+    "diverse": 2500
+  },
+  "median_context_age_months": 4.0,
+  "retrieval_seconds": 4.320586199988611
+}

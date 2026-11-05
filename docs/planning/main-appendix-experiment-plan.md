@@ -266,3 +266,7 @@
 | **main P0** | M00–M09完整验收；X08时间审计及所选情景要求的修正；若依赖融合互补解释，则X11也为P0；F1/F2各有对照、指标、来源和复现清单 | F2仅有截图或缺同协议预测时，标“F1已支持，F2身份/评估/复现[待补充]”，不能宣布两个最终结果均获支持 |
 | **appendix P0/P1** | X08等条件P0，以及X01–X04、X11/X12等关键对照；预算允许再完成X07/X09/X13的匹配训练/外推 | 缺训练重复/长窗/完整重训时，对应稳定性、远期和重训结论标[待补充]；不影响已完成确定性比较，但不得扩大主张 |
 | **最终目标** | **main的P0完成后，应能支撑两个最终结果；appendix的P0/P1应能支撑main关键判断的可信度** | 阶段是否通过由证据与验收判断，不以复杂模型必胜、F2必降分或任何特定RMSE为条件 |
+
+## TabPFN source integration update
+
+The two user-requested TabPFN branches are now partitioned: main keeps the minimal 77-input background and controls; appendix keeps the full 81-report archive, alternative methods, original dependencies and derived datasets. [Detailed decisions](tabpfn-branch-split.md). This updates earlier statements that no external source had been imported; F2 generation, matched row-level predictions and paired comparisons remain pending.

@@ -1,0 +1,117 @@
+{
+  "economic_variable": "COE category A monthly median quota premium",
+  "minimum_history_months": 12,
+  "maximum_forecast_horizon": 17,
+  "alpha_candidates": [
+    10.0,
+    100.0,
+    1000.0
+  ],
+  "target": "observed arithmetic monthly mean rent by cleaned flat type; not composition adjusted",
+  "validation": "fixed origin; all economic features end at that origin; two earlier six-month tuning blocks",
+  "source_sha256": {
+    "data/train.csv": "2fe38ce9e0d8a02e9786f066d4a10d575d91f34be1d9111f0142e3f43fbfc8a5",
+    "data/auxiliary/sg-coe-prices.csv": "c8f934ec6e82dad633afa34e466414fd7b572c580fa28dd6c866e76e4be533e0"
+  },
+  "runner_sha256": "aecb3dea598577deeb2610a3a9406fb7bcc42df16847a21603b8cb6f789ef2e9",
+  "folds": [
+    [
+      "2024-06",
+      "2025-04"
+    ],
+    [
+      "2023-11",
+      "2025-04"
+    ]
+  ],
+  "diagnostics": {
+    "2024-06": {
+      "ridge_history": {
+        "alpha": 10.0,
+        "training_examples": 1985,
+        "training_months": 41,
+        "last_target_month": "2024-05",
+        "last_feature_origin": "2024-04",
+        "tuning": [
+          {
+            "alpha": 10.0,
+            "inner_weighted_mean_rmse": 239.3137417271178
+          },
+          {
+            "alpha": 100.0,
+            "inner_weighted_mean_rmse": 266.2196040204296
+          },
+          {
+            "alpha": 1000.0,
+            "inner_weighted_mean_rmse": 286.35127906445865
+          }
+        ]
+      },
+      "ridge_history_coe": {
+        "alpha": 1000.0,
+        "training_examples": 1985,
+        "training_months": 41,
+        "last_target_month": "2024-05",
+        "last_feature_origin": "2024-04",
+        "tuning": [
+          {
+            "alpha": 10.0,
+            "inner_weighted_mean_rmse": 215.6286684501237
+          },
+          {
+            "alpha": 100.0,
+            "inner_weighted_mean_rmse": 179.18525107243178
+          },
+          {
+            "alpha": 1000.0,
+            "inner_weighted_mean_rmse": 142.6895995762006
+          }
+        ]
+      }
+    },
+    "2023-11": {
+      "ridge_history": {
+        "alpha": 100.0,
+        "training_examples": 1322,
+        "training_months": 34,
+        "last_target_month": "2023-10",
+        "last_feature_origin": "2023-09",
+        "tuning": [
+          {
+            "alpha": 10.0,
+            "inner_weighted_mean_rmse": 158.12346391161628
+          },
+          {
+            "alpha": 100.0,
+            "inner_weighted_mean_rmse": 153.1522680212625
+          },
+          {
+            "alpha": 1000.0,
+            "inner_weighted_mean_rmse": 156.80689474043396
+          }
+        ]
+      },
+      "ridge_history_coe": {
+        "alpha": 1000.0,
+        "training_examples": 1322,
+        "training_months": 34,
+        "last_target_month": "2023-10",
+        "last_feature_origin": "2023-09",
+        "tuning": [
+          {
+            "alpha": 10.0,
+            "inner_weighted_mean_rmse": 138.6592152097332
+          },
+          {
+            "alpha": 100.0,
+            "inner_weighted_mean_rmse": 115.24375994869777
+          },
+          {
+            "alpha": 1000.0,
+            "inner_weighted_mean_rmse": 112.29400207867948
+          }
+        ]
+      }
+    }
+  }
+}

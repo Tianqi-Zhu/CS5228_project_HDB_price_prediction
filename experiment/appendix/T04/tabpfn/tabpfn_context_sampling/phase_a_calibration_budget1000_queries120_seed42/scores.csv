@@ -1,0 +1,6 @@
+run_id,sampler_train,sampler_inference,feature_pipeline_id,train_views,val_views,inference_views,context_size,query_size,learning_rate,seed,retrieval_seconds,peak_vram_gib,inference_seconds
+calibration_S0_budget1000_seed42,existing_random,S0,calendar_80_20_categorical_77_residual,2,2,1,102829,120,0.01,42,0.03724009997677058,,0.0
+calibration_S1_budget1000_seed42,existing_random,S1,calendar_80_20_categorical_77_residual,2,2,1,1000,120,0.01,42,0.018436799990013242,,
+calibration_S2_budget1000_seed42,existing_random,S2,calendar_80_20_categorical_77_residual,2,2,1,1000,120,0.01,42,0.021424500038847327,,
+calibration_S3_budget1000_seed42,existing_random,S3,calendar_80_20_categorical_77_residual,2,2,1,1000,120,0.01,42,0.14745290006976575,,
+calibration_S4_budget1000_seed42,existing_random,S4,calendar_80_20_categorical_77_residual,2,2,1,1000,120,0.01,42,0.17748710000887513,,

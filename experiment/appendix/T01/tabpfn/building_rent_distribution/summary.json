@@ -1,0 +1,59 @@
+{
+  "source_sha256": {
+    "train": "2fe38ce9e0d8a02e9786f066d4a10d575d91f34be1d9111f0142e3f43fbfc8a5",
+    "blocks": "2255ad61ba6895456a39aec81d12583796d717ef88fe102ee9de71b3796fc223"
+  },
+  "rental_rows": 150000,
+  "months": 51,
+  "start_month": "2021-01",
+  "end_month": "2025-03",
+  "buildings_observed": 9406,
+  "building_type_count_distribution": {
+    "1": 4349,
+    "2": 4693,
+    "3": 363,
+    "4": 1
+  },
+  "building_months_observed": 121322,
+  "building_month_one_rental_share": 0.8087980745454246,
+  "building_month_type_count_distribution": {
+    "1": 114668,
+    "2": 6604,
+    "3": 50
+  },
+  "building_month_ge3": 4261,
+  "building_type_months_observed": 128026,
+  "building_type_month_ge2": 18230,
+  "building_type_month_ge3": 2952,
+  "building_type_month_ge5": 145,
+  "building_type_month_ge3_median_iqr_sgd": 325.0,
+  "building_type_month_ge3_p90_iqr_sgd": 700.0,
+  "pair_gaps": {
+    "4-room_minus_3-room": {
+      "block_months": 2660,
+      "q25": 100.0,
+      "median": 500.0,
+      "q75": 863.75,
+      "iqr": 763.75
+    },
+    "5-room_minus_4-room": {
+      "block_months": 3246,
+      "q25": -150.0,
+      "median": 200.0,
+      "q75": 578.75,
+      "iqr": 728.75
+    }
+  },
+  "street_completion_cohorts": 1652,
+  "multi_building_cohorts": 1396,
+  "multi_building_cohorts_different_observed_type_sets": 1011,
+  "cohort_months_observed": 52848,
+  "cohort_month_ge5": 8903,
+  "cohort_month_ge5_and_ge2_buildings": 8863,
+  "example_cohort": "queenstown|tanglin halt road|2007",
+  "example_recent_rentals": 17,
+  "example_recent_buildings": 3,
+  "example_recent_types": 3,
+  "example_building": "clementi|clementi avenue 2|329",
+  "example_building_recent_rentals": 9
+}

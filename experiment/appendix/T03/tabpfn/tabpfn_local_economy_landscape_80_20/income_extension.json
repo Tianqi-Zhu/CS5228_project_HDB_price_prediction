@@ -1,0 +1,6 @@
+{
+  "directory": "reports\\tabpfn_local_economy_landscape_80_20_income",
+  "features_sha256": "c9af8f9c3a94c0771010e7adceaf4b456fa51685816f94f65f18478a11857203",
+  "source_sha256": "0db5175c0794f334eecd1ef6f2640900367fa8153e36fd1b4765b39b06f262fc",
+  "separate_predeclared_regional_ablation": true
+}

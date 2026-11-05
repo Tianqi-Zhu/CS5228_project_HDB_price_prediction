@@ -1,0 +1,11 @@
+{
+  "primary": "TabM seed 42 minus frozen TabPFN",
+  "draws": 20000,
+  "seed": 42,
+  "months_improved": 0,
+  "median_delta_sgd": 7.360026948502451,
+  "interval_95pct_sgd": [
+    4.711573993347178,
+    10.168243904066102
+  ]
+}

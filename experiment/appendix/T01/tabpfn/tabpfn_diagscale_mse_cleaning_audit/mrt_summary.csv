@@ -1,0 +1,3 @@
+split,nearest_jrl_crl_only_rows,nearest_jrl_crl_only_pct,jrl_crl_in_1km_count_rows,jrl_crl_in_1km_count_pct
+train,20557,13.704666666666668,29181,19.454
+test,7153,14.306,9899,19.798

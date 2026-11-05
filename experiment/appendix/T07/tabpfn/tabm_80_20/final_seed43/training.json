@@ -1,0 +1,31 @@
+{
+  "name": "final_seed43",
+  "config": {
+    "embedding": "none",
+    "lr": 0.002,
+    "k": 32
+  },
+  "seed": 43,
+  "best_epoch": 1,
+  "epochs_run": 1,
+  "calibration_rmse_sgd": null,
+  "seconds": 4.8671936999307945,
+  "parameters": 3166336,
+  "peak_vram_gib": 0.7636408805847168,
+  "fit_rows": 121005,
+  "processed_numeric_features": 112,
+  "category_cardinalities": [
+    7,
+    20,
+    13,
+    27,
+    157,
+    32,
+    6,
+    9334,
+    575
+  ],
+  "model_sha256": "4fe988871afeac06b7451651e8c97e2457fcc5109d7f696187637fe6dec8c0f3",
+  "preprocessor_sha256": "e73eabbc3d97f464e7f951a8f5a494272f5c272344e2ab43b13a3438831c44f5",
+  "outer_labels_used_for_selection": false
+}

@@ -1,0 +1,63 @@
+{
+  "parent_sha256": "6824cffb93e47efd97abd2050fd4b4fcaf04f8cbf40d0a4bcd0ccdd0fa4b3a5e",
+  "features_sha256": "554fec4c4bf84af483387c9aba7bdd2e192957ab26a0fc45d36796d019c1131a",
+  "checkpoint_sha256": "14e0b81285bca7a6d1ef121169f27f651f76dff49cad6c0b8779d5c836018550",
+  "code_sha256": {
+    "analysis\\prepare_tabpfn_worldcover_training.py": "c3c92c492af6e7583ace13680fcc03b9098ea575a2801d34962845da473f6518",
+    "analysis\\experiments\\worldcover_training_data.py": "6ced44bd59b45e92d32e27360624a4f006c2c710789df2d932520f5e3e1f1c67"
+  },
+  "preprocessing": {
+    "fraction_units": "tree-class area / valid mapped area; fraction in [0, 1]",
+    "external_scaling": "identity; no additional StandardScaler, MinMaxScaler, log or quantile transformation",
+    "reason": "Inputs already have bounded dimensionless units; retain TabPFN-3.5 Fast checkpoint preprocessing",
+    "missing_values": "Preserve NaN and explicit 0/1 unavailable flag; TabPFN handles missing values internally",
+    "fit_statistics": "No external preprocessing statistics are fitted to either context or queries",
+    "baseline_columns": "Preserve all 77 existing values, column order and categorical dtypes",
+    "documentation_url": "https://github.com/PriorLabs/TabPFN#usage-tips"
+  },
+  "checkpoint_inference_config": {
+    "CLASS_SHIFT_METHOD": "shuffle",
+    "ENABLE_GPU_PREPROCESSING": true,
+    "FEATURE_SHIFT_METHOD": "shuffle",
+    "FEATURE_SUBSAMPLING_CONSTANT_FEATURE_COUNT": 50,
+    "FEATURE_SUBSAMPLING_IMPORTANCE_TOP_K_COUNT": 150,
+    "FEATURE_SUBSAMPLING_METHOD": "balanced",
+    "FINGERPRINT_FEATURE": true,
+    "FIX_NAN_BORDERS_AFTER_TARGET_TRANSFORM": true,
+    "MAX_CPU_SAMPLES": 5000,
+    "MAX_NUMBER_OF_CLASSES": 160,
+    "MAX_NUMBER_OF_FEATURES": 20000,
+    "MAX_NUMBER_OF_SAMPLES": 1000000,
+    "MAX_UNIQUE_FOR_CATEGORICAL_FEATURES": 1000000,
+    "MIN_CARDINALITY_FOR_TEXT": 30,
+    "MIN_NUMBER_SAMPLES_FOR_CATEGORICAL_INFERENCE": 100,
+    "MIN_UNIQUE_FOR_NUMERICAL_FEATURES": 4,
+    "N_ESTIMATORS": 4,
+    "OUTLIER_REMOVAL_STD": 12.0,
+    "PASSTHROUGH_INF": false,
+    "POLYNOMIAL_FEATURES": "no",
+    "PREPROCESS_TRANSFORMS": [
+      {
+        "append_original": false,
+        "categorical_name": "ordinal_shuffled",
+        "differentiable": false,
+        "global_transformer_name": null,
+        "max_features_per_estimator": 768,
+        "max_onehot_cardinality": null,
+        "name": "none"
+      }
+    ],
+    "REGRESSION_Y_PREPROCESS_TRANSFORMS": [
+      null,
+      "safepower"
+    ],
+    "SOFTMAX_TEMPERATURE": 1.0,
+    "SUBSAMPLE_SAMPLES": null,
+    "TEXT_N_COMPONENTS": 30,
+    "TRANSFORM_DATES": true,
+    "TRANSFORM_TEXT": true,
+    "USE_SKLEARN_16_DECIMAL_PRECISION": false,
+    "_CLASSIFICATION_DEFAULT_OUTLIER_REMOVAL_STD": 12.0,
+    "_REGRESSION_DEFAULT_OUTLIER_REMOVAL_STD": null
+  }
+}

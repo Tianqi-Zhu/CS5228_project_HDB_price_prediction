@@ -1,0 +1,151 @@
+{
+  "verified": true,
+  "tolerance_sgd": 1e-07,
+  "folds": [
+    {
+      "forecast_origin": "2022-05",
+      "query_rows": 20,
+      "replayed_history_and_temporal_columns": 46,
+      "maximum_absolute_difference": 0.0,
+      "query_cutoff": "2022-04",
+      "context_pseudo_origin_checks": [
+        {
+          "pseudo_origin": "2021-06",
+          "rows": 4
+        },
+        {
+          "pseudo_origin": "2022-03",
+          "rows": 4
+        }
+      ],
+      "baseline_reconstruction_verified": true
+    },
+    {
+      "forecast_origin": "2022-09",
+      "query_rows": 20,
+      "replayed_history_and_temporal_columns": 46,
+      "maximum_absolute_difference": 0.0,
+      "query_cutoff": "2022-08",
+      "context_pseudo_origin_checks": [
+        {
+          "pseudo_origin": "2021-06",
+          "rows": 4
+        },
+        {
+          "pseudo_origin": "2022-07",
+          "rows": 4
+        }
+      ],
+      "baseline_reconstruction_verified": true
+    },
+    {
+      "forecast_origin": "2023-01",
+      "query_rows": 20,
+      "replayed_history_and_temporal_columns": 46,
+      "maximum_absolute_difference": 0.0,
+      "query_cutoff": "2022-12",
+      "context_pseudo_origin_checks": [
+        {
+          "pseudo_origin": "2021-06",
+          "rows": 4
+        },
+        {
+          "pseudo_origin": "2022-11",
+          "rows": 4
+        }
+      ],
+      "baseline_reconstruction_verified": true
+    },
+    {
+      "forecast_origin": "2023-05",
+      "query_rows": 20,
+      "replayed_history_and_temporal_columns": 46,
+      "maximum_absolute_difference": 0.0,
+      "query_cutoff": "2023-04",
+      "context_pseudo_origin_checks": [
+        {
+          "pseudo_origin": "2021-06",
+          "rows": 4
+        },
+        {
+          "pseudo_origin": "2023-03",
+          "rows": 4
+        }
+      ],
+      "baseline_reconstruction_verified": true
+    },
+    {
+      "forecast_origin": "2023-07",
+      "query_rows": 20,
+      "replayed_history_and_temporal_columns": 46,
+      "maximum_absolute_difference": 0.0,
+      "query_cutoff": "2023-06",
+      "context_pseudo_origin_checks": [
+        {
+          "pseudo_origin": "2021-06",
+          "rows": 4
+        },
+        {
+          "pseudo_origin": "2023-05",
+          "rows": 4
+        }
+      ],
+      "baseline_reconstruction_verified": true
+    },
+    {
+      "forecast_origin": "2023-08",
+      "query_rows": 20,
+      "replayed_history_and_temporal_columns": 46,
+      "maximum_absolute_difference": 0.0,
+      "query_cutoff": "2023-07",
+      "context_pseudo_origin_checks": [
+        {
+          "pseudo_origin": "2021-06",
+          "rows": 4
+        },
+        {
+          "pseudo_origin": "2023-06",
+          "rows": 4
+        }
+      ],
+      "baseline_reconstruction_verified": true
+    },
+    {
+      "forecast_origin": "2024-02",
+      "query_rows": 8,
+      "replayed_history_and_temporal_columns": 46,
+      "maximum_absolute_difference": 0.0,
+      "query_cutoff": "2024-01",
+      "context_pseudo_origin_checks": [
+        {
+          "pseudo_origin": "2021-06",
+          "rows": 4
+        },
+        {
+          "pseudo_origin": "2023-12",
+          "rows": 4
+        }
+      ],
+      "baseline_reconstruction_verified": true
+    },
+    {
+      "forecast_origin": "2024-06",
+      "query_rows": 20,
+      "replayed_history_and_temporal_columns": 46,
+      "maximum_absolute_difference": 0.0,
+      "query_cutoff": "2024-05",
+      "context_pseudo_origin_checks": [
+        {
+          "pseudo_origin": "2021-06",
+          "rows": 4
+        },
+        {
+          "pseudo_origin": "2024-04",
+          "rows": 4
+        }
+      ],
+      "baseline_reconstruction_verified": true
+    }
+  ],
+  "limitation": "Independent numerical replay of existing label-derived inputs; does not certify inherited static amenity date availability"
+}

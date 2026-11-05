@@ -1,0 +1,32 @@
+[
+  {
+    "check": "root-integrity",
+    "returncode": 0,
+    "command": [
+      "python",
+      "review.py",
+      "verify"
+    ]
+  },
+  {
+    "check": "f1-core-regression",
+    "returncode": 0,
+    "command": [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-v"
+    ]
+  },
+  {
+    "check": "f1-cpu-replay",
+    "returncode": 0,
+    "command": [
+      "python",
+      "reproduction/three_submissions/reproduce.py"
+    ]
+  }
+]

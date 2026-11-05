@@ -1,0 +1,183 @@
+{
+  "source_artifact_sha256": "fba84757b6e23280d2b27eab0ca5d86a427ac19ca33c6b12b5b2dcc4194a0059",
+  "source_features": [
+    "FLAT_TYPE_CLEAN",
+    "FLAT_MODEL_CLEAN",
+    "FLOOR_AREA_SQM",
+    "APPROVAL_MONTH_INDEX",
+    "APPROVAL_MONTH_OF_YEAR",
+    "FLAT_AGE_YEARS",
+    "TOWN_CLEAN",
+    "LATITUDE",
+    "LONGITUDE",
+    "MAX_FLOOR",
+    "YEAR_COMPLETED",
+    "BUILDING_AGE_FROM_COMPLETION",
+    "SUBZONE",
+    "PLANNING_AREA",
+    "REGION",
+    "NEAREST_MRT_KM",
+    "NEAREST_MALL_KM",
+    "NEAREST_SCHOOL_KM",
+    "DISTANCE_TO_CBD_KM",
+    "AMENITY_DENSITY_1KM",
+    "MRT_COUNT_0.5KM",
+    "MRT_COUNT_1.0KM",
+    "MRT_COUNT_2.0KM",
+    "MALL_COUNT_0.5KM",
+    "MALL_COUNT_1.0KM",
+    "MALL_COUNT_2.0KM",
+    "SCHOOL_COUNT_0.5KM",
+    "SCHOOL_COUNT_1.0KM",
+    "SCHOOL_COUNT_2.0KM",
+    "HIST_SIGNATURE_MEAN",
+    "HIST_SIGNATURE_COUNT",
+    "HIST_SIGNATURE_LAST_MEAN",
+    "HIST_SIGNATURE_RECENCY_MONTHS",
+    "HIST_BLOCK_FLAT_MEAN",
+    "HIST_BLOCK_FLAT_COUNT",
+    "HIST_BLOCK_FLAT_LAST_MEAN",
+    "HIST_BLOCK_FLAT_RECENCY_MONTHS",
+    "HIST_AREA_FLAT_MEAN",
+    "HIST_AREA_FLAT_COUNT",
+    "HIST_AREA_FLAT_LAST_MEAN",
+    "HIST_AREA_FLAT_RECENCY_MONTHS",
+    "BLOCK_ID",
+    "STREET_ID",
+    "RECENT_BLOCK_FLAT_3M_MEAN",
+    "RECENT_BLOCK_FLAT_3M_COUNT",
+    "RECENT_BLOCK_FLAT_6M_MEAN",
+    "RECENT_BLOCK_FLAT_6M_COUNT",
+    "RECENT_BLOCK_FLAT_12M_MEAN",
+    "RECENT_BLOCK_FLAT_12M_COUNT",
+    "RECENT_AREA_FLAT_3M_MEAN",
+    "RECENT_AREA_FLAT_3M_COUNT",
+    "RECENT_AREA_FLAT_6M_MEAN",
+    "RECENT_AREA_FLAT_6M_COUNT",
+    "RECENT_AREA_FLAT_12M_MEAN",
+    "RECENT_AREA_FLAT_12M_COUNT",
+    "RECENT_BLOCK_FLAT_3M_SHRUNK_MEAN",
+    "RECENT_BLOCK_FLAT_6M_SHRUNK_MEAN",
+    "RECENT_BLOCK_FLAT_12M_SHRUNK_MEAN",
+    "RECENT_BLOCK_FLAT_3M_STD",
+    "RECENT_BLOCK_FLAT_6M_STD",
+    "RECENT_BLOCK_FLAT_12M_STD",
+    "RECENT_AREA_FLAT_3M_STD",
+    "RECENT_AREA_FLAT_6M_STD",
+    "RECENT_AREA_FLAT_12M_STD",
+    "AREA_RECENT_MINUS_LONG",
+    "BLOCK_RECENT_MINUS_LONG",
+    "BLOCK_MINUS_AREA_RECENT",
+    "AREA_LAST_MINUS_RECENT",
+    "TEMP_FLAT_RECENT3_MEAN",
+    "TEMP_FLAT_RECENT12_MEAN",
+    "TEMP_FLAT_DAMPED_FORECAST",
+    "TEMP_FORECAST_HORIZON",
+    "TEMP_FLAT_HISTORY_COUNT_3M",
+    "TEMP_FLAT_LAST_OBSERVATION_AGE",
+    "TEMP_LOCAL_FORECAST",
+    "TEMP_LOCAL_WEIGHT",
+    "TEMP_FORECAST_RMSE"
+  ],
+  "categorical_features": [
+    "FLAT_TYPE_CLEAN",
+    "FLAT_MODEL_CLEAN",
+    "APPROVAL_MONTH_OF_YEAR",
+    "TOWN_CLEAN",
+    "SUBZONE",
+    "PLANNING_AREA",
+    "REGION",
+    "BLOCK_ID",
+    "STREET_ID"
+  ],
+  "outer_fit_rows": 121005,
+  "outer_query_rows": 28995,
+  "outer_fit_months": [
+    "2021-01",
+    "2024-05"
+  ],
+  "outer_query_months": [
+    "2024-06",
+    "2025-03"
+  ],
+  "inner_origin": "2023-12",
+  "inner_query_months": [
+    "2023-12",
+    "2024-05"
+  ],
+  "inner_query_sampling": "all rows; histories rebuilt at November 2023 cutoff",
+  "target": "rent minus saved temporal baseline; reconstruct by adding baseline once",
+  "candidates": {
+    "plain_lr002": {
+      "embedding": "none",
+      "lr": 0.002,
+      "k": 32
+    },
+    "ple_lr002": {
+      "embedding": "ple",
+      "lr": 0.002,
+      "k": 32
+    },
+    "ple_lr001": {
+      "embedding": "ple",
+      "lr": 0.001,
+      "k": 32
+    }
+  },
+  "max_epochs": 100,
+  "patience": 12,
+  "batch_size": 256,
+  "architecture": {
+    "package": "official tabm",
+    "type": "tabm",
+    "n_blocks": 3,
+    "d_block": 256,
+    "dropout": 0.1,
+    "k": 32,
+    "categoricals": "official one-hot",
+    "ple_bins": 48,
+    "ple_dimension": 16,
+    "ple_version": "B"
+  },
+  "optimizer": {
+    "name": "AdamW",
+    "weight_decay": 0.0003,
+    "gradient_clip": 1.0,
+    "schedule": "constant learning rate"
+  },
+  "preprocessing": "fit-only median imputation, missing indicators, standardization, constant removal; unknown/missing category bucket 0",
+  "precision": "BF16 autocast, FP32 member MSE and prediction averaging; TF32 high",
+  "loss": "mean squared error of each internal ensemble member before averaging",
+  "selection": "minimum earlier full-query SGD RMSE; ties use declared candidate order",
+  "final_refit": "all 121005 rows, selected epoch count, no outer early stopping",
+  "primary_seed": 42,
+  "final_seeds": [
+    42,
+    43,
+    44
+  ],
+  "outer_labels_used_for_selection": false,
+  "versions": {
+    "tabm": "0.0.3",
+    "rtdl_num_embeddings": "0.0.12",
+    "torch": "2.11.0+cu128",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.0"
+  },
+  "gpu": "NVIDIA GeForce RTX 4080",
+  "gpu_gib": 15.99169921875,
+  "source_hashes": {
+    "data\\train.csv": "2fe38ce9e0d8a02e9786f066d4a10d575d91f34be1d9111f0142e3f43fbfc8a5",
+    "data\\test.csv": "a2ec03a0afc07c251c72cc0de2e15ac965a3b06291b304aaac53a375115ff4e0",
+    "reports\\tabpfn_v3_5_fast_calendar_80_20\\predictions_outer_categorical.csv": "6ae63cf3d00073220a77f05e547efcc601dcbdae151dc4260c8b72c21a9d83b6"
+  },
+  "code_hashes": {
+    "analysis\\compare_tabm_80_20.py": "06fa65765453667042ed373ca37cb5ae7863c68eef187f37f47ac0b1e386843d",
+    "analysis\\experiments\\tabm_regression.py": "8d49a3d5f176afa73571a53f4b0fd6058e6c427e52b1608665db5a792b6c1f1f"
+  },
+  "library_hashes": {
+    "tabm.py": "fc654af6a16bac53d893a8265c79d7af4ebddcb95ad0d600cc6b6bc6b7317ade",
+    "rtdl_num_embeddings.py": "48dfc019d447e0cd225deb8b8145b3efa8b42cde9aa314772d6e234753e1cee1"
+  }
+}

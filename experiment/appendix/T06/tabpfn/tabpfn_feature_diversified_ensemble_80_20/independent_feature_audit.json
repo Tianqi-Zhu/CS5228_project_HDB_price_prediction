@@ -1,0 +1,107 @@
+{
+  "verified": true,
+  "checks": [
+    {
+      "origin": "2022-09",
+      "split": "query",
+      "feature_origin": "2022-08",
+      "last_permitted_rental_month": "2022-07",
+      "rows": 20,
+      "altered_unavailable_labels": 2416,
+      "max_replay_difference": 0.0,
+      "current_query_targets_ignored": true,
+      "poisoning_unavailable_context_labels_has_no_effect": true
+    },
+    {
+      "origin": "2022-09",
+      "split": "train",
+      "feature_origin": "2021-06",
+      "last_permitted_rental_month": "2021-05",
+      "rows": 4,
+      "altered_unavailable_labels": 44064,
+      "max_replay_difference": 6.821210263296962e-13,
+      "current_query_targets_ignored": true,
+      "poisoning_unavailable_context_labels_has_no_effect": true
+    },
+    {
+      "origin": "2022-09",
+      "split": "train",
+      "feature_origin": "2022-07",
+      "last_permitted_rental_month": "2022-06",
+      "rows": 4,
+      "altered_unavailable_labels": 5071,
+      "max_replay_difference": 4.547473508864641e-13,
+      "current_query_targets_ignored": true,
+      "poisoning_unavailable_context_labels_has_no_effect": true
+    },
+    {
+      "origin": "2023-07",
+      "split": "query",
+      "feature_origin": "2023-06",
+      "last_permitted_rental_month": "2023-05",
+      "rows": 20,
+      "altered_unavailable_labels": 3035,
+      "max_replay_difference": 0.0,
+      "current_query_targets_ignored": true,
+      "poisoning_unavailable_context_labels_has_no_effect": true
+    },
+    {
+      "origin": "2023-07",
+      "split": "train",
+      "feature_origin": "2021-06",
+      "last_permitted_rental_month": "2021-05",
+      "rows": 4,
+      "altered_unavailable_labels": 71922,
+      "max_replay_difference": 6.821210263296962e-13,
+      "current_query_targets_ignored": true,
+      "poisoning_unavailable_context_labels_has_no_effect": true
+    },
+    {
+      "origin": "2023-07",
+      "split": "train",
+      "feature_origin": "2023-05",
+      "last_permitted_rental_month": "2023-04",
+      "rows": 4,
+      "altered_unavailable_labels": 6013,
+      "max_replay_difference": 1.3642420526593924e-12,
+      "current_query_targets_ignored": true,
+      "poisoning_unavailable_context_labels_has_no_effect": true
+    },
+    {
+      "origin": "2024-06",
+      "split": "query",
+      "feature_origin": "2024-05",
+      "last_permitted_rental_month": "2024-04",
+      "rows": 20,
+      "altered_unavailable_labels": 3017,
+      "max_replay_difference": 1.8189894035458565e-12,
+      "current_query_targets_ignored": true,
+      "poisoning_unavailable_context_labels_has_no_effect": true
+    },
+    {
+      "origin": "2024-06",
+      "split": "train",
+      "feature_origin": "2021-06",
+      "last_permitted_rental_month": "2021-05",
+      "rows": 4,
+      "altered_unavailable_labels": 104990,
+      "max_replay_difference": 6.821210263296962e-13,
+      "current_query_targets_ignored": true,
+      "poisoning_unavailable_context_labels_has_no_effect": true
+    },
+    {
+      "origin": "2024-06",
+      "split": "train",
+      "feature_origin": "2024-04",
+      "last_permitted_rental_month": "2024-03",
+      "rows": 4,
+      "altered_unavailable_labels": 6163,
+      "max_replay_difference": 4.547473508864641e-13,
+      "current_query_targets_ignored": true,
+      "poisoning_unavailable_context_labels_has_no_effect": true
+    }
+  ],
+  "columns": 12,
+  "no_model_changes": true,
+  "inherited_limitation": "Static MRT geography timing remains uncertified and unchanged"
+}

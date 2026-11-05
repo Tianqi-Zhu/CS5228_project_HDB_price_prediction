@@ -1,0 +1,103 @@
+# Experiment: Spatial-Temporal Feature-Diversified TabPFN Ensemble
+
+## Objective
+
+Implement and evaluate an ensemble of frozen TabPFN regressors using complementary spatial and temporal feature representations for our Singapore HDB rental prediction project.
+
+**Primary goal:** Determine whether feature-diversified ensembling, with appropriately optimized combination weights, improves predictive performance over our existing best frozen TabPFN inference model.
+
+## 1. Review Existing Experiments First
+
+Before implementation:
+
+- Inspect the existing feature engineering code, TabPFN inference pipelines, experimental results, and evaluation procedures.
+- Identify the best-performing frozen TabPFN configuration and its feature set.
+- Review previous spatial, temporal, economic, and amenity-related feature experiments to identify promising and redundant representations.
+- Reuse existing implementations, datasets, splits, and configurations wherever appropriate.
+
+Make informed design decisions based on actual project findings rather than introducing arbitrary feature transformations.
+
+## 2. Design the Feature-Diversified Ensemble
+
+Implement a small ensemble containing approximately three predictors:
+
+1. **Baseline TabPFN:** Preserve the best existing frozen TabPFN feature engineering and inference configuration.
+2. **Spatial-enhanced TabPFN:** Introduce complementary spatial representations, emphasizing neighborhood structure, local rental heterogeneity, or other promising spatial relationships.
+3. **Temporal-enhanced TabPFN:** Introduce complementary temporal representations, emphasizing rental market trends, historical dynamics, and potentially spatial-temporal interactions.
+
+Select the specific representations based on existing experimental findings. Avoid unnecessary duplication of existing MRT, shopping mall, school, and lagged-rent features.
+
+Keep pretrained TabPFN weights frozen. Do not introduce fine-tuning.
+
+Distinguish this external feature-diversified ensemble from TabPFN's built-in inference ensemble.
+
+## 3. Implement and Tune Ensemble Aggregation
+
+Compare the following:
+
+- Individual predictors.
+- Equal-weight averaging.
+- **Validation-optimized weighted averaging**, with nonnegative weights summing to one.
+- Optionally, regularized weight optimization if necessary to prevent overfitting.
+
+Optimize weights for validation RMSE/MSE using correctly aligned predictions in the original rental-price scale.
+
+Select weights using validation or temporally out-of-fold predictions only. Never optimize on the test set.
+
+Evaluate whether additional ensemble members provide genuine complementary predictive information, rather than assuming more models necessarily improve performance.
+
+## 4. Ensure Methodological Correctness
+
+Verify that:
+
+- Chronological train/validation/test separation is preserved.
+- Historical rental aggregations, spatial target statistics, and temporal features cannot leak future information or their own target values.
+- Feature transformations are fitted and applied consistently.
+- Ensemble predictions and weights are aggregated correctly.
+- Comparisons use consistent datasets, targets, metrics, and inference configurations.
+- Any advantage from feature diversity is distinguished from simply increasing TabPFN's internal ensemble size or inference compute.
+
+Implement lightweight correctness checks for critical preprocessing and ensemble operations.
+
+## 5. Run a Focused Evaluation
+
+Compare:
+
+1. Existing best frozen TabPFN baseline.
+2. Individual spatial- and temporal-enhanced models.
+3. Equal-weight feature-diversified ensemble.
+4. Optimized-weight feature-diversified ensemble.
+5. If computationally feasible, a standard TabPFN ensemble with comparable inference cost.
+
+Report:
+
+- RMSE and MAE.
+- Absolute and relative improvement over baseline.
+- Learned ensemble weights.
+- Prediction-error correlations and evidence of model complementarity.
+- Inference time and GPU memory usage.
+- Relevant ablations explaining which representations contribute improvements.
+
+Use an untouched chronological test set for final evaluation.
+
+## 6. Implementation Priorities
+
+- **Prioritize methodological correctness and reproducibility.**
+- Limit experimentation to the 2–3 most promising feature configurations.
+- Use existing best feature engineering and previous results to guide choices.
+- Avoid unnecessary feature engineering, exhaustive searches, or expensive fine-tuning.
+- Make reasonable implementation decisions autonomously based on the repository.
+- Preserve existing working code and experiments.
+- Actually implement and execute the experiments, rather than only producing a proposal.
+
+## Expected Deliverables
+
+Provide the implemented experimental pipeline, reproducible configurations, evaluation results, and a concise analysis addressing:
+
+1. Does feature-diversified ensembling outperform the existing best frozen TabPFN?
+2. Does optimized weighting improve upon equal-weight averaging?
+3. Which spatial or temporal representations contribute the most?
+4. Are improvements attributable to complementary prediction errors?
+5. Is the performance gain worth the additional inference cost?
+
+Report negative findings honestly and identify any methodological limitations. Do not fabricate results.

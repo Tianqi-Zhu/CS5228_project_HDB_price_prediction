@@ -1,0 +1,23 @@
+[
+  {
+    "origin": "2022-09",
+    "mean_individual_mse_sgd2": 403907.62154351134,
+    "equal_mse_sgd2": 403028.5689581332,
+    "equal_diversity_gain_sgd2": 879.0525853781146,
+    "interpretation": "Diversity gain is against average member MSE, not proof of beating the best individual model"
+  },
+  {
+    "origin": "2023-07",
+    "mean_individual_mse_sgd2": 324621.34104911395,
+    "equal_mse_sgd2": 323398.4850666197,
+    "equal_diversity_gain_sgd2": 1222.8559824942495,
+    "interpretation": "Diversity gain is against average member MSE, not proof of beating the best individual model"
+  },
+  {
+    "origin": "2024-06",
+    "mean_individual_mse_sgd2": 207839.67675911996,
+    "equal_mse_sgd2": 207249.7624138299,
+    "equal_diversity_gain_sgd2": 589.9143452900462,
+    "interpretation": "Diversity gain is against average member MSE, not proof of beating the best individual model"
+  }
+]

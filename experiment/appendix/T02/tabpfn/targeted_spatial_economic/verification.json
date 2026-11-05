@@ -1,0 +1,12 @@
+{
+  "baseline_rmse_reproduced": 455.1718734783953,
+  "aligned_rows_all_origins": 32995,
+  "unchanged_submissions": true,
+  "source_hashes_verified": true,
+  "all_original_inputs_targets_baselines_and_contexts_preserved": true,
+  "new_neural_weight_training": false,
+  "prediction_files_hashed": true,
+  "bootstrap_unit": "paired contiguous calendar-month blocks",
+  "no_untouched_labeled_holdout": true,
+  "reporting_code_sha256": "887877f982b4efc29e3838373ece887bc68406e7d7289bce35598eae9fc17872"
+}

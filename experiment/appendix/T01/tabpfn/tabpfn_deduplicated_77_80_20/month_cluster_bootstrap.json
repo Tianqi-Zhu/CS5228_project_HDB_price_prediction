@@ -1,0 +1,14 @@
+{
+  "clusters": 10,
+  "resamples": 5000,
+  "seed": 42,
+  "rmse_delta_interval_95": [
+    -0.08807949884484145,
+    0.15045340282604366
+  ],
+  "mae_delta_interval_95": [
+    0.3220583072725893,
+    0.5317051114882744
+  ],
+  "interpretation": "paired descriptive development-period uncertainty; does not adjust for feature selection or repeated outer-holdout reuse"
+}

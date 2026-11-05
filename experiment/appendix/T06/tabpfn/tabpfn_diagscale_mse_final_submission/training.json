@@ -1,0 +1,14 @@
+{
+  "training_pool_rows": 150000,
+  "epochs": 1,
+  "validation_rows_reserved": 0,
+  "fitting_row_ids_sha256": "91429acb076e790b2eb5c752c44f90c6653ad178fbfa80017475fd71d56241fb",
+  "adapter_sha256": "90e1d85f781051550570a2cb41bcba13e0cd9cb20350f4cf4c90d8e4848003d8",
+  "frozen_parameters_unchanged": true,
+  "frozen_digest": "2a40eff78f2084e02f1200115df8c0b350a393a3cf11d57e6464d3f70c182639",
+  "trainable_parameters": 8576,
+  "delta_l2": 8.994371021480077,
+  "fit_seconds": 77.46428419998847,
+  "peak_vram_gib": 1.3685312271118164,
+  "test_targets_used": false
+}

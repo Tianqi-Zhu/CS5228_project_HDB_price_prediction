@@ -1,0 +1,30 @@
+{
+  "source_sha256": {
+    "train.csv": "2fe38ce9e0d8a02e9786f066d4a10d575d91f34be1d9111f0142e3f43fbfc8a5"
+  },
+  "grid": 16,
+  "supported_cells": 115,
+  "flat_type_channels": [
+    "3-room",
+    "4-room",
+    "5-room",
+    "executive"
+  ],
+  "smoothing_bandwidth_km": 1.0,
+  "smoothing_prior_count": 10.0,
+  "pca_sizes": [
+    3,
+    5,
+    8
+  ],
+  "factor_forecasters": [
+    "persistence",
+    "ar1",
+    "state_space"
+  ],
+  "hybrid_pca_size": 5,
+  "hybrid_forecaster": "state_space",
+  "oof_rule": "2022 onward, one-step feature from PCA and state-space fit on strictly earlier months",
+  "validation_rule": "all horizons forecast once at the fitting cutoff; no validation-label feedback",
+  "hybrid_training_rule": "2022 onward only because the 2021 composition reference needs all 2021 labels"
+}

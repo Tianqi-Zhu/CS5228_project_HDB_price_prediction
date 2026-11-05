@@ -1,0 +1,33 @@
+{
+  "submission": "reports/tabpfn_feature_ensemble_final_submission/submission_tabpfn_optimized_ensemble_150k.csv",
+  "submission_sha256": "c67f5374040c74314110afc8dd631ae180bb63a54ef65abd7069be109796cea9",
+  "rows": 50000,
+  "columns": [
+    "Id",
+    "Predicted"
+  ],
+  "exact_sample_row_order": true,
+  "all_predictions_positive_and_finite": true,
+  "all_three_models_use150000_context_rows": true,
+  "weights_unchanged_from_validated_optimized_model": true,
+  "weights": [
+    0.4919641014508331,
+    0.2515287942413664,
+    0.25650710430780044
+  ],
+  "feature_counts": {
+    "baseline": 77,
+    "spatial": 89,
+    "temporal": 84
+  },
+  "frozen_backbone_and_source_files_unchanged": true,
+  "old_submissions_unchanged": true,
+  "baseline_added_once": true,
+  "native_default_estimator_batching": true,
+  "test_targets_used": false,
+  "test_rmse_available": false,
+  "prediction_min_sgd": 1668.6234045434965,
+  "prediction_max_sgd": 6000.075100204917,
+  "prediction_mean_sgd": 3213.5367325521624,
+  "maximum_csv_rounding_error_sgd": 4.999947122996673e-07
+}

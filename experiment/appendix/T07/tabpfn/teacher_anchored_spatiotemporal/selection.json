@@ -1,0 +1,7 @@
+{
+  "regularization": 0.25,
+  "epochs": 35,
+  "validation_rmse": 561.910796192822,
+  "baseline_rmse": 567.8022773787144,
+  "chosen_no_change": false
+}

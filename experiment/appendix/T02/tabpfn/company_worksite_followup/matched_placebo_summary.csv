@@ -1,0 +1,3 @@
+model,valid_placebos,true_delta_pct,placebo_median_delta_pct,placebos_improving_more,descriptive_rank_fraction
+original_controls,31,-7.816797784480255,0.8189886393660388,3,0.125
+sector_fx_controls,31,-3.50506706780219,0.6327137764449853,6,0.21875

@@ -1,0 +1,15 @@
+{
+  "fit_seconds": 1.0851266999961808,
+  "predict_seconds": 0.37102710001636297,
+  "peak_vram_gib": 1.4984469413757324,
+  "context_rows": 3668,
+  "query_rows": 836,
+  "features": 77,
+  "batch_size": 200,
+  "subsampling": false,
+  "parameter_versions_unchanged": true,
+  "town": "geylang",
+  "rmse_sgd": 483.27445697362026,
+  "mae_sgd": 379.84477595400267,
+  "bias_sgd": -62.78188723483635
+}

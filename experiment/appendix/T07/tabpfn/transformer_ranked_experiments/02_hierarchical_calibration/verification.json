@@ -1,0 +1,11 @@
+{
+  "original_predictions_unchanged": true,
+  "outer_labels_used_for_selection": false,
+  "seed42_only_earlier_calibration": true,
+  "outer_seeds": [
+    42,
+    43,
+    44
+  ],
+  "candidate_count": 37
+}

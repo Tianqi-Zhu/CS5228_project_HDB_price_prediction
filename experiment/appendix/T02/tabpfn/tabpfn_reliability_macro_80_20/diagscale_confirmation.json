@@ -1,0 +1,22 @@
+{
+  "selected": "rent_forecast",
+  "adapter_sha256": "bacda0eec45a0ca6b3a769330929f740b658fcfb3e51a81600b8fb256279c979",
+  "adapter_fixed": true,
+  "adapter_retrained_on_new_features": false,
+  "parameters_unchanged": true,
+  "views": 1,
+  "features": 84,
+  "context_rows": 121005,
+  "seconds": 89.76438299997244,
+  "baseline_metrics": {
+    "rmse_sgd": 455.0710283636764,
+    "mae_sgd": 330.78978114524807,
+    "bias_sgd": -8.427615551174402
+  },
+  "candidate_metrics": {
+    "rmse_sgd": 456.7195952546794,
+    "mae_sgd": 332.2381034716745,
+    "bias_sgd": -7.7034765927788245
+  },
+  "prediction_sha256": "167683afb6f45b5b88245db791042b1df3f44cc849c93420ab5aed6bfb90f3a1"
+}

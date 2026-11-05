@@ -1,0 +1,1262 @@
+row_id,RENT_APPROVAL_DATE,TOWN,BLOCK,STREET,FLAT_TYPE_CLEAN,FLAT_MODEL_CLEAN,FLOOR_AREA_SQM,FURNISHED,LEASE_COMMENCE_DATE,FEE,MONTHLY_RENT
+66012,2022-11,bukit merah,80c,telok blangah street 31,3-room,premium apartment,68.0,yes,2013,0.0,3000
+66598,2022-11,bukit merah,80c,telok blangah street 31,3-room,premium apartment,68.0,yes,2013,0.0,3000
+86589,2023-06,bukit merah,16,cantonment close,3-room,model a,60.0,yes,2003,0.0,3400
+87763,2023-06,bukit merah,16,cantonment close,3-room,model a,60.0,yes,2003,0.0,3400
+96976,2023-10,toa payoh,108,potong pasir avenue 1,3-room,model a,74.0,yes,1984,0.0,3500
+97553,2023-10,toa payoh,108,potong pasir avenue 1,3-room,model a,74.0,yes,1984,0.0,3500
+100557,2023-11,sembawang,468d,admiralty drive,executive,premium apartment,137.0,yes,2001,0.0,3500
+101075,2023-11,sembawang,468d,admiralty drive,executive,premium apartment,137.0,yes,2001,0.0,3500
+102869,2023-12,serangoon,203,serangoon central,3-room,simplified,64.0,yes,1986,0.0,3200
+102891,2023-12,bukit merah,127d,kim tian road,4-room,model a,88.0,yes,2013,0.0,4300
+102906,2023-12,sengkang,261a,sengkang east way,5-room,improved,110.0,yes,2000,0.0,3200
+102943,2023-12,sengkang,201b,compassvale drive,4-room,model a,90.0,yes,2001,0.0,3000
+103022,2023-12,clementi,208a,clementi avenue 6,4-room,model a,93.0,yes,2017,0.0,4200
+103027,2023-12,ang mo kio,560,ang mo kio avenue 10,3-room,new generation,82.0,yes,1980,0.0,3000
+103038,2023-12,ang mo kio,506,ang mo kio avenue 8,3-room,new generation,68.0,yes,1980,0.0,2000
+103065,2023-12,marine parade,8,marine terrace,3-room,improved,65.0,yes,1975,0.0,3000
+103107,2023-12,bedok,35,bedok south avenue 2,4-room,improved,90.0,yes,1977,0.0,2300
+103331,2023-12,clementi,371,clementi avenue 4,3-room,new generation,68.0,yes,1981,0.0,3000
+103391,2023-12,ang mo kio,607,ang mo kio avenue 4,3-room,new generation,68.0,yes,1980,0.0,2500
+103478,2023-12,woodlands,607,woodlands ring road,5-room,improved,122.0,yes,1998,0.0,3500
+103479,2023-12,tampines,298,tampines street 22,5-room,improved,121.0,yes,1985,0.0,4000
+103495,2023-12,marine parade,66,marine drive,3-room,improved,76.0,yes,1976,0.0,3000
+103503,2023-12,queenstown,6,ghim moh road,3-room,improved,65.0,yes,1976,0.0,2900
+103560,2023-12,tampines,267,tampines street 21,3-room,model a,75.0,yes,1983,0.0,3000
+103584,2023-12,clementi,371,clementi avenue 4,3-room,new generation,68.0,yes,1981,0.0,3000
+103602,2023-12,clementi,602,clementi west street 1,3-room,new generation,67.0,yes,1979,0.0,3100
+103724,2023-12,ang mo kio,330,ang mo kio avenue 1,3-room,new generation,68.0,yes,1981,0.0,2400
+103725,2023-12,toa payoh,113,lorong 1 toa payoh,3-room,improved,65.0,yes,1967,0.0,2600
+103738,2023-12,marine parade,66,marine drive,3-room,improved,76.0,yes,1976,0.0,3000
+103812,2023-12,bedok,39,bedok south road,4-room,new generation,92.0,yes,1978,0.0,3600
+103841,2023-12,marine parade,8,marine terrace,3-room,improved,65.0,yes,1975,0.0,3000
+103860,2023-12,ang mo kio,330,ang mo kio avenue 1,3-room,new generation,68.0,yes,1981,0.0,2400
+103866,2023-12,central,1d,cantonment road,4-room,type s1,93.0,yes,2011,0.0,5000
+103979,2023-12,toa payoh,195,kim keat avenue,3-room,improved,66.0,yes,1973,0.0,3100
+104019,2023-12,tampines,267,tampines street 21,3-room,model a,75.0,yes,1983,0.0,3000
+104021,2023-12,queenstown,6,ghim moh road,3-room,improved,65.0,yes,1976,0.0,2900
+104031,2023-12,clementi,101,clementi street 14,5-room,improved,123.0,yes,1984,0.0,4500
+104070,2023-12,ang mo kio,560,ang mo kio avenue 10,3-room,new generation,82.0,yes,1980,0.0,3000
+104107,2023-12,ang mo kio,560,ang mo kio avenue 10,3-room,new generation,82.0,yes,1980,0.0,3000
+104165,2023-12,bedok,50,chai chee street,3-room,new generation,68.0,yes,1981,0.0,3000
+104183,2023-12,hougang,317,hougang avenue 7,3-room,new generation,67.0,yes,1983,0.0,2500
+104192,2023-12,ang mo kio,506,ang mo kio avenue 8,3-room,new generation,68.0,yes,1980,0.0,2000
+104224,2023-12,central,1d,cantonment road,4-room,type s1,93.0,yes,2011,0.0,5000
+104243,2023-12,bedok,712,bedok reservoir road,3-room,new generation,68.0,yes,1981,0.0,2500
+104249,2023-12,punggol,195b,punggol road,4-room,premium apartment,90.0,yes,2007,0.0,3000
+104315,2023-12,sengkang,261a,sengkang east way,5-room,improved,110.0,yes,2000,0.0,3200
+104318,2023-12,ang mo kio,607,ang mo kio avenue 4,3-room,new generation,68.0,yes,1980,0.0,2500
+104360,2023-12,sengkang,185a,rivervale crescent,5-room,improved,110.0,yes,2000,0.0,3500
+104388,2023-12,jurong east,414,pandan gardens,4-room,new generation,100.0,yes,1978,0.0,2600
+104412,2023-12,bukit batok,507,bukit batok street 52,3-room,improved,69.0,yes,1987,0.0,2600
+104473,2023-12,toa payoh,195,kim keat avenue,3-room,improved,66.0,yes,1973,0.0,3100
+104489,2023-12,bedok,50,chai chee street,3-room,new generation,68.0,yes,1981,0.0,3000
+104516,2023-12,toa payoh,62,lorong 4 toa payoh,5-room,improved,120.0,yes,1999,0.0,4000
+104517,2023-12,woodlands,607,woodlands ring road,5-room,improved,122.0,yes,1998,0.0,3500
+104523,2023-12,sengkang,185a,rivervale crescent,5-room,improved,110.0,yes,2000,0.0,3500
+104633,2023-12,bukit batok,507,bukit batok street 52,3-room,improved,69.0,yes,1987,0.0,2600
+104671,2023-12,punggol,195b,punggol road,4-room,premium apartment,90.0,yes,2007,0.0,3000
+104731,2023-12,tampines,298,tampines street 22,5-room,improved,121.0,yes,1985,0.0,4000
+104759,2023-12,tampines,705,tampines street 71,5-room,improved,119.0,yes,1997,0.0,3500
+104805,2023-12,jurong west,412,jurong west street 42,4-room,model a,103.0,yes,1985,0.0,3600
+104919,2023-12,toa payoh,62,lorong 4 toa payoh,5-room,improved,120.0,yes,1999,0.0,4000
+105006,2023-12,toa payoh,113,lorong 1 toa payoh,3-room,improved,65.0,yes,1967,0.0,2600
+105073,2023-12,ang mo kio,106,ang mo kio avenue 4,3-room,new generation,74.0,yes,1978,0.0,3000
+105180,2023-12,clementi,101,clementi street 14,5-room,improved,123.0,yes,1984,0.0,4500
+105208,2023-12,serangoon,203,serangoon central,3-room,simplified,64.0,yes,1986,0.0,3200
+105251,2023-12,sengkang,201b,compassvale drive,4-room,model a,90.0,yes,2001,0.0,3000
+105264,2023-12,hougang,317,hougang avenue 7,3-room,new generation,67.0,yes,1983,0.0,2500
+105271,2023-12,jurong east,414,pandan gardens,4-room,new generation,100.0,yes,1978,0.0,2600
+105402,2023-12,clementi,208a,clementi avenue 6,4-room,model a,93.0,yes,2017,0.0,4200
+105422,2023-12,clementi,602,clementi west street 1,3-room,new generation,67.0,yes,1979,0.0,3100
+105553,2023-12,bukit merah,127d,kim tian road,4-room,model a,88.0,yes,2013,0.0,4300
+105577,2023-12,bedok,712,bedok reservoir road,3-room,new generation,68.0,yes,1981,0.0,2500
+105609,2023-12,jurong west,412,jurong west street 42,4-room,model a,103.0,yes,1985,0.0,3600
+105681,2023-12,ang mo kio,106,ang mo kio avenue 4,3-room,new generation,74.0,yes,1978,0.0,3000
+105683,2023-12,bedok,39,bedok south road,4-room,new generation,92.0,yes,1978,0.0,3600
+105699,2023-12,bedok,35,bedok south avenue 2,4-room,improved,90.0,yes,1977,0.0,2300
+105741,2023-12,tampines,705,tampines street 71,5-room,improved,119.0,yes,1997,0.0,3500
+105846,2024-01,ang mo kio,425,ang mo kio avenue 3,3-room,new generation,73.0,yes,1979,0.0,3000
+105992,2024-01,jurong east,105,jurong east street 13,4-room,new generation,90.0,yes,1993,0.0,2300
+106003,2024-01,clementi,610,clementi west street 1,3-room,model a,74.0,yes,1983,0.0,2900
+106099,2024-01,ang mo kio,330,ang mo kio avenue 1,3-room,new generation,68.0,yes,1981,0.0,2100
+106218,2024-01,toa payoh,157,lorong 1 toa payoh,3-room,improved,67.0,yes,1971,0.0,2500
+106266,2024-01,jurong west,345,kang ching road,4-room,model a,103.0,yes,1997,0.0,3300
+106295,2024-01,tampines,518c,tampines central 7,5-room,dbss,107.0,yes,2008,0.0,3800
+106343,2024-01,sengkang,404b,fernvale lane,4-room,premium apartment,92.0,yes,2004,0.0,3000
+106359,2024-01,hougang,556,hougang street 51,4-room,model a,103.0,yes,1992,0.0,3000
+106371,2024-01,toa payoh,157,lorong 1 toa payoh,3-room,improved,67.0,yes,1971,0.0,2500
+106428,2024-01,jurong west,345,kang ching road,4-room,model a,103.0,yes,1997,0.0,3300
+106463,2024-01,sengkang,404b,fernvale lane,4-room,premium apartment,92.0,yes,2004,0.0,3000
+106486,2024-01,clementi,420,clementi avenue 1,4-room,model a,92.0,yes,2013,0.0,3800
+106546,2024-01,ang mo kio,425,ang mo kio avenue 3,3-room,new generation,73.0,yes,1979,0.0,3000
+106610,2024-01,yishun,462b,yishun avenue 6,2-room,model a,47.0,yes,2019,0.0,2500
+106635,2024-01,yishun,142,yishun ring road,3-room,new generation,68.0,yes,1984,0.0,2300
+106680,2024-01,yishun,145,yishun street 11,4-room,new generation,96.0,yes,1985,0.0,2700
+106707,2024-01,bishan,305,shunfu road,3-room,new generation,67.0,yes,1985,0.0,2100
+106708,2024-01,queenstown,171,stirling road,3-room,improved,60.0,yes,1970,0.0,2300
+106718,2024-01,clementi,101,clementi street 14,5-room,improved,123.0,yes,1984,0.0,3600
+106767,2024-01,bishan,305,shunfu road,3-room,new generation,67.0,yes,1985,0.0,2100
+106840,2024-01,geylang,106,aljunied crescent,3-room,new generation,67.0,yes,1979,0.0,3300
+106849,2024-01,marine parade,67,marine drive,3-room,improved,65.0,yes,1976,0.0,3200
+106853,2024-01,queenstown,11,holland drive,3-room,improved,65.0,yes,1975,0.0,3500
+106900,2024-01,jurong east,105,jurong east street 13,4-room,new generation,90.0,yes,1993,0.0,2300
+106927,2024-01,clementi,610,clementi west street 1,3-room,model a,74.0,yes,1983,0.0,2900
+106955,2024-01,jurong west,209,boon lay place,3-room,improved,65.0,yes,1976,0.0,2200
+107156,2024-01,bukit merah,26d,jalan membina,4-room,model a,90.0,yes,2009,0.0,4000
+107199,2024-01,jurong west,209,boon lay place,3-room,improved,65.0,yes,1976,0.0,2200
+107210,2024-01,queenstown,6,holland close,3-room,improved,65.0,yes,1974,0.0,3000
+107226,2024-01,woodlands,528,woodlands drive 14,4-room,premium apartment,105.0,yes,1999,0.0,3400
+107402,2024-01,bukit merah,21,telok blangah crescent,3-room,improved,65.0,yes,1975,0.0,3500
+107485,2024-01,marine parade,63,marine drive,4-room,improved,87.0,yes,1976,0.0,3600
+107487,2024-01,queenstown,171,stirling road,3-room,improved,60.0,yes,1970,0.0,2300
+107583,2024-01,sengkang,436a,fernvale road,4-room,model a,96.0,yes,2010,0.0,3200
+107622,2024-01,marine parade,63,marine drive,4-room,improved,87.0,yes,1976,0.0,3600
+107624,2024-01,yishun,462b,yishun avenue 6,2-room,model a,47.0,yes,2019,0.0,2500
+107716,2024-01,queenstown,11,holland drive,3-room,improved,65.0,yes,1975,0.0,3500
+107728,2024-01,clementi,433,clementi avenue 3,3-room,new generation,81.0,yes,1978,0.0,3300
+107818,2024-01,bukit merah,21,telok blangah crescent,3-room,improved,65.0,yes,1975,0.0,3500
+107874,2024-01,hougang,556,hougang street 51,4-room,model a,103.0,yes,1992,0.0,3000
+107903,2024-01,marine parade,31,marine crescent,3-room,improved,65.0,yes,1975,0.0,2900
+107922,2024-01,clementi,101,clementi street 14,5-room,improved,123.0,yes,1984,0.0,3600
+107931,2024-01,bedok,30,new upper changi road,3-room,improved,65.0,yes,1977,0.0,2000
+107937,2024-01,tampines,518c,tampines central 7,5-room,dbss,107.0,yes,2008,0.0,3800
+107939,2024-01,sengkang,304a,anchorvale link,5-room,improved,110.0,yes,2002,0.0,3000
+107948,2024-01,geylang,19,eunos crescent,3-room,improved,65.0,yes,1977,0.0,2000
+108104,2024-01,geylang,19,eunos crescent,3-room,improved,65.0,yes,1977,0.0,2000
+108106,2024-01,bukit merah,78,indus road,3-room,improved,65.0,yes,1982,0.0,2000
+108123,2024-01,clementi,433,clementi avenue 3,3-room,new generation,81.0,yes,1978,0.0,3300
+108195,2024-01,queenstown,6,holland close,3-room,improved,65.0,yes,1974,0.0,3000
+108217,2024-01,bukit merah,26d,jalan membina,4-room,model a,90.0,yes,2009,0.0,4000
+108274,2024-01,punggol,222a,sumang lane,2-room,model a,37.0,yes,2018,0.0,2500
+108381,2024-01,clementi,420,clementi avenue 1,4-room,model a,92.0,yes,2013,0.0,3800
+108470,2024-01,ang mo kio,302,ang mo kio avenue 3,3-room,new generation,73.0,yes,1978,0.0,3100
+108543,2024-01,kallang/whampoa,64,kallang bahru,3-room,improved,65.0,yes,1974,0.0,2200
+108545,2024-01,marine parade,31,marine crescent,3-room,improved,65.0,yes,1975,0.0,2900
+108559,2024-01,yishun,741,yishun avenue 5,3-room,new generation,67.0,yes,1985,0.0,2400
+108566,2024-01,bedok,30,new upper changi road,3-room,improved,65.0,yes,1977,0.0,2000
+108628,2024-01,sengkang,304a,anchorvale link,5-room,improved,110.0,yes,2002,0.0,3000
+108637,2024-01,sengkang,436a,fernvale road,4-room,model a,96.0,yes,2010,0.0,3200
+108657,2024-01,geylang,106,aljunied crescent,3-room,new generation,67.0,yes,1979,0.0,3300
+108718,2024-01,marine parade,67,marine drive,3-room,improved,65.0,yes,1976,0.0,3200
+108723,2024-01,woodlands,528,woodlands drive 14,4-room,premium apartment,105.0,yes,1999,0.0,3400
+108755,2024-01,punggol,222a,sumang lane,2-room,model a,37.0,yes,2018,0.0,2500
+108840,2024-01,ang mo kio,330,ang mo kio avenue 1,3-room,new generation,68.0,yes,1981,0.0,2100
+108866,2024-01,bukit merah,78,indus road,3-room,improved,65.0,yes,1982,0.0,2000
+108874,2024-01,yishun,142,yishun ring road,3-room,new generation,68.0,yes,1984,0.0,2300
+108911,2024-01,kallang/whampoa,64,kallang bahru,3-room,improved,65.0,yes,1974,0.0,2200
+108922,2024-01,ang mo kio,302,ang mo kio avenue 3,3-room,new generation,73.0,yes,1978,0.0,3100
+108954,2024-01,yishun,145,yishun street 11,4-room,new generation,96.0,yes,1985,0.0,2700
+108978,2024-01,yishun,741,yishun avenue 5,3-room,new generation,67.0,yes,1985,0.0,2400
+109015,2024-02,central,271,queen street,3-room,improved,60.0,yes,1979,0.0,3100
+109016,2024-02,bedok,420,bedok north street 1,3-room,new generation,68.0,yes,1979,0.0,3000
+109027,2024-02,hougang,2,hougang avenue 3,3-room,improved,59.0,yes,1975,0.0,2500
+109091,2024-02,tampines,803,tampines avenue 4,4-room,new generation,100.0,yes,1984,0.0,3300
+109097,2024-02,queenstown,90,dawson road,4-room,premium apartment loft,97.0,yes,2016,0.0,3800
+109110,2024-02,bukit batok,210,bukit batok street 21,4-room,model a,112.0,yes,1985,0.0,3500
+109111,2024-02,bukit merah,52,lengkok bahru,4-room,simplified,84.0,yes,1986,0.0,2500
+109154,2024-02,clementi,315,clementi avenue 4,4-room,new generation,91.0,yes,1979,0.0,3700
+109189,2024-02,yishun,829,yishun street 81,4-room,model a,103.0,yes,1988,0.0,3300
+109275,2024-02,jurong west,480,jurong west street 41,3-room,new generation,82.0,yes,1985,0.0,3300
+109276,2024-02,queenstown,87,commonwealth close,3-room,standard,58.0,yes,1967,0.0,2900
+109287,2024-02,bukit merah,75b,redhill road,5-room,improved,115.0,yes,2005,0.0,3600
+109319,2024-02,bukit merah,75a,redhill road,5-room,improved,115.0,yes,2005,0.0,4300
+109325,2024-02,marine parade,44,marine crescent,5-room,standard,117.0,yes,1975,0.0,3800
+109389,2024-02,bedok,420,bedok north street 1,3-room,new generation,68.0,yes,1979,0.0,3000
+109394,2024-02,yishun,118,yishun ring road,3-room,model a,74.0,yes,1983,0.0,1500
+109400,2024-02,bukit batok,438c,bukit batok west avenue 8,2-room,model a,38.0,yes,2020,0.0,2400
+109401,2024-02,bukit merah,1,jalan bukit merah,3-room,improved,64.0,yes,1983,0.0,2800
+109567,2024-02,bukit merah,75a,redhill road,5-room,improved,115.0,yes,2005,0.0,4300
+109626,2024-02,punggol,201b,punggol field,5-room,improved,110.0,yes,2004,0.0,3000
+109652,2024-02,clementi,105,clementi street 12,3-room,new generation,82.0,yes,1984,0.0,3200
+109661,2024-02,bukit merah,1,jalan bukit merah,3-room,improved,64.0,yes,1983,0.0,2800
+109681,2024-02,jurong east,238,jurong east street 21,5-room,improved,120.0,yes,1982,0.0,4000
+109838,2024-02,jurong west,530,jurong west street 52,3-room,new generation,67.0,yes,1983,0.0,2300
+109954,2024-02,woodlands,685b,woodlands drive 73,5-room,premium apartment,114.0,yes,2002,0.0,3200
+110037,2024-02,queenstown,11,holland drive,3-room,improved,65.0,yes,1975,0.0,3000
+110124,2024-02,punggol,132,edgedale plains,5-room,premium apartment,111.0,yes,2003,0.0,3500
+110155,2024-02,bukit merah,75b,redhill road,5-room,improved,115.0,yes,2005,0.0,3600
+110164,2024-02,jurong east,412,pandan gardens,3-room,improved,73.0,yes,1979,0.0,2600
+110170,2024-02,central,9,selegie road,3-room,standard,56.0,yes,1974,0.0,3000
+110190,2024-02,sembawang,316,sembawang vista,4-room,model a,100.0,yes,1999,0.0,3000
+110195,2024-02,ang mo kio,505,ang mo kio avenue 8,3-room,new generation,68.0,yes,1980,0.0,2700
+110248,2024-02,sembawang,316,sembawang vista,4-room,model a,100.0,yes,1999,0.0,3000
+110269,2024-02,toa payoh,147,lorong 2 toa payoh,4-room,model a,91.0,yes,2006,0.0,4000
+110324,2024-02,clementi,105,clementi street 12,3-room,new generation,82.0,yes,1984,0.0,3200
+110334,2024-02,bukit panjang,142,petir road,4-room,model a,103.0,yes,1988,0.0,3500
+110341,2024-02,ang mo kio,457,ang mo kio avenue 10,3-room,new generation,75.0,yes,1980,0.0,2400
+110348,2024-02,bukit batok,210,bukit batok street 21,4-room,model a,112.0,yes,1985,0.0,3500
+110368,2024-02,jurong west,530,jurong west street 52,3-room,new generation,67.0,yes,1983,0.0,2300
+110390,2024-02,queenstown,4,holland close,3-room,improved,65.0,yes,1974,0.0,3200
+110429,2024-02,clementi,315,clementi avenue 4,4-room,new generation,91.0,yes,1979,0.0,3700
+110471,2024-02,yishun,829,yishun street 81,4-room,model a,103.0,yes,1988,0.0,3300
+110518,2024-02,choa chu kang,342,choa chu kang loop,executive,apartment,142.0,yes,1993,0.0,4100
+110619,2024-02,punggol,201b,punggol field,5-room,improved,110.0,yes,2004,0.0,3000
+110626,2024-02,jurong east,238,jurong east street 21,5-room,improved,120.0,yes,1982,0.0,4000
+110673,2024-02,kallang/whampoa,8,jalan batu,2-room,standard,48.0,yes,1970,0.0,2800
+110698,2024-02,bukit batok,450d,bukit batok west avenue 6,3-room,model a,67.0,yes,2019,0.0,3200
+110704,2024-02,marine parade,44,marine crescent,5-room,standard,117.0,yes,1975,0.0,3800
+110727,2024-02,clementi,379,clementi avenue 5,3-room,new generation,82.0,yes,1980,0.0,3000
+110731,2024-02,ang mo kio,505,ang mo kio avenue 8,3-room,new generation,68.0,yes,1980,0.0,2700
+110770,2024-02,bukit panjang,142,petir road,4-room,model a,103.0,yes,1988,0.0,3500
+110794,2024-02,queenstown,32,holland close,3-room,improved,59.0,yes,1974,0.0,3400
+110855,2024-02,yishun,118,yishun ring road,3-room,model a,74.0,yes,1983,0.0,1500
+110870,2024-02,marine parade,5,marine terrace,3-room,improved,65.0,yes,1975,0.0,2500
+110871,2024-02,toa payoh,147,lorong 2 toa payoh,4-room,model a,91.0,yes,2006,0.0,4000
+110913,2024-02,tampines,803,tampines avenue 4,4-room,new generation,100.0,yes,1984,0.0,3300
+110964,2024-02,queenstown,11,holland drive,3-room,improved,65.0,yes,1975,0.0,3000
+110965,2024-02,bukit merah,52,lengkok bahru,4-room,simplified,84.0,yes,1986,0.0,2500
+110976,2024-02,central,9,selegie road,3-room,standard,56.0,yes,1974,0.0,3000
+111005,2024-02,bukit merah,43,telok blangah rise,3-room,improved,59.0,yes,1976,0.0,3000
+111014,2024-02,marine parade,5,marine terrace,3-room,improved,65.0,yes,1975,0.0,2500
+111040,2024-02,bukit batok,450d,bukit batok west avenue 6,3-room,model a,67.0,yes,2019,0.0,3200
+111052,2024-02,punggol,132,edgedale plains,5-room,premium apartment,111.0,yes,2003,0.0,3500
+111060,2024-02,queenstown,4,holland close,3-room,improved,65.0,yes,1974,0.0,3200
+111064,2024-02,woodlands,685b,woodlands drive 73,5-room,premium apartment,114.0,yes,2002,0.0,3200
+111091,2024-02,choa chu kang,342,choa chu kang loop,executive,apartment,142.0,yes,1993,0.0,4100
+111103,2024-02,sengkang,331c,anchorvale street,4-room,model a,92.0,yes,2015,0.0,3000
+111112,2024-02,ang mo kio,457,ang mo kio avenue 10,3-room,new generation,75.0,yes,1980,0.0,2400
+111118,2024-02,bukit merah,119,bukit merah view,3-room,improved,65.0,yes,1983,0.0,3000
+111133,2024-02,jurong west,480,jurong west street 41,3-room,new generation,82.0,yes,1985,0.0,3300
+111193,2024-02,jurong east,412,pandan gardens,3-room,improved,73.0,yes,1979,0.0,2600
+111199,2024-02,queenstown,87,commonwealth close,3-room,standard,58.0,yes,1967,0.0,2900
+111235,2024-02,tampines,157,tampines street 12,3-room,new generation,68.0,yes,1985,0.0,2600
+111288,2024-02,sengkang,331c,anchorvale street,4-room,model a,92.0,yes,2015,0.0,3000
+111301,2024-02,bukit merah,119,bukit merah view,3-room,improved,65.0,yes,1983,0.0,3000
+111332,2024-02,clementi,379,clementi avenue 5,3-room,new generation,82.0,yes,1980,0.0,3000
+111449,2024-02,jurong east,412,pandan gardens,3-room,improved,73.0,yes,1979,0.0,2600
+111473,2024-02,hougang,2,hougang avenue 3,3-room,improved,59.0,yes,1975,0.0,2500
+111486,2024-02,kallang/whampoa,8,jalan batu,2-room,standard,48.0,yes,1970,0.0,2800
+111508,2024-02,tampines,157,tampines street 12,3-room,new generation,68.0,yes,1985,0.0,2600
+111557,2024-02,tampines,846,tampines street 82,3-room,model a,74.0,yes,1986,0.0,3000
+111600,2024-02,queenstown,32,holland close,3-room,improved,59.0,yes,1974,0.0,3400
+111610,2024-02,tampines,846,tampines street 82,3-room,model a,74.0,yes,1986,0.0,3000
+111616,2024-02,bukit merah,43,telok blangah rise,3-room,improved,59.0,yes,1976,0.0,3000
+111628,2024-02,central,271,queen street,3-room,improved,60.0,yes,1979,0.0,3100
+111650,2024-02,bukit batok,438c,bukit batok west avenue 8,2-room,model a,38.0,yes,2020,0.0,2400
+111655,2024-02,queenstown,90,dawson road,4-room,premium apartment loft,97.0,yes,2016,0.0,3800
+111685,2024-03,central,271,queen street,3-room,improved,60.0,yes,1979,0.0,2600
+111714,2024-03,sembawang,420,canberra road,5-room,improved,110.0,yes,2001,0.0,3300
+111727,2024-03,central,28,kelantan road,3-room,improved,65.0,yes,1977,0.0,3100
+111737,2024-03,toa payoh,115,lorong 1 toa payoh,3-room,improved,65.0,yes,1967,0.0,3000
+111786,2024-03,tampines,230j,tampines street 21,executive,apartment,151.0,yes,1993,0.0,4000
+111853,2024-03,choa chu kang,691a,choa chu kang crescent,5-room,improved,110.0,yes,2003,0.0,3200
+111909,2024-03,toa payoh,138a,lorong 1a toa payoh,5-room,dbss,114.0,yes,2012,0.0,5000
+112027,2024-03,clementi,428,clementi avenue 3,3-room,new generation,67.0,yes,1978,0.0,2600
+112091,2024-03,geylang,16,eunos crescent,3-room,improved,59.0,yes,1977,0.0,3000
+112094,2024-03,central,533,upper cross street,3-room,improved,60.0,yes,1980,0.0,3200
+112095,2024-03,central,28,kelantan road,3-room,improved,65.0,yes,1977,0.0,3100
+112125,2024-03,bedok,33,bedok south avenue 2,3-room,new generation,88.0,yes,1978,0.0,2900
+112161,2024-03,toa payoh,138a,lorong 1a toa payoh,5-room,dbss,114.0,yes,2012,0.0,5000
+112186,2024-03,clementi,428,clementi avenue 3,3-room,new generation,67.0,yes,1978,0.0,2600
+112262,2024-03,jurong west,530,jurong west street 52,3-room,new generation,67.0,yes,1983,0.0,3200
+112286,2024-03,jurong east,216,jurong east street 21,executive,maisonette,148.0,yes,1985,0.0,4100
+112319,2024-03,queenstown,6,holland close,3-room,improved,65.0,yes,1974,0.0,3300
+112336,2024-03,tampines,909,tampines avenue 4,3-room,model a,73.0,yes,1984,0.0,2900
+112348,2024-03,jurong east,216,jurong east street 21,executive,maisonette,148.0,yes,1985,0.0,4100
+112407,2024-03,marine parade,6,marine terrace,3-room,improved,65.0,yes,1975,0.0,3000
+112422,2024-03,ang mo kio,416,ang mo kio avenue 10,3-room,new generation,74.0,yes,1979,0.0,3000
+112440,2024-03,yishun,875,yishun street 81,4-room,model a,104.0,yes,1988,0.0,3500
+112491,2024-03,queenstown,8,holland avenue,3-room,improved,59.0,yes,1974,0.0,3000
+112503,2024-03,choa chu kang,691a,choa chu kang crescent,5-room,improved,110.0,yes,2003,0.0,3200
+112520,2024-03,bukit merah,85,telok blangah heights,5-room,improved,110.0,yes,2003,0.0,4200
+112541,2024-03,ang mo kio,631,ang mo kio avenue 4,3-room,new generation,67.0,yes,1985,0.0,3000
+112556,2024-03,queenstown,8,holland avenue,3-room,improved,59.0,yes,1974,0.0,3000
+112746,2024-03,yishun,107,yishun ring road,3-room,new generation,81.0,yes,1982,0.0,3000
+112787,2024-03,central,271,queen street,3-room,improved,60.0,yes,1979,0.0,2600
+112881,2024-03,geylang,314,ubi avenue 1,4-room,model a,104.0,yes,1985,0.0,3000
+112910,2024-03,bukit merah,2,everton park,3-room,new generation,72.0,yes,1980,0.0,2600
+112917,2024-03,central,1f,cantonment road,5-room,type s2,107.0,yes,2011,0.0,4800
+112968,2024-03,tampines,256,tampines street 21,5-room,improved,121.0,yes,1984,0.0,4000
+112979,2024-03,jurong west,530,jurong west street 52,3-room,new generation,67.0,yes,1983,0.0,3200
+112987,2024-03,clementi,335,clementi avenue 2,3-room,new generation,67.0,yes,1978,0.0,3000
+113004,2024-03,bukit merah,2,everton park,3-room,new generation,72.0,yes,1980,0.0,2600
+113010,2024-03,central,533,upper cross street,3-room,improved,60.0,yes,1980,0.0,3200
+113021,2024-03,clementi,335,clementi avenue 2,3-room,new generation,67.0,yes,1978,0.0,3000
+113085,2024-03,yishun,875,yishun street 81,4-room,model a,104.0,yes,1988,0.0,3500
+113099,2024-03,ang mo kio,416,ang mo kio avenue 10,3-room,new generation,74.0,yes,1979,0.0,3000
+113129,2024-03,sengkang,273c,compassvale link,4-room,premium apartment,90.0,yes,2009,0.0,3400
+113199,2024-03,jurong west,663c,jurong west street 65,5-room,improved,110.0,yes,2000,0.0,4000
+113244,2024-03,tampines,909,tampines avenue 4,3-room,model a,73.0,yes,1984,0.0,2900
+113255,2024-03,sembawang,420,canberra road,5-room,improved,110.0,yes,2001,0.0,3300
+113287,2024-03,central,1f,cantonment road,4-room,type s1,95.0,yes,2011,0.0,5100
+113324,2024-03,bedok,534,bedok north street 3,2-room,improved,45.0,yes,1986,0.0,2100
+113420,2024-03,tampines,911,tampines street 91,4-room,model a,104.0,yes,1984,0.0,3800
+113457,2024-03,jurong west,181b,boon lay drive,2-room,model a,47.0,yes,2014,0.0,2700
+113471,2024-03,central,1f,cantonment road,4-room,type s1,95.0,yes,2011,0.0,5100
+113534,2024-03,marine parade,33,marine crescent,3-room,improved,65.0,yes,1975,0.0,2800
+113617,2024-03,bukit batok,438c,bukit batok west avenue 8,2-room,model a,38.0,yes,2020,0.0,2500
+113653,2024-03,queenstown,6,holland close,3-room,improved,65.0,yes,1974,0.0,3300
+113679,2024-03,tampines,911,tampines street 91,4-room,model a,104.0,yes,1984,0.0,3800
+113773,2024-03,yishun,107,yishun ring road,3-room,new generation,81.0,yes,1982,0.0,3000
+113810,2024-03,central,1f,cantonment road,5-room,type s2,107.0,yes,2011,0.0,4800
+113812,2024-03,geylang,314,ubi avenue 1,4-room,model a,104.0,yes,1985,0.0,3000
+113890,2024-03,marine parade,6,marine terrace,3-room,improved,65.0,yes,1975,0.0,3100
+113899,2024-03,jurong east,288a,jurong east street 21,5-room,improved,124.0,yes,2000,0.0,3800
+113951,2024-03,tampines,256,tampines street 21,5-room,improved,121.0,yes,1984,0.0,4000
+113954,2024-03,clementi,428,clementi avenue 3,3-room,new generation,67.0,yes,1978,0.0,2600
+113968,2024-03,bukit merah,119,bukit merah view,3-room,improved,65.0,yes,1983,0.0,2700
+113976,2024-03,toa payoh,115,lorong 1 toa payoh,3-room,improved,65.0,yes,1967,0.0,3000
+114011,2024-03,jurong east,288a,jurong east street 21,5-room,improved,124.0,yes,2000,0.0,3800
+114103,2024-03,tampines,230j,tampines street 21,executive,apartment,151.0,yes,1993,0.0,4000
+114158,2024-03,bukit batok,438c,bukit batok west avenue 8,2-room,model a,38.0,yes,2020,0.0,2500
+114276,2024-03,serangoon,530,serangoon north avenue 4,5-room,improved,122.0,yes,1992,0.0,3500
+114354,2024-03,bukit merah,119,bukit merah view,3-room,improved,65.0,yes,1983,0.0,2700
+114370,2024-03,jurong west,181b,boon lay drive,2-room,model a,47.0,yes,2014,0.0,2700
+114431,2024-03,bukit merah,85,telok blangah heights,5-room,improved,110.0,yes,2003,0.0,4200
+114462,2024-03,marine parade,33,marine crescent,3-room,improved,65.0,yes,1975,0.0,2800
+114529,2024-03,bedok,33,bedok south avenue 2,3-room,new generation,88.0,yes,1978,0.0,2900
+114545,2024-03,marine parade,6,marine terrace,3-room,improved,65.0,yes,1975,0.0,3100
+114578,2024-03,ang mo kio,631,ang mo kio avenue 4,3-room,new generation,67.0,yes,1985,0.0,3000
+114592,2024-03,marine parade,6,marine terrace,3-room,improved,65.0,yes,1975,0.0,3000
+114604,2024-03,geylang,16,eunos crescent,3-room,improved,59.0,yes,1977,0.0,3000
+114653,2024-03,bukit merah,105,henderson crescent,3-room,improved,65.0,yes,1975,0.0,2500
+114712,2024-03,jurong west,663c,jurong west street 65,5-room,improved,110.0,yes,2000,0.0,4000
+114745,2024-03,queenstown,163,stirling road,3-room,improved,66.0,yes,1970,0.0,2200
+114750,2024-03,queenstown,163,stirling road,3-room,improved,66.0,yes,1970,0.0,2200
+114778,2024-03,bedok,534,bedok north street 3,2-room,improved,45.0,yes,1986,0.0,2100
+114785,2024-03,serangoon,530,serangoon north avenue 4,5-room,improved,122.0,yes,1992,0.0,3500
+114807,2024-03,bukit merah,105,henderson crescent,3-room,improved,65.0,yes,1975,0.0,2500
+114840,2024-03,sengkang,273c,compassvale link,4-room,premium apartment,90.0,yes,2009,0.0,3400
+114918,2024-04,bukit batok,439a,bukit batok west avenue 8,2-room,model a,47.0,yes,2020,0.0,2600
+114924,2024-04,bukit merah,18,cantonment close,4-room,model a,90.0,yes,2002,0.0,4100
+114973,2024-04,jurong east,57,teban gardens road,4-room,model a,92.0,yes,2016,0.0,3600
+114994,2024-04,queenstown,2,holland avenue,3-room,improved,65.0,yes,1974,0.0,3500
+115004,2024-04,geylang,93,jalan dua,3-room,standard,62.0,yes,1969,0.0,3100
+115041,2024-04,punggol,314b,punggol way,4-room,premium apartment,93.0,yes,2017,0.0,3400
+115058,2024-04,sengkang,298a,compassvale street,5-room,premium apartment,122.0,yes,2001,0.0,3300
+115091,2024-04,yishun,296,yishun street 20,4-room,model a,91.0,yes,2000,0.0,3100
+115094,2024-04,marine parade,5,marine terrace,3-room,improved,65.0,yes,1975,0.0,2800
+115158,2024-04,jurong east,113,jurong east street 13,4-room,new generation,90.0,yes,1981,0.0,3400
+115166,2024-04,clementi,610,clementi west street 1,3-room,model a,74.0,yes,1983,0.0,3000
+115272,2024-04,jurong west,436,jurong west avenue 1,5-room,model a,135.0,yes,1985,0.0,3500
+115277,2024-04,jurong east,111,jurong east street 13,5-room,improved,120.0,yes,1981,0.0,3800
+115310,2024-04,queenstown,12,holland avenue,3-room,improved,65.0,yes,1975,0.0,3200
+115355,2024-04,jurong east,287b,jurong east street 21,executive,apartment,144.0,yes,1998,0.0,4500
+115392,2024-04,jurong west,667a,jurong west street 65,5-room,improved,110.0,yes,2000,0.0,3000
+115396,2024-04,clementi,330,clementi avenue 2,3-room,new generation,67.0,yes,1978,0.0,3000
+115408,2024-04,geylang,93,jalan dua,3-room,standard,62.0,yes,1969,0.0,3100
+115482,2024-04,jurong east,287b,jurong east street 21,executive,apartment,144.0,yes,1998,0.0,4500
+115495,2024-04,jurong west,436,jurong west avenue 1,5-room,model a,135.0,yes,1985,0.0,3500
+115530,2024-04,bukit merah,30,telok blangah rise,3-room,improved,59.0,yes,1976,0.0,2900
+115548,2024-04,jurong west,667a,jurong west street 65,5-room,improved,110.0,yes,2000,0.0,3000
+115579,2024-04,toa payoh,191,lorong 4 toa payoh,4-room,improved,84.0,yes,1974,0.0,3200
+115613,2024-04,queenstown,130,clarence lane,4-room,model a,104.0,yes,1996,0.0,4000
+115617,2024-04,jurong east,57,teban gardens road,4-room,model a,92.0,yes,2016,0.0,3600
+115633,2024-04,ang mo kio,255,ang mo kio avenue 4,3-room,new generation,73.0,yes,1977,0.0,2800
+115661,2024-04,geylang,19,balam road,3-room,standard,60.3,yes,1967,0.0,2000
+115665,2024-04,bukit panjang,214,petir road,4-room,model a,103.0,yes,1988,0.0,2800
+115677,2024-04,toa payoh,5,upper aljunied lane,3-room,standard,57.0,yes,1968,0.0,2400
+115686,2024-04,yishun,756,yishun street 72,4-room,simplified,84.0,yes,1985,0.0,3000
+115736,2024-04,queenstown,12,holland avenue,3-room,improved,65.0,yes,1975,0.0,3200
+115754,2024-04,clementi,610,clementi west street 1,3-room,model a,74.0,yes,1983,0.0,3000
+115763,2024-04,kallang/whampoa,14,saint george's road,3-room,new generation,67.0,yes,1984,0.0,3000
+115776,2024-04,queenstown,130,clarence lane,4-room,model a,104.0,yes,1996,0.0,4000
+115846,2024-04,sengkang,207d,compassvale lane,4-room,model a,92.0,yes,2005,0.0,3400
+115873,2024-04,clementi,330,clementi avenue 2,3-room,new generation,67.0,yes,1978,0.0,3000
+115920,2024-04,queenstown,2,holland avenue,3-room,improved,65.0,yes,1974,0.0,3500
+115941,2024-04,bukit merah,21,telok blangah crescent,3-room,improved,65.0,yes,1975,0.0,1500
+116031,2024-04,tampines,131,simei street 1,4-room,model a,104.0,yes,1988,0.0,3500
+116046,2024-04,jurong east,111,jurong east street 13,5-room,improved,120.0,yes,1981,0.0,3800
+116058,2024-04,ang mo kio,591a,ang mo kio street 51,4-room,model a,93.0,yes,2019,0.0,4000
+116072,2024-04,toa payoh,116,lorong 2 toa payoh,3-room,improved,63.0,yes,1970,0.0,2400
+116090,2024-04,kallang/whampoa,21,saint george's road,5-room,improved,118.0,yes,1984,0.0,4000
+116115,2024-04,bukit panjang,214,petir road,4-room,model a,103.0,yes,1988,0.0,2800
+116175,2024-04,kallang/whampoa,21,saint george's road,5-room,improved,118.0,yes,1984,0.0,4000
+116215,2024-04,yishun,756,yishun street 72,4-room,simplified,84.0,yes,1985,0.0,3000
+116328,2024-04,bedok,7,bedok south avenue 2,4-room,improved,82.0,yes,1976,0.0,3000
+116352,2024-04,marine parade,31,marine crescent,3-room,improved,65.0,yes,1975,0.0,3000
+116356,2024-04,tampines,131,simei street 1,4-room,model a,104.0,yes,1988,0.0,3500
+116371,2024-04,toa payoh,191,lorong 4 toa payoh,4-room,improved,84.0,yes,1974,0.0,3200
+116407,2024-04,queenstown,3,ghim moh road,3-room,improved,65.0,yes,1976,0.0,2800
+116444,2024-04,bukit merah,31,telok blangah rise,3-room,improved,70.0,yes,1976,0.0,3000
+116445,2024-04,bukit batok,439a,bukit batok west avenue 8,2-room,model a,47.0,yes,2020,0.0,2600
+116474,2024-04,jurong west,859,jurong west street 81,executive,apartment,141.0,yes,1997,0.0,3500
+116502,2024-04,geylang,19,balam road,3-room,standard,60.3,yes,1967,0.0,2000
+116554,2024-04,sengkang,298a,compassvale street,5-room,premium apartment,122.0,yes,2001,0.0,3300
+116581,2024-04,jurong east,113,jurong east street 13,4-room,new generation,90.0,yes,1981,0.0,3400
+116609,2024-04,hougang,652,hougang avenue 8,3-room,improved,60.0,yes,1988,0.0,2700
+116646,2024-04,marine parade,5,marine terrace,3-room,improved,65.0,yes,1975,0.0,2800
+116650,2024-04,sengkang,418a,fernvale link,2-room,model a,47.0,yes,2018,0.0,2400
+116709,2024-04,jurong west,186,boon lay avenue,3-room,improved,59.0,yes,1975,0.0,2800
+116779,2024-04,queenstown,82,commonwealth close,3-room,standard,60.0,yes,1967,0.0,2700
+116824,2024-04,clementi,455,clementi avenue 3,4-room,model a,90.0,yes,2002,0.0,4200
+116885,2024-04,bukit merah,21,telok blangah crescent,3-room,improved,65.0,yes,1975,0.0,1500
+116892,2024-04,bukit merah,31,telok blangah rise,3-room,improved,70.0,yes,1976,0.0,3000
+116894,2024-04,bukit merah,30,telok blangah rise,3-room,improved,59.0,yes,1976,0.0,2900
+117070,2024-04,queenstown,2,holland avenue,3-room,improved,65.0,yes,1974,0.0,3000
+117099,2024-04,ang mo kio,255,ang mo kio avenue 4,3-room,new generation,73.0,yes,1977,0.0,2800
+117106,2024-04,sengkang,207d,compassvale lane,4-room,model a,92.0,yes,2005,0.0,3400
+117148,2024-04,ang mo kio,591a,ang mo kio street 51,4-room,model a,93.0,yes,2019,0.0,4000
+117174,2024-04,queenstown,4,holland close,4-room,improved,88.0,yes,1974,0.0,3800
+117198,2024-04,hougang,652,hougang avenue 8,3-room,improved,60.0,yes,1988,0.0,2700
+117206,2024-04,queenstown,82,commonwealth close,3-room,standard,60.0,yes,1967,0.0,2700
+117308,2024-04,bukit merah,18,cantonment close,4-room,model a,90.0,yes,2002,0.0,4100
+117309,2024-04,queenstown,82,commonwealth close,3-room,standard,60.0,yes,1967,0.0,2700
+117351,2024-04,yishun,296,yishun street 20,4-room,model a,91.0,yes,2000,0.0,3100
+117384,2024-04,kallang/whampoa,14,saint george's road,3-room,new generation,67.0,yes,1984,0.0,3000
+117395,2024-04,queenstown,2,holland avenue,3-room,improved,65.0,yes,1974,0.0,3000
+117399,2024-04,queenstown,3,ghim moh road,3-room,improved,65.0,yes,1976,0.0,2800
+117433,2024-04,toa payoh,26,toa payoh east,3-room,improved,67.0,yes,1971,0.0,3200
+117448,2024-04,toa payoh,5,upper aljunied lane,3-room,standard,57.0,yes,1968,0.0,2400
+117503,2024-04,bukit batok,269,bukit batok east avenue 4,4-room,simplified,89.0,yes,1986,0.0,3300
+117516,2024-04,queenstown,2,holland avenue,3-room,improved,65.0,yes,1974,0.0,3500
+117533,2024-04,jurong west,859,jurong west street 81,executive,apartment,141.0,yes,1997,0.0,3500
+117536,2024-04,jurong west,186,boon lay avenue,3-room,improved,59.0,yes,1975,0.0,2800
+117566,2024-04,queenstown,12,holland avenue,3-room,improved,65.0,yes,1975,0.0,3200
+117568,2024-04,bukit batok,269,bukit batok east avenue 4,4-room,simplified,89.0,yes,1986,0.0,3300
+117577,2024-04,jurong west,679b,jurong west central 1,5-room,premium apartment,114.0,yes,2000,0.0,3700
+117675,2024-04,marine parade,31,marine crescent,3-room,improved,65.0,yes,1975,0.0,3000
+117712,2024-04,queenstown,4,holland close,4-room,improved,88.0,yes,1974,0.0,3800
+117716,2024-04,bedok,7,bedok south avenue 2,4-room,improved,82.0,yes,1976,0.0,3000
+117736,2024-04,clementi,455,clementi avenue 3,4-room,model a,90.0,yes,2002,0.0,4200
+117738,2024-04,sengkang,418a,fernvale link,2-room,model a,47.0,yes,2018,0.0,2400
+117766,2024-04,toa payoh,26,toa payoh east,3-room,improved,67.0,yes,1971,0.0,3200
+117791,2024-04,toa payoh,116,lorong 2 toa payoh,3-room,improved,63.0,yes,1970,0.0,2400
+117821,2024-04,jurong west,679b,jurong west central 1,5-room,premium apartment,114.0,yes,2000,0.0,3700
+117920,2024-04,punggol,314b,punggol way,4-room,premium apartment,93.0,yes,2017,0.0,3400
+118043,2024-05,toa payoh,203,toa payoh north,3-room,improved,65.0,yes,1982,0.0,3000
+118067,2024-05,queenstown,81,commonwealth close,3-room,standard,60.0,yes,1967,0.0,2700
+118069,2024-05,tampines,368,tampines street 34,4-room,model a,102.0,yes,1997,0.0,3500
+118345,2024-05,clementi,308,clementi avenue 4,3-room,new generation,67.0,yes,1980,0.0,2800
+118424,2024-05,bukit merah,44,telok blangah drive,3-room,improved,65.0,yes,1976,0.0,3000
+118454,2024-05,bukit merah,18,cantonment close,4-room,model a,90.0,yes,2002,0.0,4000
+118559,2024-05,queenstown,1,dover road,3-room,improved,65.0,yes,1975,0.0,3300
+118565,2024-05,ang mo kio,121,ang mo kio avenue 3,3-room,new generation,67.0,yes,1978,0.0,2800
+118571,2024-05,punggol,175d,punggol field,5-room,improved,111.0,yes,2003,0.0,3300
+118572,2024-05,bukit batok,228,bukit batok central,3-room,new generation,67.0,yes,1985,0.0,3000
+118650,2024-05,punggol,302b,punggol place,4-room,premium apartment,94.0,yes,2011,0.0,3300
+118654,2024-05,tampines,267,tampines street 21,3-room,model a,75.0,yes,1983,0.0,3000
+118708,2024-05,bishan,289,bishan street 24,5-room,premium apartment,121.0,yes,1998,0.0,3200
+118786,2024-05,bedok,539,bedok north street 3,3-room,new generation,68.0,yes,1980,0.0,2000
+118820,2024-05,bukit merah,44,telok blangah drive,3-room,improved,65.0,yes,1976,0.0,3000
+118914,2024-05,bukit merah,21,jalan membina,4-room,model a,90.0,yes,2003,0.0,4000
+118943,2024-05,marine parade,30,marine crescent,3-room,improved,76.0,yes,1975,0.0,2500
+118950,2024-05,clementi,704,west coast road,3-room,new generation,67.0,yes,1980,0.0,3000
+118954,2024-05,queenstown,81,commonwealth close,3-room,standard,60.0,yes,1967,0.0,2700
+119022,2024-05,bukit merah,18,cantonment close,4-room,model a,90.0,yes,2002,0.0,4000
+119027,2024-05,marine parade,30,marine crescent,3-room,improved,76.0,yes,1975,0.0,2500
+119068,2024-05,toa payoh,203,toa payoh north,3-room,improved,65.0,yes,1982,0.0,3000
+119072,2024-05,kallang/whampoa,72,geylang bahru,3-room,improved,59.0,yes,1974,0.0,2900
+119110,2024-05,yishun,622,yishun ring road,3-room,model a,73.0,yes,1987,0.0,2800
+119138,2024-05,clementi,704,west coast road,3-room,new generation,67.0,yes,1980,0.0,3000
+119219,2024-05,bukit panjang,150,petir road,3-room,model a,73.0,yes,1988,0.0,2000
+119249,2024-05,bedok,180,bedok north road,4-room,model a,92.0,yes,2006,0.0,2900
+119264,2024-05,jurong east,102,jurong east street 13,3-room,new generation,68.0,yes,1982,0.0,3000
+119289,2024-05,pasir ris,448,pasir ris drive 6,executive,maisonette,146.0,yes,1989,0.0,4200
+119296,2024-05,kallang/whampoa,28,jalan bahagia,3-room,standard,56.0,yes,1971,0.0,2800
+119373,2024-05,clementi,308,clementi avenue 4,3-room,new generation,67.0,yes,1980,0.0,2800
+119398,2024-05,tampines,368,tampines street 34,4-room,model a,102.0,yes,1997,0.0,3500
+119556,2024-05,bukit batok,450d,bukit batok west avenue 6,2-room,model a,47.0,yes,2019,0.0,2400
+119612,2024-05,marine parade,66,marine drive,3-room,improved,76.0,yes,1976,0.0,2800
+119619,2024-05,marine parade,66,marine drive,3-room,improved,76.0,yes,1976,0.0,2800
+119624,2024-05,ang mo kio,121,ang mo kio avenue 3,3-room,new generation,67.0,yes,1978,0.0,2800
+119699,2024-05,pasir ris,448,pasir ris drive 6,executive,maisonette,146.0,yes,1989,0.0,4200
+119745,2024-05,bukit merah,8,cantonment close,4-room,model a,90.0,yes,2002,0.0,4400
+119747,2024-05,kallang/whampoa,72,geylang bahru,3-room,improved,59.0,yes,1974,0.0,2900
+119751,2024-05,bedok,111,lengkong tiga,4-room,model a,104.0,yes,1989,0.0,3500
+119820,2024-05,bukit batok,450d,bukit batok west avenue 6,2-room,model a,47.0,yes,2019,0.0,2400
+119868,2024-05,bedok,180,bedok north road,4-room,model a,92.0,yes,2006,0.0,2900
+119873,2024-05,toa payoh,203,toa payoh north,3-room,improved,65.0,yes,1982,0.0,3000
+119886,2024-05,clementi,371,clementi avenue 4,3-room,new generation,68.0,yes,1981,0.0,2200
+119896,2024-05,kallang/whampoa,28,jalan bahagia,3-room,standard,56.0,yes,1971,0.0,2800
+119935,2024-05,central,1,tanjong pagar plaza,3-room,improved,59.0,yes,1977,0.0,3100
+119990,2024-05,yishun,622,yishun ring road,3-room,model a,73.0,yes,1987,0.0,2800
+120045,2024-05,bukit panjang,150,petir road,3-room,model a,73.0,yes,1988,0.0,2000
+120064,2024-05,bukit merah,8,cantonment close,4-room,model a,90.0,yes,2002,0.0,4400
+120081,2024-05,punggol,302b,punggol place,4-room,premium apartment,94.0,yes,2011,0.0,3300
+120184,2024-05,central,1,tanjong pagar plaza,3-room,improved,59.0,yes,1977,0.0,3100
+120255,2024-05,punggol,175d,punggol field,5-room,improved,111.0,yes,2003,0.0,3300
+120290,2024-05,bedok,539,bedok north street 3,3-room,new generation,68.0,yes,1980,0.0,2000
+120373,2024-05,jurong west,179,yung sheng road,4-room,model a,95.0,yes,2001,0.0,4000
+120399,2024-05,bukit batok,228,bukit batok central,3-room,new generation,67.0,yes,1985,0.0,3000
+120463,2024-05,jurong east,102,jurong east street 13,3-room,new generation,68.0,yes,1982,0.0,3000
+120471,2024-05,queenstown,1,dover road,3-room,improved,65.0,yes,1975,0.0,3300
+120627,2024-05,toa payoh,222,lorong 8 toa payoh,4-room,improved,82.0,yes,1976,0.0,3200
+120640,2024-05,bedok,111,lengkong tiga,4-room,model a,104.0,yes,1989,0.0,3500
+120669,2024-05,bishan,289,bishan street 24,5-room,premium apartment,121.0,yes,1998,0.0,3200
+120701,2024-05,tampines,267,tampines street 21,3-room,model a,75.0,yes,1983,0.0,3000
+120728,2024-05,jurong west,179,yung sheng road,4-room,model a,95.0,yes,2001,0.0,4000
+120772,2024-05,toa payoh,222,lorong 8 toa payoh,4-room,improved,82.0,yes,1976,0.0,3200
+120825,2024-05,clementi,371,clementi avenue 4,3-room,new generation,68.0,yes,1981,0.0,2200
+120969,2024-05,bukit merah,21,jalan membina,4-room,model a,90.0,yes,2003,0.0,4000
+121018,2024-06,geylang,32,cassia crescent,3-room,new generation,68.0,yes,1981,0.0,3000
+121038,2024-06,tampines,856e,tampines street 82,executive,apartment,147.0,yes,1995,0.0,3900
+121052,2024-06,clementi,306,clementi avenue 4,3-room,new generation,82.0,yes,1979,0.0,3000
+121053,2024-06,kallang/whampoa,74,whampoa drive,3-room,improved,66.0,yes,1981,0.0,3000
+121110,2024-06,clementi,373,clementi avenue 4,4-room,new generation,91.0,yes,1981,0.0,3200
+121157,2024-06,queenstown,11,holland drive,3-room,improved,65.0,yes,1975,0.0,2800
+121169,2024-06,bukit merah,105,henderson crescent,3-room,improved,65.0,yes,1975,0.0,3300
+121293,2024-06,bedok,4,bedok south avenue 1,3-room,improved,65.0,yes,1976,0.0,3000
+121333,2024-06,bukit merah,30,jalan klinik,3-room,standard,58.0,yes,1969,0.0,2800
+121341,2024-06,ang mo kio,502,ang mo kio avenue 5,3-room,new generation,82.0,yes,1981,0.0,2800
+121349,2024-06,jurong west,659d,jurong west street 65,5-room,improved,110.0,yes,2001,0.0,3000
+121356,2024-06,clementi,306,clementi avenue 4,3-room,new generation,82.0,yes,1979,0.0,3000
+121497,2024-06,bukit merah,86,redhill close,3-room,improved,59.0,yes,1973,0.0,3000
+121566,2024-06,serangoon,108,serangoon north avenue 1,3-room,improved,69.0,yes,1985,0.0,3000
+121641,2024-06,queenstown,4,holland close,3-room,improved,65.0,yes,1974,0.0,2800
+121734,2024-06,ang mo kio,502,ang mo kio avenue 5,3-room,new generation,82.0,yes,1981,0.0,2800
+121756,2024-06,kallang/whampoa,16,upper boon keng road,3-room,improved,65.0,yes,1975,0.0,3100
+121780,2024-06,clementi,715,clementi west street 2,4-room,new generation,91.0,yes,1981,0.0,3600
+121878,2024-06,serangoon,108,serangoon north avenue 1,3-room,improved,69.0,yes,1985,0.0,3000
+121938,2024-06,jurong east,44,teban gardens road,4-room,new generation,93.0,yes,1985,0.0,3500
+121975,2024-06,geylang,32,cassia crescent,3-room,new generation,68.0,yes,1981,0.0,3000
+121981,2024-06,ang mo kio,472,ang mo kio avenue 10,4-room,new generation,92.0,yes,1979,0.0,3400
+121988,2024-06,bukit merah,22,havelock road,3-room,standard,64.0,yes,1969,0.0,2800
+122016,2024-06,bedok,57,new upper changi road,3-room,improved,60.0,yes,1985,0.0,3000
+122084,2024-06,jurong east,44,teban gardens road,4-room,new generation,93.0,yes,1985,0.0,3500
+122168,2024-06,clementi,311a,clementi avenue 4,4-room,dbss,82.0,yes,2014,0.0,4500
+122233,2024-06,clementi,458,clementi avenue 3,5-room,improved,110.0,yes,2002,0.0,4200
+122240,2024-06,bukit batok,211,bukit batok street 21,4-room,model a,104.0,yes,1985,0.0,2700
+122297,2024-06,bukit merah,22,havelock road,3-room,standard,64.0,yes,1969,0.0,2800
+122362,2024-06,bedok,57,new upper changi road,3-room,improved,60.0,yes,1985,0.0,3000
+122369,2024-06,clementi,311a,clementi avenue 4,4-room,dbss,82.0,yes,2014,0.0,4500
+122401,2024-06,woodlands,587,woodlands drive 16,5-room,improved,111.0,yes,2001,0.0,3500
+122410,2024-06,bedok,42,chai chee street,3-room,new generation,67.0,yes,1985,0.0,2800
+122427,2024-06,clementi,413,commonwealth avenue west,5-room,improved,125.0,yes,1978,0.0,4600
+122436,2024-06,jurong east,288d,jurong east street 21,4-room,model a,104.0,yes,2000,0.0,3500
+122471,2024-06,bukit merah,105,henderson crescent,3-room,improved,65.0,yes,1975,0.0,3300
+122706,2024-06,clementi,708,clementi west street 2,4-room,new generation,92.0,yes,1980,0.0,3500
+122745,2024-06,queenstown,4,ghim moh road,3-room,improved,65.0,yes,1976,0.0,2900
+122762,2024-06,kallang/whampoa,16,upper boon keng road,3-room,improved,65.0,yes,1975,0.0,3100
+122769,2024-06,ang mo kio,472,ang mo kio avenue 10,4-room,new generation,92.0,yes,1979,0.0,3400
+122787,2024-06,ang mo kio,110,ang mo kio avenue 4,3-room,new generation,82.0,yes,1978,0.0,2600
+122817,2024-06,hougang,623,hougang avenue 8,3-room,improved,60.0,yes,1985,0.0,2300
+122854,2024-06,toa payoh,158,lorong 1 toa payoh,3-room,improved,65.0,yes,1972,0.0,3000
+122876,2024-06,sembawang,115b,canberra walk,2-room,model a,38.0,yes,2018,0.0,2300
+122898,2024-06,bukit batok,211,bukit batok street 21,4-room,model a,104.0,yes,1985,0.0,2700
+122906,2024-06,toa payoh,158,lorong 1 toa payoh,3-room,improved,65.0,yes,1972,0.0,3000
+123022,2024-06,hougang,623,hougang avenue 8,3-room,improved,60.0,yes,1985,0.0,2300
+123032,2024-06,clementi,458,clementi avenue 3,5-room,improved,110.0,yes,2002,0.0,4200
+123056,2024-06,clementi,708,clementi west street 2,4-room,new generation,92.0,yes,1980,0.0,3500
+123101,2024-06,bukit merah,36,beo crescent,3-room,standard,59.0,yes,1971,0.0,3200
+123232,2024-06,serangoon,335,serangoon avenue 3,4-room,simplified,84.0,yes,1986,0.0,3500
+123252,2024-06,tampines,856e,tampines street 82,executive,apartment,147.0,yes,1995,0.0,3900
+123260,2024-06,clementi,373,clementi avenue 4,4-room,new generation,91.0,yes,1981,0.0,3200
+123279,2024-06,serangoon,335,serangoon avenue 3,4-room,simplified,84.0,yes,1986,0.0,3500
+123321,2024-06,bedok,42,chai chee street,3-room,new generation,67.0,yes,1985,0.0,2800
+123390,2024-06,queenstown,11,holland drive,3-room,improved,65.0,yes,1975,0.0,2800
+123405,2024-06,hougang,709,hougang avenue 2,4-room,new generation,91.0,yes,1985,0.0,3300
+123413,2024-06,clementi,715,clementi west street 2,4-room,new generation,91.0,yes,1981,0.0,3600
+123506,2024-06,queenstown,4,holland close,3-room,improved,65.0,yes,1974,0.0,2800
+123526,2024-06,hougang,709,hougang avenue 2,4-room,new generation,91.0,yes,1985,0.0,3300
+123544,2024-06,ang mo kio,110,ang mo kio avenue 4,3-room,new generation,82.0,yes,1978,0.0,2600
+123602,2024-06,kallang/whampoa,74,whampoa drive,3-room,improved,66.0,yes,1981,0.0,3000
+123629,2024-06,sembawang,115b,canberra walk,2-room,model a,38.0,yes,2018,0.0,2300
+123692,2024-06,bukit merah,30,jalan klinik,3-room,standard,58.0,yes,1969,0.0,2800
+123722,2024-06,jurong east,288d,jurong east street 21,4-room,model a,104.0,yes,2000,0.0,3500
+123786,2024-06,jurong west,659d,jurong west street 65,5-room,improved,110.0,yes,2001,0.0,3000
+123790,2024-06,bukit merah,86,redhill close,3-room,improved,59.0,yes,1973,0.0,3000
+123903,2024-06,bedok,4,bedok south avenue 1,3-room,improved,65.0,yes,1976,0.0,3000
+123904,2024-06,bukit merah,36,beo crescent,3-room,standard,59.0,yes,1971,0.0,3200
+123912,2024-06,woodlands,587,woodlands drive 16,5-room,improved,111.0,yes,2001,0.0,3500
+123986,2024-06,queenstown,4,ghim moh road,3-room,improved,65.0,yes,1976,0.0,2900
+123992,2024-06,clementi,413,commonwealth avenue west,5-room,improved,125.0,yes,1978,0.0,4600
+124028,2024-07,queenstown,170,stirling road,3-room,improved,60.0,yes,1970,0.0,2500
+124059,2024-07,bukit merah,77,indus road,3-room,improved,63.0,yes,1973,0.0,3000
+124136,2024-07,hougang,425,hougang avenue 6,4-room,model a,105.0,yes,1990,0.0,3700
+124163,2024-07,kallang/whampoa,113c,mcnair road,4-room,premium apartment,93.0,yes,2017,0.0,4600
+124174,2024-07,bedok,29,new upper changi road,3-room,improved,76.0,yes,1977,0.0,2800
+124189,2024-07,bukit batok,238,bukit batok east avenue 5,4-room,new generation,99.0,yes,1986,0.0,2700
+124241,2024-07,kallang/whampoa,4,jalan batu,3-room,standard,60.0,yes,1969,0.0,3200
+124254,2024-07,yishun,115a,yishun ring road,5-room,improved,113.0,yes,2001,0.0,3250
+124265,2024-07,queenstown,8,holland avenue,3-room,improved,59.0,yes,1974,0.0,2800
+124281,2024-07,hougang,425,hougang avenue 6,4-room,model a,105.0,yes,1990,0.0,3700
+124356,2024-07,kallang/whampoa,3,saint george's road,3-room,improved,59.0,yes,1976,0.0,3000
+124363,2024-07,marine parade,47,marine crescent,3-room,improved,76.0,yes,1975,0.0,3200
+124422,2024-07,yishun,745,yishun street 72,3-room,new generation,67.0,yes,1985,0.0,3000
+124438,2024-07,bukit merah,77,indus road,3-room,improved,63.0,yes,1973,0.0,3000
+124485,2024-07,punggol,623a,punggol central,4-room,model a,94.0,yes,2014,0.0,3300
+124494,2024-07,tampines,231,simei street 4,4-room,model a,104.0,yes,1989,0.0,3500
+124723,2024-07,punggol,623a,punggol central,4-room,model a,94.0,yes,2014,0.0,3300
+124752,2024-07,geylang,1,haig road,3-room,improved,59.0,yes,1982,0.0,3000
+124781,2024-07,kallang/whampoa,3,saint george's road,3-room,improved,59.0,yes,1976,0.0,3000
+124789,2024-07,jurong west,678a,jurong west street 64,5-room,premium apartment,110.0,yes,2008,0.0,4000
+124803,2024-07,jurong west,678a,jurong west street 64,5-room,premium apartment,110.0,yes,2008,0.0,4000
+124820,2024-07,marine parade,31,marine crescent,3-room,improved,65.0,yes,1975,0.0,3000
+124881,2024-07,hougang,976,hougang street 91,4-room,model a,101.0,yes,1999,0.0,3400
+124934,2024-07,jurong west,208,boon lay place,3-room,improved,65.0,yes,1976,0.0,2800
+124953,2024-07,bedok,55,chai chee drive,3-room,model a,80.0,yes,1984,0.0,2500
+124962,2024-07,pasir ris,629,pasir ris drive 3,5-room,improved,122.0,yes,1995,0.0,3500
+124996,2024-07,kallang/whampoa,113c,mcnair road,4-room,premium apartment,93.0,yes,2017,0.0,4600
+125005,2024-07,ang mo kio,725,ang mo kio avenue 6,5-room,improved,119.0,yes,1980,0.0,3800
+125050,2024-07,bishan,181,bishan street 13,4-room,simplified,83.0,yes,1987,0.0,3200
+125065,2024-07,punggol,128c,punggol field walk,5-room,improved,110.0,yes,2003,0.0,2400
+125094,2024-07,bishan,181,bishan street 13,4-room,simplified,83.0,yes,1987,0.0,3200
+125100,2024-07,yishun,115a,yishun ring road,5-room,improved,113.0,yes,2001,0.0,3250
+125112,2024-07,sengkang,264e,compassvale bow,4-room,premium apartment,92.0,yes,2008,0.0,3400
+125147,2024-07,sengkang,264e,compassvale bow,4-room,premium apartment,92.0,yes,2008,0.0,3400
+125150,2024-07,ang mo kio,601,ang mo kio avenue 5,3-room,new generation,82.0,yes,1980,0.0,2700
+125165,2024-07,queenstown,8,holland avenue,3-room,improved,59.0,yes,1974,0.0,2800
+125169,2024-07,punggol,199d,punggol field,5-room,improved,110.0,yes,2003,0.0,3200
+125249,2024-07,bedok,29,new upper changi road,3-room,improved,76.0,yes,1977,0.0,3100
+125322,2024-07,marine parade,47,marine crescent,3-room,improved,76.0,yes,1975,0.0,3200
+125349,2024-07,bukit merah,93a,telok blangah street 31,4-room,model a,93.0,yes,2018,0.0,4800
+125425,2024-07,bukit merah,33,telok blangah way,3-room,improved,59.0,yes,1976,0.0,2800
+125479,2024-07,queenstown,11,holland drive,3-room,improved,65.0,yes,1975,0.0,3500
+125496,2024-07,bedok,29,new upper changi road,3-room,improved,76.0,yes,1977,0.0,2800
+125544,2024-07,bedok,27,new upper changi road,3-room,improved,65.0,yes,1982,0.0,2000
+125569,2024-07,jurong west,208,boon lay place,3-room,improved,65.0,yes,1976,0.0,2800
+125586,2024-07,bukit batok,238,bukit batok east avenue 5,4-room,new generation,99.0,yes,1986,0.0,2700
+125660,2024-07,ang mo kio,725,ang mo kio avenue 6,5-room,improved,119.0,yes,1980,0.0,3800
+125678,2024-07,bukit merah,28,telok blangah rise,3-room,improved,70.0,yes,1976,0.0,3000
+125818,2024-07,queenstown,169,stirling road,3-room,improved,60.0,yes,1970,0.0,3100
+125848,2024-07,queenstown,48,strathmore avenue,4-room,model a,90.0,yes,2006,0.0,4500
+125929,2024-07,queenstown,8,holland avenue,3-room,improved,59.0,yes,1974,0.0,2800
+125936,2024-07,bukit panjang,630,senja road,5-room,premium apartment,110.0,yes,2004,0.0,3100
+125950,2024-07,jurong east,264,jurong east street 24,3-room,new generation,68.0,yes,1983,0.0,2800
+126035,2024-07,hougang,976,hougang street 91,4-room,model a,101.0,yes,1999,0.0,3400
+126064,2024-07,queenstown,91,tanglin halt road,4-room,model a,90.0,yes,2008,0.0,4000
+126192,2024-07,queenstown,91,tanglin halt road,4-room,model a,90.0,yes,2008,0.0,4000
+126199,2024-07,bedok,55,chai chee drive,3-room,model a,80.0,yes,1984,0.0,2500
+126223,2024-07,tampines,157,tampines street 12,3-room,new generation,68.0,yes,1985,0.0,2800
+126292,2024-07,bedok,27,new upper changi road,3-room,improved,65.0,yes,1982,0.0,2000
+126301,2024-07,yishun,157,yishun street 11,3-room,new generation,67.0,yes,1985,0.0,2700
+126468,2024-07,tampines,157,tampines street 12,3-room,new generation,68.0,yes,1985,0.0,2800
+126509,2024-07,queenstown,11,holland drive,3-room,improved,65.0,yes,1975,0.0,3500
+126536,2024-07,tampines,231,simei street 4,4-room,model a,104.0,yes,1989,0.0,3500
+126649,2024-07,ang mo kio,601,ang mo kio avenue 5,3-room,new generation,82.0,yes,1980,0.0,2700
+126680,2024-07,bukit merah,33,telok blangah way,3-room,improved,59.0,yes,1976,0.0,2800
+126682,2024-07,yishun,745,yishun street 72,3-room,new generation,67.0,yes,1985,0.0,3000
+126705,2024-07,geylang,1,haig road,3-room,improved,59.0,yes,1982,0.0,3000
+126750,2024-07,bukit panjang,630,senja road,5-room,premium apartment,110.0,yes,2004,0.0,3100
+126751,2024-07,marine parade,31,marine crescent,3-room,improved,65.0,yes,1975,0.0,3000
+126779,2024-07,queenstown,170,stirling road,3-room,improved,60.0,yes,1970,0.0,2500
+126809,2024-07,bukit merah,93a,telok blangah street 31,4-room,model a,93.0,yes,2018,0.0,4800
+126881,2024-07,queenstown,48,strathmore avenue,4-room,model a,90.0,yes,2006,0.0,4500
+126902,2024-07,queenstown,169,stirling road,3-room,improved,60.0,yes,1970,0.0,3100
+126907,2024-07,kallang/whampoa,4,jalan batu,3-room,standard,60.0,yes,1969,0.0,3200
+126963,2024-07,bukit merah,28,telok blangah rise,3-room,improved,70.0,yes,1976,0.0,3000
+127056,2024-07,yishun,157,yishun street 11,3-room,new generation,67.0,yes,1985,0.0,2700
+127088,2024-07,punggol,199d,punggol field,5-room,improved,110.0,yes,2003,0.0,3200
+127096,2024-07,pasir ris,629,pasir ris drive 3,5-room,improved,122.0,yes,1995,0.0,3500
+127160,2024-07,jurong east,264,jurong east street 24,3-room,new generation,68.0,yes,1983,0.0,2800
+127167,2024-07,kallang/whampoa,3,saint george's road,3-room,improved,59.0,yes,1976,0.0,3000
+127208,2024-07,punggol,128c,punggol field walk,5-room,improved,110.0,yes,2003,0.0,2400
+127223,2024-07,bedok,29,new upper changi road,3-room,improved,76.0,yes,1977,0.0,3100
+127321,2024-08,hougang,504,hougang avenue 8,4-room,simplified,84.0,yes,1987,0.0,3000
+127375,2024-08,serangoon,101,serangoon north avenue 1,4-room,new generation,91.0,yes,1985,0.0,3300
+127461,2024-08,clementi,351,clementi avenue 2,3-room,new generation,67.0,yes,1978,0.0,2500
+127493,2024-08,hougang,954,hougang avenue 9,4-room,model a,101.0,yes,1999,0.0,3200
+127613,2024-08,punggol,614b,edgefield plains,4-room,model a,92.0,yes,2012,0.0,3000
+127643,2024-08,sengkang,183a,rivervale crescent,5-room,improved,110.0,yes,2003,0.0,3100
+127649,2024-08,ang mo kio,346,ang mo kio avenue 3,3-room,new generation,73.0,yes,1978,0.0,3000
+127725,2024-08,ang mo kio,346,ang mo kio avenue 3,3-room,new generation,73.0,yes,1978,0.0,3000
+127731,2024-08,queenstown,89,tanglin halt road,3-room,model a,60.0,yes,2008,0.0,3500
+127738,2024-08,jurong east,269,toh guan road,5-room,improved,120.0,yes,1999,0.0,3700
+127753,2024-08,central,532,upper cross street,3-room,improved,60.0,yes,1980,0.0,3200
+127756,2024-08,bukit timah,8,empress road,3-room,improved,65.0,yes,1976,0.0,3200
+127782,2024-08,bedok,18,bedok south road,3-room,improved,65.0,yes,1976,0.0,2800
+127787,2024-08,queenstown,89,tanglin halt road,3-room,model a,60.0,yes,2008,0.0,3500
+127823,2024-08,marine parade,32,marine crescent,3-room,improved,65.0,yes,1975,0.0,2900
+127996,2024-08,ang mo kio,343,ang mo kio avenue 3,3-room,new generation,73.0,yes,1978,0.0,3200
+128006,2024-08,central,532,upper cross street,3-room,improved,60.0,yes,1980,0.0,3200
+128023,2024-08,ang mo kio,546,ang mo kio avenue 10,4-room,new generation,92.0,yes,1981,0.0,3100
+128075,2024-08,central,532,upper cross street,3-room,improved,60.0,yes,1980,0.0,3200
+128076,2024-08,bukit panjang,183,jelebu road,5-room,premium apartment,110.0,yes,2003,0.0,3600
+128097,2024-08,sengkang,415c,fernvale link,4-room,model a,93.0,yes,2016,0.0,3300
+128123,2024-08,sengkang,145,rivervale drive,5-room,improved,122.0,yes,1999,0.0,3100
+128134,2024-08,yishun,773,yishun avenue 3,4-room,simplified,84.0,yes,1987,0.0,3000
+128181,2024-08,bedok,18,bedok south road,3-room,improved,65.0,yes,1976,0.0,2800
+128252,2024-08,central,1a,cantonment road,4-room,type s1,97.0,yes,2011,0.0,4800
+128265,2024-08,ang mo kio,546,ang mo kio avenue 10,4-room,new generation,92.0,yes,1981,0.0,3100
+128304,2024-08,ang mo kio,563,ang mo kio avenue 3,4-room,new generation,92.0,yes,1980,0.0,2900
+128305,2024-08,ang mo kio,605,ang mo kio avenue 5,3-room,new generation,67.0,yes,1980,0.0,2800
+128335,2024-08,tampines,424,tampines street 41,3-room,model a,74.0,yes,1985,0.0,2800
+128341,2024-08,bukit panjang,183,jelebu road,5-room,premium apartment,110.0,yes,2003,0.0,3600
+128349,2024-08,toa payoh,157,lorong 1 toa payoh,3-room,improved,67.0,yes,1971,0.0,3000
+128410,2024-08,ang mo kio,444,ang mo kio avenue 10,3-room,new generation,67.0,yes,1979,0.0,2800
+128431,2024-08,hougang,115,hougang avenue 1,3-room,new generation,67.0,yes,1981,0.0,2800
+128449,2024-08,ang mo kio,441,ang mo kio avenue 10,3-room,new generation,67.0,yes,1979,0.0,3000
+128452,2024-08,toa payoh,157,lorong 1 toa payoh,3-room,improved,67.0,yes,1971,0.0,3000
+128504,2024-08,clementi,602,clementi west street 1,3-room,new generation,67.0,yes,1979,0.0,3200
+128562,2024-08,ang mo kio,310c,ang mo kio avenue 1,4-room,model a,96.0,yes,2012,0.0,3800
+128720,2024-08,serangoon,237,serangoon avenue 3,3-room,simplified,64.0,yes,1985,0.0,3200
+128747,2024-08,sengkang,183a,rivervale crescent,5-room,improved,110.0,yes,2003,0.0,3100
+128766,2024-08,jurong east,269,toh guan road,5-room,improved,120.0,yes,1999,0.0,3700
+128813,2024-08,sengkang,415c,fernvale link,4-room,model a,93.0,yes,2016,0.0,3300
+128851,2024-08,bukit batok,450d,bukit batok west avenue 6,2-room,model a,47.0,yes,2019,0.0,2600
+128852,2024-08,tampines,424,tampines street 41,3-room,model a,74.0,yes,1985,0.0,2800
+128887,2024-08,hougang,954,hougang avenue 9,4-room,model a,101.0,yes,1999,0.0,3200
+128896,2024-08,yishun,816,yishun street 81,4-room,model a,104.0,yes,1988,0.0,3600
+128901,2024-08,bukit batok,450d,bukit batok west avenue 6,2-room,model a,47.0,yes,2019,0.0,2600
+128905,2024-08,tampines,221,tampines street 24,4-room,model a,108.0,yes,1984,0.0,3300
+128980,2024-08,central,1a,cantonment road,4-room,type s1,97.0,yes,2011,0.0,4800
+129009,2024-08,ang mo kio,310c,ang mo kio avenue 1,4-room,model a,96.0,yes,2012,0.0,3800
+129136,2024-08,serangoon,101,serangoon north avenue 1,4-room,new generation,91.0,yes,1985,0.0,3300
+129171,2024-08,punggol,614b,edgefield plains,4-room,model a,92.0,yes,2012,0.0,3000
+129212,2024-08,bukit panjang,183,jelebu road,5-room,premium apartment,110.0,yes,2003,0.0,3600
+129276,2024-08,ang mo kio,444,ang mo kio avenue 10,3-room,new generation,67.0,yes,1979,0.0,2800
+129277,2024-08,clementi,351,clementi avenue 2,3-room,new generation,67.0,yes,1978,0.0,2500
+129310,2024-08,hougang,115,hougang avenue 1,3-room,new generation,67.0,yes,1981,0.0,2800
+129311,2024-08,marine parade,32,marine crescent,3-room,improved,65.0,yes,1975,0.0,2900
+129332,2024-08,ang mo kio,404,ang mo kio avenue 10,3-room,new generation,67.0,yes,1979,0.0,2600
+129342,2024-08,bukit timah,8,empress road,3-room,improved,65.0,yes,1976,0.0,3200
+129351,2024-08,clementi,602,clementi west street 1,3-room,new generation,67.0,yes,1979,0.0,3200
+129359,2024-08,serangoon,237,serangoon avenue 3,3-room,simplified,64.0,yes,1985,0.0,3200
+129390,2024-08,kallang/whampoa,44,owen road,3-room,new generation,78.0,yes,1979,0.0,3000
+129407,2024-08,ang mo kio,119,ang mo kio avenue 3,3-room,new generation,67.0,yes,1978,0.0,2800
+129412,2024-08,central,4,tanjong pagar plaza,3-room,improved,59.0,yes,1977,0.0,3000
+129516,2024-08,central,2,tanjong pagar plaza,3-room,improved,59.0,yes,1977,0.0,3500
+129586,2024-08,punggol,172b,edgedale plains,5-room,improved,110.0,yes,2004,0.0,3000
+129616,2024-08,bukit merah,22,telok blangah crescent,3-room,improved,59.0,yes,1975,0.0,2900
+129632,2024-08,ang mo kio,404,ang mo kio avenue 10,3-room,new generation,67.0,yes,1979,0.0,2600
+129639,2024-08,sengkang,145,rivervale drive,5-room,improved,122.0,yes,1999,0.0,3100
+129666,2024-08,ang mo kio,441,ang mo kio avenue 10,3-room,new generation,67.0,yes,1979,0.0,3000
+129670,2024-08,kallang/whampoa,44,owen road,3-room,new generation,78.0,yes,1979,0.0,3000
+129700,2024-08,central,4,tanjong pagar plaza,3-room,improved,59.0,yes,1977,0.0,3000
+129712,2024-08,tampines,221,tampines street 24,4-room,model a,108.0,yes,1984,0.0,3300
+129755,2024-08,yishun,816,yishun street 81,4-room,model a,104.0,yes,1988,0.0,3600
+129793,2024-08,ang mo kio,343,ang mo kio avenue 3,3-room,new generation,73.0,yes,1978,0.0,3200
+129857,2024-08,bukit merah,119,bukit merah view,3-room,improved,65.0,yes,1983,0.0,3300
+129891,2024-08,ang mo kio,119,ang mo kio avenue 3,3-room,new generation,67.0,yes,1978,0.0,2800
+129929,2024-08,ang mo kio,605,ang mo kio avenue 5,3-room,new generation,67.0,yes,1980,0.0,2800
+129933,2024-08,bukit merah,22,telok blangah crescent,3-room,improved,59.0,yes,1975,0.0,2900
+129951,2024-08,hougang,504,hougang avenue 8,4-room,simplified,84.0,yes,1987,0.0,3000
+129987,2024-08,bukit merah,119,bukit merah view,3-room,improved,65.0,yes,1983,0.0,3300
+129995,2024-08,yishun,773,yishun avenue 3,4-room,simplified,84.0,yes,1987,0.0,3000
+130032,2024-08,ang mo kio,563,ang mo kio avenue 3,4-room,new generation,92.0,yes,1980,0.0,2900
+130039,2024-08,central,2,tanjong pagar plaza,3-room,improved,59.0,yes,1977,0.0,3500
+130040,2024-08,punggol,172b,edgedale plains,5-room,improved,110.0,yes,2004,0.0,3000
+130102,2024-09,serangoon,2,lorong lew lian,3-room,improved,64.0,yes,1983,0.0,3000
+130121,2024-09,sengkang,299b,compassvale street,5-room,premium apartment,114.0,yes,2001,0.0,3000
+130149,2024-09,choa chu kang,2,teck whye avenue,3-room,model a,74.0,yes,1984,0.0,2700
+130160,2024-09,jurong east,65,teban gardens road,4-room,model a,90.0,yes,2003,0.0,2800
+130224,2024-09,queenstown,12,holland avenue,3-room,improved,65.0,yes,1975,0.0,3000
+130243,2024-09,jurong east,301,jurong east street 32,3-room,new generation,68.0,yes,1983,0.0,3000
+130248,2024-09,woodlands,182a,woodlands street 13,2-room,model a,47.0,yes,2019,0.0,2500
+130414,2024-09,toa payoh,3,lorong 7 toa payoh,3-room,improved,68.0,yes,1969,0.0,3200
+130421,2024-09,hougang,929,hougang street 91,4-room,model a,100.0,yes,1998,0.0,3100
+130426,2024-09,clementi,702,west coast road,3-room,new generation,67.0,yes,1980,0.0,3000
+130439,2024-09,bukit merah,104,bukit purmei road,3-room,model a,75.0,yes,1984,0.0,2900
+130463,2024-09,bukit merah,42,telok blangah rise,3-room,improved,70.0,yes,1976,0.0,2500
+130473,2024-09,bishan,229,bishan street 23,4-room,model a,102.0,yes,1992,0.0,3600
+130555,2024-09,jurong west,667c,jurong west street 65,5-room,improved,110.0,yes,2000,0.0,4000
+130590,2024-09,toa payoh,14b,lorong 7 toa payoh,5-room,improved,120.0,yes,1998,0.0,4000
+130622,2024-09,toa payoh,98,lorong 1 toa payoh,3-room,improved,68.0,yes,1970,0.0,2800
+130642,2024-09,ang mo kio,211,ang mo kio avenue 3,3-room,new generation,67.0,yes,1977,0.0,2000
+130678,2024-09,ang mo kio,202,ang mo kio avenue 3,3-room,new generation,67.0,yes,1977,0.0,2700
+130689,2024-09,clementi,702,west coast road,3-room,new generation,67.0,yes,1980,0.0,3000
+130704,2024-09,tampines,720,tampines street 72,5-room,improved,120.0,yes,1997,0.0,3300
+130743,2024-09,hougang,410,hougang avenue 10,3-room,new generation,67.0,yes,1985,0.0,2800
+130747,2024-09,ang mo kio,637,ang mo kio avenue 6,3-room,new generation,82.0,yes,1980,0.0,3000
+130750,2024-09,bukit merah,7,everton park,3-room,new generation,84.0,yes,1980,0.0,2800
+130761,2024-09,ang mo kio,202,ang mo kio avenue 3,3-room,new generation,67.0,yes,1977,0.0,2700
+130774,2024-09,bukit merah,7,everton park,3-room,new generation,84.0,yes,1980,0.0,2800
+130785,2024-09,bedok,77,bedok north road,3-room,improved,69.0,yes,1986,0.0,2700
+130811,2024-09,jurong west,635,jurong west street 65,5-room,improved,110.0,yes,2001,0.0,3800
+130828,2024-09,queenstown,4,holland close,3-room,improved,65.0,yes,1974,0.0,3500
+130894,2024-09,tampines,720,tampines street 72,5-room,improved,120.0,yes,1997,0.0,3300
+130898,2024-09,queenstown,31,holland close,3-room,improved,59.0,yes,1974,0.0,3200
+130990,2024-09,bukit merah,21,jalan membina,4-room,model a,90.0,yes,2003,0.0,4000
+131018,2024-09,queenstown,31,holland close,3-room,improved,59.0,yes,1974,0.0,3200
+131093,2024-09,toa payoh,3,lorong 7 toa payoh,3-room,improved,68.0,yes,1969,0.0,3200
+131107,2024-09,choa chu kang,2,teck whye avenue,3-room,model a,74.0,yes,1984,0.0,2700
+131128,2024-09,bukit batok,540,bukit batok street 52,3-room,model a,73.0,yes,1987,0.0,2700
+131158,2024-09,bukit merah,21,jalan membina,4-room,model a,90.0,yes,2003,0.0,4000
+131165,2024-09,jurong east,65,teban gardens road,4-room,model a,90.0,yes,2003,0.0,2800
+131192,2024-09,geylang,16,eunos crescent,3-room,improved,59.0,yes,1977,0.0,2900
+131198,2024-09,tampines,157,tampines street 12,3-room,new generation,68.0,yes,1985,0.0,3000
+131214,2024-09,ang mo kio,150,ang mo kio avenue 5,3-room,new generation,68.0,yes,1981,0.0,2900
+131267,2024-09,serangoon,303,serangoon avenue 2,3-room,improved,70.0,yes,1984,0.0,2700
+131286,2024-09,queenstown,52,strathmore avenue,4-room,model a,90.0,yes,2006,0.0,4000
+131291,2024-09,bukit merah,14,taman ho swee,3-room,standard,54.0,yes,1970,0.0,2800
+131452,2024-09,queenstown,12,holland avenue,3-room,improved,65.0,yes,1975,0.0,3000
+131481,2024-09,ang mo kio,637,ang mo kio avenue 6,3-room,new generation,82.0,yes,1980,0.0,3000
+131499,2024-09,toa payoh,14b,lorong 7 toa payoh,5-room,improved,120.0,yes,1998,0.0,4000
+131509,2024-09,bukit batok,540,bukit batok street 52,3-room,model a,73.0,yes,1987,0.0,2700
+131515,2024-09,geylang,98,aljunied crescent,3-room,improved,65.0,yes,1975,0.0,2900
+131523,2024-09,queenstown,4,holland close,3-room,improved,65.0,yes,1974,0.0,3500
+131581,2024-09,clementi,326,clementi avenue 5,3-room,new generation,82.0,yes,1978,0.0,2900
+131599,2024-09,clementi,326,clementi avenue 5,3-room,new generation,82.0,yes,1978,0.0,2900
+131605,2024-09,sengkang,299b,compassvale street,5-room,premium apartment,114.0,yes,2001,0.0,3000
+131640,2024-09,ang mo kio,646,ang mo kio avenue 6,3-room,new generation,75.0,yes,1980,0.0,2800
+131669,2024-09,tampines,157,tampines street 12,3-room,new generation,68.0,yes,1985,0.0,3000
+131685,2024-09,woodlands,182a,woodlands street 13,2-room,model a,47.0,yes,2019,0.0,2500
+131739,2024-09,bukit merah,42,telok blangah rise,3-room,improved,70.0,yes,1976,0.0,2500
+131863,2024-09,ang mo kio,211,ang mo kio avenue 3,3-room,new generation,67.0,yes,1977,0.0,2000
+131927,2024-09,bukit merah,14,taman ho swee,3-room,standard,54.0,yes,1970,0.0,2800
+131954,2024-09,sengkang,277b,compassvale link,4-room,premium apartment,90.0,yes,2009,0.0,3600
+132039,2024-09,serangoon,2,lorong lew lian,3-room,improved,64.0,yes,1983,0.0,3000
+132045,2024-09,geylang,16,eunos crescent,3-room,improved,59.0,yes,1977,0.0,2900
+132071,2024-09,ang mo kio,646,ang mo kio avenue 6,3-room,new generation,75.0,yes,1980,0.0,2800
+132081,2024-09,ang mo kio,150,ang mo kio avenue 5,3-room,new generation,68.0,yes,1981,0.0,2900
+132149,2024-09,jurong east,301,jurong east street 32,3-room,new generation,68.0,yes,1983,0.0,3000
+132252,2024-09,hougang,410,hougang avenue 10,3-room,new generation,67.0,yes,1985,0.0,2800
+132275,2024-09,jurong west,635,jurong west street 65,5-room,improved,110.0,yes,2001,0.0,3800
+132302,2024-09,bukit merah,104,bukit purmei road,3-room,model a,75.0,yes,1984,0.0,2900
+132329,2024-09,bishan,229,bishan street 23,4-room,model a,102.0,yes,1992,0.0,3600
+132366,2024-09,serangoon,303,serangoon avenue 2,3-room,improved,70.0,yes,1984,0.0,2700
+132409,2024-09,jurong west,667c,jurong west street 65,5-room,improved,110.0,yes,2000,0.0,4000
+132471,2024-09,bedok,157,bedok south avenue 3,4-room,simplified,83.0,yes,1985,0.0,3000
+132490,2024-09,toa payoh,98,lorong 1 toa payoh,3-room,improved,68.0,yes,1970,0.0,2800
+132542,2024-09,bedok,157,bedok south avenue 3,4-room,simplified,83.0,yes,1985,0.0,3000
+132644,2024-09,queenstown,52,strathmore avenue,4-room,model a,90.0,yes,2006,0.0,4000
+132693,2024-09,geylang,98,aljunied crescent,3-room,improved,65.0,yes,1975,0.0,2900
+132726,2024-09,bedok,77,bedok north road,3-room,improved,69.0,yes,1986,0.0,2700
+132736,2024-09,hougang,929,hougang street 91,4-room,model a,100.0,yes,1998,0.0,3100
+132783,2024-09,sengkang,277b,compassvale link,4-room,premium apartment,90.0,yes,2009,0.0,3600
+132822,2024-10,queenstown,11,holland drive,3-room,improved,65.0,yes,1975,0.0,3000
+132859,2024-10,punggol,663a,punggol drive,3-room,model a,65.0,yes,2016,0.0,2600
+132900,2024-10,tampines,879,tampines avenue 8,3-room,model a,74.0,yes,1988,0.0,2600
+132925,2024-10,queenstown,88,dawson road,4-room,premium apartment,83.0,yes,2016,0.0,4300
+132973,2024-10,toa payoh,195,kim keat avenue,3-room,improved,66.0,yes,1973,0.0,2600
+132985,2024-10,central,9,selegie road,3-room,standard,56.0,yes,1974,0.0,3000
+133118,2024-10,tampines,879,tampines avenue 8,3-room,model a,74.0,yes,1988,0.0,2600
+133143,2024-10,ang mo kio,118,ang mo kio avenue 4,3-room,new generation,74.0,yes,1978,0.0,2800
+133171,2024-10,tampines,384,tampines street 32,5-room,model a,137.0,yes,1993,0.0,3000
+133180,2024-10,bukit merah,144,jalan bukit merah,3-room,new generation,67.0,yes,1981,0.0,2500
+133254,2024-10,tampines,384,tampines street 32,5-room,model a,137.0,yes,1993,0.0,3000
+133287,2024-10,toa payoh,199,toa payoh north,3-room,improved,65.0,yes,1982,0.0,3000
+133291,2024-10,bukit merah,130,bukit merah view,3-room,improved,65.0,yes,1973,0.0,3300
+133304,2024-10,bukit batok,135,bukit batok west avenue 6,3-room,new generation,68.0,yes,1984,0.0,2800
+133349,2024-10,bukit merah,21,jalan membina,4-room,model a,90.0,yes,2003,0.0,4100
+133368,2024-10,serangoon,305,serangoon avenue 2,3-room,improved,60.0,yes,1985,0.0,2900
+133372,2024-10,clementi,330,clementi avenue 2,3-room,new generation,67.0,yes,1978,0.0,3000
+133376,2024-10,queenstown,88,dawson road,4-room,premium apartment,83.0,yes,2016,0.0,4300
+133393,2024-10,toa payoh,199,toa payoh north,3-room,improved,65.0,yes,1982,0.0,3000
+133484,2024-10,queenstown,88,dawson road,4-room,premium apartment,83.0,yes,2016,0.0,4500
+133543,2024-10,bukit merah,40,telok blangah rise,4-room,improved,82.0,yes,1976,0.0,3700
+133579,2024-10,choa chu kang,460,choa chu kang avenue 4,4-room,premium apartment,103.0,yes,2000,0.0,3000
+133608,2024-10,jurong west,682c,jurong west central 1,4-room,premium apartment,95.0,yes,2000,0.0,3500
+133635,2024-10,bedok,127,bedok north street 2,3-room,new generation,82.0,yes,1978,0.0,2650
+133702,2024-10,punggol,171b,edgedale plains,5-room,improved,110.0,yes,2004,0.0,3500
+133738,2024-10,woodlands,316,woodlands street 31,3-room,model a,73.0,yes,1993,0.0,2500
+133751,2024-10,bukit batok,135,bukit batok west avenue 6,3-room,new generation,68.0,yes,1984,0.0,2800
+133762,2024-10,bukit merah,21,jalan membina,4-room,model a,90.0,yes,2003,0.0,4100
+133794,2024-10,bedok,504,bedok north street 3,3-room,improved,59.0,yes,1978,0.0,2900
+133871,2024-10,hougang,21,hougang avenue 3,3-room,new generation,73.0,yes,1978,0.0,2000
+133881,2024-10,kallang/whampoa,34,whampoa west,3-room,improved,68.0,yes,1972,0.0,3400
+133938,2024-10,clementi,308,clementi avenue 4,3-room,new generation,67.0,yes,1980,0.0,3200
+133956,2024-10,queenstown,88,dawson road,4-room,premium apartment,83.0,yes,2016,0.0,4500
+133957,2024-10,clementi,308,clementi avenue 4,3-room,new generation,67.0,yes,1980,0.0,3200
+134034,2024-10,ang mo kio,624,ang mo kio avenue 4,3-room,new generation,68.0,yes,1980,0.0,2900
+134037,2024-10,kallang/whampoa,64,kallang bahru,3-room,improved,65.0,yes,1974,0.0,3300
+134047,2024-10,jurong west,643,jurong west street 61,4-room,model a2,91.0,yes,1998,0.0,3500
+134049,2024-10,clementi,330,clementi avenue 2,3-room,new generation,67.0,yes,1978,0.0,3000
+134071,2024-10,central,9,selegie road,3-room,standard,56.0,yes,1974,0.0,3000
+134088,2024-10,punggol,171b,edgedale plains,5-room,improved,110.0,yes,2004,0.0,3500
+134097,2024-10,toa payoh,195,kim keat avenue,3-room,improved,66.0,yes,1973,0.0,2600
+134110,2024-10,ang mo kio,118,ang mo kio avenue 4,3-room,new generation,74.0,yes,1978,0.0,2800
+134116,2024-10,queenstown,11,holland drive,3-room,improved,65.0,yes,1975,0.0,3000
+134143,2024-10,kallang/whampoa,64,kallang bahru,3-room,improved,65.0,yes,1974,0.0,3300
+134281,2024-10,kallang/whampoa,34,whampoa west,3-room,improved,68.0,yes,1972,0.0,3400
+134296,2024-10,woodlands,690f,woodlands drive 75,5-room,premium apartment,110.0,yes,2004,0.0,3000
+134298,2024-10,bedok,95,bedok north avenue 4,4-room,new generation,92.0,yes,1979,0.0,2000
+134319,2024-10,serangoon,305,serangoon avenue 2,3-room,improved,60.0,yes,1985,0.0,2900
+134333,2024-10,bukit merah,120a,kim tian place,4-room,model a,100.0,yes,2001,0.0,4000
+134345,2024-10,queenstown,6,holland close,3-room,improved,65.0,yes,1974,0.0,3400
+134355,2024-10,bukit merah,120a,kim tian place,4-room,model a,100.0,yes,2001,0.0,4000
+134431,2024-10,marine parade,31,marine crescent,3-room,improved,65.0,yes,1975,0.0,3000
+134535,2024-10,serangoon,308,serangoon avenue 2,4-room,new generation,93.0,yes,1985,0.0,3000
+134542,2024-10,woodlands,690f,woodlands drive 75,5-room,premium apartment,110.0,yes,2004,0.0,3000
+134604,2024-10,queenstown,12,holland avenue,3-room,improved,65.0,yes,1975,0.0,3000
+134631,2024-10,queenstown,6,holland close,3-room,improved,65.0,yes,1974,0.0,3400
+134641,2024-10,woodlands,316,woodlands street 31,3-room,model a,73.0,yes,1993,0.0,2500
+134693,2024-10,punggol,663a,punggol drive,3-room,model a,65.0,yes,2016,0.0,2600
+134694,2024-10,bedok,127,bedok north street 2,3-room,new generation,82.0,yes,1978,0.0,2650
+134709,2024-10,choa chu kang,684a,choa chu kang crescent,5-room,improved,110.0,yes,2002,0.0,3200
+134759,2024-10,bukit merah,144,jalan bukit merah,3-room,new generation,67.0,yes,1981,0.0,2500
+134888,2024-10,marine parade,31,marine crescent,3-room,improved,65.0,yes,1975,0.0,3000
+134915,2024-10,queenstown,26,ghim moh link,3-room,model a,67.0,yes,2013,0.0,3300
+134943,2024-10,choa chu kang,684a,choa chu kang crescent,5-room,improved,110.0,yes,2002,0.0,3200
+134956,2024-10,ang mo kio,624,ang mo kio avenue 4,3-room,new generation,68.0,yes,1980,0.0,2900
+134961,2024-10,bukit merah,40,telok blangah rise,4-room,improved,82.0,yes,1976,0.0,3700
+134962,2024-10,queenstown,26,ghim moh link,3-room,model a,67.0,yes,2013,0.0,3300
+134999,2024-10,marine parade,59,marine terrace,3-room,improved,65.0,yes,1975,0.0,2600
+135002,2024-10,queenstown,12,holland avenue,3-room,improved,65.0,yes,1975,0.0,3000
+135003,2024-10,bedok,95,bedok north avenue 4,4-room,new generation,92.0,yes,1979,0.0,2000
+135063,2024-10,marine parade,59,marine terrace,3-room,improved,65.0,yes,1975,0.0,2600
+135075,2024-10,bukit merah,130,bukit merah view,3-room,improved,65.0,yes,1973,0.0,3300
+135134,2024-10,bedok,504,bedok north street 3,3-room,improved,59.0,yes,1978,0.0,2900
+135169,2024-10,queenstown,11,holland drive,3-room,improved,65.0,yes,1975,0.0,3000
+135191,2024-10,jurong east,238,jurong east street 21,5-room,improved,120.0,yes,1982,0.0,4000
+135207,2024-10,serangoon,308,serangoon avenue 2,4-room,new generation,93.0,yes,1985,0.0,3000
+135232,2024-10,jurong west,682c,jurong west central 1,4-room,premium apartment,95.0,yes,2000,0.0,3500
+135280,2024-10,jurong west,643,jurong west street 61,4-room,model a2,91.0,yes,1998,0.0,3500
+135282,2024-10,jurong east,238,jurong east street 21,5-room,improved,120.0,yes,1982,0.0,4000
+135410,2024-10,hougang,21,hougang avenue 3,3-room,new generation,73.0,yes,1978,0.0,2000
+135450,2024-10,choa chu kang,460,choa chu kang avenue 4,4-room,premium apartment,103.0,yes,2000,0.0,3000
+135476,2024-11,queenstown,2,holland avenue,3-room,improved,65.0,yes,1974,0.0,3300
+135547,2024-11,hougang,129,lorong ah soo,4-room,model a,105.0,yes,1985,0.0,3500
+135579,2024-11,hougang,129,lorong ah soo,4-room,model a,105.0,yes,1985,0.0,3500
+135618,2024-11,central,4,tanjong pagar plaza,3-room,improved,59.0,yes,1977,0.0,3300
+135633,2024-11,bukit panjang,244,bukit panjang ring road,4-room,model a,104.0,yes,1988,0.0,3000
+135762,2024-11,jurong west,208,boon lay place,3-room,improved,65.0,yes,1976,0.0,2700
+135878,2024-11,clementi,602,clementi west street 1,3-room,new generation,67.0,yes,1979,0.0,3200
+135881,2024-11,central,536,upper cross street,3-room,improved,60.0,yes,1981,0.0,3000
+135890,2024-11,jurong west,208,boon lay place,3-room,improved,65.0,yes,1976,0.0,2700
+135950,2024-11,yishun,739,yishun avenue 5,3-room,new generation,67.0,yes,1985,0.0,3000
+136026,2024-11,queenstown,96,commonwealth crescent,3-room,standard,67.0,yes,1970,0.0,2800
+136038,2024-11,clementi,602,clementi west street 1,3-room,new generation,67.0,yes,1979,0.0,3200
+136096,2024-11,bedok,57,new upper changi road,3-room,improved,60.0,yes,1985,0.0,2600
+136129,2024-11,jurong west,113,tao ching road,3-room,improved,66.0,yes,1971,0.0,2700
+136130,2024-11,bedok,57,new upper changi road,3-room,improved,60.0,yes,1985,0.0,2600
+136203,2024-11,central,4,tanjong pagar plaza,3-room,improved,59.0,yes,1977,0.0,3300
+136339,2024-11,central,536,upper cross street,3-room,improved,60.0,yes,1981,0.0,3000
+136340,2024-11,bukit merah,12,telok blangah crescent,3-room,improved,70.0,yes,1975,0.0,3100
+136459,2024-11,bedok,116,bedok north road,3-room,new generation,73.0,yes,1978,0.0,3000
+136503,2024-11,marine parade,66,marine drive,3-room,improved,76.0,yes,1976,0.0,3000
+136550,2024-11,ang mo kio,178,ang mo kio avenue 4,3-room,new generation,82.0,yes,1981,0.0,2800
+136561,2024-11,punggol,299,punggol central,4-room,premium apartment,94.0,yes,2003,0.0,3000
+136682,2024-11,kallang/whampoa,38b,bendemeer road,4-room,model a,92.0,yes,2012,0.0,4000
+136722,2024-11,punggol,299,punggol central,4-room,premium apartment,94.0,yes,2003,0.0,3000
+136795,2024-11,central,1e,cantonment road,4-room,type s1,95.0,yes,2011,0.0,4600
+136860,2024-11,queenstown,96,commonwealth crescent,3-room,standard,67.0,yes,1970,0.0,2800
+136882,2024-11,bukit panjang,244,bukit panjang ring road,4-room,model a,104.0,yes,1988,0.0,3000
+136891,2024-11,bedok,116,bedok north road,3-room,new generation,73.0,yes,1978,0.0,3000
+136966,2024-11,jurong west,990c,jurong west street 93,2-room,premium apartment,60.0,yes,2008,0.0,2150
+136991,2024-11,jurong west,113,tao ching road,3-room,improved,66.0,yes,1971,0.0,2700
+137038,2024-11,marine parade,66,marine drive,3-room,improved,76.0,yes,1976,0.0,3000
+137098,2024-11,kallang/whampoa,94,geylang bahru,3-room,new generation,68.0,yes,1979,0.0,3000
+137128,2024-11,punggol,109b,edgedale plains,5-room,improved,110.0,yes,2003,0.0,3000
+137133,2024-11,bukit panjang,610,senja road,5-room,improved,110.0,yes,2002,0.0,3200
+137136,2024-11,marine parade,66,marine drive,3-room,improved,76.0,yes,1976,0.0,3000
+137158,2024-11,punggol,102d,punggol field,5-room,improved,110.0,yes,2002,0.0,3400
+137432,2024-11,queenstown,2,holland avenue,3-room,improved,65.0,yes,1974,0.0,3300
+137483,2024-11,punggol,102d,punggol field,5-room,improved,110.0,yes,2002,0.0,3400
+137504,2024-11,jurong west,990c,jurong west street 93,2-room,premium apartment,60.0,yes,2008,0.0,2150
+137519,2024-11,central,1e,cantonment road,4-room,type s1,95.0,yes,2011,0.0,4600
+137540,2024-11,kallang/whampoa,38b,bendemeer road,4-room,model a,92.0,yes,2012,0.0,4000
+137542,2024-11,woodlands,894c,woodlands drive 50,4-room,model a,100.0,yes,1996,0.0,3200
+137627,2024-11,central,3,tanjong pagar plaza,3-room,improved,70.0,yes,1977,0.0,3200
+137634,2024-11,yishun,739,yishun avenue 5,3-room,new generation,67.0,yes,1985,0.0,3000
+137810,2024-11,bukit merah,12,telok blangah crescent,3-room,improved,70.0,yes,1975,0.0,3100
+137830,2024-11,central,3,tanjong pagar plaza,3-room,improved,70.0,yes,1977,0.0,3200
+137930,2024-11,kallang/whampoa,94,geylang bahru,3-room,new generation,68.0,yes,1979,0.0,3000
+137996,2024-11,bukit panjang,610,senja road,5-room,improved,110.0,yes,2002,0.0,3200
+138020,2024-11,punggol,109b,edgedale plains,5-room,improved,110.0,yes,2003,0.0,3000
+138079,2024-11,ang mo kio,178,ang mo kio avenue 4,3-room,new generation,82.0,yes,1981,0.0,2800
+138121,2024-11,woodlands,894c,woodlands drive 50,4-room,model a,100.0,yes,1996,0.0,3200
+138206,2024-12,sengkang,430b,fernvale link,3-room,model a,67.0,yes,2015,0.0,3000
+138231,2024-12,toa payoh,9,lorong 7 toa payoh,3-room,improved,66.0,yes,1970,0.0,2700
+138247,2024-12,marine parade,5,marine terrace,3-room,improved,65.0,yes,1975,0.0,3000
+138272,2024-12,queenstown,5,dover crescent,3-room,new generation,67.0,yes,1979,0.0,3000
+138354,2024-12,toa payoh,59,lorong 5 toa payoh,3-room,standard,61.0,yes,1973,0.0,2600
+138356,2024-12,bukit merah,57,havelock road,3-room,model a,69.0,yes,2013,0.0,3700
+138361,2024-12,jurong east,21,teban gardens road,4-room,model a,87.0,yes,2013,0.0,3600
+138384,2024-12,hougang,910,hougang street 91,4-room,model a2,93.0,yes,1997,0.0,3400
+138387,2024-12,toa payoh,116,lorong 2 toa payoh,3-room,improved,63.0,yes,1970,0.0,3000
+138416,2024-12,queenstown,6,holland close,3-room,improved,65.0,yes,1974,0.0,2800
+138490,2024-12,toa payoh,9,lorong 7 toa payoh,3-room,improved,66.0,yes,1970,0.0,2700
+138503,2024-12,queenstown,61b,strathmore avenue,3-room,model a,70.0,yes,2011,0.0,3500
+138520,2024-12,queenstown,82,commonwealth close,3-room,standard,60.0,yes,1967,0.0,2800
+138609,2024-12,sengkang,188a,rivervale drive,4-room,model a,95.0,yes,2000,0.0,3000
+138637,2024-12,bukit batok,388,bukit batok west avenue 5,5-room,improved,110.0,yes,2005,0.0,3300
+138692,2024-12,geylang,2d,geylang serai,4-room,model a,95.0,yes,2011,0.0,3000
+138725,2024-12,queenstown,5,dover crescent,3-room,new generation,67.0,yes,1979,0.0,3000
+138739,2024-12,yishun,148,yishun street 11,3-room,new generation,67.0,yes,1985,0.0,2800
+138742,2024-12,bedok,529,bedok north street 3,3-room,new generation,68.0,yes,1979,0.0,2700
+138751,2024-12,clementi,309,clementi avenue 4,3-room,new generation,67.0,yes,1980,0.0,3300
+138870,2024-12,queenstown,2,holland avenue,3-room,improved,65.0,yes,1974,0.0,3300
+138928,2024-12,sengkang,207a,compassvale lane,4-room,model a,92.0,yes,2005,0.0,2900
+139039,2024-12,bukit merah,8,cantonment close,4-room,model a,90.0,yes,2002,0.0,3800
+139166,2024-12,bukit merah,55,telok blangah drive,3-room,new generation,73.0,yes,1978,0.0,3000
+139206,2024-12,central,2,tanjong pagar plaza,3-room,improved,59.0,yes,1977,0.0,3200
+139269,2024-12,punggol,637b,punggol drive,5-room,premium apartment,110.0,yes,2005,0.0,3200
+139278,2024-12,toa payoh,59,lorong 5 toa payoh,3-room,standard,61.0,yes,1973,0.0,2600
+139314,2024-12,woodlands,571c,woodlands avenue 1,3-room,model a,67.0,yes,2013,0.0,2700
+139349,2024-12,toa payoh,157,lorong 1 toa payoh,3-room,improved,67.0,yes,1971,0.0,3200
+139417,2024-12,bukit merah,85,telok blangah heights,5-room,improved,110.0,yes,2003,0.0,4100
+139420,2024-12,central,262,waterloo street,4-room,improved,82.0,yes,1978,0.0,4000
+139425,2024-12,jurong west,684b,jurong west street 64,5-room,premium apartment,111.0,yes,2000,0.0,3300
+139431,2024-12,queenstown,61b,strathmore avenue,3-room,model a,70.0,yes,2011,0.0,3500
+139458,2024-12,queenstown,169,stirling road,3-room,improved,60.0,yes,1970,0.0,2500
+139497,2024-12,yishun,148,yishun street 11,3-room,new generation,67.0,yes,1985,0.0,2800
+139561,2024-12,yishun,469b,yishun street 43,2-room,model a,47.0,yes,2019,0.0,2500
+139583,2024-12,jurong east,21,teban gardens road,4-room,model a,87.0,yes,2013,0.0,3600
+139608,2024-12,central,262,waterloo street,4-room,improved,82.0,yes,1978,0.0,4000
+139694,2024-12,toa payoh,157,lorong 1 toa payoh,3-room,improved,67.0,yes,1971,0.0,3200
+139742,2024-12,punggol,306a,punggol place,4-room,premium apartment,96.0,yes,2012,0.0,3500
+139790,2024-12,choa chu kang,549,choa chu kang street 52,5-room,improved,124.0,yes,1995,0.0,3400
+139840,2024-12,queenstown,82,commonwealth close,3-room,standard,60.0,yes,1967,0.0,2800
+139861,2024-12,bishan,309,shunfu road,3-room,new generation,67.0,yes,1984,0.0,2600
+139898,2024-12,sengkang,207a,compassvale lane,4-room,model a,92.0,yes,2005,0.0,2900
+139909,2024-12,jurong west,348,kang ching road,4-room,model a,102.0,yes,1997,0.0,3600
+139911,2024-12,jurong west,209,boon lay place,3-room,improved,65.0,yes,1976,0.0,2500
+139952,2024-12,bukit batok,212,bukit batok street 21,3-room,new generation,69.0,yes,1985,0.0,2700
+139979,2024-12,geylang,2d,geylang serai,4-room,model a,95.0,yes,2011,0.0,3000
+140006,2024-12,geylang,102,aljunied crescent,3-room,new generation,67.0,yes,1978,0.0,3000
+140032,2024-12,jurong west,684b,jurong west street 64,5-room,premium apartment,111.0,yes,2000,0.0,3300
+140041,2024-12,sengkang,430b,fernvale link,3-room,model a,67.0,yes,2015,0.0,3000
+140073,2024-12,queenstown,6,holland close,3-room,improved,65.0,yes,1974,0.0,2800
+140077,2024-12,bukit batok,212,bukit batok street 21,3-room,new generation,69.0,yes,1985,0.0,2700
+140082,2024-12,queenstown,2,holland avenue,3-room,improved,65.0,yes,1974,0.0,3300
+140096,2024-12,jurong west,209,boon lay place,3-room,improved,65.0,yes,1976,0.0,2500
+140098,2024-12,bukit merah,8,cantonment close,4-room,model a,90.0,yes,2002,0.0,4300
+140282,2024-12,bukit merah,8,cantonment close,4-room,model a,90.0,yes,2002,0.0,3800
+140305,2024-12,jurong west,348,kang ching road,4-room,model a,102.0,yes,1997,0.0,3600
+140319,2024-12,bukit merah,8,cantonment close,4-room,model a,90.0,yes,2002,0.0,4300
+140338,2024-12,punggol,128c,punggol field walk,5-room,improved,110.0,yes,2003,0.0,3200
+140345,2024-12,punggol,637b,punggol drive,5-room,premium apartment,110.0,yes,2005,0.0,3200
+140352,2024-12,hougang,910,hougang street 91,4-room,model a2,93.0,yes,1997,0.0,3400
+140369,2024-12,geylang,102,aljunied crescent,3-room,new generation,67.0,yes,1978,0.0,3000
+140385,2024-12,woodlands,571c,woodlands avenue 1,3-room,model a,67.0,yes,2013,0.0,2700
+140407,2024-12,woodlands,571c,woodlands avenue 1,3-room,model a,67.0,yes,2013,0.0,2700
+140484,2024-12,clementi,309,clementi avenue 4,3-room,new generation,67.0,yes,1980,0.0,3300
+140623,2024-12,bukit merah,55,telok blangah drive,3-room,new generation,73.0,yes,1978,0.0,3000
+140630,2024-12,bishan,309,shunfu road,3-room,new generation,67.0,yes,1984,0.0,2600
+140673,2024-12,central,2,tanjong pagar plaza,3-room,improved,59.0,yes,1977,0.0,3200
+140723,2024-12,bukit merah,57,havelock road,3-room,model a,69.0,yes,2013,0.0,3700
+140731,2024-12,serangoon,203,serangoon central,4-room,simplified,84.0,yes,1986,0.0,3500
+140748,2024-12,sengkang,188a,rivervale drive,4-room,model a,95.0,yes,2000,0.0,3000
+140762,2024-12,bedok,529,bedok north street 3,3-room,new generation,68.0,yes,1979,0.0,2700
+140781,2024-12,serangoon,203,serangoon central,4-room,simplified,84.0,yes,1986,0.0,3500
+140817,2024-12,choa chu kang,549,choa chu kang street 52,5-room,improved,124.0,yes,1995,0.0,3400
+140818,2024-12,queenstown,169,stirling road,3-room,improved,60.0,yes,1970,0.0,2500
+140898,2024-12,punggol,128c,punggol field walk,5-room,improved,110.0,yes,2003,0.0,3200
+140916,2024-12,marine parade,5,marine terrace,3-room,improved,65.0,yes,1975,0.0,3000
+140941,2024-12,punggol,306a,punggol place,4-room,premium apartment,96.0,yes,2012,0.0,3500
+140943,2024-12,bukit batok,388,bukit batok west avenue 5,5-room,improved,110.0,yes,2005,0.0,3300
+141005,2024-12,bukit merah,85,telok blangah heights,5-room,improved,110.0,yes,2003,0.0,4100
+141023,2024-12,toa payoh,116,lorong 2 toa payoh,3-room,improved,63.0,yes,1970,0.0,3000
+141060,2024-12,yishun,469b,yishun street 43,2-room,model a,47.0,yes,2019,0.0,2500
+141098,2025-01,tampines,606c,tampines street 61,3-room,model a,68.0,yes,2020,0.0,3100
+141118,2025-01,queenstown,5,ghim moh road,3-room,improved,65.0,yes,1976,0.0,3000
+141223,2025-01,punggol,623b,punggol central,2-room,model a,46.0,yes,2014,0.0,2300
+141270,2025-01,sembawang,354b,admiralty drive,5-room,improved,110.0,yes,2001,0.0,3300
+141322,2025-01,punggol,109a,edgedale plains,5-room,improved,110.0,yes,2003,0.0,3100
+141360,2025-01,geylang,97,jalan dua,3-room,standard,56.0,yes,1969,0.0,3000
+141425,2025-01,sengkang,294a,compassvale crescent,4-room,model a,93.0,yes,2016,0.0,3250
+141465,2025-01,yishun,450,yishun ring road,4-room,model a,92.0,yes,2012,0.0,3300
+141562,2025-01,bukit merah,103,henderson crescent,4-room,standard,74.0,yes,1970,0.0,3400
+141568,2025-01,bukit merah,22,havelock road,3-room,standard,64.0,yes,1969,0.0,3000
+141608,2025-01,bishan,275a,bishan street 24,5-room,dbss,120.0,yes,2011,0.0,4500
+141634,2025-01,serangoon,329,serangoon avenue 3,4-room,simplified,84.0,yes,1986,0.0,3000
+141673,2025-01,sembawang,354b,admiralty drive,5-room,improved,110.0,yes,2001,0.0,3300
+141682,2025-01,toa payoh,13,lorong 7 toa payoh,3-room,improved,66.0,yes,1970,0.0,3000
+141689,2025-01,sengkang,450b,sengkang west way,3-room,model a,67.0,yes,2014,0.0,2900
+141690,2025-01,toa payoh,118,lorong 1 toa payoh,3-room,improved,65.0,yes,1968,0.0,3000
+141710,2025-01,toa payoh,118,lorong 1 toa payoh,3-room,improved,65.0,yes,1968,0.0,3000
+141717,2025-01,jurong west,653a,jurong west street 61,5-room,improved,111.0,yes,2002,0.0,3700
+141731,2025-01,clementi,329,clementi avenue 2,3-room,new generation,82.0,yes,1978,0.0,3100
+141797,2025-01,punggol,623b,punggol central,2-room,model a,46.0,yes,2014,0.0,2300
+141829,2025-01,clementi,426,clementi avenue 3,3-room,new generation,67.0,yes,1978,0.0,3100
+141842,2025-01,ang mo kio,644,ang mo kio avenue 4,3-room,new generation,75.0,yes,1980,0.0,2500
+141879,2025-01,toa payoh,13,lorong 7 toa payoh,3-room,improved,66.0,yes,1970,0.0,3000
+141883,2025-01,tampines,846,tampines street 82,3-room,model a,74.0,yes,1986,0.0,2700
+141899,2025-01,tampines,211,tampines street 23,3-room,new generation,67.0,yes,1985,0.0,3000
+141914,2025-01,jurong west,733,jurong west street 73,4-room,model a,107.0,yes,1995,0.0,3700
+141963,2025-01,tampines,606c,tampines street 61,3-room,model a,68.0,yes,2020,0.0,3100
+141981,2025-01,jurong west,645,jurong west street 61,5-room,improved,120.0,yes,1998,0.0,4000
+142074,2025-01,queenstown,5,ghim moh road,3-room,improved,65.0,yes,1976,0.0,3000
+142131,2025-01,ang mo kio,644,ang mo kio avenue 4,3-room,new generation,75.0,yes,1980,0.0,2500
+142161,2025-01,queenstown,5,ghim moh road,3-room,improved,65.0,yes,1976,0.0,3000
+142230,2025-01,yishun,231,yishun street 21,5-room,improved,126.0,yes,1985,0.0,3300
+142233,2025-01,central,34,upper cross street,3-room,improved,65.0,yes,1975,0.0,3200
+142255,2025-01,serangoon,329,serangoon avenue 3,4-room,simplified,84.0,yes,1986,0.0,3000
+142286,2025-01,yishun,231,yishun street 21,5-room,improved,126.0,yes,1985,0.0,3300
+142393,2025-01,hougang,636,hougang avenue 8,4-room,model a,105.0,yes,1987,0.0,2800
+142399,2025-01,bukit merah,148,silat avenue,3-room,new generation,67.0,yes,1982,0.0,1600
+142416,2025-01,queenstown,5,ghim moh road,3-room,improved,65.0,yes,1976,0.0,3000
+142478,2025-01,marine parade,32,marine crescent,3-room,improved,65.0,yes,1975,0.0,3000
+142624,2025-01,tampines,233,tampines street 21,5-room,improved,121.0,yes,1985,0.0,3400
+142642,2025-01,queenstown,1,ghim moh road,3-room,improved,65.0,yes,1976,0.0,3200
+142699,2025-01,punggol,109a,edgedale plains,5-room,improved,110.0,yes,2003,0.0,3100
+142762,2025-01,bukit merah,28,telok blangah rise,3-room,improved,70.0,yes,1976,0.0,2400
+142775,2025-01,tampines,211,tampines street 23,3-room,new generation,67.0,yes,1985,0.0,3000
+142806,2025-01,bukit merah,148,silat avenue,3-room,new generation,67.0,yes,1982,0.0,1600
+142810,2025-01,queenstown,1,ghim moh road,3-room,improved,65.0,yes,1976,0.0,3200
+142821,2025-01,sengkang,294a,compassvale crescent,4-room,model a,93.0,yes,2016,0.0,3250
+142863,2025-01,bishan,275a,bishan street 24,5-room,dbss,120.0,yes,2011,0.0,4500
+142870,2025-01,sengkang,450b,sengkang west way,3-room,model a,67.0,yes,2014,0.0,2900
+142989,2025-01,central,34,upper cross street,3-room,improved,65.0,yes,1975,0.0,3200
+143060,2025-01,clementi,329,clementi avenue 2,3-room,new generation,82.0,yes,1978,0.0,3100
+143103,2025-01,tampines,233,tampines street 21,5-room,improved,121.0,yes,1985,0.0,3400
+143118,2025-01,bukit merah,103,henderson crescent,4-room,standard,74.0,yes,1970,0.0,3400
+143157,2025-01,jurong west,733,jurong west street 73,4-room,model a,107.0,yes,1995,0.0,3700
+143279,2025-01,geylang,97,jalan dua,3-room,standard,56.0,yes,1969,0.0,3000
+143286,2025-01,yishun,450,yishun ring road,4-room,model a,92.0,yes,2012,0.0,3300
+143417,2025-01,jurong west,645,jurong west street 61,5-room,improved,120.0,yes,1998,0.0,4000
+143429,2025-01,jurong west,653a,jurong west street 61,5-room,improved,111.0,yes,2002,0.0,3700
+143434,2025-01,hougang,636,hougang avenue 8,4-room,model a,105.0,yes,1987,0.0,2800
+143607,2025-01,marine parade,32,marine crescent,3-room,improved,65.0,yes,1975,0.0,3000
+143630,2025-01,clementi,426,clementi avenue 3,3-room,new generation,67.0,yes,1978,0.0,3100
+143776,2025-01,tampines,846,tampines street 82,3-room,model a,74.0,yes,1986,0.0,2700
+143785,2025-01,queenstown,5,ghim moh road,3-room,improved,65.0,yes,1976,0.0,3000
+143907,2025-01,bukit merah,22,havelock road,3-room,standard,64.0,yes,1969,0.0,3000
+143921,2025-01,bukit merah,28,telok blangah rise,3-room,improved,70.0,yes,1976,0.0,2400
+143983,2025-02,kallang/whampoa,68,geylang bahru,3-room,improved,65.0,yes,1974,0.0,3000
+143985,2025-02,ang mo kio,586,ang mo kio avenue 3,3-room,new generation,67.0,yes,1979,0.0,3000
+144001,2025-02,bedok,534,bedok north street 3,3-room,improved,60.0,yes,1986,0.0,2600
+144007,2025-02,punggol,293,punggol central,4-room,premium apartment,91.0,yes,2003,0.0,3200
+144031,2025-02,woodlands,554,woodlands drive 53,4-room,model a2,95.0,yes,1999,0.0,2400
+144049,2025-02,bedok,418,bedok north avenue 2,3-room,new generation,67.0,yes,1978,0.0,2500
+144061,2025-02,geylang,57,circuit road,3-room,standard,55.0,yes,1969,0.0,2600
+144094,2025-02,central,1g,cantonment road,4-room,type s1,96.0,yes,2011,0.0,5000
+144096,2025-02,bedok,129,bedok north street 2,3-room,new generation,82.0,yes,1978,0.0,3000
+144164,2025-02,clementi,602,clementi west street 1,3-room,new generation,67.0,yes,1979,0.0,3000
+144175,2025-02,ang mo kio,587,ang mo kio avenue 3,3-room,new generation,67.0,yes,1979,0.0,3000
+144220,2025-02,central,532,upper cross street,3-room,improved,60.0,yes,1980,0.0,3500
+144332,2025-02,bedok,534,bedok north street 3,3-room,improved,60.0,yes,1986,0.0,2600
+144375,2025-02,pasir ris,5,changi village road,3-room,improved,74.0,yes,1981,0.0,2800
+144380,2025-02,queenstown,21,ghim moh road,3-room,improved,65.0,yes,1977,0.0,3100
+144436,2025-02,clementi,320,clementi avenue 4,3-room,new generation,67.0,yes,1979,0.0,3000
+144441,2025-02,bukit merah,34,telok blangah way,4-room,improved,82.0,yes,1976,0.0,2800
+144454,2025-02,kallang/whampoa,15,upper boon keng road,4-room,improved,88.0,yes,1975,0.0,3500
+144488,2025-02,clementi,329,clementi avenue 2,3-room,new generation,82.0,yes,1978,0.0,3200
+144519,2025-02,kallang/whampoa,38d,bendemeer road,4-room,model a,89.0,yes,2012,0.0,3800
+144540,2025-02,hougang,980b,buangkok crescent,5-room,improved,110.0,yes,2003,0.0,3600
+144543,2025-02,woodlands,688c,woodlands drive 75,5-room,premium apartment,110.0,yes,2004,0.0,3000
+144579,2025-02,tampines,411,tampines street 41,3-room,improved,60.0,yes,1985,0.0,3000
+144595,2025-02,kallang/whampoa,68,geylang bahru,3-room,improved,65.0,yes,1974,0.0,3000
+144599,2025-02,choa chu kang,690d,choa chu kang crescent,4-room,model a,90.0,yes,2003,0.0,3000
+144631,2025-02,central,3,tanjong pagar plaza,3-room,improved,70.0,yes,1977,0.0,3300
+144668,2025-02,marine parade,76,marine drive,4-room,improved,82.0,yes,1976,0.0,3500
+144705,2025-02,punggol,323d,sumang walk,4-room,premium apartment,93.0,yes,2020,0.0,3300
+144733,2025-02,pasir ris,530c,pasir ris drive 1,4-room,dbss,86.0,yes,2015,0.0,3400
+144740,2025-02,yishun,147,yishun street 11,3-room,new generation,67.0,yes,1985,0.0,2700
+144756,2025-02,jurong west,480,jurong west street 41,3-room,new generation,82.0,yes,1985,0.0,2600
+144766,2025-02,central,1g,cantonment road,4-room,type s1,96.0,yes,2011,0.0,5000
+144834,2025-02,hougang,980b,buangkok crescent,5-room,improved,110.0,yes,2003,0.0,3600
+144863,2025-02,bukit merah,25b,jalan membina,4-room,model a,90.0,yes,2009,0.0,4500
+144913,2025-02,geylang,10,haig road,3-room,improved,65.0,yes,1976,0.0,3000
+144914,2025-02,sengkang,407b,fernvale road,4-room,premium apartment,90.0,yes,2005,0.0,3200
+144922,2025-02,kallang/whampoa,15,upper boon keng road,4-room,improved,88.0,yes,1975,0.0,3500
+144935,2025-02,toa payoh,85b,lorong 4 toa payoh,3-room,improved,68.0,yes,1972,0.0,3200
+144963,2025-02,bedok,512,bedok north avenue 2,4-room,new generation,92.0,yes,1979,0.0,3400
+145013,2025-02,geylang,10,haig road,3-room,improved,65.0,yes,1976,0.0,3000
+145054,2025-02,sembawang,103b,canberra street,2-room,2 room,38.0,yes,2020,0.0,2500
+145084,2025-02,queenstown,21,ghim moh road,3-room,improved,65.0,yes,1977,0.0,3100
+145147,2025-02,bedok,129,bedok north street 2,3-room,new generation,82.0,yes,1978,0.0,3000
+145201,2025-02,bedok,55,chai chee drive,3-room,model a,80.0,yes,1984,0.0,2850
+145205,2025-02,jurong west,140c,corporation drive,2-room,model a,47.0,yes,2019,0.0,2500
+145258,2025-02,bedok,512,bedok north avenue 2,4-room,new generation,92.0,yes,1979,0.0,3400
+145315,2025-02,ang mo kio,586,ang mo kio avenue 3,3-room,new generation,67.0,yes,1979,0.0,3000
+145323,2025-02,bedok,536,bedok north street 3,3-room,new generation,68.0,yes,1980,0.0,2800
+145327,2025-02,punggol,106d,punggol field,5-room,improved,110.0,yes,2003,0.0,3300
+145332,2025-02,central,532,upper cross street,3-room,improved,60.0,yes,1980,0.0,3500
+145425,2025-02,bedok,418,bedok north avenue 2,3-room,new generation,67.0,yes,1978,0.0,2500
+145500,2025-02,clementi,602,clementi west street 1,3-room,new generation,67.0,yes,1979,0.0,3000
+145521,2025-02,clementi,329,clementi avenue 2,3-room,new generation,82.0,yes,1978,0.0,3200
+145523,2025-02,bedok,20,chai chee road,3-room,improved,65.0,yes,1972,0.0,2800
+145545,2025-02,geylang,10,haig road,3-room,improved,65.0,yes,1976,0.0,3000
+145602,2025-02,queenstown,167,stirling road,3-room,improved,60.0,yes,1971,0.0,2900
+145639,2025-02,toa payoh,85b,lorong 4 toa payoh,3-room,improved,68.0,yes,1972,0.0,3200
+145682,2025-02,bukit merah,92b,telok blangah street 31,3-room,model a,68.0,yes,2018,0.0,3500
+145728,2025-02,jurong west,480,jurong west street 41,3-room,new generation,82.0,yes,1985,0.0,2600
+145741,2025-02,jurong west,140c,corporation drive,2-room,model a,47.0,yes,2019,0.0,2500
+145758,2025-02,jurong west,658a,jurong west street 65,5-room,improved,111.0,yes,2001,0.0,4000
+145785,2025-02,punggol,106d,punggol field,5-room,improved,110.0,yes,2003,0.0,3300
+145867,2025-02,sengkang,407b,fernvale road,4-room,premium apartment,90.0,yes,2005,0.0,3200
+145870,2025-02,bedok,55,chai chee drive,3-room,model a,80.0,yes,1984,0.0,2850
+145872,2025-02,bedok,115,bedok north road,3-room,new generation,73.0,yes,1978,0.0,1800
+145926,2025-02,ang mo kio,624,ang mo kio avenue 4,3-room,new generation,68.0,yes,1980,0.0,2800
+145932,2025-02,woodlands,554,woodlands drive 53,4-room,model a2,95.0,yes,1999,0.0,2400
+145946,2025-02,yishun,147,yishun street 11,3-room,new generation,67.0,yes,1985,0.0,2700
+145952,2025-02,ang mo kio,624,ang mo kio avenue 4,3-room,new generation,68.0,yes,1980,0.0,2800
+145967,2025-02,punggol,293,punggol central,4-room,premium apartment,91.0,yes,2003,0.0,3200
+146000,2025-02,choa chu kang,690d,choa chu kang crescent,4-room,model a,90.0,yes,2003,0.0,3000
+146018,2025-02,geylang,57,circuit road,3-room,standard,55.0,yes,1969,0.0,2600
+146065,2025-02,bukit merah,25b,jalan membina,4-room,model a,90.0,yes,2009,0.0,4500
+146070,2025-02,pasir ris,5,changi village road,3-room,improved,74.0,yes,1981,0.0,2800
+146100,2025-02,sengkang,289a,compassvale crescent,3-room,premium apartment,68.0,yes,2017,0.0,2800
+146134,2025-02,tampines,154,simei street 1,4-room,model a,103.0,yes,1988,0.0,3300
+146141,2025-02,bedok,536,bedok north street 3,3-room,new generation,68.0,yes,1980,0.0,2800
+146148,2025-02,tampines,154,simei street 1,4-room,model a,103.0,yes,1988,0.0,3300
+146161,2025-02,tampines,411,tampines street 41,3-room,improved,60.0,yes,1985,0.0,3000
+146181,2025-02,woodlands,688c,woodlands drive 75,5-room,premium apartment,110.0,yes,2004,0.0,3000
+146233,2025-02,punggol,323d,sumang walk,4-room,premium apartment,93.0,yes,2020,0.0,3300
+146234,2025-02,pasir ris,530c,pasir ris drive 1,4-room,dbss,86.0,yes,2015,0.0,3400
+146270,2025-02,toa payoh,69,lorong 4 toa payoh,3-room,standard,62.0,yes,1973,0.0,3000
+146316,2025-02,ang mo kio,471,ang mo kio avenue 10,3-room,new generation,67.0,yes,1979,0.0,2900
+146324,2025-02,ang mo kio,471,ang mo kio avenue 10,3-room,new generation,67.0,yes,1979,0.0,2900
+146372,2025-02,central,3,tanjong pagar plaza,3-room,improved,70.0,yes,1977,0.0,3300
+146381,2025-02,bukit merah,92b,telok blangah street 31,3-room,model a,68.0,yes,2018,0.0,3500
+146415,2025-02,kallang/whampoa,38d,bendemeer road,4-room,model a,89.0,yes,2012,0.0,3800
+146446,2025-02,jurong west,658a,jurong west street 65,5-room,improved,111.0,yes,2001,0.0,4000
+146449,2025-02,bedok,115,bedok north road,3-room,new generation,73.0,yes,1978,0.0,1800
+146574,2025-02,marine parade,76,marine drive,4-room,improved,82.0,yes,1976,0.0,3500
+146593,2025-02,queenstown,167,stirling road,3-room,improved,60.0,yes,1971,0.0,2900
+146602,2025-02,ang mo kio,587,ang mo kio avenue 3,3-room,new generation,67.0,yes,1979,0.0,3000
+146626,2025-02,sengkang,289a,compassvale crescent,3-room,premium apartment,68.0,yes,2017,0.0,2800
+146691,2025-02,central,1g,cantonment road,4-room,type s1,96.0,yes,2011,0.0,5000
+146790,2025-02,bukit merah,34,telok blangah way,4-room,improved,82.0,yes,1976,0.0,2800
+146807,2025-02,toa payoh,69,lorong 4 toa payoh,3-room,standard,62.0,yes,1973,0.0,3000
+146823,2025-02,sembawang,103b,canberra street,2-room,2 room,38.0,yes,2020,0.0,2500
+146885,2025-02,clementi,320,clementi avenue 4,3-room,new generation,67.0,yes,1979,0.0,3000
+146959,2025-02,bedok,20,chai chee road,3-room,improved,65.0,yes,1972,0.0,2800
+146982,2025-03,ang mo kio,631,ang mo kio avenue 4,3-room,new generation,67.0,yes,1985,0.0,3000
+147027,2025-03,geylang,120,geylang east central,4-room,new generation,92.0,yes,1982,0.0,4000
+147042,2025-03,jurong west,664c,jurong west street 64,5-room,improved,110.0,yes,2000,0.0,3800
+147079,2025-03,sembawang,363b,sembawang crescent,2-room,model a,38.0,yes,2019,0.0,2600
+147162,2025-03,kallang/whampoa,74,whampoa drive,3-room,improved,66.0,yes,1981,0.0,3300
+147200,2025-03,kallang/whampoa,68,geylang bahru,3-room,improved,65.0,yes,1974,0.0,3200
+147233,2025-03,ang mo kio,564,ang mo kio avenue 3,3-room,new generation,68.0,yes,1985,0.0,2800
+147334,2025-03,kallang/whampoa,40,cambridge road,4-room,model a,102.0,yes,1997,0.0,4000
+147389,2025-03,queenstown,79,dawson road,5-room,improved,107.0,yes,2020,0.0,5300
+147418,2025-03,jurong west,664c,jurong west street 64,5-room,improved,110.0,yes,2000,0.0,3800
+147445,2025-03,woodlands,511,woodlands drive 14,5-room,premium apartment,125.0,yes,1999,0.0,3100
+147470,2025-03,queenstown,1,ghim moh road,3-room,improved,65.0,yes,1976,0.0,3000
+147478,2025-03,bukit merah,4b,boon tiong road,4-room,model a,100.0,yes,2005,0.0,4000
+147480,2025-03,clementi,320,clementi avenue 4,3-room,new generation,67.0,yes,1979,0.0,3000
+147495,2025-03,choa chu kang,508,choa chu kang street 51,5-room,model a,136.0,yes,1994,0.0,3500
+147503,2025-03,sengkang,312a,anchorvale lane,executive,premium apartment,127.0,yes,2002,0.0,3500
+147548,2025-03,kallang/whampoa,40,cambridge road,4-room,model a,102.0,yes,1997,0.0,4000
+147587,2025-03,choa chu kang,508,choa chu kang street 51,5-room,model a,136.0,yes,1994,0.0,3500
+147597,2025-03,queenstown,8,holland avenue,3-room,improved,59.0,yes,1974,0.0,3100
+147692,2025-03,clementi,320,clementi avenue 4,3-room,new generation,67.0,yes,1979,0.0,3000
+147774,2025-03,jurong west,185,boon lay avenue,3-room,improved,59.0,yes,1975,0.0,2600
+147804,2025-03,geylang,120,geylang east central,4-room,new generation,92.0,yes,1982,0.0,4000
+147851,2025-03,bukit merah,4b,boon tiong road,4-room,model a,100.0,yes,2005,0.0,4000
+147867,2025-03,clementi,320,clementi avenue 4,3-room,new generation,67.0,yes,1979,0.0,2900
+147881,2025-03,yishun,111,yishun ring road,4-room,new generation,94.0,yes,1982,0.0,3000
+147910,2025-03,ang mo kio,117,ang mo kio avenue 4,3-room,new generation,74.0,yes,1978,0.0,2800
+147929,2025-03,kallang/whampoa,76,lorong limau,3-room,improved,65.0,yes,1973,0.0,3000
+147982,2025-03,queenstown,81,commonwealth close,3-room,standard,60.0,yes,1967,0.0,3100
+148118,2025-03,woodlands,511,woodlands drive 14,5-room,premium apartment,125.0,yes,1999,0.0,3100
+148126,2025-03,jurong east,372,jurong east street 32,2-room,model a,44.0,yes,2014,0.0,2500
+148131,2025-03,ang mo kio,631,ang mo kio avenue 4,3-room,new generation,67.0,yes,1985,0.0,3000
+148157,2025-03,bedok,18,bedok south road,3-room,improved,65.0,yes,1976,0.0,2700
+148160,2025-03,ang mo kio,586,ang mo kio avenue 3,3-room,new generation,67.0,yes,1979,0.0,3000
+148265,2025-03,ang mo kio,576,ang mo kio avenue 10,3-room,new generation,67.0,yes,1980,0.0,2800
+148312,2025-03,ang mo kio,586,ang mo kio avenue 3,3-room,new generation,67.0,yes,1979,0.0,3000
+148364,2025-03,yishun,111,yishun ring road,4-room,new generation,94.0,yes,1982,0.0,3000
+148378,2025-03,choa chu kang,815c,choa chu kang avenue 7,4-room,model a,93.0,yes,2017,0.0,3400
+148387,2025-03,punggol,101c,punggol field,5-room,improved,109.0,yes,2002,0.0,3300
+148450,2025-03,kallang/whampoa,2,jalan batu,3-room,standard,60.0,yes,1969,0.0,3000
+148456,2025-03,sengkang,312a,anchorvale lane,executive,premium apartment,127.0,yes,2002,0.0,3500
+148470,2025-03,queenstown,1,ghim moh road,3-room,improved,65.0,yes,1976,0.0,3000
+148479,2025-03,serangoon,245,serangoon avenue 2,3-room,simplified,64.0,yes,1985,0.0,2800
+148507,2025-03,kallang/whampoa,74,whampoa drive,3-room,improved,66.0,yes,1981,0.0,3300
+148524,2025-03,ang mo kio,564,ang mo kio avenue 3,3-room,new generation,68.0,yes,1985,0.0,2800
+148560,2025-03,kallang/whampoa,74,whampoa drive,3-room,improved,66.0,yes,1981,0.0,3300
+148572,2025-03,bukit merah,44,telok blangah drive,3-room,improved,65.0,yes,1976,0.0,3000
+148652,2025-03,bedok,42,chai chee street,3-room,new generation,67.0,yes,1985,0.0,3000
+148670,2025-03,clementi,351,clementi avenue 2,3-room,new generation,67.0,yes,1978,0.0,2500
+148689,2025-03,bishan,130,bishan street 12,4-room,model a,105.0,yes,1986,0.0,3700
+148706,2025-03,queenstown,79,dawson road,5-room,improved,107.0,yes,2020,0.0,5300
+148723,2025-03,clementi,351,clementi avenue 2,3-room,new generation,67.0,yes,1978,0.0,2500
+148737,2025-03,queenstown,9,holland avenue,3-room,improved,65.0,yes,1974,0.0,3300
+148809,2025-03,ang mo kio,576,ang mo kio avenue 10,3-room,new generation,67.0,yes,1980,0.0,2800
+148812,2025-03,jurong east,372,jurong east street 32,2-room,model a,44.0,yes,2014,0.0,2500
+148844,2025-03,punggol,195a,punggol road,4-room,premium apartment,90.0,yes,2007,0.0,3500
+148860,2025-03,queenstown,160,mei ling street,3-room,improved,72.0,yes,1970,0.0,2800
+148881,2025-03,queenstown,160,mei ling street,3-room,improved,72.0,yes,1970,0.0,2800
+148935,2025-03,jurong east,103,jurong east street 13,5-room,improved,120.0,yes,1982,0.0,3600
+148939,2025-03,bukit merah,44,telok blangah drive,3-room,improved,65.0,yes,1976,0.0,3000
+148985,2025-03,bishan,130,bishan street 12,4-room,model a,105.0,yes,1986,0.0,3700
+149024,2025-03,jurong west,185,boon lay avenue,3-room,improved,59.0,yes,1975,0.0,2600
+149097,2025-03,marine parade,47,marine crescent,3-room,improved,76.0,yes,1975,0.0,3000
+149183,2025-03,sengkang,262b,compassvale street,executive,apartment,130.0,yes,2001,0.0,3500
+149225,2025-03,kallang/whampoa,76,lorong limau,3-room,improved,65.0,yes,1973,0.0,3000
+149240,2025-03,punggol,195a,punggol road,4-room,premium apartment,90.0,yes,2007,0.0,3500
+149245,2025-03,queenstown,8,holland avenue,3-room,improved,59.0,yes,1974,0.0,3100
+149327,2025-03,sengkang,262b,compassvale street,executive,apartment,130.0,yes,2001,0.0,3500
+149332,2025-03,toa payoh,116,lorong 2 toa payoh,3-room,improved,63.0,yes,1970,0.0,3000
+149421,2025-03,clementi,320,clementi avenue 4,3-room,new generation,67.0,yes,1979,0.0,2900
+149422,2025-03,serangoon,245,serangoon avenue 2,3-room,simplified,64.0,yes,1985,0.0,2800
+149525,2025-03,choa chu kang,815c,choa chu kang avenue 7,4-room,model a,93.0,yes,2017,0.0,3400
+149532,2025-03,queenstown,9,holland avenue,3-room,improved,65.0,yes,1974,0.0,3300
+149582,2025-03,toa payoh,116,lorong 2 toa payoh,3-room,improved,63.0,yes,1970,0.0,3000
+149607,2025-03,punggol,101c,punggol field,5-room,improved,109.0,yes,2002,0.0,3300
+149615,2025-03,ang mo kio,117,ang mo kio avenue 4,3-room,new generation,74.0,yes,1978,0.0,2800
+149657,2025-03,sembawang,363b,sembawang crescent,2-room,model a,38.0,yes,2019,0.0,2600
+149662,2025-03,bedok,18,bedok south road,3-room,improved,65.0,yes,1976,0.0,2700
+149678,2025-03,kallang/whampoa,2,jalan batu,3-room,standard,60.0,yes,1969,0.0,3000
+149697,2025-03,bedok,42,chai chee street,3-room,new generation,67.0,yes,1985,0.0,3000
+149702,2025-03,kallang/whampoa,68,geylang bahru,3-room,improved,65.0,yes,1974,0.0,3200
+149825,2025-03,jurong east,103,jurong east street 13,5-room,improved,120.0,yes,1982,0.0,3600
+149915,2025-03,marine parade,47,marine crescent,3-room,improved,76.0,yes,1975,0.0,3000
+149969,2025-03,queenstown,81,commonwealth close,3-room,standard,60.0,yes,1967,0.0,3100
+149996,2025-03,queenstown,79,dawson road,5-room,improved,107.0,yes,2020,0.0,5300

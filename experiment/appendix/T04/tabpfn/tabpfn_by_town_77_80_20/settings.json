@@ -1,0 +1,25 @@
+{
+  "source": ".cache\\tabpfn_v3_features\\calendar_80_20_categorical.joblib",
+  "source_sha256": "fba84757b6e23280d2b27eab0ca5d86a427ac19ca33c6b12b5b2dcc4194a0059",
+  "pooled_predictions_sha256": "6ae63cf3d00073220a77f05e547efcc601dcbdae151dc4260c8b72c21a9d83b6",
+  "checkpoint_sha256": "14e0b81285bca7a6d1ef121169f27f651f76dff49cad6c0b8779d5c836018550",
+  "code_sha256": "9e23f6d7af866b4c596895edfe612e69e5fda2241c7ff95710fa87f58ef9d05e",
+  "packages": {
+    "tabpfn": "9.2.0",
+    "torch": "2.11.0+cu128",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6"
+  },
+  "grouping": "TOWN_CLEAN; each query uses only context rows from the same town",
+  "feature_policy": "Unchanged 77 columns, causal histories and residual baseline from the pooled bundle",
+  "inference": {
+    "checkpoint": "TabPFN-3.5 Fast",
+    "n_estimators": 1,
+    "random_state": 42,
+    "batch_size": 200,
+    "subsample_samples": null,
+    "parameter_optimization": false
+  },
+  "split": "Chronological January 2021-May 2024 context; June 2024-March 2025 validation",
+  "unlabelled_test_used": false
+}

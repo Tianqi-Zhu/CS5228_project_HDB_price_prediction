@@ -1,0 +1,31 @@
+{
+  "validation_rows": 28995,
+  "test_rows": 50000,
+  "validation_rmse": {
+    "Plus_e1": 456.14423492962595,
+    "Fast_B_e2": 455.3959272763664,
+    "ABCDE_equal": 454.70398730500875
+  },
+  "plus_ensemble_error_correlation": 0.9951529688952956,
+  "directional_blend_crossmoment": -474.93252338365255,
+  "development_only_optimal_plus_fraction": 0.20998806036590406,
+  "test_rows_horizon_above_10": 18077,
+  "test_rows_horizon_above_10_fraction": 0.36154000000000003,
+  "full_submission_mean_signed_difference_plus_minus_abcde": -8.23586406115059,
+  "full_submission_mean_abs_difference_plus_vs_abcde": 24.8916644693257,
+  "full_submission_mean_abs_difference_horizon_1_10": 20.165725544073677,
+  "full_submission_mean_abs_difference_horizon_11_16": 33.237415883322505,
+  "source_sha256": {
+    "reports\\tabpfn_api_77\\validation_v3.5_default_standard_e1\\predictions.csv": "0986ec8fb79f1a6875d8ff32aaaaf7cdb21fd4ebba233945a8372bcdd8186c47",
+    "reports\\tabpfn_api_77\\submission_v3.5_plus_77_150k\\predictions.csv": "d03b71c1837758fcadb538cad9ab3a9132d4bebea4a6c96d7a82b24f35e3695a",
+    "reports\\tabpfn_abcde_ensemble\\predictions_all_origins.csv": "34cd9fd15c7f45fdfd60a0c5735f8feda356eae6323cf177501d9be4e42407b2",
+    "reports\\tabpfn_top2_final_submission\\submission_tabpfn_ABCDE_equal_150k.csv": "ef1c3efc55a5b7bd6f3717870a1d07a0cbda78a4f9f153db89e189aa50c00488",
+    ".cache\\tabpfn_api_77_inputs\\validation\\query.parquet": "31c94d812b3e526f267be168e05bfe32d7ea2a01cfe04807ba727ee71b8eac5c",
+    ".cache\\tabpfn_api_77_inputs\\validation\\arrays.npz": "0e180588c2846e4cf63c2aec092cf1a9a0eac7681351a7f4b96abd8350ec3541",
+    ".cache\\tabpfn_api_77_inputs\\submission\\query.parquet": "982dde88e89f43cdd0333f63c479c8e9b150637af22a6fd527f15fa77f5ef503",
+    ".cache\\tabpfn_api_77_inputs\\submission\\arrays.npz": "e5c73a13018598bc4c926e75a71c00b242eedef7a788da4d8f6cf6ef4ff08261"
+  },
+  "alignment_checked": true,
+  "full_submission_labels_available": false,
+  "full_submission_validation_equivalent": false
+}

@@ -1,0 +1,13 @@
+validation_start,model,fit_predict_seconds
+2023-01,hist_gradient_boosting,3.29
+2023-01,lightgbm,2.03
+2023-01,catboost,52.79
+2023-07,hist_gradient_boosting,3.84
+2023-07,lightgbm,2.38
+2023-07,catboost,55.58
+2024-04,hist_gradient_boosting,4.81
+2024-04,lightgbm,2.76
+2024-04,catboost,63.13
+2023-12,hist_gradient_boosting,5.00
+2023-12,lightgbm,2.55
+2023-12,catboost,59.64

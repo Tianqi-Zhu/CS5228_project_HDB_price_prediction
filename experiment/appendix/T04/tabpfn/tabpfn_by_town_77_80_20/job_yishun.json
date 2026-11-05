@@ -1,0 +1,8 @@
+{
+  "town": "yishun",
+  "context_rows": 6415,
+  "query_rows": 1498,
+  "context_ids_sha256": "147d66ef4f3d51a9315d5e9f5af71746bdb5067316753b54415df25c06a86a9f",
+  "query_ids_sha256": "ae54ad100c91133b5fbdc719eb29048e4b796a8760b771742bb030ca8afdd94e",
+  "settings_sha256": "7ec7fcf4dc279912e4ccac47faafbe82887e1d344fe25f59350c4dbcbc3e5916"
+}

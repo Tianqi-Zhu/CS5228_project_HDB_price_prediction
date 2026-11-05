@@ -1,0 +1,9 @@
+{
+  "sha256": "6824cffb93e47efd97abd2050fd4b4fcaf04f8cbf40d0a4bcd0ccdd0fa4b3a5e",
+  "stages": [
+    "outer",
+    "inner_2022-09",
+    "inner_2023-07"
+  ],
+  "features_added_available": 62
+}

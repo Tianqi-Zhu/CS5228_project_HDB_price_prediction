@@ -1,0 +1,36 @@
+{
+  "E1": [
+    "TABPFN_RENT",
+    "FLAT_TYPE_CLEAN",
+    "FLOOR_AREA_SQM",
+    "FLAT_AGE_YEARS",
+    "LATITUDE",
+    "LONGITUDE",
+    "TOWN_CLEAN",
+    "APPROVAL_MONTH_INDEX",
+    "APPROVAL_MONTH_OF_YEAR",
+    "TEMP_FORECAST_HORIZON"
+  ],
+  "E2": [
+    "TABPFN_RENT",
+    "FLAT_TYPE_CLEAN",
+    "FLOOR_AREA_SQM",
+    "FLAT_AGE_YEARS",
+    "LATITUDE",
+    "LONGITUDE",
+    "TOWN_CLEAN",
+    "APPROVAL_MONTH_INDEX",
+    "APPROVAL_MONTH_OF_YEAR",
+    "TEMP_FORECAST_HORIZON",
+    "LOCAL_HIST_MEDIAN",
+    "LOCAL_GROWTH_3M",
+    "LOCAL_COUNT_6M"
+  ],
+  "categorical": [
+    "FLAT_TYPE_CLEAN",
+    "TOWN_CLEAN"
+  ],
+  "numeric_missing": "CatBoost native NaN",
+  "categorical_missing": "__missing__",
+  "units": "rent and residual SGD; growth dimensionless; history count transactions"
+}

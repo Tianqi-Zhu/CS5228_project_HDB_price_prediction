@@ -1,0 +1,15 @@
+{
+  "fit_seconds": 1.2082479000091553,
+  "predict_seconds": 0.7623232000041753,
+  "peak_vram_gib": 2.4193544387817383,
+  "context_rows": 6573,
+  "query_rows": 1697,
+  "features": 77,
+  "batch_size": 200,
+  "subsampling": false,
+  "parameter_versions_unchanged": true,
+  "town": "bukit merah",
+  "rmse_sgd": 530.9255182586749,
+  "mae_sgd": 394.9473143932287,
+  "bias_sgd": -120.34155653891541
+}

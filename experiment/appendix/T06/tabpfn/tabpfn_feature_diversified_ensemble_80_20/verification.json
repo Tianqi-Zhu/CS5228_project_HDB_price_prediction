@@ -1,0 +1,16 @@
+{
+  "source_checkpoint_and_submission_hashes_unchanged": true,
+  "baseline_reused_from_verified_plain_model": true,
+  "tests_passed": 24,
+  "contexts_exclude_future_labels": true,
+  "all_member_rows_labels_baselines_identical": true,
+  "all_predictions_finite": true,
+  "all_model_parameters_unchanged": true,
+  "autograd_prohibited": true,
+  "all_context_rows_retained": true,
+  "weights_nonnegative_sum_to_one": true,
+  "outer_weight_optimization": false,
+  "selection_label_max": "2024-04",
+  "no_untouched_final_test_claim": true,
+  "prediction_sha256": "81ea75c8591b351d185e6ff8861ce9d9a20c04963e47b405792efda43a41ba29"
+}

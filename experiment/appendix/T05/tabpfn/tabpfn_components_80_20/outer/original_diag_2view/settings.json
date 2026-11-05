@@ -1,0 +1,10 @@
+{
+  "config": null,
+  "adapter_sha256": "1fa442b5180bbf9604d3e15517af08ad8bf38ac7258077b119d080f7cc9ef83b",
+  "views": 2,
+  "context_rows": 121005,
+  "query_rows": 28995,
+  "query_ids_sha256": "8452546a17ec266e405b692de53ff0cc0fcf68f2565c7092d8444e4ecf2edf1b",
+  "batch_rows": 200,
+  "seed": 42
+}

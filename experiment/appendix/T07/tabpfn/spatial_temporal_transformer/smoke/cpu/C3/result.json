@@ -1,0 +1,21 @@
+{
+  "run": "smoke/cpu/C3",
+  "variant": "C3",
+  "seed": 42,
+  "best_epoch": 1,
+  "epochs_run": 1,
+  "weighted_rmse_sgd": 1080.2936955817934,
+  "rmse_sgd": 1083.1710892766018,
+  "mae_sgd": 964.0694391941483,
+  "bias_sgd": 917.0295116540381,
+  "rows": 64,
+  "parameters": 553535,
+  "sequence_gate": 0.09976673126220703,
+  "seconds": 2.195699300034903,
+  "peak_allocated_vram_gib": 0.0,
+  "checkpoint_replay_max_difference": 0.0,
+  "checkpoint_sha256": "82d5626ee561e88a612ab36938a79f23f9fa34208b2197c563d2b81fdb85c532",
+  "predictions_sha256": "7e65e761cbf92fcfb2d4a888fc1c4e81085e006cfffc5a29de20d04857d9d775",
+  "preprocessors_sha256": "555a886b09fe60167ef3dfa8200f8481cba1fe30fe8775d43d6830c492227e0b",
+  "outer_labels_used_for_selection": false
+}

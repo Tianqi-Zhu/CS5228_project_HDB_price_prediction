@@ -1,0 +1,9 @@
+{
+  "name": "final_seed44",
+  "rows": 28995,
+  "rmse_sgd": 460.37910944358947,
+  "mae_sgd": 334.5578970493175,
+  "bias_sgd": -0.9133832701962927,
+  "predict_seconds": 0.5146047999151051,
+  "predictions_sha256": "12c3af47ccf81ac16f67a4130c568a1783bf46b8efb76818fa6eb405c7d6099e"
+}

@@ -1,0 +1,95 @@
+{
+  "settings_sha256": "202c2d662a8a161b6e902738d1862a2dc8040f7818a5846bcbfd4003567ecf82",
+  "bundles": {
+    "outer": {
+      "path": ".cache\\tabpfn_worldcover_tree_cover_80_20\\training_outer_80.joblib",
+      "sha256": "80a2fdb3e487cee848c839cb1ad7084824d4323258ad4a2ec58aafbcde832672",
+      "train_shape": [
+        121005,
+        80
+      ],
+      "query_shape": [
+        28995,
+        80
+      ],
+      "original_columns_preserved": true,
+      "runner_matrices_identical": true,
+      "baseline_categorical_columns": [
+        "FLAT_TYPE_CLEAN",
+        "FLAT_MODEL_CLEAN",
+        "APPROVAL_MONTH_OF_YEAR",
+        "TOWN_CLEAN",
+        "SUBZONE",
+        "PLANNING_AREA",
+        "REGION",
+        "BLOCK_ID",
+        "STREET_ID"
+      ],
+      "target_and_temporal_metadata_preserved": true
+    },
+    "inner_2022-09": {
+      "path": ".cache\\tabpfn_worldcover_tree_cover_80_20\\training_inner_2022-09_80.joblib",
+      "sha256": "ebff8591c5c278f993b6a40ec5bfbc8643e275702c2da096e4c6f7ebf69ae8a8",
+      "train_shape": [
+        60079,
+        80
+      ],
+      "query_shape": [
+        600,
+        80
+      ],
+      "original_columns_preserved": true,
+      "runner_matrices_identical": true,
+      "baseline_categorical_columns": [
+        "FLAT_TYPE_CLEAN",
+        "FLAT_MODEL_CLEAN",
+        "APPROVAL_MONTH_OF_YEAR",
+        "TOWN_CLEAN",
+        "SUBZONE",
+        "PLANNING_AREA",
+        "REGION",
+        "BLOCK_ID",
+        "STREET_ID"
+      ],
+      "target_and_temporal_metadata_preserved": true
+    },
+    "inner_2023-07": {
+      "path": ".cache\\tabpfn_worldcover_tree_cover_80_20\\training_inner_2023-07_80.joblib",
+      "sha256": "99bdf9302f28e01bcf9f293af569bb1a4cdf41ab9133e12d72677b3e3784fc8d",
+      "train_shape": [
+        87937,
+        80
+      ],
+      "query_shape": [
+        600,
+        80
+      ],
+      "original_columns_preserved": true,
+      "runner_matrices_identical": true,
+      "baseline_categorical_columns": [
+        "FLAT_TYPE_CLEAN",
+        "FLAT_MODEL_CLEAN",
+        "APPROVAL_MONTH_OF_YEAR",
+        "TOWN_CLEAN",
+        "SUBZONE",
+        "PLANNING_AREA",
+        "REGION",
+        "BLOCK_ID",
+        "STREET_ID"
+      ],
+      "target_and_temporal_metadata_preserved": true
+    }
+  },
+  "added_columns": [
+    "TREE_CLASS_FRACTION_100M",
+    "TREE_CLASS_FRACTION_300M",
+    "TREE_COVER_UNAVAILABLE"
+  ],
+  "continuous_columns": [
+    "TREE_CLASS_FRACTION_100M",
+    "TREE_CLASS_FRACTION_300M"
+  ],
+  "external_preprocessing_fitted": false,
+  "target_policy": "Unchanged SGD rent labels; frozen runner fits y_train - train_baseline and restores query_baseline",
+  "test_predictions_generated": false
+}

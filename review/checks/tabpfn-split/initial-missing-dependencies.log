@@ -1,0 +1,566 @@
+test_all_histories_are_frozen_at_the_selected_origin (test_aligned_temporal_features.AlignedTemporalTests.test_all_histories_are_frozen_at_the_selected_origin) ... ok
+test_context_origins_cover_the_validation_horizon_without_overlap (test_aligned_temporal_features.AlignedTemporalTests.test_context_origins_cover_the_validation_horizon_without_overlap) ... ok
+test_forecast_and_tuning_cannot_see_future_rents (test_aligned_temporal_features.AlignedTemporalTests.test_forecast_and_tuning_cannot_see_future_rents) ... ok
+test_new_area_uses_flat_type_forecast_without_a_local_premium (test_aligned_temporal_features.AlignedTemporalTests.test_new_area_uses_flat_type_forecast_without_a_local_premium) ... ok
+test_amenity_quality_features (unittest.loader._FailedTest.test_amenity_quality_features) ... ERROR
+test_coe_lags_follow_calendar_months_even_with_missing_target_months (test_auxiliary_features.AuxiliaryFeatureTests.test_coe_lags_follow_calendar_months_even_with_missing_target_months) ... ok
+test_station_codes_at_same_location_count_once (test_auxiliary_features.AuxiliaryFeatureTests.test_station_codes_at_same_location_count_once) ... ok
+test_stock_feature_uses_month_end_close_returns (test_auxiliary_features.AuxiliaryFeatureTests.test_stock_feature_uses_month_end_close_returns) ... ok
+test_distance_spline_is_linear_between_knots (test_bayesian_amenity_factors.BayesianAmenityTests.test_distance_spline_is_linear_between_knots) ... ok
+test_normal_prior_shrinks_mean_and_predictive_interval_contains_it (test_bayesian_amenity_factors.BayesianAmenityTests.test_normal_prior_shrinks_mean_and_predictive_interval_contains_it) ... ok
+test_all_variants_complete_from_first_month_and_keep_histories_and_time (test_calendar_encoding.CalendarEncodingTests.test_all_variants_complete_from_first_month_and_keep_histories_and_time) ... ok
+test_category_mapping_is_identical_in_context_and_query (test_calendar_encoding.CalendarEncodingTests.test_category_mapping_is_identical_in_context_and_query) ... ok
+test_cyclical_distance_wraps_december_to_january (test_calendar_encoding.CalendarEncodingTests.test_cyclical_distance_wraps_december_to_january) ... ok
+test_future_rows_and_labels_cannot_change_calendar_features (test_calendar_encoding.CalendarEncodingTests.test_future_rows_and_labels_cannot_change_calendar_features) ... ok
+test_sample_is_reproducible_and_weights_reconstruct_month_counts (test_calendar_encoding.CalendarEncodingTests.test_sample_is_reproducible_and_weights_reconstruct_month_counts) ... ok
+test_unknown_school_location_has_finite_interactions_and_explicit_flag (test_calendar_encoding.CalendarEncodingTests.test_unknown_school_location_has_finite_interactions_and_explicit_flag) ... ok
+test_aliases_and_addresses_collapse_but_stable_first_id_is_kept (test_canonical_rental_dedup.DedupTests.test_aliases_and_addresses_collapse_but_stable_first_id_is_kept) ... ok
+test_different_rent_month_or_property_attribute_is_retained (test_canonical_rental_dedup.DedupTests.test_different_rent_month_or_property_attribute_is_retained) ... ok
+test_duplicate_mapping_and_idempotence (test_canonical_rental_dedup.DedupTests.test_duplicate_mapping_and_idempotence) ... ok
+test_future_labels_cannot_change_retained_context (test_canonical_rental_dedup.DedupTests.test_future_labels_cannot_change_retained_context) ... ok
+test_no_hidden_test_target_or_duplicate_source_ids (test_canonical_rental_dedup.DedupTests.test_no_hidden_test_target_or_duplicate_source_ids) ... ok
+test_rebuilt_history_really_excludes_removed_observations (test_canonical_rental_dedup.DedupTests.test_rebuilt_history_really_excludes_removed_observations) ... ok
+test_unit_identifier_when_available_prevents_collapsing_distinct_units (test_canonical_rental_dedup.DedupTests.test_unit_identifier_when_available_prevents_collapsing_distinct_units) ... ok
+test_company_worksite_followup (unittest.loader._FailedTest.test_company_worksite_followup) ... ERROR
+test_company_worksite_stocks (unittest.loader._FailedTest.test_company_worksite_stocks) ... ERROR
+test_calendar_features_and_seventeen_month_horizon_are_known (test_comprehensive_temporal.ComprehensiveTemporalTests.test_calendar_features_and_seventeen_month_horizon_are_known) ... ok
+test_correction_training_excludes_future_targets_even_when_not_selected (test_comprehensive_temporal.ComprehensiveTemporalTests.test_correction_training_excludes_future_targets_even_when_not_selected) ... ok
+test_future_rents_and_coe_cannot_change_forecasts_or_selection (test_comprehensive_temporal.ComprehensiveTemporalTests.test_future_rents_and_coe_cannot_change_forecasts_or_selection) ... ok
+test_initial_reference_is_never_used_before_it_is_available (test_comprehensive_temporal.ComprehensiveTemporalTests.test_initial_reference_is_never_used_before_it_is_available) ... ok
+test_reference_fit_ends_at_the_first_year (test_comprehensive_temporal.ComprehensiveTemporalTests.test_reference_fit_ends_at_the_first_year) ... ok
+test_diagscale_tabpfn (unittest.loader._FailedTest.test_diagscale_tabpfn) ... ERROR
+test_2021_reference_ignores_later_targets (test_dynamic_market_index.DynamicMarketIndexTests.test_2021_reference_ignores_later_targets) ... ok
+test_fixed_origin_forecast_ignores_future_labels_and_preserves_row_order (test_dynamic_market_index.DynamicMarketIndexTests.test_fixed_origin_forecast_ignores_future_labels_and_preserves_row_order) ... ok
+test_local_surface_forecast_uses_only_fitting_residuals (test_dynamic_market_index.DynamicMarketIndexTests.test_local_surface_forecast_uses_only_fitting_residuals) ... ok
+test_pca_forecast_is_unchanged_when_future_surfaces_change (test_dynamic_market_index.DynamicMarketIndexTests.test_pca_forecast_is_unchanged_when_future_surfaces_change) ... ok
+test_recent_history_excludes_same_month_and_freezes_at_origin (test_dynamic_market_index.DynamicMarketIndexTests.test_recent_history_excludes_same_month_and_freezes_at_origin) ... ok
+test_initial_conditioning_is_zero_and_finite_for_missing_history (test_economic_conditional_mean.EconomicConditionalMeanTests.test_initial_conditioning_is_zero_and_finite_for_missing_history) ... ok
+test_loss_backpropagates_into_economic_and_property_encoders (test_economic_conditional_mean.EconomicConditionalMeanTests.test_loss_backpropagates_into_economic_and_property_encoders) ... ok
+test_stock_channels_masked_and_only_coe_changes_information (test_economic_conditional_mean.EconomicConditionalMeanTests.test_stock_channels_masked_and_only_coe_changes_information) ... ok
+test_E_and_engineered_groups_are_separate (test_economic_feature_ablation.EconomicFeatureAblationTests.test_E_and_engineered_groups_are_separate) ... ok
+test_delta_uses_same_fold_E (test_economic_feature_ablation.EconomicFeatureAblationTests.test_delta_uses_same_fold_E) ... ok
+test_prior_month_market_values_only (test_economic_feature_ablation.EconomicFeatureAblationTests.test_prior_month_market_values_only) ... ok
+test_quota_weighted_bid_pressure_and_monthly_lag (test_economic_signals.EconomicSignalTests.test_quota_weighted_bid_pressure_and_monthly_lag) ... ok
+test_fresh_and_resumed_residual_predictions_are_identical (test_ensemble_resume.EnsembleResumeTests.test_fresh_and_resumed_residual_predictions_are_identical) ... Fitting test cb77residual: 2 rows, 1 features
+Completed test cb77residual in 0.0s
+ok
+test_all_three_members_can_be_optimal (test_feature_diversified_ensemble.FeatureEnsembleTests.test_all_three_members_can_be_optimal) ... ok
+test_baseline_vertex_and_identical_predictor_tie_are_exact (test_feature_diversified_ensemble.FeatureEnsembleTests.test_baseline_vertex_and_identical_predictor_tie_are_exact) ... ok
+test_invalid_inputs_are_rejected (test_feature_diversified_ensemble.FeatureEnsembleTests.test_invalid_inputs_are_rejected) ... ok
+test_opposite_errors_cancel (test_feature_diversified_ensemble.FeatureEnsembleTests.test_opposite_errors_cancel) ... ok
+test_permuted_members_keep_optimal_prediction (test_feature_diversified_ensemble.FeatureEnsembleTests.test_permuted_members_keep_optimal_prediction) ... ok
+test_sample_weights_change_solution (test_feature_diversified_ensemble.FeatureEnsembleTests.test_sample_weights_change_solution) ... ok
+test_sequential_two_view_means_match_six_view_average (test_feature_diversified_ensemble.FeatureEnsembleTests.test_sequential_two_view_means_match_six_view_average) ... ok
+test_simplex_solution_beats_coarse_grid (test_feature_diversified_ensemble.FeatureEnsembleTests.test_simplex_solution_beats_coarse_grid) ... ok
+test_financial_sector_rent_categories (unittest.loader._FailedTest.test_financial_sector_rent_categories) ... ERROR
+test_financial_sector_rents (unittest.loader._FailedTest.test_financial_sector_rents) ... ERROR
+test_auction_premiums_aggregate_by_month_and_category (test_flat_type_economic_forecast.EconomicForecastTests.test_auction_premiums_aggregate_by_month_and_category) ... ok
+test_history_windows_include_origin_but_exclude_future (test_flat_type_economic_forecast.EconomicForecastTests.test_history_windows_include_origin_but_exclude_future) ... ok
+test_strong_regularization_shrinks_the_entire_change (test_flat_type_economic_forecast.EconomicForecastTests.test_strong_regularization_shrinks_the_entire_change) ... ok
+test_training_targets_and_forecasts_obey_the_cutoff (test_flat_type_economic_forecast.EconomicForecastTests.test_training_targets_and_forecasts_obey_the_cutoff) ... ok
+test_combines_in_original_order_and_rejects_duplicate_or_missing_rows (test_flat_type_inference.FlatTypeInferenceTests.test_combines_in_original_order_and_rejects_duplicate_or_missing_rows) ... ok
+test_rejects_unseen_query_type_and_overlapping_ids (test_flat_type_inference.FlatTypeInferenceTests.test_rejects_unseen_query_type_and_overlapping_ids) ... ok
+test_routes_all_rows_without_cross_type_context (test_flat_type_inference.FlatTypeInferenceTests.test_routes_all_rows_without_cross_type_context) ... ok
+test_monthly_group_rent_does_not_skip_empty_month (test_group_temporal_panel.GroupTemporalPanelTests.test_monthly_group_rent_does_not_skip_empty_month) ... ok
+test_dynamic_forecasts_decay_by_actual_calendar_horizon (test_hierarchical_latent_residual.HierarchicalTests.test_dynamic_forecasts_decay_by_actual_calendar_horizon) ... ok
+test_dynamic_map_matches_small_dense_reference (test_hierarchical_latent_residual.HierarchicalTests.test_dynamic_map_matches_small_dense_reference) ... ok
+test_fitting_rejects_future_targets_and_duplicate_case_ids (test_hierarchical_latent_residual.HierarchicalTests.test_fitting_rejects_future_targets_and_duplicate_case_ids) ... ok
+test_latest_eligible_forecast_does_not_use_future_labels (test_hierarchical_latent_residual.HierarchicalTests.test_latest_eligible_forecast_does_not_use_future_labels) ... ok
+test_missing_calendar_month_has_its_own_prior_state (test_hierarchical_latent_residual.HierarchicalTests.test_missing_calendar_month_has_its_own_prior_state) ... ok
+test_sparse_map_matches_small_dense_reference (test_hierarchical_latent_residual.HierarchicalTests.test_sparse_map_matches_small_dense_reference) ... ok
+test_stronger_priors_shrink_building_effects (test_hierarchical_latent_residual.HierarchicalTests.test_stronger_priors_shrink_building_effects) ... ok
+test_unseen_building_and_submarket_fallback (test_hierarchical_latent_residual.HierarchicalTests.test_unseen_building_and_submarket_fallback) ... ok
+test_zero_correction_and_query_label_mutation (test_hierarchical_latent_residual.HierarchicalTests.test_zero_correction_and_query_label_mutation) ... ok
+test_zero_persistence_and_unseen_group_dynamic_fallback (test_hierarchical_latent_residual.HierarchicalTests.test_zero_persistence_and_unseen_group_dynamic_fallback) ... ok
+test_excludes_own_block_and_freezes_future_history (test_local_comparable_graph.LocalComparableGraphTests.test_excludes_own_block_and_freezes_future_history) ... ok
+test_local_spatial_experiments (unittest.loader._FailedTest.test_local_spatial_experiments) ... ERROR
+test_lora_qk_tabpfn (unittest.loader._FailedTest.test_lora_qk_tabpfn) ... ERROR
+test_origin_freeze_ignores_future_and_buffer_month_observations (test_origin_macro_views.OriginMacroTests.test_origin_freeze_ignores_future_and_buffer_month_observations) ... ok
+test_prefix_replay_and_horizon_mismatch (test_origin_macro_views.OriginMacroTests.test_prefix_replay_and_horizon_mismatch) ... ok
+test_unknown_origin_stays_missing_and_never_uses_latest_market (test_origin_macro_views.OriginMacroTests.test_unknown_origin_stays_missing_and_never_uses_latest_market) ... ok
+test_fitted_weight_minimizes_calibration_loss (test_prediction_blending.PredictionBlendingTests.test_fitted_weight_minimizes_calibration_loss) ... ok
+test_identical_predictions_are_well_defined (test_prediction_blending.PredictionBlendingTests.test_identical_predictions_are_well_defined) ... ok
+test_invalid_values_are_rejected (test_prediction_blending.PredictionBlendingTests.test_invalid_values_are_rejected) ... ok
+test_projects_to_endpoints (test_prediction_blending.PredictionBlendingTests.test_projects_to_endpoints) ... ok
+test_recovers_known_convex_mixture (test_prediction_blending.PredictionBlendingTests.test_recovers_known_convex_mixture) ... ok
+test_sample_weights_match_repeated_observations (test_prediction_blending.PredictionBlendingTests.test_sample_weights_match_repeated_observations) ... ok
+test_even_horizon_uses_time_instead_of_row_count (test_recent_time_context.RecentContextTests.test_even_horizon_uses_time_instead_of_row_count) ... ok
+test_invalid_months_rejected (test_recent_time_context.RecentContextTests.test_invalid_months_rejected) ... ok
+test_odd_horizon_keeps_middle_month_and_whole_months (test_recent_time_context.RecentContextTests.test_odd_horizon_keeps_middle_month_and_whole_months) ... ok
+test_reliability_macro_features (unittest.loader._FailedTest.test_reliability_macro_features) ... ERROR
+test_fallback_and_unobserved_group_zero_count (test_spatial_temporal_residual.ResidualTests.test_fallback_and_unobserved_group_zero_count) ... ok
+test_fixed_batch_history_ignores_current_future_and_query_labels (test_spatial_temporal_residual.ResidualTests.test_fixed_batch_history_ignores_current_future_and_query_labels) ... ok
+test_lambda_zero_exact_and_sgd_scale (test_spatial_temporal_residual.ResidualTests.test_lambda_zero_exact_and_sgd_scale) ... ok
+test_query_context_overlap_duplicate_and_time_leak_rejected (test_spatial_temporal_residual.ResidualTests.test_query_context_overlap_duplicate_and_time_leak_rejected) ... ok
+test_schema_and_row_ids_preserved (test_spatial_temporal_residual.ResidualTests.test_schema_and_row_ids_preserved) ... ok
+test_sparse_growth_remains_missing (test_spatial_temporal_residual.ResidualTests.test_sparse_growth_remains_missing) ... ok
+test_strength_selection_uses_supplied_validation_only (test_spatial_temporal_residual.ResidualTests.test_strength_selection_uses_supplied_validation_only) ... ok
+test_impossible_memory_request_fails (test_spatial_temporal_transformer.GpuGateTests.test_impossible_memory_request_fails) ... ok
+test_telemetry_error_does_not_start_training (test_spatial_temporal_transformer.GpuGateTests.test_telemetry_error_does_not_start_training) ... GPU_GATE {"state": "waiting_for_telemetry", "error": "Command 'nvidia-smi' returned non-zero exit status 1.", "wait_seconds": 0.0}
+GPU_GATE {"state": "waiting", "gpu": {"total_gib": 16, "free_gib": 12, "utilization_pct": 0}, "stable_samples": 1, "required_free_gib": 8.0, "max_utilization_pct": 35.0, "wait_seconds": 0.0}
+GPU_GATE {"state": "ready", "gpu": {"total_gib": 16, "free_gib": 12, "utilization_pct": 0}, "stable_samples": 2, "required_free_gib": 8.0, "max_utilization_pct": 35.0, "wait_seconds": 0.0}
+ok
+test_waits_for_two_consecutive_available_samples (test_spatial_temporal_transformer.GpuGateTests.test_waits_for_two_consecutive_available_samples) ... GPU_GATE {"state": "waiting", "gpu": {"total_gib": 16, "free_gib": 2, "utilization_pct": 0}, "stable_samples": 0, "required_free_gib": 8.0, "max_utilization_pct": 35.0, "wait_seconds": 0.0}
+GPU_GATE {"state": "waiting", "gpu": {"total_gib": 16, "free_gib": 12, "utilization_pct": 0}, "stable_samples": 1, "required_free_gib": 8.0, "max_utilization_pct": 35.0, "wait_seconds": 0.0}
+GPU_GATE {"state": "waiting", "gpu": {"total_gib": 16, "free_gib": 12, "utilization_pct": 90}, "stable_samples": 0, "required_free_gib": 8.0, "max_utilization_pct": 35.0, "wait_seconds": 0.0}
+GPU_GATE {"state": "waiting", "gpu": {"total_gib": 16, "free_gib": 12, "utilization_pct": 0}, "stable_samples": 1, "required_free_gib": 8.0, "max_utilization_pct": 35.0, "wait_seconds": 0.0}
+GPU_GATE {"state": "ready", "gpu": {"total_gib": 16, "free_gib": 12, "utilization_pct": 0}, "stable_samples": 2, "required_free_gib": 8.0, "max_utilization_pct": 35.0, "wait_seconds": 0.0}
+ok
+test_all_model_processors_backward_and_checkpoint_replay (test_spatial_temporal_transformer.TransformerTests.test_all_model_processors_backward_and_checkpoint_replay) ... ok
+test_auxiliary_ablations_zero_values_and_presence (test_spatial_temporal_transformer.TransformerTests.test_auxiliary_ablations_zero_values_and_presence) ... ok
+test_episode_origins_are_earlier_and_cover_sixteen_horizons (test_spatial_temporal_transformer.TransformerTests.test_episode_origins_are_earlier_and_cover_sixteen_horizons) ... ok
+test_epoch_selection_depends_only_on_earlier_best_epochs (test_spatial_temporal_transformer.TransformerTests.test_epoch_selection_depends_only_on_earlier_best_epochs) ... ok
+test_future_rent_and_macro_changes_cannot_change_sequences (test_spatial_temporal_transformer.TransformerTests.test_future_rent_and_macro_changes_cannot_change_sequences) ... ok
+test_macro_publication_buffer_is_calendar_based (test_spatial_temporal_transformer.TransformerTests.test_macro_publication_buffer_is_calendar_based) ... ok
+test_property_scaler_unknown_categories_and_coordinate_shape (test_spatial_temporal_transformer.TransformerTests.test_property_scaler_unknown_categories_and_coordinate_shape) ... ok
+test_real_horizon_is_not_capped_at_ten (test_spatial_temporal_transformer.TransformerTests.test_real_horizon_is_not_capped_at_ten) ... ok
+test_reference_warmup_and_cold_history_are_masked (test_spatial_temporal_transformer.TransformerTests.test_reference_warmup_and_cold_history_are_masked) ... ok
+test_sequence_scaler_does_not_fit_queries (test_spatial_temporal_transformer.TransformerTests.test_sequence_scaler_does_not_fit_queries) ... ok
+test_sparse_type_uses_neutral_finite_baseline_and_long_horizon_plateau (test_spatial_temporal_transformer.TransformerTests.test_sparse_type_uses_neutral_finite_baseline_and_long_horizon_plateau) ... HISTORIES 1/1 through 2021-01
+ok
+test_history_is_prior_only_and_frozen_at_prediction_origin (test_spatiotemporal_hybrid.SpatiotemporalHybridTests.test_history_is_prior_only_and_frozen_at_prediction_origin) ... ok
+test_recursive_forecast_returns_every_group_and_month (test_spatiotemporal_hybrid.SpatiotemporalHybridTests.test_recursive_forecast_returns_every_group_and_month) ... ok
+test_stock_index_regions (unittest.loader._FailedTest.test_stock_index_regions) ... ERROR
+test_calendar_lag_and_fixed_origin_cap (test_stock_sector_signals.StockSectorSignalsTests.test_calendar_lag_and_fixed_origin_cap) ... ok
+test_delayed_features_use_calendar_months (test_stock_sector_signals.StockSectorSignalsTests.test_delayed_features_use_calendar_months) ... ok
+test_direct_horizons_never_train_on_unmatured_labels (test_stock_sector_signals.StockSectorSignalsTests.test_direct_horizons_never_train_on_unmatured_labels) ... Monthly direct forecasts: horizon 1/10 complete
+Monthly direct forecasts: horizon 2/10 complete
+Monthly direct forecasts: horizon 3/10 complete
+Monthly direct forecasts: horizon 4/10 complete
+Monthly direct forecasts: horizon 5/10 complete
+Monthly direct forecasts: horizon 6/10 complete
+Monthly direct forecasts: horizon 7/10 complete
+Monthly direct forecasts: horizon 8/10 complete
+Monthly direct forecasts: horizon 9/10 complete
+Monthly direct forecasts: horizon 10/10 complete
+Monthly direct forecasts: horizon 1/10 complete
+Monthly direct forecasts: horizon 2/10 complete
+Monthly direct forecasts: horizon 3/10 complete
+Monthly direct forecasts: horizon 4/10 complete
+Monthly direct forecasts: horizon 5/10 complete
+Monthly direct forecasts: horizon 6/10 complete
+Monthly direct forecasts: horizon 7/10 complete
+Monthly direct forecasts: horizon 8/10 complete
+Monthly direct forecasts: horizon 9/10 complete
+Monthly direct forecasts: horizon 10/10 complete
+ok
+test_missing_month_is_not_bridged (test_stock_sector_signals.StockSectorSignalsTests.test_missing_month_is_not_bridged) ... ok
+test_numpy_ridge_matches_training_only_sklearn_pipeline (test_stock_sector_signals.StockSectorSignalsTests.test_numpy_ridge_matches_training_only_sklearn_pipeline) ... ok
+test_outer_scores_do_not_select_sector (test_stock_sector_signals.StockSectorSignalsTests.test_outer_scores_do_not_select_sector) ... ok
+test_property_adjustment_fits_reference_year_only (test_stock_sector_signals.StockSectorSignalsTests.test_property_adjustment_fits_reference_year_only) ... ok
+test_returns_are_not_price_weighted_and_future_is_excluded (test_stock_sector_signals.StockSectorSignalsTests.test_returns_are_not_price_weighted_and_future_is_excluded) ... ok
+test_tabm_regression (unittest.loader._FailedTest.test_tabm_regression) ... ERROR
+test_all_five_members_can_be_required (test_tabpfn_abcde.ABCDETests.test_all_five_members_can_be_required) ... ok
+test_extra_identical_models_do_not_improve_predictions (test_tabpfn_abcde.ABCDETests.test_extra_identical_models_do_not_improve_predictions) ... ok
+test_five_member_calibration_optimum_cannot_lose_to_three_member_subsets (test_tabpfn_abcde.ABCDETests.test_five_member_calibration_optimum_cannot_lose_to_three_member_subsets) ... ok
+test_future_labels_do_not_change_weights_fit_on_past_rows (test_tabpfn_abcde.ABCDETests.test_future_labels_do_not_change_weights_fit_on_past_rows) ... ok
+test_tabpfn_abcde_lstm_coe (unittest.loader._FailedTest.test_tabpfn_abcde_lstm_coe) ... ERROR
+test_episode_sampling_does_not_depend_on_rent (test_tabpfn_adaptation.AdaptationTests.test_episode_sampling_does_not_depend_on_rent) ... ok
+test_head_horizon_is_explicit_and_feature_sets_have_no_current_target (test_tabpfn_adaptation.AdaptationTests.test_head_horizon_is_explicit_and_feature_sets_have_no_current_target) ... ok
+test_ids_normalize_case_and_distinguish_same_block_number (test_tabpfn_adaptation.AdaptationTests.test_ids_normalize_case_and_distinguish_same_block_number) ... ok
+test_inner_split_keeps_repeated_targets_together_and_excludes_outer (test_tabpfn_adaptation.AdaptationTests.test_inner_split_keeps_repeated_targets_together_and_excludes_outer) ... ok
+test_new_statistics_exclude_same_month_and_freeze_at_origin (test_tabpfn_adaptation.AdaptationTests.test_new_statistics_exclude_same_month_and_freeze_at_origin) ... ok
+test_query_rents_cannot_change_features (test_tabpfn_adaptation.AdaptationTests.test_query_rents_cannot_change_features) ... ok
+test_loader_preserves_categories_missing_values_and_target_alignment (test_tabpfn_api_77.Api77Tests.test_loader_preserves_categories_missing_values_and_target_alignment) ... ok
+test_metrics_use_reconstructed_rents_and_keep_query_order (test_tabpfn_api_77.Api77Tests.test_metrics_use_reconstructed_rents_and_keep_query_order) ... {"rmse_sgd": 100.0, "mae_sgd": 100.0, "bias_sgd": 0.0}
+ok
+test_resumes_accepted_prediction_without_resubmitting_or_double_baseline (test_tabpfn_api_77.Api77Tests.test_resumes_accepted_prediction_without_resubmitting_or_double_baseline) ... Predicted 2/3 rows
+Predicted 3/3 rows
+ok
+test_blend_can_qualify_with_uncalibrated_first_fold_tie (test_tabpfn_comparison.TabPFNComparisonTests.test_blend_can_qualify_with_uncalibrated_first_fold_tie) ... ok
+test_blend_is_constrained_and_handles_identical_models (test_tabpfn_comparison.TabPFNComparisonTests.test_blend_is_constrained_and_handles_identical_models) ... ok
+test_blend_weight_uses_only_earlier_folds (test_tabpfn_comparison.TabPFNComparisonTests.test_blend_weight_uses_only_earlier_folds) ... ok
+test_history_ignores_future_labels_and_same_month_rents (test_tabpfn_comparison.TabPFNComparisonTests.test_history_ignores_future_labels_and_same_month_rents) ... ok
+test_inputs_forbid_target_and_handle_unseen_categories (test_tabpfn_comparison.TabPFNComparisonTests.test_inputs_forbid_target_and_handle_unseen_categories) ... ok
+test_split_excludes_entire_origin_month_and_preserves_source_order (test_tabpfn_comparison.TabPFNComparisonTests.test_split_excludes_entire_origin_month_and_preserves_source_order) ... ok
+test_tabpfn_component_adaptation (unittest.loader._FailedTest.test_tabpfn_component_adaptation) ... ERROR
+test_tabpfn_context_sampler (unittest.loader._FailedTest.test_tabpfn_context_sampler) ... ERROR
+test_numeric_features_use_query_values_and_origin (test_tabpfn_embedding_head.EmbeddingHeadTest.test_numeric_features_use_query_values_and_origin) ... ok
+test_preprocessor_uses_only_training_rows (test_tabpfn_embedding_head.EmbeddingHeadTest.test_preprocessor_uses_only_training_rows) ... ok
+test_repeated_forecast_origins_share_one_month_population (test_tabpfn_embedding_head.EmbeddingHeadTest.test_repeated_forecast_origins_share_one_month_population) ... ok
+test_shrinkage_can_select_no_head_without_claiming_gain (test_tabpfn_embedding_head.EmbeddingHeadTest.test_shrinkage_can_select_no_head_without_claiming_gain) ... ok
+test_month_ten_matches_model_and_later_months_keep_actual_horizon (test_tabpfn_fast_submission.TemporalCapTest.test_month_ten_matches_model_and_later_months_keep_actual_horizon) ... ok
+test_rejects_same_month_query (test_tabpfn_fast_submission.TemporalCapTest.test_rejects_same_month_query) ... ok
+test_future_labels_cannot_change_fitting_or_tuning (test_tabpfn_temporal_features.TemporalFeatureTests.test_future_labels_cannot_change_fitting_or_tuning) ... ok
+test_historical_origins_are_earlier_and_independent_of_row_order (test_tabpfn_temporal_features.TemporalFeatureTests.test_historical_origins_are_earlier_and_independent_of_row_order) ... ok
+test_join_preserves_original_values_row_order_and_unseen_groups (test_tabpfn_temporal_features.TemporalFeatureTests.test_join_preserves_original_values_row_order_and_unseen_groups) ... ok
+test_validation_uses_one_fixed_cutoff (test_tabpfn_temporal_features.TemporalFeatureTests.test_validation_uses_one_fixed_cutoff) ... ok
+test_targeted_spatial_economic (unittest.loader._FailedTest.test_targeted_spatial_economic) ... ERROR
+test_lag_three_aligns_a_signal_two_months_after_lag_one (test_temporal_correlations.TemporalCorrelationTests.test_lag_three_aligns_a_signal_two_months_after_lag_one) ... ok
+test_five_member_weighted_solution_matches_independent_slsqp (test_temporal_feature_views.TemporalViewTests.test_five_member_weighted_solution_matches_independent_slsqp) ... ok
+test_horizon_interactions_preserve_originals_and_warmup (test_temporal_feature_views.TemporalViewTests.test_horizon_interactions_preserve_originals_and_warmup) ... ok
+test_invalid_baseline_and_horizon_rejected (test_temporal_feature_views.TemporalViewTests.test_invalid_baseline_and_horizon_rejected) ... ok
+test_relative_coordinates_preserve_missingness_and_are_level_shift_invariant (test_temporal_feature_views.TemporalViewTests.test_relative_coordinates_preserve_missingness_and_are_level_shift_invariant) ... ok
+test_row_local_transforms_do_not_consume_other_rows_or_targets (test_temporal_feature_views.TemporalViewTests.test_row_local_transforms_do_not_consume_other_rows_or_targets) ... ok
+test_solver_matches_prior_three_member_and_supports_five (test_temporal_feature_views.TemporalViewTests.test_solver_matches_prior_three_member_and_supports_five) ... ok
+test_temporal_sequence_ablation (unittest.loader._FailedTest.test_temporal_sequence_ablation) ... ERROR
+test_ale_constant_response_has_zero_effect (test_transformer_interpretation.InterpretationTests.test_ale_constant_response_has_zero_effect) ... ok
+test_ale_recovers_known_linear_effect_despite_correlated_nuisance (test_transformer_interpretation.InterpretationTests.test_ale_recovers_known_linear_effect_despite_correlated_nuisance) ... ok
+test_discrete_area_sparse_bins_are_merged_without_losing_supported_curve (test_transformer_interpretation.InterpretationTests.test_discrete_area_sparse_bins_are_merged_without_losing_supported_curve) ... ok
+test_donors_stay_inside_calendar_and_flat_type_cohort (test_transformer_interpretation.InterpretationTests.test_donors_stay_inside_calendar_and_flat_type_cohort) ... ok
+test_geographic_group_covers_location_duplicates_and_calendar_is_excluded (test_transformer_interpretation.InterpretationTests.test_geographic_group_covers_location_duplicates_and_calendar_is_excluded) ... ok
+test_month_sample_weights_recover_population_and_ignore_labels (test_transformer_interpretation.InterpretationTests.test_month_sample_weights_recover_population_and_ignore_labels) ... ok
+test_moran_is_invariant_to_offset_and_scale (test_transformer_interpretation.InterpretationTests.test_moran_is_invariant_to_offset_and_scale) ... ok
+test_sparse_ale_does_not_accumulate_across_unsupported_bins (test_transformer_interpretation.InterpretationTests.test_sparse_ale_does_not_accumulate_across_unsupported_bins) ... ok
+test_spatial_graph_has_no_self_edges_and_normalizes_rows (test_transformer_interpretation.InterpretationTests.test_spatial_graph_has_no_self_edges_and_normalizes_rows) ... ok
+test_comparables_hide_future_rents (test_transformer_ranked_experiments.RankedExperimentTests.test_comparables_hide_future_rents) ... ok
+test_context_head_has_safe_empty_support (test_transformer_ranked_experiments.RankedExperimentTests.test_context_head_has_safe_empty_support) ... ok
+test_distillation_student_cannot_read_teacher_or_label (test_transformer_ranked_experiments.RankedExperimentTests.test_distillation_student_cannot_read_teacher_or_label) ... ok
+test_forced_decay_uses_only_forecast_and_horizon (test_transformer_ranked_experiments.RankedExperimentTests.test_forced_decay_uses_only_forecast_and_horizon) ... ok
+test_hierarchical_calibration_shrinks_and_falls_back (test_transformer_ranked_experiments.RankedExperimentTests.test_hierarchical_calibration_shrinks_and_falls_back) ... ok
+test_horizon_weights_are_normalized_and_emphasize_long (test_transformer_ranked_experiments.RankedExperimentTests.test_horizon_weights_are_normalized_and_emphasize_long) ... ok
+test_innovations_use_only_preceding_changes (test_transformer_ranked_experiments.RankedExperimentTests.test_innovations_use_only_preceding_changes) ... ok
+test_property_conditioning_changes_prediction (test_transformer_ranked_experiments.RankedExperimentTests.test_property_conditioning_changes_prediction) ... ok
+test_stable_head_is_exact_zero_correction (test_transformer_ranked_experiments.RankedExperimentTests.test_stable_head_is_exact_zero_correction) ... ok
+test_transformer_rent_surface (unittest.loader._FailedTest.test_transformer_rent_surface) ... ERROR
+test_preserves_categories_row_ids_and_native_missingness (test_worldcover_training_data.TrainingDataTests.test_preserves_categories_row_ids_and_native_missingness) ... ok
+test_rejects_invalid_fractions_and_false_missingness_flag (test_worldcover_training_data.TrainingDataTests.test_rejects_invalid_fractions_and_false_missingness_flag) ... ok
+test_rejects_row_misalignment_and_duplicate_ids (test_worldcover_training_data.TrainingDataTests.test_rejects_row_misalignment_and_duplicate_ids) ... ok
+test_worldcover_tree_cover (unittest.loader._FailedTest.test_worldcover_tree_cover) ... ERROR
+
+======================================================================
+ERROR: test_amenity_quality_features (unittest.loader._FailedTest.test_amenity_quality_features)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_amenity_quality_features
+Traceback (most recent call last):
+  File "D:\miniconda3\envs\cs5228\Lib\unittest\loader.py", line 419, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\miniconda3\envs\cs5228\Lib\unittest\loader.py", line 362, in _get_module_from_name
+    __import__(name)
+  File "C:\Users\Lenovo\Desktop\CS5228\CS5228_project_HDB_price_prediction\.integration-work\appendix-experiments-review\output\tabpfn-workspace\tests\test_amenity_quality_features.py", line 8, in <module>
+    from analysis.experiments.amenity_quality_features import school_fields,mall_fields,rail_graph,station_bus_counts,operational_date
+  File "C:\Users\Lenovo\Desktop\CS5228\CS5228_project_HDB_price_prediction\.integration-work\appendix-experiments-review\output\tabpfn-workspace\analysis\experiments\amenity_quality_features.py", line 10, in <module>
+    from analysis.experiments.local_spatial_features import metric_xy
+  File "C:\Users\Lenovo\Desktop\CS5228\CS5228_project_HDB_price_prediction\.integration-work\appendix-experiments-review\output\tabpfn-workspace\analysis\experiments\local_spatial_features.py", line 11, in <module>
+    from pyproj import Transformer
+ModuleNotFoundError: No module named 'pyproj'
+
+
+======================================================================
+ERROR: test_company_worksite_followup (unittest.loader._FailedTest.test_company_worksite_followup)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_company_worksite_followup
+Traceback (most recent call last):
+  File "D:\miniconda3\envs\cs5228\Lib\unittest\loader.py", line 419, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\miniconda3\envs\cs5228\Lib\unittest\loader.py", line 362, in _get_module_from_name
+    __import__(name)
+  File "C:\Users\Lenovo\Desktop\CS5228\CS5228_project_HDB_price_prediction\.integration-work\appendix-experiments-review\output\tabpfn-workspace\tests\test_company_worksite_followup.py", line 11, in <module>
+    from analysis.experiments.company_worksite_followup import (
+  File "C:\Users\Lenovo\Desktop\CS5228\CS5228_project_HDB_price_prediction\.integration-work\appendix-experiments-review\output\tabpfn-workspace\analysis\experiments\company_worksite_followup.py", line 22, in <module>
+    from analysis.experiments.company_worksite_stocks import (
+  File "C:\Users\Lenovo\Desktop\CS5228\CS5228_project_HDB_price_prediction\.integration-work\appendix-experiments-review\output\tabpfn-workspace\analysis\experiments\company_worksite_stocks.py", line 31, in <module>
+    from analysis.experiments.local_spatial_features import address_keys, metric_xy
+  File "C:\Users\Lenovo\Desktop\CS5228\CS5228_project_HDB_price_prediction\.integration-work\appendix-experiments-review\output\tabpfn-workspace\analysis\experiments\local_spatial_features.py", line 11, in <module>
+    from pyproj import Transformer
+ModuleNotFoundError: No module named 'pyproj'
+
+
+======================================================================
+ERROR: test_company_worksite_stocks (unittest.loader._FailedTest.test_company_worksite_stocks)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_company_worksite_stocks
+Traceback (most recent call last):
+  File "D:\miniconda3\envs\cs5228\Lib\unittest\loader.py", line 419, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\miniconda3\envs\cs5228\Lib\unittest\loader.py", line 362, in _get_module_from_name
+    __import__(name)
+  File "C:\Users\Lenovo\Desktop\CS5228\CS5228_project_HDB_price_prediction\.integration-work\appendix-experiments-review\output\tabpfn-workspace\tests\test_company_worksite_stocks.py", line 9, in <module>
+    from analysis.experiments.company_worksite_stocks import (
+  File "C:\Users\Lenovo\Desktop\CS5228\CS5228_project_HDB_price_prediction\.integration-work\appendix-experiments-review\output\tabpfn-workspace\analysis\experiments\company_worksite_stocks.py", line 31, in <module>
+    from analysis.experiments.local_spatial_features import address_keys, metric_xy
+  File "C:\Users\Lenovo\Desktop\CS5228\CS5228_project_HDB_price_prediction\.integration-work\appendix-experiments-review\output\tabpfn-workspace\analysis\experiments\local_spatial_features.py", line 11, in <module>
+    from pyproj import Transformer
+ModuleNotFoundError: No module named 'pyproj'
+
+
+======================================================================
+ERROR: test_diagscale_tabpfn (unittest.loader._FailedTest.test_diagscale_tabpfn)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_diagscale_tabpfn
+Traceback (most recent call last):
+  File "D:\miniconda3\envs\cs5228\Lib\unittest\loader.py", line 419, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\miniconda3\envs\cs5228\Lib\unittest\loader.py", line 362, in _get_module_from_name
+    __import__(name)
+  File "C:\Users\Lenovo\Desktop\CS5228\CS5228_project_HDB_price_prediction\.integration-work\appendix-experiments-review\output\tabpfn-workspace\tests\test_diagscale_tabpfn.py", line 8, in <module>
+    from tabpfn.architectures.tabpfn_v3_5 import SoftmaxScalingMLP
+ModuleNotFoundError: No module named 'tabpfn'
+
+
+======================================================================
+ERROR: test_financial_sector_rent_categories (unittest.loader._FailedTest.test_financial_sector_rent_categories)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_financial_sector_rent_categories
+Traceback (most recent call last):
+  File "D:\miniconda3\envs\cs5228\Lib\unittest\loader.py", line 419, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\miniconda3\envs\cs5228\Lib\unittest\loader.py", line 362, in _get_module_from_name
+    __import__(name)
+  File "C:\Users\Lenovo\Desktop\CS5228\CS5228_project_HDB_price_prediction\.integration-work\appendix-experiments-review\output\tabpfn-workspace\tests\test_financial_sector_rent_categories.py", line 9, in <module>
+    from analysis.experiments.financial_sector_rent_categories import (
+  File "C:\Users\Lenovo\Desktop\CS5228\CS5228_project_HDB_price_prediction\.integration-work\appendix-experiments-review\output\tabpfn-workspace\analysis\experiments\financial_sector_rent_categories.py", line 26, in <module>
+    from analysis.experiments.local_spatial_features import address_keys
+  File "C:\Users\Lenovo\Desktop\CS5228\CS5228_project_HDB_price_prediction\.integration-work\appendix-experiments-review\output\tabpfn-workspace\analysis\experiments\local_spatial_features.py", line 11, in <module>
+    from pyproj import Transformer
+ModuleNotFoundError: No module named 'pyproj'
+
+
+======================================================================
+ERROR: test_financial_sector_rents (unittest.loader._FailedTest.test_financial_sector_rents)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_financial_sector_rents
+Traceback (most recent call last):
+  File "D:\miniconda3\envs\cs5228\Lib\unittest\loader.py", line 419, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\miniconda3\envs\cs5228\Lib\unittest\loader.py", line 362, in _get_module_from_name
+    __import__(name)
+  File "C:\Users\Lenovo\Desktop\CS5228\CS5228_project_HDB_price_prediction\.integration-work\appendix-experiments-review\output\tabpfn-workspace\tests\test_financial_sector_rents.py", line 8, in <module>
+    from analysis.experiments.financial_sector_rents import (
+  File "C:\Users\Lenovo\Desktop\CS5228\CS5228_project_HDB_price_prediction\.integration-work\appendix-experiments-review\output\tabpfn-workspace\analysis\experiments\financial_sector_rents.py", line 21, in <module>
+    from analysis.experiments.stock_index_regions import regional_rent_panel, block_positions
+  File "C:\Users\Lenovo\Desktop\CS5228\CS5228_project_HDB_price_prediction\.integration-work\appendix-experiments-review\output\tabpfn-workspace\analysis\experiments\stock_index_regions.py", line 27, in <module>
+    from analysis.experiments.company_worksite_stocks import (
+  File "C:\Users\Lenovo\Desktop\CS5228\CS5228_project_HDB_price_prediction\.integration-work\appendix-experiments-review\output\tabpfn-workspace\analysis\experiments\company_worksite_stocks.py", line 31, in <module>
+    from analysis.experiments.local_spatial_features import address_keys, metric_xy
+  File "C:\Users\Lenovo\Desktop\CS5228\CS5228_project_HDB_price_prediction\.integration-work\appendix-experiments-review\output\tabpfn-workspace\analysis\experiments\local_spatial_features.py", line 11, in <module>
+    from pyproj import Transformer
+ModuleNotFoundError: No module named 'pyproj'
+
+
+======================================================================
+ERROR: test_local_spatial_experiments (unittest.loader._FailedTest.test_local_spatial_experiments)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_local_spatial_experiments
+Traceback (most recent call last):
+  File "D:\miniconda3\envs\cs5228\Lib\unittest\loader.py", line 419, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\miniconda3\envs\cs5228\Lib\unittest\loader.py", line 362, in _get_module_from_name
+    __import__(name)
+  File "C:\Users\Lenovo\Desktop\CS5228\CS5228_project_HDB_price_prediction\.integration-work\appendix-experiments-review\output\tabpfn-workspace\tests\test_local_spatial_experiments.py", line 4, in <module>
+    from shapely.geometry import Point, box
+ModuleNotFoundError: No module named 'shapely'
+
+
+======================================================================
+ERROR: test_lora_qk_tabpfn (unittest.loader._FailedTest.test_lora_qk_tabpfn)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_lora_qk_tabpfn
+Traceback (most recent call last):
+  File "D:\miniconda3\envs\cs5228\Lib\unittest\loader.py", line 419, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\miniconda3\envs\cs5228\Lib\unittest\loader.py", line 362, in _get_module_from_name
+    __import__(name)
+  File "C:\Users\Lenovo\Desktop\CS5228\CS5228_project_HDB_price_prediction\.integration-work\appendix-experiments-review\output\tabpfn-workspace\tests\test_lora_qk_tabpfn.py", line 8, in <module>
+    from analysis.experiments.lora_qk_tabpfn import LoRALinear, inject_lora_qk
+  File "C:\Users\Lenovo\Desktop\CS5228\CS5228_project_HDB_price_prediction\.integration-work\appendix-experiments-review\output\tabpfn-workspace\analysis\experiments\lora_qk_tabpfn.py", line 10, in <module>
+    from tabpfn import TabPFNRegressor
+ModuleNotFoundError: No module named 'tabpfn'
+
+
+======================================================================
+ERROR: test_reliability_macro_features (unittest.loader._FailedTest.test_reliability_macro_features)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_reliability_macro_features
+Traceback (most recent call last):
+  File "D:\miniconda3\envs\cs5228\Lib\unittest\loader.py", line 419, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\miniconda3\envs\cs5228\Lib\unittest\loader.py", line 362, in _get_module_from_name
+    __import__(name)
+  File "C:\Users\Lenovo\Desktop\CS5228\CS5228_project_HDB_price_prediction\.integration-work\appendix-experiments-review\output\tabpfn-workspace\tests\test_reliability_macro_features.py", line 9, in <module>
+    from tests.test_temporal_sequence_ablation import TemporalSequenceTests
+  File "C:\Users\Lenovo\Desktop\CS5228\CS5228_project_HDB_price_prediction\.integration-work\appendix-experiments-review\output\tabpfn-workspace\tests\test_temporal_sequence_ablation.py", line 8, in <module>
+    from analysis.experiments.temporal_sequence_ablation import (
+  File "C:\Users\Lenovo\Desktop\CS5228\CS5228_project_HDB_price_prediction\.integration-work\appendix-experiments-review\output\tabpfn-workspace\analysis\experiments\temporal_sequence_ablation.py", line 23, in <module>
+    from analysis.experiments.stock_index_regions import construct_indices, regional_rent_panel
+  File "C:\Users\Lenovo\Desktop\CS5228\CS5228_project_HDB_price_prediction\.integration-work\appendix-experiments-review\output\tabpfn-workspace\analysis\experiments\stock_index_regions.py", line 27, in <module>
+    from analysis.experiments.company_worksite_stocks import (
+  File "C:\Users\Lenovo\Desktop\CS5228\CS5228_project_HDB_price_prediction\.integration-work\appendix-experiments-review\output\tabpfn-workspace\analysis\experiments\company_worksite_stocks.py", line 31, in <module>
+    from analysis.experiments.local_spatial_features import address_keys, metric_xy
+  File "C:\Users\Lenovo\Desktop\CS5228\CS5228_project_HDB_price_prediction\.integration-work\appendix-experiments-review\output\tabpfn-workspace\analysis\experiments\local_spatial_features.py", line 11, in <module>
+    from pyproj import Transformer
+ModuleNotFoundError: No module named 'pyproj'
+
+
+======================================================================
+ERROR: test_stock_index_regions (unittest.loader._FailedTest.test_stock_index_regions)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_stock_index_regions
+Traceback (most recent call last):
+  File "D:\miniconda3\envs\cs5228\Lib\unittest\loader.py", line 419, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\miniconda3\envs\cs5228\Lib\unittest\loader.py", line 362, in _get_module_from_name
+    __import__(name)
+  File "C:\Users\Lenovo\Desktop\CS5228\CS5228_project_HDB_price_prediction\.integration-work\appendix-experiments-review\output\tabpfn-workspace\tests\test_stock_index_regions.py", line 8, in <module>
+    from analysis.experiments.stock_index_regions import (
+  File "C:\Users\Lenovo\Desktop\CS5228\CS5228_project_HDB_price_prediction\.integration-work\appendix-experiments-review\output\tabpfn-workspace\analysis\experiments\stock_index_regions.py", line 27, in <module>
+    from analysis.experiments.company_worksite_stocks import (
+  File "C:\Users\Lenovo\Desktop\CS5228\CS5228_project_HDB_price_prediction\.integration-work\appendix-experiments-review\output\tabpfn-workspace\analysis\experiments\company_worksite_stocks.py", line 31, in <module>
+    from analysis.experiments.local_spatial_features import address_keys, metric_xy
+  File "C:\Users\Lenovo\Desktop\CS5228\CS5228_project_HDB_price_prediction\.integration-work\appendix-experiments-review\output\tabpfn-workspace\analysis\experiments\local_spatial_features.py", line 11, in <module>
+    from pyproj import Transformer
+ModuleNotFoundError: No module named 'pyproj'
+
+
+======================================================================
+ERROR: test_tabm_regression (unittest.loader._FailedTest.test_tabm_regression)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_tabm_regression
+Traceback (most recent call last):
+  File "D:\miniconda3\envs\cs5228\Lib\unittest\loader.py", line 419, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\miniconda3\envs\cs5228\Lib\unittest\loader.py", line 362, in _get_module_from_name
+    __import__(name)
+  File "C:\Users\Lenovo\Desktop\CS5228\CS5228_project_HDB_price_prediction\.integration-work\appendix-experiments-review\output\tabpfn-workspace\tests\test_tabm_regression.py", line 10, in <module>
+    from analysis.experiments.tabm_regression import TabMPreprocessor, make_model, member_mse, predict
+  File "C:\Users\Lenovo\Desktop\CS5228\CS5228_project_HDB_price_prediction\.integration-work\appendix-experiments-review\output\tabpfn-workspace\analysis\experiments\tabm_regression.py", line 8, in <module>
+    import tabm
+ModuleNotFoundError: No module named 'tabm'
+
+
+======================================================================
+ERROR: test_tabpfn_abcde_lstm_coe (unittest.loader._FailedTest.test_tabpfn_abcde_lstm_coe)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_tabpfn_abcde_lstm_coe
+Traceback (most recent call last):
+  File "D:\miniconda3\envs\cs5228\Lib\unittest\loader.py", line 419, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\miniconda3\envs\cs5228\Lib\unittest\loader.py", line 362, in _get_module_from_name
+    __import__(name)
+  File "C:\Users\Lenovo\Desktop\CS5228\CS5228_project_HDB_price_prediction\.integration-work\appendix-experiments-review\output\tabpfn-workspace\tests\test_tabpfn_abcde_lstm_coe.py", line 6, in <module>
+    from analysis.compare_tabpfn_abcde_lstm_coe import fit_simplex
+  File "C:\Users\Lenovo\Desktop\CS5228\CS5228_project_HDB_price_prediction\.integration-work\appendix-experiments-review\output\tabpfn-workspace\analysis\compare_tabpfn_abcde_lstm_coe.py", line 13, in <module>
+    from analysis import compare_tabpfn_abcde as previous
+  File "C:\Users\Lenovo\Desktop\CS5228\CS5228_project_HDB_price_prediction\.integration-work\appendix-experiments-review\output\tabpfn-workspace\analysis\compare_tabpfn_abcde.py", line 18, in <module>
+    from analysis.compare_local_economy_landscape import immutable,write_json,hashlib_array
+  File "C:\Users\Lenovo\Desktop\CS5228\CS5228_project_HDB_price_prediction\.integration-work\appendix-experiments-review\output\tabpfn-workspace\analysis\compare_local_economy_landscape.py", line 29, in <module>
+    from analysis.experiments.local_spatial_features import (
+  File "C:\Users\Lenovo\Desktop\CS5228\CS5228_project_HDB_price_prediction\.integration-work\appendix-experiments-review\output\tabpfn-workspace\analysis\experiments\local_spatial_features.py", line 11, in <module>
+    from pyproj import Transformer
+ModuleNotFoundError: No module named 'pyproj'
+
+
+======================================================================
+ERROR: test_tabpfn_component_adaptation (unittest.loader._FailedTest.test_tabpfn_component_adaptation)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_tabpfn_component_adaptation
+Traceback (most recent call last):
+  File "D:\miniconda3\envs\cs5228\Lib\unittest\loader.py", line 419, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\miniconda3\envs\cs5228\Lib\unittest\loader.py", line 362, in _get_module_from_name
+    __import__(name)
+  File "C:\Users\Lenovo\Desktop\CS5228\CS5228_project_HDB_price_prediction\.integration-work\appendix-experiments-review\output\tabpfn-workspace\tests\test_tabpfn_component_adaptation.py", line 9, in <module>
+    from analysis.experiments.tabpfn_component_adaptation import (
+  File "C:\Users\Lenovo\Desktop\CS5228\CS5228_project_HDB_price_prediction\.integration-work\appendix-experiments-review\output\tabpfn-workspace\analysis\experiments\tabpfn_component_adaptation.py", line 13, in <module>
+    from tabpfn import TabPFNRegressor
+ModuleNotFoundError: No module named 'tabpfn'
+
+
+======================================================================
+ERROR: test_tabpfn_context_sampler (unittest.loader._FailedTest.test_tabpfn_context_sampler)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_tabpfn_context_sampler
+Traceback (most recent call last):
+  File "D:\miniconda3\envs\cs5228\Lib\unittest\loader.py", line 419, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\miniconda3\envs\cs5228\Lib\unittest\loader.py", line 362, in _get_module_from_name
+    __import__(name)
+  File "C:\Users\Lenovo\Desktop\CS5228\CS5228_project_HDB_price_prediction\.integration-work\appendix-experiments-review\output\tabpfn-workspace\tests\test_tabpfn_context_sampler.py", line 11, in <module>
+    from analysis.experiments.tabpfn_sampled_finetuning import (
+  File "C:\Users\Lenovo\Desktop\CS5228\CS5228_project_HDB_price_prediction\.integration-work\appendix-experiments-review\output\tabpfn-workspace\analysis\experiments\tabpfn_sampled_finetuning.py", line 18, in <module>
+    from analysis.experiments.diagscale_tabpfn import FinetunedDiagScaleRegressor
+  File "C:\Users\Lenovo\Desktop\CS5228\CS5228_project_HDB_price_prediction\.integration-work\appendix-experiments-review\output\tabpfn-workspace\analysis\experiments\diagscale_tabpfn.py", line 16, in <module>
+    from tabpfn import TabPFNRegressor
+ModuleNotFoundError: No module named 'tabpfn'
+
+
+======================================================================
+ERROR: test_targeted_spatial_economic (unittest.loader._FailedTest.test_targeted_spatial_economic)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_targeted_spatial_economic
+Traceback (most recent call last):
+  File "D:\miniconda3\envs\cs5228\Lib\unittest\loader.py", line 419, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\miniconda3\envs\cs5228\Lib\unittest\loader.py", line 362, in _get_module_from_name
+    __import__(name)
+  File "C:\Users\Lenovo\Desktop\CS5228\CS5228_project_HDB_price_prediction\.integration-work\appendix-experiments-review\output\tabpfn-workspace\tests\test_targeted_spatial_economic.py", line 6, in <module>
+    from analysis.run_targeted_housing_supply import supply_features,numeric_rows
+  File "C:\Users\Lenovo\Desktop\CS5228\CS5228_project_HDB_price_prediction\.integration-work\appendix-experiments-review\output\tabpfn-workspace\analysis\run_targeted_housing_supply.py", line 11, in <module>
+    import fitz
+ModuleNotFoundError: No module named 'fitz'
+
+
+======================================================================
+ERROR: test_temporal_sequence_ablation (unittest.loader._FailedTest.test_temporal_sequence_ablation)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_temporal_sequence_ablation
+Traceback (most recent call last):
+  File "D:\miniconda3\envs\cs5228\Lib\unittest\loader.py", line 419, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\miniconda3\envs\cs5228\Lib\unittest\loader.py", line 362, in _get_module_from_name
+    __import__(name)
+  File "C:\Users\Lenovo\Desktop\CS5228\CS5228_project_HDB_price_prediction\.integration-work\appendix-experiments-review\output\tabpfn-workspace\tests\test_temporal_sequence_ablation.py", line 8, in <module>
+    from analysis.experiments.temporal_sequence_ablation import (
+  File "C:\Users\Lenovo\Desktop\CS5228\CS5228_project_HDB_price_prediction\.integration-work\appendix-experiments-review\output\tabpfn-workspace\analysis\experiments\temporal_sequence_ablation.py", line 23, in <module>
+    from analysis.experiments.stock_index_regions import construct_indices, regional_rent_panel
+  File "C:\Users\Lenovo\Desktop\CS5228\CS5228_project_HDB_price_prediction\.integration-work\appendix-experiments-review\output\tabpfn-workspace\analysis\experiments\stock_index_regions.py", line 27, in <module>
+    from analysis.experiments.company_worksite_stocks import (
+  File "C:\Users\Lenovo\Desktop\CS5228\CS5228_project_HDB_price_prediction\.integration-work\appendix-experiments-review\output\tabpfn-workspace\analysis\experiments\company_worksite_stocks.py", line 31, in <module>
+    from analysis.experiments.local_spatial_features import address_keys, metric_xy
+  File "C:\Users\Lenovo\Desktop\CS5228\CS5228_project_HDB_price_prediction\.integration-work\appendix-experiments-review\output\tabpfn-workspace\analysis\experiments\local_spatial_features.py", line 11, in <module>
+    from pyproj import Transformer
+ModuleNotFoundError: No module named 'pyproj'
+
+
+======================================================================
+ERROR: test_transformer_rent_surface (unittest.loader._FailedTest.test_transformer_rent_surface)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_transformer_rent_surface
+Traceback (most recent call last):
+  File "D:\miniconda3\envs\cs5228\Lib\unittest\loader.py", line 419, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\miniconda3\envs\cs5228\Lib\unittest\loader.py", line 362, in _get_module_from_name
+    __import__(name)
+  File "C:\Users\Lenovo\Desktop\CS5228\CS5228_project_HDB_price_prediction\.integration-work\appendix-experiments-review\output\tabpfn-workspace\tests\test_transformer_rent_surface.py", line 6, in <module>
+    from analysis.plot_transformer_rent_surface import interpolation_matrix, metric_xy
+  File "C:\Users\Lenovo\Desktop\CS5228\CS5228_project_HDB_price_prediction\.integration-work\appendix-experiments-review\output\tabpfn-workspace\analysis\plot_transformer_rent_surface.py", line 27, in <module>
+    import rasterio
+ModuleNotFoundError: No module named 'rasterio'
+
+
+======================================================================
+ERROR: test_worldcover_tree_cover (unittest.loader._FailedTest.test_worldcover_tree_cover)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_worldcover_tree_cover
+Traceback (most recent call last):
+  File "D:\miniconda3\envs\cs5228\Lib\unittest\loader.py", line 419, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\miniconda3\envs\cs5228\Lib\unittest\loader.py", line 362, in _get_module_from_name
+    __import__(name)
+  File "C:\Users\Lenovo\Desktop\CS5228\CS5228_project_HDB_price_prediction\.integration-work\appendix-experiments-review\output\tabpfn-workspace\tests\test_worldcover_tree_cover.py", line 5, in <module>
+    from rasterio.transform import from_origin
+ModuleNotFoundError: No module named 'rasterio'
+
+
+----------------------------------------------------------------------
+Ran 185 tests in 9.772s
+
+FAILED (errors=18)

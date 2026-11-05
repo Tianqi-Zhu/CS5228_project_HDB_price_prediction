@@ -1,0 +1,8 @@
+{
+  "fold": "early_2023",
+  "design": "rent",
+  "seed": 42,
+  "epochs": null,
+  "phase": "calibration",
+  "device": "cuda"
+}

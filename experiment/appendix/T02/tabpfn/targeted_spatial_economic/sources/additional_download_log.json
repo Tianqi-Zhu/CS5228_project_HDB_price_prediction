@@ -1,0 +1,14 @@
+[
+  {
+    "key": "hdb2019",
+    "url": "https://links.sgx.com/FileOpen/HDB_v19_keystatistic_20191024.ashx?AnncID=IWPHODMKZ4RZEZAF&App=ArchiveAnnouncement&FileID=583813",
+    "status": 200,
+    "bytes": 2278457
+  },
+  {
+    "key": "hdb2023_new",
+    "url": "https://www.hdb.gov.sg/-/media/hdb-pulse/reports/annual-reports-and-financial-statements/HDB-Key-Statistics-FY22.pdf",
+    "status": 200,
+    "bytes": 971939
+  }
+]

@@ -1,0 +1,2636 @@
+{
+  "tabpfn_installed": true,
+  "execution_workspace": "C:\\Users\\Lenovo\\Desktop\\CS5228\\CS5228_project_HDB_price_prediction\\.integration-work\\appendix-experiments-review\\output\\tabpfn-workspace",
+  "local_checkpoint_present": false,
+  "legacy_resource_issues": [
+    {
+      "settings": "reports/economic_conditional_mean/settings.json",
+      "path": "analysis/run_economic_conditional_mean.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "a41094c9e778c5cbb4b426a2cf35a48820abe9fa2cf3545390422a6c6ae44457"
+    },
+    {
+      "settings": "reports/economic_conditional_mean/settings.json",
+      "path": "analysis/experiments/economic_conditional_mean.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "2c3b2a661fb282efdb57ab5cc2f6eca1b5fd238e834944260b2f6c8d5aaa8514"
+    },
+    {
+      "settings": "reports/economic_conditional_mean/settings.json",
+      "path": "analysis/experiments/spatial_temporal_transformer.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "1f15e0e50fef5709ff6f1587da70f91ad20ff72c01f9ed16be4bd0e969677656"
+    },
+    {
+      "settings": "reports/economic_conditional_mean/settings.json",
+      "path": ".cache/spatial_temporal_transformer/prepared.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/economic_conditional_mean/settings.json",
+      "path": "EXPERIMENT_PLAN_ECONOMIC_CONDITIONAL_MEAN.md",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "e42fe4ffc8e8f6a7f02784217b34922b33030b8c8ee05b8d8a6752c2cf0bc73f"
+    },
+    {
+      "settings": "reports/economic_conditional_mean/settings.json",
+      "path": "reports/tabpfn_top2_final_submission/submission_tabpfn_ABCDE_equal_150k.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/economic_conditional_mean/settings.json",
+      "path": "reports/tabpfn_top2_final_submission/submission_tabpfn_ABDE_weighted_150k.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/economic_conditional_mean/settings.json",
+      "path": "reports/tabpfn_api_77/submission_v3.5_plus_77_150k/submission_tabpfn_api.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_abcde_ensemble/settings.json",
+      "path": "reports/tabpfn_components_80_20/outer/diag_mse_only/predictions.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_abcde_ensemble/settings.json",
+      "path": ".cache/tabpfn_spatial_temporal_residual_80_20/adapter_2022-09.pt",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_abcde_ensemble/settings.json",
+      "path": "reports/tabpfn_feature_ensemble_final_submission/submission_tabpfn_optimized_ensemble_150k.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_abcde_ensemble/settings.json",
+      "path": "reports/tabpfn_diagscale_mse_final_submission/submission_tabpfn_diagscale_mse_150k.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_abcde_ensemble/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2022-09_baseline.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_abcde_ensemble/settings.json",
+      "path": "reports/tabpfn_temporal_view_ensembles_80_20/predictions_2022-09_relative_history.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_abcde_ensemble/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2022-09_temporal.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_abcde_ensemble/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2022-09_spatial.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_abcde_ensemble/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2023-07_baseline.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_abcde_ensemble/settings.json",
+      "path": "reports/tabpfn_temporal_view_ensembles_80_20/predictions_2023-07_relative_history.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_abcde_ensemble/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2023-07_temporal.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_abcde_ensemble/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2023-07_spatial.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_abcde_ensemble/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2024-06_baseline.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_abcde_ensemble/settings.json",
+      "path": "reports/tabpfn_temporal_view_ensembles_80_20/predictions_2024-06_relative_history.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_abcde_ensemble/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2024-06_temporal.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_abcde_ensemble/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2024-06_spatial.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_abcde_ensemble/settings.json",
+      "path": "analysis/compare_tabpfn_abcde.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "4c1548c072355977d9d3b470371286e36dc123b300bf6b37b76282efad81f712"
+    },
+    {
+      "settings": "reports/tabpfn_abcde_ensemble/settings.json",
+      "path": "analysis/experiments/temporal_feature_views.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "f344680909fdca87be9da3214474f08f08c047eedbb89143e2fe9912b83efa99"
+    },
+    {
+      "settings": "reports/tabpfn_abcde_ensemble/settings.json",
+      "path": "analysis/compare_tabpfn_spatial_temporal_residual.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "2a9c9208e71a768067d745de18d03a517c6dec89d9bbf49b2e1fb0e78336dee5"
+    },
+    {
+      "settings": "reports/tabpfn_abcde_ensemble/settings.json",
+      "path": "analysis/compare_tabpfn_components_80_20.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "e8a851c3a8c87dc37ab3a237c6bb4ae439f46867a9a7864eb5460b93000790aa"
+    },
+    {
+      "settings": "reports/tabpfn_abcde_ensemble/settings.json",
+      "path": "analysis/experiments/tabpfn_component_adaptation.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "285d7d44da0529a0f410a30577f21d14c4b2697df7dc1cf5239974175df2628e"
+    },
+    {
+      "settings": "reports/tabpfn_abcde_lstm_coe_ensemble/settings.json",
+      "path": "reports/tabpfn_abcde_ensemble/predictions_all_origins.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_abcde_lstm_coe_ensemble/settings.json",
+      "path": "reports/tabpfn_abcde_ensemble/oof_predictions_2022-09.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_abcde_lstm_coe_ensemble/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2022-09_baseline.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_abcde_lstm_coe_ensemble/settings.json",
+      "path": "reports/tabpfn_temporal_view_ensembles_80_20/predictions_2022-09_relative_history.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_abcde_lstm_coe_ensemble/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2022-09_temporal.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_abcde_lstm_coe_ensemble/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2022-09_spatial.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_abcde_lstm_coe_ensemble/settings.json",
+      "path": "reports/tabpfn_reliability_macro_80_20/predictions_2022-09_coe_increment.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_abcde_lstm_coe_ensemble/settings.json",
+      "path": "reports/tabpfn_abcde_ensemble/oof_predictions_2023-07.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_abcde_lstm_coe_ensemble/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2023-07_baseline.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_abcde_lstm_coe_ensemble/settings.json",
+      "path": "reports/tabpfn_temporal_view_ensembles_80_20/predictions_2023-07_relative_history.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_abcde_lstm_coe_ensemble/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2023-07_temporal.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_abcde_lstm_coe_ensemble/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2023-07_spatial.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_abcde_lstm_coe_ensemble/settings.json",
+      "path": "reports/tabpfn_reliability_macro_80_20/predictions_2023-07_coe_increment.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_abcde_lstm_coe_ensemble/settings.json",
+      "path": "reports/tabpfn_components_80_20/outer/diag_mse_only/predictions.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_abcde_lstm_coe_ensemble/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2024-06_baseline.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_abcde_lstm_coe_ensemble/settings.json",
+      "path": "reports/tabpfn_temporal_view_ensembles_80_20/predictions_2024-06_relative_history.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_abcde_lstm_coe_ensemble/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2024-06_temporal.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_abcde_lstm_coe_ensemble/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2024-06_spatial.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_abcde_lstm_coe_ensemble/settings.json",
+      "path": "reports/tabpfn_reliability_macro_80_20/predictions_2024-06_coe_increment.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_abcde_lstm_coe_ensemble/settings.json",
+      "path": "reports/tabpfn_top2_final_submission/submission_tabpfn_ABCDE_equal_150k.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_abcde_lstm_coe_ensemble/settings.json",
+      "path": "reports/tabpfn_top2_final_submission/submission_tabpfn_ABDE_weighted_150k.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_abcde_lstm_coe_ensemble/settings.json",
+      "path": "reports/tabpfn_api_77/submission_v3.5_plus_77_150k/submission_tabpfn_api.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_adaptation/settings.json",
+      "path": "analysis/experiments/tabpfn_adaptation.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "40b71db66f40abaa2453c8fa8e45d85e3dc860c116e32eec7b9e0f46291d31a4"
+    },
+    {
+      "settings": "reports/tabpfn_adaptation/settings.json",
+      "path": "analysis/experiments/tabpfn_adaptation_features.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "7138a0c0a5465d7027a0b90030f5ffbadcad8b71836c08ceb907d31db61022a9"
+    },
+    {
+      "settings": "reports/tabpfn_adaptation/settings.json",
+      "path": "analysis/experiments/tabpfn_residual_heads.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "798925db6b1f8902d1c42eb2ee5ef48439a7f1fe354f4feeff801f67c0aec841"
+    },
+    {
+      "settings": "reports/tabpfn_adaptation/settings.json",
+      "path": "analysis/experiments/recent_history.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "98348baf4e8816397c766f660e4fce5ba6ffb449bd674adc7ea645aaf035db0f"
+    },
+    {
+      "settings": "reports/tabpfn_adaptation/attempt_numpy_metadata/settings.json",
+      "path": "analysis/experiments/tabpfn_adaptation.py",
+      "issue": "recorded bytes differ beyond newline conversion",
+      "expected_sha256": "9887e7bcf3c0d5d2cc7a84ed7d2e35b1018c8eb69f89a75f28b6ff96530df696"
+    },
+    {
+      "settings": "reports/tabpfn_adaptation/attempt_numpy_metadata/settings.json",
+      "path": "analysis/experiments/tabpfn_adaptation_features.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "7138a0c0a5465d7027a0b90030f5ffbadcad8b71836c08ceb907d31db61022a9"
+    },
+    {
+      "settings": "reports/tabpfn_adaptation/attempt_numpy_metadata/settings.json",
+      "path": "analysis/experiments/tabpfn_residual_heads.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "798925db6b1f8902d1c42eb2ee5ef48439a7f1fe354f4feeff801f67c0aec841"
+    },
+    {
+      "settings": "reports/tabpfn_adaptation/attempt_numpy_metadata/settings.json",
+      "path": "analysis/experiments/recent_history.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "98348baf4e8816397c766f660e4fce5ba6ffb449bd674adc7ea645aaf035db0f"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/settings.json",
+      "path": "schools_2020_central.html",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/settings.json",
+      "path": "schools_2021_central.html",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/settings.json",
+      "path": "schools_2022_central.html",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/settings.json",
+      "path": "schools_2023_central.html",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/settings.json",
+      "path": "fct_2019.pdf",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/settings.json",
+      "path": "fct_2020.pdf",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/settings.json",
+      "path": "fct_2021.pdf",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/settings.json",
+      "path": "fct_2022.pdf",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/settings.json",
+      "path": "fct_2023.pdf",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/settings.json",
+      "path": "cict_2020_index.html",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/settings.json",
+      "path": "cict_2021_index.html",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/settings.json",
+      "path": "cict_2022_index.html",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/settings.json",
+      "path": "cict_2023_index.html",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/settings.json",
+      "path": "bus_commit_2020.json",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/settings.json",
+      "path": "bus_commit_2021.json",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/settings.json",
+      "path": "bus_2021_stops.json",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/settings.json",
+      "path": "bus_2021_services.json",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/settings.json",
+      "path": "bus_commit_2022.json",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/settings.json",
+      "path": "bus_2022_stops.json",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/settings.json",
+      "path": "bus_2022_services.json",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/settings.json",
+      "path": "bus_commit_2023.json",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/settings.json",
+      "path": "bus_2023_stops.json",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/settings.json",
+      "path": "bus_2023_services.json",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/settings.json",
+      "path": "schools_2020_all.html",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/settings.json",
+      "path": "schools_2021_all.html",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/settings.json",
+      "path": "schools_2022_all.html",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/settings.json",
+      "path": "schools_2023_all.html",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/settings.json",
+      "path": "cict_reports.html",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/settings.json",
+      "path": "cict_2023.pdf",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/settings.json",
+      "path": "cict_2022.pdf",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/settings.json",
+      "path": "cict_2021.pdf",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/settings.json",
+      "path": "cict_2020.pdf",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/settings.json",
+      "path": "fct_reports.html",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/settings.json",
+      "path": "bus_commit_2020_legacy.json",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/settings.json",
+      "path": "train_kaggle_metadata.json",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/settings.json",
+      "path": "cict_2019.pdf",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/settings.json",
+      "path": "train_2023_archive.zip",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/settings.json",
+      "path": "bus_first_commit.json",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/settings.json",
+      "path": "bus_first_stops.json",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/settings.json",
+      "path": "bus_first_services.json",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/settings.json",
+      "path": "jurong_point_2022.html",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/settings.json",
+      "path": "analysis/compare_amenity_quality.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "429a6ed4de8c20a709a1c9a4c0dd1fecebc1806b9efabdadffa367e953ce74ca"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/settings.json",
+      "path": "analysis/configs/amenity_quality.json",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "20ce4d730b8b14e097e091f999076f9ce933ec014a0afbd74dd5960d88f9bd93"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/settings.json",
+      "path": "analysis/experiments/amenity_quality_features.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "1f001def84799883d2186d11022115455f73f165779d0d6c1238214003be9ae2"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/settings.json",
+      "path": "analysis/experiments/amenity_quality_sources.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "26783c7e5207376d98a176bd61d6a6ef1280e7df0094376cf74f9499eb93b33a"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/settings.json",
+      "path": "analysis/compare_local_economy_landscape.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "192eaf9a05c1ebf672fa1c38aaa23797a2ccd0300ba83d495a872c4b6f726b47"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/preparation_pilot/settings.json",
+      "path": "schools_2020_central.html",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/preparation_pilot/settings.json",
+      "path": "schools_2021_central.html",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/preparation_pilot/settings.json",
+      "path": "schools_2022_central.html",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/preparation_pilot/settings.json",
+      "path": "schools_2023_central.html",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/preparation_pilot/settings.json",
+      "path": "fct_2019.pdf",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/preparation_pilot/settings.json",
+      "path": "fct_2020.pdf",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/preparation_pilot/settings.json",
+      "path": "fct_2021.pdf",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/preparation_pilot/settings.json",
+      "path": "fct_2022.pdf",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/preparation_pilot/settings.json",
+      "path": "fct_2023.pdf",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/preparation_pilot/settings.json",
+      "path": "cict_2020_index.html",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/preparation_pilot/settings.json",
+      "path": "cict_2021_index.html",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/preparation_pilot/settings.json",
+      "path": "cict_2022_index.html",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/preparation_pilot/settings.json",
+      "path": "cict_2023_index.html",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/preparation_pilot/settings.json",
+      "path": "bus_commit_2020.json",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/preparation_pilot/settings.json",
+      "path": "bus_commit_2021.json",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/preparation_pilot/settings.json",
+      "path": "bus_2021_stops.json",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/preparation_pilot/settings.json",
+      "path": "bus_2021_services.json",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/preparation_pilot/settings.json",
+      "path": "bus_commit_2022.json",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/preparation_pilot/settings.json",
+      "path": "bus_2022_stops.json",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/preparation_pilot/settings.json",
+      "path": "bus_2022_services.json",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/preparation_pilot/settings.json",
+      "path": "bus_commit_2023.json",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/preparation_pilot/settings.json",
+      "path": "bus_2023_stops.json",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/preparation_pilot/settings.json",
+      "path": "bus_2023_services.json",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/preparation_pilot/settings.json",
+      "path": "schools_2020_all.html",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/preparation_pilot/settings.json",
+      "path": "schools_2021_all.html",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/preparation_pilot/settings.json",
+      "path": "schools_2022_all.html",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/preparation_pilot/settings.json",
+      "path": "schools_2023_all.html",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/preparation_pilot/settings.json",
+      "path": "cict_reports.html",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/preparation_pilot/settings.json",
+      "path": "cict_2023.pdf",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/preparation_pilot/settings.json",
+      "path": "cict_2022.pdf",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/preparation_pilot/settings.json",
+      "path": "cict_2021.pdf",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/preparation_pilot/settings.json",
+      "path": "cict_2020.pdf",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/preparation_pilot/settings.json",
+      "path": "fct_reports.html",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/preparation_pilot/settings.json",
+      "path": "bus_commit_2020_legacy.json",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/preparation_pilot/settings.json",
+      "path": "train_kaggle_metadata.json",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/preparation_pilot/settings.json",
+      "path": "cict_2019.pdf",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/preparation_pilot/settings.json",
+      "path": "train_2023_archive.zip",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/preparation_pilot/settings.json",
+      "path": "bus_first_commit.json",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/preparation_pilot/settings.json",
+      "path": "bus_first_stops.json",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/preparation_pilot/settings.json",
+      "path": "bus_first_services.json",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/preparation_pilot/settings.json",
+      "path": "jurong_point_2022.html",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/preparation_pilot/settings.json",
+      "path": "analysis/compare_amenity_quality.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "429a6ed4de8c20a709a1c9a4c0dd1fecebc1806b9efabdadffa367e953ce74ca"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/preparation_pilot/settings.json",
+      "path": "analysis/configs/amenity_quality.json",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "20ce4d730b8b14e097e091f999076f9ce933ec014a0afbd74dd5960d88f9bd93"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/preparation_pilot/settings.json",
+      "path": "analysis/experiments/amenity_quality_features.py",
+      "issue": "recorded bytes differ beyond newline conversion",
+      "expected_sha256": "b7ff94a95615795a2432ea4db17b80f1a9204690e7fbf54e39b6f627f75ff370"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/preparation_pilot/settings.json",
+      "path": "analysis/experiments/amenity_quality_sources.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "26783c7e5207376d98a176bd61d6a6ef1280e7df0094376cf74f9499eb93b33a"
+    },
+    {
+      "settings": "reports/tabpfn_amenity_quality_80_20/preparation_pilot/settings.json",
+      "path": "analysis/compare_local_economy_landscape.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "192eaf9a05c1ebf672fa1c38aaa23797a2ccd0300ba83d495a872c4b6f726b47"
+    },
+    {
+      "settings": "reports/tabpfn_by_flat_type_77_80_20/settings.json",
+      "path": "analysis/compare_tabpfn_by_flat_type.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "0b9584f1db454d016330ae37d323057df4cf0f8d9dc33553a1ac60adf0b9ea35"
+    },
+    {
+      "settings": "reports/tabpfn_by_flat_type_77_80_20/settings.json",
+      "path": "analysis/experiments/flat_type_inference.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "1713e21b3445854cce84183c4d5378d30e840de69ea0f54bacc48ceac8656aa5"
+    },
+    {
+      "settings": "reports/tabpfn_by_flat_type_77_80_20/settings.json",
+      "path": "analysis/compare_local_economy_landscape.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "192eaf9a05c1ebf672fa1c38aaa23797a2ccd0300ba83d495a872c4b6f726b47"
+    },
+    {
+      "settings": "reports/tabpfn_catboost_ensemble_80_20/settings.json",
+      "path": "analysis/compare_tabpfn_catboost_ensemble.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "a8f7b60b59934fe993484ead59f6c3761755aa2dc96c1cdb9e83452492d3a371"
+    },
+    {
+      "settings": "reports/tabpfn_catboost_ensemble_80_20/settings.json",
+      "path": "analysis/experiments/prediction_blending.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "f64bc79b89b4937f4f26e10362481051e39860f3f3170adaaac699b04e5940f6"
+    },
+    {
+      "settings": "reports/tabpfn_catboost_ensemble_80_20/settings.json",
+      "path": "analysis/experiments/dynamic_market_index.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "9b26c1ebcfaf1f13905f37fb4e0c1d55ae73995d1d42069bc1df1ed3e04e34f4"
+    },
+    {
+      "settings": "reports/tabpfn_catboost_ensemble_80_20/settings.json",
+      "path": "analysis/compare_tabpfn_calendar_80_20.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "e88eb31412feea17db8d5987ad30983e214d4fbfbc96a9708cccf8e7c5a4a052"
+    },
+    {
+      "settings": "reports/tabpfn_deduplicated_77_80_20/settings.json",
+      "path": ".cache/tabpfn_v3_features/calendar_80_20_categorical.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_deduplicated_77_80_20/settings.json",
+      "path": "reports/tabpfn_v3_5_fast_calendar_80_20/predictions_outer_categorical.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_deduplicated_77_80_20/settings.json",
+      "path": ".cache/tabpfn/tabpfn-v3.5-fast-20260909.safetensors",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_deduplicated_77_80_20/settings.json",
+      "path": "reports/tabpfn_diagscale_mse_final_submission/submission_tabpfn_diagscale_mse_150k.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_deduplicated_77_80_20/settings.json",
+      "path": ".cache/tabpfn_diagscale_mse_final_submission/adapter.pt",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_deduplicated_77_80_20/settings.json",
+      "path": "analysis/compare_tabpfn_deduplicated_77_80_20.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "4e527a6a593fdcc4bb6de777b678ab5bd67964a0186e60734452d9814a5d48f1"
+    },
+    {
+      "settings": "reports/tabpfn_deduplicated_77_80_20/settings.json",
+      "path": "analysis/experiments/canonical_rental_dedup.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "f832f53a1fbf3102abe353cbf36410b36d6699593c9b5419ce613f1eb1a6b6c2"
+    },
+    {
+      "settings": "reports/tabpfn_deduplicated_77_80_20/settings.json",
+      "path": "analysis/experiments/aligned_temporal_features.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "1f0b886ca3398dd7c681b0dc8c7b73092652323f148ad6bc40aa13ea1e20ba74"
+    },
+    {
+      "settings": "reports/tabpfn_deduplicated_77_80_20/settings.json",
+      "path": "analysis/experiments/recent_history.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "98348baf4e8816397c766f660e4fce5ba6ffb449bd674adc7ea645aaf035db0f"
+    },
+    {
+      "settings": "reports/tabpfn_deduplicated_77_80_20/settings.json",
+      "path": "analysis/experiments/tabpfn_adaptation_features.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "7138a0c0a5465d7027a0b90030f5ffbadcad8b71836c08ceb907d31db61022a9"
+    },
+    {
+      "settings": "reports/tabpfn_deduplicated_77_80_20/settings.json",
+      "path": "analysis/compare_local_economy_landscape.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "192eaf9a05c1ebf672fa1c38aaa23797a2ccd0300ba83d495a872c4b6f726b47"
+    },
+    {
+      "settings": "reports/tabpfn_diagscale_80_20/settings.json",
+      "path": "analysis/compare_tabpfn_diagscale_80_20.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "257ceb29869345456658296a98b42186f3933c9fb15e3c16fd761f4a4c92ab07"
+    },
+    {
+      "settings": "reports/tabpfn_diagscale_80_20/settings.json",
+      "path": "analysis/experiments/diagscale_tabpfn.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "bf5c4b41028ab3911636f29a236025d5b1e6b58685e8eca55b8975faef374221"
+    },
+    {
+      "settings": "reports/tabpfn_diagscale_80_20/settings.json",
+      "path": "analysis/experiments/aligned_temporal_features.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "1f0b886ca3398dd7c681b0dc8c7b73092652323f148ad6bc40aa13ea1e20ba74"
+    },
+    {
+      "settings": "reports/tabpfn_diagscale_80_20/settings.json",
+      "path": "analysis/experiments/calendar_encoding.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "3cdf03e2f6772d7530231caf5d56bbc668d13aa9307d9c0346308940c5fd2f20"
+    },
+    {
+      "settings": "reports/tabpfn_diagscale_mse_final_submission/settings.json",
+      "path": ".cache/tabpfn_fast_final_submission/features.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_diagscale_mse_final_submission/settings.json",
+      "path": ".cache/tabpfn/tabpfn-v3.5-fast-20260909.safetensors",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_diagscale_mse_final_submission/settings.json",
+      "path": ".cache/tabpfn_components_80_20/candidates/diag_mse_only/adapter.pt",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_diagscale_mse_final_submission/settings.json",
+      "path": "reports/tabpfn_components_80_20/outer/diag_mse_only/predictions.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_diagscale_mse_final_submission/settings.json",
+      "path": "analysis/train_tabpfn_diagscale_mse_submission.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "6c7469156c86db8f55f9769480bc302ab9ef7b009be0dd2d6ff8a9f8e01fbf86"
+    },
+    {
+      "settings": "reports/tabpfn_diagscale_mse_final_submission/settings.json",
+      "path": "analysis/experiments/tabpfn_component_adaptation.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "285d7d44da0529a0f410a30577f21d14c4b2697df7dc1cf5239974175df2628e"
+    },
+    {
+      "settings": "reports/tabpfn_diagscale_mse_final_submission/settings.json",
+      "path": "analysis/compare_tabpfn_components_80_20.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "e8a851c3a8c87dc37ab3a237c6bb4ae439f46867a9a7864eb5460b93000790aa"
+    },
+    {
+      "settings": "reports/tabpfn_diagscale_mse_final_submission/settings.json",
+      "path": "analysis/check_diagscale_categorical_alignment_80_20.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "f49c667ea3ded46bc0d005c06481ae4379f8fe629c64f6d5046dce1d5ba16a00"
+    },
+    {
+      "settings": "reports/tabpfn_fast_embedding_head_80_20/settings.json",
+      "path": "analysis/compare_tabpfn_fast_embedding_head_80_20.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "0f309e549fd9fb97831c1976c99314bcb40cd99adbfffbc3cd78d64ac821ef5d"
+    },
+    {
+      "settings": "reports/tabpfn_fast_embedding_head_80_20/settings.json",
+      "path": "analysis/experiments/tabpfn_embedding_head.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "0f597819c710bd1de5d75906fbe56c05d91c14293b811122af49041dab73ede7"
+    },
+    {
+      "settings": "reports/tabpfn_fast_embedding_head_80_20/settings.json",
+      "path": "analysis/experiments/aligned_temporal_features.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "1f0b886ca3398dd7c681b0dc8c7b73092652323f148ad6bc40aa13ea1e20ba74"
+    },
+    {
+      "settings": "reports/tabpfn_fast_embedding_head_80_20/settings.json",
+      "path": "analysis/experiments/calendar_encoding.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "3cdf03e2f6772d7530231caf5d56bbc668d13aa9307d9c0346308940c5fd2f20"
+    },
+    {
+      "settings": "reports/tabpfn_fast_final_submission/settings.json",
+      "path": "analysis/train_tabpfn_fast_submission.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "ca5a353490b4b39a2800d3afc5bd1702eae3395312eddbc6b5a891b8ff64baec"
+    },
+    {
+      "settings": "reports/tabpfn_fast_final_submission/settings.json",
+      "path": "analysis/experiments/aligned_temporal_features.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "1f0b886ca3398dd7c681b0dc8c7b73092652323f148ad6bc40aa13ea1e20ba74"
+    },
+    {
+      "settings": "reports/tabpfn_fast_final_submission/settings.json",
+      "path": "analysis/experiments/tabpfn_adaptation_features.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "7138a0c0a5465d7027a0b90030f5ffbadcad8b71836c08ceb907d31db61022a9"
+    },
+    {
+      "settings": "reports/tabpfn_fast_final_submission/settings.json",
+      "path": "analysis/experiments/recent_history.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "98348baf4e8816397c766f660e4fce5ba6ffb449bd674adc7ea645aaf035db0f"
+    },
+    {
+      "settings": "reports/tabpfn_fast_final_submission/settings.json",
+      "path": "analysis/experiments/calendar_encoding.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "3cdf03e2f6772d7530231caf5d56bbc668d13aa9307d9c0346308940c5fd2f20"
+    },
+    {
+      "settings": "reports/tabpfn_feature_diversified_ensemble_80_20/settings.json",
+      "path": ".cache/tabpfn_local_economy_landscape_80_20/prepared.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_feature_diversified_ensemble_80_20/settings.json",
+      "path": "analysis/configs/local_economy_landscape.json",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "1a163c8164abe66a691bf96a7d307b129b3f2e306ba763b668916297058f6ab2"
+    },
+    {
+      "settings": "reports/tabpfn_feature_diversified_ensemble_80_20/settings.json",
+      "path": ".cache/tabpfn/tabpfn-v3.5-fast-20260909.safetensors",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_feature_diversified_ensemble_80_20/settings.json",
+      "path": "reports/tabpfn_hierarchical_latent_80_20/baseline_predictions.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_feature_diversified_ensemble_80_20/settings.json",
+      "path": "reports/tabpfn_diagscale_mse_final_submission/submission_tabpfn_diagscale_mse_150k.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_feature_diversified_ensemble_80_20/settings.json",
+      "path": "reports/tabpfn_hierarchical_latent_80_20/historical_predictions_2022-09.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_feature_diversified_ensemble_80_20/settings.json",
+      "path": "reports/tabpfn_hierarchical_latent_80_20/historical_predictions_2023-07.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_feature_diversified_ensemble_80_20/settings.json",
+      "path": ".cache/tabpfn_v3_features/calendar_80_20_categorical.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_feature_diversified_ensemble_80_20/settings.json",
+      "path": ".cache/tabpfn_diagscale_80_20/inner_features.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_feature_diversified_ensemble_80_20/settings.json",
+      "path": ".cache/tabpfn_fast_embedding_head/features_2022-05.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_feature_diversified_ensemble_80_20/settings.json",
+      "path": ".cache/tabpfn_fast_embedding_head/features_2022-09.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_feature_diversified_ensemble_80_20/settings.json",
+      "path": ".cache/tabpfn_fast_embedding_head/features_2023-01.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_feature_diversified_ensemble_80_20/settings.json",
+      "path": ".cache/tabpfn_fast_embedding_head/features_2023-05.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_feature_diversified_ensemble_80_20/settings.json",
+      "path": ".cache/tabpfn_v3_features/calendar_inner_2023-07.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_feature_diversified_ensemble_80_20/settings.json",
+      "path": ".cache/tabpfn_fast_embedding_head/features_2023-08.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_feature_diversified_ensemble_80_20/settings.json",
+      "path": ".cache/tabpfn_fast_embedding_head/features_2024-02.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_feature_diversified_ensemble_80_20/settings.json",
+      "path": "analysis/compare_tabpfn_feature_ensemble.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "835d540a9382c60190566feec70f4f6f911d036767bd4cee50f1bac0cb7e58af"
+    },
+    {
+      "settings": "reports/tabpfn_feature_diversified_ensemble_80_20/settings.json",
+      "path": "analysis/experiments/feature_diversified_ensemble.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "39457d27f1441dc9e55c96706c6fa764e679792fcb0d010a294def612b0cb812"
+    },
+    {
+      "settings": "reports/tabpfn_feature_diversified_ensemble_80_20/settings.json",
+      "path": "analysis/experiments/calendar_encoding.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "3cdf03e2f6772d7530231caf5d56bbc668d13aa9307d9c0346308940c5fd2f20"
+    },
+    {
+      "settings": "reports/tabpfn_feature_diversified_ensemble_80_20/settings.json",
+      "path": "analysis/experiments/local_market_fields.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "004c5ccf498f38c5f7447ad0ed648c3e15e0e3cf3ab8cdc991a0acda4eb2da4f"
+    },
+    {
+      "settings": "reports/tabpfn_feature_diversified_ensemble_80_20/settings.json",
+      "path": "analysis/compare_tabpfn_hierarchical_latent.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "9a347137236cfaa42b1d3e0b026e03a68ca4cc17fbecac00d1edb526b40e6fea"
+    },
+    {
+      "settings": "reports/tabpfn_feature_diversified_ensemble_80_20/settings.json",
+      "path": "analysis/experiments/local_spatial_features.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "40b338b36fb44069f53948ddde085edd0dc02978b013d938a39a8b525b9b2408"
+    },
+    {
+      "settings": "reports/tabpfn_feature_diversified_ensemble_80_20/batching_reconciliation/settings.json",
+      "path": ".cache/tabpfn_local_economy_landscape_80_20/prepared.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_feature_diversified_ensemble_80_20/batching_reconciliation/settings.json",
+      "path": "analysis/configs/local_economy_landscape.json",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "1a163c8164abe66a691bf96a7d307b129b3f2e306ba763b668916297058f6ab2"
+    },
+    {
+      "settings": "reports/tabpfn_feature_diversified_ensemble_80_20/batching_reconciliation/settings.json",
+      "path": ".cache/tabpfn/tabpfn-v3.5-fast-20260909.safetensors",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_feature_diversified_ensemble_80_20/batching_reconciliation/settings.json",
+      "path": "reports/tabpfn_hierarchical_latent_80_20/baseline_predictions.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_feature_diversified_ensemble_80_20/batching_reconciliation/settings.json",
+      "path": "reports/tabpfn_diagscale_mse_final_submission/submission_tabpfn_diagscale_mse_150k.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_feature_diversified_ensemble_80_20/batching_reconciliation/settings.json",
+      "path": "reports/tabpfn_hierarchical_latent_80_20/historical_predictions_2022-09.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_feature_diversified_ensemble_80_20/batching_reconciliation/settings.json",
+      "path": "reports/tabpfn_hierarchical_latent_80_20/historical_predictions_2023-07.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_feature_diversified_ensemble_80_20/batching_reconciliation/settings.json",
+      "path": ".cache/tabpfn_v3_features/calendar_80_20_categorical.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_feature_diversified_ensemble_80_20/batching_reconciliation/settings.json",
+      "path": ".cache/tabpfn_diagscale_80_20/inner_features.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_feature_diversified_ensemble_80_20/batching_reconciliation/settings.json",
+      "path": ".cache/tabpfn_fast_embedding_head/features_2022-05.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_feature_diversified_ensemble_80_20/batching_reconciliation/settings.json",
+      "path": ".cache/tabpfn_fast_embedding_head/features_2022-09.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_feature_diversified_ensemble_80_20/batching_reconciliation/settings.json",
+      "path": ".cache/tabpfn_fast_embedding_head/features_2023-01.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_feature_diversified_ensemble_80_20/batching_reconciliation/settings.json",
+      "path": ".cache/tabpfn_fast_embedding_head/features_2023-05.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_feature_diversified_ensemble_80_20/batching_reconciliation/settings.json",
+      "path": ".cache/tabpfn_v3_features/calendar_inner_2023-07.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_feature_diversified_ensemble_80_20/batching_reconciliation/settings.json",
+      "path": ".cache/tabpfn_fast_embedding_head/features_2023-08.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_feature_diversified_ensemble_80_20/batching_reconciliation/settings.json",
+      "path": ".cache/tabpfn_fast_embedding_head/features_2024-02.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_feature_diversified_ensemble_80_20/batching_reconciliation/settings.json",
+      "path": "analysis/compare_tabpfn_feature_ensemble.py",
+      "issue": "recorded bytes differ beyond newline conversion",
+      "expected_sha256": "da2624d6b9105ccd45b5a1cd65f5c00fd23022f613c798d308f77c7516bb79b6"
+    },
+    {
+      "settings": "reports/tabpfn_feature_diversified_ensemble_80_20/batching_reconciliation/settings.json",
+      "path": "analysis/experiments/feature_diversified_ensemble.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "39457d27f1441dc9e55c96706c6fa764e679792fcb0d010a294def612b0cb812"
+    },
+    {
+      "settings": "reports/tabpfn_feature_diversified_ensemble_80_20/batching_reconciliation/settings.json",
+      "path": "analysis/experiments/calendar_encoding.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "3cdf03e2f6772d7530231caf5d56bbc668d13aa9307d9c0346308940c5fd2f20"
+    },
+    {
+      "settings": "reports/tabpfn_feature_diversified_ensemble_80_20/batching_reconciliation/settings.json",
+      "path": "analysis/experiments/local_market_fields.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "004c5ccf498f38c5f7447ad0ed648c3e15e0e3cf3ab8cdc991a0acda4eb2da4f"
+    },
+    {
+      "settings": "reports/tabpfn_feature_diversified_ensemble_80_20/batching_reconciliation/settings.json",
+      "path": "analysis/compare_tabpfn_hierarchical_latent.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "9a347137236cfaa42b1d3e0b026e03a68ca4cc17fbecac00d1edb526b40e6fea"
+    },
+    {
+      "settings": "reports/tabpfn_feature_diversified_ensemble_80_20/batching_reconciliation/settings.json",
+      "path": "analysis/experiments/local_spatial_features.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "40b338b36fb44069f53948ddde085edd0dc02978b013d938a39a8b525b9b2408"
+    },
+    {
+      "settings": "reports/tabpfn_feature_diversified_ensemble_80_20/monolithic_six_view_pilot/settings.json",
+      "path": ".cache/tabpfn_local_economy_landscape_80_20/prepared.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_feature_diversified_ensemble_80_20/monolithic_six_view_pilot/settings.json",
+      "path": "analysis/configs/local_economy_landscape.json",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "1a163c8164abe66a691bf96a7d307b129b3f2e306ba763b668916297058f6ab2"
+    },
+    {
+      "settings": "reports/tabpfn_feature_diversified_ensemble_80_20/monolithic_six_view_pilot/settings.json",
+      "path": ".cache/tabpfn/tabpfn-v3.5-fast-20260909.safetensors",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_feature_diversified_ensemble_80_20/monolithic_six_view_pilot/settings.json",
+      "path": "reports/tabpfn_hierarchical_latent_80_20/baseline_predictions.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_feature_diversified_ensemble_80_20/monolithic_six_view_pilot/settings.json",
+      "path": "reports/tabpfn_diagscale_mse_final_submission/submission_tabpfn_diagscale_mse_150k.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_feature_diversified_ensemble_80_20/monolithic_six_view_pilot/settings.json",
+      "path": "reports/tabpfn_hierarchical_latent_80_20/historical_predictions_2022-09.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_feature_diversified_ensemble_80_20/monolithic_six_view_pilot/settings.json",
+      "path": "reports/tabpfn_hierarchical_latent_80_20/historical_predictions_2023-07.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_feature_diversified_ensemble_80_20/monolithic_six_view_pilot/settings.json",
+      "path": ".cache/tabpfn_v3_features/calendar_80_20_categorical.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_feature_diversified_ensemble_80_20/monolithic_six_view_pilot/settings.json",
+      "path": ".cache/tabpfn_diagscale_80_20/inner_features.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_feature_diversified_ensemble_80_20/monolithic_six_view_pilot/settings.json",
+      "path": ".cache/tabpfn_fast_embedding_head/features_2022-05.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_feature_diversified_ensemble_80_20/monolithic_six_view_pilot/settings.json",
+      "path": ".cache/tabpfn_fast_embedding_head/features_2022-09.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_feature_diversified_ensemble_80_20/monolithic_six_view_pilot/settings.json",
+      "path": ".cache/tabpfn_fast_embedding_head/features_2023-01.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_feature_diversified_ensemble_80_20/monolithic_six_view_pilot/settings.json",
+      "path": ".cache/tabpfn_fast_embedding_head/features_2023-05.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_feature_diversified_ensemble_80_20/monolithic_six_view_pilot/settings.json",
+      "path": ".cache/tabpfn_v3_features/calendar_inner_2023-07.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_feature_diversified_ensemble_80_20/monolithic_six_view_pilot/settings.json",
+      "path": ".cache/tabpfn_fast_embedding_head/features_2023-08.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_feature_diversified_ensemble_80_20/monolithic_six_view_pilot/settings.json",
+      "path": ".cache/tabpfn_fast_embedding_head/features_2024-02.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_feature_diversified_ensemble_80_20/monolithic_six_view_pilot/settings.json",
+      "path": "analysis/compare_tabpfn_feature_ensemble.py",
+      "issue": "recorded bytes differ beyond newline conversion",
+      "expected_sha256": "cfd0d230431a1adc7b8525600701e363d92afa42b3ec3edf20c5e9bd6e6a5f47"
+    },
+    {
+      "settings": "reports/tabpfn_feature_diversified_ensemble_80_20/monolithic_six_view_pilot/settings.json",
+      "path": "analysis/experiments/feature_diversified_ensemble.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "39457d27f1441dc9e55c96706c6fa764e679792fcb0d010a294def612b0cb812"
+    },
+    {
+      "settings": "reports/tabpfn_feature_diversified_ensemble_80_20/monolithic_six_view_pilot/settings.json",
+      "path": "analysis/experiments/calendar_encoding.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "3cdf03e2f6772d7530231caf5d56bbc668d13aa9307d9c0346308940c5fd2f20"
+    },
+    {
+      "settings": "reports/tabpfn_feature_diversified_ensemble_80_20/monolithic_six_view_pilot/settings.json",
+      "path": "analysis/experiments/local_market_fields.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "004c5ccf498f38c5f7447ad0ed648c3e15e0e3cf3ab8cdc991a0acda4eb2da4f"
+    },
+    {
+      "settings": "reports/tabpfn_feature_diversified_ensemble_80_20/monolithic_six_view_pilot/settings.json",
+      "path": "analysis/compare_tabpfn_hierarchical_latent.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "9a347137236cfaa42b1d3e0b026e03a68ca4cc17fbecac00d1edb526b40e6fea"
+    },
+    {
+      "settings": "reports/tabpfn_feature_diversified_ensemble_80_20/monolithic_six_view_pilot/settings.json",
+      "path": "analysis/experiments/local_spatial_features.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "40b338b36fb44069f53948ddde085edd0dc02978b013d938a39a8b525b9b2408"
+    },
+    {
+      "settings": "reports/tabpfn_feature_ensemble_final_submission/settings.json",
+      "path": ".cache/tabpfn/tabpfn-v3.5-fast-20260909.safetensors",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_feature_ensemble_final_submission/settings.json",
+      "path": ".cache/tabpfn_fast_final_submission/features.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_feature_ensemble_final_submission/settings.json",
+      "path": ".cache/tabpfn_feature_diversified_ensemble_80_20/features_2024-06_spatial.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_feature_ensemble_final_submission/settings.json",
+      "path": "analysis/configs/local_economy_landscape.json",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "1a163c8164abe66a691bf96a7d307b129b3f2e306ba763b668916297058f6ab2"
+    },
+    {
+      "settings": "reports/tabpfn_feature_ensemble_final_submission/settings.json",
+      "path": "reports/tabpfn_diagscale_mse_final_submission/submission_tabpfn_diagscale_mse_150k.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_feature_ensemble_final_submission/settings.json",
+      "path": "analysis/train_tabpfn_feature_ensemble_submission.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "c0702b58c38bed2ec74b984d5744d430bd89d8e30e5675da6468fa842945e47a"
+    },
+    {
+      "settings": "reports/tabpfn_feature_ensemble_final_submission/settings.json",
+      "path": "analysis/experiments/feature_diversified_ensemble.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "39457d27f1441dc9e55c96706c6fa764e679792fcb0d010a294def612b0cb812"
+    },
+    {
+      "settings": "reports/tabpfn_feature_ensemble_final_submission/settings.json",
+      "path": "analysis/experiments/calendar_encoding.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "3cdf03e2f6772d7530231caf5d56bbc668d13aa9307d9c0346308940c5fd2f20"
+    },
+    {
+      "settings": "reports/tabpfn_feature_ensemble_final_submission/settings.json",
+      "path": "analysis/experiments/local_market_fields.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "004c5ccf498f38c5f7447ad0ed648c3e15e0e3cf3ab8cdc991a0acda4eb2da4f"
+    },
+    {
+      "settings": "reports/tabpfn_feature_ensemble_final_submission/settings.json",
+      "path": "analysis/experiments/aligned_temporal_features.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "1f0b886ca3398dd7c681b0dc8c7b73092652323f148ad6bc40aa13ea1e20ba74"
+    },
+    {
+      "settings": "reports/tabpfn_feature_ensemble_final_submission/settings.json",
+      "path": "analysis/train_tabpfn_fast_submission.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "ca5a353490b4b39a2800d3afc5bd1702eae3395312eddbc6b5a891b8ff64baec"
+    },
+    {
+      "settings": "reports/tabpfn_hierarchical_latent_80_20/settings.json",
+      "path": ".cache/tabpfn_v3_features/calendar_80_20_categorical.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_hierarchical_latent_80_20/settings.json",
+      "path": "reports/tabpfn_lora_qk_lr00003_80_20/predictions_2views.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_hierarchical_latent_80_20/settings.json",
+      "path": ".cache/tabpfn/tabpfn-v3.5-fast-20260909.safetensors",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_hierarchical_latent_80_20/settings.json",
+      "path": "reports/tabpfn_diagscale_mse_final_submission/submission_tabpfn_diagscale_mse_150k.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_hierarchical_latent_80_20/settings.json",
+      "path": ".cache/tabpfn_diagscale_80_20/inner_features.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_hierarchical_latent_80_20/settings.json",
+      "path": "reports/tabpfn_v3_5_fast_calendar_80_20/predictions_outer_categorical.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_hierarchical_latent_80_20/settings.json",
+      "path": ".cache/tabpfn_fast_embedding_head/features_2022-05.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_hierarchical_latent_80_20/settings.json",
+      "path": ".cache/tabpfn_fast_embedding_head/features_2022-09.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_hierarchical_latent_80_20/settings.json",
+      "path": ".cache/tabpfn_fast_embedding_head/features_2023-01.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_hierarchical_latent_80_20/settings.json",
+      "path": ".cache/tabpfn_fast_embedding_head/features_2023-05.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_hierarchical_latent_80_20/settings.json",
+      "path": ".cache/tabpfn_v3_features/calendar_inner_2023-07.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_hierarchical_latent_80_20/settings.json",
+      "path": ".cache/tabpfn_fast_embedding_head/features_2023-08.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_hierarchical_latent_80_20/settings.json",
+      "path": ".cache/tabpfn_fast_embedding_head/features_2024-02.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_hierarchical_latent_80_20/settings.json",
+      "path": "analysis/compare_tabpfn_hierarchical_latent.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "9a347137236cfaa42b1d3e0b026e03a68ca4cc17fbecac00d1edb526b40e6fea"
+    },
+    {
+      "settings": "reports/tabpfn_hierarchical_latent_80_20/settings.json",
+      "path": "analysis/experiments/aligned_temporal_features.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "1f0b886ca3398dd7c681b0dc8c7b73092652323f148ad6bc40aa13ea1e20ba74"
+    },
+    {
+      "settings": "reports/tabpfn_hierarchical_latent_80_20/settings.json",
+      "path": "analysis/experiments/calendar_encoding.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "3cdf03e2f6772d7530231caf5d56bbc668d13aa9307d9c0346308940c5fd2f20"
+    },
+    {
+      "settings": "reports/tabpfn_hierarchical_latent_80_20/settings.json",
+      "path": "analysis/compare_local_economy_landscape.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "192eaf9a05c1ebf672fa1c38aaa23797a2ccd0300ba83d495a872c4b6f726b47"
+    },
+    {
+      "settings": "reports/tabpfn_hierarchical_latent_80_20/pilot_wrapper_replay/settings.json",
+      "path": ".cache/tabpfn_v3_features/calendar_80_20_categorical.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_hierarchical_latent_80_20/pilot_wrapper_replay/settings.json",
+      "path": "reports/tabpfn_lora_qk_lr00003_80_20/predictions_2views.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_hierarchical_latent_80_20/pilot_wrapper_replay/settings.json",
+      "path": ".cache/tabpfn/tabpfn-v3.5-fast-20260909.safetensors",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_hierarchical_latent_80_20/pilot_wrapper_replay/settings.json",
+      "path": "reports/tabpfn_diagscale_mse_final_submission/submission_tabpfn_diagscale_mse_150k.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_hierarchical_latent_80_20/pilot_wrapper_replay/settings.json",
+      "path": ".cache/tabpfn_fast_embedding_head/features_2022-05.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_hierarchical_latent_80_20/pilot_wrapper_replay/settings.json",
+      "path": ".cache/tabpfn_fast_embedding_head/features_2022-09.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_hierarchical_latent_80_20/pilot_wrapper_replay/settings.json",
+      "path": ".cache/tabpfn_fast_embedding_head/features_2023-01.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_hierarchical_latent_80_20/pilot_wrapper_replay/settings.json",
+      "path": ".cache/tabpfn_fast_embedding_head/features_2023-05.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_hierarchical_latent_80_20/pilot_wrapper_replay/settings.json",
+      "path": ".cache/tabpfn_v3_features/calendar_inner_2023-07.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_hierarchical_latent_80_20/pilot_wrapper_replay/settings.json",
+      "path": ".cache/tabpfn_fast_embedding_head/features_2023-08.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_hierarchical_latent_80_20/pilot_wrapper_replay/settings.json",
+      "path": ".cache/tabpfn_fast_embedding_head/features_2024-02.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_hierarchical_latent_80_20/pilot_wrapper_replay/settings.json",
+      "path": "analysis/compare_tabpfn_hierarchical_latent.py",
+      "issue": "recorded bytes differ beyond newline conversion",
+      "expected_sha256": "eb54c326c035ae0dac99dff0479d551159fcb441830cd4c8f347f31740a6e4e1"
+    },
+    {
+      "settings": "reports/tabpfn_hierarchical_latent_80_20/pilot_wrapper_replay/settings.json",
+      "path": "analysis/experiments/aligned_temporal_features.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "1f0b886ca3398dd7c681b0dc8c7b73092652323f148ad6bc40aa13ea1e20ba74"
+    },
+    {
+      "settings": "reports/tabpfn_hierarchical_latent_80_20/pilot_wrapper_replay/settings.json",
+      "path": "analysis/experiments/calendar_encoding.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "3cdf03e2f6772d7530231caf5d56bbc668d13aa9307d9c0346308940c5fd2f20"
+    },
+    {
+      "settings": "reports/tabpfn_hierarchical_latent_80_20/pilot_wrapper_replay/settings.json",
+      "path": "analysis/compare_local_economy_landscape.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "192eaf9a05c1ebf672fa1c38aaa23797a2ccd0300ba83d495a872c4b6f726b47"
+    },
+    {
+      "settings": "reports/tabpfn_local_economy_landscape_80_20/settings.json",
+      "path": "subzones",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_local_economy_landscape_80_20/settings.json",
+      "path": "parks",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_local_economy_landscape_80_20/settings.json",
+      "path": "food",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_local_economy_landscape_80_20/settings.json",
+      "path": "census",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_local_economy_landscape_80_20_income/settings.json",
+      "path": "analysis/compare_local_income_extension.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "9319c17fb83b1b822e5a1c962a35829481011c786373220096d9b19e4dd501dd"
+    },
+    {
+      "settings": "reports/tabpfn_local_economy_landscape_80_20_income/settings.json",
+      "path": "analysis/experiments/regional_income_features.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "1a1de0e3da464fcc47465d464ee460cb80d772e67adc8a80b95ad532b17a23fb"
+    },
+    {
+      "settings": "reports/tabpfn_recent_half_77_80_20/settings.json",
+      "path": "analysis/compare_tabpfn_recent_half.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "6e94030843f31298e9533d9478fdd5aff7dc71086eeab65e9a066036f8e21063"
+    },
+    {
+      "settings": "reports/tabpfn_recent_half_77_80_20/settings.json",
+      "path": "analysis/experiments/recent_time_context.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "7a9c33e0ea2e2c69e72efdcd8ed62dc085464556e860c912bc5bffc8d5647d85"
+    },
+    {
+      "settings": "reports/tabpfn_recent_half_77_80_20/settings.json",
+      "path": "analysis/experiments/flat_type_inference.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "1713e21b3445854cce84183c4d5378d30e840de69ea0f54bacc48ceac8656aa5"
+    },
+    {
+      "settings": "reports/tabpfn_recent_half_77_80_20/settings.json",
+      "path": "analysis/compare_local_economy_landscape.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "192eaf9a05c1ebf672fa1c38aaa23797a2ccd0300ba83d495a872c4b6f726b47"
+    },
+    {
+      "settings": "reports/tabpfn_reliability_macro_80_20/settings.json",
+      "path": "analysis/configs/sti_etf_weights_2020_12.csv",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "bc11ead02c3f3433e07125c4a370bbd5fa1a03d6c2800f6ff3c806db63fbc84d"
+    },
+    {
+      "settings": "reports/tabpfn_reliability_macro_80_20/settings.json",
+      "path": ".cache/tabpfn/tabpfn-v3.5-fast-20260909.safetensors",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_reliability_macro_80_20/settings.json",
+      "path": ".cache/tabpfn_v3_features/calendar_80_20_categorical.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_reliability_macro_80_20/settings.json",
+      "path": ".cache/tabpfn_components_80_20/candidates/diag_mse_only/adapter.pt",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_reliability_macro_80_20/settings.json",
+      "path": "reports/tabpfn_components_80_20/outer/diag_mse_only/predictions.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_reliability_macro_80_20/settings.json",
+      "path": "reports/tabpfn_diagscale_mse_final_submission/submission_tabpfn_diagscale_mse_150k.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_reliability_macro_80_20/settings.json",
+      "path": "reports/tabpfn_feature_ensemble_final_submission/submission_tabpfn_optimized_ensemble_150k.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_reliability_macro_80_20/settings.json",
+      "path": ".cache/tabpfn_fast_embedding_head/features_2022-09.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_reliability_macro_80_20/settings.json",
+      "path": ".cache/tabpfn_v3_features/calendar_inner_2023-07.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_reliability_macro_80_20/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2022-09_baseline.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_reliability_macro_80_20/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2023-07_baseline.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_reliability_macro_80_20/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2024-06_baseline.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_reliability_macro_80_20/settings.json",
+      "path": "analysis/compare_tabpfn_reliability_macro.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "da110198adb569e60a2b99c6ed592295649037a76a9faa3a8c3ceab920bcd94b"
+    },
+    {
+      "settings": "reports/tabpfn_reliability_macro_80_20/settings.json",
+      "path": "analysis/experiments/reliability_macro_features.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "7c557047b58fff237a0a3317c8bdc8a8b4633b0c6b5df83d3e837602517d1c60"
+    },
+    {
+      "settings": "reports/tabpfn_reliability_macro_80_20/settings.json",
+      "path": "analysis/experiments/temporal_sequence_ablation.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "f9f8c60276f0bfc36246f2cf5600b2e7a22e05c5b5410e92603bb7675f6a5826"
+    },
+    {
+      "settings": "reports/tabpfn_reliability_macro_80_20/settings.json",
+      "path": "analysis/experiments/stock_index_regions.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "944940361d94f519b26b26c1929a6d4c9b91e62592698b13dc8f219aa75dfd0b"
+    },
+    {
+      "settings": "reports/tabpfn_reliability_macro_80_20/settings.json",
+      "path": "analysis/compare_tabpfn_feature_ensemble.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "835d540a9382c60190566feec70f4f6f911d036767bd4cee50f1bac0cb7e58af"
+    },
+    {
+      "settings": "reports/tabpfn_reliability_macro_80_20/settings.json",
+      "path": "analysis/compare_tabpfn_hierarchical_latent.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "9a347137236cfaa42b1d3e0b026e03a68ca4cc17fbecac00d1edb526b40e6fea"
+    },
+    {
+      "settings": "reports/tabpfn_reliability_macro_80_20/settings.json",
+      "path": "analysis/experiments/aligned_temporal_features.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "1f0b886ca3398dd7c681b0dc8c7b73092652323f148ad6bc40aa13ea1e20ba74"
+    },
+    {
+      "settings": "reports/tabpfn_reliability_macro_80_20/settings.json",
+      "path": "EXPERIMENT_PLAN_TABPFN_RELIABILITY_MACRO.md",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "61fb824819dd79b45392d6d407b95b837974b74e5e5111136bd862936be4b6be"
+    },
+    {
+      "settings": "reports/tabpfn_spatial_temporal_residual_80_20/settings.json",
+      "path": ".cache/tabpfn_v3_features/calendar_80_20_categorical.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_spatial_temporal_residual_80_20/settings.json",
+      "path": ".cache/tabpfn_components_80_20/candidates/diag_mse_only/adapter.pt",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_spatial_temporal_residual_80_20/settings.json",
+      "path": ".cache/tabpfn/tabpfn-v3.5-fast-20260909.safetensors",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_spatial_temporal_residual_80_20/settings.json",
+      "path": "reports/tabpfn_components_80_20/outer/diag_mse_only/predictions.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_spatial_temporal_residual_80_20/settings.json",
+      "path": "analysis/experiments/aligned_temporal_features.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "1f0b886ca3398dd7c681b0dc8c7b73092652323f148ad6bc40aa13ea1e20ba74"
+    },
+    {
+      "settings": "reports/tabpfn_spatial_temporal_residual_80_20/settings.json",
+      "path": "analysis/experiments/tabpfn_component_adaptation.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "285d7d44da0529a0f410a30577f21d14c4b2697df7dc1cf5239974175df2628e"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/settings.json",
+      "path": ".cache/tabpfn/tabpfn-v3.5-fast-20260909.safetensors",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/settings.json",
+      "path": ".cache/tabpfn_v3_features/calendar_80_20_categorical.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/settings.json",
+      "path": ".cache/tabpfn_fast_embedding_head/features_2022-09.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/settings.json",
+      "path": ".cache/tabpfn_v3_features/calendar_inner_2023-07.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2022-09_baseline.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2022-09_temporal.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2022-09_spatial.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2022-09_standard6.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2023-07_baseline.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2023-07_temporal.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2023-07_spatial.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2023-07_standard6.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2024-06_baseline.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2024-06_temporal.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2024-06_spatial.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2024-06_standard6.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/settings.json",
+      "path": "reports/tabpfn_diagscale_mse_final_submission/submission_tabpfn_diagscale_mse_150k.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/settings.json",
+      "path": "analysis/compare_tabpfn_temporal_view_ensembles.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "8626826e04b30f9c06d04b3243714178fc12b5fff62352542c763b15cb94e461"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/settings.json",
+      "path": "analysis/experiments/temporal_feature_views.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "f344680909fdca87be9da3214474f08f08c047eedbb89143e2fe9912b83efa99"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/settings.json",
+      "path": "analysis/experiments/origin_macro_views.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "4ebd12348bff68367d4d6fcdfcb2f2370151647cde190f56129366ac864f9cd7"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/settings.json",
+      "path": "analysis/compare_tabpfn_feature_ensemble.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "835d540a9382c60190566feec70f4f6f911d036767bd4cee50f1bac0cb7e58af"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/settings.json",
+      "path": "analysis/compare_tabpfn_hierarchical_latent.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "9a347137236cfaa42b1d3e0b026e03a68ca4cc17fbecac00d1edb526b40e6fea"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/settings.json",
+      "path": "analysis/experiments/feature_diversified_ensemble.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "39457d27f1441dc9e55c96706c6fa764e679792fcb0d010a294def612b0cb812"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_dtype_attempt/settings.json",
+      "path": ".cache/tabpfn/tabpfn-v3.5-fast-20260909.safetensors",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_dtype_attempt/settings.json",
+      "path": ".cache/tabpfn_v3_features/calendar_80_20_categorical.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_dtype_attempt/settings.json",
+      "path": ".cache/tabpfn_fast_embedding_head/features_2022-09.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_dtype_attempt/settings.json",
+      "path": ".cache/tabpfn_v3_features/calendar_inner_2023-07.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_dtype_attempt/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2022-09_baseline.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_dtype_attempt/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2022-09_temporal.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_dtype_attempt/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2022-09_spatial.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_dtype_attempt/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2022-09_standard6.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_dtype_attempt/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2023-07_baseline.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_dtype_attempt/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2023-07_temporal.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_dtype_attempt/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2023-07_spatial.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_dtype_attempt/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2023-07_standard6.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_dtype_attempt/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2024-06_baseline.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_dtype_attempt/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2024-06_temporal.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_dtype_attempt/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2024-06_spatial.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_dtype_attempt/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2024-06_standard6.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_dtype_attempt/settings.json",
+      "path": "reports/tabpfn_diagscale_mse_final_submission/submission_tabpfn_diagscale_mse_150k.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_dtype_attempt/settings.json",
+      "path": "analysis/compare_tabpfn_temporal_view_ensembles.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "8626826e04b30f9c06d04b3243714178fc12b5fff62352542c763b15cb94e461"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_dtype_attempt/settings.json",
+      "path": "analysis/experiments/temporal_feature_views.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "f344680909fdca87be9da3214474f08f08c047eedbb89143e2fe9912b83efa99"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_dtype_attempt/settings.json",
+      "path": "analysis/experiments/origin_macro_views.py",
+      "issue": "recorded bytes differ beyond newline conversion",
+      "expected_sha256": "3f972e8dbdf6b6813cb56e58a97989504faa88994037c0b33a7d98bdc49ebba2"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_dtype_attempt/settings.json",
+      "path": "analysis/compare_tabpfn_feature_ensemble.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "835d540a9382c60190566feec70f4f6f911d036767bd4cee50f1bac0cb7e58af"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_dtype_attempt/settings.json",
+      "path": "analysis/compare_tabpfn_hierarchical_latent.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "9a347137236cfaa42b1d3e0b026e03a68ca4cc17fbecac00d1edb526b40e6fea"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_dtype_attempt/settings.json",
+      "path": "analysis/experiments/feature_diversified_ensemble.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "39457d27f1441dc9e55c96706c6fa764e679792fcb0d010a294def612b0cb812"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_pandas2_attempt/settings.json",
+      "path": ".cache/tabpfn/tabpfn-v3.5-fast-20260909.safetensors",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_pandas2_attempt/settings.json",
+      "path": ".cache/tabpfn_v3_features/calendar_80_20_categorical.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_pandas2_attempt/settings.json",
+      "path": ".cache/tabpfn_fast_embedding_head/features_2022-09.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_pandas2_attempt/settings.json",
+      "path": ".cache/tabpfn_v3_features/calendar_inner_2023-07.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_pandas2_attempt/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2022-09_baseline.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_pandas2_attempt/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2022-09_temporal.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_pandas2_attempt/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2022-09_spatial.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_pandas2_attempt/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2022-09_standard6.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_pandas2_attempt/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2023-07_baseline.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_pandas2_attempt/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2023-07_temporal.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_pandas2_attempt/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2023-07_spatial.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_pandas2_attempt/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2023-07_standard6.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_pandas2_attempt/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2024-06_baseline.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_pandas2_attempt/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2024-06_temporal.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_pandas2_attempt/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2024-06_spatial.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_pandas2_attempt/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2024-06_standard6.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_pandas2_attempt/settings.json",
+      "path": "reports/tabpfn_diagscale_mse_final_submission/submission_tabpfn_diagscale_mse_150k.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_pandas2_attempt/settings.json",
+      "path": "analysis/compare_tabpfn_temporal_view_ensembles.py",
+      "issue": "recorded bytes differ beyond newline conversion",
+      "expected_sha256": "e3d8b133248668b28863b92d71d588781ad153175257a6d48e84f51fe48818dd"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_pandas2_attempt/settings.json",
+      "path": "analysis/experiments/temporal_feature_views.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "f344680909fdca87be9da3214474f08f08c047eedbb89143e2fe9912b83efa99"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_pandas2_attempt/settings.json",
+      "path": "analysis/experiments/origin_macro_views.py",
+      "issue": "recorded bytes differ beyond newline conversion",
+      "expected_sha256": "3f972e8dbdf6b6813cb56e58a97989504faa88994037c0b33a7d98bdc49ebba2"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_pandas2_attempt/settings.json",
+      "path": "analysis/compare_tabpfn_feature_ensemble.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "835d540a9382c60190566feec70f4f6f911d036767bd4cee50f1bac0cb7e58af"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_pandas2_attempt/settings.json",
+      "path": "analysis/compare_tabpfn_hierarchical_latent.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "9a347137236cfaa42b1d3e0b026e03a68ca4cc17fbecac00d1edb526b40e6fea"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_pandas2_attempt/settings.json",
+      "path": "analysis/experiments/feature_diversified_ensemble.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "39457d27f1441dc9e55c96706c6fa764e679792fcb0d010a294def612b0cb812"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_schema_attempt/settings.json",
+      "path": ".cache/tabpfn/tabpfn-v3.5-fast-20260909.safetensors",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_schema_attempt/settings.json",
+      "path": ".cache/tabpfn_v3_features/calendar_80_20_categorical.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_schema_attempt/settings.json",
+      "path": ".cache/tabpfn_fast_embedding_head/features_2022-09.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_schema_attempt/settings.json",
+      "path": ".cache/tabpfn_v3_features/calendar_inner_2023-07.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_schema_attempt/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2022-09_baseline.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_schema_attempt/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2022-09_temporal.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_schema_attempt/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2022-09_spatial.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_schema_attempt/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2022-09_standard6.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_schema_attempt/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2023-07_baseline.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_schema_attempt/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2023-07_temporal.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_schema_attempt/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2023-07_spatial.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_schema_attempt/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2023-07_standard6.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_schema_attempt/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2024-06_baseline.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_schema_attempt/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2024-06_temporal.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_schema_attempt/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2024-06_spatial.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_schema_attempt/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2024-06_standard6.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_schema_attempt/settings.json",
+      "path": "reports/tabpfn_diagscale_mse_final_submission/submission_tabpfn_diagscale_mse_150k.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_schema_attempt/settings.json",
+      "path": "analysis/compare_tabpfn_temporal_view_ensembles.py",
+      "issue": "recorded bytes differ beyond newline conversion",
+      "expected_sha256": "d448f8adf97ad8f39679035d2928ecd8fa5bebbb9efa90fed1c11ebd76edd6ec"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_schema_attempt/settings.json",
+      "path": "analysis/experiments/temporal_feature_views.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "f344680909fdca87be9da3214474f08f08c047eedbb89143e2fe9912b83efa99"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_schema_attempt/settings.json",
+      "path": "analysis/experiments/origin_macro_views.py",
+      "issue": "recorded bytes differ beyond newline conversion",
+      "expected_sha256": "3f972e8dbdf6b6813cb56e58a97989504faa88994037c0b33a7d98bdc49ebba2"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_schema_attempt/settings.json",
+      "path": "analysis/compare_tabpfn_feature_ensemble.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "835d540a9382c60190566feec70f4f6f911d036767bd4cee50f1bac0cb7e58af"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_schema_attempt/settings.json",
+      "path": "analysis/compare_tabpfn_hierarchical_latent.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "9a347137236cfaa42b1d3e0b026e03a68ca4cc17fbecac00d1edb526b40e6fea"
+    },
+    {
+      "settings": "reports/tabpfn_temporal_view_ensembles_80_20/preparation_schema_attempt/settings.json",
+      "path": "analysis/experiments/feature_diversified_ensemble.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "39457d27f1441dc9e55c96706c6fa764e679792fcb0d010a294def612b0cb812"
+    },
+    {
+      "settings": "reports/tabpfn_top2_final_submission/settings.json",
+      "path": ".cache/tabpfn/tabpfn-v3.5-fast-20260909.safetensors",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_top2_final_submission/settings.json",
+      "path": ".cache/tabpfn_fast_final_submission/features.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_top2_final_submission/settings.json",
+      "path": "reports/tabpfn_feature_ensemble_final_submission/submission_tabpfn_optimized_ensemble_150k.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_top2_final_submission/settings.json",
+      "path": "reports/tabpfn_diagscale_mse_final_submission/submission_tabpfn_diagscale_mse_150k.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_top2_final_submission/settings.json",
+      "path": ".cache/tabpfn_diagscale_mse_final_submission/adapter.pt",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_top2_final_submission/settings.json",
+      "path": ".cache/tabpfn_diagscale_mse_final_submission/predictions.npy",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_top2_final_submission/settings.json",
+      "path": "reports/tabpfn_feature_ensemble_final_submission/predictions_baseline.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_top2_final_submission/settings.json",
+      "path": "reports/tabpfn_feature_ensemble_final_submission/predictions_temporal.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_top2_final_submission/settings.json",
+      "path": "reports/tabpfn_feature_ensemble_final_submission/predictions_spatial.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/tabpfn_top2_final_submission/settings.json",
+      "path": "analysis/train_tabpfn_top2_submission.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "9cca4ccdff77aa5568b67896cf8ab5fe6a185b44190389202f6d20eacdc17555"
+    },
+    {
+      "settings": "reports/tabpfn_top2_final_submission/settings.json",
+      "path": "analysis/experiments/temporal_feature_views.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "f344680909fdca87be9da3214474f08f08c047eedbb89143e2fe9912b83efa99"
+    },
+    {
+      "settings": "reports/tabpfn_top2_final_submission/settings.json",
+      "path": "analysis/experiments/feature_diversified_ensemble.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "39457d27f1441dc9e55c96706c6fa764e679792fcb0d010a294def612b0cb812"
+    },
+    {
+      "settings": "reports/tabpfn_top2_final_submission/settings.json",
+      "path": "analysis/train_tabpfn_feature_ensemble_submission.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "c0702b58c38bed2ec74b984d5744d430bd89d8e30e5675da6468fa842945e47a"
+    },
+    {
+      "settings": "reports/tabpfn_top2_final_submission/settings.json",
+      "path": "analysis/train_tabpfn_diagscale_mse_submission.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "6c7469156c86db8f55f9769480bc302ab9ef7b009be0dd2d6ff8a9f8e01fbf86"
+    },
+    {
+      "settings": "reports/tabpfn_v3_5_fast_80_20/settings.json",
+      "path": "analysis/compare_tabpfn_v3_5_fast_80_20.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "baa7fffeae8895a9ea4914aca98e460ead281438b3e2a148b3cb2f00e99e9260"
+    },
+    {
+      "settings": "reports/tabpfn_v3_5_fast_80_20/settings.json",
+      "path": "analysis/compare_tabpfn_v3_80_20.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "e7b82cf1eecd42e001568b8440c0d6533d655ae87aa7eec8a54ff36442fb42e2"
+    },
+    {
+      "settings": "reports/tabpfn_v3_5_fast_aligned_temporal_80_20/settings.json",
+      "path": "analysis/compare_tabpfn_aligned_temporal_80_20.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "d240757800abd589658099a241415f0948237ac163c8d7cd14407a7367f8ef9c"
+    },
+    {
+      "settings": "reports/tabpfn_v3_5_fast_aligned_temporal_80_20/settings.json",
+      "path": "analysis/experiments/aligned_temporal_features.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "1f0b886ca3398dd7c681b0dc8c7b73092652323f148ad6bc40aa13ea1e20ba74"
+    },
+    {
+      "settings": "reports/tabpfn_v3_5_fast_aligned_temporal_80_20/settings.json",
+      "path": "analysis/experiments/recent_history.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "98348baf4e8816397c766f660e4fce5ba6ffb449bd674adc7ea645aaf035db0f"
+    },
+    {
+      "settings": "reports/tabpfn_v3_5_fast_aligned_temporal_80_20/settings.json",
+      "path": "analysis/experiments/tabpfn_adaptation_features.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "7138a0c0a5465d7027a0b90030f5ffbadcad8b71836c08ceb907d31db61022a9"
+    },
+    {
+      "settings": "reports/tabpfn_v3_5_fast_calendar_80_20/settings.json",
+      "path": "analysis/compare_tabpfn_calendar_80_20.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "e88eb31412feea17db8d5987ad30983e214d4fbfbc96a9708cccf8e7c5a4a052"
+    },
+    {
+      "settings": "reports/tabpfn_v3_5_fast_calendar_80_20/settings.json",
+      "path": "analysis/experiments/calendar_encoding.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "3cdf03e2f6772d7530231caf5d56bbc668d13aa9307d9c0346308940c5fd2f20"
+    },
+    {
+      "settings": "reports/tabpfn_v3_5_fast_calendar_80_20/settings.json",
+      "path": "analysis/experiments/aligned_temporal_features.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "1f0b886ca3398dd7c681b0dc8c7b73092652323f148ad6bc40aa13ea1e20ba74"
+    },
+    {
+      "settings": "reports/tabpfn_v3_5_fast_calendar_80_20/settings.json",
+      "path": "analysis/compare_tabpfn_v3_5_fast_80_20.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "baa7fffeae8895a9ea4914aca98e460ead281438b3e2a148b3cb2f00e99e9260"
+    },
+    {
+      "settings": "reports/tabpfn_v3_5_fast_dynamic_temporal_80_20/settings.json",
+      "path": "analysis/compare_tabpfn_dynamic_temporal_80_20.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "3bdc7a752eeb13a2caeb959588489fcec29ad1c0d89a2e39d6c8d2fb026857de"
+    },
+    {
+      "settings": "reports/tabpfn_v3_5_fast_dynamic_temporal_80_20/settings.json",
+      "path": "analysis/experiments/comprehensive_temporal.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "08cd4d8dfd8c84d71977439d32a8603f57174f4f3adb86b46b4f79258e9b1fd6"
+    },
+    {
+      "settings": "reports/tabpfn_v3_5_fast_dynamic_temporal_80_20/settings.json",
+      "path": "analysis/experiments/aligned_temporal_features.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "1f0b886ca3398dd7c681b0dc8c7b73092652323f148ad6bc40aa13ea1e20ba74"
+    },
+    {
+      "settings": "reports/tabpfn_v3_5_fast_dynamic_temporal_80_20/settings.json",
+      "path": "analysis/experiments/flat_type_economic_forecast.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "12d46c32d7ee4bca38aa5ba89c219c6640d54d6750bccd6ffc5400406ea5faa7"
+    },
+    {
+      "settings": "reports/tabpfn_v3_5_fast_dynamic_temporal_80_20/settings.json",
+      "path": "analysis/compare_tabpfn_v3_5_fast_80_20.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "baa7fffeae8895a9ea4914aca98e460ead281438b3e2a148b3cb2f00e99e9260"
+    },
+    {
+      "settings": "reports/tabpfn_v3_5_fast_temporal_80_20/settings.json",
+      "path": "analysis/compare_tabpfn_fast_temporal_80_20.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "a959bcfe06b94be37c921fd9ecb130eb3877f3e8177453e6faeb10c5d590d78d"
+    },
+    {
+      "settings": "reports/tabpfn_v3_5_fast_temporal_80_20/settings.json",
+      "path": "analysis/experiments/tabpfn_temporal_features.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "d251657340e4c3c10f8e6b4a6a40959c53284b999b3aa667f899124beb565710"
+    },
+    {
+      "settings": "reports/tabpfn_v3_5_fast_temporal_80_20/settings.json",
+      "path": "analysis/experiments/flat_type_economic_forecast.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "12d46c32d7ee4bca38aa5ba89c219c6640d54d6750bccd6ffc5400406ea5faa7"
+    },
+    {
+      "settings": "reports/tabpfn_v3_5_fast_temporal_80_20/settings.json",
+      "path": "analysis/compare_tabpfn_v3_5_fast_80_20.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "baa7fffeae8895a9ea4914aca98e460ead281438b3e2a148b3cb2f00e99e9260"
+    },
+    {
+      "settings": "reports/tabpfn_v3_5_fast_temporal_80_20/settings.json",
+      "path": "analysis/compare_tabpfn_v3_80_20.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "e7b82cf1eecd42e001568b8440c0d6533d655ae87aa7eec8a54ff36442fb42e2"
+    },
+    {
+      "settings": "reports/tabpfn_v3_5_fast_temporal_levels_80_20/settings.json",
+      "path": "analysis/compare_tabpfn_fast_temporal_levels_80_20.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "8adffe1da23d583ef32a656f914d2beb98e6971ac0792ebfb6ca4bf87b942d10"
+    },
+    {
+      "settings": "reports/tabpfn_v3_5_fast_temporal_levels_80_20/settings.json",
+      "path": "analysis/compare_tabpfn_v3_5_fast_80_20.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "baa7fffeae8895a9ea4914aca98e460ead281438b3e2a148b3cb2f00e99e9260"
+    },
+    {
+      "settings": "reports/tabpfn_v3_5_fast_temporal_levels_80_20/settings.json",
+      "path": "analysis/compare_tabpfn_v3_80_20.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "e7b82cf1eecd42e001568b8440c0d6533d655ae87aa7eec8a54ff36442fb42e2"
+    },
+    {
+      "settings": "reports/tabpfn_v3_80_20/settings.json",
+      "path": "analysis/compare_tabpfn_v3_80_20.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "e7b82cf1eecd42e001568b8440c0d6533d655ae87aa7eec8a54ff36442fb42e2"
+    },
+    {
+      "settings": "reports/tabpfn_v3_80_20/settings.json",
+      "path": "analysis/prepare_tabpfn_v3_features.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "b0d4d66ffff929d90112a01afcdb72f455f82dbf0773f06bc04b44a4b9d0fb20"
+    },
+    {
+      "settings": "reports/tabpfn_v3_80_20/settings.json",
+      "path": "analysis/experiments/tabpfn_adaptation_features.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "7138a0c0a5465d7027a0b90030f5ffbadcad8b71836c08ceb907d31db61022a9"
+    },
+    {
+      "settings": "reports/tabpfn_v3_80_20/settings.json",
+      "path": "analysis/experiments/recent_history.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "98348baf4e8816397c766f660e4fce5ba6ffb449bd674adc7ea645aaf035db0f"
+    },
+    {
+      "settings": "reports/tabpfn_worldcover_tree_cover_80_20/settings.json",
+      "path": "analysis/compare_worldcover_tree_cover.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "0747c46a93f52a4d572993953c9212db6cc38e4502d4a77814d14b1f38c0ca56"
+    },
+    {
+      "settings": "reports/tabpfn_worldcover_tree_cover_80_20/settings.json",
+      "path": "analysis/experiments/worldcover_tree_cover.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "6c8275bb367a49ddb95278ac9e1b5f13f062d64db0ce22a239269e3ca3619e69"
+    },
+    {
+      "settings": "reports/targeted_spatial_economic/settings.json",
+      "path": ".cache/tabpfn/tabpfn-v3.5-fast-20260909.safetensors",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/targeted_spatial_economic/settings.json",
+      "path": "reports/tabpfn_feature_ensemble_final_submission/submission_tabpfn_optimized_ensemble_150k.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/targeted_spatial_economic/settings.json",
+      "path": "reports/tabpfn_diagscale_mse_final_submission/submission_tabpfn_diagscale_mse_150k.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/targeted_spatial_economic/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2022-09_baseline.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/targeted_spatial_economic/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2022-09_spatial.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/targeted_spatial_economic/settings.json",
+      "path": ".cache/tabpfn_feature_diversified_ensemble_80_20/features_2022-09_spatial.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/targeted_spatial_economic/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2022-09_temporal.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/targeted_spatial_economic/settings.json",
+      "path": ".cache/tabpfn_feature_diversified_ensemble_80_20/features_2022-09_temporal.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/targeted_spatial_economic/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2023-07_baseline.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/targeted_spatial_economic/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2023-07_spatial.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/targeted_spatial_economic/settings.json",
+      "path": ".cache/tabpfn_feature_diversified_ensemble_80_20/features_2023-07_spatial.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/targeted_spatial_economic/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2023-07_temporal.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/targeted_spatial_economic/settings.json",
+      "path": ".cache/tabpfn_feature_diversified_ensemble_80_20/features_2023-07_temporal.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/targeted_spatial_economic/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2024-06_baseline.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/targeted_spatial_economic/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2024-06_spatial.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/targeted_spatial_economic/settings.json",
+      "path": ".cache/tabpfn_feature_diversified_ensemble_80_20/features_2024-06_spatial.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/targeted_spatial_economic/settings.json",
+      "path": "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2024-06_temporal.csv",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/targeted_spatial_economic/settings.json",
+      "path": ".cache/tabpfn_feature_diversified_ensemble_80_20/features_2024-06_temporal.joblib",
+      "issue": "resource not shipped"
+    },
+    {
+      "settings": "reports/targeted_spatial_economic/settings.json",
+      "path": "analysis/run_targeted_spatial_economic.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "a18f2e06b7360521b73542319c29562db452dcf7f2ddeb329823e50827271682"
+    },
+    {
+      "settings": "reports/targeted_spatial_economic/settings.json",
+      "path": "analysis/experiments/targeted_spatial_economic.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "ea6c3555a59259b539dafe76120d67421753a8a7b4c6697c2770136135e2a221"
+    },
+    {
+      "settings": "reports/targeted_spatial_economic/settings.json",
+      "path": "analysis/compare_tabpfn_feature_ensemble.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "835d540a9382c60190566feec70f4f6f911d036767bd4cee50f1bac0cb7e58af"
+    }
+  ],
+  "f2_status": "generator-and-predictions-pending",
+  "fresh_training_verified": false,
+  "scope": "Local inspection only; no downloads, authentication or paid API calls."
+}

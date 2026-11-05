@@ -1,0 +1,21 @@
+{
+  "run": "smoke/cuda/C1",
+  "variant": "C1",
+  "seed": 42,
+  "best_epoch": 1,
+  "epochs_run": 1,
+  "weighted_rmse_sgd": 1070.710643687128,
+  "rmse_sgd": 1074.1838109391676,
+  "mae_sgd": 955.6677844537553,
+  "bias_sgd": 906.5818780475884,
+  "rows": 64,
+  "parameters": 554543,
+  "sequence_gate": 0.09977075457572937,
+  "seconds": 0.6220660000108182,
+  "peak_allocated_vram_gib": 0.2917046546936035,
+  "checkpoint_replay_max_difference": 0.0,
+  "checkpoint_sha256": "1f3b026d26e4fd0d90bee9f1c89a47e1969a564ed8975258ddcb5505a5f6436a",
+  "predictions_sha256": "ea3538aa2aff1dd16af33436a67cb4d4db21e510f62079a85d8f646ba3b42c94",
+  "preprocessors_sha256": "555a886b09fe60167ef3dfa8200f8481cba1fe30fe8775d43d6830c492227e0b",
+  "outer_labels_used_for_selection": false
+}

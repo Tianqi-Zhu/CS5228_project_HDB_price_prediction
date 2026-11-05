@@ -1,0 +1,505 @@
+dimension,category,price_field,target,signal,pearson_levels,note
+room_type,2-room,ADJUSTED_CLOSE,mean_rent,banks_equal,0.7428925431703914,Descriptive trending levels; not a growth association or forecast input
+room_type,2-room,ADJUSTED_CLOSE,mean_rent,finance_equal,0.6594038611731634,Descriptive trending levels; not a growth association or forecast input
+room_type,2-room,ADJUSTED_CLOSE,mean_rent,nonbank_finance_equal,0.32799518409587375,Descriptive trending levels; not a growth association or forecast input
+room_type,2-room,ADJUSTED_CLOSE,mean_rent,banks_cap_seeded,0.7333729887751853,Descriptive trending levels; not a growth association or forecast input
+room_type,2-room,ADJUSTED_CLOSE,mean_rent,D05.SI,0.7083125696658606,Descriptive trending levels; not a growth association or forecast input
+room_type,2-room,ADJUSTED_CLOSE,mean_rent,O39.SI,0.7510360671021872,Descriptive trending levels; not a growth association or forecast input
+room_type,2-room,ADJUSTED_CLOSE,mean_rent,U11.SI,0.7447441465812984,Descriptive trending levels; not a growth association or forecast input
+room_type,2-room,ADJUSTED_CLOSE,mean_rent,S68.SI,0.4204476048521979,Descriptive trending levels; not a growth association or forecast input
+room_type,2-room,ADJUSTED_CLOSE,mean_rent,AIY.SI,-0.016051328650661015,Descriptive trending levels; not a growth association or forecast input
+room_type,2-room,ADJUSTED_CLOSE,adjusted_mean_rent,banks_equal,0.732790367198309,Descriptive trending levels; not a growth association or forecast input
+room_type,2-room,ADJUSTED_CLOSE,adjusted_mean_rent,finance_equal,0.6487101894007488,Descriptive trending levels; not a growth association or forecast input
+room_type,2-room,ADJUSTED_CLOSE,adjusted_mean_rent,nonbank_finance_equal,0.31722837581848945,Descriptive trending levels; not a growth association or forecast input
+room_type,2-room,ADJUSTED_CLOSE,adjusted_mean_rent,banks_cap_seeded,0.7230172707821731,Descriptive trending levels; not a growth association or forecast input
+room_type,2-room,ADJUSTED_CLOSE,adjusted_mean_rent,D05.SI,0.6973682722331597,Descriptive trending levels; not a growth association or forecast input
+room_type,2-room,ADJUSTED_CLOSE,adjusted_mean_rent,O39.SI,0.7405927647993822,Descriptive trending levels; not a growth association or forecast input
+room_type,2-room,ADJUSTED_CLOSE,adjusted_mean_rent,U11.SI,0.7362153343447404,Descriptive trending levels; not a growth association or forecast input
+room_type,2-room,ADJUSTED_CLOSE,adjusted_mean_rent,S68.SI,0.4093886772043621,Descriptive trending levels; not a growth association or forecast input
+room_type,2-room,ADJUSTED_CLOSE,adjusted_mean_rent,AIY.SI,-0.024883431892591304,Descriptive trending levels; not a growth association or forecast input
+room_type,2-room,CLOSE,mean_rent,banks_equal,0.6623188754747292,Descriptive trending levels; not a growth association or forecast input
+room_type,2-room,CLOSE,mean_rent,finance_equal,0.5500573515207693,Descriptive trending levels; not a growth association or forecast input
+room_type,2-room,CLOSE,mean_rent,nonbank_finance_equal,0.19356608030522562,Descriptive trending levels; not a growth association or forecast input
+room_type,2-room,CLOSE,mean_rent,banks_cap_seeded,0.6480560966248489,Descriptive trending levels; not a growth association or forecast input
+room_type,2-room,CLOSE,mean_rent,D05.SI,0.6249051811502666,Descriptive trending levels; not a growth association or forecast input
+room_type,2-room,CLOSE,mean_rent,O39.SI,0.6733970481175379,Descriptive trending levels; not a growth association or forecast input
+room_type,2-room,CLOSE,mean_rent,U11.SI,0.625493577375205,Descriptive trending levels; not a growth association or forecast input
+room_type,2-room,CLOSE,mean_rent,S68.SI,0.1673724214516497,Descriptive trending levels; not a growth association or forecast input
+room_type,2-room,CLOSE,mean_rent,AIY.SI,-0.06695966873406312,Descriptive trending levels; not a growth association or forecast input
+room_type,2-room,CLOSE,adjusted_mean_rent,banks_equal,0.6515105412275413,Descriptive trending levels; not a growth association or forecast input
+room_type,2-room,CLOSE,adjusted_mean_rent,finance_equal,0.5384644550036898,Descriptive trending levels; not a growth association or forecast input
+room_type,2-room,CLOSE,adjusted_mean_rent,nonbank_finance_equal,0.18274710644979855,Descriptive trending levels; not a growth association or forecast input
+room_type,2-room,CLOSE,adjusted_mean_rent,banks_cap_seeded,0.6369001808516331,Descriptive trending levels; not a growth association or forecast input
+room_type,2-room,CLOSE,adjusted_mean_rent,D05.SI,0.6131768554090425,Descriptive trending levels; not a growth association or forecast input
+room_type,2-room,CLOSE,adjusted_mean_rent,O39.SI,0.6617661983611811,Descriptive trending levels; not a growth association or forecast input
+room_type,2-room,CLOSE,adjusted_mean_rent,U11.SI,0.6171900324048522,Descriptive trending levels; not a growth association or forecast input
+room_type,2-room,CLOSE,adjusted_mean_rent,S68.SI,0.15606651000446628,Descriptive trending levels; not a growth association or forecast input
+room_type,2-room,CLOSE,adjusted_mean_rent,AIY.SI,-0.07563356884303707,Descriptive trending levels; not a growth association or forecast input
+room_type,3-room,ADJUSTED_CLOSE,mean_rent,banks_equal,0.7562139937588869,Descriptive trending levels; not a growth association or forecast input
+room_type,3-room,ADJUSTED_CLOSE,mean_rent,finance_equal,0.6684404717622631,Descriptive trending levels; not a growth association or forecast input
+room_type,3-room,ADJUSTED_CLOSE,mean_rent,nonbank_finance_equal,0.3259265810424202,Descriptive trending levels; not a growth association or forecast input
+room_type,3-room,ADJUSTED_CLOSE,mean_rent,banks_cap_seeded,0.7471240716530483,Descriptive trending levels; not a growth association or forecast input
+room_type,3-room,ADJUSTED_CLOSE,mean_rent,D05.SI,0.7237316509982615,Descriptive trending levels; not a growth association or forecast input
+room_type,3-room,ADJUSTED_CLOSE,mean_rent,O39.SI,0.7643986232223396,Descriptive trending levels; not a growth association or forecast input
+room_type,3-room,ADJUSTED_CLOSE,mean_rent,U11.SI,0.7546959312513133,Descriptive trending levels; not a growth association or forecast input
+room_type,3-room,ADJUSTED_CLOSE,mean_rent,S68.SI,0.4288765784843245,Descriptive trending levels; not a growth association or forecast input
+room_type,3-room,ADJUSTED_CLOSE,mean_rent,AIY.SI,-0.03021680512876551,Descriptive trending levels; not a growth association or forecast input
+room_type,3-room,ADJUSTED_CLOSE,adjusted_mean_rent,banks_equal,0.7560068055091259,Descriptive trending levels; not a growth association or forecast input
+room_type,3-room,ADJUSTED_CLOSE,adjusted_mean_rent,finance_equal,0.6678217293288778,Descriptive trending levels; not a growth association or forecast input
+room_type,3-room,ADJUSTED_CLOSE,adjusted_mean_rent,nonbank_finance_equal,0.32464725650271775,Descriptive trending levels; not a growth association or forecast input
+room_type,3-room,ADJUSTED_CLOSE,adjusted_mean_rent,banks_cap_seeded,0.7468952058851316,Descriptive trending levels; not a growth association or forecast input
+room_type,3-room,ADJUSTED_CLOSE,adjusted_mean_rent,D05.SI,0.7233874552042975,Descriptive trending levels; not a growth association or forecast input
+room_type,3-room,ADJUSTED_CLOSE,adjusted_mean_rent,O39.SI,0.7643188273724985,Descriptive trending levels; not a growth association or forecast input
+room_type,3-room,ADJUSTED_CLOSE,adjusted_mean_rent,U11.SI,0.7545355422173275,Descriptive trending levels; not a growth association or forecast input
+room_type,3-room,ADJUSTED_CLOSE,adjusted_mean_rent,S68.SI,0.42921835844955214,Descriptive trending levels; not a growth association or forecast input
+room_type,3-room,ADJUSTED_CLOSE,adjusted_mean_rent,AIY.SI,-0.03233463294233859,Descriptive trending levels; not a growth association or forecast input
+room_type,3-room,CLOSE,mean_rent,banks_equal,0.6743734103134006,Descriptive trending levels; not a growth association or forecast input
+room_type,3-room,CLOSE,mean_rent,finance_equal,0.5556849723456718,Descriptive trending levels; not a growth association or forecast input
+room_type,3-room,CLOSE,mean_rent,nonbank_finance_equal,0.1876651198100545,Descriptive trending levels; not a growth association or forecast input
+room_type,3-room,CLOSE,mean_rent,banks_cap_seeded,0.6609029790327176,Descriptive trending levels; not a growth association or forecast input
+room_type,3-room,CLOSE,mean_rent,D05.SI,0.6410292924795452,Descriptive trending levels; not a growth association or forecast input
+room_type,3-room,CLOSE,mean_rent,O39.SI,0.6851876173259956,Descriptive trending levels; not a growth association or forecast input
+room_type,3-room,CLOSE,mean_rent,U11.SI,0.6307412009566012,Descriptive trending levels; not a growth association or forecast input
+room_type,3-room,CLOSE,mean_rent,S68.SI,0.1716200410593865,Descriptive trending levels; not a growth association or forecast input
+room_type,3-room,CLOSE,mean_rent,AIY.SI,-0.08247784367045408,Descriptive trending levels; not a growth association or forecast input
+room_type,3-room,CLOSE,adjusted_mean_rent,banks_equal,0.6742656296420557,Descriptive trending levels; not a growth association or forecast input
+room_type,3-room,CLOSE,adjusted_mean_rent,finance_equal,0.5549867485613285,Descriptive trending levels; not a growth association or forecast input
+room_type,3-room,CLOSE,adjusted_mean_rent,nonbank_finance_equal,0.18630565766345725,Descriptive trending levels; not a growth association or forecast input
+room_type,3-room,CLOSE,adjusted_mean_rent,banks_cap_seeded,0.6607553097422304,Descriptive trending levels; not a growth association or forecast input
+room_type,3-room,CLOSE,adjusted_mean_rent,D05.SI,0.6406735895047924,Descriptive trending levels; not a growth association or forecast input
+room_type,3-room,CLOSE,adjusted_mean_rent,O39.SI,0.6853244237498173,Descriptive trending levels; not a growth association or forecast input
+room_type,3-room,CLOSE,adjusted_mean_rent,U11.SI,0.6307324596113792,Descriptive trending levels; not a growth association or forecast input
+room_type,3-room,CLOSE,adjusted_mean_rent,S68.SI,0.17215802622766666,Descriptive trending levels; not a growth association or forecast input
+room_type,3-room,CLOSE,adjusted_mean_rent,AIY.SI,-0.08459328653784431,Descriptive trending levels; not a growth association or forecast input
+room_type,4-room,ADJUSTED_CLOSE,mean_rent,banks_equal,0.7504450020990547,Descriptive trending levels; not a growth association or forecast input
+room_type,4-room,ADJUSTED_CLOSE,mean_rent,finance_equal,0.6617970228939232,Descriptive trending levels; not a growth association or forecast input
+room_type,4-room,ADJUSTED_CLOSE,mean_rent,nonbank_finance_equal,0.31912596979258084,Descriptive trending levels; not a growth association or forecast input
+room_type,4-room,ADJUSTED_CLOSE,mean_rent,banks_cap_seeded,0.7411493690778703,Descriptive trending levels; not a growth association or forecast input
+room_type,4-room,ADJUSTED_CLOSE,mean_rent,D05.SI,0.7167509957258705,Descriptive trending levels; not a growth association or forecast input
+room_type,4-room,ADJUSTED_CLOSE,mean_rent,O39.SI,0.7609627337283705,Descriptive trending levels; not a growth association or forecast input
+room_type,4-room,ADJUSTED_CLOSE,mean_rent,U11.SI,0.747699509693284,Descriptive trending levels; not a growth association or forecast input
+room_type,4-room,ADJUSTED_CLOSE,mean_rent,S68.SI,0.4193799420129456,Descriptive trending levels; not a growth association or forecast input
+room_type,4-room,ADJUSTED_CLOSE,mean_rent,AIY.SI,-0.03361850194232381,Descriptive trending levels; not a growth association or forecast input
+room_type,4-room,ADJUSTED_CLOSE,adjusted_mean_rent,banks_equal,0.7506787683649336,Descriptive trending levels; not a growth association or forecast input
+room_type,4-room,ADJUSTED_CLOSE,adjusted_mean_rent,finance_equal,0.6619848910946242,Descriptive trending levels; not a growth association or forecast input
+room_type,4-room,ADJUSTED_CLOSE,adjusted_mean_rent,nonbank_finance_equal,0.3191569202159237,Descriptive trending levels; not a growth association or forecast input
+room_type,4-room,ADJUSTED_CLOSE,adjusted_mean_rent,banks_cap_seeded,0.7413460135886443,Descriptive trending levels; not a growth association or forecast input
+room_type,4-room,ADJUSTED_CLOSE,adjusted_mean_rent,D05.SI,0.7167889341851778,Descriptive trending levels; not a growth association or forecast input
+room_type,4-room,ADJUSTED_CLOSE,adjusted_mean_rent,O39.SI,0.7612320366061283,Descriptive trending levels; not a growth association or forecast input
+room_type,4-room,ADJUSTED_CLOSE,adjusted_mean_rent,U11.SI,0.7481608915030209,Descriptive trending levels; not a growth association or forecast input
+room_type,4-room,ADJUSTED_CLOSE,adjusted_mean_rent,S68.SI,0.4200362421354,Descriptive trending levels; not a growth association or forecast input
+room_type,4-room,ADJUSTED_CLOSE,adjusted_mean_rent,AIY.SI,-0.0340634363651055,Descriptive trending levels; not a growth association or forecast input
+room_type,4-room,CLOSE,mean_rent,banks_equal,0.6677358706072715,Descriptive trending levels; not a growth association or forecast input
+room_type,4-room,CLOSE,mean_rent,finance_equal,0.5482849109865039,Descriptive trending levels; not a growth association or forecast input
+room_type,4-room,CLOSE,mean_rent,nonbank_finance_equal,0.18101874717143038,Descriptive trending levels; not a growth association or forecast input
+room_type,4-room,CLOSE,mean_rent,banks_cap_seeded,0.6538795623936171,Descriptive trending levels; not a growth association or forecast input
+room_type,4-room,CLOSE,mean_rent,D05.SI,0.6323013956470745,Descriptive trending levels; not a growth association or forecast input
+room_type,4-room,CLOSE,mean_rent,O39.SI,0.682339106395478,Descriptive trending levels; not a growth association or forecast input
+room_type,4-room,CLOSE,mean_rent,U11.SI,0.6227485381160779,Descriptive trending levels; not a growth association or forecast input
+room_type,4-room,CLOSE,mean_rent,S68.SI,0.1617999281390828,Descriptive trending levels; not a growth association or forecast input
+room_type,4-room,CLOSE,mean_rent,AIY.SI,-0.08572498931816375,Descriptive trending levels; not a growth association or forecast input
+room_type,4-room,CLOSE,adjusted_mean_rent,banks_equal,0.6680214945748375,Descriptive trending levels; not a growth association or forecast input
+room_type,4-room,CLOSE,adjusted_mean_rent,finance_equal,0.5484933695912472,Descriptive trending levels; not a growth association or forecast input
+room_type,4-room,CLOSE,adjusted_mean_rent,nonbank_finance_equal,0.1810398495782275,Descriptive trending levels; not a growth association or forecast input
+room_type,4-room,CLOSE,adjusted_mean_rent,banks_cap_seeded,0.6541113488813635,Descriptive trending levels; not a growth association or forecast input
+room_type,4-room,CLOSE,adjusted_mean_rent,D05.SI,0.6323017137576039,Descriptive trending levels; not a growth association or forecast input
+room_type,4-room,CLOSE,adjusted_mean_rent,O39.SI,0.6827385042403724,Descriptive trending levels; not a growth association or forecast input
+room_type,4-room,CLOSE,adjusted_mean_rent,U11.SI,0.6233102307012222,Descriptive trending levels; not a growth association or forecast input
+room_type,4-room,CLOSE,adjusted_mean_rent,S68.SI,0.16254512606706695,Descriptive trending levels; not a growth association or forecast input
+room_type,4-room,CLOSE,adjusted_mean_rent,AIY.SI,-0.08617011407843597,Descriptive trending levels; not a growth association or forecast input
+room_type,5-room,ADJUSTED_CLOSE,mean_rent,banks_equal,0.7471432493964116,Descriptive trending levels; not a growth association or forecast input
+room_type,5-room,ADJUSTED_CLOSE,mean_rent,finance_equal,0.6624784287177239,Descriptive trending levels; not a growth association or forecast input
+room_type,5-room,ADJUSTED_CLOSE,mean_rent,nonbank_finance_equal,0.3269001887805152,Descriptive trending levels; not a growth association or forecast input
+room_type,5-room,ADJUSTED_CLOSE,mean_rent,banks_cap_seeded,0.7377630793286717,Descriptive trending levels; not a growth association or forecast input
+room_type,5-room,ADJUSTED_CLOSE,mean_rent,D05.SI,0.7131176370590532,Descriptive trending levels; not a growth association or forecast input
+room_type,5-room,ADJUSTED_CLOSE,mean_rent,O39.SI,0.7577556151103745,Descriptive trending levels; not a growth association or forecast input
+room_type,5-room,ADJUSTED_CLOSE,mean_rent,U11.SI,0.7447466643544987,Descriptive trending levels; not a growth association or forecast input
+room_type,5-room,ADJUSTED_CLOSE,mean_rent,S68.SI,0.4130949194759338,Descriptive trending levels; not a growth association or forecast input
+room_type,5-room,ADJUSTED_CLOSE,mean_rent,AIY.SI,-0.018154565572989192,Descriptive trending levels; not a growth association or forecast input
+room_type,5-room,ADJUSTED_CLOSE,adjusted_mean_rent,banks_equal,0.7473344055547407,Descriptive trending levels; not a growth association or forecast input
+room_type,5-room,ADJUSTED_CLOSE,adjusted_mean_rent,finance_equal,0.6620225776542423,Descriptive trending levels; not a growth association or forecast input
+room_type,5-room,ADJUSTED_CLOSE,adjusted_mean_rent,nonbank_finance_equal,0.325161598654412,Descriptive trending levels; not a growth association or forecast input
+room_type,5-room,ADJUSTED_CLOSE,adjusted_mean_rent,banks_cap_seeded,0.737958453463618,Descriptive trending levels; not a growth association or forecast input
+room_type,5-room,ADJUSTED_CLOSE,adjusted_mean_rent,D05.SI,0.713294576316846,Descriptive trending levels; not a growth association or forecast input
+room_type,5-room,ADJUSTED_CLOSE,adjusted_mean_rent,O39.SI,0.758036288986416,Descriptive trending levels; not a growth association or forecast input
+room_type,5-room,ADJUSTED_CLOSE,adjusted_mean_rent,U11.SI,0.7448593475828453,Descriptive trending levels; not a growth association or forecast input
+room_type,5-room,ADJUSTED_CLOSE,adjusted_mean_rent,S68.SI,0.41376725733092085,Descriptive trending levels; not a growth association or forecast input
+room_type,5-room,ADJUSTED_CLOSE,adjusted_mean_rent,AIY.SI,-0.021324540522608904,Descriptive trending levels; not a growth association or forecast input
+room_type,5-room,CLOSE,mean_rent,banks_equal,0.6640870534113944,Descriptive trending levels; not a growth association or forecast input
+room_type,5-room,CLOSE,mean_rent,finance_equal,0.5500792133357782,Descriptive trending levels; not a growth association or forecast input
+room_type,5-room,CLOSE,mean_rent,nonbank_finance_equal,0.18985717927651932,Descriptive trending levels; not a growth association or forecast input
+room_type,5-room,CLOSE,mean_rent,banks_cap_seeded,0.6501415133808642,Descriptive trending levels; not a growth association or forecast input
+room_type,5-room,CLOSE,mean_rent,D05.SI,0.6284613965890522,Descriptive trending levels; not a growth association or forecast input
+room_type,5-room,CLOSE,mean_rent,O39.SI,0.6784588169781578,Descriptive trending levels; not a growth association or forecast input
+room_type,5-room,CLOSE,mean_rent,U11.SI,0.6197200664159704,Descriptive trending levels; not a growth association or forecast input
+room_type,5-room,CLOSE,mean_rent,S68.SI,0.15456351114797964,Descriptive trending levels; not a growth association or forecast input
+room_type,5-room,CLOSE,mean_rent,AIY.SI,-0.07008895699399549,Descriptive trending levels; not a growth association or forecast input
+room_type,5-room,CLOSE,adjusted_mean_rent,banks_equal,0.6642777834933528,Descriptive trending levels; not a growth association or forecast input
+room_type,5-room,CLOSE,adjusted_mean_rent,finance_equal,0.5493801502018769,Descriptive trending levels; not a growth association or forecast input
+room_type,5-room,CLOSE,adjusted_mean_rent,nonbank_finance_equal,0.1879068385201701,Descriptive trending levels; not a growth association or forecast input
+room_type,5-room,CLOSE,adjusted_mean_rent,banks_cap_seeded,0.6503426492347714,Descriptive trending levels; not a growth association or forecast input
+room_type,5-room,CLOSE,adjusted_mean_rent,D05.SI,0.6286609558770312,Descriptive trending levels; not a growth association or forecast input
+room_type,5-room,CLOSE,adjusted_mean_rent,O39.SI,0.6787474157570155,Descriptive trending levels; not a growth association or forecast input
+room_type,5-room,CLOSE,adjusted_mean_rent,U11.SI,0.6197916911643633,Descriptive trending levels; not a growth association or forecast input
+room_type,5-room,CLOSE,adjusted_mean_rent,S68.SI,0.1553381891544157,Descriptive trending levels; not a growth association or forecast input
+room_type,5-room,CLOSE,adjusted_mean_rent,AIY.SI,-0.07328705349258334,Descriptive trending levels; not a growth association or forecast input
+room_type,executive,ADJUSTED_CLOSE,mean_rent,banks_equal,0.7740641469027465,Descriptive trending levels; not a growth association or forecast input
+room_type,executive,ADJUSTED_CLOSE,mean_rent,finance_equal,0.6898005445558437,Descriptive trending levels; not a growth association or forecast input
+room_type,executive,ADJUSTED_CLOSE,mean_rent,nonbank_finance_equal,0.35113373099404455,Descriptive trending levels; not a growth association or forecast input
+room_type,executive,ADJUSTED_CLOSE,mean_rent,banks_cap_seeded,0.7651507428002479,Descriptive trending levels; not a growth association or forecast input
+room_type,executive,ADJUSTED_CLOSE,mean_rent,D05.SI,0.7410662931016576,Descriptive trending levels; not a growth association or forecast input
+room_type,executive,ADJUSTED_CLOSE,mean_rent,O39.SI,0.7862800783816205,Descriptive trending levels; not a growth association or forecast input
+room_type,executive,ADJUSTED_CLOSE,mean_rent,U11.SI,0.7683696504357604,Descriptive trending levels; not a growth association or forecast input
+room_type,executive,ADJUSTED_CLOSE,mean_rent,S68.SI,0.4489849596405698,Descriptive trending levels; not a growth association or forecast input
+room_type,executive,ADJUSTED_CLOSE,mean_rent,AIY.SI,-0.00682539484546823,Descriptive trending levels; not a growth association or forecast input
+room_type,executive,ADJUSTED_CLOSE,adjusted_mean_rent,banks_equal,0.7739691730277665,Descriptive trending levels; not a growth association or forecast input
+room_type,executive,ADJUSTED_CLOSE,adjusted_mean_rent,finance_equal,0.6886624280885132,Descriptive trending levels; not a growth association or forecast input
+room_type,executive,ADJUSTED_CLOSE,adjusted_mean_rent,nonbank_finance_equal,0.34815405598161514,Descriptive trending levels; not a growth association or forecast input
+room_type,executive,ADJUSTED_CLOSE,adjusted_mean_rent,banks_cap_seeded,0.765070329282497,Descriptive trending levels; not a growth association or forecast input
+room_type,executive,ADJUSTED_CLOSE,adjusted_mean_rent,D05.SI,0.7410384825038151,Descriptive trending levels; not a growth association or forecast input
+room_type,executive,ADJUSTED_CLOSE,adjusted_mean_rent,O39.SI,0.7860704638911243,Descriptive trending levels; not a growth association or forecast input
+room_type,executive,ADJUSTED_CLOSE,adjusted_mean_rent,U11.SI,0.7683498124606278,Descriptive trending levels; not a growth association or forecast input
+room_type,executive,ADJUSTED_CLOSE,adjusted_mean_rent,S68.SI,0.4487572977731813,Descriptive trending levels; not a growth association or forecast input
+room_type,executive,ADJUSTED_CLOSE,adjusted_mean_rent,AIY.SI,-0.011332282113348115,Descriptive trending levels; not a growth association or forecast input
+room_type,executive,CLOSE,mean_rent,banks_equal,0.6917288820352119,Descriptive trending levels; not a growth association or forecast input
+room_type,executive,CLOSE,mean_rent,finance_equal,0.5785236755129705,Descriptive trending levels; not a growth association or forecast input
+room_type,executive,CLOSE,mean_rent,nonbank_finance_equal,0.2136540216745129,Descriptive trending levels; not a growth association or forecast input
+room_type,executive,CLOSE,mean_rent,banks_cap_seeded,0.6785133029299982,Descriptive trending levels; not a growth association or forecast input
+room_type,executive,CLOSE,mean_rent,D05.SI,0.6575900339579092,Descriptive trending levels; not a growth association or forecast input
+room_type,executive,CLOSE,mean_rent,O39.SI,0.7087217646074011,Descriptive trending levels; not a growth association or forecast input
+room_type,executive,CLOSE,mean_rent,U11.SI,0.6416412191566404,Descriptive trending levels; not a growth association or forecast input
+room_type,executive,CLOSE,mean_rent,S68.SI,0.19312447096756372,Descriptive trending levels; not a growth association or forecast input
+room_type,executive,CLOSE,mean_rent,AIY.SI,-0.059400540983604797,Descriptive trending levels; not a growth association or forecast input
+room_type,executive,CLOSE,adjusted_mean_rent,banks_equal,0.6919120237537879,Descriptive trending levels; not a growth association or forecast input
+room_type,executive,CLOSE,adjusted_mean_rent,finance_equal,0.5771895172800277,Descriptive trending levels; not a growth association or forecast input
+room_type,executive,CLOSE,adjusted_mean_rent,nonbank_finance_equal,0.21043540697674964,Descriptive trending levels; not a growth association or forecast input
+room_type,executive,CLOSE,adjusted_mean_rent,banks_cap_seeded,0.6787175467235832,Descriptive trending levels; not a growth association or forecast input
+room_type,executive,CLOSE,adjusted_mean_rent,D05.SI,0.6578368943555214,Descriptive trending levels; not a growth association or forecast input
+room_type,executive,CLOSE,adjusted_mean_rent,O39.SI,0.7087788871338019,Descriptive trending levels; not a growth association or forecast input
+room_type,executive,CLOSE,adjusted_mean_rent,U11.SI,0.6419259848608971,Descriptive trending levels; not a growth association or forecast input
+room_type,executive,CLOSE,adjusted_mean_rent,S68.SI,0.1930671888514511,Descriptive trending levels; not a growth association or forecast input
+room_type,executive,CLOSE,adjusted_mean_rent,AIY.SI,-0.0639336102343968,Descriptive trending levels; not a growth association or forecast input
+flat_model,apartment,ADJUSTED_CLOSE,mean_rent,banks_equal,0.7783966586443661,Descriptive trending levels; not a growth association or forecast input
+flat_model,apartment,ADJUSTED_CLOSE,mean_rent,finance_equal,0.6941791375304665,Descriptive trending levels; not a growth association or forecast input
+flat_model,apartment,ADJUSTED_CLOSE,mean_rent,nonbank_finance_equal,0.3547742785506152,Descriptive trending levels; not a growth association or forecast input
+flat_model,apartment,ADJUSTED_CLOSE,mean_rent,banks_cap_seeded,0.7695403248397971,Descriptive trending levels; not a growth association or forecast input
+flat_model,apartment,ADJUSTED_CLOSE,mean_rent,D05.SI,0.745490898926472,Descriptive trending levels; not a growth association or forecast input
+flat_model,apartment,ADJUSTED_CLOSE,mean_rent,O39.SI,0.7902105199010637,Descriptive trending levels; not a growth association or forecast input
+flat_model,apartment,ADJUSTED_CLOSE,mean_rent,U11.SI,0.7731869157607394,Descriptive trending levels; not a growth association or forecast input
+flat_model,apartment,ADJUSTED_CLOSE,mean_rent,S68.SI,0.4565268397486602,Descriptive trending levels; not a growth association or forecast input
+flat_model,apartment,ADJUSTED_CLOSE,mean_rent,AIY.SI,-0.0064095884303455265,Descriptive trending levels; not a growth association or forecast input
+flat_model,apartment,ADJUSTED_CLOSE,adjusted_mean_rent,banks_equal,0.7778496389140476,Descriptive trending levels; not a growth association or forecast input
+flat_model,apartment,ADJUSTED_CLOSE,adjusted_mean_rent,finance_equal,0.6930388371377135,Descriptive trending levels; not a growth association or forecast input
+flat_model,apartment,ADJUSTED_CLOSE,adjusted_mean_rent,nonbank_finance_equal,0.3526281323865235,Descriptive trending levels; not a growth association or forecast input
+flat_model,apartment,ADJUSTED_CLOSE,adjusted_mean_rent,banks_cap_seeded,0.7689843031969801,Descriptive trending levels; not a growth association or forecast input
+flat_model,apartment,ADJUSTED_CLOSE,adjusted_mean_rent,D05.SI,0.7448706343697808,Descriptive trending levels; not a growth association or forecast input
+flat_model,apartment,ADJUSTED_CLOSE,adjusted_mean_rent,O39.SI,0.7897831730979862,Descriptive trending levels; not a growth association or forecast input
+flat_model,apartment,ADJUSTED_CLOSE,adjusted_mean_rent,U11.SI,0.7726181043196158,Descriptive trending levels; not a growth association or forecast input
+flat_model,apartment,ADJUSTED_CLOSE,adjusted_mean_rent,S68.SI,0.4560354242486032,Descriptive trending levels; not a growth association or forecast input
+flat_model,apartment,ADJUSTED_CLOSE,adjusted_mean_rent,AIY.SI,-0.009377760141676855,Descriptive trending levels; not a growth association or forecast input
+flat_model,apartment,CLOSE,mean_rent,banks_equal,0.6970936802165474,Descriptive trending levels; not a growth association or forecast input
+flat_model,apartment,CLOSE,mean_rent,finance_equal,0.5834838163094075,Descriptive trending levels; not a growth association or forecast input
+flat_model,apartment,CLOSE,mean_rent,nonbank_finance_equal,0.2169493312142155,Descriptive trending levels; not a growth association or forecast input
+flat_model,apartment,CLOSE,mean_rent,banks_cap_seeded,0.6838274882254044,Descriptive trending levels; not a growth association or forecast input
+flat_model,apartment,CLOSE,mean_rent,D05.SI,0.6623150832971114,Descriptive trending levels; not a growth association or forecast input
+flat_model,apartment,CLOSE,mean_rent,O39.SI,0.7137901537763188,Descriptive trending levels; not a growth association or forecast input
+flat_model,apartment,CLOSE,mean_rent,U11.SI,0.648380724530987,Descriptive trending levels; not a growth association or forecast input
+flat_model,apartment,CLOSE,mean_rent,S68.SI,0.20140058646813624,Descriptive trending levels; not a growth association or forecast input
+flat_model,apartment,CLOSE,mean_rent,AIY.SI,-0.05916844806072027,Descriptive trending levels; not a growth association or forecast input
+flat_model,apartment,CLOSE,adjusted_mean_rent,banks_equal,0.6965678012077238,Descriptive trending levels; not a growth association or forecast input
+flat_model,apartment,CLOSE,adjusted_mean_rent,finance_equal,0.5821492446362457,Descriptive trending levels; not a growth association or forecast input
+flat_model,apartment,CLOSE,adjusted_mean_rent,nonbank_finance_equal,0.2146944233300228,Descriptive trending levels; not a growth association or forecast input
+flat_model,apartment,CLOSE,adjusted_mean_rent,banks_cap_seeded,0.6832922789363688,Descriptive trending levels; not a growth association or forecast input
+flat_model,apartment,CLOSE,adjusted_mean_rent,D05.SI,0.661700208055951,Descriptive trending levels; not a growth association or forecast input
+flat_model,apartment,CLOSE,adjusted_mean_rent,O39.SI,0.7134716656443161,Descriptive trending levels; not a growth association or forecast input
+flat_model,apartment,CLOSE,adjusted_mean_rent,U11.SI,0.6477852879070211,Descriptive trending levels; not a growth association or forecast input
+flat_model,apartment,CLOSE,adjusted_mean_rent,S68.SI,0.20109707345187872,Descriptive trending levels; not a growth association or forecast input
+flat_model,apartment,CLOSE,adjusted_mean_rent,AIY.SI,-0.06214520387031789,Descriptive trending levels; not a growth association or forecast input
+flat_model,improved,ADJUSTED_CLOSE,mean_rent,banks_equal,0.7552190272717637,Descriptive trending levels; not a growth association or forecast input
+flat_model,improved,ADJUSTED_CLOSE,mean_rent,finance_equal,0.6708933437835303,Descriptive trending levels; not a growth association or forecast input
+flat_model,improved,ADJUSTED_CLOSE,mean_rent,nonbank_finance_equal,0.33492144045826694,Descriptive trending levels; not a growth association or forecast input
+flat_model,improved,ADJUSTED_CLOSE,mean_rent,banks_cap_seeded,0.7460996442558286,Descriptive trending levels; not a growth association or forecast input
+flat_model,improved,ADJUSTED_CLOSE,mean_rent,D05.SI,0.7221896359162139,Descriptive trending levels; not a growth association or forecast input
+flat_model,improved,ADJUSTED_CLOSE,mean_rent,O39.SI,0.7656797400749114,Descriptive trending levels; not a growth association or forecast input
+flat_model,improved,ADJUSTED_CLOSE,mean_rent,U11.SI,0.7516769175992791,Descriptive trending levels; not a growth association or forecast input
+flat_model,improved,ADJUSTED_CLOSE,mean_rent,S68.SI,0.42737224293845094,Descriptive trending levels; not a growth association or forecast input
+flat_model,improved,ADJUSTED_CLOSE,mean_rent,AIY.SI,-0.01542493678488159,Descriptive trending levels; not a growth association or forecast input
+flat_model,improved,ADJUSTED_CLOSE,adjusted_mean_rent,banks_equal,0.7559984857107693,Descriptive trending levels; not a growth association or forecast input
+flat_model,improved,ADJUSTED_CLOSE,adjusted_mean_rent,finance_equal,0.6707401330475101,Descriptive trending levels; not a growth association or forecast input
+flat_model,improved,ADJUSTED_CLOSE,adjusted_mean_rent,nonbank_finance_equal,0.33286479795701807,Descriptive trending levels; not a growth association or forecast input
+flat_model,improved,ADJUSTED_CLOSE,adjusted_mean_rent,banks_cap_seeded,0.7468911255419537,Descriptive trending levels; not a growth association or forecast input
+flat_model,improved,ADJUSTED_CLOSE,adjusted_mean_rent,D05.SI,0.7230777969125258,Descriptive trending levels; not a growth association or forecast input
+flat_model,improved,ADJUSTED_CLOSE,adjusted_mean_rent,O39.SI,0.7660904615227118,Descriptive trending levels; not a growth association or forecast input
+flat_model,improved,ADJUSTED_CLOSE,adjusted_mean_rent,U11.SI,0.752752229206657,Descriptive trending levels; not a growth association or forecast input
+flat_model,improved,ADJUSTED_CLOSE,adjusted_mean_rent,S68.SI,0.4274983145998345,Descriptive trending levels; not a growth association or forecast input
+flat_model,improved,ADJUSTED_CLOSE,adjusted_mean_rent,AIY.SI,-0.018798698577976353,Descriptive trending levels; not a growth association or forecast input
+flat_model,improved,CLOSE,mean_rent,banks_equal,0.6724333293193282,Descriptive trending levels; not a growth association or forecast input
+flat_model,improved,CLOSE,mean_rent,finance_equal,0.5589250538429582,Descriptive trending levels; not a growth association or forecast input
+flat_model,improved,CLOSE,mean_rent,nonbank_finance_equal,0.19775588717726128,Descriptive trending levels; not a growth association or forecast input
+flat_model,improved,CLOSE,mean_rent,banks_cap_seeded,0.65885320165592,Descriptive trending levels; not a growth association or forecast input
+flat_model,improved,CLOSE,mean_rent,D05.SI,0.638105239555748,Descriptive trending levels; not a growth association or forecast input
+flat_model,improved,CLOSE,mean_rent,O39.SI,0.6864504470964458,Descriptive trending levels; not a growth association or forecast input
+flat_model,improved,CLOSE,mean_rent,U11.SI,0.6264876696774594,Descriptive trending levels; not a growth association or forecast input
+flat_model,improved,CLOSE,mean_rent,S68.SI,0.17030580179124402,Descriptive trending levels; not a growth association or forecast input
+flat_model,improved,CLOSE,mean_rent,AIY.SI,-0.0675562952946907,Descriptive trending levels; not a growth association or forecast input
+flat_model,improved,CLOSE,adjusted_mean_rent,banks_equal,0.6733988833121608,Descriptive trending levels; not a growth association or forecast input
+flat_model,improved,CLOSE,adjusted_mean_rent,finance_equal,0.5585346741653293,Descriptive trending levels; not a growth association or forecast input
+flat_model,improved,CLOSE,adjusted_mean_rent,nonbank_finance_equal,0.1954051867725801,Descriptive trending levels; not a growth association or forecast input
+flat_model,improved,CLOSE,adjusted_mean_rent,banks_cap_seeded,0.6598497662721783,Descriptive trending levels; not a growth association or forecast input
+flat_model,improved,CLOSE,adjusted_mean_rent,D05.SI,0.6392538436120094,Descriptive trending levels; not a growth association or forecast input
+flat_model,improved,CLOSE,adjusted_mean_rent,O39.SI,0.686979876920997,Descriptive trending levels; not a growth association or forecast input
+flat_model,improved,CLOSE,adjusted_mean_rent,U11.SI,0.6276739424902805,Descriptive trending levels; not a growth association or forecast input
+flat_model,improved,CLOSE,adjusted_mean_rent,S68.SI,0.17027177635429233,Descriptive trending levels; not a growth association or forecast input
+flat_model,improved,CLOSE,adjusted_mean_rent,AIY.SI,-0.07097884892726097,Descriptive trending levels; not a growth association or forecast input
+flat_model,maisonette,ADJUSTED_CLOSE,mean_rent,banks_equal,0.7578863870248823,Descriptive trending levels; not a growth association or forecast input
+flat_model,maisonette,ADJUSTED_CLOSE,mean_rent,finance_equal,0.6790845510121523,Descriptive trending levels; not a growth association or forecast input
+flat_model,maisonette,ADJUSTED_CLOSE,mean_rent,nonbank_finance_equal,0.35310377591445535,Descriptive trending levels; not a growth association or forecast input
+flat_model,maisonette,ADJUSTED_CLOSE,mean_rent,banks_cap_seeded,0.7489013857933896,Descriptive trending levels; not a growth association or forecast input
+flat_model,maisonette,ADJUSTED_CLOSE,mean_rent,D05.SI,0.724700127156865,Descriptive trending levels; not a growth association or forecast input
+flat_model,maisonette,ADJUSTED_CLOSE,mean_rent,O39.SI,0.7703966277360091,Descriptive trending levels; not a growth association or forecast input
+flat_model,maisonette,ADJUSTED_CLOSE,mean_rent,U11.SI,0.7523828423790107,Descriptive trending levels; not a growth association or forecast input
+flat_model,maisonette,ADJUSTED_CLOSE,mean_rent,S68.SI,0.43305722550380504,Descriptive trending levels; not a growth association or forecast input
+flat_model,maisonette,ADJUSTED_CLOSE,mean_rent,AIY.SI,0.009490073219217333,Descriptive trending levels; not a growth association or forecast input
+flat_model,maisonette,ADJUSTED_CLOSE,adjusted_mean_rent,banks_equal,0.7586140691701299,Descriptive trending levels; not a growth association or forecast input
+flat_model,maisonette,ADJUSTED_CLOSE,adjusted_mean_rent,finance_equal,0.6791356471898189,Descriptive trending levels; not a growth association or forecast input
+flat_model,maisonette,ADJUSTED_CLOSE,adjusted_mean_rent,nonbank_finance_equal,0.3517578693644186,Descriptive trending levels; not a growth association or forecast input
+flat_model,maisonette,ADJUSTED_CLOSE,adjusted_mean_rent,banks_cap_seeded,0.749613284557153,Descriptive trending levels; not a growth association or forecast input
+flat_model,maisonette,ADJUSTED_CLOSE,adjusted_mean_rent,D05.SI,0.7253217656647284,Descriptive trending levels; not a growth association or forecast input
+flat_model,maisonette,ADJUSTED_CLOSE,adjusted_mean_rent,O39.SI,0.7711215029278571,Descriptive trending levels; not a growth association or forecast input
+flat_model,maisonette,ADJUSTED_CLOSE,adjusted_mean_rent,U11.SI,0.753266611266778,Descriptive trending levels; not a growth association or forecast input
+flat_model,maisonette,ADJUSTED_CLOSE,adjusted_mean_rent,S68.SI,0.43419257060370253,Descriptive trending levels; not a growth association or forecast input
+flat_model,maisonette,ADJUSTED_CLOSE,adjusted_mean_rent,AIY.SI,0.006526469379679409,Descriptive trending levels; not a growth association or forecast input
+flat_model,maisonette,CLOSE,mean_rent,banks_equal,0.6745319673218373,Descriptive trending levels; not a growth association or forecast input
+flat_model,maisonette,CLOSE,mean_rent,finance_equal,0.5693322132790095,Descriptive trending levels; not a growth association or forecast input
+flat_model,maisonette,CLOSE,mean_rent,nonbank_finance_equal,0.21846413762307645,Descriptive trending levels; not a growth association or forecast input
+flat_model,maisonette,CLOSE,mean_rent,banks_cap_seeded,0.6613839809418643,Descriptive trending levels; not a growth association or forecast input
+flat_model,maisonette,CLOSE,mean_rent,D05.SI,0.641034924802551,Descriptive trending levels; not a growth association or forecast input
+flat_model,maisonette,CLOSE,mean_rent,O39.SI,0.691317823955194,Descriptive trending levels; not a growth association or forecast input
+flat_model,maisonette,CLOSE,mean_rent,U11.SI,0.6246628291663067,Descriptive trending levels; not a growth association or forecast input
+flat_model,maisonette,CLOSE,mean_rent,S68.SI,0.17835593463547172,Descriptive trending levels; not a growth association or forecast input
+flat_model,maisonette,CLOSE,mean_rent,AIY.SI,-0.04218632830398714,Descriptive trending levels; not a growth association or forecast input
+flat_model,maisonette,CLOSE,adjusted_mean_rent,banks_equal,0.6756359994313184,Descriptive trending levels; not a growth association or forecast input
+flat_model,maisonette,CLOSE,adjusted_mean_rent,finance_equal,0.5693762193872544,Descriptive trending levels; not a growth association or forecast input
+flat_model,maisonette,CLOSE,adjusted_mean_rent,nonbank_finance_equal,0.21691221043572792,Descriptive trending levels; not a growth association or forecast input
+flat_model,maisonette,CLOSE,adjusted_mean_rent,banks_cap_seeded,0.6624327268315491,Descriptive trending levels; not a growth association or forecast input
+flat_model,maisonette,CLOSE,adjusted_mean_rent,D05.SI,0.6417740290664663,Descriptive trending levels; not a growth association or forecast input
+flat_model,maisonette,CLOSE,adjusted_mean_rent,O39.SI,0.6925750501646767,Descriptive trending levels; not a growth association or forecast input
+flat_model,maisonette,CLOSE,adjusted_mean_rent,U11.SI,0.626122520794505,Descriptive trending levels; not a growth association or forecast input
+flat_model,maisonette,CLOSE,adjusted_mean_rent,S68.SI,0.17968141129894255,Descriptive trending levels; not a growth association or forecast input
+flat_model,maisonette,CLOSE,adjusted_mean_rent,AIY.SI,-0.045190826531004515,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a,ADJUSTED_CLOSE,mean_rent,banks_equal,0.7412417391248717,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a,ADJUSTED_CLOSE,mean_rent,finance_equal,0.649128242574355,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a,ADJUSTED_CLOSE,mean_rent,nonbank_finance_equal,0.3022685210825413,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a,ADJUSTED_CLOSE,mean_rent,banks_cap_seeded,0.7318701107561125,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a,ADJUSTED_CLOSE,mean_rent,D05.SI,0.7074369440400522,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a,ADJUSTED_CLOSE,mean_rent,O39.SI,0.7514540961207953,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a,ADJUSTED_CLOSE,mean_rent,U11.SI,0.7391117006924111,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a,ADJUSTED_CLOSE,mean_rent,S68.SI,0.4059794600586268,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a,ADJUSTED_CLOSE,mean_rent,AIY.SI,-0.04851125798496049,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a,ADJUSTED_CLOSE,adjusted_mean_rent,banks_equal,0.7431723655472702,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a,ADJUSTED_CLOSE,adjusted_mean_rent,finance_equal,0.6518520067863767,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a,ADJUSTED_CLOSE,adjusted_mean_rent,nonbank_finance_equal,0.3058600059550217,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a,ADJUSTED_CLOSE,adjusted_mean_rent,banks_cap_seeded,0.7338054316195988,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a,ADJUSTED_CLOSE,adjusted_mean_rent,D05.SI,0.7093114899143524,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a,ADJUSTED_CLOSE,adjusted_mean_rent,O39.SI,0.7536589782869787,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a,ADJUSTED_CLOSE,adjusted_mean_rent,U11.SI,0.7407508538022549,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a,ADJUSTED_CLOSE,adjusted_mean_rent,S68.SI,0.4092352100106883,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a,ADJUSTED_CLOSE,adjusted_mean_rent,AIY.SI,-0.045848290164036805,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a,CLOSE,mean_rent,banks_equal,0.6593471441356135,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a,CLOSE,mean_rent,finance_equal,0.5350383542417704,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a,CLOSE,mean_rent,nonbank_finance_equal,0.1641422145353988,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a,CLOSE,mean_rent,banks_cap_seeded,0.6454154368337872,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a,CLOSE,mean_rent,D05.SI,0.6238459841205706,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a,CLOSE,mean_rent,O39.SI,0.6736241174876761,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a,CLOSE,mean_rent,U11.SI,0.6151990648040047,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a,CLOSE,mean_rent,S68.SI,0.1485807824148392,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a,CLOSE,mean_rent,AIY.SI,-0.10027273003225065,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a,CLOSE,adjusted_mean_rent,banks_equal,0.6606816791150801,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a,CLOSE,adjusted_mean_rent,finance_equal,0.5375959942388099,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a,CLOSE,adjusted_mean_rent,nonbank_finance_equal,0.16766301283392213,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a,CLOSE,adjusted_mean_rent,banks_cap_seeded,0.6467812426561272,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a,CLOSE,adjusted_mean_rent,D05.SI,0.625309670388142,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a,CLOSE,adjusted_mean_rent,O39.SI,0.6751616494802243,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a,CLOSE,adjusted_mean_rent,U11.SI,0.6159916829749187,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a,CLOSE,adjusted_mean_rent,S68.SI,0.1517818278865145,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a,CLOSE,adjusted_mean_rent,AIY.SI,-0.09772283063828582,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a2,ADJUSTED_CLOSE,mean_rent,banks_equal,0.7517250784679436,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a2,ADJUSTED_CLOSE,mean_rent,finance_equal,0.6609595142951239,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a2,ADJUSTED_CLOSE,mean_rent,nonbank_finance_equal,0.3151464391141615,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a2,ADJUSTED_CLOSE,mean_rent,banks_cap_seeded,0.7424538190175228,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a2,ADJUSTED_CLOSE,mean_rent,D05.SI,0.7181864212111693,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a2,ADJUSTED_CLOSE,mean_rent,O39.SI,0.7582699978387193,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a2,ADJUSTED_CLOSE,mean_rent,U11.SI,0.7542778853892633,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a2,ADJUSTED_CLOSE,mean_rent,S68.SI,0.42048093152312893,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a2,ADJUSTED_CLOSE,mean_rent,AIY.SI,-0.03678322782581615,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a2,ADJUSTED_CLOSE,adjusted_mean_rent,banks_equal,0.7557239885623034,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a2,ADJUSTED_CLOSE,adjusted_mean_rent,finance_equal,0.6640507003484172,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a2,ADJUSTED_CLOSE,adjusted_mean_rent,nonbank_finance_equal,0.31593724056777883,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a2,ADJUSTED_CLOSE,adjusted_mean_rent,banks_cap_seeded,0.7464829478356422,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a2,ADJUSTED_CLOSE,adjusted_mean_rent,D05.SI,0.7223578266471415,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a2,ADJUSTED_CLOSE,adjusted_mean_rent,O39.SI,0.7615117390151929,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a2,ADJUSTED_CLOSE,adjusted_mean_rent,U11.SI,0.7589554512419273,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a2,ADJUSTED_CLOSE,adjusted_mean_rent,S68.SI,0.4232714688499152,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a2,ADJUSTED_CLOSE,adjusted_mean_rent,AIY.SI,-0.03831939027013381,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a2,CLOSE,mean_rent,banks_equal,0.6733502881130006,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a2,CLOSE,mean_rent,finance_equal,0.5500143159371755,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a2,CLOSE,mean_rent,nonbank_finance_equal,0.17769442674837277,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a2,CLOSE,mean_rent,banks_cap_seeded,0.6593338665897129,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a2,CLOSE,mean_rent,D05.SI,0.6366173836236823,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a2,CLOSE,mean_rent,O39.SI,0.6822487746301887,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a2,CLOSE,mean_rent,U11.SI,0.6382103109180512,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a2,CLOSE,mean_rent,S68.SI,0.16449567294882586,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a2,CLOSE,mean_rent,AIY.SI,-0.08818974139533745,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a2,CLOSE,adjusted_mean_rent,banks_equal,0.6786596570012677,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a2,CLOSE,adjusted_mean_rent,finance_equal,0.5536568169390267,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a2,CLOSE,adjusted_mean_rent,nonbank_finance_equal,0.17822805511341658,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a2,CLOSE,adjusted_mean_rent,banks_cap_seeded,0.6646793554401227,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a2,CLOSE,adjusted_mean_rent,D05.SI,0.6420173512783693,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a2,CLOSE,adjusted_mean_rent,O39.SI,0.6864790527442358,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a2,CLOSE,adjusted_mean_rent,U11.SI,0.644566582529231,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a2,CLOSE,adjusted_mean_rent,S68.SI,0.167335832619234,Descriptive trending levels; not a growth association or forecast input
+flat_model,model a2,CLOSE,adjusted_mean_rent,AIY.SI,-0.08983314595451182,Descriptive trending levels; not a growth association or forecast input
+flat_model,new generation,ADJUSTED_CLOSE,mean_rent,banks_equal,0.7613280715159102,Descriptive trending levels; not a growth association or forecast input
+flat_model,new generation,ADJUSTED_CLOSE,mean_rent,finance_equal,0.6783371296105459,Descriptive trending levels; not a growth association or forecast input
+flat_model,new generation,ADJUSTED_CLOSE,mean_rent,nonbank_finance_equal,0.34340945299143144,Descriptive trending levels; not a growth association or forecast input
+flat_model,new generation,ADJUSTED_CLOSE,mean_rent,banks_cap_seeded,0.7521316981344243,Descriptive trending levels; not a growth association or forecast input
+flat_model,new generation,ADJUSTED_CLOSE,mean_rent,D05.SI,0.72759217576387,Descriptive trending levels; not a growth association or forecast input
+flat_model,new generation,ADJUSTED_CLOSE,mean_rent,O39.SI,0.772661601389209,Descriptive trending levels; not a growth association or forecast input
+flat_model,new generation,ADJUSTED_CLOSE,mean_rent,U11.SI,0.7576660347999331,Descriptive trending levels; not a growth association or forecast input
+flat_model,new generation,ADJUSTED_CLOSE,mean_rent,S68.SI,0.4366036371480794,Descriptive trending levels; not a growth association or forecast input
+flat_model,new generation,ADJUSTED_CLOSE,mean_rent,AIY.SI,-0.009728443924472542,Descriptive trending levels; not a growth association or forecast input
+flat_model,new generation,ADJUSTED_CLOSE,adjusted_mean_rent,banks_equal,0.7632313083507359,Descriptive trending levels; not a growth association or forecast input
+flat_model,new generation,ADJUSTED_CLOSE,adjusted_mean_rent,finance_equal,0.6795102227580778,Descriptive trending levels; not a growth association or forecast input
+flat_model,new generation,ADJUSTED_CLOSE,adjusted_mean_rent,nonbank_finance_equal,0.3428537704405301,Descriptive trending levels; not a growth association or forecast input
+flat_model,new generation,ADJUSTED_CLOSE,adjusted_mean_rent,banks_cap_seeded,0.7540857578917427,Descriptive trending levels; not a growth association or forecast input
+flat_model,new generation,ADJUSTED_CLOSE,adjusted_mean_rent,D05.SI,0.7297935101806072,Descriptive trending levels; not a growth association or forecast input
+flat_model,new generation,ADJUSTED_CLOSE,adjusted_mean_rent,O39.SI,0.7740589661761005,Descriptive trending levels; not a growth association or forecast input
+flat_model,new generation,ADJUSTED_CLOSE,adjusted_mean_rent,U11.SI,0.7597614658169399,Descriptive trending levels; not a growth association or forecast input
+flat_model,new generation,ADJUSTED_CLOSE,adjusted_mean_rent,S68.SI,0.43744183545562365,Descriptive trending levels; not a growth association or forecast input
+flat_model,new generation,ADJUSTED_CLOSE,adjusted_mean_rent,AIY.SI,-0.01156806057464774,Descriptive trending levels; not a growth association or forecast input
+flat_model,new generation,CLOSE,mean_rent,banks_equal,0.6776091696821911,Descriptive trending levels; not a growth association or forecast input
+flat_model,new generation,CLOSE,mean_rent,finance_equal,0.5661351497047393,Descriptive trending levels; not a growth association or forecast input
+flat_model,new generation,CLOSE,mean_rent,nonbank_finance_equal,0.20586389564336205,Descriptive trending levels; not a growth association or forecast input
+flat_model,new generation,CLOSE,mean_rent,banks_cap_seeded,0.6639077854922664,Descriptive trending levels; not a growth association or forecast input
+flat_model,new generation,CLOSE,mean_rent,D05.SI,0.6422311827038837,Descriptive trending levels; not a growth association or forecast input
+flat_model,new generation,CLOSE,mean_rent,O39.SI,0.6934127463691263,Descriptive trending levels; not a growth association or forecast input
+flat_model,new generation,CLOSE,mean_rent,U11.SI,0.6308912812559352,Descriptive trending levels; not a growth association or forecast input
+flat_model,new generation,CLOSE,mean_rent,S68.SI,0.17889539155501666,Descriptive trending levels; not a growth association or forecast input
+flat_model,new generation,CLOSE,mean_rent,AIY.SI,-0.06210740456838913,Descriptive trending levels; not a growth association or forecast input
+flat_model,new generation,CLOSE,adjusted_mean_rent,banks_equal,0.6798617844883177,Descriptive trending levels; not a growth association or forecast input
+flat_model,new generation,CLOSE,adjusted_mean_rent,finance_equal,0.5672224888062972,Descriptive trending levels; not a growth association or forecast input
+flat_model,new generation,CLOSE,adjusted_mean_rent,nonbank_finance_equal,0.20496743959782893,Descriptive trending levels; not a growth association or forecast input
+flat_model,new generation,CLOSE,adjusted_mean_rent,banks_cap_seeded,0.6662346368724791,Descriptive trending levels; not a growth association or forecast input
+flat_model,new generation,CLOSE,adjusted_mean_rent,D05.SI,0.6448594392255345,Descriptive trending levels; not a growth association or forecast input
+flat_model,new generation,CLOSE,adjusted_mean_rent,O39.SI,0.6949692324080264,Descriptive trending levels; not a growth association or forecast input
+flat_model,new generation,CLOSE,adjusted_mean_rent,U11.SI,0.6333571823883606,Descriptive trending levels; not a growth association or forecast input
+flat_model,new generation,CLOSE,adjusted_mean_rent,S68.SI,0.17933048790508235,Descriptive trending levels; not a growth association or forecast input
+flat_model,new generation,CLOSE,adjusted_mean_rent,AIY.SI,-0.06402015904361492,Descriptive trending levels; not a growth association or forecast input
+flat_model,premium apartment,ADJUSTED_CLOSE,mean_rent,banks_equal,0.7143443421783505,Descriptive trending levels; not a growth association or forecast input
+flat_model,premium apartment,ADJUSTED_CLOSE,mean_rent,finance_equal,0.6213069255900171,Descriptive trending levels; not a growth association or forecast input
+flat_model,premium apartment,ADJUSTED_CLOSE,mean_rent,nonbank_finance_equal,0.27582538499473935,Descriptive trending levels; not a growth association or forecast input
+flat_model,premium apartment,ADJUSTED_CLOSE,mean_rent,banks_cap_seeded,0.7044622189106899,Descriptive trending levels; not a growth association or forecast input
+flat_model,premium apartment,ADJUSTED_CLOSE,mean_rent,D05.SI,0.6792769644892889,Descriptive trending levels; not a growth association or forecast input
+flat_model,premium apartment,ADJUSTED_CLOSE,mean_rent,O39.SI,0.7227545042585908,Descriptive trending levels; not a growth association or forecast input
+flat_model,premium apartment,ADJUSTED_CLOSE,mean_rent,U11.SI,0.7161361236162014,Descriptive trending levels; not a growth association or forecast input
+flat_model,premium apartment,ADJUSTED_CLOSE,mean_rent,S68.SI,0.3730192010956593,Descriptive trending levels; not a growth association or forecast input
+flat_model,premium apartment,ADJUSTED_CLOSE,mean_rent,AIY.SI,-0.06624857200157476,Descriptive trending levels; not a growth association or forecast input
+flat_model,premium apartment,ADJUSTED_CLOSE,adjusted_mean_rent,banks_equal,0.7173283754979689,Descriptive trending levels; not a growth association or forecast input
+flat_model,premium apartment,ADJUSTED_CLOSE,adjusted_mean_rent,finance_equal,0.6239040128993434,Descriptive trending levels; not a growth association or forecast input
+flat_model,premium apartment,ADJUSTED_CLOSE,adjusted_mean_rent,nonbank_finance_equal,0.27712291740521283,Descriptive trending levels; not a growth association or forecast input
+flat_model,premium apartment,ADJUSTED_CLOSE,adjusted_mean_rent,banks_cap_seeded,0.7074393808115671,Descriptive trending levels; not a growth association or forecast input
+flat_model,premium apartment,ADJUSTED_CLOSE,adjusted_mean_rent,D05.SI,0.6821898326451092,Descriptive trending levels; not a growth association or forecast input
+flat_model,premium apartment,ADJUSTED_CLOSE,adjusted_mean_rent,O39.SI,0.7253824806339505,Descriptive trending levels; not a growth association or forecast input
+flat_model,premium apartment,ADJUSTED_CLOSE,adjusted_mean_rent,U11.SI,0.7196634386339736,Descriptive trending levels; not a growth association or forecast input
+flat_model,premium apartment,ADJUSTED_CLOSE,adjusted_mean_rent,S68.SI,0.37584634716564536,Descriptive trending levels; not a growth association or forecast input
+flat_model,premium apartment,ADJUSTED_CLOSE,adjusted_mean_rent,AIY.SI,-0.06671258762525586,Descriptive trending levels; not a growth association or forecast input
+flat_model,premium apartment,CLOSE,mean_rent,banks_equal,0.6310274094348347,Descriptive trending levels; not a growth association or forecast input
+flat_model,premium apartment,CLOSE,mean_rent,finance_equal,0.5054224401069691,Descriptive trending levels; not a growth association or forecast input
+flat_model,premium apartment,CLOSE,mean_rent,nonbank_finance_equal,0.1379979503376838,Descriptive trending levels; not a growth association or forecast input
+flat_model,premium apartment,CLOSE,mean_rent,banks_cap_seeded,0.6165197499520753,Descriptive trending levels; not a growth association or forecast input
+flat_model,premium apartment,CLOSE,mean_rent,D05.SI,0.5949776735287563,Descriptive trending levels; not a growth association or forecast input
+flat_model,premium apartment,CLOSE,mean_rent,O39.SI,0.6416055592986977,Descriptive trending levels; not a growth association or forecast input
+flat_model,premium apartment,CLOSE,mean_rent,U11.SI,0.5925234794454955,Descriptive trending levels; not a growth association or forecast input
+flat_model,premium apartment,CLOSE,mean_rent,S68.SI,0.1141079913202357,Descriptive trending levels; not a growth association or forecast input
+flat_model,premium apartment,CLOSE,mean_rent,AIY.SI,-0.11740474376805868,Descriptive trending levels; not a growth association or forecast input
+flat_model,premium apartment,CLOSE,adjusted_mean_rent,banks_equal,0.6344030929048741,Descriptive trending levels; not a growth association or forecast input
+flat_model,premium apartment,CLOSE,adjusted_mean_rent,finance_equal,0.508118562886802,Descriptive trending levels; not a growth association or forecast input
+flat_model,premium apartment,CLOSE,adjusted_mean_rent,nonbank_finance_equal,0.13901855478162525,Descriptive trending levels; not a growth association or forecast input
+flat_model,premium apartment,CLOSE,adjusted_mean_rent,banks_cap_seeded,0.619866926031941,Descriptive trending levels; not a growth association or forecast input
+flat_model,premium apartment,CLOSE,adjusted_mean_rent,D05.SI,0.5981326426402563,Descriptive trending levels; not a growth association or forecast input
+flat_model,premium apartment,CLOSE,adjusted_mean_rent,O39.SI,0.6444628249870105,Descriptive trending levels; not a growth association or forecast input
+flat_model,premium apartment,CLOSE,adjusted_mean_rent,U11.SI,0.5967813260733305,Descriptive trending levels; not a growth association or forecast input
+flat_model,premium apartment,CLOSE,adjusted_mean_rent,S68.SI,0.11675292176222757,Descriptive trending levels; not a growth association or forecast input
+flat_model,premium apartment,CLOSE,adjusted_mean_rent,AIY.SI,-0.11797272402279493,Descriptive trending levels; not a growth association or forecast input
+flat_model,simplified,ADJUSTED_CLOSE,mean_rent,banks_equal,0.7739444034498348,Descriptive trending levels; not a growth association or forecast input
+flat_model,simplified,ADJUSTED_CLOSE,mean_rent,finance_equal,0.6925507614504004,Descriptive trending levels; not a growth association or forecast input
+flat_model,simplified,ADJUSTED_CLOSE,mean_rent,nonbank_finance_equal,0.3580133392057493,Descriptive trending levels; not a growth association or forecast input
+flat_model,simplified,ADJUSTED_CLOSE,mean_rent,banks_cap_seeded,0.7649007510260555,Descriptive trending levels; not a growth association or forecast input
+flat_model,simplified,ADJUSTED_CLOSE,mean_rent,D05.SI,0.7413545456589791,Descriptive trending levels; not a growth association or forecast input
+flat_model,simplified,ADJUSTED_CLOSE,mean_rent,O39.SI,0.7798023656486466,Descriptive trending levels; not a growth association or forecast input
+flat_model,simplified,ADJUSTED_CLOSE,mean_rent,U11.SI,0.775621732807944,Descriptive trending levels; not a growth association or forecast input
+flat_model,simplified,ADJUSTED_CLOSE,mean_rent,S68.SI,0.45203378225858876,Descriptive trending levels; not a growth association or forecast input
+flat_model,simplified,ADJUSTED_CLOSE,mean_rent,AIY.SI,0.0011900047802643617,Descriptive trending levels; not a growth association or forecast input
+flat_model,simplified,ADJUSTED_CLOSE,adjusted_mean_rent,banks_equal,0.7707796937441601,Descriptive trending levels; not a growth association or forecast input
+flat_model,simplified,ADJUSTED_CLOSE,adjusted_mean_rent,finance_equal,0.6892511322708151,Descriptive trending levels; not a growth association or forecast input
+flat_model,simplified,ADJUSTED_CLOSE,adjusted_mean_rent,nonbank_finance_equal,0.35513669902373834,Descriptive trending levels; not a growth association or forecast input
+flat_model,simplified,ADJUSTED_CLOSE,adjusted_mean_rent,banks_cap_seeded,0.7615989569544638,Descriptive trending levels; not a growth association or forecast input
+flat_model,simplified,ADJUSTED_CLOSE,adjusted_mean_rent,D05.SI,0.737473352263927,Descriptive trending levels; not a growth association or forecast input
+flat_model,simplified,ADJUSTED_CLOSE,adjusted_mean_rent,O39.SI,0.7772944598501063,Descriptive trending levels; not a growth association or forecast input
+flat_model,simplified,ADJUSTED_CLOSE,adjusted_mean_rent,U11.SI,0.7726672528394546,Descriptive trending levels; not a growth association or forecast input
+flat_model,simplified,ADJUSTED_CLOSE,adjusted_mean_rent,S68.SI,0.4513112617210115,Descriptive trending levels; not a growth association or forecast input
+flat_model,simplified,ADJUSTED_CLOSE,adjusted_mean_rent,AIY.SI,-0.002409193856192172,Descriptive trending levels; not a growth association or forecast input
+flat_model,simplified,CLOSE,mean_rent,banks_equal,0.6957052133151636,Descriptive trending levels; not a growth association or forecast input
+flat_model,simplified,CLOSE,mean_rent,finance_equal,0.5849137570693472,Descriptive trending levels; not a growth association or forecast input
+flat_model,simplified,CLOSE,mean_rent,nonbank_finance_equal,0.2216823862609731,Descriptive trending levels; not a growth association or forecast input
+flat_model,simplified,CLOSE,mean_rent,banks_cap_seeded,0.6821531976991017,Descriptive trending levels; not a growth association or forecast input
+flat_model,simplified,CLOSE,mean_rent,D05.SI,0.6609283046542123,Descriptive trending levels; not a growth association or forecast input
+flat_model,simplified,CLOSE,mean_rent,O39.SI,0.7037499446915532,Descriptive trending levels; not a growth association or forecast input
+flat_model,simplified,CLOSE,mean_rent,U11.SI,0.6575219649673665,Descriptive trending levels; not a growth association or forecast input
+flat_model,simplified,CLOSE,mean_rent,S68.SI,0.19747538410941162,Descriptive trending levels; not a growth association or forecast input
+flat_model,simplified,CLOSE,mean_rent,AIY.SI,-0.05106595109272062,Descriptive trending levels; not a growth association or forecast input
+flat_model,simplified,CLOSE,adjusted_mean_rent,banks_equal,0.6923996655966219,Descriptive trending levels; not a growth association or forecast input
+flat_model,simplified,CLOSE,adjusted_mean_rent,finance_equal,0.5814102609098898,Descriptive trending levels; not a growth association or forecast input
+flat_model,simplified,CLOSE,adjusted_mean_rent,nonbank_finance_equal,0.21888865409502925,Descriptive trending levels; not a growth association or forecast input
+flat_model,simplified,CLOSE,adjusted_mean_rent,banks_cap_seeded,0.6786436140702913,Descriptive trending levels; not a growth association or forecast input
+flat_model,simplified,CLOSE,adjusted_mean_rent,D05.SI,0.6566630092795945,Descriptive trending levels; not a growth association or forecast input
+flat_model,simplified,CLOSE,adjusted_mean_rent,O39.SI,0.7013361305052348,Descriptive trending levels; not a growth association or forecast input
+flat_model,simplified,CLOSE,adjusted_mean_rent,U11.SI,0.6546406582027616,Descriptive trending levels; not a growth association or forecast input
+flat_model,simplified,CLOSE,adjusted_mean_rent,S68.SI,0.19753557311797115,Descriptive trending levels; not a growth association or forecast input
+flat_model,simplified,CLOSE,adjusted_mean_rent,AIY.SI,-0.05463616624935269,Descriptive trending levels; not a growth association or forecast input
+flat_model,standard,ADJUSTED_CLOSE,mean_rent,banks_equal,0.7484420830333028,Descriptive trending levels; not a growth association or forecast input
+flat_model,standard,ADJUSTED_CLOSE,mean_rent,finance_equal,0.6569889469994655,Descriptive trending levels; not a growth association or forecast input
+flat_model,standard,ADJUSTED_CLOSE,mean_rent,nonbank_finance_equal,0.3099698223027344,Descriptive trending levels; not a growth association or forecast input
+flat_model,standard,ADJUSTED_CLOSE,mean_rent,banks_cap_seeded,0.7390087833600595,Descriptive trending levels; not a growth association or forecast input
+flat_model,standard,ADJUSTED_CLOSE,mean_rent,D05.SI,0.7141940205248132,Descriptive trending levels; not a growth association or forecast input
+flat_model,standard,ADJUSTED_CLOSE,mean_rent,O39.SI,0.7556838628187333,Descriptive trending levels; not a growth association or forecast input
+flat_model,standard,ADJUSTED_CLOSE,mean_rent,U11.SI,0.7510178617925488,Descriptive trending levels; not a growth association or forecast input
+flat_model,standard,ADJUSTED_CLOSE,mean_rent,S68.SI,0.414361755329211,Descriptive trending levels; not a growth association or forecast input
+flat_model,standard,ADJUSTED_CLOSE,mean_rent,AIY.SI,-0.040647632370815874,Descriptive trending levels; not a growth association or forecast input
+flat_model,standard,ADJUSTED_CLOSE,adjusted_mean_rent,banks_equal,0.7465654392746509,Descriptive trending levels; not a growth association or forecast input
+flat_model,standard,ADJUSTED_CLOSE,adjusted_mean_rent,finance_equal,0.6552922393542531,Descriptive trending levels; not a growth association or forecast input
+flat_model,standard,ADJUSTED_CLOSE,adjusted_mean_rent,nonbank_finance_equal,0.3094153776060456,Descriptive trending levels; not a growth association or forecast input
+flat_model,standard,ADJUSTED_CLOSE,adjusted_mean_rent,banks_cap_seeded,0.7371891413728013,Descriptive trending levels; not a growth association or forecast input
+flat_model,standard,ADJUSTED_CLOSE,adjusted_mean_rent,D05.SI,0.7126002271723617,Descriptive trending levels; not a growth association or forecast input
+flat_model,standard,ADJUSTED_CLOSE,adjusted_mean_rent,O39.SI,0.7551849170310015,Descriptive trending levels; not a growth association or forecast input
+flat_model,standard,ADJUSTED_CLOSE,adjusted_mean_rent,U11.SI,0.7468661002595053,Descriptive trending levels; not a growth association or forecast input
+flat_model,standard,ADJUSTED_CLOSE,adjusted_mean_rent,S68.SI,0.422316066393876,Descriptive trending levels; not a growth association or forecast input
+flat_model,standard,ADJUSTED_CLOSE,adjusted_mean_rent,AIY.SI,-0.046553029252550795,Descriptive trending levels; not a growth association or forecast input
+flat_model,standard,CLOSE,mean_rent,banks_equal,0.6711144209676694,Descriptive trending levels; not a growth association or forecast input
+flat_model,standard,CLOSE,mean_rent,finance_equal,0.546341926810399,Descriptive trending levels; not a growth association or forecast input
+flat_model,standard,CLOSE,mean_rent,nonbank_finance_equal,0.1723628569001266,Descriptive trending levels; not a growth association or forecast input
+flat_model,standard,CLOSE,mean_rent,banks_cap_seeded,0.6567092527654544,Descriptive trending levels; not a growth association or forecast input
+flat_model,standard,CLOSE,mean_rent,D05.SI,0.6325837918321225,Descriptive trending levels; not a growth association or forecast input
+flat_model,standard,CLOSE,mean_rent,O39.SI,0.6818938820238559,Descriptive trending levels; not a growth association or forecast input
+flat_model,standard,CLOSE,mean_rent,U11.SI,0.6361727457642655,Descriptive trending levels; not a growth association or forecast input
+flat_model,standard,CLOSE,mean_rent,S68.SI,0.15787698131260175,Descriptive trending levels; not a growth association or forecast input
+flat_model,standard,CLOSE,mean_rent,AIY.SI,-0.09216051688048328,Descriptive trending levels; not a growth association or forecast input
+flat_model,standard,CLOSE,adjusted_mean_rent,banks_equal,0.6669351008636023,Descriptive trending levels; not a growth association or forecast input
+flat_model,standard,CLOSE,adjusted_mean_rent,finance_equal,0.543145937454677,Descriptive trending levels; not a growth association or forecast input
+flat_model,standard,CLOSE,adjusted_mean_rent,nonbank_finance_equal,0.17162347474249592,Descriptive trending levels; not a growth association or forecast input
+flat_model,standard,CLOSE,adjusted_mean_rent,banks_cap_seeded,0.6527208879056063,Descriptive trending levels; not a growth association or forecast input
+flat_model,standard,CLOSE,adjusted_mean_rent,D05.SI,0.6296170345957395,Descriptive trending levels; not a growth association or forecast input
+flat_model,standard,CLOSE,adjusted_mean_rent,O39.SI,0.6792083574185637,Descriptive trending levels; not a growth association or forecast input
+flat_model,standard,CLOSE,adjusted_mean_rent,U11.SI,0.628150107927953,Descriptive trending levels; not a growth association or forecast input
+flat_model,standard,CLOSE,adjusted_mean_rent,S68.SI,0.16764375227490483,Descriptive trending levels; not a growth association or forecast input
+flat_model,standard,CLOSE,adjusted_mean_rent,AIY.SI,-0.0981923647178954,Descriptive trending levels; not a growth association or forecast input

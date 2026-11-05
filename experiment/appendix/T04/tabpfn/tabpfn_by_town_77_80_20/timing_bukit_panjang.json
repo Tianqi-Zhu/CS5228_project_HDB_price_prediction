@@ -1,0 +1,15 @@
+{
+  "fit_seconds": 1.1929655000567436,
+  "predict_seconds": 0.3066005000146106,
+  "peak_vram_gib": 1.2947354316711426,
+  "context_rows": 3027,
+  "query_rows": 690,
+  "features": 77,
+  "batch_size": 200,
+  "subsampling": false,
+  "parameter_versions_unchanged": true,
+  "town": "bukit panjang",
+  "rmse_sgd": 394.62383277280446,
+  "mae_sgd": 283.7834300112552,
+  "bias_sgd": 62.79884547335658
+}

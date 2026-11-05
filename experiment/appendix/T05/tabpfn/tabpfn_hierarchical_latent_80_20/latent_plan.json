@@ -1,0 +1,45 @@
+{
+  "code_sha256": {
+    "analysis/evaluate_tabpfn_hierarchical_latent.py": "5e637352203ae14b6f60f13e8226b9472d5bb03d911ae4026a489e89a45277b2",
+    "analysis/experiments/hierarchical_latent_residual.py": "cc86481c9fe2e8928c1b070806fe8926d49c734d1589cb38fc8f666914928dd9",
+    "analysis/summarize_tabpfn_hierarchical_latent.py": "8b62a530206a597b71a3093ca0469c52b988cbdb0f38156f82ceac31fcdbe913"
+  },
+  "static_grid": {
+    "block_penalty": [
+      25.0,
+      100.0
+    ],
+    "group_penalty": [
+      25.0,
+      100.0
+    ]
+  },
+  "dynamic_grid": {
+    "rho": [
+      0.0,
+      0.5,
+      0.9
+    ],
+    "state_penalty": [
+      25.0,
+      100.0
+    ]
+  },
+  "alpha": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "outer_origins": [
+    "2022-09",
+    "2023-07",
+    "2024-06"
+  ],
+  "cold_start_alpha": 0.0,
+  "family_tolerance": 0.001,
+  "solver": "Sparse augmented least squares, LSMR tolerance1e-10; no dense covariance or design",
+  "E2_prior": "lambda_d*((1-rho^2)*d_first^2 + sum_t(d_t-rho*d_previous)^2)",
+  "no_outer_target_selection": true
+}

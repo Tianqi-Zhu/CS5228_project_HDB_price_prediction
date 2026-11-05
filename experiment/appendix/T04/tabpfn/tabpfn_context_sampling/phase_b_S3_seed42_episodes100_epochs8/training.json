@@ -1,0 +1,60 @@
+{
+  "fit_rows": 102829,
+  "calibration_rows": 600,
+  "fit_seconds": 988.8803634999786,
+  "peak_vram_gib": 11.834048748016357,
+  "trainable_parameters": 8576,
+  "adapter_modules": 12,
+  "delta_l2": 24.51839193626718,
+  "adapter_sha256": "c85e3dad7a70c20cd23de7fbc0962ab20a6244e8b1ff196dc9054e5656b0e6a1",
+  "epoch_validation": [
+    {
+      "epoch": -1,
+      "delta_l2": 0.0,
+      "validation_mse": 270369.5243881688
+    },
+    {
+      "epoch": 0,
+      "delta_l2": 7.403536796569824,
+      "validation_mse": 270333.1933747083
+    },
+    {
+      "epoch": 1,
+      "delta_l2": 14.268058776855469,
+      "validation_mse": 271412.8803750062
+    },
+    {
+      "epoch": 2,
+      "delta_l2": 19.27687644958496,
+      "validation_mse": 268763.84762390214
+    },
+    {
+      "epoch": 3,
+      "delta_l2": 21.604320526123047,
+      "validation_mse": 268445.1037328136
+    },
+    {
+      "epoch": 4,
+      "delta_l2": 23.206768035888672,
+      "validation_mse": 268191.4467826861
+    },
+    {
+      "epoch": 5,
+      "delta_l2": 24.17222023010254,
+      "validation_mse": 268245.8637263909
+    },
+    {
+      "epoch": 6,
+      "delta_l2": 24.487655639648438,
+      "validation_mse": 268168.88344450924
+    },
+    {
+      "epoch": 7,
+      "delta_l2": 24.518390655517578,
+      "validation_mse": 267982.16128318786
+    }
+  ],
+  "episode_epochs_built": 8,
+  "mean_retrieval_seconds_per_episode": 0.06970958662510383,
+  "outer_labels_used_for_selection": false
+}

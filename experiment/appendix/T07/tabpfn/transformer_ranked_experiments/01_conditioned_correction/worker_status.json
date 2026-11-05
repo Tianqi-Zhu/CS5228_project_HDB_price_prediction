@@ -1,0 +1,11 @@
+{
+  "state": "completed",
+  "stage": "all",
+  "pid": 41920,
+  "completed_designs": [
+    "independent_old",
+    "conditioned_old",
+    "independent_stable",
+    "conditioned_stable"
+  ]
+}

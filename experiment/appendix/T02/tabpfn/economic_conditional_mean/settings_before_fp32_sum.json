@@ -1,0 +1,31 @@
+{
+  "source_sha256": {
+    "analysis\\run_economic_conditional_mean.py": "a41094c9e778c5cbb4b426a2cf35a48820abe9fa2cf3545390422a6c6ae44457",
+    "analysis\\experiments\\economic_conditional_mean.py": "3181f4b66514ba3ad7ab8ee0a09919707d0a39b8538ee27daa35a62aedb80997",
+    "analysis\\experiments\\spatial_temporal_transformer.py": "1f15e0e50fef5709ff6f1587da70f91ad20ff72c01f9ed16be4bd0e969677656",
+    ".cache\\spatial_temporal_transformer\\prepared.joblib": "683987abe171fabd9e26d29a6b4e8c39205a8eed7f18297a99d20b444cdfdf9c",
+    "EXPERIMENT_PLAN_ECONOMIC_CONDITIONAL_MEAN.md": "e42fe4ffc8e8f6a7f02784217b34922b33030b8c8ee05b8d8a6752c2cf0bc73f",
+    "reports\\spatial_temporal_transformer\\prepared.json": "04c8bf26ac4adf792b74e7abadb4a7ef915832cecdda879fa0fdda79064a5914",
+    "reports\\spatial_temporal_transformer\\calibration\\T0\\early_2022\\result.json": "b72989089084b8501f5b04b1a16322b76c0f8ee4d91d2d9b6d6076abc6203911",
+    "reports\\spatial_temporal_transformer\\calibration\\T0\\early_2023\\result.json": "1118ade96c143e2b33148cf55ddcd09ce1f5409efc76921571ef64c26e283131",
+    "reports\\tabpfn_top2_final_submission\\submission_tabpfn_ABCDE_equal_150k.csv": "ef1c3efc55a5b7bd6f3717870a1d07a0cbda78a4f9f153db89e189aa50c00488",
+    "reports\\tabpfn_top2_final_submission\\submission_tabpfn_ABDE_weighted_150k.csv": "5c0fe66ab127ddbf63d1923e4002e2154460167ab2a47ae5f4047b923c37cdd5",
+    "reports\\tabpfn_api_77\\submission_v3.5_plus_77_150k\\submission_tabpfn_api.csv": "df198400d00b57deeba40cd44a6c38ce5b17fde1c3726731b08b028117c3cf44"
+  },
+  "designs": [
+    "rent",
+    "rent_coe"
+  ],
+  "architecture": "FT128x2 + LSTM8 + conditional mean shift and eight property loadings",
+  "protocol": "EXPERIMENT_PLAN_ECONOMIC_CONDITIONAL_MEAN.md",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "max_epochs": 30,
+  "patience": 5,
+  "correction_penalty": 0.01,
+  "gpu_free_gib": 8,
+  "gpu_utilization_max": 35
+}

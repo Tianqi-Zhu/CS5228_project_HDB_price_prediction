@@ -1,0 +1,365 @@
+station_key,station,stop_id,stop_name,distance_m,source_commit_date
+admiralty,admiralty mrt station,46771,Opp Admiralty Stn,85.619446306134,2023-12-01 00:40:56
+admiralty,admiralty mrt station,46779,Admiralty Stn,24.92485707390978,2023-12-01 00:40:56
+admiralty,admiralty mrt station,47591,Bef Admiralty Stn/Blk 680,204.47557965812388,2023-12-01 00:40:56
+aljunied,aljunied mrt station,81011,Aft Aljunied Stn,134.25600040851097,2023-12-01 00:40:56
+aljunied,aljunied mrt station,81081,Opp Aljunied Stn,123.61743204492409,2023-12-01 00:40:56
+aljunied,aljunied mrt station,81089,Aljunied Stn,85.21474896757314,2023-12-01 00:40:56
+angmokio,ang mo kio mrt station,54009,Ang Mo Kio Int,104.3951199204143,2023-12-01 00:40:56
+angmokio,ang mo kio mrt station,54261,Aft Ang Mo Kio Stn Exit A,156.8088525263628,2023-12-01 00:40:56
+angmokio,ang mo kio mrt station,54269,Opp Ang Mo Kio Stn,206.16308959780275,2023-12-01 00:40:56
+angmokio,ang mo kio mrt station,54391,Aft Ang Mo Kio Int,219.27918769305055,2023-12-01 00:40:56
+angmokio,ang mo kio mrt station,54399,Bef Ang Mo Kio Stn Exit B,173.5280440229658,2023-12-01 00:40:56
+bartley,bartley mrt station,62071,Bartley Stn Exit A,4.706472623001275,2023-12-01 00:40:56
+bartley,bartley mrt station,62079,Aft Bartley Stn Exit B,57.93172106802588,2023-12-01 00:40:56
+bayfront,bayfront mrt station,03509,Bayfront Stn Exit B/MBS,97.8032608259121,2023-12-01 00:40:56
+bayfront,bayfront mrt station,03511,Aft Bayfront Stn Exit E,80.50722349191922,2023-12-01 00:40:56
+bayfront,bayfront mrt station,03519,Bayfront Stn Exit A,153.21406531850235,2023-12-01 00:40:56
+beautyworld,beauty world mrt station,42091,Beauty World Stn Exit B,192.0898256125159,2023-12-01 00:40:56
+beautyworld,beauty world mrt station,42099,Beauty World Stn Exit A,54.28249463573065,2023-12-01 00:40:56
+beautyworld,beauty world mrt station,42151,Beauty World Stn Exit C,126.51151665560793,2023-12-01 00:40:56
+beautyworld,beauty world mrt station,42159,Opp Beauty World Stn,100.50498797093462,2023-12-01 00:40:56
+bedok,bedok mrt station,84009,Bedok Int,123.9175207420838,2023-12-01 00:40:56
+bedok,bedok mrt station,84031,Bedok Stn Exit B,26.652299475212484,2023-12-01 00:40:56
+bedok,bedok mrt station,84039,Bedok Stn Exit A,142.03286944298534,2023-12-01 00:40:56
+bedoknorth,bedok north mrt station,84451,Bedok north Stn Exit A,88.56747727288084,2023-12-01 00:40:56
+bedoknorth,bedok north mrt station,84539,Bedok north Stn Exit B,171.46556294896993,2023-12-01 00:40:56
+bedokreservoir,bedok reservoir mrt station,84201,Bedok reservoir Stn Exit A,23.636173367428764,2023-12-01 00:40:56
+bedokreservoir,bedok reservoir mrt station,84209,Bedok reservoir Stn Exit B,77.60625699918177,2023-12-01 00:40:56
+bencoolen,bencoolen mrt station,04019,Opp Bencoolen Stn Exit B,107.35288552277903,2023-12-01 00:40:56
+bencoolen,bencoolen mrt station,04029,Bef Bencoolen Stn Exit A,97.65141991740082,2023-12-01 00:40:56
+bencoolen,bencoolen mrt station,08069,Bencoolen Stn Exit B,126.78639045613853,2023-12-01 00:40:56
+bendemeer,bendemeer mrt station,60011,Bendemeer Stn Exit A,146.1219375786427,2023-12-01 00:40:56
+bendemeer,bendemeer mrt station,60019,Bendemeer Stn Exit B,178.43489587492365,2023-12-01 00:40:56
+bishan,bishan mrt station,53009,Bishan Int,186.60675454199566,2023-12-01 00:40:56
+bishan,bishan mrt station,53231,Bishan Stn,45.69086912072223,2023-12-01 00:40:56
+bishan,bishan mrt station,53239,Opp Bishan Stn,89.83930865184485,2023-12-01 00:40:56
+boonkeng,boon keng mrt station,60119,Opp Boon Keng Stn,279.97639121423384,2023-12-01 00:40:56
+boonkeng,boon keng mrt station,60121,Boon Keng Stn/Blk 102,72.94880387681108,2023-12-01 00:40:56
+boonkeng,boon keng mrt station,60199,Boon Keng Stn/Blk 22,170.720916785595,2023-12-01 00:40:56
+boonlay,boon lay mrt station,22009,Boon Lay Int,88.70951002176909,2023-12-01 00:40:56
+botanicgardens,botanic gardens mrt station,41021,Botanic gardens Stn,33.5453639195209,2023-12-01 00:40:56
+botanicgardens,botanic gardens mrt station,41029,Opp Botanic gardens Stn,147.01655085237226,2023-12-01 00:40:56
+braddell,braddell mrt station,52161,Braddell Stn/Blk 111,160.7273792555643,2023-12-01 00:40:56
+braddell,braddell mrt station,52171,Braddell Stn/Blk 107,135.46092680283746,2023-12-01 00:40:56
+braddell,braddell mrt station,52179,Braddell Stn/Blk 106,150.32903402475395,2023-12-01 00:40:56
+brasbasah,bras basah mrt station,04179,Aft Bras Basah Stn Exit A,113.92702478029564,2023-12-01 00:40:56
+brighthill,bright hill mrt station,53341,Bright Hill Stn Exit 2,94.32497948397817,2023-12-01 00:40:56
+brighthill,bright hill mrt station,53349,Bright Hill Stn Exit 1,105.02097144350947,2023-12-01 00:40:56
+buangkok,buangkok mrt station,67601,Buangkok Stn Exit B,66.55033816131252,2023-12-01 00:40:56
+buangkok,buangkok mrt station,67609,Buangkok Stn Exit A,127.39482516309539,2023-12-01 00:40:56
+bugis,bugis mrt station,01059,Bugis Stn Exit B,53.297197066511224,2023-12-01 00:40:56
+bugis,bugis mrt station,01112,Opp Bugis Stn Exit C,103.49536734998927,2023-12-01 00:40:56
+bugis,bugis mrt station,01113,Bugis Stn Exit A,98.63283501753239,2023-12-01 00:40:56
+bugis,bugis mrt station,01119,Aft Bugis Stn Exit C,132.43856824169393,2023-12-01 00:40:56
+bugis,bugis mrt station,01139,Bugis Stn/Parkview Sq,116.88579731081954,2023-12-01 00:40:56
+bugis,bugis mrt station,01541,Bugis Stn Exit D,208.8019766191015,2023-12-01 00:40:56
+bukitbatok,bukit batok mrt station,43009,Bt Batok Int,174.5112222097081,2023-12-01 00:40:56
+bukitbatok,bukit batok mrt station,43419,Aft Bt Batok Stn/Blk 628,266.281601632894,2023-12-01 00:40:56
+bukitgombak,bukit gombak mrt station,43571,Opp Bt Gombak Stn,68.79250732874277,2023-12-01 00:40:56
+bukitgombak,bukit gombak mrt station,43579,Bt Gombak Stn,56.28367197767179,2023-12-01 00:40:56
+bukitpanjang,bukit panjang mrt/lrt station,44021,Bt Panjang Stn Exit B,44.73115286009507,2023-12-01 00:40:56
+bukitpanjang,bukit panjang mrt/lrt station,44029,Bt Panjang Stn Exit A/LRT,59.35346976419912,2023-12-01 00:40:56
+bukitpanjang,bukit panjang mrt/lrt station,44031,Aft Bt Panjang Stn,110.34939831965663,2023-12-01 00:40:56
+bukitpanjang,bukit panjang mrt/lrt station,44251,Bt Panjang Stn/Blk 604,200.401544590035,2023-12-01 00:40:56
+bukitpanjang,bukit panjang mrt/lrt station,45009,Bt Panjang Int,188.28782142824963,2023-12-01 00:40:56
+buonavista,buona vista mrt station,11361,Buona Vista Stn Exit C,110.7158410148273,2023-12-01 00:40:56
+buonavista,buona vista mrt station,11369,Buona Vista Stn Exit D,143.76734816773472,2023-12-01 00:40:56
+buonavista,buona vista mrt station,11379,Buona Vista Ter,329.56937101333307,2023-12-01 00:40:56
+caldecott,caldecott mrt station,52219,Bef Caldecott Stn Exit 3,265.9287725603754,2023-12-01 00:40:56
+caldecott,caldecott mrt station,52241,Bef Caldecott Stn/Savh,58.79966181897861,2023-12-01 00:40:56
+caldecott,caldecott mrt station,52249,Aft Caldecott Stn,128.28064353183683,2023-12-01 00:40:56
+caldecott,caldecott mrt station,52551,Caldecott Stn Exit 4,165.30175965019373,2023-12-01 00:40:56
+caldecott,caldecott mrt station,52559,Caldecott Stn Exit 1,145.7132862039655,2023-12-01 00:40:56
+canberra,canberra mrt station,58541,Opp Canberra Stn,73.85522662094996,2023-12-01 00:40:56
+canberra,canberra mrt station,58549,Canberra Stn,70.24333937658143,2023-12-01 00:40:56
+cashew,cashew mrt station,43091,Bef Cashew Stn,28.708894291187498,2023-12-01 00:40:56
+cashew,cashew mrt station,43109,Cashew Stn,193.8526658059076,2023-12-01 00:40:56
+cashew,cashew mrt station,43121,Aft Cashew Terr,335.7135917679175,2023-12-01 00:40:56
+changiairport,changi airport mrt station,95029,Changi Airport Ter 1,493.12280250953745,2023-12-01 00:40:56
+changiairport,changi airport mrt station,95109,Changi Airport Ter 3,246.83829642912093,2023-12-01 00:40:56
+changiairport,changi airport mrt station,95129,Changi Airport Ter 2,284.18191439264405,2023-12-01 00:40:56
+chinatown,chinatown mrt station,05013,Chinatown Stn Exit C,142.70159990044058,2023-12-01 00:40:56
+chinatown,chinatown mrt station,05022,Aft Chinatown Stn Exit D,95.02171555016476,2023-12-01 00:40:56
+chinatown,chinatown mrt station,05049,Chinatown Stn Exit E,81.158040348407,2023-12-01 00:40:56
+chinesegarden,chinese garden mrt station,28341,Chinese garden Stn,23.60500744803186,2023-12-01 00:40:56
+chinesegarden,chinese garden mrt station,28349,Opp Chinese garden Stn,76.98839797932833,2023-12-01 00:40:56
+choachukang,choa chu kang mrt/lrt station,44009,Choa Chu Kang Int,178.02345894027744,2023-12-01 00:40:56
+choachukang,choa chu kang mrt/lrt station,44531,Opp Choa Chu Kang Stn,83.61661560970305,2023-12-01 00:40:56
+choachukang,choa chu kang mrt/lrt station,44539,Lot 1/Choa Chu Kang Stn,76.04510078848632,2023-12-01 00:40:56
+cityhall,city hall mrt station,04167,City Hall Stn Exit B,125.95934523535192,2023-12-01 00:40:56
+cityhall,city hall mrt station,04168,Aft City Hall Stn Exit B,175.09572600701657,2023-12-01 00:40:56
+clarkequay,clarke quay mrt station,04222,Clarke Quay Stn Exit E,63.027362388619906,2023-12-01 00:40:56
+clarkequay,clarke quay mrt station,04239,Opp Clarke Quay Stn,94.74002975898296,2023-12-01 00:40:56
+clementi,clementi mrt station,17009,Clementi Int,132.0649946379885,2023-12-01 00:40:56
+clementi,clementi mrt station,17171,Clementi Stn Exit A,43.85235186665622,2023-12-01 00:40:56
+clementi,clementi mrt station,17179,Clementi Stn Exit B,13.157814990700741,2023-12-01 00:40:56
+commonwealth,commonwealth mrt station,11161,commonwealth Stn Exit A/D,55.27698973557178,2023-12-01 00:40:56
+commonwealth,commonwealth mrt station,11169,commonwealth Stn Exit B/C,42.888230738409064,2023-12-01 00:40:56
+dakota,dakota mrt station,81181,Dakota Stn Exit A/Blk 99,21.058128705590065,2023-12-01 00:40:56
+dakota,dakota mrt station,81189,Dakota Stn Exit B/Blk 60,17.64440869151282,2023-12-01 00:40:56
+dhobyghaut,dhoby ghaut mrt station,08031,Dhoby Ghaut Stn Exit B,128.68720535304055,2023-12-01 00:40:56
+dhobyghaut,dhoby ghaut mrt station,08057,Dhoby Ghaut Stn,35.51312063153881,2023-12-01 00:40:56
+dhobyghaut,dhoby ghaut mrt station,08058,Aft Dhoby Ghaut Stn,179.54980031080592,2023-12-01 00:40:56
+dover,dover mrt station,19031,Dover Stn Exit A,32.30295114814837,2023-12-01 00:40:56
+dover,dover mrt station,19039,Dover Stn Exit B,40.54441056394223,2023-12-01 00:40:56
+downtown,downtown mrt station,03529,Downtown Stn Exit E,30.00078953247388,2023-12-01 00:40:56
+downtown,downtown mrt station,03579,Opp Downtown Stn,69.55962967607704,2023-12-01 00:40:56
+esplanade,esplanade mrt station,01619,Esplanade Stn Exit F,120.39801456361637,2023-12-01 00:40:56
+esplanade,esplanade mrt station,02029,Aft Esplanade Stn Exit D,370.67642685369816,2023-12-01 00:40:56
+eunos,eunos mrt station,82009,Eunos Int,144.95828288988812,2023-12-01 00:40:56
+eunos,eunos mrt station,82061,Eunos Stn/ Int,137.72059515109243,2023-12-01 00:40:56
+eunos,eunos mrt station,83101,Eunos Stn,230.44131691814405,2023-12-01 00:40:56
+eunos,eunos mrt station,83109,Opp Eunos Stn,314.8404374846693,2023-12-01 00:40:56
+expo,expo mrt station,96301,Expo Stn Exit B,88.97279031603293,2023-12-01 00:40:56
+expo,expo mrt station,96309,Expo Stn Exit E,112.2378170949491,2023-12-01 00:40:56
+farrerpark,farrer park mrt station,50251,Farrer Pk Stn Exit A,79.59619167953863,2023-12-01 00:40:56
+farrerpark,farrer park mrt station,50259,Opp Farrer Pk Stn,102.74764390287973,2023-12-01 00:40:56
+farrerpark,farrer park mrt station,50279,Farrer Pk Stn Exit D,168.52518083627513,2023-12-01 00:40:56
+farrerpark,farrer park mrt station,07211,Aft Farrer Pk Stn Exit G,264.3276633989161,2023-12-01 00:40:56
+farrerroad,farrer road mrt station,11111,Farrer road Stn Exit B,68.44149721209989,2023-12-01 00:40:56
+farrerroad,farrer road mrt station,11119,Farrer road Stn Exit A,49.18362549377774,2023-12-01 00:40:56
+fortcanning,fort canning mrt station,04331,Bef Fort Canning Stn,98.61853736069887,2023-12-01 00:40:56
+fortcanning,fort canning mrt station,04339,Fort Canning Stn Exit B,70.68329834661843,2023-12-01 00:40:56
+gardensbythebay,gardens by the bay mrt station,03361,Gardens by the Bay Stn Exit 2,199.04008492034083,2023-12-01 00:40:56
+gardensbythebay,gardens by the bay mrt station,03369,Gardens by the Bay Stn Exit 1,246.3647521648435,2023-12-01 00:40:56
+geylangbahru,geylang bahru mrt station,60031,Bef Geylang Bahru Stn,181.49650100301847,2023-12-01 00:40:56
+geylangbahru,geylang bahru mrt station,60221,Blk 73/Geylang Bahru Stn,103.37142207495594,2023-12-01 00:40:56
+greatworld,great world mrt station,13079,Great World Stn Exit 4,169.73833985123636,2023-12-01 00:40:56
+harbourfront,harbourfront mrt station,14009,HarbourFront Int,407.11878180932547,2023-12-01 00:40:56
+harbourfront,harbourfront mrt station,14121,Opp HarbourFront Int,336.9744335282762,2023-12-01 00:40:56
+harbourfront,harbourfront mrt station,14129,HarbourFront Stn Exit A,285.8788035760807,2023-12-01 00:40:56
+harbourfront,harbourfront mrt station,14141,HarbourFront Stn/Vivocity,29.51982532156396,2023-12-01 00:40:56
+havelock,havelock mrt station,06071,Havelock Stn Exit 2,101.51508151882572,2023-12-01 00:40:56
+havelock,havelock mrt station,06081,Havelock Stn Exit 3,66.61574048242761,2023-12-01 00:40:56
+havelock,havelock mrt station,06141,Havelock Stn Exit 5,205.97869343972735,2023-12-01 00:40:56
+havelock,havelock mrt station,06149,Havelock Stn Exit 4,234.9369056258259,2023-12-01 00:40:56
+hawparvilla,haw par villa mrt station,16011,Opp Haw Par Villa Stn,22.593322696264885,2023-12-01 00:40:56
+hawparvilla,haw par villa mrt station,16019,Haw Par Villa Stn,57.093134038230325,2023-12-01 00:40:56
+hawparvilla,haw par villa mrt station,16221,Opp Haw Par Villa Stn,58.62121407141402,2023-12-01 00:40:56
+hawparvilla,haw par villa mrt station,16229,Haw Par Villa Stn,26.715082670103595,2023-12-01 00:40:56
+hillview,hillview mrt station,42991,Bef Hillview Stn Exit B,113.09045103427606,2023-12-01 00:40:56
+hillview,hillview mrt station,43061,Hillview Stn,57.70664481243279,2023-12-01 00:40:56
+hillview,hillview mrt station,43069,Hillview Stn Exit A,56.10710545202661,2023-12-01 00:40:56
+hillview,hillview mrt station,43279,Aft Hillview Stn,184.11393046727753,2023-12-01 00:40:56
+hollandvillage,holland village mrt station,11401,holland village Stn/Blk12,338.25127049918405,2023-12-01 00:40:56
+hollandvillage,holland village mrt station,11419,holland village Stn Exit A,101.37385832400857,2023-12-01 00:40:56
+hougang,hougang mrt station,64009,Hougang Ctrl Int,99.5261592860418,2023-12-01 00:40:56
+hougang,hougang mrt station,64381,Hougang Stn Exit C,174.80254696942998,2023-12-01 00:40:56
+hougang,hougang mrt station,64541,Hougang Ctrl Int,46.62180463603231,2023-12-01 00:40:56
+hougang,hougang mrt station,64549,Opp Hougang Ctrl Int,56.99237372577091,2023-12-01 00:40:56
+jalanbesar,jalan besar mrt station,07529,Jln Besar Stn Exit A,139.6541122079775,2023-12-01 00:40:56
+jookoon,joo koon mrt station,23371,Bef Joo Koon Int,208.5724831321777,2023-12-01 00:40:56
+jookoon,joo koon mrt station,23379,Opp Joo Koon Int,166.43026711697107,2023-12-01 00:40:56
+jookoon,joo koon mrt station,23491,Joo Koon Stn Exit B,77.848868604464,2023-12-01 00:40:56
+jookoon,joo koon mrt station,23499,Joo Koon Stn Exit A,52.831744050531064,2023-12-01 00:40:56
+jookoon,joo koon mrt station,24009,Joo Koon Int,85.56933115904835,2023-12-01 00:40:56
+jurongeast,jurong east mrt station,28009,Jurong East Int,205.01976292465824,2023-12-01 00:40:56
+jurongeast,jurong east mrt station,28211,Bef Jurong East Stn,193.11855594353807,2023-12-01 00:40:56
+kakibukit,kaki bukit mrt station,72031,Bef Kaki Bt Stn Exit B,117.28999133395212,2023-12-01 00:40:56
+kakibukit,kaki bukit mrt station,72039,Kaki Bt Stn Exit A,118.90774785444331,2023-12-01 00:40:56
+kallang,kallang mrt station,80031,Kallang Stn,44.164414947539406,2023-12-01 00:40:56
+kallang,kallang mrt station,80101,Kallang Stn/Opp Blk 2C,117.25398946604929,2023-12-01 00:40:56
+kallang,kallang mrt station,80109,Opp Kallang Stn/Blk 2C,195.85657664187627,2023-12-01 00:40:56
+kembangan,kembangan mrt station,83062,Kembangan Stn,15.59464577417198,2023-12-01 00:40:56
+kembangan,kembangan mrt station,83321,Kembangan Stn,73.09952356138712,2023-12-01 00:40:56
+kembangan,kembangan mrt station,83329,Opp Kembangan Stn,110.21836997820925,2023-12-01 00:40:56
+kentridge,kent ridge mrt station,15131,Kent Ridge Stn,87.83519817402974,2023-12-01 00:40:56
+kentridge,kent ridge mrt station,15139,Kent Ridge Stn Exit B,103.17682147581135,2023-12-01 00:40:56
+kentridge,kent ridge mrt station,18331,Kent Ridge Stn Exit A/NUH,64.81905882999615,2023-12-01 00:40:56
+kentridge,kent ridge mrt station,18339,Opp Kent Ridge Stn Exit A,86.96866239715686,2023-12-01 00:40:56
+khatib,khatib mrt station,59041,Bef Khatib Stn,107.10532128544062,2023-12-01 00:40:56
+khatib,khatib mrt station,59049,Opp Khatib Stn,58.288113084737276,2023-12-01 00:40:56
+khatib,khatib mrt station,59561,Opp Khatib Stn Exit D,169.54428088545117,2023-12-01 00:40:56
+khatib,khatib mrt station,59569,Khatib Stn Exit D,146.35837600530334,2023-12-01 00:40:56
+kingalbertpark,king albert park mrt station,42051,King Albert Pk Stn,109.27773446428745,2023-12-01 00:40:56
+kingalbertpark,king albert park mrt station,42059,Opp King Albert Pk Stn,228.15265158052065,2023-12-01 00:40:56
+kovan,kovan mrt station,63031,Kovan Stn Exit B,46.04086729834731,2023-12-01 00:40:56
+kovan,kovan mrt station,63039,Kovan Stn Exit C,42.33639454784935,2023-12-01 00:40:56
+kranji,kranji mrt station,45131,Opp Kranji Stn,91.05755174369908,2023-12-01 00:40:56
+kranji,kranji mrt station,45139,Kranji Stn,24.914177174984975,2023-12-01 00:40:56
+labradorpark,labrador park mrt station,15141,Labrador Pk Stn,210.8936082247005,2023-12-01 00:40:56
+labradorpark,labrador park mrt station,15149,Opp Labrador Pk Stn,280.14455106621915,2023-12-01 00:40:56
+lakeside,lakeside mrt station,28091,Lakeside Stn,119.09601416756955,2023-12-01 00:40:56
+lakeside,lakeside mrt station,28099,Opp Lakeside Stn,210.11567955734796,2023-12-01 00:40:56
+lavender,lavender mrt station,01311,Lavender Stn Exit B,90.32509423653322,2023-12-01 00:40:56
+lavender,lavender mrt station,01319,Lavender Stn Exit A/ICA,52.652439036284576,2023-12-01 00:40:56
+lentor,lentor mrt station,55011,Bef Lentor Stn Exit 5,292.733815226639,2023-12-01 00:40:56
+lentor,lentor mrt station,55019,Aft Lentor Stn Exit 4,286.12537879105383,2023-12-01 00:40:56
+lentor,lentor mrt station,55341,Lentor Stn Exit 3,28.564990475741983,2023-12-01 00:40:56
+lentor,lentor mrt station,55349,Lentor Stn Exit 5,21.08415174891545,2023-12-01 00:40:56
+littleindia,little india mrt station,40011,Little India Stn Exit A,97.22176006042768,2023-12-01 00:40:56
+littleindia,little india mrt station,40019,Little India Stn,58.17043198236804,2023-12-01 00:40:56
+lorongchuan,lorong chuan mrt station,66391,lorong Chuan Stn Exit A,130.92390983473229,2023-12-01 00:40:56
+lorongchuan,lorong chuan mrt station,66399,Opp lorong Chuan Stn Exit B,73.75760665325784,2023-12-01 00:40:56
+macpherson,macpherson mrt station,70201,Opp MacPherson Stn Exit D,260.9874608692528,2023-12-01 00:40:56
+macpherson,macpherson mrt station,70251,MacPherson Stn Exit C,192.1105344248032,2023-12-01 00:40:56
+macpherson,macpherson mrt station,70259,MacPherson Stn Exit B,205.70005574780322,2023-12-01 00:40:56
+macpherson,macpherson mrt station,70371,MacPherson Stn Exit A,89.78848593255967,2023-12-01 00:40:56
+macpherson,macpherson mrt station,70379,Opp MacPherson Stn Exit A,101.00403652602614,2023-12-01 00:40:56
+marinabay,marina bay mrt station,03539,Marina Bay Stn,268.32124976829675,2023-12-01 00:40:56
+marinasouthpier,marina south pier mrt station,03411,Opp Marina south Pier Stn,76.26184579657647,2023-12-01 00:40:56
+marinasouthpier,marina south pier mrt station,03419,Marina south Pier Stn,47.783823546553286,2023-12-01 00:40:56
+marsiling,marsiling mrt station,46521,Marsiling Stn,28.3179240552953,2023-12-01 00:40:56
+marsiling,marsiling mrt station,46529,Opp Marsiling Stn,70.88191940312433,2023-12-01 00:40:56
+marymount,marymount mrt station,53121,Marymount Stn,110.944355968792,2023-12-01 00:40:56
+marymount,marymount mrt station,53129,Opp Marymount Stn,67.94082985433754,2023-12-01 00:40:56
+mattar,mattar mrt station,70161,Opp Mattar Stn Exit A,66.446068234005,2023-12-01 00:40:56
+mattar,mattar mrt station,70231,Opp Mattar Stn Exit B,204.5660346171601,2023-12-01 00:40:56
+maxwell,maxwell mrt station,05259,Opp Maxwell Stn Exit 3,150.14783157120414,2023-12-01 00:40:56
+maxwell,maxwell mrt station,05269,Maxwell Stn Exit 2,101.6049260869227,2023-12-01 00:40:56
+mayflower,mayflower mrt station,54181,Mayflower Stn Exit 6,231.04491192797423,2023-12-01 00:40:56
+mayflower,mayflower mrt station,54189,Mayflower Stn Exit 5,229.5578365069741,2023-12-01 00:40:56
+mayflower,mayflower mrt station,54191,Mayflower Stn Exit 2,221.05641864513535,2023-12-01 00:40:56
+mayflower,mayflower mrt station,54199,Bef Mayflower Stn Exit 3,205.18425906972394,2023-12-01 00:40:56
+mountbatten,mountbatten mrt station,80271,Opp Mountbatten Stn,157.3599534620148,2023-12-01 00:40:56
+mountbatten,mountbatten mrt station,80279,Mountbatten Stn Exit B,171.03461516406358,2023-12-01 00:40:56
+napier,napier mrt station,13011,Napier Stn Exit 2,51.39805609163052,2023-12-01 00:40:56
+napier,napier mrt station,13019,Napier Stn Exit 1,138.34748948779713,2023-12-01 00:40:56
+newton,newton mrt station,40041,Newton Stn Exit C,77.86621098738843,2023-12-01 00:40:56
+newton,newton mrt station,40049,Opp Newton Stn Exit C,121.13149937059542,2023-12-01 00:40:56
+newton,newton mrt station,40181,Newton Stn Exit A,46.14551865003985,2023-12-01 00:40:56
+newton,newton mrt station,40189,Newton Stn Exit B,90.69767338033421,2023-12-01 00:40:56
+nicollhighway,nicoll highway mrt station,80161,Opp Nicoll Highway Stn,145.6528344674233,2023-12-01 00:40:56
+nicollhighway,nicoll highway mrt station,80169,Nicoll Highway Stn,112.76271065697227,2023-12-01 00:40:56
+novena,novena mrt station,50021,United Sq/Bef Novena Stn,341.7381830324851,2023-12-01 00:40:56
+novena,novena mrt station,50037,Bef Novena Stn Exit B,179.1615608440777,2023-12-01 00:40:56
+novena,novena mrt station,50038,Novena Stn,95.78451759567784,2023-12-01 00:40:56
+onenorth,one-north mrt station,18051,One-North Stn,99.22640671816589,2023-12-01 00:40:56
+onenorth,one-north mrt station,18059,Opp One-North Stn,109.56356134030148,2023-12-01 00:40:56
+onenorth,one-north mrt station,18151,Opp One-North Stn/Galaxis,222.5318687329959,2023-12-01 00:40:56
+onenorth,one-north mrt station,18159,One-North Stn/Galaxis,207.81357963914303,2023-12-01 00:40:56
+orchard,orchard mrt station,13191,Opp Orchard Stn Exit 12,190.80925203297593,2023-12-01 00:40:56
+orchard,orchard mrt station,13199,Aft Orchard Stn Exit 12,196.6910134484252,2023-12-01 00:40:56
+orchard,orchard mrt station,09022,Orchard Stn Exit 13,126.6590337249284,2023-12-01 00:40:56
+orchard,orchard mrt station,09023,Opp Orchard Stn/ION,129.70153699759388,2023-12-01 00:40:56
+orchard,orchard mrt station,09047,Orchard Stn/Tang Plaza,232.15642815509256,2023-12-01 00:40:56
+orchard,orchard mrt station,09048,Orchard Stn/Lucky Plaza,318.05013850385603,2023-12-01 00:40:56
+orchardboulevard,orchard boulevard mrt station,09131,Opp Orchard boulevard Stn,168.48491384821156,2023-12-01 00:40:56
+orchardboulevard,orchard boulevard mrt station,09139,Orchard boulevard Stn Exit 1,118.65370011918895,2023-12-01 00:40:56
+outrampark,outram park mrt station,10018,Outram Pk Stn Exit 6/SGH,231.30022956539352,2023-12-01 00:40:56
+outrampark,outram park mrt station,05069,Outram Pk Stn Exit 4,45.23403216909581,2023-12-01 00:40:56
+outrampark,outram park mrt station,06011,Outram Pk Stn Exit 7,252.88637736723226,2023-12-01 00:40:56
+outrampark,outram park mrt station,06029,Outram Pk Stn Exit 1,224.77831609445073,2023-12-01 00:40:56
+pasirpanjang,pasir panjang mrt station,15191,Pasir Panjang Stn/FC,143.14941862981317,2023-12-01 00:40:56
+pasirpanjang,pasir panjang mrt station,15201,Aft Pasir Panjang Stn,202.21390680275584,2023-12-01 00:40:56
+pasirpanjang,pasir panjang mrt station,15209,Bef Pasir Panjang Stn,166.98064052393894,2023-12-01 00:40:56
+pasirris,pasir ris mrt station,77009,Pasir Ris Int,177.28225646414964,2023-12-01 00:40:56
+pasirris,pasir ris mrt station,77031,Opp Pasir Ris Stn Exit B,101.43160167322588,2023-12-01 00:40:56
+pasirris,pasir ris mrt station,77039,Pasir Ris Stn Exit B,78.9032690851196,2023-12-01 00:40:56
+pasirris,pasir ris mrt station,77171,Aft Pasir Ris Stn Exit A,147.69081020327445,2023-12-01 00:40:56
+pasirris,pasir ris mrt station,77179,Opp Pasir Ris Stn Exit A,160.99914305242703,2023-12-01 00:40:56
+payalebar,paya lebar mrt station,81111,Paya Lebar Stn Exit B,100.24935149276459,2023-12-01 00:40:56
+payalebar,paya lebar mrt station,81119,Paya Lebar Stn Exit C,125.68048711432705,2023-12-01 00:40:56
+payalebar,paya lebar mrt station,81129,Paya Lebar Stn Exit D,166.42674430987486,2023-12-01 00:40:56
+payalebar,paya lebar mrt station,82011,Aft Paya Lebar Quarter,259.9130683144485,2023-12-01 00:40:56
+pioneer,pioneer mrt station,22521,Pioneer Stn Exit A,63.974965545764896,2023-12-01 00:40:56
+pioneer,pioneer mrt station,22529,Pioneer Stn Exit B,22.73176678582559,2023-12-01 00:40:56
+potongpasir,potong pasir mrt station,60261,Potong Pasir Stn Exit C,35.912386009295325,2023-12-01 00:40:56
+potongpasir,potong pasir mrt station,60269,Potong Pasir Stn Exit B,15.105307469831901,2023-12-01 00:40:56
+potongpasir,potong pasir mrt station,61069,Potong Pasir Stn Exit A,202.28264993826866,2023-12-01 00:40:56
+promenade,promenade mrt station,02089,Promenade Stn/Pan Pacific,210.07122535791413,2023-12-01 00:40:56
+promenade,promenade mrt station,02161,Aft Promenade Stn Exit C,23.62043840502815,2023-12-01 00:40:56
+promenade,promenade mrt station,02169,Promenade Stn Exit B,93.88617111896181,2023-12-01 00:40:56
+punggol,punggol mrt/lrt station,65009,Punggol Temp Int,175.7793917414937,2023-12-01 00:40:56
+punggol,punggol mrt/lrt station,65251,Punggol Stn/Waterway Pt,62.033544884774834,2023-12-01 00:40:56
+punggol,punggol mrt/lrt station,65259,Punggol Stn/Int,70.56095877070813,2023-12-01 00:40:56
+queenstown,queenstown mrt station,11141,Queenstown Stn Exit A/D,38.448984461570156,2023-12-01 00:40:56
+queenstown,queenstown mrt station,11149,Queenstown Stn Exit B/C,70.4517439358456,2023-12-01 00:40:56
+rafflesplace,raffles place mrt station,03031,Raffles place Stn Exit F,209.57483848013996,2023-12-01 00:40:56
+redhill,redhill mrt station,10201,Opp Redhill Stn,49.04724155417682,2023-12-01 00:40:56
+redhill,redhill mrt station,10209,Redhill Stn,20.270094969111287,2023-12-01 00:40:56
+rochor,rochor mrt station,07531,Rochor Stn,11.564762097543579,2023-12-01 00:40:56
+rochor,rochor mrt station,07539,Bef Rochor Stn Exit B,113.71820164643381,2023-12-01 00:40:56
+sembawang,sembawang mrt station,58009,Sembawang Int,189.7957088659503,2023-12-01 00:40:56
+sembawang,sembawang mrt station,58151,Bef Sembawang Stn,219.3471224007176,2023-12-01 00:40:56
+sembawang,sembawang mrt station,58211,Sembawang Stn,48.03201641408591,2023-12-01 00:40:56
+sembawang,sembawang mrt station,58219,Opp Sembawang Stn,61.10645257429063,2023-12-01 00:40:56
+sembawang,sembawang mrt station,58241,Sembawang Int/Opp Blk 315,199.61046862742205,2023-12-01 00:40:56
+sembawang,sembawang mrt station,58251,Sun Plaza/Sembawang Stn,173.28398373128158,2023-12-01 00:40:56
+sengkang,sengkang mrt/lrt station,67009,Sengkang Int,38.16057311497751,2023-12-01 00:40:56
+sengkang,sengkang mrt/lrt station,67401,Opp Sengkang Stn/Blk 260A,139.9315326283791,2023-12-01 00:40:56
+sengkang,sengkang mrt/lrt station,67409,Sengkang Stn,93.86104187307245,2023-12-01 00:40:56
+serangoon,serangoon mrt station,62131,serangoon Stn Exit H,95.85084563901604,2023-12-01 00:40:56
+serangoon,serangoon mrt station,62139,serangoon Stn Exit A/Blk 413,25.840816201621656,2023-12-01 00:40:56
+serangoon,serangoon mrt station,62189,serangoon Stn Exit D/Blk 416,196.68342408369156,2023-12-01 00:40:56
+serangoon,serangoon mrt station,66009,serangoon Int,257.80454115915813,2023-12-01 00:40:56
+serangoon,serangoon mrt station,66351,serangoon Stn Exit E,153.06992202672956,2023-12-01 00:40:56
+serangoon,serangoon mrt station,66359,serangoon Stn Exit C/Blk 201,185.153561342929,2023-12-01 00:40:56
+serangoon,serangoon mrt station,66381,Opp serangoon Stn Exit F,288.5495143097694,2023-12-01 00:40:56
+serangoon,serangoon mrt station,66389,serangoon Stn Exit F,342.8416594809704,2023-12-01 00:40:56
+shentonway,shenton way mrt station,03239,Shenton Way Ter,481.54472093407713,2023-12-01 00:40:56
+shentonway,shenton way mrt station,03549,Shenton Way Stn Exit 3,49.635413249210224,2023-12-01 00:40:56
+simei,simei mrt station,96141,Blk 120/Opp Simei Stn,140.19251758213926,2023-12-01 00:40:56
+simei,simei mrt station,96149,Simei Stn/Blk 247,115.6650125796618,2023-12-01 00:40:56
+simei,simei mrt station,96161,Opp Simei Stn,152.02190980497753,2023-12-01 00:40:56
+simei,simei mrt station,96169,Simei Stn,135.05614505451797,2023-12-01 00:40:56
+sixthavenue,sixth avenue mrt station,41081,Sixth avenue Stn,25.636959400664423,2023-12-01 00:40:56
+sixthavenue,sixth avenue mrt station,42019,Opp Sixth avenue Stn,141.07757026103098,2023-12-01 00:40:56
+somerset,somerset mrt station,08121,Somerset Stn,37.8319964084529,2023-12-01 00:40:56
+somerset,somerset mrt station,09038,Opp Somerset Stn,126.75628171110058,2023-12-01 00:40:56
+springleaf,springleaf mrt station,56091,Springleaf Stn Exit 3,175.05871892538892,2023-12-01 00:40:56
+springleaf,springleaf mrt station,56099,Springleaf Stn Exit 2,196.79428253964736,2023-12-01 00:40:56
+stadium,stadium mrt station,80199,Stadium Stn,135.55305172567546,2023-12-01 00:40:56
+stevens,stevens mrt station,40081,Stevens Stn Exit 1,15.89714971880214,2023-12-01 00:40:56
+stevens,stevens mrt station,40089,Aft Stevens Stn Exit 5,153.10418273102633,2023-12-01 00:40:56
+stevens,stevens mrt station,40221,Stevens Stn Exit 3,129.4340954946421,2023-12-01 00:40:56
+stevens,stevens mrt station,40229,Bef Stevens Stn Exit 2,95.15146418993557,2023-12-01 00:40:56
+stevens,stevens mrt station,40239,Bef Stevens Stn Exit 4,286.6456998874269,2023-12-01 00:40:56
+taiseng,tai seng mrt station,70281,Aft Tai Seng Stn,62.88710707653699,2023-12-01 00:40:56
+taiseng,tai seng mrt station,70289,Aft Tai Seng Stn Exit C,132.69258091348274,2023-12-01 00:40:56
+tampines,tampines mrt station,75009,Tampines Int,115.89967655696367,2023-12-01 00:40:56
+tampines,tampines mrt station,75019,Tampines Concourse Int,361.61500680781944,2023-12-01 00:40:56
+tampines,tampines mrt station,76141,Tampines Stn/Int,285.7043198363662,2023-12-01 00:40:56
+tampines,tampines mrt station,76149,Opp Tampines Stn/Int,310.77658474692316,2023-12-01 00:40:56
+tampines,tampines mrt station,76551,Tampines Stn Exit D,54.687476042422475,2023-12-01 00:40:56
+tampines,tampines mrt station,76559,Aft Tampines Stn Exit E,78.1867468690719,2023-12-01 00:40:56
+tampineseast,tampines east mrt station,76031,Tampines East Stn Exit B,158.3925299695072,2023-12-01 00:40:56
+tampineseast,tampines east mrt station,76039,Tampines East Stn Exit C,173.45512146908902,2023-12-01 00:40:56
+tampineseast,tampines east mrt station,76221,Tampines East Stn Exit A,91.47942511010875,2023-12-01 00:40:56
+tampineseast,tampines east mrt station,76229,Opp Tampines East Stn,134.39390566921176,2023-12-01 00:40:56
+tampineseast,tampines east mrt station,76319,Tampines East Stn Exit D,166.21112046064712,2023-12-01 00:40:56
+tampineswest,tampines west mrt station,75051,Tampines West Stn Exit B,202.9356601131057,2023-12-01 00:40:56
+tampineswest,tampines west mrt station,75059,Bef Tampines West Stn,229.89585010186593,2023-12-01 00:40:56
+tanahmerah,tanah merah mrt station,85091,Tanah Merah Stn Exit B,21.304959134111783,2023-12-01 00:40:56
+tanahmerah,tanah merah mrt station,85099,Tanah Merah Stn Exit A,58.71470239599387,2023-12-01 00:40:56
+tanjongpagar,tanjong pagar mrt station,03223,Tanjong Pagar Stn Exit C,106.1650253179409,2023-12-01 00:40:56
+tankahkee,tan kah kee mrt station,41051,Tan Kah Kee Stn,8.2837184473761,2023-12-01 00:40:56
+tankahkee,tan kah kee mrt station,41069,Opp Tan Kah Kee Stn,61.837168643780956,2023-12-01 00:40:56
+telokayer,telok ayer mrt station,03041,Telok Ayer Stn Exit A,81.19009408010305,2023-12-01 00:40:56
+telokblangah,telok blangah mrt station,14161,Telok Blangah Stn,47.734561189382,2023-12-01 00:40:56
+telokblangah,telok blangah mrt station,14169,Opp Telok Blangah Stn,77.74499038590365,2023-12-01 00:40:56
+tiongbahru,tiong bahru mrt station,10161,Opp Tiong Bahru Stn,34.1816168505962,2023-12-01 00:40:56
+tiongbahru,tiong bahru mrt station,10169,Tiong Bahru Stn,58.780610507946236,2023-12-01 00:40:56
+toapayoh,toa payoh mrt station,52009,Toa Payoh Int,105.11464946900158,2023-12-01 00:40:56
+toapayoh,toa payoh mrt station,52181,Opp Toa Payoh Stn,109.48158925403335,2023-12-01 00:40:56
+toapayoh,toa payoh mrt station,52189,Toa Payoh Stn,91.63228429004073,2023-12-01 00:40:56
+tuascrescent,tuas crescent mrt station,24701,Tuas crescent Stn Exit B,30.800349686937174,2023-12-01 00:40:56
+tuascrescent,tuas crescent mrt station,24709,Tuas crescent Stn Exit A,27.73497495560576,2023-12-01 00:40:56
+tuaslink,tuas link mrt station,25421,Opp Tuas link Stn,128.29653299587375,2023-12-01 00:40:56
+tuaslink,tuas link mrt station,25429,Tuas link Stn,36.13107690621348,2023-12-01 00:40:56
+tuaswestroad,tuas west road mrt station,24711,Tuas West road Stn Exit B,46.92626874570712,2023-12-01 00:40:56
+tuaswestroad,tuas west road mrt station,24719,Tuas West road Stn Exit A,31.279622345632344,2023-12-01 00:40:56
+tuaswestroad,tuas west road mrt station,25691,Aft Tuas West road Stn,169.97085726117075,2023-12-01 00:40:56
+ubi,ubi mrt station,71121,Ubi Stn Exit B,65.15139975539535,2023-12-01 00:40:56
+ubi,ubi mrt station,71129,Ubi Stn Exit A,98.24829491734198,2023-12-01 00:40:56
+upperchangi,upper changi mrt station,96041,upper Changi Stn/Opp SUTD,230.02434187789825,2023-12-01 00:40:56
+upperchangi,upper changi mrt station,96049,upper Changi Stn/SUTD,118.84534843530113,2023-12-01 00:40:56
+upperthomson,upper thomson mrt station,53051,upper Thomson Stn Exit 5,213.729344844116,2023-12-01 00:40:56
+upperthomson,upper thomson mrt station,53059,upper Thomson Stn Exit 2,275.78181310939266,2023-12-01 00:40:56
+woodlands,woodlands mrt station,46008,Woodlands Int,75.50667761964796,2023-12-01 00:40:56
+woodlands,woodlands mrt station,46009,Woodlands Int,62.49026269880833,2023-12-01 00:40:56
+woodlands,woodlands mrt station,47009,Woodlands Temp Int,55.251634512918656,2023-12-01 00:40:56
+woodleigh,woodleigh mrt station,61031,Woodleigh Stn Exit B,98.89128936950667,2023-12-01 00:40:56
+woodleigh,woodleigh mrt station,61039,Woodleigh Stn Exit A,79.30477775831757,2023-12-01 00:40:56
+yewtee,yew tee mrt station,45321,Yew Tee Stn,12.3786219398939,2023-12-01 00:40:56
+yewtee,yew tee mrt station,45329,Opp Yew Tee Stn,41.70715713246718,2023-12-01 00:40:56
+yiochukang,yio chu kang mrt station,55181,Opp Yio Chu Kang Stn,115.81443347851729,2023-12-01 00:40:56
+yiochukang,yio chu kang mrt station,55189,Yio Chu Kang Stn,133.60540297459707,2023-12-01 00:40:56
+yiochukang,yio chu kang mrt station,55509,Yio Chu Kang Int,119.16270975406705,2023-12-01 00:40:56
+yishun,yishun mrt station,59008,Yishun Int,140.83416474773907,2023-12-01 00:40:56
+yishun,yishun mrt station,59009,Yishun Int,151.73244405483982,2023-12-01 00:40:56
+yishun,yishun mrt station,59072,Yishun Stn Exit E,30.494394373399082,2023-12-01 00:40:56
+yishun,yishun mrt station,59073,Opp Yishun Stn,90.42197068477331,2023-12-01 00:40:56
+yishun,yishun mrt station,59079,Yishun Stn,23.183174362178015,2023-12-01 00:40:56
+yishun,yishun mrt station,59159,Opp Yishun Stn Exit B,135.75654823938322,2023-12-01 00:40:56

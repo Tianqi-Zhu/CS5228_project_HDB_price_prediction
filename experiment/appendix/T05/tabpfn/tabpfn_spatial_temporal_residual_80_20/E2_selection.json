@@ -1,0 +1,59 @@
+{
+  "model": "E2",
+  "columns": [
+    "TABPFN_RENT",
+    "FLAT_TYPE_CLEAN",
+    "FLOOR_AREA_SQM",
+    "FLAT_AGE_YEARS",
+    "LATITUDE",
+    "LONGITUDE",
+    "TOWN_CLEAN",
+    "APPROVAL_MONTH_INDEX",
+    "APPROVAL_MONTH_OF_YEAR",
+    "TEMP_FORECAST_HORIZON",
+    "LOCAL_HIST_MEDIAN",
+    "LOCAL_GROWTH_3M",
+    "LOCAL_COUNT_6M"
+  ],
+  "categorical": [
+    "FLAT_TYPE_CLEAN",
+    "TOWN_CLEAN"
+  ],
+  "iterations": 4,
+  "strength": 0.5,
+  "early_stop_fit_rows": 34039,
+  "early_stop_rows": 8711,
+  "residual_training_rows": 42750,
+  "validation_rows": 18176,
+  "final_refit_rows": 60926,
+  "validation_model_sha256": "7a674611df623c4d568efac8d277086b1098862d20659dd254a40c895ba45f97",
+  "final_model_sha256": "ed98a91d20edcaaa5d08d4ee3ffcfa3c0b61a922cd97db3115b88cd0cd5245c4",
+  "seconds": 2.399154599988833,
+  "validation_train_ids_sha256": "72b139557259825dd8e98fdc20376de043ef5b5b79f5bb90099db1928a0fbd7a",
+  "validation_ids_sha256": "3769ff95b11a0f66ee5a01d2b8e8052d21742b80f8173be9d7139f139d5d9764",
+  "final_train_ids_sha256": "7a4bbcf00796ddef34d3ec606075642d7e8bb3eb3ccfaa167dda147832129afc",
+  "outer_targets_used": false,
+  "correction_sign": "actual minus base in SGD",
+  "curve": [
+    {
+      "strength": 0.0,
+      "rmse_sgd": 525.9842550184719
+    },
+    {
+      "strength": 0.25,
+      "rmse_sgd": 525.2957692781475
+    },
+    {
+      "strength": 0.5,
+      "rmse_sgd": 525.2485897608125
+    },
+    {
+      "strength": 0.75,
+      "rmse_sgd": 525.8428890837463
+    },
+    {
+      "strength": 1.0,
+      "rmse_sgd": 527.0764973741265
+    }
+  ]
+}

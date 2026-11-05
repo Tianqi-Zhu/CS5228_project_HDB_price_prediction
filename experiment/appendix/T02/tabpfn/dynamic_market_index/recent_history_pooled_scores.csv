@@ -1,0 +1,3 @@
+model,n,rmse_sgd,mae_sgd,bias_sgd
+catboost,79817,539.2882,413.6053,-26.7357
+catboost_recent,79817,539.1977,413.4817,-18.7417

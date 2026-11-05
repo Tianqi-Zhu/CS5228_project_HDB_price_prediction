@@ -1,0 +1,37 @@
+{
+  "sha256": "f118505e8d75f2d6b12e907d27a6e853aaf591694830ce1f1653e94d3e45a94e",
+  "parent_prepared_sha256": "e4d9de5c9f29714e7354d616002e410e2ceb937e3a030caf520628cc4fad39d8",
+  "code_sha256": "decd6f3a030cf56b2ead629b7a62f2f79b256995d2f3dfb5b8283ddc0b2de984",
+  "updated_column": "AQ_MRT_NAMED_BUS_SERVICES_LOG",
+  "expansions": {
+    "nth": "north",
+    "sth": "south",
+    "upp": "upper",
+    "resvr": "reservoir",
+    "gdns": "gardens",
+    "gdn": "garden",
+    "rd": "road",
+    "ave": "avenue",
+    "cres": "crescent",
+    "lor": "lorong",
+    "blvd": "boulevard",
+    "pl": "place",
+    "lk": "link",
+    "cir": "circle"
+  },
+  "extra_rules": [
+    "W'lands \u2192 Woodlands",
+    "S'goon \u2192 Serangoon",
+    "C'wealth \u2192 Commonwealth",
+    "6th \u2192 Sixth",
+    "Holland V \u2192 Holland Village"
+  ],
+  "nonupdated_columns_asserted_identical": true,
+  "target_labels_used": false,
+  "canonical_file_sha256": {
+    "bus_2021_stops.json": "817f535d8224f12f892a0c7c9bafcf26ad44285b7e54ffa55bc0ef174e56f7be",
+    "bus_2022_stops.json": "1f753df1528e73d821131ca6f34ad3a0e501c5a27f3a679d4872743fcfc3af69",
+    "bus_2023_stops.json": "0562bf0aec4383b7c37eb7d13c8803035debfce6ccb639aa6a2d2161169bee2e",
+    "bus_first_stops.json": "1abe4087744b1ddb125483998b169b65bce2a3d140a9952053132ac8deb921a5"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "model": "tabpfn-3.5-fast",
+  "checkpoint_sha256": "14e0b81285bca7a6d1ef121169f27f651f76dff49cad6c0b8779d5c836018550",
+  "source_sha256": {
+    "data/train.csv": "2fe38ce9e0d8a02e9786f066d4a10d575d91f34be1d9111f0142e3f43fbfc8a5",
+    "data/test.csv": "a2ec03a0afc07c251c72cc0de2e15ac965a3b06291b304aaac53a375115ff4e0",
+    "data/example-submission.csv": "009e05582492d494df615e9526421023c82d070be029d118dc5ff2766810ecfc"
+  },
+  "code_sha256": {
+    "analysis/train_tabpfn_fast_submission.py": "ca5a353490b4b39a2800d3afc5bd1702eae3395312eddbc6b5a891b8ff64baec",
+    "analysis/experiments/aligned_temporal_features.py": "1f0b886ca3398dd7c681b0dc8c7b73092652323f148ad6bc40aa13ea1e20ba74",
+    "analysis/experiments/tabpfn_adaptation_features.py": "7138a0c0a5465d7027a0b90030f5ffbadcad8b71836c08ceb907d31db61022a9",
+    "analysis/experiments/recent_history.py": "98348baf4e8816397c766f660e4fce5ba6ffb449bd674adc7ea645aaf035db0f",
+    "analysis/experiments/calendar_encoding.py": "3cdf03e2f6772d7530231caf5d56bbc668d13aa9307d9c0346308940c5fd2f20",
+    "analysis/experiments/spatiotemporal_hybrid.py": "9f275e624dc244dd0aef1085c5c76bec8808552ae6a1b01ce1738d8c24dfca10"
+  },
+  "month_encoding": "categorical; lowest measured 80/20 RMSE (455.81357012 SGD)",
+  "context": "all 150000 labeled training rows",
+  "batch": 200,
+  "n_estimators": 1,
+  "temporal_training_horizons": [
+    1,
+    10
+  ],
+  "test_horizon_extrapolation": "plateau forecast after horizon 10",
+  "test_origin_policy": {
+    "2025-03": "2025-02",
+    "2025-04 through 2026-07": "2025-03"
+  },
+  "seed": 42,
+  "gpu": "NVIDIA GeForce RTX 4080",
+  "versions": {
+    "tabpfn": "9.2.0",
+    "torch": "2.11.0+cu128",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.0"
+  }
+}

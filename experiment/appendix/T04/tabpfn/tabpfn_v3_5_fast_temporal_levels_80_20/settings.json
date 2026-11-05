@@ -1,0 +1,48 @@
+{
+  "model_version": "v3.5-fast",
+  "n_estimators": 1,
+  "seed": 42,
+  "batch_size": 200,
+  "context_rows": 121005,
+  "subsampling": false,
+  "fit_mode": "fit_with_cache",
+  "checkpoint_sha256": "14e0b81285bca7a6d1ef121169f27f651f76dff49cad6c0b8779d5c836018550",
+  "source_sha256": {
+    "data/train.csv": "2fe38ce9e0d8a02e9786f066d4a10d575d91f34be1d9111f0142e3f43fbfc8a5",
+    "data/test.csv": "a2ec03a0afc07c251c72cc0de2e15ac965a3b06291b304aaac53a375115ff4e0",
+    "data/auxiliary/sg-hdb-block.csv": "2255ad61ba6895456a39aec81d12583796d717ef88fe102ee9de71b3796fc223",
+    "data/auxiliary/sg-mrt-stations.csv": "4757278b94c2d05627a941377d51de60882e3e1477de01758ef37070b716b889",
+    "data/auxiliary/sg-shopping-malls.csv": "cce36a0175433f768d209b74e2e5376aad16befe1ad4f1313da0b18ed6d91a3b",
+    "data/auxiliary/sg-schools.csv": "9bf28c6a2e5511c5cada178d221dfaac12beb3651425b3b86c37815e35de71cb"
+  },
+  "source_enriched_bundle_sha256": "c9a6040602b2b39dcf0b72264594df446ec9f7f07b0f4b03bf1e8276ac17df18",
+  "added_features": [
+    "TEMP_FLAT_RECENT3_MEAN",
+    "TEMP_FLAT_RECENT12_MEAN",
+    "TEMP_FLAT_DAMPED_FORECAST",
+    "TEMP_FORECAST_HORIZON",
+    "TEMP_FLAT_HISTORY_COUNT_3M",
+    "TEMP_FLAT_LAST_OBSERVATION_AGE"
+  ],
+  "removed_forecast_features": [
+    "TEMP_FLAT_MODEL_FORECAST",
+    "TEMP_FLAT_MODEL_DELTA"
+  ],
+  "code_sha256": {
+    "analysis/compare_tabpfn_fast_temporal_levels_80_20.py": "8adffe1da23d583ef32a656f914d2beb98e6971ac0792ebfb6ca4bf87b942d10",
+    "analysis/compare_tabpfn_v3_5_fast_80_20.py": "baa7fffeae8895a9ea4914aca98e460ead281438b3e2a148b3cb2f00e99e9260",
+    "analysis/compare_tabpfn_v3_80_20.py": "e7b82cf1eecd42e001568b8440c0d6533d655ae87aa7eec8a54ff36442fb42e2"
+  },
+  "reference_predictions_sha256": {
+    "tabpfn_fast_original": "bc64ebc966b67ca0041fbd1dc857285779523c720aa015dbf12d30dfb61e20ff",
+    "tabpfn_fast_temporal_full": "9508ec3113304b7a181ef379b2b6c1fffe2a46fbe5a1c45609fc64a72ee43355",
+    "catboost_original_68_features": "9b289c5f663cfdbfb47304c96917b7214cf0c7585f50751402045726eb47fce8"
+  },
+  "versions": {
+    "tabpfn": "9.2.0",
+    "torch": "2.11.0+cu128",
+    "pandas": "3.0.6",
+    "numpy": "2.5.3"
+  },
+  "gpu": "NVIDIA GeForce RTX 4080"
+}

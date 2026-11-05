@@ -1,0 +1,249 @@
+{
+  "feature_checks": {
+    "calendar": {
+      "feature_count": 84,
+      "new_columns": [
+        "CAL_MONTH_SIN",
+        "CAL_MONTH_COS",
+        "CAL_PRIMARY_START_PROXY",
+        "CAL_PRIMARY_PRESTART_1M",
+        "CAL_PRIMARY_PRESTART_2M",
+        "CAL_UNIVERSITY_START_PROXY",
+        "CAL_UNIVERSITY_PRESTART_1M",
+        "CAL_UNIVERSITY_PRESTART_2M"
+      ],
+      "new_context_missing": 0,
+      "new_query_missing": 0,
+      "first_month_rows_checked": 3129,
+      "unchanged_original_features_excluding_month": 76,
+      "labels_and_baselines_unchanged": true,
+      "row_ids_unchanged": true
+    },
+    "categorical": {
+      "feature_count": 77,
+      "new_columns": [],
+      "new_context_missing": 0,
+      "new_query_missing": 0,
+      "first_month_rows_checked": 3129,
+      "unchanged_original_features_excluding_month": 76,
+      "labels_and_baselines_unchanged": true,
+      "row_ids_unchanged": true
+    },
+    "cyclical": {
+      "feature_count": 78,
+      "new_columns": [
+        "CAL_MONTH_SIN",
+        "CAL_MONTH_COS"
+      ],
+      "new_context_missing": 0,
+      "new_query_missing": 0,
+      "first_month_rows_checked": 3129,
+      "unchanged_original_features_excluding_month": 76,
+      "labels_and_baselines_unchanged": true,
+      "row_ids_unchanged": true
+    },
+    "school_interactions": {
+      "feature_count": 89,
+      "new_columns": [
+        "CAL_MONTH_SIN",
+        "CAL_MONTH_COS",
+        "CAL_PRIMARY_START_PROXY",
+        "CAL_PRIMARY_PRESTART_1M",
+        "CAL_PRIMARY_PRESTART_2M",
+        "CAL_UNIVERSITY_START_PROXY",
+        "CAL_UNIVERSITY_PRESTART_1M",
+        "CAL_UNIVERSITY_PRESTART_2M",
+        "CAL_PRIMARY_START_X_SCHOOL_ACCESS",
+        "CAL_PRIMARY_PRESTART_X_SCHOOL_ACCESS",
+        "CAL_PRIMARY_START_X_SCHOOL_COUNT",
+        "CAL_PRIMARY_PRESTART_X_SCHOOL_COUNT",
+        "CAL_SCHOOL_LOCATION_MISSING"
+      ],
+      "new_context_missing": 0,
+      "new_query_missing": 0,
+      "first_month_rows_checked": 3129,
+      "unchanged_original_features_excluding_month": 76,
+      "labels_and_baselines_unchanged": true,
+      "row_ids_unchanged": true
+    }
+  },
+  "inner_checks": [
+    {
+      "origin": "2022-09",
+      "context_rows": 60079,
+      "query_rows": 2000,
+      "strictly_earlier_context": true,
+      "query_horizons": [
+        1,
+        10
+      ],
+      "label_alignment_verified": true
+    },
+    {
+      "origin": "2023-07",
+      "context_rows": 87937,
+      "query_rows": 2000,
+      "strictly_earlier_context": true,
+      "query_horizons": [
+        1,
+        10
+      ],
+      "label_alignment_verified": true
+    }
+  ],
+  "tests_passed": 35,
+  "new_feature_availability_mismatch": false,
+  "existing_common_warmup_missingness_unchanged": {
+    "context": {
+      "FLAT_AGE_YEARS": 8.264121317300938e-06,
+      "MAX_FLOOR": 0.0013139952894508492,
+      "YEAR_COMPLETED": 0.0013139952894508492,
+      "BUILDING_AGE_FROM_COMPLETION": 0.0013139952894508492,
+      "HIST_SIGNATURE_MEAN": 0.17998429816949713,
+      "HIST_SIGNATURE_COUNT": 0.1541258625676625,
+      "HIST_SIGNATURE_LAST_MEAN": 0.17998429816949713,
+      "HIST_SIGNATURE_RECENCY_MONTHS": 0.17998429816949713,
+      "HIST_BLOCK_FLAT_MEAN": 0.17998429816949713,
+      "HIST_BLOCK_FLAT_COUNT": 0.1541258625676625,
+      "HIST_BLOCK_FLAT_LAST_MEAN": 0.17998429816949713,
+      "HIST_BLOCK_FLAT_RECENCY_MONTHS": 0.17998429816949713,
+      "HIST_AREA_FLAT_MEAN": 0.02636254700218999,
+      "HIST_AREA_FLAT_COUNT": 0.0005041114003553572,
+      "HIST_AREA_FLAT_LAST_MEAN": 0.02636254700218999,
+      "HIST_AREA_FLAT_RECENCY_MONTHS": 0.02636254700218999,
+      "RECENT_BLOCK_FLAT_3M_MEAN": 0.47714557249700423,
+      "RECENT_BLOCK_FLAT_6M_MEAN": 0.3236973678773604,
+      "RECENT_BLOCK_FLAT_12M_MEAN": 0.2175860501632164,
+      "RECENT_AREA_FLAT_3M_MEAN": 0.026825337795958845,
+      "RECENT_AREA_FLAT_6M_MEAN": 0.026469980579314906,
+      "RECENT_AREA_FLAT_12M_MEAN": 0.026370811123507292,
+      "RECENT_BLOCK_FLAT_3M_SHRUNK_MEAN": 0.026825337795958845,
+      "RECENT_BLOCK_FLAT_6M_SHRUNK_MEAN": 0.026469980579314906,
+      "RECENT_BLOCK_FLAT_12M_SHRUNK_MEAN": 0.026370811123507292,
+      "RECENT_BLOCK_FLAT_3M_STD": 0.7543076732366432,
+      "RECENT_BLOCK_FLAT_6M_STD": 0.5687120366926987,
+      "RECENT_BLOCK_FLAT_12M_STD": 0.38987645138630633,
+      "RECENT_AREA_FLAT_3M_STD": 0.028139333085409692,
+      "RECENT_AREA_FLAT_6M_STD": 0.02712284616338168,
+      "RECENT_AREA_FLAT_12M_STD": 0.026833601917276146,
+      "AREA_RECENT_MINUS_LONG": 0.026825337795958845,
+      "BLOCK_RECENT_MINUS_LONG": 0.026825337795958845,
+      "BLOCK_MINUS_AREA_RECENT": 0.026825337795958845,
+      "AREA_LAST_MINUS_RECENT": 0.026825337795958845,
+      "TEMP_FLAT_RECENT3_MEAN": 0.02587496384446924,
+      "TEMP_FLAT_RECENT12_MEAN": 0.02587496384446924,
+      "TEMP_FLAT_DAMPED_FORECAST": 0.02587496384446924,
+      "TEMP_FORECAST_HORIZON": 0.025858435601834633,
+      "TEMP_FLAT_HISTORY_COUNT_3M": 0.025858435601834633,
+      "TEMP_FLAT_LAST_OBSERVATION_AGE": 0.02587496384446924,
+      "TEMP_LOCAL_FORECAST": 0.02587496384446924,
+      "TEMP_LOCAL_WEIGHT": 0.025858435601834633,
+      "TEMP_FORECAST_RMSE": 0.3816123300690054
+    },
+    "query": {
+      "FLAT_MODEL_CLEAN": 3.448870494912916e-05,
+      "HIST_SIGNATURE_MEAN": 0.01113985169856872,
+      "HIST_SIGNATURE_COUNT": 0.01113985169856872,
+      "HIST_SIGNATURE_LAST_MEAN": 0.01113985169856872,
+      "HIST_SIGNATURE_RECENCY_MONTHS": 0.01113985169856872,
+      "HIST_BLOCK_FLAT_MEAN": 0.01113985169856872,
+      "HIST_BLOCK_FLAT_COUNT": 0.01113985169856872,
+      "HIST_BLOCK_FLAT_LAST_MEAN": 0.01113985169856872,
+      "HIST_BLOCK_FLAT_RECENCY_MONTHS": 0.01113985169856872,
+      "BLOCK_ID": 0.0038282462493533366,
+      "STREET_ID": 0.00013795481979651664,
+      "RECENT_BLOCK_FLAT_3M_MEAN": 0.4229349887911709,
+      "RECENT_BLOCK_FLAT_6M_MEAN": 0.23262631488187618,
+      "RECENT_BLOCK_FLAT_12M_MEAN": 0.08804966373512675,
+      "RECENT_AREA_FLAT_3M_MEAN": 0.000655285394033454,
+      "RECENT_AREA_FLAT_6M_MEAN": 0.0005518192791860666,
+      "RECENT_AREA_FLAT_12M_MEAN": 0.00013795481979651664,
+      "RECENT_BLOCK_FLAT_3M_SHRUNK_MEAN": 0.000655285394033454,
+      "RECENT_BLOCK_FLAT_6M_SHRUNK_MEAN": 0.0005518192791860666,
+      "RECENT_BLOCK_FLAT_12M_SHRUNK_MEAN": 0.00013795481979651664,
+      "RECENT_BLOCK_FLAT_3M_STD": 0.714571477841007,
+      "RECENT_BLOCK_FLAT_6M_STD": 0.4836006207966891,
+      "RECENT_BLOCK_FLAT_12M_STD": 0.23721331264011036,
+      "RECENT_AREA_FLAT_3M_STD": 0.0020693222969477496,
+      "RECENT_AREA_FLAT_6M_STD": 0.001069149853423004,
+      "RECENT_AREA_FLAT_12M_STD": 0.0002759096395930333,
+      "AREA_RECENT_MINUS_LONG": 0.000655285394033454,
+      "BLOCK_RECENT_MINUS_LONG": 0.000655285394033454,
+      "BLOCK_MINUS_AREA_RECENT": 0.000655285394033454,
+      "AREA_LAST_MINUS_RECENT": 0.000655285394033454
+    }
+  },
+  "control_replay": {
+    "rows": 400,
+    "all_context_rows": 121005,
+    "max_difference_sgd": 4.977664502803236e-09
+  },
+  "prediction_checks": {
+    "rows": 28995,
+    "models": [
+      "integer",
+      "categorical",
+      "cyclical",
+      "calendar",
+      "school_interactions"
+    ],
+    "unique_row_ids": true,
+    "all_finite": true,
+    "actuals_and_control_verified": true,
+    "metrics_independently_recomputed": true,
+    "all_outer_context_rows_retained": true,
+    "gpu_retries": 0
+  },
+  "comparison": [
+    {
+      "model": "integer",
+      "rmse_sgd": 455.86289685,
+      "delta_rmse_sgd": 0.0,
+      "mae_sgd": 329.98377256,
+      "bias_sgd": -2.42802473,
+      "months_improved": 0,
+      "absolute_error_p95": 940.1992433189997,
+      "absolute_error_p99": 1527.3478774266007
+    },
+    {
+      "model": "categorical",
+      "rmse_sgd": 455.81357012,
+      "delta_rmse_sgd": -0.049326730000018415,
+      "mae_sgd": 329.74847602,
+      "bias_sgd": 0.76753477,
+      "months_improved": 4,
+      "absolute_error_p95": 938.7748435209996,
+      "absolute_error_p99": 1531.588386596203
+    },
+    {
+      "model": "cyclical",
+      "rmse_sgd": 459.06967812,
+      "delta_rmse_sgd": 3.206781269999965,
+      "mae_sgd": 339.26289309,
+      "bias_sgd": -42.46169668,
+      "months_improved": 2,
+      "absolute_error_p95": 930.4987749100001,
+      "absolute_error_p99": 1495.6394176836002
+    },
+    {
+      "model": "calendar",
+      "rmse_sgd": 457.03389013,
+      "delta_rmse_sgd": 1.1709932799999478,
+      "mae_sgd": 330.2223872,
+      "bias_sgd": 5.27363813,
+      "months_improved": 1,
+      "absolute_error_p95": 942.3950045559999,
+      "absolute_error_p99": 1542.3019485264003
+    },
+    {
+      "model": "school_interactions",
+      "rmse_sgd": 457.42076853,
+      "delta_rmse_sgd": 1.5578716799999484,
+      "mae_sgd": 327.04922535,
+      "bias_sgd": 31.03000119,
+      "months_improved": 2,
+      "absolute_error_p95": 950.788098548,
+      "absolute_error_p99": 1550.698270215202
+    }
+  ]
+}

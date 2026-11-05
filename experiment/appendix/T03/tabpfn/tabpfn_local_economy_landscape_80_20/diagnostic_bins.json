@@ -1,0 +1,12 @@
+{
+  "training_location_medians": {
+    "PARK_FRACTION_300M": 0.0,
+    "FOOD_KDE_500M_KM2": 0.0134532719038025
+  },
+  "training_target_rent_quartiles": [
+    2000.0,
+    2500.0,
+    3100.0
+  ],
+  "uses_outer_labels_to_choose_bins": false
+}

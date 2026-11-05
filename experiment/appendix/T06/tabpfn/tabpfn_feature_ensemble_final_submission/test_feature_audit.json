@@ -1,0 +1,48 @@
+{
+  "verified": true,
+  "checks": [
+    {
+      "feature_origin": "2025-02",
+      "latest_spatial_rental_month": "2025-01",
+      "test_rows": 3,
+      "query_months": [
+        "2025-03"
+      ],
+      "unavailable_labels_poisoned": 6054,
+      "maximum_replay_difference": 0.0,
+      "query_targets_ignored": true,
+      "unavailable_training_targets_ignored": true
+    },
+    {
+      "feature_origin": "2025-03",
+      "latest_spatial_rental_month": "2025-02",
+      "test_rows": 48,
+      "query_months": [
+        "2025-04",
+        "2025-05",
+        "2025-06",
+        "2025-07",
+        "2025-08",
+        "2025-09",
+        "2025-10",
+        "2025-11",
+        "2025-12",
+        "2026-01",
+        "2026-02",
+        "2026-03",
+        "2026-04",
+        "2026-05",
+        "2026-06",
+        "2026-07"
+      ],
+      "unavailable_labels_poisoned": 3032,
+      "maximum_replay_difference": 0.0,
+      "query_targets_ignored": true,
+      "unavailable_training_targets_ignored": true
+    }
+  ],
+  "actual_future_calendar_and_horizon_preserved": true,
+  "temporal_matrix_replay_exact": true,
+  "test_labels_never_used": true,
+  "all_context_rows_retained": true
+}

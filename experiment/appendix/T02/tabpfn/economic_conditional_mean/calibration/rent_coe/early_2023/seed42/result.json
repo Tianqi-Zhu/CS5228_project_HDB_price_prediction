@@ -1,0 +1,20 @@
+{
+  "fold": "early_2023",
+  "design": "rent_coe",
+  "seed": 42,
+  "best_epoch": 6,
+  "epochs_run": 11,
+  "weighted_rmse_sgd": 571.1067023932696,
+  "bias_sgd": 98.08841925270771,
+  "mae_sgd": 432.6373023305791,
+  "rows": 2000,
+  "parameters": 1711251,
+  "seconds": 63.898350700037554,
+  "peak_allocated_vram_gib": 0.3043327331542969,
+  "checkpoint_sha256": "ed7e993fd5d97d59f1a00539ee3858ff6b91c756bfca7c4e5ba4cc2007396f0a",
+  "predictions_sha256": "e1dc9a3a67072649b86799fd5a1cbf8c09e065b9c69c65cd8e112c81bb531ce5",
+  "preprocessors_sha256": "14bcfd8ccf1f297c284b4ef56a9b988c21be6eca938ce2deb7eec103d76ee94d",
+  "checkpoint_replay_max_difference": 0.0,
+  "outer_labels_used_for_selection": false,
+  "all_parameters_jointly_trainable": true
+}

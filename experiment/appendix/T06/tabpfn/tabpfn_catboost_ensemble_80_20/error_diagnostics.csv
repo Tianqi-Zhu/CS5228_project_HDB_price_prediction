@@ -1,0 +1,7 @@
+tabpfn,catboost,error_correlation,prediction_disagreement_rmse
+integer,cb68,0.98681264,78.82541723
+integer,cb77raw,0.98800052,71.40932113
+integer,cb77residual,0.98535440,79.69560063
+categorical,cb68,0.98652889,80.66945521
+categorical,cb77raw,0.98762040,72.25994618
+categorical,cb77residual,0.98672573,75.50445794

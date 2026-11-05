@@ -1,0 +1,13 @@
+{
+  "context_rows": 121005,
+  "embedding_shape": [
+    1,
+    200,
+    1024
+  ],
+  "embedding_dtype": "float32",
+  "baseline_max_difference_sgd": 4.944240572513081e-09,
+  "seconds": 31.04517949995352,
+  "peak_vram_gib": 7.219371795654297,
+  "backbone_frozen": true
+}

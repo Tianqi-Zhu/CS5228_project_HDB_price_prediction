@@ -1,0 +1,17 @@
+{
+  "same_features_as": "strict_incremental",
+  "columns": [
+    "LOCAL_500M_6M_SHRUNK",
+    "LOCAL_500M_6M_COUNT",
+    "LOCAL_500M_12M_SHRUNK",
+    "LOCAL_500M_12M_COUNT",
+    "LOCAL_1000M_6M_SHRUNK",
+    "LOCAL_1000M_6M_COUNT",
+    "LOCAL_1000M_12M_SHRUNK",
+    "LOCAL_1000M_12M_COUNT",
+    "LOCAL_KERNEL_SHRUNK",
+    "LOCAL_KERNEL_MASS",
+    "LOCAL_KERNEL_PPSM",
+    "LOCAL_HISTORY_UNAVAILABLE"
+  ]
+}

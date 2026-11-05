@@ -1,0 +1,63 @@
+{
+  "variant": "B1",
+  "features": [
+    "SUPPLY_COMPLETIONS_STOCK_RATIO",
+    "SUPPLY_OBSERVATION_AGE_MONTHS",
+    "SUPPLY_UNAVAILABLE"
+  ],
+  "documents": [
+    {
+      "year": 2019,
+      "file": "hdb2019.pdf",
+      "available": "2020-01",
+      "pages": [
+        15,
+        16
+      ],
+      "url": "https://links.sgx.com/FileOpen/HDB_v19_keystatistic_20191024.ashx?AnncID=IWPHODMKZ4RZEZAF&App=ArchiveAnnouncement&FileID=583813",
+      "timing": "Archived October 2019 issuer filing; conservative January 2020 use"
+    },
+    {
+      "year": 2021,
+      "file": "hdb2021.pdf",
+      "available": "2023-01",
+      "pages": [
+        8
+      ],
+      "url": "https://links.sgx.com/1.0.0/corporate-announcements/CXHXEE7KATRRGPM3/738439_HDB_key-statistics.pdf",
+      "timing": "Retrieved issuer filing broadcast 11 November 2022; do not assume the 2021 financial period implies availability in 2021"
+    },
+    {
+      "year": 2022,
+      "file": "verified_key_statistics_2022.pdf",
+      "available": "2023-01",
+      "pages": [
+        8
+      ],
+      "url": "https://assets.hdb.gov.sg/about-us/news-and-publications/annual-report/2022/ebooks/Key%20Statistics%20FY21.pdf",
+      "timing": "HDB FY2021 annual-report release 30 October 2022; conservative January 2023 use"
+    },
+    {
+      "year": 2023,
+      "file": "hdb2023_new.pdf",
+      "available": "2024-01",
+      "pages": [
+        8
+      ],
+      "url": "https://www.hdb.gov.sg/-/media/hdb-pulse/reports/annual-reports-and-financial-statements/HDB-Key-Statistics-FY22.pdf",
+      "timing": "FY2022 report issued 31 October 2023; conservative January 2024 use, nine months after fiscal end"
+    }
+  ],
+  "source_sha256": {
+    "reports/targeted_spatial_economic/sources/hdb2019.pdf": "b8ba4826aaba97c0e6382a95e910dd9f959dd2980daa58fb3559e41600c78656",
+    "reports/targeted_spatial_economic/sources/hdb2021.pdf": "84215bc7b054acef143a019e666b11368c0a137e6ca9c096874a06ec006dfe0b",
+    "reports/targeted_spatial_economic/sources/verified_key_statistics_2022.pdf": "48843b85698d712f12e69772f88a3d2ef96a1ece5e6c7f1f360e85bc8904abdc",
+    "reports/targeted_spatial_economic/sources/hdb2023_new.pdf": "c260416c97d621982abc7e8ee552be30890adb4bbead871633e5331fa64bdf00"
+  },
+  "code_sha256": {
+    "analysis/run_targeted_housing_supply.py": "e3a45b01ae8bf44eba59f8b3bdfaae96e88f066f361013d7ee29a87d24d938e0"
+  },
+  "inference": "Same frozen architecture, unchanged original inputs/targets/contexts, separately reapply earlier-only ensemble weighting",
+  "no_early_backfill": true,
+  "no_new_submission": true
+}

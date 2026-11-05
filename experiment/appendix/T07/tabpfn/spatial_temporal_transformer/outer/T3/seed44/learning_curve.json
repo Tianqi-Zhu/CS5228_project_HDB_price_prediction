@@ -1,0 +1,22 @@
+[
+  {
+    "epoch": 1,
+    "standardized_loss": 0.6479715008656056
+  },
+  {
+    "epoch": 2,
+    "standardized_loss": 0.5995755461916283
+  },
+  {
+    "epoch": 3,
+    "standardized_loss": 0.5893417458732061
+  },
+  {
+    "epoch": 4,
+    "standardized_loss": 0.5852873478338327
+  },
+  {
+    "epoch": 5,
+    "standardized_loss": 0.5820751077574366
+  }
+]

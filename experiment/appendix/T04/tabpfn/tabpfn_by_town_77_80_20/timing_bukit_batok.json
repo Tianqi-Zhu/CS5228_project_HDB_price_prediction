@@ -1,0 +1,15 @@
+{
+  "fit_seconds": 1.1060606999089941,
+  "predict_seconds": 0.4837939999997616,
+  "peak_vram_gib": 1.7568573951721191,
+  "context_rows": 4469,
+  "query_rows": 1136,
+  "features": 77,
+  "batch_size": 200,
+  "subsampling": false,
+  "parameter_versions_unchanged": true,
+  "town": "bukit batok",
+  "rmse_sgd": 451.28541488487747,
+  "mae_sgd": 349.95957447074295,
+  "bias_sgd": -104.4335160727754
+}

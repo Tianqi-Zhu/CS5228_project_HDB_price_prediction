@@ -1,0 +1,25 @@
+{
+  "banks": ["D05.SI", "O39.SI", "U11.SI"],
+  "financial_services": ["D05.SI", "O39.SI", "U11.SI", "S68.SI", "AIY.SI"],
+  "nonbank_finance": ["S68.SI", "AIY.SI"],
+  "primary_hypothesis": "Equal-weight monthly returns of DBS, OCBC and UOB at lag 1 versus changes in Singapore arithmetic mean HDB rent.",
+  "price_fields": ["ADJUSTED_CLOSE", "CLOSE"],
+  "lags_months": [0, 1, 3, 6],
+  "descriptive_growth_windows_months": [1, 3, 12],
+  "primary_window_months": 1,
+  "reference_year": 2021,
+  "development_start": "2022-01",
+  "development_end": "2024-05",
+  "later_start": "2024-06",
+  "later_end": "2025-03",
+  "validation_status": "The later ten months have already been examined in related project experiments. They are reused development evidence, not an untouched final test.",
+  "nonfinancial_market_control": "Monthly-rebalanced equal-weight return of January 2021 Singapore-listed inception names after excluding all five financial stocks. Do not use a bank-heavy broad index as the only comparator.",
+  "inference": "Primary monthly regressions on 2022-Jan to 2024-May. Newey-West covariance with three monthly lags; dependent FDR corrections across bank/finance/company/lag tests. Long-window correlations are descriptive and use block length at least as long as the growth window.",
+  "forecast": "One-month-ahead expanding Ridge, alpha 10, at least twelve mature monthly labels. Rent histories, economic signals and all scaling use only preceding months. Earlier forecasts select model/lag; later period is never used for selection.",
+  "sources": {
+    "banks": "https://www.abs.org.sg/about-us/memberbanks",
+    "sgx_ifast": "https://links.sgx.com/1.0.0/corporate-announcements/1JOGK1M7YBA5D0A0/20170609_SGX_welcomes_iFAST_Financial_as_Securities_Trading_Member_and_Clearing_Member.pdf",
+    "ifast_historical_business": "https://www.ifastcorp.com/ifastcorp/articleFiles/webarticles/14645/SG/iFAST%20Corp_Annual%20Report%202021_20220401.pdf"
+  },
+  "scope_limits": "The supplied basket excludes financial companies without price series, including insurers not present in the file. No present-day market caps or future financial constituents are used. No submission or TabPFN model changes are requested."
+}

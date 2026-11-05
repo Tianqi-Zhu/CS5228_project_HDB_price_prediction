@@ -1,0 +1,14 @@
+{
+  "artifact": ".cache/tabpfn_fast_final_submission/features.joblib",
+  "sha256": "b7d5de3b3bb7b75a689cdb30408f3d4fd26da948cd46dc82c8896b1008bbad1c",
+  "context_rows": 150000,
+  "test_rows": 50000,
+  "features": 77,
+  "march_test_origin": "2025-02",
+  "later_test_origin": "2025-03",
+  "long_horizon_policy": "local forecast held at month 10; actual horizon, age and calendar month retained",
+  "beyond_ten_month_rows": 18077,
+  "query_baseline_finite": true,
+  "train_categorical_month_complete": true,
+  "query_categorical_month_complete": true
+}

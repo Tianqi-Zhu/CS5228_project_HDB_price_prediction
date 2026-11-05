@@ -1,0 +1,16 @@
+{
+  "model": "full-history CatBoost without index correction or recent-window ablation",
+  "cutoff_exclusive": "2025-03",
+  "fitting_rows": 146968,
+  "test_rows": 50000,
+  "fit_predict_seconds": 79.45414429996163,
+  "source_sha256": {
+    "train.csv": "2fe38ce9e0d8a02e9786f066d4a10d575d91f34be1d9111f0142e3f43fbfc8a5",
+    "test.csv": "a2ec03a0afc07c251c72cc0de2e15ac965a3b06291b304aaac53a375115ff4e0"
+  },
+  "prediction_range_sgd": [
+    1580.1538997032708,
+    5159.159616664401
+  ],
+  "note": "All test months use one fixed origin. March 2025 labeled train rows are excluded."
+}

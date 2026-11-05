@@ -1,0 +1,10 @@
+{
+  "outer_fit_predict_seconds": 258.1022975000087,
+  "outer_peak_vram_gib": {
+    "frozen": 9.122128963470459,
+    "lora_qk": 9.121720790863037
+  },
+  "views": 2,
+  "context_rows": 121005,
+  "validation_rows": 28995
+}

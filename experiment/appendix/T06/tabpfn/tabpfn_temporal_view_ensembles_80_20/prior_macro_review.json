@@ -1,0 +1,40 @@
+{
+  "latest_feature_diversified_ensemble": {
+    "coe_used": false,
+    "stocks_used": false,
+    "temporal_change": "Categorical month replaced by sine/cosine plus six school/intake calendar proxies; existing rental histories and temporal forecast retained"
+  },
+  "previous_coe_group_forecast": {
+    "report": "reports/flat_type_coe_forecast/report.md",
+    "design": "Fixed-origin pooled Ridge forecasts of flat-type monthly mean rents; category-A log level, short/long gap, three-month change and damped-horizon interaction",
+    "june2024_history_only_weighted_group_mean_rmse_sgd": 42.987,
+    "june2024_with_coe_weighted_group_mean_rmse_sgd": 80.842,
+    "november2023_history_only_weighted_group_mean_rmse_sgd": 227.206,
+    "november2023_with_coe_weighted_group_mean_rmse_sgd": 402.729,
+    "promoted_to_tabpfn_features": false,
+    "limitation": "Group-mean forecasting scores are not transaction-level TabPFN scores; holdouts overlap"
+  },
+  "previous_comprehensive_temporal": {
+    "report": "reports/tabpfn_v3_5_fast_dynamic_temporal_80_20/report.md",
+    "design": "Optional causal category-A COE correction selected using earlier rolling forecasts",
+    "final_origin_economic_correction_selected": false,
+    "best_coe_correction_inner_group_mean_rmse_sgd": 260.88,
+    "simple_adjusted_baseline_inner_group_mean_rmse_sgd": 251.57,
+    "limitation": "Changed both feature block and residual baseline; not an isolated matched current two-view macro ensemble test"
+  },
+  "previous_stock_ablation": {
+    "report": "reports/economic_feature_ablation/report.md",
+    "model": "HistGradientBoosting with29 property/time/block/amenity inputs",
+    "stock_features": "Singapore .SI basket median adjusted-close return, compounded three-month return and three-month volatility; lagged one month",
+    "stock_rmse_changes_sgd_by_origin": {
+      "2022-07": 2.79,
+      "2023-01": 2.59,
+      "2023-07": -0.18,
+      "2024-04": 0.72
+    },
+    "prediction_scenario": "Market observations refreshed monthly; not fixed-origin long-horizon forecasting",
+    "tested_as_isolated_current_tabpfn_view": false,
+    "official_sti_index_used": false
+  },
+  "current_followup": "Isolate COE A/C and Singapore-stock views, freeze all macro observations at original row forecast origin minus one month, retain baseline77 and original residual target, learn ensemble weights only on earlier fixed-origin predictions"
+}

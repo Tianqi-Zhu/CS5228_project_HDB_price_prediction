@@ -1,0 +1,11 @@
+{
+  "verified": true,
+  "selected": "CDE",
+  "full_main_rows": 28995,
+  "historical_cases": 4000,
+  "historical_target_windows_disjoint": true,
+  "original_BDE_reproduced": true,
+  "no_main_labels_used_for_weights": true,
+  "no_earlier_A_adapter_uses_future_labels": true,
+  "sources_unchanged": true
+}

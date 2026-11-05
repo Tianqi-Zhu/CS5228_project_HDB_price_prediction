@@ -1,0 +1,128 @@
+{
+  "AQ_SCHOOL_NEAREST_LOG_DEMAND": {
+    "group": "schools",
+    "labels_used": false,
+    "availability": "source released by information origin; static_weights is a separate retrospective sensitivity",
+    "definition": "See source records, config and amenity_quality_features.py; log = natural log1p unless school log applicant/vacancy ratio"
+  },
+  "AQ_SCHOOL_MAX_PERCENTILE_1KM": {
+    "group": "schools",
+    "labels_used": false,
+    "availability": "source released by information origin; static_weights is a separate retrospective sensitivity",
+    "definition": "See source records, config and amenity_quality_features.py; log = natural log1p unless school log applicant/vacancy ratio"
+  },
+  "AQ_SCHOOL_EXCESS_ACCESS_LOG": {
+    "group": "schools",
+    "labels_used": false,
+    "availability": "source released by information origin; static_weights is a separate retrospective sensitivity",
+    "definition": "See source records, config and amenity_quality_features.py; log = natural log1p unless school log applicant/vacancy ratio"
+  },
+  "AQ_SCHOOL_COVERAGE_1KM": {
+    "group": "schools",
+    "labels_used": false,
+    "availability": "source released by information origin; static_weights is a separate retrospective sensitivity",
+    "definition": "See source records, config and amenity_quality_features.py; log = natural log1p unless school log applicant/vacancy ratio"
+  },
+  "AQ_SCHOOL_NEAREST_UNKNOWN": {
+    "group": "schools",
+    "labels_used": false,
+    "availability": "source released by information origin; static_weights is a separate retrospective sensitivity",
+    "definition": "See source records, config and amenity_quality_features.py; log = natural log1p unless school log applicant/vacancy ratio"
+  },
+  "AQ_MALL_NEAREST_LOG_NLA": {
+    "group": "malls",
+    "labels_used": false,
+    "availability": "source released by information origin; static_weights is a separate retrospective sensitivity",
+    "definition": "See source records, config and amenity_quality_features.py; log = natural log1p unless school log applicant/vacancy ratio"
+  },
+  "AQ_MALL_NLA_ACCESS_LOG": {
+    "group": "malls",
+    "labels_used": false,
+    "availability": "source released by information origin; static_weights is a separate retrospective sensitivity",
+    "definition": "See source records, config and amenity_quality_features.py; log = natural log1p unless school log applicant/vacancy ratio"
+  },
+  "AQ_MALL_GROSS_REVENUE_ACCESS_LOG": {
+    "group": "malls",
+    "labels_used": false,
+    "availability": "source released by information origin; static_weights is a separate retrospective sensitivity",
+    "definition": "See source records, config and amenity_quality_features.py; log = natural log1p unless school log applicant/vacancy ratio"
+  },
+  "AQ_MALL_FOOTFALL_ACCESS_LOG": {
+    "group": "malls",
+    "labels_used": false,
+    "availability": "source released by information origin; static_weights is a separate retrospective sensitivity",
+    "definition": "See source records, config and amenity_quality_features.py; log = natural log1p unless school log applicant/vacancy ratio"
+  },
+  "AQ_MALL_COVERAGE_2KM": {
+    "group": "malls",
+    "labels_used": false,
+    "availability": "source released by information origin; static_weights is a separate retrospective sensitivity",
+    "definition": "See source records, config and amenity_quality_features.py; log = natural log1p unless school log applicant/vacancy ratio"
+  },
+  "AQ_MALL_REVENUE_COVERAGE_2KM": {
+    "group": "malls",
+    "labels_used": false,
+    "availability": "source released by information origin; static_weights is a separate retrospective sensitivity",
+    "definition": "See source records, config and amenity_quality_features.py; log = natural log1p unless school log applicant/vacancy ratio"
+  },
+  "AQ_MALL_NEAREST_RECORD_AGE_YEARS": {
+    "group": "malls",
+    "labels_used": false,
+    "availability": "source released by information origin; static_weights is a separate retrospective sensitivity",
+    "definition": "See source records, config and amenity_quality_features.py; log = natural log1p unless school log applicant/vacancy ratio"
+  },
+  "AQ_MRT_NEAREST_OPERATIONAL_KM": {
+    "group": "transport",
+    "labels_used": false,
+    "availability": "source released by information origin; static_weights is a separate retrospective sensitivity",
+    "definition": "See source records, config and amenity_quality_features.py; log = natural log1p unless school log applicant/vacancy ratio"
+  },
+  "AQ_MRT_NEAREST_LINE_COUNT": {
+    "group": "transport",
+    "labels_used": false,
+    "availability": "source released by information origin; static_weights is a separate retrospective sensitivity",
+    "definition": "See source records, config and amenity_quality_features.py; log = natural log1p unless school log applicant/vacancy ratio"
+  },
+  "AQ_MRT_NEAREST_HARMONIC_CENTRALITY": {
+    "group": "transport",
+    "labels_used": false,
+    "availability": "source released by information origin; static_weights is a separate retrospective sensitivity",
+    "definition": "See source records, config and amenity_quality_features.py; log = natural log1p unless school log applicant/vacancy ratio"
+  },
+  "AQ_MRT_NEAREST_CBD_HOPS": {
+    "group": "transport",
+    "labels_used": false,
+    "availability": "source released by information origin; static_weights is a separate retrospective sensitivity",
+    "definition": "See source records, config and amenity_quality_features.py; log = natural log1p unless school log applicant/vacancy ratio"
+  },
+  "AQ_MRT_NAMED_BUS_SERVICES_LOG": {
+    "group": "transport",
+    "labels_used": false,
+    "availability": "source released by information origin; static_weights is a separate retrospective sensitivity",
+    "definition": "See source records, config and amenity_quality_features.py; log = natural log1p unless school log applicant/vacancy ratio"
+  },
+  "AQ_MRT_NEARBY_BUS_SERVICES_LOG": {
+    "group": "transport",
+    "labels_used": false,
+    "availability": "source released by information origin; static_weights is a separate retrospective sensitivity",
+    "definition": "See source records, config and amenity_quality_features.py; log = natural log1p unless school log applicant/vacancy ratio"
+  },
+  "AQ_MRT_NEAREST_DAILY_TAPS_LOG": {
+    "group": "transport",
+    "labels_used": false,
+    "availability": "source released by information origin; static_weights is a separate retrospective sensitivity",
+    "definition": "See source records, config and amenity_quality_features.py; log = natural log1p unless school log applicant/vacancy ratio"
+  },
+  "AQ_MRT_BUS_SOURCE_UNKNOWN": {
+    "group": "transport",
+    "labels_used": false,
+    "availability": "source released by information origin; static_weights is a separate retrospective sensitivity",
+    "definition": "See source records, config and amenity_quality_features.py; log = natural log1p unless school log applicant/vacancy ratio"
+  },
+  "AQ_MRT_PASSENGER_SOURCE_UNKNOWN": {
+    "group": "transport",
+    "labels_used": false,
+    "availability": "source released by information origin; static_weights is a separate retrospective sensitivity",
+    "definition": "See source records, config and amenity_quality_features.py; log = natural log1p unless school log applicant/vacancy ratio"
+  }
+}

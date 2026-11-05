@@ -1,0 +1,21 @@
+{
+  "sources_sha256": {
+    "C:\\Users\\auror\\Code\\CS5228_project_HDB_price_prediction\\data\\train.csv": "2fe38ce9e0d8a02e9786f066d4a10d575d91f34be1d9111f0142e3f43fbfc8a5",
+    "C:\\Users\\auror\\Code\\CS5228_project_HDB_price_prediction\\reports\\spatial_temporal_transformer\\prepared.json": "04c8bf26ac4adf792b74e7abadb4a7ef915832cecdda879fa0fdda79064a5914",
+    "C:\\Users\\auror\\Code\\CS5228_project_HDB_price_prediction\\analysis\\experiments\\rental_context_attention.py": "b4d2a1614f29ebe677bb5209b36fb34c2504ee00621778dca46aba137e029174",
+    "C:\\Users\\auror\\Code\\CS5228_project_HDB_price_prediction\\analysis\\run_transformer_context_attention.py": "b8aec7c2fc39ba8166d7ae8fb86a60cc8ce23b56671c1e4d168eba05ed3b9a7f"
+  },
+  "slots": 32,
+  "nearest_search": 128,
+  "distance_cap_km": 5.0,
+  "matched_T0": true,
+  "seed": [
+    42,
+    43,
+    44
+  ],
+  "selection_folds": [
+    "early_2022",
+    "early_2023"
+  ]
+}

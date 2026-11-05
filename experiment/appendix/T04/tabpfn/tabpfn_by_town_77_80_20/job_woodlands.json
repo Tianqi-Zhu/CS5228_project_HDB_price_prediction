@@ -1,0 +1,8 @@
+{
+  "town": "woodlands",
+  "context_rows": 6122,
+  "query_rows": 1455,
+  "context_ids_sha256": "e3a4fb94cfb24005379dd4f4e67eb8f1a9d34d56e34e98740619e2eed2c06288",
+  "query_ids_sha256": "dbe5ce6d4abb62efa0499096d9613dddf867a6ffb63357e633d4ed7dea17a7b3",
+  "settings_sha256": "7ec7fcf4dc279912e4ccac47faafbe82887e1d344fe25f59350c4dbcbc3e5916"
+}

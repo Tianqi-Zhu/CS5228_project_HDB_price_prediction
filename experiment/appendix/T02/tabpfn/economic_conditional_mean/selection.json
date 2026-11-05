@@ -1,0 +1,9 @@
+{
+  "advanced": false,
+  "refit_epochs": {
+    "rent": 9,
+    "rent_coe": 5
+  },
+  "criterion": "COE improves matched rent-only and T0 in each earlier window",
+  "outer_labels_used": false
+}

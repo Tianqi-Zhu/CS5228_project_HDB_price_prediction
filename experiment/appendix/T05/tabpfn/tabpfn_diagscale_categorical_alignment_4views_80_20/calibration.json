@@ -1,0 +1,89 @@
+{
+  "categorical_indices": [
+    0,
+    1,
+    4,
+    6,
+    12,
+    13,
+    14,
+    41,
+    42
+  ],
+  "categorical_names": [
+    "FLAT_TYPE_CLEAN",
+    "FLAT_MODEL_CLEAN",
+    "APPROVAL_MONTH_OF_YEAR",
+    "TOWN_CLEAN",
+    "SUBZONE",
+    "PLANNING_AREA",
+    "REGION",
+    "BLOCK_ID",
+    "STREET_ID"
+  ],
+  "fit_rows": 102829,
+  "calibration_rows": 600,
+  "train_views": 4,
+  "checkpoint_views": 4,
+  "deployment_views": 1,
+  "training_task_size": 1024,
+  "learning_rate": 0.01,
+  "epochs_cap": 8,
+  "patience": 3,
+  "crps_weight": 1,
+  "mse_weight": 1,
+  "epoch_validation": [
+    {
+      "epoch": -1,
+      "delta_l2": 0.0,
+      "validation_mse": 270278.574089149
+    },
+    {
+      "epoch": 0,
+      "delta_l2": 8.485427856445312,
+      "validation_mse": 267789.00081402453
+    },
+    {
+      "epoch": 1,
+      "delta_l2": 15.908408164978027,
+      "validation_mse": 266723.2208640771
+    },
+    {
+      "epoch": 2,
+      "delta_l2": 20.113752365112305,
+      "validation_mse": 267554.53694784036
+    },
+    {
+      "epoch": 3,
+      "delta_l2": 22.84030532836914,
+      "validation_mse": 266009.2020906234
+    },
+    {
+      "epoch": 4,
+      "delta_l2": 24.52901268005371,
+      "validation_mse": 267015.8158675057
+    },
+    {
+      "epoch": 5,
+      "delta_l2": 25.518014907836914,
+      "validation_mse": 266749.6290891075
+    },
+    {
+      "epoch": 6,
+      "delta_l2": 25.84381866455078,
+      "validation_mse": 266911.93640420557
+    }
+  ],
+  "calibration_rmse_weighted": 524.5232901297891,
+  "calibration_rmse_unweighted": 523.8482723680437,
+  "frozen_calibration_rmse_weighted": 521.8641848602077,
+  "prior_missing_indices_calibration_rmse_weighted": 521.1364372458313,
+  "delta_l2": 22.840304823309427,
+  "trainable_parameters": 8576,
+  "adapter_modules": 12,
+  "fit_seconds": 1585.6953380000778,
+  "peak_vram_gib": 11.845372200012207,
+  "adapter_sha256": "d9bb84e718164153106565aa2370ac7b04e539a316c30f4fc41e446c5ad8361c",
+  "code_sha256": "f49c667ea3ded46bc0d005c06481ae4379f8fe629c64f6d5046dce1d5ba16a00",
+  "outer_labels_used_for_selection": false
+}

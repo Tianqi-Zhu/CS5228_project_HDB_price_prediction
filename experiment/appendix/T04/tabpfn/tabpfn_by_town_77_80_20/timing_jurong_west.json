@@ -1,0 +1,15 @@
+{
+  "fit_seconds": 1.2731813000282273,
+  "predict_seconds": 0.8417043999070302,
+  "peak_vram_gib": 3.0114526748657227,
+  "context_rows": 8441,
+  "query_rows": 2041,
+  "features": 77,
+  "batch_size": 200,
+  "subsampling": false,
+  "parameter_versions_unchanged": true,
+  "town": "jurong west",
+  "rmse_sgd": 569.1077326201096,
+  "mae_sgd": 426.2767392280676,
+  "bias_sgd": -77.74975787962282
+}

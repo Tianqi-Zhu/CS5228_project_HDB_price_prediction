@@ -1,0 +1,9 @@
+{
+  "scope": "Post-hoc first-fold diagnostic only; no tuning on outer labels. Retains inner-selected models without the full-data refit.",
+  "mlp_selected_epoch": 5,
+  "mlp_inner_rmse": 614.9955164738179,
+  "mlp_no_refit_rmse": 784.2365050294472,
+  "mlp_no_refit_mean_correction": 439.5538024902344,
+  "ridge_no_refit_rmse": 655.9425432867564,
+  "base_rmse": 628.3693035694815
+}

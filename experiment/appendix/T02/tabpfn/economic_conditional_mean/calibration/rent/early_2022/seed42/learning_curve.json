@@ -1,0 +1,97 @@
+[
+  {
+    "epoch": 1,
+    "loss": 0.45599459877868004,
+    "validation_rmse_sgd": 650.4376430094602
+  },
+  {
+    "epoch": 2,
+    "loss": 0.37654683030001457,
+    "validation_rmse_sgd": 653.8574105061311
+  },
+  {
+    "epoch": 3,
+    "loss": 0.37177263762483853,
+    "validation_rmse_sgd": 648.2683671905502
+  },
+  {
+    "epoch": 4,
+    "loss": 0.3675483681572688,
+    "validation_rmse_sgd": 656.4986102690061
+  },
+  {
+    "epoch": 5,
+    "loss": 0.3633817933527964,
+    "validation_rmse_sgd": 652.1699751836518
+  },
+  {
+    "epoch": 6,
+    "loss": 0.36074565351431015,
+    "validation_rmse_sgd": 649.1369907670796
+  },
+  {
+    "epoch": 7,
+    "loss": 0.3590867139923503,
+    "validation_rmse_sgd": 645.2035530121265
+  },
+  {
+    "epoch": 8,
+    "loss": 0.35650605151653647,
+    "validation_rmse_sgd": 659.086117603031
+  },
+  {
+    "epoch": 9,
+    "loss": 0.3544918376755291,
+    "validation_rmse_sgd": 648.585327583785
+  },
+  {
+    "epoch": 10,
+    "loss": 0.35213714102928145,
+    "validation_rmse_sgd": 649.030066586
+  },
+  {
+    "epoch": 11,
+    "loss": 0.34780841958267034,
+    "validation_rmse_sgd": 650.9578672624476
+  },
+  {
+    "epoch": 12,
+    "loss": 0.3456319796264992,
+    "validation_rmse_sgd": 643.2854744436793
+  },
+  {
+    "epoch": 13,
+    "loss": 0.3431755878884092,
+    "validation_rmse_sgd": 649.3609063948121
+  },
+  {
+    "epoch": 14,
+    "loss": 0.33892209276017016,
+    "validation_rmse_sgd": 640.510472476582
+  },
+  {
+    "epoch": 15,
+    "loss": 0.33514847208822246,
+    "validation_rmse_sgd": 650.4844366015913
+  },
+  {
+    "epoch": 16,
+    "loss": 0.3309427701163366,
+    "validation_rmse_sgd": 648.4344640707236
+  },
+  {
+    "epoch": 17,
+    "loss": 0.327293037588431,
+    "validation_rmse_sgd": 653.2675032581986
+  },
+  {
+    "epoch": 18,
+    "loss": 0.32307569918098916,
+    "validation_rmse_sgd": 656.8559381876049
+  },
+  {
+    "epoch": 19,
+    "loss": 0.3199412358438336,
+    "validation_rmse_sgd": 655.3833931575335
+  }
+]

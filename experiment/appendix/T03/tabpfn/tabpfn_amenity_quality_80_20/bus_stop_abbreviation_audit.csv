@@ -1,0 +1,2683 @@
+snapshot,stop_id,original_name,canonical_name
+2021-06-13 05:04:25,10011,Bef Neil Rd,Bef Neil road
+2021-06-13 05:04:25,10291,Bef Dawson Rd,Bef Dawson road
+2021-06-13 05:04:25,10299,Aft Dawson Rd,Aft Dawson road
+2021-06-13 05:04:25,10351,Bef Tiong Bahru Rd,Bef Tiong Bahru road
+2021-06-13 05:04:25,10359,Aft Tiong Bahru Rd,Aft Tiong Bahru road
+2021-06-13 05:04:25,10471,Bef Tanglin Rd,Bef Tanglin road
+2021-06-13 05:04:25,10479,Aft Tanglin Rd,Aft Tanglin road
+2021-06-13 05:04:25,11041,Aft C'wealth Dr,Aft commonwealth Dr
+2021-06-13 05:04:25,11091,Tulip Gdn,Tulip garden
+2021-06-13 05:04:25,11099,Opp Tulip Gdn,Opp Tulip garden
+2021-06-13 05:04:25,11101,Farrer Rd Mkt,Farrer road Mkt
+2021-06-13 05:04:25,11111,Farrer Rd Stn Exit B,Farrer road Stn Exit B
+2021-06-13 05:04:25,11119,Farrer Rd Stn Exit A,Farrer road Stn Exit A
+2021-06-13 05:04:25,11161,C'Wealth Stn Exit A/D,commonwealth Stn Exit A/D
+2021-06-13 05:04:25,11169,C'Wealth Stn Exit B/C,commonwealth Stn Exit B/C
+2021-06-13 05:04:25,11209,Opp Peirce Rd,Opp Peirce road
+2021-06-13 05:04:25,11211,Aft Peirce Rd,Aft Peirce road
+2021-06-13 05:04:25,11279,Aft Coronation Rd West,Aft Coronation road West
+2021-06-13 05:04:25,11281,Aft Tan Boon Chong Ave,Aft Tan Boon Chong avenue
+2021-06-13 05:04:25,11289,Opp Tan Boon Chong Ave,Opp Tan Boon Chong avenue
+2021-06-13 05:04:25,11331,Opp Dynasty Gdn II,Opp Dynasty garden II
+2021-06-13 05:04:25,11401,Holland V Stn/Blk12,holland village Stn/Blk12
+2021-06-13 05:04:25,11419,Holland V Stn Exit A,holland village Stn Exit A
+2021-06-13 05:04:25,12111,Bef Clementi Rd,Bef Clementi road
+2021-06-13 05:04:25,12131,Aft Grove Ave,Aft Grove avenue
+2021-06-13 05:04:25,13011,Opp S'pore Botanic Gdns,Opp S'pore Botanic gardens
+2021-06-13 05:04:25,13019,S'pore Botanic Gdns,S'pore Botanic gardens
+2021-06-13 05:04:25,13029,Bef Tyersall Ave,Bef Tyersall avenue
+2021-06-13 05:04:25,13031,Opp Chatsworth Rd,Opp Chatsworth road
+2021-06-13 05:04:25,13039,Bef Chatsworth Rd,Bef Chatsworth road
+2021-06-13 05:04:25,13091,Aft Kim Yam Rd,Aft Kim Yam road
+2021-06-13 05:04:25,13099,Bef Kim Yam Rd,Bef Kim Yam road
+2021-06-13 05:04:25,13101,Opp Mohd Sultan Rd,Opp Mohd Sultan road
+2021-06-13 05:04:25,13109,UE Sq/Bef Mohd Sultan Rd,UE Sq/Bef Mohd Sultan road
+2021-06-13 05:04:25,13191,Bef Orchard Blvd,Bef Orchard boulevard
+2021-06-13 05:04:25,13199,Aft Orchard Blvd,Aft Orchard boulevard
+2021-06-13 05:04:25,14139,Bef Seah Im Rd,Bef Seah Im road
+2021-06-13 05:04:25,14189,Aft Alexandra Rd,Aft Alexandra road
+2021-06-13 05:04:25,15071,Opp Lor Sarhad,Opp lorong Sarhad
+2021-06-13 05:04:25,15079,Aft Lor Sarhad,Aft lorong Sarhad
+2021-06-13 05:04:25,15221,Aft Sth Buona Vista Rd,Aft south Buona Vista road
+2021-06-13 05:04:25,15229,Bef Sth Buona Vista Rd,Bef south Buona Vista road
+2021-06-13 05:04:25,16089,Aft Clementi Rd,Aft Clementi road
+2021-06-13 05:04:25,16201,Barossa Gdns,Barossa gardens
+2021-06-13 05:04:25,17091,Aft Clementi Ave 1,Aft Clementi avenue 1
+2021-06-13 05:04:25,17351,Aft Clementi Rd,Aft Clementi road
+2021-06-13 05:04:25,17359,Bef Clementi Rd,Bef Clementi road
+2021-06-13 05:04:25,18099,Bef Ayer Rajah Cres,Bef Ayer Rajah crescent
+2021-06-13 05:04:25,18191,Bef Whitchurch Rd,Bef Whitchurch road
+2021-06-13 05:04:25,18199,Aft Whitchurch Rd,Aft Whitchurch road
+2021-06-13 05:04:25,20061,Aft Jurong Town Hall Rd,Aft Jurong Town Hall road
+2021-06-13 05:04:25,20069,Bef Jurong Town Hall Rd,Bef Jurong Town Hall road
+2021-06-13 05:04:25,20179,Aft Teban Gdns Rd,Aft Teban gardens road
+2021-06-13 05:04:25,20201,Teban Gdn PO,Teban garden PO
+2021-06-13 05:04:25,20209,Bef Jurong Town Hall Rd,Bef Jurong Town Hall road
+2021-06-13 05:04:25,20251,Bef Teban Gdns Rd,Bef Teban gardens road
+2021-06-13 05:04:25,20259,C'wealth Sec Sch,commonwealth Sec Sch
+2021-06-13 05:04:25,20261,Aft Pandan Gdns,Aft Pandan gardens
+2021-06-13 05:04:25,20269,Bef Pandan Gdns,Bef Pandan gardens
+2021-06-13 05:04:25,21019,Aft Yuan Ching Rd,Aft Yuan Ching road
+2021-06-13 05:04:25,21021,Bef Jurong Port Rd,Bef Jurong Port road
+2021-06-13 05:04:25,21029,Aft Corp Pl,Aft Corp place
+2021-06-13 05:04:25,21051,Bef Penjuru Rd,Bef Penjuru road
+2021-06-13 05:04:25,21059,Aft Penjuru Rd,Aft Penjuru road
+2021-06-13 05:04:25,21111,Aft Jurong Pier Rd,Aft Jurong Pier road
+2021-06-13 05:04:25,21119,Bef Jurong Pier Rd,Bef Jurong Pier road
+2021-06-13 05:04:25,21131,Bef Jurong Port Rd,Bef Jurong Port road
+2021-06-13 05:04:25,21139,Aft Jurong Port Rd,Aft Jurong Port road
+2021-06-13 05:04:25,21171,Opp Corp Pl,Opp Corp place
+2021-06-13 05:04:25,21179,Corp Pl,Corp place
+2021-06-13 05:04:25,21261,Aft Chin Bee Ave,Aft Chin Bee avenue
+2021-06-13 05:04:25,21269,Bef Chin Bee Ave,Bef Chin Bee avenue
+2021-06-13 05:04:25,21311,Bef Tractor Rd,Bef Tractor road
+2021-06-13 05:04:25,21319,Opp Tractor Rd,Opp Tractor road
+2021-06-13 05:04:25,21469,Bef Chia Ping Rd,Bef Chia Ping road
+2021-06-13 05:04:25,21511,Bef Chin Bee Rd,Bef Chin Bee road
+2021-06-13 05:04:25,21519,Aft Chin Bee Rd,Aft Chin Bee road
+2021-06-13 05:04:25,21541,Aft Fourth Chin Bee Rd,Aft Fourth Chin Bee road
+2021-06-13 05:04:25,21619,Aft Corp Rd,Aft Corp road
+2021-06-13 05:04:25,21631,Blk 115/Opp Japanese Gdn,Blk 115/Opp Japanese garden
+2021-06-13 05:04:25,21639,Japanese Gdn/Opp Blk 115,Japanese garden/Opp Blk 115
+2021-06-13 05:04:25,21651,Opp Chinese Gdn,Opp Chinese garden
+2021-06-13 05:04:25,21659,Chinese Gdn,Chinese garden
+2021-06-13 05:04:25,21779,Aft Yuan Ching Rd,Aft Yuan Ching road
+2021-06-13 05:04:25,22041,Aft Tg Kling Rd,Aft Tg Kling road
+2021-06-13 05:04:25,22049,Bef Tg Kling Rd,Bef Tg Kling road
+2021-06-13 05:04:25,22071,Bef Jurong Pier Rd,Bef Jurong Pier road
+2021-06-13 05:04:25,22079,Aft Jurong Pier Rd,Aft Jurong Pier road
+2021-06-13 05:04:25,22169,Aft Intl Rd,Aft Intl road
+2021-06-13 05:04:25,22219,Aft Neythal Rd,Aft Neythal road
+2021-06-13 05:04:25,22221,Aft Pioneer Rd Nth,Aft Pioneer road north
+2021-06-13 05:04:25,22229,Bef Pioneer Rd Nth,Bef Pioneer road north
+2021-06-13 05:04:25,22271,Bef Kwong Min Rd,Bef Kwong Min road
+2021-06-13 05:04:25,22281,Aft Soon Lee Rd,Aft Soon Lee road
+2021-06-13 05:04:25,22289,Bef Fan Yoong Rd,Bef Fan Yoong road
+2021-06-13 05:04:25,22299,Bef Soon Lee Rd,Bef Soon Lee road
+2021-06-13 05:04:25,22309,Aft Fan Yoong Rd,Aft Fan Yoong road
+2021-06-13 05:04:25,22319,Bef Enterprise Rd,Bef Enterprise road
+2021-06-13 05:04:25,22401,Aft Shipyard Rd,Aft Shipyard road
+2021-06-13 05:04:25,22409,Bef Shipyard Rd,Bef Shipyard road
+2021-06-13 05:04:25,23051,Bef Kian Teck Rd,Bef Kian Teck road
+2021-06-13 05:04:25,23059,Aft Kian Teck Rd,Aft Kian Teck road
+2021-06-13 05:04:25,23061,Aft Kian Teck Rd,Aft Kian Teck road
+2021-06-13 05:04:25,23069,Bef Kian Teck Rd,Bef Kian Teck road
+2021-06-13 05:04:25,23099,Bef First Lok Yang Rd,Bef First Lok Yang road
+2021-06-13 05:04:25,23109,Aft Third Lok Yang Rd,Aft Third Lok Yang road
+2021-06-13 05:04:25,23111,Bef Fourth Lok Yang Rd,Bef Fourth Lok Yang road
+2021-06-13 05:04:25,23119,Aft Fourth Lok Yang Rd,Aft Fourth Lok Yang road
+2021-06-13 05:04:25,23159,Aft Fifth Lok Yang Rd,Aft Fifth Lok Yang road
+2021-06-13 05:04:25,23161,Aft Kian Teck Rd,Aft Kian Teck road
+2021-06-13 05:04:25,23169,Bef Kian Teck Rd,Bef Kian Teck road
+2021-06-13 05:04:25,23179,Aft Second Lok Yang Rd,Aft Second Lok Yang road
+2021-06-13 05:04:25,23181,Aft Kian Teck Rd,Aft Kian Teck road
+2021-06-13 05:04:25,23189,Bef First Lok Yang Rd,Bef First Lok Yang road
+2021-06-13 05:04:25,23241,Aft Benoi Rd,Aft Benoi road
+2021-06-13 05:04:25,23249,Bef Benoi Rd,Bef Benoi road
+2021-06-13 05:04:25,23251,Aft Shipyard Rd,Aft Shipyard road
+2021-06-13 05:04:25,23259,Bef Shipyard Rd,Bef Shipyard road
+2021-06-13 05:04:25,23281,Aft Pioneer Rd,Aft Pioneer road
+2021-06-13 05:04:25,23341,Aft Pioneer Rd,Aft Pioneer road
+2021-06-13 05:04:25,23349,Bef Pioneer Rd,Bef Pioneer road
+2021-06-13 05:04:25,23351,Aft Gul Ave,Aft Gul avenue
+2021-06-13 05:04:25,23359,Opp Gul Ave,Opp Gul avenue
+2021-06-13 05:04:25,23419,Bef Shipyard Cres,Bef Shipyard crescent
+2021-06-13 05:04:25,23441,Bef Benoi Pl,Bef Benoi place
+2021-06-13 05:04:25,23449,Aft Benoi Pl,Aft Benoi place
+2021-06-13 05:04:25,23471,Aft Benoi Rd,Aft Benoi road
+2021-06-13 05:04:25,23479,Bef Benoi Rd,Bef Benoi road
+2021-06-13 05:04:25,23501,Aft Pioneer Rd Nth,Aft Pioneer road north
+2021-06-13 05:04:25,24089,Aft Gul Ave,Aft Gul avenue
+2021-06-13 05:04:25,24149,Aft Joo Koon Cres,Aft Joo Koon crescent
+2021-06-13 05:04:25,24159,Aft Joo Koon Rd,Aft Joo Koon road
+2021-06-13 05:04:25,24521,Bef Tuas Ave 5,Bef Tuas avenue 5
+2021-06-13 05:04:25,24529,Aft Tuas Ave 5,Aft Tuas avenue 5
+2021-06-13 05:04:25,24631,Bef Benoi Rd,Bef Benoi road
+2021-06-13 05:04:25,24639,Aft Benoi Rd,Aft Benoi road
+2021-06-13 05:04:25,24691,Aft Tuas Rd,Aft Tuas road
+2021-06-13 05:04:25,24699,Bef Tuas Rd,Bef Tuas road
+2021-06-13 05:04:25,24701,Tuas Cres Stn Exit B,Tuas crescent Stn Exit B
+2021-06-13 05:04:25,24709,Tuas Cres Stn Exit A,Tuas crescent Stn Exit A
+2021-06-13 05:04:25,24711,Tuas West Rd Stn Exit B,Tuas West road Stn Exit B
+2021-06-13 05:04:25,24719,Tuas West Rd Stn Exit A,Tuas West road Stn Exit A
+2021-06-13 05:04:25,25091,Aft Tuas Ave 7,Aft Tuas avenue 7
+2021-06-13 05:04:25,25111,Aft Tuas Ave 10,Aft Tuas avenue 10
+2021-06-13 05:04:25,25119,Bef Tuas Ave 10,Bef Tuas avenue 10
+2021-06-13 05:04:25,25121,Aft Tuas Ave 8,Aft Tuas avenue 8
+2021-06-13 05:04:25,25129,Aft Tuas Ave 6,Aft Tuas avenue 6
+2021-06-13 05:04:25,25201,Aft Tuas Rd,Aft Tuas road
+2021-06-13 05:04:25,25209,Bef Tuas Rd,Bef Tuas road
+2021-06-13 05:04:25,25219,Aft Tuas Ave 2,Aft Tuas avenue 2
+2021-06-13 05:04:25,25249,Aft Tuas West Rd,Aft Tuas West road
+2021-06-13 05:04:25,25371,Aft Tuas Ave 4,Aft Tuas avenue 4
+2021-06-13 05:04:25,25379,Aft Tuas Ave 6,Aft Tuas avenue 6
+2021-06-13 05:04:25,25389,Aft Tuas Ave 8,Aft Tuas avenue 8
+2021-06-13 05:04:25,25391,Bef Pioneer Rd,Bef Pioneer road
+2021-06-13 05:04:25,25399,Aft Pioneer Rd,Aft Pioneer road
+2021-06-13 05:04:25,25421,Opp Tuas Lk Stn,Opp Tuas link Stn
+2021-06-13 05:04:25,25429,Tuas Lk Stn,Tuas link Stn
+2021-06-13 05:04:25,25441,Bef Pioneer Rd,Bef Pioneer road
+2021-06-13 05:04:25,25449,Aft Pioneer Rd,Aft Pioneer road
+2021-06-13 05:04:25,25461,Aft Tuas West Ave,Aft Tuas West avenue
+2021-06-13 05:04:25,25469,Bef Tuas West Ave,Bef Tuas West avenue
+2021-06-13 05:04:25,25661,Bef Tuas Bay Lk,Bef Tuas Bay link
+2021-06-13 05:04:25,25669,Aft Tuas Bay Lk,Aft Tuas Bay link
+2021-06-13 05:04:25,25681,Bef Tuas West Ave,Bef Tuas West avenue
+2021-06-13 05:04:25,25689,Aft Tuas West Ave,Aft Tuas West avenue
+2021-06-13 05:04:25,25691,Aft Tuas West Rd Stn,Aft Tuas West road Stn
+2021-06-13 05:04:25,25751,Bef Tuas Sth Ave 14,Bef Tuas south avenue 14
+2021-06-13 05:04:25,25771,Aft Tuas Sth St 7,Aft Tuas south St 7
+2021-06-13 05:04:25,25791,Bef Tuas Sth Ave 10,Bef Tuas south avenue 10
+2021-06-13 05:04:25,25801,Bef Tuas Sth Ave 7,Bef Tuas south avenue 7
+2021-06-13 05:04:25,26011,Bef Tuas Ave 11,Bef Tuas avenue 11
+2021-06-13 05:04:25,26021,Bef Tuas Ave 13,Bef Tuas avenue 13
+2021-06-13 05:04:25,26069,Aft Tuas Ave 16,Aft Tuas avenue 16
+2021-06-13 05:04:25,26081,Bef Tuas Ave 18A,Bef Tuas avenue 18A
+2021-06-13 05:04:25,26089,Bef Tuas Ave 20,Bef Tuas avenue 20
+2021-06-13 05:04:25,26099,Bef Tuas Ave 13,Bef Tuas avenue 13
+2021-06-13 05:04:25,26101,BASF Sth East Asia,BASF south East Asia
+2021-06-13 05:04:25,26109,Bef Tuas Ave 11,Bef Tuas avenue 11
+2021-06-13 05:04:25,26131,Aft Tuas Cres,Aft Tuas crescent
+2021-06-13 05:04:25,26241,Aft Tuas Sth Ave 2,Aft Tuas south avenue 2
+2021-06-13 05:04:25,26249,Bef Tuas Sth Ave 2,Bef Tuas south avenue 2
+2021-06-13 05:04:25,26251,Bef Tuas Sth Ave 2,Bef Tuas south avenue 2
+2021-06-13 05:04:25,26259,Aft Tuas Sth Ave 2,Aft Tuas south avenue 2
+2021-06-13 05:04:25,26261,Aft Tuas Sth Ave 4,Aft Tuas south avenue 4
+2021-06-13 05:04:25,26269,Bef Tuas Sth Ave 4,Bef Tuas south avenue 4
+2021-06-13 05:04:25,26279,Aft Tuas Sth Ave 4,Aft Tuas south avenue 4
+2021-06-13 05:04:25,26289,Aft Tuas Sth St 2,Aft Tuas south St 2
+2021-06-13 05:04:25,26299,Bef Tuas Sth Ave 6,Bef Tuas south avenue 6
+2021-06-13 05:04:25,26311,Aft Tuas Sth Ave 6,Aft Tuas south avenue 6
+2021-06-13 05:04:25,26321,Bef Tuas Sth St 2,Bef Tuas south St 2
+2021-06-13 05:04:25,26389,Bef Tuas Sth Ave 5,Bef Tuas south avenue 5
+2021-06-13 05:04:25,26399,Aft Tuas View Cres,Aft Tuas View crescent
+2021-06-13 05:04:25,26429,Bef Tuas Sth Ave 9,Bef Tuas south avenue 9
+2021-06-13 05:04:25,26431,Aft Tuas Sth Ave 9,Aft Tuas south avenue 9
+2021-06-13 05:04:25,26441,Bef Tuas Sth Ave 7,Bef Tuas south avenue 7
+2021-06-13 05:04:25,26451,Bef Tuas Sth Ave 5,Bef Tuas south avenue 5
+2021-06-13 05:04:25,26461,Aft Tuas Sth Ave 8,Aft Tuas south avenue 8
+2021-06-13 05:04:25,27121,Bef Nanyang Ave,Bef Nanyang avenue
+2021-06-13 05:04:25,27129,Opp Nanyang Ave,Opp Nanyang avenue
+2021-06-13 05:04:25,27171,Bef Lor Danau,Bef lorong Danau
+2021-06-13 05:04:25,27179,Aft Lor Danau,Aft lorong Danau
+2021-06-13 05:04:25,27251,Yunnan Gdn,Yunnan garden
+2021-06-13 05:04:25,27449,Aft Westwood Ave,Aft Westwood avenue
+2021-06-13 05:04:25,27509,Bef Yunnan Cres,Bef Yunnan crescent
+2021-06-13 05:04:25,28011,Bef Toh Tuck Ave,Bef Toh Tuck avenue
+2021-06-13 05:04:25,28019,Aft Toh Tuck Ave,Aft Toh Tuck avenue
+2021-06-13 05:04:25,28341,Chinese Gdn Stn,Chinese garden Stn
+2021-06-13 05:04:25,28349,Opp Chinese Gdn Stn,Opp Chinese garden Stn
+2021-06-13 05:04:25,28701,Aft Old Toh Tuck Rd,Aft Old Toh Tuck road
+2021-06-13 05:04:25,28709,Bef Old Toh Tuck Rd,Bef Old Toh Tuck road
+2021-06-13 05:04:25,29031,Aft Penjuru Pl,Aft Penjuru place
+2021-06-13 05:04:25,29069,Aft Pandan Rd,Aft Pandan road
+2021-06-13 05:04:25,29159,Aft Teban Gdns Cres,Aft Teban gardens crescent
+2021-06-13 05:04:25,30119,Aft Choa Chu Kang Ave 6,Aft Choa Chu Kang avenue 6
+2021-06-13 05:04:25,31009,Choa Chu Kang Rd End,Choa Chu Kang road End
+2021-06-13 05:04:25,31011,Aft Nanyang Ave,Aft Nanyang avenue
+2021-06-13 05:04:25,31019,Bef Nanyang Ave,Bef Nanyang avenue
+2021-06-13 05:04:25,31069,Bef Old Choa Chu Kang Rd,Bef Old Choa Chu Kang road
+2021-06-13 05:04:25,31121,Nirvana Memorial Gdn,Nirvana Memorial garden
+2021-06-13 05:04:25,31129,Aft Nirvana Memorial Gdn,Aft Nirvana Memorial garden
+2021-06-13 05:04:25,31151,Aft Lim Chu Kang Rd,Aft Lim Chu Kang road
+2021-06-13 05:04:25,31159,Bef Lim Chu Kang Rd,Bef Lim Chu Kang road
+2021-06-13 05:04:25,31191,B26 Old Choa Chu Kang Rd,B26 Old Choa Chu Kang road
+2021-06-13 05:04:25,31199,B25 Old Choa Chu Kang Rd,B25 Old Choa Chu Kang road
+2021-06-13 05:04:25,32031,Opp Ama Keng Rd,Opp Ama Keng road
+2021-06-13 05:04:25,32039,Aft Ama Keng Rd,Aft Ama Keng road
+2021-06-13 05:04:25,32069,B26 Lim Chu Kang Rd,B26 Lim Chu Kang road
+2021-06-13 05:04:25,32109,Bef Lor Serambi,Bef lorong Serambi
+2021-06-13 05:04:25,33011,B19 Lim Chu Kang Rd,B19 Lim Chu Kang road
+2021-06-13 05:04:25,33019,B20 Lim Chu Kang Rd,B20 Lim Chu Kang road
+2021-06-13 05:04:25,33021,Opp Neo Tiew Rd,Opp Neo Tiew road
+2021-06-13 05:04:25,33029,Aft Neo Tiew Rd,Aft Neo Tiew road
+2021-06-13 05:04:25,34041,B03 Lim Chu Kang Rd,B03 Lim Chu Kang road
+2021-06-13 05:04:25,34101,Aft Old Lim Chu Kang Rd,Aft Old Lim Chu Kang road
+2021-06-13 05:04:25,34109,Aft Lim Chu Kang Rd,Aft Lim Chu Kang road
+2021-06-13 05:04:25,40021,Bef Winstedt Rd,Bef Winstedt road
+2021-06-13 05:04:25,40029,Aft Makepeace Rd,Aft Makepeace road
+2021-06-13 05:04:25,40091,Bef Lewis Rd,Bef Lewis road
+2021-06-13 05:04:25,40099,Aft Dunkirk Ave,Aft Dunkirk avenue
+2021-06-13 05:04:25,40119,Bef Goldhill Ave,Bef Goldhill avenue
+2021-06-13 05:04:25,40199,Aft Balmoral Rd,Aft Balmoral road
+2021-06-13 05:04:25,40201,Chelsea Gdns Condo,Chelsea gardens Condo
+2021-06-13 05:04:25,41019,Aft Kheam Hock Rd,Aft Kheam Hock road
+2021-06-13 05:04:25,41021,Botanic Gdns Stn,Botanic gardens Stn
+2021-06-13 05:04:25,41029,Opp Botanic Gdns Stn,Opp Botanic gardens Stn
+2021-06-13 05:04:25,41081,Sixth Ave Stn,Sixth avenue Stn
+2021-06-13 05:04:25,41151,Aft Sime Rd,Aft Sime road
+2021-06-13 05:04:25,41161,Aft Kheam Hock Rd,Aft Kheam Hock road
+2021-06-13 05:04:25,41169,Bef Kheam Hock Rd,Bef Kheam Hock road
+2021-06-13 05:04:25,42011,Sixth Ave Ctr,Sixth avenue Ctr
+2021-06-13 05:04:25,42019,Opp Sixth Ave Stn,Opp Sixth avenue Stn
+2021-06-13 05:04:25,42021,Aft Maple Ave,Aft Maple avenue
+2021-06-13 05:04:25,42029,Aft Swiss Club Rd,Aft Swiss Club road
+2021-06-13 05:04:25,42049,Hua Guan Gdns,Hua Guan gardens
+2021-06-13 05:04:25,42129,Sixth Ave Ville,Sixth avenue Ville
+2021-06-13 05:04:25,42131,Aft Lantana Ave,Aft Lantana avenue
+2021-06-13 05:04:25,42139,Ave Villa,avenue Villa
+2021-06-13 05:04:25,42141,Bef Dunearn Rd,Bef Dunearn road
+2021-06-13 05:04:25,42149,Aft Bt Timah Rd,Aft Bt Timah road
+2021-06-13 05:04:25,42179,Aft Chun Tin Rd,Aft Chun Tin road
+2021-06-13 05:04:25,42191,Bef Bt Batok East Ave 6,Bef Bt Batok East avenue 6
+2021-06-13 05:04:25,42199,Aft Bt Batok East Ave 6,Aft Bt Batok East avenue 6
+2021-06-13 05:04:25,42221,Goodluck Gdn,Goodluck garden
+2021-06-13 05:04:25,42241,Aft Eng Kong Pl,Aft Eng Kong place
+2021-06-13 05:04:25,42249,Bef Eng Kong Pl,Bef Eng Kong place
+2021-06-13 05:04:25,42291,Opp Toh Tuck Cres,Opp Toh Tuck crescent
+2021-06-13 05:04:25,42299,Aft Toh Tuck Cres,Aft Toh Tuck crescent
+2021-06-13 05:04:25,43021,Aft Old Jurong Rd,Aft Old Jurong road
+2021-06-13 05:04:25,43071,Opp Dairy Farm Rd,Opp Dairy Farm road
+2021-06-13 05:04:25,43452,Aft Bt Batok West Ave 3,Aft Bt Batok West avenue 3
+2021-06-13 05:04:25,43461,Aft Bt Batok West Ave 5,Aft Bt Batok West avenue 5
+2021-06-13 05:04:25,43469,Bef Bt Batok West Ave 5,Bef Bt Batok West avenue 5
+2021-06-13 05:04:25,43891,Aft Dairy Farm Cres,Aft Dairy Farm crescent
+2021-06-13 05:04:25,43899,Bef Dairy Farm Cres,Bef Dairy Farm crescent
+2021-06-13 05:04:25,44069,Aft KJE Slip Rd,Aft KJE Slip road
+2021-06-13 05:04:25,44161,Aft Bt Batok West Ave 5,Aft Bt Batok West avenue 5
+2021-06-13 05:04:25,44169,Bef Bt Batok West Ave 5,Bef Bt Batok West avenue 5
+2021-06-13 05:04:25,44171,Bef Bt Batok West Ave 5,Bef Bt Batok West avenue 5
+2021-06-13 05:04:25,44179,Aft Bt Batok West Ave 5,Aft Bt Batok West avenue 5
+2021-06-13 05:04:25,44241,Opp Lompang Rd,Opp Lompang road
+2021-06-13 05:04:25,44351,Aft Chestnut Ave,Aft Chestnut avenue
+2021-06-13 05:04:25,44359,Bef Chestnut Ave,Bef Chestnut avenue
+2021-06-13 05:04:25,44361,Bef Dairy Farm Rd,Bef Dairy Farm road
+2021-06-13 05:04:25,44369,Aft Dairy Farm Rd,Aft Dairy Farm road
+2021-06-13 05:04:25,44689,Sunshine Pl,Sunshine place
+2021-06-13 05:04:25,45071,Bef Mandai Rd,Bef Mandai road
+2021-06-13 05:04:25,45079,Aft Mandai Rd,Aft Mandai road
+2021-06-13 05:04:25,45141,Aft W'Lands Rd,Aft woodlands road
+2021-06-13 05:04:25,45149,Bef W'Lands Rd,Bef woodlands road
+2021-06-13 05:04:25,45221,Aft W'Lands Rd,Aft woodlands road
+2021-06-13 05:04:25,45229,Bef W'Lands Rd,Bef woodlands road
+2021-06-13 05:04:25,45489,Bef Choa Chu Kang Lk,Bef Choa Chu Kang link
+2021-06-13 05:04:25,45491,Bef Choa Chu Kang Nth 5,Bef Choa Chu Kang north 5
+2021-06-13 05:04:25,46011,Bef W'Lands Ctr Rd,Bef woodlands Ctr road
+2021-06-13 05:04:25,46019,Aft W'Lands Ctr Rd,Aft woodlands Ctr road
+2021-06-13 05:04:25,46021,Bef W'Lands Ind Pk D St 2,Bef woodlands Ind Pk D St 2
+2021-06-13 05:04:25,46029,Aft W'Lands Ind Pk D St 2,Aft woodlands Ind Pk D St 2
+2021-06-13 05:04:25,46069,W'Lands Train Checkpt,woodlands Train Checkpt
+2021-06-13 05:04:25,46101,W'Lands Checkpt,woodlands Checkpt
+2021-06-13 05:04:25,46109,W'Lands Checkpt,woodlands Checkpt
+2021-06-13 05:04:25,46139,Aft Riverside Rd,Aft Riverside road
+2021-06-13 05:04:25,46321,W'Lands Civic Ctr,woodlands Civic Ctr
+2021-06-13 05:04:25,46329,Opp W'Lands Civic Ctr,Opp woodlands Civic Ctr
+2021-06-13 05:04:25,46339,Bef W'Lands Stn Exit 7,Bef woodlands Stn Exit 7
+2021-06-13 05:04:25,46381,Opp W'Lands Ind Pk D St 1,Opp woodlands Ind Pk D St 1
+2021-06-13 05:04:25,46389,Aft W'Lands Ind Pk D St 1,Aft woodlands Ind Pk D St 1
+2021-06-13 05:04:25,46489,Aft Gambas Ave,Aft Gambas avenue
+2021-06-13 05:04:25,46631,W'Lands Stn Exit 5,woodlands Stn Exit 5
+2021-06-13 05:04:25,46639,W'Lands Stn Exit 4,woodlands Stn Exit 4
+2021-06-13 05:04:25,46669,W'Lands Pr Sch,woodlands Pr Sch
+2021-06-13 05:04:25,46711,Bef Admiralty Rd West,Bef Admiralty road West
+2021-06-13 05:04:25,46721,Bef W'Lands Ind Pk E7,Bef woodlands Ind Pk E7
+2021-06-13 05:04:25,46729,Aft W'Lands Ind Pk E7,Aft woodlands Ind Pk E7
+2021-06-13 05:04:25,46801,Aft W'Lands Mart,Aft woodlands Mart
+2021-06-13 05:04:25,46809,Opp W'Lands Mart,Opp woodlands Mart
+2021-06-13 05:04:25,46931,Opp W'Lands Spectrum 1,Opp woodlands Spectrum 1
+2021-06-13 05:04:25,46981,W'lands Sth Stn Exit 2,woodlands south Stn Exit 2
+2021-06-13 05:04:25,46989,W'lands Sth Stn Exit 1,woodlands south Stn Exit 1
+2021-06-13 05:04:25,47009,W'Lands Temp Int,woodlands Temp Int
+2021-06-13 05:04:25,47011,Bef W'Lands Waterfront Pk,Bef woodlands Waterfront Pk
+2021-06-13 05:04:25,47019,Aft W'Lands Waterfront Pk,Aft woodlands Waterfront Pk
+2021-06-13 05:04:25,47031,Bef Keramat Rd,Bef Keramat road
+2021-06-13 05:04:25,47039,Aft View Rd,Aft View road
+2021-06-13 05:04:25,47041,Opp W'Lands Auto Hub,Opp woodlands Auto Hub
+2021-06-13 05:04:25,47049,W'Lands Auto Hub,woodlands Auto Hub
+2021-06-13 05:04:25,47051,Aft W'Lands Ind Pk E4,Aft woodlands Ind Pk E4
+2021-06-13 05:04:25,47059,Bef W'Lands Ind Pk E4,Bef woodlands Ind Pk E4
+2021-06-13 05:04:25,47061,Aft Attap Valley Rd,Aft Attap Valley road
+2021-06-13 05:04:25,47069,Nth Tech,north Tech
+2021-06-13 05:04:25,47081,Aft Senoko Cres,Aft Senoko crescent
+2021-06-13 05:04:25,47091,Bef Senoko Cres,Bef Senoko crescent
+2021-06-13 05:04:25,47101,Aft Senoko Ave,Aft Senoko avenue
+2021-06-13 05:04:25,47201,W'lands Nth Stn,woodlands north Stn
+2021-06-13 05:04:25,47621,Aft Gambas Ave,Aft Gambas avenue
+2021-06-13 05:04:25,47811,W'Lands Sunny Food,woodlands Sunny Food
+2021-06-13 05:04:25,47819,Opp W'Lands Sunny Food,Opp woodlands Sunny Food
+2021-06-13 05:04:25,48021,Aft Mandai Lake Rd,Aft Mandai Lake road
+2021-06-13 05:04:25,48029,Bef Mandai Lake Rd,Bef Mandai Lake road
+2021-06-13 05:04:25,48061,Bef Mandai Ave,Bef Mandai avenue
+2021-06-13 05:04:25,48069,Aft Mandai Ave,Aft Mandai avenue
+2021-06-13 05:04:25,48081,Opp Upp Seletar Reservoir,Opp upper Seletar Reservoir
+2021-06-13 05:04:25,48089,Upp Seletar Reservoir,upper Seletar Reservoir
+2021-06-13 05:04:25,48101,Aft Meng Suan Rd,Aft Meng Suan road
+2021-06-13 05:04:25,48109,Opp Meng Suan Rd,Opp Meng Suan road
+2021-06-13 05:04:25,48111,Aft Mandai Rd,Aft Mandai road
+2021-06-13 05:04:25,48119,Bef Mandai Rd,Bef Mandai road
+2021-06-13 05:04:25,49081,Aft Kranji Cres,Aft Kranji crescent
+2021-06-13 05:04:25,49089,Bef Kranji Cres,Bef Kranji crescent
+2021-06-13 05:04:25,49149,Aft Kranji Lk,Aft Kranji link
+2021-06-13 05:04:25,49179,Aft Kranji Cres,Aft Kranji crescent
+2021-06-13 05:04:25,49189,Aft Kranji Rd,Aft Kranji road
+2021-06-13 05:04:25,49249,Aft Neo Tiew Rd,Aft Neo Tiew road
+2021-06-13 05:04:25,50071,Bef Carlisle Rd,Bef Carlisle road
+2021-06-13 05:04:25,50079,Opp Carlisle Rd,Opp Carlisle road
+2021-06-13 05:04:25,50169,Aft Irrawaddy Rd,Aft Irrawaddy road
+2021-06-13 05:04:25,50209,Aft Pegu Rd,Aft Pegu road
+2021-06-13 05:04:25,50321,Aft Gloucester Rd,Aft Gloucester road
+2021-06-13 05:04:25,51051,Aft Andrew Rd,Aft Andrew road
+2021-06-13 05:04:25,51111,Opp Andrew Rd,Opp Andrew road
+2021-06-13 05:04:25,51119,Bef Andrew Rd,Bef Andrew road
+2021-06-13 05:04:25,52011,Bef Bishan Rd,Bef Bishan road
+2021-06-13 05:04:25,52019,Aft Bishan Rd,Aft Bishan road
+2021-06-13 05:04:25,53061,Bef Windsor Pk Rd,Bef Windsor Pk road
+2021-06-13 05:04:25,53069,Aft Windsor Pk Rd,Aft Windsor Pk road
+2021-06-13 05:04:25,53081,Opp Faber Gdn,Opp Faber garden
+2021-06-13 05:04:25,53089,Faber Gdn,Faber garden
+2021-06-13 05:04:25,53091,Bef Ang Mo Kio Ave 1,Bef Ang Mo Kio avenue 1
+2021-06-13 05:04:25,53099,Aft Ang Mo Kio Ave 1,Aft Ang Mo Kio avenue 1
+2021-06-13 05:04:25,53381,Bishan Nth Shop Mall,Bishan north Shop Mall
+2021-06-13 05:04:25,53389,Opp Bishan Nth Shop Mall,Opp Bishan north Shop Mall
+2021-06-13 05:04:25,54051,Bef Ang Mo Kio Ave 5,Bef Ang Mo Kio avenue 5
+2021-06-13 05:04:25,54101,Aft Ang Mo Kio Ave 10,Aft Ang Mo Kio avenue 10
+2021-06-13 05:04:25,54109,Bef Ang Mo Kio Ave 10,Bef Ang Mo Kio avenue 10
+2021-06-13 05:04:25,55081,Opp Sunrise Gdns,Opp Sunrise gardens
+2021-06-13 05:04:25,55089,Aft Sunrise Gdns,Aft Sunrise gardens
+2021-06-13 05:04:25,55219,Bef Ang Mo Kio Ave 9,Bef Ang Mo Kio avenue 9
+2021-06-13 05:04:25,55241,Aft Yio Chu Kang Rd,Aft Yio Chu Kang road
+2021-06-13 05:04:25,55249,Bef Yio Chu Kang Rd,Bef Yio Chu Kang road
+2021-06-13 05:04:25,55361,Countryside Gdn P/G,Countryside garden P/G
+2021-06-13 05:04:25,56019,Bef Ang Mo Kio Ave 1,Bef Ang Mo Kio avenue 1
+2021-06-13 05:04:25,56031,Bef Yio Chu Kang Rd,Bef Yio Chu Kang road
+2021-06-13 05:04:25,56039,Aft Yio Chu Kang Rd,Aft Yio Chu Kang road
+2021-06-13 05:04:25,56051,Opp Tagore Rd,Opp Tagore road
+2021-06-13 05:04:25,56059,Bef Tagore Rd,Bef Tagore road
+2021-06-13 05:04:25,56071,Bef Old Upp Thomson Rd,Bef Old upper Thomson road
+2021-06-13 05:04:25,56079,Aft Old Upp Thomson Rd,Aft Old upper Thomson road
+2021-06-13 05:04:25,56091,Bef Springleaf Rd,Bef Springleaf road
+2021-06-13 05:04:25,56099,Aft Springleaf Rd,Aft Springleaf road
+2021-06-13 05:04:25,56201,Aft Munshi Abdullah Ave,Aft Munshi Abdullah avenue
+2021-06-13 05:04:25,56251,Opp Horizon Gdns,Opp Horizon gardens
+2021-06-13 05:04:25,56259,Horizon Gdns,Horizon gardens
+2021-06-13 05:04:25,56261,Aft Ang Mo Kio Ave 2,Aft Ang Mo Kio avenue 2
+2021-06-13 05:04:25,57141,Bef Upp Thomson Rd,Bef upper Thomson road
+2021-06-13 05:04:25,57149,Aft Upp Thomson Rd,Aft upper Thomson road
+2021-06-13 05:04:25,58061,Aft Durban Rd,Aft Durban road
+2021-06-13 05:04:25,58069,Opp Durban Rd,Opp Durban road
+2021-06-13 05:04:25,58089,Aft Andrews Ave,Aft Andrews avenue
+2021-06-13 05:04:25,58191,Aft Wellington Rd,Aft Wellington road
+2021-06-13 05:04:25,58199,Opp Auckland Rd West,Opp Auckland road West
+2021-06-13 05:04:25,58201,Aft Queen'S Ave,Aft Queen'S avenue
+2021-06-13 05:04:25,58209,Aft Pakistan Rd,Aft Pakistan road
+2021-06-13 05:04:25,58361,Nth Link Bldg,north Link Bldg
+2021-06-13 05:04:25,58571,Gambas Ave,Gambas avenue
+2021-06-13 05:04:25,58579,Gambas Ave,Gambas avenue
+2021-06-13 05:04:25,59021,Bef Yishun Ave 1,Bef Yishun avenue 1
+2021-06-13 05:04:25,59029,Aft Yishun Ave 1,Aft Yishun avenue 1
+2021-06-13 05:04:25,60051,Opp Kallang Pl,Opp Kallang place
+2021-06-13 05:04:25,60059,Bef Kallang Pl,Bef Kallang place
+2021-06-13 05:04:25,60161,St. Michael's Pl,St. Michael's place
+2021-06-13 05:04:25,60211,Aft Tai Thong Cres,Aft Tai Thong crescent
+2021-06-13 05:04:25,61041,Bef Braddell Rd,Bef Braddell road
+2021-06-13 05:04:25,61049,Aft Bartley Rd,Aft Bartley road
+2021-06-13 05:04:25,62011,Aft Bartley Rd,Aft Bartley road
+2021-06-13 05:04:25,62019,Aft Rochdale Rd,Aft Rochdale road
+2021-06-13 05:04:25,62029,Paya Lebar Gdns,Paya Lebar gardens
+2021-06-13 05:04:25,62031,Bef How Sun Rd,Bef How Sun road
+2021-06-13 05:04:25,62039,Raya Gdn,Raya garden
+2021-06-13 05:04:25,62049,Aft Paya Lebar Cres,Aft Paya Lebar crescent
+2021-06-13 05:04:25,62061,Aft Upp Paya Lebar Rd,Aft upper Paya Lebar road
+2021-06-13 05:04:25,62069,Bef Upp Paya Lebar Rd,Bef upper Paya Lebar road
+2021-06-13 05:04:25,62101,Bef Upp Serangoon Rd,Bef upper Serangoon road
+2021-06-13 05:04:25,62109,Aft Upp Serangoon Rd,Aft upper Serangoon road
+2021-06-13 05:04:25,62111,Aft Sommerville Rd,Aft Sommerville road
+2021-06-13 05:04:25,62121,Aft Wolskel Rd,Aft Wolskel road
+2021-06-13 05:04:25,62131,S'Goon Stn Exit H,serangoon Stn Exit H
+2021-06-13 05:04:25,62139,S'Goon Stn Exit A/Blk 413,serangoon Stn Exit A/Blk 413
+2021-06-13 05:04:25,62189,S'Goon Stn Exit D/Blk 416,serangoon Stn Exit D/Blk 416
+2021-06-13 05:04:25,62261,Opp S'goon Sec Sch,Opp serangoon Sec Sch
+2021-06-13 05:04:25,63011,Opp Upp S'Goon Shop Ctr,Opp upper serangoon Shop Ctr
+2021-06-13 05:04:25,63019,Aft Upp S'Goon Shop Ctr,Aft upper serangoon Shop Ctr
+2021-06-13 05:04:25,63151,Aft Upp S'Goon Rd,Aft upper serangoon road
+2021-06-13 05:04:25,63181,Bef St. Helier's Ave,Bef St. Helier's avenue
+2021-06-13 05:04:25,63189,Aft Serangoon Gdn Way,Aft Serangoon garden Way
+2021-06-13 05:04:25,63191,Aft Serangoon Nth Ave 1,Aft Serangoon north avenue 1
+2021-06-13 05:04:25,63199,Aft Phillips Ave,Aft Phillips avenue
+2021-06-13 05:04:25,63361,Opp S'Goon Sports Cplx,Opp serangoon Sports Cplx
+2021-06-13 05:04:25,64121,Aft Ang Mo Kio Ave 5,Aft Ang Mo Kio avenue 5
+2021-06-13 05:04:25,64189,Aft Old Tampines Rd,Aft Old Tampines road
+2021-06-13 05:04:25,64201,Aft Hougang Ave 3,Aft Hougang avenue 3
+2021-06-13 05:04:25,64209,Aft Defu Ave 1,Aft Defu avenue 1
+2021-06-13 05:04:25,64211,Aft Hougang Ave 7,Aft Hougang avenue 7
+2021-06-13 05:04:25,64219,Aft Defu Ave 2,Aft Defu avenue 2
+2021-06-13 05:04:25,64221,Opp Defu Ave 2,Opp Defu avenue 2
+2021-06-13 05:04:25,64229,Bef Defu Ave 2,Bef Defu avenue 2
+2021-06-13 05:04:25,65139,Punggol Rd End,Punggol road End
+2021-06-13 05:04:25,65191,Bef Punggol Rd,Bef Punggol road
+2021-06-13 05:04:25,65199,Aft Punggol Rd,Aft Punggol road
+2021-06-13 05:04:25,65209,Aft Punggol Rd,Aft Punggol road
+2021-06-13 05:04:25,65681,Bef Northshore Cres,Bef Northshore crescent
+2021-06-13 05:04:25,65689,Aft Northshore Cres,Aft Northshore crescent
+2021-06-13 05:04:25,66009,S'Goon Int,serangoon Int
+2021-06-13 05:04:25,66011,Aft Braddell Rd,Aft Braddell road
+2021-06-13 05:04:25,66019,Bef Braddell Rd,Bef Braddell road
+2021-06-13 05:04:25,66119,Summer Pl,Summer place
+2021-06-13 05:04:25,66129,Aft Chuan Gdn,Aft Chuan garden
+2021-06-13 05:04:25,66141,Bef Yio Chu Kang Rd,Bef Yio Chu Kang road
+2021-06-13 05:04:25,66149,Aft Yio Chu Kang Rd,Aft Yio Chu Kang road
+2021-06-13 05:04:25,66151,Opp Penshurst Pl,Opp Penshurst place
+2021-06-13 05:04:25,66181,Aft Chartwell Rd,Aft Chartwell road
+2021-06-13 05:04:25,66191,Aft Corfe Pl,Aft Corfe place
+2021-06-13 05:04:25,66221,Opp Portchester Ave,Opp Portchester avenue
+2021-06-13 05:04:25,66231,Bef Huddington Ave,Bef Huddington avenue
+2021-06-13 05:04:25,66241,Hemsley Ave,Hemsley avenue
+2021-06-13 05:04:25,66251,Opp Kingswear Ave,Opp Kingswear avenue
+2021-06-13 05:04:25,66261,S'Goon Gdns Country Club,serangoon gardens Country Club
+2021-06-13 05:04:25,66271,Serangoon Gdn Circus,Serangoon garden Circus
+2021-06-13 05:04:25,66351,S'Goon Stn Exit B,serangoon Stn Exit B
+2021-06-13 05:04:25,66359,S'Goon Stn Exit C/Blk 201,serangoon Stn Exit C/Blk 201
+2021-06-13 05:04:25,66381,Opp S'Goon Stn Exit F,Opp serangoon Stn Exit F
+2021-06-13 05:04:25,66389,S'Goon Stn Exit F,serangoon Stn Exit F
+2021-06-13 05:04:25,66391,Lor Chuan Stn Exit A,lorong Chuan Stn Exit A
+2021-06-13 05:04:25,66399,Opp Lor Chuan Stn Exit B,Opp lorong Chuan Stn Exit B
+2021-06-13 05:04:25,66471,Bef Yio Chu Kang Rd,Bef Yio Chu Kang road
+2021-06-13 05:04:25,66479,Aft Yio Chu Kang Rd,Aft Yio Chu Kang road
+2021-06-13 05:04:25,67011,Bef Begonia Rd,Bef Begonia road
+2021-06-13 05:04:25,67019,Aft Begonia Rd,Aft Begonia road
+2021-06-13 05:04:25,67021,Opp Dedap Rd,Opp Dedap road
+2021-06-13 05:04:25,67029,Aft Dedap Rd,Aft Dedap road
+2021-06-13 05:04:25,67039,Aft Seletar Rd,Aft Seletar road
+2021-06-13 05:04:25,67081,Aft Yio Chu Kang Rd,Aft Yio Chu Kang road
+2021-06-13 05:04:25,67139,Nth Spring Pr Sch,north Spring Pr Sch
+2021-06-13 05:04:25,67461,Aft Sengkang East Ave,Aft Sengkang East avenue
+2021-06-13 05:04:25,67469,Bef Sengkang East Ave,Bef Sengkang East avenue
+2021-06-13 05:04:25,67571,Aft Lor Tanggam,Aft lorong Tanggam
+2021-06-13 05:04:25,67651,Bef Sengkang West Rd,Bef Sengkang West road
+2021-06-13 05:04:25,67659,Aft Sengkang West Rd,Aft Sengkang West road
+2021-06-13 05:04:25,67721,Aft Punggol Rd,Aft Punggol road
+2021-06-13 05:04:25,67729,Bef Punggol Rd,Bef Punggol road
+2021-06-13 05:04:25,68121,Bef West Camp Rd,Bef West Camp road
+2021-06-13 05:04:25,68129,Aft West Camp Rd,Aft West Camp road
+2021-06-13 05:04:25,68171,Bef Yishun Ave 8,Bef Yishun avenue 8
+2021-06-13 05:04:25,68179,Aft Yishun Ave 8,Aft Yishun avenue 8
+2021-06-13 05:04:25,70051,Aft Joo Seng Rd,Aft Joo Seng road
+2021-06-13 05:04:25,70131,Bef Davidson Rd,Bef Davidson road
+2021-06-13 05:04:25,70349,Bef Lor Bakar Batu,Bef lorong Bakar Batu
+2021-06-13 05:04:25,70361,Bef Genting Lk,Bef Genting link
+2021-06-13 05:04:25,70401,Bef Ubi Rd 4,Bef Ubi road 4
+2021-06-13 05:04:25,71011,Aft Paya Lebar Rd,Aft Paya Lebar road
+2021-06-13 05:04:25,71051,Aft Kim Chuan Rd,Aft Kim Chuan road
+2021-06-13 05:04:25,71059,Bef Kim Chuan Rd,Bef Kim Chuan road
+2021-06-13 05:04:25,71061,Bef Airport Rd,Bef Airport road
+2021-06-13 05:04:25,71069,Aft Airport Rd,Aft Airport road
+2021-06-13 05:04:25,74011,Aft Tampines Ind Ave 5,Aft Tampines Ind avenue 5
+2021-06-13 05:04:25,74019,Bef Tampines Ind Ave 5,Bef Tampines Ind avenue 5
+2021-06-13 05:04:25,74021,Bef Tampines Ind Ave 4,Bef Tampines Ind avenue 4
+2021-06-13 05:04:25,74029,Aft Tampines Ind Ave 4,Aft Tampines Ind avenue 4
+2021-06-13 05:04:25,75291,Aft Tampines Ave 9,Aft Tampines avenue 9
+2021-06-13 05:04:25,75299,Bef Tampines Ave 9,Bef Tampines avenue 9
+2021-06-13 05:04:25,75361,Bef Tampines Ind Ave 5,Bef Tampines Ind avenue 5
+2021-06-13 05:04:25,75369,Bef Tampines Lk,Bef Tampines link
+2021-06-13 05:04:25,75371,Aft Tampines Ave 5,Aft Tampines avenue 5
+2021-06-13 05:04:25,75379,Bef Tampines Ave 5,Bef Tampines avenue 5
+2021-06-13 05:04:25,75401,Aft Tampines Ave 1,Aft Tampines avenue 1
+2021-06-13 05:04:25,75419,Aft Tampines Ave 5,Aft Tampines avenue 5
+2021-06-13 05:04:25,77091,Aft Pasir Ris Ave,Aft Pasir Ris avenue
+2021-06-13 05:04:25,77099,Bef Pasir Ris Ave,Bef Pasir Ris avenue
+2021-06-13 05:04:25,77101,Bef Pasir Ris Rd,Bef Pasir Ris road
+2021-06-13 05:04:25,77109,Aft Pasir Ris Rd,Aft Pasir Ris road
+2021-06-13 05:04:25,78099,Aft Loyang Gdns,Aft Loyang gardens
+2021-06-13 05:04:25,80009,Lor 1 Geylang Ter,lorong 1 Geylang Ter
+2021-06-13 05:04:25,80039,Opp Lor 1 Geylang Ter,Opp lorong 1 Geylang Ter
+2021-06-13 05:04:25,80051,Aft Lor 1 Geylang,Aft lorong 1 Geylang
+2021-06-13 05:04:25,80089,Bef Lor 18 Geylang,Bef lorong 18 Geylang
+2021-06-13 05:04:25,80091,Bef Lor 23 Geylang,Bef lorong 23 Geylang
+2021-06-13 05:04:25,80111,Bef Geylang Rd,Bef Geylang road
+2021-06-13 05:04:25,80119,Aft Geylang Rd,Aft Geylang road
+2021-06-13 05:04:25,80251,Aft Lor 14 Geylang,Aft lorong 14 Geylang
+2021-06-13 05:04:25,80269,Bef Sims Ave,Bef Sims avenue
+2021-06-13 05:04:25,80289,Sims Pl Ter,Sims place Ter
+2021-06-13 05:04:25,81029,Aft Lor 28 Geylang,Aft lorong 28 Geylang
+2021-06-13 05:04:25,81049,Aft Lor 34 Geylang,Aft lorong 34 Geylang
+2021-06-13 05:04:25,81069,Opp Lor 39 Geylang,Opp lorong 39 Geylang
+2021-06-13 05:04:25,81191,Aft Old Airport Rd,Aft Old Airport road
+2021-06-13 05:04:25,81199,Bef Old Airport Rd,Bef Old Airport road
+2021-06-13 05:04:25,82051,Tg Katong Rd Sth P/G,Tg Katong road south P/G
+2021-06-13 05:04:25,82059,Opp Tg Katong Rd Sth P/G,Opp Tg Katong road south P/G
+2021-06-13 05:04:25,82069,Aft Lor 106 Changi,Aft lorong 106 Changi
+2021-06-13 05:04:25,82081,Aft Dunman Rd,Aft Dunman road
+2021-06-13 05:04:25,82141,Aft Koon Seng Rd,Aft Koon Seng road
+2021-06-13 05:04:25,82149,Bef Koon Seng Rd,Bef Koon Seng road
+2021-06-13 05:04:25,82151,Bef Joo Chiat Pl,Bef Joo Chiat place
+2021-06-13 05:04:25,82159,Aft Tembeling Rd,Aft Tembeling road
+2021-06-13 05:04:25,82171,Bef Mangis Rd,Bef Mangis road
+2021-06-13 05:04:25,82179,Aft Rambutan Rd,Aft Rambutan road
+2021-06-13 05:04:25,83049,Bef Lor 110 Changi,Bef lorong 110 Changi
+2021-06-13 05:04:25,83121,Bef Lor K Telok Kurau,Bef lorong K Telok Kurau
+2021-06-13 05:04:25,83131,Aft Lor H Telok Kurau,Aft lorong H Telok Kurau
+2021-06-13 05:04:25,83139,Aft Joo Chiat Pl,Aft Joo Chiat place
+2021-06-13 05:04:25,83141,Aft Lor G Telok Kurau,Aft lorong G Telok Kurau
+2021-06-13 05:04:25,83149,Aft Changi Rd,Aft Changi road
+2021-06-13 05:04:25,83169,Bef Still Rd,Bef Still road
+2021-06-13 05:04:25,83171,Bef Roseburn Ave,Bef Roseburn avenue
+2021-06-13 05:04:25,83219,Bef Frankel Ave,Bef Frankel avenue
+2021-06-13 05:04:25,83229,Bef Carlton Ave,Bef Carlton avenue
+2021-06-13 05:04:25,83271,Aft Swan Lake Ave,Aft Swan Lake avenue
+2021-06-13 05:04:25,83291,Aft Joo Chiat Pl,Aft Joo Chiat place
+2021-06-13 05:04:25,83299,Aft Lor G Telok Kurau,Aft lorong G Telok Kurau
+2021-06-13 05:04:25,83301,Aft East Coast Rd,Aft East Coast road
+2021-06-13 05:04:25,83311,Aft Lor Nangka,Aft lorong Nangka
+2021-06-13 05:04:25,83319,Aft Lor J Telok Kurau,Aft lorong J Telok Kurau
+2021-06-13 05:04:25,84121,Aft Bedok Sth Ave 1,Aft Bedok south avenue 1
+2021-06-13 05:04:25,84201,Bedok Resvr Stn Exit A,Bedok reservoir Stn Exit A
+2021-06-13 05:04:25,84209,Bedok Resvr Stn Exit B,Bedok reservoir Stn Exit B
+2021-06-13 05:04:25,84279,Aft Bedok Nth St 5,Aft Bedok north St 5
+2021-06-13 05:04:25,84299,Bedok Nth Depot,Bedok north Depot
+2021-06-13 05:04:25,84451,Bedok Nth Stn Exit A,Bedok north Stn Exit A
+2021-06-13 05:04:25,84539,Bedok Nth Stn Exit B,Bedok north Stn Exit B
+2021-06-13 05:04:25,84581,Opp Bedok Sth NPC,Opp Bedok south NPC
+2021-06-13 05:04:25,84589,Bef New Upp Changi Rd,Bef New upper Changi road
+2021-06-13 05:04:25,84591,Sbst Bedok Nth Depot,Sbst Bedok north Depot
+2021-06-13 05:04:25,84599,Opp Sbst Bedok Nth Depot,Opp Sbst Bedok north Depot
+2021-06-13 05:04:25,85031,Excelsior Gdns,Excelsior gardens
+2021-06-13 05:04:25,85039,Opp Excelsior Gdns,Opp Excelsior gardens
+2021-06-13 05:04:25,85061,Opp Bedok Mkt Pl,Opp Bedok Mkt place
+2021-06-13 05:04:25,85069,Bedok Mkt Pl,Bedok Mkt place
+2021-06-13 05:04:25,85101,Aft Bedok Rd,Aft Bedok road
+2021-06-13 05:04:25,85109,Bef Bedok Rd,Bef Bedok road
+2021-06-13 05:04:25,91049,Bef Fort Rd,Bef Fort road
+2021-06-13 05:04:25,91069,Bef Walton Rd,Bef Walton road
+2021-06-13 05:04:25,91071,Bef Tg Katong Rd,Bef Tg Katong road
+2021-06-13 05:04:25,91079,Aft Tg Katong Rd,Aft Tg Katong road
+2021-06-13 05:04:25,91081,Fort Gdns,Fort gardens
+2021-06-13 05:04:25,91089,Opp Fort Gdns,Opp Fort gardens
+2021-06-13 05:04:25,91091,Bef Kg Kayu Rd,Bef Kg Kayu road
+2021-06-13 05:04:25,91099,Bef Wilkinson Rd,Bef Wilkinson road
+2021-06-13 05:04:25,92179,Aft Duku Rd,Aft Duku road
+2021-06-13 05:04:25,92201,Aft Lor M Telok Kurau,Aft lorong M Telok Kurau
+2021-06-13 05:04:25,92241,Amber Gdns,Amber gardens
+2021-06-13 05:04:25,92249,Opp Amber Gdns,Opp Amber gardens
+2021-06-13 05:04:25,92301,Bef St. Patrick's Rd,Bef St. Patrick's road
+2021-06-13 05:04:25,93021,Opp Mandarin Gdns,Opp Mandarin gardens
+2021-06-13 05:04:25,93029,Mandarin Gdns,Mandarin gardens
+2021-06-13 05:04:25,93061,Bef Siglap Rd,Bef Siglap road
+2021-06-13 05:04:25,93069,Aft Siglap Rd,Aft Siglap road
+2021-06-13 05:04:25,93091,Opp Siglap Sth CC,Opp Siglap south CC
+2021-06-13 05:04:25,93099,Siglap Sth CC,Siglap south CC
+2021-06-13 05:04:25,93101,Aft Coldstream Ave,Aft Coldstream avenue
+2021-06-13 05:04:25,93109,Bef Frankel Pl,Bef Frankel place
+2021-06-13 05:04:25,93111,Bef Elite Pk Ave,Bef Elite Pk avenue
+2021-06-13 05:04:25,93119,Aft Elite Pk Ave,Aft Elite Pk avenue
+2021-06-13 05:04:25,94009,Upp East Coast Ter,upper East Coast Ter
+2021-06-13 05:04:25,94011,Evergreen Gdn,Evergreen garden
+2021-06-13 05:04:25,94019,Opp Evergreen Ave,Opp Evergreen avenue
+2021-06-13 05:04:25,94021,Bef Sennett Rd,Bef Sennett road
+2021-06-13 05:04:25,94029,Aft Sennet Rd,Aft Sennet road
+2021-06-13 05:04:25,94041,Aft Parbury Ave,Aft Parbury avenue
+2021-06-13 05:04:25,94049,Aft Bedok Sth Ave 3,Aft Bedok south avenue 3
+2021-06-13 05:04:25,95161,Bef Changi Ferry Rd,Bef Changi Ferry road
+2021-06-13 05:04:25,95169,Aft Changi Ferry Rd,Aft Changi Ferry road
+2021-06-13 05:04:25,95901,Bef Simei Rd,Bef Simei road
+2021-06-13 05:04:25,95909,Aft Somapah Rd,Aft Somapah road
+2021-06-13 05:04:25,96011,Bef Simei Ave,Bef Simei avenue
+2021-06-13 05:04:25,96019,Aft Simei Ave,Aft Simei avenue
+2021-06-13 05:04:25,96041,Upp Changi Stn/Opp SUTD,upper Changi Stn/Opp SUTD
+2021-06-13 05:04:25,96049,Upp Changi Stn/SUTD,upper Changi Stn/SUTD
+2021-06-13 05:04:25,96091,Aft Upp Changi Rd,Aft upper Changi road
+2021-06-13 05:04:25,96099,Aft Upp Changi Rd East,Aft upper Changi road East
+2021-06-13 05:04:25,96311,Bef Changi Sth St 2,Bef Changi south St 2
+2021-06-13 05:04:25,96351,Bef Changi Sth St 1,Bef Changi south St 1
+2021-06-13 05:04:25,97071,Aft St. John's Cres,Aft St. John's crescent
+2021-06-13 05:04:25,97079,Opp St. John's Cres,Opp St. John's crescent
+2021-06-13 05:04:25,97099,Aft Loyang Ave,Aft Loyang avenue
+2021-06-13 05:04:25,97121,Bef Old Tampines Rd,Bef Old Tampines road
+2021-06-13 05:04:25,97129,Bef Loyang Ave,Bef Loyang avenue
+2021-06-13 05:04:25,97141,Aft Upp Changi Rd Nth,Aft upper Changi road north
+2021-06-13 05:04:25,97151,Aft Changi Nth St 2,Aft Changi north St 2
+2021-06-13 05:04:25,98301,Avila Gdns,Avila gardens
+2021-06-13 05:04:25,99021,Bef Cranwell Rd,Bef Cranwell road
+2021-06-13 05:04:25,99029,Aft Cranwell Rd,Aft Cranwell road
+2021-06-13 05:04:25,99071,Aft Old Pier Rd,Aft Old Pier road
+2021-06-13 05:04:25,99079,Opp Old Pier Rd,Opp Old Pier road
+2021-06-13 05:04:25,99081,Aft Cranwell Rd,Aft Cranwell road
+2021-06-13 05:04:25,99089,Bef Cranwell Rd,Bef Cranwell road
+2021-06-13 05:04:25,99091,Bef Turnhouse Rd,Bef Turnhouse road
+2021-06-13 05:04:25,99099,Aft Turnhouse Rd,Aft Turnhouse road
+2021-06-13 05:04:25,01631,Aft Beach Rd,Aft Beach road
+2021-06-13 05:04:25,01639,Bef Beach Rd,Bef Beach road
+2021-06-13 05:04:25,03031,Raffles Pl Stn Exit F,Raffles place Stn Exit F
+2021-06-13 05:04:25,03331,Bef Marina Gdns Dr,Bef Marina gardens Dr
+2021-06-13 05:04:25,03339,Aft Marina Gdns Dr,Aft Marina gardens Dr
+2021-06-13 05:04:25,03341,Bef Gdns by the Bay,Bef gardens by the Bay
+2021-06-13 05:04:25,03349,Aft Gdns by the Bay,Aft gardens by the Bay
+2021-06-13 05:04:25,03371,Gdns by the Bay,gardens by the Bay
+2021-06-13 05:04:25,03411,Opp Marina Sth Pier Stn,Opp Marina south Pier Stn
+2021-06-13 05:04:25,03419,Marina Sth Pier Stn,Marina south Pier Stn
+2021-06-13 05:04:25,04311,Aft River Valley Rd,Aft River Valley road
+2021-06-13 05:04:25,05129,Opp One Upp Pickering,Opp One upper Pickering
+2021-06-13 05:04:25,05259,Aft Kreta Ayer Rd,Aft Kreta Ayer road
+2021-06-13 05:04:25,05269,Maxwell Rd FC,Maxwell road FC
+2021-06-13 05:04:25,05421,Aft Craig Rd,Aft Craig road
+2021-06-13 05:04:25,05429,Bef Craig Rd,Bef Craig road
+2021-06-13 05:04:25,05641,Bef Cantonment Rd,Bef Cantonment road
+2021-06-13 05:04:25,06169,River Pl Condo,River place Condo
+2021-06-13 05:04:25,07241,Bef S'Goon Rd,Bef serangoon road
+2021-06-13 05:04:25,07249,Aft Kempas Rd,Aft Kempas road
+2021-06-13 05:04:25,07319,Aft Allenby Rd,Aft Allenby road
+2021-06-13 05:04:25,07331,Aft King George's Ave,Aft King George's avenue
+2021-06-13 05:04:25,07371,Aft Kallang Rd,Aft Kallang road
+2021-06-13 05:04:25,07379,Aperia/Bef Kallang Rd,Aperia/Bef Kallang road
+2021-06-13 05:04:25,07419,Opp Veerasamy Rd,Opp Veerasamy road
+2021-06-13 05:04:25,09121,Bef Tomlinson Rd,Bef Tomlinson road
+2021-06-13 05:04:25,09139,Aft Cuscaden Rd,Aft Cuscaden road
+2021-06-13 05:04:25,09159,Aft Tomlinson Rd,Aft Tomlinson road
+2021-12-05 03:04:01,10011,Bef Neil Rd,Bef Neil road
+2021-12-05 03:04:01,10291,Bef Dawson Rd,Bef Dawson road
+2021-12-05 03:04:01,10299,Aft Dawson Rd,Aft Dawson road
+2021-12-05 03:04:01,10351,Bef Tiong Bahru Rd,Bef Tiong Bahru road
+2021-12-05 03:04:01,10359,Aft Tiong Bahru Rd,Aft Tiong Bahru road
+2021-12-05 03:04:01,10471,Bef Tanglin Rd,Bef Tanglin road
+2021-12-05 03:04:01,10479,Aft Tanglin Rd,Aft Tanglin road
+2021-12-05 03:04:01,11041,Aft C'wealth Dr,Aft commonwealth Dr
+2021-12-05 03:04:01,11091,Tulip Gdn,Tulip garden
+2021-12-05 03:04:01,11099,Opp Tulip Gdn,Opp Tulip garden
+2021-12-05 03:04:01,11101,Farrer Rd Mkt,Farrer road Mkt
+2021-12-05 03:04:01,11111,Farrer Rd Stn Exit B,Farrer road Stn Exit B
+2021-12-05 03:04:01,11119,Farrer Rd Stn Exit A,Farrer road Stn Exit A
+2021-12-05 03:04:01,11161,C'Wealth Stn Exit A/D,commonwealth Stn Exit A/D
+2021-12-05 03:04:01,11169,C'Wealth Stn Exit B/C,commonwealth Stn Exit B/C
+2021-12-05 03:04:01,11209,Opp Peirce Rd,Opp Peirce road
+2021-12-05 03:04:01,11211,Aft Peirce Rd,Aft Peirce road
+2021-12-05 03:04:01,11279,Aft Coronation Rd West,Aft Coronation road West
+2021-12-05 03:04:01,11281,Aft Tan Boon Chong Ave,Aft Tan Boon Chong avenue
+2021-12-05 03:04:01,11289,Opp Tan Boon Chong Ave,Opp Tan Boon Chong avenue
+2021-12-05 03:04:01,11331,Opp Dynasty Gdn II,Opp Dynasty garden II
+2021-12-05 03:04:01,11401,Holland V Stn/Blk12,holland village Stn/Blk12
+2021-12-05 03:04:01,11419,Holland V Stn Exit A,holland village Stn Exit A
+2021-12-05 03:04:01,12111,Bef Clementi Rd,Bef Clementi road
+2021-12-05 03:04:01,12131,Aft Grove Ave,Aft Grove avenue
+2021-12-05 03:04:01,13011,Opp S'pore Botanic Gdns,Opp S'pore Botanic gardens
+2021-12-05 03:04:01,13019,S'pore Botanic Gdns,S'pore Botanic gardens
+2021-12-05 03:04:01,13029,Bef Tyersall Ave,Bef Tyersall avenue
+2021-12-05 03:04:01,13031,Opp Chatsworth Rd,Opp Chatsworth road
+2021-12-05 03:04:01,13039,Bef Chatsworth Rd,Bef Chatsworth road
+2021-12-05 03:04:01,13091,Aft Kim Yam Rd,Aft Kim Yam road
+2021-12-05 03:04:01,13099,Bef Kim Yam Rd,Bef Kim Yam road
+2021-12-05 03:04:01,13101,Opp Mohd Sultan Rd,Opp Mohd Sultan road
+2021-12-05 03:04:01,13109,UE Sq/Bef Mohd Sultan Rd,UE Sq/Bef Mohd Sultan road
+2021-12-05 03:04:01,13191,Bef Orchard Blvd,Bef Orchard boulevard
+2021-12-05 03:04:01,13199,Aft Orchard Blvd,Aft Orchard boulevard
+2021-12-05 03:04:01,14139,Bef Seah Im Rd,Bef Seah Im road
+2021-12-05 03:04:01,14189,Aft Alexandra Rd,Aft Alexandra road
+2021-12-05 03:04:01,15071,Opp Lor Sarhad,Opp lorong Sarhad
+2021-12-05 03:04:01,15079,Aft Lor Sarhad,Aft lorong Sarhad
+2021-12-05 03:04:01,15221,Aft Sth Buona Vista Rd,Aft south Buona Vista road
+2021-12-05 03:04:01,15229,Bef Sth Buona Vista Rd,Bef south Buona Vista road
+2021-12-05 03:04:01,16089,Aft Clementi Rd,Aft Clementi road
+2021-12-05 03:04:01,16201,Barossa Gdns,Barossa gardens
+2021-12-05 03:04:01,17091,Aft Clementi Ave 1,Aft Clementi avenue 1
+2021-12-05 03:04:01,17351,Aft Clementi Rd,Aft Clementi road
+2021-12-05 03:04:01,17359,Bef Clementi Rd,Bef Clementi road
+2021-12-05 03:04:01,18099,Bef Ayer Rajah Cres,Bef Ayer Rajah crescent
+2021-12-05 03:04:01,18191,Bef Whitchurch Rd,Bef Whitchurch road
+2021-12-05 03:04:01,18199,Aft Whitchurch Rd,Aft Whitchurch road
+2021-12-05 03:04:01,20061,Aft Jurong Town Hall Rd,Aft Jurong Town Hall road
+2021-12-05 03:04:01,20069,Bef Jurong Town Hall Rd,Bef Jurong Town Hall road
+2021-12-05 03:04:01,20179,Aft Teban Gdns Rd,Aft Teban gardens road
+2021-12-05 03:04:01,20201,Teban Gdn PO,Teban garden PO
+2021-12-05 03:04:01,20209,Bef Jurong Town Hall Rd,Bef Jurong Town Hall road
+2021-12-05 03:04:01,20251,Bef Teban Gdns Rd,Bef Teban gardens road
+2021-12-05 03:04:01,20259,C'wealth Sec Sch,commonwealth Sec Sch
+2021-12-05 03:04:01,20261,Aft Pandan Gdns,Aft Pandan gardens
+2021-12-05 03:04:01,20269,Bef Pandan Gdns,Bef Pandan gardens
+2021-12-05 03:04:01,21019,Aft Yuan Ching Rd,Aft Yuan Ching road
+2021-12-05 03:04:01,21021,Bef Jurong Port Rd,Bef Jurong Port road
+2021-12-05 03:04:01,21029,Aft Corp Pl,Aft Corp place
+2021-12-05 03:04:01,21051,Bef Penjuru Rd,Bef Penjuru road
+2021-12-05 03:04:01,21059,Aft Penjuru Rd,Aft Penjuru road
+2021-12-05 03:04:01,21111,Aft Jurong Pier Rd,Aft Jurong Pier road
+2021-12-05 03:04:01,21119,Bef Jurong Pier Rd,Bef Jurong Pier road
+2021-12-05 03:04:01,21131,Bef Jurong Port Rd,Bef Jurong Port road
+2021-12-05 03:04:01,21139,Aft Jurong Port Rd,Aft Jurong Port road
+2021-12-05 03:04:01,21171,Opp Corp Pl,Opp Corp place
+2021-12-05 03:04:01,21179,Corp Pl,Corp place
+2021-12-05 03:04:01,21261,Aft Chin Bee Ave,Aft Chin Bee avenue
+2021-12-05 03:04:01,21269,Bef Chin Bee Ave,Bef Chin Bee avenue
+2021-12-05 03:04:01,21311,Bef Tractor Rd,Bef Tractor road
+2021-12-05 03:04:01,21319,Opp Tractor Rd,Opp Tractor road
+2021-12-05 03:04:01,21469,Bef Chia Ping Rd,Bef Chia Ping road
+2021-12-05 03:04:01,21511,Bef Chin Bee Rd,Bef Chin Bee road
+2021-12-05 03:04:01,21519,Aft Chin Bee Rd,Aft Chin Bee road
+2021-12-05 03:04:01,21541,Aft Fourth Chin Bee Rd,Aft Fourth Chin Bee road
+2021-12-05 03:04:01,21619,Aft Corp Rd,Aft Corp road
+2021-12-05 03:04:01,21631,Blk 115/Opp Japanese Gdn,Blk 115/Opp Japanese garden
+2021-12-05 03:04:01,21639,Japanese Gdn/Opp Blk 115,Japanese garden/Opp Blk 115
+2021-12-05 03:04:01,21651,Opp Chinese Gdn,Opp Chinese garden
+2021-12-05 03:04:01,21659,Chinese Gdn,Chinese garden
+2021-12-05 03:04:01,21779,Aft Yuan Ching Rd,Aft Yuan Ching road
+2021-12-05 03:04:01,22041,Aft Tg Kling Rd,Aft Tg Kling road
+2021-12-05 03:04:01,22049,Bef Tg Kling Rd,Bef Tg Kling road
+2021-12-05 03:04:01,22071,Bef Jurong Pier Rd,Bef Jurong Pier road
+2021-12-05 03:04:01,22079,Aft Jurong Pier Rd,Aft Jurong Pier road
+2021-12-05 03:04:01,22169,Aft Intl Rd,Aft Intl road
+2021-12-05 03:04:01,22219,Aft Neythal Rd,Aft Neythal road
+2021-12-05 03:04:01,22221,Aft Pioneer Rd Nth,Aft Pioneer road north
+2021-12-05 03:04:01,22229,Bef Pioneer Rd Nth,Bef Pioneer road north
+2021-12-05 03:04:01,22271,Bef Kwong Min Rd,Bef Kwong Min road
+2021-12-05 03:04:01,22281,Aft Soon Lee Rd,Aft Soon Lee road
+2021-12-05 03:04:01,22289,Bef Fan Yoong Rd,Bef Fan Yoong road
+2021-12-05 03:04:01,22299,Bef Soon Lee Rd,Bef Soon Lee road
+2021-12-05 03:04:01,22309,Aft Fan Yoong Rd,Aft Fan Yoong road
+2021-12-05 03:04:01,22319,Bef Enterprise Rd,Bef Enterprise road
+2021-12-05 03:04:01,22401,Aft Shipyard Rd,Aft Shipyard road
+2021-12-05 03:04:01,22409,Bef Shipyard Rd,Bef Shipyard road
+2021-12-05 03:04:01,23051,Bef Kian Teck Rd,Bef Kian Teck road
+2021-12-05 03:04:01,23059,Aft Kian Teck Rd,Aft Kian Teck road
+2021-12-05 03:04:01,23061,Aft Kian Teck Rd,Aft Kian Teck road
+2021-12-05 03:04:01,23069,Bef Kian Teck Rd,Bef Kian Teck road
+2021-12-05 03:04:01,23099,Bef First Lok Yang Rd,Bef First Lok Yang road
+2021-12-05 03:04:01,23109,Aft Third Lok Yang Rd,Aft Third Lok Yang road
+2021-12-05 03:04:01,23111,Bef Fourth Lok Yang Rd,Bef Fourth Lok Yang road
+2021-12-05 03:04:01,23119,Aft Fourth Lok Yang Rd,Aft Fourth Lok Yang road
+2021-12-05 03:04:01,23159,Aft Fifth Lok Yang Rd,Aft Fifth Lok Yang road
+2021-12-05 03:04:01,23161,Aft Kian Teck Rd,Aft Kian Teck road
+2021-12-05 03:04:01,23169,Bef Kian Teck Rd,Bef Kian Teck road
+2021-12-05 03:04:01,23179,Aft Second Lok Yang Rd,Aft Second Lok Yang road
+2021-12-05 03:04:01,23181,Aft Kian Teck Rd,Aft Kian Teck road
+2021-12-05 03:04:01,23189,Bef First Lok Yang Rd,Bef First Lok Yang road
+2021-12-05 03:04:01,23241,Aft Benoi Rd,Aft Benoi road
+2021-12-05 03:04:01,23249,Bef Benoi Rd,Bef Benoi road
+2021-12-05 03:04:01,23251,Aft Shipyard Rd,Aft Shipyard road
+2021-12-05 03:04:01,23259,Bef Shipyard Rd,Bef Shipyard road
+2021-12-05 03:04:01,23281,Aft Pioneer Rd,Aft Pioneer road
+2021-12-05 03:04:01,23341,Aft Pioneer Rd,Aft Pioneer road
+2021-12-05 03:04:01,23349,Bef Pioneer Rd,Bef Pioneer road
+2021-12-05 03:04:01,23351,Aft Gul Ave,Aft Gul avenue
+2021-12-05 03:04:01,23359,Opp Gul Ave,Opp Gul avenue
+2021-12-05 03:04:01,23419,Bef Shipyard Cres,Bef Shipyard crescent
+2021-12-05 03:04:01,23441,Bef Benoi Pl,Bef Benoi place
+2021-12-05 03:04:01,23449,Aft Benoi Pl,Aft Benoi place
+2021-12-05 03:04:01,23471,Aft Benoi Rd,Aft Benoi road
+2021-12-05 03:04:01,23479,Bef Benoi Rd,Bef Benoi road
+2021-12-05 03:04:01,23501,Aft Pioneer Rd Nth,Aft Pioneer road north
+2021-12-05 03:04:01,24089,Aft Gul Ave,Aft Gul avenue
+2021-12-05 03:04:01,24149,Aft Joo Koon Cres,Aft Joo Koon crescent
+2021-12-05 03:04:01,24159,Aft Joo Koon Rd,Aft Joo Koon road
+2021-12-05 03:04:01,24521,Bef Tuas Ave 5,Bef Tuas avenue 5
+2021-12-05 03:04:01,24529,Aft Tuas Ave 5,Aft Tuas avenue 5
+2021-12-05 03:04:01,24631,Bef Benoi Rd,Bef Benoi road
+2021-12-05 03:04:01,24639,Aft Benoi Rd,Aft Benoi road
+2021-12-05 03:04:01,24691,Aft Tuas Rd,Aft Tuas road
+2021-12-05 03:04:01,24699,Bef Tuas Rd,Bef Tuas road
+2021-12-05 03:04:01,24701,Tuas Cres Stn Exit B,Tuas crescent Stn Exit B
+2021-12-05 03:04:01,24709,Tuas Cres Stn Exit A,Tuas crescent Stn Exit A
+2021-12-05 03:04:01,24711,Tuas West Rd Stn Exit B,Tuas West road Stn Exit B
+2021-12-05 03:04:01,24719,Tuas West Rd Stn Exit A,Tuas West road Stn Exit A
+2021-12-05 03:04:01,25059,After Tuas Sth Blvd,After Tuas south boulevard
+2021-12-05 03:04:01,25091,Aft Tuas Ave 7,Aft Tuas avenue 7
+2021-12-05 03:04:01,25111,Aft Tuas Ave 10,Aft Tuas avenue 10
+2021-12-05 03:04:01,25119,Bef Tuas Ave 10,Bef Tuas avenue 10
+2021-12-05 03:04:01,25121,Aft Tuas Ave 8,Aft Tuas avenue 8
+2021-12-05 03:04:01,25129,Aft Tuas Ave 6,Aft Tuas avenue 6
+2021-12-05 03:04:01,25201,Aft Tuas Rd,Aft Tuas road
+2021-12-05 03:04:01,25209,Bef Tuas Rd,Bef Tuas road
+2021-12-05 03:04:01,25219,Aft Tuas Ave 2,Aft Tuas avenue 2
+2021-12-05 03:04:01,25249,Aft Tuas West Rd,Aft Tuas West road
+2021-12-05 03:04:01,25371,Aft Tuas Ave 4,Aft Tuas avenue 4
+2021-12-05 03:04:01,25379,Aft Tuas Ave 6,Aft Tuas avenue 6
+2021-12-05 03:04:01,25389,Aft Tuas Ave 8,Aft Tuas avenue 8
+2021-12-05 03:04:01,25391,Bef Pioneer Rd,Bef Pioneer road
+2021-12-05 03:04:01,25399,Aft Pioneer Rd,Aft Pioneer road
+2021-12-05 03:04:01,25421,Opp Tuas Lk Stn,Opp Tuas link Stn
+2021-12-05 03:04:01,25429,Tuas Lk Stn,Tuas link Stn
+2021-12-05 03:04:01,25441,Bef Pioneer Rd,Bef Pioneer road
+2021-12-05 03:04:01,25449,Aft Pioneer Rd,Aft Pioneer road
+2021-12-05 03:04:01,25461,Aft Tuas West Ave,Aft Tuas West avenue
+2021-12-05 03:04:01,25469,Bef Tuas West Ave,Bef Tuas West avenue
+2021-12-05 03:04:01,25661,Bef Tuas Bay Lk,Bef Tuas Bay link
+2021-12-05 03:04:01,25669,Aft Tuas Bay Lk,Aft Tuas Bay link
+2021-12-05 03:04:01,25681,Bef Tuas West Ave,Bef Tuas West avenue
+2021-12-05 03:04:01,25689,Aft Tuas West Ave,Aft Tuas West avenue
+2021-12-05 03:04:01,25691,Aft Tuas West Rd Stn,Aft Tuas West road Stn
+2021-12-05 03:04:01,25751,Bef Tuas Sth Ave 14,Bef Tuas south avenue 14
+2021-12-05 03:04:01,25771,Aft Tuas Sth St 7,Aft Tuas south St 7
+2021-12-05 03:04:01,25791,Bef Tuas Sth Ave 10,Bef Tuas south avenue 10
+2021-12-05 03:04:01,25801,Bef Tuas Sth Ave 7,Bef Tuas south avenue 7
+2021-12-05 03:04:01,26011,Bef Tuas Ave 11,Bef Tuas avenue 11
+2021-12-05 03:04:01,26021,Bef Tuas Ave 13,Bef Tuas avenue 13
+2021-12-05 03:04:01,26069,Aft Tuas Ave 16,Aft Tuas avenue 16
+2021-12-05 03:04:01,26081,Bef Tuas Ave 18A,Bef Tuas avenue 18A
+2021-12-05 03:04:01,26089,Bef Tuas Ave 20,Bef Tuas avenue 20
+2021-12-05 03:04:01,26099,Bef Tuas Ave 13,Bef Tuas avenue 13
+2021-12-05 03:04:01,26101,BASF Sth East Asia,BASF south East Asia
+2021-12-05 03:04:01,26109,Bef Tuas Ave 11,Bef Tuas avenue 11
+2021-12-05 03:04:01,26131,Aft Tuas Cres,Aft Tuas crescent
+2021-12-05 03:04:01,26241,Aft Tuas Sth Ave 2,Aft Tuas south avenue 2
+2021-12-05 03:04:01,26249,Bef Tuas Sth Ave 2,Bef Tuas south avenue 2
+2021-12-05 03:04:01,26251,Bef Tuas Sth Ave 2,Bef Tuas south avenue 2
+2021-12-05 03:04:01,26259,Aft Tuas Sth Ave 2,Aft Tuas south avenue 2
+2021-12-05 03:04:01,26261,Aft Tuas Sth Ave 4,Aft Tuas south avenue 4
+2021-12-05 03:04:01,26269,Bef Tuas Sth Ave 4,Bef Tuas south avenue 4
+2021-12-05 03:04:01,26279,Aft Tuas Sth Ave 4,Aft Tuas south avenue 4
+2021-12-05 03:04:01,26289,Aft Tuas Sth St 2,Aft Tuas south St 2
+2021-12-05 03:04:01,26299,Bef Tuas Sth Ave 6,Bef Tuas south avenue 6
+2021-12-05 03:04:01,26311,Aft Tuas Sth Ave 6,Aft Tuas south avenue 6
+2021-12-05 03:04:01,26321,Bef Tuas Sth St 2,Bef Tuas south St 2
+2021-12-05 03:04:01,26389,Bef Tuas Sth Ave 5,Bef Tuas south avenue 5
+2021-12-05 03:04:01,26399,Aft Tuas View Cres,Aft Tuas View crescent
+2021-12-05 03:04:01,26429,Bef Tuas Sth Ave 9,Bef Tuas south avenue 9
+2021-12-05 03:04:01,26431,Aft Tuas Sth Ave 9,Aft Tuas south avenue 9
+2021-12-05 03:04:01,26441,Bef Tuas Sth Ave 7,Bef Tuas south avenue 7
+2021-12-05 03:04:01,26451,Bef Tuas Sth Ave 5,Bef Tuas south avenue 5
+2021-12-05 03:04:01,26461,Aft Tuas Sth Ave 8,Aft Tuas south avenue 8
+2021-12-05 03:04:01,27121,Bef Nanyang Ave,Bef Nanyang avenue
+2021-12-05 03:04:01,27129,Opp Nanyang Ave,Opp Nanyang avenue
+2021-12-05 03:04:01,27171,Bef Lor Danau,Bef lorong Danau
+2021-12-05 03:04:01,27179,Aft Lor Danau,Aft lorong Danau
+2021-12-05 03:04:01,27251,Yunnan Gdn,Yunnan garden
+2021-12-05 03:04:01,27449,Aft Westwood Ave,Aft Westwood avenue
+2021-12-05 03:04:01,27509,Bef Yunnan Cres,Bef Yunnan crescent
+2021-12-05 03:04:01,28011,Bef Toh Tuck Ave,Bef Toh Tuck avenue
+2021-12-05 03:04:01,28019,Aft Toh Tuck Ave,Aft Toh Tuck avenue
+2021-12-05 03:04:01,28341,Chinese Gdn Stn,Chinese garden Stn
+2021-12-05 03:04:01,28349,Opp Chinese Gdn Stn,Opp Chinese garden Stn
+2021-12-05 03:04:01,28701,Aft Old Toh Tuck Rd,Aft Old Toh Tuck road
+2021-12-05 03:04:01,28709,Bef Old Toh Tuck Rd,Bef Old Toh Tuck road
+2021-12-05 03:04:01,29031,Aft Penjuru Pl,Aft Penjuru place
+2021-12-05 03:04:01,29069,Aft Pandan Rd,Aft Pandan road
+2021-12-05 03:04:01,29159,Aft Teban Gdns Cres,Aft Teban gardens crescent
+2021-12-05 03:04:01,30119,Aft Choa Chu Kang Ave 6,Aft Choa Chu Kang avenue 6
+2021-12-05 03:04:01,31009,Choa Chu Kang Rd End,Choa Chu Kang road End
+2021-12-05 03:04:01,31011,Aft Nanyang Ave,Aft Nanyang avenue
+2021-12-05 03:04:01,31019,Bef Nanyang Ave,Bef Nanyang avenue
+2021-12-05 03:04:01,31069,Bef Old Choa Chu Kang Rd,Bef Old Choa Chu Kang road
+2021-12-05 03:04:01,31121,Nirvana Memorial Gdn,Nirvana Memorial garden
+2021-12-05 03:04:01,31129,Aft Nirvana Memorial Gdn,Aft Nirvana Memorial garden
+2021-12-05 03:04:01,31151,Aft Lim Chu Kang Rd,Aft Lim Chu Kang road
+2021-12-05 03:04:01,31159,Bef Lim Chu Kang Rd,Bef Lim Chu Kang road
+2021-12-05 03:04:01,31191,B26 Old Choa Chu Kang Rd,B26 Old Choa Chu Kang road
+2021-12-05 03:04:01,31199,B25 Old Choa Chu Kang Rd,B25 Old Choa Chu Kang road
+2021-12-05 03:04:01,32031,Opp Ama Keng Rd,Opp Ama Keng road
+2021-12-05 03:04:01,32039,Aft Ama Keng Rd,Aft Ama Keng road
+2021-12-05 03:04:01,32069,B26 Lim Chu Kang Rd,B26 Lim Chu Kang road
+2021-12-05 03:04:01,32109,Bef Lor Serambi,Bef lorong Serambi
+2021-12-05 03:04:01,33011,B19 Lim Chu Kang Rd,B19 Lim Chu Kang road
+2021-12-05 03:04:01,33019,B20 Lim Chu Kang Rd,B20 Lim Chu Kang road
+2021-12-05 03:04:01,33021,Opp Neo Tiew Rd,Opp Neo Tiew road
+2021-12-05 03:04:01,33029,Aft Neo Tiew Rd,Aft Neo Tiew road
+2021-12-05 03:04:01,34041,B03 Lim Chu Kang Rd,B03 Lim Chu Kang road
+2021-12-05 03:04:01,34101,Aft Old Lim Chu Kang Rd,Aft Old Lim Chu Kang road
+2021-12-05 03:04:01,34109,Aft Lim Chu Kang Rd,Aft Lim Chu Kang road
+2021-12-05 03:04:01,40021,Bef Winstedt Rd,Bef Winstedt road
+2021-12-05 03:04:01,40029,Aft Makepeace Rd,Aft Makepeace road
+2021-12-05 03:04:01,40091,Bef Lewis Rd,Bef Lewis road
+2021-12-05 03:04:01,40099,Aft Dunkirk Ave,Aft Dunkirk avenue
+2021-12-05 03:04:01,40119,Bef Goldhill Ave,Bef Goldhill avenue
+2021-12-05 03:04:01,40199,Aft Balmoral Rd,Aft Balmoral road
+2021-12-05 03:04:01,40201,Chelsea Gdns Condo,Chelsea gardens Condo
+2021-12-05 03:04:01,41019,Aft Kheam Hock Rd,Aft Kheam Hock road
+2021-12-05 03:04:01,41021,Botanic Gdns Stn,Botanic gardens Stn
+2021-12-05 03:04:01,41029,Opp Botanic Gdns Stn,Opp Botanic gardens Stn
+2021-12-05 03:04:01,41081,Sixth Ave Stn,Sixth avenue Stn
+2021-12-05 03:04:01,41151,Aft Sime Rd,Aft Sime road
+2021-12-05 03:04:01,41161,Aft Kheam Hock Rd,Aft Kheam Hock road
+2021-12-05 03:04:01,41169,Bef Kheam Hock Rd,Bef Kheam Hock road
+2021-12-05 03:04:01,42011,Sixth Ave Ctr,Sixth avenue Ctr
+2021-12-05 03:04:01,42019,Opp Sixth Ave Stn,Opp Sixth avenue Stn
+2021-12-05 03:04:01,42021,Aft Maple Ave,Aft Maple avenue
+2021-12-05 03:04:01,42029,Aft Swiss Club Rd,Aft Swiss Club road
+2021-12-05 03:04:01,42049,Hua Guan Gdns,Hua Guan gardens
+2021-12-05 03:04:01,42129,Sixth Ave Ville,Sixth avenue Ville
+2021-12-05 03:04:01,42131,Aft Lantana Ave,Aft Lantana avenue
+2021-12-05 03:04:01,42139,Ave Villa,avenue Villa
+2021-12-05 03:04:01,42141,Bef Dunearn Rd,Bef Dunearn road
+2021-12-05 03:04:01,42149,Aft Bt Timah Rd,Aft Bt Timah road
+2021-12-05 03:04:01,42179,Aft Chun Tin Rd,Aft Chun Tin road
+2021-12-05 03:04:01,42191,Bef Bt Batok East Ave 6,Bef Bt Batok East avenue 6
+2021-12-05 03:04:01,42199,Aft Bt Batok East Ave 6,Aft Bt Batok East avenue 6
+2021-12-05 03:04:01,42221,Goodluck Gdn,Goodluck garden
+2021-12-05 03:04:01,42241,Aft Eng Kong Pl,Aft Eng Kong place
+2021-12-05 03:04:01,42249,Bef Eng Kong Pl,Bef Eng Kong place
+2021-12-05 03:04:01,42291,Opp Toh Tuck Cres,Opp Toh Tuck crescent
+2021-12-05 03:04:01,42299,Aft Toh Tuck Cres,Aft Toh Tuck crescent
+2021-12-05 03:04:01,43021,Aft Old Jurong Rd,Aft Old Jurong road
+2021-12-05 03:04:01,43071,Opp Dairy Farm Rd,Opp Dairy Farm road
+2021-12-05 03:04:01,43452,Aft Bt Batok West Ave 3,Aft Bt Batok West avenue 3
+2021-12-05 03:04:01,43461,Aft Bt Batok West Ave 5,Aft Bt Batok West avenue 5
+2021-12-05 03:04:01,43469,Bef Bt Batok West Ave 5,Bef Bt Batok West avenue 5
+2021-12-05 03:04:01,43891,Aft Dairy Farm Cres,Aft Dairy Farm crescent
+2021-12-05 03:04:01,43899,Bef Dairy Farm Cres,Bef Dairy Farm crescent
+2021-12-05 03:04:01,44069,Aft KJE Slip Rd,Aft KJE Slip road
+2021-12-05 03:04:01,44161,Aft Bt Batok West Ave 5,Aft Bt Batok West avenue 5
+2021-12-05 03:04:01,44169,Bef Bt Batok West Ave 5,Bef Bt Batok West avenue 5
+2021-12-05 03:04:01,44171,Bef Bt Batok West Ave 5,Bef Bt Batok West avenue 5
+2021-12-05 03:04:01,44179,Aft Bt Batok West Ave 5,Aft Bt Batok West avenue 5
+2021-12-05 03:04:01,44241,Opp Lompang Rd,Opp Lompang road
+2021-12-05 03:04:01,44351,Aft Chestnut Ave,Aft Chestnut avenue
+2021-12-05 03:04:01,44359,Bef Chestnut Ave,Bef Chestnut avenue
+2021-12-05 03:04:01,44361,Bef Dairy Farm Rd,Bef Dairy Farm road
+2021-12-05 03:04:01,44369,Aft Dairy Farm Rd,Aft Dairy Farm road
+2021-12-05 03:04:01,44689,Sunshine Pl,Sunshine place
+2021-12-05 03:04:01,45071,Bef Mandai Rd,Bef Mandai road
+2021-12-05 03:04:01,45079,Aft Mandai Rd,Aft Mandai road
+2021-12-05 03:04:01,45141,Aft W'Lands Rd,Aft woodlands road
+2021-12-05 03:04:01,45149,Bef W'Lands Rd,Bef woodlands road
+2021-12-05 03:04:01,45221,Aft W'Lands Rd,Aft woodlands road
+2021-12-05 03:04:01,45229,Bef W'Lands Rd,Bef woodlands road
+2021-12-05 03:04:01,45489,Bef Choa Chu Kang Lk,Bef Choa Chu Kang link
+2021-12-05 03:04:01,45491,Bef Choa Chu Kang Nth 5,Bef Choa Chu Kang north 5
+2021-12-05 03:04:01,46011,Bef W'Lands Ctr Rd,Bef woodlands Ctr road
+2021-12-05 03:04:01,46019,Aft W'Lands Ctr Rd,Aft woodlands Ctr road
+2021-12-05 03:04:01,46021,Bef W'Lands Ind Pk D St 2,Bef woodlands Ind Pk D St 2
+2021-12-05 03:04:01,46029,Aft W'Lands Ind Pk D St 2,Aft woodlands Ind Pk D St 2
+2021-12-05 03:04:01,46069,W'Lands Train Checkpt,woodlands Train Checkpt
+2021-12-05 03:04:01,46101,W'Lands Checkpt,woodlands Checkpt
+2021-12-05 03:04:01,46109,W'Lands Checkpt,woodlands Checkpt
+2021-12-05 03:04:01,46139,Aft Riverside Rd,Aft Riverside road
+2021-12-05 03:04:01,46321,W'Lands Civic Ctr,woodlands Civic Ctr
+2021-12-05 03:04:01,46329,Opp W'Lands Civic Ctr,Opp woodlands Civic Ctr
+2021-12-05 03:04:01,46339,Bef W'Lands Stn Exit 7,Bef woodlands Stn Exit 7
+2021-12-05 03:04:01,46381,Opp W'Lands Ind Pk D St 1,Opp woodlands Ind Pk D St 1
+2021-12-05 03:04:01,46389,Aft W'Lands Ind Pk D St 1,Aft woodlands Ind Pk D St 1
+2021-12-05 03:04:01,46489,Aft Gambas Ave,Aft Gambas avenue
+2021-12-05 03:04:01,46631,W'Lands Stn Exit 5,woodlands Stn Exit 5
+2021-12-05 03:04:01,46639,W'Lands Stn Exit 4,woodlands Stn Exit 4
+2021-12-05 03:04:01,46669,W'Lands Pr Sch,woodlands Pr Sch
+2021-12-05 03:04:01,46711,Bef Admiralty Rd West,Bef Admiralty road West
+2021-12-05 03:04:01,46721,Bef W'Lands Ind Pk E7,Bef woodlands Ind Pk E7
+2021-12-05 03:04:01,46729,Aft W'Lands Ind Pk E7,Aft woodlands Ind Pk E7
+2021-12-05 03:04:01,46801,Aft W'Lands Mart,Aft woodlands Mart
+2021-12-05 03:04:01,46809,Opp W'Lands Mart,Opp woodlands Mart
+2021-12-05 03:04:01,46931,Opp W'Lands Spectrum 1,Opp woodlands Spectrum 1
+2021-12-05 03:04:01,46981,W'lands Sth Stn Exit 2,woodlands south Stn Exit 2
+2021-12-05 03:04:01,46989,W'lands Sth Stn Exit 1,woodlands south Stn Exit 1
+2021-12-05 03:04:01,47011,Bef W'Lands Waterfront Pk,Bef woodlands Waterfront Pk
+2021-12-05 03:04:01,47019,Aft W'Lands Waterfront Pk,Aft woodlands Waterfront Pk
+2021-12-05 03:04:01,47031,Bef Keramat Rd,Bef Keramat road
+2021-12-05 03:04:01,47039,Aft View Rd,Aft View road
+2021-12-05 03:04:01,47041,Opp W'Lands Auto Hub,Opp woodlands Auto Hub
+2021-12-05 03:04:01,47049,W'Lands Auto Hub,woodlands Auto Hub
+2021-12-05 03:04:01,47051,Aft W'Lands Ind Pk E4,Aft woodlands Ind Pk E4
+2021-12-05 03:04:01,47059,Bef W'Lands Ind Pk E4,Bef woodlands Ind Pk E4
+2021-12-05 03:04:01,47061,Aft Attap Valley Rd,Aft Attap Valley road
+2021-12-05 03:04:01,47069,Nth Tech,north Tech
+2021-12-05 03:04:01,47081,Aft Senoko Cres,Aft Senoko crescent
+2021-12-05 03:04:01,47091,Bef Senoko Cres,Bef Senoko crescent
+2021-12-05 03:04:01,47101,Aft Senoko Ave,Aft Senoko avenue
+2021-12-05 03:04:01,47201,W'lands Nth Stn,woodlands north Stn
+2021-12-05 03:04:01,47621,Aft Gambas Ave,Aft Gambas avenue
+2021-12-05 03:04:01,47811,W'Lands Sunny Food,woodlands Sunny Food
+2021-12-05 03:04:01,47819,Opp W'Lands Sunny Food,Opp woodlands Sunny Food
+2021-12-05 03:04:01,48021,Aft Mandai Lake Rd,Aft Mandai Lake road
+2021-12-05 03:04:01,48029,Bef Mandai Lake Rd,Bef Mandai Lake road
+2021-12-05 03:04:01,48061,Bef Mandai Ave,Bef Mandai avenue
+2021-12-05 03:04:01,48069,Aft Mandai Ave,Aft Mandai avenue
+2021-12-05 03:04:01,48081,Opp Upp Seletar Reservoir,Opp upper Seletar Reservoir
+2021-12-05 03:04:01,48089,Upp Seletar Reservoir,upper Seletar Reservoir
+2021-12-05 03:04:01,48101,Aft Meng Suan Rd,Aft Meng Suan road
+2021-12-05 03:04:01,48109,Opp Meng Suan Rd,Opp Meng Suan road
+2021-12-05 03:04:01,48111,Aft Mandai Rd,Aft Mandai road
+2021-12-05 03:04:01,48119,Bef Mandai Rd,Bef Mandai road
+2021-12-05 03:04:01,49081,Aft Kranji Cres,Aft Kranji crescent
+2021-12-05 03:04:01,49089,Bef Kranji Cres,Bef Kranji crescent
+2021-12-05 03:04:01,49149,Aft Kranji Lk,Aft Kranji link
+2021-12-05 03:04:01,49179,Aft Kranji Cres,Aft Kranji crescent
+2021-12-05 03:04:01,49189,Aft Kranji Rd,Aft Kranji road
+2021-12-05 03:04:01,49249,Aft Neo Tiew Rd,Aft Neo Tiew road
+2021-12-05 03:04:01,50071,Bef Carlisle Rd,Bef Carlisle road
+2021-12-05 03:04:01,50079,Opp Carlisle Rd,Opp Carlisle road
+2021-12-05 03:04:01,50169,Aft Irrawaddy Rd,Aft Irrawaddy road
+2021-12-05 03:04:01,50209,Aft Pegu Rd,Aft Pegu road
+2021-12-05 03:04:01,50321,Aft Gloucester Rd,Aft Gloucester road
+2021-12-05 03:04:01,51051,Aft Andrew Rd,Aft Andrew road
+2021-12-05 03:04:01,51111,Opp Andrew Rd,Opp Andrew road
+2021-12-05 03:04:01,51119,Bef Andrew Rd,Bef Andrew road
+2021-12-05 03:04:01,52011,Bef Bishan Rd,Bef Bishan road
+2021-12-05 03:04:01,52019,Aft Bishan Rd,Aft Bishan road
+2021-12-05 03:04:01,53051,Upp Thomson Stn Exit 5,upper Thomson Stn Exit 5
+2021-12-05 03:04:01,53059,Upp Thomson Stn Exit 2,upper Thomson Stn Exit 2
+2021-12-05 03:04:01,53061,Bef Windsor Pk Rd,Bef Windsor Pk road
+2021-12-05 03:04:01,53069,Aft Windsor Pk Rd,Aft Windsor Pk road
+2021-12-05 03:04:01,53081,Opp Faber Gdn,Opp Faber garden
+2021-12-05 03:04:01,53089,Faber Gdn,Faber garden
+2021-12-05 03:04:01,53091,Bef Ang Mo Kio Ave 1,Bef Ang Mo Kio avenue 1
+2021-12-05 03:04:01,53099,Aft Ang Mo Kio Ave 1,Aft Ang Mo Kio avenue 1
+2021-12-05 03:04:01,53381,Bishan Nth Shop Mall,Bishan north Shop Mall
+2021-12-05 03:04:01,53389,Opp Bishan Nth Shop Mall,Opp Bishan north Shop Mall
+2021-12-05 03:04:01,54051,Bef Ang Mo Kio Ave 5,Bef Ang Mo Kio avenue 5
+2021-12-05 03:04:01,54101,Aft Ang Mo Kio Ave 10,Aft Ang Mo Kio avenue 10
+2021-12-05 03:04:01,54109,Bef Ang Mo Kio Ave 10,Bef Ang Mo Kio avenue 10
+2021-12-05 03:04:01,55081,Opp Sunrise Gdns,Opp Sunrise gardens
+2021-12-05 03:04:01,55089,Aft Sunrise Gdns,Aft Sunrise gardens
+2021-12-05 03:04:01,55219,Bef Ang Mo Kio Ave 9,Bef Ang Mo Kio avenue 9
+2021-12-05 03:04:01,55241,Aft Yio Chu Kang Rd,Aft Yio Chu Kang road
+2021-12-05 03:04:01,55249,Bef Yio Chu Kang Rd,Bef Yio Chu Kang road
+2021-12-05 03:04:01,55361,Countryside Gdn P/G,Countryside garden P/G
+2021-12-05 03:04:01,56019,Bef Ang Mo Kio Ave 1,Bef Ang Mo Kio avenue 1
+2021-12-05 03:04:01,56031,Bef Yio Chu Kang Rd,Bef Yio Chu Kang road
+2021-12-05 03:04:01,56039,Aft Yio Chu Kang Rd,Aft Yio Chu Kang road
+2021-12-05 03:04:01,56051,Opp Tagore Rd,Opp Tagore road
+2021-12-05 03:04:01,56059,Bef Tagore Rd,Bef Tagore road
+2021-12-05 03:04:01,56071,Bef Old Upp Thomson Rd,Bef Old upper Thomson road
+2021-12-05 03:04:01,56079,Aft Old Upp Thomson Rd,Aft Old upper Thomson road
+2021-12-05 03:04:01,56201,Aft Munshi Abdullah Ave,Aft Munshi Abdullah avenue
+2021-12-05 03:04:01,56251,Opp Horizon Gdns,Opp Horizon gardens
+2021-12-05 03:04:01,56259,Horizon Gdns,Horizon gardens
+2021-12-05 03:04:01,56261,Aft Ang Mo Kio Ave 2,Aft Ang Mo Kio avenue 2
+2021-12-05 03:04:01,57141,Bef Upp Thomson Rd,Bef upper Thomson road
+2021-12-05 03:04:01,57149,Aft Upp Thomson Rd,Aft upper Thomson road
+2021-12-05 03:04:01,58061,Aft Durban Rd,Aft Durban road
+2021-12-05 03:04:01,58069,Opp Durban Rd,Opp Durban road
+2021-12-05 03:04:01,58089,Aft Andrews Ave,Aft Andrews avenue
+2021-12-05 03:04:01,58191,Aft Wellington Rd,Aft Wellington road
+2021-12-05 03:04:01,58199,Opp Auckland Rd West,Opp Auckland road West
+2021-12-05 03:04:01,58201,Aft Queen'S Ave,Aft Queen'S avenue
+2021-12-05 03:04:01,58209,Aft Pakistan Rd,Aft Pakistan road
+2021-12-05 03:04:01,58361,Nth Link Bldg,north Link Bldg
+2021-12-05 03:04:01,58571,Gambas Ave,Gambas avenue
+2021-12-05 03:04:01,58579,Gambas Ave,Gambas avenue
+2021-12-05 03:04:01,58581,Gambas Ave,Gambas avenue
+2021-12-05 03:04:01,58589,Gambas Ave,Gambas avenue
+2021-12-05 03:04:01,59021,Bef Yishun Ave 1,Bef Yishun avenue 1
+2021-12-05 03:04:01,59029,Aft Yishun Ave 1,Aft Yishun avenue 1
+2021-12-05 03:04:01,59781,Aft Yishun Ave 6,Aft Yishun avenue 6
+2021-12-05 03:04:01,59789,Bef Yishun Ave 6,Bef Yishun avenue 6
+2021-12-05 03:04:01,60051,Opp Kallang Pl,Opp Kallang place
+2021-12-05 03:04:01,60059,Bef Kallang Pl,Bef Kallang place
+2021-12-05 03:04:01,60161,St. Michael's Pl,St. Michael's place
+2021-12-05 03:04:01,60211,Aft Tai Thong Cres,Aft Tai Thong crescent
+2021-12-05 03:04:01,61041,Bef Braddell Rd,Bef Braddell road
+2021-12-05 03:04:01,61049,Aft Bartley Rd,Aft Bartley road
+2021-12-05 03:04:01,62011,Aft Bartley Rd,Aft Bartley road
+2021-12-05 03:04:01,62019,Aft Rochdale Rd,Aft Rochdale road
+2021-12-05 03:04:01,62029,Paya Lebar Gdns,Paya Lebar gardens
+2021-12-05 03:04:01,62031,Bef How Sun Rd,Bef How Sun road
+2021-12-05 03:04:01,62039,Raya Gdn,Raya garden
+2021-12-05 03:04:01,62049,Aft Paya Lebar Cres,Aft Paya Lebar crescent
+2021-12-05 03:04:01,62061,Aft Upp Paya Lebar Rd,Aft upper Paya Lebar road
+2021-12-05 03:04:01,62069,Bef Upp Paya Lebar Rd,Bef upper Paya Lebar road
+2021-12-05 03:04:01,62101,Bef Upp Serangoon Rd,Bef upper Serangoon road
+2021-12-05 03:04:01,62109,Aft Upp Serangoon Rd,Aft upper Serangoon road
+2021-12-05 03:04:01,62111,Aft Sommerville Rd,Aft Sommerville road
+2021-12-05 03:04:01,62121,Aft Wolskel Rd,Aft Wolskel road
+2021-12-05 03:04:01,62131,S'Goon Stn Exit H,serangoon Stn Exit H
+2021-12-05 03:04:01,62139,S'Goon Stn Exit A/Blk 413,serangoon Stn Exit A/Blk 413
+2021-12-05 03:04:01,62189,S'Goon Stn Exit D/Blk 416,serangoon Stn Exit D/Blk 416
+2021-12-05 03:04:01,62261,Opp S'goon Sec Sch,Opp serangoon Sec Sch
+2021-12-05 03:04:01,63011,Opp Upp S'Goon Shop Ctr,Opp upper serangoon Shop Ctr
+2021-12-05 03:04:01,63019,Aft Upp S'Goon Shop Ctr,Aft upper serangoon Shop Ctr
+2021-12-05 03:04:01,63151,Aft Upp S'Goon Rd,Aft upper serangoon road
+2021-12-05 03:04:01,63181,Bef St. Helier's Ave,Bef St. Helier's avenue
+2021-12-05 03:04:01,63189,Aft Serangoon Gdn Way,Aft Serangoon garden Way
+2021-12-05 03:04:01,63191,Aft Serangoon Nth Ave 1,Aft Serangoon north avenue 1
+2021-12-05 03:04:01,63199,Aft Phillips Ave,Aft Phillips avenue
+2021-12-05 03:04:01,63361,Opp S'Goon Sports Cplx,Opp serangoon Sports Cplx
+2021-12-05 03:04:01,64121,Aft Ang Mo Kio Ave 5,Aft Ang Mo Kio avenue 5
+2021-12-05 03:04:01,64189,Aft Old Tampines Rd,Aft Old Tampines road
+2021-12-05 03:04:01,64201,Aft Hougang Ave 3,Aft Hougang avenue 3
+2021-12-05 03:04:01,64209,Aft Defu Ave 1,Aft Defu avenue 1
+2021-12-05 03:04:01,64211,Aft Hougang Ave 7,Aft Hougang avenue 7
+2021-12-05 03:04:01,64219,Aft Defu Ave 2,Aft Defu avenue 2
+2021-12-05 03:04:01,64221,Opp Defu Ave 2,Opp Defu avenue 2
+2021-12-05 03:04:01,64229,Bef Defu Ave 2,Bef Defu avenue 2
+2021-12-05 03:04:01,65139,Punggol Rd End,Punggol road End
+2021-12-05 03:04:01,65191,Bef Punggol Rd,Bef Punggol road
+2021-12-05 03:04:01,65199,Aft Punggol Rd,Aft Punggol road
+2021-12-05 03:04:01,65209,Aft Punggol Rd,Aft Punggol road
+2021-12-05 03:04:01,65681,Bef Northshore Cres,Bef Northshore crescent
+2021-12-05 03:04:01,65689,Aft Northshore Cres,Aft Northshore crescent
+2021-12-05 03:04:01,66009,S'Goon Int,serangoon Int
+2021-12-05 03:04:01,66011,Aft Braddell Rd,Aft Braddell road
+2021-12-05 03:04:01,66019,Bef Braddell Rd,Bef Braddell road
+2021-12-05 03:04:01,66119,Summer Pl,Summer place
+2021-12-05 03:04:01,66129,Aft Chuan Gdn,Aft Chuan garden
+2021-12-05 03:04:01,66141,Bef Yio Chu Kang Rd,Bef Yio Chu Kang road
+2021-12-05 03:04:01,66149,Aft Yio Chu Kang Rd,Aft Yio Chu Kang road
+2021-12-05 03:04:01,66151,Opp Penshurst Pl,Opp Penshurst place
+2021-12-05 03:04:01,66181,Aft Chartwell Rd,Aft Chartwell road
+2021-12-05 03:04:01,66191,Aft Corfe Pl,Aft Corfe place
+2021-12-05 03:04:01,66221,Opp Portchester Ave,Opp Portchester avenue
+2021-12-05 03:04:01,66231,Bef Huddington Ave,Bef Huddington avenue
+2021-12-05 03:04:01,66241,Hemsley Ave,Hemsley avenue
+2021-12-05 03:04:01,66251,Opp Kingswear Ave,Opp Kingswear avenue
+2021-12-05 03:04:01,66261,S'Goon Gdns Country Club,serangoon gardens Country Club
+2021-12-05 03:04:01,66271,Serangoon Gdn Circus,Serangoon garden Circus
+2021-12-05 03:04:01,66351,S'Goon Stn Exit B,serangoon Stn Exit B
+2021-12-05 03:04:01,66359,S'Goon Stn Exit C/Blk 201,serangoon Stn Exit C/Blk 201
+2021-12-05 03:04:01,66381,Opp S'Goon Stn Exit F,Opp serangoon Stn Exit F
+2021-12-05 03:04:01,66389,S'Goon Stn Exit F,serangoon Stn Exit F
+2021-12-05 03:04:01,66391,Lor Chuan Stn Exit A,lorong Chuan Stn Exit A
+2021-12-05 03:04:01,66399,Opp Lor Chuan Stn Exit B,Opp lorong Chuan Stn Exit B
+2021-12-05 03:04:01,66471,Bef Yio Chu Kang Rd,Bef Yio Chu Kang road
+2021-12-05 03:04:01,66479,Aft Yio Chu Kang Rd,Aft Yio Chu Kang road
+2021-12-05 03:04:01,67011,Bef Begonia Rd,Bef Begonia road
+2021-12-05 03:04:01,67019,Aft Begonia Rd,Aft Begonia road
+2021-12-05 03:04:01,67021,Opp Dedap Rd,Opp Dedap road
+2021-12-05 03:04:01,67029,Aft Dedap Rd,Aft Dedap road
+2021-12-05 03:04:01,67039,Aft Seletar Rd,Aft Seletar road
+2021-12-05 03:04:01,67081,Aft Yio Chu Kang Rd,Aft Yio Chu Kang road
+2021-12-05 03:04:01,67139,Nth Spring Pr Sch,north Spring Pr Sch
+2021-12-05 03:04:01,67461,Aft Sengkang East Ave,Aft Sengkang East avenue
+2021-12-05 03:04:01,67469,Bef Sengkang East Ave,Bef Sengkang East avenue
+2021-12-05 03:04:01,67571,Aft Lor Tanggam,Aft lorong Tanggam
+2021-12-05 03:04:01,67651,Bef Sengkang West Rd,Bef Sengkang West road
+2021-12-05 03:04:01,67659,Aft Sengkang West Rd,Aft Sengkang West road
+2021-12-05 03:04:01,67721,Aft Punggol Rd,Aft Punggol road
+2021-12-05 03:04:01,67729,Bef Punggol Rd,Bef Punggol road
+2021-12-05 03:04:01,68121,Bef West Camp Rd,Bef West Camp road
+2021-12-05 03:04:01,68129,Aft West Camp Rd,Aft West Camp road
+2021-12-05 03:04:01,68171,Bef Yishun Ave 8,Bef Yishun avenue 8
+2021-12-05 03:04:01,68179,Aft Yishun Ave 8,Aft Yishun avenue 8
+2021-12-05 03:04:01,68191,Bef Seletar A'Space Lk,Bef Seletar A'Space link
+2021-12-05 03:04:01,68199,Aft Seletar A'Space Lk,Aft Seletar A'Space link
+2021-12-05 03:04:01,70051,Aft Joo Seng Rd,Aft Joo Seng road
+2021-12-05 03:04:01,70131,Bef Davidson Rd,Bef Davidson road
+2021-12-05 03:04:01,70349,Bef Lor Bakar Batu,Bef lorong Bakar Batu
+2021-12-05 03:04:01,70361,Bef Genting Lk,Bef Genting link
+2021-12-05 03:04:01,70401,Bef Ubi Rd 4,Bef Ubi road 4
+2021-12-05 03:04:01,71011,Aft Paya Lebar Rd,Aft Paya Lebar road
+2021-12-05 03:04:01,71051,Aft Kim Chuan Rd,Aft Kim Chuan road
+2021-12-05 03:04:01,71059,Bef Kim Chuan Rd,Bef Kim Chuan road
+2021-12-05 03:04:01,71061,Bef Airport Rd,Bef Airport road
+2021-12-05 03:04:01,71069,Aft Airport Rd,Aft Airport road
+2021-12-05 03:04:01,74011,Aft Tampines Ind Ave 5,Aft Tampines Ind avenue 5
+2021-12-05 03:04:01,74019,Bef Tampines Ind Ave 5,Bef Tampines Ind avenue 5
+2021-12-05 03:04:01,74021,Bef Tampines Ind Ave 4,Bef Tampines Ind avenue 4
+2021-12-05 03:04:01,74029,Aft Tampines Ind Ave 4,Aft Tampines Ind avenue 4
+2021-12-05 03:04:01,75291,Aft Tampines Ave 9,Aft Tampines avenue 9
+2021-12-05 03:04:01,75299,Bef Tampines Ave 9,Bef Tampines avenue 9
+2021-12-05 03:04:01,75361,Bef Tampines Ind Ave 5,Bef Tampines Ind avenue 5
+2021-12-05 03:04:01,75369,Bef Tampines Lk,Bef Tampines link
+2021-12-05 03:04:01,75371,Aft Tampines Ave 5,Aft Tampines avenue 5
+2021-12-05 03:04:01,75379,Bef Tampines Ave 5,Bef Tampines avenue 5
+2021-12-05 03:04:01,75401,Aft Tampines Ave 1,Aft Tampines avenue 1
+2021-12-05 03:04:01,75419,Aft Tampines Ave 5,Aft Tampines avenue 5
+2021-12-05 03:04:01,77091,Aft Pasir Ris Ave,Aft Pasir Ris avenue
+2021-12-05 03:04:01,77099,Bef Pasir Ris Ave,Bef Pasir Ris avenue
+2021-12-05 03:04:01,77101,Bef Pasir Ris Rd,Bef Pasir Ris road
+2021-12-05 03:04:01,77109,Aft Pasir Ris Rd,Aft Pasir Ris road
+2021-12-05 03:04:01,78099,Aft Loyang Gdns,Aft Loyang gardens
+2021-12-05 03:04:01,80009,Lor 1 Geylang Ter,lorong 1 Geylang Ter
+2021-12-05 03:04:01,80039,Opp Lor 1 Geylang Ter,Opp lorong 1 Geylang Ter
+2021-12-05 03:04:01,80051,Aft Lor 1 Geylang,Aft lorong 1 Geylang
+2021-12-05 03:04:01,80089,Bef Lor 18 Geylang,Bef lorong 18 Geylang
+2021-12-05 03:04:01,80091,Bef Lor 23 Geylang,Bef lorong 23 Geylang
+2021-12-05 03:04:01,80111,Bef Geylang Rd,Bef Geylang road
+2021-12-05 03:04:01,80119,Aft Geylang Rd,Aft Geylang road
+2021-12-05 03:04:01,80251,Aft Lor 14 Geylang,Aft lorong 14 Geylang
+2021-12-05 03:04:01,80269,Bef Sims Ave,Bef Sims avenue
+2021-12-05 03:04:01,80289,Sims Pl Ter,Sims place Ter
+2021-12-05 03:04:01,81029,Aft Lor 28 Geylang,Aft lorong 28 Geylang
+2021-12-05 03:04:01,81049,Aft Lor 34 Geylang,Aft lorong 34 Geylang
+2021-12-05 03:04:01,81069,Opp Lor 39 Geylang,Opp lorong 39 Geylang
+2021-12-05 03:04:01,81191,Aft Old Airport Rd,Aft Old Airport road
+2021-12-05 03:04:01,81199,Bef Old Airport Rd,Bef Old Airport road
+2021-12-05 03:04:01,82051,Tg Katong Rd Sth P/G,Tg Katong road south P/G
+2021-12-05 03:04:01,82059,Opp Tg Katong Rd Sth P/G,Opp Tg Katong road south P/G
+2021-12-05 03:04:01,82069,Aft Lor 106 Changi,Aft lorong 106 Changi
+2021-12-05 03:04:01,82081,Aft Dunman Rd,Aft Dunman road
+2021-12-05 03:04:01,82141,Aft Koon Seng Rd,Aft Koon Seng road
+2021-12-05 03:04:01,82149,Bef Koon Seng Rd,Bef Koon Seng road
+2021-12-05 03:04:01,82151,Bef Joo Chiat Pl,Bef Joo Chiat place
+2021-12-05 03:04:01,82159,Aft Tembeling Rd,Aft Tembeling road
+2021-12-05 03:04:01,82171,Bef Mangis Rd,Bef Mangis road
+2021-12-05 03:04:01,82179,Aft Rambutan Rd,Aft Rambutan road
+2021-12-05 03:04:01,83049,Bef Lor 110 Changi,Bef lorong 110 Changi
+2021-12-05 03:04:01,83121,Bef Lor K Telok Kurau,Bef lorong K Telok Kurau
+2021-12-05 03:04:01,83131,Aft Lor H Telok Kurau,Aft lorong H Telok Kurau
+2021-12-05 03:04:01,83139,Aft Joo Chiat Pl,Aft Joo Chiat place
+2021-12-05 03:04:01,83141,Aft Lor G Telok Kurau,Aft lorong G Telok Kurau
+2021-12-05 03:04:01,83149,Aft Changi Rd,Aft Changi road
+2021-12-05 03:04:01,83169,Bef Still Rd,Bef Still road
+2021-12-05 03:04:01,83171,Bef Roseburn Ave,Bef Roseburn avenue
+2021-12-05 03:04:01,83219,Bef Frankel Ave,Bef Frankel avenue
+2021-12-05 03:04:01,83229,Bef Carlton Ave,Bef Carlton avenue
+2021-12-05 03:04:01,83271,Aft Swan Lake Ave,Aft Swan Lake avenue
+2021-12-05 03:04:01,83291,Aft Joo Chiat Pl,Aft Joo Chiat place
+2021-12-05 03:04:01,83299,Aft Lor G Telok Kurau,Aft lorong G Telok Kurau
+2021-12-05 03:04:01,83301,Aft East Coast Rd,Aft East Coast road
+2021-12-05 03:04:01,83311,Aft Lor Nangka,Aft lorong Nangka
+2021-12-05 03:04:01,83319,Aft Lor J Telok Kurau,Aft lorong J Telok Kurau
+2021-12-05 03:04:01,84121,Aft Bedok Sth Ave 1,Aft Bedok south avenue 1
+2021-12-05 03:04:01,84201,Bedok Resvr Stn Exit A,Bedok reservoir Stn Exit A
+2021-12-05 03:04:01,84209,Bedok Resvr Stn Exit B,Bedok reservoir Stn Exit B
+2021-12-05 03:04:01,84279,Aft Bedok Nth St 5,Aft Bedok north St 5
+2021-12-05 03:04:01,84299,Bedok Nth Depot,Bedok north Depot
+2021-12-05 03:04:01,84451,Bedok Nth Stn Exit A,Bedok north Stn Exit A
+2021-12-05 03:04:01,84539,Bedok Nth Stn Exit B,Bedok north Stn Exit B
+2021-12-05 03:04:01,84581,Opp Bedok Sth NPC,Opp Bedok south NPC
+2021-12-05 03:04:01,84589,Bef New Upp Changi Rd,Bef New upper Changi road
+2021-12-05 03:04:01,84591,Sbst Bedok Nth Depot,Sbst Bedok north Depot
+2021-12-05 03:04:01,84599,Opp Sbst Bedok Nth Depot,Opp Sbst Bedok north Depot
+2021-12-05 03:04:01,85031,Excelsior Gdns,Excelsior gardens
+2021-12-05 03:04:01,85039,Opp Excelsior Gdns,Opp Excelsior gardens
+2021-12-05 03:04:01,85061,Opp Bedok Mkt Pl,Opp Bedok Mkt place
+2021-12-05 03:04:01,85069,Bedok Mkt Pl,Bedok Mkt place
+2021-12-05 03:04:01,85101,Aft Bedok Rd,Aft Bedok road
+2021-12-05 03:04:01,85109,Bef Bedok Rd,Bef Bedok road
+2021-12-05 03:04:01,91049,Bef Fort Rd,Bef Fort road
+2021-12-05 03:04:01,91069,Bef Walton Rd,Bef Walton road
+2021-12-05 03:04:01,91071,Bef Tg Katong Rd,Bef Tg Katong road
+2021-12-05 03:04:01,91079,Aft Tg Katong Rd,Aft Tg Katong road
+2021-12-05 03:04:01,91081,Fort Gdns,Fort gardens
+2021-12-05 03:04:01,91089,Opp Fort Gdns,Opp Fort gardens
+2021-12-05 03:04:01,91091,Bef Kg Kayu Rd,Bef Kg Kayu road
+2021-12-05 03:04:01,91099,Bef Wilkinson Rd,Bef Wilkinson road
+2021-12-05 03:04:01,92179,Aft Duku Rd,Aft Duku road
+2021-12-05 03:04:01,92201,Aft Lor M Telok Kurau,Aft lorong M Telok Kurau
+2021-12-05 03:04:01,92241,Amber Gdns,Amber gardens
+2021-12-05 03:04:01,92249,Opp Amber Gdns,Opp Amber gardens
+2021-12-05 03:04:01,92301,Bef St. Patrick's Rd,Bef St. Patrick's road
+2021-12-05 03:04:01,93021,Opp Mandarin Gdns,Opp Mandarin gardens
+2021-12-05 03:04:01,93029,Mandarin Gdns,Mandarin gardens
+2021-12-05 03:04:01,93061,Bef Siglap Rd,Bef Siglap road
+2021-12-05 03:04:01,93069,Aft Siglap Rd,Aft Siglap road
+2021-12-05 03:04:01,93091,Opp Siglap Sth CC,Opp Siglap south CC
+2021-12-05 03:04:01,93099,Siglap Sth CC,Siglap south CC
+2021-12-05 03:04:01,93101,Aft Coldstream Ave,Aft Coldstream avenue
+2021-12-05 03:04:01,93109,Bef Frankel Pl,Bef Frankel place
+2021-12-05 03:04:01,93111,Bef Elite Pk Ave,Bef Elite Pk avenue
+2021-12-05 03:04:01,93119,Aft Elite Pk Ave,Aft Elite Pk avenue
+2021-12-05 03:04:01,94009,Upp East Coast Ter,upper East Coast Ter
+2021-12-05 03:04:01,94011,Evergreen Gdn,Evergreen garden
+2021-12-05 03:04:01,94019,Opp Evergreen Ave,Opp Evergreen avenue
+2021-12-05 03:04:01,94021,Bef Sennett Rd,Bef Sennett road
+2021-12-05 03:04:01,94029,Aft Sennet Rd,Aft Sennet road
+2021-12-05 03:04:01,94041,Aft Parbury Ave,Aft Parbury avenue
+2021-12-05 03:04:01,94049,Aft Bedok Sth Ave 3,Aft Bedok south avenue 3
+2021-12-05 03:04:01,95161,Bef Changi Ferry Rd,Bef Changi Ferry road
+2021-12-05 03:04:01,95169,Aft Changi Ferry Rd,Aft Changi Ferry road
+2021-12-05 03:04:01,95901,Bef Simei Rd,Bef Simei road
+2021-12-05 03:04:01,95909,Aft Somapah Rd,Aft Somapah road
+2021-12-05 03:04:01,96011,Bef Simei Ave,Bef Simei avenue
+2021-12-05 03:04:01,96019,Aft Simei Ave,Aft Simei avenue
+2021-12-05 03:04:01,96041,Upp Changi Stn/Opp SUTD,upper Changi Stn/Opp SUTD
+2021-12-05 03:04:01,96049,Upp Changi Stn/SUTD,upper Changi Stn/SUTD
+2021-12-05 03:04:01,96091,Aft Upp Changi Rd,Aft upper Changi road
+2021-12-05 03:04:01,96099,Aft Upp Changi Rd East,Aft upper Changi road East
+2021-12-05 03:04:01,96311,Bef Changi Sth St 2,Bef Changi south St 2
+2021-12-05 03:04:01,96351,Bef Changi Sth St 1,Bef Changi south St 1
+2021-12-05 03:04:01,97071,Aft St. John's Cres,Aft St. John's crescent
+2021-12-05 03:04:01,97079,Opp St. John's Cres,Opp St. John's crescent
+2021-12-05 03:04:01,97099,Aft Loyang Ave,Aft Loyang avenue
+2021-12-05 03:04:01,97121,Bef Old Tampines Rd,Bef Old Tampines road
+2021-12-05 03:04:01,97129,Bef Loyang Ave,Bef Loyang avenue
+2021-12-05 03:04:01,97141,Aft Upp Changi Rd Nth,Aft upper Changi road north
+2021-12-05 03:04:01,97151,Aft Changi Nth St 2,Aft Changi north St 2
+2021-12-05 03:04:01,98301,Avila Gdns,Avila gardens
+2021-12-05 03:04:01,99021,Bef Cranwell Rd,Bef Cranwell road
+2021-12-05 03:04:01,99029,Aft Cranwell Rd,Aft Cranwell road
+2021-12-05 03:04:01,99071,Aft Old Pier Rd,Aft Old Pier road
+2021-12-05 03:04:01,99079,Opp Old Pier Rd,Opp Old Pier road
+2021-12-05 03:04:01,99081,Aft Cranwell Rd,Aft Cranwell road
+2021-12-05 03:04:01,99089,Bef Cranwell Rd,Bef Cranwell road
+2021-12-05 03:04:01,99091,Bef Turnhouse Rd,Bef Turnhouse road
+2021-12-05 03:04:01,99099,Aft Turnhouse Rd,Aft Turnhouse road
+2021-12-05 03:04:01,01631,Aft Beach Rd,Aft Beach road
+2021-12-05 03:04:01,01639,Bef Beach Rd,Bef Beach road
+2021-12-05 03:04:01,03031,Raffles Pl Stn Exit F,Raffles place Stn Exit F
+2021-12-05 03:04:01,03331,Bef Marina Gdns Dr,Bef Marina gardens Dr
+2021-12-05 03:04:01,03339,Aft Marina Gdns Dr,Aft Marina gardens Dr
+2021-12-05 03:04:01,03341,Bef Gdns by the Bay,Bef gardens by the Bay
+2021-12-05 03:04:01,03349,Aft Gdns by the Bay,Aft gardens by the Bay
+2021-12-05 03:04:01,03371,Gdns by the Bay,gardens by the Bay
+2021-12-05 03:04:01,03411,Opp Marina Sth Pier Stn,Opp Marina south Pier Stn
+2021-12-05 03:04:01,03419,Marina Sth Pier Stn,Marina south Pier Stn
+2021-12-05 03:04:01,04311,Aft River Valley Rd,Aft River Valley road
+2021-12-05 03:04:01,05129,Opp One Upp Pickering,Opp One upper Pickering
+2021-12-05 03:04:01,05259,Aft Kreta Ayer Rd,Aft Kreta Ayer road
+2021-12-05 03:04:01,05269,Maxwell Rd FC,Maxwell road FC
+2021-12-05 03:04:01,05421,Aft Craig Rd,Aft Craig road
+2021-12-05 03:04:01,05429,Bef Craig Rd,Bef Craig road
+2021-12-05 03:04:01,05641,Bef Cantonment Rd,Bef Cantonment road
+2021-12-05 03:04:01,06169,River Pl Condo,River place Condo
+2021-12-05 03:04:01,07241,Bef S'Goon Rd,Bef serangoon road
+2021-12-05 03:04:01,07249,Aft Kempas Rd,Aft Kempas road
+2021-12-05 03:04:01,07319,Aft Allenby Rd,Aft Allenby road
+2021-12-05 03:04:01,07331,Aft King George's Ave,Aft King George's avenue
+2021-12-05 03:04:01,07371,Aft Kallang Rd,Aft Kallang road
+2021-12-05 03:04:01,07379,Aperia/Bef Kallang Rd,Aperia/Bef Kallang road
+2021-12-05 03:04:01,07419,Opp Veerasamy Rd,Opp Veerasamy road
+2021-12-05 03:04:01,09121,Bef Tomlinson Rd,Bef Tomlinson road
+2021-12-05 03:04:01,09139,Aft Cuscaden Rd,Aft Cuscaden road
+2021-12-05 03:04:01,09159,Aft Tomlinson Rd,Aft Tomlinson road
+2022-12-01 00:59:15,10011,Bef Neil Rd,Bef Neil road
+2022-12-01 00:59:15,10291,Bef Dawson Rd,Bef Dawson road
+2022-12-01 00:59:15,10299,Aft Dawson Rd,Aft Dawson road
+2022-12-01 00:59:15,10351,Bef Tiong Bahru Rd,Bef Tiong Bahru road
+2022-12-01 00:59:15,10359,Aft Tiong Bahru Rd,Aft Tiong Bahru road
+2022-12-01 00:59:15,10471,Bef Tanglin Rd,Bef Tanglin road
+2022-12-01 00:59:15,10479,Aft Tanglin Rd,Aft Tanglin road
+2022-12-01 00:59:15,11041,Aft C'wealth Dr,Aft commonwealth Dr
+2022-12-01 00:59:15,11101,Farrer Rd Mkt,Farrer road Mkt
+2022-12-01 00:59:15,11111,Farrer Rd Stn Exit B,Farrer road Stn Exit B
+2022-12-01 00:59:15,11119,Farrer Rd Stn Exit A,Farrer road Stn Exit A
+2022-12-01 00:59:15,11161,C'Wealth Stn Exit A/D,commonwealth Stn Exit A/D
+2022-12-01 00:59:15,11169,C'Wealth Stn Exit B/C,commonwealth Stn Exit B/C
+2022-12-01 00:59:15,11209,Opp Peirce Rd,Opp Peirce road
+2022-12-01 00:59:15,11211,Aft Peirce Rd,Aft Peirce road
+2022-12-01 00:59:15,11279,Aft Coronation Rd West,Aft Coronation road West
+2022-12-01 00:59:15,11281,Aft Tan Boon Chong Ave,Aft Tan Boon Chong avenue
+2022-12-01 00:59:15,11289,Opp Tan Boon Chong Ave,Opp Tan Boon Chong avenue
+2022-12-01 00:59:15,11331,Opp Dynasty Gdn II,Opp Dynasty garden II
+2022-12-01 00:59:15,11401,Holland V Stn/Blk12,holland village Stn/Blk12
+2022-12-01 00:59:15,11419,Holland V Stn Exit A,holland village Stn Exit A
+2022-12-01 00:59:15,12111,Bef Clementi Rd,Bef Clementi road
+2022-12-01 00:59:15,12131,Aft Grove Ave,Aft Grove avenue
+2022-12-01 00:59:15,13029,Bef Tyersall Ave,Bef Tyersall avenue
+2022-12-01 00:59:15,13031,Opp Chatsworth Rd,Opp Chatsworth road
+2022-12-01 00:59:15,13039,Bef Chatsworth Rd,Bef Chatsworth road
+2022-12-01 00:59:15,13041,Aft Camp Rd,Aft Camp road
+2022-12-01 00:59:15,13091,Aft Kim Yam Rd,Aft Kim Yam road
+2022-12-01 00:59:15,13099,Bef Kim Yam Rd,Bef Kim Yam road
+2022-12-01 00:59:15,13101,Opp Mohd Sultan Rd,Opp Mohd Sultan road
+2022-12-01 00:59:15,13109,UE Sq/Bef Mohd Sultan Rd,UE Sq/Bef Mohd Sultan road
+2022-12-01 00:59:15,14139,Bef Seah Im Rd,Bef Seah Im road
+2022-12-01 00:59:15,14189,Aft Alexandra Rd,Aft Alexandra road
+2022-12-01 00:59:15,15071,Opp Lor Sarhad,Opp lorong Sarhad
+2022-12-01 00:59:15,15079,Aft Lor Sarhad,Aft lorong Sarhad
+2022-12-01 00:59:15,15221,Aft Sth Buona Vista Rd,Aft south Buona Vista road
+2022-12-01 00:59:15,15229,Bef Sth Buona Vista Rd,Bef south Buona Vista road
+2022-12-01 00:59:15,16089,Aft Clementi Rd,Aft Clementi road
+2022-12-01 00:59:15,16201,Barossa Gdns,Barossa gardens
+2022-12-01 00:59:15,17091,Aft Clementi Ave 1,Aft Clementi avenue 1
+2022-12-01 00:59:15,17351,Aft Clementi Rd,Aft Clementi road
+2022-12-01 00:59:15,17359,Bef Clementi Rd,Bef Clementi road
+2022-12-01 00:59:15,17361,Opp West Coast Lk,Opp West Coast link
+2022-12-01 00:59:15,17369,Aft West Coast Lk,Aft West Coast link
+2022-12-01 00:59:15,18099,Bef Ayer Rajah Cres,Bef Ayer Rajah crescent
+2022-12-01 00:59:15,18191,Bef Whitchurch Rd,Bef Whitchurch road
+2022-12-01 00:59:15,18199,Aft Whitchurch Rd,Aft Whitchurch road
+2022-12-01 00:59:15,20061,Aft Jurong Town Hall Rd,Aft Jurong Town Hall road
+2022-12-01 00:59:15,20069,Bef Jurong Town Hall Rd,Bef Jurong Town Hall road
+2022-12-01 00:59:15,20179,Aft Teban Gdns Rd,Aft Teban gardens road
+2022-12-01 00:59:15,20209,Bef Jurong Town Hall Rd,Bef Jurong Town Hall road
+2022-12-01 00:59:15,20251,Bef Teban Gdns Rd,Bef Teban gardens road
+2022-12-01 00:59:15,20259,C'wealth Sec Sch,commonwealth Sec Sch
+2022-12-01 00:59:15,20261,Aft Pandan Gdns,Aft Pandan gardens
+2022-12-01 00:59:15,20269,Bef Pandan Gdns,Bef Pandan gardens
+2022-12-01 00:59:15,21019,Aft Yuan Ching Rd,Aft Yuan Ching road
+2022-12-01 00:59:15,21021,Bef Jurong Port Rd,Bef Jurong Port road
+2022-12-01 00:59:15,21029,Aft Corp Pl,Aft Corp place
+2022-12-01 00:59:15,21051,Bef Penjuru Rd,Bef Penjuru road
+2022-12-01 00:59:15,21059,Aft Penjuru Rd,Aft Penjuru road
+2022-12-01 00:59:15,21111,Aft Jurong Pier Rd,Aft Jurong Pier road
+2022-12-01 00:59:15,21119,Bef Jurong Pier Rd,Bef Jurong Pier road
+2022-12-01 00:59:15,21131,Bef Jurong Port Rd,Bef Jurong Port road
+2022-12-01 00:59:15,21139,Aft Jurong Port Rd,Aft Jurong Port road
+2022-12-01 00:59:15,21171,Opp Corp Pl,Opp Corp place
+2022-12-01 00:59:15,21179,Corp Pl,Corp place
+2022-12-01 00:59:15,21261,Aft Chin Bee Ave,Aft Chin Bee avenue
+2022-12-01 00:59:15,21269,Bef Chin Bee Ave,Bef Chin Bee avenue
+2022-12-01 00:59:15,21311,Bef Tractor Rd,Bef Tractor road
+2022-12-01 00:59:15,21319,Opp Tractor Rd,Opp Tractor road
+2022-12-01 00:59:15,21469,Bef Chia Ping Rd,Bef Chia Ping road
+2022-12-01 00:59:15,21491,Bef Intl Rd,Bef Intl road
+2022-12-01 00:59:15,21529,Aft Third Chin Bee Rd,Aft Third Chin Bee road
+2022-12-01 00:59:15,21619,Aft Corp Rd,Aft Corp road
+2022-12-01 00:59:15,21631,Blk 115/Opp Japanese Gdn,Blk 115/Opp Japanese garden
+2022-12-01 00:59:15,21639,Japanese Gdn/Opp Blk 115,Japanese garden/Opp Blk 115
+2022-12-01 00:59:15,21651,Opp Chinese Gdn,Opp Chinese garden
+2022-12-01 00:59:15,21659,Chinese Gdn,Chinese garden
+2022-12-01 00:59:15,21779,Aft Yuan Ching Rd,Aft Yuan Ching road
+2022-12-01 00:59:15,22041,Aft Tg Kling Rd,Aft Tg Kling road
+2022-12-01 00:59:15,22049,Bef Tg Kling Rd,Bef Tg Kling road
+2022-12-01 00:59:15,22071,Bef Jurong Pier Rd,Bef Jurong Pier road
+2022-12-01 00:59:15,22079,Aft Jurong Pier Rd,Aft Jurong Pier road
+2022-12-01 00:59:15,22169,Aft Intl Rd,Aft Intl road
+2022-12-01 00:59:15,22219,Aft Neythal Rd,Aft Neythal road
+2022-12-01 00:59:15,22221,Aft Pioneer Rd Nth,Aft Pioneer road north
+2022-12-01 00:59:15,22229,Bef Pioneer Rd Nth,Bef Pioneer road north
+2022-12-01 00:59:15,22271,Bef Kwong Min Rd,Bef Kwong Min road
+2022-12-01 00:59:15,22281,Aft Soon Lee Rd,Aft Soon Lee road
+2022-12-01 00:59:15,22289,Bef Fan Yoong Rd,Bef Fan Yoong road
+2022-12-01 00:59:15,22299,Bef Soon Lee Rd,Bef Soon Lee road
+2022-12-01 00:59:15,22309,Aft Fan Yoong Rd,Aft Fan Yoong road
+2022-12-01 00:59:15,22319,Bef Enterprise Rd,Bef Enterprise road
+2022-12-01 00:59:15,22401,Aft Shipyard Rd,Aft Shipyard road
+2022-12-01 00:59:15,22409,Bef Shipyard Rd,Bef Shipyard road
+2022-12-01 00:59:15,23051,Bef Kian Teck Rd,Bef Kian Teck road
+2022-12-01 00:59:15,23059,Aft Kian Teck Rd,Aft Kian Teck road
+2022-12-01 00:59:15,23061,Aft Kian Teck Rd,Aft Kian Teck road
+2022-12-01 00:59:15,23069,Bef Kian Teck Rd,Bef Kian Teck road
+2022-12-01 00:59:15,23099,Bef First Lok Yang Rd,Bef First Lok Yang road
+2022-12-01 00:59:15,23109,Aft Third Lok Yang Rd,Aft Third Lok Yang road
+2022-12-01 00:59:15,23111,Bef Fourth Lok Yang Rd,Bef Fourth Lok Yang road
+2022-12-01 00:59:15,23119,Aft Fourth Lok Yang Rd,Aft Fourth Lok Yang road
+2022-12-01 00:59:15,23159,Aft Fifth Lok Yang Rd,Aft Fifth Lok Yang road
+2022-12-01 00:59:15,23161,Aft Kian Teck Rd,Aft Kian Teck road
+2022-12-01 00:59:15,23169,Bef Kian Teck Rd,Bef Kian Teck road
+2022-12-01 00:59:15,23179,Aft Second Lok Yang Rd,Aft Second Lok Yang road
+2022-12-01 00:59:15,23181,Aft Kian Teck Rd,Aft Kian Teck road
+2022-12-01 00:59:15,23189,Bef First Lok Yang Rd,Bef First Lok Yang road
+2022-12-01 00:59:15,23241,Aft Benoi Rd,Aft Benoi road
+2022-12-01 00:59:15,23249,Bef Benoi Rd,Bef Benoi road
+2022-12-01 00:59:15,23251,Aft Shipyard Rd,Aft Shipyard road
+2022-12-01 00:59:15,23259,Bef Shipyard Rd,Bef Shipyard road
+2022-12-01 00:59:15,23281,Aft Pioneer Rd,Aft Pioneer road
+2022-12-01 00:59:15,23341,Aft Pioneer Rd,Aft Pioneer road
+2022-12-01 00:59:15,23349,Bef Pioneer Rd,Bef Pioneer road
+2022-12-01 00:59:15,23351,Aft Gul Ave,Aft Gul avenue
+2022-12-01 00:59:15,23359,Opp Gul Ave,Opp Gul avenue
+2022-12-01 00:59:15,23419,Bef Shipyard Cres,Bef Shipyard crescent
+2022-12-01 00:59:15,23441,Bef Benoi Pl,Bef Benoi place
+2022-12-01 00:59:15,23449,Aft Benoi Pl,Aft Benoi place
+2022-12-01 00:59:15,23471,Aft Benoi Rd,Aft Benoi road
+2022-12-01 00:59:15,23479,Bef Benoi Rd,Bef Benoi road
+2022-12-01 00:59:15,23501,Aft Pioneer Rd Nth,Aft Pioneer road north
+2022-12-01 00:59:15,24089,Aft Gul Ave,Aft Gul avenue
+2022-12-01 00:59:15,24149,Aft Joo Koon Cres,Aft Joo Koon crescent
+2022-12-01 00:59:15,24159,Aft Joo Koon Rd,Aft Joo Koon road
+2022-12-01 00:59:15,24521,Bef Tuas Ave 5,Bef Tuas avenue 5
+2022-12-01 00:59:15,24529,Aft Tuas Ave 5,Aft Tuas avenue 5
+2022-12-01 00:59:15,24631,Bef Benoi Rd,Bef Benoi road
+2022-12-01 00:59:15,24639,Aft Benoi Rd,Aft Benoi road
+2022-12-01 00:59:15,24691,Aft Tuas Rd,Aft Tuas road
+2022-12-01 00:59:15,24699,Bef Tuas Rd,Bef Tuas road
+2022-12-01 00:59:15,24701,Tuas Cres Stn Exit B,Tuas crescent Stn Exit B
+2022-12-01 00:59:15,24709,Tuas Cres Stn Exit A,Tuas crescent Stn Exit A
+2022-12-01 00:59:15,24711,Tuas West Rd Stn Exit B,Tuas West road Stn Exit B
+2022-12-01 00:59:15,24719,Tuas West Rd Stn Exit A,Tuas West road Stn Exit A
+2022-12-01 00:59:15,25059,Aft Tuas Sth Blvd,Aft Tuas south boulevard
+2022-12-01 00:59:15,25091,Aft Tuas Ave 7,Aft Tuas avenue 7
+2022-12-01 00:59:15,25111,Aft Tuas Ave 10,Aft Tuas avenue 10
+2022-12-01 00:59:15,25119,Bef Tuas Ave 10,Bef Tuas avenue 10
+2022-12-01 00:59:15,25121,Aft Tuas Ave 8,Aft Tuas avenue 8
+2022-12-01 00:59:15,25129,Aft Tuas Ave 6,Aft Tuas avenue 6
+2022-12-01 00:59:15,25201,Aft Tuas Rd,Aft Tuas road
+2022-12-01 00:59:15,25209,Bef Tuas Rd,Bef Tuas road
+2022-12-01 00:59:15,25219,Aft Tuas Ave 2,Aft Tuas avenue 2
+2022-12-01 00:59:15,25249,Aft Tuas West Rd,Aft Tuas West road
+2022-12-01 00:59:15,25371,Aft Tuas Ave 4,Aft Tuas avenue 4
+2022-12-01 00:59:15,25379,Aft Tuas Ave 6,Aft Tuas avenue 6
+2022-12-01 00:59:15,25389,Aft Tuas Ave 8,Aft Tuas avenue 8
+2022-12-01 00:59:15,25391,Bef Pioneer Rd,Bef Pioneer road
+2022-12-01 00:59:15,25399,Aft Pioneer Rd,Aft Pioneer road
+2022-12-01 00:59:15,25421,Opp Tuas Lk Stn,Opp Tuas link Stn
+2022-12-01 00:59:15,25429,Tuas Lk Stn,Tuas link Stn
+2022-12-01 00:59:15,25441,Bef Pioneer Rd,Bef Pioneer road
+2022-12-01 00:59:15,25449,Aft Pioneer Rd,Aft Pioneer road
+2022-12-01 00:59:15,25461,Aft Tuas West Ave,Aft Tuas West avenue
+2022-12-01 00:59:15,25469,Bef Tuas West Ave,Bef Tuas West avenue
+2022-12-01 00:59:15,25661,Bef Tuas Bay Lk,Bef Tuas Bay link
+2022-12-01 00:59:15,25669,Aft Tuas Bay Lk,Aft Tuas Bay link
+2022-12-01 00:59:15,25681,Bef Tuas West Ave,Bef Tuas West avenue
+2022-12-01 00:59:15,25689,Aft Tuas West Ave,Aft Tuas West avenue
+2022-12-01 00:59:15,25691,Aft Tuas West Rd Stn,Aft Tuas West road Stn
+2022-12-01 00:59:15,25751,Bef Tuas Sth Ave 14,Bef Tuas south avenue 14
+2022-12-01 00:59:15,25771,Aft Tuas Sth St 7,Aft Tuas south St 7
+2022-12-01 00:59:15,25791,Bef Tuas Sth Ave 10,Bef Tuas south avenue 10
+2022-12-01 00:59:15,25801,Bef Tuas Sth Ave 7,Bef Tuas south avenue 7
+2022-12-01 00:59:15,25811,Bef Tuas Ave 7,Bef Tuas avenue 7
+2022-12-01 00:59:15,25819,Aft Tuas Ave 7,Aft Tuas avenue 7
+2022-12-01 00:59:15,26011,Bef Tuas Ave 11,Bef Tuas avenue 11
+2022-12-01 00:59:15,26021,Bef Tuas Ave 13,Bef Tuas avenue 13
+2022-12-01 00:59:15,26069,Aft Tuas Ave 16,Aft Tuas avenue 16
+2022-12-01 00:59:15,26081,Bef Tuas Ave 18A,Bef Tuas avenue 18A
+2022-12-01 00:59:15,26089,Bef Tuas Ave 20,Bef Tuas avenue 20
+2022-12-01 00:59:15,26099,Bef Tuas Ave 13,Bef Tuas avenue 13
+2022-12-01 00:59:15,26101,BASF Sth East Asia,BASF south East Asia
+2022-12-01 00:59:15,26109,Bef Tuas Ave 11,Bef Tuas avenue 11
+2022-12-01 00:59:15,26131,Aft Tuas Cres,Aft Tuas crescent
+2022-12-01 00:59:15,26241,Aft Tuas Sth Ave 2,Aft Tuas south avenue 2
+2022-12-01 00:59:15,26249,Bef Tuas Sth Ave 2,Bef Tuas south avenue 2
+2022-12-01 00:59:15,26251,Bef Tuas Sth Ave 2,Bef Tuas south avenue 2
+2022-12-01 00:59:15,26259,Aft Tuas Sth Ave 2,Aft Tuas south avenue 2
+2022-12-01 00:59:15,26261,Aft Tuas Sth Ave 4,Aft Tuas south avenue 4
+2022-12-01 00:59:15,26269,Bef Tuas Sth Ave 4,Bef Tuas south avenue 4
+2022-12-01 00:59:15,26279,Aft Tuas Sth Ave 4,Aft Tuas south avenue 4
+2022-12-01 00:59:15,26289,Aft Tuas Sth St 2,Aft Tuas south St 2
+2022-12-01 00:59:15,26299,Bef Tuas Sth Ave 6,Bef Tuas south avenue 6
+2022-12-01 00:59:15,26311,Aft Tuas Sth Ave 6,Aft Tuas south avenue 6
+2022-12-01 00:59:15,26321,Bef Tuas Sth St 2,Bef Tuas south St 2
+2022-12-01 00:59:15,26389,Bef Tuas Sth Ave 5,Bef Tuas south avenue 5
+2022-12-01 00:59:15,26399,Aft Tuas View Cres,Aft Tuas View crescent
+2022-12-01 00:59:15,26429,Bef Tuas Sth Ave 9,Bef Tuas south avenue 9
+2022-12-01 00:59:15,26431,Aft Tuas Sth Ave 9,Aft Tuas south avenue 9
+2022-12-01 00:59:15,26441,Bef Tuas Sth Ave 7,Bef Tuas south avenue 7
+2022-12-01 00:59:15,26451,Bef Tuas Sth Ave 5,Bef Tuas south avenue 5
+2022-12-01 00:59:15,26461,Aft Tuas Sth Ave 8,Aft Tuas south avenue 8
+2022-12-01 00:59:15,27071,Nanyang Cres Halls,Nanyang crescent Halls
+2022-12-01 00:59:15,27121,Bef Nanyang Ave,Bef Nanyang avenue
+2022-12-01 00:59:15,27129,Opp Nanyang Ave,Opp Nanyang avenue
+2022-12-01 00:59:15,27171,Bef Lor Danau,Bef lorong Danau
+2022-12-01 00:59:15,27179,Aft Lor Danau,Aft lorong Danau
+2022-12-01 00:59:15,27251,Academic Bldg Sth,Academic Bldg south
+2022-12-01 00:59:15,27449,Aft Westwood Ave,Aft Westwood avenue
+2022-12-01 00:59:15,27509,Bef Yunnan Cres,Bef Yunnan crescent
+2022-12-01 00:59:15,28011,Bef Toh Tuck Ave,Bef Toh Tuck avenue
+2022-12-01 00:59:15,28019,Aft Toh Tuck Ave,Aft Toh Tuck avenue
+2022-12-01 00:59:15,28181,Bef Toh Tuck Lk,Bef Toh Tuck link
+2022-12-01 00:59:15,28189,Aft Toh Tuck Lk,Aft Toh Tuck link
+2022-12-01 00:59:15,28341,Chinese Gdn Stn,Chinese garden Stn
+2022-12-01 00:59:15,28349,Opp Chinese Gdn Stn,Opp Chinese garden Stn
+2022-12-01 00:59:15,28701,Aft Old Toh Tuck Rd,Aft Old Toh Tuck road
+2022-12-01 00:59:15,28709,Bef Old Toh Tuck Rd,Bef Old Toh Tuck road
+2022-12-01 00:59:15,29031,Aft Penjuru Pl,Aft Penjuru place
+2022-12-01 00:59:15,29069,Aft Pandan Rd,Aft Pandan road
+2022-12-01 00:59:15,29159,Aft Teban Gdns Cres,Aft Teban gardens crescent
+2022-12-01 00:59:15,30119,Aft Choa Chu Kang Ave 6,Aft Choa Chu Kang avenue 6
+2022-12-01 00:59:15,31009,Choa Chu Kang Rd End,Choa Chu Kang road End
+2022-12-01 00:59:15,31011,Aft Nanyang Ave,Aft Nanyang avenue
+2022-12-01 00:59:15,31019,Bef Nanyang Ave,Bef Nanyang avenue
+2022-12-01 00:59:15,31069,Bef Old Choa Chu Kang Rd,Bef Old Choa Chu Kang road
+2022-12-01 00:59:15,31121,Nirvana Memorial Gdn,Nirvana Memorial garden
+2022-12-01 00:59:15,31129,Aft Nirvana Memorial Gdn,Aft Nirvana Memorial garden
+2022-12-01 00:59:15,31151,Aft Lim Chu Kang Rd,Aft Lim Chu Kang road
+2022-12-01 00:59:15,31159,Bef Lim Chu Kang Rd,Bef Lim Chu Kang road
+2022-12-01 00:59:15,31191,B26 Old Choa Chu Kang Rd,B26 Old Choa Chu Kang road
+2022-12-01 00:59:15,31199,B25 Old Choa Chu Kang Rd,B25 Old Choa Chu Kang road
+2022-12-01 00:59:15,32031,Opp Ama Keng Rd,Opp Ama Keng road
+2022-12-01 00:59:15,32039,Aft Ama Keng Rd,Aft Ama Keng road
+2022-12-01 00:59:15,32069,B26 Lim Chu Kang Rd,B26 Lim Chu Kang road
+2022-12-01 00:59:15,32109,Bef Lor Serambi,Bef lorong Serambi
+2022-12-01 00:59:15,33011,B19 Lim Chu Kang Rd,B19 Lim Chu Kang road
+2022-12-01 00:59:15,33019,B20 Lim Chu Kang Rd,B20 Lim Chu Kang road
+2022-12-01 00:59:15,33021,Opp Neo Tiew Rd,Opp Neo Tiew road
+2022-12-01 00:59:15,33029,Aft Neo Tiew Rd,Aft Neo Tiew road
+2022-12-01 00:59:15,34041,B03 Lim Chu Kang Rd,B03 Lim Chu Kang road
+2022-12-01 00:59:15,34101,Aft Old Lim Chu Kang Rd,Aft Old Lim Chu Kang road
+2022-12-01 00:59:15,34109,Aft Lim Chu Kang Rd,Aft Lim Chu Kang road
+2022-12-01 00:59:15,40021,Bef Winstedt Rd,Bef Winstedt road
+2022-12-01 00:59:15,40029,Aft Makepeace Rd,Aft Makepeace road
+2022-12-01 00:59:15,40091,Bef Lewis Rd,Bef Lewis road
+2022-12-01 00:59:15,40099,Aft Dunkirk Ave,Aft Dunkirk avenue
+2022-12-01 00:59:15,40119,Bef Goldhill Ave,Bef Goldhill avenue
+2022-12-01 00:59:15,40199,Aft Balmoral Rd,Aft Balmoral road
+2022-12-01 00:59:15,40201,Chelsea Gdns Condo,Chelsea gardens Condo
+2022-12-01 00:59:15,41019,Aft Kheam Hock Rd,Aft Kheam Hock road
+2022-12-01 00:59:15,41021,Botanic Gdns Stn,Botanic gardens Stn
+2022-12-01 00:59:15,41029,Opp Botanic Gdns Stn,Opp Botanic gardens Stn
+2022-12-01 00:59:15,41081,Sixth Ave Stn,Sixth avenue Stn
+2022-12-01 00:59:15,41151,Aft Sime Rd,Aft Sime road
+2022-12-01 00:59:15,41161,Aft Kheam Hock Rd,Aft Kheam Hock road
+2022-12-01 00:59:15,41169,Bef Kheam Hock Rd,Bef Kheam Hock road
+2022-12-01 00:59:15,42011,Sixth Ave Ctr,Sixth avenue Ctr
+2022-12-01 00:59:15,42019,Opp Sixth Ave Stn,Opp Sixth avenue Stn
+2022-12-01 00:59:15,42021,Aft Maple Ave,Aft Maple avenue
+2022-12-01 00:59:15,42029,Aft Swiss Club Rd,Aft Swiss Club road
+2022-12-01 00:59:15,42049,Hua Guan Gdns,Hua Guan gardens
+2022-12-01 00:59:15,42129,Sixth Ave Ville,Sixth avenue Ville
+2022-12-01 00:59:15,42131,Aft Lantana Ave,Aft Lantana avenue
+2022-12-01 00:59:15,42139,Ave Villa,avenue Villa
+2022-12-01 00:59:15,42141,Bef Dunearn Rd,Bef Dunearn road
+2022-12-01 00:59:15,42149,Aft Bt Timah Rd,Aft Bt Timah road
+2022-12-01 00:59:15,42179,Aft Chun Tin Rd,Aft Chun Tin road
+2022-12-01 00:59:15,42191,Bef Bt Batok East Ave 6,Bef Bt Batok East avenue 6
+2022-12-01 00:59:15,42199,Aft Bt Batok East Ave 6,Aft Bt Batok East avenue 6
+2022-12-01 00:59:15,42221,Goodluck Gdn,Goodluck garden
+2022-12-01 00:59:15,42241,Aft Eng Kong Pl,Aft Eng Kong place
+2022-12-01 00:59:15,42249,Bef Eng Kong Pl,Bef Eng Kong place
+2022-12-01 00:59:15,42259,Aft Upp Bt Timah Rd,Aft upper Bt Timah road
+2022-12-01 00:59:15,42291,Opp Toh Tuck Cres,Opp Toh Tuck crescent
+2022-12-01 00:59:15,42299,Aft Toh Tuck Cres,Aft Toh Tuck crescent
+2022-12-01 00:59:15,43021,Aft Old Jurong Rd,Aft Old Jurong road
+2022-12-01 00:59:15,43071,Opp Dairy Farm Rd,Opp Dairy Farm road
+2022-12-01 00:59:15,43452,Aft Bt Batok West Ave 3,Aft Bt Batok West avenue 3
+2022-12-01 00:59:15,43461,Aft Bt Batok West Ave 5,Aft Bt Batok West avenue 5
+2022-12-01 00:59:15,43469,Bef Bt Batok West Ave 5,Bef Bt Batok West avenue 5
+2022-12-01 00:59:15,43891,Aft Dairy Farm Cres,Aft Dairy Farm crescent
+2022-12-01 00:59:15,43899,Bef Dairy Farm Cres,Bef Dairy Farm crescent
+2022-12-01 00:59:15,44069,Aft KJE Slip Rd,Aft KJE Slip road
+2022-12-01 00:59:15,44161,Aft Bt Batok West Ave 5,Aft Bt Batok West avenue 5
+2022-12-01 00:59:15,44169,Bef Bt Batok West Ave 5,Bef Bt Batok West avenue 5
+2022-12-01 00:59:15,44171,Bef Bt Batok West Ave 5,Bef Bt Batok West avenue 5
+2022-12-01 00:59:15,44179,Aft Bt Batok West Ave 5,Aft Bt Batok West avenue 5
+2022-12-01 00:59:15,44241,Opp Lompang Rd,Opp Lompang road
+2022-12-01 00:59:15,44351,Aft Chestnut Ave,Aft Chestnut avenue
+2022-12-01 00:59:15,44359,Bef Chestnut Ave,Bef Chestnut avenue
+2022-12-01 00:59:15,44361,Bef Dairy Farm Rd,Bef Dairy Farm road
+2022-12-01 00:59:15,44369,Aft Dairy Farm Rd,Aft Dairy Farm road
+2022-12-01 00:59:15,44689,Sunshine Pl,Sunshine place
+2022-12-01 00:59:15,45071,Bef Mandai Rd,Bef Mandai road
+2022-12-01 00:59:15,45079,Aft Mandai Rd,Aft Mandai road
+2022-12-01 00:59:15,45141,Aft W'Lands Rd,Aft woodlands road
+2022-12-01 00:59:15,45149,Bef W'Lands Rd,Bef woodlands road
+2022-12-01 00:59:15,45221,Aft W'Lands Rd,Aft woodlands road
+2022-12-01 00:59:15,45229,Bef W'Lands Rd,Bef woodlands road
+2022-12-01 00:59:15,45489,Bef Choa Chu Kang Lk,Bef Choa Chu Kang link
+2022-12-01 00:59:15,45491,Bef Choa Chu Kang Nth 5,Bef Choa Chu Kang north 5
+2022-12-01 00:59:15,46011,Bef W'Lands Ctr Rd,Bef woodlands Ctr road
+2022-12-01 00:59:15,46019,Aft W'Lands Ctr Rd,Aft woodlands Ctr road
+2022-12-01 00:59:15,46021,Bef W'Lands Ind Pk D St 2,Bef woodlands Ind Pk D St 2
+2022-12-01 00:59:15,46029,Aft W'Lands Ind Pk D St 2,Aft woodlands Ind Pk D St 2
+2022-12-01 00:59:15,46069,W'Lands Train Checkpt,woodlands Train Checkpt
+2022-12-01 00:59:15,46101,W'Lands Checkpt,woodlands Checkpt
+2022-12-01 00:59:15,46109,W'Lands Checkpt,woodlands Checkpt
+2022-12-01 00:59:15,46139,Aft Riverside Rd,Aft Riverside road
+2022-12-01 00:59:15,46321,W'Lands Civic Ctr,woodlands Civic Ctr
+2022-12-01 00:59:15,46329,Opp W'Lands Civic Ctr,Opp woodlands Civic Ctr
+2022-12-01 00:59:15,46339,Bef W'Lands Stn Exit 7,Bef woodlands Stn Exit 7
+2022-12-01 00:59:15,46381,Opp W'Lands Ind Pk D St 1,Opp woodlands Ind Pk D St 1
+2022-12-01 00:59:15,46389,Aft W'Lands Ind Pk D St 1,Aft woodlands Ind Pk D St 1
+2022-12-01 00:59:15,46489,Aft Gambas Ave,Aft Gambas avenue
+2022-12-01 00:59:15,46631,W'Lands Stn Exit 5,woodlands Stn Exit 5
+2022-12-01 00:59:15,46639,W'Lands Stn Exit 4,woodlands Stn Exit 4
+2022-12-01 00:59:15,46669,W'Lands Pr Sch,woodlands Pr Sch
+2022-12-01 00:59:15,46711,Bef W'lands Ind Pk E3,Bef woodlands Ind Pk E3
+2022-12-01 00:59:15,46719,Aft W'lands Ind Pk E3,Aft woodlands Ind Pk E3
+2022-12-01 00:59:15,46721,Bef W'Lands Ind Pk E7,Bef woodlands Ind Pk E7
+2022-12-01 00:59:15,46729,Aft W'Lands Ind Pk E7,Aft woodlands Ind Pk E7
+2022-12-01 00:59:15,46801,Aft W'Lands Mart,Aft woodlands Mart
+2022-12-01 00:59:15,46809,Opp W'Lands Mart,Opp woodlands Mart
+2022-12-01 00:59:15,46931,Opp W'Lands Spectrum 1,Opp woodlands Spectrum 1
+2022-12-01 00:59:15,47011,Bef W'Lands Waterfront Pk,Bef woodlands Waterfront Pk
+2022-12-01 00:59:15,47019,Aft W'Lands Waterfront Pk,Aft woodlands Waterfront Pk
+2022-12-01 00:59:15,47031,Bef Keramat Rd,Bef Keramat road
+2022-12-01 00:59:15,47039,Aft View Rd,Aft View road
+2022-12-01 00:59:15,47041,Opp W'Lands Auto Hub,Opp woodlands Auto Hub
+2022-12-01 00:59:15,47049,W'Lands Auto Hub,woodlands Auto Hub
+2022-12-01 00:59:15,47051,Aft W'Lands Ind Pk E4,Aft woodlands Ind Pk E4
+2022-12-01 00:59:15,47059,Bef W'Lands Ind Pk E4,Bef woodlands Ind Pk E4
+2022-12-01 00:59:15,47061,Aft Attap Valley Rd,Aft Attap Valley road
+2022-12-01 00:59:15,47069,Nth Tech,north Tech
+2022-12-01 00:59:15,47081,Aft Senoko Cres,Aft Senoko crescent
+2022-12-01 00:59:15,47091,Bef Senoko Cres,Bef Senoko crescent
+2022-12-01 00:59:15,47101,Aft Senoko Ave,Aft Senoko avenue
+2022-12-01 00:59:15,47201,W'lands Nth Stn,woodlands north Stn
+2022-12-01 00:59:15,47621,Aft Gambas Ave,Aft Gambas avenue
+2022-12-01 00:59:15,47811,W'Lands Sunny Food,woodlands Sunny Food
+2022-12-01 00:59:15,47819,Opp W'Lands Sunny Food,Opp woodlands Sunny Food
+2022-12-01 00:59:15,48021,Aft Mandai Lake Rd,Aft Mandai Lake road
+2022-12-01 00:59:15,48029,Bef Mandai Lake Rd,Bef Mandai Lake road
+2022-12-01 00:59:15,48061,Bef Mandai Ave,Bef Mandai avenue
+2022-12-01 00:59:15,48069,Aft Mandai Ave,Aft Mandai avenue
+2022-12-01 00:59:15,48081,Opp Upp Seletar Resvr,Opp upper Seletar reservoir
+2022-12-01 00:59:15,48089,Upp Seletar Resvr,upper Seletar reservoir
+2022-12-01 00:59:15,48101,Aft Meng Suan Rd,Aft Meng Suan road
+2022-12-01 00:59:15,48109,Opp Meng Suan Rd,Opp Meng Suan road
+2022-12-01 00:59:15,48111,Aft Mandai Rd,Aft Mandai road
+2022-12-01 00:59:15,48119,Bef Mandai Rd,Bef Mandai road
+2022-12-01 00:59:15,49081,Aft Kranji Cres,Aft Kranji crescent
+2022-12-01 00:59:15,49089,Bef Kranji Cres,Bef Kranji crescent
+2022-12-01 00:59:15,49149,Aft Kranji Lk,Aft Kranji link
+2022-12-01 00:59:15,49179,Aft Kranji Cres,Aft Kranji crescent
+2022-12-01 00:59:15,49189,Aft Kranji Rd,Aft Kranji road
+2022-12-01 00:59:15,49249,Aft Neo Tiew Rd,Aft Neo Tiew road
+2022-12-01 00:59:15,50071,Bef Carlisle Rd,Bef Carlisle road
+2022-12-01 00:59:15,50079,Opp Carlisle Rd,Opp Carlisle road
+2022-12-01 00:59:15,50169,Aft Irrawaddy Rd,Aft Irrawaddy road
+2022-12-01 00:59:15,50209,Aft Pegu Rd,Aft Pegu road
+2022-12-01 00:59:15,50321,Aft Gloucester Rd,Aft Gloucester road
+2022-12-01 00:59:15,51051,Aft Andrew Rd,Aft Andrew road
+2022-12-01 00:59:15,51071,MacRitchie Resvr,MacRitchie reservoir
+2022-12-01 00:59:15,51079,Opp MacRitchie Resvr,Opp MacRitchie reservoir
+2022-12-01 00:59:15,51111,Opp Andrew Rd,Opp Andrew road
+2022-12-01 00:59:15,51119,Bef Andrew Rd,Bef Andrew road
+2022-12-01 00:59:15,53051,Upp Thomson Stn Exit 5,upper Thomson Stn Exit 5
+2022-12-01 00:59:15,53059,Upp Thomson Stn Exit 2,upper Thomson Stn Exit 2
+2022-12-01 00:59:15,53061,Bef Windsor Pk Rd,Bef Windsor Pk road
+2022-12-01 00:59:15,53069,Aft Windsor Pk Rd,Aft Windsor Pk road
+2022-12-01 00:59:15,53081,Opp Faber Gdn,Opp Faber garden
+2022-12-01 00:59:15,53089,Faber Gdn,Faber garden
+2022-12-01 00:59:15,53091,Bef Ang Mo Kio Ave 1,Bef Ang Mo Kio avenue 1
+2022-12-01 00:59:15,53099,Aft Ang Mo Kio Ave 1,Aft Ang Mo Kio avenue 1
+2022-12-01 00:59:15,53381,Bishan Nth Shop Mall,Bishan north Shop Mall
+2022-12-01 00:59:15,53389,Opp Bishan Nth Shop Mall,Opp Bishan north Shop Mall
+2022-12-01 00:59:15,54051,Bef Ang Mo Kio Ave 5,Bef Ang Mo Kio avenue 5
+2022-12-01 00:59:15,54101,Aft Ang Mo Kio Ave 10,Aft Ang Mo Kio avenue 10
+2022-12-01 00:59:15,54109,Bef Ang Mo Kio Ave 10,Bef Ang Mo Kio avenue 10
+2022-12-01 00:59:15,55081,Opp Sunrise Gdns,Opp Sunrise gardens
+2022-12-01 00:59:15,55089,Aft Sunrise Gdns,Aft Sunrise gardens
+2022-12-01 00:59:15,55219,Bef Ang Mo Kio Ave 9,Bef Ang Mo Kio avenue 9
+2022-12-01 00:59:15,55241,Aft Yio Chu Kang Rd,Aft Yio Chu Kang road
+2022-12-01 00:59:15,55249,Bef Yio Chu Kang Rd,Bef Yio Chu Kang road
+2022-12-01 00:59:15,55361,Countryside Gdn P/G,Countryside garden P/G
+2022-12-01 00:59:15,56019,Bef Ang Mo Kio Ave 1,Bef Ang Mo Kio avenue 1
+2022-12-01 00:59:15,56031,Bef Yio Chu Kang Rd,Bef Yio Chu Kang road
+2022-12-01 00:59:15,56039,Aft Yio Chu Kang Rd,Aft Yio Chu Kang road
+2022-12-01 00:59:15,56051,Opp Tagore Rd,Opp Tagore road
+2022-12-01 00:59:15,56059,Bef Tagore Rd,Bef Tagore road
+2022-12-01 00:59:15,56071,Bef Old Upp Thomson Rd,Bef Old upper Thomson road
+2022-12-01 00:59:15,56079,Aft Old Upp Thomson Rd,Aft Old upper Thomson road
+2022-12-01 00:59:15,56201,Aft Munshi Abdullah Ave,Aft Munshi Abdullah avenue
+2022-12-01 00:59:15,56251,Opp Horizon Gdns,Opp Horizon gardens
+2022-12-01 00:59:15,56259,Horizon Gdns,Horizon gardens
+2022-12-01 00:59:15,56261,Aft Ang Mo Kio Ave 2,Aft Ang Mo Kio avenue 2
+2022-12-01 00:59:15,57141,Bef Upp Thomson Rd,Bef upper Thomson road
+2022-12-01 00:59:15,57149,Aft Upp Thomson Rd,Aft upper Thomson road
+2022-12-01 00:59:15,58061,Aft Durban Rd,Aft Durban road
+2022-12-01 00:59:15,58069,Opp Durban Rd,Opp Durban road
+2022-12-01 00:59:15,58089,Aft Andrews Ave,Aft Andrews avenue
+2022-12-01 00:59:15,58191,Aft Wellington Rd,Aft Wellington road
+2022-12-01 00:59:15,58199,Opp Auckland Rd West,Opp Auckland road West
+2022-12-01 00:59:15,58201,Aft Queen'S Ave,Aft Queen'S avenue
+2022-12-01 00:59:15,58209,Aft Pakistan Rd,Aft Pakistan road
+2022-12-01 00:59:15,58361,Nth Link Bldg,north Link Bldg
+2022-12-01 00:59:15,58571,Gambas Ave,Gambas avenue
+2022-12-01 00:59:15,58579,Gambas Ave,Gambas avenue
+2022-12-01 00:59:15,58581,Bef Gambas Cres,Bef Gambas crescent
+2022-12-01 00:59:15,58589,Opp Gambas Cres,Opp Gambas crescent
+2022-12-01 00:59:15,59021,Bef Yishun Ave 1,Bef Yishun avenue 1
+2022-12-01 00:59:15,59029,Aft Yishun Ave 1,Aft Yishun avenue 1
+2022-12-01 00:59:15,59781,Aft Yishun Ave 6,Aft Yishun avenue 6
+2022-12-01 00:59:15,59789,Bef Yishun Ave 6,Bef Yishun avenue 6
+2022-12-01 00:59:15,60051,Opp Kallang Pl,Opp Kallang place
+2022-12-01 00:59:15,60059,Bef Kallang Pl,Bef Kallang place
+2022-12-01 00:59:15,60079,Bef Bendemeer Rd,Bef Bendemeer road
+2022-12-01 00:59:15,60161,St. Michael's Pl,St. Michael's place
+2022-12-01 00:59:15,60211,Aft Tai Thong Cres,Aft Tai Thong crescent
+2022-12-01 00:59:15,61041,Bef Braddell Rd,Bef Braddell road
+2022-12-01 00:59:15,61049,Aft Bartley Rd,Aft Bartley road
+2022-12-01 00:59:15,62011,Aft Bartley Rd,Aft Bartley road
+2022-12-01 00:59:15,62019,Aft Rochdale Rd,Aft Rochdale road
+2022-12-01 00:59:15,62029,Paya Lebar Gdns,Paya Lebar gardens
+2022-12-01 00:59:15,62031,Bef How Sun Rd,Bef How Sun road
+2022-12-01 00:59:15,62039,Raya Gdn,Raya garden
+2022-12-01 00:59:15,62049,Aft Paya Lebar Cres,Aft Paya Lebar crescent
+2022-12-01 00:59:15,62061,Aft Upp Paya Lebar Rd,Aft upper Paya Lebar road
+2022-12-01 00:59:15,62069,Bef Upp Paya Lebar Rd,Bef upper Paya Lebar road
+2022-12-01 00:59:15,62101,Bef Upp Serangoon Rd,Bef upper Serangoon road
+2022-12-01 00:59:15,62109,Aft Upp Serangoon Rd,Aft upper Serangoon road
+2022-12-01 00:59:15,62111,Aft Sommerville Rd,Aft Sommerville road
+2022-12-01 00:59:15,62121,Aft Wolskel Rd,Aft Wolskel road
+2022-12-01 00:59:15,62131,S'Goon Stn Exit H,serangoon Stn Exit H
+2022-12-01 00:59:15,62139,S'Goon Stn Exit A/Blk 413,serangoon Stn Exit A/Blk 413
+2022-12-01 00:59:15,62189,S'Goon Stn Exit D/Blk 416,serangoon Stn Exit D/Blk 416
+2022-12-01 00:59:15,62261,Opp S'goon Sec Sch,Opp serangoon Sec Sch
+2022-12-01 00:59:15,63011,Opp Upp S'Goon Shop Ctr,Opp upper serangoon Shop Ctr
+2022-12-01 00:59:15,63019,Aft Upp S'Goon Shop Ctr,Aft upper serangoon Shop Ctr
+2022-12-01 00:59:15,63151,Aft Upp S'Goon Rd,Aft upper serangoon road
+2022-12-01 00:59:15,63181,Bef St. Helier's Ave,Bef St. Helier's avenue
+2022-12-01 00:59:15,63189,Aft Serangoon Gdn Way,Aft Serangoon garden Way
+2022-12-01 00:59:15,63191,Aft Serangoon Nth Ave 1,Aft Serangoon north avenue 1
+2022-12-01 00:59:15,63199,Aft Phillips Ave,Aft Phillips avenue
+2022-12-01 00:59:15,63361,Opp S'Goon Sports Cplx,Opp serangoon Sports Cplx
+2022-12-01 00:59:15,64121,Aft Ang Mo Kio Ave 5,Aft Ang Mo Kio avenue 5
+2022-12-01 00:59:15,64189,Aft Old Tampines Rd,Aft Old Tampines road
+2022-12-01 00:59:15,64201,Aft Hougang Ave 3,Aft Hougang avenue 3
+2022-12-01 00:59:15,64209,Aft Defu Ave 1,Aft Defu avenue 1
+2022-12-01 00:59:15,64211,Aft Hougang Ave 7,Aft Hougang avenue 7
+2022-12-01 00:59:15,64219,Aft Defu Ave 2,Aft Defu avenue 2
+2022-12-01 00:59:15,64221,Opp Defu Ave 2,Opp Defu avenue 2
+2022-12-01 00:59:15,64229,Bef Defu Ave 2,Bef Defu avenue 2
+2022-12-01 00:59:15,65139,Punggol Rd End,Punggol road End
+2022-12-01 00:59:15,65191,Bef Punggol Rd,Bef Punggol road
+2022-12-01 00:59:15,65199,Aft Punggol Rd,Aft Punggol road
+2022-12-01 00:59:15,65681,Bef Northshore Cres,Bef Northshore crescent
+2022-12-01 00:59:15,65689,Aft Northshore Cres,Aft Northshore crescent
+2022-12-01 00:59:15,66009,S'Goon Int,serangoon Int
+2022-12-01 00:59:15,66011,Aft Braddell Rd,Aft Braddell road
+2022-12-01 00:59:15,66019,Bef Braddell Rd,Bef Braddell road
+2022-12-01 00:59:15,66119,Summer Pl,Summer place
+2022-12-01 00:59:15,66129,Aft Chuan Gdn,Aft Chuan garden
+2022-12-01 00:59:15,66141,Bef Yio Chu Kang Rd,Bef Yio Chu Kang road
+2022-12-01 00:59:15,66149,Aft Yio Chu Kang Rd,Aft Yio Chu Kang road
+2022-12-01 00:59:15,66151,Opp Penshurst Pl,Opp Penshurst place
+2022-12-01 00:59:15,66181,Aft Chartwell Rd,Aft Chartwell road
+2022-12-01 00:59:15,66191,Aft Corfe Pl,Aft Corfe place
+2022-12-01 00:59:15,66221,Opp Portchester Ave,Opp Portchester avenue
+2022-12-01 00:59:15,66231,Bef Huddington Ave,Bef Huddington avenue
+2022-12-01 00:59:15,66241,Hemsley Ave,Hemsley avenue
+2022-12-01 00:59:15,66251,Opp Kingswear Ave,Opp Kingswear avenue
+2022-12-01 00:59:15,66261,S'Goon Gdns Country Club,serangoon gardens Country Club
+2022-12-01 00:59:15,66271,Serangoon Gdn Circus,Serangoon garden Circus
+2022-12-01 00:59:15,66351,S'Goon Stn Exit B,serangoon Stn Exit B
+2022-12-01 00:59:15,66359,S'Goon Stn Exit C/Blk 201,serangoon Stn Exit C/Blk 201
+2022-12-01 00:59:15,66381,Opp S'Goon Stn Exit F,Opp serangoon Stn Exit F
+2022-12-01 00:59:15,66389,S'Goon Stn Exit F,serangoon Stn Exit F
+2022-12-01 00:59:15,66391,Lor Chuan Stn Exit A,lorong Chuan Stn Exit A
+2022-12-01 00:59:15,66399,Opp Lor Chuan Stn Exit B,Opp lorong Chuan Stn Exit B
+2022-12-01 00:59:15,66471,Bef Yio Chu Kang Rd,Bef Yio Chu Kang road
+2022-12-01 00:59:15,66479,Aft Yio Chu Kang Rd,Aft Yio Chu Kang road
+2022-12-01 00:59:15,67011,Bef Begonia Rd,Bef Begonia road
+2022-12-01 00:59:15,67019,Aft Begonia Rd,Aft Begonia road
+2022-12-01 00:59:15,67021,Opp Dedap Rd,Opp Dedap road
+2022-12-01 00:59:15,67029,Aft Dedap Rd,Aft Dedap road
+2022-12-01 00:59:15,67039,Aft Seletar Rd,Aft Seletar road
+2022-12-01 00:59:15,67081,Aft Yio Chu Kang Rd,Aft Yio Chu Kang road
+2022-12-01 00:59:15,67139,Nth Spring Pr Sch,north Spring Pr Sch
+2022-12-01 00:59:15,67461,Aft Sengkang East Ave,Aft Sengkang East avenue
+2022-12-01 00:59:15,67469,Bef Sengkang East Ave,Bef Sengkang East avenue
+2022-12-01 00:59:15,67571,Aft Lor Tanggam,Aft lorong Tanggam
+2022-12-01 00:59:15,67651,Bef Sengkang West Rd,Bef Sengkang West road
+2022-12-01 00:59:15,67659,Aft Sengkang West Rd,Aft Sengkang West road
+2022-12-01 00:59:15,68121,Bef West Camp Rd,Bef West Camp road
+2022-12-01 00:59:15,68129,Aft West Camp Rd,Aft West Camp road
+2022-12-01 00:59:15,68171,Bef Yishun Ave 8,Bef Yishun avenue 8
+2022-12-01 00:59:15,68179,Aft Yishun Ave 8,Aft Yishun avenue 8
+2022-12-01 00:59:15,68189,Bef Seletar A'Space Cres,Bef Seletar A'Space crescent
+2022-12-01 00:59:15,68191,Bef Seletar A'Space Lk,Bef Seletar A'Space link
+2022-12-01 00:59:15,68199,Aft Seletar A'Space Lk,Aft Seletar A'Space link
+2022-12-01 00:59:15,70051,Aft Joo Seng Rd,Aft Joo Seng road
+2022-12-01 00:59:15,70131,Bef Davidson Rd,Bef Davidson road
+2022-12-01 00:59:15,70349,Bef Lor Bakar Batu,Bef lorong Bakar Batu
+2022-12-01 00:59:15,70361,Bef Genting Lk,Bef Genting link
+2022-12-01 00:59:15,70401,Bef Ubi Rd 4,Bef Ubi road 4
+2022-12-01 00:59:15,71011,Aft Paya Lebar Rd,Aft Paya Lebar road
+2022-12-01 00:59:15,71051,Aft Kim Chuan Rd,Aft Kim Chuan road
+2022-12-01 00:59:15,71059,Bef Kim Chuan Rd,Bef Kim Chuan road
+2022-12-01 00:59:15,71061,Bef Airport Rd,Bef Airport road
+2022-12-01 00:59:15,71069,Aft Airport Rd,Aft Airport road
+2022-12-01 00:59:15,74009,Tampines Nth Int,Tampines north Int
+2022-12-01 00:59:15,74011,Aft Tampines Ind Ave 5,Aft Tampines Ind avenue 5
+2022-12-01 00:59:15,74019,Bef Tampines Ind Ave 5,Bef Tampines Ind avenue 5
+2022-12-01 00:59:15,74021,Bef Tampines Ind Ave 4,Bef Tampines Ind avenue 4
+2022-12-01 00:59:15,74029,Aft Tampines Ind Ave 4,Aft Tampines Ind avenue 4
+2022-12-01 00:59:15,74031,Bef Tampines Lk,Bef Tampines link
+2022-12-01 00:59:15,74039,Aft Tampines Ind Ave 2,Aft Tampines Ind avenue 2
+2022-12-01 00:59:15,75291,Aft Tampines Ave 9,Aft Tampines avenue 9
+2022-12-01 00:59:15,75299,Bef Tampines Ave 9,Bef Tampines avenue 9
+2022-12-01 00:59:15,75361,Bef Tampines Ind Ave 5,Bef Tampines Ind avenue 5
+2022-12-01 00:59:15,75369,Bef Tampines Lk,Bef Tampines link
+2022-12-01 00:59:15,75371,Aft Tampines Ave 5,Aft Tampines avenue 5
+2022-12-01 00:59:15,75379,Bef Tampines Ave 5,Bef Tampines avenue 5
+2022-12-01 00:59:15,75401,Aft Tampines Ave 1,Aft Tampines avenue 1
+2022-12-01 00:59:15,75419,Aft Tampines Ave 5,Aft Tampines avenue 5
+2022-12-01 00:59:15,77091,Aft Pasir Ris Ave,Aft Pasir Ris avenue
+2022-12-01 00:59:15,77099,Bef Pasir Ris Ave,Bef Pasir Ris avenue
+2022-12-01 00:59:15,77101,Bef Pasir Ris Rd,Bef Pasir Ris road
+2022-12-01 00:59:15,77109,Aft Pasir Ris Rd,Aft Pasir Ris road
+2022-12-01 00:59:15,78099,Aft Loyang Gdns,Aft Loyang gardens
+2022-12-01 00:59:15,80009,Lor 1 Geylang Ter,lorong 1 Geylang Ter
+2022-12-01 00:59:15,80039,Opp Lor 1 Geylang Ter,Opp lorong 1 Geylang Ter
+2022-12-01 00:59:15,80051,Aft Lor 1 Geylang,Aft lorong 1 Geylang
+2022-12-01 00:59:15,80089,Bef Lor 18 Geylang,Bef lorong 18 Geylang
+2022-12-01 00:59:15,80091,Bef Lor 23 Geylang,Bef lorong 23 Geylang
+2022-12-01 00:59:15,80111,Bef Geylang Rd,Bef Geylang road
+2022-12-01 00:59:15,80119,Aft Geylang Rd,Aft Geylang road
+2022-12-01 00:59:15,80251,Aft Lor 14 Geylang,Aft lorong 14 Geylang
+2022-12-01 00:59:15,80269,Bef Sims Ave,Bef Sims avenue
+2022-12-01 00:59:15,80289,Sims Pl Ter,Sims place Ter
+2022-12-01 00:59:15,81029,Aft Lor 28 Geylang,Aft lorong 28 Geylang
+2022-12-01 00:59:15,81049,Aft Lor 34 Geylang,Aft lorong 34 Geylang
+2022-12-01 00:59:15,81069,Opp Lor 39 Geylang,Opp lorong 39 Geylang
+2022-12-01 00:59:15,81191,Aft Old Airport Rd,Aft Old Airport road
+2022-12-01 00:59:15,81199,Bef Old Airport Rd,Bef Old Airport road
+2022-12-01 00:59:15,82051,Tg Katong Rd Sth P/G,Tg Katong road south P/G
+2022-12-01 00:59:15,82059,Opp Tg Katong Rd Sth P/G,Opp Tg Katong road south P/G
+2022-12-01 00:59:15,82069,Aft Lor 106 Changi,Aft lorong 106 Changi
+2022-12-01 00:59:15,82081,Aft Dunman Rd,Aft Dunman road
+2022-12-01 00:59:15,82141,Aft Koon Seng Rd,Aft Koon Seng road
+2022-12-01 00:59:15,82149,Bef Koon Seng Rd,Bef Koon Seng road
+2022-12-01 00:59:15,82151,Bef Joo Chiat Pl,Bef Joo Chiat place
+2022-12-01 00:59:15,82159,Aft Tembeling Rd,Aft Tembeling road
+2022-12-01 00:59:15,82171,Bef Mangis Rd,Bef Mangis road
+2022-12-01 00:59:15,82179,Aft Rambutan Rd,Aft Rambutan road
+2022-12-01 00:59:15,83049,Bef Lor 110 Changi,Bef lorong 110 Changi
+2022-12-01 00:59:15,83121,Bef Lor K Telok Kurau,Bef lorong K Telok Kurau
+2022-12-01 00:59:15,83131,Aft Lor H Telok Kurau,Aft lorong H Telok Kurau
+2022-12-01 00:59:15,83139,Aft Joo Chiat Pl,Aft Joo Chiat place
+2022-12-01 00:59:15,83141,Aft Lor G Telok Kurau,Aft lorong G Telok Kurau
+2022-12-01 00:59:15,83149,Aft Changi Rd,Aft Changi road
+2022-12-01 00:59:15,83169,Bef Still Rd,Bef Still road
+2022-12-01 00:59:15,83171,Bef Roseburn Ave,Bef Roseburn avenue
+2022-12-01 00:59:15,83219,Bef Frankel Ave,Bef Frankel avenue
+2022-12-01 00:59:15,83229,Bef Carlton Ave,Bef Carlton avenue
+2022-12-01 00:59:15,83271,Aft Swan Lake Ave,Aft Swan Lake avenue
+2022-12-01 00:59:15,83291,Aft Joo Chiat Pl,Aft Joo Chiat place
+2022-12-01 00:59:15,83299,Aft Lor G Telok Kurau,Aft lorong G Telok Kurau
+2022-12-01 00:59:15,83301,Aft East Coast Rd,Aft East Coast road
+2022-12-01 00:59:15,83311,Aft Lor Nangka,Aft lorong Nangka
+2022-12-01 00:59:15,83319,Aft Lor J Telok Kurau,Aft lorong J Telok Kurau
+2022-12-01 00:59:15,84121,Aft Bedok Sth Ave 1,Aft Bedok south avenue 1
+2022-12-01 00:59:15,84201,Bedok Resvr Stn Exit A,Bedok reservoir Stn Exit A
+2022-12-01 00:59:15,84209,Bedok Resvr Stn Exit B,Bedok reservoir Stn Exit B
+2022-12-01 00:59:15,84279,Aft Bedok Nth St 5,Aft Bedok north St 5
+2022-12-01 00:59:15,84299,Bedok Nth Depot,Bedok north Depot
+2022-12-01 00:59:15,84451,Bedok Nth Stn Exit A,Bedok north Stn Exit A
+2022-12-01 00:59:15,84539,Bedok Nth Stn Exit B,Bedok north Stn Exit B
+2022-12-01 00:59:15,84581,Opp Bedok Sth NPC,Opp Bedok south NPC
+2022-12-01 00:59:15,84589,Bef New Upp Changi Rd,Bef New upper Changi road
+2022-12-01 00:59:15,84591,Sbst Bedok Nth Depot,Sbst Bedok north Depot
+2022-12-01 00:59:15,84599,Opp Sbst Bedok Nth Depot,Opp Sbst Bedok north Depot
+2022-12-01 00:59:15,85031,Excelsior Gdns,Excelsior gardens
+2022-12-01 00:59:15,85039,Opp Excelsior Gdns,Opp Excelsior gardens
+2022-12-01 00:59:15,85061,Opp Bedok Mkt Pl,Opp Bedok Mkt place
+2022-12-01 00:59:15,85069,Bedok Mkt Pl,Bedok Mkt place
+2022-12-01 00:59:15,85101,Aft Bedok Rd,Aft Bedok road
+2022-12-01 00:59:15,85109,Bef Bedok Rd,Bef Bedok road
+2022-12-01 00:59:15,91049,Bef Fort Rd,Bef Fort road
+2022-12-01 00:59:15,91069,Bef Walton Rd,Bef Walton road
+2022-12-01 00:59:15,91071,Bef Tg Katong Rd,Bef Tg Katong road
+2022-12-01 00:59:15,91079,Aft Tg Katong Rd,Aft Tg Katong road
+2022-12-01 00:59:15,91081,Fort Gdns,Fort gardens
+2022-12-01 00:59:15,91089,Opp Fort Gdns,Opp Fort gardens
+2022-12-01 00:59:15,91091,Bef Kg Kayu Rd,Bef Kg Kayu road
+2022-12-01 00:59:15,91099,Bef Wilkinson Rd,Bef Wilkinson road
+2022-12-01 00:59:15,92179,Aft Duku Rd,Aft Duku road
+2022-12-01 00:59:15,92201,Aft Lor M Telok Kurau,Aft lorong M Telok Kurau
+2022-12-01 00:59:15,92241,Amber Gdns,Amber gardens
+2022-12-01 00:59:15,92249,Opp Amber Gdns,Opp Amber gardens
+2022-12-01 00:59:15,92301,Bef St. Patrick's Rd,Bef St. Patrick's road
+2022-12-01 00:59:15,93021,Opp Mandarin Gdns,Opp Mandarin gardens
+2022-12-01 00:59:15,93029,Mandarin Gdns,Mandarin gardens
+2022-12-01 00:59:15,93061,Bef Siglap Rd,Bef Siglap road
+2022-12-01 00:59:15,93069,Aft Siglap Rd,Aft Siglap road
+2022-12-01 00:59:15,93091,Opp Siglap Sth CC,Opp Siglap south CC
+2022-12-01 00:59:15,93099,Siglap Sth CC,Siglap south CC
+2022-12-01 00:59:15,93101,Aft Coldstream Ave,Aft Coldstream avenue
+2022-12-01 00:59:15,93109,Bef Frankel Pl,Bef Frankel place
+2022-12-01 00:59:15,93111,Bef Elite Pk Ave,Bef Elite Pk avenue
+2022-12-01 00:59:15,93119,Aft Elite Pk Ave,Aft Elite Pk avenue
+2022-12-01 00:59:15,94009,Upp East Coast Ter,upper East Coast Ter
+2022-12-01 00:59:15,94011,Evergreen Gdn,Evergreen garden
+2022-12-01 00:59:15,94019,Opp Evergreen Ave,Opp Evergreen avenue
+2022-12-01 00:59:15,94021,Bef Sennett Rd,Bef Sennett road
+2022-12-01 00:59:15,94029,Aft Sennet Rd,Aft Sennet road
+2022-12-01 00:59:15,94041,Aft Parbury Ave,Aft Parbury avenue
+2022-12-01 00:59:15,94049,Aft Bedok Sth Ave 3,Aft Bedok south avenue 3
+2022-12-01 00:59:15,95161,Bef Changi Ferry Rd,Bef Changi Ferry road
+2022-12-01 00:59:15,95169,Aft Changi Ferry Rd,Aft Changi Ferry road
+2022-12-01 00:59:15,95901,Bef Simei Rd,Bef Simei road
+2022-12-01 00:59:15,95909,Aft Somapah Rd,Aft Somapah road
+2022-12-01 00:59:15,96011,Bef Simei Ave,Bef Simei avenue
+2022-12-01 00:59:15,96019,Aft Simei Ave,Aft Simei avenue
+2022-12-01 00:59:15,96041,Upp Changi Stn/Opp SUTD,upper Changi Stn/Opp SUTD
+2022-12-01 00:59:15,96049,Upp Changi Stn/SUTD,upper Changi Stn/SUTD
+2022-12-01 00:59:15,96091,Aft Upp Changi Rd,Aft upper Changi road
+2022-12-01 00:59:15,96099,Aft Upp Changi Rd East,Aft upper Changi road East
+2022-12-01 00:59:15,96311,Bef Changi Sth St 2,Bef Changi south St 2
+2022-12-01 00:59:15,96351,Bef Changi Sth St 1,Bef Changi south St 1
+2022-12-01 00:59:15,96391,Aft Changi Biz Pk Cres,Aft Changi Biz Pk crescent
+2022-12-01 00:59:15,97071,Aft St. John's Cres,Aft St. John's crescent
+2022-12-01 00:59:15,97079,Opp St. John's Cres,Opp St. John's crescent
+2022-12-01 00:59:15,97099,Aft Loyang Ave,Aft Loyang avenue
+2022-12-01 00:59:15,97121,Bef Old Tampines Rd,Bef Old Tampines road
+2022-12-01 00:59:15,97129,Bef Loyang Ave,Bef Loyang avenue
+2022-12-01 00:59:15,97141,Aft Upp Changi Rd Nth,Aft upper Changi road north
+2022-12-01 00:59:15,97151,Aft Changi Nth St 2,Aft Changi north St 2
+2022-12-01 00:59:15,98039,Bef New Loyang Lk,Bef New Loyang link
+2022-12-01 00:59:15,98301,Avila Gdns,Avila gardens
+2022-12-01 00:59:15,99021,Bef Cranwell Rd,Bef Cranwell road
+2022-12-01 00:59:15,99029,Aft Cranwell Rd,Aft Cranwell road
+2022-12-01 00:59:15,99071,Aft Old Pier Rd,Aft Old Pier road
+2022-12-01 00:59:15,99079,Opp Old Pier Rd,Opp Old Pier road
+2022-12-01 00:59:15,99081,Aft Cranwell Rd,Aft Cranwell road
+2022-12-01 00:59:15,99089,Bef Cranwell Rd,Bef Cranwell road
+2022-12-01 00:59:15,99091,Bef Turnhouse Rd,Bef Turnhouse road
+2022-12-01 00:59:15,99099,Aft Turnhouse Rd,Aft Turnhouse road
+2022-12-01 00:59:15,01631,Aft Beach Rd,Aft Beach road
+2022-12-01 00:59:15,01639,Bef Beach Rd,Bef Beach road
+2022-12-01 00:59:15,03031,Raffles Pl Stn Exit F,Raffles place Stn Exit F
+2022-12-01 00:59:15,03331,Bef Marina Gdns Dr,Bef Marina gardens Dr
+2022-12-01 00:59:15,03339,Aft Marina Gdns Dr,Aft Marina gardens Dr
+2022-12-01 00:59:15,03341,Bef Gdns by the Bay,Bef gardens by the Bay
+2022-12-01 00:59:15,03349,Aft Gdns by the Bay,Aft gardens by the Bay
+2022-12-01 00:59:15,03371,Gdns by the Bay,gardens by the Bay
+2022-12-01 00:59:15,03411,Opp Marina Sth Pier Stn,Opp Marina south Pier Stn
+2022-12-01 00:59:15,03419,Marina Sth Pier Stn,Marina south Pier Stn
+2022-12-01 00:59:15,04311,Aft River Valley Rd,Aft River Valley road
+2022-12-01 00:59:15,05129,Opp One Upp Pickering,Opp One upper Pickering
+2022-12-01 00:59:15,05421,Aft Craig Rd,Aft Craig road
+2022-12-01 00:59:15,05429,Bef Craig Rd,Bef Craig road
+2022-12-01 00:59:15,05641,Bef Cantonment Rd,Bef Cantonment road
+2022-12-01 00:59:15,06169,River Pl Condo,River place Condo
+2022-12-01 00:59:15,07241,Bef S'Goon Rd,Bef serangoon road
+2022-12-01 00:59:15,07249,Aft Kempas Rd,Aft Kempas road
+2022-12-01 00:59:15,07319,Aft Allenby Rd,Aft Allenby road
+2022-12-01 00:59:15,07331,Aft King George's Ave,Aft King George's avenue
+2022-12-01 00:59:15,07371,Aft Kallang Rd,Aft Kallang road
+2022-12-01 00:59:15,07379,Aperia/Bef Kallang Rd,Aperia/Bef Kallang road
+2022-12-01 00:59:15,07419,Opp Veerasamy Rd,Opp Veerasamy road
+2022-12-01 00:59:15,09037,Bef Cairnhill Rd,Bef Cairnhill road
+2022-12-01 00:59:15,09121,Bef Tomlinson Rd,Bef Tomlinson road
+2022-12-01 00:59:15,09131,Opp Orchard Blvd Stn,Opp Orchard boulevard Stn
+2022-12-01 00:59:15,09139,Orchard Blvd Stn Exit 1,Orchard boulevard Stn Exit 1
+2022-12-01 00:59:15,09159,Aft Tomlinson Rd,Aft Tomlinson road
+2023-12-01 00:40:56,10011,Bef Neil Rd,Bef Neil road
+2023-12-01 00:40:56,10291,Opp Dawson Pl,Opp Dawson place
+2023-12-01 00:40:56,10299,Aft Dawson Pl,Aft Dawson place
+2023-12-01 00:40:56,10471,Bef Tanglin Rd,Bef Tanglin road
+2023-12-01 00:40:56,10479,Aft Tanglin Rd,Aft Tanglin road
+2023-12-01 00:40:56,11029,Blk 166/Aft Mei Chin Rd,Blk 166/Aft Mei Chin road
+2023-12-01 00:40:56,11041,Aft C'wealth Dr,Aft commonwealth Dr
+2023-12-01 00:40:56,11101,Farrer Rd Mkt,Farrer road Mkt
+2023-12-01 00:40:56,11111,Farrer Rd Stn Exit B,Farrer road Stn Exit B
+2023-12-01 00:40:56,11119,Farrer Rd Stn Exit A,Farrer road Stn Exit A
+2023-12-01 00:40:56,11161,C'wealth Stn Exit A/D,commonwealth Stn Exit A/D
+2023-12-01 00:40:56,11169,C'wealth Stn Exit B/C,commonwealth Stn Exit B/C
+2023-12-01 00:40:56,11209,Opp Peirce Rd,Opp Peirce road
+2023-12-01 00:40:56,11211,Aft Peirce Rd,Aft Peirce road
+2023-12-01 00:40:56,11279,Aft Coronation Rd West,Aft Coronation road West
+2023-12-01 00:40:56,11281,Aft Tan Boon Chong Ave,Aft Tan Boon Chong avenue
+2023-12-01 00:40:56,11289,Opp Tan Boon Chong Ave,Opp Tan Boon Chong avenue
+2023-12-01 00:40:56,11331,Opp Dynasty Gdn II,Opp Dynasty garden II
+2023-12-01 00:40:56,11401,Holland V Stn/Blk12,holland village Stn/Blk12
+2023-12-01 00:40:56,11419,Holland V Stn Exit A,holland village Stn Exit A
+2023-12-01 00:40:56,12111,Bef Clementi Rd,Bef Clementi road
+2023-12-01 00:40:56,12131,Aft Grove Ave,Aft Grove avenue
+2023-12-01 00:40:56,13029,Bef Tyersall Ave,Bef Tyersall avenue
+2023-12-01 00:40:56,13031,Opp Chatsworth Rd,Opp Chatsworth road
+2023-12-01 00:40:56,13039,Bef Chatsworth Rd,Bef Chatsworth road
+2023-12-01 00:40:56,13041,Aft Camp Rd,Aft Camp road
+2023-12-01 00:40:56,13091,Aft Kim Yam Rd,Aft Kim Yam road
+2023-12-01 00:40:56,13099,Bef Kim Yam Rd,Bef Kim Yam road
+2023-12-01 00:40:56,13101,Opp Mohd Sultan Rd,Opp Mohd Sultan road
+2023-12-01 00:40:56,13109,UE Sq/Bef Mohd Sultan Rd,UE Sq/Bef Mohd Sultan road
+2023-12-01 00:40:56,14139,Bef Seah Im Rd,Bef Seah Im road
+2023-12-01 00:40:56,14189,Aft Alexandra Rd,Aft Alexandra road
+2023-12-01 00:40:56,15071,Opp Lor Sarhad,Opp lorong Sarhad
+2023-12-01 00:40:56,15079,Aft Lor Sarhad,Aft lorong Sarhad
+2023-12-01 00:40:56,15221,Aft Sth Buona Vista Rd,Aft south Buona Vista road
+2023-12-01 00:40:56,15229,Bef Sth Buona Vista Rd,Bef south Buona Vista road
+2023-12-01 00:40:56,16089,Aft Clementi Rd,Aft Clementi road
+2023-12-01 00:40:56,16201,Barossa Gdns,Barossa gardens
+2023-12-01 00:40:56,17091,Aft Clementi Ave 1,Aft Clementi avenue 1
+2023-12-01 00:40:56,17351,Aft Clementi Rd,Aft Clementi road
+2023-12-01 00:40:56,17359,Bef Clementi Rd,Bef Clementi road
+2023-12-01 00:40:56,17361,Opp West Coast Lk,Opp West Coast link
+2023-12-01 00:40:56,17369,Aft West Coast Lk,Aft West Coast link
+2023-12-01 00:40:56,18099,Bef Ayer Rajah Cres,Bef Ayer Rajah crescent
+2023-12-01 00:40:56,18191,Bef Whitchurch Rd,Bef Whitchurch road
+2023-12-01 00:40:56,18199,Aft Whitchurch Rd,Aft Whitchurch road
+2023-12-01 00:40:56,20061,Aft Jurong Town Hall Rd,Aft Jurong Town Hall road
+2023-12-01 00:40:56,20069,Bef Jurong Town Hall Rd,Bef Jurong Town Hall road
+2023-12-01 00:40:56,20179,Aft Teban Gdns Rd,Aft Teban gardens road
+2023-12-01 00:40:56,20209,Bef Jurong Town Hall Rd,Bef Jurong Town Hall road
+2023-12-01 00:40:56,20251,Bef Teban Gdns Rd,Bef Teban gardens road
+2023-12-01 00:40:56,20259,C'wealth Sec Sch,commonwealth Sec Sch
+2023-12-01 00:40:56,20261,Aft Pandan Gdns,Aft Pandan gardens
+2023-12-01 00:40:56,20269,Bef Pandan Gdns,Bef Pandan gardens
+2023-12-01 00:40:56,21019,Aft Yuan Ching Rd,Aft Yuan Ching road
+2023-12-01 00:40:56,21021,Bef Jurong Port Rd,Bef Jurong Port road
+2023-12-01 00:40:56,21029,Aft Corp Pl,Aft Corp place
+2023-12-01 00:40:56,21051,Bef Penjuru Rd,Bef Penjuru road
+2023-12-01 00:40:56,21059,Aft Penjuru Rd,Aft Penjuru road
+2023-12-01 00:40:56,21111,Aft Jurong Pier Rd,Aft Jurong Pier road
+2023-12-01 00:40:56,21119,Bef Jurong Pier Rd,Bef Jurong Pier road
+2023-12-01 00:40:56,21131,Bef Jurong Port Rd,Bef Jurong Port road
+2023-12-01 00:40:56,21139,Aft Jurong Port Rd,Aft Jurong Port road
+2023-12-01 00:40:56,21171,Opp Corp Pl,Opp Corp place
+2023-12-01 00:40:56,21179,Corp Pl,Corp place
+2023-12-01 00:40:56,21261,Aft Chin Bee Ave,Aft Chin Bee avenue
+2023-12-01 00:40:56,21269,Bef Chin Bee Ave,Bef Chin Bee avenue
+2023-12-01 00:40:56,21311,Bef Tractor Rd,Bef Tractor road
+2023-12-01 00:40:56,21319,Opp Tractor Rd,Opp Tractor road
+2023-12-01 00:40:56,21469,Bef Chia Ping Rd,Bef Chia Ping road
+2023-12-01 00:40:56,21491,Bef Intl Rd,Bef Intl road
+2023-12-01 00:40:56,21529,Aft Third Chin Bee Rd,Aft Third Chin Bee road
+2023-12-01 00:40:56,21619,Aft Corp Rd,Aft Corp road
+2023-12-01 00:40:56,21631,Blk 115/Opp Japanese Gdn,Blk 115/Opp Japanese garden
+2023-12-01 00:40:56,21639,Japanese Gdn/Opp Blk 115,Japanese garden/Opp Blk 115
+2023-12-01 00:40:56,21651,Opp Chinese Gdn,Opp Chinese garden
+2023-12-01 00:40:56,21659,Chinese Gdn,Chinese garden
+2023-12-01 00:40:56,21779,Aft Yuan Ching Rd,Aft Yuan Ching road
+2023-12-01 00:40:56,22019,Aft Tractor Rd,Aft Tractor road
+2023-12-01 00:40:56,22041,Aft Tg Kling Rd,Aft Tg Kling road
+2023-12-01 00:40:56,22049,Bef Tg Kling Rd,Bef Tg Kling road
+2023-12-01 00:40:56,22071,Bef Jurong Pier Rd,Bef Jurong Pier road
+2023-12-01 00:40:56,22079,Aft Jurong Pier Rd,Aft Jurong Pier road
+2023-12-01 00:40:56,22169,Aft Intl Rd,Aft Intl road
+2023-12-01 00:40:56,22219,Aft Neythal Rd,Aft Neythal road
+2023-12-01 00:40:56,22221,Aft Pioneer Rd Nth,Aft Pioneer road north
+2023-12-01 00:40:56,22229,Bef Pioneer Rd Nth,Bef Pioneer road north
+2023-12-01 00:40:56,22271,Bef Kwong Min Rd,Bef Kwong Min road
+2023-12-01 00:40:56,22281,Aft Soon Lee Rd,Aft Soon Lee road
+2023-12-01 00:40:56,22289,Bef Fan Yoong Rd,Bef Fan Yoong road
+2023-12-01 00:40:56,22299,Bef Soon Lee Rd,Bef Soon Lee road
+2023-12-01 00:40:56,22309,Aft Fan Yoong Rd,Aft Fan Yoong road
+2023-12-01 00:40:56,22319,Bef Enterprise Rd,Bef Enterprise road
+2023-12-01 00:40:56,22401,Aft Shipyard Rd,Aft Shipyard road
+2023-12-01 00:40:56,22409,Bef Shipyard Rd,Bef Shipyard road
+2023-12-01 00:40:56,23051,Bef Kian Teck Rd,Bef Kian Teck road
+2023-12-01 00:40:56,23059,Aft Kian Teck Rd,Aft Kian Teck road
+2023-12-01 00:40:56,23061,Aft Kian Teck Rd,Aft Kian Teck road
+2023-12-01 00:40:56,23069,Bef Kian Teck Rd,Bef Kian Teck road
+2023-12-01 00:40:56,23099,Bef First Lok Yang Rd,Bef First Lok Yang road
+2023-12-01 00:40:56,23109,Aft Third Lok Yang Rd,Aft Third Lok Yang road
+2023-12-01 00:40:56,23111,Bef Fourth Lok Yang Rd,Bef Fourth Lok Yang road
+2023-12-01 00:40:56,23119,Aft Fourth Lok Yang Rd,Aft Fourth Lok Yang road
+2023-12-01 00:40:56,23159,Aft Fifth Lok Yang Rd,Aft Fifth Lok Yang road
+2023-12-01 00:40:56,23161,Aft Kian Teck Rd,Aft Kian Teck road
+2023-12-01 00:40:56,23169,Bef Kian Teck Rd,Bef Kian Teck road
+2023-12-01 00:40:56,23179,Aft Second Lok Yang Rd,Aft Second Lok Yang road
+2023-12-01 00:40:56,23181,Aft Kian Teck Rd,Aft Kian Teck road
+2023-12-01 00:40:56,23189,Bef First Lok Yang Rd,Bef First Lok Yang road
+2023-12-01 00:40:56,23241,Aft Benoi Rd,Aft Benoi road
+2023-12-01 00:40:56,23249,Bef Benoi Rd,Bef Benoi road
+2023-12-01 00:40:56,23251,Aft Shipyard Rd,Aft Shipyard road
+2023-12-01 00:40:56,23259,Bef Shipyard Rd,Bef Shipyard road
+2023-12-01 00:40:56,23281,Aft Pioneer Rd,Aft Pioneer road
+2023-12-01 00:40:56,23341,Aft Pioneer Rd,Aft Pioneer road
+2023-12-01 00:40:56,23349,Bef Pioneer Rd,Bef Pioneer road
+2023-12-01 00:40:56,23351,Aft Gul Ave,Aft Gul avenue
+2023-12-01 00:40:56,23359,Opp Gul Ave,Opp Gul avenue
+2023-12-01 00:40:56,23419,Bef Shipyard Cres,Bef Shipyard crescent
+2023-12-01 00:40:56,23441,Bef Benoi Pl,Bef Benoi place
+2023-12-01 00:40:56,23449,Aft Benoi Pl,Aft Benoi place
+2023-12-01 00:40:56,23471,Aft Benoi Rd,Aft Benoi road
+2023-12-01 00:40:56,23479,Bef Benoi Rd,Bef Benoi road
+2023-12-01 00:40:56,23501,Aft Pioneer Rd Nth,Aft Pioneer road north
+2023-12-01 00:40:56,24089,Aft Gul Ave,Aft Gul avenue
+2023-12-01 00:40:56,24149,Aft Joo Koon Cres,Aft Joo Koon crescent
+2023-12-01 00:40:56,24159,Aft Joo Koon Rd,Aft Joo Koon road
+2023-12-01 00:40:56,24521,Bef Tuas Ave 5,Bef Tuas avenue 5
+2023-12-01 00:40:56,24529,Aft Tuas Ave 5,Aft Tuas avenue 5
+2023-12-01 00:40:56,24631,Bef Benoi Rd,Bef Benoi road
+2023-12-01 00:40:56,24639,Aft Benoi Rd,Aft Benoi road
+2023-12-01 00:40:56,24691,Aft Tuas Rd,Aft Tuas road
+2023-12-01 00:40:56,24699,Bef Tuas Rd,Bef Tuas road
+2023-12-01 00:40:56,24701,Tuas Cres Stn Exit B,Tuas crescent Stn Exit B
+2023-12-01 00:40:56,24709,Tuas Cres Stn Exit A,Tuas crescent Stn Exit A
+2023-12-01 00:40:56,24711,Tuas West Rd Stn Exit B,Tuas West road Stn Exit B
+2023-12-01 00:40:56,24719,Tuas West Rd Stn Exit A,Tuas West road Stn Exit A
+2023-12-01 00:40:56,25059,Aft Tuas Sth Blvd,Aft Tuas south boulevard
+2023-12-01 00:40:56,25091,Aft Tuas Ave 7,Aft Tuas avenue 7
+2023-12-01 00:40:56,25111,Aft Tuas Ave 10,Aft Tuas avenue 10
+2023-12-01 00:40:56,25119,Bef Tuas Ave 10,Bef Tuas avenue 10
+2023-12-01 00:40:56,25121,Aft Tuas Ave 8,Aft Tuas avenue 8
+2023-12-01 00:40:56,25129,Aft Tuas Ave 6,Aft Tuas avenue 6
+2023-12-01 00:40:56,25201,Aft Tuas Rd,Aft Tuas road
+2023-12-01 00:40:56,25209,Bef Tuas Rd,Bef Tuas road
+2023-12-01 00:40:56,25219,Aft Tuas Ave 2,Aft Tuas avenue 2
+2023-12-01 00:40:56,25249,Aft Tuas West Rd,Aft Tuas West road
+2023-12-01 00:40:56,25371,Aft Tuas Ave 4,Aft Tuas avenue 4
+2023-12-01 00:40:56,25379,Aft Tuas Ave 6,Aft Tuas avenue 6
+2023-12-01 00:40:56,25389,Aft Tuas Ave 8,Aft Tuas avenue 8
+2023-12-01 00:40:56,25391,Bef Pioneer Rd,Bef Pioneer road
+2023-12-01 00:40:56,25399,Aft Pioneer Rd,Aft Pioneer road
+2023-12-01 00:40:56,25421,Opp Tuas Lk Stn,Opp Tuas link Stn
+2023-12-01 00:40:56,25429,Tuas Lk Stn,Tuas link Stn
+2023-12-01 00:40:56,25441,Bef Pioneer Rd,Bef Pioneer road
+2023-12-01 00:40:56,25449,Aft Pioneer Rd,Aft Pioneer road
+2023-12-01 00:40:56,25461,Aft Tuas West Ave,Aft Tuas West avenue
+2023-12-01 00:40:56,25469,Bef Tuas West Ave,Bef Tuas West avenue
+2023-12-01 00:40:56,25561,Aft Tuas Cres,Aft Tuas crescent
+2023-12-01 00:40:56,25569,Bef Tuas Cres,Bef Tuas crescent
+2023-12-01 00:40:56,25661,Bef Tuas Bay Lk,Bef Tuas Bay link
+2023-12-01 00:40:56,25669,Aft Tuas Bay Lk,Aft Tuas Bay link
+2023-12-01 00:40:56,25681,Bef Tuas West Ave,Bef Tuas West avenue
+2023-12-01 00:40:56,25689,Aft Tuas West Ave,Aft Tuas West avenue
+2023-12-01 00:40:56,25691,Aft Tuas West Rd Stn,Aft Tuas West road Stn
+2023-12-01 00:40:56,25751,Bef Tuas Sth Ave 14,Bef Tuas south avenue 14
+2023-12-01 00:40:56,25771,Aft Tuas Sth St 7,Aft Tuas south St 7
+2023-12-01 00:40:56,25791,Bef Tuas Sth Ave 10,Bef Tuas south avenue 10
+2023-12-01 00:40:56,25801,Bef Tuas Sth Ave 7,Bef Tuas south avenue 7
+2023-12-01 00:40:56,25811,Bef Tuas Ave 7,Bef Tuas avenue 7
+2023-12-01 00:40:56,25819,Aft Tuas Ave 7,Aft Tuas avenue 7
+2023-12-01 00:40:56,26011,Bef Tuas Ave 11,Bef Tuas avenue 11
+2023-12-01 00:40:56,26021,Bef Tuas Ave 13,Bef Tuas avenue 13
+2023-12-01 00:40:56,26069,Aft Tuas Ave 16,Aft Tuas avenue 16
+2023-12-01 00:40:56,26081,Bef Tuas Ave 18A,Bef Tuas avenue 18A
+2023-12-01 00:40:56,26089,Bef Tuas Ave 20,Bef Tuas avenue 20
+2023-12-01 00:40:56,26099,Bef Tuas Ave 13,Bef Tuas avenue 13
+2023-12-01 00:40:56,26101,BASF Sth East Asia,BASF south East Asia
+2023-12-01 00:40:56,26109,Bef Tuas Ave 11,Bef Tuas avenue 11
+2023-12-01 00:40:56,26131,Aft Tuas Cres,Aft Tuas crescent
+2023-12-01 00:40:56,26241,Aft Tuas Sth Ave 2,Aft Tuas south avenue 2
+2023-12-01 00:40:56,26249,Bef Tuas Sth Ave 2,Bef Tuas south avenue 2
+2023-12-01 00:40:56,26251,Bef Tuas Sth Ave 2,Bef Tuas south avenue 2
+2023-12-01 00:40:56,26259,Aft Tuas Sth Ave 2,Aft Tuas south avenue 2
+2023-12-01 00:40:56,26261,Aft Tuas Sth Ave 4,Aft Tuas south avenue 4
+2023-12-01 00:40:56,26269,Bef Tuas Sth Ave 4,Bef Tuas south avenue 4
+2023-12-01 00:40:56,26279,Aft Tuas Sth Ave 4,Aft Tuas south avenue 4
+2023-12-01 00:40:56,26289,Aft Tuas Sth St 2,Aft Tuas south St 2
+2023-12-01 00:40:56,26299,Bef Tuas Sth Ave 6,Bef Tuas south avenue 6
+2023-12-01 00:40:56,26311,Aft Tuas Sth Ave 6,Aft Tuas south avenue 6
+2023-12-01 00:40:56,26321,Bef Tuas Sth St 2,Bef Tuas south St 2
+2023-12-01 00:40:56,26389,Bef Tuas Sth Ave 5,Bef Tuas south avenue 5
+2023-12-01 00:40:56,26399,Aft Tuas View Cres,Aft Tuas View crescent
+2023-12-01 00:40:56,26429,Bef Tuas Sth Ave 9,Bef Tuas south avenue 9
+2023-12-01 00:40:56,26431,Aft Tuas Sth Ave 9,Aft Tuas south avenue 9
+2023-12-01 00:40:56,26441,Bef Tuas Sth Ave 7,Bef Tuas south avenue 7
+2023-12-01 00:40:56,26451,Bef Tuas Sth Ave 5,Bef Tuas south avenue 5
+2023-12-01 00:40:56,26461,Aft Tuas Sth Ave 8,Aft Tuas south avenue 8
+2023-12-01 00:40:56,27071,Nanyang Cres Halls,Nanyang crescent Halls
+2023-12-01 00:40:56,27121,Bef Nanyang Ave,Bef Nanyang avenue
+2023-12-01 00:40:56,27129,Opp Nanyang Ave,Opp Nanyang avenue
+2023-12-01 00:40:56,27171,Bef Lor Danau,Bef lorong Danau
+2023-12-01 00:40:56,27179,Aft Lor Danau,Aft lorong Danau
+2023-12-01 00:40:56,27251,Academic Bldg Sth,Academic Bldg south
+2023-12-01 00:40:56,27449,Aft Westwood Ave,Aft Westwood avenue
+2023-12-01 00:40:56,27509,Bef Yunnan Cres,Bef Yunnan crescent
+2023-12-01 00:40:56,28011,Bef Toh Tuck Ave,Bef Toh Tuck avenue
+2023-12-01 00:40:56,28019,Aft Toh Tuck Ave,Aft Toh Tuck avenue
+2023-12-01 00:40:56,28181,Bef Toh Tuck Lk,Bef Toh Tuck link
+2023-12-01 00:40:56,28189,Aft Toh Tuck Lk,Aft Toh Tuck link
+2023-12-01 00:40:56,28341,Chinese Gdn Stn,Chinese garden Stn
+2023-12-01 00:40:56,28349,Opp Chinese Gdn Stn,Opp Chinese garden Stn
+2023-12-01 00:40:56,28701,Aft Old Toh Tuck Rd,Aft Old Toh Tuck road
+2023-12-01 00:40:56,28709,Bef Old Toh Tuck Rd,Bef Old Toh Tuck road
+2023-12-01 00:40:56,29031,Aft Penjuru Pl,Aft Penjuru place
+2023-12-01 00:40:56,29069,Aft Pandan Rd,Aft Pandan road
+2023-12-01 00:40:56,29159,Aft Teban Gdns Cres,Aft Teban gardens crescent
+2023-12-01 00:40:56,30119,Aft Choa Chu Kang Ave 6,Aft Choa Chu Kang avenue 6
+2023-12-01 00:40:56,31009,Choa Chu Kang Rd End,Choa Chu Kang road End
+2023-12-01 00:40:56,31011,Aft Nanyang Ave,Aft Nanyang avenue
+2023-12-01 00:40:56,31019,Bef Nanyang Ave,Bef Nanyang avenue
+2023-12-01 00:40:56,31069,Bef Old Choa Chu Kang Rd,Bef Old Choa Chu Kang road
+2023-12-01 00:40:56,31121,Nirvana Memorial Gdn,Nirvana Memorial garden
+2023-12-01 00:40:56,31129,Aft Nirvana Memorial Gdn,Aft Nirvana Memorial garden
+2023-12-01 00:40:56,31151,Aft Lim Chu Kang Rd,Aft Lim Chu Kang road
+2023-12-01 00:40:56,31159,Bef Lim Chu Kang Rd,Bef Lim Chu Kang road
+2023-12-01 00:40:56,31191,B26 Old Choa Chu Kang Rd,B26 Old Choa Chu Kang road
+2023-12-01 00:40:56,31199,B25 Old Choa Chu Kang Rd,B25 Old Choa Chu Kang road
+2023-12-01 00:40:56,32031,Opp Ama Keng Rd,Opp Ama Keng road
+2023-12-01 00:40:56,32039,Aft Ama Keng Rd,Aft Ama Keng road
+2023-12-01 00:40:56,32069,B26 Lim Chu Kang Rd,B26 Lim Chu Kang road
+2023-12-01 00:40:56,32109,Bef Lor Serambi,Bef lorong Serambi
+2023-12-01 00:40:56,33011,B19 Lim Chu Kang Rd,B19 Lim Chu Kang road
+2023-12-01 00:40:56,33019,B20 Lim Chu Kang Rd,B20 Lim Chu Kang road
+2023-12-01 00:40:56,33021,Opp Neo Tiew Rd,Opp Neo Tiew road
+2023-12-01 00:40:56,33029,Aft Neo Tiew Rd,Aft Neo Tiew road
+2023-12-01 00:40:56,34041,B03 Lim Chu Kang Rd,B03 Lim Chu Kang road
+2023-12-01 00:40:56,34101,Aft Old Lim Chu Kang Rd,Aft Old Lim Chu Kang road
+2023-12-01 00:40:56,34109,Aft Lim Chu Kang Rd,Aft Lim Chu Kang road
+2023-12-01 00:40:56,40021,Bef Winstedt Rd,Bef Winstedt road
+2023-12-01 00:40:56,40029,Aft Makepeace Rd,Aft Makepeace road
+2023-12-01 00:40:56,40091,Bef Lewis Rd,Bef Lewis road
+2023-12-01 00:40:56,40099,Aft Dunkirk Ave,Aft Dunkirk avenue
+2023-12-01 00:40:56,40119,Bef Goldhill Ave,Bef Goldhill avenue
+2023-12-01 00:40:56,40199,Aft Balmoral Rd,Aft Balmoral road
+2023-12-01 00:40:56,40201,Chelsea Gdns Condo,Chelsea gardens Condo
+2023-12-01 00:40:56,41019,Aft Kheam Hock Rd,Aft Kheam Hock road
+2023-12-01 00:40:56,41021,Botanic Gdns Stn,Botanic gardens Stn
+2023-12-01 00:40:56,41029,Opp Botanic Gdns Stn,Opp Botanic gardens Stn
+2023-12-01 00:40:56,41081,Sixth Ave Stn,Sixth avenue Stn
+2023-12-01 00:40:56,41151,Aft Sime Rd,Aft Sime road
+2023-12-01 00:40:56,41161,Aft Kheam Hock Rd,Aft Kheam Hock road
+2023-12-01 00:40:56,41169,Bef Kheam Hock Rd,Bef Kheam Hock road
+2023-12-01 00:40:56,42011,Sixth Ave Ctr,Sixth avenue Ctr
+2023-12-01 00:40:56,42019,Opp Sixth Ave Stn,Opp Sixth avenue Stn
+2023-12-01 00:40:56,42021,Aft Maple Ave,Aft Maple avenue
+2023-12-01 00:40:56,42029,Aft Swiss Club Rd,Aft Swiss Club road
+2023-12-01 00:40:56,42049,Hua Guan Gdns,Hua Guan gardens
+2023-12-01 00:40:56,42129,Sixth Ave Ville,Sixth avenue Ville
+2023-12-01 00:40:56,42131,Aft Lantana Ave,Aft Lantana avenue
+2023-12-01 00:40:56,42139,Ave Villa,avenue Villa
+2023-12-01 00:40:56,42141,Bef Dunearn Rd,Bef Dunearn road
+2023-12-01 00:40:56,42149,Aft Bt Timah Rd,Aft Bt Timah road
+2023-12-01 00:40:56,42179,Aft Chun Tin Rd,Aft Chun Tin road
+2023-12-01 00:40:56,42191,Bef Bt Batok East Ave 6,Bef Bt Batok East avenue 6
+2023-12-01 00:40:56,42199,Aft Bt Batok East Ave 6,Aft Bt Batok East avenue 6
+2023-12-01 00:40:56,42221,Goodluck Gdn,Goodluck garden
+2023-12-01 00:40:56,42241,Aft Eng Kong Pl,Aft Eng Kong place
+2023-12-01 00:40:56,42249,Bef Eng Kong Pl,Bef Eng Kong place
+2023-12-01 00:40:56,42259,Aft Upp Bt Timah Rd,Aft upper Bt Timah road
+2023-12-01 00:40:56,42291,Opp Toh Tuck Cres,Opp Toh Tuck crescent
+2023-12-01 00:40:56,42299,Aft Toh Tuck Cres,Aft Toh Tuck crescent
+2023-12-01 00:40:56,43021,Aft Old Jurong Rd,Aft Old Jurong road
+2023-12-01 00:40:56,43071,Opp Dairy Farm Rd,Opp Dairy Farm road
+2023-12-01 00:40:56,43452,Aft Bt Batok West Ave 3,Aft Bt Batok West avenue 3
+2023-12-01 00:40:56,43461,Aft Bt Batok West Ave 5,Aft Bt Batok West avenue 5
+2023-12-01 00:40:56,43469,Bef Bt Batok West Ave 5,Bef Bt Batok West avenue 5
+2023-12-01 00:40:56,43891,Aft Dairy Farm Cres,Aft Dairy Farm crescent
+2023-12-01 00:40:56,43899,Bef Dairy Farm Cres,Bef Dairy Farm crescent
+2023-12-01 00:40:56,44069,Aft KJE Slip Rd,Aft KJE Slip road
+2023-12-01 00:40:56,44161,Aft Bt Batok West Ave 5,Aft Bt Batok West avenue 5
+2023-12-01 00:40:56,44169,Bef Bt Batok West Ave 5,Bef Bt Batok West avenue 5
+2023-12-01 00:40:56,44171,Bef Bt Batok West Ave 5,Bef Bt Batok West avenue 5
+2023-12-01 00:40:56,44179,Aft Bt Batok West Ave 5,Aft Bt Batok West avenue 5
+2023-12-01 00:40:56,44241,Opp Lompang Rd,Opp Lompang road
+2023-12-01 00:40:56,44351,Aft Chestnut Ave,Aft Chestnut avenue
+2023-12-01 00:40:56,44359,Bef Chestnut Ave,Bef Chestnut avenue
+2023-12-01 00:40:56,44361,Bef Dairy Farm Rd,Bef Dairy Farm road
+2023-12-01 00:40:56,44369,Aft Dairy Farm Rd,Aft Dairy Farm road
+2023-12-01 00:40:56,44689,Sunshine Pl,Sunshine place
+2023-12-01 00:40:56,45071,Bef Mandai Rd,Bef Mandai road
+2023-12-01 00:40:56,45079,Aft Mandai Rd,Aft Mandai road
+2023-12-01 00:40:56,45141,Aft W'lands Rd,Aft woodlands road
+2023-12-01 00:40:56,45149,Bef W'lands Rd,Bef woodlands road
+2023-12-01 00:40:56,45221,Aft W'lands Rd,Aft woodlands road
+2023-12-01 00:40:56,45229,Bef W'lands Rd,Bef woodlands road
+2023-12-01 00:40:56,45489,Bef Choa Chu Kang Lk,Bef Choa Chu Kang link
+2023-12-01 00:40:56,45491,Bef Choa Chu Kang Nth 5,Bef Choa Chu Kang north 5
+2023-12-01 00:40:56,46019,Aft W'lands Ctr Rd,Aft woodlands Ctr road
+2023-12-01 00:40:56,46021,Bef W'lands Ind Pk D St 2,Bef woodlands Ind Pk D St 2
+2023-12-01 00:40:56,46029,Aft W'lands Ind Pk D St 2,Aft woodlands Ind Pk D St 2
+2023-12-01 00:40:56,46069,W'lands Train Checkpt,woodlands Train Checkpt
+2023-12-01 00:40:56,46101,W'lands Checkpt,woodlands Checkpt
+2023-12-01 00:40:56,46109,W'Lands Checkpt,woodlands Checkpt
+2023-12-01 00:40:56,46139,Aft Riverside Rd,Aft Riverside road
+2023-12-01 00:40:56,46321,W'lands Civic Ctr,woodlands Civic Ctr
+2023-12-01 00:40:56,46329,Opp W'lands Civic Ctr,Opp woodlands Civic Ctr
+2023-12-01 00:40:56,46339,Bef W'Lands Stn Exit 7,Bef woodlands Stn Exit 7
+2023-12-01 00:40:56,46381,Opp W'lands Ind Pk D St 1,Opp woodlands Ind Pk D St 1
+2023-12-01 00:40:56,46389,Aft W'Lands Ind Pk D St 1,Aft woodlands Ind Pk D St 1
+2023-12-01 00:40:56,46489,Aft Gambas Ave,Aft Gambas avenue
+2023-12-01 00:40:56,46631,W'Lands Stn Exit 5,woodlands Stn Exit 5
+2023-12-01 00:40:56,46639,W'Lands Stn Exit 4,woodlands Stn Exit 4
+2023-12-01 00:40:56,46669,W'lands Pr Sch,woodlands Pr Sch
+2023-12-01 00:40:56,46711,Bef W'lands Ind Pk E3,Bef woodlands Ind Pk E3
+2023-12-01 00:40:56,46719,Aft W'lands Ind Pk E3,Aft woodlands Ind Pk E3
+2023-12-01 00:40:56,46721,Bef W'lands Ind Pk E7,Bef woodlands Ind Pk E7
+2023-12-01 00:40:56,46729,Aft W'lands Ind Pk E7,Aft woodlands Ind Pk E7
+2023-12-01 00:40:56,46801,Aft W'lands Mart,Aft woodlands Mart
+2023-12-01 00:40:56,46809,Opp W'lands Mart,Opp woodlands Mart
+2023-12-01 00:40:56,46931,Opp W'lands Spectrum 1,Opp woodlands Spectrum 1
+2023-12-01 00:40:56,47011,Bef W'lands Waterfront Pk,Bef woodlands Waterfront Pk
+2023-12-01 00:40:56,47019,Aft W'lands Waterfront Pk,Aft woodlands Waterfront Pk
+2023-12-01 00:40:56,47031,Bef Keramat Rd,Bef Keramat road
+2023-12-01 00:40:56,47039,Aft View Rd,Aft View road
+2023-12-01 00:40:56,47041,Opp W'lands Auto Hub,Opp woodlands Auto Hub
+2023-12-01 00:40:56,47049,W'lands Auto Hub,woodlands Auto Hub
+2023-12-01 00:40:56,47051,Aft W'lands Ind Pk E4,Aft woodlands Ind Pk E4
+2023-12-01 00:40:56,47059,Bef W'lands Ind Pk E4,Bef woodlands Ind Pk E4
+2023-12-01 00:40:56,47061,Aft Attap Valley Rd,Aft Attap Valley road
+2023-12-01 00:40:56,47069,Nth Tech,north Tech
+2023-12-01 00:40:56,47081,Aft Senoko Cres,Aft Senoko crescent
+2023-12-01 00:40:56,47091,Bef Senoko Cres,Bef Senoko crescent
+2023-12-01 00:40:56,47101,Aft Senoko Ave,Aft Senoko avenue
+2023-12-01 00:40:56,47201,W'lands Nth Stn,woodlands north Stn
+2023-12-01 00:40:56,47621,Aft Gambas Ave,Aft Gambas avenue
+2023-12-01 00:40:56,47811,W'lands Sunny Food,woodlands Sunny Food
+2023-12-01 00:40:56,47819,Opp W'lands Sunny Food,Opp woodlands Sunny Food
+2023-12-01 00:40:56,48021,Aft Mandai Lake Rd,Aft Mandai Lake road
+2023-12-01 00:40:56,48029,Bef Mandai Lake Rd,Bef Mandai Lake road
+2023-12-01 00:40:56,48061,Bef Mandai Ave,Bef Mandai avenue
+2023-12-01 00:40:56,48069,Aft Mandai Ave,Aft Mandai avenue
+2023-12-01 00:40:56,48081,Opp Upp Seletar Resvr,Opp upper Seletar reservoir
+2023-12-01 00:40:56,48089,Upp Seletar Resvr,upper Seletar reservoir
+2023-12-01 00:40:56,48101,Aft Meng Suan Rd,Aft Meng Suan road
+2023-12-01 00:40:56,48109,Opp Meng Suan Rd,Opp Meng Suan road
+2023-12-01 00:40:56,49081,Aft Kranji Cres,Aft Kranji crescent
+2023-12-01 00:40:56,49089,Bef Kranji Cres,Bef Kranji crescent
+2023-12-01 00:40:56,49149,Aft Kranji Lk,Aft Kranji link
+2023-12-01 00:40:56,49179,Aft Kranji Cres,Aft Kranji crescent
+2023-12-01 00:40:56,49189,Aft Kranji Rd,Aft Kranji road
+2023-12-01 00:40:56,49249,Aft Neo Tiew Rd,Aft Neo Tiew road
+2023-12-01 00:40:56,50071,Bef Carlisle Rd,Bef Carlisle road
+2023-12-01 00:40:56,50079,Opp Carlisle Rd,Opp Carlisle road
+2023-12-01 00:40:56,50169,Aft Irrawaddy Rd,Aft Irrawaddy road
+2023-12-01 00:40:56,50209,Aft Pegu Rd,Aft Pegu road
+2023-12-01 00:40:56,50321,Aft Gloucester Rd,Aft Gloucester road
+2023-12-01 00:40:56,51051,Aft Andrew Rd,Aft Andrew road
+2023-12-01 00:40:56,51071,MacRitchie Resvr,MacRitchie reservoir
+2023-12-01 00:40:56,51079,Opp MacRitchie Resvr,Opp MacRitchie reservoir
+2023-12-01 00:40:56,51111,Opp Andrew Rd,Opp Andrew road
+2023-12-01 00:40:56,51119,Bef Andrew Rd,Bef Andrew road
+2023-12-01 00:40:56,53051,Upp Thomson Stn Exit 5,upper Thomson Stn Exit 5
+2023-12-01 00:40:56,53059,Upp Thomson Stn Exit 2,upper Thomson Stn Exit 2
+2023-12-01 00:40:56,53061,Bef Windsor Pk Rd,Bef Windsor Pk road
+2023-12-01 00:40:56,53069,Aft Windsor Pk Rd,Aft Windsor Pk road
+2023-12-01 00:40:56,53081,Opp Faber Gdn,Opp Faber garden
+2023-12-01 00:40:56,53089,Faber Gdn,Faber garden
+2023-12-01 00:40:56,53091,Bef Ang Mo Kio Ave 1,Bef Ang Mo Kio avenue 1
+2023-12-01 00:40:56,53099,Aft Ang Mo Kio Ave 1,Aft Ang Mo Kio avenue 1
+2023-12-01 00:40:56,53381,Bishan Nth Shop Mall,Bishan north Shop Mall
+2023-12-01 00:40:56,53389,Opp Bishan Nth Shop Mall,Opp Bishan north Shop Mall
+2023-12-01 00:40:56,54051,Bef Ang Mo Kio Ave 5,Bef Ang Mo Kio avenue 5
+2023-12-01 00:40:56,54101,Aft Ang Mo Kio Ave 10,Aft Ang Mo Kio avenue 10
+2023-12-01 00:40:56,54109,Bef Ang Mo Kio Ave 10,Bef Ang Mo Kio avenue 10
+2023-12-01 00:40:56,55081,Opp Sunrise Gdns,Opp Sunrise gardens
+2023-12-01 00:40:56,55089,Aft Sunrise Gdns,Aft Sunrise gardens
+2023-12-01 00:40:56,55219,Bef Ang Mo Kio Ave 9,Bef Ang Mo Kio avenue 9
+2023-12-01 00:40:56,55241,Aft Yio Chu Kang Rd,Aft Yio Chu Kang road
+2023-12-01 00:40:56,55249,Bef Yio Chu Kang Rd,Bef Yio Chu Kang road
+2023-12-01 00:40:56,55361,Countryside Gdn P/G,Countryside garden P/G
+2023-12-01 00:40:56,56019,Bef Ang Mo Kio Ave 1,Bef Ang Mo Kio avenue 1
+2023-12-01 00:40:56,56031,Bef Yio Chu Kang Rd,Bef Yio Chu Kang road
+2023-12-01 00:40:56,56039,Aft Yio Chu Kang Rd,Aft Yio Chu Kang road
+2023-12-01 00:40:56,56051,Opp Tagore Rd,Opp Tagore road
+2023-12-01 00:40:56,56059,Bef Tagore Rd,Bef Tagore road
+2023-12-01 00:40:56,56071,Bef Old Upp Thomson Rd,Bef Old upper Thomson road
+2023-12-01 00:40:56,56079,Aft Old Upp Thomson Rd,Aft Old upper Thomson road
+2023-12-01 00:40:56,56201,Aft Munshi Abdullah Ave,Aft Munshi Abdullah avenue
+2023-12-01 00:40:56,56251,Opp Horizon Gdns,Opp Horizon gardens
+2023-12-01 00:40:56,56259,Horizon Gdns,Horizon gardens
+2023-12-01 00:40:56,56261,Aft Ang Mo Kio Ave 2,Aft Ang Mo Kio avenue 2
+2023-12-01 00:40:56,57141,Bef Upp Thomson Rd,Bef upper Thomson road
+2023-12-01 00:40:56,57149,Aft Upp Thomson Rd,Aft upper Thomson road
+2023-12-01 00:40:56,58061,Aft Durban Rd,Aft Durban road
+2023-12-01 00:40:56,58069,Opp Durban Rd,Opp Durban road
+2023-12-01 00:40:56,58089,Aft Andrews Ave,Aft Andrews avenue
+2023-12-01 00:40:56,58191,Aft Wellington Rd,Aft Wellington road
+2023-12-01 00:40:56,58199,Opp Auckland Rd West,Opp Auckland road West
+2023-12-01 00:40:56,58201,Aft Queen's Ave,Aft Queen's avenue
+2023-12-01 00:40:56,58209,Aft Pakistan Rd,Aft Pakistan road
+2023-12-01 00:40:56,58361,Nth Link Bldg,north Link Bldg
+2023-12-01 00:40:56,58571,Gambas Ave,Gambas avenue
+2023-12-01 00:40:56,58579,Gambas Ave,Gambas avenue
+2023-12-01 00:40:56,58581,Bef Gambas Cres,Bef Gambas crescent
+2023-12-01 00:40:56,58589,Opp Gambas Cres,Opp Gambas crescent
+2023-12-01 00:40:56,59021,Bef Yishun Ave 1,Bef Yishun avenue 1
+2023-12-01 00:40:56,59029,Aft Yishun Ave 1,Aft Yishun avenue 1
+2023-12-01 00:40:56,59781,Aft Yishun Ave 6,Aft Yishun avenue 6
+2023-12-01 00:40:56,59789,Bef Yishun Ave 6,Bef Yishun avenue 6
+2023-12-01 00:40:56,60051,Opp Kallang Pl,Opp Kallang place
+2023-12-01 00:40:56,60059,Bef Kallang Pl,Bef Kallang place
+2023-12-01 00:40:56,60079,Bef Bendemeer Rd,Bef Bendemeer road
+2023-12-01 00:40:56,60161,St. Michael's Pl,St. Michael's place
+2023-12-01 00:40:56,60211,Aft Tai Thong Cres,Aft Tai Thong crescent
+2023-12-01 00:40:56,61041,Bef Braddell Rd,Bef Braddell road
+2023-12-01 00:40:56,61049,Aft Bartley Rd,Aft Bartley road
+2023-12-01 00:40:56,62011,Aft Bartley Rd,Aft Bartley road
+2023-12-01 00:40:56,62019,Aft Rochdale Rd,Aft Rochdale road
+2023-12-01 00:40:56,62029,Paya Lebar Gdns,Paya Lebar gardens
+2023-12-01 00:40:56,62031,Bef How Sun Rd,Bef How Sun road
+2023-12-01 00:40:56,62039,Raya Gdn,Raya garden
+2023-12-01 00:40:56,62049,Aft Paya Lebar Cres,Aft Paya Lebar crescent
+2023-12-01 00:40:56,62061,Aft Upp Paya Lebar Rd,Aft upper Paya Lebar road
+2023-12-01 00:40:56,62069,Bef Upp Paya Lebar Rd,Bef upper Paya Lebar road
+2023-12-01 00:40:56,62101,Bef Upp Serangoon Rd,Bef upper Serangoon road
+2023-12-01 00:40:56,62109,Aft Upp Serangoon Rd,Aft upper Serangoon road
+2023-12-01 00:40:56,62111,Aft Sommerville Rd,Aft Sommerville road
+2023-12-01 00:40:56,62121,Aft Wolskel Rd,Aft Wolskel road
+2023-12-01 00:40:56,62131,S'goon Stn Exit H,serangoon Stn Exit H
+2023-12-01 00:40:56,62139,S'goon Stn Exit A/Blk 413,serangoon Stn Exit A/Blk 413
+2023-12-01 00:40:56,62189,S'goon Stn Exit D/Blk 416,serangoon Stn Exit D/Blk 416
+2023-12-01 00:40:56,62261,Opp S'goon Sec Sch,Opp serangoon Sec Sch
+2023-12-01 00:40:56,63011,Opp Upp S'goon Shop Ctr,Opp upper serangoon Shop Ctr
+2023-12-01 00:40:56,63019,Aft Upp S'goon Shop Ctr,Aft upper serangoon Shop Ctr
+2023-12-01 00:40:56,63151,Aft Upp S'goon Rd,Aft upper serangoon road
+2023-12-01 00:40:56,63181,Bef St. Helier's Ave,Bef St. Helier's avenue
+2023-12-01 00:40:56,63189,Aft Serangoon Gdn Way,Aft Serangoon garden Way
+2023-12-01 00:40:56,63191,Aft Serangoon Nth Ave 1,Aft Serangoon north avenue 1
+2023-12-01 00:40:56,63199,Aft Phillips Ave,Aft Phillips avenue
+2023-12-01 00:40:56,63361,Opp S'goon Sports Cplx,Opp serangoon Sports Cplx
+2023-12-01 00:40:56,64121,Aft Ang Mo Kio Ave 5,Aft Ang Mo Kio avenue 5
+2023-12-01 00:40:56,64189,Aft Old Tampines Rd,Aft Old Tampines road
+2023-12-01 00:40:56,64201,Aft Hougang Ave 3,Aft Hougang avenue 3
+2023-12-01 00:40:56,64209,Aft Defu Ave 1,Aft Defu avenue 1
+2023-12-01 00:40:56,64211,Aft Hougang Ave 7,Aft Hougang avenue 7
+2023-12-01 00:40:56,64219,Aft Defu Ave 2,Aft Defu avenue 2
+2023-12-01 00:40:56,64221,Opp Defu Ave 2,Opp Defu avenue 2
+2023-12-01 00:40:56,64229,Bef Defu Ave 2,Bef Defu avenue 2
+2023-12-01 00:40:56,65139,Punggol Rd End,Punggol road End
+2023-12-01 00:40:56,65191,Bef Punggol Rd,Bef Punggol road
+2023-12-01 00:40:56,65199,Aft Punggol Rd,Aft Punggol road
+2023-12-01 00:40:56,65681,Bef Northshore Cres,Bef Northshore crescent
+2023-12-01 00:40:56,65689,Aft Northshore Cres,Aft Northshore crescent
+2023-12-01 00:40:56,66009,S'Goon Int,serangoon Int
+2023-12-01 00:40:56,66011,Aft Braddell Rd,Aft Braddell road
+2023-12-01 00:40:56,66019,Bef Braddell Rd,Bef Braddell road
+2023-12-01 00:40:56,66119,Summer Pl,Summer place
+2023-12-01 00:40:56,66129,Aft Chuan Gdn,Aft Chuan garden
+2023-12-01 00:40:56,66141,Bef Yio Chu Kang Rd,Bef Yio Chu Kang road
+2023-12-01 00:40:56,66149,Aft Yio Chu Kang Rd,Aft Yio Chu Kang road
+2023-12-01 00:40:56,66151,Opp Penshurst Pl,Opp Penshurst place
+2023-12-01 00:40:56,66181,Aft Chartwell Rd,Aft Chartwell road
+2023-12-01 00:40:56,66191,Aft Corfe Pl,Aft Corfe place
+2023-12-01 00:40:56,66221,Opp Portchester Ave,Opp Portchester avenue
+2023-12-01 00:40:56,66231,Bef Huddington Ave,Bef Huddington avenue
+2023-12-01 00:40:56,66241,Hemsley Ave,Hemsley avenue
+2023-12-01 00:40:56,66251,Opp Kingswear Ave,Opp Kingswear avenue
+2023-12-01 00:40:56,66261,S'goon Gdns Country Club,serangoon gardens Country Club
+2023-12-01 00:40:56,66271,Serangoon Gdn Circus,Serangoon garden Circus
+2023-12-01 00:40:56,66351,S'goon Stn Exit E,serangoon Stn Exit E
+2023-12-01 00:40:56,66359,S'goon Stn Exit C/Blk 201,serangoon Stn Exit C/Blk 201
+2023-12-01 00:40:56,66381,Opp S'goon Stn Exit F,Opp serangoon Stn Exit F
+2023-12-01 00:40:56,66389,S'goon Stn Exit F,serangoon Stn Exit F
+2023-12-01 00:40:56,66391,Lor Chuan Stn Exit A,lorong Chuan Stn Exit A
+2023-12-01 00:40:56,66399,Opp Lor Chuan Stn Exit B,Opp lorong Chuan Stn Exit B
+2023-12-01 00:40:56,66471,Bef Yio Chu Kang Rd,Bef Yio Chu Kang road
+2023-12-01 00:40:56,66479,Aft Yio Chu Kang Rd,Aft Yio Chu Kang road
+2023-12-01 00:40:56,67011,Bef Begonia Rd,Bef Begonia road
+2023-12-01 00:40:56,67019,Aft Begonia Rd,Aft Begonia road
+2023-12-01 00:40:56,67021,Opp Dedap Rd,Opp Dedap road
+2023-12-01 00:40:56,67029,Aft Dedap Rd,Aft Dedap road
+2023-12-01 00:40:56,67039,Aft Seletar Rd,Aft Seletar road
+2023-12-01 00:40:56,67081,Aft Yio Chu Kang Rd,Aft Yio Chu Kang road
+2023-12-01 00:40:56,67139,Nth Spring Pr Sch,north Spring Pr Sch
+2023-12-01 00:40:56,67461,Aft Sengkang East Ave,Aft Sengkang East avenue
+2023-12-01 00:40:56,67469,Bef Sengkang East Ave,Bef Sengkang East avenue
+2023-12-01 00:40:56,67571,Aft Lor Tanggam,Aft lorong Tanggam
+2023-12-01 00:40:56,67651,Bef Sengkang West Rd,Bef Sengkang West road
+2023-12-01 00:40:56,67659,Aft Sengkang West Rd,Aft Sengkang West road
+2023-12-01 00:40:56,68121,Bef West Camp Rd,Bef West Camp road
+2023-12-01 00:40:56,68129,Aft West Camp Rd,Aft West Camp road
+2023-12-01 00:40:56,68171,Bef Yishun Ave 8,Bef Yishun avenue 8
+2023-12-01 00:40:56,68179,Aft Yishun Ave 8,Aft Yishun avenue 8
+2023-12-01 00:40:56,68189,Bef Seletar A'Space Cres,Bef Seletar A'Space crescent
+2023-12-01 00:40:56,68191,Bef Seletar A'Space Lk,Bef Seletar A'Space link
+2023-12-01 00:40:56,68199,Aft Seletar A'Space Lk,Aft Seletar A'Space link
+2023-12-01 00:40:56,70051,Aft Joo Seng Rd,Aft Joo Seng road
+2023-12-01 00:40:56,70131,Bef Davidson Rd,Bef Davidson road
+2023-12-01 00:40:56,70349,Bef Lor Bakar Batu,Bef lorong Bakar Batu
+2023-12-01 00:40:56,70361,Bef Genting Lk,Bef Genting link
+2023-12-01 00:40:56,70401,Bef Ubi Rd 4,Bef Ubi road 4
+2023-12-01 00:40:56,71011,Aft Paya Lebar Rd,Aft Paya Lebar road
+2023-12-01 00:40:56,71051,Aft Kim Chuan Rd,Aft Kim Chuan road
+2023-12-01 00:40:56,71059,Bef Kim Chuan Rd,Bef Kim Chuan road
+2023-12-01 00:40:56,71061,Bef Airport Rd,Bef Airport road
+2023-12-01 00:40:56,71069,Aft Airport Rd,Aft Airport road
+2023-12-01 00:40:56,74009,Tampines Nth Int,Tampines north Int
+2023-12-01 00:40:56,74011,Aft Tampines Ind Ave 5,Aft Tampines Ind avenue 5
+2023-12-01 00:40:56,74019,Bef Tampines Ind Ave 5,Bef Tampines Ind avenue 5
+2023-12-01 00:40:56,74021,Bef Tampines Ind Ave 4,Bef Tampines Ind avenue 4
+2023-12-01 00:40:56,74029,Aft Tampines Ind Ave 4,Aft Tampines Ind avenue 4
+2023-12-01 00:40:56,74039,Aft Tampines Ind Ave 2,Aft Tampines Ind avenue 2
+2023-12-01 00:40:56,75291,Aft Tampines Ave 9,Aft Tampines avenue 9
+2023-12-01 00:40:56,75299,Bef Tampines Ave 9,Bef Tampines avenue 9
+2023-12-01 00:40:56,75361,Bef Tampines Ind Ave 5,Bef Tampines Ind avenue 5
+2023-12-01 00:40:56,75369,Bef Tampines Lk,Bef Tampines link
+2023-12-01 00:40:56,75371,Aft Tampines Ave 5,Aft Tampines avenue 5
+2023-12-01 00:40:56,75379,Bef Tampines Ave 5,Bef Tampines avenue 5
+2023-12-01 00:40:56,75401,Aft Tampines Ave 1,Aft Tampines avenue 1
+2023-12-01 00:40:56,75419,Aft Tampines Ave 5,Aft Tampines avenue 5
+2023-12-01 00:40:56,77091,Aft Pasir Ris Ave,Aft Pasir Ris avenue
+2023-12-01 00:40:56,77099,Bef Pasir Ris Ave,Bef Pasir Ris avenue
+2023-12-01 00:40:56,77101,Bef Pasir Ris Rd,Bef Pasir Ris road
+2023-12-01 00:40:56,77109,Aft Pasir Ris Rd,Aft Pasir Ris road
+2023-12-01 00:40:56,78099,Aft Loyang Gdns,Aft Loyang gardens
+2023-12-01 00:40:56,80009,Lor 1 Geylang Ter,lorong 1 Geylang Ter
+2023-12-01 00:40:56,80039,Opp Lor 1 Geylang Ter,Opp lorong 1 Geylang Ter
+2023-12-01 00:40:56,80051,Aft Lor 1 Geylang,Aft lorong 1 Geylang
+2023-12-01 00:40:56,80089,Bef Lor 18 Geylang,Bef lorong 18 Geylang
+2023-12-01 00:40:56,80091,Bef Lor 23 Geylang,Bef lorong 23 Geylang
+2023-12-01 00:40:56,80111,Bef Geylang Rd,Bef Geylang road
+2023-12-01 00:40:56,80119,Aft Geylang Rd,Aft Geylang road
+2023-12-01 00:40:56,80251,Aft Lor 14 Geylang,Aft lorong 14 Geylang
+2023-12-01 00:40:56,80269,Bef Sims Ave,Bef Sims avenue
+2023-12-01 00:40:56,80289,Sims Pl Ter,Sims place Ter
+2023-12-01 00:40:56,81029,Aft Lor 28 Geylang,Aft lorong 28 Geylang
+2023-12-01 00:40:56,81049,Aft Lor 34 Geylang,Aft lorong 34 Geylang
+2023-12-01 00:40:56,81069,Opp Lor 39 Geylang,Opp lorong 39 Geylang
+2023-12-01 00:40:56,81191,Aft Old Airport Rd,Aft Old Airport road
+2023-12-01 00:40:56,81199,Bef Old Airport Rd,Bef Old Airport road
+2023-12-01 00:40:56,82051,Tg Katong Rd Sth P/G,Tg Katong road south P/G
+2023-12-01 00:40:56,82059,Opp Tg Katong Rd Sth P/G,Opp Tg Katong road south P/G
+2023-12-01 00:40:56,82069,Aft Lor 106 Changi,Aft lorong 106 Changi
+2023-12-01 00:40:56,82081,Aft Dunman Rd,Aft Dunman road
+2023-12-01 00:40:56,82141,Aft Koon Seng Rd,Aft Koon Seng road
+2023-12-01 00:40:56,82149,Bef Koon Seng Rd,Bef Koon Seng road
+2023-12-01 00:40:56,82151,Bef Joo Chiat Pl,Bef Joo Chiat place
+2023-12-01 00:40:56,82159,Aft Tembeling Rd,Aft Tembeling road
+2023-12-01 00:40:56,82171,Bef Mangis Rd,Bef Mangis road
+2023-12-01 00:40:56,82179,Aft Rambutan Rd,Aft Rambutan road
+2023-12-01 00:40:56,83049,Bef Lor 110 Changi,Bef lorong 110 Changi
+2023-12-01 00:40:56,83121,Bef Lor K Telok Kurau,Bef lorong K Telok Kurau
+2023-12-01 00:40:56,83131,Aft Lor H Telok Kurau,Aft lorong H Telok Kurau
+2023-12-01 00:40:56,83139,Aft Joo Chiat Pl,Aft Joo Chiat place
+2023-12-01 00:40:56,83141,Aft Lor G Telok Kurau,Aft lorong G Telok Kurau
+2023-12-01 00:40:56,83149,Aft Changi Rd,Aft Changi road
+2023-12-01 00:40:56,83169,Bef Still Rd,Bef Still road
+2023-12-01 00:40:56,83171,Bef Roseburn Ave,Bef Roseburn avenue
+2023-12-01 00:40:56,83219,Bef Frankel Ave,Bef Frankel avenue
+2023-12-01 00:40:56,83229,Bef Carlton Ave,Bef Carlton avenue
+2023-12-01 00:40:56,83271,Aft Swan Lake Ave,Aft Swan Lake avenue
+2023-12-01 00:40:56,83291,Aft Joo Chiat Pl,Aft Joo Chiat place
+2023-12-01 00:40:56,83299,Aft Lor G Telok Kurau,Aft lorong G Telok Kurau
+2023-12-01 00:40:56,83301,Aft East Coast Rd,Aft East Coast road
+2023-12-01 00:40:56,83311,Aft Lor Nangka,Aft lorong Nangka
+2023-12-01 00:40:56,83319,Aft Lor J Telok Kurau,Aft lorong J Telok Kurau
+2023-12-01 00:40:56,84121,Aft Bedok Sth Ave 1,Aft Bedok south avenue 1
+2023-12-01 00:40:56,84201,Bedok Resvr Stn Exit A,Bedok reservoir Stn Exit A
+2023-12-01 00:40:56,84209,Bedok Resvr Stn Exit B,Bedok reservoir Stn Exit B
+2023-12-01 00:40:56,84279,Aft Bedok Nth St 5,Aft Bedok north St 5
+2023-12-01 00:40:56,84299,Bedok Nth Depot,Bedok north Depot
+2023-12-01 00:40:56,84451,Bedok Nth Stn Exit A,Bedok north Stn Exit A
+2023-12-01 00:40:56,84539,Bedok Nth Stn Exit B,Bedok north Stn Exit B
+2023-12-01 00:40:56,84581,Opp Bedok Sth NPC,Opp Bedok south NPC
+2023-12-01 00:40:56,84589,Bef New Upp Changi Rd,Bef New upper Changi road
+2023-12-01 00:40:56,84591,Sbst Bedok Nth Depot,Sbst Bedok north Depot
+2023-12-01 00:40:56,84599,Opp Sbst Bedok Nth Depot,Opp Sbst Bedok north Depot
+2023-12-01 00:40:56,85031,Excelsior Gdns,Excelsior gardens
+2023-12-01 00:40:56,85039,Opp Excelsior Gdns,Opp Excelsior gardens
+2023-12-01 00:40:56,85061,Opp Bedok Mkt Pl,Opp Bedok Mkt place
+2023-12-01 00:40:56,85069,Bedok Mkt Pl,Bedok Mkt place
+2023-12-01 00:40:56,85101,Aft Bedok Rd,Aft Bedok road
+2023-12-01 00:40:56,85109,Bef Bedok Rd,Bef Bedok road
+2023-12-01 00:40:56,91049,Bef Fort Rd,Bef Fort road
+2023-12-01 00:40:56,91069,Bef Walton Rd,Bef Walton road
+2023-12-01 00:40:56,91071,Bef Tg Katong Rd,Bef Tg Katong road
+2023-12-01 00:40:56,91079,Aft Tg Katong Rd,Aft Tg Katong road
+2023-12-01 00:40:56,91081,Fort Gdns,Fort gardens
+2023-12-01 00:40:56,91089,Opp Fort Gdns,Opp Fort gardens
+2023-12-01 00:40:56,91091,Bef Kg Kayu Rd,Bef Kg Kayu road
+2023-12-01 00:40:56,91099,Bef Wilkinson Rd,Bef Wilkinson road
+2023-12-01 00:40:56,92179,Aft Duku Rd,Aft Duku road
+2023-12-01 00:40:56,92201,Aft Lor M Telok Kurau,Aft lorong M Telok Kurau
+2023-12-01 00:40:56,92241,Amber Gdns,Amber gardens
+2023-12-01 00:40:56,92249,Opp Amber Gdns,Opp Amber gardens
+2023-12-01 00:40:56,92301,Bef St. Patrick's Rd,Bef St. Patrick's road
+2023-12-01 00:40:56,93021,Opp Mandarin Gdns,Opp Mandarin gardens
+2023-12-01 00:40:56,93029,Mandarin Gdns,Mandarin gardens
+2023-12-01 00:40:56,93061,Bef Siglap Rd,Bef Siglap road
+2023-12-01 00:40:56,93069,Aft Siglap Rd,Aft Siglap road
+2023-12-01 00:40:56,93091,Opp Siglap Sth CC,Opp Siglap south CC
+2023-12-01 00:40:56,93099,Siglap Sth CC,Siglap south CC
+2023-12-01 00:40:56,93101,Aft Coldstream Ave,Aft Coldstream avenue
+2023-12-01 00:40:56,93109,Bef Frankel Pl,Bef Frankel place
+2023-12-01 00:40:56,93111,Bef Elite Pk Ave,Bef Elite Pk avenue
+2023-12-01 00:40:56,93119,Aft Elite Pk Ave,Aft Elite Pk avenue
+2023-12-01 00:40:56,94009,Upp East Coast Ter,upper East Coast Ter
+2023-12-01 00:40:56,94011,Evergreen Gdn,Evergreen garden
+2023-12-01 00:40:56,94019,Opp Evergreen Ave,Opp Evergreen avenue
+2023-12-01 00:40:56,94021,Bef Sennett Rd,Bef Sennett road
+2023-12-01 00:40:56,94029,Aft Sennet Rd,Aft Sennet road
+2023-12-01 00:40:56,94041,Aft Parbury Ave,Aft Parbury avenue
+2023-12-01 00:40:56,94049,Aft Bedok Sth Ave 3,Aft Bedok south avenue 3
+2023-12-01 00:40:56,95161,Bef Changi Ferry Rd,Bef Changi Ferry road
+2023-12-01 00:40:56,95169,Aft Changi Ferry Rd,Aft Changi Ferry road
+2023-12-01 00:40:56,95901,Bef Simei Rd,Bef Simei road
+2023-12-01 00:40:56,95909,Aft Somapah Rd,Aft Somapah road
+2023-12-01 00:40:56,96011,Bef Simei Ave,Bef Simei avenue
+2023-12-01 00:40:56,96019,Aft Simei Ave,Aft Simei avenue
+2023-12-01 00:40:56,96041,Upp Changi Stn/Opp SUTD,upper Changi Stn/Opp SUTD
+2023-12-01 00:40:56,96049,Upp Changi Stn/SUTD,upper Changi Stn/SUTD
+2023-12-01 00:40:56,96091,Aft Upp Changi Rd,Aft upper Changi road
+2023-12-01 00:40:56,96099,Aft Upp Changi Rd East,Aft upper Changi road East
+2023-12-01 00:40:56,96311,Bef Changi Sth St 2,Bef Changi south St 2
+2023-12-01 00:40:56,96351,Bef Changi Sth St 1,Bef Changi south St 1
+2023-12-01 00:40:56,96391,Aft Changi Biz Pk Cres,Aft Changi Biz Pk crescent
+2023-12-01 00:40:56,97071,Aft St. John's Cres,Aft St. John's crescent
+2023-12-01 00:40:56,97079,Opp St. John's Cres,Opp St. John's crescent
+2023-12-01 00:40:56,97099,Aft Loyang Ave,Aft Loyang avenue
+2023-12-01 00:40:56,97121,Bef Old Tampines Rd,Bef Old Tampines road
+2023-12-01 00:40:56,97129,Bef Loyang Ave,Bef Loyang avenue
+2023-12-01 00:40:56,97141,Aft Upp Changi Rd Nth,Aft upper Changi road north
+2023-12-01 00:40:56,97151,Aft Changi Nth St 2,Aft Changi north St 2
+2023-12-01 00:40:56,97301,Aft Changi Nth St 1,Aft Changi north St 1
+2023-12-01 00:40:56,98301,Avila Gdns,Avila gardens
+2023-12-01 00:40:56,99021,Bef Cranwell Rd,Bef Cranwell road
+2023-12-01 00:40:56,99029,Aft Cranwell Rd,Aft Cranwell road
+2023-12-01 00:40:56,99071,Aft Old Pier Rd,Aft Old Pier road
+2023-12-01 00:40:56,99079,Opp Old Pier Rd,Opp Old Pier road
+2023-12-01 00:40:56,99081,Aft Cranwell Rd,Aft Cranwell road
+2023-12-01 00:40:56,99089,Bef Cranwell Rd,Bef Cranwell road
+2023-12-01 00:40:56,99091,Bef Turnhouse Rd,Bef Turnhouse road
+2023-12-01 00:40:56,99099,Aft Turnhouse Rd,Aft Turnhouse road
+2023-12-01 00:40:56,01631,Aft Beach Rd,Aft Beach road
+2023-12-01 00:40:56,01639,Bef Beach Rd,Bef Beach road
+2023-12-01 00:40:56,03031,Raffles Pl Stn Exit F,Raffles place Stn Exit F
+2023-12-01 00:40:56,03071,80 Robinson Rd,80 Robinson road
+2023-12-01 00:40:56,03331,Bef Marina Gdns Dr,Bef Marina gardens Dr
+2023-12-01 00:40:56,03339,Aft Marina Gdns Dr,Aft Marina gardens Dr
+2023-12-01 00:40:56,03341,Bef Gdns by the Bay,Bef gardens by the Bay
+2023-12-01 00:40:56,03349,Aft Gdns by the Bay,Aft gardens by the Bay
+2023-12-01 00:40:56,03371,Gdns by the Bay,gardens by the Bay
+2023-12-01 00:40:56,03411,Opp Marina Sth Pier Stn,Opp Marina south Pier Stn
+2023-12-01 00:40:56,03419,Marina Sth Pier Stn,Marina south Pier Stn
+2023-12-01 00:40:56,04311,Aft River Valley Rd,Aft River Valley road
+2023-12-01 00:40:56,05129,Opp One Upp Pickering,Opp One upper Pickering
+2023-12-01 00:40:56,05421,Aft Craig Rd,Aft Craig road
+2023-12-01 00:40:56,05429,Bef Craig Rd,Bef Craig road
+2023-12-01 00:40:56,05641,Bef Cantonment Rd,Bef Cantonment road
+2023-12-01 00:40:56,06169,River Pl Condo,River place Condo
+2023-12-01 00:40:56,07241,Bef S'goon Rd,Bef serangoon road
+2023-12-01 00:40:56,07249,Aft Kempas Rd,Aft Kempas road
+2023-12-01 00:40:56,07319,Aft Allenby Rd,Aft Allenby road
+2023-12-01 00:40:56,07331,Aft King George's Ave,Aft King George's avenue
+2023-12-01 00:40:56,07371,Aft Kallang Rd,Aft Kallang road
+2023-12-01 00:40:56,07379,Aperia/Bef Kallang Rd,Aperia/Bef Kallang road
+2023-12-01 00:40:56,07419,Opp Veerasamy Rd,Opp Veerasamy road
+2023-12-01 00:40:56,09037,Bef Cairnhill Rd,Bef Cairnhill road
+2023-12-01 00:40:56,09121,Bef Tomlinson Rd,Bef Tomlinson road
+2023-12-01 00:40:56,09131,Opp Orchard Blvd Stn,Opp Orchard boulevard Stn
+2023-12-01 00:40:56,09139,Orchard Blvd Stn Exit 1,Orchard boulevard Stn Exit 1
+2023-12-01 00:40:56,09159,Aft Tomlinson Rd,Aft Tomlinson road
+2023-12-01 00:40:56,09191,Aft Cuscaden Rd,Aft Cuscaden road

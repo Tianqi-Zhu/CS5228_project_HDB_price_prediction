@@ -1,0 +1,21 @@
+{
+  "origin": "2022-09",
+  "member": "temporal",
+  "n_estimators": 2,
+  "features": 84,
+  "context_rows": 60079,
+  "query_rows": 2000,
+  "fit_seconds": 11.098623899975792,
+  "predict_seconds": 37.791951499995776,
+  "peak_vram_gib": 6.855320930480957,
+  "weights_digest_before": "830c4522082f7f267cebffb4014e09ab54c93981ebde75bde00d84da9485d6d3",
+  "weights_digest_after": "830c4522082f7f267cebffb4014e09ab54c93981ebde75bde00d84da9485d6d3",
+  "parameters_unchanged": true,
+  "gradients_prohibited": true,
+  "no_adapters": true,
+  "subsampling": false,
+  "context_ids_sha256": "b3a244196866edb52b7bdfd4fb857e9367a890478cf4cc0965dcea57345da797",
+  "query_ids_sha256": "0ce5f91f264728b6a24338e10ba9c01a65cec4cdb2d883c7a81809b4bbab4cf1",
+  "prediction_sha256": "2071e1be331ed7abcd068dc1229f4dba894546bb60c355437ce8ef39302f8240",
+  "cached_prediction_reused": false
+}

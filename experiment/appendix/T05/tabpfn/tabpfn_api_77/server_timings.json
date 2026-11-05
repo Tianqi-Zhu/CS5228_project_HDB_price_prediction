@@ -1,0 +1,30 @@
+{
+  "TabPFN 3.5 API": {
+    "fit": {
+      "elapsed_s": 24.697,
+      "queue_wait_s": 0.279,
+      "train_set_transform_s": 24.419,
+      "fit_s": 0.0
+    },
+    "predict": {
+      "test_set_transform_queue_wait_s": 0.261,
+      "test_set_transform_s": 1.168,
+      "predict_queue_wait_s": 0.0,
+      "predict_s": 8.294
+    }
+  },
+  "TabPFN 3.5 Thinking API (medium)": {
+    "fit": {
+      "elapsed_s": 561.421,
+      "queue_wait_s": 1.717,
+      "train_set_transform_s": 22.755,
+      "fit_s": 536.95
+    },
+    "predict": {
+      "test_set_transform_queue_wait_s": 0.263,
+      "test_set_transform_s": 1.367,
+      "predict_queue_wait_s": 0.0,
+      "predict_s": 17.156
+    }
+  }
+}

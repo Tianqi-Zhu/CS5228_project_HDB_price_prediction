@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "all_original_source_checkpoint_and_submission_hashes_unchanged": true,
+  "final_baselines_feature_members_and_seed_controls_use_matched_native_estimator_batching": true,
+  "original_feature_choices_folds_and_decision_rules_unchanged": true,
+  "weights_recomputed_only_from_earlier_folds_after_execution_reconciliation": true,
+  "independent_spatial_future_target_mutation_audit": true,
+  "all_1600_pre_allocator_predictions_identical": true,
+  "sequential_override400_row_controlled_replay_identical": true,
+  "all_three_sequential_compute_controls_replayed": true,
+  "frozen_parameter_digests_unchanged": true,
+  "tests_passed": 24,
+  "figures": 5,
+  "all_report_links_valid": true,
+  "artifact_sha256": {
+    "report.md": "fc8cc68828297c7c84bdad34c2e28c8b366055c8cbbacca67bc39d0faa2cc3d0",
+    "settings.json": "558d80c8100cde592b093f09a61f1f5c34fc3d0e9462a518b165fc56452221e5",
+    "selection.json": "56b77baa971187168a28c4ced8769830e3ced1de1a2b1fbf41cc85863513f72f",
+    "nested_selection.json": "107127e1808a3d60fb304c542e4dc3d8f37f63ae033ed05aa62ecb46bb071c41",
+    "reporting_plan.json": "9b3dffca9a508557e9ccd3cc23cc5b137a64b54cdd03470aef1148e3a30e8040",
+    "comparison.csv": "3c5d9812b354b533bd0c33cd7c72ac3fc370fb30b7f8ed94fc647683d0ed34e0",
+    "predictions_all_origins.csv": "81ea75c8591b351d185e6ff8861ce9d9a20c04963e47b405792efda43a41ba29",
+    "learned_weights.csv": "0774ba4c84bcbcce69a43a78571a9e6d5d71fc6b877713e0ac7a61381782b758",
+    "verification.json": "2df8ad3da1a7b045d4b6f88ced091b8fcf0cd005c8abf072b1e6627dcdac949a",
+    "independent_feature_audit.json": "ac8fb1f2c80cfc8e1938405f38c6f4fadc3023481811021c41682960c652f97d",
+    "estimator_batching_isolation.json": "580cf12c3f187384bd6629be7cd7beaf1e611636100eab8d49543b00bd8c3233",
+    "allocator_prediction_replay.json": "528942bcbd28def3d3e69b206d6a94e8f2f8ea54ec6956db1ebe3ca1479b270f",
+    "tests.log": "c47df4df5bfbd0f361fce977e456a8884c40bc13909e58f7f0218c10caf94884",
+    "paired_cluster_bootstrap.csv": "68d2a2de5dfe0be533d15f8045aa783f7562cf81b21c35c1a39b32333a197933",
+    "experiment_brief.txt": "d06c85f1c87a072f095e886dcf011b1c5ddb144af1173ec473603cfc9b1f897d"
+  }
+}

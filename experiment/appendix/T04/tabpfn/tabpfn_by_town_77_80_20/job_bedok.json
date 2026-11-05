@@ -1,0 +1,8 @@
+{
+  "town": "bedok",
+  "context_rows": 7188,
+  "query_rows": 1719,
+  "context_ids_sha256": "d993ef6da9cbaabc665663e9571efc5f124b5841f721e0b418214ae06af5a5ad",
+  "query_ids_sha256": "cf1829c8ed4614b7e61495e23f5cb33d44061e0c6e844b3d5c0f41448543d57a",
+  "settings_sha256": "7ec7fcf4dc279912e4ccac47faafbe82887e1d344fe25f59350c4dbcbc3e5916"
+}

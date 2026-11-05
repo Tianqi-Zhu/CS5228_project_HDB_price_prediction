@@ -1,0 +1,16 @@
+{
+  "variant": {
+    "name": "T3",
+    "information": "rent_coe_stock",
+    "processor": "transformer",
+    "window": 12,
+    "delay": 0
+  },
+  "refit_epochs": 5,
+  "earlier_best_epochs": [
+    7,
+    3
+  ],
+  "selection_label_max": "2024-04",
+  "outer_labels_used": false
+}

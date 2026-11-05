@@ -1,0 +1,15 @@
+{
+  "fit_seconds": 1.3293698999332264,
+  "predict_seconds": 0.703285500057973,
+  "peak_vram_gib": 2.1816000938415527,
+  "context_rows": 5746,
+  "query_rows": 1369,
+  "features": 77,
+  "batch_size": 200,
+  "subsampling": false,
+  "parameter_versions_unchanged": true,
+  "town": "hougang",
+  "rmse_sgd": 439.7659315363048,
+  "mae_sgd": 312.69928136048463,
+  "bias_sgd": 82.59785124305894
+}

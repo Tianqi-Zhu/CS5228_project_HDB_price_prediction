@@ -1,0 +1,7 @@
+model,months_improved_vs_winning_diag,bootstrap_median_delta_sgd,bootstrap_2.5pct_sgd,bootstrap_97.5pct_sgd
+diag_crps_mse,5,-0.08315930,-0.58030604,0.37509862
+diag_mse_only,6,-0.13753880,-0.78361836,0.49113708
+icl_rank2,5,0.26788233,-0.43307284,0.94988381
+original_diag_2view,3,0.82102735,0.18841598,1.49825249
+original_diag_4view,4,0.16763587,-0.46546483,0.79549921
+regression_head,1,0.78193178,0.02631597,1.49926553

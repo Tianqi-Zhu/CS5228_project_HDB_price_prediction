@@ -1,0 +1,29 @@
+{
+  "primary_hypothesis": {"site_id": "kulicke_soffa_serangoon", "symbol": "KLIC", "radius_m": 1000, "lag": 6},
+  "secondary_hypotheses": [
+    {"site_id": "st_engineering_amk", "symbol": "S63.SI", "radius_m": 3000, "lag": 3},
+    {"site_id": "venture_woodlands", "symbol": "V03.SI", "radius_m": 3000, "lag": 3},
+    {"site_id": "flex_changi", "symbol": "FLEX", "radius_m": 2000, "lag": 3},
+    {"site_id": "seatrium_admiralty", "symbol": "5E2.SI", "radius_m": 2000, "lag": 1}
+  ],
+  "development_end": "2024-05",
+  "confirmation_start": "2024-06",
+  "status_of_confirmation": "Already examined in the original experiments. All follow-up tests are development/robustness evidence, not a fresh untouched holdout.",
+  "distance_bands_m": [[0, 1000], [1000, 2000], [2000, 3000]],
+  "comparison_ring_m": [3000, 6000],
+  "placebo_count": 32,
+  "placebo_min_distance_to_focal_m": 6000,
+  "placebo_min_separation_m": 1200,
+  "placebo_matching": "Choose HDB-building centers using only 2021 rental density, mean rent, floor area, lease year, and flat-type mix. Screen rental density within factor 2 of focal. Greedily spread sites. No later rent changes or prediction errors enter matching.",
+  "fixed_ridge_alpha": 10.0,
+  "min_cell_rentals": 20,
+  "bootstrap_block_months": 3,
+  "economic_controls": ["SP500", "NASDAQCOM", "NASDAQSOX", "DEXSIUS"],
+  "row_model": "CatBoost residual model on existing 77 aligned rent-history features; same context rows and temporal baselines in every ablation. Native categorical handling preserves high-cardinality block/street IDs.",
+  "row_variants": ["history77", "klic_nuisance", "klic_sector_local", "klic_local", "all_firm_nuisance", "all_firm_sector_local", "all_firm_local"],
+  "row_scenarios": ["monthly_updated_stocks_with_frozen_rent_history", "fixed_origin_stocks_and_rent_history"],
+  "row_fold_origins": ["2022-09", "2023-07", "2024-06"],
+  "fixed_origin_stock_policy": "For approval month t and lag L, use the exact month t-L if it is no later than the fold origin; otherwise signal is missing and encoded as zero plus an unavailable indicator. Do not fill future stocks with their realized values.",
+  "row_primary_comparison": "klic_local versus klic_sector_local, so distance, standalone company signals and distance-weighted US-market/semiconductor/FX signals are controlled. Also compare with klic_nuisance and the history77 rent-only reference.",
+  "promotion_rule": "Need better earlier pooled error versus nuisance and rent-only controls, better later near-site error without material whole-sample harm, robustness to US semiconductor/FX controls and spatial placebos; ultimately require new rental months and matched TabPFN confirmation. No submission changes in this follow-up."
+}

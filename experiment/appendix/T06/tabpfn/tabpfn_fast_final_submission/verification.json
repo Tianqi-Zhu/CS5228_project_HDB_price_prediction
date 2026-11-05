@@ -1,0 +1,18 @@
+{
+  "submission": "reports/tabpfn_fast_final_submission/submission_tabpfn_fast_150k.csv",
+  "submission_sha256": "6a9d195f288d3a38663ce8138bb183d6b205c4ba288829712ef5d37134671ad5",
+  "rows": 50000,
+  "columns": [
+    "Id",
+    "Predicted"
+  ],
+  "row_order_matches_example": true,
+  "all_positive_and_finite": true,
+  "prediction_range_sgd": [
+    1613.1769596308718,
+    5945.493445228634
+  ],
+  "test_labels_available": false,
+  "test_rmse_available": false,
+  "peak_vram_gib": 7.345986843109131
+}

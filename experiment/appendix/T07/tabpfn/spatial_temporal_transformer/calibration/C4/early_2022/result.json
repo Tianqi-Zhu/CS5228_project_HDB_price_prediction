@@ -1,0 +1,21 @@
+{
+  "run": "calibration/C4/early_2022",
+  "variant": "C4",
+  "seed": 42,
+  "best_epoch": 1,
+  "epochs_run": 6,
+  "weighted_rmse_sgd": 647.1622811472271,
+  "rmse_sgd": 646.4435110577979,
+  "mae_sgd": 520.1062659778596,
+  "bias_sgd": 60.035574610919795,
+  "rows": 2000,
+  "parameters": 1672127,
+  "sequence_gate": 0.09939908236265182,
+  "seconds": 19.30490780004766,
+  "peak_allocated_vram_gib": 0.30413246154785156,
+  "checkpoint_replay_max_difference": 0.0,
+  "checkpoint_sha256": "4f500a093896d95fee6d0a396b65952c11c890e35934b16bb5c534cf15d02d03",
+  "predictions_sha256": "63c9f17b05fcd0e414b812bb125ca5106ca9795be867fbbbf67e58895a837545",
+  "preprocessors_sha256": "154fdb8b6db6a5ed6db776b3635044aa2f8aa19219257f3e00a13e2e9a95c898",
+  "outer_labels_used_for_selection": false
+}

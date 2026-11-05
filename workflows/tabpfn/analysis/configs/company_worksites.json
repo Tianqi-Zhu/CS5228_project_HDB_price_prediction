@@ -1,0 +1,117 @@
+{
+  "scope": "Engineering and manufacturing companies in the supplied stock file; headquarters and selected substantial operating sites. Sites chosen from business evidence before looking at local rental outcomes. Not a complete employment footprint.",
+  "location_policy": "Historical documents establish these addresses around 2020-2022. Fixed-address analysis through March 2025 assumes site continuity; historical staffing, exact boundaries and yearly occupancy were not reconstructed. Current OneMap coordinates locate the documented addresses.",
+  "sites": [
+    {
+      "site_id": "st_engineering_amk",
+      "company": "ST Engineering",
+      "symbol": "S63.SI",
+      "address": "1 Ang Mo Kio Electronics Park Road",
+      "postal": "567710",
+      "role": "Group headquarters and industrial/commercial property",
+      "source_url": "https://www.stengg.com/getmedia/1447e8e4-cb80-48fa-ac4f-1fc6745dad5c/st-engineering-annual-report-2021.pdf",
+      "evidence_year": 2021
+    },
+    {
+      "site_id": "st_engineering_boon_lay",
+      "company": "ST Engineering",
+      "symbol": "S63.SI",
+      "address": "249 Jalan Boon Lay",
+      "postal": "619523",
+      "role": "Land systems industrial site; major property in 2021 annual report",
+      "source_url": "https://www.stengg.com/getmedia/1447e8e4-cb80-48fa-ac4f-1fc6745dad5c/st-engineering-annual-report-2021.pdf",
+      "evidence_year": 2021
+    },
+    {
+      "site_id": "st_engineering_paya_lebar",
+      "company": "ST Engineering",
+      "symbol": "S63.SI",
+      "address": "540 Airport Road",
+      "postal": "539938",
+      "role": "Aerospace operating/maintenance site",
+      "source_url": "https://www.caas.gov.sg/docs/default-source/pdf/sar145-summary_02_nov_2020.pdf",
+      "evidence_year": 2020
+    },
+    {
+      "site_id": "venture_amk",
+      "company": "Venture",
+      "symbol": "V03.SI",
+      "address": "5006 Ang Mo Kio Avenue 5",
+      "postal": "569873",
+      "role": "Principal place of business and group electronics companies",
+      "source_url": "https://venture.listedcompany.com/newsroom/20200415_070135_V03_N19AQL37CRHVNIUW.1.pdf",
+      "evidence_year": 2019
+    },
+    {
+      "site_id": "venture_marsiling",
+      "company": "Venture",
+      "symbol": "V03.SI",
+      "address": "28 Marsiling Lane",
+      "postal": "739152",
+      "role": "GES and Scinetic Engineering group operating address",
+      "source_url": "https://venture.listedcompany.com/newsroom/20200415_070135_V03_N19AQL37CRHVNIUW.1.pdf",
+      "evidence_year": 2019
+    },
+    {
+      "site_id": "venture_woodlands",
+      "company": "Venture",
+      "symbol": "V03.SI",
+      "address": "211 Woodlands Avenue 9",
+      "postal": "738960",
+      "role": "Univac design and precision engineering group operating address",
+      "source_url": "https://venture.listedcompany.com/newsroom/20200415_070135_V03_N19AQL37CRHVNIUW.1.pdf",
+      "evidence_year": 2019
+    },
+    {
+      "site_id": "kulicke_soffa_serangoon",
+      "company": "Kulicke & Soffa",
+      "symbol": "KLIC",
+      "address": "23A Serangoon North Avenue 5",
+      "postal": "554369",
+      "role": "Singapore principal office of semiconductor equipment company",
+      "source_url": "https://investor.kns.com/download/K%26S_2021.pdf",
+      "evidence_year": 2021
+    },
+    {
+      "site_id": "flex_changi",
+      "company": "Flex",
+      "symbol": "FLEX",
+      "address": "2 Changi South Lane",
+      "postal": "486123",
+      "role": "Singapore business address and Changi manufacturing-group location; not assumed to be sole global headquarters",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/866374/000086637421000040/0000866374-21-000040-index.htm",
+      "additional_source_url": "https://flex.com/company/global-locations?ID=25",
+      "evidence_year": 2021
+    },
+    {
+      "site_id": "sia_engineering_changi",
+      "company": "SIA Engineering",
+      "symbol": "S59.SI",
+      "address": "31 Airline Road",
+      "postal": "819831",
+      "role": "Registered office and aircraft engineering/maintenance site",
+      "source_url": "https://www.siaec.com.sg/content/dam/siaec/web-assets/pdfs/our-company/investor-relations/shareholder_meetings/2021/2021_Letter_to_Shareholders.pdf",
+      "evidence_year": 2021
+    },
+    {
+      "site_id": "seatrium_tuas",
+      "company": "Seatrium / Sembcorp Marine",
+      "symbol": "5E2.SI",
+      "address": "80 Tuas South Boulevard",
+      "postal": "637051",
+      "role": "Principal Tuas yard and head-office address; 2023 group merger changes exposure",
+      "source_url": "https://investors.seatrium.com/newsroom/20211020_185426_S51_ATZCOKMNZANUX51Y.3.pdf",
+      "evidence_year": 2021
+    },
+    {
+      "site_id": "seatrium_admiralty",
+      "company": "Seatrium / Sembcorp Marine",
+      "symbol": "5E2.SI",
+      "address": "60 Admiralty Road West",
+      "postal": "759947",
+      "role": "Admiralty shipyard operating site; 2023 group merger changes exposure",
+      "source_url": "https://investors.seatrium.com/newsroom/20211020_185426_S51_ATZCOKMNZANUX51Y.3.pdf",
+      "evidence_year": 2021
+    }
+  ]
+}

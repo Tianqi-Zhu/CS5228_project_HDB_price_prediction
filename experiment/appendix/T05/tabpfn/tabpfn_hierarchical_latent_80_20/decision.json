@@ -1,0 +1,7 @@
+{
+  "pre_outer_selected_family": "E0",
+  "recommended_model": "E0",
+  "rule": "Retain earlier-selected correction only if RMSE improves in both non-cold origins and pooled evaluation; otherwise retain E0",
+  "correction_consistently_improves": false,
+  "no_kaggle_submission_changed": true
+}

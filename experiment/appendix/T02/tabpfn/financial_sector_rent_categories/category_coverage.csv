@@ -1,0 +1,27 @@
+dimension,category,rentals,months_observed,minimum_monthly_count,median_monthly_count,reference_rentals,reference_minimum_monthly_count,eligible,usable_months,reason
+room_type,1-room,42,30,0,1.0,8,0,False,0,fewer than 20 rentals in at least one 2021 month
+room_type,2-room,3098,51,30,60.0,532,30,True,51,eligible
+room_type,3-room,49024,51,740,964.0,12092,872,True,51,eligible
+room_type,4-room,54079,51,859,1071.0,13391,920,True,51,eligible
+room_type,5-room,35523,51,551,691.0,9308,667,True,51,eligible
+room_type,executive,8234,51,117,159.0,2288,166,True,51,eligible
+flat_model,2 room,224,47,0,3.0,16,0,False,0,fewer than 20 rentals in at least one 2021 month
+flat_model,3gen,12,9,0,0.0,0,0,False,0,fewer than 20 rentals in at least one 2021 month
+flat_model,adjoined flat,218,50,0,4.0,48,1,False,0,fewer than 20 rentals in at least one 2021 month
+flat_model,apartment,4724,51,64,92.0,1335,101,True,51,eligible
+flat_model,dbss,1090,51,8,21.0,244,16,False,34,fewer than 20 rentals in at least one 2021 month
+flat_model,improved,44008,51,685,870.0,11311,799,True,51,eligible
+flat_model,improved maisonette,1,1,0,0.0,0,0,False,0,fewer than 20 rentals in at least one 2021 month
+flat_model,maisonette,2346,51,28,45.0,639,38,True,51,eligible
+flat_model,model a,42745,51,647,846.0,10278,727,True,51,eligible
+flat_model,model a maisonette,140,48,0,3.0,40,1,False,0,fewer than 20 rentals in at least one 2021 month
+flat_model,model a2,1553,51,21,28.0,390,21,True,51,eligible
+flat_model,new generation,27380,51,422,542.0,6900,489,True,51,eligible
+flat_model,premium apartment,12312,51,185,239.0,3063,226,True,51,eligible
+flat_model,premium apartment loft,51,28,0,1.0,9,0,False,0,fewer than 20 rentals in at least one 2021 month
+flat_model,premium maisonette,21,17,0,0.0,5,0,False,0,fewer than 20 rentals in at least one 2021 month
+flat_model,simplified,6794,51,103,133.0,1729,119,True,51,eligible
+flat_model,standard,5903,51,87,113.0,1547,93,True,51,eligible
+flat_model,terrace,19,16,0,0.0,2,0,False,0,fewer than 20 rentals in at least one 2021 month
+flat_model,type s1,299,47,0,4.0,41,0,False,2,fewer than 20 rentals in at least one 2021 month
+flat_model,type s2,160,41,0,2.0,22,0,False,0,fewer than 20 rentals in at least one 2021 month

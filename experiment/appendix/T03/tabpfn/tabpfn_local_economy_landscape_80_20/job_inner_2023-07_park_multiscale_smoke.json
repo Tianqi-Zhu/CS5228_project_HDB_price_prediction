@@ -1,0 +1,17 @@
+{
+  "stage": "inner_2023-07",
+  "name": "park_multiscale",
+  "added_columns": [
+    "PARK_NEAREST_M",
+    "PARK_FRACTION_100M",
+    "PARK_FRACTION_300M",
+    "PARK_FRACTION_500M",
+    "PARK_GAUSSIAN_200M_FRACTION"
+  ],
+  "context_ids_sha256": "81d0bc5bee8df1016bd243965afdabc5a07bec1da25e6c4290c7fdf7a40890c3",
+  "query_ids_sha256": "aaa4176fadf317529a5c71ec34f2a40060a470cd46f0fba22f141849c3ea0f4b",
+  "prepared_sha256": "6824cffb93e47efd97abd2050fd4b4fcaf04f8cbf40d0a4bcd0ccdd0fa4b3a5e",
+  "code_sha256": "192eaf9a05c1ebf672fa1c38aaa23797a2ccd0300ba83d495a872c4b6f726b47",
+  "checkpoint_sha256": "14e0b81285bca7a6d1ef121169f27f651f76dff49cad6c0b8779d5c836018550",
+  "smoke": true
+}
