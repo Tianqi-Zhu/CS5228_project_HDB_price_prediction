@@ -1,0 +1,58 @@
+{
+  "tested_commit": "c99a40a79223c09c0a79a2593439d6f8ce183d1d",
+  "archive_method": "git archive TAR; no original .git, output or .cache; only supplemental third-party Python libraries supplied",
+  "manifest_sha256": "6a7d693d8d1c95c4bba62f35cad0ba2c3594b12d25dbe6a744ae5e96e439bbcf",
+  "checks": [
+    {
+      "check": "integrity",
+      "returncode": 0,
+      "seconds": 59.40906579999864,
+      "command": [
+        "python",
+        "review.py",
+        "verify"
+      ]
+    },
+    {
+      "check": "tabpfn-integrity",
+      "returncode": 0,
+      "seconds": 4.013493500002369,
+      "command": [
+        "python",
+        "review_tabpfn.py",
+        "verify"
+      ]
+    },
+    {
+      "check": "monthly-metrics",
+      "returncode": 0,
+      "seconds": 0.4975330000015674,
+      "command": [
+        "python",
+        "review_tabpfn.py",
+        "metrics"
+      ]
+    },
+    {
+      "check": "original-tabpfn-tests",
+      "returncode": 0,
+      "seconds": 78.28384370000276,
+      "command": [
+        "python",
+        "review_tabpfn.py",
+        "test"
+      ]
+    },
+    {
+      "check": "F1-cpu-replay",
+      "returncode": 0,
+      "seconds": 0.9857348000005004,
+      "command": [
+        "python",
+        "reproduction/three_submissions/reproduce.py"
+      ]
+    }
+  ],
+  "TabPFN_full_inference_performed": false,
+  "F2_status": "generator-and-predictions-pending"
+}

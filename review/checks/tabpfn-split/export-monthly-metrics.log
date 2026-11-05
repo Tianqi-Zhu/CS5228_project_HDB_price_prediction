@@ -1,0 +1,761 @@
+{
+  "checks": [
+    {
+      "report": "tabpfn_components_80_20",
+      "model": "frozen_one_view",
+      "rows": 28995,
+      "reaggregated": {
+        "rmse_sgd": 455.8135701204332,
+        "mae_sgd": 329.74847602356647,
+        "bias_sgd": 0.7675347713078129
+      },
+      "absolute_differences": {
+        "rmse_sgd": 4.332036951382179e-10,
+        "mae_sgd": 3.5664697861648165e-09,
+        "bias_sgd": 1.307812858009072e-09
+      },
+      "passed": true
+    },
+    {
+      "report": "tabpfn_components_80_20",
+      "model": "winning_diag_one_view",
+      "rows": 28995,
+      "reaggregated": {
+        "rmse_sgd": 455.21168908827616,
+        "mae_sgd": 330.6249703348881,
+        "bias_sgd": -2.7980126563848935
+      },
+      "absolute_differences": {
+        "rmse_sgd": 1.7238335203728639e-09,
+        "mae_sgd": 4.888079274678603e-09,
+        "bias_sgd": 3.6151064364275953e-09
+      },
+      "passed": true
+    },
+    {
+      "report": "tabpfn_components_80_20",
+      "model": "existing_all_qk_lora_two_views",
+      "rows": 28995,
+      "reaggregated": {
+        "rmse_sgd": 457.0432613598525,
+        "mae_sgd": 333.37810128549785,
+        "bias_sgd": -14.375348159756165
+      },
+      "absolute_differences": {
+        "rmse_sgd": 1.47451828524936e-10,
+        "mae_sgd": 5.49783862879849e-09,
+        "bias_sgd": 2.438351742739542e-10
+      },
+      "passed": true
+    },
+    {
+      "report": "tabpfn_components_80_20",
+      "model": "existing_frozen_two_views",
+      "rows": 28995,
+      "reaggregated": {
+        "rmse_sgd": 455.3959272762674,
+        "mae_sgd": 327.79369889518915,
+        "bias_sgd": 10.792209361091912
+      },
+      "absolute_differences": {
+        "rmse_sgd": 3.732623099494958e-09,
+        "mae_sgd": 5.189178864384303e-09,
+        "bias_sgd": 1.0919123383246188e-09
+      },
+      "passed": true
+    },
+    {
+      "report": "tabpfn_components_80_20",
+      "model": "diag_crps_mse",
+      "rows": 28995,
+      "reaggregated": {
+        "rmse_sgd": 455.12175921258637,
+        "mae_sgd": 330.87208605779483,
+        "bias_sgd": -9.000024130960856
+      },
+      "absolute_differences": {
+        "rmse_sgd": 2.5863755581667647e-09,
+        "mae_sgd": 2.205183591286186e-09,
+        "bias_sgd": 9.60856283427347e-10
+      },
+      "passed": true
+    },
+    {
+      "report": "tabpfn_components_80_20",
+      "model": "diag_mse_only",
+      "rows": 28995,
+      "reaggregated": {
+        "rmse_sgd": 455.0710283647851,
+        "mae_sgd": 330.78978114735156,
+        "bias_sgd": -8.427615552594586
+      },
+      "absolute_differences": {
+        "rmse_sgd": 4.785078999702819e-09,
+        "mae_sgd": 2.648448571562767e-09,
+        "bias_sgd": 2.5945858794784726e-09
+      },
+      "passed": true
+    },
+    {
+      "report": "tabpfn_components_80_20",
+      "model": "icl_rank2",
+      "rows": 28995,
+      "reaggregated": {
+        "rmse_sgd": 455.47210484039636,
+        "mae_sgd": 330.4716643213223,
+        "bias_sgd": -5.549474010625625
+      },
+      "absolute_differences": {
+        "rmse_sgd": 3.963691597164143e-10,
+        "mae_sgd": 1.322291609540116e-09,
+        "bias_sgd": 6.256248852309909e-10
+      },
+      "passed": true
+    },
+    {
+      "report": "tabpfn_components_80_20",
+      "model": "original_diag_2view",
+      "rows": 28995,
+      "reaggregated": {
+        "rmse_sgd": 456.03198504435085,
+        "mae_sgd": 328.9436371848446,
+        "bias_sgd": 14.97836120634282
+      },
+      "absolute_differences": {
+        "rmse_sgd": 5.649155809805961e-09,
+        "mae_sgd": 4.844594059250085e-09,
+        "bias_sgd": 3.6571794481687903e-09
+      },
+      "passed": true
+    },
+    {
+      "report": "tabpfn_components_80_20",
+      "model": "original_diag_4view",
+      "rows": 28995,
+      "reaggregated": {
+        "rmse_sgd": 455.37637744997505,
+        "mae_sgd": 327.8333730161828,
+        "bias_sgd": 14.911702307668564
+      },
+      "absolute_differences": {
+        "rmse_sgd": 2.495426087989472e-11,
+        "mae_sgd": 6.182801826071227e-09,
+        "bias_sgd": 2.3314363772897195e-09
+      },
+      "passed": true
+    },
+    {
+      "report": "tabpfn_components_80_20",
+      "model": "regression_head",
+      "rows": 28995,
+      "reaggregated": {
+        "rmse_sgd": 455.9898091613306,
+        "mae_sgd": 331.042035882836,
+        "bias_sgd": -6.986177355158476
+      },
+      "absolute_differences": {
+        "rmse_sgd": 1.330590748693794e-09,
+        "mae_sgd": 2.8359750103845727e-09,
+        "bias_sgd": 5.158475424593689e-09
+      },
+      "passed": true
+    },
+    {
+      "report": "tabpfn_v3_5_fast_aligned_temporal_80_20",
+      "model": "tabpfn_aligned_features",
+      "rows": 28995,
+      "reaggregated": {
+        "rmse_sgd": 457.7883213219797,
+        "mae_sgd": 332.43132443705366,
+        "bias_sgd": -6.698719331519572
+      },
+      "absolute_differences": {
+        "rmse_sgd": 1.9796857486653607e-09,
+        "mae_sgd": 2.946364929812262e-09,
+        "bias_sgd": 1.5195720237670685e-09
+      },
+      "passed": true
+    },
+    {
+      "report": "tabpfn_v3_5_fast_aligned_temporal_80_20",
+      "model": "tabpfn_aligned_residual",
+      "rows": 28995,
+      "reaggregated": {
+        "rmse_sgd": 455.86289685536565,
+        "mae_sgd": 329.9837725583853,
+        "bias_sgd": -2.4280247237392647
+      },
+      "absolute_differences": {
+        "rmse_sgd": 5.365620836528251e-09,
+        "mae_sgd": 1.6146941561601125e-09,
+        "bias_sgd": 6.260735485597024e-09
+      },
+      "passed": true
+    },
+    {
+      "report": "tabpfn_v3_5_fast_aligned_temporal_80_20",
+      "model": "previous_temporal_levels",
+      "rows": 28995,
+      "reaggregated": {
+        "rmse_sgd": 457.82670113409597,
+        "mae_sgd": 332.5818291371636,
+        "bias_sgd": -0.5833012721065689
+      },
+      "absolute_differences": {
+        "rmse_sgd": 4.095966232853243e-09,
+        "mae_sgd": 2.836429757735459e-09,
+        "bias_sgd": 2.1065689193022763e-09
+      },
+      "passed": true
+    },
+    {
+      "report": "tabpfn_v3_5_fast_aligned_temporal_80_20",
+      "model": "original_fast",
+      "rows": 28995,
+      "reaggregated": {
+        "rmse_sgd": 459.81237106268657,
+        "mae_sgd": 336.60393080079564,
+        "bias_sgd": -10.284215321362993
+      },
+      "absolute_differences": {
+        "rmse_sgd": 2.686590505618369e-09,
+        "mae_sgd": 7.956373337947298e-10,
+        "bias_sgd": 1.362993273801294e-09
+      },
+      "passed": true
+    },
+    {
+      "report": "tabpfn_v3_5_fast_calendar_80_20",
+      "model": "integer",
+      "rows": 28995,
+      "reaggregated": {
+        "rmse_sgd": 455.86289685536565,
+        "mae_sgd": 329.9837725583853,
+        "bias_sgd": -2.4280247237392647
+      },
+      "absolute_differences": {
+        "rmse_sgd": 5.365620836528251e-09,
+        "mae_sgd": 1.6146941561601125e-09,
+        "bias_sgd": 6.260735485597024e-09
+      },
+      "passed": true
+    },
+    {
+      "report": "tabpfn_v3_5_fast_calendar_80_20",
+      "model": "categorical",
+      "rows": 28995,
+      "reaggregated": {
+        "rmse_sgd": 455.8135701204332,
+        "mae_sgd": 329.74847602356647,
+        "bias_sgd": 0.7675347713078129
+      },
+      "absolute_differences": {
+        "rmse_sgd": 4.332036951382179e-10,
+        "mae_sgd": 3.5664697861648165e-09,
+        "bias_sgd": 1.307812858009072e-09
+      },
+      "passed": true
+    },
+    {
+      "report": "tabpfn_v3_5_fast_calendar_80_20",
+      "model": "cyclical",
+      "rows": 28995,
+      "reaggregated": {
+        "rmse_sgd": 459.06967812395567,
+        "mae_sgd": 339.2628930863922,
+        "bias_sgd": -42.46169668483876
+      },
+      "absolute_differences": {
+        "rmse_sgd": 3.955676675104769e-09,
+        "mae_sgd": 3.607794951676624e-09,
+        "bias_sgd": 4.838760503389494e-09
+      },
+      "passed": true
+    },
+    {
+      "report": "tabpfn_v3_5_fast_calendar_80_20",
+      "model": "calendar",
+      "rows": 28995,
+      "reaggregated": {
+        "rmse_sgd": 457.0338901260146,
+        "mae_sgd": 330.2223872015721,
+        "bias_sgd": 5.273638131886532
+      },
+      "absolute_differences": {
+        "rmse_sgd": 3.985348939750111e-09,
+        "mae_sgd": 1.5720615920145065e-09,
+        "bias_sgd": 1.886531819650372e-09
+      },
+      "passed": true
+    },
+    {
+      "report": "tabpfn_v3_5_fast_calendar_80_20",
+      "model": "school_interactions",
+      "rows": 28995,
+      "reaggregated": {
+        "rmse_sgd": 457.4207685334765,
+        "mae_sgd": 327.0492253514668,
+        "bias_sgd": 31.030001189448523
+      },
+      "absolute_differences": {
+        "rmse_sgd": 3.476543497527018e-09,
+        "mae_sgd": 1.4668444237031508e-09,
+        "bias_sgd": 5.514770862191654e-10
+      },
+      "passed": true
+    },
+    {
+      "report": "tabpfn_abcde_ensemble",
+      "model": "A_single",
+      "rows": 28995,
+      "reaggregated": {
+        "rmse_sgd": 455.0710283636764,
+        "mae_sgd": 330.7897811452481,
+        "bias_sgd": -8.427615551174403
+      },
+      "absolute_differences": {
+        "rmse_sgd": 0.0,
+        "mae_sgd": 5.684341886080802e-14,
+        "bias_sgd": 1.7763568394002505e-15
+      },
+      "passed": true
+    },
+    {
+      "report": "tabpfn_abcde_ensemble",
+      "model": "BDE",
+      "rows": 28995,
+      "reaggregated": {
+        "rmse_sgd": 455.1718734783953,
+        "mae_sgd": 328.2022083515224,
+        "bias_sgd": 5.76340092565952
+      },
+      "absolute_differences": {
+        "rmse_sgd": 5.684341886080802e-14,
+        "mae_sgd": 5.684341886080802e-14,
+        "bias_sgd": 8.881784197001252e-16
+      },
+      "passed": true
+    },
+    {
+      "report": "tabpfn_abcde_ensemble",
+      "model": "CDE",
+      "rows": 28995,
+      "reaggregated": {
+        "rmse_sgd": 455.3597608080261,
+        "mae_sgd": 329.03271134584026,
+        "bias_sgd": 0.856510278131969
+      },
+      "absolute_differences": {
+        "rmse_sgd": 0.0,
+        "mae_sgd": 0.0,
+        "bias_sgd": 9.992007221626409e-16
+      },
+      "passed": true
+    },
+    {
+      "report": "tabpfn_abcde_ensemble",
+      "model": "AC",
+      "rows": 28995,
+      "reaggregated": {
+        "rmse_sgd": 455.13934071741124,
+        "mae_sgd": 328.962614554142,
+        "bias_sgd": 0.16627206310485
+      },
+      "absolute_differences": {
+        "rmse_sgd": 5.684341886080802e-14,
+        "mae_sgd": 0.0,
+        "bias_sgd": 7.494005416219807e-16
+      },
+      "passed": true
+    },
+    {
+      "report": "tabpfn_abcde_ensemble",
+      "model": "ABDE",
+      "rows": 28995,
+      "reaggregated": {
+        "rmse_sgd": 454.78741202702514,
+        "mae_sgd": 329.1137343585107,
+        "bias_sgd": -1.702734151560988
+      },
+      "absolute_differences": {
+        "rmse_sgd": 0.0,
+        "mae_sgd": 1.1368683772161603e-13,
+        "bias_sgd": 6.661338147750939e-16
+      },
+      "passed": true
+    },
+    {
+      "report": "tabpfn_abcde_ensemble",
+      "model": "ACDE",
+      "rows": 28995,
+      "reaggregated": {
+        "rmse_sgd": 455.13934071741124,
+        "mae_sgd": 328.9626145541421,
+        "bias_sgd": 0.1662720631046698
+      },
+      "absolute_differences": {
+        "rmse_sgd": 0.0,
+        "mae_sgd": 5.684341886080802e-14,
+        "bias_sgd": 2.498001805406602e-16
+      },
+      "passed": true
+    },
+    {
+      "report": "tabpfn_abcde_ensemble",
+      "model": "ABCDE",
+      "rows": 28995,
+      "reaggregated": {
+        "rmse_sgd": 455.1393407174113,
+        "mae_sgd": 328.962614554142,
+        "bias_sgd": 0.16627206310546178
+      },
+      "absolute_differences": {
+        "rmse_sgd": 5.684341886080802e-14,
+        "mae_sgd": 1.1368683772161603e-13,
+        "bias_sgd": 1.7486012637846216e-15
+      },
+      "passed": true
+    },
+    {
+      "report": "tabpfn_abcde_ensemble",
+      "model": "B",
+      "rows": 28995,
+      "reaggregated": {
+        "rmse_sgd": 455.39592727636636,
+        "mae_sgd": 327.79369889407883,
+        "bias_sgd": 10.792209361908748
+      },
+      "absolute_differences": {
+        "rmse_sgd": 5.684341886080802e-14,
+        "mae_sgd": 0.0,
+        "bias_sgd": 0.0
+      },
+      "passed": true
+    },
+    {
+      "report": "tabpfn_abcde_ensemble",
+      "model": "C",
+      "rows": 28995,
+      "reaggregated": {
+        "rmse_sgd": 455.36972746220016,
+        "mae_sgd": 329.04210935665446,
+        "bias_sgd": 0.8418846512515861
+      },
+      "absolute_differences": {
+        "rmse_sgd": 0.0,
+        "mae_sgd": 0.0,
+        "bias_sgd": 1.9984014443252818e-15
+      },
+      "passed": true
+    },
+    {
+      "report": "tabpfn_abcde_ensemble",
+      "model": "D",
+      "rows": 28995,
+      "reaggregated": {
+        "rmse_sgd": 455.8041120199807,
+        "mae_sgd": 329.237346269734,
+        "bias_sgd": 3.515535922623377
+      },
+      "absolute_differences": {
+        "rmse_sgd": 0.0,
+        "mae_sgd": 1.1368683772161603e-13,
+        "bias_sgd": 4.440892098500626e-16
+      },
+      "passed": true
+    },
+    {
+      "report": "tabpfn_abcde_ensemble",
+      "model": "E",
+      "rows": 28995,
+      "reaggregated": {
+        "rmse_sgd": 456.4824105736552,
+        "mae_sgd": 330.48165442647957,
+        "bias_sgd": -1.7800689447672289
+      },
+      "absolute_differences": {
+        "rmse_sgd": 5.684341886080802e-14,
+        "mae_sgd": 5.684341886080802e-14,
+        "bias_sgd": 4.440892098500626e-16
+      },
+      "passed": true
+    },
+    {
+      "report": "tabpfn_abcde_ensemble",
+      "model": "BDE_existing",
+      "rows": 28995,
+      "reaggregated": {
+        "rmse_sgd": 455.1718734783953,
+        "mae_sgd": 328.2022083515226,
+        "bias_sgd": 5.763400925658732
+      },
+      "absolute_differences": {
+        "rmse_sgd": 0.0,
+        "mae_sgd": 5.684341886080802e-14,
+        "bias_sgd": 8.881784197001252e-16
+      },
+      "passed": true
+    },
+    {
+      "report": "tabpfn_abcde_ensemble",
+      "model": "selected",
+      "rows": 28995,
+      "reaggregated": {
+        "rmse_sgd": 455.3597608080261,
+        "mae_sgd": 329.03271134584026,
+        "bias_sgd": 0.856510278131969
+      },
+      "absolute_differences": {
+        "rmse_sgd": 0.0,
+        "mae_sgd": 0.0,
+        "bias_sgd": 9.992007221626409e-16
+      },
+      "passed": true
+    },
+    {
+      "report": "tabpfn_abcde_ensemble",
+      "model": "CDE_equal",
+      "rows": 28995,
+      "reaggregated": {
+        "rmse_sgd": 455.0967318237447,
+        "mae_sgd": 328.78951786937034,
+        "bias_sgd": 0.859117209702578
+      },
+      "absolute_differences": {
+        "rmse_sgd": 1.1368683772161603e-13,
+        "mae_sgd": 5.684341886080802e-14,
+        "bias_sgd": 2.220446049250313e-16
+      },
+      "passed": true
+    },
+    {
+      "report": "tabpfn_abcde_ensemble",
+      "model": "BDE_equal",
+      "rows": 28995,
+      "reaggregated": {
+        "rmse_sgd": 455.24692466158405,
+        "mae_sgd": 328.4890943727584,
+        "bias_sgd": 4.175892113254967
+      },
+      "absolute_differences": {
+        "rmse_sgd": 0.0,
+        "mae_sgd": 0.0,
+        "bias_sgd": 1.7763568394002505e-15
+      },
+      "passed": true
+    },
+    {
+      "report": "tabpfn_abcde_ensemble",
+      "model": "ABCDE_equal",
+      "rows": 28995,
+      "reaggregated": {
+        "rmse_sgd": 454.70398730500875,
+        "mae_sgd": 328.5257868910953,
+        "bias_sgd": 0.9883890879684137
+      },
+      "absolute_differences": {
+        "rmse_sgd": 0.0,
+        "mae_sgd": 0.0,
+        "bias_sgd": 2.220446049250313e-15
+      },
+      "passed": true
+    }
+  ],
+  "all_passed": true,
+  "omitted": [
+    {
+      "report": "tabpfn_abcde_ensemble",
+      "model": "A_single",
+      "origin": "2022-09",
+      "reason": "Sampled historical folds require their original population weights and row predictions."
+    },
+    {
+      "report": "tabpfn_abcde_ensemble",
+      "model": "BDE",
+      "origin": "2022-09",
+      "reason": "Sampled historical folds require their original population weights and row predictions."
+    },
+    {
+      "report": "tabpfn_abcde_ensemble",
+      "model": "CDE",
+      "origin": "2022-09",
+      "reason": "Sampled historical folds require their original population weights and row predictions."
+    },
+    {
+      "report": "tabpfn_abcde_ensemble",
+      "model": "AC",
+      "origin": "2022-09",
+      "reason": "Sampled historical folds require their original population weights and row predictions."
+    },
+    {
+      "report": "tabpfn_abcde_ensemble",
+      "model": "ABDE",
+      "origin": "2022-09",
+      "reason": "Sampled historical folds require their original population weights and row predictions."
+    },
+    {
+      "report": "tabpfn_abcde_ensemble",
+      "model": "ACDE",
+      "origin": "2022-09",
+      "reason": "Sampled historical folds require their original population weights and row predictions."
+    },
+    {
+      "report": "tabpfn_abcde_ensemble",
+      "model": "ABCDE",
+      "origin": "2022-09",
+      "reason": "Sampled historical folds require their original population weights and row predictions."
+    },
+    {
+      "report": "tabpfn_abcde_ensemble",
+      "model": "B",
+      "origin": "2022-09",
+      "reason": "Sampled historical folds require their original population weights and row predictions."
+    },
+    {
+      "report": "tabpfn_abcde_ensemble",
+      "model": "C",
+      "origin": "2022-09",
+      "reason": "Sampled historical folds require their original population weights and row predictions."
+    },
+    {
+      "report": "tabpfn_abcde_ensemble",
+      "model": "D",
+      "origin": "2022-09",
+      "reason": "Sampled historical folds require their original population weights and row predictions."
+    },
+    {
+      "report": "tabpfn_abcde_ensemble",
+      "model": "E",
+      "origin": "2022-09",
+      "reason": "Sampled historical folds require their original population weights and row predictions."
+    },
+    {
+      "report": "tabpfn_abcde_ensemble",
+      "model": "BDE_existing",
+      "origin": "2022-09",
+      "reason": "Sampled historical folds require their original population weights and row predictions."
+    },
+    {
+      "report": "tabpfn_abcde_ensemble",
+      "model": "selected",
+      "origin": "2022-09",
+      "reason": "Sampled historical folds require their original population weights and row predictions."
+    },
+    {
+      "report": "tabpfn_abcde_ensemble",
+      "model": "CDE_equal",
+      "origin": "2022-09",
+      "reason": "Sampled historical folds require their original population weights and row predictions."
+    },
+    {
+      "report": "tabpfn_abcde_ensemble",
+      "model": "BDE_equal",
+      "origin": "2022-09",
+      "reason": "Sampled historical folds require their original population weights and row predictions."
+    },
+    {
+      "report": "tabpfn_abcde_ensemble",
+      "model": "ABCDE_equal",
+      "origin": "2022-09",
+      "reason": "Sampled historical folds require their original population weights and row predictions."
+    },
+    {
+      "report": "tabpfn_abcde_ensemble",
+      "model": "A_single",
+      "origin": "2023-07",
+      "reason": "Sampled historical folds require their original population weights and row predictions."
+    },
+    {
+      "report": "tabpfn_abcde_ensemble",
+      "model": "BDE",
+      "origin": "2023-07",
+      "reason": "Sampled historical folds require their original population weights and row predictions."
+    },
+    {
+      "report": "tabpfn_abcde_ensemble",
+      "model": "CDE",
+      "origin": "2023-07",
+      "reason": "Sampled historical folds require their original population weights and row predictions."
+    },
+    {
+      "report": "tabpfn_abcde_ensemble",
+      "model": "AC",
+      "origin": "2023-07",
+      "reason": "Sampled historical folds require their original population weights and row predictions."
+    },
+    {
+      "report": "tabpfn_abcde_ensemble",
+      "model": "ABDE",
+      "origin": "2023-07",
+      "reason": "Sampled historical folds require their original population weights and row predictions."
+    },
+    {
+      "report": "tabpfn_abcde_ensemble",
+      "model": "ACDE",
+      "origin": "2023-07",
+      "reason": "Sampled historical folds require their original population weights and row predictions."
+    },
+    {
+      "report": "tabpfn_abcde_ensemble",
+      "model": "ABCDE",
+      "origin": "2023-07",
+      "reason": "Sampled historical folds require their original population weights and row predictions."
+    },
+    {
+      "report": "tabpfn_abcde_ensemble",
+      "model": "B",
+      "origin": "2023-07",
+      "reason": "Sampled historical folds require their original population weights and row predictions."
+    },
+    {
+      "report": "tabpfn_abcde_ensemble",
+      "model": "C",
+      "origin": "2023-07",
+      "reason": "Sampled historical folds require their original population weights and row predictions."
+    },
+    {
+      "report": "tabpfn_abcde_ensemble",
+      "model": "D",
+      "origin": "2023-07",
+      "reason": "Sampled historical folds require their original population weights and row predictions."
+    },
+    {
+      "report": "tabpfn_abcde_ensemble",
+      "model": "E",
+      "origin": "2023-07",
+      "reason": "Sampled historical folds require their original population weights and row predictions."
+    },
+    {
+      "report": "tabpfn_abcde_ensemble",
+      "model": "BDE_existing",
+      "origin": "2023-07",
+      "reason": "Sampled historical folds require their original population weights and row predictions."
+    },
+    {
+      "report": "tabpfn_abcde_ensemble",
+      "model": "selected",
+      "origin": "2023-07",
+      "reason": "Sampled historical folds require their original population weights and row predictions."
+    },
+    {
+      "report": "tabpfn_abcde_ensemble",
+      "model": "CDE_equal",
+      "origin": "2023-07",
+      "reason": "Sampled historical folds require their original population weights and row predictions."
+    },
+    {
+      "report": "tabpfn_abcde_ensemble",
+      "model": "BDE_equal",
+      "origin": "2023-07",
+      "reason": "Sampled historical folds require their original population weights and row predictions."
+    },
+    {
+      "report": "tabpfn_abcde_ensemble",
+      "model": "ABCDE_equal",
+      "origin": "2023-07",
+      "reason": "Sampled historical folds require their original population weights and row predictions."
+    }
+  ],
+  "scope": "Reaggregate saved monthly summaries only; this does not reproduce model inference, row alignment or independent validation.",
+  "f2_evaluated": false
+}
