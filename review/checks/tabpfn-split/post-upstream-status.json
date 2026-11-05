@@ -1,0 +1,50 @@
+[
+  {
+    "check": "post-upstream-integrity",
+    "returncode": 0,
+    "seconds": 0.38279489999695215,
+    "command": [
+      "python",
+      "review.py",
+      "verify"
+    ]
+  },
+  {
+    "check": "post-upstream-core-tests",
+    "returncode": 0,
+    "seconds": 9.606728999999177,
+    "command": [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-v"
+    ]
+  },
+  {
+    "check": "concat-verify",
+    "returncode": 0,
+    "seconds": 0.2459177999990061,
+    "command": [
+      "python",
+      "-m",
+      "analysis.experiments.concat_transformer",
+      "verify"
+    ]
+  },
+  {
+    "check": "concat-cpu-predict",
+    "returncode": 0,
+    "seconds": 80.42536900000414,
+    "command": [
+      "python",
+      "-m",
+      "analysis.experiments.concat_transformer",
+      "predict",
+      "--device",
+      "cpu"
+    ]
+  }
+]

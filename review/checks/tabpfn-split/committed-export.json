@@ -1,0 +1,70 @@
+{
+  "tested_commit": "d5452abdda7d17915e6a8edf824ce2f2ba5835a1",
+  "upstream_main_base": "a6db6953c7b445c367e5562dd1a7a55fc35ac7c1",
+  "archive_method": "git archive TAR of rebased main; no original .git/output/.cache",
+  "manifest_sha256": "cc81be0c006b26d01a3dc39754513dbe5baae75f3c22a86a98c438e0accc810e",
+  "checks": [
+    {
+      "check": "integrity",
+      "returncode": 0,
+      "seconds": 10.417422499995155,
+      "command": [
+        "python",
+        "review.py",
+        "verify"
+      ]
+    },
+    {
+      "check": "tabpfn-integrity",
+      "returncode": 0,
+      "seconds": 0.8849153000046499,
+      "command": [
+        "python",
+        "review_tabpfn.py",
+        "verify"
+      ]
+    },
+    {
+      "check": "monthly-metrics",
+      "returncode": 0,
+      "seconds": 1.3668367999998736,
+      "command": [
+        "python",
+        "review_tabpfn.py",
+        "metrics"
+      ]
+    },
+    {
+      "check": "original-tabpfn-tests",
+      "returncode": 0,
+      "seconds": 16.505002999998396,
+      "command": [
+        "python",
+        "review_tabpfn.py",
+        "test"
+      ]
+    },
+    {
+      "check": "F1-cpu-replay",
+      "returncode": 0,
+      "seconds": 0.6858022999949753,
+      "command": [
+        "python",
+        "reproduction/f1/reproduce.py"
+      ]
+    },
+    {
+      "check": "concat-integrity",
+      "returncode": 0,
+      "seconds": 0.25586469999689143,
+      "command": [
+        "python",
+        "-m",
+        "analysis.experiments.concat_transformer",
+        "verify"
+      ]
+    }
+  ],
+  "TabPFN_full_inference_performed": false,
+  "F2_status": "generator-and-predictions-pending"
+}

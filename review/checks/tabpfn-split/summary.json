@@ -72,5 +72,18 @@
     "Saved monthly aggregates can be checked but missing row predictions cannot be reconstructed.",
     "Original source caches/checkpoints are not part of this import.",
     "Legacy metadata byte differences are separated into newline-only and actual version differences in preflight.json."
-  ]
+  ],
+  "upstream_main_base": "a6db6953c7b445c367e5562dd1a7a55fc35ac7c1",
+  "upstream_added_source_artifacts_preserved_exactly": 44,
+  "upstream_feature": "Concat Transformer, same-feature architecture exploration and frozen replay",
+  "local_integration_rebased_onto_latest_main": true,
+  "post_upstream_validation": {
+    "core_tests_passed": 59,
+    "concat_manifest_verified": true,
+    "concat_cpu_replay_rows": 50000,
+    "concat_cpu_max_abs_difference_sgd": 0.10532140731811523,
+    "concat_replay_within_original_atol_plus_rtol": true,
+    "concat_retraining_performed": false,
+    "evidence": "post-upstream-status.json"
+  }
 }
