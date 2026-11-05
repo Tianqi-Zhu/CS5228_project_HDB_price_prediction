@@ -3,7 +3,7 @@
 | 规划边界/共用定义 | 当前采用值 | 状态/约束 |
 |---|---|---|
 | 本阶段 | 已按用户后续授权完成两个本地审查分支的拆分；下列实验要求仍有效 | 本次不进行研究训练、不推送、不生成报告正文；原来源分支不变 |
-| main / appendix | 实验归属与未来整合目标；不是将当前Git `main`空壳直接覆盖 | 物理审查分支为review/main-experiments与review/appendix-experiments；仅本地提交，正式发布目标仍待定 |
+| main / appendix | 实验归属与未来整合目标；不是将当前Git `main`空壳直接覆盖 | 物理审查分支为main与appendix；仅本地提交，正式发布目标仍待定 |
 | 项目任务 | 预测单条HDB月租 `MONTHLY_RENT`，单位SGD；150,000标签、50,000查询 | 原表哈希、日期和样本数已有核验；预测用途/信息可用性最终声明：[待补充] |
 | 六阶段 | S1 EDA/预处理；S2传统模型；S3特征工程；S4能力/瓶颈；S5复杂模型；S6两个最终结果 | 节点只作实验锚点；阶段关系是受控实验判断，不宣称住房特征的因果效应 |
 | 最终F1 | 分组融合＋PLR-FT，`kaggle_structure_blend.csv` | 你的三份中保留；Y451.0295/J441.8345；Kaggle显示415.37529；已有方法/CSV证据 |
@@ -61,7 +61,7 @@
 | B05 `experiment/tabpfn-anniversary-history` @ 1e69bb79 | 修改后复用 | 补推实际生成代码/87列/成员/CSV/验证；MRT更正如采用须新run | main M07/M08/M09；appendix X08/X11/X13 | 当前只证实合并与用户指定来源 | 决定F2是否可解释、可比、可复现；缺证则相应P0不通过 |
 | B06 `feature/neural-tabm-experiment` @ 21e4ec69 | 复用 | 自定义style命名、OOF选权偏差标签 | appendix X06 | 与官方TabM不同，少量改善不是独立测试 | S5额外模型与选择偏差对照 |
 | B07 `feature/temporal-auxiliary-analysis` @ c3c339eb | 复用 | 月更新经济与固定原点历史分开；主评估保留统一后端身份 | main M01/M03背景；appendix X03/X05 | 历史与时间边界依据充分 | S1/S3合法历史、S5宏观限制 |
-| B08 Git `main` @ b05b17f7 | 废弃其“有效性能实验”用途；保留Git历史 | 不覆盖、不虚构模型成绩；将未来物理main整合另列待定 | 不入main实验集；仅复现背景 | 代码骨架无实测性能 | 不能当S2训练基线 |
+| B08 ?Git `main`???? @ b05b17f7 | 废弃其“有效性能实验”用途；保留Git历史 | 不覆盖、不虚构模型成绩；将未来物理main整合另列待定 | 不入main实验集；仅复现背景 | 代码骨架无实测性能 | 不能当S2训练基线 |
 | B09 `mlp-eda-ensemble` @ 322fa4c2 | 复用 | 冻结/校准/全量层级分表，低价规则与区间分开 | main M01/M04定义参考；appendix X02/X06 | 清洗/区间和大误差证据多 | S1/S4不能凭同输入冲突推全局下限 |
 | B10 `relu-rental-prediction` @ dde07705 | 复用 | 保留Q1、训练期IQR及数值库差异；缺原输出标注 | appendix X02/X06 | 短窗口不与Y/J混排 | S2/S5神经参照和嵌套验证 |
 | B11 `results/hdb-rental-final-ensemble` @ 6f97e107 | 复用；复现清单修改后复用 | 三选一定位F1；F2单独清单，不继承旧三CSV通过状态 | main M06/M09；appendix X03/X13 | F1证据齐、CPU重组与完整训练分层 | S6 F1选择与验收 |
