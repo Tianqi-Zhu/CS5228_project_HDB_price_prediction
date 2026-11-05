@@ -1,0 +1,343 @@
+{
+  "run_id": "macro-smoke-none-r2",
+  "mode": "macro-smoke",
+  "split": "orig",
+  "contract_id": "fusion-contract-v2.1.0__43867d0ba111",
+  "contract_version": "fusion-contract-v2.1.0",
+  "contract_dir": "/Users/ziyuan/Desktop/有用的东西/NUS_courses/CS_5228/Project/CS5228_project_HDB_price_prediction/reports/fusion_contract_v2/fusion-contract-v2.1.0__43867d0ba111",
+  "contract_source_sha256": "43867d0ba111b8c0bbd3a269b6ff4ac39e1a976517c08542b9f49f9f38611d43",
+  "contract_fingerprint": {
+    "features/early/encodingA.json": "80fa4a9bf200e9dea0f0e2177639035934d03561af94ad3232d76160a9ebfc22",
+    "features/early/encodingB.json": "2cdd3a204a2b704e70f334c40a6d8589f4dba509f8411391da04df95203e381d",
+    "features/early/stageA.npz": "07c99e280d1d777d8334fb419a3659930a8eecb5fccc7f7858446a7a676549fd",
+    "features/early/stageB.npz": "72b25a1fbbc822c6e7d8994893817f5e0b4a29e01a382728fa9ff623b74f0dac",
+    "features/long/encodingA.json": "7ffa3f1fad6e9f3f7940f1cc16be50b826fb3c189365fb60036e333bcdfef2ea",
+    "features/long/encodingB.json": "b6b61b30dfbfe77a774e3325bfb98c61166019eabdfae0701810ae1f4aa13847",
+    "features/long/stageA.npz": "91f9208701aefe1e28e5a9966c41e67649eedc8a5a70d0ce12d74e71ffe02b7c",
+    "features/long/stageB.npz": "0ab5189806ef910b79678d4e6f6195b661e07fd47d6e74456e8cd7a53d7cebff",
+    "features/orig/encodingA.json": "2cdd3a204a2b704e70f334c40a6d8589f4dba509f8411391da04df95203e381d",
+    "features/orig/encodingB.json": "5446b4de354e7e1c9210c52b656b0fd33daa5acf60896cccfb43f46bb4740df5",
+    "features/orig/stageA.npz": "72b25a1fbbc822c6e7d8994893817f5e0b4a29e01a382728fa9ff623b74f0dac",
+    "features/orig/stageB.npz": "6f831627bbaa57d11e3276bd186d4dc3a7cae1f47e20a34cf631b25ed8dff0be",
+    "fixtures/synthetic_fixture.csv": "405f27fefa40ae426d9f548a1c9412be260194a2704c997fb68a62d8e6f7e742",
+    "manifest.json": "ea18e0c9b2150a6e293f517c21491c05c2e479156d71b9acb8abb3cf875380d3",
+    "samples/early/stageA.csv": "61b5234cd19161f523c22bb9fef1f55de36e78181db6ef09271ff8838bebbdcf",
+    "samples/early/stageB.csv": "1cb6afe047f7f0289e07121d713a433aaa095ce5ad63383f3107a6bd793d7124",
+    "samples/long/stageA.csv": "142f2d54541c2fa414e61c5765a08e2c4516c66f6dc9a4899620fbf9840a8de0",
+    "samples/long/stageB.csv": "47b97cee439e6c18e3a0ad710d78d482db8a850e2b5a5eae32558072144a8ed3",
+    "samples/orig/stageA.csv": "362015dbd70ffb5f604e2e15b187139e108e81d1973f71ba92a758fa800e4b66",
+    "samples/orig/stageB.csv": "2e1e7a7eeb7c74f98440a25b0615c4ffea1a7d37157f88789cb5fe3219e15dc3",
+    "tree_control/run_manifest_stageB.json": "b198bce59f3a20d06dab9c99c61713c52179a5dd263334250b8e73a138fe1fc2",
+    "tree_control/tree_control_metrics.csv": "decb82463874e6430c07db4acf55a65d48124059dcd9c118bb713c0ef6c43212",
+    "tree_control/tree_control_predictions_stageB.csv": "fb252ff13318f7d2e2b22e3779ca7421e6c37937198b1fc320990fc74d05b029"
+  },
+  "code_fingerprint": {
+    "__init__.py": "c1a4abd911526c27d5ee478a2552f8ed99d34a28cae6ebb181d29f0207fa087f",
+    "fusion_macro.py": "1a70944a88d10b54d61909cd418e842cff792aa53b8280739a7c5948c1038114",
+    "macro.py": "45698f4d23be9f406889ef38520a395c0720d72649815ffed89b973a3baa2892",
+    "macro_bridge.py": "0003cc1a9c411fb2153ab124290cb3635aaa7f8d6ce3f19fc3d558192f5a8fe7",
+    "macro_encoder.py": "7c4f479505d5fc7de3f03c2448ebcad4dac2ec346aaa9c823688d4b2536595f6",
+    "main.py": "ccc11607ad7788a67d08a9a6ac43dc56295d4d1a5a8bc63eea5480c7c0263c10",
+    "models.py": "579f08696f8dc104ae8e07fd352be06cca1256ca566b069abf66adff4d935b0f",
+    "tests/test_block_is_v2.py": "9c5c8c057a3dbfcee2e7d1dbc72b812ae2cdf4229f4352cfb1e638ff8ec4324c",
+    "tests/test_macro_fusion.py": "91f08457518262092a451ff03380314e925722c2c4998d18ef594231baeb2269",
+    "tests/test_tokenisation.py": "f5ad519e71eec6ed68d1527fa9e188ddae6244845b79578a949754cf4cc41eb1",
+    "tokens.py": "487ac088da97276100a89efc02c9a61be6ec972b825de1bf45ac2ce54cda02c0",
+    "../neural_fusion_v2/__init__.py": "b57f72c8e50fff047c24a5866acc60f169d973e2fb8edb39b0cdd4844f674cf9",
+    "../neural_fusion_v2/adapter.py": "fc9ccd97469b9ddd6a4d907d71c2d0ac344adcd2df22ec12f06c5a2700c2383a",
+    "../neural_fusion_v2/contract.py": "f224852fcbe12a82be4438908174b8259f97e7a4e15f898e55669c2224f69abb",
+    "../neural_fusion_v2/main.py": "53f97997c816bfbc6c29794aa379db7b55a7849ff585e560653966476c964683",
+    "../neural_fusion_v2/make_results.py": "8da1268f98cf1c894a91d4f8df135d3466919b34fad44eebdef360a0e896ce59",
+    "../neural_fusion_v2/models.py": "8d02ebf931e19dbba3736b8d361c420bc4704d60ae02950853312e79430493e1",
+    "../neural_fusion_v2/preprocessing.py": "63d5fd488297fbc6e6850f18902781e93f538f2df9f204d1a7f5d977f4417ba0",
+    "../neural_fusion_v2/settings.py": "4eef26559e24f065562642f9b276c3bcfa48bee9b51fc3b9adac4b0ad9432de5",
+    "../neural_fusion_v2/tests/producer_fixture.py": "47a21ae870eaf56cc8e6cc3b28e97b361196eaad85dd7fab564ceb81f450ca03",
+    "../neural_fusion_v2/tests/test_consumer_integration.py": "67f89571c8b0f29be071b1232969d93c01b851ac196b72a2d48167addb81e8f0",
+    "../neural_fusion_v2/training.py": "a510955871e895fd08b67fae4a285737e68b0b67bb4500b54c041f4d3a2c3a29",
+    "../macro_encoders_v3/__init__.py": "ad456776440b2f8d39048f117433bc0fb52b254fe80682bfba0913eea2636e4f",
+    "../macro_encoders_v3/api.py": "969e95b1520c20590d4572498e3573a98d30742500e1222576fbbb407e0e044f",
+    "../macro_encoders_v3/audit.py": "3aec8a7220d358a2bc22ba18f1fcacb452e8d8a79b6f19979e36f6642cc3c036",
+    "../macro_encoders_v3/contract.py": "e58ce2d604d1c59bb08d17483654a5190f6083e6ea224ccba970081ae6320e4d",
+    "../macro_encoders_v3/data.py": "d866a1558e20f3781be9b9e24738b1c18ba0d7883a4b1b6ace899a9323840e78",
+    "../macro_encoders_v3/encoders.py": "438c4a1cf932846a013824055af675ebd0242ec4d390fafb14cae31fd93ff146",
+    "../macro_encoders_v3/scaling.py": "5033fc5fcd80a1e1f2210d3efa1bff3a78dc03617d02fbb091acb8931aa17b98",
+    "../macro_encoders_v3/smoke.py": "f1ec78a3d083f084d3de043e86ef79d6a21c3ae43cd2e82ddf1f94a0f91e94eb",
+    "../macro_encoders_v3/tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "../macro_encoders_v3/tests/test_blockers.py": "97abad37a48372eab35145b378dabff8235183e61b75759c7d79dc9f70d907bf",
+    "../macro_encoders_v3/tests/test_encoders.py": "b2812de998ec221ef2183b28cde1d0bad62a725205f0bf9dc0649e8fc4b4b920",
+    "../macro_encoders_v3/verify_checkpoint.py": "6b0febc085e86e6b6457c588d19e91bdae09ac42e38d85521a0724555f271269"
+  },
+  "environment": {
+    "python": "3.13.9",
+    "numpy": "2.1.1",
+    "pandas": "2.2.3",
+    "torch": "2.8.0",
+    "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
+    "host": "Zenos-MacBook-Air.local",
+    "torch_threads": 2,
+    "interop": 1,
+    "device": "cpu",
+    "OMP_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2"
+  },
+  "capacity": {
+    "d_model": 48,
+    "layers": 2,
+    "heads": 4,
+    "lstm_hidden": 32,
+    "mlp_hidden": 128
+  },
+  "args": {
+    "contract_id": "fusion-contract-v2.1.0__43867d0ba111",
+    "contract_root": "/Users/ziyuan/Desktop/有用的东西/NUS_courses/CS_5228/Project/CS5228_project_HDB_price_prediction/reports/fusion_contract_v2",
+    "split": "orig",
+    "controls": "lstm_fusion",
+    "token_modes": "block",
+    "seeds": "42",
+    "mode": "macro-smoke",
+    "run_id": "macro-smoke-none-r2",
+    "verify_checkpoints": true,
+    "macro": "none",
+    "macro_policy": "origin_asof",
+    "macro_contract_root": "/Users/ziyuan/Desktop/有用的东西/NUS_courses/CS_5228/Project/CS5228_project_HDB_price_prediction/reports/fusion_contract_v3"
+  },
+  "controls": [
+    "lstm_fusion"
+  ],
+  "token_modes": [
+    "block"
+  ],
+  "seeds": [
+    42
+  ],
+  "macro": {
+    "enabled": false,
+    "mode": "none",
+    "policy": "origin_asof"
+  },
+  "split_metadata": {
+    "cutoff": "2024-03",
+    "val_start": "2024-04",
+    "val_end": "2025-03",
+    "description": "train <=2024-03, validate 2024-04..2025-03 (12 months)",
+    "id": "orig",
+    "cutoff_index": 38,
+    "val_start_index": 39,
+    "val_end_index": 50,
+    "inner_cutoff_index": 26,
+    "n_validation_months": 12
+  },
+  "population_boundaries": {
+    "split": "orig",
+    "inner_cutoff_index": 26,
+    "cutoff_index": 38,
+    "val_start_index": 39,
+    "val_end_index": 50,
+    "populations": {
+      "A/fit": 52310,
+      "A/holdout": 35882,
+      "B/fit": 88192,
+      "B/validation": 35158
+    },
+    "a_fit_origin_range": [
+      0,
+      25
+    ],
+    "a_fit_target_range": [
+      1,
+      26
+    ],
+    "a_holdout_origin": [
+      26
+    ],
+    "a_holdout_target_range": [
+      27,
+      38
+    ],
+    "a_holdout_horizon_range": [
+      1,
+      12
+    ],
+    "b_fit_origin_range": [
+      0,
+      37
+    ],
+    "b_validation_origin": 38,
+    "stage_a_has_validation": false,
+    "deviations": [],
+    "blocking_checks": "passed"
+  },
+  "command": ".venv/bin/python -m experiments.neural_fusion_v3.main --split orig --controls lstm_fusion --token-modes block --seeds 42 --mode macro-smoke --run-id macro-smoke-none-r2 --macro none --verify-checkpoints",
+  "started": "2026-10-25T01:59:24",
+  "result_status": "REAL_CONTRACT_TOKEN_ABLATION",
+  "finished": "2026-10-25T01:59:27",
+  "results": [
+    {
+      "run_id": "macro-smoke-none-r2",
+      "mode": "macro-smoke",
+      "split": "orig",
+      "control": "lstm_fusion",
+      "token_mode": "block",
+      "macro_mode": "none",
+      "seed": 42,
+      "uses_sequence": true,
+      "n_parameters": 51249,
+      "description": {
+        "control": "lstm_fusion",
+        "macro_mode": "none",
+        "macro_tokens": 0,
+        "sequence_length": 8,
+        "pooled_positions": 8,
+        "macro_role": "no macro branch; v2 model unchanged",
+        "type_embedding_rows": 9,
+        "context_projection_kept": true,
+        "source": null,
+        "semantics": "financial-state embedding learned through the rental loss; not a validated measure of economic health"
+      },
+      "n_A_fit": 512,
+      "n_A_holdout": 512,
+      "n_B_fit": 512,
+      "n_B_validation": 35158,
+      "chosen_epochs": 2,
+      "stage_a_epochs_run": 2,
+      "stage_a_best_holdout_rmse_sgd": 907.3734904478396,
+      "stage_a_seconds": 0.19,
+      "stage_b_seconds": 0.14,
+      "total_seconds": 1.85,
+      "overall": {
+        "rmse_sgd": 683.3894855837242,
+        "mae_sgd": 592.9394613366172,
+        "bias_sgd": -483.3367363031261,
+        "n": 35158
+      },
+      "by_horizon_band": [
+        {
+          "horizon_band": "1-3",
+          "rmse_sgd": 685.3443927412756,
+          "mae_sgd": 590.7419048010432,
+          "bias_sgd": -453.10580269730843,
+          "n": 9174
+        },
+        {
+          "horizon_band": "4-8",
+          "rmse_sgd": 685.9680421845169,
+          "mae_sgd": 593.5541238824305,
+          "bias_sgd": -493.1679768119911,
+          "n": 14164
+        },
+        {
+          "horizon_band": "9-12",
+          "rmse_sgd": 678.7586051075024,
+          "mae_sgd": 593.9085225344561,
+          "bias_sgd": -495.0193838777629,
+          "n": 11820
+        },
+        {
+          "horizon_band": "13-16",
+          "n": 0,
+          "rmse_sgd": null,
+          "mae_sgd": null,
+          "bias_sgd": null,
+          "note": "empty band"
+        }
+      ],
+      "parity_signature_B_fit": "ac6c5a1c6b1c4cd74df8e3ba2d1938c63764a03af4c3804bd5f05c7522e8bf77",
+      "parity_signature_B_validation": "a8fd9ceb2db2f16ad93755291380a54f6eb3fc773130f6111b2244f0d12bec41",
+      "boundaries": {
+        "split": "orig",
+        "inner_cutoff_index": 26,
+        "cutoff_index": 38,
+        "val_start_index": 39,
+        "val_end_index": 50,
+        "populations": {
+          "A/fit": 52310,
+          "A/holdout": 35882,
+          "B/fit": 88192,
+          "B/validation": 35158
+        },
+        "a_fit_origin_range": [
+          0,
+          25
+        ],
+        "a_fit_target_range": [
+          1,
+          26
+        ],
+        "a_holdout_origin": [
+          26
+        ],
+        "a_holdout_target_range": [
+          27,
+          38
+        ],
+        "a_holdout_horizon_range": [
+          1,
+          12
+        ],
+        "b_fit_origin_range": [
+          0,
+          37
+        ],
+        "b_validation_origin": 38,
+        "stage_a_has_validation": false,
+        "deviations": [],
+        "blocking_checks": "passed"
+      },
+      "stage_a_scaler_fitted_on": "A/fit",
+      "stage_b_scaler_fitted_on": "B/fit",
+      "actual_manifest": {
+        "control": "lstm_fusion",
+        "macro_mode": "none",
+        "capacity": {
+          "d_model": 48,
+          "layers": 2,
+          "heads": 4,
+          "lstm_hidden": 32,
+          "mlp_hidden": 128
+        },
+        "shapes": {
+          "n_categorical": 4,
+          "numeric_dim": 21,
+          "history_dim": 24,
+          "context_dim": 11,
+          "cardinalities": [
+            27,
+            7,
+            20,
+            2
+          ],
+          "sequence_channels": 6,
+          "sequence_length": 48
+        },
+        "optimiser": {
+          "name": "AdamW",
+          "lr": 0.001,
+          "weight_decay": 0.0001,
+          "clip_grad": 1.0,
+          "scheduler": "CosineAnnealingLR"
+        },
+        "batch_size": 128,
+        "seed": 42,
+        "max_epochs": 2,
+        "patience": 2,
+        "threads": 2,
+        "loss": "MSE on kSGD residual from the contract anchor (anchor kept in SGD)",
+        "early_stopping": "A/fit train, A/holdout monitor",
+        "refit": "B/fit, fixed epoch count, last weights kept"
+      },
+      "command": ".venv/bin/python -m experiments.neural_fusion_v3.main --split orig --controls lstm_fusion --token-modes block --seeds 42 --mode macro-smoke --run-id macro-smoke-none-r2 --macro none --verify-checkpoints"
+    }
+  ],
+  "checkpoint_verification": [
+    {
+      "control": "lstm_fusion",
+      "token_mode": "block",
+      "macro_mode": "none",
+      "seed": 42,
+      "ok": true,
+      "max_abs_delta_sgd": 4.547473508864641e-13,
+      "n": 35158,
+      "n_state_dict_keys": 51
+    }
+  ]
+}

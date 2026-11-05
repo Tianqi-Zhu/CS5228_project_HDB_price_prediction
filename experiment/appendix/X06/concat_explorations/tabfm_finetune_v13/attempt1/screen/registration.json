@@ -1,0 +1,32 @@
+{
+  "config": {
+    "seed": 42,
+    "train_queries": 1024,
+    "monitor_queries": 512,
+    "context": 64,
+    "query_batch": 32,
+    "rank": 4,
+    "lora": "last ICL block q and v",
+    "optimizer": "AdamW",
+    "lr": 0.0001,
+    "weight_decay": 0.0001,
+    "clip": 1.0,
+    "max_subset_epochs": 40,
+    "patience": 5,
+    "loss": "mean squared normalized residual, context-only mean/std",
+    "selection": "even allocation across eligible origins, random within origin",
+    "baseline": "epoch 0 pretrained head and zero LoRA",
+    "numeric_preprocessing": "context-only mean/std, std floor 1e-6, clip [-10,10]",
+    "categories": "raw fixed integer codes",
+    "banks": [
+      "base",
+      "macro",
+      "stock"
+    ],
+    "validation": "fixed v10 512 row monitor, not full holdout",
+    "threads": 2
+  },
+  "runner_sha256": "e307e8842eb0dbf46665c34171e721b7713dbf3848cee34def3a68115f890a8d",
+  "core_sha256": "7066e30ad6ba2038ac3d033580610939ab92ddd569876a1ede517c3b6fe32a59",
+  "data_sha256": "c1bd0cdea8fcaf83b1950fe2824532896d6e0abdcb9b9d40a72a8804a02aa1fa"
+}

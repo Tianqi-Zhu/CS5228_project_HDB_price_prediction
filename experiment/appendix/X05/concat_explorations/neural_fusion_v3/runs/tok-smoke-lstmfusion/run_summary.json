@@ -1,0 +1,623 @@
+{
+  "run_id": "tok-smoke-lstmfusion",
+  "mode": "smoke",
+  "split": "orig",
+  "contract_id": "fusion-contract-v2.1.0__43867d0ba111",
+  "contract_version": "fusion-contract-v2.1.0",
+  "contract_dir": "/Users/ziyuan/Desktop/有用的东西/NUS_courses/CS_5228/Project/CS5228_project_HDB_price_prediction/reports/fusion_contract_v2/fusion-contract-v2.1.0__43867d0ba111",
+  "contract_source_sha256": "43867d0ba111b8c0bbd3a269b6ff4ac39e1a976517c08542b9f49f9f38611d43",
+  "contract_fingerprint": {
+    "features/early/encodingA.json": "80fa4a9bf200e9dea0f0e2177639035934d03561af94ad3232d76160a9ebfc22",
+    "features/early/encodingB.json": "2cdd3a204a2b704e70f334c40a6d8589f4dba509f8411391da04df95203e381d",
+    "features/early/stageA.npz": "07c99e280d1d777d8334fb419a3659930a8eecb5fccc7f7858446a7a676549fd",
+    "features/early/stageB.npz": "72b25a1fbbc822c6e7d8994893817f5e0b4a29e01a382728fa9ff623b74f0dac",
+    "features/long/encodingA.json": "7ffa3f1fad6e9f3f7940f1cc16be50b826fb3c189365fb60036e333bcdfef2ea",
+    "features/long/encodingB.json": "b6b61b30dfbfe77a774e3325bfb98c61166019eabdfae0701810ae1f4aa13847",
+    "features/long/stageA.npz": "91f9208701aefe1e28e5a9966c41e67649eedc8a5a70d0ce12d74e71ffe02b7c",
+    "features/long/stageB.npz": "0ab5189806ef910b79678d4e6f6195b661e07fd47d6e74456e8cd7a53d7cebff",
+    "features/orig/encodingA.json": "2cdd3a204a2b704e70f334c40a6d8589f4dba509f8411391da04df95203e381d",
+    "features/orig/encodingB.json": "5446b4de354e7e1c9210c52b656b0fd33daa5acf60896cccfb43f46bb4740df5",
+    "features/orig/stageA.npz": "72b25a1fbbc822c6e7d8994893817f5e0b4a29e01a382728fa9ff623b74f0dac",
+    "features/orig/stageB.npz": "6f831627bbaa57d11e3276bd186d4dc3a7cae1f47e20a34cf631b25ed8dff0be",
+    "fixtures/synthetic_fixture.csv": "405f27fefa40ae426d9f548a1c9412be260194a2704c997fb68a62d8e6f7e742",
+    "manifest.json": "ea18e0c9b2150a6e293f517c21491c05c2e479156d71b9acb8abb3cf875380d3",
+    "samples/early/stageA.csv": "61b5234cd19161f523c22bb9fef1f55de36e78181db6ef09271ff8838bebbdcf",
+    "samples/early/stageB.csv": "1cb6afe047f7f0289e07121d713a433aaa095ce5ad63383f3107a6bd793d7124",
+    "samples/long/stageA.csv": "142f2d54541c2fa414e61c5765a08e2c4516c66f6dc9a4899620fbf9840a8de0",
+    "samples/long/stageB.csv": "47b97cee439e6c18e3a0ad710d78d482db8a850e2b5a5eae32558072144a8ed3",
+    "samples/orig/stageA.csv": "362015dbd70ffb5f604e2e15b187139e108e81d1973f71ba92a758fa800e4b66",
+    "samples/orig/stageB.csv": "2e1e7a7eeb7c74f98440a25b0615c4ffea1a7d37157f88789cb5fe3219e15dc3",
+    "tree_control/run_manifest_stageB.json": "b198bce59f3a20d06dab9c99c61713c52179a5dd263334250b8e73a138fe1fc2",
+    "tree_control/tree_control_metrics.csv": "decb82463874e6430c07db4acf55a65d48124059dcd9c118bb713c0ef6c43212",
+    "tree_control/tree_control_predictions_stageB.csv": "fb252ff13318f7d2e2b22e3779ca7421e6c37937198b1fc320990fc74d05b029"
+  },
+  "code_fingerprint": {
+    "__init__.py": "c1a4abd911526c27d5ee478a2552f8ed99d34a28cae6ebb181d29f0207fa087f",
+    "macro.py": "413b313769bc5004b74298fd05f2a7fea854a63dcdd69242930cda5e40cdf359",
+    "main.py": "96bd94954ea23edf671187efeb8938acbea22525c65c0d47fe9cfb31e3499b71",
+    "models.py": "af41dfa5883ac8788d911e5d30242527189bfb6beebace08a29e1ed3eeae56a2",
+    "tests/test_tokenisation.py": "00f129c8228d60637518a6a8091e9fce9feb115aaf06cd8b998443da5752f845",
+    "tokens.py": "96ef7e189770350ccaafb0ad7756229eacd4781c001c31f302bf25d950d10958",
+    "../neural_fusion_v2/__init__.py": "b57f72c8e50fff047c24a5866acc60f169d973e2fb8edb39b0cdd4844f674cf9",
+    "../neural_fusion_v2/adapter.py": "fc9ccd97469b9ddd6a4d907d71c2d0ac344adcd2df22ec12f06c5a2700c2383a",
+    "../neural_fusion_v2/contract.py": "f224852fcbe12a82be4438908174b8259f97e7a4e15f898e55669c2224f69abb",
+    "../neural_fusion_v2/main.py": "53f97997c816bfbc6c29794aa379db7b55a7849ff585e560653966476c964683",
+    "../neural_fusion_v2/make_results.py": "8da1268f98cf1c894a91d4f8df135d3466919b34fad44eebdef360a0e896ce59",
+    "../neural_fusion_v2/models.py": "8d02ebf931e19dbba3736b8d361c420bc4704d60ae02950853312e79430493e1",
+    "../neural_fusion_v2/preprocessing.py": "63d5fd488297fbc6e6850f18902781e93f538f2df9f204d1a7f5d977f4417ba0",
+    "../neural_fusion_v2/settings.py": "4eef26559e24f065562642f9b276c3bcfa48bee9b51fc3b9adac4b0ad9432de5",
+    "../neural_fusion_v2/training.py": "a510955871e895fd08b67fae4a285737e68b0b67bb4500b54c041f4d3a2c3a29"
+  },
+  "environment": {
+    "python": "3.13.9",
+    "numpy": "2.1.1",
+    "pandas": "2.2.3",
+    "torch": "2.8.0",
+    "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
+    "host": "Zenos-MacBook-Air.local",
+    "torch_threads": 2,
+    "interop": 1,
+    "device": "cpu",
+    "OMP_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2"
+  },
+  "capacity": {
+    "d_model": 48,
+    "layers": 2,
+    "heads": 4,
+    "lstm_hidden": 32,
+    "mlp_hidden": 128
+  },
+  "args": {
+    "contract_id": "fusion-contract-v2.1.0__43867d0ba111",
+    "contract_root": "/Users/ziyuan/Desktop/有用的东西/NUS_courses/CS_5228/Project/CS5228_project_HDB_price_prediction/reports/fusion_contract_v2",
+    "split": "orig",
+    "controls": "lstm_fusion",
+    "token_modes": "block,per_feature",
+    "seeds": "42",
+    "mode": "smoke",
+    "run_id": "tok-smoke-lstmfusion",
+    "verify_checkpoints": true,
+    "macro": "none",
+    "macro_policy": "origin_asof"
+  },
+  "controls": [
+    "lstm_fusion"
+  ],
+  "token_modes": [
+    "block",
+    "per_feature"
+  ],
+  "seeds": [
+    42
+  ],
+  "macro": {
+    "enabled": false,
+    "policy": "origin_asof"
+  },
+  "split_metadata": {
+    "cutoff": "2024-03",
+    "val_start": "2024-04",
+    "val_end": "2025-03",
+    "description": "train <=2024-03, validate 2024-04..2025-03 (12 months)",
+    "id": "orig",
+    "cutoff_index": 38,
+    "val_start_index": 39,
+    "val_end_index": 50,
+    "inner_cutoff_index": 26,
+    "n_validation_months": 12
+  },
+  "population_boundaries": {
+    "split": "orig",
+    "inner_cutoff_index": 26,
+    "cutoff_index": 38,
+    "val_start_index": 39,
+    "val_end_index": 50,
+    "populations": {
+      "A/fit": 52310,
+      "A/holdout": 35882,
+      "B/fit": 88192,
+      "B/validation": 35158
+    },
+    "a_fit_origin_range": [
+      0,
+      25
+    ],
+    "a_fit_target_range": [
+      1,
+      26
+    ],
+    "a_holdout_origin": [
+      26
+    ],
+    "a_holdout_target_range": [
+      27,
+      38
+    ],
+    "a_holdout_horizon_range": [
+      1,
+      12
+    ],
+    "b_fit_origin_range": [
+      0,
+      37
+    ],
+    "b_validation_origin": 38,
+    "stage_a_has_validation": false,
+    "deviations": [],
+    "blocking_checks": "passed"
+  },
+  "command": ".venv/bin/python -m experiments.neural_fusion_v3.main --split orig --controls lstm_fusion --token-modes block,per_feature --seeds 42 --mode smoke --run-id tok-smoke-lstmfusion --verify-checkpoints",
+  "started": "2026-10-25T00:16:09",
+  "result_status": "REAL_CONTRACT_TOKEN_ABLATION",
+  "finished": "2026-10-25T00:16:23",
+  "results": [
+    {
+      "run_id": "tok-smoke-lstmfusion",
+      "mode": "smoke",
+      "split": "orig",
+      "control": "lstm_fusion",
+      "token_mode": "block",
+      "seed": 42,
+      "uses_sequence": true,
+      "n_parameters": 51681,
+      "description": {
+        "control": "lstm_fusion",
+        "capacity": {
+          "d_model": 48,
+          "layers": 2,
+          "heads": 4,
+          "lstm_hidden": 32,
+          "mlp_hidden": 128
+        },
+        "encoder": {
+          "categorical_tokens": 4,
+          "numeric": {
+            "mode": "block",
+            "n_numeric_in": 21,
+            "n_tokens": 1,
+            "embed_dim": 8,
+            "bottleneck": "Linear(21, 8)",
+            "feature_indices": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ],
+            "feature_names": [
+              "FLOOR_AREA_SQM",
+              "YEARS_SINCE_LEASE_COMMENCEMENT",
+              "LATITUDE",
+              "LONGITUDE",
+              "MAX_FLOOR",
+              "BUILDING_AGE_YEARS",
+              "NEAREST_OPEN_MRT_KM",
+              "OPEN_MRT_COUNT_500M",
+              "OPEN_MRT_COUNT_1000M",
+              "OPEN_MRT_COUNT_2000M",
+              "NEAREST_MALL_KM",
+              "MALL_COUNT_500M",
+              "MALL_COUNT_1000M",
+              "MALL_COUNT_2000M",
+              "NEAREST_PRIMARY_SCHOOL_KM",
+              "PRIMARY_SCHOOL_COUNT_500M",
+              "PRIMARY_SCHOOL_COUNT_1000M",
+              "PRIMARY_SCHOOL_COUNT_2000M",
+              "DISTANCE_TO_CBD_KM",
+              "MAX_FLOOR__missing",
+              "BUILDING_AGE_YEARS__missing"
+            ]
+          },
+          "history_tokens": 1,
+          "total_tokens": 6,
+          "embed_dim": 8
+        },
+        "parameters": 51689
+      },
+      "n_A_fit": 4000,
+      "n_A_holdout": 4000,
+      "n_B_fit": 4000,
+      "n_B_validation": 35158,
+      "chosen_epochs": 1,
+      "stage_a_epochs_run": 3,
+      "stage_a_best_holdout_rmse_sgd": 844.7797471404423,
+      "stage_a_seconds": 1.74,
+      "stage_b_seconds": 0.44,
+      "total_seconds": 3.75,
+      "overall": {
+        "rmse_sgd": 666.2700055715011,
+        "mae_sgd": 575.5543487227216,
+        "bias_sgd": -459.29902867283784,
+        "n": 35158
+      },
+      "by_horizon_band": [
+        {
+          "horizon_band": "1-3",
+          "rmse_sgd": 666.164439526725,
+          "mae_sgd": 571.4451972982165,
+          "bias_sgd": -424.0039612434777,
+          "n": 9174
+        },
+        {
+          "horizon_band": "4-8",
+          "rmse_sgd": 664.8983947506537,
+          "mae_sgd": 571.9895415590059,
+          "bias_sgd": -464.31199277038127,
+          "n": 14164
+        },
+        {
+          "horizon_band": "9-12",
+          "rmse_sgd": 667.9916293715125,
+          "mae_sgd": 583.0153710438112,
+          "bias_sgd": -480.68594281153025,
+          "n": 11820
+        },
+        {
+          "horizon_band": "13-16",
+          "n": 0,
+          "rmse_sgd": null,
+          "mae_sgd": null,
+          "bias_sgd": null,
+          "note": "empty band"
+        }
+      ],
+      "parity_signature_B_fit": "f22e1f1278e7e0e0d3d9d04dde7d43846b6a19a0095ee23f5057f93cf874636c",
+      "parity_signature_B_validation": "1c8bd3f672a53e74209df05fb3182edd7ad0dd0f53b4b7605234b6b381b0a390",
+      "boundaries": {
+        "split": "orig",
+        "inner_cutoff_index": 26,
+        "cutoff_index": 38,
+        "val_start_index": 39,
+        "val_end_index": 50,
+        "populations": {
+          "A/fit": 52310,
+          "A/holdout": 35882,
+          "B/fit": 88192,
+          "B/validation": 35158
+        },
+        "a_fit_origin_range": [
+          0,
+          25
+        ],
+        "a_fit_target_range": [
+          1,
+          26
+        ],
+        "a_holdout_origin": [
+          26
+        ],
+        "a_holdout_target_range": [
+          27,
+          38
+        ],
+        "a_holdout_horizon_range": [
+          1,
+          12
+        ],
+        "b_fit_origin_range": [
+          0,
+          37
+        ],
+        "b_validation_origin": 38,
+        "stage_a_has_validation": false,
+        "deviations": [],
+        "blocking_checks": "passed"
+      },
+      "stage_a_scaler_fitted_on": "A/fit",
+      "stage_b_scaler_fitted_on": "B/fit",
+      "actual_manifest": {
+        "control": "lstm_fusion",
+        "capacity": {
+          "d_model": 48,
+          "layers": 2,
+          "heads": 4,
+          "lstm_hidden": 32,
+          "mlp_hidden": 128
+        },
+        "shapes": {
+          "n_categorical": 4,
+          "numeric_dim": 21,
+          "history_dim": 24,
+          "context_dim": 11,
+          "cardinalities": [
+            27,
+            7,
+            20,
+            2
+          ],
+          "token_mode": "block",
+          "token_embed_dim": 8,
+          "sequence_channels": 6,
+          "sequence_length": 48
+        },
+        "optimiser": {
+          "name": "AdamW",
+          "lr": 0.001,
+          "weight_decay": 0.0001,
+          "clip_grad": 1.0,
+          "scheduler": "CosineAnnealingLR"
+        },
+        "batch_size": 256,
+        "seed": 42,
+        "max_epochs": 3,
+        "patience": 2,
+        "threads": 2,
+        "loss": "MSE on kSGD residual from the contract anchor (anchor kept in SGD)",
+        "early_stopping": "A/fit train, A/holdout monitor",
+        "refit": "B/fit, fixed epoch count, last weights kept"
+      },
+      "command": ".venv/bin/python -m experiments.neural_fusion_v3.main --split orig --controls lstm_fusion --token-modes block,per_feature --seeds 42 --mode smoke --run-id tok-smoke-lstmfusion --verify-checkpoints"
+    },
+    {
+      "run_id": "tok-smoke-lstmfusion",
+      "mode": "smoke",
+      "split": "orig",
+      "control": "lstm_fusion",
+      "token_mode": "per_feature",
+      "seed": 42,
+      "uses_sequence": true,
+      "n_parameters": 52675,
+      "description": {
+        "control": "lstm_fusion",
+        "capacity": {
+          "d_model": 48,
+          "layers": 2,
+          "heads": 4,
+          "lstm_hidden": 32,
+          "mlp_hidden": 128
+        },
+        "encoder": {
+          "categorical_tokens": 4,
+          "numeric": {
+            "mode": "per_feature",
+            "n_numeric_in": 21,
+            "n_tokens": 21,
+            "embed_dim": 8,
+            "bottleneck": null,
+            "feature_order": [
+              "FLOOR_AREA_SQM",
+              "YEARS_SINCE_LEASE_COMMENCEMENT",
+              "LATITUDE",
+              "LONGITUDE",
+              "MAX_FLOOR",
+              "BUILDING_AGE_YEARS",
+              "NEAREST_OPEN_MRT_KM",
+              "OPEN_MRT_COUNT_500M",
+              "OPEN_MRT_COUNT_1000M",
+              "OPEN_MRT_COUNT_2000M",
+              "NEAREST_MALL_KM",
+              "MALL_COUNT_500M",
+              "MALL_COUNT_1000M",
+              "MALL_COUNT_2000M",
+              "NEAREST_PRIMARY_SCHOOL_KM",
+              "PRIMARY_SCHOOL_COUNT_500M",
+              "PRIMARY_SCHOOL_COUNT_1000M",
+              "PRIMARY_SCHOOL_COUNT_2000M",
+              "DISTANCE_TO_CBD_KM",
+              "MAX_FLOOR__missing",
+              "BUILDING_AGE_YEARS__missing"
+            ],
+            "feature_indices": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ],
+            "feature_names": [
+              "FLOOR_AREA_SQM",
+              "YEARS_SINCE_LEASE_COMMENCEMENT",
+              "LATITUDE",
+              "LONGITUDE",
+              "MAX_FLOOR",
+              "BUILDING_AGE_YEARS",
+              "NEAREST_OPEN_MRT_KM",
+              "OPEN_MRT_COUNT_500M",
+              "OPEN_MRT_COUNT_1000M",
+              "OPEN_MRT_COUNT_2000M",
+              "NEAREST_MALL_KM",
+              "MALL_COUNT_500M",
+              "MALL_COUNT_1000M",
+              "MALL_COUNT_2000M",
+              "NEAREST_PRIMARY_SCHOOL_KM",
+              "PRIMARY_SCHOOL_COUNT_500M",
+              "PRIMARY_SCHOOL_COUNT_1000M",
+              "PRIMARY_SCHOOL_COUNT_2000M",
+              "DISTANCE_TO_CBD_KM",
+              "MAX_FLOOR__missing",
+              "BUILDING_AGE_YEARS__missing"
+            ]
+          },
+          "history_tokens": 1,
+          "total_tokens": 26,
+          "embed_dim": 8
+        },
+        "parameters": 52683
+      },
+      "n_A_fit": 4000,
+      "n_A_holdout": 4000,
+      "n_B_fit": 4000,
+      "n_B_validation": 35158,
+      "chosen_epochs": 2,
+      "stage_a_epochs_run": 3,
+      "stage_a_best_holdout_rmse_sgd": 876.4368261271582,
+      "stage_a_seconds": 3.48,
+      "stage_b_seconds": 1.79,
+      "total_seconds": 7.53,
+      "overall": {
+        "rmse_sgd": 673.3982687923578,
+        "mae_sgd": 582.9558539932419,
+        "bias_sgd": -469.9169609650747,
+        "n": 35158
+      },
+      "by_horizon_band": [
+        {
+          "horizon_band": "1-3",
+          "rmse_sgd": 675.1732344690035,
+          "mae_sgd": 580.722681215679,
+          "bias_sgd": -438.51340713345957,
+          "n": 9174
+        },
+        {
+          "horizon_band": "4-8",
+          "rmse_sgd": 674.3669546192716,
+          "mae_sgd": 581.8314666955342,
+          "bias_sgd": -477.75937803750304,
+          "n": 14164
+        },
+        {
+          "horizon_band": "9-12",
+          "rmse_sgd": 670.8523962195659,
+          "mae_sgd": 586.0364757145696,
+          "bias_sgd": -484.8929514420088,
+          "n": 11820
+        },
+        {
+          "horizon_band": "13-16",
+          "n": 0,
+          "rmse_sgd": null,
+          "mae_sgd": null,
+          "bias_sgd": null,
+          "note": "empty band"
+        }
+      ],
+      "parity_signature_B_fit": "f22e1f1278e7e0e0d3d9d04dde7d43846b6a19a0095ee23f5057f93cf874636c",
+      "parity_signature_B_validation": "1c8bd3f672a53e74209df05fb3182edd7ad0dd0f53b4b7605234b6b381b0a390",
+      "boundaries": {
+        "split": "orig",
+        "inner_cutoff_index": 26,
+        "cutoff_index": 38,
+        "val_start_index": 39,
+        "val_end_index": 50,
+        "populations": {
+          "A/fit": 52310,
+          "A/holdout": 35882,
+          "B/fit": 88192,
+          "B/validation": 35158
+        },
+        "a_fit_origin_range": [
+          0,
+          25
+        ],
+        "a_fit_target_range": [
+          1,
+          26
+        ],
+        "a_holdout_origin": [
+          26
+        ],
+        "a_holdout_target_range": [
+          27,
+          38
+        ],
+        "a_holdout_horizon_range": [
+          1,
+          12
+        ],
+        "b_fit_origin_range": [
+          0,
+          37
+        ],
+        "b_validation_origin": 38,
+        "stage_a_has_validation": false,
+        "deviations": [],
+        "blocking_checks": "passed"
+      },
+      "stage_a_scaler_fitted_on": "A/fit",
+      "stage_b_scaler_fitted_on": "B/fit",
+      "actual_manifest": {
+        "control": "lstm_fusion",
+        "capacity": {
+          "d_model": 48,
+          "layers": 2,
+          "heads": 4,
+          "lstm_hidden": 32,
+          "mlp_hidden": 128
+        },
+        "shapes": {
+          "n_categorical": 4,
+          "numeric_dim": 21,
+          "history_dim": 24,
+          "context_dim": 11,
+          "cardinalities": [
+            27,
+            7,
+            20,
+            2
+          ],
+          "token_mode": "per_feature",
+          "token_embed_dim": 8,
+          "sequence_channels": 6,
+          "sequence_length": 48
+        },
+        "optimiser": {
+          "name": "AdamW",
+          "lr": 0.001,
+          "weight_decay": 0.0001,
+          "clip_grad": 1.0,
+          "scheduler": "CosineAnnealingLR"
+        },
+        "batch_size": 256,
+        "seed": 42,
+        "max_epochs": 3,
+        "patience": 2,
+        "threads": 2,
+        "loss": "MSE on kSGD residual from the contract anchor (anchor kept in SGD)",
+        "early_stopping": "A/fit train, A/holdout monitor",
+        "refit": "B/fit, fixed epoch count, last weights kept"
+      },
+      "command": ".venv/bin/python -m experiments.neural_fusion_v3.main --split orig --controls lstm_fusion --token-modes block,per_feature --seeds 42 --mode smoke --run-id tok-smoke-lstmfusion --verify-checkpoints"
+    }
+  ],
+  "checkpoint_verification": [
+    {
+      "control": "lstm_fusion",
+      "token_mode": "block",
+      "seed": 42,
+      "ok": true,
+      "max_abs_delta_sgd": 4.547473508864641e-13,
+      "n": 35158
+    },
+    {
+      "control": "lstm_fusion",
+      "token_mode": "per_feature",
+      "seed": 42,
+      "ok": true,
+      "max_abs_delta_sgd": 4.547473508864641e-13,
+      "n": 35158
+    }
+  ]
+}

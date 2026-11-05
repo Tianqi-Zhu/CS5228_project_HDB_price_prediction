@@ -15,3 +15,8 @@
 | [X11](X11/README.md) | pending | F2成员互补分析，依赖外部F2 |
 | [X12](X12/README.md) | planned | F1/F2配对区间 |
 | [X13](X13/README.md) | partial | 原三份复现入口；固定配方重训核验见CHECKS；新建Conda环境未验证 |
+
+## Concat development history
+
+- [X05: spatial, rental-history and macro sequence encoding](X05/concat_explorations/README.md)
+- [X06: early Transformer, matched cross-attention and TabFM attempts](X06/concat_explorations/README.md)

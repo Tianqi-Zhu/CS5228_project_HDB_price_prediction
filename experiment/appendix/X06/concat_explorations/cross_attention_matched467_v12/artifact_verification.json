@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "arms": {
+    "concat": {
+      "recomputed": {
+        "rmse_sgd": 467.696838571249,
+        "mae_sgd": 342.6042799892547,
+        "bias_sgd": -10.474236415063055,
+        "n": 35158
+      },
+      "replay_delta": 0.0
+    },
+    "summary": {
+      "recomputed": {
+        "rmse_sgd": 469.4114788563609,
+        "mae_sgd": 337.873898188247,
+        "bias_sgd": 37.209231290563416,
+        "n": 35158
+      },
+      "replay_delta": 0.0
+    },
+    "sequence": {
+      "recomputed": {
+        "rmse_sgd": 468.67019573127027,
+        "mae_sgd": 337.94413985078455,
+        "bias_sgd": 26.737707359804773,
+        "n": 35158
+      },
+      "replay_delta": 0.0
+    }
+  },
+  "original_and_input_hashes_unchanged": true,
+  "identities_match": true
+}

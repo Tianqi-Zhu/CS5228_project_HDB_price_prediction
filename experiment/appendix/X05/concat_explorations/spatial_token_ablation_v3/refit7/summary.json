@@ -1,0 +1,86 @@
+{
+  "run": "lstm_fusion__per_feature_refit7_seed42",
+  "fixed_epochs": 7,
+  "epochs_predeclared_not_searched": true,
+  "init_matches_probe_checkpoint": true,
+  "scaler_reused_from": "reports/neural_fusion_v3/runs/spatial-probe-perfeature-none-s42-h1/preprocessing/orig/lstm_fusion__per_feature_seed42_stageB.json",
+  "scaler_equals_fresh_Bfit": true,
+  "training_curve": [
+    {
+      "epoch": 1,
+      "train_mse_ksgd2": 0.3415836238765924
+    },
+    {
+      "epoch": 2,
+      "train_mse_ksgd2": 0.2858812404561285
+    },
+    {
+      "epoch": 3,
+      "train_mse_ksgd2": 0.28184378696456874
+    },
+    {
+      "epoch": 4,
+      "train_mse_ksgd2": 0.2791800045006853
+    },
+    {
+      "epoch": 5,
+      "train_mse_ksgd2": 0.2774666117825944
+    },
+    {
+      "epoch": 6,
+      "train_mse_ksgd2": 0.2764324170844129
+    },
+    {
+      "epoch": 7,
+      "train_mse_ksgd2": 0.2759876598770283
+    }
+  ],
+  "refit_seconds": 158.1406784169958,
+  "metrics": {
+    "rmse_sgd": 474.491228121349,
+    "mae_sgd": 340.08094388395386,
+    "bias_sgd": 57.15922449434486,
+    "n": 35158
+  },
+  "reload_max_abs_delta_sgd": 0.0,
+  "n_parameters_stage_b": 56019,
+  "n_parameters_stage_a_reported": 56011,
+  "parameter_count_note": "the run summary reports the stage-A model (56,011); the saved stage-B checkpoint has 56,019 because the B/fit encoding has one extra category (cardinality 20 vs 19). Same architecture, one embedding row.",
+  "arms": [
+    {
+      "rmse_sgd": 475.5986877090766,
+      "mae_sgd": 341.2737576201464,
+      "bias_sgd": 56.453671360919145,
+      "error_sd_sgd": 472.236270039129,
+      "bias_share_of_mse": 0.014089743475023366,
+      "arm": "block / 7 ep",
+      "refit_epochs": 7
+    },
+    {
+      "rmse_sgd": 543.9991113197789,
+      "mae_sgd": 390.28082149074487,
+      "bias_sgd": 265.9103336967742,
+      "error_sd_sgd": 474.5805806709535,
+      "bias_share_of_mse": 0.2389318521097307,
+      "arm": "per_feature / 1 ep",
+      "refit_epochs": 1
+    },
+    {
+      "rmse_sgd": 474.491228121349,
+      "mae_sgd": 340.08094388395386,
+      "bias_sgd": 57.15922449434486,
+      "error_sd_sgd": 471.03582519731043,
+      "bias_share_of_mse": 0.014511632769457813,
+      "arm": "per_feature / 7 ep",
+      "refit_epochs": 7
+    }
+  ],
+  "gap_block_to_1ep": 68.40042361070226,
+  "gap_block_to_7ep": -1.1074595877275897,
+  "gap_recovered_by_7ep": 69.50788319842985,
+  "gap_recovered_fraction": 1.0161908293730846,
+  "notes": [
+    "fixed 7-epoch refit used 158.1s (the 1-epoch probe's stage-B step took 22.5s)"
+  ],
+  "failures": []
+}

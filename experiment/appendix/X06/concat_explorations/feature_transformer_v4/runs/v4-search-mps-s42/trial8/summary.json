@@ -1,0 +1,449 @@
+{
+  "id": 8,
+  "pooling": "cls",
+  "changes": {
+    "batch_size": 1024
+  },
+  "selected_epoch": 20,
+  "selected_rmse_sgd": 597.2144937231017,
+  "inner_predictions": {
+    "rmse_sgd": 597.2144937231017,
+    "mae_sgd": 459.0291729547874,
+    "bias_sgd": 104.93984661329338,
+    "n": 35882
+  },
+  "ineligible_best": null,
+  "epochs_run": 30,
+  "seconds": 437.11,
+  "parameters": 54145,
+  "config": {
+    "pooling": "cls",
+    "d_model": 48,
+    "layers": 2,
+    "heads": 4,
+    "ff_multiplier": 2,
+    "dropout": 0.05,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "batch_size": 1024,
+    "clip_grad": 1.0,
+    "max_epochs": 60,
+    "patience": 10,
+    "eligible_after": 5,
+    "seed": 42,
+    "schedule_epochs": null,
+    "schedule_epochs_effective": 60
+  },
+  "description": {
+    "name": "feature_transformer",
+    "pooling": "cls",
+    "d_model": 48,
+    "layers": 2,
+    "heads": 4,
+    "ff_width": 96,
+    "dropout": 0.05,
+    "numeric": {
+      "mode": "per_feature",
+      "n_tokens": 56,
+      "token_width": 48,
+      "formula": "x_j * weight_j + bias_j + identity_j  (weight_j, bias_j in R^d)",
+      "weight_shape": [
+        56,
+        48
+      ],
+      "shared_projection": null,
+      "weight_row_norm_min": 0.722488284111023,
+      "feature_names": [
+        "FLOOR_AREA_SQM",
+        "YEARS_SINCE_LEASE_COMMENCEMENT",
+        "LATITUDE",
+        "LONGITUDE",
+        "MAX_FLOOR",
+        "BUILDING_AGE_YEARS",
+        "NEAREST_OPEN_MRT_KM",
+        "OPEN_MRT_COUNT_500M",
+        "OPEN_MRT_COUNT_1000M",
+        "OPEN_MRT_COUNT_2000M",
+        "NEAREST_MALL_KM",
+        "MALL_COUNT_500M",
+        "MALL_COUNT_1000M",
+        "MALL_COUNT_2000M",
+        "NEAREST_PRIMARY_SCHOOL_KM",
+        "PRIMARY_SCHOOL_COUNT_500M",
+        "PRIMARY_SCHOOL_COUNT_1000M",
+        "PRIMARY_SCHOOL_COUNT_2000M",
+        "DISTANCE_TO_CBD_KM",
+        "MAX_FLOOR__missing",
+        "BUILDING_AGE_YEARS__missing",
+        "hist_rent__global",
+        "hist_psm__global",
+        "hist_n__global",
+        "hist_months__global",
+        "hist_recency__global",
+        "hist_exact__global",
+        "hist_rent__flat_type",
+        "hist_psm__flat_type",
+        "hist_n__flat_type",
+        "hist_months__flat_type",
+        "hist_recency__flat_type",
+        "hist_exact__flat_type",
+        "hist_rent__town_ft",
+        "hist_psm__town_ft",
+        "hist_n__town_ft",
+        "hist_months__town_ft",
+        "hist_recency__town_ft",
+        "hist_exact__town_ft",
+        "hist_rent__block_ft",
+        "hist_psm__block_ft",
+        "hist_n__block_ft",
+        "hist_months__block_ft",
+        "hist_recency__block_ft",
+        "hist_exact__block_ft",
+        "horizon_months",
+        "target_month_index",
+        "origin_month_index",
+        "target_month_sin",
+        "target_month_cos",
+        "origin_month_sin",
+        "origin_month_cos",
+        "anchor_psm_sgd",
+        "anchor_n",
+        "anchor_level_code",
+        "anchor_missing"
+      ]
+    },
+    "categorical": {
+      "n_tokens": 4,
+      "token_width": 48,
+      "cardinalities": [
+        27,
+        7,
+        19,
+        2
+      ],
+      "unknown_code": 0
+    },
+    "total_feature_tokens": 60,
+    "query_type_id": 61,
+    "type_embedding_rows": 62,
+    "pooling_tokens": 1,
+    "query_conditioned": false,
+    "parameters": 54145
+  },
+  "device": {
+    "device": "mps",
+    "torch": "2.8.0",
+    "cpu_threads": 2,
+    "mps_available": true,
+    "mps_built": true,
+    "bitwise_identical_across_backends": false,
+    "note": "CPU and MPS kernels differ; the measured eval gap at batch 512 / 60 tokens is ~3.7e-8 kSGD. Never compare a CPU number and an MPS number as if the backend were not part of the setting.",
+    "mps_macos_build": true
+  },
+  "curve": [
+    {
+      "epoch": 1,
+      "train_mse": 0.32571628681447945,
+      "monitor_rmse_sgd": 601.7458430884595,
+      "seconds": 14.25,
+      "learning_rate": 0.001,
+      "device": "mps"
+    },
+    {
+      "epoch": 2,
+      "train_mse": 0.266754295778785,
+      "monitor_rmse_sgd": 656.6990976942093,
+      "seconds": 12.69,
+      "learning_rate": 0.0009993147673772868,
+      "device": "mps"
+    },
+    {
+      "epoch": 3,
+      "train_mse": 0.24800773691980635,
+      "monitor_rmse_sgd": 687.8513661972052,
+      "seconds": 12.74,
+      "learning_rate": 0.0009972609476841365,
+      "device": "mps"
+    },
+    {
+      "epoch": 4,
+      "train_mse": 0.24551698317709628,
+      "monitor_rmse_sgd": 618.0605401007474,
+      "seconds": 12.69,
+      "learning_rate": 0.0009938441702975688,
+      "device": "mps"
+    },
+    {
+      "epoch": 5,
+      "train_mse": 0.2455152353668869,
+      "monitor_rmse_sgd": 622.0401538394527,
+      "seconds": 14.89,
+      "learning_rate": 0.0009890738003669028,
+      "device": "mps"
+    },
+    {
+      "epoch": 6,
+      "train_mse": 0.24321872546280393,
+      "monitor_rmse_sgd": 622.2706154346753,
+      "seconds": 16.32,
+      "learning_rate": 0.0009829629131445341,
+      "device": "mps"
+    },
+    {
+      "epoch": 7,
+      "train_mse": 0.24249156164270677,
+      "monitor_rmse_sgd": 626.6917622550069,
+      "seconds": 14.81,
+      "learning_rate": 0.0009755282581475769,
+      "device": "mps"
+    },
+    {
+      "epoch": 8,
+      "train_mse": 0.2421782962395342,
+      "monitor_rmse_sgd": 630.9768421893925,
+      "seconds": 12.9,
+      "learning_rate": 0.0009667902132486009,
+      "device": "mps"
+    },
+    {
+      "epoch": 9,
+      "train_mse": 0.24162899722243514,
+      "monitor_rmse_sgd": 628.0471033210133,
+      "seconds": 12.5,
+      "learning_rate": 0.0009567727288213005,
+      "device": "mps"
+    },
+    {
+      "epoch": 10,
+      "train_mse": 0.24139604502507273,
+      "monitor_rmse_sgd": 644.1928553740536,
+      "seconds": 13.55,
+      "learning_rate": 0.0009455032620941839,
+      "device": "mps"
+    },
+    {
+      "epoch": 11,
+      "train_mse": 0.24075007467202897,
+      "monitor_rmse_sgd": 625.8112487167988,
+      "seconds": 14.5,
+      "learning_rate": 0.0009330127018922195,
+      "device": "mps"
+    },
+    {
+      "epoch": 12,
+      "train_mse": 0.24058307916797658,
+      "monitor_rmse_sgd": 651.4797429950776,
+      "seconds": 13.89,
+      "learning_rate": 0.0009193352839727121,
+      "device": "mps"
+    },
+    {
+      "epoch": 13,
+      "train_mse": 0.23999896492916592,
+      "monitor_rmse_sgd": 617.1435199459461,
+      "seconds": 13.03,
+      "learning_rate": 0.0009045084971874737,
+      "device": "mps"
+    },
+    {
+      "epoch": 14,
+      "train_mse": 0.2404123741441875,
+      "monitor_rmse_sgd": 610.3669836851467,
+      "seconds": 12.74,
+      "learning_rate": 0.0008885729807284855,
+      "device": "mps"
+    },
+    {
+      "epoch": 15,
+      "train_mse": 0.2402712721996475,
+      "monitor_rmse_sgd": 634.657850934148,
+      "seconds": 12.81,
+      "learning_rate": 0.0008715724127386972,
+      "device": "mps"
+    },
+    {
+      "epoch": 16,
+      "train_mse": 0.23939948944818948,
+      "monitor_rmse_sgd": 622.5594907001031,
+      "seconds": 15.12,
+      "learning_rate": 0.0008535533905932739,
+      "device": "mps"
+    },
+    {
+      "epoch": 17,
+      "train_mse": 0.23942032498443727,
+      "monitor_rmse_sgd": 626.7457460063808,
+      "seconds": 14.1,
+      "learning_rate": 0.0008345653031794292,
+      "device": "mps"
+    },
+    {
+      "epoch": 18,
+      "train_mse": 0.2386846266799437,
+      "monitor_rmse_sgd": 604.0592693656362,
+      "seconds": 14.25,
+      "learning_rate": 0.0008146601955249187,
+      "device": "mps"
+    },
+    {
+      "epoch": 19,
+      "train_mse": 0.2395673737701871,
+      "monitor_rmse_sgd": 664.523708349634,
+      "seconds": 16.4,
+      "learning_rate": 0.0007938926261462367,
+      "device": "mps"
+    },
+    {
+      "epoch": 20,
+      "train_mse": 0.24017113575149598,
+      "monitor_rmse_sgd": 597.2144937231017,
+      "seconds": 15.01,
+      "learning_rate": 0.0007723195175075136,
+      "device": "mps"
+    },
+    {
+      "epoch": 21,
+      "train_mse": 0.23917455433534404,
+      "monitor_rmse_sgd": 625.6394295485705,
+      "seconds": 14.6,
+      "learning_rate": 0.00075,
+      "device": "mps"
+    },
+    {
+      "epoch": 22,
+      "train_mse": 0.23834157566043393,
+      "monitor_rmse_sgd": 617.8169522777486,
+      "seconds": 14.78,
+      "learning_rate": 0.0007269952498697733,
+      "device": "mps"
+    },
+    {
+      "epoch": 23,
+      "train_mse": 0.23841620364054236,
+      "monitor_rmse_sgd": 602.4194738078904,
+      "seconds": 14.99,
+      "learning_rate": 0.0007033683215379002,
+      "device": "mps"
+    },
+    {
+      "epoch": 24,
+      "train_mse": 0.2383973034748587,
+      "monitor_rmse_sgd": 613.2746887209219,
+      "seconds": 15.17,
+      "learning_rate": 0.0006791839747726503,
+      "device": "mps"
+    },
+    {
+      "epoch": 25,
+      "train_mse": 0.23874444118582525,
+      "monitor_rmse_sgd": 599.3063698990726,
+      "seconds": 15.11,
+      "learning_rate": 0.0006545084971874737,
+      "device": "mps"
+    },
+    {
+      "epoch": 26,
+      "train_mse": 0.2382450345334622,
+      "monitor_rmse_sgd": 623.5145059173857,
+      "seconds": 15.17,
+      "learning_rate": 0.0006294095225512603,
+      "device": "mps"
+    },
+    {
+      "epoch": 27,
+      "train_mse": 0.2379986936863511,
+      "monitor_rmse_sgd": 616.86783345217,
+      "seconds": 15.07,
+      "learning_rate": 0.0006039558454088795,
+      "device": "mps"
+    },
+    {
+      "epoch": 28,
+      "train_mse": 0.23722614505976478,
+      "monitor_rmse_sgd": 635.8705705389966,
+      "seconds": 14.31,
+      "learning_rate": 0.0005782172325201154,
+      "device": "mps"
+    },
+    {
+      "epoch": 29,
+      "train_mse": 0.2379851479303356,
+      "monitor_rmse_sgd": 616.0673481492613,
+      "seconds": 19.56,
+      "learning_rate": 0.0005522642316338267,
+      "device": "mps"
+    },
+    {
+      "epoch": 30,
+      "train_mse": 0.23751183182906976,
+      "monitor_rmse_sgd": 610.1606708347964,
+      "seconds": 16.76,
+      "learning_rate": 0.0005261679781214719,
+      "device": "mps"
+    }
+  ],
+  "input_fingerprint": {
+    "a_fit_parity": "b693047ec591a2836bccaa7df7f4c7e56528c2142145ce23035046488ba3ecec",
+    "a_hold_parity": "4795a67b6914a038f764a44de0948b8bbc81e46d542fc5648cf70c4a6df18c21",
+    "scalers": "c9b41fb6345011ee9e4d8bd7e9af28d38ae0888491a9c40719f97ffa526183bf",
+    "vocabularies": "15bb7abb23b6c333c7116f42c06e1a2e02d3efb38a4514614ecec32bc1c5834f",
+    "numeric_names": [
+      "FLOOR_AREA_SQM",
+      "YEARS_SINCE_LEASE_COMMENCEMENT",
+      "LATITUDE",
+      "LONGITUDE",
+      "MAX_FLOOR",
+      "BUILDING_AGE_YEARS",
+      "NEAREST_OPEN_MRT_KM",
+      "OPEN_MRT_COUNT_500M",
+      "OPEN_MRT_COUNT_1000M",
+      "OPEN_MRT_COUNT_2000M",
+      "NEAREST_MALL_KM",
+      "MALL_COUNT_500M",
+      "MALL_COUNT_1000M",
+      "MALL_COUNT_2000M",
+      "NEAREST_PRIMARY_SCHOOL_KM",
+      "PRIMARY_SCHOOL_COUNT_500M",
+      "PRIMARY_SCHOOL_COUNT_1000M",
+      "PRIMARY_SCHOOL_COUNT_2000M",
+      "DISTANCE_TO_CBD_KM",
+      "MAX_FLOOR__missing",
+      "BUILDING_AGE_YEARS__missing",
+      "hist_rent__global",
+      "hist_psm__global",
+      "hist_n__global",
+      "hist_months__global",
+      "hist_recency__global",
+      "hist_exact__global",
+      "hist_rent__flat_type",
+      "hist_psm__flat_type",
+      "hist_n__flat_type",
+      "hist_months__flat_type",
+      "hist_recency__flat_type",
+      "hist_exact__flat_type",
+      "hist_rent__town_ft",
+      "hist_psm__town_ft",
+      "hist_n__town_ft",
+      "hist_months__town_ft",
+      "hist_recency__town_ft",
+      "hist_exact__town_ft",
+      "hist_rent__block_ft",
+      "hist_psm__block_ft",
+      "hist_n__block_ft",
+      "hist_months__block_ft",
+      "hist_recency__block_ft",
+      "hist_exact__block_ft",
+      "horizon_months",
+      "target_month_index",
+      "origin_month_index",
+      "target_month_sin",
+      "target_month_cos",
+      "origin_month_sin",
+      "origin_month_cos",
+      "anchor_psm_sgd",
+      "anchor_n",
+      "anchor_level_code",
+      "anchor_missing"
+    ]
+  }
+}

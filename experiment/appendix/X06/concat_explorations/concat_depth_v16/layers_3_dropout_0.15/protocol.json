@@ -1,0 +1,3476 @@
+{
+  "batch_size": 512,
+  "cardinalities": [
+    27,
+    7,
+    20,
+    2
+  ],
+  "comparison": "End-to-end comparison: shared 188 flat inputs and raw split, plus native macro sequence branches for this model.",
+  "identity": "e9090b5307cf45d217e3094eeaf626d8d0779dac85dc54d684a61f960831babd",
+  "macro_state": {
+    "coe_scaler": {
+      "block": "coe",
+      "channel_names": [
+        "coe_a_premium",
+        "coe_a_quota",
+        "coe_a_bids",
+        "coe_a_bids_quota_ratio",
+        "coe_a_auction_count",
+        "coe_a_observed",
+        "coe_b_premium",
+        "coe_b_quota",
+        "coe_b_bids",
+        "coe_b_bids_quota_ratio",
+        "coe_b_auction_count",
+        "coe_b_observed",
+        "coe_c_premium",
+        "coe_c_quota",
+        "coe_c_bids",
+        "coe_c_bids_quota_ratio",
+        "coe_c_auction_count",
+        "coe_c_observed",
+        "coe_e_premium",
+        "coe_e_quota",
+        "coe_e_bids",
+        "coe_e_bids_quota_ratio",
+        "coe_e_auction_count",
+        "coe_e_observed"
+      ],
+      "degenerate": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "extra": {},
+      "fitted_on": "unique origins referenced by raw fit rows",
+      "mean": [
+        69901.55256410256,
+        1308.4641025641026,
+        1827.2769230769231,
+        1.3988709468107956,
+        2.0,
+        0.0,
+        90857.7064102564,
+        1223.7871794871794,
+        1712.6692307692308,
+        1.4043374868539664,
+        2.0,
+        0.0,
+        57680.21666666667,
+        247.26410256410256,
+        473.38461538461536,
+        1.97837059986897,
+        2.0,
+        0.0,
+        93274.20512820513,
+        389.2871794871795,
+        660.2307692307693,
+        1.719394919505486,
+        2.0,
+        0.0
+      ],
+      "n_used": [
+        390,
+        390,
+        390,
+        390,
+        390,
+        390,
+        390,
+        390,
+        390,
+        390,
+        390,
+        390,
+        390,
+        390,
+        390,
+        390,
+        390,
+        390,
+        390,
+        390,
+        390,
+        390,
+        390,
+        390
+      ],
+      "n_windows_used": 39,
+      "policy": "origin_asof",
+      "scale": [
+        20007.574245729706,
+        317.2187092606245,
+        448.58352356633304,
+        0.0937406981922928,
+        1.0,
+        1.0,
+        26061.30756616377,
+        368.83418549597843,
+        514.7486229308199,
+        0.12630110933137736,
+        1.0,
+        1.0,
+        17600.878231071067,
+        152.11962378994562,
+        265.1121521793035,
+        0.2707662840401142,
+        1.0,
+        1.0,
+        26407.68442057215,
+        141.66880740665624,
+        224.78951726311928,
+        0.20347185724865538,
+        1.0,
+        1.0
+      ],
+      "split_id": "raw",
+      "stage": "selection"
+    },
+    "coe_source_sha256": "e32fccd39da32780b6b7f35d069c813ed3edb0c110ea60761656bcee58d501a5",
+    "d_model": 48,
+    "dbs_scaler": {
+      "block": "dbs",
+      "channel_names": [
+        "log_return",
+        "log_volume",
+        "vol_21",
+        "ma_dev_21",
+        "drawdown_126",
+        "log_close",
+        "observed"
+      ],
+      "degenerate": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "extra": {},
+      "fitted_on": "unique origins referenced by raw fit rows",
+      "mean": [
+        0.0004934282866652947,
+        15.220959494878583,
+        0.010010163718954638,
+        0.0047523270963490925,
+        -0.04929708583236,
+        3.1369982041476208,
+        0.0
+      ],
+      "n_used": [
+        2326,
+        2326,
+        2326,
+        2326,
+        2326,
+        2326,
+        2326
+      ],
+      "n_windows_used": 39,
+      "policy": "origin_asof",
+      "scale": [
+        0.01054580311731016,
+        0.4479911827921223,
+        0.0031376701204118467,
+        0.02566892419747663,
+        0.04517820181751309,
+        0.1062590770309266,
+        1.0
+      ],
+      "split_id": "raw",
+      "stage": "selection"
+    },
+    "mode": "both",
+    "origins": [
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38
+    ],
+    "policy": "origin_asof",
+    "scaler_fit_origins": [
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37
+    ],
+    "semantics": "original DBS LSTM and COE GRU summary tokens, macro status proxies",
+    "stock_source_sha256": "c52fef9f33cfcb11285e2b9546124e02f32488e563af44e9fb3a505d10e2edff",
+    "tokens": 2
+  },
+  "max_epochs": 40,
+  "metadata": {
+    "categorical_names": [
+      "TOWN_CLEAN",
+      "FLAT_TYPE_CLEAN",
+      "FLAT_MODEL_CLEAN",
+      "FURNISHED_CLEAN"
+    ],
+    "coe_sha256": "e32fccd39da32780b6b7f35d069c813ed3edb0c110ea60761656bcee58d501a5",
+    "cold_start": 3129,
+    "feature_bank": "stock",
+    "fit_cutoff": 38,
+    "n_fit": 114842,
+    "n_validation": 35158,
+    "numeric_names": [
+      "FLOOR_AREA_SQM",
+      "YEARS_SINCE_LEASE_COMMENCEMENT",
+      "LATITUDE",
+      "LONGITUDE",
+      "MAX_FLOOR",
+      "BUILDING_AGE_YEARS",
+      "NEAREST_OPEN_MRT_KM",
+      "OPEN_MRT_COUNT_500M",
+      "OPEN_MRT_COUNT_1000M",
+      "OPEN_MRT_COUNT_2000M",
+      "NEAREST_MALL_KM",
+      "MALL_COUNT_500M",
+      "MALL_COUNT_1000M",
+      "MALL_COUNT_2000M",
+      "NEAREST_PRIMARY_SCHOOL_KM",
+      "PRIMARY_SCHOOL_COUNT_500M",
+      "PRIMARY_SCHOOL_COUNT_1000M",
+      "PRIMARY_SCHOOL_COUNT_2000M",
+      "DISTANCE_TO_CBD_KM",
+      "MAX_FLOOR__missing",
+      "BUILDING_AGE_YEARS__missing",
+      "hist_rent__global",
+      "hist_psm__global",
+      "hist_n__global",
+      "hist_months__global",
+      "hist_recency__global",
+      "hist_exact__global",
+      "hist_rent__flat_type",
+      "hist_psm__flat_type",
+      "hist_n__flat_type",
+      "hist_months__flat_type",
+      "hist_recency__flat_type",
+      "hist_exact__flat_type",
+      "hist_rent__town_ft",
+      "hist_psm__town_ft",
+      "hist_n__town_ft",
+      "hist_months__town_ft",
+      "hist_recency__town_ft",
+      "hist_exact__town_ft",
+      "hist_rent__block_ft",
+      "hist_psm__block_ft",
+      "hist_n__block_ft",
+      "hist_months__block_ft",
+      "hist_recency__block_ft",
+      "hist_exact__block_ft",
+      "horizon_months",
+      "target_month_index",
+      "origin_month_index",
+      "target_month_sin",
+      "target_month_cos",
+      "origin_month_sin",
+      "origin_month_cos",
+      "anchor_psm_sgd",
+      "anchor_n",
+      "anchor_level_code",
+      "anchor_missing",
+      "dbs_ret_1m",
+      "dbs_ret_3m",
+      "dbs_ret_6m",
+      "dbs_vol_21",
+      "dbs_vol_63",
+      "dbs_vol_126",
+      "dbs_drawdown_126",
+      "dbs_volume_rel_21",
+      "dbs_n_obs_63",
+      "dbs_n_obs_126",
+      "dbs_gap_max_days_63",
+      "dbs_asof_age_days",
+      "a_coe_premium_latest",
+      "a_coe_premium_chg_1m",
+      "a_coe_premium_chg_3m",
+      "a_coe_ratio_latest",
+      "a_coe_ratio_chg_1m",
+      "a_coe_auctions_12m",
+      "a_coe_n_months_12",
+      "a_coe_incomplete_latest",
+      "a_coe_premium_rel_12m",
+      "b_coe_premium_latest",
+      "b_coe_premium_chg_1m",
+      "b_coe_premium_chg_3m",
+      "b_coe_ratio_latest",
+      "b_coe_ratio_chg_1m",
+      "b_coe_auctions_12m",
+      "b_coe_n_months_12",
+      "b_coe_incomplete_latest",
+      "b_coe_premium_rel_12m",
+      "c_coe_premium_latest",
+      "c_coe_premium_chg_1m",
+      "c_coe_premium_chg_3m",
+      "c_coe_ratio_latest",
+      "c_coe_ratio_chg_1m",
+      "c_coe_auctions_12m",
+      "c_coe_n_months_12",
+      "c_coe_incomplete_latest",
+      "c_coe_premium_rel_12m",
+      "e_coe_premium_latest",
+      "e_coe_premium_chg_1m",
+      "e_coe_premium_chg_3m",
+      "e_coe_ratio_latest",
+      "e_coe_ratio_chg_1m",
+      "e_coe_auctions_12m",
+      "e_coe_n_months_12",
+      "e_coe_incomplete_latest",
+      "e_coe_premium_rel_12m",
+      "dbs_ret_1m_observed",
+      "dbs_ret_3m_observed",
+      "dbs_ret_6m_observed",
+      "dbs_vol_21_observed",
+      "dbs_vol_63_observed",
+      "dbs_vol_126_observed",
+      "dbs_drawdown_126_observed",
+      "dbs_volume_rel_21_observed",
+      "dbs_n_obs_63_observed",
+      "dbs_n_obs_126_observed",
+      "dbs_gap_max_days_63_observed",
+      "dbs_asof_age_days_observed",
+      "a_coe_premium_latest_observed",
+      "a_coe_premium_chg_1m_observed",
+      "a_coe_premium_chg_3m_observed",
+      "a_coe_ratio_latest_observed",
+      "a_coe_ratio_chg_1m_observed",
+      "a_coe_auctions_12m_observed",
+      "a_coe_n_months_12_observed",
+      "a_coe_incomplete_latest_observed",
+      "a_coe_premium_rel_12m_observed",
+      "b_coe_premium_latest_observed",
+      "b_coe_premium_chg_1m_observed",
+      "b_coe_premium_chg_3m_observed",
+      "b_coe_ratio_latest_observed",
+      "b_coe_ratio_chg_1m_observed",
+      "b_coe_auctions_12m_observed",
+      "b_coe_n_months_12_observed",
+      "b_coe_incomplete_latest_observed",
+      "b_coe_premium_rel_12m_observed",
+      "c_coe_premium_latest_observed",
+      "c_coe_premium_chg_1m_observed",
+      "c_coe_premium_chg_3m_observed",
+      "c_coe_ratio_latest_observed",
+      "c_coe_ratio_chg_1m_observed",
+      "c_coe_auctions_12m_observed",
+      "c_coe_n_months_12_observed",
+      "c_coe_incomplete_latest_observed",
+      "c_coe_premium_rel_12m_observed",
+      "e_coe_premium_latest_observed",
+      "e_coe_premium_chg_1m_observed",
+      "e_coe_premium_chg_3m_observed",
+      "e_coe_ratio_latest_observed",
+      "e_coe_ratio_chg_1m_observed",
+      "e_coe_auctions_12m_observed",
+      "e_coe_n_months_12_observed",
+      "e_coe_incomplete_latest_observed",
+      "e_coe_premium_rel_12m_observed",
+      "stock_banks_mean_return_21",
+      "stock_banks_mean_return_63",
+      "stock_banks_mean_return_126",
+      "stock_banks_mean_volatility_63",
+      "stock_banks_mean_volume_ratio_21_63",
+      "stock_banks_available_symbol_fraction",
+      "stock_banks_return_63_cross_section_dispersion",
+      "stock_banks_mean_observation_coverage_63",
+      "stock_property_mean_return_21",
+      "stock_property_mean_return_63",
+      "stock_property_mean_return_126",
+      "stock_property_mean_volatility_63",
+      "stock_property_mean_volume_ratio_21_63",
+      "stock_property_available_symbol_fraction",
+      "stock_property_return_63_cross_section_dispersion",
+      "stock_property_mean_observation_coverage_63",
+      "stock_banks_mean_return_21_observed",
+      "stock_banks_mean_return_63_observed",
+      "stock_banks_mean_return_126_observed",
+      "stock_banks_mean_volatility_63_observed",
+      "stock_banks_mean_volume_ratio_21_63_observed",
+      "stock_banks_available_symbol_fraction_observed",
+      "stock_banks_return_63_cross_section_dispersion_observed",
+      "stock_banks_mean_observation_coverage_63_observed",
+      "stock_property_mean_return_21_observed",
+      "stock_property_mean_return_63_observed",
+      "stock_property_mean_return_126_observed",
+      "stock_property_mean_volatility_63_observed",
+      "stock_property_mean_volume_ratio_21_63_observed",
+      "stock_property_available_symbol_fraction_observed",
+      "stock_property_return_63_cross_section_dispersion_observed",
+      "stock_property_mean_observation_coverage_63_observed"
+    ],
+    "phase": "selection",
+    "source_sha256": "43867d0ba111b8c0bbd3a269b6ff4ac39e1a976517c08542b9f49f9f38611d43",
+    "stock_sha256": "c52fef9f33cfcb11285e2b9546124e02f32488e563af44e9fb3a505d10e2edff"
+  },
+  "min_eligible_epoch": 1,
+  "patience": 5,
+  "preprocessing": {
+    "encoding": {
+      "categorical_columns": [
+        "TOWN_CLEAN",
+        "FLAT_TYPE_CLEAN",
+        "FLAT_MODEL_CLEAN",
+        "FURNISHED_CLEAN"
+      ],
+      "categorical_vocabularies": {
+        "FLAT_MODEL_CLEAN": {
+          "2 room": 1,
+          "3gen": 2,
+          "<unknown>": 0,
+          "adjoined flat": 3,
+          "apartment": 4,
+          "dbss": 5,
+          "improved": 6,
+          "maisonette": 7,
+          "model a": 8,
+          "model a maisonette": 9,
+          "model a2": 10,
+          "new generation": 11,
+          "premium apartment": 12,
+          "premium apartment loft": 13,
+          "premium maisonette": 14,
+          "simplified": 15,
+          "standard": 16,
+          "terrace": 17,
+          "type s1": 18,
+          "type s2": 19
+        },
+        "FLAT_TYPE_CLEAN": {
+          "1 room": 1,
+          "2 room": 2,
+          "3 room": 3,
+          "4 room": 4,
+          "5 room": 5,
+          "<unknown>": 0,
+          "executive": 6
+        },
+        "FURNISHED_CLEAN": {
+          "<unknown>": 0,
+          "yes": 1
+        },
+        "TOWN_CLEAN": {
+          "<unknown>": 0,
+          "ang mo kio": 1,
+          "bedok": 2,
+          "bishan": 3,
+          "bukit batok": 4,
+          "bukit merah": 5,
+          "bukit panjang": 6,
+          "bukit timah": 7,
+          "central": 8,
+          "choa chu kang": 9,
+          "clementi": 10,
+          "geylang": 11,
+          "hougang": 12,
+          "jurong east": 13,
+          "jurong west": 14,
+          "kallang/whampoa": 15,
+          "marine parade": 16,
+          "pasir ris": 17,
+          "punggol": 18,
+          "queenstown": 19,
+          "sembawang": 20,
+          "sengkang": 21,
+          "serangoon": 22,
+          "tampines": 23,
+          "toa payoh": 24,
+          "woodlands": 25,
+          "yishun": 26
+        }
+      },
+      "contract_version": "fusion-contract-v2.1.0",
+      "fitted_on": "population == 'fit' of this stage only",
+      "n_fit_rows": 114842,
+      "numeric_medians": {
+        "BUILDING_AGE_YEARS": 35.0,
+        "BUILDING_AGE_YEARS__missing": 0.0,
+        "DISTANCE_TO_CBD_KM": 12.24807752909447,
+        "FLOOR_AREA_SQM": 92.0,
+        "LATITUDE": 1.352564,
+        "LONGITUDE": 103.845453,
+        "MALL_COUNT_1000M": 1.0,
+        "MALL_COUNT_2000M": 3.0,
+        "MALL_COUNT_500M": 0.0,
+        "MAX_FLOOR": 13.0,
+        "MAX_FLOOR__missing": 0.0,
+        "NEAREST_MALL_KM": 0.7325128946815247,
+        "NEAREST_OPEN_MRT_KM": 0.5328175695037137,
+        "NEAREST_PRIMARY_SCHOOL_KM": 0.3741815375819765,
+        "OPEN_MRT_COUNT_1000M": 2.0,
+        "OPEN_MRT_COUNT_2000M": 5.0,
+        "OPEN_MRT_COUNT_500M": 0.0,
+        "PRIMARY_SCHOOL_COUNT_1000M": 3.0,
+        "PRIMARY_SCHOOL_COUNT_2000M": 8.0,
+        "PRIMARY_SCHOOL_COUNT_500M": 1.0,
+        "YEARS_SINCE_LEASE_COMMENCEMENT": 34.0
+      },
+      "unknown_code": 0
+    },
+    "macro_fit_origins": [
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37
+    ],
+    "macro_scaler": {
+      "block": "macro_scalar",
+      "channel_names": [
+        "dbs_ret_1m",
+        "dbs_ret_3m",
+        "dbs_ret_6m",
+        "dbs_vol_21",
+        "dbs_vol_63",
+        "dbs_vol_126",
+        "dbs_drawdown_126",
+        "dbs_volume_rel_21",
+        "dbs_n_obs_63",
+        "dbs_n_obs_126",
+        "dbs_gap_max_days_63",
+        "dbs_asof_age_days",
+        "a_coe_premium_latest",
+        "a_coe_premium_chg_1m",
+        "a_coe_premium_chg_3m",
+        "a_coe_ratio_latest",
+        "a_coe_ratio_chg_1m",
+        "a_coe_auctions_12m",
+        "a_coe_n_months_12",
+        "a_coe_incomplete_latest",
+        "a_coe_premium_rel_12m",
+        "b_coe_premium_latest",
+        "b_coe_premium_chg_1m",
+        "b_coe_premium_chg_3m",
+        "b_coe_ratio_latest",
+        "b_coe_ratio_chg_1m",
+        "b_coe_auctions_12m",
+        "b_coe_n_months_12",
+        "b_coe_incomplete_latest",
+        "b_coe_premium_rel_12m",
+        "c_coe_premium_latest",
+        "c_coe_premium_chg_1m",
+        "c_coe_premium_chg_3m",
+        "c_coe_ratio_latest",
+        "c_coe_ratio_chg_1m",
+        "c_coe_auctions_12m",
+        "c_coe_n_months_12",
+        "c_coe_incomplete_latest",
+        "c_coe_premium_rel_12m",
+        "e_coe_premium_latest",
+        "e_coe_premium_chg_1m",
+        "e_coe_premium_chg_3m",
+        "e_coe_ratio_latest",
+        "e_coe_ratio_chg_1m",
+        "e_coe_auctions_12m",
+        "e_coe_n_months_12",
+        "e_coe_incomplete_latest",
+        "e_coe_premium_rel_12m"
+      ],
+      "degenerate": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "extra": {},
+      "fitted_on": "unique windows referenced by fit rows",
+      "mean": [
+        0.0106397571691655,
+        0.03189821457367783,
+        0.05990556304306282,
+        0.010093257762491703,
+        0.010550610304466988,
+        0.01079781809331555,
+        -0.04957485506556144,
+        0.010880136513151228,
+        61.21052631578947,
+        117.42105263157895,
+        3.973684210526316,
+        0.42105263157894735,
+        72748.75,
+        968.7972972972973,
+        3167.4857142857145,
+        1.4146468890340704,
+        0.0190771297878913,
+        20.526315789473685,
+        10.263157894736842,
+        0.0,
+        0.11099661384268027,
+        94889.68421052632,
+        1354.554054054054,
+        5036.4857142857145,
+        1.422531008720398,
+        0.009331797476153116,
+        20.526315789473685,
+        10.263157894736842,
+        0.0,
+        0.13015901818136244,
+        60361.88157894737,
+        920.3108108108108,
+        2587.6285714285714,
+        1.9538975169784145,
+        0.0021780819908992664,
+        20.526315789473685,
+        10.263157894736842,
+        0.0,
+        0.10009932269550566,
+        97566.38157894737,
+        1252.945945945946,
+        5254.214285714285,
+        1.7355388528422306,
+        0.006117094157112611,
+        20.526315789473685,
+        10.263157894736842,
+        0.0,
+        0.13053424561420748
+      ],
+      "n_used": [
+        38,
+        38,
+        38,
+        38,
+        38,
+        38,
+        38,
+        36,
+        38,
+        38,
+        38,
+        38,
+        38,
+        37,
+        35,
+        38,
+        37,
+        38,
+        38,
+        38,
+        38,
+        38,
+        37,
+        35,
+        38,
+        37,
+        38,
+        38,
+        38,
+        38,
+        38,
+        37,
+        35,
+        38,
+        37,
+        38,
+        38,
+        38,
+        38,
+        38,
+        37,
+        35,
+        38,
+        37,
+        38,
+        38,
+        38,
+        38
+      ],
+      "n_windows_used": 39,
+      "policy": "origin_asof",
+      "scale": [
+        0.04005566637517807,
+        0.06937852567231513,
+        0.0812022479269336,
+        0.0027360100120967365,
+        0.002284264562300852,
+        0.002040066965418041,
+        0.04547123681834863,
+        0.2601377047844539,
+        7.891692158270644,
+        24.678069462085826,
+        0.5921487260798661,
+        0.7580764757601938,
+        20446.070886586604,
+        5018.817227942505,
+        9337.71216979654,
+        0.14205139720850785,
+        0.13446894201167098,
+        6.504621401223706,
+        3.252310700611853,
+        1.0,
+        0.1240987344298808,
+        27052.380002311696,
+        8049.244961816626,
+        14217.810224527275,
+        0.13834334945704477,
+        0.1900123118025018,
+        6.504621401223706,
+        3.252310700611853,
+        1.0,
+        0.13435559274610837,
+        17909.33367950091,
+        4608.472188009564,
+        7712.254109287277,
+        0.27045813791372136,
+        0.32153605308303884,
+        6.504621401223706,
+        3.252310700611853,
+        1.0,
+        0.1417271146698772,
+        27687.938407592294,
+        8076.335971170294,
+        14784.049478728613,
+        0.20032377117789077,
+        0.2197606428465371,
+        6.504621401223706,
+        3.252310700611853,
+        1.0,
+        0.13182554387537906
+      ],
+      "split_id": "orig",
+      "stage": "A"
+    },
+    "scaler": {
+      "anchor_handling": "anchor_rent_sgd kept in SGD for bookkeeping; /1000 only in tensors",
+      "clip_std": 8.0,
+      "context_columns": [
+        "horizon_months",
+        "target_month_index",
+        "origin_month_index",
+        "target_month_sin",
+        "target_month_cos",
+        "origin_month_sin",
+        "origin_month_cos",
+        "anchor_psm_sgd",
+        "anchor_n",
+        "anchor_level_code",
+        "anchor_missing"
+      ],
+      "context_mean": {
+        "anchor_level_code": 0.16439107643545045,
+        "anchor_missing": 0.02724612946482994,
+        "anchor_n": 43.48834050260358,
+        "anchor_psm_sgd": 24.319471143583787,
+        "horizon_months": 6.649605545009665,
+        "origin_month_cos": 0.126785984390534,
+        "origin_month_index": 12.101643997840512,
+        "origin_month_sin": 0.09881646482717077,
+        "target_month_cos": 0.06321209932409133,
+        "target_month_index": 18.751249542850175,
+        "target_month_sin": 0.05772495874115687
+      },
+      "context_median": {
+        "anchor_level_code": 0.0,
+        "anchor_missing": 0.0,
+        "anchor_n": 5.0,
+        "anchor_psm_sgd": 24.0029296875,
+        "horizon_months": 6.0,
+        "origin_month_cos": 6.123234262925839e-17,
+        "origin_month_index": 10.0,
+        "origin_month_sin": 1.2246468525851679e-16,
+        "target_month_cos": 6.123234262925839e-17,
+        "target_month_index": 18.0,
+        "target_month_sin": 1.2246468525851679e-16
+      },
+      "context_std": {
+        "anchor_level_code": 0.43889085150342744,
+        "anchor_missing": 0.16279980925669307,
+        "anchor_n": 148.84985089532805,
+        "anchor_psm_sgd": 4.878901945177046,
+        "horizon_months": 4.614220089927336,
+        "origin_month_cos": 0.7240182189664457,
+        "origin_month_index": 10.119542230984315,
+        "origin_month_sin": 0.6707892529428058,
+        "target_month_cos": 0.7135905673790236,
+        "target_month_index": 11.475708280809249,
+        "target_month_sin": 0.695313270324546
+      },
+      "fitted_population": "raw/selection/fit",
+      "fitted_rows": 114842,
+      "history_columns": [
+        "hist_rent__global",
+        "hist_psm__global",
+        "hist_n__global",
+        "hist_months__global",
+        "hist_recency__global",
+        "hist_exact__global",
+        "hist_rent__flat_type",
+        "hist_psm__flat_type",
+        "hist_n__flat_type",
+        "hist_months__flat_type",
+        "hist_recency__flat_type",
+        "hist_exact__flat_type",
+        "hist_rent__town_ft",
+        "hist_psm__town_ft",
+        "hist_n__town_ft",
+        "hist_months__town_ft",
+        "hist_recency__town_ft",
+        "hist_exact__town_ft",
+        "hist_rent__block_ft",
+        "hist_psm__block_ft",
+        "hist_n__block_ft",
+        "hist_months__block_ft",
+        "hist_recency__block_ft",
+        "hist_exact__block_ft"
+      ],
+      "history_mean": {
+        "hist_exact__block_ft": 0.781482384493478,
+        "hist_exact__flat_type": 0.9727364553038087,
+        "hist_exact__global": 0.97275387053517,
+        "hist_exact__town_ft": 0.9724055659079431,
+        "hist_months__block_ft": 1.2211440393666555,
+        "hist_months__flat_type": 2.283063853521082,
+        "hist_months__global": 2.283210601200916,
+        "hist_months__town_ft": 2.277899883349928,
+        "hist_n__block_ft": 1.3327776891760235,
+        "hist_n__flat_type": 8.64335872365516,
+        "hist_n__global": 9.921988268672886,
+        "hist_n__town_ft": 5.721055485772706,
+        "hist_psm__block_ft": 24.319471143583787,
+        "hist_psm__flat_type": 24.272338566125967,
+        "hist_psm__global": 24.165778436327102,
+        "hist_psm__town_ft": 24.298583299533504,
+        "hist_recency__block_ft": 2.2069974399609897,
+        "hist_recency__flat_type": 0.00018285992929416067,
+        "hist_recency__global": 0.0,
+        "hist_recency__town_ft": 0.005320353180892008,
+        "hist_rent__block_ft": 2168.3458020667713,
+        "hist_rent__flat_type": 2171.3344661159717,
+        "hist_rent__global": 2174.784494696552,
+        "hist_rent__town_ft": 2168.9123156876676
+      },
+      "history_median": {
+        "hist_exact__block_ft": 1.0,
+        "hist_exact__flat_type": 1.0,
+        "hist_exact__global": 1.0,
+        "hist_exact__town_ft": 1.0,
+        "hist_months__block_ft": 1.0986122886681098,
+        "hist_months__flat_type": 2.4849066497880004,
+        "hist_months__global": 2.4849066497880004,
+        "hist_months__town_ft": 2.4849066497880004,
+        "hist_n__block_ft": 1.3862943611198906,
+        "hist_n__flat_type": 9.13873695311649,
+        "hist_n__global": 10.44787366982408,
+        "hist_n__town_ft": 6.073044534100405,
+        "hist_psm__block_ft": 24.0029296875,
+        "hist_psm__flat_type": 23.493085861206055,
+        "hist_psm__global": 23.534957885742188,
+        "hist_psm__town_ft": 24.03778076171875,
+        "hist_recency__block_ft": 1.0,
+        "hist_recency__flat_type": 0.0,
+        "hist_recency__global": 0.0,
+        "hist_recency__town_ft": 0.0,
+        "hist_rent__block_ft": 2132.314697265625,
+        "hist_rent__flat_type": 2188.88720703125,
+        "hist_rent__global": 2121.142822265625,
+        "hist_rent__town_ft": 2133.39990234375
+      },
+      "history_std": {
+        "hist_exact__block_ft": 0.41324044722154907,
+        "hist_exact__flat_type": 0.16285037251044307,
+        "hist_exact__global": 0.16279980925669307,
+        "hist_exact__town_ft": 0.16380775713987433,
+        "hist_months__block_ft": 0.875406658249613,
+        "hist_months__flat_type": 0.9557019997003732,
+        "hist_months__global": 0.9556711583275642,
+        "hist_months__town_ft": 0.9554141349100982,
+        "hist_n__block_ft": 0.977560494791634,
+        "hist_n__flat_type": 1.8676965492091513,
+        "hist_n__global": 1.959003117620636,
+        "hist_n__town_ft": 1.6027369056398144,
+        "hist_psm__block_ft": 4.878901945177046,
+        "hist_psm__flat_type": 4.124533549148964,
+        "hist_psm__global": 1.581422959464115,
+        "hist_psm__town_ft": 4.764720916216644,
+        "hist_recency__block_ft": 3.2616161410828854,
+        "hist_recency__flat_type": 0.01695045367264579,
+        "hist_recency__global": 1.0,
+        "hist_recency__town_ft": 0.09988365361321823,
+        "hist_rent__block_ft": 303.4041612443262,
+        "hist_rent__flat_type": 242.2411068080108,
+        "hist_rent__global": 136.01960295099076,
+        "hist_rent__town_ft": 295.8165159906427
+      },
+      "log1p_columns": [
+        "hist_n__global",
+        "hist_months__global",
+        "hist_n__flat_type",
+        "hist_months__flat_type",
+        "hist_n__town_ft",
+        "hist_months__town_ft",
+        "hist_n__block_ft",
+        "hist_months__block_ft"
+      ],
+      "static_columns": [
+        "FLOOR_AREA_SQM",
+        "YEARS_SINCE_LEASE_COMMENCEMENT",
+        "LATITUDE",
+        "LONGITUDE",
+        "MAX_FLOOR",
+        "BUILDING_AGE_YEARS",
+        "NEAREST_OPEN_MRT_KM",
+        "OPEN_MRT_COUNT_500M",
+        "OPEN_MRT_COUNT_1000M",
+        "OPEN_MRT_COUNT_2000M",
+        "NEAREST_MALL_KM",
+        "MALL_COUNT_500M",
+        "MALL_COUNT_1000M",
+        "MALL_COUNT_2000M",
+        "NEAREST_PRIMARY_SCHOOL_KM",
+        "PRIMARY_SCHOOL_COUNT_500M",
+        "PRIMARY_SCHOOL_COUNT_1000M",
+        "PRIMARY_SCHOOL_COUNT_2000M",
+        "DISTANCE_TO_CBD_KM",
+        "MAX_FLOOR__missing",
+        "BUILDING_AGE_YEARS__missing"
+      ],
+      "static_mean": {
+        "BUILDING_AGE_YEARS": 32.92381707040978,
+        "BUILDING_AGE_YEARS__missing": 0.0013845108932272166,
+        "DISTANCE_TO_CBD_KM": 11.494216662990796,
+        "FLOOR_AREA_SQM": 93.62972605758026,
+        "LATITUDE": 1.357920267327166,
+        "LONGITUDE": 103.8403710610619,
+        "MALL_COUNT_1000M": 1.1691976802911828,
+        "MALL_COUNT_2000M": 3.653314989289633,
+        "MALL_COUNT_500M": 0.3250814162066143,
+        "MAX_FLOOR": 15.239198202748124,
+        "MAX_FLOOR__missing": 0.0013845108932272166,
+        "NEAREST_MALL_KM": 0.8104496095391012,
+        "NEAREST_OPEN_MRT_KM": 0.5894769690954847,
+        "NEAREST_PRIMARY_SCHOOL_KM": 0.4252563281764676,
+        "OPEN_MRT_COUNT_1000M": 1.6995350133226519,
+        "OPEN_MRT_COUNT_2000M": 5.595409345013149,
+        "OPEN_MRT_COUNT_500M": 0.4929816617613765,
+        "PRIMARY_SCHOOL_COUNT_1000M": 2.955608575259922,
+        "PRIMARY_SCHOOL_COUNT_2000M": 8.212901203392487,
+        "PRIMARY_SCHOOL_COUNT_500M": 0.9706030894620435,
+        "YEARS_SINCE_LEASE_COMMENCEMENT": 31.4274133156859
+      },
+      "static_median": {
+        "BUILDING_AGE_YEARS": 35.0,
+        "BUILDING_AGE_YEARS__missing": 0.0,
+        "DISTANCE_TO_CBD_KM": 12.248077392578125,
+        "FLOOR_AREA_SQM": 92.0,
+        "LATITUDE": 1.3525639772415161,
+        "LONGITUDE": 103.84545135498047,
+        "MALL_COUNT_1000M": 1.0,
+        "MALL_COUNT_2000M": 3.0,
+        "MALL_COUNT_500M": 0.0,
+        "MAX_FLOOR": 13.0,
+        "MAX_FLOOR__missing": 0.0,
+        "NEAREST_MALL_KM": 0.732512891292572,
+        "NEAREST_OPEN_MRT_KM": 0.532817542552948,
+        "NEAREST_PRIMARY_SCHOOL_KM": 0.3741815388202667,
+        "OPEN_MRT_COUNT_1000M": 2.0,
+        "OPEN_MRT_COUNT_2000M": 5.0,
+        "OPEN_MRT_COUNT_500M": 0.0,
+        "PRIMARY_SCHOOL_COUNT_1000M": 3.0,
+        "PRIMARY_SCHOOL_COUNT_2000M": 8.0,
+        "PRIMARY_SCHOOL_COUNT_500M": 1.0,
+        "YEARS_SINCE_LEASE_COMMENCEMENT": 34.0
+      },
+      "static_std": {
+        "BUILDING_AGE_YEARS": 12.547218934062723,
+        "BUILDING_AGE_YEARS__missing": 0.0371832492234575,
+        "DISTANCE_TO_CBD_KM": 4.64295476006806,
+        "FLOOR_AREA_SQM": 24.301815338748078,
+        "LATITUDE": 0.04303041264334153,
+        "LONGITUDE": 0.07072986781812897,
+        "MALL_COUNT_1000M": 1.212907971354952,
+        "MALL_COUNT_2000M": 3.1051801623996678,
+        "MALL_COUNT_500M": 0.5706455996044683,
+        "MAX_FLOOR": 6.325818558670001,
+        "MAX_FLOOR__missing": 0.0371832492234575,
+        "NEAREST_MALL_KM": 0.4475290069287442,
+        "NEAREST_OPEN_MRT_KM": 0.3249444775240431,
+        "NEAREST_PRIMARY_SCHOOL_KM": 0.26057146003989506,
+        "OPEN_MRT_COUNT_1000M": 1.2018550123584752,
+        "OPEN_MRT_COUNT_2000M": 3.1365135159341464,
+        "OPEN_MRT_COUNT_500M": 0.5826512227371204,
+        "PRIMARY_SCHOOL_COUNT_1000M": 1.5997120037515358,
+        "PRIMARY_SCHOOL_COUNT_2000M": 3.556487085090895,
+        "PRIMARY_SCHOOL_COUNT_500M": 0.8165148315824026,
+        "YEARS_SINCE_LEASE_COMMENCEMENT": 12.448806164460972
+      },
+      "target_scale": 1000.0
+    },
+    "stock_audit": {
+      "A17U.SI": {
+        "first_date": "2021-01-04",
+        "invalid_price_rows": 2,
+        "invalid_volume_rows": 2,
+        "last_date": "2026-07-30",
+        "origin_windows": {
+          "0": {
+            "latest_price_observed": true,
+            "latest_session": "2021-01-29",
+            "price_observations_last_63": 20,
+            "volume_observations_last_63": 20
+          },
+          "1": {
+            "latest_price_observed": true,
+            "latest_session": "2021-02-26",
+            "price_observations_last_63": 39,
+            "volume_observations_last_63": 39
+          },
+          "10": {
+            "latest_price_observed": true,
+            "latest_session": "2021-11-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "11": {
+            "latest_price_observed": true,
+            "latest_session": "2021-12-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "12": {
+            "latest_price_observed": true,
+            "latest_session": "2022-01-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "13": {
+            "latest_price_observed": true,
+            "latest_session": "2022-02-28",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "14": {
+            "latest_price_observed": true,
+            "latest_session": "2022-03-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "15": {
+            "latest_price_observed": true,
+            "latest_session": "2022-04-29",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "16": {
+            "latest_price_observed": true,
+            "latest_session": "2022-05-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "17": {
+            "latest_price_observed": true,
+            "latest_session": "2022-06-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "18": {
+            "latest_price_observed": true,
+            "latest_session": "2022-07-29",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "19": {
+            "latest_price_observed": true,
+            "latest_session": "2022-08-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "2": {
+            "latest_price_observed": true,
+            "latest_session": "2021-03-31",
+            "price_observations_last_63": 62,
+            "volume_observations_last_63": 62
+          },
+          "20": {
+            "latest_price_observed": true,
+            "latest_session": "2022-09-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "21": {
+            "latest_price_observed": true,
+            "latest_session": "2022-10-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "22": {
+            "latest_price_observed": true,
+            "latest_session": "2022-11-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "23": {
+            "latest_price_observed": true,
+            "latest_session": "2022-12-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "24": {
+            "latest_price_observed": true,
+            "latest_session": "2023-01-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "25": {
+            "latest_price_observed": true,
+            "latest_session": "2023-02-28",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "26": {
+            "latest_price_observed": true,
+            "latest_session": "2023-03-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "27": {
+            "latest_price_observed": true,
+            "latest_session": "2023-04-28",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "28": {
+            "latest_price_observed": true,
+            "latest_session": "2023-05-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "29": {
+            "latest_price_observed": true,
+            "latest_session": "2023-06-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "3": {
+            "latest_price_observed": true,
+            "latest_session": "2021-04-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "30": {
+            "latest_price_observed": true,
+            "latest_session": "2023-07-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "31": {
+            "latest_price_observed": true,
+            "latest_session": "2023-08-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "32": {
+            "latest_price_observed": true,
+            "latest_session": "2023-09-29",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "33": {
+            "latest_price_observed": true,
+            "latest_session": "2023-10-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "34": {
+            "latest_price_observed": true,
+            "latest_session": "2023-11-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "35": {
+            "latest_price_observed": true,
+            "latest_session": "2023-12-29",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "36": {
+            "latest_price_observed": true,
+            "latest_session": "2024-01-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "37": {
+            "latest_price_observed": true,
+            "latest_session": "2024-02-29",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "38": {
+            "latest_price_observed": true,
+            "latest_session": "2024-03-28",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "4": {
+            "latest_price_observed": true,
+            "latest_session": "2021-05-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "5": {
+            "latest_price_observed": true,
+            "latest_session": "2021-06-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "6": {
+            "latest_price_observed": true,
+            "latest_session": "2021-07-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "7": {
+            "latest_price_observed": true,
+            "latest_session": "2021-08-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "8": {
+            "latest_price_observed": true,
+            "latest_session": "2021-09-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "9": {
+            "latest_price_observed": true,
+            "latest_session": "2021-10-29",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          }
+        },
+        "rows": 1403
+      },
+      "C09.SI": {
+        "first_date": "2021-01-04",
+        "invalid_price_rows": 2,
+        "invalid_volume_rows": 2,
+        "last_date": "2026-07-30",
+        "origin_windows": {
+          "0": {
+            "latest_price_observed": true,
+            "latest_session": "2021-01-29",
+            "price_observations_last_63": 20,
+            "volume_observations_last_63": 20
+          },
+          "1": {
+            "latest_price_observed": true,
+            "latest_session": "2021-02-26",
+            "price_observations_last_63": 39,
+            "volume_observations_last_63": 39
+          },
+          "10": {
+            "latest_price_observed": true,
+            "latest_session": "2021-11-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "11": {
+            "latest_price_observed": true,
+            "latest_session": "2021-12-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "12": {
+            "latest_price_observed": true,
+            "latest_session": "2022-01-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "13": {
+            "latest_price_observed": true,
+            "latest_session": "2022-02-28",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "14": {
+            "latest_price_observed": true,
+            "latest_session": "2022-03-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "15": {
+            "latest_price_observed": true,
+            "latest_session": "2022-04-29",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "16": {
+            "latest_price_observed": true,
+            "latest_session": "2022-05-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "17": {
+            "latest_price_observed": true,
+            "latest_session": "2022-06-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "18": {
+            "latest_price_observed": true,
+            "latest_session": "2022-07-29",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "19": {
+            "latest_price_observed": true,
+            "latest_session": "2022-08-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "2": {
+            "latest_price_observed": true,
+            "latest_session": "2021-03-31",
+            "price_observations_last_63": 62,
+            "volume_observations_last_63": 62
+          },
+          "20": {
+            "latest_price_observed": true,
+            "latest_session": "2022-09-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "21": {
+            "latest_price_observed": true,
+            "latest_session": "2022-10-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "22": {
+            "latest_price_observed": true,
+            "latest_session": "2022-11-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "23": {
+            "latest_price_observed": true,
+            "latest_session": "2022-12-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "24": {
+            "latest_price_observed": true,
+            "latest_session": "2023-01-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "25": {
+            "latest_price_observed": true,
+            "latest_session": "2023-02-28",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "26": {
+            "latest_price_observed": true,
+            "latest_session": "2023-03-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "27": {
+            "latest_price_observed": true,
+            "latest_session": "2023-04-28",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "28": {
+            "latest_price_observed": true,
+            "latest_session": "2023-05-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "29": {
+            "latest_price_observed": true,
+            "latest_session": "2023-06-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "3": {
+            "latest_price_observed": true,
+            "latest_session": "2021-04-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "30": {
+            "latest_price_observed": true,
+            "latest_session": "2023-07-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "31": {
+            "latest_price_observed": true,
+            "latest_session": "2023-08-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "32": {
+            "latest_price_observed": true,
+            "latest_session": "2023-09-29",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "33": {
+            "latest_price_observed": true,
+            "latest_session": "2023-10-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "34": {
+            "latest_price_observed": true,
+            "latest_session": "2023-11-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "35": {
+            "latest_price_observed": true,
+            "latest_session": "2023-12-29",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "36": {
+            "latest_price_observed": true,
+            "latest_session": "2024-01-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "37": {
+            "latest_price_observed": true,
+            "latest_session": "2024-02-29",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "38": {
+            "latest_price_observed": true,
+            "latest_session": "2024-03-28",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "4": {
+            "latest_price_observed": true,
+            "latest_session": "2021-05-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "5": {
+            "latest_price_observed": true,
+            "latest_session": "2021-06-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "6": {
+            "latest_price_observed": true,
+            "latest_session": "2021-07-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "7": {
+            "latest_price_observed": true,
+            "latest_session": "2021-08-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "8": {
+            "latest_price_observed": true,
+            "latest_session": "2021-09-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "9": {
+            "latest_price_observed": true,
+            "latest_session": "2021-10-29",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          }
+        },
+        "rows": 1403
+      },
+      "C38U.SI": {
+        "first_date": "2021-01-04",
+        "invalid_price_rows": 2,
+        "invalid_volume_rows": 2,
+        "last_date": "2026-07-30",
+        "origin_windows": {
+          "0": {
+            "latest_price_observed": true,
+            "latest_session": "2021-01-29",
+            "price_observations_last_63": 20,
+            "volume_observations_last_63": 20
+          },
+          "1": {
+            "latest_price_observed": true,
+            "latest_session": "2021-02-26",
+            "price_observations_last_63": 39,
+            "volume_observations_last_63": 39
+          },
+          "10": {
+            "latest_price_observed": true,
+            "latest_session": "2021-11-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "11": {
+            "latest_price_observed": true,
+            "latest_session": "2021-12-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "12": {
+            "latest_price_observed": true,
+            "latest_session": "2022-01-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "13": {
+            "latest_price_observed": true,
+            "latest_session": "2022-02-28",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "14": {
+            "latest_price_observed": true,
+            "latest_session": "2022-03-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "15": {
+            "latest_price_observed": true,
+            "latest_session": "2022-04-29",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "16": {
+            "latest_price_observed": true,
+            "latest_session": "2022-05-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "17": {
+            "latest_price_observed": true,
+            "latest_session": "2022-06-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "18": {
+            "latest_price_observed": true,
+            "latest_session": "2022-07-29",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "19": {
+            "latest_price_observed": true,
+            "latest_session": "2022-08-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "2": {
+            "latest_price_observed": true,
+            "latest_session": "2021-03-31",
+            "price_observations_last_63": 62,
+            "volume_observations_last_63": 62
+          },
+          "20": {
+            "latest_price_observed": true,
+            "latest_session": "2022-09-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "21": {
+            "latest_price_observed": true,
+            "latest_session": "2022-10-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "22": {
+            "latest_price_observed": true,
+            "latest_session": "2022-11-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "23": {
+            "latest_price_observed": true,
+            "latest_session": "2022-12-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "24": {
+            "latest_price_observed": true,
+            "latest_session": "2023-01-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "25": {
+            "latest_price_observed": true,
+            "latest_session": "2023-02-28",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "26": {
+            "latest_price_observed": true,
+            "latest_session": "2023-03-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "27": {
+            "latest_price_observed": true,
+            "latest_session": "2023-04-28",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "28": {
+            "latest_price_observed": true,
+            "latest_session": "2023-05-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "29": {
+            "latest_price_observed": true,
+            "latest_session": "2023-06-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "3": {
+            "latest_price_observed": true,
+            "latest_session": "2021-04-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "30": {
+            "latest_price_observed": true,
+            "latest_session": "2023-07-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "31": {
+            "latest_price_observed": true,
+            "latest_session": "2023-08-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "32": {
+            "latest_price_observed": true,
+            "latest_session": "2023-09-29",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "33": {
+            "latest_price_observed": true,
+            "latest_session": "2023-10-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "34": {
+            "latest_price_observed": true,
+            "latest_session": "2023-11-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "35": {
+            "latest_price_observed": true,
+            "latest_session": "2023-12-29",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "36": {
+            "latest_price_observed": true,
+            "latest_session": "2024-01-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "37": {
+            "latest_price_observed": true,
+            "latest_session": "2024-02-29",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "38": {
+            "latest_price_observed": true,
+            "latest_session": "2024-03-28",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "4": {
+            "latest_price_observed": true,
+            "latest_session": "2021-05-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "5": {
+            "latest_price_observed": true,
+            "latest_session": "2021-06-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "6": {
+            "latest_price_observed": true,
+            "latest_session": "2021-07-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "7": {
+            "latest_price_observed": true,
+            "latest_session": "2021-08-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "8": {
+            "latest_price_observed": true,
+            "latest_session": "2021-09-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "9": {
+            "latest_price_observed": true,
+            "latest_session": "2021-10-29",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          }
+        },
+        "rows": 1403
+      },
+      "D05.SI": {
+        "first_date": "2021-01-04",
+        "invalid_price_rows": 2,
+        "invalid_volume_rows": 2,
+        "last_date": "2026-07-30",
+        "origin_windows": {
+          "0": {
+            "latest_price_observed": true,
+            "latest_session": "2021-01-29",
+            "price_observations_last_63": 20,
+            "volume_observations_last_63": 20
+          },
+          "1": {
+            "latest_price_observed": true,
+            "latest_session": "2021-02-26",
+            "price_observations_last_63": 39,
+            "volume_observations_last_63": 39
+          },
+          "10": {
+            "latest_price_observed": true,
+            "latest_session": "2021-11-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "11": {
+            "latest_price_observed": true,
+            "latest_session": "2021-12-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "12": {
+            "latest_price_observed": true,
+            "latest_session": "2022-01-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "13": {
+            "latest_price_observed": true,
+            "latest_session": "2022-02-28",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "14": {
+            "latest_price_observed": true,
+            "latest_session": "2022-03-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "15": {
+            "latest_price_observed": true,
+            "latest_session": "2022-04-29",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "16": {
+            "latest_price_observed": true,
+            "latest_session": "2022-05-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "17": {
+            "latest_price_observed": true,
+            "latest_session": "2022-06-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "18": {
+            "latest_price_observed": true,
+            "latest_session": "2022-07-29",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "19": {
+            "latest_price_observed": true,
+            "latest_session": "2022-08-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "2": {
+            "latest_price_observed": true,
+            "latest_session": "2021-03-31",
+            "price_observations_last_63": 62,
+            "volume_observations_last_63": 62
+          },
+          "20": {
+            "latest_price_observed": true,
+            "latest_session": "2022-09-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "21": {
+            "latest_price_observed": true,
+            "latest_session": "2022-10-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "22": {
+            "latest_price_observed": true,
+            "latest_session": "2022-11-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "23": {
+            "latest_price_observed": true,
+            "latest_session": "2022-12-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "24": {
+            "latest_price_observed": true,
+            "latest_session": "2023-01-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "25": {
+            "latest_price_observed": true,
+            "latest_session": "2023-02-28",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "26": {
+            "latest_price_observed": true,
+            "latest_session": "2023-03-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "27": {
+            "latest_price_observed": true,
+            "latest_session": "2023-04-28",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "28": {
+            "latest_price_observed": true,
+            "latest_session": "2023-05-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "29": {
+            "latest_price_observed": true,
+            "latest_session": "2023-06-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "3": {
+            "latest_price_observed": true,
+            "latest_session": "2021-04-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "30": {
+            "latest_price_observed": true,
+            "latest_session": "2023-07-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "31": {
+            "latest_price_observed": true,
+            "latest_session": "2023-08-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "32": {
+            "latest_price_observed": true,
+            "latest_session": "2023-09-29",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "33": {
+            "latest_price_observed": true,
+            "latest_session": "2023-10-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "34": {
+            "latest_price_observed": true,
+            "latest_session": "2023-11-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "35": {
+            "latest_price_observed": true,
+            "latest_session": "2023-12-29",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "36": {
+            "latest_price_observed": true,
+            "latest_session": "2024-01-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "37": {
+            "latest_price_observed": true,
+            "latest_session": "2024-02-29",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "38": {
+            "latest_price_observed": true,
+            "latest_session": "2024-03-28",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "4": {
+            "latest_price_observed": true,
+            "latest_session": "2021-05-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "5": {
+            "latest_price_observed": true,
+            "latest_session": "2021-06-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "6": {
+            "latest_price_observed": true,
+            "latest_session": "2021-07-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "7": {
+            "latest_price_observed": true,
+            "latest_session": "2021-08-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "8": {
+            "latest_price_observed": true,
+            "latest_session": "2021-09-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "9": {
+            "latest_price_observed": true,
+            "latest_session": "2021-10-29",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          }
+        },
+        "rows": 1403
+      },
+      "M44U.SI": {
+        "first_date": "2021-01-04",
+        "invalid_price_rows": 2,
+        "invalid_volume_rows": 2,
+        "last_date": "2026-07-30",
+        "origin_windows": {
+          "0": {
+            "latest_price_observed": true,
+            "latest_session": "2021-01-29",
+            "price_observations_last_63": 20,
+            "volume_observations_last_63": 20
+          },
+          "1": {
+            "latest_price_observed": true,
+            "latest_session": "2021-02-26",
+            "price_observations_last_63": 39,
+            "volume_observations_last_63": 39
+          },
+          "10": {
+            "latest_price_observed": true,
+            "latest_session": "2021-11-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "11": {
+            "latest_price_observed": true,
+            "latest_session": "2021-12-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "12": {
+            "latest_price_observed": true,
+            "latest_session": "2022-01-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "13": {
+            "latest_price_observed": true,
+            "latest_session": "2022-02-28",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "14": {
+            "latest_price_observed": true,
+            "latest_session": "2022-03-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "15": {
+            "latest_price_observed": true,
+            "latest_session": "2022-04-29",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "16": {
+            "latest_price_observed": true,
+            "latest_session": "2022-05-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "17": {
+            "latest_price_observed": true,
+            "latest_session": "2022-06-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "18": {
+            "latest_price_observed": true,
+            "latest_session": "2022-07-29",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "19": {
+            "latest_price_observed": true,
+            "latest_session": "2022-08-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "2": {
+            "latest_price_observed": true,
+            "latest_session": "2021-03-31",
+            "price_observations_last_63": 62,
+            "volume_observations_last_63": 62
+          },
+          "20": {
+            "latest_price_observed": true,
+            "latest_session": "2022-09-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "21": {
+            "latest_price_observed": true,
+            "latest_session": "2022-10-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "22": {
+            "latest_price_observed": true,
+            "latest_session": "2022-11-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "23": {
+            "latest_price_observed": true,
+            "latest_session": "2022-12-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "24": {
+            "latest_price_observed": true,
+            "latest_session": "2023-01-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "25": {
+            "latest_price_observed": true,
+            "latest_session": "2023-02-28",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "26": {
+            "latest_price_observed": true,
+            "latest_session": "2023-03-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "27": {
+            "latest_price_observed": true,
+            "latest_session": "2023-04-28",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "28": {
+            "latest_price_observed": true,
+            "latest_session": "2023-05-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "29": {
+            "latest_price_observed": true,
+            "latest_session": "2023-06-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "3": {
+            "latest_price_observed": true,
+            "latest_session": "2021-04-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "30": {
+            "latest_price_observed": true,
+            "latest_session": "2023-07-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "31": {
+            "latest_price_observed": true,
+            "latest_session": "2023-08-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "32": {
+            "latest_price_observed": true,
+            "latest_session": "2023-09-29",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "33": {
+            "latest_price_observed": true,
+            "latest_session": "2023-10-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "34": {
+            "latest_price_observed": true,
+            "latest_session": "2023-11-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "35": {
+            "latest_price_observed": true,
+            "latest_session": "2023-12-29",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "36": {
+            "latest_price_observed": true,
+            "latest_session": "2024-01-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "37": {
+            "latest_price_observed": true,
+            "latest_session": "2024-02-29",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "38": {
+            "latest_price_observed": true,
+            "latest_session": "2024-03-28",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "4": {
+            "latest_price_observed": true,
+            "latest_session": "2021-05-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "5": {
+            "latest_price_observed": true,
+            "latest_session": "2021-06-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "6": {
+            "latest_price_observed": true,
+            "latest_session": "2021-07-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "7": {
+            "latest_price_observed": true,
+            "latest_session": "2021-08-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "8": {
+            "latest_price_observed": true,
+            "latest_session": "2021-09-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "9": {
+            "latest_price_observed": true,
+            "latest_session": "2021-10-29",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          }
+        },
+        "rows": 1403
+      },
+      "ME8U.SI": {
+        "first_date": "2021-01-04",
+        "invalid_price_rows": 2,
+        "invalid_volume_rows": 2,
+        "last_date": "2026-07-30",
+        "origin_windows": {
+          "0": {
+            "latest_price_observed": true,
+            "latest_session": "2021-01-29",
+            "price_observations_last_63": 20,
+            "volume_observations_last_63": 20
+          },
+          "1": {
+            "latest_price_observed": true,
+            "latest_session": "2021-02-26",
+            "price_observations_last_63": 39,
+            "volume_observations_last_63": 39
+          },
+          "10": {
+            "latest_price_observed": true,
+            "latest_session": "2021-11-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "11": {
+            "latest_price_observed": true,
+            "latest_session": "2021-12-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "12": {
+            "latest_price_observed": true,
+            "latest_session": "2022-01-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "13": {
+            "latest_price_observed": true,
+            "latest_session": "2022-02-28",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "14": {
+            "latest_price_observed": true,
+            "latest_session": "2022-03-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "15": {
+            "latest_price_observed": true,
+            "latest_session": "2022-04-29",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "16": {
+            "latest_price_observed": true,
+            "latest_session": "2022-05-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "17": {
+            "latest_price_observed": true,
+            "latest_session": "2022-06-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "18": {
+            "latest_price_observed": true,
+            "latest_session": "2022-07-29",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "19": {
+            "latest_price_observed": true,
+            "latest_session": "2022-08-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "2": {
+            "latest_price_observed": true,
+            "latest_session": "2021-03-31",
+            "price_observations_last_63": 62,
+            "volume_observations_last_63": 62
+          },
+          "20": {
+            "latest_price_observed": true,
+            "latest_session": "2022-09-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "21": {
+            "latest_price_observed": true,
+            "latest_session": "2022-10-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "22": {
+            "latest_price_observed": true,
+            "latest_session": "2022-11-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "23": {
+            "latest_price_observed": true,
+            "latest_session": "2022-12-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "24": {
+            "latest_price_observed": true,
+            "latest_session": "2023-01-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "25": {
+            "latest_price_observed": true,
+            "latest_session": "2023-02-28",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "26": {
+            "latest_price_observed": true,
+            "latest_session": "2023-03-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "27": {
+            "latest_price_observed": true,
+            "latest_session": "2023-04-28",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "28": {
+            "latest_price_observed": true,
+            "latest_session": "2023-05-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "29": {
+            "latest_price_observed": true,
+            "latest_session": "2023-06-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "3": {
+            "latest_price_observed": true,
+            "latest_session": "2021-04-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "30": {
+            "latest_price_observed": true,
+            "latest_session": "2023-07-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "31": {
+            "latest_price_observed": true,
+            "latest_session": "2023-08-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "32": {
+            "latest_price_observed": true,
+            "latest_session": "2023-09-29",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "33": {
+            "latest_price_observed": true,
+            "latest_session": "2023-10-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "34": {
+            "latest_price_observed": true,
+            "latest_session": "2023-11-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "35": {
+            "latest_price_observed": true,
+            "latest_session": "2023-12-29",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "36": {
+            "latest_price_observed": true,
+            "latest_session": "2024-01-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "37": {
+            "latest_price_observed": true,
+            "latest_session": "2024-02-29",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "38": {
+            "latest_price_observed": true,
+            "latest_session": "2024-03-28",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "4": {
+            "latest_price_observed": true,
+            "latest_session": "2021-05-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "5": {
+            "latest_price_observed": true,
+            "latest_session": "2021-06-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "6": {
+            "latest_price_observed": true,
+            "latest_session": "2021-07-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "7": {
+            "latest_price_observed": true,
+            "latest_session": "2021-08-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "8": {
+            "latest_price_observed": true,
+            "latest_session": "2021-09-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "9": {
+            "latest_price_observed": true,
+            "latest_session": "2021-10-29",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          }
+        },
+        "rows": 1403
+      },
+      "O39.SI": {
+        "first_date": "2021-01-04",
+        "invalid_price_rows": 2,
+        "invalid_volume_rows": 2,
+        "last_date": "2026-07-30",
+        "origin_windows": {
+          "0": {
+            "latest_price_observed": true,
+            "latest_session": "2021-01-29",
+            "price_observations_last_63": 20,
+            "volume_observations_last_63": 20
+          },
+          "1": {
+            "latest_price_observed": true,
+            "latest_session": "2021-02-26",
+            "price_observations_last_63": 39,
+            "volume_observations_last_63": 39
+          },
+          "10": {
+            "latest_price_observed": true,
+            "latest_session": "2021-11-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "11": {
+            "latest_price_observed": true,
+            "latest_session": "2021-12-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "12": {
+            "latest_price_observed": true,
+            "latest_session": "2022-01-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "13": {
+            "latest_price_observed": true,
+            "latest_session": "2022-02-28",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "14": {
+            "latest_price_observed": true,
+            "latest_session": "2022-03-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "15": {
+            "latest_price_observed": true,
+            "latest_session": "2022-04-29",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "16": {
+            "latest_price_observed": true,
+            "latest_session": "2022-05-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "17": {
+            "latest_price_observed": true,
+            "latest_session": "2022-06-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "18": {
+            "latest_price_observed": true,
+            "latest_session": "2022-07-29",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "19": {
+            "latest_price_observed": true,
+            "latest_session": "2022-08-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "2": {
+            "latest_price_observed": true,
+            "latest_session": "2021-03-31",
+            "price_observations_last_63": 62,
+            "volume_observations_last_63": 62
+          },
+          "20": {
+            "latest_price_observed": true,
+            "latest_session": "2022-09-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "21": {
+            "latest_price_observed": true,
+            "latest_session": "2022-10-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "22": {
+            "latest_price_observed": true,
+            "latest_session": "2022-11-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "23": {
+            "latest_price_observed": true,
+            "latest_session": "2022-12-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "24": {
+            "latest_price_observed": true,
+            "latest_session": "2023-01-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "25": {
+            "latest_price_observed": true,
+            "latest_session": "2023-02-28",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "26": {
+            "latest_price_observed": true,
+            "latest_session": "2023-03-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "27": {
+            "latest_price_observed": true,
+            "latest_session": "2023-04-28",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "28": {
+            "latest_price_observed": true,
+            "latest_session": "2023-05-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "29": {
+            "latest_price_observed": true,
+            "latest_session": "2023-06-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "3": {
+            "latest_price_observed": true,
+            "latest_session": "2021-04-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "30": {
+            "latest_price_observed": true,
+            "latest_session": "2023-07-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "31": {
+            "latest_price_observed": true,
+            "latest_session": "2023-08-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "32": {
+            "latest_price_observed": true,
+            "latest_session": "2023-09-29",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "33": {
+            "latest_price_observed": true,
+            "latest_session": "2023-10-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "34": {
+            "latest_price_observed": true,
+            "latest_session": "2023-11-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "35": {
+            "latest_price_observed": true,
+            "latest_session": "2023-12-29",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "36": {
+            "latest_price_observed": true,
+            "latest_session": "2024-01-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "37": {
+            "latest_price_observed": true,
+            "latest_session": "2024-02-29",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "38": {
+            "latest_price_observed": true,
+            "latest_session": "2024-03-28",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "4": {
+            "latest_price_observed": true,
+            "latest_session": "2021-05-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "5": {
+            "latest_price_observed": true,
+            "latest_session": "2021-06-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "6": {
+            "latest_price_observed": true,
+            "latest_session": "2021-07-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "7": {
+            "latest_price_observed": true,
+            "latest_session": "2021-08-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "8": {
+            "latest_price_observed": true,
+            "latest_session": "2021-09-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "9": {
+            "latest_price_observed": true,
+            "latest_session": "2021-10-29",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          }
+        },
+        "rows": 1403
+      },
+      "U11.SI": {
+        "first_date": "2021-01-04",
+        "invalid_price_rows": 2,
+        "invalid_volume_rows": 2,
+        "last_date": "2026-07-30",
+        "origin_windows": {
+          "0": {
+            "latest_price_observed": true,
+            "latest_session": "2021-01-29",
+            "price_observations_last_63": 20,
+            "volume_observations_last_63": 20
+          },
+          "1": {
+            "latest_price_observed": true,
+            "latest_session": "2021-02-26",
+            "price_observations_last_63": 39,
+            "volume_observations_last_63": 39
+          },
+          "10": {
+            "latest_price_observed": true,
+            "latest_session": "2021-11-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "11": {
+            "latest_price_observed": true,
+            "latest_session": "2021-12-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "12": {
+            "latest_price_observed": true,
+            "latest_session": "2022-01-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "13": {
+            "latest_price_observed": true,
+            "latest_session": "2022-02-28",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "14": {
+            "latest_price_observed": true,
+            "latest_session": "2022-03-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "15": {
+            "latest_price_observed": true,
+            "latest_session": "2022-04-29",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "16": {
+            "latest_price_observed": true,
+            "latest_session": "2022-05-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "17": {
+            "latest_price_observed": true,
+            "latest_session": "2022-06-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "18": {
+            "latest_price_observed": true,
+            "latest_session": "2022-07-29",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "19": {
+            "latest_price_observed": true,
+            "latest_session": "2022-08-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "2": {
+            "latest_price_observed": true,
+            "latest_session": "2021-03-31",
+            "price_observations_last_63": 62,
+            "volume_observations_last_63": 62
+          },
+          "20": {
+            "latest_price_observed": true,
+            "latest_session": "2022-09-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "21": {
+            "latest_price_observed": true,
+            "latest_session": "2022-10-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "22": {
+            "latest_price_observed": true,
+            "latest_session": "2022-11-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "23": {
+            "latest_price_observed": true,
+            "latest_session": "2022-12-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "24": {
+            "latest_price_observed": true,
+            "latest_session": "2023-01-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "25": {
+            "latest_price_observed": true,
+            "latest_session": "2023-02-28",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "26": {
+            "latest_price_observed": true,
+            "latest_session": "2023-03-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "27": {
+            "latest_price_observed": true,
+            "latest_session": "2023-04-28",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "28": {
+            "latest_price_observed": true,
+            "latest_session": "2023-05-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "29": {
+            "latest_price_observed": true,
+            "latest_session": "2023-06-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "3": {
+            "latest_price_observed": true,
+            "latest_session": "2021-04-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "30": {
+            "latest_price_observed": true,
+            "latest_session": "2023-07-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "31": {
+            "latest_price_observed": true,
+            "latest_session": "2023-08-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "32": {
+            "latest_price_observed": true,
+            "latest_session": "2023-09-29",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "33": {
+            "latest_price_observed": true,
+            "latest_session": "2023-10-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "34": {
+            "latest_price_observed": true,
+            "latest_session": "2023-11-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "35": {
+            "latest_price_observed": true,
+            "latest_session": "2023-12-29",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "36": {
+            "latest_price_observed": true,
+            "latest_session": "2024-01-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "37": {
+            "latest_price_observed": true,
+            "latest_session": "2024-02-29",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "38": {
+            "latest_price_observed": true,
+            "latest_session": "2024-03-28",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "4": {
+            "latest_price_observed": true,
+            "latest_session": "2021-05-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "5": {
+            "latest_price_observed": true,
+            "latest_session": "2021-06-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "6": {
+            "latest_price_observed": true,
+            "latest_session": "2021-07-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "7": {
+            "latest_price_observed": true,
+            "latest_session": "2021-08-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "8": {
+            "latest_price_observed": true,
+            "latest_session": "2021-09-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "9": {
+            "latest_price_observed": true,
+            "latest_session": "2021-10-29",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          }
+        },
+        "rows": 1403
+      },
+      "U14.SI": {
+        "first_date": "2021-01-04",
+        "invalid_price_rows": 2,
+        "invalid_volume_rows": 2,
+        "last_date": "2026-07-30",
+        "origin_windows": {
+          "0": {
+            "latest_price_observed": true,
+            "latest_session": "2021-01-29",
+            "price_observations_last_63": 20,
+            "volume_observations_last_63": 20
+          },
+          "1": {
+            "latest_price_observed": true,
+            "latest_session": "2021-02-26",
+            "price_observations_last_63": 39,
+            "volume_observations_last_63": 39
+          },
+          "10": {
+            "latest_price_observed": true,
+            "latest_session": "2021-11-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "11": {
+            "latest_price_observed": true,
+            "latest_session": "2021-12-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "12": {
+            "latest_price_observed": true,
+            "latest_session": "2022-01-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "13": {
+            "latest_price_observed": true,
+            "latest_session": "2022-02-28",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "14": {
+            "latest_price_observed": true,
+            "latest_session": "2022-03-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "15": {
+            "latest_price_observed": true,
+            "latest_session": "2022-04-29",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "16": {
+            "latest_price_observed": true,
+            "latest_session": "2022-05-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "17": {
+            "latest_price_observed": true,
+            "latest_session": "2022-06-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "18": {
+            "latest_price_observed": true,
+            "latest_session": "2022-07-29",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "19": {
+            "latest_price_observed": true,
+            "latest_session": "2022-08-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "2": {
+            "latest_price_observed": true,
+            "latest_session": "2021-03-31",
+            "price_observations_last_63": 62,
+            "volume_observations_last_63": 62
+          },
+          "20": {
+            "latest_price_observed": true,
+            "latest_session": "2022-09-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "21": {
+            "latest_price_observed": true,
+            "latest_session": "2022-10-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "22": {
+            "latest_price_observed": true,
+            "latest_session": "2022-11-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "23": {
+            "latest_price_observed": true,
+            "latest_session": "2022-12-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "24": {
+            "latest_price_observed": true,
+            "latest_session": "2023-01-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "25": {
+            "latest_price_observed": true,
+            "latest_session": "2023-02-28",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "26": {
+            "latest_price_observed": true,
+            "latest_session": "2023-03-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "27": {
+            "latest_price_observed": true,
+            "latest_session": "2023-04-28",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "28": {
+            "latest_price_observed": true,
+            "latest_session": "2023-05-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "29": {
+            "latest_price_observed": true,
+            "latest_session": "2023-06-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "3": {
+            "latest_price_observed": true,
+            "latest_session": "2021-04-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "30": {
+            "latest_price_observed": true,
+            "latest_session": "2023-07-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "31": {
+            "latest_price_observed": true,
+            "latest_session": "2023-08-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "32": {
+            "latest_price_observed": true,
+            "latest_session": "2023-09-29",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "33": {
+            "latest_price_observed": true,
+            "latest_session": "2023-10-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "34": {
+            "latest_price_observed": true,
+            "latest_session": "2023-11-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "35": {
+            "latest_price_observed": true,
+            "latest_session": "2023-12-29",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "36": {
+            "latest_price_observed": true,
+            "latest_session": "2024-01-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "37": {
+            "latest_price_observed": true,
+            "latest_session": "2024-02-29",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "38": {
+            "latest_price_observed": true,
+            "latest_session": "2024-03-28",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "4": {
+            "latest_price_observed": true,
+            "latest_session": "2021-05-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "5": {
+            "latest_price_observed": true,
+            "latest_session": "2021-06-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "6": {
+            "latest_price_observed": true,
+            "latest_session": "2021-07-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "7": {
+            "latest_price_observed": true,
+            "latest_session": "2021-08-31",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "8": {
+            "latest_price_observed": true,
+            "latest_session": "2021-09-30",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          },
+          "9": {
+            "latest_price_observed": true,
+            "latest_session": "2021-10-29",
+            "price_observations_last_63": 63,
+            "volume_observations_last_63": 63
+          }
+        },
+        "rows": 1403
+      }
+    },
+    "stock_scaler": {
+      "block": "macro_scalar",
+      "channel_names": [
+        "stock_banks_mean_return_21",
+        "stock_banks_mean_return_63",
+        "stock_banks_mean_return_126",
+        "stock_banks_mean_volatility_63",
+        "stock_banks_mean_volume_ratio_21_63",
+        "stock_banks_available_symbol_fraction",
+        "stock_banks_return_63_cross_section_dispersion",
+        "stock_banks_mean_observation_coverage_63",
+        "stock_property_mean_return_21",
+        "stock_property_mean_return_63",
+        "stock_property_mean_return_126",
+        "stock_property_mean_volatility_63",
+        "stock_property_mean_volume_ratio_21_63",
+        "stock_property_available_symbol_fraction",
+        "stock_property_return_63_cross_section_dispersion",
+        "stock_property_mean_observation_coverage_63"
+      ],
+      "degenerate": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "extra": {},
+      "fitted_on": "unique windows referenced by fit rows",
+      "mean": [
+        0.008366223540301813,
+        0.027205973098586713,
+        0.051106719620293006,
+        0.00939588210146342,
+        0.9974924547331674,
+        1.0,
+        0.028777199451412473,
+        0.9715956567149413,
+        -0.0015993946061998202,
+        0.0012577971310487816,
+        -0.0050552207248983905,
+        0.011204704988215651,
+        1.0147234984806606,
+        1.0,
+        0.0475998624094895,
+        0.9715956567149413
+      ],
+      "n_used": [
+        37,
+        35,
+        32,
+        35,
+        35,
+        38,
+        35,
+        38,
+        37,
+        35,
+        32,
+        35,
+        35,
+        38,
+        35,
+        38
+      ],
+      "n_windows_used": 39,
+      "policy": "origin_asof",
+      "scale": [
+        0.037549134442943846,
+        0.05993766176671866,
+        0.06533031349598402,
+        0.0017583856712564338,
+        0.15314650705891944,
+        1.0,
+        0.014183161483012552,
+        0.12526495163297774,
+        0.035837590094347435,
+        0.04957002694096584,
+        0.050749501044837435,
+        0.0018552805235277571,
+        0.12785915556444805,
+        1.0,
+        0.016875923190304332,
+        0.12526495163297774
+      ],
+      "split_id": "orig",
+      "stage": "A"
+    }
+  },
+  "protocol": "selection only; no all-label refit; full validation is development data",
+  "schedule": {
+    "min_lr_ratio": 0.01,
+    "start_ratio": 0.01,
+    "total_steps": 9000,
+    "warmup_steps": 225
+  },
+  "source_hashes": {
+    "candidate_config": "c7484566a0847ba0fdf19b9c4a958ef86119fb71a27d9c391eebff0163467fdd",
+    "experiments/concat_depth_v16/depth.py": "9296986441da141f43e3d55aec381c67db7c003db826b5cc8c9945a70db881b1",
+    "experiments/concat_warmup_v15/pipeline.py": "b951b320096d23633b5ff50c6d86cbb237a604abdff0f804862c6b646b7d5215",
+    "experiments/feature_transformer_v4/macro_v4.py": "2b677627613187dd727881e6851cd15a8dd29283eb718a48a226cf35987c0a29",
+    "experiments/feature_transformer_v4/models.py": "045ca1f9314f3411040acf032f4b10ff2b7020c6edec7a68272cdf4c94e62548",
+    "experiments/macro_encoders_v3/encoders.py": "438c4a1cf932846a013824055af675ebd0242ec4d390fafb14cae31fd93ff146",
+    "experiments/tabfm_finetune_v13/data_full.py": "2e7907c9c29d4cb8c24a34da6a9e26fc34cf086e13ac42de3811aa51a959797d",
+    "experiments/tabfm_finetune_v13/macro_raw.py": "3a1b6d9e22fcd6cd184e9a02caa8413facc40c712d23f2a90f5523f7d0035760",
+    "experiments/training_schedule_v15.py": "8d3e74480a695988d204300fc1f5e516b4b2a85137b32f64e73d23b8bf4a7001"
+  }
+}

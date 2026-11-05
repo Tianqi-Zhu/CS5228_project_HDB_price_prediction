@@ -1,0 +1,42 @@
+{
+  "config": {
+    "seed": 42,
+    "train_queries": 1024,
+    "monitor_queries": 512,
+    "context": 64,
+    "query_batch": 32,
+    "rank": 4,
+    "lora": "last ICL block q and v",
+    "optimizer": "AdamW",
+    "lr": 0.0001,
+    "weight_decay": 0.0001,
+    "clip": 1.0,
+    "max_subset_epochs": 40,
+    "patience": 5,
+    "loss": "mean squared normalized residual, context-only mean/std",
+    "selection": "even allocation across eligible origins, random within origin",
+    "baseline": "epoch 0 pretrained head and zero LoRA",
+    "numeric_preprocessing": "context-only mean/std, std floor 1e-6, clip [-10,10]",
+    "categories": "raw fixed integer codes",
+    "banks": [
+      "base",
+      "macro",
+      "stock"
+    ],
+    "validation": "fixed v10 512 row monitor, not full holdout",
+    "threads": 2
+  },
+  "runner_sha256": "fbaefe4a11034b659f9bde281f959cba903025f509bed3bfd440cd204d15e670",
+  "core_sha256": "7066e30ad6ba2038ac3d033580610939ab92ddd569876a1ede517c3b6fe32a59",
+  "data_sha256": "c1bd0cdea8fcaf83b1950fe2824532896d6e0abdcb9b9d40a72a8804a02aa1fa",
+  "runtime_model_sha256": "2bd345db145f9ad4bc842b39a3af31c60daa6c549302a4f5eee5bd12b1af2eae",
+  "weights_size": 6591243724,
+  "weights_first_mib_sha256": "d85adc87d474dcd0dd96b4a0525834aff7f22b49ae33d33d155d4cb72638bb33",
+  "supporting_source_sha256": {
+    "experiments/tabfm_v10/benchmark.py": "f9c75273c137e76d61c19c7fb76a2280c46a5f22d3393d70d58a87f3d052bdc1",
+    "experiments/macro_encoders_v3/contract.py": "e58ce2d604d1c59bb08d17483654a5190f6083e6ea224ccba970081ae6320e4d",
+    "experiments/macro_encoders_v3/data.py": "d866a1558e20f3781be9b9e24738b1c18ba0d7883a4b1b6ace899a9323840e78",
+    "experiments/macro_encoders_v3/scaling.py": "5033fc5fcd80a1e1f2210d3efa1bff3a78dc03617d02fbb091acb8931aa17b98",
+    "reports/tabfm_v10/runtime/source/tabfm/src/pytorch/tabfm_v1_0_0.py": "91e2cea10494a7cf25b63d419d4731315ef43eca5951e88856445cee2c02f413"
+  }
+}

@@ -16,3 +16,7 @@
 | 归档与验证 | 推送前运行记录见 [review/CHECKS.md](review/CHECKS.md)；新训练输出未上传 Kaggle |
 | 对照分支 | main |
 | 文件换行 | .gitattributes禁止隐式文本转换，以保证数据、冻结源和证据SHA256在检出后仍一致 |
+
+## Concat Transformer development appendix
+
+Ziyuan’s earlier [spatial/temporal feature explorations](experiment/appendix/X05/concat_explorations/README.md) and [architecture comparisons](experiment/appendix/X06/concat_explorations/README.md) are archived separately from the final model in main. Verify the imported snapshot with `python reproduction/concat_explorations/verify.py`. No training is launched.

@@ -1,0 +1,283 @@
+{
+  "arm": "house",
+  "result_status": "DEV_FOLD_A_ONLY",
+  "fold": "orig",
+  "n_epochs_budget": 60,
+  "n_train": 78960,
+  "n_val": 35882,
+  "n_market_windows": 39,
+  "config": {
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "batch_size": 512,
+    "clip_grad": 1.0,
+    "max_epochs": 60,
+    "patience": 10,
+    "eligible_after": 5,
+    "schedule_epochs": 60,
+    "seed": 42
+  },
+  "selected_epoch": 7,
+  "epochs_run": 17,
+  "validation": {
+    "rmse_sgd": 869.9071987767182,
+    "mae_sgd": 746.8877513997763,
+    "bias_sgd": -630.7737375991572,
+    "n": 35882
+  },
+  "validation_per_month": {
+    "27": {
+      "rmse_sgd": 903.5665558324057,
+      "mae_sgd": 760.7999448448057,
+      "bias_sgd": -640.9658701860632,
+      "n": 2964
+    },
+    "28": {
+      "rmse_sgd": 938.9077763149576,
+      "mae_sgd": 800.6832026179962,
+      "bias_sgd": -695.3376850489404,
+      "n": 2978
+    },
+    "29": {
+      "rmse_sgd": 963.7356604166052,
+      "mae_sgd": 825.1972812391781,
+      "bias_sgd": -715.9895767139642,
+      "n": 3035
+    },
+    "30": {
+      "rmse_sgd": 976.1452395694955,
+      "mae_sgd": 832.4758323910901,
+      "bias_sgd": -743.7678295346038,
+      "n": 3207
+    },
+    "31": {
+      "rmse_sgd": 903.2771098544827,
+      "mae_sgd": 775.6901273284892,
+      "bias_sgd": -659.5544634865848,
+      "n": 2974
+    },
+    "32": {
+      "rmse_sgd": 846.4423127405171,
+      "mae_sgd": 725.018209862197,
+      "bias_sgd": -595.8743129434437,
+      "n": 2747
+    },
+    "33": {
+      "rmse_sgd": 815.7115453296452,
+      "mae_sgd": 701.4881011464557,
+      "bias_sgd": -568.4038411667959,
+      "n": 3039
+    },
+    "34": {
+      "rmse_sgd": 803.5096533450181,
+      "mae_sgd": 691.2460744528485,
+      "bias_sgd": -551.3991307935144,
+      "n": 2925
+    },
+    "35": {
+      "rmse_sgd": 783.3057232909347,
+      "mae_sgd": 681.6597496470872,
+      "bias_sgd": -553.9303984467654,
+      "n": 3008
+    },
+    "36": {
+      "rmse_sgd": 779.2224398128557,
+      "mae_sgd": 675.8020817288387,
+      "bias_sgd": -554.5436118678391,
+      "n": 3171
+    },
+    "37": {
+      "rmse_sgd": 815.6564800160377,
+      "mae_sgd": 715.4759691594681,
+      "bias_sgd": -602.2064479284467,
+      "n": 2650
+    },
+    "38": {
+      "rmse_sgd": 867.149262379872,
+      "mae_sgd": 767.7450138420315,
+      "bias_sgd": -673.8260147200158,
+      "n": 3184
+    }
+  },
+  "curve": [
+    {
+      "epoch": 1,
+      "train_mse": 0.5628241925616395,
+      "val_rmse_sgd": 895.5408732215811,
+      "val_mae_sgd": 769.3499833563818,
+      "val_bias_sgd": -658.9401781654805,
+      "seconds": 8.46,
+      "learning_rate": 0.001
+    },
+    {
+      "epoch": 2,
+      "train_mse": 0.3030281421382135,
+      "val_rmse_sgd": 917.0725394268586,
+      "val_mae_sgd": 791.6739857358003,
+      "val_bias_sgd": -692.8144469274458,
+      "seconds": 7.64,
+      "learning_rate": 0.0009993147673772868
+    },
+    {
+      "epoch": 3,
+      "train_mse": 0.2989367335159124,
+      "val_rmse_sgd": 922.8328442330151,
+      "val_mae_sgd": 800.035552528921,
+      "val_bias_sgd": -705.332102599308,
+      "seconds": 7.76,
+      "learning_rate": 0.0009972609476841365
+    },
+    {
+      "epoch": 4,
+      "train_mse": 0.2954032210774697,
+      "val_rmse_sgd": 956.031509066077,
+      "val_mae_sgd": 827.0741277900629,
+      "val_bias_sgd": -738.0264630491774,
+      "seconds": 7.62,
+      "learning_rate": 0.0009938441702975688
+    },
+    {
+      "epoch": 5,
+      "train_mse": 0.2972228957225003,
+      "val_rmse_sgd": 911.0274832006381,
+      "val_mae_sgd": 787.4647195439535,
+      "val_bias_sgd": -688.462700815718,
+      "seconds": 7.65,
+      "learning_rate": 0.0009890738003669028
+    },
+    {
+      "epoch": 6,
+      "train_mse": 0.2940651846692917,
+      "val_rmse_sgd": 930.3997386233594,
+      "val_mae_sgd": 801.15484927316,
+      "val_bias_sgd": -704.7206004754695,
+      "seconds": 7.68,
+      "learning_rate": 0.0009829629131445341
+    },
+    {
+      "epoch": 7,
+      "train_mse": 0.29462403389941355,
+      "val_rmse_sgd": 869.9071987767182,
+      "val_mae_sgd": 746.8877513997763,
+      "val_bias_sgd": -630.7737375991572,
+      "seconds": 7.63,
+      "learning_rate": 0.0009755282581475769
+    },
+    {
+      "epoch": 8,
+      "train_mse": 0.29415090439771324,
+      "val_rmse_sgd": 987.0453952155933,
+      "val_mae_sgd": 857.3952750063854,
+      "val_bias_sgd": -779.1552335221023,
+      "seconds": 7.76,
+      "learning_rate": 0.0009667902132486009
+    },
+    {
+      "epoch": 9,
+      "train_mse": 0.2923638220132907,
+      "val_rmse_sgd": 919.2841192069768,
+      "val_mae_sgd": 793.8964878673319,
+      "val_bias_sgd": -697.5520403533069,
+      "seconds": 7.84,
+      "learning_rate": 0.0009567727288213005
+    },
+    {
+      "epoch": 10,
+      "train_mse": 0.29102230310560845,
+      "val_rmse_sgd": 939.5251811137804,
+      "val_mae_sgd": 815.6222378732263,
+      "val_bias_sgd": -727.5862695201372,
+      "seconds": 7.77,
+      "learning_rate": 0.0009455032620941839
+    },
+    {
+      "epoch": 11,
+      "train_mse": 0.2914518034657446,
+      "val_rmse_sgd": 914.654514693005,
+      "val_mae_sgd": 786.4054894606529,
+      "val_bias_sgd": -684.6976358404553,
+      "seconds": 8.66,
+      "learning_rate": 0.0009330127018922195
+    },
+    {
+      "epoch": 12,
+      "train_mse": 0.2907697850387268,
+      "val_rmse_sgd": 889.7713998100633,
+      "val_mae_sgd": 766.1552837036783,
+      "val_bias_sgd": -660.0879861487904,
+      "seconds": 8.14,
+      "learning_rate": 0.0009193352839727121
+    },
+    {
+      "epoch": 13,
+      "train_mse": 0.2901809824334331,
+      "val_rmse_sgd": 873.1231440246925,
+      "val_mae_sgd": 749.4570937305515,
+      "val_bias_sgd": -634.0170998130512,
+      "seconds": 8.32,
+      "learning_rate": 0.0009045084971874737
+    },
+    {
+      "epoch": 14,
+      "train_mse": 0.2887753610613378,
+      "val_rmse_sgd": 918.8662383297168,
+      "val_mae_sgd": 794.6432755822542,
+      "val_bias_sgd": -700.0301658983753,
+      "seconds": 9.61,
+      "learning_rate": 0.0008885729807284855
+    },
+    {
+      "epoch": 15,
+      "train_mse": 0.2897805519318991,
+      "val_rmse_sgd": 963.2131999964575,
+      "val_mae_sgd": 832.5506564213622,
+      "val_bias_sgd": -745.876772420541,
+      "seconds": 8.13,
+      "learning_rate": 0.0008715724127386972
+    },
+    {
+      "epoch": 16,
+      "train_mse": 0.28828241119751935,
+      "val_rmse_sgd": 934.2189728416494,
+      "val_mae_sgd": 807.3420731234754,
+      "val_bias_sgd": -715.6535656128325,
+      "seconds": 7.67,
+      "learning_rate": 0.0008535533905932739
+    },
+    {
+      "epoch": 17,
+      "train_mse": 0.2872504824925339,
+      "val_rmse_sgd": 902.6790879784511,
+      "val_mae_sgd": 777.0799189489107,
+      "val_bias_sgd": -673.6735548058798,
+      "seconds": 8.2,
+      "learning_rate": 0.0008345653031794292
+    }
+  ],
+  "seconds": 137.56,
+  "device": "mps",
+  "description": {
+    "name": "target_asof_fusion",
+    "arm": "house",
+    "house_parameters": 63840,
+    "market_parameters": 0,
+    "head_parameters": 4801,
+    "parameters": 68641,
+    "market_channels": 15,
+    "d_model": 48,
+    "market_encoder": null,
+    "market_input": "six masked statistics per channel",
+    "bilstm_hidden_per_direction": null,
+    "bilstm_summary": null,
+    "target": "MONTHLY_RENT/1000 directly; no anchor, no log, no clipping"
+  },
+  "source_hashes": {
+    "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "fixture.py": "d92f3af120bfd3972c68afb82e0817f851fbf3651dde64e92fa985568d2b4cd5",
+    "models.py": "5312bb2e74c2186e55aa2dc84317942c74e7dbb0d1cda8f136c5a881112d153b",
+    "reload.py": "f8dfde96334e88e27e149395f1b275929e6f374c4b56568ebc8f9c4f8a1058cd",
+    "run.py": "ef27986ead3a98d5caab12cf9c38189a269c178c05d28e6d950d2e52efc0906d"
+  },
+  "target": "MONTHLY_RENT/1000 predicted directly; no anchor, no log, no clipping",
+  "scale_note": "single seed, single development fold; not a robustness claim"
+}

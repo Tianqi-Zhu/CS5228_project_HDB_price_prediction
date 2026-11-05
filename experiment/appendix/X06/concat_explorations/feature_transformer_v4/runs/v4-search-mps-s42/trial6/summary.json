@@ -1,0 +1,473 @@
+{
+  "id": 6,
+  "pooling": "cls",
+  "changes": {
+    "layers": 3
+  },
+  "selected_epoch": 23,
+  "selected_rmse_sgd": 581.0164302081428,
+  "inner_predictions": {
+    "rmse_sgd": 581.0164302081428,
+    "mae_sgd": 452.8406185424153,
+    "bias_sgd": 26.333804293996042,
+    "n": 35882
+  },
+  "ineligible_best": null,
+  "epochs_run": 33,
+  "seconds": 1082.03,
+  "parameters": 73105,
+  "config": {
+    "pooling": "cls",
+    "d_model": 48,
+    "layers": 3,
+    "heads": 4,
+    "ff_multiplier": 2,
+    "dropout": 0.05,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "batch_size": 512,
+    "clip_grad": 1.0,
+    "max_epochs": 60,
+    "patience": 10,
+    "eligible_after": 5,
+    "seed": 42,
+    "schedule_epochs": null,
+    "schedule_epochs_effective": 60
+  },
+  "description": {
+    "name": "feature_transformer",
+    "pooling": "cls",
+    "d_model": 48,
+    "layers": 3,
+    "heads": 4,
+    "ff_width": 96,
+    "dropout": 0.05,
+    "numeric": {
+      "mode": "per_feature",
+      "n_tokens": 56,
+      "token_width": 48,
+      "formula": "x_j * weight_j + bias_j + identity_j  (weight_j, bias_j in R^d)",
+      "weight_shape": [
+        56,
+        48
+      ],
+      "shared_projection": null,
+      "weight_row_norm_min": 0.7223909497261047,
+      "feature_names": [
+        "FLOOR_AREA_SQM",
+        "YEARS_SINCE_LEASE_COMMENCEMENT",
+        "LATITUDE",
+        "LONGITUDE",
+        "MAX_FLOOR",
+        "BUILDING_AGE_YEARS",
+        "NEAREST_OPEN_MRT_KM",
+        "OPEN_MRT_COUNT_500M",
+        "OPEN_MRT_COUNT_1000M",
+        "OPEN_MRT_COUNT_2000M",
+        "NEAREST_MALL_KM",
+        "MALL_COUNT_500M",
+        "MALL_COUNT_1000M",
+        "MALL_COUNT_2000M",
+        "NEAREST_PRIMARY_SCHOOL_KM",
+        "PRIMARY_SCHOOL_COUNT_500M",
+        "PRIMARY_SCHOOL_COUNT_1000M",
+        "PRIMARY_SCHOOL_COUNT_2000M",
+        "DISTANCE_TO_CBD_KM",
+        "MAX_FLOOR__missing",
+        "BUILDING_AGE_YEARS__missing",
+        "hist_rent__global",
+        "hist_psm__global",
+        "hist_n__global",
+        "hist_months__global",
+        "hist_recency__global",
+        "hist_exact__global",
+        "hist_rent__flat_type",
+        "hist_psm__flat_type",
+        "hist_n__flat_type",
+        "hist_months__flat_type",
+        "hist_recency__flat_type",
+        "hist_exact__flat_type",
+        "hist_rent__town_ft",
+        "hist_psm__town_ft",
+        "hist_n__town_ft",
+        "hist_months__town_ft",
+        "hist_recency__town_ft",
+        "hist_exact__town_ft",
+        "hist_rent__block_ft",
+        "hist_psm__block_ft",
+        "hist_n__block_ft",
+        "hist_months__block_ft",
+        "hist_recency__block_ft",
+        "hist_exact__block_ft",
+        "horizon_months",
+        "target_month_index",
+        "origin_month_index",
+        "target_month_sin",
+        "target_month_cos",
+        "origin_month_sin",
+        "origin_month_cos",
+        "anchor_psm_sgd",
+        "anchor_n",
+        "anchor_level_code",
+        "anchor_missing"
+      ]
+    },
+    "categorical": {
+      "n_tokens": 4,
+      "token_width": 48,
+      "cardinalities": [
+        27,
+        7,
+        19,
+        2
+      ],
+      "unknown_code": 0
+    },
+    "total_feature_tokens": 60,
+    "query_type_id": 61,
+    "type_embedding_rows": 62,
+    "pooling_tokens": 1,
+    "query_conditioned": false,
+    "parameters": 73105
+  },
+  "device": {
+    "device": "mps",
+    "torch": "2.8.0",
+    "cpu_threads": 2,
+    "mps_available": true,
+    "mps_built": true,
+    "bitwise_identical_across_backends": false,
+    "note": "CPU and MPS kernels differ; the measured eval gap at batch 512 / 60 tokens is ~3.7e-8 kSGD. Never compare a CPU number and an MPS number as if the backend were not part of the setting.",
+    "mps_macos_build": true
+  },
+  "curve": [
+    {
+      "epoch": 1,
+      "train_mse": 0.2862112931637982,
+      "monitor_rmse_sgd": 625.8337515859284,
+      "seconds": 34.49,
+      "learning_rate": 0.001,
+      "device": "mps"
+    },
+    {
+      "epoch": 2,
+      "train_mse": 0.24691637156684684,
+      "monitor_rmse_sgd": 608.7161362942041,
+      "seconds": 31.49,
+      "learning_rate": 0.0009993147673772868,
+      "device": "mps"
+    },
+    {
+      "epoch": 3,
+      "train_mse": 0.24512222692059915,
+      "monitor_rmse_sgd": 627.1767736574566,
+      "seconds": 32.13,
+      "learning_rate": 0.0009972609476841365,
+      "device": "mps"
+    },
+    {
+      "epoch": 4,
+      "train_mse": 0.24457987085101573,
+      "monitor_rmse_sgd": 596.7358434007585,
+      "seconds": 30.98,
+      "learning_rate": 0.0009938441702975688,
+      "device": "mps"
+    },
+    {
+      "epoch": 5,
+      "train_mse": 0.24318142180756386,
+      "monitor_rmse_sgd": 639.3579191392665,
+      "seconds": 32.27,
+      "learning_rate": 0.0009890738003669028,
+      "device": "mps"
+    },
+    {
+      "epoch": 6,
+      "train_mse": 0.24107729534395472,
+      "monitor_rmse_sgd": 595.6949964652198,
+      "seconds": 32.27,
+      "learning_rate": 0.0009829629131445341,
+      "device": "mps"
+    },
+    {
+      "epoch": 7,
+      "train_mse": 0.24229648121682665,
+      "monitor_rmse_sgd": 617.6112065769968,
+      "seconds": 34.42,
+      "learning_rate": 0.0009755282581475769,
+      "device": "mps"
+    },
+    {
+      "epoch": 8,
+      "train_mse": 0.24113893282616305,
+      "monitor_rmse_sgd": 597.8299338471123,
+      "seconds": 33.26,
+      "learning_rate": 0.0009667902132486009,
+      "device": "mps"
+    },
+    {
+      "epoch": 9,
+      "train_mse": 0.24149622398896328,
+      "monitor_rmse_sgd": 606.3892271825847,
+      "seconds": 34.27,
+      "learning_rate": 0.0009567727288213005,
+      "device": "mps"
+    },
+    {
+      "epoch": 10,
+      "train_mse": 0.24005599854166115,
+      "monitor_rmse_sgd": 636.0431563489385,
+      "seconds": 30.89,
+      "learning_rate": 0.0009455032620941839,
+      "device": "mps"
+    },
+    {
+      "epoch": 11,
+      "train_mse": 0.2408338502718873,
+      "monitor_rmse_sgd": 590.4619744425307,
+      "seconds": 32.41,
+      "learning_rate": 0.0009330127018922195,
+      "device": "mps"
+    },
+    {
+      "epoch": 12,
+      "train_mse": 0.2395589524577029,
+      "monitor_rmse_sgd": 621.1953825410025,
+      "seconds": 30.64,
+      "learning_rate": 0.0009193352839727121,
+      "device": "mps"
+    },
+    {
+      "epoch": 13,
+      "train_mse": 0.2397548562583402,
+      "monitor_rmse_sgd": 589.842204651999,
+      "seconds": 31.85,
+      "learning_rate": 0.0009045084971874737,
+      "device": "mps"
+    },
+    {
+      "epoch": 14,
+      "train_mse": 0.23928844701990848,
+      "monitor_rmse_sgd": 589.349108561405,
+      "seconds": 31.64,
+      "learning_rate": 0.0008885729807284855,
+      "device": "mps"
+    },
+    {
+      "epoch": 15,
+      "train_mse": 0.23970283395791459,
+      "monitor_rmse_sgd": 587.4154527246978,
+      "seconds": 32.81,
+      "learning_rate": 0.0008715724127386972,
+      "device": "mps"
+    },
+    {
+      "epoch": 16,
+      "train_mse": 0.23886838241873223,
+      "monitor_rmse_sgd": 603.2002642173939,
+      "seconds": 32.86,
+      "learning_rate": 0.0008535533905932739,
+      "device": "mps"
+    },
+    {
+      "epoch": 17,
+      "train_mse": 0.23836232729382917,
+      "monitor_rmse_sgd": 592.4758050542749,
+      "seconds": 30.91,
+      "learning_rate": 0.0008345653031794292,
+      "device": "mps"
+    },
+    {
+      "epoch": 18,
+      "train_mse": 0.23797944546019317,
+      "monitor_rmse_sgd": 584.6648986545837,
+      "seconds": 32.25,
+      "learning_rate": 0.0008146601955249187,
+      "device": "mps"
+    },
+    {
+      "epoch": 19,
+      "train_mse": 0.23872911070881736,
+      "monitor_rmse_sgd": 616.3657608371032,
+      "seconds": 30.95,
+      "learning_rate": 0.0007938926261462367,
+      "device": "mps"
+    },
+    {
+      "epoch": 20,
+      "train_mse": 0.2379170060134987,
+      "monitor_rmse_sgd": 587.1574876534837,
+      "seconds": 32.08,
+      "learning_rate": 0.0007723195175075136,
+      "device": "mps"
+    },
+    {
+      "epoch": 21,
+      "train_mse": 0.23730522955473513,
+      "monitor_rmse_sgd": 593.4408408452177,
+      "seconds": 31.15,
+      "learning_rate": 0.00075,
+      "device": "mps"
+    },
+    {
+      "epoch": 22,
+      "train_mse": 0.23743733181663554,
+      "monitor_rmse_sgd": 601.4270949219748,
+      "seconds": 35.64,
+      "learning_rate": 0.0007269952498697733,
+      "device": "mps"
+    },
+    {
+      "epoch": 23,
+      "train_mse": 0.23733768553037393,
+      "monitor_rmse_sgd": 581.0164302081428,
+      "seconds": 37.28,
+      "learning_rate": 0.0007033683215379002,
+      "device": "mps"
+    },
+    {
+      "epoch": 24,
+      "train_mse": 0.23693886548537094,
+      "monitor_rmse_sgd": 600.376907222429,
+      "seconds": 35.83,
+      "learning_rate": 0.0006791839747726503,
+      "device": "mps"
+    },
+    {
+      "epoch": 25,
+      "train_mse": 0.23637887010426667,
+      "monitor_rmse_sgd": 592.2549329259184,
+      "seconds": 34.63,
+      "learning_rate": 0.0006545084971874737,
+      "device": "mps"
+    },
+    {
+      "epoch": 26,
+      "train_mse": 0.2367231033256737,
+      "monitor_rmse_sgd": 601.0038986347209,
+      "seconds": 34.28,
+      "learning_rate": 0.0006294095225512603,
+      "device": "mps"
+    },
+    {
+      "epoch": 27,
+      "train_mse": 0.2360584416539417,
+      "monitor_rmse_sgd": 584.9094821231495,
+      "seconds": 32.08,
+      "learning_rate": 0.0006039558454088795,
+      "device": "mps"
+    },
+    {
+      "epoch": 28,
+      "train_mse": 0.236056782099285,
+      "monitor_rmse_sgd": 604.1352637269177,
+      "seconds": 32.06,
+      "learning_rate": 0.0005782172325201154,
+      "device": "mps"
+    },
+    {
+      "epoch": 29,
+      "train_mse": 0.23570079044820794,
+      "monitor_rmse_sgd": 596.0750205873394,
+      "seconds": 33.05,
+      "learning_rate": 0.0005522642316338267,
+      "device": "mps"
+    },
+    {
+      "epoch": 30,
+      "train_mse": 0.23617759963062748,
+      "monitor_rmse_sgd": 586.5778745005659,
+      "seconds": 31.28,
+      "learning_rate": 0.0005261679781214719,
+      "device": "mps"
+    },
+    {
+      "epoch": 31,
+      "train_mse": 0.2353410017465319,
+      "monitor_rmse_sgd": 590.086233230682,
+      "seconds": 32.76,
+      "learning_rate": 0.0005000000000000001,
+      "device": "mps"
+    },
+    {
+      "epoch": 32,
+      "train_mse": 0.2350998764175048,
+      "monitor_rmse_sgd": 594.4986860384347,
+      "seconds": 29.75,
+      "learning_rate": 0.00047383202187852816,
+      "device": "mps"
+    },
+    {
+      "epoch": 33,
+      "train_mse": 0.2351087500364916,
+      "monitor_rmse_sgd": 594.9136494690916,
+      "seconds": 32.96,
+      "learning_rate": 0.00044773576836617336,
+      "device": "mps"
+    }
+  ],
+  "input_fingerprint": {
+    "a_fit_parity": "b693047ec591a2836bccaa7df7f4c7e56528c2142145ce23035046488ba3ecec",
+    "a_hold_parity": "4795a67b6914a038f764a44de0948b8bbc81e46d542fc5648cf70c4a6df18c21",
+    "scalers": "c9b41fb6345011ee9e4d8bd7e9af28d38ae0888491a9c40719f97ffa526183bf",
+    "vocabularies": "15bb7abb23b6c333c7116f42c06e1a2e02d3efb38a4514614ecec32bc1c5834f",
+    "numeric_names": [
+      "FLOOR_AREA_SQM",
+      "YEARS_SINCE_LEASE_COMMENCEMENT",
+      "LATITUDE",
+      "LONGITUDE",
+      "MAX_FLOOR",
+      "BUILDING_AGE_YEARS",
+      "NEAREST_OPEN_MRT_KM",
+      "OPEN_MRT_COUNT_500M",
+      "OPEN_MRT_COUNT_1000M",
+      "OPEN_MRT_COUNT_2000M",
+      "NEAREST_MALL_KM",
+      "MALL_COUNT_500M",
+      "MALL_COUNT_1000M",
+      "MALL_COUNT_2000M",
+      "NEAREST_PRIMARY_SCHOOL_KM",
+      "PRIMARY_SCHOOL_COUNT_500M",
+      "PRIMARY_SCHOOL_COUNT_1000M",
+      "PRIMARY_SCHOOL_COUNT_2000M",
+      "DISTANCE_TO_CBD_KM",
+      "MAX_FLOOR__missing",
+      "BUILDING_AGE_YEARS__missing",
+      "hist_rent__global",
+      "hist_psm__global",
+      "hist_n__global",
+      "hist_months__global",
+      "hist_recency__global",
+      "hist_exact__global",
+      "hist_rent__flat_type",
+      "hist_psm__flat_type",
+      "hist_n__flat_type",
+      "hist_months__flat_type",
+      "hist_recency__flat_type",
+      "hist_exact__flat_type",
+      "hist_rent__town_ft",
+      "hist_psm__town_ft",
+      "hist_n__town_ft",
+      "hist_months__town_ft",
+      "hist_recency__town_ft",
+      "hist_exact__town_ft",
+      "hist_rent__block_ft",
+      "hist_psm__block_ft",
+      "hist_n__block_ft",
+      "hist_months__block_ft",
+      "hist_recency__block_ft",
+      "hist_exact__block_ft",
+      "horizon_months",
+      "target_month_index",
+      "origin_month_index",
+      "target_month_sin",
+      "target_month_cos",
+      "origin_month_sin",
+      "origin_month_cos",
+      "anchor_psm_sgd",
+      "anchor_n",
+      "anchor_level_code",
+      "anchor_missing"
+    ]
+  }
+}
