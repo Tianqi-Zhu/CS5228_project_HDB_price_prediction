@@ -80,5 +80,16 @@
     "Saved monthly aggregates can be checked but missing row predictions cannot be reconstructed.",
     "Original source caches/checkpoints are not part of this import.",
     "Legacy metadata byte differences are separated into newline-only and actual version differences in preflight.json."
-  ]
+  ],
+  "upstream_appendix_base": "e286e7fa9603c9cde5829339b6c20e0f60dd85c4",
+  "upstream_added_source_artifacts_preserved_exactly": 489,
+  "local_integration_rebased_onto_latest_appendix": true,
+  "post_upstream_validation": {
+    "core_tests": 133,
+    "core_optional_dependency_skips": 4,
+    "concat_exploration_files_verified": 481,
+    "concat_python_sources_parsed": 303,
+    "F1_original_three_submissions_cpu_replay_max_diff": 0.0,
+    "evidence": "post-upstream-status.json"
+  }
 }

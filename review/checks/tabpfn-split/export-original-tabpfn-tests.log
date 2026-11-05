@@ -316,6 +316,6 @@ test_publication_boundaries_and_missing_buildings (test_worldcover_tree_cover.Tr
 test_tree_class_and_metric_circle (test_worldcover_tree_cover.TreeCoverTests.test_tree_class_and_metric_circle) ... ok
 
 ----------------------------------------------------------------------
-Ran 280 tests in 15.998s
+Ran 280 tests in 25.532s
 
 OK (skipped=1)

@@ -1,12 +1,13 @@
 {
-  "tested_commit": "c99a40a79223c09c0a79a2593439d6f8ce183d1d",
-  "archive_method": "git archive TAR; no original .git, output or .cache; only supplemental third-party Python libraries supplied",
-  "manifest_sha256": "6a7d693d8d1c95c4bba62f35cad0ba2c3594b12d25dbe6a744ae5e96e439bbcf",
+  "tested_commit": "b4015b45c0e124d2ed847535c5d49b956a786440",
+  "upstream_appendix_base": "e286e7fa9603c9cde5829339b6c20e0f60dd85c4",
+  "archive_method": "git archive TAR of rebased appendix; no original .git/output/.cache",
+  "manifest_sha256": "6fda1cf47b3c3ebdd93977c3530dce7f51285f3aa6f9107c59519df5fde873bd",
   "checks": [
     {
       "check": "integrity",
       "returncode": 0,
-      "seconds": 59.40906579999864,
+      "seconds": 81.09067949999735,
       "command": [
         "python",
         "review.py",
@@ -16,7 +17,7 @@
     {
       "check": "tabpfn-integrity",
       "returncode": 0,
-      "seconds": 4.013493500002369,
+      "seconds": 4.644346699999005,
       "command": [
         "python",
         "review_tabpfn.py",
@@ -26,7 +27,7 @@
     {
       "check": "monthly-metrics",
       "returncode": 0,
-      "seconds": 0.4975330000015674,
+      "seconds": 0.4998185000004014,
       "command": [
         "python",
         "review_tabpfn.py",
@@ -36,7 +37,7 @@
     {
       "check": "original-tabpfn-tests",
       "returncode": 0,
-      "seconds": 78.28384370000276,
+      "seconds": 94.87665540000307,
       "command": [
         "python",
         "review_tabpfn.py",
@@ -46,10 +47,19 @@
     {
       "check": "F1-cpu-replay",
       "returncode": 0,
-      "seconds": 0.9857348000005004,
+      "seconds": 1.053946599997289,
       "command": [
         "python",
         "reproduction/three_submissions/reproduce.py"
+      ]
+    },
+    {
+      "check": "concat-explorations",
+      "returncode": 0,
+      "seconds": 0.6661968000043998,
+      "command": [
+        "python",
+        "reproduction/concat_explorations/verify.py"
       ]
     }
   ],
