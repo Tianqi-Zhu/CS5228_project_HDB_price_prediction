@@ -12,9 +12,6 @@
 - [reproduce.py.log](evaluation/reproduce.py.log)
 - [verification.json](evaluation/verification.json)
 - [verify.py.log](evaluation/verify.py.log)
-
-## Existing evidence
-
-
+- [Fresh fixed-recipe Y/J training and checkpoint-reload evidence](../../../reproduction/f1/validation_evidence/audit.json)
 
 F2 generator/schema/member/CSV inputs remain pending. Available background and a screenshot score cannot complete this requirement.

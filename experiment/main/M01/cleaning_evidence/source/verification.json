@@ -1,0 +1,9 @@
+{
+  "raw_sources_unchanged": true,
+  "n_outer": 35158,
+  "n_calibration": 9005,
+  "n_test": 50000,
+  "query_targets_removed_before_inference": true,
+  "epochs_hyperparameters_seeds_unchanged": true,
+  "cleaning_applied_only_to_model_fit": true
+}

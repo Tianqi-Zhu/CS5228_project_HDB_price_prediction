@@ -16,7 +16,7 @@ class MainCliTests(unittest.TestCase):
             if name.startswith(('analysis.experiments','analysis.eda')):
                 raise AssertionError('Help must not import experiment code')
             return original(name,*args,**kwargs)
-        for command in ('eda','baseline','compare','ladder','common-models','planned'):
+        for command in ('eda','baseline','compare','ladder','common-models','planned','schemas','evidence','validation-refits'):
             with self.subTest(command=command),patch('builtins.__import__',side_effect=guarded),contextlib.redirect_stdout(io.StringIO()):
                 with self.assertRaises(SystemExit) as result:main([command,'--help'])
                 self.assertEqual(result.exception.code,0)

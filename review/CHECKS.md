@@ -19,3 +19,19 @@
 TabPFN integration checks are recorded separately in [checks/tabpfn-split/](checks/tabpfn-split/). These do not replace the earlier F1 full-training evidence. F2 remains pending.
 
 Latest main requirement-card execution and whole-tree verification: [checks/main-final/](checks/main-final/). New scientific results are in [experiment/main/](../experiment/main/README.md). This supplements the earlier F1 full-training and TabPFN-isolation logs.
+
+## 五项补齐的本次验收
+
+当前材料与入口见[五项优化](../docs/planning/main-five-item-completion.md)。日志位于 [checks/five-item-validation/](checks/five-item-validation/)。
+
+| 范围 | 已观察结果 |
+|---|---|
+| main 测试 | 73 项通过，无跳过 |
+| 隔离 TabPFN 原测试 | 30 项通过，无跳过；不调用 API、不下载模型 |
+| F1 Y/J 新生成 | 每窗 15 个基础模型训练及重载通过；39 份训练源文件逐窗按实际提交核验；新融合 CSV 逐字节重组通过 |
+| F1 原提交 | 集成 `planned` 已执行 verify 和 50,000 行 CPU 重组，保留原 CSV |
+| Concat | 28 份文件核验与 50,000 行 CPU 重放通过；最大差 0.105321 SGD，在原 `0.10 + 1e-4 × abs(value)` 容差内 |
+| 集成审计 | 原 26 组预测、144 行误差分组、特征清单、场景、空间/清洗来源与可用逐行预测核验通过 |
+| 全树静态核验 | 625 份注册文件、200 个 Python 文件及当前导航链接通过 |
+
+本轮新训练限于 F1 固定配方 Y/J，未重跑全部历史搜索、完整 Concat 八轮重训或新的独立留出测试。大型新检查点留在本地忽略目录，随分支保存紧凑预测与生成记录。F2 仍待实际生成材料；main 全部 P0 未完成。提交后的干净导出检查按独立日志记录。

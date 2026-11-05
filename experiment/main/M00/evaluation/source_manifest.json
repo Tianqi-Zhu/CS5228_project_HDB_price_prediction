@@ -11,8 +11,15 @@
     "data/auxiliary/sg-stock-prices.csv": "e03802bedbebedab27caafb6755ce055f1654cc17b3fc5fc6e3e7ee6ab2c23b7"
   },
   "code": {
-    "analysis/validation/main.py": "89c419abd44fb54c068a397d48c726e362e85f897b68b42e90db3411e7dfd3c4",
-    "analysis/validation/prepare_inputs.py": "a07461139c04eb2a361c54d8be14e4491d73157ed2a1cf47ff791fae60e4cd8e"
+    "analysis/validation/__init__.py": "e39995c51d49e0f70cc21123bddfa2f8d31394e463a5a4bd790a873abf0ced67",
+    "analysis/validation/evidence_audit.py": "92d920db3531ad50a2f9977f26cfe5c80900d2536aec2ff708b1df39077316cf",
+    "analysis/validation/feature_catalog.py": "b2bdda7f613c4ca8034e1928b005d118f80103f0eb306125565e9311d8d39a3f",
+    "analysis/validation/main.py": "5679104ff1c88e27d8d20855a81b70efe9ee3a6d6df79dc127151174ff0e4ed4",
+    "analysis/validation/prepare_inputs.py": "ad366018996dd21276f00d33198ee55fc23f4685a6ae010bfe3d4f799f61098b",
+    "analysis/validation/refit_audit.py": "a3dfd21426af0d0c8bdbfb8c53b80a234480173f8107dd501ba874b9467f75bc",
+    "analysis/validation/repository_audit.py": "98012441e7f7e20bbad1052f7dbec082379eb5b82951d05e62669e9714c1cb8c",
+    "analysis/pipeline/config.py": "ddcf3c8ce10025c82b1fc7c0463c44e0a62df4fbe0a8cc6bf3be889768ee9dc0",
+    "docs/methods/prediction-scenario.json": "3f0cdeaa7b3b5c7d6d52cb55c4f60d47a664b46707ea09a30cd9ce5e3460e020"
   },
   "frozen_archive": {
     "path": "experiment\\main\\M00\\inputs\\validation.npz",

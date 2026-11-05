@@ -4,10 +4,10 @@
 
 | ID | 当前状态 | 内容 |
 |---|---|---|
-| [M00](M00/README.md) | partial | 26 组预测身份、行 ID、schema 和指标审计；精确旧生成提交/F2 仍缺失 |
-| [M01](M01/README.md) | completed for snapshot | 共同 EDA 与预处理政策；连接不增行；设施时间按快照解释 |
+| [M00](M00/README.md) | F1 generation verified; F2 pending | 旧 26 组预测审计；新增 F1 Y/J 固定提交生成与重载；旧原生成提交仍未全恢复 |
+| [M01](M01/README.md) | completed for snapshot | 共同 EDA、空间受控关联、清洗匹配对照；显式快照场景 |
 | [M02](M02/README.md) | archived/verified | C7 均值、Ridge、RandomForest、LightGBM、CatBoost 基线 |
-| [M03](M03/README.md) | completed | 两窗固定模型 19/27/47/62 特征阶梯与配对增量 |
+| [M03](M03/README.md) | completed | 特征阶梯与配对增量；有序 schema、异质组件及两套 62 列输入 |
 | [M04](M04/README.md) | completed | F1 与两个 62 列控制的月份、户型、覆盖、尾部和相同输入诊断 |
 | [M05](M05/README.md) | completed within recorded scope | 27 列架构对照；62 列 PLE/PLR 和固定规则融合增量；Concat 独立探索 |
 | [M06](M06/README.md) | archived/verified | 三个既有提交中选取 F1；其他版本保留在 appendix |

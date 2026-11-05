@@ -1,0 +1,68 @@
+D:/miniconda3/envs/cs5228/python.exe : test_all_histories_are_frozen_at_the_selected_origin (test_aligned_temporal_feat
+ures.AlignedTemporalTests.test_all_histories_are_frozen_at_the_selected_origin) ... ok
+所在位置 行:3 字符: 1
++ D:/miniconda3/envs/cs5228/python.exe review_tabpfn.py test --workspac ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (test_all_histor..._origin) ... ok:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+
+test_context_origins_cover_the_validation_horizon_without_overlap (test_aligned_temporal_features.AlignedTemporalTests.
+test_context_origins_cover_the_validation_horizon_without_overlap) ... ok
+test_forecast_and_tuning_cannot_see_future_rents (test_aligned_temporal_features.AlignedTemporalTests.test_forecast_and
+_tuning_cannot_see_future_rents) ... ok
+test_new_area_uses_flat_type_forecast_without_a_local_premium (test_aligned_temporal_features.AlignedTemporalTests.test
+_new_area_uses_flat_type_forecast_without_a_local_premium) ... ok
+test_all_variants_complete_from_first_month_and_keep_histories_and_time (test_calendar_encoding.CalendarEncodingTests.t
+est_all_variants_complete_from_first_month_and_keep_histories_and_time) ... ok
+test_category_mapping_is_identical_in_context_and_query (test_calendar_encoding.CalendarEncodingTests.test_category_map
+ping_is_identical_in_context_and_query) ... ok
+test_cyclical_distance_wraps_december_to_january (test_calendar_encoding.CalendarEncodingTests.test_cyclical_distance_w
+raps_december_to_january) ... ok
+test_future_rows_and_labels_cannot_change_calendar_features (test_calendar_encoding.CalendarEncodingTests.test_future_r
+ows_and_labels_cannot_change_calendar_features) ... ok
+test_sample_is_reproducible_and_weights_reconstruct_month_counts (test_calendar_encoding.CalendarEncodingTests.test_sam
+ple_is_reproducible_and_weights_reconstruct_month_counts) ... ok
+test_unknown_school_location_has_finite_interactions_and_explicit_flag (test_calendar_encoding.CalendarEncodingTests.te
+st_unknown_school_location_has_finite_interactions_and_explicit_flag) ... ok
+test_even_horizon_uses_time_instead_of_row_count (test_recent_time_context.RecentContextTests.test_even_horizon_uses_ti
+me_instead_of_row_count) ... ok
+test_invalid_months_rejected (test_recent_time_context.RecentContextTests.test_invalid_months_rejected) ... ok
+test_odd_horizon_keeps_middle_month_and_whole_months (test_recent_time_context.RecentContextTests.test_odd_horizon_keep
+s_middle_month_and_whole_months) ... ok
+test_episode_sampling_does_not_depend_on_rent (test_tabpfn_adaptation.AdaptationTests.test_episode_sampling_does_not_de
+pend_on_rent) ... ok
+test_head_horizon_is_explicit_and_feature_sets_have_no_current_target (test_tabpfn_adaptation.AdaptationTests.test_head
+_horizon_is_explicit_and_feature_sets_have_no_current_target) ... ok
+test_ids_normalize_case_and_distinguish_same_block_number (test_tabpfn_adaptation.AdaptationTests.test_ids_normalize_ca
+se_and_distinguish_same_block_number) ... ok
+test_inner_split_keeps_repeated_targets_together_and_excludes_outer (test_tabpfn_adaptation.AdaptationTests.test_inner_
+split_keeps_repeated_targets_together_and_excludes_outer) ... ok
+test_new_statistics_exclude_same_month_and_freeze_at_origin (test_tabpfn_adaptation.AdaptationTests.test_new_statistics
+_exclude_same_month_and_freeze_at_origin) ... ok
+test_query_rents_cannot_change_features (test_tabpfn_adaptation.AdaptationTests.test_query_rents_cannot_change_features
+) ... ok
+test_blend_can_qualify_with_uncalibrated_first_fold_tie (test_tabpfn_comparison.TabPFNComparisonTests.test_blend_can_qu
+alify_with_uncalibrated_first_fold_tie) ... ok
+test_blend_is_constrained_and_handles_identical_models (test_tabpfn_comparison.TabPFNComparisonTests.test_blend_is_cons
+trained_and_handles_identical_models) ... ok
+test_blend_weight_uses_only_earlier_folds (test_tabpfn_comparison.TabPFNComparisonTests.test_blend_weight_uses_only_ear
+lier_folds) ... ok
+test_history_ignores_future_labels_and_same_month_rents (test_tabpfn_comparison.TabPFNComparisonTests.test_history_igno
+res_future_labels_and_same_month_rents) ... ok
+test_inputs_forbid_target_and_handle_unseen_categories (test_tabpfn_comparison.TabPFNComparisonTests.test_inputs_forbid
+_target_and_handle_unseen_categories) ... ok
+test_split_excludes_entire_origin_month_and_preserves_source_order (test_tabpfn_comparison.TabPFNComparisonTests.test_s
+plit_excludes_entire_origin_month_and_preserves_source_order) ... ok
+test_head_identity_schema_reload_and_gradients (test_tabpfn_component_adaptation.ComponentTests.test_head_identity_sche
+ma_reload_and_gradients) ... ok
+test_icl_only_zero_identity_and_frozen_backbone (test_tabpfn_component_adaptation.ComponentTests.test_icl_only_zero_ide
+ntity_and_frozen_backbone) ... ok
+test_last_blocks_only (test_tabpfn_component_adaptation.ComponentTests.test_last_blocks_only) ... ok
+test_month_ten_matches_model_and_later_months_keep_actual_horizon (test_tabpfn_fast_submission.TemporalCapTest.test_mon
+th_ten_matches_model_and_later_months_keep_actual_horizon) ... ok
+test_rejects_same_month_query (test_tabpfn_fast_submission.TemporalCapTest.test_rejects_same_month_query) ... ok
+
+----------------------------------------------------------------------
+Ran 30 tests in 2.580s
+
+OK

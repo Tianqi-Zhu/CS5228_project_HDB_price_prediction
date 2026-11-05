@@ -19,6 +19,10 @@ def audit():
     active_docs.update(p.relative_to(ROOT).as_posix() for p in (ROOT / "analysis").rglob("README.md"))
     active_docs.update(p.relative_to(ROOT).as_posix() for p in (ROOT / "docs/guides").glob("*.md"))
     active_docs.update(p.relative_to(ROOT).as_posix() for p in (ROOT / "docs/planning").glob("*.md"))
+    active_docs.update(p.relative_to(ROOT).as_posix() for p in (ROOT / "docs/methods").glob("*.md"))
+    active_docs.update({'experiment/main/M01/spatial_evidence/README.md',
+                        'experiment/main/M01/cleaning_evidence/README.md',
+                        'experiment/main/M03/feature_schemas/README.md', 'reproduction/f1/README.md'})
     active_docs.update(p.relative_to(ROOT).as_posix() for p in (ROOT / "experiment/main").glob("M*/README.md"))
     for item in manifest["files"]:
         p = (ROOT / item["path"]).resolve()

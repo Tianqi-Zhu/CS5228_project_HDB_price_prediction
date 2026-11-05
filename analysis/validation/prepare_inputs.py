@@ -134,7 +134,9 @@ def prepare(source_root=ROOT, destination=DEFAULT):
         for model, spec_name in [("single_PLE", "ft_ple_128_3"), ("single_PLR", "ft_plr_128_3")]:
             path = source_root / f"output/experiment_runs/round_10_plr_transformer_final/{stage}/{spec_name}/results.json"
             spec = json.loads(path.read_text())["spec"]
-            x, _q, _base, _offset = inputs(bundle, spec)
+            # sixth_wave_deep.prepare forces adjusted=True for both PLE/PLR.
+            # Their saved specs omit it; passing the spec verbatim loses 5 inputs.
+            x, _q, _base, _offset = inputs(bundle, spec | {'adjusted': True})
             add(window, model,
                 f"output/models/round_10_plr_transformer_final/{stage}/{spec_name}/predictions.csv",
                 str(path.relative_to(source_root)), schema(x), "no query-month macro observations", "single_PLE")

@@ -1,0 +1,3 @@
+window,n,rmse_sgd,mae_sgd,bias_sgd,sse,fit_rows,models_trained,logical_components,generating_commit,source_files_verified,source_git_blobs_verified,generated_csv_bytes_reproduced,historical_prediction_max_abs_difference,delta_rmse_vs_historical,all_checkpoint_reloads_recorded_passed,seconds
+Y,35158,451.029502492,328.729828598,3.32891917536,7152107986.84,114842,15,12,29ea4ac54c05a72e5374ac23f0cf50700b3bca0d,39,39,True,9.09494701773e-13,0,True,384.9653351
+J,28995,441.834534884,321.820758266,-11.1626338447,5660338841.48,121005,15,12,29ea4ac54c05a72e5374ac23f0cf50700b3bca0d,39,39,True,9.09494701773e-13,0,True,391.5114145

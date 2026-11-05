@@ -1,0 +1,48 @@
+{
+  "all_passed": true,
+  "windows": [
+    {
+      "window": "Y",
+      "n": 35158,
+      "rmse_sgd": 451.02950249165616,
+      "mae_sgd": 328.7298285977396,
+      "bias_sgd": 3.328919175360813,
+      "sse": 7152107986.840103,
+      "fit_rows": 114842,
+      "models_trained": 15,
+      "logical_components": 12,
+      "generating_commit": "29ea4ac54c05a72e5374ac23f0cf50700b3bca0d",
+      "source_files_verified": 39,
+      "source_git_blobs_verified": 39,
+      "generated_csv_bytes_reproduced": true,
+      "historical_prediction_max_abs_difference": 9.094947017729282e-13,
+      "delta_rmse_vs_historical": 0.0,
+      "all_checkpoint_reloads_recorded_passed": true,
+      "seconds": 384.96533510000154
+    },
+    {
+      "window": "J",
+      "n": 28995,
+      "rmse_sgd": 441.8345348836222,
+      "mae_sgd": 321.82075826636,
+      "bias_sgd": -11.162633844749434,
+      "sse": 5660338841.477898,
+      "fit_rows": 121005,
+      "models_trained": 15,
+      "logical_components": 12,
+      "generating_commit": "29ea4ac54c05a72e5374ac23f0cf50700b3bca0d",
+      "source_files_verified": 39,
+      "source_git_blobs_verified": 39,
+      "generated_csv_bytes_reproduced": true,
+      "historical_prediction_max_abs_difference": 9.094947017729282e-13,
+      "delta_rmse_vs_historical": 0.0,
+      "all_checkpoint_reloads_recorded_passed": true,
+      "seconds": 391.5114145000043
+    }
+  ],
+  "new_models_trained_in_fresh_runs": 30,
+  "model_training_performed_by_this_audit": false,
+  "checkpoint_scope": "Fresh run saved/reloaded all 30 predictors. Large checkpoints remain local output; shipped component arrays permit CPU blend replay. CUDA entry point permits refitting from raw data.",
+  "scope": "Fresh fixed-recipe retrospective validation. It does not recover the original unknown generator commit or create a new held-out test.",
+  "policy": "docs/methods/prediction-scenario.json"
+}

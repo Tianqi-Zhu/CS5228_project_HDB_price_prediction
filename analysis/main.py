@@ -8,6 +8,11 @@ def main(argv=None):
     commands=parser.add_subparsers(dest='command')
     planned=commands.add_parser('planned',help='Run main requirement-card audits and frozen-prediction diagnostics; no training')
     planned.add_argument('--output-dir',type=Path)
+    for command, help_text in [('schemas','Verify ordered feature inputs and schema transitions'),
+                               ('evidence','Verify imported spatial EDA and matched cleaning controls'),
+                               ('validation-refits','Verify fresh F1 Y/J source, alignment and frozen blend replay')]:
+        child=commands.add_parser(command,help=help_text)
+        child.add_argument('--output-dir',type=Path)
     concat=commands.add_parser('concat',help='Concat Transformer: verify, replay, prepare or explicitly train')
     concat.add_argument('concat_args',nargs=argparse.REMAINDER)
     commands.add_parser('list',help='List experiments without running them')
@@ -26,6 +31,14 @@ def main(argv=None):
     common.add_argument('--output-dir',type=Path)
     common.add_argument('--device',choices=('cpu','cuda'),default='cuda')
     args=parser.parse_args(argv)
+    if args.command in ('schemas','evidence','validation-refits'):
+        if args.command=='schemas':
+            from analysis.validation.feature_catalog import run
+        elif args.command=='evidence':
+            from analysis.validation.evidence_audit import run
+        else:
+            from analysis.validation.refit_audit import run
+        return run(args.output_dir)
     if args.command=='planned':
         from analysis.validation.main import run
         return run(args.output_dir)

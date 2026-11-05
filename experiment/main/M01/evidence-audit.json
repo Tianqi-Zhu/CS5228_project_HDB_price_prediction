@@ -1,0 +1,171 @@
+{
+  "all_passed": true,
+  "source_files_byte_verified": 17,
+  "input_versions": [
+    {
+      "source_manifest": "experiment\\main\\M01\\spatial_evidence\\source\\build_manifest.json",
+      "path": "data/train.csv",
+      "current_raw_sha256": "2fe38ce9e0d8a02e9786f066d4a10d575d91f34be1d9111f0142e3f43fbfc8a5",
+      "lf_normalized_sha256": "6d7a417de72112361f8353659ba6fe44a442b07465b488aff1b03f7ec1ea3ba6",
+      "source_blob_sha256": "6d7a417de72112361f8353659ba6fe44a442b07465b488aff1b03f7ec1ea3ba6",
+      "same_content_after_LF_normalization": true
+    },
+    {
+      "source_manifest": "experiment\\main\\M01\\spatial_evidence\\source\\build_manifest.json",
+      "path": "data/test.csv",
+      "current_raw_sha256": "a2ec03a0afc07c251c72cc0de2e15ac965a3b06291b304aaac53a375115ff4e0",
+      "lf_normalized_sha256": "dfc407406d957bbf7c2f005e5d9852b1bfc6546cd4186f07e6824d8e03e64cfc",
+      "source_blob_sha256": "dfc407406d957bbf7c2f005e5d9852b1bfc6546cd4186f07e6824d8e03e64cfc",
+      "same_content_after_LF_normalization": true
+    },
+    {
+      "source_manifest": "experiment\\main\\M01\\spatial_evidence\\source\\build_manifest.json",
+      "path": "data/auxiliary/sg-hdb-block.csv",
+      "current_raw_sha256": "2255ad61ba6895456a39aec81d12583796d717ef88fe102ee9de71b3796fc223",
+      "lf_normalized_sha256": "e6ccc60c1f901f8f476eb6fe14c07ef5941d2afd06a081a1e4c00f717da27f83",
+      "source_blob_sha256": "e6ccc60c1f901f8f476eb6fe14c07ef5941d2afd06a081a1e4c00f717da27f83",
+      "same_content_after_LF_normalization": true
+    },
+    {
+      "source_manifest": "experiment\\main\\M01\\spatial_evidence\\source\\build_manifest.json",
+      "path": "data/auxiliary/sg-mrt-stations.csv",
+      "current_raw_sha256": "4757278b94c2d05627a941377d51de60882e3e1477de01758ef37070b716b889",
+      "lf_normalized_sha256": "899460b39fb251bd6883fffc9e6a772081f8e5217a657550afc3c49cfdcd3227",
+      "source_blob_sha256": "899460b39fb251bd6883fffc9e6a772081f8e5217a657550afc3c49cfdcd3227",
+      "same_content_after_LF_normalization": true
+    },
+    {
+      "source_manifest": "experiment\\main\\M01\\spatial_evidence\\source\\build_manifest.json",
+      "path": "data/auxiliary/sg-schools.csv",
+      "current_raw_sha256": "9bf28c6a2e5511c5cada178d221dfaac12beb3651425b3b86c37815e35de71cb",
+      "lf_normalized_sha256": "118c7ce8d96bbc934bd53655e73e6d0848c27853a625394ecc6a67a5af54f192",
+      "source_blob_sha256": "118c7ce8d96bbc934bd53655e73e6d0848c27853a625394ecc6a67a5af54f192",
+      "same_content_after_LF_normalization": true
+    },
+    {
+      "source_manifest": "experiment\\main\\M01\\spatial_evidence\\source\\build_manifest.json",
+      "path": "data/auxiliary/sg-shopping-malls.csv",
+      "current_raw_sha256": "cce36a0175433f768d209b74e2e5376aad16befe1ad4f1313da0b18ed6d91a3b",
+      "lf_normalized_sha256": "00e05b0176ac412695fc4ce1fc5a5338a1993593ffaffe26156dc2ea04ddf2c8",
+      "source_blob_sha256": "00e05b0176ac412695fc4ce1fc5a5338a1993593ffaffe26156dc2ea04ddf2c8",
+      "same_content_after_LF_normalization": true
+    },
+    {
+      "source_manifest": "experiment\\main\\M01\\cleaning_evidence\\source\\protocol.json",
+      "path": "data/train.csv",
+      "current_raw_sha256": "2fe38ce9e0d8a02e9786f066d4a10d575d91f34be1d9111f0142e3f43fbfc8a5",
+      "lf_normalized_sha256": "6d7a417de72112361f8353659ba6fe44a442b07465b488aff1b03f7ec1ea3ba6",
+      "source_blob_sha256": "6d7a417de72112361f8353659ba6fe44a442b07465b488aff1b03f7ec1ea3ba6",
+      "same_content_after_LF_normalization": true
+    },
+    {
+      "source_manifest": "experiment\\main\\M01\\cleaning_evidence\\source\\protocol.json",
+      "path": "data/test.csv",
+      "current_raw_sha256": "a2ec03a0afc07c251c72cc0de2e15ac965a3b06291b304aaac53a375115ff4e0",
+      "lf_normalized_sha256": "dfc407406d957bbf7c2f005e5d9852b1bfc6546cd4186f07e6824d8e03e64cfc",
+      "source_blob_sha256": "dfc407406d957bbf7c2f005e5d9852b1bfc6546cd4186f07e6824d8e03e64cfc",
+      "same_content_after_LF_normalization": true
+    },
+    {
+      "source_manifest": "experiment\\main\\M01\\cleaning_evidence\\source\\protocol.json",
+      "path": "data/example-submission.csv",
+      "current_raw_sha256": "009e05582492d494df615e9526421023c82d070be029d118dc5ff2766810ecfc",
+      "lf_normalized_sha256": "ab751676b2bfc6121ac3543075d4f2c8978a6d73a14a3442a1bb7bdbf7867678",
+      "source_blob_sha256": "ab751676b2bfc6121ac3543075d4f2c8978a6d73a14a3442a1bb7bdbf7867678",
+      "same_content_after_LF_normalization": true
+    },
+    {
+      "source_manifest": "experiment\\main\\M01\\cleaning_evidence\\source\\protocol.json",
+      "path": "data/auxiliary/sg-coe-prices.csv",
+      "current_raw_sha256": "c8f934ec6e82dad633afa34e466414fd7b572c580fa28dd6c866e76e4be533e0",
+      "lf_normalized_sha256": "e32fccd39da32780b6b7f35d069c813ed3edb0c110ea60761656bcee58d501a5",
+      "source_blob_sha256": "e32fccd39da32780b6b7f35d069c813ed3edb0c110ea60761656bcee58d501a5",
+      "same_content_after_LF_normalization": true
+    },
+    {
+      "source_manifest": "experiment\\main\\M01\\cleaning_evidence\\source\\protocol.json",
+      "path": "data/auxiliary/sg-hdb-block.csv",
+      "current_raw_sha256": "2255ad61ba6895456a39aec81d12583796d717ef88fe102ee9de71b3796fc223",
+      "lf_normalized_sha256": "e6ccc60c1f901f8f476eb6fe14c07ef5941d2afd06a081a1e4c00f717da27f83",
+      "source_blob_sha256": "e6ccc60c1f901f8f476eb6fe14c07ef5941d2afd06a081a1e4c00f717da27f83",
+      "same_content_after_LF_normalization": true
+    },
+    {
+      "source_manifest": "experiment\\main\\M01\\cleaning_evidence\\source\\protocol.json",
+      "path": "data/auxiliary/sg-mrt-stations.csv",
+      "current_raw_sha256": "4757278b94c2d05627a941377d51de60882e3e1477de01758ef37070b716b889",
+      "lf_normalized_sha256": "899460b39fb251bd6883fffc9e6a772081f8e5217a657550afc3c49cfdcd3227",
+      "source_blob_sha256": "899460b39fb251bd6883fffc9e6a772081f8e5217a657550afc3c49cfdcd3227",
+      "same_content_after_LF_normalization": true
+    },
+    {
+      "source_manifest": "experiment\\main\\M01\\cleaning_evidence\\source\\protocol.json",
+      "path": "data/auxiliary/sg-schools.csv",
+      "current_raw_sha256": "9bf28c6a2e5511c5cada178d221dfaac12beb3651425b3b86c37815e35de71cb",
+      "lf_normalized_sha256": "118c7ce8d96bbc934bd53655e73e6d0848c27853a625394ecc6a67a5af54f192",
+      "source_blob_sha256": "118c7ce8d96bbc934bd53655e73e6d0848c27853a625394ecc6a67a5af54f192",
+      "same_content_after_LF_normalization": true
+    },
+    {
+      "source_manifest": "experiment\\main\\M01\\cleaning_evidence\\source\\protocol.json",
+      "path": "data/auxiliary/sg-shopping-malls.csv",
+      "current_raw_sha256": "cce36a0175433f768d209b74e2e5376aad16befe1ad4f1313da0b18ed6d91a3b",
+      "lf_normalized_sha256": "00e05b0176ac412695fc4ce1fc5a5338a1993593ffaffe26156dc2ea04ddf2c8",
+      "source_blob_sha256": "00e05b0176ac412695fc4ce1fc5a5338a1993593ffaffe26156dc2ea04ddf2c8",
+      "same_content_after_LF_normalization": true
+    },
+    {
+      "source_manifest": "experiment\\main\\M01\\cleaning_evidence\\source\\protocol.json",
+      "path": "data/auxiliary/sg-stock-prices.csv",
+      "current_raw_sha256": "e03802bedbebedab27caafb6755ce055f1654cc17b3fc5fc6e3e7ee6ab2c23b7",
+      "lf_normalized_sha256": "c52fef9f33cfcb11285e2b9546124e02f32488e563af44e9fb3a505d10e2edff",
+      "source_blob_sha256": "c52fef9f33cfcb11285e2b9546124e02f32488e563af44e9fb3a505d10e2edff",
+      "same_content_after_LF_normalization": true
+    }
+  ],
+  "cleaning_fit_rows": 105837,
+  "cleaning_row_level_metrics_recomputed": [
+    {
+      "policy": "uncleaned_baseline",
+      "model": "mlp",
+      "n": 35158,
+      "rmse_sgd": 471.804199802911,
+      "mae_sgd": 351.01086293070796,
+      "bias_sgd": -34.515033938274755,
+      "sse": 7826142777.374644
+    },
+    {
+      "policy": "obvious_low",
+      "model": "mlp",
+      "n": 35158,
+      "rmse_sgd": 471.2608983260081,
+      "mae_sgd": 345.4562274341771,
+      "bias_sgd": -7.610625301520619,
+      "sse": 7808128920.004248
+    },
+    {
+      "policy": "uncleaned_baseline",
+      "model": "hybrid",
+      "n": 35158,
+      "rmse_sgd": 467.0319684853353,
+      "mae_sgd": 343.6607609361106,
+      "bias_sgd": -16.260967719241705,
+      "sse": 7668622865.369844
+    }
+  ],
+  "cleaning_aggregate_rows": 9,
+  "cleaning_other_rows": "Source aggregates only; not independently replayed from all row predictions",
+  "spatial_scope": "Frozen source statistics and input identity verified; regressions not independently refitted",
+  "spatial_complete_rows": 149841,
+  "spatial_uncertainty": "95% pointwise t interval; df = independent building clusters - 1; t critical via third-order large-df Cornish-Fisher approximation; building-cluster sandwich with finite-sample correction",
+  "spatial_controls": [
+    "approval month × flat type fixed effects",
+    "town fixed effects",
+    "area z and squared",
+    "building age z and squared",
+    "max building floor z"
+  ],
+  "new_training_performed": false,
+  "policy": "docs/methods/prediction-scenario.json",
+  "interpretation": "Associations are not causal effects; cleaning evidence is not an F1 ablation"
+}

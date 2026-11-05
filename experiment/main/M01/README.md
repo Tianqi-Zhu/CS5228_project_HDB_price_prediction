@@ -10,6 +10,10 @@
 ## New evidence
 
 - [data_policy_audit.json](evaluation/data_policy_audit.json)
+- [Spatial EDA: raw/adjusted association and facility-bin controls](spatial_evidence/README.md)
+- [Cleaning: matched controls and independently recomputed predictions](cleaning_evidence/README.md)
+- [Imported-evidence audit](evidence-audit.json)
+- [Declared prediction scenario](../../../docs/methods/prediction-scenario.md)
 
 ## Existing evidence
 

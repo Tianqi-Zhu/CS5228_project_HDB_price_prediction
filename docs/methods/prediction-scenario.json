@@ -1,0 +1,26 @@
+{
+  "policy_id": "supplied-snapshot-fixed-origin-v1",
+  "primary_scenario": "Competition prediction using the supplied static auxiliary snapshot",
+  "target": "MONTHLY_RENT in SGD per observation",
+  "facilities": "Supplied facility STATUS and geometry; historical opening dates are not verified",
+  "development_windows": {
+    "Y": {"fit_end_exclusive": "2024-04", "fit_rows": 114842, "query_start": "2024-04", "query_end_exclusive": "2025-04", "query_rows": 35158},
+    "J": {"fit_end_exclusive": "2024-06", "fit_rows": 121005, "query_start": "2024-06", "query_end_exclusive": "2025-04", "query_rows": 28995}
+  },
+  "history_policy": "Training histories use strictly earlier months; query histories use only pre-origin fitting labels and remain frozen across query months",
+  "transform_policy": "Learned imputers, category mappings, scaling and encodings fit on fitting rows only",
+  "query_targets_available_to_fitting": false,
+  "F1_query_month_macro_observations_used": false,
+  "full_submission": {
+    "supervised_rows": 150000,
+    "query_rows": 50000,
+    "latest_supervised_month": "2025-03",
+    "same_month_test_rows": 380,
+    "same_month": "2025-03",
+    "boundary": "Supervised fitting includes supplied March labels. Historical aggregates still exclude the query month. This is not a strict pre-March deployment experiment."
+  },
+  "selection": "Y/J were repeatedly viewed development windows; J is a subset of Y, not an independent test",
+  "strict_historical_facility_evaluation": "Not executed; appendix X08 requires dated facility availability and matched refitting",
+  "F2_actual_information_boundary": "Pending actual generator, ordered schema, members and predictions; not inferred from its filename",
+  "cleaning_control": "Separate fit through 2023-12 and calibration in 2024-01..2024-03; not the F1 fit protocol"
+}

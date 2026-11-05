@@ -1,7 +1,7 @@
 {
-  "run_id": "9637a725854ff181",
+  "run_id": "a6a50fe97d22d312",
   "tasks": {
-    "M00": "partial: 26 prediction artifacts validated; exact generating commits and F2 inputs still missing",
+    "M00": "F1 fresh Y/J generation verified; 26 old prediction artifacts audited but their original commits remain unproven; F2 pending",
     "M01": "completed for supplied facility snapshot scenario; strict historical facilities remain X08",
     "M02": "archived and previously refitted; no new training required",
     "M03": "completed frozen 16-fit paired recalculation",
@@ -16,6 +16,11 @@
   "predictions_audited": 26,
   "group_rows": 144,
   "raw_inputs_unchanged": true,
+  "fresh_F1_validation_models_previously_trained": 30,
+  "fresh_F1_generation_audit_passed": true,
+  "unified_feature_schemas_verified": true,
+  "imported_M01_evidence_verified": true,
+  "prediction_scenario": "supplied-snapshot-fixed-origin-v1",
   "all_numeric_checks_passed": true,
   "all_main_P0_completed": false,
   "remaining_required_inputs": {

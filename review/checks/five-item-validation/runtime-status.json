@@ -1,0 +1,60 @@
+[
+  {
+    "check": "unit-tests",
+    "returncode": 0,
+    "seconds": 12.390182499999355,
+    "command": [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-v"
+    ]
+  },
+  {
+    "check": "tabpfn-verify",
+    "returncode": 0,
+    "seconds": 0.2935481000022264,
+    "command": [
+      "python",
+      "review_tabpfn.py",
+      "verify"
+    ]
+  },
+  {
+    "check": "tabpfn-metrics",
+    "returncode": 0,
+    "seconds": 0.4529111000010744,
+    "command": [
+      "python",
+      "review_tabpfn.py",
+      "metrics"
+    ]
+  },
+  {
+    "check": "tabpfn-prepare",
+    "returncode": 0,
+    "seconds": 0.43319309999787947,
+    "command": [
+      "python",
+      "review_tabpfn.py",
+      "prepare",
+      "--workspace",
+      "output/five_item_tabpfn"
+    ]
+  },
+  {
+    "check": "concat-verify",
+    "returncode": 0,
+    "seconds": 0.39927900000475347,
+    "command": [
+      "python",
+      "-m",
+      "analysis.main",
+      "concat",
+      "verify"
+    ]
+  }
+]

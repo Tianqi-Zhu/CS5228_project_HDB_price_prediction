@@ -1,0 +1,29 @@
+{
+  "sources": [
+    {
+      "key": "uncleaned_baseline__mlp",
+      "source_branch": "mlp-eda-ensemble",
+      "source_commit": "322fa4c20d83f20e19328823203873a0f81e0f4a",
+      "source_path": "reports/experiments/mlp_summary/validation/uncleaned_mlp_outer.csv",
+      "source_csv_sha256": "d042a393787df55b8d418ae48f3d43fb40cb5d859ba10309216bafce99ba5186",
+      "conversion": "Lossless float64 arrays loaded with float_precision=round_trip; only IDs, actual and prediction retained"
+    },
+    {
+      "key": "obvious_low__mlp",
+      "source_branch": "mlp-eda-ensemble",
+      "source_commit": "322fa4c20d83f20e19328823203873a0f81e0f4a",
+      "source_path": "reports/experiments/mlp_summary/validation/obvious_low_mlp_outer.csv",
+      "source_csv_sha256": "26e51ded7277b6083971b6fafa6d2a81fab1638884a70fb44f91deb664acd96e",
+      "conversion": "Lossless float64 arrays loaded with float_precision=round_trip; only IDs, actual and prediction retained"
+    },
+    {
+      "key": "uncleaned_baseline__hybrid",
+      "source_branch": "mlp-eda-ensemble",
+      "source_commit": "322fa4c20d83f20e19328823203873a0f81e0f4a",
+      "source_path": "reports/experiments/mlp_summary/validation/uncleaned_hybrid_outer.csv",
+      "source_csv_sha256": "f0c025d6ee2e0ee730d63d3d7db74b9dde8153e0e1fadcf90f3b6121d0ffc9f7",
+      "conversion": "Lossless float64 arrays loaded with float_precision=round_trip; only IDs, actual and prediction retained"
+    }
+  ],
+  "npz_sha256": "fe5d6875ff131d895331be767cdb0e56c93c3e6fc700d86a0406843a206dc5e1"
+}

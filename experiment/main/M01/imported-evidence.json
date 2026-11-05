@@ -1,0 +1,138 @@
+[
+  {
+    "path": "experiment/main/M01/spatial_evidence/source/EDA_summary_zh.md",
+    "source_commit": "7caf2cb77095f3b99cd242db0074189a355c0aae",
+    "source_path": "reports/spatial_features/EDA_summary_zh.md",
+    "source_blob_sha256": "b95120bc4769b45464988a3567078d16d3443d106808529f43b4780251bd3780",
+    "sha256": "b95120bc4769b45464988a3567078d16d3443d106808529f43b4780251bd3780",
+    "source_branch": "ziyuan——spatialfeatures"
+  },
+  {
+    "path": "experiment/main/M01/spatial_evidence/source/feature_dictionary.csv",
+    "source_commit": "7caf2cb77095f3b99cd242db0074189a355c0aae",
+    "source_path": "reports/spatial_features/feature_dictionary.csv",
+    "source_blob_sha256": "ec33044629968a06aa9562d897104649e58323f2b080d12730076d8cb9dcc97a",
+    "sha256": "ec33044629968a06aa9562d897104649e58323f2b080d12730076d8cb9dcc97a",
+    "source_branch": "ziyuan——spatialfeatures"
+  },
+  {
+    "path": "experiment/main/M01/spatial_evidence/source/build_manifest.json",
+    "source_commit": "7caf2cb77095f3b99cd242db0074189a355c0aae",
+    "source_path": "reports/spatial_features/build_manifest.json",
+    "source_blob_sha256": "734964ddc46d61541210ea87210e568a80bfc85a18b93c3e88eea50143b12b03",
+    "sha256": "734964ddc46d61541210ea87210e568a80bfc85a18b93c3e88eea50143b12b03",
+    "source_branch": "ziyuan——spatialfeatures"
+  },
+  {
+    "path": "experiment/main/M01/spatial_evidence/source/all_numeric_correlations.csv",
+    "source_commit": "7caf2cb77095f3b99cd242db0074189a355c0aae",
+    "source_path": "reports/spatial_features/tables/all_numeric_correlations.csv",
+    "source_blob_sha256": "7cd3d3b52881c038f15c8a9a1f2729fc7cd029f4f2a50a3fa5222d7b47e2fc30",
+    "sha256": "7cd3d3b52881c038f15c8a9a1f2729fc7cd029f4f2a50a3fa5222d7b47e2fc30",
+    "source_branch": "ziyuan——spatialfeatures"
+  },
+  {
+    "path": "experiment/main/M01/spatial_evidence/source/adjusted_correlations.csv",
+    "source_commit": "7caf2cb77095f3b99cd242db0074189a355c0aae",
+    "source_path": "reports/spatial_features/tables/adjusted_correlations.csv",
+    "source_blob_sha256": "306eea405fd7495c191b1d84b84f77694ca6b9f15d16a18633b304b6135744cf",
+    "sha256": "306eea405fd7495c191b1d84b84f77694ca6b9f15d16a18633b304b6135744cf",
+    "source_branch": "ziyuan——spatialfeatures"
+  },
+  {
+    "path": "experiment/main/M01/spatial_evidence/source/analysis_manifest.json",
+    "source_commit": "7caf2cb77095f3b99cd242db0074189a355c0aae",
+    "source_path": "reports/spatial_features/amenities_adjusted/analysis_manifest.json",
+    "source_blob_sha256": "7f3a2f49fc3953b034073944ac29690a4e96a388337d3ec13eb5a2c2a29814d1",
+    "sha256": "7f3a2f49fc3953b034073944ac29690a4e96a388337d3ec13eb5a2c2a29814d1",
+    "source_branch": "ziyuan——spatialfeatures"
+  },
+  {
+    "path": "experiment/main/M01/spatial_evidence/source/amenity_bin_effects.csv",
+    "source_commit": "7caf2cb77095f3b99cd242db0074189a355c0aae",
+    "source_path": "reports/spatial_features/amenities_adjusted/amenity_bin_effects.csv",
+    "source_blob_sha256": "50c76dc94c8389d21aa4126cb0cbcc88aa6afadf0a56af4fbe0e917605479903",
+    "sha256": "50c76dc94c8389d21aa4126cb0cbcc88aa6afadf0a56af4fbe0e917605479903",
+    "source_branch": "ziyuan——spatialfeatures"
+  },
+  {
+    "path": "experiment/main/M01/spatial_evidence/source/amenity_raw_vs_adjusted.png",
+    "source_commit": "7caf2cb77095f3b99cd242db0074189a355c0aae",
+    "source_path": "reports/spatial_features/amenities_adjusted/amenity_raw_vs_adjusted.png",
+    "source_blob_sha256": "4993809264949ff9ca357a46b38791313a5384e45ba189310aca08e5193c1cbe",
+    "sha256": "4993809264949ff9ca357a46b38791313a5384e45ba189310aca08e5193c1cbe",
+    "source_branch": "ziyuan——spatialfeatures"
+  },
+  {
+    "path": "experiment/main/M01/spatial_evidence/source/amenities_adjusted_summary_zh.md",
+    "source_commit": "7caf2cb77095f3b99cd242db0074189a355c0aae",
+    "source_path": "reports/spatial_features/amenities_adjusted/amenities_adjusted_summary_zh.md",
+    "source_blob_sha256": "38c0fd04a60205f23d3ce798396eabc6fef9879a711c96edf68315cd65f91ade",
+    "sha256": "38c0fd04a60205f23d3ce798396eabc6fef9879a711c96edf68315cd65f91ade",
+    "source_branch": "ziyuan——spatialfeatures"
+  },
+  {
+    "path": "experiment/main/M01/cleaning_evidence/source/protocol.json",
+    "source_commit": "322fa4c20d83f20e19328823203873a0f81e0f4a",
+    "source_path": "reports/experiments/mlp_summary/cleaning/protocol.json",
+    "source_blob_sha256": "45135a55d0da6dafd8a1cf0d577ac7f01baf8936fb921691797a5240e1d94611",
+    "sha256": "45135a55d0da6dafd8a1cf0d577ac7f01baf8936fb921691797a5240e1d94611",
+    "source_branch": "mlp-eda-ensemble"
+  },
+  {
+    "path": "experiment/main/M01/cleaning_evidence/source/comparison_metrics.csv",
+    "source_commit": "322fa4c20d83f20e19328823203873a0f81e0f4a",
+    "source_path": "reports/experiments/mlp_summary/cleaning/comparison_metrics.csv",
+    "source_blob_sha256": "720cb6728dd01eaa76adec7861caa4197b39071471eddec6b52d7ed4813fcce2",
+    "sha256": "720cb6728dd01eaa76adec7861caa4197b39071471eddec6b52d7ed4813fcce2",
+    "source_branch": "mlp-eda-ensemble"
+  },
+  {
+    "path": "experiment/main/M01/cleaning_evidence/source/cleaning_summary.json",
+    "source_commit": "322fa4c20d83f20e19328823203873a0f81e0f4a",
+    "source_path": "reports/experiments/mlp_summary/cleaning/cleaning_summary.json",
+    "source_blob_sha256": "1d0cd1c14ad47457fbab74ca94959e795ff54ec43d1aab8b2e4fbfbd4480e8c9",
+    "sha256": "1d0cd1c14ad47457fbab74ca94959e795ff54ec43d1aab8b2e4fbfbd4480e8c9",
+    "source_branch": "mlp-eda-ensemble"
+  },
+  {
+    "path": "experiment/main/M01/cleaning_evidence/source/effect_summary.json",
+    "source_commit": "322fa4c20d83f20e19328823203873a0f81e0f4a",
+    "source_path": "reports/experiments/mlp_summary/cleaning/effect_summary.json",
+    "source_blob_sha256": "a3813807b88e2caa15282c99618767b92632475128e421dcd3da3a0cea074ab2",
+    "sha256": "a3813807b88e2caa15282c99618767b92632475128e421dcd3da3a0cea074ab2",
+    "source_branch": "mlp-eda-ensemble"
+  },
+  {
+    "path": "experiment/main/M01/cleaning_evidence/source/independent_cleaning_audit.json",
+    "source_commit": "322fa4c20d83f20e19328823203873a0f81e0f4a",
+    "source_path": "reports/experiments/mlp_summary/cleaning/independent_cleaning_audit.json",
+    "source_blob_sha256": "0cdf015e7a84da031ac04c54544f40505f4c735b9ee5f1b55cb90bb7dfae4d71",
+    "sha256": "0cdf015e7a84da031ac04c54544f40505f4c735b9ee5f1b55cb90bb7dfae4d71",
+    "source_branch": "mlp-eda-ensemble"
+  },
+  {
+    "path": "experiment/main/M01/cleaning_evidence/source/independent_prediction_verification.json",
+    "source_commit": "322fa4c20d83f20e19328823203873a0f81e0f4a",
+    "source_path": "reports/experiments/mlp_summary/cleaning/independent_prediction_verification.json",
+    "source_blob_sha256": "8fb804934e95e7d688852d79f357ffc2cd219b613bc5fdc83c7ed1ff11f5bc9a",
+    "sha256": "8fb804934e95e7d688852d79f357ffc2cd219b613bc5fdc83c7ed1ff11f5bc9a",
+    "source_branch": "mlp-eda-ensemble"
+  },
+  {
+    "path": "experiment/main/M01/cleaning_evidence/source/verification.json",
+    "source_commit": "322fa4c20d83f20e19328823203873a0f81e0f4a",
+    "source_path": "reports/experiments/mlp_summary/cleaning/verification.json",
+    "source_blob_sha256": "d2cf2dcc1c8907319f89657722517d817049a4c54d760cd11f73716b9c3b9aa1",
+    "sha256": "d2cf2dcc1c8907319f89657722517d817049a4c54d760cd11f73716b9c3b9aa1",
+    "source_branch": "mlp-eda-ensemble"
+  },
+  {
+    "path": "experiment/main/M01/cleaning_evidence/source/rent_band_metrics.csv",
+    "source_commit": "322fa4c20d83f20e19328823203873a0f81e0f4a",
+    "source_path": "reports/experiments/mlp_summary/cleaning/rent_band_metrics.csv",
+    "source_blob_sha256": "8e7c5e5f1150fb58629d4a4c0de5ac15e550e7c9e2defd50e1c9dbaec36c8cb9",
+    "sha256": "8e7c5e5f1150fb58629d4a4c0de5ac15e550e7c9e2defd50e1c9dbaec36c8cb9",
+    "source_branch": "mlp-eda-ensemble"
+  }
+]

@@ -95,6 +95,22 @@ def audit_data(raw, test):
             "strict_historical_facility_evaluation": "pending; X08 requires verified opening dates and matched refits"}
 
 
+def validate_scenario(raw, test, metadata):
+    policy = json.loads((ROOT / 'docs/methods/prediction-scenario.json').read_text('utf-8'))
+    for window, setting in policy['development_windows'].items():
+        origin, end = setting['query_start'], setting['query_end_exclusive']
+        assert setting['fit_end_exclusive'] == origin == metadata['windows'][window]['origin']
+        assert int((raw.RENT_APPROVAL_DATE < origin).sum()) == setting['fit_rows']
+        assert int(((raw.RENT_APPROVAL_DATE >= origin) & (raw.RENT_APPROVAL_DATE < end)).sum()) == setting['query_rows']
+    full = policy['full_submission']
+    assert len(raw) == full['supervised_rows'] and len(test) == full['query_rows']
+    assert raw.RENT_APPROVAL_DATE.max() == full['latest_supervised_month'] == full['same_month']
+    assert int((test.RENT_APPROVAL_DATE == full['same_month']).sum()) == full['same_month_test_rows']
+    assert not policy['query_targets_available_to_fitting']
+    assert not policy['F1_query_month_macro_observations_used']
+    return policy
+
+
 def run(output_root=None):
     meta = json.loads((INPUTS / "metadata.json").read_text(encoding="utf-8"))
     bank = INPUTS / "validation.npz"
@@ -103,7 +119,8 @@ def run(output_root=None):
     data_paths = [ROOT / "data/train.csv", ROOT / "data/test.csv", ROOT / "data/example-submission.csv",
                   *sorted((ROOT / "data/auxiliary").glob("*.csv"))]
     before = {p.relative_to(ROOT).as_posix(): sha(p) for p in data_paths}
-    code_paths = [Path(__file__), Path(__file__).with_name("prepare_inputs.py")]
+    code_paths = [*sorted(Path(__file__).parent.glob('*.py')),
+                  ROOT / 'analysis/pipeline/config.py', ROOT / 'docs/methods/prediction-scenario.json']
     code = {p.relative_to(ROOT).as_posix(): sha(p) for p in code_paths}
     signature = hashlib.sha256(json.dumps([meta["array_sha256"], before, code], sort_keys=True).encode()).hexdigest()[:16]
     out = (Path(output_root) if output_root else ROOT / "output/planning_validation/main" / signature).resolve()
@@ -111,8 +128,14 @@ def run(output_root=None):
         raise ValueError("Generated evaluations must stay under this repository's output/.")
     if out.exists():
         raise FileExistsError("Run directory exists; use a new --output-dir to keep earlier records intact.")
+    from analysis.validation.evidence_audit import audit as evidence_audit
+    from analysis.validation.feature_catalog import catalog
+    from analysis.validation.refit_audit import audit as refit_audit
+    imported, spatial, facility_bins, cleaning = evidence_audit()
+    feature_catalog, refits = catalog(), refit_audit()
     raw = pd.read_csv(ROOT / "data/train.csv")
     test = pd.read_csv(ROOT / "data/test.csv")
+    scenario = validate_scenario(raw, test, meta)
     arrays = np.load(bank, allow_pickle=False)
     registry, recalculated, checks, group_rows, monthly, identical, deltas = [], [], [], [], [], [], []
     all_scores, support_audit = {}, {}
@@ -152,10 +175,15 @@ def run(output_root=None):
             blend = rec.get("blend_model")
             if blend and not blend["fit_last_month"] < start:
                 raise ValueError("Blend fitted on query-period labels")
-            schema_digest = hashlib.sha256(json.dumps(rec["schema"], sort_keys=True).encode()).hexdigest()
+            from analysis.validation.feature_catalog import resolved_record_schema
+            resolved_schema = resolved_record_schema(rec, meta)
+            schema_digest = hashlib.sha256(json.dumps(resolved_schema, sort_keys=True).encode()).hexdigest()
             registry.append({"window": window, "model": name, "fitting_rows": len(fit), "fit_end": protocol["fit_last_month"],
                              "query_start": start, "query_end_exclusive": end, "n": score["n"],
                              "ordered_schema_sha256": schema_digest,
+                             "schema_metadata_correction": name in ('single_PLE', 'single_PLR'),
+                             "schema_reference": "experiment/main/M03/feature_schemas/schemas.json",
+                             "prediction_scenario": "supplied-snapshot-fixed-origin-v1",
                              "schema_kind": "heterogeneous; inspect components" if isinstance(rec["schema"], dict) else "ordered learner input",
                              "target_transform": rec["target_output"], "history_policy": rec["history_policy"],
                              "macro_policy": rec["macro_policy"], "seed": rec["seed"], "selection_stage": rec["selection"],
@@ -184,7 +212,7 @@ def run(output_root=None):
             a, b = all_scores[window, candidate], all_scores[window, control]
             rec_a, rec_b = [next(r for r in meta['predictions'] if r['window'] == window and r['model'] == name)
                             for name in (candidate, control)]
-            if candidate == "single_PLR" and rec_a['schema'] != rec_b['schema']:
+            if candidate == "single_PLR" and resolved_record_schema(rec_a, meta) != resolved_record_schema(rec_b, meta):
                 raise AssertionError("PLE/PLR actual ordered inputs differ")
             if candidate != "single_PLR" and rec_a['blend_model']['spec'] != rec_b['blend_model']['spec']:
                 raise AssertionError("Blend inclusion comparison changed its fitting rule")
@@ -233,6 +261,13 @@ def run(output_root=None):
     dump(out / "M00/source_manifest.json", {"raw_data": before, "code": code, "frozen_archive": {"path": str(bank.relative_to(ROOT)), "sha256": sha(bank)},
          "historical_source_files": meta["sources"], "source_branch_snapshot": meta["source_branch_snapshot"], "generator_commit_verified": False})
     dump(out / "M01/data_policy_audit.json", quality)
+    dump(out / "M00/fresh_F1_validation_audit.json", refits)
+    dump(out / "M01/imported_evidence_audit.json", imported)
+    table(out / "M01/raw_adjusted_comparison.csv", spatial.to_dict('records'))
+    table(out / "M01/facility_bin_controls.csv", facility_bins.to_dict('records'))
+    table(out / "M01/matched_cleaning_comparison.csv", cleaning.to_dict('records'))
+    dump(out / "M03/feature_schemas.json", feature_catalog)
+    dump(out / "M01/prediction_scenario.json", scenario)
     table(out / "M03/feature_ladder_deltas.csv", [r for r in deltas if r["task"] == "M03"])
     table(out / "M04/error_groups.csv", group_rows)
     table(out / "M04/monthly_errors.csv", monthly)
@@ -267,7 +302,7 @@ def run(output_root=None):
     after = {p.relative_to(ROOT).as_posix(): sha(p) for p in data_paths}
     if before != after:
         raise AssertionError("Raw inputs changed")
-    status = {"M00": "partial: 26 prediction artifacts validated; exact generating commits and F2 inputs still missing",
+    status = {"M00": "F1 fresh Y/J generation verified; 26 old prediction artifacts audited but their original commits remain unproven; F2 pending",
               "M01": "completed for supplied facility snapshot scenario; strict historical facilities remain X08",
               "M02": "archived and previously refitted; no new training required",
               "M03": "completed frozen 16-fit paired recalculation", "M04": "completed for F1 and two 62-input controls on Y/J",
@@ -276,6 +311,11 @@ def run(output_root=None):
               "M07": "partial; actual F2 generator missing", "M08": "pending F2", "M09": "F1 passed; F2 pending"}
     summary = {"run_id": signature, "tasks": status, "new_models_fitted": 0, "predictions_audited": len(checks),
                "group_rows": len(group_rows), "raw_inputs_unchanged": before == after,
+               "fresh_F1_validation_models_previously_trained": 30,
+               "fresh_F1_generation_audit_passed": refits['all_passed'],
+               "unified_feature_schemas_verified": feature_catalog['all_passed'],
+               "imported_M01_evidence_verified": imported['all_passed'],
+               "prediction_scenario": "supplied-snapshot-fixed-origin-v1",
                "all_numeric_checks_passed": True, "all_main_P0_completed": False,
                "remaining_required_inputs": pending, "results_are_development_not_independent_test": True}
     dump(out / "summary.json", summary)

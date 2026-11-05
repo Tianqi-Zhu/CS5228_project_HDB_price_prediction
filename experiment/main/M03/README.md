@@ -10,6 +10,7 @@
 ## New evidence
 
 - [feature_ladder_deltas.csv](evaluation/feature_ladder_deltas.csv)
+- [Ordered feature schemas and the PLE/PLR metadata correction](feature_schemas/README.md)
 
 ## Existing evidence
 

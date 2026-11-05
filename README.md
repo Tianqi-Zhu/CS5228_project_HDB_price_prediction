@@ -6,6 +6,8 @@
 |---|---|
 | 实验索引与当前状态 | [M00–M09](experiment/main/README.md) |
 | 新增要求卡的执行结果与缺口 | [执行状态](docs/planning/main-execution-status.md) |
+| 五项补齐与本次验收 | [五项优化](docs/planning/main-five-item-completion.md) |
+| 预测情景与信息可用边界 | [场景定义](docs/methods/prediction-scenario.md) |
 | 原实验要求卡、main/appendix 规划 | [统一规划](docs/planning/main-appendix-experiment-plan.md) |
 | 环境、训练与离线验证命令 | [运行指南](docs/guides/running_experiments.md) |
 | 代码结构 | [analysis/](analysis/README.md) |
@@ -15,9 +17,12 @@
 python review.py list
 python review.py verify
 python -m analysis.main planned
+python -m analysis.main schemas
+python -m analysis.main evidence
+python -m analysis.main validation-refits
 ```
 
-`planned` 重算已冻结开发预测的指标、对齐、分组误差与结构对照，不训练、不搜索；结果写入 `output/planning_validation/main/<内容摘要>/`。已有 run 不覆盖，重复运行可指定新的 `--output-dir output/planning_validation/recheck`。所有 Y/J 结果均为已查看过的开发期证据。
+`planned` 重算已冻结开发预测的指标、对齐、分组误差与结构对照，并核验新增的 F1 Y/J 生成链、统一特征清单及 M01 来源证据，不训练、不搜索；结果写入 `output/planning_validation/main/<内容摘要>/`。三个专项命令也可单独运行。已有 run 不覆盖，重复运行可指定新的 `--output-dir output/planning_validation/recheck`。所有 Y/J 结果均为已查看过的开发期证据。
 
 | 方法 | 状态与证据 | 入口 |
 |---|---|---|
