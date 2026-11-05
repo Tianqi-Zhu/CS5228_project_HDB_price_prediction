@@ -1,0 +1,73 @@
+[
+  {
+    "check": "clean-static",
+    "returncode": 0,
+    "seconds": 14.32945770000515,
+    "command": [
+      "python",
+      "-m",
+      "analysis.validation.repository_audit"
+    ]
+  },
+  {
+    "check": "clean-tests",
+    "returncode": 0,
+    "seconds": 12.951341300002241,
+    "command": [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-v"
+    ]
+  },
+  {
+    "check": "clean-planned",
+    "returncode": 0,
+    "seconds": 23.395475900004385,
+    "command": [
+      "python",
+      "-m",
+      "analysis.main",
+      "planned"
+    ]
+  },
+  {
+    "check": "clean-validation-help",
+    "returncode": 0,
+    "seconds": 0.1259663999953773,
+    "command": [
+      "python",
+      "reproduction/f1/validate.py",
+      "--help"
+    ]
+  },
+  {
+    "check": "clean-concat-replay",
+    "returncode": 0,
+    "seconds": 82.859266200001,
+    "command": [
+      "python",
+      "-m",
+      "analysis.main",
+      "concat",
+      "predict",
+      "--device",
+      "cpu"
+    ]
+  },
+  {
+    "check": "clean-tabpfn-prepare",
+    "returncode": 0,
+    "seconds": 1.0931737999999314,
+    "command": [
+      "python",
+      "review_tabpfn.py",
+      "prepare",
+      "--workspace",
+      "output/tabpfn-clean"
+    ]
+  }
+]

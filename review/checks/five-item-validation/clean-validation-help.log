@@ -1,0 +1,11 @@
+usage: validate.py [-h] --window {Y,J} --output-dir OUTPUT_DIR
+
+Fresh Y/J refits with frozen recipes and pre-origin blend weights. Validation
+rents are held separately and replaced by zeros in every fitting bundle. No
+early stopping, new weight fitting or model selection is performed. Outputs
+belong to a new run; original development evidence is never overwritten.
+
+options:
+  -h, --help            show this help message and exit
+  --window {Y,J}
+  --output-dir OUTPUT_DIR

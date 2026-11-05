@@ -1,0 +1,22 @@
+{
+  "base_commit": "95df30a0b5d05d1f66bcd0f2c076cb5fb4a81ede",
+  "reviewed_commit": "8ebf6eb3550b552e1d8e2408c4575c60deadc099",
+  "protected_paths": [
+    "data",
+    "environment.yml",
+    "environment.review.yml",
+    "environment.training.yml",
+    "requirements",
+    "reproduction/concat_transformer/artifacts",
+    "workflows/tabpfn",
+    "reproduction/f1/components.npz",
+    "reproduction/f1/runtime",
+    "reproduction/f1/weights.json",
+    "reproduction/f1/submissions",
+    "reproduction/f1/source_manifest.json",
+    "reproduction/f1/manifest.json",
+    "reproduction/f1/training_recipes.json"
+  ],
+  "changed_files": [],
+  "all_preserved": true
+}

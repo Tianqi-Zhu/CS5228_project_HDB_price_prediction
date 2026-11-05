@@ -34,4 +34,6 @@ Latest main requirement-card execution and whole-tree verification: [checks/main
 | 集成审计 | 原 26 组预测、144 行误差分组、特征清单、场景、空间/清洗来源与可用逐行预测核验通过 |
 | 全树静态核验 | 625 份注册文件、200 个 Python 文件及当前导航链接通过 |
 
-本轮新训练限于 F1 固定配方 Y/J，未重跑全部历史搜索、完整 Concat 八轮重训或新的独立留出测试。大型新检查点留在本地忽略目录，随分支保存紧凑预测与生成记录。F2 仍待实际生成材料；main 全部 P0 未完成。提交后的干净导出检查按独立日志记录。
+提交 `8ebf6eb` 的干净导出也已通过：625 份注册文件检查、73 项 main 测试、30 项隔离 TabPFN 测试、集成 `planned`、F1 新入口帮助及 Concat 50,000 行 CPU 重放。导出未带入本地缓存或既有训练输出；本机第三方依赖按环境隔离复用。详见 [summary.json](checks/five-item-validation/summary.json) 和各 `clean-*.log`。
+
+本轮新训练限于 F1 固定配方 Y/J，未重跑全部历史搜索、完整 Concat 八轮重训或新的独立留出测试。大型新检查点留在本地忽略目录，随分支保存紧凑预测与生成记录。F2 仍待实际生成材料；main 全部 P0 未完成。

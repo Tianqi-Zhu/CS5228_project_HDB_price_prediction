@@ -2292,7 +2292,7 @@
     },
     {
       "path": "review/CHECKS.md",
-      "sha256": "744ce2003cebfb0247fe25c5165cc52b1016616c8ae2cd0c9a843b85759b5d09"
+      "sha256": "5f2d276a94a3f6c9b165413c62319f1408dd0e02f899a20f83c3b983f0ef33fe"
     },
     {
       "path": "review/checks/concat_transformer/integration.json",
@@ -5585,7 +5585,7 @@
   "main_requirements": {
     "summary": "experiment/main/evaluation-summary.json",
     "input_metadata": "experiment/main/M00/inputs/metadata.json",
-    "checks": "review/checks/main-final/",
+    "checks": "review/checks/five-item-validation/",
     "fresh_model_training_this_phase": true,
     "frozen_prediction_records": 26,
     "all_main_P0_completed": false,
@@ -5601,6 +5601,8 @@
     "five_item_completion": "docs/planning/main-five-item-completion.md",
     "feature_schemas": "experiment/main/M03/feature_schemas/schemas.json",
     "prediction_scenario": "docs/methods/prediction-scenario.json",
-    "fresh_F1_validation_audit": "reproduction/f1/validation_evidence/audit.json"
+    "fresh_F1_validation_audit": "reproduction/f1/validation_evidence/audit.json",
+    "clean_export_source_commit": "8ebf6eb3550b552e1d8e2408c4575c60deadc099",
+    "clean_export_all_checks_passed": true
   }
 }

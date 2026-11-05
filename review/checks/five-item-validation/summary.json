@@ -1,0 +1,131 @@
+{
+  "source_commit_tested": "8ebf6eb3550b552e1d8e2408c4575c60deadc099",
+  "five_requested_items_completed": true,
+  "root_tests_passed": 73,
+  "isolated_TabPFN_tests_passed": 30,
+  "clean_export_root_tests_passed": 73,
+  "clean_export_TabPFN_tests_passed": 30,
+  "clean_export_included_existing_caches_or_outputs": false,
+  "clean_checks": [
+    {
+      "check": "clean-static",
+      "returncode": 0,
+      "seconds": 14.32945770000515,
+      "command": [
+        "python",
+        "-m",
+        "analysis.validation.repository_audit"
+      ]
+    },
+    {
+      "check": "clean-tests",
+      "returncode": 0,
+      "seconds": 12.951341300002241,
+      "command": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ]
+    },
+    {
+      "check": "clean-planned",
+      "returncode": 0,
+      "seconds": 23.395475900004385,
+      "command": [
+        "python",
+        "-m",
+        "analysis.main",
+        "planned"
+      ]
+    },
+    {
+      "check": "clean-validation-help",
+      "returncode": 0,
+      "seconds": 0.1259663999953773,
+      "command": [
+        "python",
+        "reproduction/f1/validate.py",
+        "--help"
+      ]
+    },
+    {
+      "check": "clean-concat-replay",
+      "returncode": 0,
+      "seconds": 82.859266200001,
+      "command": [
+        "python",
+        "-m",
+        "analysis.main",
+        "concat",
+        "predict",
+        "--device",
+        "cpu"
+      ]
+    },
+    {
+      "check": "clean-tabpfn-prepare",
+      "returncode": 0,
+      "seconds": 1.0931737999999314,
+      "command": [
+        "python",
+        "review_tabpfn.py",
+        "prepare",
+        "--workspace",
+        "output/tabpfn-clean"
+      ]
+    }
+  ],
+  "fresh_F1_models_trained_and_reloaded": 30,
+  "fresh_F1_generation": [
+    {
+      "window": "Y",
+      "n": 35158,
+      "rmse_sgd": 451.02950249165616,
+      "mae_sgd": 328.7298285977396,
+      "bias_sgd": 3.328919175360813,
+      "sse": 7152107986.840103,
+      "fit_rows": 114842,
+      "models_trained": 15,
+      "logical_components": 12,
+      "generating_commit": "29ea4ac54c05a72e5374ac23f0cf50700b3bca0d",
+      "source_files_verified": 39,
+      "source_git_blobs_verified": 39,
+      "generated_csv_bytes_reproduced": true,
+      "historical_prediction_max_abs_difference": 9.094947017729282e-13,
+      "delta_rmse_vs_historical": 0.0,
+      "all_checkpoint_reloads_recorded_passed": true,
+      "seconds": 384.96533510000154
+    },
+    {
+      "window": "J",
+      "n": 28995,
+      "rmse_sgd": 441.8345348836222,
+      "mae_sgd": 321.82075826636,
+      "bias_sgd": -11.162633844749434,
+      "sse": 5660338841.477898,
+      "fit_rows": 121005,
+      "models_trained": 15,
+      "logical_components": 12,
+      "generating_commit": "29ea4ac54c05a72e5374ac23f0cf50700b3bca0d",
+      "source_files_verified": 39,
+      "source_git_blobs_verified": 39,
+      "generated_csv_bytes_reproduced": true,
+      "historical_prediction_max_abs_difference": 9.094947017729282e-13,
+      "delta_rmse_vs_historical": 0.0,
+      "all_checkpoint_reloads_recorded_passed": true,
+      "seconds": 391.5114145000043
+    }
+  ],
+  "original_data_environments_and_frozen_artifacts_preserved": true,
+  "full_Concat_8_epoch_refit_this_phase": false,
+  "independent_heldout_test_created": false,
+  "all_main_P0_completed": false,
+  "F2": "pending actual generating materials",
+  "new_Conda_environment_install_tested": false,
+  "log_format": "UTF-8 LF; line endings normalized from subprocess output",
+  "python": "3.11.15"
+}
