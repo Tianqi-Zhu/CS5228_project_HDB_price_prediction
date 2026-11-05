@@ -1,5 +1,0 @@
-# Complete pip environment: EDA, modeling, prediction, PDF reporting, and Excel input.
-# requirements-model.txt already includes requirements-eda.txt.
--r requirements-model.txt
-reportlab>=4.0
-openpyxl>=3.1

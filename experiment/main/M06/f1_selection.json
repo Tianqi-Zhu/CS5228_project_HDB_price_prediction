@@ -1,0 +1,22 @@
+{
+  "selected": {
+    "file": "kaggle_structure_blend.csv",
+    "path": "output/submissions/candidates/kaggle_structure_blend.csv",
+    "method": "分组融合＋PLR-FT",
+    "report_role": "推荐final",
+    "local_annual_rmse": 451.02950249165616,
+    "local_recent_rmse": 441.8345348836222,
+    "kaggle_displayed_score": 415.37529,
+    "sha256": "386a12fac6a8e9e94892b338c29f38b7efd842811517d4aa487126922a6b7e92",
+    "rows": 50000
+  },
+  "basis": "Lowest of the user three recorded annual/recent/displayed scores",
+  "alternatives_location": "review/appendix-experiments: experiment/appendix/X03 and reproduction/three_submissions",
+  "score_evidence": {
+    "source": "User-provided Kaggle submission-list screenshot in this conversation",
+    "observed_on": "2026-11-05",
+    "precision": "5 decimal places",
+    "leaderboard_partition": null,
+    "source_note": "The screenshot shows filename and displayed score, but does not label public/private split. No API verification or new upload by the assistant."
+  }
+}

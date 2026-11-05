@@ -1,5 +1,0 @@
-# Install into an isolated project directory if keeping the Conda env unchanged:
-# python -m pip install --target .cache/model-deps --no-deps -r requirements/search.txt
-pytorch-tabnet==4.1.0
-rtdl-revisiting-models==0.0.2
-xgboost==3.2.0

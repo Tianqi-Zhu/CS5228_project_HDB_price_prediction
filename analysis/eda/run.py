@@ -1,8 +1,8 @@
 """Single entry point for every EDA layer.
 
 The overview layer writes the canonical midterm figures, tables and
-summary to ``reports/eda``. The two focused audits are retained under
-``reports/eda/supplementary`` because they use different units of analysis.
+summary to ``experiment/eda``. The two focused audits are retained under
+``experiment/eda/supplementary`` because they use different units of analysis.
 """
 
 from __future__ import annotations
@@ -42,7 +42,7 @@ def main(scope: str = "all", output_dir: Path | str | None = None) -> None:
 def cli(argv=None) -> None:
     parser = argparse.ArgumentParser(description="Run the consolidated HDB EDA")
     parser.add_argument("--scope", choices=("main", "auxiliary", "overview", "all"), default="all")
-    parser.add_argument("--output-dir", type=Path, help="Root directory; defaults to reports/eda")
+    parser.add_argument("--output-dir", type=Path, help="Root directory; defaults to experiment/eda")
     args = parser.parse_args(argv)
     main(args.scope, args.output_dir)
 

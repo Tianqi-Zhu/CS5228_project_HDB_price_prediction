@@ -1,0 +1,11 @@
+usage: main.py [-h]
+               [{list,verify,eda,baseline,compare,ladder,common-models}] ...
+
+Curated main experiment entry points; help/list never train.
+
+positional arguments:
+  {list,verify,eda,baseline,compare,ladder,common-models}
+  arguments
+
+options:
+  -h, --help            show this help message and exit

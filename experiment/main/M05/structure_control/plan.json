@@ -1,0 +1,132 @@
+{
+  "specs": [
+    {
+      "name": "ft_linear_96_2",
+      "family": "ft_linear",
+      "embedding": "linear",
+      "width": 96,
+      "blocks": 2,
+      "lr": 0.0003,
+      "target": "residual",
+      "drop_ann36": true,
+      "seed": 42,
+      "max_epochs": 16,
+      "patience": 4
+    },
+    {
+      "name": "ft_ple_96_2",
+      "family": "ft_ple",
+      "embedding": "ple",
+      "width": 96,
+      "blocks": 2,
+      "lr": 0.0003,
+      "target": "residual",
+      "drop_ann36": true,
+      "seed": 42,
+      "max_epochs": 16,
+      "patience": 4
+    },
+    {
+      "name": "ft_ple_128_3",
+      "family": "ft_ple",
+      "embedding": "ple",
+      "width": 128,
+      "blocks": 3,
+      "lr": 0.0001,
+      "target": "residual",
+      "drop_ann36": true,
+      "seed": 42,
+      "max_epochs": 16,
+      "patience": 4
+    },
+    {
+      "name": "ft_plr_96_2",
+      "family": "ft_plr",
+      "embedding": "plr",
+      "width": 96,
+      "blocks": 2,
+      "lr": 0.0003,
+      "target": "residual",
+      "drop_ann36": true,
+      "seed": 42,
+      "max_epochs": 16,
+      "patience": 4
+    },
+    {
+      "name": "ft_plr_128_3",
+      "family": "ft_plr",
+      "embedding": "plr",
+      "width": 128,
+      "blocks": 3,
+      "lr": 0.0001,
+      "target": "residual",
+      "drop_ann36": true,
+      "seed": 42,
+      "max_epochs": 16,
+      "patience": 4
+    },
+    {
+      "name": "dcn_plain_2",
+      "family": "dcn",
+      "embedding": "linear",
+      "cross_layers": 2,
+      "lr": 0.0005,
+      "target": "residual",
+      "drop_ann36": true,
+      "seed": 42,
+      "max_epochs": 16,
+      "patience": 4
+    },
+    {
+      "name": "dcn_plr_3",
+      "family": "dcn",
+      "embedding": "plr",
+      "cross_layers": 3,
+      "lr": 0.0003,
+      "target": "residual",
+      "drop_ann36": true,
+      "seed": 42,
+      "max_epochs": 16,
+      "patience": 4
+    },
+    {
+      "name": "moe_plr_4",
+      "family": "moe",
+      "embedding": "plr",
+      "experts": 4,
+      "lr": 0.0005,
+      "target": "residual",
+      "drop_ann36": true,
+      "seed": 42,
+      "max_epochs": 16,
+      "patience": 4
+    },
+    {
+      "name": "moe_plr_8",
+      "family": "moe",
+      "embedding": "plr",
+      "experts": 8,
+      "lr": 0.0005,
+      "target": "residual",
+      "drop_ann36": true,
+      "seed": 42,
+      "max_epochs": 16,
+      "patience": 4
+    }
+  ],
+  "data": "train plus supplied auxiliary; no external rental labels",
+  "inputs": "same adjusted history features, five ANN36 fields removed in every new configuration",
+  "selection": "Earlier full window selects epochs and one representative per structural route; later fixed epochs.",
+  "implementations": {
+    "FT": "Author RTDL FT backbone; author rtdl-num-embeddings PLE/PLR numerical tokens substituted.",
+    "DCN": "Project implementation of DCN-V2 full-matrix cross equation with parallel deep branch.",
+    "MoE": "Project shared encoder, soft learned gate and four/eight regression experts; load balance penalty .001."
+  },
+  "sources": {
+    "numerical_embeddings": "https://arxiv.org/abs/2203.05556",
+    "DCNv2": "https://arxiv.org/abs/2008.13535",
+    "FT": "https://arxiv.org/abs/2106.11959",
+    "author_embedding_docs": "https://github.com/yandex-research/rtdl-num-embeddings/blob/main/package/README.md"
+  },
+  "notes": "All windows reused development data. Network changes are tested empirically, not presumed superior."
+}

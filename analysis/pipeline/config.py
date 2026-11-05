@@ -6,10 +6,11 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 DATA = ROOT / "data"
 AUX = DATA / "auxiliary"
-REPORTS = ROOT / "reports"
+EXPERIMENTS = ROOT / "experiment"
+REPORTS = EXPERIMENTS  # Compatibility for existing EDA and study imports.
 EDA_REPORTS = REPORTS / "eda"
 STUDY_REPORTS = REPORTS / "studies"
-EXPERIMENT_REPORTS = REPORTS / "experiments"
+EXPERIMENT_REPORTS = ROOT / "output" / "experiment_runs"
 OUTPUT = ROOT / "output"
 CACHE = ROOT / ".cache"
 MODELS = OUTPUT / "models"

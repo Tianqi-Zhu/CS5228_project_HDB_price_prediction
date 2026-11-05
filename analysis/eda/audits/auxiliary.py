@@ -1,9 +1,9 @@
 """Audit supplied auxiliary CSVs and their fit to the HDB rental dataset.
 
-Run from the repository root with the dependencies in requirements-model.txt:
+Run from the repository root with the dependencies in environment.yml:
     python -m analysis.eda.run --scope auxiliary
 
-Only reports/eda/supplementary/auxiliary is written. Source CSV hashes are
+Only experiment/eda/supplementary/auxiliary is written. Source CSV hashes are
 checked before and after the analysis.
 """
 

@@ -1,0 +1,48 @@
+{
+  "submissions": [
+    {
+      "file": "submissions/kaggle_structure_blend.csv",
+      "sha256": "386a12fac6a8e9e94892b338c29f38b7efd842811517d4aa487126922a6b7e92",
+      "rows": 50000,
+      "kaggle_score": 415.37529,
+      "local_annual_rmse": 451.02950249165616,
+      "local_recent_rmse": 441.8345348836222,
+      "method": "分组融合＋PLR-FT"
+    }
+  ],
+  "reconstruction_inputs": [
+    {
+      "file": "components.npz",
+      "sha256": "92f96670ea96019c9f5b13a22c4c8eabc2a676cb3f3be1583f216ce472a255f5"
+    },
+    {
+      "file": "weights.json",
+      "sha256": "67e0155bd496079914ed5498401017081772ad53dfd310dd7925d5d122f261a7"
+    },
+    {
+      "file": "provenance.json",
+      "sha256": "d3a09c1fc511f5808140ac71f93ab695d45d20052df6321da2dabd70347cb662"
+    },
+    {
+      "file": "training_recipes.json",
+      "sha256": "b6715e25bebc1ceb47dc60798439c83d25e0481ed8a0af8a44c20b0a8012daa9"
+    },
+    {
+      "file": "source_manifest.json",
+      "sha256": "9396dfd48792f4204e854ee55ad3f2a1c6b7bb346204c6df331bb6657b78b573"
+    }
+  ],
+  "logical_base_predictions": 12,
+  "source_files": 36,
+  "score_evidence": {
+    "source": "User-provided Kaggle submission-list screenshot in this conversation",
+    "observed_on": "2026-11-05",
+    "precision": "5 decimal places",
+    "leaderboard_partition": null,
+    "source_note": "The screenshot shows filename and displayed score, but does not label public/private split. No API verification or new upload by the assistant."
+  },
+  "base_training_rows": 150000,
+  "test_rows": 50000,
+  "bundled_model_checkpoints": false,
+  "relocation_note": "Frozen source is isolated under runtime; config ROOT relocated; text normalized to LF. Original data and submission CSV bytes are preserved."
+}
