@@ -1,0 +1,31 @@
+{
+  "files": {
+    "reproduction/concat_transformer/README.md": "0e34a8e3f868fe3630f1d62a35023bd917ca7e14ac318bb552680bd57f1e735b",
+    "reproduction/concat_transformer/artifacts/bank.npz": "b90fa6c4e26043161b70dfa2249093262a1e35a550706ea3f79a1b860f4918d4",
+    "reproduction/concat_transformer/artifacts/feature_manifest.json": "f1a98bbea6a464078cb20df6202b02c5bb4d6349140ca37924402fd34dafee7b",
+    "reproduction/concat_transformer/artifacts/final_model.pt": "a19e3f5a931b79719d291b3e5514c2f294d1de01ed17e7fe1c8a56247d4911b2",
+    "reproduction/concat_transformer/artifacts/final_report.json": "738ef0066c35524c59c8f49cc9625b231645cb2fcd7d94afc645231330ff6683",
+    "reproduction/concat_transformer/artifacts/local_verification.json": "dbafbeeb12a90bac4b16a409a3b2cb8a64eac6ca7ab40655cc74f6d0af9c1559",
+    "reproduction/concat_transformer/artifacts/preprocessing.joblib": "2496a50eb3b4e64e313186c453627add4ef9b667c34f964c08f82e33c844654f",
+    "reproduction/concat_transformer/artifacts/protocol.json": "0a7966377872661d434a206e52f6054b7af6fd7242f04b42671c73bf4928cf7f",
+    "reproduction/concat_transformer/artifacts/submission.csv": "94142ea6ad6adca53d252f6eb11b44aafc8cf8117a41846810d2500df11562a6",
+    "reproduction/concat_transformer/builders/final.py": "d3ba8fdaef9d64a729522bb98711907891ab80c4131ebea12b642cb1b5fbeb85",
+    "reproduction/concat_transformer/builders/selection.py": "3b1b1040ec26a69c540fba1e04c319403c42b8bb5ffb81478c2a9d4fc69a47a7",
+    "reproduction/concat_transformer/kaggle_feedback.json": "2717b3ab475b32d2d0ccf4b058ef3b075dca3a48fcab445c9aea1c4483c13629",
+    "reproduction/concat_transformer/provenance.json": "c64eddd15871842cd11bc528b7ea00566b7785732f48dfb2ddb7eadac6603418",
+    "reproduction/concat_transformer/runtime/cluster/__init__.py": "cfbd82f99f499d06ee80737a2979a255399b1ec80a9ba05d020c35412f379130",
+    "reproduction/concat_transformer/runtime/cluster/concat_final_v22/__init__.py": "7b906991f2784a0d938a610bfbff3a7e1b872b57c491e9ff3217fa6107802ff5",
+    "reproduction/concat_transformer/runtime/cluster/concat_final_v22/train.py": "5871c787a9047f14cd4c4fef37023c096f0a366932c6fb7521f9164fc76fc835",
+    "reproduction/concat_transformer/runtime/cluster/concat_v21/__init__.py": "39b115750d1b1946fab884037387585b30f848f00fa7fee45a7d4d763b6814f9",
+    "reproduction/concat_transformer/runtime/cluster/concat_v21/train.py": "020f6ad424a2b88287ee6576eca432c42e6260b28b7a12b5311b160451cc6778",
+    "reproduction/concat_transformer/runtime/experiments/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "reproduction/concat_transformer/runtime/experiments/concat_capacity_v21/__init__.py": "7e75b5069ef8ba3b1a0c6c367fe59e2f0d4b4eb4aabf75c6c1eeda77934e5647",
+    "reproduction/concat_transformer/runtime/experiments/concat_capacity_v21/model.py": "06a0ebad97867f6a8bbeca39ce92f43271d4c9fab0788cce3046d675ced3e0f7",
+    "reproduction/concat_transformer/runtime/experiments/feature_transformer_v4/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "reproduction/concat_transformer/runtime/experiments/feature_transformer_v4/macro_v4.py": "2b677627613187dd727881e6851cd15a8dd29283eb718a48a226cf35987c0a29",
+    "reproduction/concat_transformer/runtime/experiments/feature_transformer_v4/models.py": "045ca1f9314f3411040acf032f4b10ff2b7020c6edec7a68272cdf4c94e62548",
+    "reproduction/concat_transformer/runtime/experiments/training_schedule_v15.py": "8d3e74480a695988d204300fc1f5e516b4b2a85137b32f64e73d23b8bf4a7001",
+    "reproduction/concat_transformer/teammate_ref.json": "e91758059f05a8f15bd6d654d424f5ec8fd093cea8719ce586e430ad5c5d935b"
+  },
+  "status": "frozen integration artifacts"
+}

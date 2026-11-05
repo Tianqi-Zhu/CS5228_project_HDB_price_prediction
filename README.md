@@ -16,3 +16,11 @@
 | 归档与验证 | 推送前运行记录见 [review/CHECKS.md](review/CHECKS.md)；新训练输出未上传 Kaggle |
 | 对照分支 | appendix |
 | 文件换行 | .gitattributes禁止隐式文本转换，以保证数据、冻结源和证据SHA256在检出后仍一致 |
+
+## 独立架构探索：Concat Transformer
+
+在团队统一的最终历史特征输入上，比较宽度与深度，选定128维6层concat Transformer。年度开发验证RMSE459.2189；全量重训8轮后的Kaggle Public Score418.38657（用户提交截图）。它作为M05独立架构探索补充，不替换现有F1/F2定义。
+
+- [方法与容量对照](experiment/main/M05/concat_transformer/README.md)
+- [最终预测重放、原始数据特征重建与训练](reproduction/concat_transformer/README.md)
+- 只读核验：`python -m analysis.main concat verify`

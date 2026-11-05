@@ -1,0 +1,23 @@
+{
+  "integration_base": "origin/main@778127a",
+  "teammate_feature_source": "results/hdb-rental-final-ensemble@6f97e107ed2db72347c3d7d1f85b63999b3fcbbb",
+  "original_runtime": [
+    "experiments/__init__.py",
+    "experiments/training_schedule_v15.py",
+    "experiments/concat_capacity_v21/__init__.py",
+    "experiments/concat_capacity_v21/model.py",
+    "experiments/feature_transformer_v4/__init__.py",
+    "experiments/feature_transformer_v4/models.py",
+    "experiments/feature_transformer_v4/macro_v4.py",
+    "cluster/__init__.py",
+    "cluster/concat_v21/__init__.py",
+    "cluster/concat_v21/train.py",
+    "cluster/concat_final_v22/__init__.py",
+    "cluster/concat_final_v22/train.py"
+  ],
+  "scope": "independent architecture exploration, not replacement of F1/F2",
+  "units": "SGD rent; signed residual target divided by1000",
+  "selection": "three capacity configs, single seed42, best development epoch; no global optimum claim",
+  "final_training": "150000labels,8epochs from scratch,samecosine40schedule,noearlystop",
+  "replay": "frozen artifact bank exact inference; rebuild mode uses main shared feature pipeline"
+}

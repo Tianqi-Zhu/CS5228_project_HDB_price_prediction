@@ -1,0 +1,8 @@
+{
+  "model": "concat128x6",
+  "score_type": "Public Score",
+  "score": 418.38657,
+  "evidence": "user-provided Kaggle submission screenshot in conversation2026-11-06",
+  "submission_sha256": "94142ea6ad6adca53d252f6eb11b44aafc8cf8117a41846810d2500df11562a6",
+  "independently_queried_kaggle": false
+}

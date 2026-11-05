@@ -1,0 +1,19 @@
+{
+  "shared_main_raw_feature_rebuild": "passed",
+  "bank_sha256": "b90fa6c4e26043161b70dfa2249093262a1e35a550706ea3f79a1b860f4918d4",
+  "preprocessing_sha256": "2496a50eb3b4e64e313186c453627add4ef9b667c34f964c08f82e33c844654f",
+  "model_tests": "2 passed",
+  "full_training_rerun": false,
+  "note": "No retraining or remote Git write during integration.",
+  "cpu_prediction_replay": {
+    "rows": 50000,
+    "max_abs_diff_sgd": 0.1055598258972168,
+    "training_performed": false,
+    "output": "output/concat_transformer/replayed_submission.csv",
+    "device": "cpu"
+  },
+  "shared_main_selection_feature_rebuild": {
+    "status": "passed",
+    "bank_sha256": "21b7334336200dc0e15be1d979108270a46286de89f83194422676f0d1cdfdf8"
+  }
+}

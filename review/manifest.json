@@ -39,7 +39,7 @@
     {
       "id": "M05",
       "status": "archived",
-      "purpose": "共同输入神经对照与PLR固定融合增量",
+      "purpose": "共同输入神经对照、PLR固定融合增量与独立concat架构探索",
       "evidence_directory": "experiment/main/M05"
     },
     {
@@ -74,11 +74,11 @@
     },
     {
       "path": ".gitignore",
-      "sha256": "1ea6a1f0b04ebbe7daddae1bcca444477bf289694fa92ce517ee922e10548814"
+      "sha256": "6a7fbcbfaed75ba98c4e4c853329fd271e0c647c3d3b8f22f86cd84adb475a0d"
     },
     {
       "path": "README.md",
-      "sha256": "12b32116e984932d9a86ff636522fcffbfa355c1e375d794651ac9ee5101244e"
+      "sha256": "5e0c757e1ac07b20553b0065e8e7836bc713f3e146695764da23b806ecb67965"
     },
     {
       "path": "analysis/README.md",
@@ -207,6 +207,14 @@
     {
       "path": "analysis/experiments/model_comparison/common_feature_models.py",
       "sha256": "748d203c57463f6846d55431f6cc926a86abcfe7f3ce7ce7cecb3e5a99f7b8fb"
+    },
+    {
+      "path": "analysis/experiments/model_comparison/concat_transformer/__init__.py",
+      "sha256": "f34406684ea100077bef3d1fec4211aab3a3c8cfeff0eb57694e5301ff925695"
+    },
+    {
+      "path": "analysis/experiments/model_comparison/concat_transformer/__main__.py",
+      "sha256": "9ee324b359ffc5054a90c4d6c7321fcaa0fc59d5a92b1fea203bd6676c7ecc8d"
     },
     {
       "path": "analysis/experiments/model_comparison/download_tabicl.py",
@@ -366,7 +374,7 @@
     },
     {
       "path": "analysis/main.py",
-      "sha256": "03adc7d08f58620564a460bdb3fbab273859cad4599d7a4258a547353db8f10a"
+      "sha256": "0b1cc3e4c2279cb9bc6222e92a8d073363e23a85d956108bdc35ab658d95efa0"
     },
     {
       "path": "analysis/pipeline/__init__.py",
@@ -522,7 +530,7 @@
     },
     {
       "path": "docs/guides/running_experiments.md",
-      "sha256": "ab090462106d5edd311e84f0c0c32834be44786e21f884e11687698f6974bd37"
+      "sha256": "9a71302af09e190e738a7422e7f1c2d8133613ae25523884b5ebb2f98043e59e"
     },
     {
       "path": "docs/methods/baseline_features.md",
@@ -870,7 +878,7 @@
     },
     {
       "path": "experiment/main/M05/README.md",
-      "sha256": "5587a885846bc85df91e30bb4ae20572861a86e99d02bf7a4e177250a66ce3af"
+      "sha256": "c2d75d1c2ec1efa30f1a9f2db5c50e8e7b077f1e2af3dbebc82ac855cdb757ae"
     },
     {
       "path": "experiment/main/M05/common_27/PROTOCOL.md",
@@ -883,6 +891,42 @@
     {
       "path": "experiment/main/M05/common_27/same_input_models.csv",
       "sha256": "5f152ffc72dc801c726f609134188528e3bd7da84f47abab96e6d4d2d2b6535c"
+    },
+    {
+      "path": "experiment/main/M05/concat_transformer/README.md",
+      "sha256": "616e83108871cabe432daa1096682fe7b8b2ecfa29353c58396e1850edccf2ab"
+    },
+    {
+      "path": "experiment/main/M05/concat_transformer/capacity_comparison.csv",
+      "sha256": "80e0c8b5cd97907dc5f220e345381d39bdb2c29442805e5993b63142a87d66fb"
+    },
+    {
+      "path": "experiment/main/M05/concat_transformer/concat128x3/protocol.json",
+      "sha256": "074a829df239f9e1da5413a0b393dc5902b7b347d4c4a43e55fed0dd56e72953"
+    },
+    {
+      "path": "experiment/main/M05/concat_transformer/concat128x3/selection.json",
+      "sha256": "3bb66ea7bca68f7588fe074b03b6637ffa39d41b13520487ea2c1a32089569ce"
+    },
+    {
+      "path": "experiment/main/M05/concat_transformer/concat128x6/protocol.json",
+      "sha256": "22a714c61507fcab9d36e679d4b18cc59aa898340f78ed9e9ef104b09da4b4ad"
+    },
+    {
+      "path": "experiment/main/M05/concat_transformer/concat128x6/selection.json",
+      "sha256": "3d6d07cb558c29d049c3e9eef345a3af987dc0133d15265ed918805e73ffeb93"
+    },
+    {
+      "path": "experiment/main/M05/concat_transformer/concat48x3/protocol.json",
+      "sha256": "a02009c47e6d70da626af278ae343f05005b45a97b8d6278f293a930d616e7f3"
+    },
+    {
+      "path": "experiment/main/M05/concat_transformer/concat48x3/selection.json",
+      "sha256": "38da70b7413352605a48f3582892c0a911f0aa37d6a4516aa8ee3dab13335328"
+    },
+    {
+      "path": "experiment/main/M05/concat_transformer/feature_list.txt",
+      "sha256": "1457f357c7252bb927fb40933232ed1ee3d87980a5303cc286da02b0e860c125"
     },
     {
       "path": "experiment/main/M05/selection_records/catboost/results.json",
@@ -1034,7 +1078,115 @@
     },
     {
       "path": "experiment/main/README.md",
-      "sha256": "6ab381a5d8db526ff55d1f35f3328c6c8922b0cab105f25c1ed206063fe532cf"
+      "sha256": "b48c7fea755debdac76a93c85adbdfa9f9c10aa617d77168f24d13f7ea8a8fff"
+    },
+    {
+      "path": "reproduction/concat_transformer/README.md",
+      "sha256": "0e34a8e3f868fe3630f1d62a35023bd917ca7e14ac318bb552680bd57f1e735b"
+    },
+    {
+      "path": "reproduction/concat_transformer/artifacts/bank.npz",
+      "sha256": "b90fa6c4e26043161b70dfa2249093262a1e35a550706ea3f79a1b860f4918d4"
+    },
+    {
+      "path": "reproduction/concat_transformer/artifacts/feature_manifest.json",
+      "sha256": "f1a98bbea6a464078cb20df6202b02c5bb4d6349140ca37924402fd34dafee7b"
+    },
+    {
+      "path": "reproduction/concat_transformer/artifacts/final_model.pt",
+      "sha256": "a19e3f5a931b79719d291b3e5514c2f294d1de01ed17e7fe1c8a56247d4911b2"
+    },
+    {
+      "path": "reproduction/concat_transformer/artifacts/final_report.json",
+      "sha256": "738ef0066c35524c59c8f49cc9625b231645cb2fcd7d94afc645231330ff6683"
+    },
+    {
+      "path": "reproduction/concat_transformer/artifacts/local_verification.json",
+      "sha256": "dbafbeeb12a90bac4b16a409a3b2cb8a64eac6ca7ab40655cc74f6d0af9c1559"
+    },
+    {
+      "path": "reproduction/concat_transformer/artifacts/preprocessing.joblib",
+      "sha256": "2496a50eb3b4e64e313186c453627add4ef9b667c34f964c08f82e33c844654f"
+    },
+    {
+      "path": "reproduction/concat_transformer/artifacts/protocol.json",
+      "sha256": "0a7966377872661d434a206e52f6054b7af6fd7242f04b42671c73bf4928cf7f"
+    },
+    {
+      "path": "reproduction/concat_transformer/artifacts/submission.csv",
+      "sha256": "94142ea6ad6adca53d252f6eb11b44aafc8cf8117a41846810d2500df11562a6"
+    },
+    {
+      "path": "reproduction/concat_transformer/builders/final.py",
+      "sha256": "d3ba8fdaef9d64a729522bb98711907891ab80c4131ebea12b642cb1b5fbeb85"
+    },
+    {
+      "path": "reproduction/concat_transformer/builders/selection.py",
+      "sha256": "3b1b1040ec26a69c540fba1e04c319403c42b8bb5ffb81478c2a9d4fc69a47a7"
+    },
+    {
+      "path": "reproduction/concat_transformer/kaggle_feedback.json",
+      "sha256": "2717b3ab475b32d2d0ccf4b058ef3b075dca3a48fcab445c9aea1c4483c13629"
+    },
+    {
+      "path": "reproduction/concat_transformer/manifest.json",
+      "sha256": "2c13b37754189d3c9f07e7b8aa48def8e324bdaa8889c4a487705772b341ddf6"
+    },
+    {
+      "path": "reproduction/concat_transformer/provenance.json",
+      "sha256": "c64eddd15871842cd11bc528b7ea00566b7785732f48dfb2ddb7eadac6603418"
+    },
+    {
+      "path": "reproduction/concat_transformer/runtime/cluster/__init__.py",
+      "sha256": "cfbd82f99f499d06ee80737a2979a255399b1ec80a9ba05d020c35412f379130"
+    },
+    {
+      "path": "reproduction/concat_transformer/runtime/cluster/concat_final_v22/__init__.py",
+      "sha256": "7b906991f2784a0d938a610bfbff3a7e1b872b57c491e9ff3217fa6107802ff5"
+    },
+    {
+      "path": "reproduction/concat_transformer/runtime/cluster/concat_final_v22/train.py",
+      "sha256": "5871c787a9047f14cd4c4fef37023c096f0a366932c6fb7521f9164fc76fc835"
+    },
+    {
+      "path": "reproduction/concat_transformer/runtime/cluster/concat_v21/__init__.py",
+      "sha256": "39b115750d1b1946fab884037387585b30f848f00fa7fee45a7d4d763b6814f9"
+    },
+    {
+      "path": "reproduction/concat_transformer/runtime/cluster/concat_v21/train.py",
+      "sha256": "020f6ad424a2b88287ee6576eca432c42e6260b28b7a12b5311b160451cc6778"
+    },
+    {
+      "path": "reproduction/concat_transformer/runtime/experiments/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reproduction/concat_transformer/runtime/experiments/concat_capacity_v21/__init__.py",
+      "sha256": "7e75b5069ef8ba3b1a0c6c367fe59e2f0d4b4eb4aabf75c6c1eeda77934e5647"
+    },
+    {
+      "path": "reproduction/concat_transformer/runtime/experiments/concat_capacity_v21/model.py",
+      "sha256": "06a0ebad97867f6a8bbeca39ce92f43271d4c9fab0788cce3046d675ced3e0f7"
+    },
+    {
+      "path": "reproduction/concat_transformer/runtime/experiments/feature_transformer_v4/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reproduction/concat_transformer/runtime/experiments/feature_transformer_v4/macro_v4.py",
+      "sha256": "2b677627613187dd727881e6851cd15a8dd29283eb718a48a226cf35987c0a29"
+    },
+    {
+      "path": "reproduction/concat_transformer/runtime/experiments/feature_transformer_v4/models.py",
+      "sha256": "045ca1f9314f3411040acf032f4b10ff2b7020c6edec7a68272cdf4c94e62548"
+    },
+    {
+      "path": "reproduction/concat_transformer/runtime/experiments/training_schedule_v15.py",
+      "sha256": "8d3e74480a695988d204300fc1f5e516b4b2a85137b32f64e73d23b8bf4a7001"
+    },
+    {
+      "path": "reproduction/concat_transformer/teammate_ref.json",
+      "sha256": "e91758059f05a8f15bd6d654d424f5ec8fd093cea8719ce586e430ad5c5d935b"
     },
     {
       "path": "reproduction/f1/README.md",
@@ -1237,6 +1389,10 @@
       "sha256": "b72d8cdd994be4e73c3e958e0fbc97e65ceff601ca45bec0abbd5efec42d6fee"
     },
     {
+      "path": "requirements/concat-transformer.txt",
+      "sha256": "cc7c1bf5c8d2e10d3a6446cada50d68304cb78a889c1accf17c9203e6a27a547"
+    },
+    {
       "path": "requirements/optional_deep_models.txt",
       "sha256": "b650353d2a7efea1f9eca80623f2bb68bea922a630e038aed496a50b3c309407"
     },
@@ -1253,6 +1409,10 @@
       "sha256": "1facd7172f1cc8641ac2d2368ad1d544e6f30bd5264e8bb97549dfb468d0e04f"
     },
     {
+      "path": "review/checks/concat_transformer/integration.json",
+      "sha256": "b592c14780f3caf39cbc7316fc3960aa3be52736771bc78e392240de1c5c500b"
+    },
+    {
       "path": "review/source_partition.csv",
       "sha256": "10e684007c5386a932f479411d22bae0734128b3aa8417253e4a7e05923bace1"
     },
@@ -1267,6 +1427,10 @@
     {
       "path": "tests/test_auxiliary_features.py",
       "sha256": "f17448c61c1a83dbe4b8c9f3ebf7376c925292bc22b90dfc1e7da84fae588973"
+    },
+    {
+      "path": "tests/test_concat_integration.py",
+      "sha256": "24a6df085ff75b6ca2431aeadbe2942de2fa702582d040eb044e4cdac71911ed"
     },
     {
       "path": "tests/test_feature_evidence.py",

@@ -6,6 +6,8 @@ from pathlib import Path
 def main(argv=None):
     parser=argparse.ArgumentParser(description=__doc__)
     commands=parser.add_subparsers(dest='command')
+    concat=commands.add_parser('concat',help='Concat Transformer: verify, replay, prepare or explicitly train')
+    concat.add_argument('concat_args',nargs=argparse.REMAINDER)
     commands.add_parser('list',help='List experiments without running them')
     commands.add_parser('verify',help='Verify shipped file hashes without training')
     eda=commands.add_parser('eda',help='Run EDA only')
@@ -22,6 +24,11 @@ def main(argv=None):
     common.add_argument('--output-dir',type=Path)
     common.add_argument('--device',choices=('cpu','cuda'),default='cuda')
     args=parser.parse_args(argv)
+    if args.command=='concat':
+        import sys
+        from analysis.experiments.concat_transformer.__main__ import main as concat_main
+        sys.argv=[sys.argv[0]]+args.concat_args
+        return concat_main()
     if args.command in (None,'list','verify'):
         from review import main as review_main
         return review_main([args.command or 'list'])

@@ -1,0 +1,4 @@
+model,width,depth,parameters,best_epoch,total_epochs,validation_rows,rmse_sgd
+concat48x3,48,3,90865,15,20,35158,459.9920673534912
+concat128x3,128,3,518785,8,13,35158,459.8288053551237
+concat128x6,128,6,916225,8,13,35158,459.2188909646949

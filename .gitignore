@@ -38,3 +38,7 @@ experiment/**/submission.csv
 experiment/**/history.csv
 experiment/**/model.zip
 # All detailed experiment runs now live under the ignored output/ tree.
+
+# Generated outputs for the independently archived concat runtime
+reproduction/concat_transformer/runtime/reports/
+reproduction/concat_transformer/runtime/data

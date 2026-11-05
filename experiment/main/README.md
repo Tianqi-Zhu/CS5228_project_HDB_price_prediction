@@ -12,3 +12,5 @@
 | [M07](M07/README.md) | pending | F2外部生成链，本次两来源不包含 |
 | [M08](M08/README.md) | pending | F1/F2配对评估，依赖外部F2 |
 | [M09](M09/README.md) | partial | F1原CSV核查/CPU重组；F2复现待补 |
+
+M05 now also includes [the independent concat Transformer](M05/concat_transformer/README.md): same final adjusted62input schema, capacity/epoch selection and a standalone [reproduction entry](../../reproduction/concat_transformer/README.md).
