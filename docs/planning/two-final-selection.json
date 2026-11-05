@@ -12,7 +12,10 @@
       "status": "Selected from the user's three archived submissions; implementation and CSV provenance available",
       "selection_basis": "Lowest recorded annual RMSE, recent RMSE, and Kaggle displayed score among the three archived user pipelines",
       "evidence": "experiment/01_final/submission_selection.json",
-      "source_branches": ["zch-complete-proj", "results/hdb-rental-final-ensemble"]
+      "source_branches": [
+        "zch-complete-proj",
+        "results/hdb-rental-final-ensemble"
+      ]
     },
     {
       "id": "F2",
@@ -32,8 +35,16 @@
     }
   ],
   "not_selected_as_final_methods": [
-    {"filename": "kaggle_best_history.csv", "kaggle_displayed_score": 415.86912, "report_role": "Strong predecessor baseline; full details in appendix"},
-    {"filename": "kaggle_best_macro.csv", "kaggle_displayed_score": 415.78232, "report_role": "Alternative given-macro information scenario; full details in appendix"}
+    {
+      "filename": "kaggle_best_history.csv",
+      "kaggle_displayed_score": 415.86912,
+      "report_role": "Strong predecessor baseline; full details in appendix"
+    },
+    {
+      "filename": "kaggle_best_macro.csv",
+      "kaggle_displayed_score": 415.78232,
+      "report_role": "Alternative given-macro information scenario; full details in appendix"
+    }
   ],
   "leaderboard_partition": null,
   "claims_not_established": [
@@ -43,5 +54,15 @@
     "The filename proves a two-model 50/50 blend",
     "The displayed score difference is an isolated TabPFN causal gain",
     "F2 reproduction passed because the original three CSV checks passed"
-  ]
+  ],
+  "tabpfn_source_integration": {
+    "source_commits": {
+      "experiment/tabpfn": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "experiment/tabpfn-anniversary-history": "1e69bb7995686d6a2bb7d502475e19ae72f081e3"
+    },
+    "status": "available-background-and-explorations-integrated; F2 generator remains pending",
+    "main_background": "experiment/main/M07/tabpfn/",
+    "appendix": "experiment/appendix/T01..T08/",
+    "does_not_verify_F2": true
+  }
 }

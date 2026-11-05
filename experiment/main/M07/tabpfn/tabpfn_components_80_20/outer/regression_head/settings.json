@@ -1,0 +1,13 @@
+{
+  "config": {
+    "component": "head",
+    "lr": 3e-05
+  },
+  "adapter_sha256": "a36fcb6fc6491a739984d61b306084f74a54032f2665e8e1e64f572a9046570e",
+  "views": 1,
+  "context_rows": 121005,
+  "query_rows": 28995,
+  "query_ids_sha256": "8452546a17ec266e405b692de53ff0cc0fcf68f2565c7092d8444e4ecf2edf1b",
+  "batch_rows": 200,
+  "seed": 42
+}

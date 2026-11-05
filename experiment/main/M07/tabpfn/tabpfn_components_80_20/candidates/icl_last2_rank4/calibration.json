@@ -1,0 +1,33 @@
+{
+  "name": "icl_last2_rank4",
+  "config": {
+    "component": "icl_lora",
+    "rank": 4,
+    "last_blocks": 2,
+    "lr": 0.0003
+  },
+  "weighted_rmse_sgd": 521.5477623922884,
+  "initial_weighted_rmse_sgd": 521.8641848602077,
+  "selected_epoch": 1,
+  "epochs_run": 5,
+  "fit_rows": 102829,
+  "calibration_rows": 600,
+  "seconds": 291.733571400051,
+  "peak_vram_gib": 7.434777736663818,
+  "frozen_parameters_unchanged": true,
+  "frozen_digest": "a01bed380aaded76bd96cd6cf8e77c3b86cc32f7d789f7f3cf5b6fb782476312",
+  "trainable_parameters": 32768,
+  "trainable_names": [
+    "icl_blocks.6.icl_attention.q_projection.lora_a.weight",
+    "icl_blocks.6.icl_attention.q_projection.lora_b.weight",
+    "icl_blocks.6.icl_attention.k_projection.lora_a.weight",
+    "icl_blocks.6.icl_attention.k_projection.lora_b.weight",
+    "icl_blocks.7.icl_attention.q_projection.lora_a.weight",
+    "icl_blocks.7.icl_attention.q_projection.lora_b.weight",
+    "icl_blocks.7.icl_attention.k_projection.lora_a.weight",
+    "icl_blocks.7.icl_attention.k_projection.lora_b.weight"
+  ],
+  "adapter_sha256": "d646dc81b60bf0e1e7f20544b8f1fbc3be2ce5bb4e99ec17bf03fe52ce1ada70",
+  "max_checkpoint_replay_difference": 0.0,
+  "outer_labels_used_for_selection": false
+}

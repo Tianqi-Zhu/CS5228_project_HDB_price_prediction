@@ -1,0 +1,57 @@
+{
+  "tabpfn_installed": true,
+  "local_checkpoint_present": false,
+  "legacy_resource_issues": [
+    {
+      "settings": "reports/tabpfn_v3_5_fast_aligned_temporal_80_20/settings.json",
+      "path": "analysis/compare_tabpfn_aligned_temporal_80_20.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "d240757800abd589658099a241415f0948237ac163c8d7cd14407a7367f8ef9c"
+    },
+    {
+      "settings": "reports/tabpfn_v3_5_fast_aligned_temporal_80_20/settings.json",
+      "path": "analysis/experiments/aligned_temporal_features.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "1f0b886ca3398dd7c681b0dc8c7b73092652323f148ad6bc40aa13ea1e20ba74"
+    },
+    {
+      "settings": "reports/tabpfn_v3_5_fast_aligned_temporal_80_20/settings.json",
+      "path": "analysis/experiments/recent_history.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "98348baf4e8816397c766f660e4fce5ba6ffb449bd674adc7ea645aaf035db0f"
+    },
+    {
+      "settings": "reports/tabpfn_v3_5_fast_aligned_temporal_80_20/settings.json",
+      "path": "analysis/experiments/tabpfn_adaptation_features.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "7138a0c0a5465d7027a0b90030f5ffbadcad8b71836c08ceb907d31db61022a9"
+    },
+    {
+      "settings": "reports/tabpfn_v3_5_fast_calendar_80_20/settings.json",
+      "path": "analysis/compare_tabpfn_calendar_80_20.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "e88eb31412feea17db8d5987ad30983e214d4fbfbc96a9708cccf8e7c5a4a052"
+    },
+    {
+      "settings": "reports/tabpfn_v3_5_fast_calendar_80_20/settings.json",
+      "path": "analysis/experiments/calendar_encoding.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "3cdf03e2f6772d7530231caf5d56bbc668d13aa9307d9c0346308940c5fd2f20"
+    },
+    {
+      "settings": "reports/tabpfn_v3_5_fast_calendar_80_20/settings.json",
+      "path": "analysis/experiments/aligned_temporal_features.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "1f0b886ca3398dd7c681b0dc8c7b73092652323f148ad6bc40aa13ea1e20ba74"
+    },
+    {
+      "settings": "reports/tabpfn_v3_5_fast_calendar_80_20/settings.json",
+      "path": "analysis/compare_tabpfn_v3_5_fast_80_20.py",
+      "issue": "newline-only byte difference",
+      "expected_sha256": "baa7fffeae8895a9ea4914aca98e460ead281438b3e2a148b3cb2f00e99e9260"
+    }
+  ],
+  "f2_status": "generator-and-predictions-pending",
+  "fresh_training_verified": false,
+  "scope": "Local inspection only; no downloads, authentication or paid API calls."
+}

@@ -1,0 +1,3 @@
+# Uses the project's existing CUDA-enabled PyTorch installation.
+tabm==0.0.3
+rtdl_num_embeddings==0.0.12

@@ -1,0 +1,2 @@
+-r requirements-spatial.txt
+rasterio==1.4.4

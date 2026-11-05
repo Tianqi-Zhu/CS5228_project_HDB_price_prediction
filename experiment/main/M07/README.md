@@ -9,3 +9,5 @@
 | 既有证据 | 本目录内文件；文件来源/哈希见review/manifest.json；无文件则尚未实施 |
 | 执行状态 | 历史证据按本卡归档；本轮实际运行范围另见 review/checks/push-validation/summary.json，不代表重跑全部历史搜索 |
 | 复用限制 | 不同窗口、schema、宏观可用性、选择阶段分开比较；负结果不删除 |
+
+Available [TabPFN background](tabpfn/) is now archived. See docs/planning/tabpfn-branch-split.md. F2 generator/predictions remain pending.

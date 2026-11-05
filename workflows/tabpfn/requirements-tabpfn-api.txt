@@ -1,0 +1,4 @@
+# Cloud API workflow; no CUDA or local TabPFN weights required.
+tabpfn-client==0.7.0
+joblib
+numpy<3

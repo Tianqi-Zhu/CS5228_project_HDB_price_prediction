@@ -1,0 +1,13 @@
+{
+  "config": {
+    "component": "diagscale",
+    "lr": 0.01,
+    "crps": 0
+  },
+  "epochs": 1,
+  "task_rows": 512,
+  "train_views": 2,
+  "checkpoint_views": 1,
+  "seed": 42,
+  "smoke": true
+}

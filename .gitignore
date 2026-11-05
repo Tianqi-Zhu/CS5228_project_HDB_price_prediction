@@ -42,3 +42,7 @@ experiment/**/model.zip
 # Generated outputs for the independently archived concat runtime
 reproduction/concat_transformer/runtime/reports/
 reproduction/concat_transformer/runtime/data
+
+# Frozen source-branch evidence is intentional; regenerated outputs stay in output/.
+!experiment/main/M07/tabpfn/**
+!experiment/appendix/T*/tabpfn/**

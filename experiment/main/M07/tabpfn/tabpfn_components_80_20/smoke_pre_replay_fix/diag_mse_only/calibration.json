@@ -1,0 +1,35 @@
+{
+  "name": "diag_mse_only",
+  "config": {
+    "component": "diagscale",
+    "lr": 0.01,
+    "crps": 0
+  },
+  "weighted_rmse_sgd": 775.2255762580091,
+  "initial_weighted_rmse_sgd": 775.2255762580091,
+  "selected_epoch": -1,
+  "epochs_run": 1,
+  "fit_rows": 1024,
+  "calibration_rows": 24,
+  "seconds": 3.6259025000035763,
+  "peak_vram_gib": 0.9986639022827148,
+  "frozen_parameters_unchanged": true,
+  "frozen_digest": "2a40eff78f2084e02f1200115df8c0b350a393a3cf11d57e6464d3f70c182639",
+  "trainable_parameters": 8576,
+  "trainable_names": [
+    "feature_distribution_embedder.layers.0.cross_attn_block1.attn.softmax_scaling_layer.delta",
+    "feature_distribution_embedder.layers.1.cross_attn_block1.attn.softmax_scaling_layer.delta",
+    "feature_distribution_embedder.layers.2.cross_attn_block1.attn.softmax_scaling_layer.delta",
+    "icl_blocks.0.icl_attention.softmax_scaling_layer.delta",
+    "icl_blocks.1.icl_attention.softmax_scaling_layer.delta",
+    "icl_blocks.2.icl_attention.softmax_scaling_layer.delta",
+    "icl_blocks.3.icl_attention.softmax_scaling_layer.delta",
+    "icl_blocks.4.icl_attention.softmax_scaling_layer.delta",
+    "icl_blocks.5.icl_attention.softmax_scaling_layer.delta",
+    "icl_blocks.6.icl_attention.softmax_scaling_layer.delta",
+    "icl_blocks.7.icl_attention.softmax_scaling_layer.delta"
+  ],
+  "adapter_sha256": "b3978e0f6f33fe6397875967e7d7423c68eb4994270f33e086775f6bee17d7cc",
+  "max_checkpoint_replay_difference": 0.0,
+  "outer_labels_used_for_selection": false
+}

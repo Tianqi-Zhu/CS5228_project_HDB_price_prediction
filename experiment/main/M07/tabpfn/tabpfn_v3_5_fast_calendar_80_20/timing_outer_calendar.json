@@ -1,0 +1,9 @@
+{
+  "fit_seconds": 14.935218500031624,
+  "predict_seconds": 682.3164560999721,
+  "peak_vram_gib": 7.152627944946289,
+  "context_rows": 121005,
+  "subsampling": false,
+  "keep_cache_on_device": true,
+  "architecture": "TabPFNV3p5"
+}

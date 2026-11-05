@@ -1,0 +1,81 @@
+{
+  "model": "v3.5-fast",
+  "n_estimators": 1,
+  "seed": 42,
+  "batch_size": 200,
+  "subsampling": false,
+  "source_artifact_sha256": "639f5d0a3cda8570b86f927c0e29b5d58c874d91976af590790c32cc62a481da",
+  "source_sha256": {
+    "data/train.csv": "2fe38ce9e0d8a02e9786f066d4a10d575d91f34be1d9111f0142e3f43fbfc8a5",
+    "data/test.csv": "a2ec03a0afc07c251c72cc0de2e15ac965a3b06291b304aaac53a375115ff4e0",
+    "data/auxiliary/sg-hdb-block.csv": "2255ad61ba6895456a39aec81d12583796d717ef88fe102ee9de71b3796fc223",
+    "data/auxiliary/sg-mrt-stations.csv": "4757278b94c2d05627a941377d51de60882e3e1477de01758ef37070b716b889",
+    "data/auxiliary/sg-shopping-malls.csv": "cce36a0175433f768d209b74e2e5376aad16befe1ad4f1313da0b18ed6d91a3b",
+    "data/auxiliary/sg-schools.csv": "9bf28c6a2e5511c5cada178d221dfaac12beb3651425b3b86c37815e35de71cb"
+  },
+  "checkpoint_sha256": "14e0b81285bca7a6d1ef121169f27f651f76dff49cad6c0b8779d5c836018550",
+  "control_predictions_sha256": "7659ca9f1d754d87e2083b77c737b2a653fe2ed8fec8abb48fd03cd22da48b05",
+  "code_sha256": {
+    "analysis/compare_tabpfn_calendar_80_20.py": "e88eb31412feea17db8d5987ad30983e214d4fbfbc96a9708cccf8e7c5a4a052",
+    "analysis/experiments/calendar_encoding.py": "3cdf03e2f6772d7530231caf5d56bbc668d13aa9307d9c0346308940c5fd2f20",
+    "analysis/experiments/aligned_temporal_features.py": "1f0b886ca3398dd7c681b0dc8c7b73092652323f148ad6bc40aa13ea1e20ba74",
+    "analysis/compare_tabpfn_v3_5_fast_80_20.py": "baa7fffeae8895a9ea4914aca98e460ead281438b3e2a148b3cb2f00e99e9260"
+  },
+  "versions": {
+    "tabpfn": "9.2.0",
+    "torch": "2.11.0+cu128",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.0"
+  },
+  "gpu": "NVIDIA GeForce RTX 4080",
+  "inner_origins": [
+    "2022-09",
+    "2023-07"
+  ],
+  "inner_horizons": [
+    1,
+    10
+  ],
+  "inner_queries_per_month": 200,
+  "inner_query_sampling_seed": 42,
+  "outer_rows": 28995,
+  "outer_context_rows": 121005,
+  "calendar_encoding_rule": "lowest earlier pooled RMSE; prefer integer/categorical/cyclical in that order within 0.1% of best",
+  "candidate_selection_rule": "at least 0.25% earlier pooled RMSE gain and no inner fold more than 0.5% worse; simpler within 0.1% of best",
+  "calendar_windows": {
+    "primary_start": [
+      1
+    ],
+    "primary_lead1": [
+      12
+    ],
+    "primary_lead2": [
+      11
+    ],
+    "university_start": [
+      1,
+      8
+    ],
+    "university_lead1": [
+      12,
+      7
+    ],
+    "university_lead2": [
+      11,
+      6
+    ]
+  },
+  "calendar_sources": [
+    "https://nus.edu.sg/registrar/calendar",
+    "https://www.sengkangpri.moe.edu.sg/files/Parent%20Resources/2024/2024_term_1_notification.pdf"
+  ],
+  "calendar_caveat": "recurring monthly proxies, not exact historical term or holiday dates; no university proximity data",
+  "unchanged": [
+    "continuous time index",
+    "all existing rent histories",
+    "residual baseline",
+    "rent labels",
+    "context row IDs"
+  ]
+}

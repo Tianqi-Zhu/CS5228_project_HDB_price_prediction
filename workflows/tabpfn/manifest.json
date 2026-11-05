@@ -1,0 +1,2236 @@
+{
+  "branch": "main",
+  "source_commits": {
+    "experiment/tabpfn": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+    "experiment/tabpfn-anniversary-history": "1e69bb7995686d6a2bb7d502475e19ae72f081e3"
+  },
+  "isolation": "Original TabPFN analysis package runs only in output/tabpfn-workspace; it never overlays root analysis or F1 runtime.",
+  "files": [
+    {
+      "path": "workflows/tabpfn/analysis/__init__.py",
+      "source_path": "analysis/__init__.py",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "tabpfn-source",
+      "sha256": "ff2945244ab1a39db8f0d6d4fbe7ef2cb74c8e8173d04bc880c3e76f69120af7"
+    },
+    {
+      "path": "workflows/tabpfn/analysis/check_diagscale_categorical_alignment_80_20.py",
+      "source_path": "analysis/check_diagscale_categorical_alignment_80_20.py",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "tabpfn-source",
+      "sha256": "5772309d600d611a53ce37dbda5433974c9732b2e8132466429696a83fd72c6c"
+    },
+    {
+      "path": "workflows/tabpfn/analysis/compare_tabpfn_aligned_temporal_80_20.py",
+      "source_path": "analysis/compare_tabpfn_aligned_temporal_80_20.py",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "tabpfn-source",
+      "sha256": "5db840857d405026681072516502a3439394e2856c75c3187c2d563dad1ee095"
+    },
+    {
+      "path": "workflows/tabpfn/analysis/compare_tabpfn_calendar_80_20.py",
+      "source_path": "analysis/compare_tabpfn_calendar_80_20.py",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "tabpfn-source",
+      "sha256": "6d1bd3d952ba3d8b0a1c2da4f7542bfc418f1c6c521f2f1df92fdc00eece864c"
+    },
+    {
+      "path": "workflows/tabpfn/analysis/compare_tabpfn_components_80_20.py",
+      "source_path": "analysis/compare_tabpfn_components_80_20.py",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "tabpfn-source",
+      "sha256": "ba085f9ac46953f045562f670823987356bbc9ada46960ba1ec013f5c7eff9c5"
+    },
+    {
+      "path": "workflows/tabpfn/analysis/compare_tabpfn_diagscale_80_20.py",
+      "source_path": "analysis/compare_tabpfn_diagscale_80_20.py",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "tabpfn-source",
+      "sha256": "5f9ceb1e93c72389f2dd0113cc3feead25c5d1594309ddaee5da88eb8107fa76"
+    },
+    {
+      "path": "workflows/tabpfn/analysis/compare_tabpfn_v3_5_fast_80_20.py",
+      "source_path": "analysis/compare_tabpfn_v3_5_fast_80_20.py",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "tabpfn-source",
+      "sha256": "f6219a6058535f6d53b1a6d637cf910e50e1cf3c32bf1e0f02af2b02394f092f"
+    },
+    {
+      "path": "workflows/tabpfn/analysis/compare_tabpfn_v3_80_20.py",
+      "source_path": "analysis/compare_tabpfn_v3_80_20.py",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "tabpfn-source",
+      "sha256": "f87994a4df3159adaea27bb00789c807dbd0278d6399b13e8cdbe96409ba0306"
+    },
+    {
+      "path": "workflows/tabpfn/analysis/config.py",
+      "source_path": "analysis/config.py",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "tabpfn-source",
+      "sha256": "d1840e8c7ea5a1883a299b3e3179e00a22912ea0338ff1671ebdffc4b2ed6475"
+    },
+    {
+      "path": "workflows/tabpfn/analysis/data.py",
+      "source_path": "analysis/data.py",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "tabpfn-source",
+      "sha256": "fefdfd0c1cec930a993183e68d127be32821a7407118b27fcd1c2fbb9221f1b9"
+    },
+    {
+      "path": "workflows/tabpfn/analysis/evaluation.py",
+      "source_path": "analysis/evaluation.py",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "tabpfn-source",
+      "sha256": "a7a81b63717b8ce1b59e51a969b98560112da0a0a090c8f0d24d50ed041efe97"
+    },
+    {
+      "path": "workflows/tabpfn/analysis/experiments/__init__.py",
+      "source_path": "analysis/experiments/__init__.py",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "tabpfn-source",
+      "sha256": "147bbe3cdee190470f8be1a009846d62a798e77366c42d824d90c2fb68e60cb2"
+    },
+    {
+      "path": "workflows/tabpfn/analysis/experiments/aligned_temporal_features.py",
+      "source_path": "analysis/experiments/aligned_temporal_features.py",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "tabpfn-source",
+      "sha256": "3e8c4ebc0fb741a57099e8fec8f2c6a32dfabfe262dd7a077610ff2714fe4f70"
+    },
+    {
+      "path": "workflows/tabpfn/analysis/experiments/auxiliary_ablation.py",
+      "source_path": "analysis/experiments/auxiliary_ablation.py",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "tabpfn-source",
+      "sha256": "6965b5c4342cae7013a5917e550cc9c029a912f8151bf945358d91f02130b1c7"
+    },
+    {
+      "path": "workflows/tabpfn/analysis/experiments/calendar_encoding.py",
+      "source_path": "analysis/experiments/calendar_encoding.py",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "tabpfn-source",
+      "sha256": "e8ac207e91c086270e0a163ca9eaa669e520354d2f3b2787ae074996d9e2d4c5"
+    },
+    {
+      "path": "workflows/tabpfn/analysis/experiments/diagscale_tabpfn.py",
+      "source_path": "analysis/experiments/diagscale_tabpfn.py",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "tabpfn-source",
+      "sha256": "1b4dbfd62803e6dcb594665219daeeb328d09cd632a8b3d13d8ac28dee9d2431"
+    },
+    {
+      "path": "workflows/tabpfn/analysis/experiments/dynamic_market_index.py",
+      "source_path": "analysis/experiments/dynamic_market_index.py",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "tabpfn-source",
+      "sha256": "272824fb01e648e5ed9379efb11d1e103a2ee93111cdb8ea098d7181354281a2"
+    },
+    {
+      "path": "workflows/tabpfn/analysis/experiments/lora_qk_tabpfn.py",
+      "source_path": "analysis/experiments/lora_qk_tabpfn.py",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "tabpfn-source",
+      "sha256": "ded6a7d91321d341103a9ef2068207aa6106a37bb528ee1d4b1e2689ef0601fa"
+    },
+    {
+      "path": "workflows/tabpfn/analysis/experiments/recent_history.py",
+      "source_path": "analysis/experiments/recent_history.py",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "tabpfn-source",
+      "sha256": "1b455164c922224556f561ca10e475dbd784ce58eee38d0e08a5cff9baf6019a"
+    },
+    {
+      "path": "workflows/tabpfn/analysis/experiments/recent_time_context.py",
+      "source_path": "analysis/experiments/recent_time_context.py",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "tabpfn-source",
+      "sha256": "d91d17fe9725cf2e0a5411103945989d55c161bb337e5ef8aacda43013657ec5"
+    },
+    {
+      "path": "workflows/tabpfn/analysis/experiments/spatiotemporal_hybrid.py",
+      "source_path": "analysis/experiments/spatiotemporal_hybrid.py",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "tabpfn-source",
+      "sha256": "9f275e624dc244dd0aef1085c5c76bec8808552ae6a1b01ce1738d8c24dfca10"
+    },
+    {
+      "path": "workflows/tabpfn/analysis/experiments/tabpfn_adaptation.py",
+      "source_path": "analysis/experiments/tabpfn_adaptation.py",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "tabpfn-source",
+      "sha256": "d789212dae3d1104c858433fddbb181d22f947e220978e6cd09f58c5ee291c9f"
+    },
+    {
+      "path": "workflows/tabpfn/analysis/experiments/tabpfn_adaptation_features.py",
+      "source_path": "analysis/experiments/tabpfn_adaptation_features.py",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "tabpfn-source",
+      "sha256": "62c11554fce20dd2cdff23f82ff71d292ed80d8ce3dbe6fb610877e65f75faea"
+    },
+    {
+      "path": "workflows/tabpfn/analysis/experiments/tabpfn_comparison.py",
+      "source_path": "analysis/experiments/tabpfn_comparison.py",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "tabpfn-source",
+      "sha256": "55275d096770fc82c639980d9c38e4abf81980bb74801f7bc1ebd4769e6a5f41"
+    },
+    {
+      "path": "workflows/tabpfn/analysis/experiments/tabpfn_component_adaptation.py",
+      "source_path": "analysis/experiments/tabpfn_component_adaptation.py",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "tabpfn-source",
+      "sha256": "ea94b89d89a156411ae1468c80e8c9bb4a97ca01d865889eb47d5fb5d5c44635"
+    },
+    {
+      "path": "workflows/tabpfn/analysis/experiments/tabpfn_residual_heads.py",
+      "source_path": "analysis/experiments/tabpfn_residual_heads.py",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "tabpfn-source",
+      "sha256": "79e64125a29d95850363e551d0e2c8444b6ce451d6491f13d342f5fdae2d0943"
+    },
+    {
+      "path": "workflows/tabpfn/analysis/prepare_tabpfn_v3_features.py",
+      "source_path": "analysis/prepare_tabpfn_v3_features.py",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "tabpfn-source",
+      "sha256": "d4e4f8e0e07880fbdca87781d84356f3228a9250675c09cadfdbd0f14a39ea85"
+    },
+    {
+      "path": "workflows/tabpfn/analysis/train_tabpfn_fast_submission.py",
+      "source_path": "analysis/train_tabpfn_fast_submission.py",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "tabpfn-source",
+      "sha256": "746e3d2a6cc7446a43b92522cb86e3c58a12dbe6063c4ebe21160becbb020532"
+    },
+    {
+      "path": "workflows/tabpfn/analysis/tune_tabpfn_diagscale_80_20.py",
+      "source_path": "analysis/tune_tabpfn_diagscale_80_20.py",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "tabpfn-source",
+      "sha256": "6a9907aa9f26538075898dc9c037072db8fd908dbbb4dba5f45a0ebf18914ba0"
+    },
+    {
+      "path": "workflows/tabpfn/tests/test_aligned_temporal_features.py",
+      "source_path": "tests/test_aligned_temporal_features.py",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "tabpfn-source",
+      "sha256": "0a2580543555791695c27b884e7180beb5dc482bfe334bd0a92770782b18958c"
+    },
+    {
+      "path": "workflows/tabpfn/tests/test_calendar_encoding.py",
+      "source_path": "tests/test_calendar_encoding.py",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "tabpfn-source",
+      "sha256": "1186517208b77a766c7e6f8c85dc5e7cc4a02dc6b36f8aa553363e4f4a93e356"
+    },
+    {
+      "path": "workflows/tabpfn/tests/test_recent_time_context.py",
+      "source_path": "tests/test_recent_time_context.py",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "tabpfn-source",
+      "sha256": "8043beace0e684388fc1ae0e13aad22dc74ff14826b3aa0f43825aa6c1d5486e"
+    },
+    {
+      "path": "workflows/tabpfn/tests/test_tabpfn_adaptation.py",
+      "source_path": "tests/test_tabpfn_adaptation.py",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "tabpfn-source",
+      "sha256": "e27d994e6f7c3a6d8948d68fe585e2d4d09bb49aae66bcac5f2f034eed6ec7f4"
+    },
+    {
+      "path": "workflows/tabpfn/tests/test_tabpfn_comparison.py",
+      "source_path": "tests/test_tabpfn_comparison.py",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "tabpfn-source",
+      "sha256": "fc23497ca3aeae983ec38afe04e644b3cc5cde477b45ac8636bc19ee466b478b"
+    },
+    {
+      "path": "workflows/tabpfn/tests/test_tabpfn_component_adaptation.py",
+      "source_path": "tests/test_tabpfn_component_adaptation.py",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "tabpfn-source",
+      "sha256": "78416b94b4f39a477d0834cb738828303589eb5a3d229563d30936c4507ad8cb"
+    },
+    {
+      "path": "workflows/tabpfn/tests/test_tabpfn_fast_submission.py",
+      "source_path": "tests/test_tabpfn_fast_submission.py",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "tabpfn-source",
+      "sha256": "59351b3144152676c3631dae57e187f27db38f4678854d6a030e60e418e84cc7"
+    },
+    {
+      "path": "workflows/tabpfn/environment.yml",
+      "source_path": "environment.yml",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "tabpfn-source",
+      "sha256": "ed23741bbcddc1da8a4de92e8a39147866b807402be83371c702a4358c3f3aa5"
+    },
+    {
+      "path": "workflows/tabpfn/README.md",
+      "source_path": "README.md",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "tabpfn-source",
+      "sha256": "83566050bae079abba34f8ec724200836653a216332f72f316b7ca251e14f22b"
+    },
+    {
+      "path": "workflows/tabpfn/requirements-amenity-quality.txt",
+      "source_path": "requirements-amenity-quality.txt",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "tabpfn-source",
+      "sha256": "38cfe89e93dd8c25d9fe1563b0a46aa9cf5add507332cd670fb7d90739acafd6"
+    },
+    {
+      "path": "workflows/tabpfn/requirements-eda.txt",
+      "source_path": "requirements-eda.txt",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "tabpfn-source",
+      "sha256": "abad37867ddcffdfe085b71863356f3a8c2e5abc3e7e658375f7d4b0bc49e59c"
+    },
+    {
+      "path": "workflows/tabpfn/requirements-model.txt",
+      "source_path": "requirements-model.txt",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "tabpfn-source",
+      "sha256": "2261168aa2fc1d163aa207f9c9f7987367fa730d3c99c99bab210ba2070bf595"
+    },
+    {
+      "path": "workflows/tabpfn/requirements-spatial.txt",
+      "source_path": "requirements-spatial.txt",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "tabpfn-source",
+      "sha256": "d0fba01cf91aa4fd9cd22d15ff62e36302b75d2f782f7b409e4c797d0e06b36b"
+    },
+    {
+      "path": "workflows/tabpfn/requirements-tabm.txt",
+      "source_path": "requirements-tabm.txt",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "tabpfn-source",
+      "sha256": "0d0d7a60398095781c846fc02ecc29c9a6c62914b2833134b4e41cae2412bc42"
+    },
+    {
+      "path": "workflows/tabpfn/requirements-tabpfn-api.txt",
+      "source_path": "requirements-tabpfn-api.txt",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "tabpfn-source",
+      "sha256": "eeb430d53ff741cec485f88af8000972821fa02d97ff8a8d6f1735c7186faf35"
+    },
+    {
+      "path": "workflows/tabpfn/requirements-tabpfn.txt",
+      "source_path": "requirements-tabpfn.txt",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "tabpfn-source",
+      "sha256": "7b1f54da19286913f8b1acdd16c10c59f1823f6ea511c783723bb99128e26331"
+    },
+    {
+      "path": "workflows/tabpfn/requirements-transformer.txt",
+      "source_path": "requirements-transformer.txt",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "tabpfn-source",
+      "sha256": "c60d794ca592bf9082a43d92712b43058a7a5ab02ffb8ac52f3b89b91c082b2f"
+    },
+    {
+      "path": "workflows/tabpfn/requirements-worldcover.txt",
+      "source_path": "requirements-worldcover.txt",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "tabpfn-source",
+      "sha256": "09ffbe5874e62d6ab494babe89e79d5ec198df74a1a8c73c386ab7e77ff45c9e"
+    },
+    {
+      "path": "workflows/tabpfn/TABPFN_API_77.md",
+      "source_path": "TABPFN_API_77.md",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "tabpfn-source",
+      "sha256": "0bf03e1eb53aa6dc7ed57e0d4752efe684068ecbdca4dfb31abd9e45a6dea0ca"
+    },
+    {
+      "path": "workflows/tabpfn/environment.anniversary-original.yml",
+      "source_path": "environment.yml",
+      "source_commit": "1e69bb7995686d6a2bb7d502475e19ae72f081e3",
+      "source_kind": "anniversary-environment",
+      "sha256": "44d1fc2aeab860261ef051975217464635527954b55a1009f0ce32f2b645421f"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/calibration_scores.csv",
+      "source_path": "reports/tabpfn_components_80_20/calibration_scores.csv",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "c2c690cc5bd8f015070e6458975c1bcf91fab6d7fa015add15518d64c0687aab"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/component_selection.json",
+      "source_path": "reports/tabpfn_components_80_20/component_selection.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "984ec6f6a78078b7c2833282f9ad5036288b6ac025f9aa992ef2d7c67c3fc833"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/monthly_scores.csv",
+      "source_path": "reports/tabpfn_components_80_20/monthly_scores.csv",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "6e9c674b2509fbb5b9fa3b3a26c6ea59f701b1c458afb96d753bdb7e4be42537"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/month_bootstrap.csv",
+      "source_path": "reports/tabpfn_components_80_20/month_bootstrap.csv",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "70e0761834e716762d1cee1c59afc70a8942cfa8b58d799da9178f472caf1629"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/plan.json",
+      "source_path": "reports/tabpfn_components_80_20/plan.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "3c272772a9a8f4597990f174a6be26acd515da532013cdf13c43f26f04592d95"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/pre_torch_seed_plan.json",
+      "source_path": "reports/tabpfn_components_80_20/pre_torch_seed_plan.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "bf607068af691290f41967c5f6b291115bce8f87c107380cc5dcdf1f670f56ce"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/report.md",
+      "source_path": "reports/tabpfn_components_80_20/report.md",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "5af2adacbe121d831b7a2241e6d913e921a2fb5c3a9dfafe8e61cc9df0df3b3c"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/rmse_comparison.png",
+      "source_path": "reports/tabpfn_components_80_20/rmse_comparison.png",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "502e7bf9c13764fd21e98d5e01813a73870a8092b64491a876236a7e89998331"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/scores.csv",
+      "source_path": "reports/tabpfn_components_80_20/scores.csv",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "5f8258db3d37a43562f4850c592c1f2eff95143453d3e8824a91087f7b8cc9c8"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/smoke_initial_plan.json",
+      "source_path": "reports/tabpfn_components_80_20/smoke_initial_plan.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "d08b8f68396d49b22d8c39563686bdcf0eb6315321f3277b0167e870029c3382"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/smoke_second_plan.json",
+      "source_path": "reports/tabpfn_components_80_20/smoke_second_plan.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "123a255e5a2296b100129dceb585196cff79931f826a337dd616ed6eb954d00e"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/smoke_third_plan.json",
+      "source_path": "reports/tabpfn_components_80_20/smoke_third_plan.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "1e85e2c20643b9f0a1a4477cb72f16d66bae1dc30ba549c88ee6adaf3f93ca50"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/verification.json",
+      "source_path": "reports/tabpfn_components_80_20/verification.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "b4f64bd82cc247edbada26d7921dc3116db0de6126eb44e18591af547b0609a3"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/view_calibration_1.csv",
+      "source_path": "reports/tabpfn_components_80_20/view_calibration_1.csv",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "7527d92b35792e436385374b221b9a50deba919eba506c45bd787f7a80f2b966"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/view_calibration_2.csv",
+      "source_path": "reports/tabpfn_components_80_20/view_calibration_2.csv",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "4b93467b770723bf734ee374589b794bb4a26027434eea679fbe2a6a00086fb8"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/view_calibration_4.csv",
+      "source_path": "reports/tabpfn_components_80_20/view_calibration_4.csv",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "15bca82a331920a60edc7a2df6928ad7ef9c8e42b86c0102ceab144263de4c1a"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/view_calibration_scores.csv",
+      "source_path": "reports/tabpfn_components_80_20/view_calibration_scores.csv",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "d07c63cfb092b99f0306f46e88d53960063428bca3cbee4b616858fc9203827d"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/view_selection.json",
+      "source_path": "reports/tabpfn_components_80_20/view_selection.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "791de30611a564e392da2d2d89203aa563c19fa5cc0d000b930ca0746af7d494"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/candidates/diag_crps_mse/calibration.json",
+      "source_path": "reports/tabpfn_components_80_20/candidates/diag_crps_mse/calibration.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "56e9f306f6f068e39da36b909ed281d261a7fe20f44d376987d66e0512582647"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/candidates/diag_crps_mse/epoch_trace.json",
+      "source_path": "reports/tabpfn_components_80_20/candidates/diag_crps_mse/epoch_trace.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "05dee1506a9786287e4dd815a1d6e3383c37ae1f89a2acabb52568222ff343e9"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/candidates/diag_crps_mse/settings.json",
+      "source_path": "reports/tabpfn_components_80_20/candidates/diag_crps_mse/settings.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "394738f4fe46de41e5e8efe4af375c44f0eca912286e8f1f45be2890130ca7d0"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/candidates/diag_mse_only/calibration.json",
+      "source_path": "reports/tabpfn_components_80_20/candidates/diag_mse_only/calibration.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "c99dbc22fcee293fda27c38dce1529a7f6bb68eb06abeb4f0aeee963b6e2909d"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/candidates/diag_mse_only/epoch_trace.json",
+      "source_path": "reports/tabpfn_components_80_20/candidates/diag_mse_only/epoch_trace.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "8c6d841e61e726384df62f2b48fd8ac80c975bf3fb59e3808ff4915a30a45619"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/candidates/diag_mse_only/settings.json",
+      "source_path": "reports/tabpfn_components_80_20/candidates/diag_mse_only/settings.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "0bc1e0c4cfc5bb6d9393f4bfb3d299a04d698a18dde68e23248846dc8dfe4d04"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/candidates/icl_last2_rank4/calibration.json",
+      "source_path": "reports/tabpfn_components_80_20/candidates/icl_last2_rank4/calibration.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "35d05633cf166d83544c6e2a05c3b9b74ed97e862a73fa676c3a86c30305cf0b"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/candidates/icl_last2_rank4/epoch_trace.json",
+      "source_path": "reports/tabpfn_components_80_20/candidates/icl_last2_rank4/epoch_trace.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "4e9f41fe833353e9e7bdf1fdaf910dcf4ddbb7f626d370663353ff7768e1bdc8"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/candidates/icl_last2_rank4/settings.json",
+      "source_path": "reports/tabpfn_components_80_20/candidates/icl_last2_rank4/settings.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "4454b68b8f70f3b24f9dcd3ce26ef5bf5c63f529f8ee2e47737e5286a92683e2"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/candidates/icl_rank2/calibration.json",
+      "source_path": "reports/tabpfn_components_80_20/candidates/icl_rank2/calibration.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "1121631b5d86b87809db06a7a93fc06bdeb59ef713487cefccf0c65cf1c002f0"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/candidates/icl_rank2/epoch_trace.json",
+      "source_path": "reports/tabpfn_components_80_20/candidates/icl_rank2/epoch_trace.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "48358c62698e893b402ef426d7d60c1547796e462cb0630c963b47f46159641f"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/candidates/icl_rank2/settings.json",
+      "source_path": "reports/tabpfn_components_80_20/candidates/icl_rank2/settings.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "1b2391a0eb648c1224d34312903a90e36580715037bf327c106e164b0c53cbe8"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/candidates/icl_rank4/calibration.json",
+      "source_path": "reports/tabpfn_components_80_20/candidates/icl_rank4/calibration.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "f60ec85b39efe7cc756dd599f83a6652a4ed1c0cb8c6c5c33df9200c9ed72896"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/candidates/icl_rank4/epoch_trace.json",
+      "source_path": "reports/tabpfn_components_80_20/candidates/icl_rank4/epoch_trace.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "401a2ae041d5e2b73b8b76deefc850b0d4c0132b5fec02bcdda4115ca7f0def7"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/candidates/icl_rank4/settings.json",
+      "source_path": "reports/tabpfn_components_80_20/candidates/icl_rank4/settings.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "9b4275b73ac80a6c54ba7f00448c4bb213316a5271c966fe2007e7a3e792ee74"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/candidates/regression_head/calibration.json",
+      "source_path": "reports/tabpfn_components_80_20/candidates/regression_head/calibration.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "7ceb0c8dcec3001b032781d4a180e0a7dff36abf05ffafea79823aac0766ee2a"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/candidates/regression_head/epoch_trace.json",
+      "source_path": "reports/tabpfn_components_80_20/candidates/regression_head/epoch_trace.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "feacc8a9c0b3ca8623ef1cfe674173a3e394ef9e413cc3ac8926ea81f6bd75a2"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/candidates/regression_head/settings.json",
+      "source_path": "reports/tabpfn_components_80_20/candidates/regression_head/settings.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "becc8c45a0155bb92170dd310d1892cb7a0b79b618e4b2f14e17867baaf12d3c"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/outer/diag_crps_mse/settings.json",
+      "source_path": "reports/tabpfn_components_80_20/outer/diag_crps_mse/settings.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "fa220269aea325ca0addfacf9925d7a8abfd6fa4a5a62a58adb4e357921f496e"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/outer/diag_crps_mse/timing.json",
+      "source_path": "reports/tabpfn_components_80_20/outer/diag_crps_mse/timing.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "417e43572880d196c82eb40ef43cc2507360c83deadef441f685c52a47d068ec"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/outer/diag_mse_only/settings.json",
+      "source_path": "reports/tabpfn_components_80_20/outer/diag_mse_only/settings.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "a81561e930e66689c78847fbf54e3740a2926789c7509cd6ee205b76d3b7792b"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/outer/diag_mse_only/timing.json",
+      "source_path": "reports/tabpfn_components_80_20/outer/diag_mse_only/timing.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "94df449c2d2598f9177873124fd15ed1cb3261e7636a1689ad5f4c7567fef4ee"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/outer/icl_rank2/settings.json",
+      "source_path": "reports/tabpfn_components_80_20/outer/icl_rank2/settings.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "cb414d1172269916a4692ebe703349fb821635a6371e4cd870aefbbbd0f16ba0"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/outer/icl_rank2/timing.json",
+      "source_path": "reports/tabpfn_components_80_20/outer/icl_rank2/timing.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "f717feaefcefa4cb722ad38a0fcdb6d0ec884adc30e5d076338372909370d6e6"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/outer/original_diag_2view/settings.json",
+      "source_path": "reports/tabpfn_components_80_20/outer/original_diag_2view/settings.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "0a438c0f195fdb372dbd57c0d5688a4f53f968c4836f8b8af716f60685bbd188"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/outer/original_diag_2view/timing.json",
+      "source_path": "reports/tabpfn_components_80_20/outer/original_diag_2view/timing.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "62b0497664727e21041d923f9a7c1bc483f1097e93ae8ace3c91d393867298c0"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/outer/original_diag_4view/settings.json",
+      "source_path": "reports/tabpfn_components_80_20/outer/original_diag_4view/settings.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "e25415108623a050abc13c82e6e4666d5a61f78e8e1efc454aa01e31ee49b121"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/outer/original_diag_4view/timing.json",
+      "source_path": "reports/tabpfn_components_80_20/outer/original_diag_4view/timing.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "9449f87da31c64b54f65ab08f54b2d8841b8f6a8be293ff1b5fa85d8606ae958"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/outer/regression_head/settings.json",
+      "source_path": "reports/tabpfn_components_80_20/outer/regression_head/settings.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "4cb2f35739cf1c1ce0863dac8bb6242cb126092332d4d5940fdc9d09111dbe00"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/outer/regression_head/timing.json",
+      "source_path": "reports/tabpfn_components_80_20/outer/regression_head/timing.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "85d99fbf5fb6a757103e9d24c3bdb9c4112514192c24d23b704035301d57ad48"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/pre_torch_seed_pilot/icl_rank2/epoch_trace.json",
+      "source_path": "reports/tabpfn_components_80_20/pre_torch_seed_pilot/icl_rank2/epoch_trace.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "72e4fe667061b7e21aea3e27071f387ddde6596cdae4551dff12118e005a9396"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/pre_torch_seed_pilot/icl_rank2/settings.json",
+      "source_path": "reports/tabpfn_components_80_20/pre_torch_seed_pilot/icl_rank2/settings.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "1b2391a0eb648c1224d34312903a90e36580715037bf327c106e164b0c53cbe8"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/smoke/diag_mse_only/calibration.json",
+      "source_path": "reports/tabpfn_components_80_20/smoke/diag_mse_only/calibration.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "b410f606ff1379c2d521f9b9c89cfadc7ae0a6f0faa4612ac37dda50279ec39e"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/smoke/diag_mse_only/epoch_trace.json",
+      "source_path": "reports/tabpfn_components_80_20/smoke/diag_mse_only/epoch_trace.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "cd5665b5669bbac02c073e4703e39b6a87cd5426478cc394ed065238cedae325"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/smoke/diag_mse_only/settings.json",
+      "source_path": "reports/tabpfn_components_80_20/smoke/diag_mse_only/settings.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "ccb6d741ccf73040f77701995a7546d3cb97f0475d67066a066ce598c533e5d4"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/smoke/icl_rank2/calibration.json",
+      "source_path": "reports/tabpfn_components_80_20/smoke/icl_rank2/calibration.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "0401a43924b12f08c2311f60ff8bb9364929d5c7f44e1d4b08fce7ae602425ff"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/smoke/icl_rank2/epoch_trace.json",
+      "source_path": "reports/tabpfn_components_80_20/smoke/icl_rank2/epoch_trace.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "71eafb7310cb4161872ee4c744c865bcd2edcc18f287d0cdee6e38d3f19c9c8f"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/smoke/icl_rank2/settings.json",
+      "source_path": "reports/tabpfn_components_80_20/smoke/icl_rank2/settings.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "5e509876f8ec5e4faffcee54c3bf056fe78662862ed22cbe75fd000b34eb5996"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/smoke/regression_head/calibration.json",
+      "source_path": "reports/tabpfn_components_80_20/smoke/regression_head/calibration.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "883c161aa84f0cc668b388676f4514becb9b68255707d7e4050f6bc16110ae26"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/smoke/regression_head/epoch_trace.json",
+      "source_path": "reports/tabpfn_components_80_20/smoke/regression_head/epoch_trace.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "6d598fd0d86ad2d6fc245f3813eaa2a222266b73f8e6c72c34ec85468565c66f"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/smoke/regression_head/settings.json",
+      "source_path": "reports/tabpfn_components_80_20/smoke/regression_head/settings.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "a86d970c975a8a9b1ebf87c579d35fdc7a5504a29a36a2ee43b8fda5f83a5c12"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/smoke_pre_replay_fix/diag_mse_only/calibration.json",
+      "source_path": "reports/tabpfn_components_80_20/smoke_pre_replay_fix/diag_mse_only/calibration.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "4ff18957f90fc916d8584ed4ac26370ec35d8e7eb87f890785589a1dc7ff0736"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/smoke_pre_replay_fix/diag_mse_only/epoch_trace.json",
+      "source_path": "reports/tabpfn_components_80_20/smoke_pre_replay_fix/diag_mse_only/epoch_trace.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "27f8805c6c3952f27a8830b97bd97c0b9cdcafc021e1cf1a8d0f411eb0becd6d"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/smoke_pre_replay_fix/diag_mse_only/settings.json",
+      "source_path": "reports/tabpfn_components_80_20/smoke_pre_replay_fix/diag_mse_only/settings.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "ccb6d741ccf73040f77701995a7546d3cb97f0475d67066a066ce598c533e5d4"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/smoke_pre_replay_fix/icl_rank2/calibration.json",
+      "source_path": "reports/tabpfn_components_80_20/smoke_pre_replay_fix/icl_rank2/calibration.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "ef8e64ca0749a58d1afbc9b041f3240805e3e2e48ec8c2b6ce6abc1629817b8d"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/smoke_pre_replay_fix/icl_rank2/epoch_trace.json",
+      "source_path": "reports/tabpfn_components_80_20/smoke_pre_replay_fix/icl_rank2/epoch_trace.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "56cfbd4b0ba194c6f2b412194f84eb3a5e5cf0214c3533258ec82df40ebfe2c5"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/smoke_pre_replay_fix/icl_rank2/settings.json",
+      "source_path": "reports/tabpfn_components_80_20/smoke_pre_replay_fix/icl_rank2/settings.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "5e509876f8ec5e4faffcee54c3bf056fe78662862ed22cbe75fd000b34eb5996"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/smoke_pre_replay_fix/regression_head/calibration.json",
+      "source_path": "reports/tabpfn_components_80_20/smoke_pre_replay_fix/regression_head/calibration.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "e22228c691a52b1a0867cb8cfe41aeb0ff5a4f75dad3276598b5ef8c3f64f4dd"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/smoke_pre_replay_fix/regression_head/epoch_trace.json",
+      "source_path": "reports/tabpfn_components_80_20/smoke_pre_replay_fix/regression_head/epoch_trace.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "892b7dd36ab7e4741439027919013a87874910487bc4ec3b09ea528de4eb28a9"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/smoke_pre_replay_fix/regression_head/settings.json",
+      "source_path": "reports/tabpfn_components_80_20/smoke_pre_replay_fix/regression_head/settings.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "a86d970c975a8a9b1ebf87c579d35fdc7a5504a29a36a2ee43b8fda5f83a5c12"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/view_calibration/original_diag_2view/settings.json",
+      "source_path": "reports/tabpfn_components_80_20/view_calibration/original_diag_2view/settings.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "7558713fbcc71bd923bd8cb5bf4720936e7e284c450742550305a13c593079f6"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/view_calibration/original_diag_2view/timing.json",
+      "source_path": "reports/tabpfn_components_80_20/view_calibration/original_diag_2view/timing.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "1f11c06e67069f04a5a6b9e3601e9e9ab141f7b35d9ee5b5a32b85c1d6b27598"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/view_calibration/original_diag_4view/settings.json",
+      "source_path": "reports/tabpfn_components_80_20/view_calibration/original_diag_4view/settings.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "a925e9dda0c75469706e597b38151aee2e496c5dc2f7edabf62b406fff166521"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/view_calibration/original_diag_4view/timing.json",
+      "source_path": "reports/tabpfn_components_80_20/view_calibration/original_diag_4view/timing.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "48837b8370294ec8288378f6cdcb76d004f2975a0f3d5e88d00a92d57cb698c4"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_aligned_temporal_80_20/feature_manifest.json",
+      "source_path": "reports/tabpfn_v3_5_fast_aligned_temporal_80_20/feature_manifest.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "cc4c94fd39aba395265af1f499c4255c5cb912b7690b03f5b12b27190ef85c87"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_aligned_temporal_80_20/monthly_scores.csv",
+      "source_path": "reports/tabpfn_v3_5_fast_aligned_temporal_80_20/monthly_scores.csv",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "5222163931aad446a2c76a877192b7b884577acfe179e2d7e29ca644f5e2a9b6"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_aligned_temporal_80_20/production_memory_probe.json",
+      "source_path": "reports/tabpfn_v3_5_fast_aligned_temporal_80_20/production_memory_probe.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "ceb5b5b7f359e6b282af72c115000c586f6bac67b939dd6eb2f77de43148288b"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_aligned_temporal_80_20/report.md",
+      "source_path": "reports/tabpfn_v3_5_fast_aligned_temporal_80_20/report.md",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "ad5bf45e69ee9e59d734f654dcd8368a2c03f1312a9c27dd4a4dcc3233005a7b"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_aligned_temporal_80_20/scores.csv",
+      "source_path": "reports/tabpfn_v3_5_fast_aligned_temporal_80_20/scores.csv",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "71599a89f86ff349d139f887a390bd32452e4ad4b54676d26072949addd5c623"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_aligned_temporal_80_20/selection.json",
+      "source_path": "reports/tabpfn_v3_5_fast_aligned_temporal_80_20/selection.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "d00b1590ac1fcd06a4eb170fc630ac9b4be072ee508d772204c112ecccfd2c6c"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_aligned_temporal_80_20/settings.json",
+      "source_path": "reports/tabpfn_v3_5_fast_aligned_temporal_80_20/settings.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "4c55e998b3471b6b7dfaee1a33c57b12e123edf5995cf977b809a006e64ccad7"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_aligned_temporal_80_20/temporal_model_audit.json",
+      "source_path": "reports/tabpfn_v3_5_fast_aligned_temporal_80_20/temporal_model_audit.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "6121c074a18248f40b881cc21ac65d1f3da94ee9874aace5b946a8684ae2efe2"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_aligned_temporal_80_20/timings.csv",
+      "source_path": "reports/tabpfn_v3_5_fast_aligned_temporal_80_20/timings.csv",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "fa404c65291db2a4155191539d29388278abb00448fcdba73ad9f4e2da8c0cf8"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_aligned_temporal_80_20/timing_tabpfn_aligned_features.json",
+      "source_path": "reports/tabpfn_v3_5_fast_aligned_temporal_80_20/timing_tabpfn_aligned_features.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "029f13c3aa5ac3178be08986983d27e335ee19f52e4db4decff4e0c5b03938d8"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_aligned_temporal_80_20/timing_tabpfn_aligned_residual.json",
+      "source_path": "reports/tabpfn_v3_5_fast_aligned_temporal_80_20/timing_tabpfn_aligned_residual.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "c73c4e198c14d1599bc88433afe6b634d36818c5fe1f225a0c765616776f4c4e"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_aligned_temporal_80_20/verification.json",
+      "source_path": "reports/tabpfn_v3_5_fast_aligned_temporal_80_20/verification.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "4b032ce2dedfcda06707609cff32553a32698ffb68d5639da94a76dbc533d0d0"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/availability_control_replay_integer.json",
+      "source_path": "reports/tabpfn_v3_5_fast_calendar_80_20/availability_control_replay_integer.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "b061139d363e508aa88f3ced38b29de11191ac129d3980f678b40478159d5c47"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/availability_inner_2022-09_calendar.json",
+      "source_path": "reports/tabpfn_v3_5_fast_calendar_80_20/availability_inner_2022-09_calendar.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "0194364b8b4327939dda1ce7b53a81986932ba7c35d4f94d85e12fb7cf7b148f"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/availability_inner_2022-09_categorical.json",
+      "source_path": "reports/tabpfn_v3_5_fast_calendar_80_20/availability_inner_2022-09_categorical.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "681945690fa90fb7a99939eb5fbf11185806572c16f059b6b55d3662c7905576"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/availability_inner_2022-09_cyclical.json",
+      "source_path": "reports/tabpfn_v3_5_fast_calendar_80_20/availability_inner_2022-09_cyclical.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "7802403df602211ed1a0ba083eba29ca0bdb4016f613bf4fe7fe8f8a7361414f"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/availability_inner_2022-09_integer.json",
+      "source_path": "reports/tabpfn_v3_5_fast_calendar_80_20/availability_inner_2022-09_integer.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "b061139d363e508aa88f3ced38b29de11191ac129d3980f678b40478159d5c47"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/availability_inner_2022-09_school_interactions.json",
+      "source_path": "reports/tabpfn_v3_5_fast_calendar_80_20/availability_inner_2022-09_school_interactions.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "79fba9e2b3df52abed438fe62b9a091d44ca73e4683f6967805558964bf9bf17"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/availability_inner_2023-07_calendar.json",
+      "source_path": "reports/tabpfn_v3_5_fast_calendar_80_20/availability_inner_2023-07_calendar.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "0194364b8b4327939dda1ce7b53a81986932ba7c35d4f94d85e12fb7cf7b148f"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/availability_inner_2023-07_categorical.json",
+      "source_path": "reports/tabpfn_v3_5_fast_calendar_80_20/availability_inner_2023-07_categorical.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "681945690fa90fb7a99939eb5fbf11185806572c16f059b6b55d3662c7905576"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/availability_inner_2023-07_cyclical.json",
+      "source_path": "reports/tabpfn_v3_5_fast_calendar_80_20/availability_inner_2023-07_cyclical.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "7802403df602211ed1a0ba083eba29ca0bdb4016f613bf4fe7fe8f8a7361414f"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/availability_inner_2023-07_integer.json",
+      "source_path": "reports/tabpfn_v3_5_fast_calendar_80_20/availability_inner_2023-07_integer.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "b061139d363e508aa88f3ced38b29de11191ac129d3980f678b40478159d5c47"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/availability_inner_2023-07_school_interactions.json",
+      "source_path": "reports/tabpfn_v3_5_fast_calendar_80_20/availability_inner_2023-07_school_interactions.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "79fba9e2b3df52abed438fe62b9a091d44ca73e4683f6967805558964bf9bf17"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/availability_outer_calendar.json",
+      "source_path": "reports/tabpfn_v3_5_fast_calendar_80_20/availability_outer_calendar.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "0194364b8b4327939dda1ce7b53a81986932ba7c35d4f94d85e12fb7cf7b148f"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/availability_outer_categorical.json",
+      "source_path": "reports/tabpfn_v3_5_fast_calendar_80_20/availability_outer_categorical.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "681945690fa90fb7a99939eb5fbf11185806572c16f059b6b55d3662c7905576"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/availability_outer_cyclical.json",
+      "source_path": "reports/tabpfn_v3_5_fast_calendar_80_20/availability_outer_cyclical.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "7802403df602211ed1a0ba083eba29ca0bdb4016f613bf4fe7fe8f8a7361414f"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/availability_outer_school_interactions.json",
+      "source_path": "reports/tabpfn_v3_5_fast_calendar_80_20/availability_outer_school_interactions.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "79fba9e2b3df52abed438fe62b9a091d44ca73e4683f6967805558964bf9bf17"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/availability_summary.csv",
+      "source_path": "reports/tabpfn_v3_5_fast_calendar_80_20/availability_summary.csv",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "93bb6c2bac27f68c761f6163c93dfcbc20b187ca1a54f5ce1732809cf62c7a5d"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/comparison.csv",
+      "source_path": "reports/tabpfn_v3_5_fast_calendar_80_20/comparison.csv",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "d9a90d504892ae20a3b5fc23fc1d8b16bbe40468c1735fcd815f2589e54c6c08"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/control_replay.json",
+      "source_path": "reports/tabpfn_v3_5_fast_calendar_80_20/control_replay.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "92002b18dec39ea3956c131bc778b0d8ca164d959a0e4cf421afa227fae0b714"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/encoding_selection.json",
+      "source_path": "reports/tabpfn_v3_5_fast_calendar_80_20/encoding_selection.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "5d48b2ce856f9ec52ef849b6eec24631d6c7ec1128eaf0700f836c1b7c1a1b7b"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/feature_manifest_calendar.json",
+      "source_path": "reports/tabpfn_v3_5_fast_calendar_80_20/feature_manifest_calendar.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "dc57e1c053cafff1e85cd954a7f989154c638c9584cbb7f351ee1f091db55597"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/feature_manifest_categorical.json",
+      "source_path": "reports/tabpfn_v3_5_fast_calendar_80_20/feature_manifest_categorical.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "5d63f1beca2f9d5c409dd5835cfdd949e77a770b5daf5d696f6b071c09a26bb1"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/feature_manifest_cyclical.json",
+      "source_path": "reports/tabpfn_v3_5_fast_calendar_80_20/feature_manifest_cyclical.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "ae05414888a6ae7fa8841820ce81610913ed0fb25dace32ee487753cdc2cb364"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/feature_manifest_school_interactions.json",
+      "source_path": "reports/tabpfn_v3_5_fast_calendar_80_20/feature_manifest_school_interactions.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "f9862580b76cbe600c85ba801bf8b9284767da5835a8db2db3ded43f2265f26e"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/inner_features_2022-09.json",
+      "source_path": "reports/tabpfn_v3_5_fast_calendar_80_20/inner_features_2022-09.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "55fabc6054acc8771ebb5d9efcc82b2a631a9c69074b3f114025f69a1fd2df21"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/inner_features_2023-07.json",
+      "source_path": "reports/tabpfn_v3_5_fast_calendar_80_20/inner_features_2023-07.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "a70512a492e4977cb62279ec6e24f2e711122555c35bad97d35b8c227b54e0a1"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/inner_fold_scores.csv",
+      "source_path": "reports/tabpfn_v3_5_fast_calendar_80_20/inner_fold_scores.csv",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "cd701a5313d9e2f2e47aa351620e7e90f56d3bcc4022673cfe477e8c3582d08b"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/inner_scores.csv",
+      "source_path": "reports/tabpfn_v3_5_fast_calendar_80_20/inner_scores.csv",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "14be61b676a0ccdd87e71e98efcb081eda9faf70ff92cfe9ed86721c1bbf6bcb"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/inner_selection.json",
+      "source_path": "reports/tabpfn_v3_5_fast_calendar_80_20/inner_selection.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "d1f72a88b9b491d874aed8a3eb6158b93c96780c29a701f9bbaf6d2dfd3745d1"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/monthly_comparison.csv",
+      "source_path": "reports/tabpfn_v3_5_fast_calendar_80_20/monthly_comparison.csv",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "e4cf20365e73d51fea5b3ddf9abc86ad0a8207412bee088f88a10014d22f266b"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/monthly_scores.csv",
+      "source_path": "reports/tabpfn_v3_5_fast_calendar_80_20/monthly_scores.csv",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "e9810ba71fdd9a7663d8e905e9b1a6b9692db16e14a19d84866ebc2b83309efc"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/report.md",
+      "source_path": "reports/tabpfn_v3_5_fast_calendar_80_20/report.md",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "8e218e8ff98d9da8e5d1b21c1306156b8dfb87a6b039ad917ab8a38bc21cb349"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/scores.csv",
+      "source_path": "reports/tabpfn_v3_5_fast_calendar_80_20/scores.csv",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "ce24af824ce5c8c22730098bc2997603b2c9271ad163777c8f130cb3bf0b0688"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/selection.json",
+      "source_path": "reports/tabpfn_v3_5_fast_calendar_80_20/selection.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "5c5bafc909a0b26553d92756405121161eadcb7f4d37f94892ae1c371a7004bf"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/settings.json",
+      "source_path": "reports/tabpfn_v3_5_fast_calendar_80_20/settings.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "b8c9a059f8ea6a641b0f5a604a219c8cf5200f3b4847a336aaca1de4651dbfdd"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/timings.csv",
+      "source_path": "reports/tabpfn_v3_5_fast_calendar_80_20/timings.csv",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "bdab669cfaf69d3242abceaaf1d8622c793866b4b0e68ed0ea726b93b07fc657"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/timing_control_replay_integer.json",
+      "source_path": "reports/tabpfn_v3_5_fast_calendar_80_20/timing_control_replay_integer.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "74ec23de98cffc3e1037c7c4568b0dec24a3231dd03cbdae870ba7e403a10d9a"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/timing_inner_2022-09_calendar.json",
+      "source_path": "reports/tabpfn_v3_5_fast_calendar_80_20/timing_inner_2022-09_calendar.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "eed0617ba665536395c7979f391fa61dd319498c6528b606c94fe35d681bbe13"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/timing_inner_2022-09_categorical.json",
+      "source_path": "reports/tabpfn_v3_5_fast_calendar_80_20/timing_inner_2022-09_categorical.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "2ba38ab02db396632c64156030ff4be4554697b3d6086faf6a3380afd394e28b"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/timing_inner_2022-09_cyclical.json",
+      "source_path": "reports/tabpfn_v3_5_fast_calendar_80_20/timing_inner_2022-09_cyclical.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "75fff6f5cbb9ba942de6a264e45cb32afa2cf21c276710f1e3fdb38926885b20"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/timing_inner_2022-09_integer.json",
+      "source_path": "reports/tabpfn_v3_5_fast_calendar_80_20/timing_inner_2022-09_integer.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "f8c7c505429a9cba0c8b82ddb096303b5b38b7f6fe6abbd1aaca8d7060a9448f"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/timing_inner_2022-09_school_interactions.json",
+      "source_path": "reports/tabpfn_v3_5_fast_calendar_80_20/timing_inner_2022-09_school_interactions.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "5ac03d7476c1b8672ff342b0cc7bc627ec718147e132db308716e661f7bd3fbe"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/timing_inner_2023-07_calendar.json",
+      "source_path": "reports/tabpfn_v3_5_fast_calendar_80_20/timing_inner_2023-07_calendar.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "b8f2e2c46ac15233e208db1f9fefae15d469daed239aae250fa5ae01197ad87d"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/timing_inner_2023-07_categorical.json",
+      "source_path": "reports/tabpfn_v3_5_fast_calendar_80_20/timing_inner_2023-07_categorical.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "be2f7a90a7a6130dccc1b531a2bc28338fb78a6a5b7af716a2eb652df69f901c"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/timing_inner_2023-07_cyclical.json",
+      "source_path": "reports/tabpfn_v3_5_fast_calendar_80_20/timing_inner_2023-07_cyclical.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "77719fef4b4b42276ad1d5a8a4b2b1a5d320aaca2fbb87b600f84aa0d60a1b2a"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/timing_inner_2023-07_integer.json",
+      "source_path": "reports/tabpfn_v3_5_fast_calendar_80_20/timing_inner_2023-07_integer.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "aa904d96513e36d9994c9d5f5634ecc354de66076a992fafdb1919e251a9e0c1"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/timing_inner_2023-07_school_interactions.json",
+      "source_path": "reports/tabpfn_v3_5_fast_calendar_80_20/timing_inner_2023-07_school_interactions.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "e7e6cce924ad7220b0ad64fba2310908316a07f23eb27956a1956836ca31d910"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/timing_outer_calendar.json",
+      "source_path": "reports/tabpfn_v3_5_fast_calendar_80_20/timing_outer_calendar.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "bac88a8d527ba20b04b719fa1f46a6582f459a8fadf59cc816311ab90a365c68"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/timing_outer_categorical.json",
+      "source_path": "reports/tabpfn_v3_5_fast_calendar_80_20/timing_outer_categorical.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "1cc42dd957998d8337ba03c832c4413c18b6e56bfb9a42814084d774feb34d5b"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/timing_outer_cyclical.json",
+      "source_path": "reports/tabpfn_v3_5_fast_calendar_80_20/timing_outer_cyclical.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "8eddbb3c6d7c3c7577ea26c58baa798136b5e498690b2e805e2c8b0806ba3dbf"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/timing_outer_school_interactions.json",
+      "source_path": "reports/tabpfn_v3_5_fast_calendar_80_20/timing_outer_school_interactions.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "280eb98b2e299ddac0932743e438b5ca9e933f4ff41247270abb87523ad1c4df"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/verification.json",
+      "source_path": "reports/tabpfn_v3_5_fast_calendar_80_20/verification.json",
+      "source_commit": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
+      "source_kind": "archived-result",
+      "sha256": "2cd001a84cce82529593333add55ff147e297fbd2d34ae18779d50e698f919f7"
+    },
+    {
+      "path": "workflows/tabpfn/requirements-validation-extra-lock.txt",
+      "source_path": null,
+      "source_commit": null,
+      "source_kind": "integration-validation-environment",
+      "sha256": "b3a6d4ca6da901fbcd0137b09aaae9b78370663b37daa77e922a2347b3e84381"
+    },
+    {
+      "path": "workflows/tabpfn/run_original_tests.py",
+      "source_path": null,
+      "source_commit": null,
+      "source_kind": "integration-resource-aware-test-runner",
+      "sha256": "b80ea72d2d1eed3e43a595a1532dbd2ad4d689f45ccfd90a80bb402b0342319f"
+    },
+    {
+      "path": "workflows/tabpfn/test-resources.json",
+      "source_path": null,
+      "source_commit": null,
+      "source_kind": "integration-resource-aware-test-runner",
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    }
+  ],
+  "reports": [
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/calibration_scores.csv",
+      "original_path": "reports/tabpfn_components_80_20/calibration_scores.csv"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/component_selection.json",
+      "original_path": "reports/tabpfn_components_80_20/component_selection.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/monthly_scores.csv",
+      "original_path": "reports/tabpfn_components_80_20/monthly_scores.csv"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/month_bootstrap.csv",
+      "original_path": "reports/tabpfn_components_80_20/month_bootstrap.csv"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/plan.json",
+      "original_path": "reports/tabpfn_components_80_20/plan.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/pre_torch_seed_plan.json",
+      "original_path": "reports/tabpfn_components_80_20/pre_torch_seed_plan.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/report.md",
+      "original_path": "reports/tabpfn_components_80_20/report.md"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/rmse_comparison.png",
+      "original_path": "reports/tabpfn_components_80_20/rmse_comparison.png"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/scores.csv",
+      "original_path": "reports/tabpfn_components_80_20/scores.csv"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/smoke_initial_plan.json",
+      "original_path": "reports/tabpfn_components_80_20/smoke_initial_plan.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/smoke_second_plan.json",
+      "original_path": "reports/tabpfn_components_80_20/smoke_second_plan.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/smoke_third_plan.json",
+      "original_path": "reports/tabpfn_components_80_20/smoke_third_plan.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/verification.json",
+      "original_path": "reports/tabpfn_components_80_20/verification.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/view_calibration_1.csv",
+      "original_path": "reports/tabpfn_components_80_20/view_calibration_1.csv"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/view_calibration_2.csv",
+      "original_path": "reports/tabpfn_components_80_20/view_calibration_2.csv"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/view_calibration_4.csv",
+      "original_path": "reports/tabpfn_components_80_20/view_calibration_4.csv"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/view_calibration_scores.csv",
+      "original_path": "reports/tabpfn_components_80_20/view_calibration_scores.csv"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/view_selection.json",
+      "original_path": "reports/tabpfn_components_80_20/view_selection.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/candidates/diag_crps_mse/calibration.json",
+      "original_path": "reports/tabpfn_components_80_20/candidates/diag_crps_mse/calibration.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/candidates/diag_crps_mse/epoch_trace.json",
+      "original_path": "reports/tabpfn_components_80_20/candidates/diag_crps_mse/epoch_trace.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/candidates/diag_crps_mse/settings.json",
+      "original_path": "reports/tabpfn_components_80_20/candidates/diag_crps_mse/settings.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/candidates/diag_mse_only/calibration.json",
+      "original_path": "reports/tabpfn_components_80_20/candidates/diag_mse_only/calibration.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/candidates/diag_mse_only/epoch_trace.json",
+      "original_path": "reports/tabpfn_components_80_20/candidates/diag_mse_only/epoch_trace.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/candidates/diag_mse_only/settings.json",
+      "original_path": "reports/tabpfn_components_80_20/candidates/diag_mse_only/settings.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/candidates/icl_last2_rank4/calibration.json",
+      "original_path": "reports/tabpfn_components_80_20/candidates/icl_last2_rank4/calibration.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/candidates/icl_last2_rank4/epoch_trace.json",
+      "original_path": "reports/tabpfn_components_80_20/candidates/icl_last2_rank4/epoch_trace.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/candidates/icl_last2_rank4/settings.json",
+      "original_path": "reports/tabpfn_components_80_20/candidates/icl_last2_rank4/settings.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/candidates/icl_rank2/calibration.json",
+      "original_path": "reports/tabpfn_components_80_20/candidates/icl_rank2/calibration.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/candidates/icl_rank2/epoch_trace.json",
+      "original_path": "reports/tabpfn_components_80_20/candidates/icl_rank2/epoch_trace.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/candidates/icl_rank2/settings.json",
+      "original_path": "reports/tabpfn_components_80_20/candidates/icl_rank2/settings.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/candidates/icl_rank4/calibration.json",
+      "original_path": "reports/tabpfn_components_80_20/candidates/icl_rank4/calibration.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/candidates/icl_rank4/epoch_trace.json",
+      "original_path": "reports/tabpfn_components_80_20/candidates/icl_rank4/epoch_trace.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/candidates/icl_rank4/settings.json",
+      "original_path": "reports/tabpfn_components_80_20/candidates/icl_rank4/settings.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/candidates/regression_head/calibration.json",
+      "original_path": "reports/tabpfn_components_80_20/candidates/regression_head/calibration.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/candidates/regression_head/epoch_trace.json",
+      "original_path": "reports/tabpfn_components_80_20/candidates/regression_head/epoch_trace.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/candidates/regression_head/settings.json",
+      "original_path": "reports/tabpfn_components_80_20/candidates/regression_head/settings.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/outer/diag_crps_mse/settings.json",
+      "original_path": "reports/tabpfn_components_80_20/outer/diag_crps_mse/settings.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/outer/diag_crps_mse/timing.json",
+      "original_path": "reports/tabpfn_components_80_20/outer/diag_crps_mse/timing.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/outer/diag_mse_only/settings.json",
+      "original_path": "reports/tabpfn_components_80_20/outer/diag_mse_only/settings.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/outer/diag_mse_only/timing.json",
+      "original_path": "reports/tabpfn_components_80_20/outer/diag_mse_only/timing.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/outer/icl_rank2/settings.json",
+      "original_path": "reports/tabpfn_components_80_20/outer/icl_rank2/settings.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/outer/icl_rank2/timing.json",
+      "original_path": "reports/tabpfn_components_80_20/outer/icl_rank2/timing.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/outer/original_diag_2view/settings.json",
+      "original_path": "reports/tabpfn_components_80_20/outer/original_diag_2view/settings.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/outer/original_diag_2view/timing.json",
+      "original_path": "reports/tabpfn_components_80_20/outer/original_diag_2view/timing.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/outer/original_diag_4view/settings.json",
+      "original_path": "reports/tabpfn_components_80_20/outer/original_diag_4view/settings.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/outer/original_diag_4view/timing.json",
+      "original_path": "reports/tabpfn_components_80_20/outer/original_diag_4view/timing.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/outer/regression_head/settings.json",
+      "original_path": "reports/tabpfn_components_80_20/outer/regression_head/settings.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/outer/regression_head/timing.json",
+      "original_path": "reports/tabpfn_components_80_20/outer/regression_head/timing.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/pre_torch_seed_pilot/icl_rank2/epoch_trace.json",
+      "original_path": "reports/tabpfn_components_80_20/pre_torch_seed_pilot/icl_rank2/epoch_trace.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/pre_torch_seed_pilot/icl_rank2/settings.json",
+      "original_path": "reports/tabpfn_components_80_20/pre_torch_seed_pilot/icl_rank2/settings.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/smoke/diag_mse_only/calibration.json",
+      "original_path": "reports/tabpfn_components_80_20/smoke/diag_mse_only/calibration.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/smoke/diag_mse_only/epoch_trace.json",
+      "original_path": "reports/tabpfn_components_80_20/smoke/diag_mse_only/epoch_trace.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/smoke/diag_mse_only/settings.json",
+      "original_path": "reports/tabpfn_components_80_20/smoke/diag_mse_only/settings.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/smoke/icl_rank2/calibration.json",
+      "original_path": "reports/tabpfn_components_80_20/smoke/icl_rank2/calibration.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/smoke/icl_rank2/epoch_trace.json",
+      "original_path": "reports/tabpfn_components_80_20/smoke/icl_rank2/epoch_trace.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/smoke/icl_rank2/settings.json",
+      "original_path": "reports/tabpfn_components_80_20/smoke/icl_rank2/settings.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/smoke/regression_head/calibration.json",
+      "original_path": "reports/tabpfn_components_80_20/smoke/regression_head/calibration.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/smoke/regression_head/epoch_trace.json",
+      "original_path": "reports/tabpfn_components_80_20/smoke/regression_head/epoch_trace.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/smoke/regression_head/settings.json",
+      "original_path": "reports/tabpfn_components_80_20/smoke/regression_head/settings.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/smoke_pre_replay_fix/diag_mse_only/calibration.json",
+      "original_path": "reports/tabpfn_components_80_20/smoke_pre_replay_fix/diag_mse_only/calibration.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/smoke_pre_replay_fix/diag_mse_only/epoch_trace.json",
+      "original_path": "reports/tabpfn_components_80_20/smoke_pre_replay_fix/diag_mse_only/epoch_trace.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/smoke_pre_replay_fix/diag_mse_only/settings.json",
+      "original_path": "reports/tabpfn_components_80_20/smoke_pre_replay_fix/diag_mse_only/settings.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/smoke_pre_replay_fix/icl_rank2/calibration.json",
+      "original_path": "reports/tabpfn_components_80_20/smoke_pre_replay_fix/icl_rank2/calibration.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/smoke_pre_replay_fix/icl_rank2/epoch_trace.json",
+      "original_path": "reports/tabpfn_components_80_20/smoke_pre_replay_fix/icl_rank2/epoch_trace.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/smoke_pre_replay_fix/icl_rank2/settings.json",
+      "original_path": "reports/tabpfn_components_80_20/smoke_pre_replay_fix/icl_rank2/settings.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/smoke_pre_replay_fix/regression_head/calibration.json",
+      "original_path": "reports/tabpfn_components_80_20/smoke_pre_replay_fix/regression_head/calibration.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/smoke_pre_replay_fix/regression_head/epoch_trace.json",
+      "original_path": "reports/tabpfn_components_80_20/smoke_pre_replay_fix/regression_head/epoch_trace.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/smoke_pre_replay_fix/regression_head/settings.json",
+      "original_path": "reports/tabpfn_components_80_20/smoke_pre_replay_fix/regression_head/settings.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/view_calibration/original_diag_2view/settings.json",
+      "original_path": "reports/tabpfn_components_80_20/view_calibration/original_diag_2view/settings.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/view_calibration/original_diag_2view/timing.json",
+      "original_path": "reports/tabpfn_components_80_20/view_calibration/original_diag_2view/timing.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/view_calibration/original_diag_4view/settings.json",
+      "original_path": "reports/tabpfn_components_80_20/view_calibration/original_diag_4view/settings.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/view_calibration/original_diag_4view/timing.json",
+      "original_path": "reports/tabpfn_components_80_20/view_calibration/original_diag_4view/timing.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_aligned_temporal_80_20/feature_manifest.json",
+      "original_path": "reports/tabpfn_v3_5_fast_aligned_temporal_80_20/feature_manifest.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_aligned_temporal_80_20/monthly_scores.csv",
+      "original_path": "reports/tabpfn_v3_5_fast_aligned_temporal_80_20/monthly_scores.csv"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_aligned_temporal_80_20/production_memory_probe.json",
+      "original_path": "reports/tabpfn_v3_5_fast_aligned_temporal_80_20/production_memory_probe.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_aligned_temporal_80_20/report.md",
+      "original_path": "reports/tabpfn_v3_5_fast_aligned_temporal_80_20/report.md"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_aligned_temporal_80_20/scores.csv",
+      "original_path": "reports/tabpfn_v3_5_fast_aligned_temporal_80_20/scores.csv"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_aligned_temporal_80_20/selection.json",
+      "original_path": "reports/tabpfn_v3_5_fast_aligned_temporal_80_20/selection.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_aligned_temporal_80_20/settings.json",
+      "original_path": "reports/tabpfn_v3_5_fast_aligned_temporal_80_20/settings.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_aligned_temporal_80_20/temporal_model_audit.json",
+      "original_path": "reports/tabpfn_v3_5_fast_aligned_temporal_80_20/temporal_model_audit.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_aligned_temporal_80_20/timings.csv",
+      "original_path": "reports/tabpfn_v3_5_fast_aligned_temporal_80_20/timings.csv"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_aligned_temporal_80_20/timing_tabpfn_aligned_features.json",
+      "original_path": "reports/tabpfn_v3_5_fast_aligned_temporal_80_20/timing_tabpfn_aligned_features.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_aligned_temporal_80_20/timing_tabpfn_aligned_residual.json",
+      "original_path": "reports/tabpfn_v3_5_fast_aligned_temporal_80_20/timing_tabpfn_aligned_residual.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_aligned_temporal_80_20/verification.json",
+      "original_path": "reports/tabpfn_v3_5_fast_aligned_temporal_80_20/verification.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/availability_control_replay_integer.json",
+      "original_path": "reports/tabpfn_v3_5_fast_calendar_80_20/availability_control_replay_integer.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/availability_inner_2022-09_calendar.json",
+      "original_path": "reports/tabpfn_v3_5_fast_calendar_80_20/availability_inner_2022-09_calendar.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/availability_inner_2022-09_categorical.json",
+      "original_path": "reports/tabpfn_v3_5_fast_calendar_80_20/availability_inner_2022-09_categorical.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/availability_inner_2022-09_cyclical.json",
+      "original_path": "reports/tabpfn_v3_5_fast_calendar_80_20/availability_inner_2022-09_cyclical.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/availability_inner_2022-09_integer.json",
+      "original_path": "reports/tabpfn_v3_5_fast_calendar_80_20/availability_inner_2022-09_integer.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/availability_inner_2022-09_school_interactions.json",
+      "original_path": "reports/tabpfn_v3_5_fast_calendar_80_20/availability_inner_2022-09_school_interactions.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/availability_inner_2023-07_calendar.json",
+      "original_path": "reports/tabpfn_v3_5_fast_calendar_80_20/availability_inner_2023-07_calendar.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/availability_inner_2023-07_categorical.json",
+      "original_path": "reports/tabpfn_v3_5_fast_calendar_80_20/availability_inner_2023-07_categorical.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/availability_inner_2023-07_cyclical.json",
+      "original_path": "reports/tabpfn_v3_5_fast_calendar_80_20/availability_inner_2023-07_cyclical.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/availability_inner_2023-07_integer.json",
+      "original_path": "reports/tabpfn_v3_5_fast_calendar_80_20/availability_inner_2023-07_integer.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/availability_inner_2023-07_school_interactions.json",
+      "original_path": "reports/tabpfn_v3_5_fast_calendar_80_20/availability_inner_2023-07_school_interactions.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/availability_outer_calendar.json",
+      "original_path": "reports/tabpfn_v3_5_fast_calendar_80_20/availability_outer_calendar.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/availability_outer_categorical.json",
+      "original_path": "reports/tabpfn_v3_5_fast_calendar_80_20/availability_outer_categorical.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/availability_outer_cyclical.json",
+      "original_path": "reports/tabpfn_v3_5_fast_calendar_80_20/availability_outer_cyclical.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/availability_outer_school_interactions.json",
+      "original_path": "reports/tabpfn_v3_5_fast_calendar_80_20/availability_outer_school_interactions.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/availability_summary.csv",
+      "original_path": "reports/tabpfn_v3_5_fast_calendar_80_20/availability_summary.csv"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/comparison.csv",
+      "original_path": "reports/tabpfn_v3_5_fast_calendar_80_20/comparison.csv"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/control_replay.json",
+      "original_path": "reports/tabpfn_v3_5_fast_calendar_80_20/control_replay.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/encoding_selection.json",
+      "original_path": "reports/tabpfn_v3_5_fast_calendar_80_20/encoding_selection.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/feature_manifest_calendar.json",
+      "original_path": "reports/tabpfn_v3_5_fast_calendar_80_20/feature_manifest_calendar.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/feature_manifest_categorical.json",
+      "original_path": "reports/tabpfn_v3_5_fast_calendar_80_20/feature_manifest_categorical.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/feature_manifest_cyclical.json",
+      "original_path": "reports/tabpfn_v3_5_fast_calendar_80_20/feature_manifest_cyclical.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/feature_manifest_school_interactions.json",
+      "original_path": "reports/tabpfn_v3_5_fast_calendar_80_20/feature_manifest_school_interactions.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/inner_features_2022-09.json",
+      "original_path": "reports/tabpfn_v3_5_fast_calendar_80_20/inner_features_2022-09.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/inner_features_2023-07.json",
+      "original_path": "reports/tabpfn_v3_5_fast_calendar_80_20/inner_features_2023-07.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/inner_fold_scores.csv",
+      "original_path": "reports/tabpfn_v3_5_fast_calendar_80_20/inner_fold_scores.csv"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/inner_scores.csv",
+      "original_path": "reports/tabpfn_v3_5_fast_calendar_80_20/inner_scores.csv"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/inner_selection.json",
+      "original_path": "reports/tabpfn_v3_5_fast_calendar_80_20/inner_selection.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/monthly_comparison.csv",
+      "original_path": "reports/tabpfn_v3_5_fast_calendar_80_20/monthly_comparison.csv"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/monthly_scores.csv",
+      "original_path": "reports/tabpfn_v3_5_fast_calendar_80_20/monthly_scores.csv"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/report.md",
+      "original_path": "reports/tabpfn_v3_5_fast_calendar_80_20/report.md"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/scores.csv",
+      "original_path": "reports/tabpfn_v3_5_fast_calendar_80_20/scores.csv"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/selection.json",
+      "original_path": "reports/tabpfn_v3_5_fast_calendar_80_20/selection.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/settings.json",
+      "original_path": "reports/tabpfn_v3_5_fast_calendar_80_20/settings.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/timings.csv",
+      "original_path": "reports/tabpfn_v3_5_fast_calendar_80_20/timings.csv"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/timing_control_replay_integer.json",
+      "original_path": "reports/tabpfn_v3_5_fast_calendar_80_20/timing_control_replay_integer.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/timing_inner_2022-09_calendar.json",
+      "original_path": "reports/tabpfn_v3_5_fast_calendar_80_20/timing_inner_2022-09_calendar.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/timing_inner_2022-09_categorical.json",
+      "original_path": "reports/tabpfn_v3_5_fast_calendar_80_20/timing_inner_2022-09_categorical.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/timing_inner_2022-09_cyclical.json",
+      "original_path": "reports/tabpfn_v3_5_fast_calendar_80_20/timing_inner_2022-09_cyclical.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/timing_inner_2022-09_integer.json",
+      "original_path": "reports/tabpfn_v3_5_fast_calendar_80_20/timing_inner_2022-09_integer.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/timing_inner_2022-09_school_interactions.json",
+      "original_path": "reports/tabpfn_v3_5_fast_calendar_80_20/timing_inner_2022-09_school_interactions.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/timing_inner_2023-07_calendar.json",
+      "original_path": "reports/tabpfn_v3_5_fast_calendar_80_20/timing_inner_2023-07_calendar.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/timing_inner_2023-07_categorical.json",
+      "original_path": "reports/tabpfn_v3_5_fast_calendar_80_20/timing_inner_2023-07_categorical.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/timing_inner_2023-07_cyclical.json",
+      "original_path": "reports/tabpfn_v3_5_fast_calendar_80_20/timing_inner_2023-07_cyclical.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/timing_inner_2023-07_integer.json",
+      "original_path": "reports/tabpfn_v3_5_fast_calendar_80_20/timing_inner_2023-07_integer.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/timing_inner_2023-07_school_interactions.json",
+      "original_path": "reports/tabpfn_v3_5_fast_calendar_80_20/timing_inner_2023-07_school_interactions.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/timing_outer_calendar.json",
+      "original_path": "reports/tabpfn_v3_5_fast_calendar_80_20/timing_outer_calendar.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/timing_outer_categorical.json",
+      "original_path": "reports/tabpfn_v3_5_fast_calendar_80_20/timing_outer_categorical.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/timing_outer_cyclical.json",
+      "original_path": "reports/tabpfn_v3_5_fast_calendar_80_20/timing_outer_cyclical.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/timing_outer_school_interactions.json",
+      "original_path": "reports/tabpfn_v3_5_fast_calendar_80_20/timing_outer_school_interactions.json"
+    },
+    {
+      "path": "experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/verification.json",
+      "original_path": "reports/tabpfn_v3_5_fast_calendar_80_20/verification.json"
+    }
+  ],
+  "entrypoints": {
+    "aligned": "analysis/compare_tabpfn_aligned_temporal_80_20.py",
+    "calendar": "analysis/compare_tabpfn_calendar_80_20.py",
+    "components": "analysis/compare_tabpfn_components_80_20.py"
+  },
+  "tests": [
+    "test_aligned_temporal_features.py",
+    "test_calendar_encoding.py",
+    "test_tabpfn_comparison.py",
+    "test_tabpfn_adaptation.py",
+    "test_tabpfn_component_adaptation.py",
+    "test_tabpfn_fast_submission.py",
+    "test_recent_time_context.py"
+  ],
+  "main_background_reports": [
+    "tabpfn_components_80_20",
+    "tabpfn_v3_5_fast_aligned_temporal_80_20",
+    "tabpfn_v3_5_fast_calendar_80_20"
+  ],
+  "f2": {
+    "status": "generator-and-predictions-pending",
+    "filename": "submission_zch_tabpfn87_equal_150k.csv",
+    "displayed_score_user_screenshot": 413.19635,
+    "screenshot_score_is_not_a_reproduced_result": true,
+    "actual_feature_schema": null,
+    "actual_member_weights": null,
+    "actual_submission_sha256": null,
+    "known_top2_are_different_candidates": {
+      "ABCDE_equal": "77/77/77/84/89 five views, equal weights",
+      "ABDE": "fixed weighted A/B/D/E"
+    },
+    "user_decision": "Split available evidence and keep F2 generator pending"
+  },
+  "runtime_limits": {
+    "tabpfn_package_in_current_environment": false,
+    "checkpoint_and_feature_caches_in_source_git": false,
+    "final_submission_and_member_prediction_csvs_in_source_git": false,
+    "fresh_model_training_performed": false,
+    "validation_sdk_mode": "TabPFN 9.2.0 and supporting dependencies installed in repository-local isolated directory; original global F1 environment unchanged."
+  },
+  "merge_audit": {
+    "changed_paths": [
+      "A\t.gitattributes",
+      "M\t.gitignore",
+      "M\tREADME.md",
+      "A\tanalysis/README.md",
+      "M\tanalysis/__init__.py",
+      "A\tanalysis/artifact_catalog.py",
+      "M\tanalysis/eda/__init__.py",
+      "A\tanalysis/eda/audits/__init__.py",
+      "A\tanalysis/eda/audits/auxiliary.py",
+      "A\tanalysis/eda/audits/main_data.py",
+      "A\tanalysis/eda/overview.py",
+      "A\tanalysis/eda/pdf_report.py",
+      "A\tanalysis/eda/run.py",
+      "A\tanalysis/experiment_catalog.py",
+      "A\tanalysis/experiments/README.md",
+      "M\tanalysis/experiments/__init__.py",
+      "A\tanalysis/experiments/baselines/README.md",
+      "A\tanalysis/experiments/baselines/auxiliary_ablation.py",
+      "A\tanalysis/experiments/baselines/auxiliary_boosting.py",
+      "A\tanalysis/experiments/baselines/auxiliary_catboost.py",
+      "A\tanalysis/experiments/baselines/baseline.py",
+      "A\tanalysis/experiments/baselines/compare_models.py",
+      "A\tanalysis/experiments/baselines/deep_learning.py",
+      "A\tanalysis/experiments/baselines/economic_feature_ablation.py",
+      "A\tanalysis/experiments/baselines/historical_priors.py",
+      "A\tanalysis/experiments/baselines/neural_tabm.py",
+      "A\tanalysis/experiments/baselines/relu_mlp.py",
+      "A\tanalysis/experiments/baselines/spatiotemporal_hybrid.py",
+      "A\tanalysis/experiments/baselines/summarize_deep_learning.py",
+      "A\tanalysis/experiments/feature_engineering/README.md",
+      "A\tanalysis/experiments/feature_engineering/feature_evidence.py",
+      "A\tanalysis/experiments/feature_engineering/feature_optimization.py",
+      "A\tanalysis/experiments/feature_engineering/feature_selection.py",
+      "A\tanalysis/experiments/model_comparison/README.md",
+      "A\tanalysis/experiments/model_comparison/common_feature_models.py",
+      "A\tanalysis/experiments/model_comparison/download_tabicl.py",
+      "A\tanalysis/experiments/model_comparison/model_search.py",
+      "A\tanalysis/experiments/optimization/README.md",
+      "A\tanalysis/experiments/optimization/round_01_history_target_search/README.md",
+      "A\tanalysis/experiments/optimization/round_01_history_target_search/frontier_compact.py",
+      "A\tanalysis/experiments/optimization/round_01_history_target_search/frontier_ensemble.py",
+      "A\tanalysis/experiments/optimization/round_01_history_target_search/frontier_june_calibration.py",
+      "A\tanalysis/experiments/optimization/round_01_history_target_search/frontier_matched.py",
+      "A\tanalysis/experiments/optimization/round_01_history_target_search/frontier_matched_report.py",
+      "A\tanalysis/experiments/optimization/round_01_history_target_search/frontier_mixture.py",
+      "A\tanalysis/experiments/optimization/round_01_history_target_search/frontier_refinement.py",
+      "A\tanalysis/experiments/optimization/round_01_history_target_search/frontier_report.py",
+      "A\tanalysis/experiments/optimization/round_01_history_target_search/frontier_search.py",
+      "A\tanalysis/experiments/optimization/round_02_anniversary_history/README.md",
+      "A\tanalysis/experiments/optimization/round_02_anniversary_history/second_wave_anniversary.py",
+      "A\tanalysis/experiments/optimization/round_02_anniversary_history/second_wave_cohort_extensions.py",
+      "A\tanalysis/experiments/optimization/round_02_anniversary_history/second_wave_ensemble.py",
+      "A\tanalysis/experiments/optimization/round_02_anniversary_history/second_wave_foundation.py",
+      "A\tanalysis/experiments/optimization/round_02_anniversary_history/second_wave_normalized.py",
+      "A\tanalysis/experiments/optimization/round_02_anniversary_history/second_wave_refined_blend.py",
+      "A\tanalysis/experiments/optimization/round_02_anniversary_history/second_wave_report.py",
+      "A\tanalysis/experiments/optimization/round_02_anniversary_history/second_wave_stacking.py",
+      "A\tanalysis/experiments/optimization/round_02_anniversary_history/second_wave_stress.py",
+      "A\tanalysis/experiments/optimization/round_03_tree_transformer_ensemble/README.md",
+      "A\tanalysis/experiments/optimization/round_03_tree_transformer_ensemble/third_wave_ablations.py",
+      "A\tanalysis/experiments/optimization/round_03_tree_transformer_ensemble/third_wave_adaptive.py",
+      "A\tanalysis/experiments/optimization/round_03_tree_transformer_ensemble/third_wave_cross_ensemble.py",
+      "A\tanalysis/experiments/optimization/round_03_tree_transformer_ensemble/third_wave_cross_type.py",
+      "A\tanalysis/experiments/optimization/round_03_tree_transformer_ensemble/third_wave_ensemble.py",
+      "A\tanalysis/experiments/optimization/round_03_tree_transformer_ensemble/third_wave_features.py",
+      "A\tanalysis/experiments/optimization/round_03_tree_transformer_ensemble/third_wave_mixture.py",
+      "A\tanalysis/experiments/optimization/round_03_tree_transformer_ensemble/third_wave_models.py",
+      "A\tanalysis/experiments/optimization/round_03_tree_transformer_ensemble/third_wave_report.py",
+      "A\tanalysis/experiments/optimization/round_03_tree_transformer_ensemble/third_wave_training.py",
+      "A\tanalysis/experiments/optimization/round_04_macro_spatial_diagnostics/README.md",
+      "A\tanalysis/experiments/optimization/round_04_macro_spatial_diagnostics/fourth_wave_diagnostics.py",
+      "A\tanalysis/experiments/optimization/round_04_macro_spatial_diagnostics/fourth_wave_distribution.py",
+      "A\tanalysis/experiments/optimization/round_04_macro_spatial_diagnostics/fourth_wave_ensemble.py",
+      "A\tanalysis/experiments/optimization/round_04_macro_spatial_diagnostics/fourth_wave_experts.py",
+      "A\tanalysis/experiments/optimization/round_04_macro_spatial_diagnostics/fourth_wave_flows.py",
+      "A\tanalysis/experiments/optimization/round_04_macro_spatial_diagnostics/fourth_wave_given_ensemble.py",
+      "A\tanalysis/experiments/optimization/round_04_macro_spatial_diagnostics/fourth_wave_horizons.py",
+      "A\tanalysis/experiments/optimization/round_04_macro_spatial_diagnostics/fourth_wave_known_macro.py",
+      "A\tanalysis/experiments/optimization/round_04_macro_spatial_diagnostics/fourth_wave_report.py",
+      "A\tanalysis/experiments/optimization/round_04_macro_spatial_diagnostics/fourth_wave_spatial.py",
+      "A\tanalysis/experiments/optimization/round_05_feature_interactions/README.md",
+      "A\tanalysis/experiments/optimization/round_05_feature_interactions/fifth_wave_features.py",
+      "A\tanalysis/experiments/optimization/round_05_feature_interactions/fifth_wave_report.py",
+      "A\tanalysis/experiments/optimization/round_06_deep_models/README.md",
+      "A\tanalysis/experiments/optimization/round_06_deep_models/sixth_wave_deep.py",
+      "A\tanalysis/experiments/optimization/round_06_deep_models/sixth_wave_ensemble.py",
+      "A\tanalysis/experiments/optimization/round_06_deep_models/sixth_wave_report.py",
+      "A\tanalysis/experiments/optimization/round_06_deep_models/sixth_wave_sources.py",
+      "A\tanalysis/experiments/optimization/round_07_pretrained_transformers/README.md",
+      "A\tanalysis/experiments/optimization/round_07_pretrained_transformers/seventh_wave_adaptation.py",
+      "A\tanalysis/experiments/optimization/round_07_pretrained_transformers/seventh_wave_diagnostics.py",
+      "A\tanalysis/experiments/optimization/round_07_pretrained_transformers/seventh_wave_ensemble.py",
+      "A\tanalysis/experiments/optimization/round_07_pretrained_transformers/seventh_wave_report.py",
+      "A\tanalysis/experiments/optimization/round_07_pretrained_transformers/seventh_wave_sources.py",
+      "A\tanalysis/experiments/optimization/round_07_pretrained_transformers/seventh_wave_transformers.py",
+      "A\tanalysis/experiments/optimization/round_08_feature_pruning_seeds/README.md",
+      "A\tanalysis/experiments/optimization/round_08_feature_pruning_seeds/eighth_wave_meta.py",
+      "A\tanalysis/experiments/optimization/round_08_feature_pruning_seeds/eighth_wave_refinement.py",
+      "A\tanalysis/experiments/optimization/round_08_feature_pruning_seeds/eighth_wave_report.py",
+      "A\tanalysis/experiments/optimization/round_08_feature_pruning_seeds/eighth_wave_submission.py",
+      "A\tanalysis/experiments/optimization/round_09_grouped_blending/README.md",
+      "A\tanalysis/experiments/optimization/round_09_grouped_blending/ninth_wave_blending.py",
+      "A\tanalysis/experiments/optimization/round_09_grouped_blending/ninth_wave_report.py",
+      "A\tanalysis/experiments/optimization/round_10_plr_transformer_final/README.md",
+      "A\tanalysis/experiments/optimization/round_10_plr_transformer_final/tenth_wave_ensemble.py",
+      "A\tanalysis/experiments/optimization/round_10_plr_transformer_final/tenth_wave_report.py",
+      "A\tanalysis/experiments/optimization/round_10_plr_transformer_final/tenth_wave_structures.py",
+      "A\tanalysis/experiments/optimization/round_10_plr_transformer_final/tenth_wave_trees.py",
+      "A\tanalysis/experiments/reporting/README.md",
+      "A\tanalysis/experiments/reporting/report_best_scheme.py",
+      "A\tanalysis/experiments/reporting/report_model_catalog.py",
+      "A\tanalysis/experiments/reporting/report_selection_blend.py",
+      "A\tanalysis/experiments/reporting/report_selection_summary.py",
+      "A\tanalysis/experiments/reporting/report_selection_trials.py",
+      "A\tanalysis/experiments/submissions/README.md",
+      "A\tanalysis/experiments/submissions/best_ensemble_submission.py",
+      "A\tanalysis/experiments/submissions/canonical_final.py",
+      "A\tanalysis/experiments/submissions/final_submission_selection.py",
+      "A\tanalysis/main.py",
+      "A\tanalysis/pipeline/__init__.py",
+      "A\tanalysis/pipeline/auxiliary.py",
+      "A\tanalysis/pipeline/config.py",
+      "A\tanalysis/pipeline/data.py",
+      "A\tanalysis/pipeline/evaluation.py",
+      "A\tanalysis/pipeline/features.py",
+      "A\tanalysis/pipeline/models.py",
+      "A\tanalysis/pipeline/neural_models.py",
+      "A\tanalysis/pipeline/paths.py",
+      "A\tanalysis/pipeline/spatial.py",
+      "A\tanalysis/pipeline/training.py",
+      "A\tanalysis/pipeline/workflow.py",
+      "A\tanalysis/project_review.py",
+      "A\tanalysis/report_bundle.py",
+      "A\tanalysis/resource_preflight.py",
+      "A\tanalysis/studies/__init__.py",
+      "A\tanalysis/studies/economic_signals.py",
+      "A\tanalysis/studies/group_temporal_panel.py",
+      "A\tanalysis/studies/source_overlap.py",
+      "A\tanalysis/studies/spatial/__init__.py",
+      "A\tanalysis/studies/spatial/amenities_fixed_effects.py",
+      "A\tanalysis/studies/spatial/common.py",
+      "A\tanalysis/studies/spatial/mrt_fixed_effects.py",
+      "A\tanalysis/studies/spatial/mrt_matching.py",
+      "A\tanalysis/studies/spatial/overview.py",
+      "A\tanalysis/studies/spatial/run.py",
+      "A\tanalysis/studies/temporal_correlations.py",
+      "A\tanalysis/verification.py",
+      "A\tdata/README.md",
+      "A\tdocs/README.md",
+      "A\tdocs/archive/README.md",
+      "A\tdocs/archive/branch_integration.md",
+      "A\tdocs/archive/midterm_report.md",
+      "A\tdocs/archive/result_consistency.md",
+      "A\tdocs/guides/project_structure.md",
+      "A\tdocs/guides/running_experiments.md",
+      "A\tdocs/maintenance/README.md",
+      "A\tdocs/methods/baseline_features.md",
+      "A\tdocs/methods/history_feature_optimization.md",
+      "A\tdocs/methods/model_comparison.md",
+      "M\tenvironment.yml",
+      "A\texperiment/01_final/EXPERIMENT_REPORT.md",
+      "A\texperiment/01_final/README.md",
+      "A\texperiment/01_final/submission_comparison.csv",
+      "A\texperiment/01_final/submission_selection.json",
+      "A\texperiment/02_feature_engineering/BASELINE_27_FEATURES.md",
+      "A\texperiment/02_feature_engineering/FEATURE_ABLATION.md",
+      "A\texperiment/02_feature_engineering/README.md",
+      "A\texperiment/02_feature_engineering/controlled_feature_ladder.csv",
+      "A\texperiment/02_feature_engineering/feature_dictionary.csv",
+      "A\texperiment/02_feature_engineering/group_feature_effects.csv",
+      "A\texperiment/02_feature_engineering/single_feature_effects.csv",
+      "A\texperiment/03_model_comparison/PROTOCOL.md",
+      "A\texperiment/03_model_comparison/README.md",
+      "A\texperiment/03_model_comparison/model_catalog.csv",
+      "A\texperiment/03_model_comparison/model_feature_comparison.png",
+      "A\texperiment/03_model_comparison/recommended_models.csv",
+      "A\texperiment/03_model_comparison/same_input_models.csv",
+      "A\texperiment/04_optimization_history/01_history_target_search.md",
+      "A\texperiment/04_optimization_history/02_anniversary_history.md",
+      "A\texperiment/04_optimization_history/03_tree_transformer_ensemble.md",
+      "A\texperiment/04_optimization_history/04_macro_spatial_diagnostics.md",
+      "A\texperiment/04_optimization_history/05_feature_interactions.md",
+      "A\texperiment/04_optimization_history/06_deep_models.md",
+      "A\texperiment/04_optimization_history/07_pretrained_transformers.md",
+      "A\texperiment/04_optimization_history/08_feature_pruning_seeds.md",
+      "A\texperiment/04_optimization_history/09_grouped_blending.md",
+      "A\texperiment/04_optimization_history/10_plr_transformer_final.md",
+      "A\texperiment/04_optimization_history/README.md",
+      "A\texperiment/README.md",
+      "A\texperiment/eda/README.md",
+      "A\texperiment/eda/figures/01_target_distribution.png",
+      "A\texperiment/eda/figures/02_monthly_rent_trend.png",
+      "A\texperiment/eda/figures/03_median_rent_by_town.png",
+      "A\texperiment/eda/figures/04_median_rent_by_flat_type.png",
+      "A\texperiment/eda/figures/05_rent_vs_floor_area.png",
+      "A\texperiment/eda/figures/06_rent_by_lease_commencement_age.png",
+      "A\texperiment/eda/figures/07_numeric_train_test_drift.png",
+      "A\texperiment/eda/figures/08_raw_distance_rent_association.png",
+      "A\texperiment/eda/figures/09_monthly_rent_by_flat_type.png",
+      "A\texperiment/eda/figures/10_rent_by_open_mrt_distance.png",
+      "A\texperiment/eda/figures/11_block_rent_map.png",
+      "A\texperiment/eda/notes.md",
+      "A\texperiment/eda/progress_report.pdf",
+      "A\texperiment/eda/report.md",
+      "A\texperiment/eda/summary.json",
+      "A\texperiment/eda/supplementary/auxiliary/01_auxiliary_locations.png",
+      "A\texperiment/eda/supplementary/auxiliary/02_nearest_distances.png",
+      "A\texperiment/eda/supplementary/auxiliary/03_economic_coverage.png",
+      "A\texperiment/eda/supplementary/auxiliary/report.md",
+      "A\texperiment/eda/supplementary/auxiliary/summary.json",
+      "A\texperiment/eda/supplementary/train_test/01_rent_distribution.png",
+      "A\texperiment/eda/supplementary/train_test/02_monthly_median.png",
+      "A\texperiment/eda/supplementary/train_test/03_flat_type.png",
+      "A\texperiment/eda/supplementary/train_test/04_town_median.png",
+      "A\texperiment/eda/supplementary/train_test/05_floor_area.png",
+      "A\texperiment/eda/supplementary/train_test/summary.json",
+      "A\texperiment/eda/tables/annual_rent_trend.csv",
+      "A\texperiment/eda/tables/auxiliary_data_audit.csv",
+      "A\texperiment/eda/tables/baseline_validation.csv",
+      "A\texperiment/eda/tables/block_coordinate_rent_summary.csv",
+      "A\texperiment/eda/tables/categorical_normalization.csv",
+      "A\texperiment/eda/tables/data_quality.csv",
+      "A\texperiment/eda/tables/location_feature_summary.csv",
+      "A\texperiment/eda/tables/monthly_rent_by_flat_type.csv",
+      "A\texperiment/eda/tables/monthly_rent_trend.csv",
+      "A\texperiment/eda/tables/rent_by_building_age.csv",
+      "A\texperiment/eda/tables/rent_by_flat_type.csv",
+      "A\texperiment/eda/tables/rent_by_floor_area_bin.csv",
+      "A\texperiment/eda/tables/rent_by_mall_distance.csv",
+      "A\texperiment/eda/tables/rent_by_open_mrt_distance.csv",
+      "A\texperiment/eda/tables/rent_by_primary_school_distance.csv",
+      "A\texperiment/eda/tables/rent_by_town.csv",
+      "A\texperiment/eda/tables/repeated_feature_rows.csv",
+      "A\texperiment/eda/tables/train_test_drift.csv",
+      "A\texperiment/studies/README.md",
+      "A\texperiment/studies/economic_signals/01_monthly_market_signals.png",
+      "A\texperiment/studies/economic_signals/02_forward_rmse_delta.png",
+      "A\texperiment/studies/economic_signals/forward_scores.csv",
+      "A\texperiment/studies/economic_signals/monthly_series.csv",
+      "A\texperiment/studies/economic_signals/rent_growth_correlations.csv",
+      "A\texperiment/studies/economic_signals/report.md",
+      "A\texperiment/studies/economic_signals/results.json",
+      "A\texperiment/studies/group_temporal_panel/01_planning_area_correlations.png",
+      "A\texperiment/studies/group_temporal_panel/02_forward_rmse_delta.png",
+      "A\texperiment/studies/group_temporal_panel/03_flat_type_correlations.png",
+      "A\texperiment/studies/group_temporal_panel/04_planning_area_median_correlations.png",
+      "A\texperiment/studies/group_temporal_panel/group_correlations.csv",
+      "A\texperiment/studies/group_temporal_panel/group_forward_scores.csv",
+      "A\texperiment/studies/group_temporal_panel/monthly_panel.csv",
+      "A\texperiment/studies/group_temporal_panel/pooled_forward_scores.csv",
+      "A\texperiment/studies/group_temporal_panel/report.md",
+      "A\texperiment/studies/group_temporal_panel/results.json",
+      "A\texperiment/studies/source_overlap/README.md",
+      "A\texperiment/studies/source_overlap/competition_context.json",
+      "A\texperiment/studies/source_overlap/results.json",
+      "A\texperiment/studies/source_overlap/test_coverage_by_month.csv",
+      "A\texperiment/studies/source_overlap/test_error_scale.json",
+      "A\texperiment/studies/source_overlap/train_coverage_by_month.csv",
+      "A\texperiment/studies/spatial_features/EDA_summary_zh.md",
+      "A\texperiment/studies/spatial_features/amenities_adjusted/amenities_adjusted_summary_zh.md",
+      "A\texperiment/studies/spatial_features/amenities_adjusted/amenity_bin_effects.csv",
+      "A\texperiment/studies/spatial_features/amenities_adjusted/amenity_raw_vs_adjusted.png",
+      "A\texperiment/studies/spatial_features/amenities_adjusted/analysis_manifest.json",
+      "A\texperiment/studies/spatial_features/feature_dictionary.csv",
+      "A\texperiment/studies/spatial_features/figures/01_raw_spearman.png",
+      "A\texperiment/studies/spatial_features/figures/02_adjusted_pearson.png",
+      "A\texperiment/studies/spatial_features/figures/03_feature_redundancy.png",
+      "A\texperiment/studies/spatial_features/figures/04_distance_hexbin.png",
+      "A\texperiment/studies/spatial_features/figures/05_distance_bins.png",
+      "A\texperiment/studies/spatial_features/figures/06_recent_stability.png",
+      "A\texperiment/studies/spatial_features/mrt_adjusted/MRT_adjusted_summary_zh.md",
+      "A\texperiment/studies/spatial_features/mrt_adjusted/analysis_manifest.json",
+      "A\texperiment/studies/spatial_features/mrt_adjusted/coefficient_cluster_covariance.csv",
+      "A\texperiment/studies/spatial_features/mrt_adjusted/far_distance_contrasts.csv",
+      "A\texperiment/studies/spatial_features/mrt_adjusted/mrt_adjusted_differences.png",
+      "A\texperiment/studies/spatial_features/mrt_adjusted/mrt_bin_effects.csv",
+      "A\texperiment/studies/spatial_features/mrt_matched/contrasts.csv",
+      "A\texperiment/studies/spatial_features/mrt_matched/covariate_balance.csv",
+      "A\texperiment/studies/spatial_features/mrt_matched/mrt_contrasts.png",
+      "A\texperiment/studies/spatial_features/mrt_matched/notes_zh.md",
+      "A\texperiment/studies/spatial_features/tables/adjusted_correlations.csv",
+      "A\texperiment/studies/spatial_features/tables/all_numeric_correlations.csv",
+      "A\texperiment/studies/spatial_features/tables/distance_and_count_bins.csv",
+      "A\texperiment/studies/spatial_features/tables/feature_redundancy_spearman.csv",
+      "A\texperiment/studies/spatial_features/tables/recent_12month_correlations.csv",
+      "A\texperiment/studies/temporal_correlations/01_standardized_levels.png",
+      "A\texperiment/studies/temporal_correlations/02_monthly_changes.png",
+      "A\texperiment/studies/temporal_correlations/03_correlation_heatmaps.png",
+      "A\texperiment/studies/temporal_correlations/04_lag_correlations.png",
+      "A\texperiment/studies/temporal_correlations/lag_correlations.csv",
+      "A\texperiment/studies/temporal_correlations/monthly_series.csv",
+      "A\texperiment/studies/temporal_correlations/pair_correlations.csv",
+      "A\texperiment/studies/temporal_correlations/summary.json",
+      "A\trequirements/README.md",
+      "A\trequirements/optional_deep_models.txt",
+      "A\trequirements/optional_pretrained_transformers.txt",
+      "A\ttests/README.md",
+      "A\ttests/test_artifact_catalog.py",
+      "A\ttests/test_artifact_verification.py",
+      "A\ttests/test_eighth_wave.py",
+      "A\ttests/test_experiment_catalog.py",
+      "A\ttests/test_feature_evidence.py",
+      "A\ttests/test_feature_selection.py",
+      "A\ttests/test_fifth_wave.py",
+      "A\ttests/test_fourth_wave.py",
+      "A\ttests/test_frontier_search.py",
+      "A\ttests/test_merged_workflows.py",
+      "A\ttests/test_model_search.py",
+      "A\ttests/test_neural_tabm.py",
+      "A\ttests/test_ninth_wave.py",
+      "A\ttests/test_output_defaults.py",
+      "A\ttests/test_pipeline.py",
+      "A\ttests/test_project_paths.py",
+      "A\ttests/test_report_bundle.py",
+      "A\ttests/test_resource_preflight.py",
+      "A\ttests/test_second_wave.py",
+      "A\ttests/test_seventh_wave.py",
+      "A\ttests/test_sixth_wave.py",
+      "A\ttests/test_source_overlap.py",
+      "A\ttests/test_spatial_controls.py",
+      "M\ttests/test_spatiotemporal_hybrid.py",
+      "A\ttests/test_tabpfn_spatiotemporal_hybrid.py",
+      "A\ttests/test_tenth_wave.py",
+      "A\ttests/test_third_wave.py",
+      "A\ttests/test_zch_auxiliary_features.py",
+      "A\ttests/test_zch_economic_feature_ablation.py",
+      "A\ttests/test_zch_economic_signals.py",
+      "A\ttests/test_zch_group_temporal_panel.py",
+      "A\ttests/test_zch_temporal_correlations.py"
+    ],
+    "modified_scientific_tabpfn_model_files": [],
+    "note": "The merge modifies package routing, README/environment, ignore rules and one test name; its zch implementation is already organized in root workflows. It adds no tracked 87-feature final generator."
+  }
+}

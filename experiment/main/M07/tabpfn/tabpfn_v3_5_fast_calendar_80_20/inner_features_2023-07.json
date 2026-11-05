@@ -1,0 +1,15 @@
+{
+  "artifact": ".cache/tabpfn_v3_features/calendar_inner_2023-07.joblib",
+  "sha256": "f93b6e7ed610ad1df01ae987ddb8fe260c9f5ab15d218aca406a08536f5518b6",
+  "origin": "2023-07",
+  "context_rows": 87937,
+  "sampled_query_rows": 2000,
+  "represented_query_rows": 30050.999999999996,
+  "horizons": [
+    1,
+    10
+  ],
+  "last_history_month": "2023-06",
+  "query_sampling": "200 per month; no labels; seed 42",
+  "sampling_weights": "month population divided by month sampled count"
+}
