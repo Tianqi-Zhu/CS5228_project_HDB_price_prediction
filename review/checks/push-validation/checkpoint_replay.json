@@ -1,0 +1,87 @@
+{
+  "model_checks": [
+    {
+      "name": "second_wave/normalized_market/compact_ratio15_market_last",
+      "rows": 50000,
+      "max_abs_difference": 0.0
+    },
+    {
+      "name": "second_wave/anniversary/broad_lgb15",
+      "rows": 50000,
+      "max_abs_difference": 0.0
+    },
+    {
+      "name": "second_wave/anniversary/broad_lgb63",
+      "rows": 50000,
+      "max_abs_difference": 0.0
+    },
+    {
+      "name": "second_wave/anniversary/exact_lgb15",
+      "rows": 50000,
+      "max_abs_difference": 0.0
+    },
+    {
+      "name": "second_wave/anniversary/exact_lgb63",
+      "rows": 50000,
+      "max_abs_difference": 0.0
+    },
+    {
+      "name": "second_wave/anniversary/window_cat6",
+      "rows": 50000,
+      "max_abs_difference": 0.0
+    },
+    {
+      "name": "second_wave/anniversary/window_lgb63",
+      "rows": 50000,
+      "max_abs_difference": 0.0
+    },
+    {
+      "name": "third_wave/models/ft_transformer",
+      "rows": 50000,
+      "max_abs_difference": 0.0
+    },
+    {
+      "name": "third_wave/models/xgb5_residual",
+      "rows": 50000,
+      "max_abs_difference": 0.0
+    },
+    {
+      "name": "third_wave/models/xgb7",
+      "rows": 50000,
+      "max_abs_difference": 0.0
+    },
+    {
+      "name": "ft_no36_seed42",
+      "rows": 50000,
+      "max_abs_difference": 0.0
+    },
+    {
+      "name": "ft_no36_seed43",
+      "rows": 50000,
+      "max_abs_difference": 0.0
+    },
+    {
+      "name": "ft_no36_seed44",
+      "rows": 50000,
+      "max_abs_difference": 0.0
+    },
+    {
+      "name": "ft_no36_seed45",
+      "rows": 50000,
+      "max_abs_difference": 0.0
+    },
+    {
+      "name": "ft_plr_128_3",
+      "rows": 50000,
+      "max_abs_difference": 0.0
+    },
+    {
+      "name": "given_macro/current_cat8",
+      "rows": 50000,
+      "max_abs_difference": 0.0
+    }
+  ],
+  "model_count": 16,
+  "output_csv_count": 3,
+  "all_passed": true
+}

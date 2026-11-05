@@ -1,0 +1,40 @@
+[
+  {
+    "check": "integrity",
+    "returncode": 0,
+    "command": [
+      "python",
+      "review.py",
+      "verify"
+    ]
+  },
+  {
+    "check": "unit-tests",
+    "returncode": 0,
+    "command": [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-v"
+    ]
+  },
+  {
+    "check": "original-components",
+    "returncode": 0,
+    "command": [
+      "python",
+      "reproduction/three_submissions/verify.py"
+    ]
+  },
+  {
+    "check": "cpu-replay",
+    "returncode": 0,
+    "command": [
+      "python",
+      "reproduction/three_submissions/reproduce.py"
+    ]
+  }
+]

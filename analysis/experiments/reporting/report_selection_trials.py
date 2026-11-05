@@ -14,7 +14,7 @@ from sklearn.linear_model import Ridge
 from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import OneHotEncoder,StandardScaler
 from analysis.experiments.frontier_search import ROOT,score,write_json
-from analysis.experiments.second_wave_anniversary import select_inputs
+from analysis.experiments.second_wave_anniversary import select_inputs,data as feature_data
 from analysis.experiments.third_wave_training import make_data
 
 OUT=ROOT/'output/experiment_runs/00_report_and_final'
@@ -50,7 +50,10 @@ def select_features(bundle,level):
 
 
 def ladder(stage):
-    bundle=make_data(stage)
+    # A feature-only comparison does not consume the old ensemble's fallback
+    # predictions. Rebuild its identical feature pool directly from raw data.
+    start,end={'screen':('2023-10','2024-04'),'outer':('2024-04','2025-04'),'june':('2024-06','2025-04')}[stage]
+    bundle=feature_data(start,end)
     # Chosen in the previous chronological screen; held constant across feature
     # sets. This isolates feature effects from differing stopping times.
     for family,count in [('lgb',353),('cat',535)]:

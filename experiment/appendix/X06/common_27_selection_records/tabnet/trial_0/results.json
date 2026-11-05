@@ -1,0 +1,23 @@
+{
+  "family": "tabnet",
+  "profile": "compact",
+  "settings": {
+    "max_epochs": 40,
+    "patience": 7,
+    "seed": 42,
+    "width": 24,
+    "layers": 4,
+    "lr": 0.01,
+    "quantile": false
+  },
+  "selected_iterations": 17,
+  "inner_scores": {
+    "rmse_sgd": 543.1634668473669,
+    "mae_sgd": 415.87149727914345,
+    "bias_sgd": 28.630343115274936
+  },
+  "n_fit": 96865,
+  "n_inner_validation": 17977,
+  "elapsed_seconds": 554.2956244000015,
+  "trial_index": 0
+}

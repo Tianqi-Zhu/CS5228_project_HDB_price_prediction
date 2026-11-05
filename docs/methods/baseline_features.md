@@ -89,13 +89,13 @@ StandardScaler，也不从全量数据学习填补值。
 的差异解释为可靠的长期预测优势。
 
 完整七组、多折及十六个月结果在
-[`output/experiment_runs/features_selection/`](../../output/experiment_runs/features_selection)：
+`output/experiment_runs/features_selection`：
 `fold_metrics.csv` 为分折分数，`pooled_metrics.csv` 为三段窗口加权汇总，
 `monthly_errors.csv` 为月度分数，`results.json` 记录字段、模型参数、版本和源文件哈希。
 
 作为不纳入经济信号的已有依据，原经济消融的 COE+股票组合在四个前向窗口均差于
 空间基线，且逐月更新假设不适合本次固定起点预测。见
-[`features_economic_ablation/forward_scores.csv`](../../output/experiment_runs/features_economic_ablation/forward_scores.csv)。
+`output/experiment_runs/features_economic_ablation/forward_scores.csv`。
 
 ## 复用与复跑
 

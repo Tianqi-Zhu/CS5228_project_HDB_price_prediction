@@ -1,0 +1,41 @@
+[
+  {
+    "check": "clean-integrity",
+    "returncode": 0,
+    "command": [
+      "python",
+      "review.py",
+      "verify"
+    ]
+  },
+  {
+    "check": "clean-unit-tests",
+    "returncode": 0,
+    "command": [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-v"
+    ]
+  },
+  {
+    "check": "clean-cpu-replay",
+    "returncode": 0,
+    "command": [
+      "python",
+      "reproduction/three_submissions/reproduce.py"
+    ]
+  },
+  {
+    "check": "selection-validation",
+    "returncode": 0,
+    "command": [
+      "python",
+      "-c",
+      "import json; from analysis.experiments import common_feature_models as m; print(json.dumps([{'family':f,'selected_iterations':m.choose_compact([json.loads(p.read_text()) for p in m.selection_source(f).glob('trial_*/results.json')])['selected_iterations']} for f in m.FAMILIES]))"
+    ]
+  }
+]

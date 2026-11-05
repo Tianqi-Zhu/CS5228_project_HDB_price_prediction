@@ -1,0 +1,22 @@
+{
+  "family": "embedding_mlp",
+  "profile": "compact",
+  "settings": {
+    "max_epochs": 40,
+    "patience": 7,
+    "seed": 42,
+    "width": 256,
+    "lr": 0.001,
+    "quantile": true
+  },
+  "selected_iterations": 29,
+  "inner_scores": {
+    "rmse_sgd": 563.5694831698682,
+    "mae_sgd": 429.36377265640056,
+    "bias_sgd": 50.86529770594216
+  },
+  "n_fit": 96865,
+  "n_inner_validation": 17977,
+  "elapsed_seconds": 57.58074359999955,
+  "trial_index": 0
+}

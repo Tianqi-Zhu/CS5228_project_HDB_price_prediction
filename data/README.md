@@ -18,7 +18,7 @@
 `train.csv` 比 `test.csv` 多一列 `MONTHLY_RENT`；其余原始列为日期、Town、楼栋、街道、户型、
 房型、面积、家具情况、租契起始年份及费用。实际输入是否使用某列，由各轮配置决定。
 字段清洗和基础特征定义见[特征说明](../docs/methods/baseline_features.md)，
-最终方法见[最终方案](../experiment/01_final/README.md)。
+最终方法见[最终方案](../experiment/appendix/X03/README.md)。
 
 ## 使用边界
 
@@ -30,3 +30,7 @@
 清洗、派生特征、缓存和预测写到对应产物目录，不覆盖此处原始CSV。
 已有实验的 `source_sha256` 和提交组件清单记录输入版本；更换CSV后须重新核验，不能直接沿用旧指标。
 环境与运行命令见[运行指南](../docs/guides/running_experiments.md)。
+
+## Byte-level provenance
+
+The shipped CSV bytes preserve the Windows CRLF inputs recorded by the frozen training recipes. Original source Git blobs used LF through Git conversion; after CRLF-to-LF normalization all nine files are identical to source commit `048eca86`. The current `.gitattributes` disables conversion so recorded recipe SHA256 hashes survive clean checkouts. No rows or values were changed.

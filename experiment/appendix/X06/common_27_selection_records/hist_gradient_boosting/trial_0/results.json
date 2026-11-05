@@ -1,0 +1,17 @@
+{
+  "family": "hist_gradient_boosting",
+  "profile": "compact",
+  "settings": {
+    "max_iter": 400
+  },
+  "selected_iterations": 400,
+  "inner_scores": {
+    "rmse_sgd": 543.4101417833156,
+    "mae_sgd": 413.69152389579915,
+    "bias_sgd": 42.48766417287225
+  },
+  "n_fit": 96865,
+  "n_inner_validation": 17977,
+  "elapsed_seconds": 10.25884170000063,
+  "trial_index": 0
+}

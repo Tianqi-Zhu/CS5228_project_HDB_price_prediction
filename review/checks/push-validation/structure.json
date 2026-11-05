@@ -1,0 +1,227 @@
+{
+  "main": {
+    "data": [
+      {
+        "path": "data/auxiliary/sg-coe-prices.csv",
+        "bytes": 22908,
+        "sha256": "c8f934ec6e82dad633afa34e466414fd7b572c580fa28dd6c866e76e4be533e0",
+        "matches_source_blob_bytes": false,
+        "matches_source_values_and_rows_after_newline_normalization": true,
+        "matches_recorded_recipe_bytes": true,
+        "recipe_note": null
+      },
+      {
+        "path": "data/auxiliary/sg-hdb-block.csv",
+        "bytes": 990178,
+        "sha256": "2255ad61ba6895456a39aec81d12583796d717ef88fe102ee9de71b3796fc223",
+        "matches_source_blob_bytes": false,
+        "matches_source_values_and_rows_after_newline_normalization": true,
+        "matches_recorded_recipe_bytes": true,
+        "recipe_note": null
+      },
+      {
+        "path": "data/auxiliary/sg-mrt-stations.csv",
+        "bytes": 22019,
+        "sha256": "4757278b94c2d05627a941377d51de60882e3e1477de01758ef37070b716b889",
+        "matches_source_blob_bytes": false,
+        "matches_source_values_and_rows_after_newline_normalization": true,
+        "matches_recorded_recipe_bytes": true,
+        "recipe_note": null
+      },
+      {
+        "path": "data/auxiliary/sg-schools.csv",
+        "bytes": 89951,
+        "sha256": "9bf28c6a2e5511c5cada178d221dfaac12beb3651425b3b86c37815e35de71cb",
+        "matches_source_blob_bytes": false,
+        "matches_source_values_and_rows_after_newline_normalization": true,
+        "matches_recorded_recipe_bytes": true,
+        "recipe_note": null
+      },
+      {
+        "path": "data/auxiliary/sg-shopping-malls.csv",
+        "bytes": 5715,
+        "sha256": "cce36a0175433f768d209b74e2e5376aad16befe1ad4f1313da0b18ed6d91a3b",
+        "matches_source_blob_bytes": false,
+        "matches_source_values_and_rows_after_newline_normalization": true,
+        "matches_recorded_recipe_bytes": true,
+        "recipe_note": null
+      },
+      {
+        "path": "data/auxiliary/sg-stock-prices.csv",
+        "bytes": 6553290,
+        "sha256": "e03802bedbebedab27caafb6755ce055f1654cc17b3fc5fc6e3e7ee6ab2c23b7",
+        "matches_source_blob_bytes": false,
+        "matches_source_values_and_rows_after_newline_normalization": true,
+        "matches_recorded_recipe_bytes": true,
+        "recipe_note": null
+      },
+      {
+        "path": "data/example-submission.csv",
+        "bytes": 688656,
+        "sha256": "009e05582492d494df615e9526421023c82d070be029d118dc5ff2766810ecfc",
+        "matches_source_blob_bytes": false,
+        "matches_source_values_and_rows_after_newline_normalization": true,
+        "matches_recorded_recipe_bytes": null,
+        "recipe_note": "Submission template is not a training recipe input; byte hash is checked against the shipped file manifest."
+      },
+      {
+        "path": "data/test.csv",
+        "bytes": 3865917,
+        "sha256": "a2ec03a0afc07c251c72cc0de2e15ac965a3b06291b304aaac53a375115ff4e0",
+        "matches_source_blob_bytes": false,
+        "matches_source_values_and_rows_after_newline_normalization": true,
+        "matches_recorded_recipe_bytes": true,
+        "recipe_note": null
+      },
+      {
+        "path": "data/train.csv",
+        "bytes": 12353583,
+        "sha256": "2fe38ce9e0d8a02e9786f066d4a10d575d91f34be1d9111f0142e3f43fbfc8a5",
+        "matches_source_blob_bytes": false,
+        "matches_source_values_and_rows_after_newline_normalization": true,
+        "matches_recorded_recipe_bytes": true,
+        "recipe_note": null
+      }
+    ],
+    "environment_files": {
+      "environment.yml": true,
+      "environment.review.yml": true,
+      "environment.training.yml": true
+    },
+    "architecture": {
+      "analysis": true,
+      "data": true,
+      "docs": true,
+      "experiment": true,
+      "requirements": true,
+      "tests": true
+    },
+    "environment_provenance": {
+      "environment.yml": {
+        "source_commit": "048eca86",
+        "matches_after_newline_normalization": true
+      },
+      "environment.review.yml": {
+        "source_commit": "6f97e107",
+        "matches_after_newline_normalization": true
+      },
+      "environment.training.yml": {
+        "source_commit": "6f97e107",
+        "matches_after_newline_normalization": true
+      }
+    }
+  },
+  "appendix": {
+    "data": [
+      {
+        "path": "data/auxiliary/sg-coe-prices.csv",
+        "bytes": 22908,
+        "sha256": "c8f934ec6e82dad633afa34e466414fd7b572c580fa28dd6c866e76e4be533e0",
+        "matches_source_blob_bytes": false,
+        "matches_source_values_and_rows_after_newline_normalization": true,
+        "matches_recorded_recipe_bytes": true,
+        "recipe_note": null
+      },
+      {
+        "path": "data/auxiliary/sg-hdb-block.csv",
+        "bytes": 990178,
+        "sha256": "2255ad61ba6895456a39aec81d12583796d717ef88fe102ee9de71b3796fc223",
+        "matches_source_blob_bytes": false,
+        "matches_source_values_and_rows_after_newline_normalization": true,
+        "matches_recorded_recipe_bytes": true,
+        "recipe_note": null
+      },
+      {
+        "path": "data/auxiliary/sg-mrt-stations.csv",
+        "bytes": 22019,
+        "sha256": "4757278b94c2d05627a941377d51de60882e3e1477de01758ef37070b716b889",
+        "matches_source_blob_bytes": false,
+        "matches_source_values_and_rows_after_newline_normalization": true,
+        "matches_recorded_recipe_bytes": true,
+        "recipe_note": null
+      },
+      {
+        "path": "data/auxiliary/sg-schools.csv",
+        "bytes": 89951,
+        "sha256": "9bf28c6a2e5511c5cada178d221dfaac12beb3651425b3b86c37815e35de71cb",
+        "matches_source_blob_bytes": false,
+        "matches_source_values_and_rows_after_newline_normalization": true,
+        "matches_recorded_recipe_bytes": true,
+        "recipe_note": null
+      },
+      {
+        "path": "data/auxiliary/sg-shopping-malls.csv",
+        "bytes": 5715,
+        "sha256": "cce36a0175433f768d209b74e2e5376aad16befe1ad4f1313da0b18ed6d91a3b",
+        "matches_source_blob_bytes": false,
+        "matches_source_values_and_rows_after_newline_normalization": true,
+        "matches_recorded_recipe_bytes": true,
+        "recipe_note": null
+      },
+      {
+        "path": "data/auxiliary/sg-stock-prices.csv",
+        "bytes": 6553290,
+        "sha256": "e03802bedbebedab27caafb6755ce055f1654cc17b3fc5fc6e3e7ee6ab2c23b7",
+        "matches_source_blob_bytes": false,
+        "matches_source_values_and_rows_after_newline_normalization": true,
+        "matches_recorded_recipe_bytes": true,
+        "recipe_note": null
+      },
+      {
+        "path": "data/example-submission.csv",
+        "bytes": 688656,
+        "sha256": "009e05582492d494df615e9526421023c82d070be029d118dc5ff2766810ecfc",
+        "matches_source_blob_bytes": false,
+        "matches_source_values_and_rows_after_newline_normalization": true,
+        "matches_recorded_recipe_bytes": null,
+        "recipe_note": "Submission template is not a training recipe input; byte hash is checked against the shipped file manifest."
+      },
+      {
+        "path": "data/test.csv",
+        "bytes": 3865917,
+        "sha256": "a2ec03a0afc07c251c72cc0de2e15ac965a3b06291b304aaac53a375115ff4e0",
+        "matches_source_blob_bytes": false,
+        "matches_source_values_and_rows_after_newline_normalization": true,
+        "matches_recorded_recipe_bytes": true,
+        "recipe_note": null
+      },
+      {
+        "path": "data/train.csv",
+        "bytes": 12353583,
+        "sha256": "2fe38ce9e0d8a02e9786f066d4a10d575d91f34be1d9111f0142e3f43fbfc8a5",
+        "matches_source_blob_bytes": false,
+        "matches_source_values_and_rows_after_newline_normalization": true,
+        "matches_recorded_recipe_bytes": true,
+        "recipe_note": null
+      }
+    ],
+    "environment_files": {
+      "environment.yml": true,
+      "environment.review.yml": true,
+      "environment.training.yml": true
+    },
+    "architecture": {
+      "analysis": true,
+      "data": true,
+      "docs": true,
+      "experiment": true,
+      "requirements": true,
+      "tests": true
+    },
+    "environment_provenance": {
+      "environment.yml": {
+        "source_commit": "048eca86",
+        "matches_after_newline_normalization": true
+      },
+      "environment.review.yml": {
+        "source_commit": "6f97e107",
+        "matches_after_newline_normalization": true
+      },
+      "environment.training.yml": {
+        "source_commit": "6f97e107",
+        "matches_after_newline_normalization": true
+      }
+    }
+  },
+  "newline_note": "Source Git blobs are LF. Shipped data preserve CRLF bytes used in recorded training recipes; values/rows are identical and conversion is disabled for future checkouts."
+}

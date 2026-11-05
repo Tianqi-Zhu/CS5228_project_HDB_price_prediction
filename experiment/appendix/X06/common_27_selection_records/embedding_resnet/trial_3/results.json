@@ -1,0 +1,23 @@
+{
+  "family": "embedding_resnet",
+  "profile": "compact",
+  "settings": {
+    "max_epochs": 40,
+    "patience": 7,
+    "seed": 42,
+    "width": 128,
+    "layers": 2,
+    "lr": 0.0003,
+    "quantile": true
+  },
+  "selected_iterations": 40,
+  "inner_scores": {
+    "rmse_sgd": 575.3996088501532,
+    "mae_sgd": 422.68172769985256,
+    "bias_sgd": 176.1388052788796
+  },
+  "n_fit": 96865,
+  "n_inner_validation": 17977,
+  "elapsed_seconds": 64.39466600000014,
+  "trial_index": 3
+}

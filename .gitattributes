@@ -1,5 +1,6 @@
 * -text
 *.pdf binary
 *.npz binary
-data/** -text -diff
+data/*.csv -text -diff
+data/auxiliary/*.csv -text -diff
 reproduction/**/submissions/*.csv -text -diff

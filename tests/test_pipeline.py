@@ -191,7 +191,8 @@ class PipelineChecks(unittest.TestCase):
 
     def test_saved_result_consistency(self):
         from analysis.pipeline.config import EXPERIMENT_REPORTS
-        if not EXPERIMENT_REPORTS.exists():
+        from analysis.pipeline.config import ROOT
+        if not (ROOT / 'review/manifest.json').is_file() and not EXPERIMENT_REPORTS.exists():
             self.skipTest('Local saved-result integration check: prepare experiment outputs first; see preflight --profile reports.')
         from analysis.verification import audit_results
         result = audit_results()

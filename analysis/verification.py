@@ -42,6 +42,21 @@ def audit_component_manifest(root: Path, components: list) -> dict:
 
 
 def audit_results() -> dict:
+    bundle_manifest = ROOT / "review/manifest.json"
+    if bundle_manifest.is_file():
+        manifest = _json(bundle_manifest)
+        components = [{"path": row["path"], "sha256": row["sha256"]}
+                      for row in manifest["files"]]
+        integrity = audit_component_manifest(ROOT, components)
+        missing = [row["evidence_directory"] for row in manifest["experiments"]
+                   if not (ROOT / row["evidence_directory"]).is_dir()]
+        checks = [
+            {"name": "shipped_bundle_integrity", "ok": integrity["ok"], "detail": integrity},
+            {"name": "curated_experiment_directories", "ok": not missing,
+             "detail": {"missing": missing, "scope": manifest["scope"]}},
+        ]
+        return {"ok": all(item["ok"] for item in checks), "checks": checks,
+                "metric_differences": [], "note": "Curated export audit; historical development caches are not required or evaluated."}
     checks = []
 
     def check(name, condition, detail):

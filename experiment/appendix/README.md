@@ -14,4 +14,4 @@
 | [X10](X10/README.md) | archived | 已继承公开目标重合审计；不进入性能排名 |
 | [X11](X11/README.md) | pending | F2成员互补分析，依赖外部F2 |
 | [X12](X12/README.md) | planned | F1/F2配对区间 |
-| [X13](X13/README.md) | partial | 原三份复现入口；新干净环境/重训未执行 |
+| [X13](X13/README.md) | partial | 原三份复现入口；固定配方重训核验见CHECKS；新建Conda环境未验证 |

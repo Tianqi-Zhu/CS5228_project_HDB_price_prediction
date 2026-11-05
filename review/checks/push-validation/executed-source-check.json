@@ -1,0 +1,206 @@
+[
+  {
+    "path": "reproduction/three_submissions/check_trained.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/three_submissions/comparison.csv",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/three_submissions/components.npz",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/three_submissions/manifest.json",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/three_submissions/provenance.json",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/three_submissions/README.md",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/three_submissions/reproduce.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/three_submissions/source_manifest.json",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/three_submissions/train.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/three_submissions/training_recipes.json",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/three_submissions/verify.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/three_submissions/weights.json",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/three_submissions/runtime/analysis/__init__.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/three_submissions/runtime/analysis/experiments/best_ensemble_submission.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/three_submissions/runtime/analysis/experiments/canonical_final.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/three_submissions/runtime/analysis/experiments/eighth_wave_submission.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/three_submissions/runtime/analysis/experiments/feature_selection.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/three_submissions/runtime/analysis/experiments/final_submission_selection.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/three_submissions/runtime/analysis/experiments/fourth_wave_diagnostics.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/three_submissions/runtime/analysis/experiments/fourth_wave_known_macro.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/three_submissions/runtime/analysis/experiments/frontier_compact.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/three_submissions/runtime/analysis/experiments/frontier_search.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/three_submissions/runtime/analysis/experiments/ninth_wave_blending.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/three_submissions/runtime/analysis/experiments/ninth_wave_report.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/three_submissions/runtime/analysis/experiments/second_wave_anniversary.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/three_submissions/runtime/analysis/experiments/second_wave_cohort_extensions.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/three_submissions/runtime/analysis/experiments/second_wave_normalized.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/three_submissions/runtime/analysis/experiments/second_wave_report.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/three_submissions/runtime/analysis/experiments/second_wave_stacking.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/three_submissions/runtime/analysis/experiments/sixth_wave_deep.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/three_submissions/runtime/analysis/experiments/tenth_wave_ensemble.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/three_submissions/runtime/analysis/experiments/tenth_wave_report.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/three_submissions/runtime/analysis/experiments/tenth_wave_structures.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/three_submissions/runtime/analysis/experiments/tenth_wave_trees.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/three_submissions/runtime/analysis/experiments/third_wave_models.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/three_submissions/runtime/analysis/experiments/third_wave_training.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/three_submissions/runtime/analysis/experiments/__init__.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/three_submissions/runtime/analysis/pipeline/auxiliary.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/three_submissions/runtime/analysis/pipeline/config.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/three_submissions/runtime/analysis/pipeline/data.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/three_submissions/runtime/analysis/pipeline/evaluation.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/three_submissions/runtime/analysis/pipeline/features.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/three_submissions/runtime/analysis/pipeline/models.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/three_submissions/runtime/analysis/pipeline/neural_models.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/three_submissions/runtime/analysis/pipeline/spatial.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/three_submissions/runtime/analysis/pipeline/__init__.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/three_submissions/runtime/tests/test_ninth_wave.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/three_submissions/runtime/tests/test_tenth_wave.py",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/three_submissions/submissions/kaggle_best_history.csv",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/three_submissions/submissions/kaggle_best_macro.csv",
+    "matches_executed_snapshot": true
+  },
+  {
+    "path": "reproduction/three_submissions/submissions/kaggle_structure_blend.csv",
+    "matches_executed_snapshot": true
+  }
+]

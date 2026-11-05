@@ -1,0 +1,17 @@
+{
+  "family": "extra_trees",
+  "profile": "compact",
+  "settings": {
+    "min_samples_leaf": 10
+  },
+  "selected_iterations": 300,
+  "inner_scores": {
+    "rmse_sgd": 541.4877251024876,
+    "mae_sgd": 413.96023671862486,
+    "bias_sgd": 23.23865143923501
+  },
+  "n_fit": 96865,
+  "n_inner_validation": 17977,
+  "elapsed_seconds": 180.28706950000196,
+  "trial_index": 1
+}

@@ -1,0 +1,24 @@
+{
+  "family": "ft_transformer_default",
+  "profile": "compact",
+  "settings": {
+    "max_epochs": 40,
+    "patience": 7,
+    "seed": 42,
+    "width": 192,
+    "lr": 0.0001,
+    "weight_decay": 1e-05,
+    "quantile": true,
+    "batch_size": 128
+  },
+  "selected_iterations": 6,
+  "inner_scores": {
+    "rmse_sgd": 542.481882182108,
+    "mae_sgd": 413.26495258441656,
+    "bias_sgd": 42.84282142948237
+  },
+  "n_fit": 96865,
+  "n_inner_validation": 17977,
+  "elapsed_seconds": 427.2486504999979,
+  "trial_index": 0
+}
