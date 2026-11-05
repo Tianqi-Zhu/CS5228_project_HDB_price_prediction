@@ -1,0 +1,18 @@
+{
+  "historical_checkpoint": "reports/feature_transformer_v4/runs/v4-macro-primary-s42/arm_both/checkpoint.pt",
+  "historical_rmse_sgd": 467.40269960753227,
+  "historical_backend": "mps",
+  "a_epochs_executed": 33,
+  "a_selected_epoch": 23,
+  "a_selected_rmse_sgd": 584.9455391366075,
+  "b_epochs_executed": 23,
+  "a_fit_rows": 52310,
+  "b_fit_rows": 88192,
+  "validation_rows": 35158,
+  "batch_size": 512,
+  "a_steps_per_epoch": 103,
+  "b_steps_per_epoch": 173,
+  "b_total_steps": 3979,
+  "window": "2024-04 through 2025-03",
+  "new_experiment_authorization": "User 2026-11-02 explicitly requests architecture-only comparison with historical467.40 training conditions"
+}

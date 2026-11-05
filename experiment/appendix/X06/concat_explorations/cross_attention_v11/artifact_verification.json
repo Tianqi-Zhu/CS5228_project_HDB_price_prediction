@@ -1,0 +1,32 @@
+{
+  "status": "PASSED",
+  "historical_files_unchanged": 58,
+  "registered_hashes_match": true,
+  "paired_rows": 35882,
+  "arms": {
+    "concat": {
+      "selected_epoch": 23,
+      "rmse_sgd": 584.7114652304676,
+      "mae_sgd": 454.2964757971391,
+      "bias_sgd": 42.70666397714235,
+      "n": 35882,
+      "replay_max_abs_delta_sgd": 0.0
+    },
+    "summary": {
+      "selected_epoch": 23,
+      "rmse_sgd": 580.3508355796188,
+      "mae_sgd": 451.36272242743365,
+      "bias_sgd": 38.99977281603597,
+      "n": 35882,
+      "replay_max_abs_delta_sgd": 0.0
+    },
+    "sequence": {
+      "selected_epoch": 23,
+      "rmse_sgd": 583.6198137161389,
+      "mae_sgd": 452.29595440287443,
+      "bias_sgd": 52.016031805313546,
+      "n": 35882,
+      "replay_max_abs_delta_sgd": 0.0
+    }
+  }
+}

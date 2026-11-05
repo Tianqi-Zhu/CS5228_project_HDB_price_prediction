@@ -1,0 +1,15 @@
+[
+  {
+    "arm": "arm_both",
+    "macro_mode": "both",
+    "checkpoint_sha256_unchanged": true,
+    "contract_id_matches": true,
+    "recorded_policy": "origin_asof",
+    "row_mapping_reproduces": true,
+    "fitted_anything": false,
+    "n": 35158,
+    "max_abs_delta_sgd": 0.0007152557373046875,
+    "tolerance_sgd": 0.01,
+    "ok": true
+  }
+]

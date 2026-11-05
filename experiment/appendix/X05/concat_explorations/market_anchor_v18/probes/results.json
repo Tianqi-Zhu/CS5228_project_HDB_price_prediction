@@ -1,0 +1,36 @@
+{
+  "models": {
+    "market_level_anchor": {
+      "train_rmse_sgd": 749.7670904928269,
+      "val_rmse_sgd": 510.8566979952613,
+      "val_bias_sgd": -55.56981943359375,
+      "train_mean_residual_sgd": 395.25057486165366,
+      "paired_mse_delta_vs_f0_sgd2": 29269.579442665978
+    },
+    "market_level_train_mean": {
+      "train_rmse_sgd": 637.1245349675456,
+      "val_rmse_sgd": 610.9579172601963,
+      "val_bias_sgd": 339.68075542805985,
+      "train_mean_residual_sgd": 395.25057486165366,
+      "paired_mse_delta_vs_f0_sgd2": 141564.59021896118
+    },
+    "market_trend_anchor": {
+      "train_rmse_sgd": 652.5718411365225,
+      "val_rmse_sgd": 516.74142657426,
+      "val_bias_sgd": -1.057715185546875,
+      "train_mean_residual_sgd": 173.49956547851562,
+      "paired_mse_delta_vs_f0_sgd2": 35316.71549404564
+    },
+    "market_trend_train_mean": {
+      "train_rmse_sgd": 629.0849772670438,
+      "val_rmse_sgd": 544.7538663553021,
+      "val_bias_sgd": 172.4418502929688,
+      "train_mean_residual_sgd": 173.49956547851562,
+      "paired_mse_delta_vs_f0_sgd2": 65051.78846509456
+    }
+  },
+  "previous_v17_probe_sha256": "d8aa0c26de961d22bc13bfd6d96dac17a14a450e6b3940d9e8f358b56c300fc3",
+  "v17_anchor_prior_results": "reports/spatiotemporal_v17/anchor_probe/results.json",
+  "protocol": "fixed origin-asof anchor and fit-only mean residual, frozen v17 screen; not unseen test",
+  "seconds": 0.11861866700928658
+}

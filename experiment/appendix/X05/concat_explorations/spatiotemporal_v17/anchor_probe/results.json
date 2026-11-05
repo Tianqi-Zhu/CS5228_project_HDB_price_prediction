@@ -1,0 +1,918 @@
+{
+  "protocol": "predeclared fixed training-only estimators; screen development validation; no 150k refit",
+  "source_bank_sha256": "9ef7d60077925b1ab90d42a7468a7fdd022d77555fd449e1b5d5f4ec3dd67e98",
+  "train_row_ids_sha256": "494ff5be36fba3df4a4bbf56fce7c9808c86714f7e187f66cdc55685ceaf3928",
+  "validation_row_ids_sha256": "f09a09180b03f382e00f395da0ccd455067fec9db02285b187a454d69e3b7d46",
+  "fit_targets_sha256": "86182849ae1f2203814328d9505ad3d3ba3a075d83e13a597732127e4dc632f4",
+  "fit_anchor_sha256": "5e92a8e4c1fced033196b5c50ad1460e0466d45fb30e759d873997cac0bf2715",
+  "horizon_ridge_penalty": 1000.0,
+  "group_pseudocount": 20.0,
+  "source_alignment": "row_id, month, target, town, flat_type and horizon checked; area retrieved but not used",
+  "f0_reference": "reports/spatiotemporal_v17/models/causal_no_mrt/F0/predictions.csv",
+  "metrics": {
+    "anchor": {
+      "validation": {
+        "n": 5000,
+        "rmse_sgd": 718.9955101438551,
+        "bias_sgd": -528.5512846323013
+      },
+      "train": {
+        "n": 30000,
+        "rmse_sgd": 806.0952323635083,
+        "bias_sgd": -486.3595977142334
+      },
+      "paired_mse_delta_vs_f0_sgd2": 285249.55716306675
+    },
+    "train_mean": {
+      "validation": {
+        "n": 5000,
+        "rmse_sgd": 489.25271748408164,
+        "bias_sgd": -42.19168691806774
+      },
+      "train": {
+        "n": 30000,
+        "rmse_sgd": 642.8404664848251,
+        "bias_sgd": 2.1730860074361165e-13
+      },
+      "paired_mse_delta_vs_f0_sgd2": 7663.2351216029565
+    },
+    "horizon": {
+      "validation": {
+        "n": 5000,
+        "rmse_sgd": 494.0828696480419,
+        "bias_sgd": -47.97430057575448
+      },
+      "train": {
+        "n": 30000,
+        "rmse_sgd": 631.3096990652376,
+        "bias_sgd": 1.3969838619232177e-13
+      },
+      "paired_mse_delta_vs_f0_sgd2": 12412.895635688272
+    },
+    "group_horizon": {
+      "validation": {
+        "n": 5000,
+        "rmse_sgd": 489.00010548582384,
+        "bias_sgd": -49.74295224781919
+      },
+      "train": {
+        "n": 30000,
+        "rmse_sgd": 625.2661492078188,
+        "bias_sgd": -0.8458930406138145
+      },
+      "paired_mse_delta_vs_f0_sgd2": 7416.116721191226
+    },
+    "train_mean_known_anchor_only": {
+      "validation": {
+        "n": 5000,
+        "rmse_sgd": 495.06360100135555,
+        "bias_sgd": -86.60188171086705
+      },
+      "train": {
+        "n": 30000,
+        "rmse_sgd": 644.3726644977748,
+        "bias_sgd": -44.41019479279906
+      },
+      "paired_mse_delta_vs_f0_sgd2": 13382.982592473714
+    },
+    "refreshed_6m": {
+      "validation": {
+        "n": 5000,
+        "rmse_sgd": 501.8522160691067,
+        "bias_sgd": -45.614231519115584
+      },
+      "train": {
+        "n": 30000,
+        "rmse_sgd": 708.5597951242829,
+        "bias_sgd": -330.2224741632587
+      },
+      "paired_mse_delta_vs_f0_sgd2": 20150.660329517694
+    },
+    "refreshed_6m_train_mean": {
+      "validation": {
+        "n": 5000,
+        "rmse_sgd": 575.1320200070427,
+        "bias_sgd": 284.608242644143
+      },
+      "train": {
+        "n": 30000,
+        "rmse_sgd": 626.9051769000331,
+        "bias_sgd": -9.313225746154786e-14
+      },
+      "paired_mse_delta_vs_f0_sgd2": 99071.85399342558
+    },
+    "refreshed_12m": {
+      "validation": {
+        "n": 5000,
+        "rmse_sgd": 494.99100158905236,
+        "bias_sgd": -54.908660216118406
+      },
+      "train": {
+        "n": 30000,
+        "rmse_sgd": 744.0463649416312,
+        "bias_sgd": -393.008076255406
+      },
+      "paired_mse_delta_vs_f0_sgd2": 13311.105210177593
+    },
+    "refreshed_12m_train_mean": {
+      "validation": {
+        "n": 5000,
+        "rmse_sgd": 596.9190446061439,
+        "bias_sgd": 338.09941603928775
+      },
+      "train": {
+        "n": 30000,
+        "rmse_sgd": 631.7829098518572,
+        "bias_sgd": 1.3969838619232177e-13
+      },
+      "paired_mse_delta_vs_f0_sgd2": 124607.35936955585
+    },
+    "refreshed_12m_known_anchor_mean": {
+      "validation": {
+        "n": 5000,
+        "rmse_sgd": 571.5829675424321,
+        "bias_sgd": 291.04288016924403
+      },
+      "train": {
+        "n": 30000,
+        "rmse_sgd": 633.5329215983717,
+        "bias_sgd": -47.05653587004355
+      },
+      "paired_mse_delta_vs_f0_sgd2": 95002.1023406574
+    }
+  },
+  "coefficients": {
+    "mean_residual": 486.3595977142334,
+    "horizon_mean": 6.637266666666667,
+    "horizon_slope": 26.22897032515877,
+    "ridge_penalty": 1000.0,
+    "group_prior": 20.0,
+    "n_train": 30000,
+    "groups": [
+      {
+        "town": "ang mo kio",
+        "flat_type": "2 room",
+        "effect_sgd": -147.34163584874824,
+        "count": 31
+      },
+      {
+        "town": "ang mo kio",
+        "flat_type": "3 room",
+        "effect_sgd": -87.8711221198699,
+        "count": 1059
+      },
+      {
+        "town": "ang mo kio",
+        "flat_type": "4 room",
+        "effect_sgd": 26.329786475048348,
+        "count": 403
+      },
+      {
+        "town": "ang mo kio",
+        "flat_type": "5 room",
+        "effect_sgd": 126.12933458484622,
+        "count": 157
+      },
+      {
+        "town": "ang mo kio",
+        "flat_type": "executive",
+        "effect_sgd": 123.54993199049902,
+        "count": 4
+      },
+      {
+        "town": "bedok",
+        "flat_type": "2 room",
+        "effect_sgd": -151.32774480043597,
+        "count": 30
+      },
+      {
+        "town": "bedok",
+        "flat_type": "3 room",
+        "effect_sgd": -120.97342460305813,
+        "count": 896
+      },
+      {
+        "town": "bedok",
+        "flat_type": "4 room",
+        "effect_sgd": -55.65823396444104,
+        "count": 530
+      },
+      {
+        "town": "bedok",
+        "flat_type": "5 room",
+        "effect_sgd": 79.3370979025434,
+        "count": 270
+      },
+      {
+        "town": "bedok",
+        "flat_type": "executive",
+        "effect_sgd": 152.82407327555308,
+        "count": 67
+      },
+      {
+        "town": "bishan",
+        "flat_type": "3 room",
+        "effect_sgd": -50.63093817589393,
+        "count": 137
+      },
+      {
+        "town": "bishan",
+        "flat_type": "4 room",
+        "effect_sgd": 15.11772891514659,
+        "count": 331
+      },
+      {
+        "town": "bishan",
+        "flat_type": "5 room",
+        "effect_sgd": 130.67155064285805,
+        "count": 167
+      },
+      {
+        "town": "bishan",
+        "flat_type": "executive",
+        "effect_sgd": 169.86836556488092,
+        "count": 29
+      },
+      {
+        "town": "bukit batok",
+        "flat_type": "2 room",
+        "effect_sgd": -27.907214830817473,
+        "count": 37
+      },
+      {
+        "town": "bukit batok",
+        "flat_type": "3 room",
+        "effect_sgd": -83.8233924958575,
+        "count": 438
+      },
+      {
+        "town": "bukit batok",
+        "flat_type": "4 room",
+        "effect_sgd": 21.34798489619833,
+        "count": 405
+      },
+      {
+        "town": "bukit batok",
+        "flat_type": "5 room",
+        "effect_sgd": 45.00600787803164,
+        "count": 158
+      },
+      {
+        "town": "bukit batok",
+        "flat_type": "executive",
+        "effect_sgd": 49.22080366178554,
+        "count": 66
+      },
+      {
+        "town": "bukit merah",
+        "flat_type": "1 room",
+        "effect_sgd": -143.11387325973118,
+        "count": 5
+      },
+      {
+        "town": "bukit merah",
+        "flat_type": "2 room",
+        "effect_sgd": -30.221216509579172,
+        "count": 64
+      },
+      {
+        "town": "bukit merah",
+        "flat_type": "3 room",
+        "effect_sgd": -46.72548688467543,
+        "count": 686
+      },
+      {
+        "town": "bukit merah",
+        "flat_type": "4 room",
+        "effect_sgd": 48.411307800124455,
+        "count": 561
+      },
+      {
+        "town": "bukit merah",
+        "flat_type": "5 room",
+        "effect_sgd": 152.729636424602,
+        "count": 317
+      },
+      {
+        "town": "bukit panjang",
+        "flat_type": "2 room",
+        "effect_sgd": -131.6649192761128,
+        "count": 10
+      },
+      {
+        "town": "bukit panjang",
+        "flat_type": "3 room",
+        "effect_sgd": -81.99522236949593,
+        "count": 98
+      },
+      {
+        "town": "bukit panjang",
+        "flat_type": "4 room",
+        "effect_sgd": -23.02842418503606,
+        "count": 314
+      },
+      {
+        "town": "bukit panjang",
+        "flat_type": "5 room",
+        "effect_sgd": 12.529138967045158,
+        "count": 265
+      },
+      {
+        "town": "bukit panjang",
+        "flat_type": "executive",
+        "effect_sgd": 122.09238971453965,
+        "count": 70
+      },
+      {
+        "town": "bukit timah",
+        "flat_type": "3 room",
+        "effect_sgd": -68.06178170105426,
+        "count": 29
+      },
+      {
+        "town": "bukit timah",
+        "flat_type": "4 room",
+        "effect_sgd": -69.610493568388,
+        "count": 35
+      },
+      {
+        "town": "bukit timah",
+        "flat_type": "5 room",
+        "effect_sgd": 186.35125674478942,
+        "count": 24
+      },
+      {
+        "town": "bukit timah",
+        "flat_type": "executive",
+        "effect_sgd": 100.00147584529314,
+        "count": 8
+      },
+      {
+        "town": "central",
+        "flat_type": "2 room",
+        "effect_sgd": -93.79614609554767,
+        "count": 22
+      },
+      {
+        "town": "central",
+        "flat_type": "3 room",
+        "effect_sgd": -28.03717632979053,
+        "count": 250
+      },
+      {
+        "town": "central",
+        "flat_type": "4 room",
+        "effect_sgd": 191.67177634340894,
+        "count": 148
+      },
+      {
+        "town": "central",
+        "flat_type": "5 room",
+        "effect_sgd": 528.5889698992316,
+        "count": 41
+      },
+      {
+        "town": "choa chu kang",
+        "flat_type": "2 room",
+        "effect_sgd": -149.39362706839557,
+        "count": 6
+      },
+      {
+        "town": "choa chu kang",
+        "flat_type": "3 room",
+        "effect_sgd": -76.01924314169815,
+        "count": 67
+      },
+      {
+        "town": "choa chu kang",
+        "flat_type": "4 room",
+        "effect_sgd": 13.495301788366554,
+        "count": 495
+      },
+      {
+        "town": "choa chu kang",
+        "flat_type": "5 room",
+        "effect_sgd": 20.996314535550045,
+        "count": 372
+      },
+      {
+        "town": "choa chu kang",
+        "flat_type": "executive",
+        "effect_sgd": 41.00843862729382,
+        "count": 110
+      },
+      {
+        "town": "clementi",
+        "flat_type": "2 room",
+        "effect_sgd": 14.490124287222319,
+        "count": 2
+      },
+      {
+        "town": "clementi",
+        "flat_type": "3 room",
+        "effect_sgd": -63.8891962189879,
+        "count": 656
+      },
+      {
+        "town": "clementi",
+        "flat_type": "4 room",
+        "effect_sgd": 92.01560243470286,
+        "count": 322
+      },
+      {
+        "town": "clementi",
+        "flat_type": "5 room",
+        "effect_sgd": 124.73255417043661,
+        "count": 96
+      },
+      {
+        "town": "clementi",
+        "flat_type": "executive",
+        "effect_sgd": 62.977442186494656,
+        "count": 10
+      },
+      {
+        "town": "geylang",
+        "flat_type": "2 room",
+        "effect_sgd": -194.13659364517162,
+        "count": 44
+      },
+      {
+        "town": "geylang",
+        "flat_type": "3 room",
+        "effect_sgd": -133.86921614799735,
+        "count": 471
+      },
+      {
+        "town": "geylang",
+        "flat_type": "4 room",
+        "effect_sgd": 13.25583799853525,
+        "count": 291
+      },
+      {
+        "town": "geylang",
+        "flat_type": "5 room",
+        "effect_sgd": 94.2730589171165,
+        "count": 92
+      },
+      {
+        "town": "geylang",
+        "flat_type": "executive",
+        "effect_sgd": 19.789147690705057,
+        "count": 20
+      },
+      {
+        "town": "hougang",
+        "flat_type": "2 room",
+        "effect_sgd": 51.400845109676844,
+        "count": 18
+      },
+      {
+        "town": "hougang",
+        "flat_type": "3 room",
+        "effect_sgd": -102.42256270156967,
+        "count": 390
+      },
+      {
+        "town": "hougang",
+        "flat_type": "4 room",
+        "effect_sgd": -16.808718555466136,
+        "count": 621
+      },
+      {
+        "town": "hougang",
+        "flat_type": "5 room",
+        "effect_sgd": 57.42756291837554,
+        "count": 299
+      },
+      {
+        "town": "hougang",
+        "flat_type": "executive",
+        "effect_sgd": 83.06183790680151,
+        "count": 97
+      },
+      {
+        "town": "jurong east",
+        "flat_type": "2 room",
+        "effect_sgd": -104.17638999414592,
+        "count": 7
+      },
+      {
+        "town": "jurong east",
+        "flat_type": "3 room",
+        "effect_sgd": -109.14466928998424,
+        "count": 295
+      },
+      {
+        "town": "jurong east",
+        "flat_type": "4 room",
+        "effect_sgd": 43.63931310470044,
+        "count": 248
+      },
+      {
+        "town": "jurong east",
+        "flat_type": "5 room",
+        "effect_sgd": 117.30536644407928,
+        "count": 189
+      },
+      {
+        "town": "jurong east",
+        "flat_type": "executive",
+        "effect_sgd": 74.92723580647335,
+        "count": 54
+      },
+      {
+        "town": "jurong west",
+        "flat_type": "2 room",
+        "effect_sgd": -112.97262190769582,
+        "count": 27
+      },
+      {
+        "town": "jurong west",
+        "flat_type": "3 room",
+        "effect_sgd": -114.57668945878552,
+        "count": 378
+      },
+      {
+        "town": "jurong west",
+        "flat_type": "4 room",
+        "effect_sgd": 11.369389176932934,
+        "count": 708
+      },
+      {
+        "town": "jurong west",
+        "flat_type": "5 room",
+        "effect_sgd": -6.6161650048628164,
+        "count": 767
+      },
+      {
+        "town": "jurong west",
+        "flat_type": "executive",
+        "effect_sgd": 11.651693264908179,
+        "count": 217
+      },
+      {
+        "town": "kallang/whampoa",
+        "flat_type": "2 room",
+        "effect_sgd": -116.31372319546824,
+        "count": 29
+      },
+      {
+        "town": "kallang/whampoa",
+        "flat_type": "3 room",
+        "effect_sgd": -110.76920652433601,
+        "count": 573
+      },
+      {
+        "town": "kallang/whampoa",
+        "flat_type": "4 room",
+        "effect_sgd": 19.50776814678811,
+        "count": 351
+      },
+      {
+        "town": "kallang/whampoa",
+        "flat_type": "5 room",
+        "effect_sgd": 60.533113490121835,
+        "count": 160
+      },
+      {
+        "town": "kallang/whampoa",
+        "flat_type": "executive",
+        "effect_sgd": 31.616155571549605,
+        "count": 11
+      },
+      {
+        "town": "marine parade",
+        "flat_type": "3 room",
+        "effect_sgd": -51.26662789558179,
+        "count": 204
+      },
+      {
+        "town": "marine parade",
+        "flat_type": "4 room",
+        "effect_sgd": -53.65356937065514,
+        "count": 83
+      },
+      {
+        "town": "marine parade",
+        "flat_type": "5 room",
+        "effect_sgd": 189.56065753067477,
+        "count": 47
+      },
+      {
+        "town": "pasir ris",
+        "flat_type": "2 room",
+        "effect_sgd": -31.7050032103776,
+        "count": 3
+      },
+      {
+        "town": "pasir ris",
+        "flat_type": "3 room",
+        "effect_sgd": -6.828330655304201,
+        "count": 20
+      },
+      {
+        "town": "pasir ris",
+        "flat_type": "4 room",
+        "effect_sgd": 10.28475499769215,
+        "count": 322
+      },
+      {
+        "town": "pasir ris",
+        "flat_type": "5 room",
+        "effect_sgd": 23.578391068094284,
+        "count": 283
+      },
+      {
+        "town": "pasir ris",
+        "flat_type": "executive",
+        "effect_sgd": 122.29241128790862,
+        "count": 201
+      },
+      {
+        "town": "punggol",
+        "flat_type": "2 room",
+        "effect_sgd": -92.48707961313798,
+        "count": 47
+      },
+      {
+        "town": "punggol",
+        "flat_type": "3 room",
+        "effect_sgd": -28.063586096166325,
+        "count": 87
+      },
+      {
+        "town": "punggol",
+        "flat_type": "4 room",
+        "effect_sgd": 44.205021546340085,
+        "count": 522
+      },
+      {
+        "town": "punggol",
+        "flat_type": "5 room",
+        "effect_sgd": 97.3224203639466,
+        "count": 627
+      },
+      {
+        "town": "punggol",
+        "flat_type": "executive",
+        "effect_sgd": 91.37965287583312,
+        "count": 44
+      },
+      {
+        "town": "queenstown",
+        "flat_type": "2 room",
+        "effect_sgd": -181.2351713411443,
+        "count": 33
+      },
+      {
+        "town": "queenstown",
+        "flat_type": "3 room",
+        "effect_sgd": -54.77768676476395,
+        "count": 718
+      },
+      {
+        "town": "queenstown",
+        "flat_type": "4 room",
+        "effect_sgd": 137.48731910127725,
+        "count": 311
+      },
+      {
+        "town": "queenstown",
+        "flat_type": "5 room",
+        "effect_sgd": 172.9530273102034,
+        "count": 139
+      },
+      {
+        "town": "queenstown",
+        "flat_type": "executive",
+        "effect_sgd": 9.987632723081374,
+        "count": 1
+      },
+      {
+        "town": "sembawang",
+        "flat_type": "2 room",
+        "effect_sgd": 75.98364777275226,
+        "count": 39
+      },
+      {
+        "town": "sembawang",
+        "flat_type": "3 room",
+        "effect_sgd": -3.0095049499991586,
+        "count": 10
+      },
+      {
+        "town": "sembawang",
+        "flat_type": "4 room",
+        "effect_sgd": 69.71600408172283,
+        "count": 261
+      },
+      {
+        "town": "sembawang",
+        "flat_type": "5 room",
+        "effect_sgd": 10.582391546733467,
+        "count": 283
+      },
+      {
+        "town": "sembawang",
+        "flat_type": "executive",
+        "effect_sgd": 80.01125945880996,
+        "count": 107
+      },
+      {
+        "town": "sengkang",
+        "flat_type": "2 room",
+        "effect_sgd": -86.36594155701005,
+        "count": 38
+      },
+      {
+        "town": "sengkang",
+        "flat_type": "3 room",
+        "effect_sgd": 45.96407932186666,
+        "count": 75
+      },
+      {
+        "town": "sengkang",
+        "flat_type": "4 room",
+        "effect_sgd": 34.187719655283146,
+        "count": 805
+      },
+      {
+        "town": "sengkang",
+        "flat_type": "5 room",
+        "effect_sgd": 106.87954559543978,
+        "count": 861
+      },
+      {
+        "town": "sengkang",
+        "flat_type": "executive",
+        "effect_sgd": 55.108621868359776,
+        "count": 161
+      },
+      {
+        "town": "serangoon",
+        "flat_type": "3 room",
+        "effect_sgd": -85.32117185279229,
+        "count": 229
+      },
+      {
+        "town": "serangoon",
+        "flat_type": "4 room",
+        "effect_sgd": 32.609643223667625,
+        "count": 298
+      },
+      {
+        "town": "serangoon",
+        "flat_type": "5 room",
+        "effect_sgd": 18.318615480139716,
+        "count": 100
+      },
+      {
+        "town": "serangoon",
+        "flat_type": "executive",
+        "effect_sgd": 154.9370447563782,
+        "count": 57
+      },
+      {
+        "town": "tampines",
+        "flat_type": "2 room",
+        "effect_sgd": -84.81399352795357,
+        "count": 7
+      },
+      {
+        "town": "tampines",
+        "flat_type": "3 room",
+        "effect_sgd": -52.76675307605456,
+        "count": 566
+      },
+      {
+        "town": "tampines",
+        "flat_type": "4 room",
+        "effect_sgd": 0.254330756401474,
+        "count": 775
+      },
+      {
+        "town": "tampines",
+        "flat_type": "5 room",
+        "effect_sgd": 65.1908015170152,
+        "count": 530
+      },
+      {
+        "town": "tampines",
+        "flat_type": "executive",
+        "effect_sgd": 9.933845486185014,
+        "count": 131
+      },
+      {
+        "town": "toa payoh",
+        "flat_type": "2 room",
+        "effect_sgd": -112.689360189863,
+        "count": 24
+      },
+      {
+        "town": "toa payoh",
+        "flat_type": "3 room",
+        "effect_sgd": -69.4825945286427,
+        "count": 702
+      },
+      {
+        "town": "toa payoh",
+        "flat_type": "4 room",
+        "effect_sgd": 33.29298489605637,
+        "count": 304
+      },
+      {
+        "town": "toa payoh",
+        "flat_type": "5 room",
+        "effect_sgd": 94.8185193185945,
+        "count": 153
+      },
+      {
+        "town": "toa payoh",
+        "flat_type": "executive",
+        "effect_sgd": 101.15975894820271,
+        "count": 17
+      },
+      {
+        "town": "woodlands",
+        "flat_type": "2 room",
+        "effect_sgd": -48.276627265038634,
+        "count": 35
+      },
+      {
+        "town": "woodlands",
+        "flat_type": "3 room",
+        "effect_sgd": -87.8741696658918,
+        "count": 182
+      },
+      {
+        "town": "woodlands",
+        "flat_type": "4 room",
+        "effect_sgd": -14.298454161369094,
+        "count": 623
+      },
+      {
+        "town": "woodlands",
+        "flat_type": "5 room",
+        "effect_sgd": 49.50853393064101,
+        "count": 549
+      },
+      {
+        "town": "woodlands",
+        "flat_type": "executive",
+        "effect_sgd": 65.7186195971568,
+        "count": 133
+      },
+      {
+        "town": "yishun",
+        "flat_type": "2 room",
+        "effect_sgd": -83.75864512082664,
+        "count": 33
+      },
+      {
+        "town": "yishun",
+        "flat_type": "3 room",
+        "effect_sgd": -86.3027602727533,
+        "count": 543
+      },
+      {
+        "town": "yishun",
+        "flat_type": "4 room",
+        "effect_sgd": -30.697166753328833,
+        "count": 691
+      },
+      {
+        "town": "yishun",
+        "flat_type": "5 room",
+        "effect_sgd": 16.78710984243214,
+        "count": 258
+      },
+      {
+        "town": "yishun",
+        "flat_type": "executive",
+        "effect_sgd": 106.14374170055706,
+        "count": 73
+      }
+    ]
+  },
+  "known_anchor_only_mean_residual_sgd": 441.9494029214343,
+  "known_anchor_training_rows": 29173,
+  "cold_start_training_rows": 827,
+  "refreshed_anchor_parameters": {
+    "refreshed_6m": {
+      "mean_training_residual_sgd": 330.2224741632587,
+      "window_months": 6,
+      "prior": 10,
+      "units": "monthly mean kSGD and log1p count; output SGD"
+    },
+    "refreshed_12m": {
+      "mean_training_residual_sgd": 393.008076255406,
+      "window_months": 12,
+      "prior": 10,
+      "units": "monthly mean kSGD and log1p count; output SGD",
+      "known_anchor_training_residual_mean_sgd": 345.9515403853625
+    }
+  },
+  "runtime_seconds": 0.7367344580125064,
+  "caveats": "Comparative development selection only; frozen anchors include all legal past training history; no validation labels fit any calibration."
+}

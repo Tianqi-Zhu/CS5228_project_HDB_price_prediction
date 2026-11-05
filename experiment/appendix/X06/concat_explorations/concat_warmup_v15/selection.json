@@ -1,0 +1,351 @@
+{
+  "candidates": [
+    {
+      "best_epoch": 4,
+      "best_rmse_sgd": 470.27281871044147,
+      "checkpoint": "/Users/ziyuan/Desktop/\u6709\u7528\u7684\u4e1c\u897f/NUS_courses/CS_5228/Project/CS5228_project_HDB_price_prediction/reports/concat_warmup_v15/lr_0.001/best.pt",
+      "history": [
+        {
+          "elapsed_seconds": 548.4752040419844,
+          "epoch": 1,
+          "rmse_sgd": 508.38588403915827,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        },
+        {
+          "elapsed_seconds": 216.04001350002363,
+          "epoch": 2,
+          "rmse_sgd": 473.7464527703621,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        },
+        {
+          "elapsed_seconds": 604.2696812080103,
+          "epoch": 3,
+          "rmse_sgd": 476.05239077586975,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        },
+        {
+          "elapsed_seconds": 617.095715625037,
+          "epoch": 4,
+          "rmse_sgd": 470.27281871044147,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        },
+        {
+          "elapsed_seconds": 650.656378832995,
+          "epoch": 5,
+          "rmse_sgd": 472.1835414185158,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        },
+        {
+          "elapsed_seconds": 608.3884432089981,
+          "epoch": 6,
+          "rmse_sgd": 472.9693028178992,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        },
+        {
+          "elapsed_seconds": 644.5418198330444,
+          "epoch": 7,
+          "rmse_sgd": 470.77808627498064,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        },
+        {
+          "elapsed_seconds": 595.9465205000015,
+          "epoch": 8,
+          "rmse_sgd": 475.7163582072539,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        },
+        {
+          "elapsed_seconds": 633.9333927499829,
+          "epoch": 9,
+          "rmse_sgd": 474.5118540059827,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        }
+      ],
+      "lr": 0.001
+    },
+    {
+      "best_epoch": 13,
+      "best_rmse_sgd": 469.3506683246073,
+      "checkpoint": "/Users/ziyuan/Desktop/\u6709\u7528\u7684\u4e1c\u897f/NUS_courses/CS_5228/Project/CS5228_project_HDB_price_prediction/reports/concat_warmup_v15/lr_0.0005/best.pt",
+      "history": [
+        {
+          "elapsed_seconds": 607.7115908749984,
+          "epoch": 1,
+          "rmse_sgd": 493.84505909397404,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        },
+        {
+          "elapsed_seconds": 666.3136771250283,
+          "epoch": 2,
+          "rmse_sgd": 479.7706041367823,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        },
+        {
+          "elapsed_seconds": 643.6200904169818,
+          "epoch": 3,
+          "rmse_sgd": 478.87122537511357,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        },
+        {
+          "elapsed_seconds": 674.0742426659563,
+          "epoch": 4,
+          "rmse_sgd": 471.44165868672746,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        },
+        {
+          "elapsed_seconds": 523.9001057079877,
+          "epoch": 5,
+          "rmse_sgd": 472.23012681951343,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        },
+        {
+          "elapsed_seconds": 506.05552445800276,
+          "epoch": 6,
+          "rmse_sgd": 472.0924791823585,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        },
+        {
+          "elapsed_seconds": 511.95558374997927,
+          "epoch": 7,
+          "rmse_sgd": 470.56786334798943,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        },
+        {
+          "elapsed_seconds": 526.4053297920036,
+          "epoch": 8,
+          "rmse_sgd": 472.7438132654769,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        },
+        {
+          "elapsed_seconds": 543.1029783330159,
+          "epoch": 9,
+          "rmse_sgd": 472.27110901966256,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        },
+        {
+          "elapsed_seconds": 533.9762520419899,
+          "epoch": 10,
+          "rmse_sgd": 469.72522952863704,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        },
+        {
+          "elapsed_seconds": 523.7349733750452,
+          "epoch": 11,
+          "rmse_sgd": 469.99828944338793,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        },
+        {
+          "elapsed_seconds": 525.4387598750181,
+          "epoch": 12,
+          "rmse_sgd": 470.6509505921885,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        },
+        {
+          "elapsed_seconds": 535.1390392499743,
+          "epoch": 13,
+          "rmse_sgd": 469.3506683246073,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        },
+        {
+          "elapsed_seconds": 538.4109935000306,
+          "epoch": 14,
+          "rmse_sgd": 470.61599601396364,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        },
+        {
+          "elapsed_seconds": 540.6376132500009,
+          "epoch": 15,
+          "rmse_sgd": 470.4319051770526,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        },
+        {
+          "elapsed_seconds": 535.3832744579995,
+          "epoch": 16,
+          "rmse_sgd": 470.6919023763259,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        },
+        {
+          "elapsed_seconds": 541.5546650830074,
+          "epoch": 17,
+          "rmse_sgd": 469.519677633544,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        },
+        {
+          "elapsed_seconds": 542.4050557499868,
+          "epoch": 18,
+          "rmse_sgd": 470.3796547218655,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        }
+      ],
+      "lr": 0.0005
+    },
+    {
+      "best_epoch": 13,
+      "best_rmse_sgd": 469.04743016089884,
+      "checkpoint": "/Users/ziyuan/Desktop/\u6709\u7528\u7684\u4e1c\u897f/NUS_courses/CS_5228/Project/CS5228_project_HDB_price_prediction/reports/concat_warmup_v15/lr_0.0003/best.pt",
+      "history": [
+        {
+          "elapsed_seconds": 536.9407546670409,
+          "epoch": 1,
+          "rmse_sgd": 479.70092820200614,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        },
+        {
+          "elapsed_seconds": 542.3714054999873,
+          "epoch": 2,
+          "rmse_sgd": 482.3006057759427,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        },
+        {
+          "elapsed_seconds": 544.210210124962,
+          "epoch": 3,
+          "rmse_sgd": 497.5490932045051,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        },
+        {
+          "elapsed_seconds": 543.9514070829609,
+          "epoch": 4,
+          "rmse_sgd": 476.6124254109206,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        },
+        {
+          "elapsed_seconds": 540.9206340410165,
+          "epoch": 5,
+          "rmse_sgd": 480.8774934795017,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        },
+        {
+          "elapsed_seconds": 541.0320538750384,
+          "epoch": 6,
+          "rmse_sgd": 473.68091109810274,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        },
+        {
+          "elapsed_seconds": 541.1676197500201,
+          "epoch": 7,
+          "rmse_sgd": 471.38705166802134,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        },
+        {
+          "elapsed_seconds": 544.0680842089932,
+          "epoch": 8,
+          "rmse_sgd": 472.7747394630442,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        },
+        {
+          "elapsed_seconds": 523.5372940829839,
+          "epoch": 9,
+          "rmse_sgd": 471.64275127612103,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        },
+        {
+          "elapsed_seconds": 459.9456885000109,
+          "epoch": 10,
+          "rmse_sgd": 470.1533991291924,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        },
+        {
+          "elapsed_seconds": 460.7564277499914,
+          "epoch": 11,
+          "rmse_sgd": 469.57958018162844,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        },
+        {
+          "elapsed_seconds": 462.06372145796195,
+          "epoch": 12,
+          "rmse_sgd": 469.86465364832753,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        },
+        {
+          "elapsed_seconds": 461.116946583963,
+          "epoch": 13,
+          "rmse_sgd": 469.04743016089884,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        },
+        {
+          "elapsed_seconds": 501.196707666968,
+          "epoch": 14,
+          "rmse_sgd": 470.06093624979616,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        },
+        {
+          "elapsed_seconds": 557.3033395000384,
+          "epoch": 15,
+          "rmse_sgd": 470.59562649376306,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        },
+        {
+          "elapsed_seconds": 670.9929277080228,
+          "epoch": 16,
+          "rmse_sgd": 470.90487814993105,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        },
+        {
+          "elapsed_seconds": 564.802097708045,
+          "epoch": 17,
+          "rmse_sgd": 469.80931927741887,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        },
+        {
+          "elapsed_seconds": 608.8511346250307,
+          "epoch": 18,
+          "rmse_sgd": 470.0703460607118,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        }
+      ],
+      "lr": 0.0003
+    }
+  ],
+  "final_refit_performed": false,
+  "identity": "0206b136752dc25ffefab41e88d29ce95462f47c0bb0f1d81501b9089f241eda",
+  "selected_epoch": 13,
+  "selected_lr": 0.0003,
+  "selection_checkpoint": "/Users/ziyuan/Desktop/\u6709\u7528\u7684\u4e1c\u897f/NUS_courses/CS_5228/Project/CS5228_project_HDB_price_prediction/reports/concat_warmup_v15/lr_0.0003/best.pt",
+  "selection_rmse_sgd": 469.04743016089884,
+  "validation_rows_verified": 35158,
+  "verified_reload": true
+}

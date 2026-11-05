@@ -1,0 +1,71 @@
+{
+  "best_epoch": 4,
+  "best_rmse_sgd": 470.27281871044147,
+  "checkpoint": "/Users/ziyuan/Desktop/\u6709\u7528\u7684\u4e1c\u897f/NUS_courses/CS_5228/Project/CS5228_project_HDB_price_prediction/reports/concat_warmup_v15/lr_0.001/best.pt",
+  "history": [
+    {
+      "elapsed_seconds": 548.4752040419844,
+      "epoch": 1,
+      "rmse_sgd": 508.38588403915827,
+      "supervised_rows": 114842,
+      "unique_rows": 114842
+    },
+    {
+      "elapsed_seconds": 216.04001350002363,
+      "epoch": 2,
+      "rmse_sgd": 473.7464527703621,
+      "supervised_rows": 114842,
+      "unique_rows": 114842
+    },
+    {
+      "elapsed_seconds": 604.2696812080103,
+      "epoch": 3,
+      "rmse_sgd": 476.05239077586975,
+      "supervised_rows": 114842,
+      "unique_rows": 114842
+    },
+    {
+      "elapsed_seconds": 617.095715625037,
+      "epoch": 4,
+      "rmse_sgd": 470.27281871044147,
+      "supervised_rows": 114842,
+      "unique_rows": 114842
+    },
+    {
+      "elapsed_seconds": 650.656378832995,
+      "epoch": 5,
+      "rmse_sgd": 472.1835414185158,
+      "supervised_rows": 114842,
+      "unique_rows": 114842
+    },
+    {
+      "elapsed_seconds": 608.3884432089981,
+      "epoch": 6,
+      "rmse_sgd": 472.9693028178992,
+      "supervised_rows": 114842,
+      "unique_rows": 114842
+    },
+    {
+      "elapsed_seconds": 644.5418198330444,
+      "epoch": 7,
+      "rmse_sgd": 470.77808627498064,
+      "supervised_rows": 114842,
+      "unique_rows": 114842
+    },
+    {
+      "elapsed_seconds": 595.9465205000015,
+      "epoch": 8,
+      "rmse_sgd": 475.7163582072539,
+      "supervised_rows": 114842,
+      "unique_rows": 114842
+    },
+    {
+      "elapsed_seconds": 633.9333927499829,
+      "epoch": 9,
+      "rmse_sgd": 474.5118540059827,
+      "supervised_rows": 114842,
+      "unique_rows": 114842
+    }
+  ],
+  "lr": 0.001
+}

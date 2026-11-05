@@ -1,0 +1,181 @@
+{
+  "candidates": [
+    {
+      "best_epoch": 18,
+      "best_rmse_sgd": 470.0767158217457,
+      "checkpoint": "/Users/ziyuan/Desktop/\u6709\u7528\u7684\u4e1c\u897f/NUS_courses/CS_5228/Project/CS5228_project_HDB_price_prediction/reports/concat_depth_v16/layers_3_dropout_0.15/lr_0.0003/best.pt",
+      "history": [
+        {
+          "elapsed_seconds": 597.8541220410261,
+          "epoch": 1,
+          "rmse_sgd": 503.57078642747615,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        },
+        {
+          "elapsed_seconds": 510.3533168330323,
+          "epoch": 2,
+          "rmse_sgd": 482.0828169922927,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        },
+        {
+          "elapsed_seconds": 512.9270082500298,
+          "epoch": 3,
+          "rmse_sgd": 505.63469343661524,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        },
+        {
+          "elapsed_seconds": 514.2107472920325,
+          "epoch": 4,
+          "rmse_sgd": 477.79393551521093,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        },
+        {
+          "elapsed_seconds": 521.2153102090233,
+          "epoch": 5,
+          "rmse_sgd": 484.0009875117934,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        },
+        {
+          "elapsed_seconds": 516.0369059169898,
+          "epoch": 6,
+          "rmse_sgd": 473.30111004288625,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        },
+        {
+          "elapsed_seconds": 511.0079492920195,
+          "epoch": 7,
+          "rmse_sgd": 472.2345648059284,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        },
+        {
+          "elapsed_seconds": 520.6637644590228,
+          "epoch": 8,
+          "rmse_sgd": 475.7867588237131,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        },
+        {
+          "elapsed_seconds": 500.55383200000506,
+          "epoch": 9,
+          "rmse_sgd": 475.22572616020227,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        },
+        {
+          "elapsed_seconds": 508.179701999994,
+          "epoch": 10,
+          "rmse_sgd": 471.4002605498695,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        },
+        {
+          "elapsed_seconds": 476.3493651250028,
+          "epoch": 11,
+          "rmse_sgd": 470.7972633894657,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        },
+        {
+          "elapsed_seconds": 501.0300352910417,
+          "epoch": 12,
+          "rmse_sgd": 470.829382862287,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        },
+        {
+          "elapsed_seconds": 513.670699459035,
+          "epoch": 13,
+          "rmse_sgd": 470.33452592095813,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        },
+        {
+          "elapsed_seconds": 508.4960956670111,
+          "epoch": 14,
+          "rmse_sgd": 470.60875359351144,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        },
+        {
+          "elapsed_seconds": 505.0063265420031,
+          "epoch": 15,
+          "rmse_sgd": 472.73440217823315,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        },
+        {
+          "elapsed_seconds": 507.2712453750428,
+          "epoch": 16,
+          "rmse_sgd": 470.4005432333136,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        },
+        {
+          "elapsed_seconds": 507.4865612499998,
+          "epoch": 17,
+          "rmse_sgd": 472.19842032668817,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        },
+        {
+          "elapsed_seconds": 515.8377298749983,
+          "epoch": 18,
+          "rmse_sgd": 470.0767158217457,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        },
+        {
+          "elapsed_seconds": 511.06932129198685,
+          "epoch": 19,
+          "rmse_sgd": 472.7240128219664,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        },
+        {
+          "elapsed_seconds": 512.3854020420113,
+          "epoch": 20,
+          "rmse_sgd": 470.457325937789,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        },
+        {
+          "elapsed_seconds": 533.4100104160025,
+          "epoch": 21,
+          "rmse_sgd": 472.60109197185733,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        },
+        {
+          "elapsed_seconds": 567.191902666993,
+          "epoch": 22,
+          "rmse_sgd": 472.7434903547501,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        },
+        {
+          "elapsed_seconds": 535.2136846249923,
+          "epoch": 23,
+          "rmse_sgd": 471.83072627801863,
+          "supervised_rows": 114842,
+          "unique_rows": 114842
+        }
+      ],
+      "lr": 0.0003
+    }
+  ],
+  "final_refit_performed": false,
+  "identity": "e9090b5307cf45d217e3094eeaf626d8d0779dac85dc54d684a61f960831babd",
+  "selected_epoch": 18,
+  "selected_lr": 0.0003,
+  "selection_checkpoint": "/Users/ziyuan/Desktop/\u6709\u7528\u7684\u4e1c\u897f/NUS_courses/CS_5228/Project/CS5228_project_HDB_price_prediction/reports/concat_depth_v16/layers_3_dropout_0.15/lr_0.0003/best.pt",
+  "selection_rmse_sgd": 470.0767158217457,
+  "validation_rows_verified": 35158,
+  "verified_reload": true
+}

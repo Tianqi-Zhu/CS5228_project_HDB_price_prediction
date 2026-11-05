@@ -1,0 +1,155 @@
+{
+  "arm": "stats",
+  "result_status": "DEV_FOLD_A_ONLY",
+  "n_train": 78960,
+  "n_val": 35882,
+  "n_market_windows": 39,
+  "config": {
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "batch_size": 512,
+    "clip_grad": 1.0,
+    "max_epochs": 3,
+    "patience": 10,
+    "eligible_after": 1,
+    "schedule_epochs": 3,
+    "seed": 42
+  },
+  "selected_epoch": 2,
+  "epochs_run": 3,
+  "validation": {
+    "rmse_sgd": 631.1339026498066,
+    "mae_sgd": 518.7729922205792,
+    "bias_sgd": -159.6832725476424,
+    "n": 35882
+  },
+  "validation_per_month": {
+    "27": {
+      "rmse_sgd": 641.7002410999008,
+      "mae_sgd": 533.5614025673242,
+      "bias_sgd": -97.15653204885733,
+      "n": 2964
+    },
+    "28": {
+      "rmse_sgd": 625.802123865726,
+      "mae_sgd": 512.5241511000972,
+      "bias_sgd": -54.54830440536612,
+      "n": 2978
+    },
+    "29": {
+      "rmse_sgd": 660.9681641625405,
+      "mae_sgd": 551.6956305668814,
+      "bias_sgd": -178.7141049559466,
+      "n": 3035
+    },
+    "30": {
+      "rmse_sgd": 629.6002453158212,
+      "mae_sgd": 514.2900471676909,
+      "bias_sgd": -87.57162842305978,
+      "n": 3207
+    },
+    "31": {
+      "rmse_sgd": 614.8520576861115,
+      "mae_sgd": 498.44154729663563,
+      "bias_sgd": -76.85879169283253,
+      "n": 2974
+    },
+    "32": {
+      "rmse_sgd": 597.9379137837973,
+      "mae_sgd": 476.33845942455247,
+      "bias_sgd": -50.84689167885074,
+      "n": 2747
+    },
+    "33": {
+      "rmse_sgd": 579.7996382158196,
+      "mae_sgd": 463.4964729122678,
+      "bias_sgd": -38.48830827830378,
+      "n": 3039
+    },
+    "34": {
+      "rmse_sgd": 579.4248790716745,
+      "mae_sgd": 446.66888559781586,
+      "bias_sgd": 24.82017752166487,
+      "n": 2925
+    },
+    "35": {
+      "rmse_sgd": 575.7552120553024,
+      "mae_sgd": 477.1845861356309,
+      "bias_sgd": -170.97929248213768,
+      "n": 3008
+    },
+    "36": {
+      "rmse_sgd": 584.9524848792847,
+      "mae_sgd": 482.4476659808464,
+      "bias_sgd": -216.58313247977804,
+      "n": 3171
+    },
+    "37": {
+      "rmse_sgd": 721.4004516011028,
+      "mae_sgd": 625.5698519901059,
+      "bias_sgd": -470.5426260602699,
+      "n": 2650
+    },
+    "38": {
+      "rmse_sgd": 738.733141597672,
+      "mae_sgd": 645.1642885324943,
+      "bias_sgd": -501.0831223825114,
+      "n": 3184
+    }
+  },
+  "curve": [
+    {
+      "epoch": 1,
+      "train_mse": 0.4452465651003906,
+      "val_rmse_sgd": 645.2694166572,
+      "val_mae_sgd": 527.463379064044,
+      "val_bias_sgd": -156.23715697341615,
+      "seconds": 28.14,
+      "learning_rate": 0.001
+    },
+    {
+      "epoch": 2,
+      "train_mse": 0.20686300456705065,
+      "val_rmse_sgd": 631.1339026498066,
+      "val_mae_sgd": 518.7729922205792,
+      "val_bias_sgd": -159.6832725476424,
+      "seconds": 27.62,
+      "learning_rate": 0.00075
+    },
+    {
+      "epoch": 3,
+      "train_mse": 0.20229212519728787,
+      "val_rmse_sgd": 635.5150395021832,
+      "val_mae_sgd": 525.4568429523989,
+      "val_bias_sgd": -192.42036112582335,
+      "seconds": 28.62,
+      "learning_rate": 0.0002500000000000001
+    }
+  ],
+  "seconds": 88.02,
+  "device": "cpu",
+  "description": {
+    "name": "target_asof_fusion",
+    "arm": "stats",
+    "house_parameters": 63840,
+    "market_parameters": 8992,
+    "head_parameters": 4801,
+    "parameters": 77633,
+    "market_channels": 15,
+    "d_model": 48,
+    "market_encoder": "stats_market",
+    "market_input": "six masked statistics per channel",
+    "bilstm_hidden_per_direction": null,
+    "bilstm_summary": null,
+    "target": "MONTHLY_RENT/1000 directly; no anchor, no log, no clipping"
+  },
+  "source_hashes": {
+    "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "fixture.py": "d92f3af120bfd3972c68afb82e0817f851fbf3651dde64e92fa985568d2b4cd5",
+    "models.py": "0dc699c6c449eeb02083f07422f2c82791623f0592ababf8798c87d92040e577",
+    "reload.py": "e83e5f8d1c7ca0f04aee66c0802dff6def6a8b32813910da2b7569148ef9afa5",
+    "run.py": "f0905ebdfe9151c0650b2ba2c5dfa8f10bb8312815462312c8ced316ede4df21"
+  },
+  "target": "MONTHLY_RENT/1000 predicted directly; no anchor, no log, no clipping",
+  "scale_note": "single seed, single development fold; not a robustness claim"
+}

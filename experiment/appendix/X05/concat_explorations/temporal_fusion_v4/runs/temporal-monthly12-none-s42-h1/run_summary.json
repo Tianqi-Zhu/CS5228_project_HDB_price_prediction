@@ -1,0 +1,222 @@
+{
+  "run_id": "temporal-monthly12-none-s42-h1",
+  "arm": "monthly_12",
+  "split": "orig",
+  "seed": 42,
+  "contract_id": "fusion-contract-v2.1.0__43867d0ba111",
+  "fixed_b_epochs": 7,
+  "epochs_predeclared": true,
+  "n_parameters_stage_a": 58315,
+  "n_parameters_stage_b": 58323,
+  "init_parity": {
+    "comparable": null,
+    "note": "monthly_12 changes the recurrent input width, so the LSTM cannot inherit v2's weights; recorded as a residual difference between the arms"
+  },
+  "stage_a": {
+    "curve": [
+      {
+        "epoch": 1,
+        "train_mse_ksgd2": 0.3089252780281866,
+        "holdout_rmse_sgd": 595.734282009318
+      },
+      {
+        "epoch": 2,
+        "train_mse_ksgd2": 0.24806579187458275,
+        "holdout_rmse_sgd": 608.1712892569417
+      },
+      {
+        "epoch": 3,
+        "train_mse_ksgd2": 0.24513778367249467,
+        "holdout_rmse_sgd": 604.5220971686756
+      },
+      {
+        "epoch": 4,
+        "train_mse_ksgd2": 0.2429987302709095,
+        "holdout_rmse_sgd": 599.4726479203426
+      },
+      {
+        "epoch": 5,
+        "train_mse_ksgd2": 0.2423642841141576,
+        "holdout_rmse_sgd": 613.9333344591365
+      },
+      {
+        "epoch": 6,
+        "train_mse_ksgd2": 0.24089306297253935,
+        "holdout_rmse_sgd": 605.7882189654647
+      }
+    ],
+    "best_epoch": 1,
+    "best_inner_rmse": 595.734282009318
+  },
+  "stage_b": {
+    "curve": [
+      {
+        "epoch": 1,
+        "train_mse_ksgd2": 0.34389578818150285
+      },
+      {
+        "epoch": 2,
+        "train_mse_ksgd2": 0.28671869272244516
+      },
+      {
+        "epoch": 3,
+        "train_mse_ksgd2": 0.28297028114210887
+      },
+      {
+        "epoch": 4,
+        "train_mse_ksgd2": 0.2798553935545449
+      },
+      {
+        "epoch": 5,
+        "train_mse_ksgd2": 0.27840925772581115
+      },
+      {
+        "epoch": 6,
+        "train_mse_ksgd2": 0.27712475890172067
+      },
+      {
+        "epoch": 7,
+        "train_mse_ksgd2": 0.2768811272951965
+      }
+    ],
+    "best_epoch": 0,
+    "best_inner_rmse": Infinity
+  },
+  "stage_a_seconds": 146.12666924999212,
+  "stage_b_seconds": 556.5896004590031,
+  "total_seconds": 711.7860234580003,
+  "overall": {
+    "rmse_sgd": 478.49746575432846,
+    "mae_sgd": 339.25256411151355,
+    "bias_sgd": 92.14933882889959,
+    "n": 35158
+  },
+  "by_horizon_band": [
+    {
+      "horizon_band": "1-3",
+      "rmse_sgd": 511.9377981187874,
+      "mae_sgd": 368.257264775208,
+      "bias_sgd": 104.22667691958141,
+      "n": 9174
+    },
+    {
+      "horizon_band": "4-8",
+      "rmse_sgd": 471.60669384848404,
+      "mae_sgd": 335.0657003202771,
+      "bias_sgd": 84.70640075514795,
+      "n": 14164
+    },
+    {
+      "horizon_band": "9-12",
+      "rmse_sgd": 459.45498676256676,
+      "mae_sgd": 321.7579460785474,
+      "bias_sgd": 91.69453977921287,
+      "n": 11820
+    },
+    {
+      "horizon_band": "13-16",
+      "n": 0,
+      "rmse_sgd": null,
+      "mae_sgd": null,
+      "bias_sgd": null,
+      "note": "empty band"
+    }
+  ],
+  "by_month": [
+    {
+      "target_month": 39,
+      "rmse_sgd": 515.9435857846037,
+      "mae_sgd": 371.89961877038957,
+      "bias_sgd": 101.0692806968398,
+      "n": 3146
+    },
+    {
+      "target_month": 40,
+      "rmse_sgd": 505.75266347323407,
+      "mae_sgd": 359.8926780720914,
+      "bias_sgd": 106.0467382433559,
+      "n": 3017
+    },
+    {
+      "target_month": 41,
+      "rmse_sgd": 513.8923240961497,
+      "mae_sgd": 372.8328584033918,
+      "bias_sgd": 105.70194875714947,
+      "n": 3011
+    },
+    {
+      "target_month": 42,
+      "rmse_sgd": 491.53819300562566,
+      "mae_sgd": 355.2807711975968,
+      "bias_sgd": 49.10981812866517,
+      "n": 3245
+    },
+    {
+      "target_month": 43,
+      "rmse_sgd": 468.30979260420827,
+      "mae_sgd": 337.64253352566146,
+      "bias_sgd": 92.81858491056006,
+      "n": 2833
+    },
+    {
+      "target_month": 44,
+      "rmse_sgd": 483.3261530357794,
+      "mae_sgd": 341.5320622394497,
+      "bias_sgd": 110.35005397282464,
+      "n": 2708
+    },
+    {
+      "target_month": 45,
+      "rmse_sgd": 440.43272363521106,
+      "mae_sgd": 316.8953965786387,
+      "bias_sgd": 79.28109059430494,
+      "n": 2663
+    },
+    {
+      "target_month": 46,
+      "rmse_sgd": 468.43022472476184,
+      "mae_sgd": 319.5881818374437,
+      "bias_sgd": 98.53096095975592,
+      "n": 2715
+    },
+    {
+      "target_month": 47,
+      "rmse_sgd": 453.33496460217276,
+      "mae_sgd": 319.51559306335383,
+      "bias_sgd": 93.82203147284564,
+      "n": 2896
+    },
+    {
+      "target_month": 48,
+      "rmse_sgd": 477.944835866319,
+      "mae_sgd": 331.13252165683053,
+      "bias_sgd": 104.65134669172639,
+      "n": 2870
+    },
+    {
+      "target_month": 49,
+      "rmse_sgd": 457.12766171512465,
+      "mae_sgd": 322.4431168247263,
+      "bias_sgd": 91.2959300878425,
+      "n": 3022
+    },
+    {
+      "target_month": 50,
+      "rmse_sgd": 449.6158876418882,
+      "mae_sgd": 314.3431164041987,
+      "bias_sgd": 77.79524779492758,
+      "n": 3032
+    }
+  ],
+  "representation": {
+    "kind": "monthly_12_step",
+    "channels": 24,
+    "level_names": [
+      "global",
+      "flat_type",
+      "town_ft",
+      "block_ft"
+    ]
+  },
+  "comparisons_note": "fixed-epoch diagnostics; the reference fixed-7 per_feature run is 474.491228121 SGD and the block/7 run is 475.598687709"
+}

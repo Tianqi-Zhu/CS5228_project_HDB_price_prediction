@@ -1,0 +1,149 @@
+{
+  "status": "COMPLETED",
+  "scope": "orig/A viewed development window only",
+  "source_commit": "fbb665569425fd2f490c6576b3af967876fe11ff",
+  "seed": 42,
+  "quota_snapshot": {
+    "timestamp": "2026-11-01T08:21:42.562Z",
+    "primary_used_percent": 84.0,
+    "secondary_used_percent": 49.0
+  },
+  "context_rows": 32,
+  "available_fit_rows": 52310,
+  "validation_rows": 8,
+  "context_policy": "recent",
+  "target": "actual_sgd/1000 - anchor_ksgd; add anchor back for SGD scoring",
+  "features": [
+    "FLOOR_AREA_SQM",
+    "YEARS_SINCE_LEASE_COMMENCEMENT",
+    "LATITUDE",
+    "LONGITUDE",
+    "MAX_FLOOR",
+    "BUILDING_AGE_YEARS",
+    "NEAREST_OPEN_MRT_KM",
+    "OPEN_MRT_COUNT_500M",
+    "OPEN_MRT_COUNT_1000M",
+    "OPEN_MRT_COUNT_2000M",
+    "NEAREST_MALL_KM",
+    "MALL_COUNT_500M",
+    "MALL_COUNT_1000M",
+    "MALL_COUNT_2000M",
+    "NEAREST_PRIMARY_SCHOOL_KM",
+    "PRIMARY_SCHOOL_COUNT_500M",
+    "PRIMARY_SCHOOL_COUNT_1000M",
+    "PRIMARY_SCHOOL_COUNT_2000M",
+    "DISTANCE_TO_CBD_KM",
+    "MAX_FLOOR__missing",
+    "BUILDING_AGE_YEARS__missing",
+    "hist_rent__global",
+    "hist_psm__global",
+    "hist_n__global",
+    "hist_months__global",
+    "hist_recency__global",
+    "hist_exact__global",
+    "hist_rent__flat_type",
+    "hist_psm__flat_type",
+    "hist_n__flat_type",
+    "hist_months__flat_type",
+    "hist_recency__flat_type",
+    "hist_exact__flat_type",
+    "hist_rent__town_ft",
+    "hist_psm__town_ft",
+    "hist_n__town_ft",
+    "hist_months__town_ft",
+    "hist_recency__town_ft",
+    "hist_exact__town_ft",
+    "hist_rent__block_ft",
+    "hist_psm__block_ft",
+    "hist_n__block_ft",
+    "hist_months__block_ft",
+    "hist_recency__block_ft",
+    "hist_exact__block_ft",
+    "horizon_months",
+    "target_month_index",
+    "origin_month_index",
+    "target_month_sin",
+    "target_month_cos",
+    "origin_month_sin",
+    "origin_month_cos",
+    "anchor_psm_sgd",
+    "anchor_n",
+    "anchor_level_code",
+    "anchor_missing",
+    "TOWN_CLEAN__code",
+    "FLAT_TYPE_CLEAN__code",
+    "FLAT_MODEL_CLEAN__code",
+    "FURNISHED_CLEAN__code"
+  ],
+  "estimators": 1,
+  "predict_batch": 8,
+  "dtype": "bfloat16",
+  "device": "cpu",
+  "baseline_same_rows": {
+    "n": 8,
+    "rmse_sgd": 435.29975299703557,
+    "mae_sgd": 408.1431835889816,
+    "bias_sgd": 185.48887073993683
+  },
+  "input_hashes": {
+    "afit.npz": "2648b943a4852ab91fadb103eaf545687ec9c311d553546a5f79776f38d810bd",
+    "ahold.npz": "252d0e65c9b7d12ae5f2c772c2b98ee4a309a377e5e3c5283e27ccae47feaa40",
+    "afit_columns.json": "ec5d730aaeb8243ff9d5761064c5b6c7723a935c426590f6687aee2b3a0f4380",
+    "inner_predictions.npz": "6b568e0d8ea5a41a7c71dc58896d32c7d58e5450599bc77388b61614aafcb777"
+  },
+  "runner_sha256": "f9c75273c137e76d61c19c7fb76a2280c46a5f22d3393d70d58a87f3d052bdc1",
+  "no_paid_api": true,
+  "selection_note": "fixed context/sample selected without validation labels; no internal NNLS tuning",
+  "elapsed_seconds": 37.586339959001634,
+  "metrics": {
+    "n": 8,
+    "rmse_sgd": 512.5250460503132,
+    "mae_sgd": 479.2720213532448,
+    "bias_sgd": 236.45630329847336
+  },
+  "fixed_equal_blend": {
+    "n": 8,
+    "rmse_sgd": 470.1204728841526,
+    "mae_sgd": 443.7076024711132,
+    "bias_sgd": 210.9725870192051
+  },
+  "parameters": 1647782989,
+  "per_horizon": {
+    "1": {
+      "n": 2,
+      "rmse_sgd": 572.719703345747,
+      "mae_sgd": 570.6161618232727,
+      "bias_sgd": 570.6161618232727
+    },
+    "4": {
+      "n": 1,
+      "rmse_sgd": 720.4253435134888,
+      "mae_sgd": 720.4253435134888,
+      "bias_sgd": 720.4253435134888
+    },
+    "5": {
+      "n": 1,
+      "rmse_sgd": 496.9225525856018,
+      "mae_sgd": 496.9225525856018,
+      "bias_sgd": -496.9225525856018
+    },
+    "7": {
+      "n": 2,
+      "rmse_sgd": 427.6564947984437,
+      "mae_sgd": 424.7744083404541,
+      "bias_sgd": -49.565911293029785
+    },
+    "8": {
+      "n": 1,
+      "rmse_sgd": 555.6625008583069,
+      "mae_sgd": 555.6625008583069,
+      "bias_sgd": 555.6625008583069
+    },
+    "11": {
+      "n": 1,
+      "rmse_sgd": 70.38463354110718,
+      "mae_sgd": 70.38463354110718,
+      "bias_sgd": 70.38463354110718
+    }
+  }
+}
