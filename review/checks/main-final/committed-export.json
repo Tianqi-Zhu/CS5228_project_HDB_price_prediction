@@ -1,0 +1,103 @@
+{
+  "tested_commit": "caaab16969d5d88487d1d9f156dbd8861c891808",
+  "export_method": "git archive TAR; no original output, model caches, feature caches or .git copied",
+  "supplemental_dependencies": "Third-party Python packages only; SDK packages supplied only for isolated TabPFN unit tests. No downloads or remote API.",
+  "checks": [
+    {
+      "check": "clean-static",
+      "returncode": 0,
+      "seconds": 19.75161150000349,
+      "command": [
+        "python",
+        "-m",
+        "analysis.validation.repository_audit"
+      ]
+    },
+    {
+      "check": "clean-tests",
+      "returncode": 0,
+      "seconds": 14.775525699995342,
+      "command": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ]
+    },
+    {
+      "check": "clean-planned",
+      "returncode": 0,
+      "seconds": 20.670190400000138,
+      "command": [
+        "python",
+        "-m",
+        "analysis.main",
+        "planned"
+      ]
+    },
+    {
+      "check": "clean-concat",
+      "returncode": 0,
+      "seconds": 0.24020480000035604,
+      "command": [
+        "python",
+        "-m",
+        "analysis.main",
+        "concat",
+        "verify"
+      ]
+    },
+    {
+      "check": "clean-tabpfn",
+      "returncode": 0,
+      "seconds": 0.2902701000057277,
+      "command": [
+        "python",
+        "review_tabpfn.py",
+        "verify"
+      ]
+    },
+    {
+      "check": "clean-tabpfn-tests",
+      "returncode": 0,
+      "seconds": 13.455783400000655,
+      "command": [
+        "python",
+        "review_tabpfn.py",
+        "test"
+      ]
+    }
+  ],
+  "scientific_tables_reproduced": [
+    {
+      "path": "M00/metric_recalculation.csv",
+      "reproduced": true,
+      "rows": 26
+    },
+    {
+      "path": "M03/feature_ladder_deltas.csv",
+      "reproduced": true,
+      "rows": 12
+    },
+    {
+      "path": "M04/error_groups.csv",
+      "reproduced": true,
+      "rows": 144
+    },
+    {
+      "path": "M04/identical_input_diagnostics.csv",
+      "reproduced": true,
+      "rows": 4
+    },
+    {
+      "path": "M05/controlled_structure_deltas.csv",
+      "reproduced": true,
+      "rows": 6
+    }
+  ],
+  "manifest_sha256": "3627a3796fc7ab59dc6177891e4f32c891e8d994c1e9a547bf90c2e3ed6f7187",
+  "main_P0_all_completed": false
+}
