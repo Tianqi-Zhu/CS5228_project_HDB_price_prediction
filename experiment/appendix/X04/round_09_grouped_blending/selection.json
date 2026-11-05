@@ -1,0 +1,22 @@
+{
+  "selected": {
+    "stage": "screen",
+    "name": "support24_mse",
+    "spec": {
+      "name": "support24_mse",
+      "objective": "mse",
+      "ridge": 0.003,
+      "group_ridge": 0.03,
+      "gate": "support24",
+      "update": true
+    },
+    "rows": 5834,
+    "fit_last_month": "2024-01",
+    "fit_rows": 12143,
+    "groups": 2,
+    "rmse_sgd": 506.9836143836072,
+    "mae_sgd": 381.2932222883928,
+    "bias_sgd": 22.33908303961196
+  },
+  "decision_before_later_evaluation": true
+}

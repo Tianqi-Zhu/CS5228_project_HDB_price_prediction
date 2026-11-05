@@ -1,0 +1,26 @@
+{
+  "specs": [
+    {
+      "name": "cat_depthwise6",
+      "grow_policy": "Depthwise",
+      "depth": 6,
+      "min_data_in_leaf": 20
+    },
+    {
+      "name": "cat_lossguide64",
+      "grow_policy": "Lossguide",
+      "depth": 8,
+      "max_leaves": 64,
+      "min_data_in_leaf": 20
+    }
+  ],
+  "iterations": 833,
+  "learning_rate": 0.045,
+  "l2_leaf_reg": 15.0,
+  "random_seed": 42,
+  "thread_count": 4,
+  "target": "raw",
+  "features": "Same 62 window history inputs as saved symmetric CPU CatBoost control; different from neural adjusted/no36 inputs.",
+  "note": "Additional tree structural exploration during GPU neural evaluation. Early screen chooses growth rule; fixed 833 rounds in every origin, no later-label stopping.",
+  "source": "https://catboost.ai/docs/en/references/training-parameters/common#grow_policy"
+}

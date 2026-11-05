@@ -1,0 +1,20 @@
+{
+  "selected": {
+    "stage": "screen",
+    "name": "all_new",
+    "representatives": {
+      "ft_plr": "ft_plr_128_3",
+      "ft_ple": "ft_ple_128_3",
+      "ft_linear": "ft_linear_96_2",
+      "moe": "moe_plr_8",
+      "dcn": "dcn_plr_3"
+    },
+    "fit_last_month": "2024-01",
+    "fit_rows": 12143,
+    "rows": 5834,
+    "rmse_sgd": 506.9419578433776,
+    "mae_sgd": 380.61728898456687,
+    "bias_sgd": 26.820488680543978
+  },
+  "decision_before_later_evaluation": true
+}

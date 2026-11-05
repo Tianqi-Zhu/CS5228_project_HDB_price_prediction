@@ -1,0 +1,476 @@
+{
+  "replays": [
+    {
+      "stage": "screen",
+      "name": "global_mse_0.0003",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "screen",
+      "name": "frozen_mse_0.0003",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "screen",
+      "name": "global_mse_0.003",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "screen",
+      "name": "frozen_mse_0.003",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "screen",
+      "name": "global_mse_0.03",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "screen",
+      "name": "frozen_mse_0.03",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "screen",
+      "name": "global_month_centered_0.0003",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "screen",
+      "name": "frozen_month_centered_0.0003",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "screen",
+      "name": "global_month_centered_0.003",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "screen",
+      "name": "frozen_month_centered_0.003",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "screen",
+      "name": "global_month_centered_0.03",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "screen",
+      "name": "frozen_month_centered_0.03",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "screen",
+      "name": "support24_mse",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "screen",
+      "name": "support24_month_centered",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "screen",
+      "name": "support36_mse",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "screen",
+      "name": "support36_month_centered",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "screen",
+      "name": "type_mse",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "screen",
+      "name": "type_month_centered",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "screen",
+      "name": "disagreement_mse",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "screen",
+      "name": "disagreement_month_centered",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "screen",
+      "name": "signed_0.003",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "screen",
+      "name": "signed_0.03",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "screen",
+      "name": "followup_support24_centered_0.003",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "screen",
+      "name": "followup_support24_centered_0.01",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "screen",
+      "name": "followup_support24_centered_0.1",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "screen",
+      "name": "followup_support_pair_centered_0.003",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "screen",
+      "name": "followup_support_pair_centered_0.03",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "screen",
+      "name": "followup_support_pair_centered_0.1",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "screen",
+      "name": "followup_type_centered_0.01",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "screen",
+      "name": "followup_type_centered_0.1",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "screen",
+      "name": "followup_disagreement_centered_0.003",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "outer",
+      "name": "global_mse_0.0003",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "outer",
+      "name": "frozen_mse_0.0003",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "outer",
+      "name": "global_mse_0.003",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "outer",
+      "name": "frozen_mse_0.003",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "outer",
+      "name": "global_mse_0.03",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "outer",
+      "name": "frozen_mse_0.03",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "outer",
+      "name": "global_month_centered_0.0003",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "outer",
+      "name": "frozen_month_centered_0.0003",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "outer",
+      "name": "global_month_centered_0.003",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "outer",
+      "name": "frozen_month_centered_0.003",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "outer",
+      "name": "global_month_centered_0.03",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "outer",
+      "name": "frozen_month_centered_0.03",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "outer",
+      "name": "support24_mse",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "outer",
+      "name": "support24_month_centered",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "outer",
+      "name": "support36_mse",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "outer",
+      "name": "support36_month_centered",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "outer",
+      "name": "type_mse",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "outer",
+      "name": "type_month_centered",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "outer",
+      "name": "disagreement_mse",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "outer",
+      "name": "disagreement_month_centered",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "outer",
+      "name": "signed_0.003",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "outer",
+      "name": "signed_0.03",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "outer",
+      "name": "followup_support24_centered_0.003",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "outer",
+      "name": "followup_support24_centered_0.01",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "outer",
+      "name": "followup_support24_centered_0.1",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "outer",
+      "name": "followup_support_pair_centered_0.003",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "outer",
+      "name": "followup_support_pair_centered_0.03",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "outer",
+      "name": "followup_support_pair_centered_0.1",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "outer",
+      "name": "followup_type_centered_0.01",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "outer",
+      "name": "followup_type_centered_0.1",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "outer",
+      "name": "followup_disagreement_centered_0.003",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "june",
+      "name": "global_mse_0.0003",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "june",
+      "name": "frozen_mse_0.0003",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "june",
+      "name": "global_mse_0.003",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "june",
+      "name": "frozen_mse_0.003",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "june",
+      "name": "global_mse_0.03",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "june",
+      "name": "frozen_mse_0.03",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "june",
+      "name": "global_month_centered_0.0003",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "june",
+      "name": "frozen_month_centered_0.0003",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "june",
+      "name": "global_month_centered_0.003",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "june",
+      "name": "frozen_month_centered_0.003",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "june",
+      "name": "global_month_centered_0.03",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "june",
+      "name": "frozen_month_centered_0.03",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "june",
+      "name": "support24_mse",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "june",
+      "name": "support24_month_centered",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "june",
+      "name": "support36_mse",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "june",
+      "name": "support36_month_centered",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "june",
+      "name": "type_mse",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "june",
+      "name": "type_month_centered",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "june",
+      "name": "disagreement_mse",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "june",
+      "name": "disagreement_month_centered",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "june",
+      "name": "signed_0.003",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "june",
+      "name": "signed_0.03",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "june",
+      "name": "followup_support24_centered_0.003",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "june",
+      "name": "followup_support24_centered_0.01",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "june",
+      "name": "followup_support24_centered_0.1",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "june",
+      "name": "followup_support_pair_centered_0.003",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "june",
+      "name": "followup_support_pair_centered_0.03",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "june",
+      "name": "followup_support_pair_centered_0.1",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "june",
+      "name": "followup_type_centered_0.01",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "june",
+      "name": "followup_type_centered_0.1",
+      "max_reload_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "june",
+      "name": "followup_disagreement_centered_0.003",
+      "max_reload_difference": 9.094947017729282e-13
+    }
+  ],
+  "count": 93,
+  "tests": {
+    "command": "python -m unittest tests.test_ninth_wave",
+    "passed": 5
+  },
+  "query_labels_used_in_fit": false,
+  "all_scores_recomputed": true
+}

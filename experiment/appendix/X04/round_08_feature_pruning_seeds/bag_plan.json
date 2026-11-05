@@ -1,0 +1,17 @@
+{
+  "new_seeds": [
+    43,
+    44,
+    45
+  ],
+  "original_seed": 42,
+  "iterations": 833,
+  "learning_rate": 0.045,
+  "depth": 6,
+  "l2_leaf_reg": 15.0,
+  "engine": "CPU",
+  "new_component": "equal mean of seeds 42,43,44,45",
+  "replacement": "keep original ensemble weights; replace its CatBoost leaf by the seed mean",
+  "selection": "Choose half/full/no replacement on earlier screen only, before later fitting.",
+  "note": "Repeated development windows; no later-label stopping or seed selection."
+}

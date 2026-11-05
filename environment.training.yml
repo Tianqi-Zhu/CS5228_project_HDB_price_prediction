@@ -1,0 +1,24 @@
+# Windows/NVIDIA training environment; version pins reflect the tested cs5228 env.
+name: cs5228-final-training
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      - --extra-index-url https://download.pytorch.org/whl/cu128
+      - numpy==2.4.6
+      - pandas==3.0.5
+      - scipy==1.17.1
+      - scikit-learn==1.9.0
+      - joblib==1.5.3
+      - catboost==1.2.10
+      - lightgbm==4.7.0
+      - xgboost==3.2.0
+      - torch==2.11.0+cu128
+      - rtdl-revisiting-models==0.0.2
+      - rtdl_num_embeddings==0.0.12
+      - pytorch-tabnet==4.1.0
+      - matplotlib==3.11.0
+      - tabm==0.0.3
+      - threadpoolctl==3.5.0

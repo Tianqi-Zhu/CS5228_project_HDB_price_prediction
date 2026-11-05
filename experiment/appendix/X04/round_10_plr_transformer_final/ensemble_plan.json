@@ -1,0 +1,36 @@
+{
+  "variants": {
+    "baseline": {},
+    "all_new": {
+      "ft_plr": "ft_plr_128_3",
+      "ft_ple": "ft_ple_128_3",
+      "ft_linear": "ft_linear_96_2",
+      "moe": "moe_plr_8",
+      "dcn": "dcn_plr_3"
+    },
+    "only_ft_plr": {
+      "ft_plr": "ft_plr_128_3"
+    },
+    "only_ft_ple": {
+      "ft_ple": "ft_ple_128_3"
+    },
+    "only_ft_linear": {
+      "ft_linear": "ft_linear_96_2"
+    },
+    "only_moe": {
+      "moe": "moe_plr_8"
+    },
+    "only_dcn": {
+      "dcn": "dcn_plr_3"
+    }
+  },
+  "recipe": {
+    "name": "followup_support_pair_centered_0.003",
+    "objective": "month_centered",
+    "ridge": 0.003,
+    "group_ridge": 0.003,
+    "gate": "support_pair",
+    "update": true
+  },
+  "notes": "Hold ninth-wave 24/36-support month-centered blend objective, prior, and penalties fixed. Vary only inclusion of new network predictions. Selection split and all periods are repeatedly viewed development evidence."
+}

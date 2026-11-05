@@ -1,0 +1,77 @@
+{
+  "specs": [
+    {
+      "name": "followup_support24_centered_0.003",
+      "objective": "month_centered",
+      "ridge": 0.003,
+      "group_ridge": 0.003,
+      "gate": "support24",
+      "update": true
+    },
+    {
+      "name": "followup_support24_centered_0.01",
+      "objective": "month_centered",
+      "ridge": 0.003,
+      "group_ridge": 0.01,
+      "gate": "support24",
+      "update": true
+    },
+    {
+      "name": "followup_support24_centered_0.1",
+      "objective": "month_centered",
+      "ridge": 0.003,
+      "group_ridge": 0.1,
+      "gate": "support24",
+      "update": true
+    },
+    {
+      "name": "followup_support_pair_centered_0.003",
+      "objective": "month_centered",
+      "ridge": 0.003,
+      "group_ridge": 0.003,
+      "gate": "support_pair",
+      "update": true
+    },
+    {
+      "name": "followup_support_pair_centered_0.03",
+      "objective": "month_centered",
+      "ridge": 0.003,
+      "group_ridge": 0.03,
+      "gate": "support_pair",
+      "update": true
+    },
+    {
+      "name": "followup_support_pair_centered_0.1",
+      "objective": "month_centered",
+      "ridge": 0.003,
+      "group_ridge": 0.1,
+      "gate": "support_pair",
+      "update": true
+    },
+    {
+      "name": "followup_type_centered_0.01",
+      "objective": "month_centered",
+      "ridge": 0.003,
+      "group_ridge": 0.01,
+      "gate": "type",
+      "update": true
+    },
+    {
+      "name": "followup_type_centered_0.1",
+      "objective": "month_centered",
+      "ridge": 0.003,
+      "group_ridge": 0.1,
+      "gate": "type",
+      "update": true
+    },
+    {
+      "name": "followup_disagreement_centered_0.003",
+      "objective": "month_centered",
+      "ridge": 0.003,
+      "group_ridge": 0.003,
+      "gate": "disagreement",
+      "update": true
+    }
+  ],
+  "note": "Additional group shrinkage and joint-support exploration after first 22 configurations. Later periods reused; not an independent confirmation."
+}

@@ -1,0 +1,47 @@
+{
+  "report_scope": "Two final methods: choose one from the user's three archived pipelines and retain the teammate's submitted TabPFN87-related pipeline",
+  "scope_source": "User instruction in this conversation on 2026-11-05",
+  "final_methods": [
+    {
+      "id": "F1",
+      "method": "分组融合＋PLR-FT",
+      "filename": "kaggle_structure_blend.csv",
+      "kaggle_displayed_score": 415.37529,
+      "local_annual_rmse": 451.02950249165616,
+      "local_recent_rmse": 441.8345348836222,
+      "status": "Selected from the user's three archived submissions; implementation and CSV provenance available",
+      "selection_basis": "Lowest recorded annual RMSE, recent RMSE, and Kaggle displayed score among the three archived user pipelines",
+      "evidence": "experiment/01_final/submission_selection.json",
+      "source_branches": ["zch-complete-proj", "results/hdb-rental-final-ensemble"]
+    },
+    {
+      "id": "F2",
+      "method": "TabPFN87-related submitted pipeline; exact implementation pending",
+      "filename": "submission_zch_tabpfn87_equal_150k.csv",
+      "kaggle_displayed_score": 413.19635,
+      "local_annual_rmse": null,
+      "local_recent_rmse": null,
+      "status": "Selected for the report by the user; score observed in user screenshot; generator, CSV and component identities not verified",
+      "evidence": "User screenshot and suggested branch in this conversation",
+      "user_suggested_branch": "experiment/tabpfn-anniversary-history",
+      "audited_commit": "1e69bb7995686d6a2bb7d502475e19ae72f081e3",
+      "feature_schema_87": null,
+      "blend_formula": null,
+      "contains_F1": null,
+      "csv_sha256": null
+    }
+  ],
+  "not_selected_as_final_methods": [
+    {"filename": "kaggle_best_history.csv", "kaggle_displayed_score": 415.86912, "report_role": "Strong predecessor baseline; full details in appendix"},
+    {"filename": "kaggle_best_macro.csv", "kaggle_displayed_score": 415.78232, "report_role": "Alternative given-macro information scenario; full details in appendix"}
+  ],
+  "leaderboard_partition": null,
+  "claims_not_established": [
+    "Global top two across every submission",
+    "F1 and F2 are independent models",
+    "F2 uses F1 as its zch component",
+    "The filename proves a two-model 50/50 blend",
+    "The displayed score difference is an isolated TabPFN causal gain",
+    "F2 reproduction passed because the original three CSV checks passed"
+  ]
+}

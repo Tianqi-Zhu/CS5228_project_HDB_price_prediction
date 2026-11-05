@@ -1,0 +1,272 @@
+{
+  "artifact_replays": [
+    {
+      "stage": "screen",
+      "name": "cat_seed43",
+      "max_abs_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "screen",
+      "name": "cat_seed44",
+      "max_abs_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "screen",
+      "name": "cat_seed45",
+      "max_abs_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "screen",
+      "name": "ft_no36_seed43",
+      "max_abs_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "screen",
+      "name": "ft_no36_seed44",
+      "max_abs_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "screen",
+      "name": "ft_no36_seed45",
+      "max_abs_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "outer",
+      "name": "cat_seed43",
+      "max_abs_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "outer",
+      "name": "cat_seed44",
+      "max_abs_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "outer",
+      "name": "cat_seed45",
+      "max_abs_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "outer",
+      "name": "ft_no36",
+      "max_abs_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "outer",
+      "name": "tabm_no36_seed42",
+      "max_abs_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "outer",
+      "name": "tabm_no36_seed43",
+      "max_abs_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "outer",
+      "name": "tabm_no36_seed44",
+      "max_abs_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "outer",
+      "name": "ft_no36_seed43",
+      "max_abs_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "outer",
+      "name": "ft_no36_seed44",
+      "max_abs_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "outer",
+      "name": "ft_no36_seed45",
+      "max_abs_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "outer",
+      "name": "convex_intercept_0.0",
+      "max_abs_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "outer",
+      "name": "convex_intercept_0.001",
+      "max_abs_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "outer",
+      "name": "lgb_support_100",
+      "max_abs_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "outer",
+      "name": "lgb_support_300",
+      "max_abs_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "outer",
+      "name": "ridge_predictions_10.0",
+      "max_abs_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "outer",
+      "name": "ridge_predictions_100.0",
+      "max_abs_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "outer",
+      "name": "ridge_predictions_1000.0",
+      "max_abs_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "outer",
+      "name": "ridge_support_10.0",
+      "max_abs_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "outer",
+      "name": "ridge_support_100.0",
+      "max_abs_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "outer",
+      "name": "ridge_support_1000.0",
+      "max_abs_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "outer",
+      "name": "ridge_typed_10.0",
+      "max_abs_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "outer",
+      "name": "ridge_typed_100.0",
+      "max_abs_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "outer",
+      "name": "ridge_typed_1000.0",
+      "max_abs_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "june",
+      "name": "cat_seed43",
+      "max_abs_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "june",
+      "name": "cat_seed44",
+      "max_abs_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "june",
+      "name": "cat_seed45",
+      "max_abs_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "june",
+      "name": "ft_no36",
+      "max_abs_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "june",
+      "name": "tabm_no36_seed42",
+      "max_abs_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "june",
+      "name": "tabm_no36_seed43",
+      "max_abs_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "june",
+      "name": "tabm_no36_seed44",
+      "max_abs_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "june",
+      "name": "ft_no36_seed43",
+      "max_abs_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "june",
+      "name": "ft_no36_seed44",
+      "max_abs_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "june",
+      "name": "ft_no36_seed45",
+      "max_abs_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "june",
+      "name": "convex_intercept_0.0",
+      "max_abs_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "june",
+      "name": "convex_intercept_0.001",
+      "max_abs_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "june",
+      "name": "lgb_support_100",
+      "max_abs_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "june",
+      "name": "lgb_support_300",
+      "max_abs_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "june",
+      "name": "ridge_predictions_10.0",
+      "max_abs_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "june",
+      "name": "ridge_predictions_100.0",
+      "max_abs_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "june",
+      "name": "ridge_predictions_1000.0",
+      "max_abs_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "june",
+      "name": "ridge_support_10.0",
+      "max_abs_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "june",
+      "name": "ridge_support_100.0",
+      "max_abs_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "june",
+      "name": "ridge_support_1000.0",
+      "max_abs_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "june",
+      "name": "ridge_typed_10.0",
+      "max_abs_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "june",
+      "name": "ridge_typed_100.0",
+      "max_abs_difference": 9.094947017729282e-13
+    },
+    {
+      "stage": "june",
+      "name": "ridge_typed_1000.0",
+      "max_abs_difference": 9.094947017729282e-13
+    }
+  ],
+  "count": 52,
+  "unit_tests": {
+    "command": "python -m unittest tests.test_eighth_wave tests.test_third_wave tests.test_sixth_wave",
+    "passed": 17
+  },
+  "sample_weight_normalization": "mean one, matching tuning loss scale",
+  "discarded_attempt": "archive_weight_scale_debug: weight sum normalization changed effective regularization; excluded from results",
+  "development_only": true
+}

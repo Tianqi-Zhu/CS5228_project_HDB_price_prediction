@@ -2,7 +2,7 @@
 
 本页保留各模型可选择自身特征/残差表示的完整管线搜索口径。
 新增的 [同27列模型对照](../../experiment/03_model_comparison/PROTOCOL.md) 固定输入和拟合行，
-更适合讨论架构差异；当前整体叙述见 [项目报告](../../experiment/02_feature_engineering/BASELINE_27_FEATURES.md)。不把两张表拼成同一架构排名。
+更适合讨论架构差异；当前整体叙述见 [项目报告](../../experiment/appendix/X01/feature_evidence/BASELINE_27_FEATURES.md)。不把两张表拼成同一架构排名。
 
 本轮比较单条 HDB 月租金，所有最终误差均反变换为 SGD 后计算 RMSE。
 不将区域均价、标准化目标误差或对数误差当作该指标。

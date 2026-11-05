@@ -1,0 +1,25 @@
+{
+  "intervention": "Remove five ANN_BLOCK_36 fields before neural encoding.",
+  "removed": [
+    "ANN_BLOCK_36_R1_N",
+    "ANN_BLOCK_36_R1_RENT",
+    "ANN_BLOCK_36_R1_RATIO",
+    "ANN_BLOCK_36_R1_SD",
+    "ANN_BLOCK_36_R1_LOW"
+  ],
+  "early_equivalence_verified": true,
+  "early_predictions": "Reuse original screen predictions: original fit-only schema already drops ANN36.",
+  "FT_epochs": 3,
+  "TabM_seeds": [
+    42,
+    43,
+    44
+  ],
+  "TabM_epochs": [
+    18,
+    15,
+    15
+  ],
+  "later_fixed_epochs": true,
+  "notes": "Early constant-column equivalence is checked, not assumed. Later validation targets are only scored."
+}

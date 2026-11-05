@@ -1,0 +1,412 @@
+{
+  "model": "LightGBM",
+  "model_settings": {
+    "n_estimators": 400,
+    "learning_rate": 0.05,
+    "num_leaves": 31,
+    "min_child_samples": 30,
+    "reg_lambda": 3.0,
+    "random_state": 42,
+    "n_jobs": 4,
+    "verbosity": -1
+  },
+  "versions": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.5",
+    "scikit-learn": "1.9.0",
+    "lightgbm": "4.7.0"
+  },
+  "folds": [
+    [
+      "2022-04",
+      "2023-04",
+      "selection"
+    ],
+    [
+      "2023-04",
+      "2024-04",
+      "selection"
+    ],
+    [
+      "2024-04",
+      "2025-04",
+      "selection"
+    ],
+    [
+      "2023-12",
+      "2025-04",
+      "stress_16m"
+    ]
+  ],
+  "feature_candidates": {
+    "main_c": {
+      "columns": [
+        "FLAT_TYPE_CLEAN",
+        "FLAT_MODEL_CLEAN",
+        "FLOOR_AREA_SQM",
+        "APPROVAL_MONTH_INDEX",
+        "APPROVAL_MONTH_OF_YEAR",
+        "FLAT_AGE_YEARS",
+        "TOWN_CLEAN"
+      ],
+      "categorical": [
+        "FLAT_TYPE_CLEAN",
+        "FLAT_MODEL_CLEAN",
+        "TOWN_CLEAN"
+      ],
+      "use_history": false
+    },
+    "spatial_29": {
+      "columns": [
+        "FLAT_TYPE_CLEAN",
+        "FLAT_MODEL_CLEAN",
+        "FLOOR_AREA_SQM",
+        "APPROVAL_MONTH_INDEX",
+        "APPROVAL_MONTH_OF_YEAR",
+        "FLAT_AGE_YEARS",
+        "TOWN_CLEAN",
+        "LATITUDE",
+        "LONGITUDE",
+        "MAX_FLOOR",
+        "YEAR_COMPLETED",
+        "BUILDING_AGE_YEARS",
+        "SUBZONE_CLEAN",
+        "PLANNING_AREA_CLEAN",
+        "REGION_CLEAN",
+        "MRT_DIST_KM",
+        "MALL_DIST_KM",
+        "PRIMARY_SCHOOL_DIST_KM",
+        "CBD_DIST_KM",
+        "AMENITY_DENSITY_1KM",
+        "MRT_COUNT_0_5KM",
+        "MRT_COUNT_1_0KM",
+        "MRT_COUNT_2_0KM",
+        "MALL_COUNT_0_5KM",
+        "MALL_COUNT_1_0KM",
+        "MALL_COUNT_2_0KM",
+        "PRIMARY_SCHOOL_COUNT_0_5KM",
+        "PRIMARY_SCHOOL_COUNT_1_0KM",
+        "PRIMARY_SCHOOL_COUNT_2_0KM"
+      ],
+      "categorical": [
+        "FLAT_TYPE_CLEAN",
+        "FLAT_MODEL_CLEAN",
+        "TOWN_CLEAN",
+        "SUBZONE_CLEAN",
+        "PLANNING_AREA_CLEAN",
+        "REGION_CLEAN"
+      ],
+      "use_history": false
+    },
+    "compact_static": {
+      "columns": [
+        "FLAT_TYPE_CLEAN",
+        "FLAT_MODEL_CLEAN",
+        "TOWN_CLEAN",
+        "PLANNING_AREA_CLEAN",
+        "FLOOR_AREA_SQM",
+        "FLAT_AGE_YEARS",
+        "MAX_FLOOR",
+        "LATITUDE",
+        "LONGITUDE",
+        "APPROVAL_MONTH_INDEX",
+        "APPROVAL_MONTH_SIN",
+        "APPROVAL_MONTH_COS",
+        "CBD_DIST_KM",
+        "MRT_DIST_KM",
+        "MALL_DIST_KM",
+        "PRIMARY_SCHOOL_DIST_KM",
+        "MRT_COUNT_1_0KM",
+        "MALL_COUNT_1_0KM",
+        "PRIMARY_SCHOOL_COUNT_1_0KM"
+      ],
+      "categorical": [
+        "FLAT_TYPE_CLEAN",
+        "FLAT_MODEL_CLEAN",
+        "TOWN_CLEAN",
+        "PLANNING_AREA_CLEAN"
+      ],
+      "use_history": false
+    },
+    "rich_static": {
+      "columns": [
+        "FLAT_TYPE_CLEAN",
+        "FLAT_MODEL_CLEAN",
+        "FLOOR_AREA_SQM",
+        "APPROVAL_MONTH_INDEX",
+        "APPROVAL_MONTH_OF_YEAR",
+        "FLAT_AGE_YEARS",
+        "TOWN_CLEAN",
+        "LATITUDE",
+        "LONGITUDE",
+        "MAX_FLOOR",
+        "YEAR_COMPLETED",
+        "BUILDING_AGE_YEARS",
+        "SUBZONE_CLEAN",
+        "PLANNING_AREA_CLEAN",
+        "REGION_CLEAN",
+        "MRT_DIST_KM",
+        "MALL_DIST_KM",
+        "PRIMARY_SCHOOL_DIST_KM",
+        "CBD_DIST_KM",
+        "AMENITY_DENSITY_1KM",
+        "MRT_COUNT_0_5KM",
+        "MRT_COUNT_1_0KM",
+        "MRT_COUNT_2_0KM",
+        "MALL_COUNT_0_5KM",
+        "MALL_COUNT_1_0KM",
+        "MALL_COUNT_2_0KM",
+        "PRIMARY_SCHOOL_COUNT_0_5KM",
+        "PRIMARY_SCHOOL_COUNT_1_0KM",
+        "PRIMARY_SCHOOL_COUNT_2_0KM",
+        "STREET_CLEAN",
+        "BLOCK_CLEAN",
+        "ADDRESS_KEY",
+        "POSTAL_CODE_CLEAN",
+        "APPROVAL_YEAR",
+        "APPROVAL_MONTH_SIN",
+        "APPROVAL_MONTH_COS",
+        "LEASE_COMMENCE_DATE",
+        "COMPLETION_LEASE_GAP",
+        "ROOM_COUNT",
+        "AREA_PER_ROOM"
+      ],
+      "categorical": [
+        "FLAT_TYPE_CLEAN",
+        "FLAT_MODEL_CLEAN",
+        "TOWN_CLEAN",
+        "STREET_CLEAN",
+        "BLOCK_CLEAN",
+        "ADDRESS_KEY",
+        "POSTAL_CODE_CLEAN",
+        "SUBZONE_CLEAN",
+        "PLANNING_AREA_CLEAN",
+        "REGION_CLEAN"
+      ],
+      "use_history": false
+    },
+    "spatial_history": {
+      "columns": [
+        "FLAT_TYPE_CLEAN",
+        "FLAT_MODEL_CLEAN",
+        "FLOOR_AREA_SQM",
+        "APPROVAL_MONTH_INDEX",
+        "APPROVAL_MONTH_OF_YEAR",
+        "FLAT_AGE_YEARS",
+        "TOWN_CLEAN",
+        "LATITUDE",
+        "LONGITUDE",
+        "MAX_FLOOR",
+        "YEAR_COMPLETED",
+        "BUILDING_AGE_YEARS",
+        "SUBZONE_CLEAN",
+        "PLANNING_AREA_CLEAN",
+        "REGION_CLEAN",
+        "MRT_DIST_KM",
+        "MALL_DIST_KM",
+        "PRIMARY_SCHOOL_DIST_KM",
+        "CBD_DIST_KM",
+        "AMENITY_DENSITY_1KM",
+        "MRT_COUNT_0_5KM",
+        "MRT_COUNT_1_0KM",
+        "MRT_COUNT_2_0KM",
+        "MALL_COUNT_0_5KM",
+        "MALL_COUNT_1_0KM",
+        "MALL_COUNT_2_0KM",
+        "PRIMARY_SCHOOL_COUNT_0_5KM",
+        "PRIMARY_SCHOOL_COUNT_1_0KM",
+        "PRIMARY_SCHOOL_COUNT_2_0KM"
+      ],
+      "categorical": [
+        "FLAT_TYPE_CLEAN",
+        "FLAT_MODEL_CLEAN",
+        "TOWN_CLEAN",
+        "SUBZONE_CLEAN",
+        "PLANNING_AREA_CLEAN",
+        "REGION_CLEAN"
+      ],
+      "use_history": true
+    },
+    "compact_history": {
+      "columns": [
+        "FLAT_TYPE_CLEAN",
+        "FLAT_MODEL_CLEAN",
+        "TOWN_CLEAN",
+        "PLANNING_AREA_CLEAN",
+        "FLOOR_AREA_SQM",
+        "FLAT_AGE_YEARS",
+        "MAX_FLOOR",
+        "LATITUDE",
+        "LONGITUDE",
+        "APPROVAL_MONTH_INDEX",
+        "APPROVAL_MONTH_SIN",
+        "APPROVAL_MONTH_COS",
+        "CBD_DIST_KM",
+        "MRT_DIST_KM",
+        "MALL_DIST_KM",
+        "PRIMARY_SCHOOL_DIST_KM",
+        "MRT_COUNT_1_0KM",
+        "MALL_COUNT_1_0KM",
+        "PRIMARY_SCHOOL_COUNT_1_0KM"
+      ],
+      "categorical": [
+        "FLAT_TYPE_CLEAN",
+        "FLAT_MODEL_CLEAN",
+        "TOWN_CLEAN",
+        "PLANNING_AREA_CLEAN"
+      ],
+      "use_history": true
+    },
+    "rich_history": {
+      "columns": [
+        "FLAT_TYPE_CLEAN",
+        "FLAT_MODEL_CLEAN",
+        "FLOOR_AREA_SQM",
+        "APPROVAL_MONTH_INDEX",
+        "APPROVAL_MONTH_OF_YEAR",
+        "FLAT_AGE_YEARS",
+        "TOWN_CLEAN",
+        "LATITUDE",
+        "LONGITUDE",
+        "MAX_FLOOR",
+        "YEAR_COMPLETED",
+        "BUILDING_AGE_YEARS",
+        "SUBZONE_CLEAN",
+        "PLANNING_AREA_CLEAN",
+        "REGION_CLEAN",
+        "MRT_DIST_KM",
+        "MALL_DIST_KM",
+        "PRIMARY_SCHOOL_DIST_KM",
+        "CBD_DIST_KM",
+        "AMENITY_DENSITY_1KM",
+        "MRT_COUNT_0_5KM",
+        "MRT_COUNT_1_0KM",
+        "MRT_COUNT_2_0KM",
+        "MALL_COUNT_0_5KM",
+        "MALL_COUNT_1_0KM",
+        "MALL_COUNT_2_0KM",
+        "PRIMARY_SCHOOL_COUNT_0_5KM",
+        "PRIMARY_SCHOOL_COUNT_1_0KM",
+        "PRIMARY_SCHOOL_COUNT_2_0KM",
+        "STREET_CLEAN",
+        "BLOCK_CLEAN",
+        "ADDRESS_KEY",
+        "POSTAL_CODE_CLEAN",
+        "APPROVAL_YEAR",
+        "APPROVAL_MONTH_SIN",
+        "APPROVAL_MONTH_COS",
+        "LEASE_COMMENCE_DATE",
+        "COMPLETION_LEASE_GAP",
+        "ROOM_COUNT",
+        "AREA_PER_ROOM"
+      ],
+      "categorical": [
+        "FLAT_TYPE_CLEAN",
+        "FLAT_MODEL_CLEAN",
+        "TOWN_CLEAN",
+        "STREET_CLEAN",
+        "BLOCK_CLEAN",
+        "ADDRESS_KEY",
+        "POSTAL_CODE_CLEAN",
+        "SUBZONE_CLEAN",
+        "PLANNING_AREA_CLEAN",
+        "REGION_CLEAN"
+      ],
+      "use_history": true
+    }
+  },
+  "source_sha256": {
+    "C:\\Users\\Lenovo\\Desktop\\CS5228\\CS5228_project_HDB_price_prediction\\data\\train.csv": "2fe38ce9e0d8a02e9786f066d4a10d575d91f34be1d9111f0142e3f43fbfc8a5",
+    "C:\\Users\\Lenovo\\Desktop\\CS5228\\CS5228_project_HDB_price_prediction\\data\\test.csv": "a2ec03a0afc07c251c72cc0de2e15ac965a3b06291b304aaac53a375115ff4e0",
+    "C:\\Users\\Lenovo\\Desktop\\CS5228\\CS5228_project_HDB_price_prediction\\data\\auxiliary\\sg-hdb-block.csv": "2255ad61ba6895456a39aec81d12583796d717ef88fe102ee9de71b3796fc223",
+    "C:\\Users\\Lenovo\\Desktop\\CS5228\\CS5228_project_HDB_price_prediction\\data\\auxiliary\\sg-mrt-stations.csv": "4757278b94c2d05627a941377d51de60882e3e1477de01758ef37070b716b889",
+    "C:\\Users\\Lenovo\\Desktop\\CS5228\\CS5228_project_HDB_price_prediction\\data\\auxiliary\\sg-shopping-malls.csv": "cce36a0175433f768d209b74e2e5376aad16befe1ad4f1313da0b18ed6d91a3b",
+    "C:\\Users\\Lenovo\\Desktop\\CS5228\\CS5228_project_HDB_price_prediction\\data\\auxiliary\\sg-schools.csv": "9bf28c6a2e5511c5cada178d221dfaac12beb3651425b3b86c37815e35de71cb"
+  },
+  "test_months": [
+    "2025-03",
+    "2026-07"
+  ],
+  "overlapping_test_month_rows": 380,
+  "pooled_metrics": [
+    {
+      "variant": "compact_history",
+      "n_features": 31,
+      "n_validation": 103244,
+      "pooled_rmse_sgd": 591.9622657204612,
+      "mean_fold_rmse_sgd": 587.3856070459984,
+      "mae_sgd": 448.74612633987505,
+      "bias_sgd": -120.08268995887934,
+      "improved_folds_vs_spatial29": 3
+    },
+    {
+      "variant": "spatial_history",
+      "n_features": 41,
+      "n_validation": 103244,
+      "pooled_rmse_sgd": 594.7451863688667,
+      "mean_fold_rmse_sgd": 590.1518226509158,
+      "mae_sgd": 451.50557501361453,
+      "bias_sgd": -124.30707377090698,
+      "improved_folds_vs_spatial29": 3
+    },
+    {
+      "variant": "compact_static",
+      "n_features": 19,
+      "n_validation": 103244,
+      "pooled_rmse_sgd": 599.9041513536756,
+      "mean_fold_rmse_sgd": 595.45562212411,
+      "mae_sgd": 461.5316484854886,
+      "bias_sgd": -167.80778191742277,
+      "improved_folds_vs_spatial29": 2
+    },
+    {
+      "variant": "spatial_29",
+      "n_features": 29,
+      "n_validation": 103244,
+      "pooled_rmse_sgd": 600.7656537851801,
+      "mean_fold_rmse_sgd": 596.2806924632062,
+      "mae_sgd": 461.7082418542869,
+      "bias_sgd": -165.5170061414534,
+      "improved_folds_vs_spatial29": 0
+    },
+    {
+      "variant": "main_c",
+      "n_features": 7,
+      "n_validation": 103244,
+      "pooled_rmse_sgd": 605.1966156187843,
+      "mean_fold_rmse_sgd": 601.0793565573853,
+      "mae_sgd": 466.11686189167847,
+      "bias_sgd": -165.66411602066796,
+      "improved_folds_vs_spatial29": 0
+    },
+    {
+      "variant": "rich_static",
+      "n_features": 40,
+      "n_validation": 103244,
+      "pooled_rmse_sgd": 607.9268895481907,
+      "mean_fold_rmse_sgd": 603.3155913636779,
+      "mae_sgd": 466.01892101000345,
+      "bias_sgd": -167.56310688371934,
+      "improved_folds_vs_spatial29": 0
+    },
+    {
+      "variant": "rich_history",
+      "n_features": 52,
+      "n_validation": 103244,
+      "pooled_rmse_sgd": 609.7745996010417,
+      "mean_fold_rmse_sgd": 605.551114715592,
+      "mae_sgd": 466.04406803192325,
+      "bias_sgd": -145.65729438040242,
+      "improved_folds_vs_spatial29": 0
+    }
+  ],
+  "limitations": [
+    "All labeled months have been examined by earlier project experiments; these are model-selection estimates.",
+    "The 16-month stress window overlaps selection folds and is excluded from pooled metrics.",
+    "Facilities are static snapshots; historical opening dates are unavailable.",
+    "Feature selection is conditional on one fixed LightGBM configuration, not a universal optimum."
+  ],
+  "recommended_variant": "compact_history",
+  "best_pooled_variant": "compact_history",
+  "selection_rule": "Minimize pooled RMSE on three non-overlapping 12-month folds; report the overlapping 16-month stress fold separately."
+}

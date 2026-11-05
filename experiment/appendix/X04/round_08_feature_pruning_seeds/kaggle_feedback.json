@@ -1,0 +1,23 @@
+{
+  "reported_on": "2026-11-05",
+  "source": "user report in conversation",
+  "scores": [
+    {
+      "file": "kaggle_best_history.csv",
+      "score_approx": 415.0,
+      "exact_score": null
+    },
+    {
+      "file": "kaggle_best_macro.csv",
+      "score_approx": 415.0,
+      "exact_score": null
+    }
+  ],
+  "user_note": "都是，小数级差别",
+  "leaderboard_split": null,
+  "verified_by_connector": false,
+  "normal_benchmark_score_approx": 411.0,
+  "benchmark_source": "user report",
+  "other_scores_around_170": "User describes these as cheat methods; not part of valid model comparisons.",
+  "note": "No exact score or constant local-to-Kaggle offset is inferred."
+}

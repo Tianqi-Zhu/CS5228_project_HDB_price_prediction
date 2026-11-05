@@ -1,0 +1,24 @@
+{
+  "selected": "ridge_predictions_10.0",
+  "score": {
+    "spec": {
+      "name": "ridge_predictions_10.0",
+      "family": "ridge",
+      "features": "predictions",
+      "alpha": 10.0
+    },
+    "stage": "screen",
+    "rows": 5834,
+    "rmse_sgd": 504.9526715222087,
+    "mae_sgd": 382.2132241884424,
+    "bias_sgd": -0.3238611033539952,
+    "baseline_scores": {
+      "rmse_sgd": 507.3678094419876,
+      "mae_sgd": 381.16260456249324,
+      "bias_sgd": 25.19489124076933
+    },
+    "seconds": 0.08759079999435926
+  },
+  "decision_before_later_evaluation": true,
+  "query_rents_used_for_later_fit": false
+}

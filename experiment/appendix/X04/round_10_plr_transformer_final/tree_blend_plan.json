@@ -1,0 +1,24 @@
+{
+  "variants": {
+    "only_tree": {
+      "tree": "cat_depthwise6"
+    },
+    "all_new_plus_tree": {
+      "ft_plr": "ft_plr_128_3",
+      "ft_ple": "ft_ple_128_3",
+      "ft_linear": "ft_linear_96_2",
+      "moe": "moe_plr_8",
+      "dcn": "dcn_plr_3",
+      "tree": "cat_depthwise6"
+    }
+  },
+  "recipe": {
+    "name": "followup_support_pair_centered_0.003",
+    "objective": "month_centered",
+    "ridge": 0.003,
+    "group_ridge": 0.003,
+    "gate": "support_pair",
+    "update": true
+  },
+  "note": "Additional tree inclusion after neural screen; reused development periods, not independent confirmation."
+}

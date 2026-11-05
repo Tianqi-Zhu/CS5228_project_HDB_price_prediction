@@ -1,0 +1,294 @@
+{
+  "specs": [
+    {
+      "name": "ridge_predictions_10.0",
+      "family": "ridge",
+      "features": "predictions",
+      "alpha": 10.0
+    },
+    {
+      "name": "ridge_predictions_100.0",
+      "family": "ridge",
+      "features": "predictions",
+      "alpha": 100.0
+    },
+    {
+      "name": "ridge_predictions_1000.0",
+      "family": "ridge",
+      "features": "predictions",
+      "alpha": 1000.0
+    },
+    {
+      "name": "ridge_support_10.0",
+      "family": "ridge",
+      "features": "support",
+      "alpha": 10.0
+    },
+    {
+      "name": "ridge_support_100.0",
+      "family": "ridge",
+      "features": "support",
+      "alpha": 100.0
+    },
+    {
+      "name": "ridge_support_1000.0",
+      "family": "ridge",
+      "features": "support",
+      "alpha": 1000.0
+    },
+    {
+      "name": "ridge_typed_10.0",
+      "family": "ridge",
+      "features": "typed",
+      "alpha": 10.0
+    },
+    {
+      "name": "ridge_typed_100.0",
+      "family": "ridge",
+      "features": "typed",
+      "alpha": 100.0
+    },
+    {
+      "name": "ridge_typed_1000.0",
+      "family": "ridge",
+      "features": "typed",
+      "alpha": 1000.0
+    },
+    {
+      "name": "convex_intercept_0.0",
+      "family": "convex",
+      "ridge": 0.0,
+      "features": "predictions"
+    },
+    {
+      "name": "convex_intercept_0.001",
+      "family": "convex",
+      "ridge": 0.001,
+      "features": "predictions"
+    },
+    {
+      "name": "lgb_support_100",
+      "family": "lgb",
+      "features": "support",
+      "rounds": 100
+    },
+    {
+      "name": "lgb_support_300",
+      "family": "lgb",
+      "features": "support",
+      "rounds": 300
+    }
+  ],
+  "registry": {
+    "round_02_anniversary_history/normalized_market/compact_ratio15_market_last": {
+      "screen": "output\\models\\round_02_anniversary_history\\normalized_market\\screen\\compact_ratio15_market_last\\predictions.csv",
+      "outer": "output\\models\\round_02_anniversary_history\\normalized_market\\outer\\compact_ratio15_market_last\\predictions.csv",
+      "june": "output\\models\\round_02_anniversary_history\\normalized_market\\june\\compact_ratio15_market_last\\predictions.csv"
+    },
+    "round_02_anniversary_history/anniversary/broad_lgb15": {
+      "screen": "output\\models\\round_02_anniversary_history\\anniversary\\screen\\broad_lgb15\\predictions.csv",
+      "outer": "output\\models\\round_02_anniversary_history\\anniversary\\outer\\broad_lgb15\\predictions.csv",
+      "june": "output\\models\\round_02_anniversary_history\\anniversary\\june\\broad_lgb15\\predictions.csv"
+    },
+    "round_02_anniversary_history/anniversary/broad_lgb63": {
+      "screen": "output\\models\\round_02_anniversary_history\\anniversary\\screen\\broad_lgb63\\predictions.csv",
+      "outer": "output\\models\\round_02_anniversary_history\\anniversary\\outer\\broad_lgb63\\predictions.csv",
+      "june": "output\\models\\round_02_anniversary_history\\anniversary\\june\\broad_lgb63\\predictions.csv"
+    },
+    "round_02_anniversary_history/anniversary/exact_lgb15": {
+      "screen": "output\\models\\round_02_anniversary_history\\anniversary\\screen\\exact_lgb15\\predictions.csv",
+      "outer": "output\\models\\round_02_anniversary_history\\anniversary\\outer\\exact_lgb15\\predictions.csv",
+      "june": "output\\models\\round_02_anniversary_history\\anniversary\\june\\exact_lgb15\\predictions.csv"
+    },
+    "round_02_anniversary_history/anniversary/exact_lgb63": {
+      "screen": "output\\models\\round_02_anniversary_history\\anniversary\\screen\\exact_lgb63\\predictions.csv",
+      "outer": "output\\models\\round_02_anniversary_history\\anniversary\\outer\\exact_lgb63\\predictions.csv",
+      "june": "output\\models\\round_02_anniversary_history\\anniversary\\june\\exact_lgb63\\predictions.csv"
+    },
+    "round_02_anniversary_history/anniversary/window_cat6": {
+      "screen": "output\\models\\round_02_anniversary_history\\anniversary\\screen\\window_cat6\\predictions.csv",
+      "outer": "output\\models\\round_02_anniversary_history\\anniversary\\outer\\window_cat6\\predictions.csv",
+      "june": "output\\models\\round_02_anniversary_history\\anniversary\\june\\window_cat6\\predictions.csv"
+    },
+    "round_02_anniversary_history/anniversary/window_lgb63": {
+      "screen": "output\\models\\round_02_anniversary_history\\anniversary\\screen\\window_lgb63\\predictions.csv",
+      "outer": "output\\models\\round_02_anniversary_history\\anniversary\\outer\\window_lgb63\\predictions.csv",
+      "june": "output\\models\\round_02_anniversary_history\\anniversary\\june\\window_lgb63\\predictions.csv"
+    },
+    "round_03_tree_transformer_ensemble/models/ft_transformer": {
+      "screen": "output\\models\\round_03_tree_transformer_ensemble\\models\\screen\\ft_transformer\\predictions.csv",
+      "outer": "output\\models\\round_03_tree_transformer_ensemble\\models\\outer\\ft_transformer\\predictions.csv",
+      "june": "output\\models\\round_03_tree_transformer_ensemble\\models\\june\\ft_transformer\\predictions.csv"
+    },
+    "round_03_tree_transformer_ensemble/models/xgb5_residual": {
+      "screen": "output\\models\\round_03_tree_transformer_ensemble\\models\\screen\\xgb5_residual\\predictions.csv",
+      "outer": "output\\models\\round_03_tree_transformer_ensemble\\models\\outer\\xgb5_residual\\predictions.csv",
+      "june": "output\\models\\round_03_tree_transformer_ensemble\\models\\june\\xgb5_residual\\predictions.csv"
+    },
+    "round_03_tree_transformer_ensemble/models/xgb7": {
+      "screen": "output\\models\\round_03_tree_transformer_ensemble\\models\\screen\\xgb7\\predictions.csv",
+      "outer": "output\\models\\round_03_tree_transformer_ensemble\\models\\outer\\xgb7\\predictions.csv",
+      "june": "output\\models\\round_03_tree_transformer_ensemble\\models\\june\\xgb7\\predictions.csv"
+    },
+    "fifth/lgb_base": {
+      "screen": "output/models/round_05_feature_interactions/matrix/screen/lgb_base/predictions.csv",
+      "outer": "output/models/round_05_feature_interactions/matrix/outer/lgb_base/predictions.csv",
+      "june": "output/models/round_05_feature_interactions/matrix/june/lgb_base/predictions.csv"
+    },
+    "fifth/lgb_shape": {
+      "screen": "output/models/round_05_feature_interactions/matrix/screen/lgb_shape/predictions.csv",
+      "outer": "output/models/round_05_feature_interactions/matrix/outer/lgb_shape/predictions.csv",
+      "june": "output/models/round_05_feature_interactions/matrix/june/lgb_shape/predictions.csv"
+    },
+    "fifth/lgb_building": {
+      "screen": "output/models/round_05_feature_interactions/matrix/screen/lgb_building/predictions.csv",
+      "outer": "output/models/round_05_feature_interactions/matrix/outer/lgb_building/predictions.csv",
+      "june": "output/models/round_05_feature_interactions/matrix/june/lgb_building/predictions.csv"
+    },
+    "fifth/lgb_combined": {
+      "screen": "output/models/round_05_feature_interactions/matrix/screen/lgb_combined/predictions.csv",
+      "outer": "output/models/round_05_feature_interactions/matrix/outer/lgb_combined/predictions.csv",
+      "june": "output/models/round_05_feature_interactions/matrix/june/lgb_combined/predictions.csv"
+    },
+    "fifth/lgb_no36": {
+      "screen": "output/models/round_05_feature_interactions/matrix/screen/lgb_no36/predictions.csv",
+      "outer": "output/models/round_05_feature_interactions/matrix/outer/lgb_no36/predictions.csv",
+      "june": "output/models/round_05_feature_interactions/matrix/june/lgb_no36/predictions.csv"
+    },
+    "fifth/lgb_only24": {
+      "screen": "output/models/round_05_feature_interactions/matrix/screen/lgb_only24/predictions.csv",
+      "outer": "output/models/round_05_feature_interactions/matrix/outer/lgb_only24/predictions.csv",
+      "june": "output/models/round_05_feature_interactions/matrix/june/lgb_only24/predictions.csv"
+    },
+    "fifth/cat_base": {
+      "screen": "output/models/round_05_feature_interactions/matrix/screen/cat_base/predictions.csv",
+      "outer": "output/models/round_05_feature_interactions/matrix/outer/cat_base/predictions.csv",
+      "june": "output/models/round_05_feature_interactions/matrix/june/cat_base/predictions.csv"
+    },
+    "fifth/cat_shape": {
+      "screen": "output/models/round_05_feature_interactions/matrix/screen/cat_shape/predictions.csv",
+      "outer": "output/models/round_05_feature_interactions/matrix/outer/cat_shape/predictions.csv",
+      "june": "output/models/round_05_feature_interactions/matrix/june/cat_shape/predictions.csv"
+    },
+    "fifth/cat_building": {
+      "screen": "output/models/round_05_feature_interactions/matrix/screen/cat_building/predictions.csv",
+      "outer": "output/models/round_05_feature_interactions/matrix/outer/cat_building/predictions.csv",
+      "june": "output/models/round_05_feature_interactions/matrix/june/cat_building/predictions.csv"
+    },
+    "fifth/cat_combined": {
+      "screen": "output/models/round_05_feature_interactions/matrix/screen/cat_combined/predictions.csv",
+      "outer": "output/models/round_05_feature_interactions/matrix/outer/cat_combined/predictions.csv",
+      "june": "output/models/round_05_feature_interactions/matrix/june/cat_combined/predictions.csv"
+    },
+    "fifth/cat_no36": {
+      "screen": "output/models/round_05_feature_interactions/matrix/screen/cat_no36/predictions.csv",
+      "outer": "output/models/round_05_feature_interactions/matrix/outer/cat_no36/predictions.csv",
+      "june": "output/models/round_05_feature_interactions/matrix/june/cat_no36/predictions.csv"
+    },
+    "fifth/cat_only24": {
+      "screen": "output/models/round_05_feature_interactions/matrix/screen/cat_only24/predictions.csv",
+      "outer": "output/models/round_05_feature_interactions/matrix/outer/cat_only24/predictions.csv",
+      "june": "output/models/round_05_feature_interactions/matrix/june/cat_only24/predictions.csv"
+    },
+    "fifth/xgb_base": {
+      "screen": "output/models/round_05_feature_interactions/matrix/screen/xgb_base/predictions.csv",
+      "outer": "output/models/round_05_feature_interactions/matrix/outer/xgb_base/predictions.csv",
+      "june": "output/models/round_05_feature_interactions/matrix/june/xgb_base/predictions.csv"
+    },
+    "fifth/xgb_shape": {
+      "screen": "output/models/round_05_feature_interactions/matrix/screen/xgb_shape/predictions.csv",
+      "outer": "output/models/round_05_feature_interactions/matrix/outer/xgb_shape/predictions.csv",
+      "june": "output/models/round_05_feature_interactions/matrix/june/xgb_shape/predictions.csv"
+    },
+    "fifth/xgb_building": {
+      "screen": "output/models/round_05_feature_interactions/matrix/screen/xgb_building/predictions.csv",
+      "outer": "output/models/round_05_feature_interactions/matrix/outer/xgb_building/predictions.csv",
+      "june": "output/models/round_05_feature_interactions/matrix/june/xgb_building/predictions.csv"
+    },
+    "fifth/xgb_combined": {
+      "screen": "output/models/round_05_feature_interactions/matrix/screen/xgb_combined/predictions.csv",
+      "outer": "output/models/round_05_feature_interactions/matrix/outer/xgb_combined/predictions.csv",
+      "june": "output/models/round_05_feature_interactions/matrix/june/xgb_combined/predictions.csv"
+    },
+    "fifth/xgb_no36": {
+      "screen": "output/models/round_05_feature_interactions/matrix/screen/xgb_no36/predictions.csv",
+      "outer": "output/models/round_05_feature_interactions/matrix/outer/xgb_no36/predictions.csv",
+      "june": "output/models/round_05_feature_interactions/matrix/june/xgb_no36/predictions.csv"
+    },
+    "fifth/xgb_only24": {
+      "screen": "output/models/round_05_feature_interactions/matrix/screen/xgb_only24/predictions.csv",
+      "outer": "output/models/round_05_feature_interactions/matrix/outer/xgb_only24/predictions.csv",
+      "june": "output/models/round_05_feature_interactions/matrix/june/xgb_only24/predictions.csv"
+    },
+    "sixth/seedmean__tabm_ple_residual_lr0.0005": {
+      "screen": "output/models/round_06_deep_models/screen/seedmean__tabm_ple_residual_lr0.0005/predictions.csv",
+      "outer": "output/models/round_06_deep_models/outer/seedmean__tabm_ple_residual_lr0.0005/predictions.csv",
+      "june": "output/models/round_06_deep_models/june/seedmean__tabm_ple_residual_lr0.0005/predictions.csv"
+    },
+    "sixth/seedmean__realmlp_residual_ens4": {
+      "screen": "output/models/round_06_deep_models/screen/seedmean__realmlp_residual_ens4/predictions.csv",
+      "outer": "output/models/round_06_deep_models/outer/seedmean__realmlp_residual_ens4/predictions.csv",
+      "june": "output/models/round_06_deep_models/june/seedmean__realmlp_residual_ens4/predictions.csv"
+    },
+    "sixth/modernnca_residual_plr": {
+      "screen": "output/models/round_06_deep_models/screen/modernnca_residual_plr/predictions.csv",
+      "outer": "output/models/round_06_deep_models/outer/modernnca_residual_plr/predictions.csv",
+      "june": "output/models/round_06_deep_models/june/modernnca_residual_plr/predictions.csv"
+    },
+    "sixth/mlp_plr_residual": {
+      "screen": "output/models/round_06_deep_models/screen/mlp_plr_residual/predictions.csv",
+      "outer": "output/models/round_06_deep_models/outer/mlp_plr_residual/predictions.csv",
+      "june": "output/models/round_06_deep_models/june/mlp_plr_residual/predictions.csv"
+    },
+    "seventh/nori15_raw_2048": {
+      "screen": "output/models/round_07_pretrained_transformers/screen/nori15_raw_2048/predictions.csv",
+      "outer": "output/models/round_07_pretrained_transformers/outer/nori15_raw_2048/predictions.csv",
+      "june": "output/models/round_07_pretrained_transformers/june/nori15_raw_2048/predictions.csv"
+    },
+    "seventh/tabdpt13_adapt_residual": {
+      "screen": "output/models/round_07_pretrained_transformers/screen/tabdpt13_adapt_residual/predictions.csv",
+      "outer": "output/models/round_07_pretrained_transformers/outer/tabdpt13_adapt_residual/predictions.csv",
+      "june": "output/models/round_07_pretrained_transformers/june/tabdpt13_adapt_residual/predictions.csv"
+    },
+    "seventh/tabdpt13_raw_mature2048": {
+      "screen": "output/models/round_07_pretrained_transformers/screen/tabdpt13_raw_mature2048/predictions.csv",
+      "outer": "output/models/round_07_pretrained_transformers/outer/tabdpt13_raw_mature2048/predictions.csv",
+      "june": "output/models/round_07_pretrained_transformers/june/tabdpt13_raw_mature2048/predictions.csv"
+    },
+    "seventh/tabdpt13_residual_global2048": {
+      "screen": "output/models/round_07_pretrained_transformers/screen/tabdpt13_residual_global2048/predictions.csv",
+      "outer": "output/models/round_07_pretrained_transformers/outer/tabdpt13_residual_global2048/predictions.csv",
+      "june": "output/models/round_07_pretrained_transformers/june/tabdpt13_residual_global2048/predictions.csv"
+    },
+    "seventh/tabicl2_raw_mature24000": {
+      "screen": "output/models/round_07_pretrained_transformers/screen/tabicl2_raw_mature24000/predictions.csv",
+      "outer": "output/models/round_07_pretrained_transformers/outer/tabicl2_raw_mature24000/predictions.csv",
+      "june": "output/models/round_07_pretrained_transformers/june/tabicl2_raw_mature24000/predictions.csv"
+    }
+  },
+  "selection_train": [
+    "2023-10",
+    "2024-01"
+  ],
+  "selection_validation": [
+    "2024-02",
+    "2024-03"
+  ],
+  "meta_fit_outer": [
+    "2023-10",
+    "2024-03"
+  ],
+  "meta_fit_june": [
+    [
+      "2023-10",
+      "2024-03"
+    ],
+    [
+      "2024-04",
+      "2024-05"
+    ]
+  ],
+  "origin_weighting": "Equal total weight per preceding forecast origin; no later labels.",
+  "correction_cap_sgd": 250.0,
+  "notes": "Base configuration/periods were reused development evidence. Meta tuning split is not a new independent test."
+}

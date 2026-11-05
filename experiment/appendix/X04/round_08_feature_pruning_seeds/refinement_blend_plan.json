@@ -1,0 +1,19 @@
+{
+  "tabm_weight": 0.3,
+  "tabm_weight_max": 0.3,
+  "selection": "least squares on original early predictions; no36 is identical on early fit-only schema",
+  "earlier_scores": {
+    "rmse_sgd": 521.7309045686895,
+    "mae_sgd": 399.4258307050167,
+    "bias_sgd": 11.620211145002516
+  },
+  "FT_replacement": "replace original FT leaf at its existing weight, always",
+  "combined_candidates": [
+    "bag selected early",
+    "FT replacement",
+    "TabM early-weight blend",
+    "FT plus bag",
+    "FT plus bag plus TabM"
+  ],
+  "no_later_weight_selection": true
+}

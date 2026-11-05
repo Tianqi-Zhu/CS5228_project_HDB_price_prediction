@@ -1,0 +1,61 @@
+usage: main.py [-h]
+               {experiment-list,preflight,artifact-list,experiment-refresh,reports-refresh,eda,baseline,compare,validate,submit,predict,report,deep,aux-boost,deep-summary,verify,feature-select,feature-optimize,feature-evidence,common-models,canonical-submit,project-review,model-search,source-audit,aux-ablation,economic-signals,economic-ablation,group-temporal,spatial-controls,spatiotemporal,tabm,relu,all}
+               ...
+
+CS5228 HDB rent: EDA, experiments, temporal validation and submission
+
+positional arguments:
+  {experiment-list,preflight,artifact-list,experiment-refresh,reports-refresh,eda,baseline,compare,validate,submit,predict,report,deep,aux-boost,deep-summary,verify,feature-select,feature-optimize,feature-evidence,common-models,canonical-submit,project-review,model-search,source-audit,aux-ablation,economic-signals,economic-ablation,group-temporal,spatial-controls,spatiotemporal,tabm,relu,all}
+    experiment-list     List local experiment modules without running them
+    preflight           Check resources without importing models, installing
+                        or training
+    artifact-list       List current model files, fusion parameters and metric
+                        references without loading models
+    experiment-refresh (reports-refresh)
+                        Refresh selected experiment summaries from existing
+                        results; no training
+    eda                 Run consolidated EDA into one experiment/eda tree
+    baseline            Reproduce the mean and CatBoost A/B/C feature
+                        comparison
+    compare             Compare Ridge, Random Forest, CatBoost and LightGBM
+    validate            Time validation with monthly, town and flat-type
+                        errors
+    submit              Refit and write Id,Predicted; does not upload to
+                        Kaggle
+    predict             Generate predictions using a saved submit-command
+                        artifact
+    report              Rebuild the preserved EDA progress PDF
+    deep                Train a GPU tabular deep-learning experiment
+    aux-boost           Train the auxiliary LightGBM benchmark
+    deep-summary        Summarize deep models and rebuild ensembles
+    verify              Audit environment and saved-result consistency
+    feature-select      Compare feature policies with one LightGBM model and
+                        fixed-origin folds
+    feature-optimize    Audit redundancy and test causal history and market
+                        representations
+    feature-evidence    Retrain single-column/group deletions and report
+                        temporal error diagnostics
+    common-models       Compare architectures with the same 27 feature inputs
+                        and outer training rows
+    canonical-submit    Refit the fixed 27-feature LightGBM baseline and
+                        export locally (no upload)
+    project-review      Build the current project report and evidence index
+                        from completed results
+    model-search        Nested temporal comparison of tree and official neural
+                        models
+    source-audit        Audit overlap with public HDB rental disclosures,
+                        separate from forecasting
+    aux-ablation        Run staged spatial/economic feature ablation
+    economic-signals    Run prior-month economic signal analysis
+    economic-ablation   Compare engineered economic features
+    group-temporal      Run grouped temporal panel analysis
+    spatial-controls    Run spatial overview, fixed-effect and matching
+                        studies
+    spatiotemporal      Run expanding-window historical/spatial forecasts
+    tabm                Run the TabM-style neural/tree experiment
+    relu                Run nested-validation sklearn ReLU MLP
+    all                 Run all EDA, both historical experiments and the PDF
+                        report
+
+options:
+  -h, --help            show this help message and exit

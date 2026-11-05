@@ -1,0 +1,179 @@
+{
+  "feature_spec": {
+    "columns": [
+      "FLAT_TYPE_CLEAN",
+      "FLAT_MODEL_CLEAN",
+      "TOWN_CLEAN",
+      "PLANNING_AREA_CLEAN",
+      "FLOOR_AREA_SQM",
+      "FLAT_AGE_YEARS",
+      "MAX_FLOOR",
+      "LATITUDE",
+      "LONGITUDE",
+      "APPROVAL_MONTH_INDEX",
+      "APPROVAL_MONTH_SIN",
+      "APPROVAL_MONTH_COS",
+      "CBD_DIST_KM",
+      "MRT_DIST_KM",
+      "MALL_DIST_KM",
+      "PRIMARY_SCHOOL_DIST_KM",
+      "MRT_COUNT_1_0KM",
+      "MALL_COUNT_1_0KM",
+      "PRIMARY_SCHOOL_COUNT_1_0KM"
+    ],
+    "categorical": [
+      "FLAT_TYPE_CLEAN",
+      "FLAT_MODEL_CLEAN",
+      "TOWN_CLEAN",
+      "PLANNING_AREA_CLEAN"
+    ],
+    "use_history": true,
+    "history_policies": [],
+    "history_grains": [
+      "BLOCK_FLAT",
+      "AREA_FLAT"
+    ],
+    "market_context": false
+  },
+  "groups": {
+    "property": [
+      "FLAT_TYPE_CLEAN",
+      "FLAT_MODEL_CLEAN",
+      "FLOOR_AREA_SQM",
+      "FLAT_AGE_YEARS",
+      "MAX_FLOOR"
+    ],
+    "time": [
+      "APPROVAL_MONTH_INDEX",
+      "APPROVAL_MONTH_SIN",
+      "APPROVAL_MONTH_COS"
+    ],
+    "location": [
+      "TOWN_CLEAN",
+      "PLANNING_AREA_CLEAN",
+      "LATITUDE",
+      "LONGITUDE",
+      "CBD_DIST_KM"
+    ],
+    "mrt": [
+      "MRT_DIST_KM",
+      "MRT_COUNT_1_0KM"
+    ],
+    "mall": [
+      "MALL_DIST_KM",
+      "MALL_COUNT_1_0KM"
+    ],
+    "primary_school": [
+      "PRIMARY_SCHOOL_DIST_KM",
+      "PRIMARY_SCHOOL_COUNT_1_0KM"
+    ],
+    "block_history": [
+      "HIST_BLOCK_FLAT_MEAN",
+      "HIST_BLOCK_FLAT_COUNT",
+      "HIST_BLOCK_FLAT_LAST_MEAN",
+      "HIST_BLOCK_FLAT_RECENCY_MONTHS"
+    ],
+    "area_history": [
+      "HIST_AREA_FLAT_MEAN",
+      "HIST_AREA_FLAT_COUNT",
+      "HIST_AREA_FLAT_LAST_MEAN",
+      "HIST_AREA_FLAT_RECENCY_MONTHS"
+    ]
+  },
+  "joint_groups": {
+    "all_amenities": [
+      "MRT_DIST_KM",
+      "MRT_COUNT_1_0KM",
+      "MALL_DIST_KM",
+      "MALL_COUNT_1_0KM",
+      "PRIMARY_SCHOOL_DIST_KM",
+      "PRIMARY_SCHOOL_COUNT_1_0KM"
+    ],
+    "all_history": [
+      "HIST_BLOCK_FLAT_MEAN",
+      "HIST_BLOCK_FLAT_COUNT",
+      "HIST_BLOCK_FLAT_LAST_MEAN",
+      "HIST_BLOCK_FLAT_RECENCY_MONTHS",
+      "HIST_AREA_FLAT_MEAN",
+      "HIST_AREA_FLAT_COUNT",
+      "HIST_AREA_FLAT_LAST_MEAN",
+      "HIST_AREA_FLAT_RECENCY_MONTHS"
+    ],
+    "time_and_history": [
+      "APPROVAL_MONTH_INDEX",
+      "APPROVAL_MONTH_SIN",
+      "APPROVAL_MONTH_COS",
+      "HIST_BLOCK_FLAT_MEAN",
+      "HIST_BLOCK_FLAT_COUNT",
+      "HIST_BLOCK_FLAT_LAST_MEAN",
+      "HIST_BLOCK_FLAT_RECENCY_MONTHS",
+      "HIST_AREA_FLAT_MEAN",
+      "HIST_AREA_FLAT_COUNT",
+      "HIST_AREA_FLAT_LAST_MEAN",
+      "HIST_AREA_FLAT_RECENCY_MONTHS"
+    ]
+  },
+  "model": "LightGBM",
+  "model_settings": {
+    "n_estimators": 400,
+    "learning_rate": 0.05,
+    "num_leaves": 31,
+    "min_child_samples": 30,
+    "reg_lambda": 3.0,
+    "random_state": 42,
+    "n_jobs": 4,
+    "verbosity": -1
+  },
+  "folds": [
+    [
+      "2022-04",
+      "2023-04",
+      "selection"
+    ],
+    [
+      "2023-04",
+      "2024-04",
+      "selection"
+    ],
+    [
+      "2024-04",
+      "2025-04",
+      "selection"
+    ],
+    [
+      "2023-12",
+      "2025-04",
+      "stress_16m"
+    ]
+  ],
+  "fits_completed": 156,
+  "source_sha256": {
+    "C:\\Users\\Lenovo\\Desktop\\CS5228\\CS5228_project_HDB_price_prediction\\data\\train.csv": "2fe38ce9e0d8a02e9786f066d4a10d575d91f34be1d9111f0142e3f43fbfc8a5",
+    "C:\\Users\\Lenovo\\Desktop\\CS5228\\CS5228_project_HDB_price_prediction\\data\\test.csv": "a2ec03a0afc07c251c72cc0de2e15ac965a3b06291b304aaac53a375115ff4e0",
+    "C:\\Users\\Lenovo\\Desktop\\CS5228\\CS5228_project_HDB_price_prediction\\data\\auxiliary\\sg-hdb-block.csv": "2255ad61ba6895456a39aec81d12583796d717ef88fe102ee9de71b3796fc223",
+    "C:\\Users\\Lenovo\\Desktop\\CS5228\\CS5228_project_HDB_price_prediction\\data\\auxiliary\\sg-mrt-stations.csv": "4757278b94c2d05627a941377d51de60882e3e1477de01758ef37070b716b889",
+    "C:\\Users\\Lenovo\\Desktop\\CS5228\\CS5228_project_HDB_price_prediction\\data\\auxiliary\\sg-shopping-malls.csv": "cce36a0175433f768d209b74e2e5376aad16befe1ad4f1313da0b18ed6d91a3b",
+    "C:\\Users\\Lenovo\\Desktop\\CS5228\\CS5228_project_HDB_price_prediction\\data\\auxiliary\\sg-schools.csv": "9bf28c6a2e5511c5cada178d221dfaac12beb3651425b3b86c37815e35de71cb"
+  },
+  "deletion_delta_definition": "RMSE(retrained without specified columns) minus RMSE(full 27 columns). Positive means removal hurts; negative means removal helped this model.",
+  "interval": {
+    "method": "paired circular 3-month-block resampling",
+    "repeats": 2000,
+    "seed": 42,
+    "meaning": "Exploratory 2.5/97.5 percentiles conditional on fixed predictions, not future-market or training uncertainty; no multiple-comparison adjustment."
+  },
+  "limitations": [
+    "Previously examined labeled months; exploratory model-selection evidence, not independent test.",
+    "Single fixed LightGBM and seed; reoptimizing a reduced model could change its ranking.",
+    "Deleting inputs leaves unremoved correlated and derived inputs available; this is not removal of all raw-source information.",
+    "Deletion contributions are conditional, nonadditive, and noncausal.",
+    "The overlapping stress fold is not included in pooled RMSE.",
+    "Facilities are supplied static snapshots without complete historical opening dates."
+  ],
+  "versions": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.5",
+    "scikit-learn": "1.9.0",
+    "lightgbm": "4.7.0"
+  }
+}

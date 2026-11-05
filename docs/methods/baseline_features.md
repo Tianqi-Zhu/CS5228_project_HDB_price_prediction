@@ -1,8 +1,8 @@
 # 推荐特征工程：19 个静态特征 + 8 个历史特征
 
-每列构造原因与时间可用性已整理为 [27列字典](../../experiment/02_feature_engineering/feature_dictionary.csv)。
-逐列/成组删除后的实际RMSE增量见 [新消融证据](../../experiment/02_feature_engineering/FEATURE_ABLATION.md)，
-主结论和报告写作入口见 [当前项目报告](../../experiment/02_feature_engineering/BASELINE_27_FEATURES.md)。删除影响是条件预测增量，不是因果贡献。
+每列构造原因与时间可用性已整理为 [27列字典](../../experiment/appendix/X01/feature_evidence/feature_dictionary.csv)。
+逐列/成组删除后的实际RMSE增量见 [新消融证据](../../experiment/appendix/X01/feature_evidence/FEATURE_ABLATION.md)，
+主结论和报告写作入口见 [当前项目报告](../../experiment/appendix/X01/feature_evidence/BASELINE_27_FEATURES.md)。删除影响是条件预测增量，不是因果贡献。
 
 当前推荐使用 `analysis.pipeline.features.RentalFeatureEngineer()`，默认策略为
 `compact_history_27`。确定性处理、类别词表和租金历史都由这个入口完成。首轮七组比较

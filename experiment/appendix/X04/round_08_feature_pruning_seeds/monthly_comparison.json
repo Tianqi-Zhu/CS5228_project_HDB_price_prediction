@@ -1,0 +1,71 @@
+{
+  "results": [
+    {
+      "stage": "outer",
+      "name": "ft_replacement",
+      "delta_rmse_sgd": 0.2648129150441605,
+      "month_block_interval_95": [
+        0.08935896763292991,
+        0.4408768438973425
+      ],
+      "months_improved": 3,
+      "months": 12
+    },
+    {
+      "stage": "outer",
+      "name": "ft_seedmean_replacement",
+      "delta_rmse_sgd": 0.24999789129697092,
+      "month_block_interval_95": [
+        -0.11979245452539544,
+        0.6865139374861542
+      ],
+      "months_improved": 4,
+      "months": 12
+    },
+    {
+      "stage": "outer",
+      "name": "bag_full_exploratory",
+      "delta_rmse_sgd": 0.037833627866405095,
+      "month_block_interval_95": [
+        -0.05243012735257935,
+        0.13702236656888545
+      ],
+      "months_improved": 4,
+      "months": 12
+    },
+    {
+      "stage": "june",
+      "name": "ft_replacement",
+      "delta_rmse_sgd": -0.015757792281931415,
+      "month_block_interval_95": [
+        -0.07884164730558041,
+        0.10302855573695666
+      ],
+      "months_improved": 4,
+      "months": 10
+    },
+    {
+      "stage": "june",
+      "name": "ft_seedmean_replacement",
+      "delta_rmse_sgd": -0.19929093755877147,
+      "month_block_interval_95": [
+        -0.3017067253009159,
+        0.006542826337012286
+      ],
+      "months_improved": 5,
+      "months": 10
+    },
+    {
+      "stage": "june",
+      "name": "bag_full_exploratory",
+      "delta_rmse_sgd": 0.09426453668169188,
+      "month_block_interval_95": [
+        -0.038709680200440744,
+        0.19026648221108644
+      ],
+      "months_improved": 5,
+      "months": 10
+    }
+  ],
+  "note": "Descriptive resampling of repeatedly viewed development months; not independent confirmatory confidence intervals."
+}

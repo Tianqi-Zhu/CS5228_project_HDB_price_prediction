@@ -1,0 +1,312 @@
+{
+  "history": {
+    "name": "最优历史特征融合（Best ensemble）",
+    "recommended_role": "正文最终最优方案，必须与单模型对照一起报告",
+    "forecasting_data_scope": "train.csv + supplied auxiliary; no public rental target matching",
+    "annual": {
+      "months": [
+        "2024-04",
+        "2025-03"
+      ],
+      "rows": 35158,
+      "rmse_sgd": 451.1810257119484,
+      "mae_sgd": 329.4084532845934,
+      "bias_sgd": -2.855882786969484
+    },
+    "recent": {
+      "months": [
+        "2024-06",
+        "2025-03"
+      ],
+      "rows": 28995,
+      "rmse_sgd": 442.9024826164729,
+      "mae_sgd": 323.7294925867035,
+      "bias_sgd": -20.666238429920483
+    },
+    "top_level_weights": {
+      "second_wave_ensemble": 0.7626022885963742,
+      "models/ft_transformer": 0.1598721528222929,
+      "models/xgb5_residual": 0.05522390608845628,
+      "models/xgb7": 0.022301652492876602
+    },
+    "leaf_members": [
+      {
+        "name": "second_wave/normalized_market/compact_ratio15_market_last",
+        "experiment_root": "second_wave",
+        "kind": "normalized_market",
+        "artifact_name": "compact_ratio15_market_last",
+        "weight": 0.0998532563398629,
+        "family": "lgb",
+        "features": 22,
+        "iterations": 496,
+        "target": "ratio",
+        "checkpoint_june": "output/models/second_wave/normalized_market/june/compact_ratio15_market_last/model.joblib"
+      },
+      {
+        "name": "second_wave/anniversary/broad_lgb15",
+        "experiment_root": "second_wave",
+        "kind": "anniversary",
+        "artifact_name": "broad_lgb15",
+        "weight": 0.07366165991017223,
+        "family": "lgb",
+        "features": 87,
+        "iterations": 405,
+        "target": "raw",
+        "checkpoint_june": "output/models/second_wave/anniversary/june/broad_lgb15/model.joblib"
+      },
+      {
+        "name": "second_wave/anniversary/broad_lgb63",
+        "experiment_root": "second_wave",
+        "kind": "anniversary",
+        "artifact_name": "broad_lgb63",
+        "weight": 0.07894512057384263,
+        "family": "lgb",
+        "features": 87,
+        "iterations": 95,
+        "target": "raw",
+        "checkpoint_june": "output/models/second_wave/anniversary/june/broad_lgb63/model.joblib"
+      },
+      {
+        "name": "second_wave/anniversary/exact_lgb15",
+        "experiment_root": "second_wave",
+        "kind": "anniversary",
+        "artifact_name": "exact_lgb15",
+        "weight": 0.13201408844378806,
+        "family": "lgb",
+        "features": 62,
+        "iterations": 401,
+        "target": "raw",
+        "checkpoint_june": "output/models/second_wave/anniversary/june/exact_lgb15/model.joblib"
+      },
+      {
+        "name": "second_wave/anniversary/exact_lgb63",
+        "experiment_root": "second_wave",
+        "kind": "anniversary",
+        "artifact_name": "exact_lgb63",
+        "weight": 0.00501887561949203,
+        "family": "lgb",
+        "features": 62,
+        "iterations": 213,
+        "target": "raw",
+        "checkpoint_june": "output/models/second_wave/anniversary/june/exact_lgb63/model.joblib"
+      },
+      {
+        "name": "second_wave/anniversary/window_cat6",
+        "experiment_root": "second_wave",
+        "kind": "anniversary",
+        "artifact_name": "window_cat6",
+        "weight": 0.3155610738459843,
+        "family": "cat",
+        "features": 62,
+        "iterations": 833,
+        "target": "raw",
+        "checkpoint_june": "output/models/second_wave/anniversary/june/window_cat6/model.joblib"
+      },
+      {
+        "name": "second_wave/anniversary/window_lgb63",
+        "experiment_root": "second_wave",
+        "kind": "anniversary",
+        "artifact_name": "window_lgb63",
+        "weight": 0.05754821386323214,
+        "family": "lgb",
+        "features": 62,
+        "iterations": 165,
+        "target": "raw",
+        "checkpoint_june": "output/models/second_wave/anniversary/june/window_lgb63/model.joblib"
+      },
+      {
+        "name": "third_wave/models/ft_transformer",
+        "experiment_root": "third_wave",
+        "kind": "models",
+        "artifact_name": "ft_transformer",
+        "weight": 0.1598721528222929,
+        "family": "ft_transformer",
+        "features": 67,
+        "iterations": 3,
+        "target": "residual",
+        "checkpoint_june": "output/models/third_wave/models/june/ft_transformer/model.joblib"
+      },
+      {
+        "name": "third_wave/models/xgb5_residual",
+        "experiment_root": "third_wave",
+        "kind": "models",
+        "artifact_name": "xgb5_residual",
+        "weight": 0.05522390608845628,
+        "family": "xgb",
+        "features": 67,
+        "iterations": 315,
+        "target": "residual",
+        "checkpoint_june": "output/models/third_wave/models/june/xgb5_residual/model.joblib"
+      },
+      {
+        "name": "third_wave/models/xgb7",
+        "experiment_root": "third_wave",
+        "kind": "models",
+        "artifact_name": "xgb7",
+        "weight": 0.022301652492876602,
+        "family": "xgb",
+        "features": 62,
+        "iterations": 225,
+        "target": "raw",
+        "checkpoint_june": "output/models/third_wave/models/june/xgb7/model.joblib"
+      }
+    ],
+    "verification": [
+      {
+        "stage": "outer",
+        "rows": 35158,
+        "rmse_sgd": 451.1810257119484,
+        "mae_sgd": 329.4084532845934,
+        "bias_sgd": -2.8558827869694454,
+        "prediction_path": "output/models/third_wave/ablations/outer/models/predictions.csv",
+        "max_reconstruction_difference_sgd": 1.8189894035458565e-12
+      },
+      {
+        "stage": "june",
+        "rows": 28995,
+        "rmse_sgd": 442.9024826164729,
+        "mae_sgd": 323.7294925867035,
+        "bias_sgd": -20.66623842992044,
+        "prediction_path": "output/models/third_wave/ablations/june/models/predictions.csv",
+        "max_reconstruction_difference_sgd": 2.2737367544323206e-12
+      }
+    ],
+    "selection_note": "Weights were selected on earlier chronological predictions, but keeping only the new-model group was selected after viewing later development results. This is the lowest development score, not an independent test score.",
+    "feature_note": "The base blend combines normalized market rent and exact/window/broad 12/24/36-month cohorts. FT and residual XGBoost add past-level shrinkage features. Member predictions are all reconstructed to SGD rent before convex averaging."
+  },
+  "macro": {
+    "previous_best": 0.8673768172467663,
+    "current_cat8": 0.13262318275323373
+  },
+  "structure": {
+    "spec": {
+      "name": "followup_support_pair_centered_0.003",
+      "objective": "month_centered",
+      "ridge": 0.003,
+      "group_ridge": 0.003,
+      "gate": "support_pair",
+      "update": true
+    },
+    "global_weights": [
+      0.0654095769863683,
+      0.051753991595535453,
+      0.0,
+      0.1537940100049724,
+      0.0893846737394413,
+      0.19494214364338694,
+      0.03248719912082061,
+      0.05156988738117565,
+      0.10914029340305575,
+      0.07543729204998177,
+      0.09950892392798381,
+      0.07657200814727799
+    ],
+    "group_weights": {
+      "False|False": {
+        "weights": [
+          0.14102497758046195,
+          0.0,
+          0.0,
+          0.03405206035485771,
+          7.915407656657546e-21,
+          0.089148287139288,
+          0.07992149208330893,
+          0.0697097269772539,
+          0.20495472821666597,
+          0.22976698663836634,
+          0.0,
+          0.15142174100979733
+        ],
+        "rows": 9320
+      },
+      "False|True": {
+        "weights": [
+          0.17273919441519642,
+          6.850241491368885e-20,
+          0.03790756288450608,
+          0.08279126802888113,
+          0.1087436027858859,
+          0.20792269213698547,
+          0.0,
+          0.13455754533943892,
+          0.11542796652318611,
+          0.07405876920417966,
+          0.05779263720479728,
+          0.00805876147694302
+        ],
+        "rows": 5403
+      },
+      "True|False": {
+        "weights": [
+          0.0031483750999521513,
+          0.09869492939396048,
+          0.0,
+          0.1217523832566616,
+          0.09379552273807998,
+          0.12330117731477949,
+          0.0,
+          0.09834663969786711,
+          0.13066261459762377,
+          0.10776479191958171,
+          0.12210666624081658,
+          0.10042689974067705
+        ],
+        "rows": 15191
+      },
+      "True|True": {
+        "weights": [
+          0.0326920174507253,
+          0.0,
+          0.03598901562902698,
+          0.19720259964204853,
+          0.15995854909155477,
+          0.13887507821744352,
+          0.03407584387210582,
+          0.055180880503742265,
+          0.08350172026234415,
+          0.04210655087124225,
+          0.08891377886731688,
+          0.13150396559244953
+        ],
+        "rows": 23221
+      }
+    },
+    "threshold": null,
+    "names": [
+      "second_wave/normalized_market/compact_ratio15_market_last",
+      "second_wave/anniversary/broad_lgb15",
+      "second_wave/anniversary/broad_lgb63",
+      "second_wave/anniversary/exact_lgb15",
+      "second_wave/anniversary/exact_lgb63",
+      "second_wave/anniversary/window_cat6",
+      "second_wave/anniversary/window_lgb63",
+      "third_wave/models/ft_transformer",
+      "third_wave/models/xgb5_residual",
+      "third_wave/models/xgb7",
+      "ft_no36_seedmean",
+      "tenth/ft_plr_128_3"
+    ],
+    "fit_rows": 53135,
+    "fit_months": [
+      "2023-10",
+      "2023-11",
+      "2023-12",
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08",
+      "2024-09",
+      "2024-10",
+      "2024-11",
+      "2024-12",
+      "2025-01",
+      "2025-02",
+      "2025-03"
+    ],
+    "fit_last_month": "2025-03"
+  }
+}

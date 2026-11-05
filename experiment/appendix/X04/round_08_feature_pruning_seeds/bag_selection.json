@@ -1,0 +1,30 @@
+{
+  "selected": {
+    "replacement_fraction": 0.0,
+    "rmse_sgd": 522.5463200985699,
+    "mae_sgd": 399.34407309757563,
+    "bias_sgd": 18.78236941186637
+  },
+  "candidates": [
+    {
+      "replacement_fraction": 0.0,
+      "rmse_sgd": 522.5463200985699,
+      "mae_sgd": 399.34407309757563,
+      "bias_sgd": 18.78236941186637
+    },
+    {
+      "replacement_fraction": 0.5,
+      "rmse_sgd": 522.5527518577181,
+      "mae_sgd": 399.30307035177873,
+      "bias_sgd": 18.927996609840147
+    },
+    {
+      "replacement_fraction": 1.0,
+      "rmse_sgd": 522.5845443132876,
+      "mae_sgd": 399.2856338198682,
+      "bias_sgd": 19.073623807813924
+    }
+  ],
+  "cat_leaf_weight": 0.3155610738459843,
+  "locked_before_later_fits": true
+}

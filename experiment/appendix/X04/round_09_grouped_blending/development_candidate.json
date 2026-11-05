@@ -1,0 +1,16 @@
+{
+  "name": "followup_support_pair_centered_0.003",
+  "spec": {
+    "name": "followup_support_pair_centered_0.003",
+    "objective": "month_centered",
+    "ridge": 0.003,
+    "group_ridge": 0.003,
+    "gate": "support_pair",
+    "update": true
+  },
+  "recent": 441.9590824233403,
+  "annual": 450.8650479339543,
+  "earlier_selected": "support24_mse",
+  "earlier_selected_recent": 442.7381270768977,
+  "selection_basis": "Lowest later development RMSE among 31 recipes; post-hoc exploration, not a prelocked independent test."
+}

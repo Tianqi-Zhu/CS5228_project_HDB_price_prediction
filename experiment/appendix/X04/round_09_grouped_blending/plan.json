@@ -1,0 +1,188 @@
+{
+  "specs": [
+    {
+      "name": "global_mse_0.0003",
+      "objective": "mse",
+      "ridge": 0.0003,
+      "gate": "none",
+      "update": true
+    },
+    {
+      "name": "frozen_mse_0.0003",
+      "objective": "mse",
+      "ridge": 0.0003,
+      "gate": "none",
+      "update": false
+    },
+    {
+      "name": "global_mse_0.003",
+      "objective": "mse",
+      "ridge": 0.003,
+      "gate": "none",
+      "update": true
+    },
+    {
+      "name": "frozen_mse_0.003",
+      "objective": "mse",
+      "ridge": 0.003,
+      "gate": "none",
+      "update": false
+    },
+    {
+      "name": "global_mse_0.03",
+      "objective": "mse",
+      "ridge": 0.03,
+      "gate": "none",
+      "update": true
+    },
+    {
+      "name": "frozen_mse_0.03",
+      "objective": "mse",
+      "ridge": 0.03,
+      "gate": "none",
+      "update": false
+    },
+    {
+      "name": "global_month_centered_0.0003",
+      "objective": "month_centered",
+      "ridge": 0.0003,
+      "gate": "none",
+      "update": true
+    },
+    {
+      "name": "frozen_month_centered_0.0003",
+      "objective": "month_centered",
+      "ridge": 0.0003,
+      "gate": "none",
+      "update": false
+    },
+    {
+      "name": "global_month_centered_0.003",
+      "objective": "month_centered",
+      "ridge": 0.003,
+      "gate": "none",
+      "update": true
+    },
+    {
+      "name": "frozen_month_centered_0.003",
+      "objective": "month_centered",
+      "ridge": 0.003,
+      "gate": "none",
+      "update": false
+    },
+    {
+      "name": "global_month_centered_0.03",
+      "objective": "month_centered",
+      "ridge": 0.03,
+      "gate": "none",
+      "update": true
+    },
+    {
+      "name": "frozen_month_centered_0.03",
+      "objective": "month_centered",
+      "ridge": 0.03,
+      "gate": "none",
+      "update": false
+    },
+    {
+      "name": "support24_mse",
+      "objective": "mse",
+      "ridge": 0.003,
+      "group_ridge": 0.03,
+      "gate": "support24",
+      "update": true
+    },
+    {
+      "name": "support24_month_centered",
+      "objective": "month_centered",
+      "ridge": 0.003,
+      "group_ridge": 0.03,
+      "gate": "support24",
+      "update": true
+    },
+    {
+      "name": "support36_mse",
+      "objective": "mse",
+      "ridge": 0.003,
+      "group_ridge": 0.03,
+      "gate": "support36",
+      "update": true
+    },
+    {
+      "name": "support36_month_centered",
+      "objective": "month_centered",
+      "ridge": 0.003,
+      "group_ridge": 0.03,
+      "gate": "support36",
+      "update": true
+    },
+    {
+      "name": "type_mse",
+      "objective": "mse",
+      "ridge": 0.003,
+      "group_ridge": 0.03,
+      "gate": "type",
+      "update": true
+    },
+    {
+      "name": "type_month_centered",
+      "objective": "month_centered",
+      "ridge": 0.003,
+      "group_ridge": 0.03,
+      "gate": "type",
+      "update": true
+    },
+    {
+      "name": "disagreement_mse",
+      "objective": "mse",
+      "ridge": 0.003,
+      "group_ridge": 0.03,
+      "gate": "disagreement",
+      "update": true
+    },
+    {
+      "name": "disagreement_month_centered",
+      "objective": "month_centered",
+      "ridge": 0.003,
+      "group_ridge": 0.03,
+      "gate": "disagreement",
+      "update": true
+    },
+    {
+      "name": "signed_0.003",
+      "objective": "mse",
+      "ridge": 0.003,
+      "gate": "none",
+      "update": true,
+      "signed": true
+    },
+    {
+      "name": "signed_0.03",
+      "objective": "mse",
+      "ridge": 0.03,
+      "gate": "none",
+      "update": true,
+      "signed": true
+    }
+  ],
+  "component_count": 11,
+  "prior": "Original ten-leaf weights with FT replaced by no36 four-seed mean.",
+  "selection_train": [
+    "2023-10",
+    "2024-01"
+  ],
+  "selection_validation": [
+    "2024-02",
+    "2024-03"
+  ],
+  "later_fit": "Outer uses pre-April screen forecasts; June optionally adds April/May outer forecasts with equal origin mass.",
+  "families": [
+    "convex anchored weights",
+    "monthly centered error covariance",
+    "support/type/disagreement gates",
+    "bounded signed weights"
+  ],
+  "no_new_base_model_fit": true,
+  "no_query_label_fitting": true,
+  "note": "All base models, windows, and component selection were reused development evidence. Later scores are not independent tests."
+}

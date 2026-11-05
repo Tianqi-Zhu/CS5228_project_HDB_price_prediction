@@ -1,0 +1,34 @@
+{
+  "checked_date": "2026-10-24",
+  "source_audit": "results.json",
+  "purpose": "Compare observed training reconstruction errors with the test-key-weighted public-candidate error scale. This is not a measured Kaggle test score.",
+  "matching_keys": ["month", "town", "block", "street", "flat_type"],
+  "assumption": "Conditional on a competition row's matching key, its unknown rent is a uniformly selected record from the corresponding public group, counting duplicate rents with their observed multiplicity.",
+  "formula": "sqrt(mean_over_competition_rows(public_group_population_variance))",
+  "quantity": "Square root of expected MSE under the stated assumption; not the expectation of sample RMSE, and not a confidence interval.",
+  "train": {
+    "rows": 150000,
+    "months": ["2021-01", "2025-03"],
+    "ambiguous_fraction": 0.2704066666666667,
+    "sqrt_expected_mse_sgd": 179.95031892416353,
+    "observed_public_mean_reconstruction_rmse_sgd": 179.94717448267474
+  },
+  "latest_known_label_window": {
+    "months": ["2024-04", "2025-03"],
+    "rows": 35158,
+    "observed_public_mean_reconstruction_rmse_sgd": 181.2533674382674
+  },
+  "test": {
+    "rows": 50000,
+    "months": ["2025-03", "2026-07"],
+    "ambiguous_fraction": 0.27026,
+    "sqrt_expected_mse_sgd": 173.41218572698983,
+    "actual_competition_test_rmse": null
+  },
+  "limitations": [
+    "No competition test labels were accessed, recovered into a labeled test file, or evaluated.",
+    "The public leaderboard scores a subset of test rows; the 173.41 calculation weights all 50000 test keys.",
+    "The uniform-candidate assumption can fail if competition rows were selected nonuniformly within matching groups.",
+    "No claim is made about any team's implementation or its compliance with competition rules."
+  ]
+}
