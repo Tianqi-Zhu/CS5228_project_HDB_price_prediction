@@ -39,7 +39,11 @@ def main():
  env=os.environ.copy();env.update(OMP_NUM_THREADS='2',OPENBLAS_NUM_THREADS='2',MKL_NUM_THREADS='2')
  if a.mode=='prepare':
   data=runtime/'data'
-  if not data.exists():data.symlink_to(ROOT/'data',target_is_directory=True)
+  if not data.exists():
+   try:data.symlink_to(ROOT/'data',target_is_directory=True)
+   except OSError:
+    import shutil
+    shutil.copytree(ROOT/'data',data)
   subprocess.run([a.python,str(BASE/'builders'/f'{a.stage}.py')],cwd=ROOT,env=env,check=True);return
  module='cluster.concat_v21.train' if a.mode=='select' else 'cluster.concat_final_v22.train'
  args=[sys.executable,'-u','-m',module,'--device',a.device]

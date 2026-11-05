@@ -1,0 +1,12 @@
+{
+  "verified": [
+    {
+      "file": "submissions/kaggle_structure_blend.csv",
+      "rows": 50000,
+      "kaggle_score": 415.37529,
+      "sha256": "386a12fac6a8e9e94892b338c29f38b7efd842811517d4aa487126922a6b7e92"
+    }
+  ],
+  "input_hashes_valid": true,
+  "source_files_checked": 36
+}

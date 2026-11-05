@@ -1,13 +1,18 @@
-# M07 实验审查卡
+# M07 F2 identity and available TabPFN background
 
-| 字段 | 内容 |
+| Item | Status |
 |---|---|
-| 归属 | main |
-| 目的 | F2外部生成链，本次两来源不包含 |
-| 归档状态 | pending（已有归档不表示本轮新训练） |
-| 完整要求/对照/验收 | docs/planning/main-appendix-experiment-plan.md中同ID要求卡 |
-| 既有证据 | 本目录内文件；文件来源/哈希见review/manifest.json；无文件则尚未实施 |
-| 执行状态 | 历史证据按本卡归档；本轮实际运行范围另见 review/checks/push-validation/summary.json，不代表重跑全部历史搜索 |
-| 复用限制 | 不同窗口、schema、宏观可用性、选择阶段分开比较；负结果不删除 |
+| Requirement | See [requirement cards](../../../docs/planning/main-appendix-experiment-plan.md) |
+| Current execution | partial; actual F2 generator missing |
+| Scientific scope | Retrospective development; original data and predictions preserved |
+| Implementation | `python -m analysis.main planned` |
 
-Available [TabPFN background](tabpfn/) is now archived. See docs/planning/tabpfn-branch-split.md. F2 generator/predictions remain pending.
+## New evidence
+
+- [f2_manifest.json](evaluation/f2_manifest.json)
+
+## Existing evidence
+
+- [tabpfn](tabpfn/)
+
+F2 generator/schema/member/CSV inputs remain pending. Available background and a screenshot score cannot complete this requirement.

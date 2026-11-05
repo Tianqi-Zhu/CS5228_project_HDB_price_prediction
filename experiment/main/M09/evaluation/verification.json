@@ -1,0 +1,37 @@
+{
+  "F1": {
+    "status": "passed",
+    "checks": [
+      {
+        "command": [
+          "python",
+          "reproduction/f1/verify.py"
+        ],
+        "returncode": 0
+      },
+      {
+        "command": [
+          "python",
+          "reproduction/f1/reproduce.py"
+        ],
+        "returncode": 0
+      }
+    ],
+    "replay": {
+      "reproduced": [
+        {
+          "file": "output/review_f1_reproduced/kaggle_structure_blend.csv",
+          "rows": 50000,
+          "max_abs_difference": 0.0
+        }
+      ],
+      "python": "3.11.15",
+      "numpy": "2.4.6",
+      "executable": "D:\\miniconda3\\envs\\cs5228\\python.exe",
+      "mode": "frozen-model-forecast replay; no training or network"
+    },
+    "full_training_this_run": false,
+    "previous_full_training_evidence": "review/checks/push-validation/training_run.json"
+  },
+  "F2": "no independent reconstruction possible without the M07 inputs"
+}

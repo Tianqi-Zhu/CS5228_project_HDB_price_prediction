@@ -1,0 +1,80 @@
+[
+  {
+    "check": "unit-tests",
+    "returncode": 0,
+    "seconds": 14.13687850000133,
+    "command": [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-v"
+    ]
+  },
+  {
+    "check": "F1-verify",
+    "returncode": 0,
+    "seconds": 0.19532410000101663,
+    "command": [
+      "python",
+      "reproduction/f1/verify.py"
+    ]
+  },
+  {
+    "check": "F1-cpu",
+    "returncode": 0,
+    "seconds": 0.6985237000044435,
+    "command": [
+      "python",
+      "reproduction/f1/reproduce.py"
+    ]
+  },
+  {
+    "check": "concat-verify",
+    "returncode": 0,
+    "seconds": 0.2575746000002255,
+    "command": [
+      "python",
+      "-m",
+      "analysis.main",
+      "concat",
+      "verify"
+    ]
+  },
+  {
+    "check": "concat-predict",
+    "returncode": 0,
+    "seconds": 80.82868009999947,
+    "command": [
+      "python",
+      "-m",
+      "analysis.main",
+      "concat",
+      "predict",
+      "--device",
+      "cpu"
+    ]
+  },
+  {
+    "check": "tabpfn-verify",
+    "returncode": 0,
+    "seconds": 0.3348056999966502,
+    "command": [
+      "python",
+      "review_tabpfn.py",
+      "verify"
+    ]
+  },
+  {
+    "check": "tabpfn-metrics",
+    "returncode": 0,
+    "seconds": 0.3975313000046299,
+    "command": [
+      "python",
+      "review_tabpfn.py",
+      "metrics"
+    ]
+  }
+]

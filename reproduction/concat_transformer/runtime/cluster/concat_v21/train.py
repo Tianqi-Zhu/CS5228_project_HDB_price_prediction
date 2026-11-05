@@ -74,7 +74,7 @@ def fingerprint(*objects):
     return h.hexdigest()
 
 def source_hashes():
-    paths=['cluster/concat_v21/train.py','experiments/concat_capacity_v21/model.py','experiments/feature_transformer_v4/models.py','experiments/feature_transformer_v4/macro_v4.py','experiments/training_schedule_v15.py']
+    paths=['cluster/concat_v21/train.py','cluster/file_lock.py','experiments/concat_capacity_v21/model.py','experiments/feature_transformer_v4/models.py','experiments/feature_transformer_v4/macro_v4.py','experiments/training_schedule_v15.py']
     return {p:hashlib.sha256((ROOT/p).read_bytes()).hexdigest() for p in paths}
 
 def train_update(model, optimizer, scheduler, batch, target):
@@ -151,7 +151,8 @@ def train_candidate(lr, fit, val, names, cards, windows, identity):
 
 def main():
     global OUT,CAPACITY,DEVICE,DEADLINE,MAX_EPOCHS,STOP
-    import fcntl,csv,signal,platform
+    import csv,signal,platform
+    from cluster import file_lock as fcntl
     from types import SimpleNamespace
     ap=argparse.ArgumentParser();ap.add_argument('--candidate',choices=['w128_d3','w128_d6'],required=True);ap.add_argument('--device',choices=['cpu','cuda'],default='cuda');ap.add_argument('--smoke',action='store_true');ap.add_argument('--stop-after-seconds',type=int,default=9000);args=ap.parse_args()
     if args.device=='cuda' and not torch.cuda.is_available():raise RuntimeError('CUDA GPU unavailable; submit through Slurm GPU partition, not login-node training')

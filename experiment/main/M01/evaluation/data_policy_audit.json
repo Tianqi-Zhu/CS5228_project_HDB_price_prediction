@@ -1,0 +1,59 @@
+{
+  "splits": [
+    {
+      "split": "train",
+      "rows": 150000,
+      "raw_duplicate_rows": 425,
+      "missing_cells": 0,
+      "constant_columns": [
+        "FURNISHED",
+        "FEE"
+      ],
+      "negative_raw_age": 1,
+      "joined_rows": 150000,
+      "rows_deleted": 0,
+      "date_min": "2021-01",
+      "date_max": "2025-03",
+      "model_age_missing": 1,
+      "missing_building_coordinates": 0,
+      "canonical_flat_types": {
+        "4-room": 54079,
+        "3-room": 49024,
+        "5-room": 35523,
+        "executive": 8234,
+        "2-room": 3098,
+        "1-room": 42
+      }
+    },
+    {
+      "split": "test",
+      "rows": 50000,
+      "raw_duplicate_rows": 5508,
+      "missing_cells": 0,
+      "constant_columns": [
+        "FURNISHED",
+        "FEE"
+      ],
+      "negative_raw_age": 0,
+      "joined_rows": 50000,
+      "rows_deleted": 0,
+      "date_min": "2025-03",
+      "date_max": "2026-07",
+      "model_age_missing": 0,
+      "missing_building_coordinates": 0,
+      "canonical_flat_types": {
+        "4-room": 18045,
+        "3-room": 16425,
+        "5-room": 11530,
+        "executive": 2552,
+        "2-room": 1436,
+        "1-room": 12
+      }
+    }
+  ],
+  "test_target_absent": true,
+  "overlapping_test_train_month_rows": 380,
+  "preprocessing_policy": "Keep all rows and duplicates; no label-based deletion. Negative age is missing. Categories fit on fitting rows; unseen values remain unknown.",
+  "facility_time_policy": "Supplied static facility snapshots, including STATUS filtering; not certified historical openings. No strict historical availability claim.",
+  "strict_historical_facility_evaluation": "pending; X08 requires verified opening dates and matched refits"
+}

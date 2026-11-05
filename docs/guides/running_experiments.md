@@ -38,3 +38,9 @@ python -m analysis.main common-models --device cuda --output-dir output/review_c
 ## 独立concat Transformer
 
 `python -m analysis.main concat verify`核对归档；`python -m analysis.main concat predict --device cpu`加载最终权重重放。原始数据重建、验证训练和全量重训命令见[复现说明](../../reproduction/concat_transformer/README.md)。只有显式select/refit才启动训练。
+
+## main requirement-card evaluation
+
+`python -m analysis.main planned` audits the frozen Y/J predictions and generates per-card diagnostics without training. See [execution status](../planning/main-execution-status.md). Outputs go to a new content-addressed directory under `output/planning_validation/main/`; existing runs are never overwritten. `--output-dir output/planning_validation/recheck` selects another directory.
+
+`python -m analysis.validation.repository_audit` checks all shipped hashes, every registered Python file syntax and active navigation. Model runtime checks and CPU replays are separately logged in `review/checks/main-final/`.

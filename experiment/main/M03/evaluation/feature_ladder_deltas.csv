@@ -1,0 +1,13 @@
+task,window,candidate,control,delta_rmse_candidate_minus_control,delta_mae,same_rows_and_within_family_settings
+M03,Y,lgb_f27,lgb_f19,-13.8078863896,-20.8664414261,True
+M03,Y,lgb_f47,lgb_f27,-0.828676327992,2.24572122648,True
+M03,Y,lgb_f62,lgb_f47,-9.12169327719,-9.46653505652,True
+M03,Y,cat_f27,cat_f19,-12.8991425076,-17.8985442731,True
+M03,Y,cat_f47,cat_f27,-0.446136688191,2.10694784908,True
+M03,Y,cat_f62,cat_f47,-10.8117765176,-9.63303357813,True
+M03,J,lgb_f27,lgb_f19,-15.0282403209,-20.37461821,True
+M03,J,lgb_f47,lgb_f27,-0.727960413561,2.36341423904,True
+M03,J,lgb_f62,lgb_f47,-11.2567894962,-10.5630361483,True
+M03,J,cat_f27,cat_f19,-14.5133331076,-17.5649375213,True
+M03,J,cat_f47,cat_f27,-0.538860524722,2.08948871086,True
+M03,J,cat_f62,cat_f47,-11.8962563507,-12.0984550185,True

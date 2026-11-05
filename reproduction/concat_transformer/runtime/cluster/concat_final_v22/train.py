@@ -1,5 +1,6 @@
 """Fresh all-label fixed-epoch refit; no validation targets or early stopping."""
-import argparse,csv,fcntl,hashlib,json,math,os,platform,random,signal,time
+import argparse,csv,hashlib,json,math,os,platform,random,signal,time
+from cluster import file_lock as fcntl
 from pathlib import Path
 from types import SimpleNamespace
 import numpy as np,torch
@@ -33,7 +34,7 @@ def main():
    fit=SimpleNamespace(**{k:v[:32] for k,v in vars(fit).items()});query=SimpleNamespace(**{k:v[:16] for k,v in vars(query).items()})
   epochs=2 if a.smoke else 8
   config={'width':128,'depth':6,'heads':4,'ff_multiplier':2,'dropout':.05,'batch':512,'lr':3e-4,'weight_decay':1e-4,'seed':42,'fixed_epochs':epochs,'schedule_epochs':40,'warmup_epochs':1,'validation_rows':0,'early_stopping':False,'smoke':a.smoke,'device_type':device.type,'precision':'float32,TF32off','test_target_used':False,'final_refit':True}
-  paths=['cluster/concat_final_v22/train.py','cluster/concat_v21/train.py','experiments/concat_capacity_v21/model.py','experiments/feature_transformer_v4/models.py','experiments/feature_transformer_v4/macro_v4.py','experiments/training_schedule_v15.py']
+  paths=['cluster/concat_final_v22/train.py','cluster/concat_v21/train.py','cluster/file_lock.py','experiments/concat_capacity_v21/model.py','experiments/feature_transformer_v4/models.py','experiments/feature_transformer_v4/macro_v4.py','experiments/training_schedule_v15.py']
   hashes={p:hashlib.sha256((ROOT/p).read_bytes()).hexdigest() for p in paths};identity=core.fingerprint(meta,config,hashes)
   core.atomic_json({'identity':identity,'configuration':config,'metadata':meta,'source_hashes':hashes,'environment':{'torch':str(torch.__version__),'python':platform.python_version(),'cuda':torch.version.cuda,'gpu':torch.cuda.get_device_name() if device.type=='cuda' else None}},out/'protocol.json')
   core.seed();model=make_model(meta['numeric_names'],meta['cardinalities'],128,6).to(device)

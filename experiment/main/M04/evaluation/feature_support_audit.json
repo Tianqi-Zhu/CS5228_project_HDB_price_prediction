@@ -1,0 +1,26 @@
+{
+  "windows": {
+    "Y": {
+      "query_rows": 35158,
+      "fitting_rows": 114842,
+      "history_source_last_month": "2024-03",
+      "query_rent_removed_before_feature_build": true,
+      "support24_rows": 25168,
+      "support36_rows": 22348,
+      "support_matches_independent_rebuild": true
+    },
+    "J": {
+      "query_rows": 28995,
+      "fitting_rows": 121005,
+      "history_source_last_month": "2024-05",
+      "query_rent_removed_before_feature_build": true,
+      "support24_rows": 20669,
+      "support36_rows": 18313,
+      "support_matches_independent_rebuild": true
+    }
+  },
+  "support_definition": "ANN_BLOCK_24_R1_N>0 and ANN_BLOCK_36_R1_N>0, from pre-origin fitting records only",
+  "group_definition": "Exact equality of actual ordered 62-feature query inputs after each learner's preprocessing; evaluated only for the 62-feature controls, never assumed to be the complete F1 input.",
+  "group_accounting_passed": true,
+  "rent_bands_are_posthoc_diagnostics_not_deployment_features": true
+}

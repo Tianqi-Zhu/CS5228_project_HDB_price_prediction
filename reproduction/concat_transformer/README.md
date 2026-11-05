@@ -31,3 +31,7 @@ The small frozen bank permits final-model replay without sklearn or rebuilding a
 Training outputs/checkpoints go to ignored runtime/reports; feature caches go to shared ignored.cache/output. Final refit writes runtime/reports/concat_final_v22/refit_w128_d6/submission.csv. Model replay writes ignored output/concat_transformer. Original submitted CSV/weights are immutable. Models and frozen artifacts are force-tracked intentionally, unlike regenerable caches.
 
 Prediction replay across CPU/GPU may vary in floating-point arithmetic; tolerance0.10SGD absolute+1e-4relative is an integrity check, not a new score claim. The exact historical submitted file remains artifacts/submission.csv. Complete development and final-refit provenance is in protocol/report JSONs. Do not treat test predictions or training loss as test RMSE. Longer test horizons remain extrapolation.
+
+## Local portability validation
+
+The runner now uses a Windows/POSIX exclusive lock, with data-copy fallback when Windows symlink creation is unavailable. New training fingerprints include the lock source. Frozen model/bank/submission bytes remain unchanged; see portability.json. A bounded synthetic/small-data smoke check is distinct from the original full-data 8-epoch refit.

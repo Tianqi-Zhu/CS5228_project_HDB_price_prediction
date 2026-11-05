@@ -1,0 +1,5 @@
+window,model,exact_input_groups,repeated_groups,rows_in_repeated_groups,repeated_groups_with_label_conflict,within_validation_group_sse,within_validation_group_rmse,maximum_prediction_spread_within_equal_input,interpretation
+Y,lgb_f62,29820,4270,9608,4024,1116689381.6,178.219045091,0,"Descriptive conditional dispersion on this validation set, not a global error floor or F1 input-equivalence claim."
+Y,cat_f62,29820,4270,9608,4024,1116689381.6,178.219045091,0,"Descriptive conditional dispersion on this validation set, not a global error floor or F1 input-equivalence claim."
+J,lgb_f62,24647,3488,7836,3281,887457626.929,174.94931909,0,"Descriptive conditional dispersion on this validation set, not a global error floor or F1 input-equivalence claim."
+J,cat_f62,24647,3488,7836,3281,887457626.929,174.94931909,0,"Descriptive conditional dispersion on this validation set, not a global error floor or F1 input-equivalence claim."

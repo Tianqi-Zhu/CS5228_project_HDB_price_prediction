@@ -17,5 +17,5 @@
 python -m analysis.main common-models
 ```
 
-首次运行需先完成原`model-search`的内部试验；命令和深度依赖见
-[模型说明](../../docs/methods/model_comparison.md)。完整分析见 [当前项目报告](../02_feature_engineering/BASELINE_27_FEATURES.md)。
+原内层试验的固定记录已保存在 `../selection_records/`，无需重新搜索；命令和深度依赖见
+[模型说明](../../../../docs/methods/model_comparison.md)。完整分析见 [当前项目报告](../../M03/README.md)。

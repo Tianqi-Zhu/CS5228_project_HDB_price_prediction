@@ -1,0 +1,39 @@
+{
+  "final_refit_performed": false,
+  "fixed_epochs": 2,
+  "history": [
+    {
+      "epoch": 1,
+      "seconds": 0.6100000000005821,
+      "supervised_rows": 32,
+      "training_mse_ksgd": 0.8285346031188965
+    },
+    {
+      "epoch": 2,
+      "seconds": 0.35899999999674037,
+      "supervised_rows": 32,
+      "training_mse_ksgd": 0.48055920004844666
+    }
+  ],
+  "identity": "c60bac30e6f08230dbcb0db4a3d6919a8d8bff587c79a0a1ddbe5708cd84e0a8",
+  "previous_selection_is_not_test_score": true,
+  "previous_selection_rmse": 459.2188909646949,
+  "reload_verified": true,
+  "smoke": true,
+  "status": "completed",
+  "submission_columns": [
+    "Id",
+    "Predicted"
+  ],
+  "submission_sha256": "a18c7bc3066d434b84ac8e8f9413e9b527a318164e8584084294cc7af7dca0a3",
+  "summary": {
+    "max": 3082.5666988384537,
+    "mean": 2169.659149213757,
+    "min": 1101.527913294213,
+    "negative_count": 0,
+    "rows": 16
+  },
+  "test_rmse": null,
+  "test_rows": 16,
+  "train_rows": 32
+}

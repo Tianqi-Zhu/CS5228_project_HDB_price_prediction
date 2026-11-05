@@ -1,0 +1,385 @@
+{
+  "raw_data": {
+    "data/train.csv": "2fe38ce9e0d8a02e9786f066d4a10d575d91f34be1d9111f0142e3f43fbfc8a5",
+    "data/test.csv": "a2ec03a0afc07c251c72cc0de2e15ac965a3b06291b304aaac53a375115ff4e0",
+    "data/example-submission.csv": "009e05582492d494df615e9526421023c82d070be029d118dc5ff2766810ecfc",
+    "data/auxiliary/sg-coe-prices.csv": "c8f934ec6e82dad633afa34e466414fd7b572c580fa28dd6c866e76e4be533e0",
+    "data/auxiliary/sg-hdb-block.csv": "2255ad61ba6895456a39aec81d12583796d717ef88fe102ee9de71b3796fc223",
+    "data/auxiliary/sg-mrt-stations.csv": "4757278b94c2d05627a941377d51de60882e3e1477de01758ef37070b716b889",
+    "data/auxiliary/sg-schools.csv": "9bf28c6a2e5511c5cada178d221dfaac12beb3651425b3b86c37815e35de71cb",
+    "data/auxiliary/sg-shopping-malls.csv": "cce36a0175433f768d209b74e2e5376aad16befe1ad4f1313da0b18ed6d91a3b",
+    "data/auxiliary/sg-stock-prices.csv": "e03802bedbebedab27caafb6755ce055f1654cc17b3fc5fc6e3e7ee6ab2c23b7"
+  },
+  "code": {
+    "analysis/validation/main.py": "89c419abd44fb54c068a397d48c726e362e85f897b68b42e90db3411e7dfd3c4",
+    "analysis/validation/prepare_inputs.py": "a07461139c04eb2a361c54d8be14e4491d73157ed2a1cf47ff791fae60e4cd8e"
+  },
+  "frozen_archive": {
+    "path": "experiment\\main\\M00\\inputs\\validation.npz",
+    "sha256": "31ee1e712c9c9b1ea47190d592f9dbfccb4f81535aae9a7a91c5c5a3dec88f81"
+  },
+  "historical_source_files": [
+    {
+      "path": "output/models/00_report_and_final/ladder/outer/lgb_f19/predictions.csv",
+      "sha256": "516b8684f5521a0f5bcba175b5f6c44a487fdbe54986ff6c28294693eb39df47",
+      "kind": "predictions",
+      "origin": "local historical development artifact; not a newly trained result"
+    },
+    {
+      "path": "output/experiment_runs/00_report_and_final/ladder/outer/lgb_f19/results.json",
+      "sha256": "39d0e4b6a2d0ecdcb31d606354e0a995d088d847735d11b6fb9a9808c638eb30",
+      "kind": "metrics/configuration",
+      "origin": "local historical development artifact; not a newly trained result"
+    },
+    {
+      "path": "output/models/00_report_and_final/ladder/outer/cat_f19/predictions.csv",
+      "sha256": "2a7497e8cda2e9dd5feed2ed6d1d0acfac53f34e2dfd7982483a50ff3ac72c0d",
+      "kind": "predictions",
+      "origin": "local historical development artifact; not a newly trained result"
+    },
+    {
+      "path": "output/experiment_runs/00_report_and_final/ladder/outer/cat_f19/results.json",
+      "sha256": "1adbb66bd1394061a07eaebdeefedb86716cea72f336265f090e29ba9bd69bf0",
+      "kind": "metrics/configuration",
+      "origin": "local historical development artifact; not a newly trained result"
+    },
+    {
+      "path": "output/models/00_report_and_final/ladder/outer/lgb_f27/predictions.csv",
+      "sha256": "c79bd3762bbb68536cb9749f60ba7b0fc1e0e9f900ad60ab79c44e9ccdc7eccc",
+      "kind": "predictions",
+      "origin": "local historical development artifact; not a newly trained result"
+    },
+    {
+      "path": "output/experiment_runs/00_report_and_final/ladder/outer/lgb_f27/results.json",
+      "sha256": "78888a7f56f8bfa67a76148c4114bc12c2798250369b478aa53fa5f15dcfb285",
+      "kind": "metrics/configuration",
+      "origin": "local historical development artifact; not a newly trained result"
+    },
+    {
+      "path": "output/models/00_report_and_final/ladder/outer/cat_f27/predictions.csv",
+      "sha256": "88a6445bb288133b51c18b4207cd63573bb6fca2bdda105aecbaeba215443b6d",
+      "kind": "predictions",
+      "origin": "local historical development artifact; not a newly trained result"
+    },
+    {
+      "path": "output/experiment_runs/00_report_and_final/ladder/outer/cat_f27/results.json",
+      "sha256": "6e8b0cc5ce150a6a0388bf9726f837c9a91a529b77d28055e6289ecbc763edbc",
+      "kind": "metrics/configuration",
+      "origin": "local historical development artifact; not a newly trained result"
+    },
+    {
+      "path": "output/models/00_report_and_final/ladder/outer/lgb_f47/predictions.csv",
+      "sha256": "9a68a6d44afe313550a073745c0c3a9edd1cb206c9bab8dc938fa089531ecd6c",
+      "kind": "predictions",
+      "origin": "local historical development artifact; not a newly trained result"
+    },
+    {
+      "path": "output/experiment_runs/00_report_and_final/ladder/outer/lgb_f47/results.json",
+      "sha256": "463f67518de65fdded0fab7a0dd0df5a485d3edb3eb1a42736c35f081678ad33",
+      "kind": "metrics/configuration",
+      "origin": "local historical development artifact; not a newly trained result"
+    },
+    {
+      "path": "output/models/00_report_and_final/ladder/outer/cat_f47/predictions.csv",
+      "sha256": "9633a43a20162b1c34298d11c39d5f2f037fece0c4f175fa3368fa75a730f0dd",
+      "kind": "predictions",
+      "origin": "local historical development artifact; not a newly trained result"
+    },
+    {
+      "path": "output/experiment_runs/00_report_and_final/ladder/outer/cat_f47/results.json",
+      "sha256": "829aea3d7e99bf09ed9866e60fa8246c61134045e0b6d389f5ce9e72fd1de252",
+      "kind": "metrics/configuration",
+      "origin": "local historical development artifact; not a newly trained result"
+    },
+    {
+      "path": "output/models/00_report_and_final/ladder/outer/lgb_f62/predictions.csv",
+      "sha256": "fc2b31f280eac778e6030e65c702cc85ee022f38d447cfb2204c6ea672af5f6c",
+      "kind": "predictions",
+      "origin": "local historical development artifact; not a newly trained result"
+    },
+    {
+      "path": "output/experiment_runs/00_report_and_final/ladder/outer/lgb_f62/results.json",
+      "sha256": "42a51fbb483e24720c6ae8711ef0086f45df024df5833eda64bcdf6314b344c0",
+      "kind": "metrics/configuration",
+      "origin": "local historical development artifact; not a newly trained result"
+    },
+    {
+      "path": "output/models/00_report_and_final/ladder/outer/cat_f62/predictions.csv",
+      "sha256": "2b3b0c7553ba712abbe63105ccd3495e1637ee912abaa3bf69c6b87af04c82a3",
+      "kind": "predictions",
+      "origin": "local historical development artifact; not a newly trained result"
+    },
+    {
+      "path": "output/experiment_runs/00_report_and_final/ladder/outer/cat_f62/results.json",
+      "sha256": "5073fad651a65ad887133a8164c9387bbb8cc45979de65f7391b94672be81248",
+      "kind": "metrics/configuration",
+      "origin": "local historical development artifact; not a newly trained result"
+    },
+    {
+      "path": "output/models/round_10_plr_transformer_final/ensemble/outer/baseline/predictions.csv",
+      "sha256": "16c0bb1faabca504354e7849470b64b3bd82d74ba724d77f18d9cedaf1c258ba",
+      "kind": "predictions",
+      "origin": "local historical development artifact; not a newly trained result"
+    },
+    {
+      "path": "output/experiment_runs/round_10_plr_transformer_final/ensemble/outer/baseline/results.json",
+      "sha256": "05254e8375a80f046edf853c4d7493a759285afe276716747b9672bcadd028be",
+      "kind": "metrics/configuration",
+      "origin": "local historical development artifact; not a newly trained result"
+    },
+    {
+      "path": "output/models/round_10_plr_transformer_final/ensemble/outer/baseline/model.json",
+      "sha256": "2b3bd423b35ae48247559129dbb381c900baa2d8a3b05a2131f5a9a0a7906529",
+      "kind": "frozen blend weights and fitting months",
+      "origin": "local historical development artifact; not a newly trained result"
+    },
+    {
+      "path": "output/models/round_10_plr_transformer_final/ensemble/outer/only_ft_ple/predictions.csv",
+      "sha256": "6b5caa55acbad3b8cda159b1126a8efef51e51fdc55dfe7b36e3ee4474afe738",
+      "kind": "predictions",
+      "origin": "local historical development artifact; not a newly trained result"
+    },
+    {
+      "path": "output/experiment_runs/round_10_plr_transformer_final/ensemble/outer/only_ft_ple/results.json",
+      "sha256": "9d5591c0796e975a4e3afe6c511637b8545e652d9257ce49de77b88a5d3c97e3",
+      "kind": "metrics/configuration",
+      "origin": "local historical development artifact; not a newly trained result"
+    },
+    {
+      "path": "output/models/round_10_plr_transformer_final/ensemble/outer/only_ft_ple/model.json",
+      "sha256": "ff599a106f499a65b45129db1161edafa53e14a8b8d4c99a00f8e5e452bd71bf",
+      "kind": "frozen blend weights and fitting months",
+      "origin": "local historical development artifact; not a newly trained result"
+    },
+    {
+      "path": "output/models/round_10_plr_transformer_final/ensemble/outer/only_ft_plr/predictions.csv",
+      "sha256": "3dcd9a1ac7fe8f663bb5898161649e07e323b9a30e645fb5414ffa477f47b36a",
+      "kind": "predictions",
+      "origin": "local historical development artifact; not a newly trained result"
+    },
+    {
+      "path": "output/experiment_runs/round_10_plr_transformer_final/ensemble/outer/only_ft_plr/results.json",
+      "sha256": "90f81be5099fef48244a2cdb855db9b4d99f2320063257da7dabd799e0557754",
+      "kind": "metrics/configuration",
+      "origin": "local historical development artifact; not a newly trained result"
+    },
+    {
+      "path": "output/models/round_10_plr_transformer_final/ensemble/outer/only_ft_plr/model.json",
+      "sha256": "558f7fd69f4cc895660d510ed33f57f64babddafbf9b4ac74967f6a8e9779f32",
+      "kind": "frozen blend weights and fitting months",
+      "origin": "local historical development artifact; not a newly trained result"
+    },
+    {
+      "path": "output/models/round_10_plr_transformer_final/outer/ft_ple_128_3/predictions.csv",
+      "sha256": "23a1eeafeefbb144a906b797d2ed0fb7aadf19de9ea1178eeff7f4cda43c44b8",
+      "kind": "predictions",
+      "origin": "local historical development artifact; not a newly trained result"
+    },
+    {
+      "path": "output/experiment_runs/round_10_plr_transformer_final/outer/ft_ple_128_3/results.json",
+      "sha256": "4be13f725b06107c80b9124b8e1c728925237b7907e4994807ca9f5f393a9197",
+      "kind": "metrics/configuration",
+      "origin": "local historical development artifact; not a newly trained result"
+    },
+    {
+      "path": "output/models/round_10_plr_transformer_final/outer/ft_plr_128_3/predictions.csv",
+      "sha256": "5d210cc559b73aeb68f726e00f53792da96074de6dd04a461a8a556ca5343e8b",
+      "kind": "predictions",
+      "origin": "local historical development artifact; not a newly trained result"
+    },
+    {
+      "path": "output/experiment_runs/round_10_plr_transformer_final/outer/ft_plr_128_3/results.json",
+      "sha256": "2a466bede7f7419784ad9ed4c629cc9a1e21789ba896080b2a3ed26ad8772d6b",
+      "kind": "metrics/configuration",
+      "origin": "local historical development artifact; not a newly trained result"
+    },
+    {
+      "path": "output/models/00_report_and_final/ladder/june/lgb_f19/predictions.csv",
+      "sha256": "3abaf29cee4c825e83a2124f350ee81df502bd11bb05e82bb82f2c5ce89a3e49",
+      "kind": "predictions",
+      "origin": "local historical development artifact; not a newly trained result"
+    },
+    {
+      "path": "output/experiment_runs/00_report_and_final/ladder/june/lgb_f19/results.json",
+      "sha256": "746079aa4858d4f5aa319d6944ff30448e0b0b5b3e3970c1128512df99973cc9",
+      "kind": "metrics/configuration",
+      "origin": "local historical development artifact; not a newly trained result"
+    },
+    {
+      "path": "output/models/00_report_and_final/ladder/june/cat_f19/predictions.csv",
+      "sha256": "a700d181125abe1839eff205271ea017cfea70b21d481a980c81b7950320a057",
+      "kind": "predictions",
+      "origin": "local historical development artifact; not a newly trained result"
+    },
+    {
+      "path": "output/experiment_runs/00_report_and_final/ladder/june/cat_f19/results.json",
+      "sha256": "372f36a35eafa2c5bfcf0e03a40086e67d0041c3f5bb42b194828617331c528e",
+      "kind": "metrics/configuration",
+      "origin": "local historical development artifact; not a newly trained result"
+    },
+    {
+      "path": "output/models/00_report_and_final/ladder/june/lgb_f27/predictions.csv",
+      "sha256": "0046550ccea6485a545418f133c1b52abf7d56fdb5db85a36f67457f57aac5d7",
+      "kind": "predictions",
+      "origin": "local historical development artifact; not a newly trained result"
+    },
+    {
+      "path": "output/experiment_runs/00_report_and_final/ladder/june/lgb_f27/results.json",
+      "sha256": "4ce754a4729c6de5a502241b34774e6a98cab224c7e781b62e438af281768b8e",
+      "kind": "metrics/configuration",
+      "origin": "local historical development artifact; not a newly trained result"
+    },
+    {
+      "path": "output/models/00_report_and_final/ladder/june/cat_f27/predictions.csv",
+      "sha256": "e3e55ddfb577b76b90e933e0653759caa46887422adf88540f8287598ba195a6",
+      "kind": "predictions",
+      "origin": "local historical development artifact; not a newly trained result"
+    },
+    {
+      "path": "output/experiment_runs/00_report_and_final/ladder/june/cat_f27/results.json",
+      "sha256": "ede838f2e3fd3258ece15ef805fb824a8d67607c73d31751d0dcb26faedbd016",
+      "kind": "metrics/configuration",
+      "origin": "local historical development artifact; not a newly trained result"
+    },
+    {
+      "path": "output/models/00_report_and_final/ladder/june/lgb_f47/predictions.csv",
+      "sha256": "2456ac61a3bdeea6bc0b4033c3cb2932ab0926ffa86663b6928dc8687f49a290",
+      "kind": "predictions",
+      "origin": "local historical development artifact; not a newly trained result"
+    },
+    {
+      "path": "output/experiment_runs/00_report_and_final/ladder/june/lgb_f47/results.json",
+      "sha256": "dc2a7dabead17c9914c4275eb4b218b3daca7e654d244ebe6a2f83462b65e0ef",
+      "kind": "metrics/configuration",
+      "origin": "local historical development artifact; not a newly trained result"
+    },
+    {
+      "path": "output/models/00_report_and_final/ladder/june/cat_f47/predictions.csv",
+      "sha256": "ef74b960da9cc21fc2468f54f5cfea6b8c792d69a044bc2deee44cf029c6cb75",
+      "kind": "predictions",
+      "origin": "local historical development artifact; not a newly trained result"
+    },
+    {
+      "path": "output/experiment_runs/00_report_and_final/ladder/june/cat_f47/results.json",
+      "sha256": "f63728fee963e5e73f2dad4b37196fff99e5d414da78da19576a90ca35dc5520",
+      "kind": "metrics/configuration",
+      "origin": "local historical development artifact; not a newly trained result"
+    },
+    {
+      "path": "output/models/00_report_and_final/ladder/june/lgb_f62/predictions.csv",
+      "sha256": "a19086a360c41bcc691cf8632405c005ae50b9c3f4d6d2bd3135b66edd4960ee",
+      "kind": "predictions",
+      "origin": "local historical development artifact; not a newly trained result"
+    },
+    {
+      "path": "output/experiment_runs/00_report_and_final/ladder/june/lgb_f62/results.json",
+      "sha256": "e1c0563b0ac2e81b8d6b0dae5875babb23029f8b0b09497735e2ac8ce7195030",
+      "kind": "metrics/configuration",
+      "origin": "local historical development artifact; not a newly trained result"
+    },
+    {
+      "path": "output/models/00_report_and_final/ladder/june/cat_f62/predictions.csv",
+      "sha256": "ac3783bc84f7797d744afb653f64e8ec237e0dc3c20021d8b0587ab510eb69b1",
+      "kind": "predictions",
+      "origin": "local historical development artifact; not a newly trained result"
+    },
+    {
+      "path": "output/experiment_runs/00_report_and_final/ladder/june/cat_f62/results.json",
+      "sha256": "7baaa0c66b1a9e108b8bcfc319dd0430cce306f35208dd50186c7a6dd14dba77",
+      "kind": "metrics/configuration",
+      "origin": "local historical development artifact; not a newly trained result"
+    },
+    {
+      "path": "output/models/round_10_plr_transformer_final/ensemble/june/baseline/predictions.csv",
+      "sha256": "5dc3c6393ff9d8094dd6026783dc43235a9450fb9933f5796e949bae2c59dc71",
+      "kind": "predictions",
+      "origin": "local historical development artifact; not a newly trained result"
+    },
+    {
+      "path": "output/experiment_runs/round_10_plr_transformer_final/ensemble/june/baseline/results.json",
+      "sha256": "4634a71b504a41c634ca1e41ef1878b7267b6544ef9cba8cb15de406844ab291",
+      "kind": "metrics/configuration",
+      "origin": "local historical development artifact; not a newly trained result"
+    },
+    {
+      "path": "output/models/round_10_plr_transformer_final/ensemble/june/baseline/model.json",
+      "sha256": "bd377405b91b93df08314dba238ac2b9c7ec530774f6f3a8b3badd201648efa2",
+      "kind": "frozen blend weights and fitting months",
+      "origin": "local historical development artifact; not a newly trained result"
+    },
+    {
+      "path": "output/models/round_10_plr_transformer_final/ensemble/june/only_ft_ple/predictions.csv",
+      "sha256": "becff007dfeffe790cb0dab55d725f7a8c1f4e7685a8c336838f59a96a206d81",
+      "kind": "predictions",
+      "origin": "local historical development artifact; not a newly trained result"
+    },
+    {
+      "path": "output/experiment_runs/round_10_plr_transformer_final/ensemble/june/only_ft_ple/results.json",
+      "sha256": "79009a0e608b37865fb4ed0a91890250ba03c27ff6a22377e5a102d1c7d3dfc2",
+      "kind": "metrics/configuration",
+      "origin": "local historical development artifact; not a newly trained result"
+    },
+    {
+      "path": "output/models/round_10_plr_transformer_final/ensemble/june/only_ft_ple/model.json",
+      "sha256": "bacc58b265e3dcbb7b832162861648e8f2a0a058baef6b9e95db1f739c285cbc",
+      "kind": "frozen blend weights and fitting months",
+      "origin": "local historical development artifact; not a newly trained result"
+    },
+    {
+      "path": "output/models/round_10_plr_transformer_final/ensemble/june/only_ft_plr/predictions.csv",
+      "sha256": "8d978e87a260ec293e01ddb7472805509fbfa572884f27270187e84531945baa",
+      "kind": "predictions",
+      "origin": "local historical development artifact; not a newly trained result"
+    },
+    {
+      "path": "output/experiment_runs/round_10_plr_transformer_final/ensemble/june/only_ft_plr/results.json",
+      "sha256": "572799a1fa9647a153b6021c5ced3553c06af06192d27825f529d21a32ef8dd5",
+      "kind": "metrics/configuration",
+      "origin": "local historical development artifact; not a newly trained result"
+    },
+    {
+      "path": "output/models/round_10_plr_transformer_final/ensemble/june/only_ft_plr/model.json",
+      "sha256": "538297aa5e042be7232c0cf509e8501c5ce53d0e6a3e21bb2ee761f12a46a1d5",
+      "kind": "frozen blend weights and fitting months",
+      "origin": "local historical development artifact; not a newly trained result"
+    },
+    {
+      "path": "output/models/round_10_plr_transformer_final/june/ft_ple_128_3/predictions.csv",
+      "sha256": "a9fb978a1f1652dd98005951c56c1afe71f3f0dd71540ba7f69cbd7ef078c3c4",
+      "kind": "predictions",
+      "origin": "local historical development artifact; not a newly trained result"
+    },
+    {
+      "path": "output/experiment_runs/round_10_plr_transformer_final/june/ft_ple_128_3/results.json",
+      "sha256": "2a925c9df08f41d26d7d9ec27c8a22463bdc4e565f8007aec5d09b20b62e057d",
+      "kind": "metrics/configuration",
+      "origin": "local historical development artifact; not a newly trained result"
+    },
+    {
+      "path": "output/models/round_10_plr_transformer_final/june/ft_plr_128_3/predictions.csv",
+      "sha256": "91641b3ffc93fbf5e50be56554058262b3f69c48f03211b878ab5213ec0138ce",
+      "kind": "predictions",
+      "origin": "local historical development artifact; not a newly trained result"
+    },
+    {
+      "path": "output/experiment_runs/round_10_plr_transformer_final/june/ft_plr_128_3/results.json",
+      "sha256": "5b877f6275852555c1d85feeca48d72bdc7337c22a7ac817fc98aeff66d25778",
+      "kind": "metrics/configuration",
+      "origin": "local historical development artifact; not a newly trained result"
+    },
+    {
+      "path": "output/experiment_runs/round_09_grouped_blending/development_candidate.json",
+      "sha256": "2ed10a7c62fe823e61a622aafe470e3e051aeb34aef86cde54fc971183637680",
+      "kind": "historical selection",
+      "origin": "local historical development artifact; not a newly trained result"
+    },
+    {
+      "path": "output/experiment_runs/round_10_plr_transformer_final/selection.json",
+      "sha256": "e9e92cf626b989c32d73cfd7fc9e35dc51b7f413c6a62ce939cd71d9d9632972",
+      "kind": "historical selection",
+      "origin": "local historical development artifact; not a newly trained result"
+    }
+  ],
+  "source_branch_snapshot": "048eca867b6c9ad03a0a15f5a3de9f7432d3ba2f",
+  "generator_commit_verified": false
+}

@@ -1,12 +1,12 @@
 # CS5228 HDB 租金预测：EDA 与阶段性进展
 
-本报告整理当前仓库所附训练集、比赛测试集和辅助 CSV 的探索性分析结果，供 progress report 和后续建模使用。分析脚本为 [`analysis/eda/overview.py`](../../analysis/eda/overview.py)，统计汇总见 [`summary.json`](summary.json)，图表与表格分别在 `figures/` 和 `tables/`。本文只陈述本地数据分析。
+本报告整理当前仓库所附训练集、比赛测试集和辅助 CSV 的探索性分析结果，供 progress report 和后续建模使用。分析脚本为 [`analysis/eda/overview.py`](../../../../analysis/eda/overview.py)，统计汇总见 [`summary.json`](summary.json)，图表与表格分别在 `figures/` 和 `tables/`。本文只陈述本地数据分析。
 
 ## 研究问题与当前方法
 
 目标是用 HDB 房屋属性、位置和租金审批时间预测月租。初步分析围绕三个问题展开：租金在观察期内如何变化；哪些房屋与空间字段能形成可用特征；随机验证与未来时间验证会给出多大差异。
 
-本组综合 EDA 的工作顺序是数据质量检查、目标与时间趋势分析、类别和数值变量分析、辅助地理数据匹配、train/test 漂移检查，以及简单的中位数 baseline。仓库另外已完成 Ridge、Random Forest、CatBoost、LightGBM 比较、A/B/C 特征消融及逐月误差分析，见 [中期报告](../../docs/archive/midterm_report.md)；这些模型使用不同于本文中位数基线的验证窗口。最近 12 个月中位数 baseline 是基于历史统计的参照，没有拟合监督式回归模型。全部实现已统一到 `analysis/`。
+本组综合 EDA 的工作顺序是数据质量检查、目标与时间趋势分析、类别和数值变量分析、辅助地理数据匹配、train/test 漂移检查，以及简单的中位数 baseline。仓库另外已完成 Ridge、Random Forest、CatBoost、LightGBM 比较、A/B/C 特征消融及逐月误差分析，见 [中期报告](../../../../docs/archive/midterm_report.md)；这些模型使用不同于本文中位数基线的验证窗口。最近 12 个月中位数 baseline 是基于历史统计的参照，没有拟合监督式回归模型。全部实现已统一到 `analysis/`。
 
 ## 数据范围
 

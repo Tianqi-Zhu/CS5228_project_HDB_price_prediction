@@ -6,6 +6,8 @@ from pathlib import Path
 def main(argv=None):
     parser=argparse.ArgumentParser(description=__doc__)
     commands=parser.add_subparsers(dest='command')
+    planned=commands.add_parser('planned',help='Run main requirement-card audits and frozen-prediction diagnostics; no training')
+    planned.add_argument('--output-dir',type=Path)
     concat=commands.add_parser('concat',help='Concat Transformer: verify, replay, prepare or explicitly train')
     concat.add_argument('concat_args',nargs=argparse.REMAINDER)
     commands.add_parser('list',help='List experiments without running them')
@@ -24,6 +26,9 @@ def main(argv=None):
     common.add_argument('--output-dir',type=Path)
     common.add_argument('--device',choices=('cpu','cuda'),default='cuda')
     args=parser.parse_args(argv)
+    if args.command=='planned':
+        from analysis.validation.main import run
+        return run(args.output_dir)
     if args.command=='concat':
         import sys
         from analysis.experiments.concat_transformer.__main__ import main as concat_main

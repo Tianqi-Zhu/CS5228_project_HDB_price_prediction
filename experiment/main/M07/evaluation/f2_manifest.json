@@ -1,0 +1,17 @@
+{
+  "filename": "submission_zch_tabpfn87_equal_150k.csv",
+  "displayed_score_user_screenshot": 413.19635,
+  "schema": null,
+  "members": null,
+  "weights": null,
+  "csv_sha256": null,
+  "validated": false,
+  "status": "partial",
+  "available": "77/84/89-column TabPFN background imported",
+  "missing": [
+    "actual F2 generator commit and entry point",
+    "ordered 87-column schema",
+    "actual members/weights and target inversion",
+    "original submission CSV and checkpoint/seed/view identity"
+  ]
+}

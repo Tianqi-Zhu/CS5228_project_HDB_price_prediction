@@ -1,0 +1,43 @@
+{
+  "run_id": "9637a725854ff181",
+  "tasks": {
+    "M00": "partial: 26 prediction artifacts validated; exact generating commits and F2 inputs still missing",
+    "M01": "completed for supplied facility snapshot scenario; strict historical facilities remain X08",
+    "M02": "archived and previously refitted; no new training required",
+    "M03": "completed frozen 16-fit paired recalculation",
+    "M04": "completed for F1 and two 62-input controls on Y/J",
+    "M05": "completed controlled recalculation; annual PLR fusion regression preserved",
+    "M06": "archived three-way submission selection; not relabelled as independent test",
+    "M07": "partial; actual F2 generator missing",
+    "M08": "pending F2",
+    "M09": "F1 passed; F2 pending"
+  },
+  "new_models_fitted": 0,
+  "predictions_audited": 26,
+  "group_rows": 144,
+  "raw_inputs_unchanged": true,
+  "all_numeric_checks_passed": true,
+  "all_main_P0_completed": false,
+  "remaining_required_inputs": {
+    "M07": {
+      "status": "partial",
+      "available": "77/84/89-column TabPFN background imported",
+      "missing": [
+        "actual F2 generator commit and entry point",
+        "ordered 87-column schema",
+        "actual members/weights and target inversion",
+        "original submission CSV and checkpoint/seed/view identity"
+      ]
+    },
+    "M08": {
+      "status": "pending",
+      "reason": "M07 identity and Y/J F2 row predictions absent; screenshot scores cannot supply paired errors"
+    },
+    "M09": {
+      "status": "partial",
+      "F1": "verified separately below",
+      "F2": "no independent reconstruction possible without the M07 inputs"
+    }
+  },
+  "results_are_development_not_independent_test": true
+}

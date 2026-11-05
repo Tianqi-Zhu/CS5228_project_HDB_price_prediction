@@ -1,0 +1,126 @@
+{
+  "comparison": [
+    {
+      "key": "train_numeric",
+      "shape_matches": true,
+      "dtype_original": "float32",
+      "dtype_rebuilt": "float32",
+      "allclose_1e-6": true,
+      "max_abs_difference": 0.0
+    },
+    {
+      "key": "train_categorical",
+      "shape_matches": true,
+      "dtype_original": "int64",
+      "dtype_rebuilt": "int64",
+      "allclose_1e-6": true,
+      "max_abs_difference": 0.0
+    },
+    {
+      "key": "train_anchor_ksgd",
+      "shape_matches": true,
+      "dtype_original": "float64",
+      "dtype_rebuilt": "float64",
+      "allclose_1e-6": true,
+      "max_abs_difference": 0.0
+    },
+    {
+      "key": "train_row_id",
+      "shape_matches": true,
+      "dtype_original": "int64",
+      "dtype_rebuilt": "int64",
+      "allclose_1e-6": true,
+      "max_abs_difference": 0.0
+    },
+    {
+      "key": "train_origin",
+      "shape_matches": true,
+      "dtype_original": "int64",
+      "dtype_rebuilt": "int64",
+      "allclose_1e-6": true,
+      "max_abs_difference": 0.0
+    },
+    {
+      "key": "train_horizon",
+      "shape_matches": true,
+      "dtype_original": "int64",
+      "dtype_rebuilt": "int64",
+      "allclose_1e-6": true,
+      "max_abs_difference": 0.0
+    },
+    {
+      "key": "test_numeric",
+      "shape_matches": true,
+      "dtype_original": "float32",
+      "dtype_rebuilt": "float32",
+      "allclose_1e-6": true,
+      "max_abs_difference": 0.0
+    },
+    {
+      "key": "test_categorical",
+      "shape_matches": true,
+      "dtype_original": "int64",
+      "dtype_rebuilt": "int64",
+      "allclose_1e-6": true,
+      "max_abs_difference": 0.0
+    },
+    {
+      "key": "test_anchor_ksgd",
+      "shape_matches": true,
+      "dtype_original": "float64",
+      "dtype_rebuilt": "float64",
+      "allclose_1e-6": true,
+      "max_abs_difference": 0.0
+    },
+    {
+      "key": "test_row_id",
+      "shape_matches": true,
+      "dtype_original": "int64",
+      "dtype_rebuilt": "int64",
+      "allclose_1e-6": true,
+      "max_abs_difference": 0.0
+    },
+    {
+      "key": "test_origin",
+      "shape_matches": true,
+      "dtype_original": "int64",
+      "dtype_rebuilt": "int64",
+      "allclose_1e-6": true,
+      "max_abs_difference": 0.0
+    },
+    {
+      "key": "test_horizon",
+      "shape_matches": true,
+      "dtype_original": "int64",
+      "dtype_rebuilt": "int64",
+      "allclose_1e-6": true,
+      "max_abs_difference": 0.0
+    },
+    {
+      "key": "train_target",
+      "shape_matches": true,
+      "dtype_original": "float64",
+      "dtype_rebuilt": "float64",
+      "allclose_1e-6": true,
+      "max_abs_difference": 0.0
+    },
+    {
+      "key": "train_actual_sgd",
+      "shape_matches": true,
+      "dtype_original": "float64",
+      "dtype_rebuilt": "float64",
+      "allclose_1e-6": true,
+      "max_abs_difference": 0.0
+    },
+    {
+      "key": "test_id",
+      "shape_matches": true,
+      "dtype_original": "int64",
+      "dtype_rebuilt": "int64",
+      "allclose_1e-6": true,
+      "max_abs_difference": 0.0
+    }
+  ],
+  "all_numeric_arrays_within_1e-6": true,
+  "note": "Original bank/checkpoint/submission are frozen. Feature rebuild used the current numerical environment; difference in any array prevents a bit-exact raw-feature reconstruction claim."
+}

@@ -1,0 +1,269 @@
+{
+  "all_passed": true,
+  "checks": [
+    {
+      "window": "Y",
+      "model": "lgb_f19",
+      "rows": 35158,
+      "duplicate_ids": 0,
+      "id_label_date_mismatches": 0,
+      "metric_max_abs_difference": 0.0,
+      "history_query_origin_checked": true,
+      "historical_prediction_generation_reexecuted": false
+    },
+    {
+      "window": "Y",
+      "model": "cat_f19",
+      "rows": 35158,
+      "duplicate_ids": 0,
+      "id_label_date_mismatches": 0,
+      "metric_max_abs_difference": 0.0,
+      "history_query_origin_checked": true,
+      "historical_prediction_generation_reexecuted": false
+    },
+    {
+      "window": "Y",
+      "model": "lgb_f27",
+      "rows": 35158,
+      "duplicate_ids": 0,
+      "id_label_date_mismatches": 0,
+      "metric_max_abs_difference": 0.0,
+      "history_query_origin_checked": true,
+      "historical_prediction_generation_reexecuted": false
+    },
+    {
+      "window": "Y",
+      "model": "cat_f27",
+      "rows": 35158,
+      "duplicate_ids": 0,
+      "id_label_date_mismatches": 0,
+      "metric_max_abs_difference": 0.0,
+      "history_query_origin_checked": true,
+      "historical_prediction_generation_reexecuted": false
+    },
+    {
+      "window": "Y",
+      "model": "lgb_f47",
+      "rows": 35158,
+      "duplicate_ids": 0,
+      "id_label_date_mismatches": 0,
+      "metric_max_abs_difference": 0.0,
+      "history_query_origin_checked": true,
+      "historical_prediction_generation_reexecuted": false
+    },
+    {
+      "window": "Y",
+      "model": "cat_f47",
+      "rows": 35158,
+      "duplicate_ids": 0,
+      "id_label_date_mismatches": 0,
+      "metric_max_abs_difference": 0.0,
+      "history_query_origin_checked": true,
+      "historical_prediction_generation_reexecuted": false
+    },
+    {
+      "window": "Y",
+      "model": "lgb_f62",
+      "rows": 35158,
+      "duplicate_ids": 0,
+      "id_label_date_mismatches": 0,
+      "metric_max_abs_difference": 0.0,
+      "history_query_origin_checked": true,
+      "historical_prediction_generation_reexecuted": false
+    },
+    {
+      "window": "Y",
+      "model": "cat_f62",
+      "rows": 35158,
+      "duplicate_ids": 0,
+      "id_label_date_mismatches": 0,
+      "metric_max_abs_difference": 0.0,
+      "history_query_origin_checked": true,
+      "historical_prediction_generation_reexecuted": false
+    },
+    {
+      "window": "Y",
+      "model": "blend_no_new",
+      "rows": 35158,
+      "duplicate_ids": 0,
+      "id_label_date_mismatches": 0,
+      "metric_max_abs_difference": 0.0,
+      "history_query_origin_checked": true,
+      "historical_prediction_generation_reexecuted": false
+    },
+    {
+      "window": "Y",
+      "model": "blend_PLE",
+      "rows": 35158,
+      "duplicate_ids": 0,
+      "id_label_date_mismatches": 0,
+      "metric_max_abs_difference": 0.0,
+      "history_query_origin_checked": true,
+      "historical_prediction_generation_reexecuted": false
+    },
+    {
+      "window": "Y",
+      "model": "F1",
+      "rows": 35158,
+      "duplicate_ids": 0,
+      "id_label_date_mismatches": 0,
+      "metric_max_abs_difference": 0.0,
+      "history_query_origin_checked": true,
+      "historical_prediction_generation_reexecuted": false
+    },
+    {
+      "window": "Y",
+      "model": "single_PLE",
+      "rows": 35158,
+      "duplicate_ids": 0,
+      "id_label_date_mismatches": 0,
+      "metric_max_abs_difference": 0.0,
+      "history_query_origin_checked": true,
+      "historical_prediction_generation_reexecuted": false
+    },
+    {
+      "window": "Y",
+      "model": "single_PLR",
+      "rows": 35158,
+      "duplicate_ids": 0,
+      "id_label_date_mismatches": 0,
+      "metric_max_abs_difference": 0.0,
+      "history_query_origin_checked": true,
+      "historical_prediction_generation_reexecuted": false
+    },
+    {
+      "window": "J",
+      "model": "lgb_f19",
+      "rows": 28995,
+      "duplicate_ids": 0,
+      "id_label_date_mismatches": 0,
+      "metric_max_abs_difference": 0.0,
+      "history_query_origin_checked": true,
+      "historical_prediction_generation_reexecuted": false
+    },
+    {
+      "window": "J",
+      "model": "cat_f19",
+      "rows": 28995,
+      "duplicate_ids": 0,
+      "id_label_date_mismatches": 0,
+      "metric_max_abs_difference": 0.0,
+      "history_query_origin_checked": true,
+      "historical_prediction_generation_reexecuted": false
+    },
+    {
+      "window": "J",
+      "model": "lgb_f27",
+      "rows": 28995,
+      "duplicate_ids": 0,
+      "id_label_date_mismatches": 0,
+      "metric_max_abs_difference": 0.0,
+      "history_query_origin_checked": true,
+      "historical_prediction_generation_reexecuted": false
+    },
+    {
+      "window": "J",
+      "model": "cat_f27",
+      "rows": 28995,
+      "duplicate_ids": 0,
+      "id_label_date_mismatches": 0,
+      "metric_max_abs_difference": 0.0,
+      "history_query_origin_checked": true,
+      "historical_prediction_generation_reexecuted": false
+    },
+    {
+      "window": "J",
+      "model": "lgb_f47",
+      "rows": 28995,
+      "duplicate_ids": 0,
+      "id_label_date_mismatches": 0,
+      "metric_max_abs_difference": 0.0,
+      "history_query_origin_checked": true,
+      "historical_prediction_generation_reexecuted": false
+    },
+    {
+      "window": "J",
+      "model": "cat_f47",
+      "rows": 28995,
+      "duplicate_ids": 0,
+      "id_label_date_mismatches": 0,
+      "metric_max_abs_difference": 0.0,
+      "history_query_origin_checked": true,
+      "historical_prediction_generation_reexecuted": false
+    },
+    {
+      "window": "J",
+      "model": "lgb_f62",
+      "rows": 28995,
+      "duplicate_ids": 0,
+      "id_label_date_mismatches": 0,
+      "metric_max_abs_difference": 0.0,
+      "history_query_origin_checked": true,
+      "historical_prediction_generation_reexecuted": false
+    },
+    {
+      "window": "J",
+      "model": "cat_f62",
+      "rows": 28995,
+      "duplicate_ids": 0,
+      "id_label_date_mismatches": 0,
+      "metric_max_abs_difference": 0.0,
+      "history_query_origin_checked": true,
+      "historical_prediction_generation_reexecuted": false
+    },
+    {
+      "window": "J",
+      "model": "blend_no_new",
+      "rows": 28995,
+      "duplicate_ids": 0,
+      "id_label_date_mismatches": 0,
+      "metric_max_abs_difference": 0.0,
+      "history_query_origin_checked": true,
+      "historical_prediction_generation_reexecuted": false
+    },
+    {
+      "window": "J",
+      "model": "blend_PLE",
+      "rows": 28995,
+      "duplicate_ids": 0,
+      "id_label_date_mismatches": 0,
+      "metric_max_abs_difference": 0.0,
+      "history_query_origin_checked": true,
+      "historical_prediction_generation_reexecuted": false
+    },
+    {
+      "window": "J",
+      "model": "F1",
+      "rows": 28995,
+      "duplicate_ids": 0,
+      "id_label_date_mismatches": 0,
+      "metric_max_abs_difference": 0.0,
+      "history_query_origin_checked": true,
+      "historical_prediction_generation_reexecuted": false
+    },
+    {
+      "window": "J",
+      "model": "single_PLE",
+      "rows": 28995,
+      "duplicate_ids": 0,
+      "id_label_date_mismatches": 0,
+      "metric_max_abs_difference": 0.0,
+      "history_query_origin_checked": true,
+      "historical_prediction_generation_reexecuted": false
+    },
+    {
+      "window": "J",
+      "model": "single_PLR",
+      "rows": 28995,
+      "duplicate_ids": 0,
+      "id_label_date_mismatches": 0,
+      "metric_max_abs_difference": 0.0,
+      "history_query_origin_checked": true,
+      "historical_prediction_generation_reexecuted": false
+    }
+  ],
+  "limitation": "Ignored artifacts are a local historical snapshot. The branch commit is context, not proof every saved CSV was generated by that exact tree.",
+  "Y_J_overlap_rows": 28995,
+  "Y_J_are_independent": false,
+  "F2_eligible_for_paired_comparison": false
+}

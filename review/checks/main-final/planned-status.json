@@ -1,0 +1,13 @@
+{
+  "returncode": 0,
+  "run_id": "9637a725854ff181",
+  "command": [
+    "python",
+    "-m",
+    "analysis.main",
+    "planned"
+  ],
+  "new_research_models_fitted": 0,
+  "new_smoke_models_fitted": 1,
+  "all_main_P0_completed": false
+}

@@ -6,6 +6,7 @@
 | --- | --- |
 | [best_ensemble_submission.py](best_ensemble_submission.py) | `python -m analysis.experiments.best_ensemble_submission` |
 | [canonical_final.py](canonical_final.py) | Support module |
-| [final_submission_selection.py](final_submission_selection.py) | `python -m analysis.experiments.final_submission_selection` |
 
 Commands above are prefixes. Required arguments and prerequisites: [workflow](../../../docs/guides/running_experiments.md).
+
+Other historical modules from this source round are retained in the appendix branch. This main directory contains only its runtime/test dependency closure.

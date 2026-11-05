@@ -1,0 +1,118 @@
+{
+  "scope": "Main requirement cards, whole-tree integrity/navigation/syntax, existing runtime checks and bounded portability smoke",
+  "research_run_id": "9637a725854ff181",
+  "main_tests": {
+    "passed": 66,
+    "skipped": 0,
+    "failed": 0
+  },
+  "frozen_prediction_records_checked": 26,
+  "error_group_rows": 144,
+  "new_research_models_fitted": 0,
+  "bounded_runtime_smoke": {
+    "train_rows": 32,
+    "query_rows": 16,
+    "epochs": 2,
+    "reload_verified": true,
+    "not_research_performance_evidence": true
+  },
+  "concat_raw_feature_rebuild": {
+    "train_rows": 150000,
+    "test_rows": 50000,
+    "all_archived_numeric_arrays_reproduced_exactly": true,
+    "frozen_weights_and_csv_unchanged": true
+  },
+  "runtime_checks": [
+    {
+      "check": "unit-tests",
+      "returncode": 0,
+      "seconds": 14.13687850000133,
+      "command": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ]
+    },
+    {
+      "check": "F1-verify",
+      "returncode": 0,
+      "seconds": 0.19532410000101663,
+      "command": [
+        "python",
+        "reproduction/f1/verify.py"
+      ]
+    },
+    {
+      "check": "F1-cpu",
+      "returncode": 0,
+      "seconds": 0.6985237000044435,
+      "command": [
+        "python",
+        "reproduction/f1/reproduce.py"
+      ]
+    },
+    {
+      "check": "concat-verify",
+      "returncode": 0,
+      "seconds": 0.2575746000002255,
+      "command": [
+        "python",
+        "-m",
+        "analysis.main",
+        "concat",
+        "verify"
+      ]
+    },
+    {
+      "check": "concat-predict",
+      "returncode": 0,
+      "seconds": 80.82868009999947,
+      "command": [
+        "python",
+        "-m",
+        "analysis.main",
+        "concat",
+        "predict",
+        "--device",
+        "cpu"
+      ]
+    },
+    {
+      "check": "tabpfn-verify",
+      "returncode": 0,
+      "seconds": 0.3348056999966502,
+      "command": [
+        "python",
+        "review_tabpfn.py",
+        "verify"
+      ]
+    },
+    {
+      "check": "tabpfn-metrics",
+      "returncode": 0,
+      "seconds": 0.3975313000046299,
+      "command": [
+        "python",
+        "review_tabpfn.py",
+        "metrics"
+      ]
+    }
+  ],
+  "F1_cpu_replay_max_abs_difference": 0.0,
+  "concat_cpu_replay": {
+    "rows": 50000,
+    "max_abs_difference_sgd": 0.10532140731811523,
+    "within_original_atol_plus_rtol": true
+  },
+  "all_main_P0_completed": false,
+  "remaining": [
+    "F2 actual generator/schema/components/CSV/Y-J predictions",
+    "Exact code commits generating the old ignored artifacts",
+    "Strict historical facility evaluation if that scenario is claimed"
+  ],
+  "appendix_modified_this_phase": false
+}

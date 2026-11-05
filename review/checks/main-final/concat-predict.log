@@ -1,0 +1,2 @@
+{"status": "passed", "files_checked": 28, "submission_rows": 50000, "training_performed": false}
+{"rows": 50000, "max_abs_diff_sgd": 0.10532140731811523, "training_performed": false, "output": "C:\\Users\\Lenovo\\Desktop\\CS5228\\CS5228_project_HDB_price_prediction\\output\\concat_transformer\\replayed_submission.csv", "device": "cpu"}

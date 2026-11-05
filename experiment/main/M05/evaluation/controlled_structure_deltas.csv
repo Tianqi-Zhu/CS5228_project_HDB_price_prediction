@@ -1,0 +1,7 @@
+task,window,candidate,control,delta_rmse_candidate_minus_control,delta_mae,same_query_rows,candidate_selected_epochs,control_selected_epochs,qualification
+M05,Y,single_PLR,single_PLE,3.77825239123,6.22111893236,True,10,10,Blend rule fixed; weights were fitted earlier for each included member set. Epoch and embedding parameter budgets differ.
+M05,Y,blend_PLE,blend_no_new,-0.114239786455,-0.237672289892,True,,,Blend rule fixed; weights were fitted earlier for each included member set. Epoch and embedding parameter budgets differ.
+M05,Y,F1,blend_no_new,0.164454557702,0.230030443688,True,,,Blend rule fixed; weights were fitted earlier for each included member set. Epoch and embedding parameter budgets differ.
+M05,J,single_PLR,single_PLE,1.28237147046,-4.22393621723,True,10,10,Blend rule fixed; weights were fitted earlier for each included member set. Epoch and embedding parameter budgets differ.
+M05,J,blend_PLE,blend_no_new,0.0253831445802,0.0662222840509,True,,,Blend rule fixed; weights were fitted earlier for each included member set. Epoch and embedding parameter budgets differ.
+M05,J,F1,blend_no_new,-0.124547539718,-0.701839980216,True,,,Blend rule fixed; weights were fitted earlier for each included member set. Epoch and embedding parameter budgets differ.
