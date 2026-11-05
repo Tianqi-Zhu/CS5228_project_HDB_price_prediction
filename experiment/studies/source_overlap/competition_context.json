@@ -1,0 +1,13 @@
+{
+  "competition_url": "https://www.kaggle.com/competitions/cs-5228-2610-project",
+  "verified_date": "2026-10-24",
+  "verification_method": "Read visible authenticated Kaggle competition pages through the user's browser; no submissions or messages sent.",
+  "evaluation": "RMSE on individual monthly rental rates in SGD",
+  "leaderboard_type": "Public",
+  "public_test_fraction_description": "Approximately 50% of the test data; private leaderboard uses the other 50%.",
+  "observed_top_scores": [172.42640, 172.43499, 172.93685, 172.93685, 173.19192, 173.45426, 179.12191, 182.71670, 183.18108],
+  "observed_rank_10_score": 411.75928,
+  "overview_external_data_policy": "The Additional Data Collection section welcomes participants collecting their own data to generate useful additional data/features.",
+  "competition_specific_rules_summary": "The rules page lists general instructions to avoid cheating, apply oneself and have fun, followed by Kaggle foundational rules.",
+  "direct_target_recovery_authorization": "Not explicitly established by the visible competition text. Additional course/project requirements or organizer clarification may govern this use. No claim is made about any team's actual method."
+}

@@ -1,1 +1,1 @@
-"""Reusable data, modeling, and evaluation code for the HDB rent project."""
+"""CS5228 HDB rent analysis, experiments and prediction pipeline."""

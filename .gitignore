@@ -256,3 +256,45 @@ __marimo__/
 /reports/tabpfn*/**/progress.json
 /reports/tabpfn*/**/progress_*.json
 /reports/tabpfn*/**/completed_*.json
+
+# Merged zch workflow caches and output artifacts
+# Python caches and virtual environments
+__pycache__/
+*.py[cod]
+.venv/
+.venv-*/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Local settings and credentials
+.env
+.env.*
+.vscode/
+.idea/
+.streamlit/secrets.toml
+.pypirc
+
+# Regenerable caches, isolated checkouts, and generated model/submission files
+.cache/
+.integration-work/
+output/
+models/
+tmp/
+tempCodeRunnerFile.py
+*.joblib
+*.pt
+*.cbm
+
+# Local aligned predictions are retained for blends and comparison, not versioned
+experiment/**/predictions.csv
+experiment/**/*_predictions.csv
+experiment/**/submission.csv
+experiment/**/history.csv
+experiment/**/model.zip
+# All detailed experiment runs now live under the ignored output/ tree.

@@ -1,0 +1,60 @@
+{
+  "recommended_final": {
+    "file": "kaggle_structure_blend.csv",
+    "path": "output/submissions/candidates/kaggle_structure_blend.csv",
+    "method": "分组融合＋PLR-FT",
+    "report_role": "推荐final",
+    "local_annual_rmse": 451.02950249165616,
+    "local_recent_rmse": 441.8345348836222,
+    "kaggle_displayed_score": 415.37529,
+    "sha256": "386a12fac6a8e9e94892b338c29f38b7efd842811517d4aa487126922a6b7e92",
+    "rows": 50000
+  },
+  "final_copy": "output/submissions/final/submission.csv",
+  "candidates": [
+    {
+      "file": "kaggle_best_history.csv",
+      "path": "output/submissions/candidates/kaggle_best_history.csv",
+      "method": "历史特征主融合",
+      "report_role": "主基线",
+      "local_annual_rmse": 451.1810257119484,
+      "local_recent_rmse": 442.9024826164729,
+      "kaggle_displayed_score": 415.86912,
+      "sha256": "b113a4ccbeb9a890d8e885c2c2815a177b8fa544c4b03d05bfd8a4cad49d5b85",
+      "rows": 50000
+    },
+    {
+      "file": "kaggle_best_macro.csv",
+      "path": "output/submissions/candidates/kaggle_best_macro.csv",
+      "method": "比赛所给宏观增强",
+      "report_role": "宏观消融",
+      "local_annual_rmse": 451.20805134222724,
+      "local_recent_rmse": 442.88921226230013,
+      "kaggle_displayed_score": 415.78232,
+      "sha256": "9b54b51c4d551b5686bed1dbd1b99c92602f5669325700423d1b0a44ed2fa5e5",
+      "rows": 50000
+    },
+    {
+      "file": "kaggle_structure_blend.csv",
+      "path": "output/submissions/candidates/kaggle_structure_blend.csv",
+      "method": "分组融合＋PLR-FT",
+      "report_role": "推荐final",
+      "local_annual_rmse": 451.02950249165616,
+      "local_recent_rmse": 441.8345348836222,
+      "kaggle_displayed_score": 415.37529,
+      "sha256": "386a12fac6a8e9e94892b338c29f38b7efd842811517d4aa487126922a6b7e92",
+      "rows": 50000
+    }
+  ],
+  "evidence": {
+    "source": "User-provided Kaggle submission-list screenshot in this conversation",
+    "observed_on": "2026-11-05",
+    "precision": "5 decimal places",
+    "leaderboard_partition": null,
+    "source_note": "The screenshot shows filename and displayed score, but does not label public/private split. No API verification or new upload by the assistant."
+  },
+  "improvement_vs_history": 0.49383,
+  "improvement_vs_macro": 0.40703,
+  "kaggle_ui_final_selection_performed_by_assistant": false,
+  "selection_scope": "Best of these three submitted candidates by the screenshot score, supported by lower local annual/recent errors than the other two. Not a claim of independent-test significance or unknown private-score optimality."
+}

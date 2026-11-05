@@ -1,0 +1,9 @@
+split,fit_period_end,validation_period,validation_rows,baseline,mae,rmse,median_absolute_error
+temporal_2024plus,2023-12,2024-01 to 2025-03,44163,training_median,822.286891741956,977.3923466958247,800.0
+temporal_2024plus,2023-12,2024-01 to 2025-03,44163,train_only_town_flat_median,786.9974865837919,887.7725494661489,800.0
+temporal_2024plus,2023-12,2024-01 to 2025-03,44163,previous_12m_town_flat_median,384.1528428775219,518.2783336054526,300.0
+recent_2025Q1,2024-12,2025-01 to 2025-03,8924,training_median,691.3292245629763,844.5981513140127,600.0
+recent_2025Q1,2024-12,2025-01 to 2025-03,8924,train_only_town_flat_median,612.7752129090094,712.9186068109374,600.0
+recent_2025Q1,2024-12,2025-01 to 2025-03,8924,previous_12m_town_flat_median,345.29179740026893,490.8893213982575,250.0
+random_80_20_seed5228,mixed dates,random 20% of labeled rows,30000,training_median,616.8979666666667,748.628415904713,600.0
+random_80_20_seed5228,mixed dates,random 20% of labeled rows,30000,train_only_town_flat_median,566.642,668.3556388131497,500.0

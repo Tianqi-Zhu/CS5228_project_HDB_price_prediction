@@ -1,1 +1,3 @@
-"""Exploratory analysis of the supplied main and auxiliary datasets."""
+"""Canonical exploratory analysis package for all supplied datasets."""
+
+__all__ = ["audits", "overview", "pdf_report", "run"]

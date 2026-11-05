@@ -5,7 +5,7 @@ import unittest
 import numpy as np
 import pandas as pd
 
-from analysis.experiments.spatiotemporal_hybrid import (
+from analysis.experiments.baselines.spatiotemporal_hybrid import (
     MONTH, TARGET, forecast_residuals, historical_features,
 )
 
