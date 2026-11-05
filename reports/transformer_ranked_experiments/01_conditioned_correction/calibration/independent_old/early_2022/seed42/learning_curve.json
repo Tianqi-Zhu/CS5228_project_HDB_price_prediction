@@ -1,0 +1,102 @@
+[
+  {
+    "epoch": 1,
+    "training_loss": 0.35276467593039496,
+    "weighted_rmse_sgd": 648.5301643931973
+  },
+  {
+    "epoch": 2,
+    "training_loss": 0.35061353243003457,
+    "weighted_rmse_sgd": 648.2761103523011
+  },
+  {
+    "epoch": 3,
+    "training_loss": 0.35026202767582265,
+    "weighted_rmse_sgd": 648.5362375551575
+  },
+  {
+    "epoch": 4,
+    "training_loss": 0.3501749606960911,
+    "weighted_rmse_sgd": 648.0686681322991
+  },
+  {
+    "epoch": 5,
+    "training_loss": 0.3493728673054,
+    "weighted_rmse_sgd": 648.0696070038805
+  },
+  {
+    "epoch": 6,
+    "training_loss": 0.3492883297346406,
+    "weighted_rmse_sgd": 647.748828093861
+  },
+  {
+    "epoch": 7,
+    "training_loss": 0.34857834850327446,
+    "weighted_rmse_sgd": 647.0516442890466
+  },
+  {
+    "epoch": 8,
+    "training_loss": 0.3483250701831559,
+    "weighted_rmse_sgd": 646.8810215092191
+  },
+  {
+    "epoch": 9,
+    "training_loss": 0.3486896197674638,
+    "weighted_rmse_sgd": 646.8711481656314
+  },
+  {
+    "epoch": 10,
+    "training_loss": 0.34843339505842175,
+    "weighted_rmse_sgd": 647.1246705350101
+  },
+  {
+    "epoch": 11,
+    "training_loss": 0.3482774574372728,
+    "weighted_rmse_sgd": 647.278688601663
+  },
+  {
+    "epoch": 12,
+    "training_loss": 0.34841600186743976,
+    "weighted_rmse_sgd": 647.2294625779335
+  },
+  {
+    "epoch": 13,
+    "training_loss": 0.3484647471015736,
+    "weighted_rmse_sgd": 646.7693432202985
+  },
+  {
+    "epoch": 14,
+    "training_loss": 0.34822415472087215,
+    "weighted_rmse_sgd": 647.634968889124
+  },
+  {
+    "epoch": 15,
+    "training_loss": 0.34819964458376673,
+    "weighted_rmse_sgd": 648.2030461070303
+  },
+  {
+    "epoch": 16,
+    "training_loss": 0.3487036495895709,
+    "weighted_rmse_sgd": 646.6523080718197
+  },
+  {
+    "epoch": 17,
+    "training_loss": 0.34833486908573214,
+    "weighted_rmse_sgd": 646.3051305219129
+  },
+  {
+    "epoch": 18,
+    "training_loss": 0.3483743069030471,
+    "weighted_rmse_sgd": 646.6386692147398
+  },
+  {
+    "epoch": 19,
+    "training_loss": 0.34848457600100563,
+    "weighted_rmse_sgd": 647.1793281572363
+  },
+  {
+    "epoch": 20,
+    "training_loss": 0.348046343963025,
+    "weighted_rmse_sgd": 646.7789878793312
+  }
+]

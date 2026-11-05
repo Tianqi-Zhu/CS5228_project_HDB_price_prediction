@@ -1,0 +1,34 @@
+site_id,company,symbol,radius_m,rental_buildings,nearest_rental_km,development_near_median_n,development_valid_months,outer_valid_months,eligible
+st_engineering_amk,ST Engineering,S63.SI,1000,0,1.045914988865011,0.0,0,0,False
+st_engineering_amk,ST Engineering,S63.SI,2000,97,1.045914988865011,45.0,29,10,True
+st_engineering_amk,ST Engineering,S63.SI,3000,398,1.045914988865011,163.0,29,10,True
+st_engineering_boon_lay,ST Engineering,S63.SI,1000,115,0.41378899057171814,44.0,29,10,True
+st_engineering_boon_lay,ST Engineering,S63.SI,2000,571,0.41378899057171814,175.0,29,10,True
+st_engineering_boon_lay,ST Engineering,S63.SI,3000,783,0.41378899057171814,240.0,29,10,True
+st_engineering_paya_lebar,ST Engineering,S63.SI,1000,22,0.7915561870321002,5.0,0,0,False
+st_engineering_paya_lebar,ST Engineering,S63.SI,2000,143,0.7915561870321002,42.0,29,10,True
+st_engineering_paya_lebar,ST Engineering,S63.SI,3000,664,0.7915561870321002,187.0,29,10,True
+venture_amk,Venture,V03.SI,1000,45,0.48489480467305507,12.0,0,0,False
+venture_amk,Venture,V03.SI,2000,430,0.48489480467305507,131.0,29,10,True
+venture_amk,Venture,V03.SI,3000,958,0.48489480467305507,307.0,29,10,True
+venture_marsiling,Venture,V03.SI,1000,73,0.26206205324927806,19.0,4,4,False
+venture_marsiling,Venture,V03.SI,2000,281,0.26206205324927806,55.0,29,10,True
+venture_marsiling,Venture,V03.SI,3000,575,0.26206205324927806,118.0,29,10,True
+venture_woodlands,Venture,V03.SI,1000,94,0.1633235219977885,31.0,26,9,True
+venture_woodlands,Venture,V03.SI,2000,318,0.1633235219977885,93.0,29,10,True
+venture_woodlands,Venture,V03.SI,3000,593,0.1633235219977885,148.0,29,10,True
+kulicke_soffa_serangoon,Kulicke & Soffa,KLIC,1000,188,0.12150465399658888,46.0,29,10,True
+kulicke_soffa_serangoon,Kulicke & Soffa,KLIC,2000,506,0.12150465399658888,132.0,29,10,True
+kulicke_soffa_serangoon,Kulicke & Soffa,KLIC,3000,1239,0.12150465399658888,375.0,29,10,True
+flex_changi,Flex,FLEX,1000,13,0.8000749099317915,4.0,0,0,False
+flex_changi,Flex,FLEX,2000,346,0.8000749099317915,120.0,29,10,True
+flex_changi,Flex,FLEX,3000,896,0.8000749099317915,281.0,29,10,True
+sia_engineering_changi,SIA Engineering,S59.SI,1000,0,1.5446002569728485,0.0,0,0,False
+sia_engineering_changi,SIA Engineering,S59.SI,2000,3,1.5446002569728485,1.0,0,0,False
+sia_engineering_changi,SIA Engineering,S59.SI,3000,3,1.5446002569728485,1.0,0,0,False
+seatrium_tuas,Seatrium / Sembcorp Marine,5E2.SI,1000,0,12.17727171192939,0.0,0,0,False
+seatrium_tuas,Seatrium / Sembcorp Marine,5E2.SI,2000,0,12.17727171192939,0.0,0,0,False
+seatrium_tuas,Seatrium / Sembcorp Marine,5E2.SI,3000,0,12.17727171192939,0.0,0,0,False
+seatrium_admiralty,Seatrium / Sembcorp Marine,5E2.SI,1000,47,0.6965147084260909,14.0,0,0,False
+seatrium_admiralty,Seatrium / Sembcorp Marine,5E2.SI,2000,230,0.6965147084260909,66.0,29,10,True
+seatrium_admiralty,Seatrium / Sembcorp Marine,5E2.SI,3000,368,0.6965147084260909,101.0,29,10,True

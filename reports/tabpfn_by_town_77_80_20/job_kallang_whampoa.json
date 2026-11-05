@@ -1,0 +1,8 @@
+{
+  "town": "kallang/whampoa",
+  "context_rows": 4565,
+  "query_rows": 1124,
+  "context_ids_sha256": "0ae31ce8cfe8d9244c9f133131a62772b0de5c3064a8a6e4d0b0713e61b7b38e",
+  "query_ids_sha256": "4613edbd0eded8eae76b3e47efc6485ec1aa1ebcfe21033bdff835c4577b2a5d",
+  "settings_sha256": "7ec7fcf4dc279912e4ccac47faafbe82887e1d344fe25f59350c4dbcbc3e5916"
+}

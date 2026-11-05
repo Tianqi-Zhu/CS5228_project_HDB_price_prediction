@@ -1,0 +1,15 @@
+specification,site_id,remote_sites,attempted_remote_sites,real_delta_pct,remote_median_delta_pct,remote_sites_improving_more
+earlier_selected,flex_changi,8,8,0.5220749046532012,1.4137261497580236,4
+earlier_selected,kulicke_soffa_serangoon,1,2,-7.816797784480359,-2.789561520966324,0
+earlier_selected,seatrium_admiralty,6,6,-1.6083672798531146,1.8237985868682092,2
+earlier_selected,st_engineering_amk,4,4,-3.1502660131878,1.0803748003991331,0
+earlier_selected,venture_woodlands,5,5,-4.508342356219752,0.721288279722098,0
+primary,flex_changi,8,8,3.6221204495557653,1.6243944601054103,6
+primary,kulicke_soffa_serangoon,5,5,2.1917780432957708,1.3121360086208245,3
+primary,seatrium_admiralty,6,6,-1.6083672798531146,1.8237985868682092,2
+primary,st_engineering_amk,4,4,-3.2806759931141376,-11.969427661548927,3
+primary,st_engineering_boon_lay,6,6,1.9134522049378675,-4.451383117301328,4
+primary,st_engineering_paya_lebar,4,4,1.4433020017241125,-11.969427661548927,3
+primary,venture_amk,3,3,0.7267696314796983,-2.5386937060317813,2
+primary,venture_marsiling,5,5,0.9563266692282801,0.5621710734723078,3
+primary,venture_woodlands,5,5,0.21553919014543874,0.5621710734723078,2

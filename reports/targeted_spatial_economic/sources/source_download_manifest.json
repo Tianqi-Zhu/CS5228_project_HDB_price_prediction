@@ -1,0 +1,42 @@
+{
+  "registered_utc": "2026-11-02T09:32:32.343325+00:00",
+  "documents": [
+    {
+      "file": "hdb2019.pdf",
+      "url": "https://links.sgx.com/FileOpen/HDB_v19_keystatistic_20191024.ashx?AnncID=IWPHODMKZ4RZEZAF&App=ArchiveAnnouncement&FileID=583813",
+      "sha256": "b8ba4826aaba97c0e6382a95e910dd9f959dd2980daa58fb3559e41600c78656",
+      "bytes": 2278457,
+      "used_for": "B1 archived supply",
+      "available": "2020-01",
+      "timing": "Archived October 2019 issuer filing; conservative January 2020 use"
+    },
+    {
+      "file": "hdb2021.pdf",
+      "url": "https://links.sgx.com/1.0.0/corporate-announcements/CXHXEE7KATRRGPM3/738439_HDB_key-statistics.pdf",
+      "sha256": "84215bc7b054acef143a019e666b11368c0a137e6ca9c096874a06ec006dfe0b",
+      "bytes": 8202728,
+      "used_for": "B1 archived supply",
+      "available": "2023-01",
+      "timing": "Retrieved issuer filing broadcast 11 November 2022; do not assume the 2021 financial period implies availability in 2021"
+    },
+    {
+      "file": "verified_key_statistics_2022.pdf",
+      "url": "https://assets.hdb.gov.sg/about-us/news-and-publications/annual-report/2022/ebooks/Key%20Statistics%20FY21.pdf",
+      "sha256": "48843b85698d712f12e69772f88a3d2ef96a1ece5e6c7f1f360e85bc8904abdc",
+      "bytes": 3059731,
+      "used_for": "B1 archived supply",
+      "available": "2023-01",
+      "timing": "HDB FY2021 annual-report release 30 October 2022; conservative January 2023 use"
+    },
+    {
+      "file": "hdb2023_new.pdf",
+      "url": "https://www.hdb.gov.sg/-/media/hdb-pulse/reports/annual-reports-and-financial-statements/HDB-Key-Statistics-FY22.pdf",
+      "sha256": "c260416c97d621982abc7e8ee552be30890adb4bbead871633e5331fa64bdf00",
+      "bytes": 971939,
+      "used_for": "B1 archived supply",
+      "available": "2024-01",
+      "timing": "FY2022 report issued 31 October 2023; conservative January 2024 use, nine months after fiscal end"
+    }
+  ],
+  "note": "Original annual-report snapshots. Cached files are never overwritten. First registration follows independent acquisition and visual/table-total checks; exact later replay requires these hashes."
+}

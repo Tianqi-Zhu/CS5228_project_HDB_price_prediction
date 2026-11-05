@@ -1,0 +1,11 @@
+{
+  "source_sha256": {
+    "reports\\company_worksite_followup\\frozen_panel_scores.csv": "7748c3823842b16da7c235db0dbcc67dd9ad8406535f956ef67db62bc7efb1f9",
+    "reports\\company_worksite_followup\\matched_placebo_summary.csv": "f92e160d137426cc1ff23d9aef99eb8cc42a4ebec6a40e0a24657809863ba045",
+    "reports\\company_worksite_followup\\row_incremental_comparisons.csv": "3b1d584f0686e6ae361782ca22fbe82a76555fb1cf383c66209a8cd15c393135",
+    "reports\\company_worksite_followup\\tabpfn_local_correction\\scenario_comparisons.csv": "5cc636d15996b562487085781476b7b36c080f98086f45a2eafed49efa508f80"
+  },
+  "code_sha256": "1c35f2caf36ef32c62953913cc13e0b02dc90b0bb4cce1ee2089c586dbd64e97",
+  "source_period": "June 2024-March 2025 already examined",
+  "submission_changed": false
+}

@@ -1,0 +1,169 @@
+{
+  "config": {
+    "banks": [
+      "D05.SI",
+      "O39.SI",
+      "U11.SI"
+    ],
+    "financial_services": [
+      "D05.SI",
+      "O39.SI",
+      "U11.SI",
+      "S68.SI",
+      "AIY.SI"
+    ],
+    "nonbank_finance": [
+      "S68.SI",
+      "AIY.SI"
+    ],
+    "primary_hypothesis": "Equal-weight monthly returns of DBS, OCBC and UOB at lag 1 versus changes in Singapore arithmetic mean HDB rent.",
+    "price_fields": [
+      "ADJUSTED_CLOSE",
+      "CLOSE"
+    ],
+    "lags_months": [
+      0,
+      1,
+      3,
+      6
+    ],
+    "descriptive_growth_windows_months": [
+      1,
+      3,
+      12
+    ],
+    "primary_window_months": 1,
+    "reference_year": 2021,
+    "development_start": "2022-01",
+    "development_end": "2024-05",
+    "later_start": "2024-06",
+    "later_end": "2025-03",
+    "validation_status": "The later ten months have already been examined in related project experiments. They are reused development evidence, not an untouched final test.",
+    "nonfinancial_market_control": "Monthly-rebalanced equal-weight return of January 2021 Singapore-listed inception names after excluding all five financial stocks. Do not use a bank-heavy broad index as the only comparator.",
+    "inference": "Primary monthly regressions on 2022-Jan to 2024-May. Newey-West covariance with three monthly lags; dependent FDR corrections across bank/finance/company/lag tests. Long-window correlations are descriptive and use block length at least as long as the growth window.",
+    "forecast": "One-month-ahead expanding Ridge, alpha 10, at least twelve mature monthly labels. Rent histories, economic signals and all scaling use only preceding months. Earlier forecasts select model/lag; later period is never used for selection.",
+    "sources": {
+      "banks": "https://www.abs.org.sg/about-us/memberbanks",
+      "sgx_ifast": "https://links.sgx.com/1.0.0/corporate-announcements/1JOGK1M7YBA5D0A0/20170609_SGX_welcomes_iFAST_Financial_as_Securities_Trading_Member_and_Clearing_Member.pdf",
+      "ifast_historical_business": "https://www.ifastcorp.com/ifastcorp/articleFiles/webarticles/14645/SG/iFAST%20Corp_Annual%20Report%202021_20220401.pdf"
+    },
+    "scope_limits": "The supplied basket excludes financial companies without price series, including insurers not present in the file. No present-day market caps or future financial constituents are used. No submission or TabPFN model changes are requested."
+  },
+  "diagnostics": {
+    "ADJUSTED_CLOSE": {
+      "nonfinancial_market_stocks": 37,
+      "nonfinancial_members": [
+        "5E2.SI",
+        "A17U.SI",
+        "AP4.SI",
+        "BN4.SI",
+        "BTM.SI",
+        "BUOU.SI",
+        "C07.SI",
+        "C09.SI",
+        "C38U.SI",
+        "C52.SI",
+        "C6L.SI",
+        "CJLU.SI",
+        "E5H.SI",
+        "F34.SI",
+        "G13.SI",
+        "H02.SI",
+        "H15.SI",
+        "HMN.SI",
+        "K71U.SI",
+        "M44U.SI",
+        "ME8U.SI",
+        "N2IU.SI",
+        "NS8U.SI",
+        "OV8.SI",
+        "P15.SI",
+        "S08.SI",
+        "S58.SI",
+        "S59.SI",
+        "S63.SI",
+        "T82U.SI",
+        "U06.SI",
+        "U14.SI",
+        "U96.SI",
+        "V03.SI",
+        "VC2.SI",
+        "Z25.SI",
+        "Z74.SI"
+      ],
+      "late_listings_excluded": [
+        "9CI.SI"
+      ]
+    },
+    "CLOSE": {
+      "nonfinancial_market_stocks": 37,
+      "nonfinancial_members": [
+        "5E2.SI",
+        "A17U.SI",
+        "AP4.SI",
+        "BN4.SI",
+        "BTM.SI",
+        "BUOU.SI",
+        "C07.SI",
+        "C09.SI",
+        "C38U.SI",
+        "C52.SI",
+        "C6L.SI",
+        "CJLU.SI",
+        "E5H.SI",
+        "F34.SI",
+        "G13.SI",
+        "H02.SI",
+        "H15.SI",
+        "HMN.SI",
+        "K71U.SI",
+        "M44U.SI",
+        "ME8U.SI",
+        "N2IU.SI",
+        "NS8U.SI",
+        "OV8.SI",
+        "P15.SI",
+        "S08.SI",
+        "S58.SI",
+        "S59.SI",
+        "S63.SI",
+        "T82U.SI",
+        "U06.SI",
+        "U14.SI",
+        "U96.SI",
+        "V03.SI",
+        "VC2.SI",
+        "Z25.SI",
+        "Z74.SI"
+      ],
+      "late_listings_excluded": [
+        "9CI.SI"
+      ]
+    }
+  },
+  "source_sha256": {
+    "data\\train.csv": "2fe38ce9e0d8a02e9786f066d4a10d575d91f34be1d9111f0142e3f43fbfc8a5",
+    "data\\auxiliary\\sg-stock-prices.csv": "e03802bedbebedab27caafb6755ce055f1654cc17b3fc5fc6e3e7ee6ab2c23b7",
+    "data\\auxiliary\\sg-hdb-block.csv": "2255ad61ba6895456a39aec81d12583796d717ef88fe102ee9de71b3796fc223",
+    "analysis\\configs\\financial_sector_rents.json": "1f252d6a788532cfb28f9d6077fa6158cf456d6c47b3803b506280fd11cc66a4",
+    "reports\\company_worksite_followup\\market_monthly_log_returns.csv": "8bfd0c5ae8014ac331a055172092dcf752b2896e44b4cf263c9710d9fe0b52e6",
+    "analysis\\configs\\sti_etf_weights_2020_12.csv": "bc11ead02c3f3433e07125c4a370bbd5fa1a03d6c2800f6ff3c806db63fbc84d"
+  },
+  "code_sha256": {
+    "analysis\\experiments\\financial_sector_rents.py": "336d1c31a1b6259758a2cdf23b0abbd2ec00db1f8fc320b82e3d2102f7661a29",
+    "analysis\\compare_financial_sector_rents.py": "a7bf6349595bbf4428b363a691bdb3fceae7b449b584316a26fbadea5e226aa5",
+    "analysis\\experiments\\stock_index_regions.py": "944940361d94f519b26b26c1929a6d4c9b91e62592698b13dc8f219aa75dfd0b",
+    "analysis\\experiments\\company_worksite_stocks.py": "d83069554ad22b97bb7d74a996d80047660771afe4a9b1b9df574097793adc7a",
+    "analysis\\experiments\\stock_sector_signals.py": "a952cc0c3ab4a364dbfcbe73957727de7a843e388d2dba2858b074e513a8b4af"
+  },
+  "versions": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.0"
+  },
+  "rental_rows": 150000,
+  "rental_months": 51,
+  "source_hashes_unchanged": true,
+  "forecast_cutoffs_verified": true
+}

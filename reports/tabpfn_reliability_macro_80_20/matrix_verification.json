@@ -1,0 +1,9 @@
+{
+  "verified": true,
+  "feature_bundles_reconstructed": 9,
+  "original77_values_and_categories_unchanged": true,
+  "original_labels_and_residual_baselines_equal": true,
+  "source_and_submission_hashes_verified": true,
+  "long_horizon_same_cases_for_all_policies": true,
+  "long_horizon_policy_agreement_through10_exact": true
+}

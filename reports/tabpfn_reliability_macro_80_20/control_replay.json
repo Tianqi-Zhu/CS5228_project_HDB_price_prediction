@@ -1,0 +1,9 @@
+{
+  "verified": true,
+  "full_context_rows": 121005,
+  "replayed_query_rows": 200,
+  "max_difference_sgd": 0.0,
+  "weights_unchanged": true,
+  "same_new_worker_execution_policy": true,
+  "seconds": 30.07008410000708
+}

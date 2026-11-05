@@ -1,0 +1,8 @@
+{
+  "town": "geylang",
+  "context_rows": 3668,
+  "query_rows": 836,
+  "context_ids_sha256": "90f2e36c85b7dba6805695b635e6dec30f895d8fc60fd6346bc5e7981061979d",
+  "query_ids_sha256": "c656ddb2844571f0db893e25be678adce760dea5998a924d086fe90b84c7f8b9",
+  "settings_sha256": "7ec7fcf4dc279912e4ccac47faafbe82887e1d344fe25f59350c4dbcbc3e5916"
+}

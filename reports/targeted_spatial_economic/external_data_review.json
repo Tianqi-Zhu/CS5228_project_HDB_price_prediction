@@ -1,0 +1,37 @@
+{
+  "sources": [
+    {
+      "name": "HDB quarterly median rents",
+      "url": "https://data.gov.sg/datasets/d_23000a00c52996c55106084ed0339566/view",
+      "metadata_file": "sources/rent_metadata.json",
+      "status": "not admitted: current values lack original historical vintages"
+    },
+    {
+      "name": "Data.gov.sg dataset metadata API",
+      "url": "https://guide.data.gov.sg/developer-guide/dataset-apis/get-dataset-metadata",
+      "status": "metadata does not provide historical median values"
+    },
+    {
+      "name": "Data.gov.sg update-history client",
+      "url": "https://data.gov.sg/_next/static/chunks/8108-dd90070dba50b08b.js",
+      "local_file": "sources/8108-dd90070dba50b08b.js",
+      "status": "UI explicitly describes ingestion timestamps; no vintage-value download shown"
+    },
+    {
+      "name": "HDB2020Q1 original median annex",
+      "url": "https://www.hdb.gov.sg/cs/infoweb/-/media/doc/PressReleases/corppr24042020annex-d.ashx",
+      "status": "404 at retrieval"
+    },
+    {
+      "name": "HDB2021Q4 original release",
+      "url": "https://www.hdb.gov.sg/hdb-pulse/news/2022/release-of-4th-quarter-2021-public-housing-data",
+      "status": "release date27Jan2022 confirms quarterly timing; a full original-value panel was not reconstructed"
+    },
+    {
+      "name": "MOM foreign-workforce numbers",
+      "url": "https://www.mom.gov.sg/foreign-workforce-numbers",
+      "status": "current revised snapshot; original pass-stock vintages not established"
+    }
+  ],
+  "rule": "No external historical values are used merely because their reference period precedes the forecast date. B1 alone has admitted original annual-report vintages."
+}

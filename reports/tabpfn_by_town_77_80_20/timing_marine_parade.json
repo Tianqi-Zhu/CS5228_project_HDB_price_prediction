@@ -1,0 +1,15 @@
+{
+  "fit_seconds": 2.0734532000496984,
+  "predict_seconds": 0.3556092999642715,
+  "peak_vram_gib": 0.7476863861083984,
+  "context_rows": 1333,
+  "query_rows": 304,
+  "features": 77,
+  "batch_size": 200,
+  "subsampling": false,
+  "parameter_versions_unchanged": true,
+  "town": "marine parade",
+  "rmse_sgd": 483.729542963657,
+  "mae_sgd": 376.19045105251195,
+  "bias_sgd": -126.53408120913348
+}

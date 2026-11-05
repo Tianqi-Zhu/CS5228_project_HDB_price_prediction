@@ -1,0 +1,19 @@
+{
+  "source_hashes": {
+    "C:\\Users\\auror\\Code\\CS5228_project_HDB_price_prediction\\analysis\\run_transformer_rent_innovations.py": "ee5c6261a9449bc0174e1a68f96b345dd6577537e152ed3ee625edf194de34cb",
+    "C:\\Users\\auror\\Code\\CS5228_project_HDB_price_prediction\\analysis\\experiments\\conditioned_rent_correction.py": "c9033c50f595731943d75552d2ef32d62713efa718bda1182dfc23528316dd87",
+    "C:\\Users\\auror\\Code\\CS5228_project_HDB_price_prediction\\analysis\\run_conditioned_rent_corrections.py": "bee22aed4775530435624e9650ba26a994e485152aeeb4481a2f67b0f967cfaf",
+    "C:\\Users\\auror\\Code\\CS5228_project_HDB_price_prediction\\reports\\transformer_ranked_experiments\\01_conditioned_correction\\settings.json": "b4d4baef60d613bec2b56a0d99b6bbf7bf10cd87d7275d36997b69e07cfbd697",
+    "C:\\Users\\auror\\Code\\CS5228_project_HDB_price_prediction\\.cache\\spatial_temporal_transformer\\prepared.joblib": "683987abe171fabd9e26d29a6b4e8c39205a8eed7f18297a99d20b444cdfdf9c"
+  },
+  "change_estimator": "preceding_three_available_changes",
+  "remove_three_level_channels": true,
+  "retain_counts_ages": true,
+  "conditioned_zero_initialized_head": true,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "selection_label_max": "2024-04"
+}

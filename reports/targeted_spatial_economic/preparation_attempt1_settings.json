@@ -1,0 +1,85 @@
+{
+  "origins": [
+    "2022-09",
+    "2023-07",
+    "2024-06"
+  ],
+  "members": [
+    "baseline",
+    "spatial",
+    "temporal"
+  ],
+  "variants": [
+    "A1"
+  ],
+  "baseline": "Existing optimized plain frozen three-member V3.5Fast ensemble; 77/89/84 inputs, two estimators each,seed42,native batching,batch200,full unchanged contexts",
+  "hypothesis": "A1 adds town/street hierarchical recent levels, local growth relative to national-flat growth, support/dispersion, and building-to-street shrinkage. Existing nearby-comparable features remain in spatial member; do not duplicate them.",
+  "history": {
+    "recent_months": 3,
+    "previous_months": 3,
+    "support_months": 6,
+    "shrink_observations": 20,
+    "publication_lag_months": 1
+  },
+  "weights": "Same exact simplex MSE optimizer as reference, fitted only on prior disjoint prediction windows. Earliest origin defaults to baseline member. Also report fixed reference-weight sensitivity.",
+  "residual": {
+    "shrink": [
+      20,
+      50
+    ],
+    "gamma": [
+      0,
+      0.25,
+      0.5,
+      1
+    ],
+    "half_life_months": 6,
+    "publication_lag_months": 1
+  },
+  "gate": "Combined features only if each group improves earlier and later RMSE; later already reused, exploratory, not untouched confirmation",
+  "source_sha256": {
+    "data/train.csv": "2fe38ce9e0d8a02e9786f066d4a10d575d91f34be1d9111f0142e3f43fbfc8a5",
+    "data/test.csv": "a2ec03a0afc07c251c72cc0de2e15ac965a3b06291b304aaac53a375115ff4e0",
+    ".cache/tabpfn/tabpfn-v3.5-fast-20260909.safetensors": "14e0b81285bca7a6d1ef121169f27f651f76dff49cad6c0b8779d5c836018550",
+    "reports/tabpfn_feature_diversified_ensemble_80_20/selection.json": "56b77baa971187168a28c4ced8769830e3ced1de1a2b1fbf41cc85863513f72f",
+    "reports/tabpfn_feature_diversified_ensemble_80_20/learned_weights.csv": "0774ba4c84bcbcce69a43a78571a9e6d5d71fc6b877713e0ac7a61381782b758",
+    "reports/tabpfn_feature_ensemble_final_submission/submission_tabpfn_optimized_ensemble_150k.csv": "c67f5374040c74314110afc8dd631ae180bb63a54ef65abd7069be109796cea9",
+    "reports/tabpfn_diagscale_mse_final_submission/submission_tabpfn_diagscale_mse_150k.csv": "5616125166abed5a353ab4d2f8a9788109a0b8078480ce622bbf8c7e8fb80500",
+    "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2022-09_baseline.csv": "818f6c7fdeba711a36bc848c8de377846d619b6724991fd27fbaa070e2f03c38",
+    "reports/tabpfn_feature_diversified_ensemble_80_20/timing_2022-09_baseline.json": "2e75c9651788f109a9de8b9f3cdc33faf0b6a8fae28ff8886cf9182939e33ed9",
+    "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2022-09_spatial.csv": "ba6896fb9b0d60a13c15899b4d42ac9d6fbc21d8c059a6ae54485fc3120efe94",
+    "reports/tabpfn_feature_diversified_ensemble_80_20/timing_2022-09_spatial.json": "33270fe338f95a10822c5377779e0e121f6715fc23b05e7d7518a8a84d72a8e2",
+    ".cache/tabpfn_feature_diversified_ensemble_80_20/features_2022-09_spatial.joblib": "5dc76e70b32908540213a1914aef20efe5e27e5c218f7655e4010f32a6b64097",
+    "reports/tabpfn_feature_diversified_ensemble_80_20/features_2022-09_spatial.json": "71e57a7380bde19fb4a29546239e1eba2a26364bbe443c48755e21ad6fb5970a",
+    "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2022-09_temporal.csv": "2071e1be331ed7abcd068dc1229f4dba894546bb60c355437ce8ef39302f8240",
+    "reports/tabpfn_feature_diversified_ensemble_80_20/timing_2022-09_temporal.json": "c223fe7bc6d913cdfc1ee279ec00bbb2fb4ac6856150704bd1b84822b19da348",
+    ".cache/tabpfn_feature_diversified_ensemble_80_20/features_2022-09_temporal.joblib": "48df72a8cbe92d094cd77cca9f7cbb2aa10f19fa4c6a2a1ebebca7cb43c15c3c",
+    "reports/tabpfn_feature_diversified_ensemble_80_20/features_2022-09_temporal.json": "227089169c64ab501dc4b501dd58df90f961f15bedc51166d25ea670de75ee85",
+    "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2023-07_baseline.csv": "95d38ccb1ade70caf2381c2d4ddfd2bcc38fca30edb6d0673181e26526454c5b",
+    "reports/tabpfn_feature_diversified_ensemble_80_20/timing_2023-07_baseline.json": "70c926426a5b7573e0691a17546c87f6b401d53422741fac56b2c66dc23e7614",
+    "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2023-07_spatial.csv": "5b074ff9633624e246838474d30721b5808fee15bc40d211a9b55498f8c84b25",
+    "reports/tabpfn_feature_diversified_ensemble_80_20/timing_2023-07_spatial.json": "d7bd9df5e652253bc67935d951288c2a2e7d351fee11bc54d81c505f6a436ebb",
+    ".cache/tabpfn_feature_diversified_ensemble_80_20/features_2023-07_spatial.joblib": "5340247706a06b479fe27e0a7f26c1294b3024e069564748f10152fdd1d68eac",
+    "reports/tabpfn_feature_diversified_ensemble_80_20/features_2023-07_spatial.json": "6afd82b3d6ff34326313de2c075c22e526bd779d9d578b3fe552f255956461a7",
+    "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2023-07_temporal.csv": "20dbfe3fc9a2acacf7b2432a4f012e68f26df51d7df196a41c1b02360e871da2",
+    "reports/tabpfn_feature_diversified_ensemble_80_20/timing_2023-07_temporal.json": "19221e817b3a1e8373f99079e0f5a3952e286f032e92b346f332bbb535926633",
+    ".cache/tabpfn_feature_diversified_ensemble_80_20/features_2023-07_temporal.joblib": "0bd7f914262b906c1a826129cd8fdd0bdb16e06e23b1e771a9a4889428cc16fd",
+    "reports/tabpfn_feature_diversified_ensemble_80_20/features_2023-07_temporal.json": "2cd6c9602d3d66a90965eb254b48819a9c3316f43b49659f9275f5b64500a05c",
+    "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2024-06_baseline.csv": "bdb86d06a20514723e32e9341c4952099812c2398547cb3040d12d190b11a533",
+    "reports/tabpfn_feature_diversified_ensemble_80_20/timing_2024-06_baseline.json": "7956b19354542c5275fcb86aecfd07d7548e475185c2da87b3304b4dad72c788",
+    "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2024-06_spatial.csv": "e9bd0ccd5ccde327e45fc9fc14ea040a8a84a2b70f06e1b775f1e2e95ae0186a",
+    "reports/tabpfn_feature_diversified_ensemble_80_20/timing_2024-06_spatial.json": "57ee8fb534ba8d5f805dd6b924f9777c49683460b7ddb2f7c51eb7e23ccf828e",
+    ".cache/tabpfn_feature_diversified_ensemble_80_20/features_2024-06_spatial.joblib": "6ab34cbdecfc6f60bcbf55047bd60b1226eeed405a913e61c650752905859916",
+    "reports/tabpfn_feature_diversified_ensemble_80_20/features_2024-06_spatial.json": "a8ea24e46ce5f6d232ec6d1ded5afec36447eb53db07a7cf7c2f6d801a83090a",
+    "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2024-06_temporal.csv": "b322b05927dedaae3f529dd2a53a2b6e07cd111f846eaf2b584230329caf50af",
+    "reports/tabpfn_feature_diversified_ensemble_80_20/timing_2024-06_temporal.json": "fd3e682ad0a107c097d0cd3dccb09faf69dad4be82d73158bcce389bac57b047",
+    ".cache/tabpfn_feature_diversified_ensemble_80_20/features_2024-06_temporal.joblib": "41f7cf16734d3c4074412fa7bf6c27a5a895cf4e78565e0347e5ef5ccde8f9a4",
+    "reports/tabpfn_feature_diversified_ensemble_80_20/features_2024-06_temporal.json": "97401bb31592869ef52169dbde677ce567f38d195674f901462a340223b9f0fc"
+  },
+  "code_sha256": {
+    "analysis/run_targeted_spatial_economic.py": "2588f3a496d26d8fcdb6aae3e6faf4de64dfbfb6996b136d7c471ab63a65549d",
+    "analysis/experiments/targeted_spatial_economic.py": "ea6c3555a59259b539dafe76120d67421753a8a7b4c6697c2770136135e2a221",
+    "analysis/compare_tabpfn_feature_ensemble.py": "835d540a9382c60190566feec70f4f6f911d036767bd4cee50f1bac0cb7e58af"
+  },
+  "external_availability": "Official datasets require historical vintages and publication evidence; current revised snapshots are not silently used at past origins"
+}

@@ -1,0 +1,22 @@
+{
+  "source": "data/train.csv",
+  "rule": "normalized FLAT_TYPE in 3-room, 4-room, 5-room, executive and MONTHLY_RENT <= 1500",
+  "total_rows": 150000,
+  "removed_rows": 3768,
+  "retained_rows": 146232,
+  "removed_equal_to_1500": 1752,
+  "removed_below_1500": 2016,
+  "removed_by_year": {
+    "2021": 1737,
+    "2022": 856,
+    "2023": 598,
+    "2024": 484,
+    "2025": 93
+  },
+  "removed_by_flat_type": {
+    "3-room": 2636,
+    "4-room": 833,
+    "5-room": 234,
+    "executive": 65
+  }
+}

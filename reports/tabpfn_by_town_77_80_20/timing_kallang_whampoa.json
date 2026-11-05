@@ -1,0 +1,15 @@
+{
+  "fit_seconds": 1.0580641999840736,
+  "predict_seconds": 0.4442979999585077,
+  "peak_vram_gib": 1.8053464889526367,
+  "context_rows": 4565,
+  "query_rows": 1124,
+  "features": 77,
+  "batch_size": 200,
+  "subsampling": false,
+  "parameter_versions_unchanged": true,
+  "town": "kallang/whampoa",
+  "rmse_sgd": 539.3378898111047,
+  "mae_sgd": 396.67908569848356,
+  "bias_sgd": 29.579032291744635
+}

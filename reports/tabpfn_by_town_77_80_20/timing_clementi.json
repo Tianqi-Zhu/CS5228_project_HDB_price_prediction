@@ -1,0 +1,15 @@
+{
+  "fit_seconds": 1.2585290999850258,
+  "predict_seconds": 0.46719039999879897,
+  "peak_vram_gib": 1.7328405380249023,
+  "context_rows": 4404,
+  "query_rows": 1025,
+  "features": 77,
+  "batch_size": 200,
+  "subsampling": false,
+  "parameter_versions_unchanged": true,
+  "town": "clementi",
+  "rmse_sgd": 493.56691000685396,
+  "mae_sgd": 379.7082521538314,
+  "bias_sgd": -71.77162454807973
+}

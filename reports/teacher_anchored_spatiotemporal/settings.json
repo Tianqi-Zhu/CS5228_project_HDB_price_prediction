@@ -1,0 +1,23 @@
+{
+  "sources": {
+    "reports\\tabpfn_abcde_ensemble\\predictions_all_origins.csv": "34cd9fd15c7f45fdfd60a0c5735f8feda356eae6323cf177501d9be4e42407b2",
+    ".cache\\spatial_temporal_transformer\\prepared.joblib": "683987abe171fabd9e26d29a6b4e8c39205a8eed7f18297a99d20b444cdfdf9c",
+    "reports\\tabpfn_abcde_ensemble\\oof_provenance_2022-09.json": "84a728bbb650cd3db7588d9c12c37b433e8c95aa80345db24a9af9385409469d",
+    "reports\\tabpfn_abcde_ensemble\\oof_provenance_2023-07.json": "66dc7bcc59b1d09f6bb7209ad9b878780906735277b846d3ba044a89adddc74a"
+  },
+  "selection": "2022-09 fit, 2023-07 validation; locked regularization and epoch then refit on both",
+  "teacher": "ABCDE_equal, out-of-origin at all three origins",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "regularizations": [
+    0.25,
+    1.0,
+    4.0
+  ],
+  "max_epochs": 35,
+  "correction": "zero-initialized 12-lag rent cross-attention, capped by tanh and sigmoid gate",
+  "outer_selection": false
+}

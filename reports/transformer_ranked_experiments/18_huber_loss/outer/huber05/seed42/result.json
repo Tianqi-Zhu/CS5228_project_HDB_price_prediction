@@ -1,0 +1,15 @@
+{
+  "fold": "outer",
+  "design": "huber05",
+  "seed": 42,
+  "best_epoch": 3,
+  "rows": 28995,
+  "weighted_rmse_sgd": 471.00412569879785,
+  "rmse_sgd": 471.00412569879785,
+  "mae_sgd": 336.43086883296553,
+  "bias_sgd": 64.8200059620531,
+  "peak_allocated_vram_gib": 0.3044285774230957,
+  "checkpoint_sha256": "eed022d505d5b666f0fc2feaaa1cb0d724e6c649bf74d3f90dfa4b505eee9c1d",
+  "predictions_sha256": "df08ccfdee815fefd0a8f5b718d8ee24d3ae22f3f2a3c7efd2a1786a7d3ac200",
+  "outer_labels_used_for_selection": false
+}

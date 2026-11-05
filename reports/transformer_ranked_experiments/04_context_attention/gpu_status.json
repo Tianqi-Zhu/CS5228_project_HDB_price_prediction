@@ -1,0 +1,14 @@
+{
+  "state": "ready",
+  "gpu": {
+    "index": 0,
+    "name": "NVIDIA GeForce RTX 4080",
+    "total_gib": 15.9921875,
+    "free_gib": 13.279296875,
+    "utilization_pct": 1.0
+  },
+  "stable_samples": 2,
+  "required_free_gib": 8.0,
+  "max_utilization_pct": 35.0,
+  "wait_seconds": 15.13
+}

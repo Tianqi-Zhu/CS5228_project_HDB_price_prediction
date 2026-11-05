@@ -1,0 +1,4 @@
+origin,site_id,rows,available_rows,future_signal_rows,latest_used_stock_month,cutoff
+2022-09,kulicke_soffa_serangoon,2000,2000,0,2022-12,each approval month minus fixed lag
+2023-07,kulicke_soffa_serangoon,2000,2000,0,2023-10,each approval month minus fixed lag
+2024-06,kulicke_soffa_serangoon,28995,28995,0,2024-09,each approval month minus fixed lag

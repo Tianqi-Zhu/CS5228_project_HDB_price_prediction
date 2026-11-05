@@ -1,0 +1,17 @@
+{
+  "spec": {
+    "name": "T0",
+    "information": "none",
+    "processor": "none",
+    "window": 12,
+    "delay": 0
+  },
+  "seed": 42,
+  "validation": true,
+  "epochs": 1,
+  "smoke": true,
+  "device": "cpu",
+  "fit_rows": 512,
+  "query_rows": 64,
+  "preparation_sha256": "683987abe171fabd9e26d29a6b4e8c39205a8eed7f18297a99d20b444cdfdf9c"
+}

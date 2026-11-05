@@ -1,0 +1,15 @@
+{
+  "fit_seconds": 1.6255459000822157,
+  "predict_seconds": 0.4220707999775186,
+  "peak_vram_gib": 1.2305498123168945,
+  "context_rows": 2816,
+  "query_rows": 737,
+  "features": 77,
+  "batch_size": 200,
+  "subsampling": false,
+  "parameter_versions_unchanged": true,
+  "town": "sembawang",
+  "rmse_sgd": 395.3606055439973,
+  "mae_sgd": 275.8793249997286,
+  "bias_sgd": 64.31019907315516
+}

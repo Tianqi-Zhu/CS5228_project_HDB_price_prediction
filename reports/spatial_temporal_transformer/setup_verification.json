@@ -1,0 +1,7 @@
+{
+  "outer_77_feature_values_match_source": true,
+  "outer_baseline_match_source": true,
+  "all_eight_bundles_labels_and_cutoffs_checked": true,
+  "source_code_and_submissions_unchanged": true,
+  "numeric_tolerance_sgd": 1e-07
+}

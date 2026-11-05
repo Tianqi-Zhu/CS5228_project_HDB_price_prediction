@@ -1,0 +1,8 @@
+{
+  "town": "hougang",
+  "context_rows": 5746,
+  "query_rows": 1369,
+  "context_ids_sha256": "3fc38c5382e971d9e87dbac04d4f4efd354f014a6862ef57ac83e863d5e656e8",
+  "query_ids_sha256": "8d77719ecfaf55debc1ce42215269a48acb79b8e8db2e68cfef764ecac4beaea",
+  "settings_sha256": "7ec7fcf4dc279912e4ccac47faafbe82887e1d344fe25f59350c4dbcbc3e5916"
+}

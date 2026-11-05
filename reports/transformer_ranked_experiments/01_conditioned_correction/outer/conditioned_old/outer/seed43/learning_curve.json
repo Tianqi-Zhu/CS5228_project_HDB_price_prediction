@@ -1,0 +1,22 @@
+[
+  {
+    "epoch": 1,
+    "training_loss": 0.5613594162061748
+  },
+  {
+    "epoch": 2,
+    "training_loss": 0.558952225662988
+  },
+  {
+    "epoch": 3,
+    "training_loss": 0.5581715252832018
+  },
+  {
+    "epoch": 4,
+    "training_loss": 0.5575988501436097
+  },
+  {
+    "epoch": 5,
+    "training_loss": 0.5574818737647704
+  }
+]

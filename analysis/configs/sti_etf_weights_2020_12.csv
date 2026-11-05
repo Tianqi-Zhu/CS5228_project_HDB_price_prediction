@@ -1,0 +1,31 @@
+symbol,source_name,fair_value_sgd,nav_weight_pct
+D01.SI,Dairy Farm International Holdings,2873581,0.61
+H78.SI,Hongkong Land Holdings,11029087,2.35
+J36.SI,Jardine Matheson Holdings,27073736,5.75
+J37.SI,Jardine Strategic Holdings,10453395,2.22
+C31.SI,CapitaLand,14733606,3.13
+C09.SI,City Developments,6491063,1.38
+C52.SI,ComfortDelGro,6019029,1.28
+D05.SI,DBS Group,78019407,16.58
+G13.SI,Genting Singapore,8598726,1.82
+C07.SI,Jardine Cycle and Carriage,3334077,0.71
+BN4.SI,Keppel,13421534,2.85
+O39.SI,OCBC,61347590,13.03
+S58.SI,SATS,4410843,0.93
+U96.SI,Sembcorp Industries,2703224,0.57
+C6L.SI,Singapore Airlines,9506608,2.02
+S68.SI,Singapore Exchange,13289433,2.82
+S63.SI,ST Engineering,10165841,2.16
+Z74.SI,Singtel,29957413,6.37
+U11.SI,UOB,50619830,10.76
+U14.SI,UOL,6629205,1.41
+V03.SI,Venture,8748710,1.86
+F34.SI,Wilmar,17207395,3.66
+BS6.SI,Yangzijiang Shipbuilding,3470930,0.74
+Y92.SI,Thai Beverage,12584902,2.67
+A17U.SI,Ascendas REIT,16943845,3.60
+C38U.SI,CapitaLand Mall Trust,16413646,3.49
+AJBU.SI,Keppel DC REIT,5973498,1.27
+N2IU.SI,Mapletree Commercial Trust,8140206,1.73
+ME8U.SI,Mapletree Industrial Trust,8283318,1.76
+M44U.SI,Mapletree Logistics Trust,9715335,2.06

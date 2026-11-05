@@ -1,0 +1,21 @@
+{
+  "run": "calibration/S2/early_2023",
+  "variant": "S2",
+  "seed": 42,
+  "best_epoch": 1,
+  "epochs_run": 6,
+  "weighted_rmse_sgd": 586.1877954231757,
+  "rmse_sgd": 585.6145251648901,
+  "mae_sgd": 445.81795229436557,
+  "bias_sgd": 88.76902820081318,
+  "rows": 2000,
+  "parameters": 1718147,
+  "sequence_gate": 0.10140126943588257,
+  "seconds": 36.09748460003175,
+  "peak_allocated_vram_gib": 0.30424976348876953,
+  "checkpoint_replay_max_difference": 0.0,
+  "checkpoint_sha256": "7ad5c56b9e802fa1ac322fb2415d073328ad19ddf01b72254ff8e9c3586e7e5b",
+  "predictions_sha256": "ed9fa14b01aa96464ff31c74da265b28e4fc675c968b63b9e166fffe2cc5fd97",
+  "preprocessors_sha256": "5ca9e4c4f7017b21c042a6a2122c3416c66fce0cb73c853b496265d5ba28e390",
+  "outer_labels_used_for_selection": false
+}

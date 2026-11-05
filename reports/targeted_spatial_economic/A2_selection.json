@@ -1,0 +1,24 @@
+{
+  "gamma": 0.5,
+  "shrink": 50,
+  "half_life_months": 6,
+  "calibration_targets": [
+    "2023-07",
+    "2023-12"
+  ],
+  "confirmation_targets": [
+    "2024-01",
+    "2024-04"
+  ],
+  "maximum_selection_label_month": "2023-12",
+  "main_evaluation_labels_used": false,
+  "code_sha256": "887877f982b4efc29e3838373ece887bc68406e7d7289bce35598eae9fc17872",
+  "source_prediction_hashes": {
+    "2022-09_baseline": "818f6c7fdeba711a36bc848c8de377846d619b6724991fd27fbaa070e2f03c38",
+    "2022-09_spatial": "ba6896fb9b0d60a13c15899b4d42ac9d6fbc21d8c059a6ae54485fc3120efe94",
+    "2022-09_temporal": "2071e1be331ed7abcd068dc1229f4dba894546bb60c355437ce8ef39302f8240",
+    "2023-07_baseline": "95d38ccb1ade70caf2381c2d4ddfd2bcc38fca30edb6d0673181e26526454c5b",
+    "2023-07_spatial": "5b074ff9633624e246838474d30721b5808fee15bc40d211a9b55498f8c84b25",
+    "2023-07_temporal": "20dbfe3fc9a2acacf7b2432a4f012e68f26df51d7df196a41c1b02360e871da2"
+  }
+}

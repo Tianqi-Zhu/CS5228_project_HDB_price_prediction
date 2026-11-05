@@ -1,0 +1,145 @@
+region,target,phase,model,months,growth_rmse,mean_rent_rmse_sgd
+Singapore,mean_rent,development,persistence,17,1.0272837429627861,31.08108667566449
+Singapore,mean_rent,development,momentum3,17,1.3414512009196515,40.56228556501206
+Singapore,mean_rent,development,rent_history,17,1.4721694081982084,44.97141921747813
+Singapore,mean_rent,development,cap_seeded_22,17,1.5338888859331758,46.696534452071546
+Singapore,mean_rent,development,equal_weight_inception,17,1.4948064620569637,45.608912896210775
+Singapore,mean_rent,development,equal_weight_matched,17,1.533987067523591,46.79716705143898
+Singapore,mean_rent,outer,persistence,10,0.9510953003680385,29.85028146014922
+Singapore,mean_rent,outer,momentum3,10,1.1935145710262396,37.548286964748556
+Singapore,mean_rent,outer,rent_history,10,1.1463848119347015,36.05056884807526
+Singapore,mean_rent,outer,cap_seeded_22,10,1.1047853835643193,34.6974568187583
+Singapore,mean_rent,outer,equal_weight_inception,10,1.1382261666832092,35.62796673391354
+Singapore,mean_rent,outer,equal_weight_matched,10,1.0506924118205934,32.976121419486056
+Singapore,adjusted_mean_rent,development,persistence,17,0.8761879591097377,26.60633973109056
+Singapore,adjusted_mean_rent,development,momentum3,17,1.1315196944572292,34.310612574792096
+Singapore,adjusted_mean_rent,development,rent_history,17,1.2713334275794665,38.96063580952359
+Singapore,adjusted_mean_rent,development,cap_seeded_22,17,1.3086494422534307,39.87466127346166
+Singapore,adjusted_mean_rent,development,equal_weight_inception,17,1.28369881086517,39.269627756242244
+Singapore,adjusted_mean_rent,development,equal_weight_matched,17,1.317978466846763,40.30279983280303
+Singapore,adjusted_mean_rent,outer,persistence,10,0.8646379212222142,27.177840038131528
+Singapore,adjusted_mean_rent,outer,momentum3,10,1.042639669430627,32.868809218496516
+Singapore,adjusted_mean_rent,outer,rent_history,10,1.0322730723148086,32.52394138638808
+Singapore,adjusted_mean_rent,outer,cap_seeded_22,10,1.0320491964409035,32.460478806885234
+Singapore,adjusted_mean_rent,outer,equal_weight_inception,10,1.0726267440220472,33.62609529763136
+Singapore,adjusted_mean_rent,outer,equal_weight_matched,10,0.9624307096064708,30.25261394523783
+central region,mean_rent,development,persistence,17,1.3840207583990731,43.96850952795064
+central region,mean_rent,development,momentum3,17,1.8524003293291287,58.6649431136475
+central region,mean_rent,development,rent_history,17,1.9414843268437751,62.10094217575574
+central region,mean_rent,development,cap_seeded_22,17,2.0265431430670224,64.64546362651389
+central region,mean_rent,development,equal_weight_inception,17,1.9123878547602409,61.21791438568272
+central region,mean_rent,development,equal_weight_matched,17,1.9978441854487243,63.92722536780994
+central region,mean_rent,outer,persistence,10,1.8668356104639594,61.37502427705382
+central region,mean_rent,outer,momentum3,10,2.3449481353294015,77.30824418963684
+central region,mean_rent,outer,rent_history,10,2.113991297839733,69.63139552325114
+central region,mean_rent,outer,cap_seeded_22,10,2.152515015303085,70.76171486302194
+central region,mean_rent,outer,equal_weight_inception,10,2.2157340828801604,72.48275513797383
+central region,mean_rent,outer,equal_weight_matched,10,2.1370335152046,70.0152972916781
+central region,adjusted_mean_rent,development,persistence,17,1.0051224346259664,31.915921340498098
+central region,adjusted_mean_rent,development,momentum3,17,1.4805857547661863,46.79743533702485
+central region,adjusted_mean_rent,development,rent_history,17,1.5724156426185323,50.137664698470694
+central region,adjusted_mean_rent,development,cap_seeded_22,17,1.6229355771544576,51.5874593012237
+central region,adjusted_mean_rent,development,equal_weight_inception,17,1.5308929210534141,48.84830172110984
+central region,adjusted_mean_rent,development,equal_weight_matched,17,1.6142158240592208,51.484871761779594
+central region,adjusted_mean_rent,outer,persistence,10,1.574463045229976,51.69040659577268
+central region,adjusted_mean_rent,outer,momentum3,10,1.920991908394739,63.31170726210332
+central region,adjusted_mean_rent,outer,rent_history,10,1.8229915516823851,60.031693448977705
+central region,adjusted_mean_rent,outer,cap_seeded_22,10,1.880770997991414,61.78615308199758
+central region,adjusted_mean_rent,outer,equal_weight_inception,10,1.9429442913723505,63.51412343006577
+central region,adjusted_mean_rent,outer,equal_weight_matched,10,1.8598980763491413,60.94331538750779
+east region,mean_rent,development,persistence,17,2.098605574726929,63.38505084296058
+east region,mean_rent,development,momentum3,17,2.4190275308133455,73.3136370713963
+east region,mean_rent,development,rent_history,17,2.259085192607989,68.66430901054281
+east region,mean_rent,development,cap_seeded_22,17,2.4060375360245874,73.30667923820215
+east region,mean_rent,development,equal_weight_inception,17,2.2945104810394463,69.74277298023343
+east region,mean_rent,development,equal_weight_matched,17,2.32343607783446,70.64778701993417
+east region,mean_rent,outer,persistence,10,1.2008134414630924,37.62871821198388
+east region,mean_rent,outer,momentum3,10,1.4987213818641467,46.98050682320986
+east region,mean_rent,outer,rent_history,10,1.151784927884693,36.119345041377
+east region,mean_rent,outer,cap_seeded_22,10,1.2889420036703672,40.40286792002064
+east region,mean_rent,outer,equal_weight_inception,10,1.35101133064303,42.30189240133499
+east region,mean_rent,outer,equal_weight_matched,10,1.302176823359755,40.758348884457185
+east region,adjusted_mean_rent,development,persistence,17,1.6196622771395806,49.09036029794015
+east region,adjusted_mean_rent,development,momentum3,17,1.8173425539735,55.15567077340559
+east region,adjusted_mean_rent,development,rent_history,17,1.8299879260307481,55.746088658741854
+east region,adjusted_mean_rent,development,cap_seeded_22,17,1.9890324502625327,60.59860045882181
+east region,adjusted_mean_rent,development,equal_weight_inception,17,1.8916986444458246,57.59195402521847
+east region,adjusted_mean_rent,development,equal_weight_matched,17,1.9404953876827662,59.09181626178253
+east region,adjusted_mean_rent,outer,persistence,10,0.93006141086804,29.163847378887965
+east region,adjusted_mean_rent,outer,momentum3,10,1.1342225714717122,35.53931067290475
+east region,adjusted_mean_rent,outer,rent_history,10,1.0259572303660645,32.18933739867894
+east region,adjusted_mean_rent,outer,cap_seeded_22,10,1.0547854598888986,33.066388572898575
+east region,adjusted_mean_rent,outer,equal_weight_inception,10,1.1859798765685392,37.17063473421973
+east region,adjusted_mean_rent,outer,equal_weight_matched,10,1.1269145633003534,35.3114655340411
+north region,mean_rent,development,persistence,17,1.596640292452631,45.896418651524996
+north region,mean_rent,development,momentum3,17,1.9551347969639785,56.40593540897157
+north region,mean_rent,development,rent_history,17,2.224637920534694,64.46190534069488
+north region,mean_rent,development,cap_seeded_22,17,2.380974139494641,68.81117812665556
+north region,mean_rent,development,equal_weight_inception,17,2.3503588468223398,67.79786592085375
+north region,mean_rent,development,equal_weight_matched,17,2.4461518130452804,70.56049432151472
+north region,mean_rent,outer,persistence,10,1.7896757179667466,52.55392686847805
+north region,mean_rent,outer,momentum3,10,2.155477087770323,63.33172887509154
+north region,mean_rent,outer,rent_history,10,1.7448666036860796,51.2048709830161
+north region,mean_rent,outer,cap_seeded_22,10,1.6337320555997437,47.95214940043806
+north region,mean_rent,outer,equal_weight_inception,10,1.5866202170981762,46.60689966377344
+north region,mean_rent,outer,equal_weight_matched,10,1.546502555262267,45.4558342440174
+north region,adjusted_mean_rent,development,persistence,17,1.6201742829687042,46.690210456310105
+north region,adjusted_mean_rent,development,momentum3,17,1.9928700598314186,57.63992701897177
+north region,adjusted_mean_rent,development,rent_history,17,2.191654511038396,63.58914364694702
+north region,adjusted_mean_rent,development,cap_seeded_22,17,2.3302663670408936,67.48541691602048
+north region,adjusted_mean_rent,development,equal_weight_inception,17,2.359194413933464,68.27372212557128
+north region,adjusted_mean_rent,development,equal_weight_matched,17,2.420103097989161,69.99941708156709
+north region,adjusted_mean_rent,outer,persistence,10,1.4042899882166153,41.73863896105934
+north region,adjusted_mean_rent,outer,momentum3,10,1.6770367229500796,49.881252664397145
+north region,adjusted_mean_rent,outer,rent_history,10,1.4483517282098193,43.00306638265655
+north region,adjusted_mean_rent,outer,cap_seeded_22,10,1.3994104942631151,41.54909092301584
+north region,adjusted_mean_rent,outer,equal_weight_inception,10,1.3694674264645252,40.692393899363424
+north region,adjusted_mean_rent,outer,equal_weight_matched,10,1.3187968547790747,39.2177138116629
+north-east region,mean_rent,development,persistence,17,0.8424883600773114,25.212667156153376
+north-east region,mean_rent,development,momentum3,17,0.8730237837213074,26.416004322211425
+north-east region,mean_rent,development,rent_history,17,1.1675442226098913,35.516066400424066
+north-east region,mean_rent,development,cap_seeded_22,17,1.2357397325110664,37.56855557813668
+north-east region,mean_rent,development,equal_weight_inception,17,1.205284967631087,36.65192206781536
+north-east region,mean_rent,development,equal_weight_matched,17,1.2073643718342735,36.72149561624691
+north-east region,mean_rent,outer,persistence,10,0.9466935477951616,28.81271945392783
+north-east region,mean_rent,outer,momentum3,10,1.1360817060200292,34.56774542310012
+north-east region,mean_rent,outer,rent_history,10,1.1249591797483813,34.280656470592426
+north-east region,mean_rent,outer,cap_seeded_22,10,1.1590485098118413,35.2821285293996
+north-east region,mean_rent,outer,equal_weight_inception,10,1.174388477293246,35.774931942158936
+north-east region,mean_rent,outer,equal_weight_matched,10,1.1660648670563718,35.53346275186942
+north-east region,adjusted_mean_rent,development,persistence,17,0.8238765509349235,24.575607024366455
+north-east region,adjusted_mean_rent,development,momentum3,17,0.7620611554724064,23.092913298225316
+north-east region,adjusted_mean_rent,development,rent_history,17,1.1035854081136443,33.653676369044796
+north-east region,adjusted_mean_rent,development,cap_seeded_22,17,1.1527892115829088,35.14044793547542
+north-east region,adjusted_mean_rent,development,equal_weight_inception,17,1.1313672822997387,34.500275481289194
+north-east region,adjusted_mean_rent,development,equal_weight_matched,17,1.1337194955651342,34.576249992110235
+north-east region,adjusted_mean_rent,outer,persistence,10,0.7459714465363362,22.869177079330417
+north-east region,adjusted_mean_rent,outer,momentum3,10,0.9332125897670391,28.625382945399746
+north-east region,adjusted_mean_rent,outer,rent_history,10,0.8987688145217867,27.564069107768553
+north-east region,adjusted_mean_rent,outer,cap_seeded_22,10,0.9562866250452913,29.29942775634382
+north-east region,adjusted_mean_rent,outer,equal_weight_inception,10,0.9419739085613139,28.880611095661102
+north-east region,adjusted_mean_rent,outer,equal_weight_matched,10,0.9191812860759013,28.184149139936082
+west region,mean_rent,development,persistence,17,1.5342146201083946,46.30262252707299
+west region,mean_rent,development,momentum3,17,2.105929507202538,63.58597372826159
+west region,mean_rent,development,rent_history,17,2.051402856455641,62.61570441706372
+west region,mean_rent,development,cap_seeded_22,17,1.8781946395809495,56.78808237448097
+west region,mean_rent,development,equal_weight_inception,17,1.9802304754401654,60.36677421206596
+west region,mean_rent,development,equal_weight_matched,17,1.9962742744552284,60.85794035308301
+west region,mean_rent,outer,persistence,10,1.7607050289713302,55.39487931741044
+west region,mean_rent,outer,momentum3,10,2.126378200936615,67.46783968864852
+west region,mean_rent,outer,rent_history,10,1.736704088995262,54.901923800846895
+west region,mean_rent,outer,cap_seeded_22,10,1.7968381549356123,56.82854792928245
+west region,mean_rent,outer,equal_weight_inception,10,1.7962683624710456,56.39055124572879
+west region,mean_rent,outer,equal_weight_matched,10,1.5263364284022995,48.19928556735882
+west region,adjusted_mean_rent,development,persistence,17,1.4190926996214097,42.928211951787475
+west region,adjusted_mean_rent,development,momentum3,17,1.8828865950823857,57.01361994502587
+west region,adjusted_mean_rent,development,rent_history,17,1.9043128122501556,58.46081768167337
+west region,adjusted_mean_rent,development,cap_seeded_22,17,1.7058578074751842,51.84505126614488
+west region,adjusted_mean_rent,development,equal_weight_inception,17,1.8579674224636595,57.019249498746376
+west region,adjusted_mean_rent,development,equal_weight_matched,17,1.8565710835229001,56.95900075291936
+west region,adjusted_mean_rent,outer,persistence,10,1.7283133178311099,54.622052720881264
+west region,adjusted_mean_rent,outer,momentum3,10,2.098230984026247,66.79129824742947
+west region,adjusted_mean_rent,outer,rent_history,10,1.7308361710034175,54.86741082706685
+west region,adjusted_mean_rent,outer,cap_seeded_22,10,1.8107779036197482,57.38339953972109
+west region,adjusted_mean_rent,outer,equal_weight_inception,10,1.8197596888096013,57.32926838759409
+west region,adjusted_mean_rent,outer,equal_weight_matched,10,1.569729687585125,49.700331695729375

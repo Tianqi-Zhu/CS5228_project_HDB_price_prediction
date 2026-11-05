@@ -1,0 +1,18 @@
+{
+  "stage": "all",
+  "completed_variants": [
+    "T0",
+    "T1",
+    "T2",
+    "T3",
+    "C1",
+    "C2",
+    "C3",
+    "C4",
+    "S1",
+    "S2",
+    "S3",
+    "S4"
+  ],
+  "submissions_changed": false
+}

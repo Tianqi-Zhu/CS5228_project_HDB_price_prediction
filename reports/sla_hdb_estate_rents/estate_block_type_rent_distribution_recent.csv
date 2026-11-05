@@ -1,0 +1,241 @@
+sla_serial,estate,town,street,block,flat_type,n,blocks,p10,p25,p50,p75,p90
+3533,Central Horizon,toa payoh,toa payoh central,79a,4-room,13,1,2830.0,3000.0,3200.0,3800.0,3960.0
+3533,Central Horizon,toa payoh,toa payoh central,79a,5-room,2,1,4030.0,4075.0,4150.0,4225.0,4270.0
+3533,Central Horizon,toa payoh,toa payoh central,79b,4-room,11,1,3800.0,4025.0,4150.0,4175.0,4300.0
+3533,Central Horizon,toa payoh,toa payoh central,79c,4-room,4,1,4060.0,4150.0,4200.0,4200.0,4200.0
+3533,Central Horizon,toa payoh,toa payoh central,79c,5-room,2,1,4060.0,4150.0,4300.0,4450.0,4540.0
+3533,Central Horizon,toa payoh,toa payoh central,79d,4-room,2,1,3730.0,3775.0,3850.0,3925.0,3970.0
+3533,Central Horizon,toa payoh,toa payoh central,79e,4-room,7,1,2120.0,2750.0,3600.0,4000.0,4040.0
+3641,Treelodge @ Punggol,punggol,punggol drive,305d,4-room,2,1,3010.0,3100.0,3250.0,3400.0,3490.0
+3641,Treelodge @ Punggol,punggol,punggol drive,306d,4-room,2,1,3505.0,3512.5,3525.0,3537.5,3545.0
+3641,Treelodge @ Punggol,punggol,punggol place,306a,4-room,5,1,3080.0,3200.0,3250.0,3500.0,3500.0
+3641,Treelodge @ Punggol,punggol,punggol place,306b,3-room,1,1,2900.0,2900.0,2900.0,2900.0,2900.0
+3641,Treelodge @ Punggol,punggol,punggol place,306b,4-room,4,1,3295.0,3362.5,3500.0,3600.0,3600.0
+3641,Treelodge @ Punggol,punggol,punggol place,306c,4-room,3,1,3260.0,3350.0,3500.0,3500.0,3500.0
+3641,Treelodge @ Punggol,punggol,punggol road,305a,3-room,1,1,1000.0,1000.0,1000.0,1000.0,1000.0
+3641,Treelodge @ Punggol,punggol,punggol road,305a,4-room,4,1,3200.0,3200.0,3300.0,3450.0,3540.0
+3641,Treelodge @ Punggol,punggol,punggol road,305b,4-room,4,1,2920.0,3100.0,3200.0,3275.0,3410.0
+3733,Senja Green,bukit panjang,senja road,633a,3-room,2,1,2660.0,2750.0,2900.0,3050.0,3140.0
+3733,Senja Green,bukit panjang,senja road,633a,4-room,1,1,2800.0,2800.0,2800.0,2800.0,2800.0
+3733,Senja Green,bukit panjang,senja road,633b,4-room,2,1,2550.0,2625.0,2750.0,2875.0,2950.0
+3733,Senja Green,bukit panjang,senja road,633c,4-room,3,1,2920.0,2950.0,3000.0,3050.0,3080.0
+3733,Senja Green,bukit panjang,senja road,633d,3-room,2,1,2130.0,2250.0,2450.0,2650.0,2770.0
+3733,Senja Green,bukit panjang,senja road,633d,4-room,1,1,3200.0,3200.0,3200.0,3200.0,3200.0
+3752,Fajar Hills,bukit panjang,fajar road,442b,3-room,3,1,2480.0,2600.0,2800.0,2850.0,2880.0
+3752,Fajar Hills,bukit panjang,fajar road,442c,4-room,2,1,3020.0,3050.0,3100.0,3150.0,3180.0
+3752,Fajar Hills,bukit panjang,fajar road,442c,5-room,1,1,2100.0,2100.0,2100.0,2100.0,2100.0
+3752,Fajar Hills,bukit panjang,fajar road,442d,4-room,2,1,3005.0,3012.5,3025.0,3037.5,3045.0
+3752,Fajar Hills,bukit panjang,fajar road,443a,4-room,1,1,3000.0,3000.0,3000.0,3000.0,3000.0
+3752,Fajar Hills,bukit panjang,fajar road,443b,5-room,2,1,3230.0,3275.0,3350.0,3425.0,3470.0
+3752,Fajar Hills,bukit panjang,fajar road,443c,4-room,1,1,3300.0,3300.0,3300.0,3300.0,3300.0
+3752,Fajar Hills,bukit panjang,fajar road,443c,5-room,3,1,3300.0,3375.0,3500.0,3500.0,3500.0
+3752,Fajar Hills,bukit panjang,fajar road,443d,4-room,1,1,2900.0,2900.0,2900.0,2900.0,2900.0
+3774,Senja Parc View,bukit panjang,senja road,636a,2-room,3,1,2120.0,2150.0,2200.0,2200.0,2200.0
+3774,Senja Parc View,bukit panjang,senja road,636b,4-room,1,1,3600.0,3600.0,3600.0,3600.0,3600.0
+3774,Senja Parc View,bukit panjang,senja road,636c,4-room,4,1,3060.0,3150.0,3250.0,3350.0,3440.0
+3859,Tampines Greenleaf,tampines,tampines central 7,522a,2-room,2,1,2520.0,2550.0,2600.0,2650.0,2680.0
+3859,Tampines Greenleaf,tampines,tampines central 7,522a,3-room,1,1,3000.0,3000.0,3000.0,3000.0,3000.0
+3859,Tampines Greenleaf,tampines,tampines central 7,522a,4-room,2,1,3530.0,3575.0,3650.0,3725.0,3770.0
+3859,Tampines Greenleaf,tampines,tampines central 7,522b,5-room,2,1,3410.0,3425.0,3450.0,3475.0,3490.0
+3859,Tampines Greenleaf,tampines,tampines central 7,523a,4-room,1,1,3300.0,3300.0,3300.0,3300.0,3300.0
+3859,Tampines Greenleaf,tampines,tampines central 7,523a,5-room,1,1,4000.0,4000.0,4000.0,4000.0,4000.0
+3859,Tampines Greenleaf,tampines,tampines central 7,523b,2-room,2,1,2230.0,2275.0,2350.0,2425.0,2470.0
+3859,Tampines Greenleaf,tampines,tampines central 7,523b,3-room,1,1,3000.0,3000.0,3000.0,3000.0,3000.0
+3859,Tampines Greenleaf,tampines,tampines central 7,523c,5-room,1,1,3300.0,3300.0,3300.0,3300.0,3300.0
+3859,Tampines Greenleaf,tampines,tampines central 7,523d,4-room,1,1,3375.0,3375.0,3375.0,3375.0,3375.0
+3859,Tampines Greenleaf,tampines,tampines central 7,523d,5-room,2,1,3865.0,3887.5,3925.0,3962.5,3985.0
+3859,Tampines Greenleaf,tampines,tampines central 7,524a,4-room,3,1,3510.0,3525.0,3550.0,3575.0,3590.0
+3859,Tampines Greenleaf,tampines,tampines central 7,524a,5-room,1,1,3700.0,3700.0,3700.0,3700.0,3700.0
+3859,Tampines Greenleaf,tampines,tampines central 7,524b,2-room,1,1,2200.0,2200.0,2200.0,2200.0,2200.0
+3859,Tampines Greenleaf,tampines,tampines central 7,524b,3-room,2,1,2100.0,2250.0,2500.0,2750.0,2900.0
+3862,Matilda Edge,punggol,sumang lane,220a,2-room,3,1,2340.0,2400.0,2500.0,2550.0,2580.0
+3862,Matilda Edge,punggol,sumang lane,220b,3-room,2,1,2820.0,2850.0,2900.0,2950.0,2980.0
+3862,Matilda Edge,punggol,sumang lane,220b,4-room,1,1,3500.0,3500.0,3500.0,3500.0,3500.0
+3862,Matilda Edge,punggol,sumang lane,220c,3-room,1,1,2750.0,2750.0,2750.0,2750.0,2750.0
+3862,Matilda Edge,punggol,sumang lane,220c,4-room,1,1,3200.0,3200.0,3200.0,3200.0,3200.0
+3862,Matilda Edge,punggol,sumang lane,221a,3-room,1,1,2900.0,2900.0,2900.0,2900.0,2900.0
+3862,Matilda Edge,punggol,sumang lane,221a,4-room,1,1,3300.0,3300.0,3300.0,3300.0,3300.0
+3862,Matilda Edge,punggol,sumang lane,221b,2-room,3,1,1793.6,1871.0,2000.0,2175.0,2280.0
+3862,Matilda Edge,punggol,sumang lane,221b,4-room,1,1,3700.0,3700.0,3700.0,3700.0,3700.0
+3862,Matilda Edge,punggol,sumang lane,222a,2-room,3,1,2020.0,2050.0,2100.0,2150.0,2180.0
+3862,Matilda Edge,punggol,sumang lane,224a,4-room,5,1,3200.0,3200.0,3300.0,3400.0,3430.0
+3862,Matilda Edge,punggol,sumang lane,224b,3-room,1,1,2800.0,2800.0,2800.0,2800.0,2800.0
+3862,Matilda Edge,punggol,sumang lane,224c,4-room,1,1,3100.0,3100.0,3100.0,3100.0,3100.0
+3863,Eastwave @ Canberra,sembawang,canberra crescent,119a,4-room,3,1,3060.0,3150.0,3300.0,3400.0,3460.0
+3863,Eastwave @ Canberra,sembawang,canberra crescent,119b,4-room,3,1,3320.0,3350.0,3400.0,3450.0,3480.0
+3863,Eastwave @ Canberra,sembawang,canberra crescent,120a,4-room,2,1,3320.0,3350.0,3400.0,3450.0,3480.0
+3863,Eastwave @ Canberra,sembawang,canberra crescent,120c,4-room,4,1,3160.0,3250.0,3350.0,3462.5,3575.0
+3866,Hougang Meadow,hougang,upper serangoon road,364a,4-room,1,1,3400.0,3400.0,3400.0,3400.0,3400.0
+3866,Hougang Meadow,hougang,upper serangoon road,364b,3-room,1,1,3300.0,3300.0,3300.0,3300.0,3300.0
+3866,Hougang Meadow,hougang,upper serangoon road,365b,4-room,2,1,3530.0,3575.0,3650.0,3725.0,3770.0
+3866,Hougang Meadow,hougang,upper serangoon road,365c,3-room,2,1,2580.0,2700.0,2900.0,3100.0,3220.0
+3866,Hougang Meadow,hougang,upper serangoon road,365c,4-room,2,1,3530.0,3575.0,3650.0,3725.0,3770.0
+3866,Hougang Meadow,hougang,upper serangoon road,365d,3-room,1,1,2600.0,2600.0,2600.0,2600.0,2600.0
+3866,Hougang Meadow,hougang,upper serangoon road,365d,4-room,1,1,3400.0,3400.0,3400.0,3400.0,3400.0
+3873,Waterway View,punggol,edgedale plains,682a,3-room,2,1,2540.0,2600.0,2700.0,2800.0,2860.0
+3873,Waterway View,punggol,edgedale plains,682b,5-room,1,1,3900.0,3900.0,3900.0,3900.0,3900.0
+3873,Waterway View,punggol,edgedale plains,682c,5-room,1,1,3500.0,3500.0,3500.0,3500.0,3500.0
+3873,Waterway View,punggol,edgedale plains,683a,3-room,3,1,2540.0,2600.0,2700.0,2725.0,2740.0
+3873,Waterway View,punggol,edgedale plains,683b,3-room,1,1,2700.0,2700.0,2700.0,2700.0,2700.0
+3873,Waterway View,punggol,edgedale plains,684a,4-room,1,1,3500.0,3500.0,3500.0,3500.0,3500.0
+3873,Waterway View,punggol,edgedale plains,684c,3-room,1,1,2600.0,2600.0,2600.0,2600.0,2600.0
+3873,Waterway View,punggol,edgedale plains,684c,5-room,1,1,3500.0,3500.0,3500.0,3500.0,3500.0
+3881,Hougang Crimson,hougang,hougang avenue 9,932a,3-room,2,1,2725.0,2762.5,2825.0,2887.5,2925.0
+3881,Hougang Crimson,hougang,hougang avenue 9,932a,4-room,2,1,3420.0,3450.0,3500.0,3550.0,3580.0
+3881,Hougang Crimson,hougang,hougang avenue 9,933a,4-room,1,1,3550.0,3550.0,3550.0,3550.0,3550.0
+3885,Compassvale Cape,sengkang,compassvale crescent,286a,5-room,2,1,3010.0,3025.0,3050.0,3075.0,3090.0
+3885,Compassvale Cape,sengkang,compassvale crescent,286b,5-room,2,1,4032.5,4081.25,4162.5,4243.75,4292.5
+3885,Compassvale Cape,sengkang,compassvale crescent,286c,4-room,1,1,3500.0,3500.0,3500.0,3500.0,3500.0
+3885,Compassvale Cape,sengkang,compassvale crescent,287a,4-room,1,1,4000.0,4000.0,4000.0,4000.0,4000.0
+3885,Compassvale Cape,sengkang,compassvale crescent,287c,5-room,1,1,3600.0,3600.0,3600.0,3600.0,3600.0
+3885,Compassvale Cape,sengkang,compassvale crescent,288a,5-room,2,1,3800.0,3800.0,3800.0,3800.0,3800.0
+3885,Compassvale Cape,sengkang,compassvale crescent,288b,5-room,1,1,3400.0,3400.0,3400.0,3400.0,3400.0
+3885,Compassvale Cape,sengkang,compassvale crescent,288c,4-room,3,1,3040.0,3100.0,3200.0,3250.0,3280.0
+3885,Compassvale Cape,sengkang,compassvale crescent,289a,3-room,2,1,2800.0,2800.0,2800.0,2800.0,2800.0
+3885,Compassvale Cape,sengkang,compassvale crescent,289b,3-room,2,1,2775.0,2812.5,2875.0,2937.5,2975.0
+3885,Compassvale Cape,sengkang,compassvale crescent,289b,4-room,1,1,3300.0,3300.0,3300.0,3300.0,3300.0
+3888,Compassvale Boardwalk,sengkang,compassvale crescent,293a,4-room,1,1,2500.0,2500.0,2500.0,2500.0,2500.0
+3888,Compassvale Boardwalk,sengkang,compassvale crescent,293b,4-room,2,1,3050.0,3125.0,3250.0,3375.0,3450.0
+3888,Compassvale Boardwalk,sengkang,compassvale crescent,293d,4-room,3,1,2240.0,2600.0,3200.0,3600.0,3840.0
+3888,Compassvale Boardwalk,sengkang,compassvale crescent,293d,5-room,1,1,3700.0,3700.0,3700.0,3700.0,3700.0
+3888,Compassvale Boardwalk,sengkang,compassvale crescent,294a,4-room,2,1,3250.0,3250.0,3250.0,3250.0,3250.0
+3889,Keat Hong Colours,choa chu kang,choa chu kang avenue 7,810a,4-room,1,1,3200.0,3200.0,3200.0,3200.0,3200.0
+3889,Keat Hong Colours,choa chu kang,choa chu kang avenue 7,810b,5-room,1,1,4000.0,4000.0,4000.0,4000.0,4000.0
+3889,Keat Hong Colours,choa chu kang,choa chu kang avenue 7,811a,4-room,2,1,2820.0,2850.0,2900.0,2950.0,2980.0
+3889,Keat Hong Colours,choa chu kang,choa chu kang avenue 7,811b,3-room,1,1,2100.0,2100.0,2100.0,2100.0,2100.0
+3889,Keat Hong Colours,choa chu kang,choa chu kang avenue 7,811b,4-room,1,1,2900.0,2900.0,2900.0,2900.0,2900.0
+3889,Keat Hong Colours,choa chu kang,choa chu kang avenue 7,812b,4-room,1,1,3100.0,3100.0,3100.0,3100.0,3100.0
+3889,Keat Hong Colours,choa chu kang,choa chu kang avenue 7,812b,5-room,1,1,3800.0,3800.0,3800.0,3800.0,3800.0
+3889,Keat Hong Colours,choa chu kang,choa chu kang avenue 7,812c,4-room,1,1,2000.0,2000.0,2000.0,2000.0,2000.0
+3892,Keat Hong Axis,choa chu kang,choa chu kang avenue 1,807a,3-room,3,1,1430.0,1775.0,2350.0,2475.0,2550.0
+3892,Keat Hong Axis,choa chu kang,choa chu kang avenue 1,807c,4-room,2,1,2230.0,2275.0,2350.0,2425.0,2470.0
+3892,Keat Hong Axis,choa chu kang,choa chu kang avenue 1,807c,5-room,1,1,3200.0,3200.0,3200.0,3200.0,3200.0
+3892,Keat Hong Axis,choa chu kang,choa chu kang avenue 1,808a,4-room,2,1,3030.0,3075.0,3150.0,3225.0,3270.0
+3892,Keat Hong Axis,choa chu kang,choa chu kang avenue 1,808a,5-room,1,1,3000.0,3000.0,3000.0,3000.0,3000.0
+3892,Keat Hong Axis,choa chu kang,choa chu kang avenue 1,808b,4-room,3,1,2960.0,3050.0,3200.0,3275.0,3320.0
+3892,Keat Hong Axis,choa chu kang,choa chu kang avenue 1,808b,5-room,2,1,3050.0,3125.0,3250.0,3375.0,3450.0
+3892,Keat Hong Axis,choa chu kang,choa chu kang avenue 1,808c,4-room,1,1,3000.0,3000.0,3000.0,3000.0,3000.0
+3892,Keat Hong Axis,choa chu kang,choa chu kang avenue 1,808c,5-room,1,1,3200.0,3200.0,3200.0,3200.0,3200.0
+3892,Keat Hong Axis,choa chu kang,choa chu kang avenue 1,808d,4-room,1,1,3000.0,3000.0,3000.0,3000.0,3000.0
+3892,Keat Hong Axis,choa chu kang,choa chu kang avenue 1,808d,5-room,1,1,3600.0,3600.0,3600.0,3600.0,3600.0
+3892,Keat Hong Axis,choa chu kang,choa chu kang avenue 1,809a,5-room,1,1,3500.0,3500.0,3500.0,3500.0,3500.0
+3894,Punggol Central,punggol,punggol central,301a,4-room,3,1,3040.0,3100.0,3200.0,3300.0,3360.0
+3894,Punggol Central,punggol,punggol central,301b,4-room,1,1,3500.0,3500.0,3500.0,3500.0,3500.0
+3894,Punggol Central,punggol,punggol central,301c,4-room,2,1,3030.0,3075.0,3150.0,3225.0,3270.0
+3894,Punggol Central,punggol,punggol central,303b,4-room,2,1,3520.0,3550.0,3600.0,3650.0,3680.0
+3894,Punggol Central,punggol,punggol central,303c,4-room,1,1,2500.0,2500.0,2500.0,2500.0,2500.0
+3897,Trivelis,clementi,clementi avenue 4,311a,3-room,3,1,3500.0,3500.0,3500.0,3500.0,3500.0
+3897,Trivelis,clementi,clementi avenue 4,311a,4-room,3,1,4260.0,4350.0,4500.0,4500.0,4500.0
+3897,Trivelis,clementi,clementi avenue 4,311b,3-room,3,1,3380.0,3500.0,3700.0,3750.0,3780.0
+3897,Trivelis,clementi,clementi avenue 4,311b,4-room,3,1,4000.0,4000.0,4000.0,4200.0,4320.0
+3897,Trivelis,clementi,clementi avenue 4,311b,5-room,1,1,4400.0,4400.0,4400.0,4400.0,4400.0
+3897,Trivelis,clementi,clementi avenue 4,311c,3-room,3,1,3340.0,3400.0,3500.0,3625.0,3700.0
+3897,Trivelis,clementi,clementi avenue 4,311c,4-room,7,1,4000.0,4150.0,4500.0,4550.0,4720.0
+3897,Trivelis,clementi,clementi avenue 4,311c,5-room,2,1,4810.0,4825.0,4850.0,4875.0,4890.0
+3899,Punggol Lodge,punggol,punggol drive,612a,4-room,2,1,3210.0,3225.0,3250.0,3275.0,3290.0
+3899,Punggol Lodge,punggol,punggol drive,612b,4-room,1,1,3200.0,3200.0,3200.0,3200.0,3200.0
+3899,Punggol Lodge,punggol,punggol drive,612c,4-room,3,1,2640.0,2850.0,3200.0,3250.0,3280.0
+3899,Punggol Lodge,punggol,punggol drive,612d,4-room,4,1,3000.0,3000.0,3050.0,3137.5,3205.0
+3899,Punggol Lodge,punggol,punggol drive,613a,4-room,2,1,2980.0,3100.0,3300.0,3500.0,3620.0
+3899,Punggol Lodge,punggol,punggol drive,613b,3-room,1,1,2900.0,2900.0,2900.0,2900.0,2900.0
+3899,Punggol Lodge,punggol,punggol drive,613b,4-room,1,1,3300.0,3300.0,3300.0,3300.0,3300.0
+3899,Punggol Lodge,punggol,punggol drive,613c,3-room,1,1,2600.0,2600.0,2600.0,2600.0,2600.0
+3899,Punggol Lodge,punggol,punggol drive,613c,4-room,1,1,2900.0,2900.0,2900.0,2900.0,2900.0
+3899,Punggol Lodge,punggol,punggol drive,613d,4-room,3,1,2900.0,3050.0,3300.0,3375.0,3420.0
+3900,Fernvale Vista II,sengkang,fernvale road,441a,3-room,1,1,2500.0,2500.0,2500.0,2500.0,2500.0
+3900,Fernvale Vista II,sengkang,fernvale road,441a,4-room,1,1,3100.0,3100.0,3100.0,3100.0,3100.0
+3900,Fernvale Vista II,sengkang,fernvale road,441b,2-room,1,1,1000.0,1000.0,1000.0,1000.0,1000.0
+3900,Fernvale Vista II,sengkang,fernvale road,441b,4-room,3,1,2840.0,2900.0,3000.0,3050.0,3080.0
+3900,Fernvale Vista II,sengkang,fernvale road,441c,2-room,1,1,2400.0,2400.0,2400.0,2400.0,2400.0
+3900,Fernvale Vista II,sengkang,fernvale road,441c,3-room,1,1,2900.0,2900.0,2900.0,2900.0,2900.0
+3900,Fernvale Vista II,sengkang,fernvale road,441c,4-room,2,1,3030.0,3075.0,3150.0,3225.0,3270.0
+3900,Fernvale Vista II,sengkang,fernvale road,441d,4-room,6,1,2950.0,3000.0,3050.0,3100.0,3100.0
+3902,Fernvale Vista I,sengkang,fernvale road,443a,4-room,1,1,3300.0,3300.0,3300.0,3300.0,3300.0
+3902,Fernvale Vista I,sengkang,fernvale road,443b,3-room,2,1,2685.0,2737.5,2825.0,2912.5,2965.0
+3902,Fernvale Vista I,sengkang,fernvale road,443b,4-room,1,1,3100.0,3100.0,3100.0,3100.0,3100.0
+3902,Fernvale Vista I,sengkang,fernvale road,443c,3-room,1,1,2650.0,2650.0,2650.0,2650.0,2650.0
+3902,Fernvale Vista I,sengkang,fernvale road,443c,4-room,3,1,3020.0,3050.0,3100.0,3150.0,3180.0
+3902,Fernvale Vista I,sengkang,fernvale road,445a,2-room,2,1,940.0,1150.0,1500.0,1850.0,2060.0
+3902,Fernvale Vista I,sengkang,fernvale road,445a,3-room,3,1,2580.0,2625.0,2700.0,2850.0,2940.0
+3902,Fernvale Vista I,sengkang,fernvale road,445b,3-room,1,1,3000.0,3000.0,3000.0,3000.0,3000.0
+3902,Fernvale Vista I,sengkang,fernvale road,445b,4-room,2,1,3455.0,3462.5,3475.0,3487.5,3495.0
+3904,Ghim Moh Valley,queenstown,ghim moh link,22,4-room,4,1,4460.0,4550.0,4700.0,4800.0,4800.0
+3904,Ghim Moh Valley,queenstown,ghim moh link,22,5-room,1,1,4500.0,4500.0,4500.0,4500.0,4500.0
+3904,Ghim Moh Valley,queenstown,ghim moh link,23,4-room,8,1,2730.0,3750.0,4150.0,4450.0,4600.0
+3904,Ghim Moh Valley,queenstown,ghim moh link,23,5-room,2,1,4460.0,4550.0,4700.0,4850.0,4940.0
+3904,Ghim Moh Valley,queenstown,ghim moh link,26,2-room,1,1,3300.0,3300.0,3300.0,3300.0,3300.0
+3904,Ghim Moh Valley,queenstown,ghim moh link,26,3-room,9,1,3040.0,3300.0,3300.0,3350.0,3420.0
+3904,Ghim Moh Valley,queenstown,ghim moh link,27,2-room,1,1,3100.0,3100.0,3100.0,3100.0,3100.0
+3904,Ghim Moh Valley,queenstown,ghim moh link,27,3-room,5,1,1940.0,2600.0,2800.0,3200.0,3320.0
+3904,Ghim Moh Valley,queenstown,ghim moh link,28,4-room,8,1,3630.0,3975.0,4275.0,4487.5,4720.0
+3904,Ghim Moh Valley,queenstown,ghim moh link,28,5-room,1,1,4350.0,4350.0,4350.0,4350.0,4350.0
+3905,Membina Court @ Bukit Merah,bukit merah,jalan membina,25a,4-room,1,1,4500.0,4500.0,4500.0,4500.0,4500.0
+3905,Membina Court @ Bukit Merah,bukit merah,jalan membina,25a,5-room,5,1,2420.0,3800.0,4000.0,4400.0,4760.0
+3905,Membina Court @ Bukit Merah,bukit merah,jalan membina,25b,4-room,14,1,3845.0,4050.0,4300.0,4375.0,4500.0
+3905,Membina Court @ Bukit Merah,bukit merah,jalan membina,25b,5-room,3,1,4020.0,4050.0,4100.0,4200.0,4260.0
+3905,Membina Court @ Bukit Merah,bukit merah,jalan membina,26a,3-room,6,1,2950.0,3125.0,3225.0,3437.5,3500.0
+3905,Membina Court @ Bukit Merah,bukit merah,jalan membina,26b,4-room,7,1,3000.0,3400.0,4000.0,4300.0,4380.0
+3905,Membina Court @ Bukit Merah,bukit merah,jalan membina,26c,3-room,3,1,3180.0,3300.0,3500.0,3550.0,3580.0
+3905,Membina Court @ Bukit Merah,bukit merah,jalan membina,26c,4-room,6,1,3550.0,3650.0,3975.0,4187.5,4250.0
+3905,Membina Court @ Bukit Merah,bukit merah,jalan membina,26d,3-room,7,1,3000.0,3050.0,3100.0,3475.0,3570.0
+3905,Membina Court @ Bukit Merah,bukit merah,jalan membina,26d,4-room,3,1,4220.0,4250.0,4300.0,4425.0,4500.0
+3905,Membina Court @ Bukit Merah,bukit merah,jalan membina,27a,4-room,7,1,3600.0,4050.0,4100.0,4200.0,4200.0
+3905,Membina Court @ Bukit Merah,bukit merah,jalan membina,27b,4-room,2,1,4035.0,4087.5,4175.0,4262.5,4315.0
+3905,Membina Court @ Bukit Merah,bukit merah,jalan membina,27b,5-room,4,1,3830.0,3875.0,4050.0,4250.0,4340.0
+3907,The Peak @ Toa Payoh,toa payoh,lorong 1a toa payoh,138a,3-room,2,1,3355.0,3362.5,3375.0,3387.5,3395.0
+3907,The Peak @ Toa Payoh,toa payoh,lorong 1a toa payoh,138a,4-room,1,1,4000.0,4000.0,4000.0,4000.0,4000.0
+3907,The Peak @ Toa Payoh,toa payoh,lorong 1a toa payoh,138a,5-room,4,1,4630.0,4675.0,4750.0,4925.0,5150.0
+3907,The Peak @ Toa Payoh,toa payoh,lorong 1a toa payoh,138b,4-room,1,1,4300.0,4300.0,4300.0,4300.0,4300.0
+3907,The Peak @ Toa Payoh,toa payoh,lorong 1a toa payoh,138b,5-room,2,1,4700.0,4700.0,4700.0,4700.0,4700.0
+3907,The Peak @ Toa Payoh,toa payoh,lorong 1a toa payoh,138c,5-room,11,1,4100.0,4250.0,4700.0,4800.0,4900.0
+3907,The Peak @ Toa Payoh,toa payoh,lorong 1a toa payoh,139a,4-room,3,1,4020.0,4050.0,4100.0,4200.0,4260.0
+3907,The Peak @ Toa Payoh,toa payoh,lorong 1a toa payoh,139a,5-room,3,1,4440.0,4500.0,4600.0,4800.0,4920.0
+3907,The Peak @ Toa Payoh,toa payoh,lorong 1a toa payoh,139b,4-room,2,1,4110.0,4125.0,4150.0,4175.0,4190.0
+3907,The Peak @ Toa Payoh,toa payoh,lorong 1a toa payoh,139b,5-room,2,1,4830.0,4875.0,4950.0,5025.0,5070.0
+3908,The Pinnacle @ Duxton,central,cantonment road,1a,4-room,4,1,4695.0,4762.5,4800.0,4800.0,4800.0
+3908,The Pinnacle @ Duxton,central,cantonment road,1a,5-room,5,1,4940.0,5000.0,5500.0,5500.0,5860.0
+3908,The Pinnacle @ Duxton,central,cantonment road,1b,4-room,7,1,4500.0,4750.0,5000.0,5300.0,5340.0
+3908,The Pinnacle @ Duxton,central,cantonment road,1b,5-room,5,1,4940.0,5000.0,5100.0,5400.0,5580.0
+3908,The Pinnacle @ Duxton,central,cantonment road,1c,4-room,9,1,4460.0,4500.0,4600.0,4800.0,4920.0
+3908,The Pinnacle @ Duxton,central,cantonment road,1c,5-room,1,1,4700.0,4700.0,4700.0,4700.0,4700.0
+3908,The Pinnacle @ Duxton,central,cantonment road,1d,4-room,13,1,4160.0,4500.0,4800.0,5000.0,5180.0
+3908,The Pinnacle @ Duxton,central,cantonment road,1d,5-room,5,1,5040.0,5100.0,5200.0,5200.0,5560.0
+3908,The Pinnacle @ Duxton,central,cantonment road,1e,4-room,12,1,3802.0,4450.0,4650.0,5025.0,5190.0
+3908,The Pinnacle @ Duxton,central,cantonment road,1e,5-room,9,1,4000.0,4600.0,4900.0,5100.0,5400.0
+3908,The Pinnacle @ Duxton,central,cantonment road,1f,4-room,6,1,4500.0,4812.5,4875.0,5162.5,5325.0
+3908,The Pinnacle @ Duxton,central,cantonment road,1f,5-room,8,1,4970.0,5000.0,5050.0,5237.5,5545.0
+3908,The Pinnacle @ Duxton,central,cantonment road,1g,4-room,11,1,4500.0,4650.0,4950.0,5000.0,5000.0
+3908,The Pinnacle @ Duxton,central,cantonment road,1g,5-room,2,1,5200.0,5200.0,5200.0,5200.0,5200.0
+3909,The River Vista @ Kallang,kallang/whampoa,bendemeer road,38a,4-room,5,1,3800.0,3800.0,3800.0,4000.0,4300.0
+3909,The River Vista @ Kallang,kallang/whampoa,bendemeer road,38a,5-room,2,1,3910.0,3925.0,3950.0,3975.0,3990.0
+3909,The River Vista @ Kallang,kallang/whampoa,bendemeer road,38b,3-room,2,1,3210.0,3225.0,3250.0,3275.0,3290.0
+3909,The River Vista @ Kallang,kallang/whampoa,bendemeer road,38b,4-room,3,1,4000.0,4000.0,4000.0,4200.0,4320.0
+3909,The River Vista @ Kallang,kallang/whampoa,bendemeer road,38c,3-room,3,1,2560.0,2650.0,2800.0,2950.0,3040.0
+3909,The River Vista @ Kallang,kallang/whampoa,bendemeer road,38c,4-room,2,1,4000.0,4000.0,4000.0,4000.0,4000.0
+3909,The River Vista @ Kallang,kallang/whampoa,bendemeer road,38d,3-room,1,1,3500.0,3500.0,3500.0,3500.0,3500.0
+3909,The River Vista @ Kallang,kallang/whampoa,bendemeer road,38d,4-room,2,1,3800.0,3800.0,3800.0,3800.0,3800.0
+3909,The River Vista @ Kallang,kallang/whampoa,bendemeer road,39a,3-room,1,1,2640.0,2640.0,2640.0,2640.0,2640.0
+3909,The River Vista @ Kallang,kallang/whampoa,bendemeer road,39a,4-room,5,1,3120.0,3300.0,3600.0,4000.0,4300.0
+3910,Punggol Vista,punggol,punggol central,601a,3-room,3,1,2480.0,2600.0,2800.0,2800.0,2800.0
+3910,Punggol Vista,punggol,punggol central,601a,4-room,1,1,2700.0,2700.0,2700.0,2700.0,2700.0
+3910,Punggol Vista,punggol,punggol central,601b,2-room,2,1,2510.0,2525.0,2550.0,2575.0,2590.0
+3910,Punggol Vista,punggol,punggol central,601b,3-room,2,1,2530.0,2575.0,2650.0,2725.0,2770.0
+3910,Punggol Vista,punggol,punggol central,601c,2-room,1,1,2350.0,2350.0,2350.0,2350.0,2350.0
+3910,Punggol Vista,punggol,punggol central,601c,4-room,1,1,3400.0,3400.0,3400.0,3400.0,3400.0
+3910,Punggol Vista,punggol,punggol central,601d,3-room,1,1,1500.0,1500.0,1500.0,1500.0,1500.0
+3910,Punggol Vista,punggol,punggol central,601d,4-room,3,1,3190.0,3325.0,3550.0,3625.0,3670.0
+3910,Punggol Vista,punggol,punggol central,602a,3-room,2,1,2365.0,2462.5,2625.0,2787.5,2885.0
+3910,Punggol Vista,punggol,punggol central,602a,4-room,4,1,3165.0,3187.5,3350.0,3500.0,3500.0
+3910,Punggol Vista,punggol,punggol central,602b,2-room,1,1,2500.0,2500.0,2500.0,2500.0,2500.0
+3910,Punggol Vista,punggol,punggol central,602b,3-room,2,1,2710.0,2725.0,2750.0,2775.0,2790.0
+3910,Punggol Vista,punggol,punggol central,602c,2-room,1,1,2300.0,2300.0,2300.0,2300.0,2300.0
+3910,Punggol Vista,punggol,punggol central,602c,3-room,1,1,2900.0,2900.0,2900.0,2900.0,2900.0
+3913,The Premiere @ Tampines,tampines,tampines central 7,515a,5-room,1,1,3600.0,3600.0,3600.0,3600.0,3600.0
+3913,The Premiere @ Tampines,tampines,tampines central 7,515b,5-room,2,1,3830.0,3875.0,3950.0,4025.0,4070.0
+3913,The Premiere @ Tampines,tampines,tampines central 7,515c,5-room,4,1,3550.0,3775.0,3900.0,3925.0,3970.0
+3913,The Premiere @ Tampines,tampines,tampines central 7,515d,2-room,1,1,2500.0,2500.0,2500.0,2500.0,2500.0
+3913,The Premiere @ Tampines,tampines,tampines central 7,515d,5-room,2,1,3505.0,3512.5,3525.0,3537.5,3545.0
+3913,The Premiere @ Tampines,tampines,tampines central 7,518a,5-room,1,1,3700.0,3700.0,3700.0,3700.0,3700.0
+3913,The Premiere @ Tampines,tampines,tampines central 7,518b,5-room,2,1,2420.0,2600.0,2900.0,3200.0,3380.0
+3913,The Premiere @ Tampines,tampines,tampines central 7,518c,5-room,2,1,3550.0,3625.0,3750.0,3875.0,3950.0
+3913,The Premiere @ Tampines,tampines,tampines central 7,518d,5-room,2,1,2810.0,2975.0,3250.0,3525.0,3690.0

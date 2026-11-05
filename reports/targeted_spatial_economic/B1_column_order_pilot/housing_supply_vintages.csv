@@ -1,0 +1,109 @@
+year,town,stock,completed,available,period_end,source_file
+2019,ang mo kio,50728,590,2020-01,2019-03,hdb2019.pdf
+2019,bedok,62156,2315,2020-01,2019-03,hdb2019.pdf
+2019,bishan,20072,0,2020-01,2019-03,hdb2019.pdf
+2019,bukit batok,43624,3359,2020-01,2019-03,hdb2019.pdf
+2019,bukit merah,54734,0,2020-01,2019-03,hdb2019.pdf
+2019,bukit panjang,35325,1773,2020-01,2019-03,hdb2019.pdf
+2019,choa chu kang,48900,700,2020-01,2019-03,hdb2019.pdf
+2019,clementi,26601,3365,2020-01,2019-03,hdb2019.pdf
+2019,geylang,30189,3850,2020-01,2019-03,hdb2019.pdf
+2019,hougang,56561,996,2020-01,2019-03,hdb2019.pdf
+2019,jurong east,24122,0,2020-01,2019-03,hdb2019.pdf
+2019,jurong west,75208,0,2020-01,2019-03,hdb2019.pdf
+2019,kallang/whampoa,39931,654,2020-01,2019-03,hdb2019.pdf
+2019,pasir ris,29654,0,2020-01,2019-03,hdb2019.pdf
+2019,punggol,49909,10632,2020-01,2019-03,hdb2019.pdf
+2019,queenstown,32676,3708,2020-01,2019-03,hdb2019.pdf
+2019,sembawang,27351,2979,2020-01,2019-03,hdb2019.pdf
+2019,sengkang,67115,9150,2020-01,2019-03,hdb2019.pdf
+2019,serangoon,21634,0,2020-01,2019-03,hdb2019.pdf
+2019,tampines,70754,9321,2020-01,2019-03,hdb2019.pdf
+2019,tengah,0,2560,2020-01,2019-03,hdb2019.pdf
+2019,toa payoh,38454,6960,2020-01,2019-03,hdb2019.pdf
+2019,woodlands,69900,2047,2020-01,2019-03,hdb2019.pdf
+2019,yishun,64334,4498,2020-01,2019-03,hdb2019.pdf
+2019,central area,12003,0,2020-01,2019-03,hdb2019.pdf
+2019,bukit timah,2554,0,2020-01,2019-03,hdb2019.pdf
+2019,marine parade,7861,0,2020-01,2019-03,hdb2019.pdf
+2021,ang mo kio,51311,590,2023-01,2021-03,hdb2021.pdf
+2021,bedok,63552,736,2023-01,2021-03,hdb2021.pdf
+2021,bishan,20072,0,2023-01,2021-03,hdb2021.pdf
+2021,bukit batok,45585,1300,2023-01,2021-03,hdb2021.pdf
+2021,bukit merah,54228,0,2023-01,2021-03,hdb2021.pdf
+2021,bukit panjang,35325,0,2023-01,2021-03,hdb2021.pdf
+2021,choa chu kang,49026,126,2023-01,2021-03,hdb2021.pdf
+2021,clementi,26730,0,2023-01,2021-03,hdb2021.pdf
+2021,geylang,30829,0,2023-01,2021-03,hdb2021.pdf
+2021,hougang,57557,285,2023-01,2021-03,hdb2021.pdf
+2021,jurong east,24122,0,2023-01,2021-03,hdb2021.pdf
+2021,jurong west,75206,0,2023-01,2021-03,hdb2021.pdf
+2021,kallang/whampoa,39931,0,2023-01,2021-03,hdb2021.pdf
+2021,pasir ris,29654,0,2023-01,2021-03,hdb2021.pdf
+2021,punggol,52586,1923,2023-01,2021-03,hdb2021.pdf
+2021,queenstown,33973,810,2023-01,2021-03,hdb2021.pdf
+2021,sembawang,30020,0,2023-01,2021-03,hdb2021.pdf
+2021,sengkang,69196,0,2023-01,2021-03,hdb2021.pdf
+2021,serangoon,21632,0,2023-01,2021-03,hdb2021.pdf
+2021,tampines,73968,1286,2023-01,2021-03,hdb2021.pdf
+2021,tengah,0,0,2023-01,2021-03,hdb2021.pdf
+2021,toa payoh,40917,1178,2023-01,2021-03,hdb2021.pdf
+2021,woodlands,69900,0,2023-01,2021-03,hdb2021.pdf
+2021,yishun,65158,0,2023-01,2021-03,hdb2021.pdf
+2021,central area,12002,0,2023-01,2021-03,hdb2021.pdf
+2021,bukit timah,2554,0,2023-01,2021-03,hdb2021.pdf
+2021,marine parade,7859,0,2023-01,2021-03,hdb2021.pdf
+2022,ang mo kio,51310,0,2023-01,2022-03,verified_key_statistics_2022.pdf
+2022,bedok,64415,919,2023-01,2022-03,verified_key_statistics_2022.pdf
+2022,bishan,20072,0,2023-01,2022-03,verified_key_statistics_2022.pdf
+2022,bukit batok,45585,0,2023-01,2022-03,verified_key_statistics_2022.pdf
+2022,bukit merah,54157,0,2023-01,2022-03,verified_key_statistics_2022.pdf
+2022,bukit panjang,36896,1571,2023-01,2022-03,verified_key_statistics_2022.pdf
+2022,choa chu kang,49026,0,2023-01,2022-03,verified_key_statistics_2022.pdf
+2022,clementi,26730,0,2023-01,2022-03,verified_key_statistics_2022.pdf
+2022,geylang,31514,686,2023-01,2022-03,verified_key_statistics_2022.pdf
+2022,hougang,57557,0,2023-01,2022-03,verified_key_statistics_2022.pdf
+2022,jurong east,24122,0,2023-01,2022-03,verified_key_statistics_2022.pdf
+2022,jurong west,75206,0,2023-01,2022-03,verified_key_statistics_2022.pdf
+2022,kallang/whampoa,40171,243,2023-01,2022-03,verified_key_statistics_2022.pdf
+2022,pasir ris,29654,0,2023-01,2022-03,verified_key_statistics_2022.pdf
+2022,punggol,55811,3225,2023-01,2022-03,verified_key_statistics_2022.pdf
+2022,queenstown,36378,2409,2023-01,2022-03,verified_key_statistics_2022.pdf
+2022,sembawang,30330,310,2023-01,2022-03,verified_key_statistics_2022.pdf
+2022,sengkang,70189,993,2023-01,2022-03,verified_key_statistics_2022.pdf
+2022,serangoon,21632,0,2023-01,2022-03,verified_key_statistics_2022.pdf
+2022,tampines,75342,1374,2023-01,2022-03,verified_key_statistics_2022.pdf
+2022,tengah,0,0,2023-01,2022-03,verified_key_statistics_2022.pdf
+2022,toa payoh,42185,1269,2023-01,2022-03,verified_key_statistics_2022.pdf
+2022,woodlands,70072,172,2023-01,2022-03,verified_key_statistics_2022.pdf
+2022,yishun,65614,456,2023-01,2022-03,verified_key_statistics_2022.pdf
+2022,central area,12001,0,2023-01,2022-03,verified_key_statistics_2022.pdf
+2022,bukit timah,2554,0,2023-01,2022-03,verified_key_statistics_2022.pdf
+2022,marine parade,7857,0,2023-01,2022-03,verified_key_statistics_2022.pdf
+2023,ang mo kio,51310,0,2024-01,2023-03,hdb2023_new.pdf
+2023,bedok,64415,0,2024-01,2023-03,hdb2023_new.pdf
+2023,bishan,20072,0,2024-01,2023-03,hdb2023_new.pdf
+2023,bukit batok,46982,1397,2024-01,2023-03,hdb2023_new.pdf
+2023,bukit merah,54156,0,2024-01,2023-03,hdb2023_new.pdf
+2023,bukit panjang,37098,202,2024-01,2023-03,hdb2023_new.pdf
+2023,choa chu kang,50171,1145,2024-01,2023-03,hdb2023_new.pdf
+2023,clementi,29012,2283,2024-01,2023-03,hdb2023_new.pdf
+2023,geylang,32934,1780,2024-01,2023-03,hdb2023_new.pdf
+2023,hougang,57557,0,2024-01,2023-03,hdb2023_new.pdf
+2023,jurong east,24122,0,2024-01,2023-03,hdb2023_new.pdf
+2023,jurong west,75206,0,2024-01,2023-03,hdb2023_new.pdf
+2023,kallang/whampoa,40169,0,2024-01,2023-03,hdb2023_new.pdf
+2023,pasir ris,29654,0,2024-01,2023-03,hdb2023_new.pdf
+2023,punggol,58423,2612,2024-01,2023-03,hdb2023_new.pdf
+2023,queenstown,33979,0,2024-01,2023-03,hdb2023_new.pdf
+2023,sembawang,30330,0,2024-01,2023-03,hdb2023_new.pdf
+2023,sengkang,72117,1928,2024-01,2023-03,hdb2023_new.pdf
+2023,serangoon,21632,0,2024-01,2023-03,hdb2023_new.pdf
+2023,tampines,79229,3887,2024-01,2023-03,hdb2023_new.pdf
+2023,tengah,0,0,2024-01,2023-03,hdb2023_new.pdf
+2023,toa payoh,44869,2685,2024-01,2023-03,hdb2023_new.pdf
+2023,woodlands,71947,1875,2024-01,2023-03,hdb2023_new.pdf
+2023,yishun,69601,3988,2024-01,2023-03,hdb2023_new.pdf
+2023,central area,12001,0,2024-01,2023-03,hdb2023_new.pdf
+2023,bukit timah,2554,0,2024-01,2023-03,hdb2023_new.pdf
+2023,marine parade,7857,0,2024-01,2023-03,hdb2023_new.pdf

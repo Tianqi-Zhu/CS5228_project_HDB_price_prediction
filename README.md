@@ -1,5 +1,75 @@
 # CS5228 HDB 月租预测
 
+The [industry-stock experiment](reports/stock_sector_signals/report.md) compares
+eight Singapore-listed business-exposure baskets, broad-market controls, delayed
+returns, momentum, and volatility. It tests both the property-adjusted monthly
+rent index and individual-rental errors, with earlier-period sector selection,
+mature-label forecast cutoffs, and separate monthly-updated and fixed-origin
+scenarios. Reproduce with
+`.venv/Scripts/python.exe analysis/compare_stock_sectors.py`.
+
+The [company-worksite stock experiment](reports/company_worksite_stocks/report.md)
+tests local rent changes around 11 documented engineering/manufacturing sites.
+It adjusts for building/flat mix and nearby comparison-area rent changes,
+controls broad and peer stock signals, and separates primary 2 km tests from
+earlier-selected radius/lag sensitivities. Reproduce with
+`.venv/Scripts/python.exe analysis/acquire_company_worksites.py` followed by
+`.venv/Scripts/python.exe analysis/compare_company_worksite_stocks.py`.
+
+The [company-worksite follow-up findings](reports/company_worksite_followup/findings.md)
+freeze the earlier K&S hypothesis and add US semiconductor/currency controls,
+32 matched geographic placebos, distance bands, a controlled 77-feature
+CatBoost ablation, and an exactly local correction of saved TabPFN backtests.
+The follow-up does not support promoting company-location stock features;
+the existing submission files are retained. See the findings for commands,
+availability scenarios, source audits and limits of the reused validation period.
+
+The [overall stock-index and regional rent analysis](reports/stock_index_regions/report.md)
+constructs a 22-stock historical-cap-seeded index from archived December 2020
+STI ETF weights, with equal-weight controls. It compares raw and property-adjusted
+mean-rent growth across Singapore's five regions, tests regional slope equality
+with synchronized month-block resampling, and checks forward prediction value.
+Reproduce with `.venv/Scripts/python.exe analysis/compare_stock_index_regions.py`.
+
+The [financial-sector and mean-rent experiment](reports/financial_sector_rents/report.md)
+compares DBS/OCBC/UOB, broader available financial-services baskets, and individual
+stocks against national arithmetic mean HDB rent growth. Lagged correlations,
+composition adjustments, market controls and expanding monthly forecasts do not
+support adding these signals to the current feature set. Reproduce with
+`.venv/Scripts/python.exe analysis/compare_financial_sector_rents.py`.
+
+The [financial-stock experiment by room type and flat model](reports/financial_sector_rent_categories/report.md)
+tests five room types and nine sufficiently populated flat-model categories.
+It compares raw and property-adjusted mean-rent growth, corrects tests across
+categories, directly compares category slopes, and evaluates forward forecasts.
+The results do not support adding category-specific financial-stock features.
+Reproduce with
+`.venv/Scripts/python.exe analysis/compare_financial_sector_rent_categories.py`.
+
+The [targeted spatial-temporal and economic experiments](reports/targeted_spatial_economic/report.md)
+compare hierarchical town/street histories, archived town housing completions,
+and historical residual smoothing against the optimized frozen three-member
+TabPFN ensemble. The study preserves all original member inputs and targets,
+reuses audited predictions, and documents unavailable historical vintages for
+quarterly rental-cycle and workforce-demand inputs. See the report for separate
+ablation results, chronological selection, uncertainty, and reproduction commands.
+
+The [A/B/C/D/E weighted-ensemble comparison](reports/tabpfn_abcde_ensemble/report.md)
+tests the MSE-only DiagScale, original frozen, relative-history, seasonal and
+spatial models using identical historical queries and earlier-only weights.
+It contrasts ABCDE with CDE/BDE and focused subsets, separates the earlier-selected
+family from the lowest observed later score, and retains both prior submissions.
+Reproduce with `.venv/Scripts/python.exe analysis/compare_tabpfn_abcde.py --stage all`.
+
+The [two full-data ensemble submissions](reports/tabpfn_top2_final_submission/report.md)
+prepare equal-weight ABCDE and weighted ABDE using all150,000 training rows and
+50,000 test rows. They reuse audited full-data A/B/D/E predictions, newly fit the
+relative-history C model, and preserve the original ensemble weights. The report
+links both upload CSVs and distinguishes development scores from the unlabeled
+Kaggle test. Reproduce with
+`.venv/Scripts/python.exe analysis/train_tabpfn_top2_submission.py --stage all`;
+independently verify with `.venv/Scripts/python.exe analysis/audit_tabpfn_top2_submission.py`.
+
 The [revised dynamic rental surface experiment plan](EXPERIMENT_PLAN_DYNAMIC_SURFACE.md) prioritizes a stronger historical row model and a coarse market-index test before any grid/PCA hybrid.
 
 The completed [full-history tree, market-index, and coarse-surface experiment](reports/dynamic_market_index/report.md) selects CatBoost without a market correction. Its strict February 2025-origin candidate submission is in `reports/dynamic_market_index/submission_strict_feb2025.csv`.

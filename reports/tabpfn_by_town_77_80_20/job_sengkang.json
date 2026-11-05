@@ -1,0 +1,8 @@
+{
+  "town": "sengkang",
+  "context_rows": 7837,
+  "query_rows": 1936,
+  "context_ids_sha256": "f0a82d023819222565a8483a47e5b812142968e32501279d0b88eaadb4df65c5",
+  "query_ids_sha256": "ba32184e4b99a47f24de38b7442942835e2b088bb4279833957e2cd33afd7a48",
+  "settings_sha256": "7ec7fcf4dc279912e4ccac47faafbe82887e1d344fe25f59350c4dbcbc3e5916"
+}

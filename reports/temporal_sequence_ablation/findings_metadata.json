@@ -1,0 +1,7 @@
+{
+  "summary_code_sha256": "8307a45f374babd2a0bc231758bbfe297d0c3f65f5a4886c860d4e8d0a3937ae",
+  "core_results_sha256": "c19ec607712ae272c8d2aee2b520df993763013f94fa53985575e9b83b46e2b3",
+  "supplementary_checks_are_followup_diagnostics": true,
+  "selections_use_development_only": true,
+  "presentation_revision": "Added interpretation of matched row-processing controls; numerical outputs unchanged"
+}

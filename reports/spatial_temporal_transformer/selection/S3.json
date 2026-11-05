@@ -1,0 +1,16 @@
+{
+  "variant": {
+    "name": "S3",
+    "information": "rent",
+    "processor": "transformer",
+    "window": 12,
+    "delay": 1
+  },
+  "refit_epochs": 8,
+  "earlier_best_epochs": [
+    11,
+    5
+  ],
+  "selection_label_max": "2024-04",
+  "outer_labels_used": false
+}

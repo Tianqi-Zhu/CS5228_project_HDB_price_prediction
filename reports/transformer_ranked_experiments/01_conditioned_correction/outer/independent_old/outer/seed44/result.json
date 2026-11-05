@@ -1,0 +1,20 @@
+{
+  "design": "independent_old",
+  "fold": "outer",
+  "seed": 44,
+  "best_epoch": 9,
+  "epochs_run": 9,
+  "rows": 28995,
+  "parameters": 10306,
+  "weighted_rmse_sgd": 462.4273490314163,
+  "rmse_sgd": 462.4273490314163,
+  "mae_sgd": 332.4665173223333,
+  "bias_sgd": 21.356718098670722,
+  "mean_correction_sgd": 42.246299743652344,
+  "peak_allocated_vram_gib": 0.039852142333984375,
+  "seconds": 19.537427100003697,
+  "checkpoint_sha256": "06e9e9f6870c302cd493ff4519141e96f2a496d79a015ccd3f96385cd815d49b",
+  "predictions_sha256": "c55dc9c4d15facf717bcb4b216f63d48c9bb6574fbce89c49cd05879153a9434",
+  "base_checkpoint_sha256": "fd35812795b23df61e87ef2d86d762475fb150f8a4668a52e429a715ec8e9cfc",
+  "outer_labels_used_for_selection": false
+}

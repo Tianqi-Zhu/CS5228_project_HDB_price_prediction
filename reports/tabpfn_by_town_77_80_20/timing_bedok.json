@@ -1,0 +1,15 @@
+{
+  "fit_seconds": 1.315102000022307,
+  "predict_seconds": 0.6963251999113709,
+  "peak_vram_gib": 2.618697166442871,
+  "context_rows": 7188,
+  "query_rows": 1719,
+  "features": 77,
+  "batch_size": 200,
+  "subsampling": false,
+  "parameter_versions_unchanged": true,
+  "town": "bedok",
+  "rmse_sgd": 454.2884241545494,
+  "mae_sgd": 337.60059599418827,
+  "bias_sgd": 9.758245796419597
+}

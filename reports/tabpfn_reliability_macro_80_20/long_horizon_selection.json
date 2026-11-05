@@ -1,0 +1,6 @@
+{
+  "policy": "plateau10",
+  "objective": "development11-16-month cell-mean RMSE",
+  "selection_targets_before": "2024-06",
+  "independent_TabPFN_model_refit": false
+}

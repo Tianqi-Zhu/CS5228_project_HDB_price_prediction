@@ -1,0 +1,7 @@
+experiment,status,reason
+A1,completed,11 new hierarchy fields appended to each original ensemble member; existing nearby comparables retained
+C1,not run: historical vintages unavailable,"Official current quarterly-median dataset extends to 2005 but is a 2026-updated snapshot. Public metadata and update-history UI provide ingestion timestamps, not historical values. An original 2020-Q1 Annex D link returned404 and a 2021-Q4 release confirmed release timing but did not restore a full historical median panel. Cannot certify original values at earlier feature origins; publication delay alone cannot fix revisions."
+B1,completed with archive gaps,"Official archived 2019,2021,2022,2023 town stock/completion tables; conservative explicit availability, no backfill, age/missingness exposed. Older snapshots persist through documented gaps."
+B2,not run: historical vintages unavailable,Official MOM page and linked workbook are a current historical snapshot; no complete original EP/S Pass vintage series and original release schedule was established. Reporting-frequency lag cannot certify unrevised historical values. No current figures are backdated or made up.
+A2,completed,"Reuse 4,000 disjoint frozen-ensemble forward-origin predictions; correction sees only matured earlier residuals; gamma/shrink selected July-Dec2023, checked Jan-Apr2024"
+A3/B3/other combinations,not run: component gates failed,"A1, B1 and A2 fail the earlier/later consistency gate; B2 has no admitted historical vintages"

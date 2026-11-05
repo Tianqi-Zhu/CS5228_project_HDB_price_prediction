@@ -1,0 +1,15 @@
+{
+  "fit_seconds": 1.2457372000208125,
+  "predict_seconds": 0.7699414000380784,
+  "peak_vram_gib": 2.8210010528564453,
+  "context_rows": 7837,
+  "query_rows": 1936,
+  "features": 77,
+  "batch_size": 200,
+  "subsampling": false,
+  "parameter_versions_unchanged": true,
+  "town": "sengkang",
+  "rmse_sgd": 369.4223521278791,
+  "mae_sgd": 253.01471690834126,
+  "bias_sgd": 50.45965929199556
+}

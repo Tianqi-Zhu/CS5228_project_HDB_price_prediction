@@ -1,0 +1,31 @@
+{
+  "source_sha256": {
+    "reports\\tabpfn_abcde_ensemble\\predictions_all_origins.csv": "34cd9fd15c7f45fdfd60a0c5735f8feda356eae6323cf177501d9be4e42407b2",
+    ".cache\\tabpfn_feature_diversified_ensemble_80_20\\features_2024-06_baseline_rebenchmark.joblib": "fba84757b6e23280d2b27eab0ca5d86a427ac19ca33c6b12b5b2dcc4194a0059",
+    ".cache\\tabpfn_feature_diversified_ensemble_80_20\\features_2024-06_spatial.joblib": "6ab34cbdecfc6f60bcbf55047bd60b1226eeed405a913e61c650752905859916",
+    ".cache\\tabpfn_feature_diversified_ensemble_80_20\\features_2024-06_temporal.joblib": "41f7cf16734d3c4074412fa7bf6c27a5a895cf4e78565e0347e5ef5ccde8f9a4",
+    "reports\\tabpfn_feature_diversified_ensemble_80_20\\features_2024-06_baseline_rebenchmark.json": "51ed6d1583fd616a56c1db048d7141eafe3f65e918feee5359e42c221bd80ca9",
+    "reports\\tabpfn_feature_diversified_ensemble_80_20\\features_2024-06_spatial.json": "a8ea24e46ce5f6d232ec6d1ded5afec36447eb53db07a7cf7c2f6d801a83090a",
+    "reports\\tabpfn_feature_diversified_ensemble_80_20\\features_2024-06_temporal.json": "97401bb31592869ef52169dbde677ce567f38d195674f901462a340223b9f0fc"
+  },
+  "rows": 28995,
+  "origins_in_source": [
+    "2022-09",
+    "2023-07",
+    "2024-06"
+  ],
+  "model_rmse_sgd": {
+    "A": 455.0710283636764,
+    "B": 455.3959272763664,
+    "C": 455.36972746220016,
+    "D": 455.8041120199807,
+    "E": 456.48241057365516,
+    "ABCDE_equal": 454.70398730500875
+  },
+  "member_alignment_checked": true,
+  "ensemble_mean_checked": true,
+  "no_model_inference": true,
+  "moran_method": "block mean residual, >=2 rentals; 8 neighbors within 2 km; 199 support-stratified permutations",
+  "feature_method": "8 marginal quantile bins, centered within town/flat-type/month; descriptive",
+  "town_month_interaction_method": "weighted least squares residual after additive town plus month fit"
+}

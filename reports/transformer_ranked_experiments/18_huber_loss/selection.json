@@ -1,0 +1,8 @@
+{
+  "chosen": "huber05",
+  "earlier_mean_delta": {
+    "huber05": -0.3314383114854422,
+    "huber1": 1.6288890982741009
+  },
+  "outer_labels_used": false
+}
