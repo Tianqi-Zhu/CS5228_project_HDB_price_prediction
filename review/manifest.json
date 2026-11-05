@@ -1,5 +1,5 @@
 {
-  "branch": "review/appendix-experiments",
+  "branch": "appendix",
   "scope": "appendix",
   "source_commits": {
     "zch-complete-proj": "048eca867b6c9ad03a0a15f5a3de9f7432d3ba2f",
@@ -728,7 +728,7 @@
     },
     {
       "path": "docs/planning/main-appendix-experiment-plan.md",
-      "sha256": "81a16a7949d7fd21fffc715a95c5d2f2cfd71d6d1ddcfdec5e7c66bfa77935a2"
+      "sha256": "c55b655c9bda94e8d77112dea7d11c562ce480a9a9cbb28e09dbfdc25fb27322"
     },
     {
       "path": "docs/planning/two-final-selection.json",
@@ -1472,7 +1472,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "502042142e51afb40d6dfa8128981dd548b68e6f6b37426cd24e560f92787916"
+      "sha256": "eac709a970134f21ff5fd457e6e445449fcd4fcdedf38b99c088fdce0a2b6c8c"
     },
     {
       "path": "reproduction/three_submissions/check_trained.py",
@@ -1837,7 +1837,7 @@
       "source": "docs/reviews/main-appendix-experiment-plan.md",
       "source_kind": "user-planning-input",
       "source_sha256": "6882933e12ed948f0aab852afb8b7ad858ab3f6a70132fb5c7d75b6a82067c41",
-      "sha256": "81a16a7949d7fd21fffc715a95c5d2f2cfd71d6d1ddcfdec5e7c66bfa77935a2",
+      "sha256": "c55b655c9bda94e8d77112dea7d11c562ce480a9a9cbb28e09dbfdc25fb27322",
       "adapted_after_copy": true
     },
     {
@@ -3454,5 +3454,7 @@
   "new_training_performed": false,
   "remote_push_performed": false,
   "review_date": "2026-11-06",
-  "raw_source_preservation": "Original algorithms/AST retained; text normalized to LF. Curated main CLI and isolated reproduction ROOT/entrypoints adapted; original data/submission bytes preserved."
+  "raw_source_preservation": "Original algorithms/AST retained; text normalized to LF. Curated main CLI and isolated reproduction ROOT/entrypoints adapted; original data/submission bytes preserved.",
+  "previous_local_branch_name": "review/appendix-experiments",
+  "branch_naming_note": "User requested direct local main/appendix names; old main retained at backup/main-before-experiment-split; no remote push."
 }
