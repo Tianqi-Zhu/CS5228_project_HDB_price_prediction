@@ -24,6 +24,24 @@ class AdjustedHistoryTests(unittest.TestCase):
         f.loc[2,'MONTHLY_RENT']=99999
         b,_=adjusted_history(f,v)
         pd.testing.assert_series_equal(a.loc[2],b.loc[2])
+    def test_overlapping_query_uses_only_earlier_labels_and_market_level(self):
+        f,_=self.frames()
+        query=f.iloc[[2]].copy().drop(columns='MONTHLY_RENT')
+        _,before=adjusted_history(f,query)
+        self.assertEqual(before.iloc[0].ADJ_PRIOR_MARKET,2000.)
+        self.assertEqual(before.iloc[0].ADJ_HIST_SIGNATURE_MEAN,2000.)
+        self.assertEqual(before.iloc[0].ADJ_HIST_SIGNATURE_COUNT,2.)
+        f.loc[2,'MONTHLY_RENT']=999999.
+        query['MONTHLY_RENT']=-999999.
+        _,after=adjusted_history(f,query)
+        pd.testing.assert_frame_equal(before,after)
+    def test_query_before_history_has_a_label_independent_fallback(self):
+        f,_=self.frames()
+        query=f.iloc[[0]].copy()
+        _,values=adjusted_history(f,query)
+        self.assertEqual(values.iloc[0].ADJ_PRIOR_MARKET,2000.)
+        self.assertEqual(values.iloc[0].ADJ_HIST_SIGNATURE_COUNT,0.)
+        self.assertTrue(pd.isna(values.iloc[0].ADJ_HIST_SIGNATURE_MEAN))
 
 
 if __name__=='__main__':unittest.main()

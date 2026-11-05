@@ -1,0 +1,8 @@
+{
+  "seed": 44,
+  "epochs": 3,
+  "fitting_rows": 150000,
+  "train_rmse_sgd": 477.7859125292018,
+  "reload_max_difference": 0.0,
+  "seconds": 5.808917707996443
+}

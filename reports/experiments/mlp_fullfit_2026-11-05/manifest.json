@@ -1,0 +1,130 @@
+{
+  "files": [
+    {
+      "path": "evidence/kaggle_frozen_2026-11-05.png",
+      "bytes": 59734,
+      "sha256": "e11702a3a7c11513936ee643f7bc63d4cfc598e508b866ae5cd0f0eb5fe4da38"
+    },
+    {
+      "path": "evidence/kaggle_fullfit_2026-11-05.png",
+      "bytes": 62667,
+      "sha256": "bbca85cf70ac3e7157d10aec699ef4526ee9fede20868534e30d9d69c3882232"
+    },
+    {
+      "path": "kaggle_results.json",
+      "bytes": 2961,
+      "sha256": "ceb11d295d25e26de19edad0efb156aff0ebb7f11101fa37b85149b3834cb1de"
+    },
+    {
+      "path": "obvious_low/removed_training_rows.csv",
+      "bytes": 355591,
+      "sha256": "2fa64257d2fb6f6bda2d0a1ac88cb010e32ed41351fbd9a464648569d33e55fd"
+    },
+    {
+      "path": "obvious_low/seed42/summary.json",
+      "bytes": 160,
+      "sha256": "d27a7032e41ce8a572d5a0fac04a1722c0186a862ee94a00452b176311832e43"
+    },
+    {
+      "path": "obvious_low/seed43/summary.json",
+      "bytes": 159,
+      "sha256": "d1689056de82762c36bfcfb3f8fbf3dc6d209a78b028bb945727cb130ade119a"
+    },
+    {
+      "path": "obvious_low/seed44/summary.json",
+      "bytes": 160,
+      "sha256": "4cafcafd95e2cff45bffe1513af76039297deac4502f67341d5bdf2a8c016a06"
+    },
+    {
+      "path": "obvious_low/summary.json",
+      "bytes": 1235,
+      "sha256": "b6a93a8f7071b3807ae396f7ab4ce78ea019c5540ba822787f5714c8cc7091d0"
+    },
+    {
+      "path": "protocol.json",
+      "bytes": 3058,
+      "sha256": "0d925a4bb5ca7d48f632e78c36d1cbae676e1bf9c7409b223139725c1fd0bf8b"
+    },
+    {
+      "path": "publication_checks.json",
+      "bytes": 433,
+      "sha256": "7d2d43ab994e98b7b853ebae090c132fceefcc54f06fd017e72c602ee27ae20d"
+    },
+    {
+      "path": "source/analysis/experiments/adjusted_rent_history.py",
+      "bytes": 2884,
+      "sha256": "4105dbd33f79b131dbd111c2a9e7cb3c58f3477d3239364b91c98f5bb3129f99"
+    },
+    {
+      "path": "source/analysis/experiments/cleaned_neural_ensemble.py",
+      "bytes": 18185,
+      "sha256": "58f402925229529fabe54c7117e02a0c855d3e37ed33e23de12a67215f145f14"
+    },
+    {
+      "path": "source/analysis/experiments/deep_learning.py",
+      "bytes": 22269,
+      "sha256": "9cff560ea3f6dc327441d6e5d646fda338755299cb6ddc90d97237ac437dc38d"
+    },
+    {
+      "path": "source/analysis/experiments/embedding_rent_search.py",
+      "bytes": 14365,
+      "sha256": "2043659725d3d07b978b0a8e47addd0a69a1c18428a4ce2ff9a5b10da9bac014"
+    },
+    {
+      "path": "source/analysis/experiments/mlp_fullfit_submission.py",
+      "bytes": 11422,
+      "sha256": "427fa8fe95a543f18e3e73679568a1f55dca22e5cb58e2b587fd6b09b64159ae"
+    },
+    {
+      "path": "source/analysis/experiments/spatiotemporal_hybrid.py",
+      "bytes": 25439,
+      "sha256": "35e99a6ab69f4879285de70a746783b336d09a622df0d63fc2fd07070e46db0d"
+    },
+    {
+      "path": "source/analysis/pipeline/auxiliary.py",
+      "bytes": 16204,
+      "sha256": "e9739209de7251997625c415391cbb483a2223aad38107ad2a01de50bf6c1072"
+    },
+    {
+      "path": "submission_mlp_fullfit_cleaned.csv",
+      "bytes": 1233500,
+      "sha256": "a398a2d94a02dae24f71b627e262d2f2ba4fab36775c2a7c9cdddf6d07e520ef"
+    },
+    {
+      "path": "submission_mlp_fullfit_uncleaned.csv",
+      "bytes": 1233328,
+      "sha256": "dae2326ac94f4379874b73cf9d8fdbfc1165c671c2dfc571d0211f23ef717199"
+    },
+    {
+      "path": "summary.json",
+      "bytes": 3002,
+      "sha256": "dcad3e6891e4c54348576ecb1c7035e7d738434970744b9c3130cda9456ef5d5"
+    },
+    {
+      "path": "uncleaned/seed42/summary.json",
+      "bytes": 161,
+      "sha256": "8417a53012c724c778b95b0d9f0e34d8107fc94a4e36b715d0f82684509b8e76"
+    },
+    {
+      "path": "uncleaned/seed43/summary.json",
+      "bytes": 160,
+      "sha256": "963bcba2d65a7c682e0b7239bb6fbd3b048382514f3508c75aea64b523559e55"
+    },
+    {
+      "path": "uncleaned/seed44/summary.json",
+      "bytes": 160,
+      "sha256": "3caf07c9c7c714a4b5244d4cf7eeb0c48a871b3179a8e7a80de84f524779f828"
+    },
+    {
+      "path": "uncleaned/summary.json",
+      "bytes": 1234,
+      "sha256": "96544a2e71056ee011fba11b03cf679ac226848e1d63df6475ba6fe885df8cfc"
+    },
+    {
+      "path": "verification.json",
+      "bytes": 694,
+      "sha256": "b41c1fd822606ef53114b29b58531bcd6c6e1f03b43b40e6cc206427b9034abd"
+    }
+  ],
+  "note": "Manifest excludes itself. Original training source snapshots are retained under source/; model weights and unrelated experiments are not included."
+}

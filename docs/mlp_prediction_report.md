@@ -1,8 +1,34 @@
 # MLP 集成预测与结果说明
 
-本分支交付 MLP、TabM、融合预测、训练数据清洗对照及预测区间。原始 CSV 保持不变；新增代码、精简实验记录和可直接查看的预测文件一起保存。
+本分支交付 MLP、TabM、融合预测、训练数据清洗对照、预测区间，以及MLP全量重训后的Kaggle提交。原始 CSV 保持不变；新增代码、精简实验记录和可直接查看的预测文件一起保存。
 
-**同一套独立区间校准协议下，未清洗融合模型 RMSE 为 467.03，清洗后的纯 MLP 为 471.26。** 历史最低开发验证 RMSE 464.21 来自另一套训练截至 2024-03 的神经网络融合，不能把它与本次截至 2023-12 的清洗对照直接归因为清洗收益。所有分数均为逐条租金、SGD 单位的本地验证结果，不是 Kaggle 隐藏测试成绩。
+**最新Kaggle截图成绩：全量清洗MLP为437.34455，全量未清洗MLP为439.38193。** 这是用户在2026-11-05提供的提交结果；截图未标明公榜／私榜，未通过API独立核验。当前推荐的MLP候选为全量清洗版，仅表示下列四份MLP提交中显示分数最低。
+
+原独立区间校准协议下，未清洗融合模型的本地验证RMSE为467.03，清洗后的纯MLP为471.26。历史最低开发验证464.21来自另一套训练截至2024-03的神经网络融合。以下将Kaggle显示成绩、旧模型的时间验证结果和全量训练结果分别注明，避免混算。
+
+## Kaggle提交与全量重训（2026-11-05）
+
+| 提交版本 | 训练截止 | 实际训练行数 | Kaggle显示分数 |
+| --- | --- | ---: | ---: |
+| 冻结模型，未清洗MLP | 2023-12 | 105,837 | 461.64312 |
+| 冻结模型，明显低价清洗MLP | 2023-12 | 104,505 | 458.91884 |
+| 全量重训，未清洗MLP | 2025-03 | 150,000 | 439.38193 |
+| **全量重训，明显低价清洗MLP** | **2025-03** | **147,983** | **437.34455** |
+
+全量重训后，未清洗版分数降低22.26119，清洗版降低21.57429（约4.70%）；全量清洗版比全量未清洗版低2.03738。原结构、AdamW配置、seed 42/43/44及每个网络3个epoch均保持不变。拟合集、过去租金统计和预处理随重训更新，训练批次数也增加，因此这是全量重训管线的增量，不能把所有变化单独归因于样本量。时间序号仍使用原分位数编码，本轮没有加入新的时间表示、同期历史或其他架构。
+
+原本用于2024-01至2024-03区间校准、2024-04至2025-03本地验证的44,163条已知标签，现在进入最终拟合集。清洗规则重新应用于全部150,000条记录，共删除2,017条、保留147,983条，其中43,478条来自2024-01至2025-03。全部50,000条测试记录均保留；训练、预测均未读取测试真实租金。
+
+测试集中有380条2025-03记录与最后训练月重叠。全量监督拟合包括该月已知训练标签，但这些查询的历史统计和历史市场基准只读取2025-03之前的数据。因此该重叠子集不能称为完全事前拟合的评估。6个MLP保存重载后的预测最大差为0；每份CSV均核对50,000行、`Id,Predicted`列名、ID顺序、有限预测值和三种子均值。
+
+全量拟合后没有保留新的独立本地测试集，不能在原验证月份上重新报告独立验证RMSE。上表外部成绩来自用户截图；全量运行摘要中的`test_rmse_sgd: null`表示本地没有隐藏标签，截图分数另存于[kaggle_results.json](../reports/experiments/mlp_fullfit_2026-11-05/kaggle_results.json)。
+
+- [全量清洗MLP提交CSV](../reports/experiments/mlp_fullfit_2026-11-05/submission_mlp_fullfit_cleaned.csv)
+- [全量未清洗MLP提交CSV](../reports/experiments/mlp_fullfit_2026-11-05/submission_mlp_fullfit_uncleaned.csv)
+- [训练摘要](../reports/experiments/mlp_fullfit_2026-11-05/summary.json)、[逐行检查](../reports/experiments/mlp_fullfit_2026-11-05/verification.json)、[删除清单](../reports/experiments/mlp_fullfit_2026-11-05/obvious_low/removed_training_rows.csv)
+- [全量成绩截图](../reports/experiments/mlp_fullfit_2026-11-05/evidence/kaggle_fullfit_2026-11-05.png)、[原冻结模型成绩截图](../reports/experiments/mlp_fullfit_2026-11-05/evidence/kaggle_frozen_2026-11-05.png)
+
+这些全量CSV为点预测，没有沿用旧模型的90%／95%区间。旧模型的区间覆盖率也不能转移到本次全量模型。
 
 ## 输入与网络
 
@@ -16,7 +42,7 @@ Deep Ensemble 分别用 seed 42、43、44 训练三个独立 MLP；TabM 也进�
 
 此处的主要集成没有加入 RNN/LSTM latent vector。早期加深和 latent 实验作为历史对照保留，不能把所有尝试都解释为收益。
 
-## 时间划分
+## 原区间实验的时间划分
 
 | 阶段 | 数据 | 用途 |
 | --- | --- | --- |
@@ -26,9 +52,9 @@ Deep Ensemble 分别用 seed 42、43、44 训练三个独立 MLP；TabM 也进�
 | 完整验证 | 2024-04～2025-03，共 35,158 条 | 比较 RMSE、MAE、偏差与覆盖率 |
 | 测试预测 | `test.csv` 全部 50,000 条 | 保持样本提交的 ID 顺序，没有真实标签可评分 |
 
-为保持校准流程一致，交付 CSV 使用截至 2023-12 的冻结模型，没有在区间校准后用全部 150,000 条标签重训。验证跨度为拟合后的第 4～15 个月，测试跨度为第 15～31 个月；更远月份的预测与区间属于超出已验证跨度的外推。
+为保持原校准流程一致，原六份带区间CSV使用截至2023-12的冻结模型。其验证跨度为拟合后的第4～15个月，测试跨度为第15～31个月；更远月份的预测与区间属于超出已验证跨度的外推。上节新增的两份全量提交另行保存，训练截止已更新到2025-03。
 
-## 预测结果
+## 原冻结模型的本地验证结果
 
 | 方法 | RMSE | MAE | 平均偏差，预测减真实 |
 | --- | ---: | ---: | ---: |
@@ -70,7 +96,7 @@ Deep Ensemble 分别用 seed 42、43、44 训练三个独立 MLP；TabM 也进�
 
 相同输入对应多个标签会形成局部限制。例如验证期同一组输入的真实租金为4,000/5,000/6,000，统一预测5,000时组内RMSE最低，仍为816.50；当前未清洗融合预测5,028.49，组内RMSE816.99，已经接近这个局部最优。这只证明该组三条的限制，不能证明整体RMSE无法降至450。[案例与计算](../reports/experiments/mlp_summary/uncertainty_diagnostics/indistinguishable_inputs_proof.json)
 
-## 可使用的预测文件
+## 原区间预测文件
 
 下列每份均为50,000条、按样本提交ID排序。清洗版本和风险修正版本保留作候选对照，未覆盖原预测。
 
@@ -83,7 +109,7 @@ Deep Ensemble 分别用 seed 42、43、44 训练三个独立 MLP；TabM 也进�
 | [严格高价清洗融合](../reports/experiments/mlp_summary/predictions/highest_only_hybrid_test_intervals.csv) | 失败对照，验证 RMSE 476.25 |
 | [历史风险修正融合](../reports/experiments/mlp_summary/predictions/risk_corrected_hybrid_test_intervals.csv) | RMSE 465.34，但 MAE 略高的候选 |
 
-`Id` 对应比赛样本ID；`month` 是审批月份；`prediction_sgd` 为预测月租；`ensemble_std_sgd` 为模型分歧；`pi90_lower_sgd/upper_sgd` 和 `pi95_lower_sgd/upper_sgd` 是相应预测区间。测试集没有真实标签，因此没有测试 RMSE。
+`Id` 对应比赛样本ID；`month` 是审批月份；`prediction_sgd` 为预测月租；`ensemble_std_sgd` 为模型分歧；`pi90_lower_sgd/upper_sgd` 和 `pi95_lower_sgd/upper_sgd` 是相应预测区间。测试集没有本地可用的真实标签，因此本地不能计算测试RMSE；已有Kaggle截图成绩见首节。
 
 如需比赛的两列格式，可从任一预测文件取出 `Id` 和 `prediction_sgd`，将后者改名为 `Predicted`。区间文件本身包含额外列，不直接作为两列提交文件。
 
@@ -103,6 +129,9 @@ python -m analysis.experiments.neural_ensemble_uncertainty --output-dir reports/
 
 # 使用刚生成的基线设置，重新进行两套清洗实验
 python -m analysis.experiments.cleaned_neural_ensemble --baseline-dir reports/local_runs/mlp_uncertainty --output-dir reports/local_runs/mlp_cleaning
+
+# 使用归档的原模型配置与轮数，重训全量MLP并输出两份Kaggle格式CSV
+python -m analysis.experiments.mlp_fullfit_submission --baseline-dir reports/experiments/mlp_summary/uncertainty --output-dir reports/local_runs/mlp_fullfit
 ```
 
 macOS 若遇到 OpenMP 动态库问题，可在相应命令前设置 `DYLD_FALLBACK_LIBRARY_PATH=/opt/miniconda3/lib`；无图形界面环境可设置 `MPLBACKEND=Agg`、`MPLCONFIGDIR=/tmp/hdb-mpl`。数值库和硬件差异可能产生小幅结果差异。只有设置、数据及代码哈希一致时，训练脚本才接受 `--resume`。
