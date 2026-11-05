@@ -1,0 +1,39 @@
+{
+  "tested_commit": "b48ed75d66500ff724df74299b6cf225c171ef4b",
+  "export_method": "git archive ZIP; no .git, preexisting output, checkpoints or feature caches",
+  "verified_manifest_sha256": "01384663c70fba044c7ea47f8917c15960294c5a606350ed536adec5bff98127",
+  "checks": [
+    {
+      "check": "integrity",
+      "returncode": 0,
+      "command": [
+        "python",
+        "review.py",
+        "verify"
+      ]
+    },
+    {
+      "check": "unit-tests",
+      "returncode": 0,
+      "command": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ]
+    },
+    {
+      "check": "cpu-replay",
+      "returncode": 0,
+      "command": [
+        "python",
+        "reproduction/f1/reproduce.py"
+      ]
+    }
+  ],
+  "fresh_conda_install": false,
+  "source_dependency_note": "Unit tests use third-party-only package directories via PYTHONPATH; CPU replay removes PYTHONPATH. No original project feature/model caches available."
+}
