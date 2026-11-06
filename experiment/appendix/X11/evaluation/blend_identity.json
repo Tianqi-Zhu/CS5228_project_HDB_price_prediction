@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "formula": "0.5*tree7 + 0.5*TabPFN87",
+  "F1_is_a_member": false,
+  "new_weight_search": false,
+  "Y_status": "missing origin-appropriate F2 predictions",
+  "interpretation": "Observed ensemble RMSE improvement is assessed with actual component losses; correlation alone is not evidence of improvement."
+}

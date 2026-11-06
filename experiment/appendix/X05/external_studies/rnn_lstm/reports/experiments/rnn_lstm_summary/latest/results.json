@@ -1,0 +1,114 @@
+{
+  "scenario": "monthly-updated: actual prior-month rental summaries and economics are assumed available",
+  "not_valid_for": "fixed-origin multi-month test submission",
+  "configuration": {
+    "output_dir": "/Users/andy/python/CS5228_project_HDB_price_prediction-midterm/reports/experiments/market_latent/run-2026-10-26",
+    "lookback": 3,
+    "encoder_cutoff": "2022-01",
+    "encoder_tune_start": "2021-10",
+    "validation_start": "2024-04",
+    "data_end": null,
+    "encoder_target_start": null,
+    "epochs": 300,
+    "seeds": [
+      42,
+      43,
+      44
+    ]
+  },
+  "monthly_features": [
+    "rent_median",
+    "rent_iqr",
+    "area_mean",
+    "share_1-room",
+    "share_2-room",
+    "share_3-room",
+    "share_4-room",
+    "share_5-room",
+    "share_executive",
+    "rent_growth",
+    "COE_A_PREMIUM",
+    "COE_C_PREMIUM",
+    "COE_A_GROWTH",
+    "COE_C_GROWTH",
+    "COE_A_BID_PRESSURE",
+    "COE_C_BID_PRESSURE",
+    "SG_STOCK_RETURN",
+    "SG_STOCK_RETURN_3M",
+    "SG_STOCK_VOL_3M"
+  ],
+  "encoder_results": [
+    {
+      "model": "rnn_42",
+      "selected_epochs": 29,
+      "fit_windows": 9,
+      "outer_growth_rmse": 0.024273383922405953
+    },
+    {
+      "model": "rnn_43",
+      "selected_epochs": 1,
+      "fit_windows": 9,
+      "outer_growth_rmse": 0.022125995453701124
+    },
+    {
+      "model": "rnn_44",
+      "selected_epochs": 1,
+      "fit_windows": 9,
+      "outer_growth_rmse": 0.024915633431152495
+    },
+    {
+      "model": "lstm_42",
+      "selected_epochs": 1,
+      "fit_windows": 9,
+      "outer_growth_rmse": 0.019909535632183936
+    },
+    {
+      "model": "lstm_43",
+      "selected_epochs": 1,
+      "fit_windows": 9,
+      "outer_growth_rmse": 0.01982040507844666
+    },
+    {
+      "model": "lstm_44",
+      "selected_epochs": 16,
+      "fit_windows": 9,
+      "outer_growth_rmse": 0.017074860715178584
+    }
+  ],
+  "persistence_outer_growth_rmse": 0.01712014503483385,
+  "encoder_frozen_before_downstream_fit": true,
+  "downstream_fit_start": "2022-01",
+  "raw_hashes": {
+    "/Users/andy/python/CS5228_project_HDB_price_prediction-midterm/data/train.csv": "6d7a417de72112361f8353659ba6fe44a442b07465b488aff1b03f7ec1ea3ba6",
+    "/Users/andy/python/CS5228_project_HDB_price_prediction-midterm/data/auxiliary/sg-coe-prices.csv": "e32fccd39da32780b6b7f35d069c813ed3edb0c110ea60761656bcee58d501a5",
+    "/Users/andy/python/CS5228_project_HDB_price_prediction-midterm/data/auxiliary/sg-hdb-block.csv": "e6ccc60c1f901f8f476eb6fe14c07ef5941d2afd06a081a1e4c00f717da27f83",
+    "/Users/andy/python/CS5228_project_HDB_price_prediction-midterm/data/auxiliary/sg-mrt-stations.csv": "899460b39fb251bd6883fffc9e6a772081f8e5217a657550afc3c49cfdcd3227",
+    "/Users/andy/python/CS5228_project_HDB_price_prediction-midterm/data/auxiliary/sg-schools.csv": "118c7ce8d96bbc934bd53655e73e6d0848c27853a625394ecc6a67a5af54f192",
+    "/Users/andy/python/CS5228_project_HDB_price_prediction-midterm/data/auxiliary/sg-shopping-malls.csv": "00e05b0176ac412695fc4ce1fc5a5338a1993593ffaffe26156dc2ea04ddf2c8",
+    "/Users/andy/python/CS5228_project_HDB_price_prediction-midterm/data/auxiliary/sg-stock-prices.csv": "c52fef9f33cfcb11285e2b9546124e02f32488e563af44e9fb3a505d10e2edff"
+  },
+  "rental_model_settings": {
+    "max_iter": 200,
+    "learning_rate": 0.05,
+    "max_leaf_nodes": 31,
+    "min_samples_leaf": 30,
+    "l2_regularization": 3.0,
+    "categorical_features": "from_dtype",
+    "early_stopping": false,
+    "random_state": 42
+  },
+  "versions": {
+    "python": "3.12.5",
+    "torch": "2.14.1",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "sklearn": "1.9.1"
+  },
+  "limitations": [
+    "Very few overlapping monthly windows; exploratory results.",
+    "Monthly medians are not mix-adjusted; composition features only supply context.",
+    "All variants use reduced fitting period; not comparable to earlier full-training scores.",
+    "Prior-month availability is assumed; actual publication delays are not supplied.",
+    "No unseen-future test latent vectors exported; future actual rents are unavailable."
+  ]
+}

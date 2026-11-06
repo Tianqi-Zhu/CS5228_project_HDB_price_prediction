@@ -1,0 +1,5 @@
+method,metric,candidate_minus_reference,p025,p975,resamples,seed,clusters,rows,scope
+moving_month_block,rmse_sgd,-0.88257738025,-1.19267402908,-0.485724014045,3000,42,10,28995,Descriptive fixed-prediction sensitivity; no training/selection uncertainty
+moving_month_block,mae_sgd,-2.93284175257,-3.64268876161,-2.16694495588,3000,42,10,28995,Descriptive fixed-prediction sensitivity; no training/selection uncertainty
+building_cluster,rmse_sgd,-0.882577380251,-1.56254177942,-0.177509710787,3000,42,8210,28995,Descriptive fixed-prediction sensitivity; no training/selection uncertainty
+building_cluster,mae_sgd,-2.93284175257,-3.47521867974,-2.38385636708,3000,42,8210,28995,Descriptive fixed-prediction sensitivity; no training/selection uncertainty

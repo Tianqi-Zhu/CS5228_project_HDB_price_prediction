@@ -1,0 +1,62 @@
+{
+  "F1": {
+    "status": "passed",
+    "checks": [
+      {
+        "command": [
+          "python",
+          "reproduction/f1/verify.py"
+        ],
+        "returncode": 0
+      },
+      {
+        "command": [
+          "python",
+          "reproduction/f1/reproduce.py"
+        ],
+        "returncode": 0
+      }
+    ],
+    "replay": {
+      "reproduced": [
+        {
+          "file": "output/review_f1_reproduced/kaggle_structure_blend.csv",
+          "rows": 50000,
+          "max_abs_difference": 0.0
+        }
+      ],
+      "python": "3.11.15",
+      "numpy": "2.4.6",
+      "executable": "D:\\miniconda3\\envs\\cs5228\\python.exe",
+      "mode": "frozen-model-forecast replay; no training or network"
+    },
+    "full_training_this_run": false,
+    "previous_full_training_evidence": "review/checks/push-validation/training_run.json"
+  },
+  "F2": {
+    "status": "passed_component_reconstruction",
+    "rows": 50000,
+    "max_abs_difference_sgd": 4.999883458367549e-07,
+    "tolerance_sgd": 5.001e-07,
+    "provenance_identity_checks": {
+      "submission_zch_tabpfn87_equal_150k.csv": {
+        "current_sha256": "312df81f6395bf34711fb07f3e4d31dc98d6d0022af2ff2f870556aaeb12eded",
+        "recorded_sha256": "f4f72ee713b1dc5c7f7a1598341ce584d84bbcbad634c80950998149ba0286eb",
+        "matching_representation": "restored_CRLF"
+      },
+      "predictions_zch_full.csv": {
+        "current_sha256": "6e5034a8d5eccd7dfbfb246f9e2eb4fa96fd8d73353f1e79a281ce4d36276eef",
+        "recorded_sha256": "4b2551b07f17e6cc9445a3811cf34be946e6e89de0d11bedc062ca07c1d4aaa2",
+        "matching_representation": "restored_CRLF"
+      },
+      "predictions_tabpfn87_full.csv": {
+        "current_sha256": "299658a724f016f9b42925dea01fe3ef968af950e5e609ade25b57aa279a10fa",
+        "recorded_sha256": "22fc32b16f47b7a4a393ab0cec7e30ab2a696c934a008b3d4ed9325b980cb19d",
+        "matching_representation": "restored_CRLF"
+      }
+    },
+    "fresh_checkpoint_inference_this_run": false,
+    "full_retraining_this_run": false,
+    "screenshot_score_link_verified": false
+  }
+}

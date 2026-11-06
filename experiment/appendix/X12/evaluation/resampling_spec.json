@@ -1,0 +1,25 @@
+{
+  "status": "J completed; Y unavailable",
+  "candidate": "F2",
+  "reference": "F1",
+  "seed": 42,
+  "resamples_per_method": 3000,
+  "percentiles": [
+    0.025,
+    0.975
+  ],
+  "month_block": 3,
+  "month_algorithm": "Non-circular starts 0..T-3, sample ceil(T/3) blocks, concatenate and truncate to T months; keep all rows and multiplicity",
+  "building_algorithm": "Normalized Town/Block/Street; draw K of K buildings with replacement; keep all rows and multiplicity",
+  "rows": 28995,
+  "months": 10,
+  "buildings": 8210,
+  "not_included": [
+    "training randomness",
+    "adaptive selection uncertainty",
+    "unknown future regimes"
+  ],
+  "Y_missing": "No origin-appropriate F2 annual predictions; Y and J must not be pooled",
+  "crossing_zero_is_valid_result": true,
+  "not_an_independent_test": true
+}

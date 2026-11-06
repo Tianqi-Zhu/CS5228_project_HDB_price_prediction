@@ -1,5 +1,19 @@
 # 分支运行核验
 
+## 当前 appendix 增量完善
+
+当前范围见[执行表](../docs/planning/appendix-execution-status.md)与[解释分析入口](../docs/guides/appendix_review.md)。基于远端 `444811a` 保留 MLP 原解释材料，补入固定来源的 RNN/LSTM、动态租金面、空间交互；新增 X11/X12 的 J 分析及 X08/X09 来源/跨度审计。本轮新增科学模型拟合数为0。
+
+运行证据位于 [appendix-refresh](checks/appendix-refresh/)。F2 已可核验 J 预测与50,000行保存组件重组；年度、完整schema/信息政策、历史截图关联仍待补。下面旧记录中的“F2仍缺生成链”属于当时提交的状态，不代表当前缺少全部F2材料。CPU重放、旧源GPU证据、全新环境与本轮完整重训分开登记。
+
+```powershell
+python -m analysis.appendix_review verify
+python -m analysis.appendix_catalog audit
+python -m unittest discover -s tests -p test_appendix_statistics.py -v
+```
+
+## 历史验证记录
+
 本分支保留原项目架构、三个环境文件、requirements/ 和全部九份原始 CSV。数据与原始提交按 SHA256 核对，未重新生成或缩减。
 
 初次拆分记录在 [checks/summary.json](checks/summary.json) 和 [checks/export_check.json](checks/export_check.json)：选定的 53 项测试中 52 项通过、1 项因未附带历史缓存而跳过；原提交 CPU 重组在 50,000 行上的预测差为零。这些记录不代表完成了所有历史研究实验。

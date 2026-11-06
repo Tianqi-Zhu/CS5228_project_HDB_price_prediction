@@ -1,0 +1,8 @@
+model,n,rmse_sgd,mae_sgd,bias_sgd,delta_rmse_vs_row_model_sgd
+catboost+flat_type_damped,79817,537.4407,409.5708,9.5022,-1.8475
+catboost+area_flat_type_damped,79817,537.5769,409.1031,12.1677,-1.7113
+catboost,79817,539.2882,413.6053,-26.7357,0.0000
+hist_gradient_boosting,79817,543.0956,414.4900,-7.0229,3.8074
+catboost+area_flat_type_recent3,79817,543.9076,418.4246,-52.9551,4.6194
+catboost+flat_type_recent3,79817,544.0846,419.1364,-55.6206,4.7965
+lightgbm,79817,545.8289,416.0327,-7.1763,6.5407

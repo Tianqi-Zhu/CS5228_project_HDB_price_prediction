@@ -1,14 +1,20 @@
-# X06 实验审查卡
+# X06 神经模型、基础模型与误差解释
 
-| 字段 | 内容 |
+当前状态：**archived**。来源与运行范围见[执行状态](../../../docs/planning/appendix-execution-status.md)。
+
+| 推理环节 | 内容 |
 |---|---|
-| 归属 | appendix |
-| 目的 | 你的分支已有深度/预训练/调参与负结果 |
-| 归档状态 | archived（已有归档不表示本轮新训练） |
-| 完整要求/对照/验收 | docs/planning/main-appendix-experiment-plan.md中同ID要求卡 |
-| 既有证据 | 本目录内文件；文件来源/哈希见review/manifest.json；无文件则尚未实施 |
-| 执行状态 | 历史证据按本卡归档；本轮实际运行范围另见 review/checks/push-validation/summary.json，不代表重跑全部历史搜索 |
-| 复用限制 | 不同窗口、schema、宏观可用性、选择阶段分开比较；负结果不删除 |
+| 问题/假设 | 不同深度方法在各自实际输入和预算下提供什么证据？ |
+| 对照与口径 | MLP原协议、Concat同输入架构对照、TabPFN各自匹配实验分别阅读；官方TabM与自定义style分开命名。 |
+| 观察 | MLP 有低分歧却高误差的案例；Concat/TabPFN探索包含预算与输入限制，不能汇总成跨协议架构排名。 |
+| 取舍依据 | 保留远端已有的MLP三组图、原始逐行预测和运行入口；模型优点必须限定于实际对照。 |
+| 服务 main | M04/M05；方法质量60%、解释清晰度30%、来源/复现10% |
+
+## 证据入口
+
+- [README.md](mlp_explain/README.md)
+- [README.md](concat_explorations/README.md)
+- [README.md](../T05/README.md)
 
 ## Ziyuan concat exploration archive
 

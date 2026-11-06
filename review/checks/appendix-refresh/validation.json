@@ -1,0 +1,146 @@
+{
+  "status": "passed within declared local scope",
+  "main_unchanged": true,
+  "scientific_models_fitted": 0,
+  "initial_attempts": [
+    {
+      "check": "manifest",
+      "exit_code": 1,
+      "seconds": 5.67,
+      "log": "output/appendix-refresh/validation-01/manifest.log"
+    },
+    {
+      "check": "catalog",
+      "exit_code": 1,
+      "seconds": 5.58,
+      "log": "output/appendix-refresh/validation-01/catalog.log"
+    },
+    {
+      "check": "inputs",
+      "exit_code": 0,
+      "seconds": 2.02,
+      "log": "output/appendix-refresh/validation-01/inputs.log"
+    },
+    {
+      "check": "statistics-tests",
+      "exit_code": 0,
+      "seconds": 1.64,
+      "log": "output/appendix-refresh/validation-01/statistics-tests.log"
+    },
+    {
+      "check": "core-tests",
+      "exit_code": 1,
+      "seconds": 87.92,
+      "log": "output/appendix-refresh/validation-01/core-tests.log"
+    },
+    {
+      "check": "three-submissions",
+      "exit_code": 0,
+      "seconds": 2.12,
+      "log": "output/appendix-refresh/validation-01/three-submissions.log"
+    },
+    {
+      "check": "concat-archive",
+      "exit_code": 1,
+      "seconds": 0.22,
+      "log": "output/appendix-refresh/validation-01/concat-archive.log"
+    },
+    {
+      "check": "mlp-archive",
+      "exit_code": 0,
+      "seconds": 5.23,
+      "log": "output/appendix-refresh/validation-01/mlp-archive.log"
+    },
+    {
+      "check": "mlp-tests",
+      "exit_code": 0,
+      "seconds": 16.73,
+      "log": "output/appendix-refresh/validation-01/mlp-tests.log"
+    },
+    {
+      "check": "mlp-diagnose",
+      "exit_code": 0,
+      "seconds": 6.0,
+      "log": "output/appendix-refresh/validation-01/mlp-diagnose.log"
+    },
+    {
+      "check": "tabpfn-manifest",
+      "exit_code": 0,
+      "seconds": 6.36,
+      "log": "output/appendix-refresh/validation-01/tabpfn-manifest.log"
+    },
+    {
+      "check": "tabpfn-tests",
+      "exit_code": 1,
+      "seconds": 111.53,
+      "log": "output/appendix-refresh/validation-01/tabpfn-tests.log"
+    }
+  ],
+  "corrective_retries": [
+    {
+      "check": "manifest",
+      "exit_code": 0,
+      "log": "output\\appendix-refresh\\validation-01\\manifest-retry.log"
+    },
+    {
+      "check": "catalog",
+      "exit_code": 0,
+      "log": "output\\appendix-refresh\\validation-01\\catalog-retry.log"
+    },
+    {
+      "check": "pipeline-regression",
+      "exit_code": 0,
+      "log": "output\\appendix-refresh\\validation-01\\pipeline-regression-retry.log"
+    },
+    {
+      "check": "concat-archive",
+      "exit_code": 0,
+      "log": "output\\appendix-refresh\\validation-01\\concat-archive-retry.log"
+    }
+  ],
+  "core_tests": {
+    "tests_run": 140,
+    "first_attempt_failures": 1,
+    "skipped": 4,
+    "failure": "Only source_partition.csv hash bookkeeping; corrected then all 12 pipeline tests rerun successfully",
+    "full_clean_export_recheck": "pending next validation stage"
+  },
+  "MLP_tests": {
+    "tests_run": 37,
+    "skipped": 0,
+    "passed": 37
+  },
+  "TabPFN_tests": {
+    "tests_run": 280,
+    "passed": 279,
+    "errors": 0,
+    "failures": 0,
+    "skipped": 1,
+    "declared_missing_resource_skips": [
+      {
+        "test": "test_amenity_quality_features.QualityTests.test_archived_school_columns_pre_and_post_rule_change",
+        "missing": [
+          ".cache/tabpfn_amenity_quality_80_20/sources/schools_2020_all.html",
+          ".cache/tabpfn_amenity_quality_80_20/sources/schools_2023_all.html"
+        ]
+      }
+    ],
+    "successful": true,
+    "original_test_sources_modified": false
+  },
+  "fixed_issues": [
+    "UTF-8 explicit decode for Concat manifest on Windows",
+    "Refresh partition-table hash",
+    "Reuse existing RTDL dependency along with SDK cache; no installation"
+  ],
+  "replay": [
+    "Three archived 50000-row submissions",
+    "F2 saved 50000-row component reconstruction"
+  ],
+  "not_claimed": [
+    "Fresh CUDA inference",
+    "All historical searches rerun",
+    "Independent unseen evaluation",
+    "Fresh Conda installation"
+  ]
+}

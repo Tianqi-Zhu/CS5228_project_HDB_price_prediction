@@ -1,0 +1,3 @@
+split,rows,nearest_flagged_rows,flagged_within_1km_rows,distance_changed_rows,mean_nearest_distance_increase_km,max_increase_km,sensitivity_type
+train,150000,20557,29181,20557,0.0733406480018,1.70556498978,Feature-only counterfactual; no refit or performance claim
+test,50000,7153,9899,7153,0.0763621716161,1.70556498978,Feature-only counterfactual; no refit or performance claim

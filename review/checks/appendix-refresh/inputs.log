@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "paired_rows": 28995,
+  "F2_full_rows": 50000,
+  "full_max_abs_difference_sgd": 4.999883458367549e-07,
+  "full_tolerance_sgd": 5.001e-07,
+  "F1_is_F2_member": false,
+  "source_commit": "d075c81a4719cad57f8f46d290760324afa14c6c",
+  "fresh_GPU_inference": false,
+  "new_models_fitted": 0
+}

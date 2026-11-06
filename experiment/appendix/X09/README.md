@@ -1,11 +1,17 @@
-# X09 实验审查卡
+# X09 预测跨度与共同月份边界
 
-| 字段 | 内容 |
+当前状态：**partial**。来源与运行范围见[执行状态](../../../docs/planning/appendix-execution-status.md)。
+
+| 推理环节 | 内容 |
 |---|---|
-| 归属 | appendix |
-| 目的 | 既有长窗参考已归档；F1/F2新匹配长窗未跑 |
-| 归档状态 | partial（已有归档不表示本轮新训练） |
-| 完整要求/对照/验收 | docs/planning/main-appendix-experiment-plan.md中同ID要求卡 |
-| 既有证据 | 本目录内文件；文件来源/哈希见review/manifest.json；无文件则尚未实施 |
-| 执行状态 | 历史证据按本卡归档；本轮实际运行范围另见 review/checks/push-validation/summary.json，不代表重跑全部历史搜索 |
-| 复用限制 | 不同窗口、schema、宏观可用性、选择阶段分开比较；负结果不删除 |
+| 问题/假设 | 近期10个月验证能说明全部查询跨度么？ |
+| 对照与口径 | 按原始日期审计全量上下文，保留既有独立长窗参考；F1/F2同2023-12原点L仍须重拟合。 |
+| 观察 | 380条查询与最新标签同月，18077条查询超过已配对的10个月范围；并无这些行的真实标签。 |
+| 取舍依据 | 只报告样本覆盖与未验证边界；不能从Y/J删月制造新L，不能把重叠窗口当独立测试。 |
+| 服务 main | M08；方法质量60%、解释清晰度30%、来源/复现10% |
+
+## 证据入口
+
+- [query_horizons.csv](evaluation/query_horizons.csv)
+- [cutoff_checks.json](evaluation/cutoff_checks.json)
+- [existing_multi_window_reference](existing_multi_window_reference)

@@ -1,0 +1,243 @@
+{
+  "main_commit": "d075c81a4719cad57f8f46d290760324afa14c6c",
+  "imports": [
+    {
+      "source_commit": "d075c81a4719cad57f8f46d290760324afa14c6c",
+      "source_path": "experiment/main/M00/inputs/validation.npz",
+      "sha256": "31ee1e712c9c9b1ea47190d592f9dbfccb4f81535aae9a7a91c5c5a3dec88f81"
+    },
+    {
+      "source_commit": "d075c81a4719cad57f8f46d290760324afa14c6c",
+      "source_path": "data/train.csv",
+      "sha256": "2fe38ce9e0d8a02e9786f066d4a10d575d91f34be1d9111f0142e3f43fbfc8a5"
+    },
+    {
+      "source_commit": "d075c81a4719cad57f8f46d290760324afa14c6c",
+      "source_path": "reports/zch_anniversary_tabpfn_blend/predictions_june.csv",
+      "sha256": "ca9b26659134f48142cfa72d3c08a3fc0a0aa28cb12b66ff4b51c81f70d117f6"
+    },
+    {
+      "source_commit": "d075c81a4719cad57f8f46d290760324afa14c6c",
+      "source_path": "reports/zch_anniversary_tabpfn_blend/predictions_zch_full.csv",
+      "sha256": "6e5034a8d5eccd7dfbfb246f9e2eb4fa96fd8d73353f1e79a281ce4d36276eef"
+    },
+    {
+      "source_commit": "d075c81a4719cad57f8f46d290760324afa14c6c",
+      "source_path": "reports/zch_anniversary_tabpfn_blend/predictions_tabpfn87_full.csv",
+      "sha256": "299658a724f016f9b42925dea01fe3ef968af950e5e609ade25b57aa279a10fa"
+    },
+    {
+      "source_commit": "d075c81a4719cad57f8f46d290760324afa14c6c",
+      "source_path": "reports/zch_anniversary_tabpfn_blend/submission_zch_tabpfn87_equal_150k.csv",
+      "sha256": "312df81f6395bf34711fb07f3e4d31dc98d6d0022af2ff2f870556aaeb12eded"
+    },
+    {
+      "source_commit": "d075c81a4719cad57f8f46d290760324afa14c6c",
+      "source_path": "experiment/main/M00/inputs/metadata.json",
+      "sha256": "47363f99cc8ea0a1a220e5403fe50d944c1afa523b303ad906d0ae2760765a46",
+      "destination": "reproduction/appendix_diagnostics/inputs/main_metadata.json"
+    },
+    {
+      "source_commit": "d075c81a4719cad57f8f46d290760324afa14c6c",
+      "source_path": "experiment/main/M07/evaluation/f2_manifest.json",
+      "sha256": "8a25c32eaf9e261c397e6360f107cbd02c8e105c95a2d9d5a5789bb72a154570",
+      "destination": "reproduction/appendix_diagnostics/inputs/f2_identity.json"
+    },
+    {
+      "source_commit": "d075c81a4719cad57f8f46d290760324afa14c6c",
+      "source_path": "experiment/main/M08/evaluation/protocol_checks.json",
+      "sha256": "4f00169c0b5c5b3d3cdbffb550024036bee880c9e6cca86337cfb6ad7955088f",
+      "destination": "reproduction/appendix_diagnostics/inputs/paired_protocol.json"
+    },
+    {
+      "source_commit": "d075c81a4719cad57f8f46d290760324afa14c6c",
+      "source_path": "experiment/main/M09/evaluation/verification.json",
+      "sha256": "d3d4dec5f387e49a5fc479aee1eed6f84e1fce6e78ab019d542baa778f0680fe",
+      "destination": "reproduction/appendix_diagnostics/inputs/main_replay_scope.json"
+    },
+    {
+      "source_commit": "cb167e9f39bbed2a2d8d4e82752e76ba4c4cbfea",
+      "source_path": "docs/market_latent.md",
+      "sha256": "894ca4040b7dfb71249586c1db66f4422944eac98d80105d516d5476f068026f",
+      "destination": "experiment/appendix/X05/external_studies/rnn_lstm/docs/market_latent.md"
+    },
+    {
+      "source_commit": "cb167e9f39bbed2a2d8d4e82752e76ba4c4cbfea",
+      "source_path": "docs/rnn_lstm_report.md",
+      "sha256": "40f878cf7d6f9e8730e17c0b608c1f1a6b268295a9e1d53f80d15ac04e44e99a",
+      "destination": "experiment/appendix/X05/external_studies/rnn_lstm/docs/rnn_lstm_report.md"
+    },
+    {
+      "source_commit": "cb167e9f39bbed2a2d8d4e82752e76ba4c4cbfea",
+      "source_path": "reports/experiments/rnn_lstm_summary/latest/rental_metrics.csv",
+      "sha256": "4bd0274539a730af5ea44b33ea0627eabb44b77cf65474a04b192d8e62b0ba3c",
+      "destination": "experiment/appendix/X05/external_studies/rnn_lstm/reports/experiments/rnn_lstm_summary/latest/rental_metrics.csv"
+    },
+    {
+      "source_commit": "cb167e9f39bbed2a2d8d4e82752e76ba4c4cbfea",
+      "source_path": "reports/experiments/rnn_lstm_summary/latest/results.json",
+      "sha256": "0ee62b5d5dbfe3c48a35ddea59927ac07cc18ab13588af5540112f3d7c671c3a",
+      "destination": "experiment/appendix/X05/external_studies/rnn_lstm/reports/experiments/rnn_lstm_summary/latest/results.json"
+    },
+    {
+      "source_commit": "cb167e9f39bbed2a2d8d4e82752e76ba4c4cbfea",
+      "source_path": "reports/experiments/rnn_lstm_summary/cutoffs/protocol.json",
+      "sha256": "43b0293eb5e1d7879be2f62eb746cb698bb1d5fdda19958459a9e968004c8f7a",
+      "destination": "experiment/appendix/X05/external_studies/rnn_lstm/reports/experiments/rnn_lstm_summary/cutoffs/protocol.json"
+    },
+    {
+      "source_commit": "cb167e9f39bbed2a2d8d4e82752e76ba4c4cbfea",
+      "source_path": "reports/experiments/rnn_lstm_summary/cutoffs/cutoff_comparison.csv",
+      "sha256": "d656b0fcc973ff057c9d69199838a9e1a1a982fb02b75661a72f58b38d345527",
+      "destination": "experiment/appendix/X05/external_studies/rnn_lstm/reports/experiments/rnn_lstm_summary/cutoffs/cutoff_comparison.csv"
+    },
+    {
+      "source_commit": "cb167e9f39bbed2a2d8d4e82752e76ba4c4cbfea",
+      "source_path": "analysis/experiments/market_latent.py",
+      "sha256": "39d82856d085deae1487552beb88bb89e135ff95f6dc1b7cf299cf3cbb6a8f4d",
+      "destination": "experiment/appendix/X05/external_studies/rnn_lstm/analysis/experiments/market_latent.py"
+    },
+    {
+      "source_commit": "cb167e9f39bbed2a2d8d4e82752e76ba4c4cbfea",
+      "source_path": "analysis/experiments/market_latent_diagnostics.py",
+      "sha256": "9045bbb5180e6230a9e8d16aec12093f9aaafc74791a1141bfde13456282769b",
+      "destination": "experiment/appendix/X05/external_studies/rnn_lstm/analysis/experiments/market_latent_diagnostics.py"
+    },
+    {
+      "source_commit": "469e34e32e36f74a9a0381a72ed26f20bf5ffec6",
+      "source_path": "reports/dynamic_market_index/report.md",
+      "sha256": "1d3c25fc2f7f78b09be6818b941587cfa915a9888728122afdd8eb464de531ce",
+      "destination": "experiment/appendix/X05/external_studies/dynamic_surface/reports/dynamic_market_index/report.md"
+    },
+    {
+      "source_commit": "469e34e32e36f74a9a0381a72ed26f20bf5ffec6",
+      "source_path": "reports/dynamic_market_index/results.json",
+      "sha256": "dda118a4b4713634e053390b008a19ae71b8f9a2dad5b9f179f8d766feca4d90",
+      "destination": "experiment/appendix/X05/external_studies/dynamic_surface/reports/dynamic_market_index/results.json"
+    },
+    {
+      "source_commit": "469e34e32e36f74a9a0381a72ed26f20bf5ffec6",
+      "source_path": "reports/dynamic_market_index/pooled_scores.csv",
+      "sha256": "b51905c2b0553917386a73d36b9a39ea5c6da08bcc481746590f404c9a13ea80",
+      "destination": "experiment/appendix/X05/external_studies/dynamic_surface/reports/dynamic_market_index/pooled_scores.csv"
+    },
+    {
+      "source_commit": "469e34e32e36f74a9a0381a72ed26f20bf5ffec6",
+      "source_path": "reports/dynamic_market_index/fold_scores.csv",
+      "sha256": "c39923b2a29e1a577502ec1f622e5948117904ced407cbc2c3c99bbca2790818",
+      "destination": "experiment/appendix/X05/external_studies/dynamic_surface/reports/dynamic_market_index/fold_scores.csv"
+    },
+    {
+      "source_commit": "469e34e32e36f74a9a0381a72ed26f20bf5ffec6",
+      "source_path": "reports/factored_rental_surface/report.md",
+      "sha256": "375565d8fa76f4de51b92e2e6fed84353fbea9fc43b386a047333f033f370740",
+      "destination": "experiment/appendix/X05/external_studies/dynamic_surface/reports/factored_rental_surface/report.md"
+    },
+    {
+      "source_commit": "469e34e32e36f74a9a0381a72ed26f20bf5ffec6",
+      "source_path": "reports/factored_rental_surface/results.json",
+      "sha256": "8246bfdadf85ae9cddd88c6e31d99c55f1be61bcdcb3e6549d6846823e995f2e",
+      "destination": "experiment/appendix/X05/external_studies/dynamic_surface/reports/factored_rental_surface/results.json"
+    },
+    {
+      "source_commit": "469e34e32e36f74a9a0381a72ed26f20bf5ffec6",
+      "source_path": "reports/factored_rental_surface/hybrid_pooled_scores.csv",
+      "sha256": "eeea1dddcc47cbbdb1f3cfd0c64233fe8971cd3ec2f3549b9c7a4c706cbaf22f",
+      "destination": "experiment/appendix/X05/external_studies/dynamic_surface/reports/factored_rental_surface/hybrid_pooled_scores.csv"
+    },
+    {
+      "source_commit": "469e34e32e36f74a9a0381a72ed26f20bf5ffec6",
+      "source_path": "reports/factored_rental_surface/hybrid_fold_scores.csv",
+      "sha256": "bff5162ff3e3e1b706cb66b0ca3c58ed93fb18da1045f3cfacbed80ecba9b64d",
+      "destination": "experiment/appendix/X05/external_studies/dynamic_surface/reports/factored_rental_surface/hybrid_fold_scores.csv"
+    },
+    {
+      "source_commit": "469e34e32e36f74a9a0381a72ed26f20bf5ffec6",
+      "source_path": "reports/factored_rental_surface/surface_forecast_scores.csv",
+      "sha256": "bf458083ca44e6de58aef0ea2157a6ddd33d71cbd5dd27d3fbdb89e7f40c1eb8",
+      "destination": "experiment/appendix/X05/external_studies/dynamic_surface/reports/factored_rental_surface/surface_forecast_scores.csv"
+    },
+    {
+      "source_commit": "469e34e32e36f74a9a0381a72ed26f20bf5ffec6",
+      "source_path": "analysis/experiments/dynamic_market_index.py",
+      "sha256": "9b26c1ebcfaf1f13905f37fb4e0c1d55ae73995d1d42069bc1df1ed3e04e34f4",
+      "destination": "experiment/appendix/X05/external_studies/dynamic_surface/analysis/experiments/dynamic_market_index.py"
+    },
+    {
+      "source_commit": "469e34e32e36f74a9a0381a72ed26f20bf5ffec6",
+      "source_path": "analysis/experiments/factored_rental_surface.py",
+      "sha256": "a1e5eb9c924c8e1a2d69e44aabf8c5c2c0729e37ed895e7bebd7f568b975c4e3",
+      "destination": "experiment/appendix/X05/external_studies/dynamic_surface/analysis/experiments/factored_rental_surface.py"
+    },
+    {
+      "source_commit": "7caf2cb77095f3b99cd242db0074189a355c0aae",
+      "source_path": "reports/spatial_features/amenities_adjusted/amenities_adjusted_summary_zh.md",
+      "sha256": "38c0fd04a60205f23d3ce798396eabc6fef9879a711c96edf68315cd65f91ade",
+      "destination": "experiment/appendix/X01/spatial_controls/reports/spatial_features/amenities_adjusted/amenities_adjusted_summary_zh.md"
+    },
+    {
+      "source_commit": "7caf2cb77095f3b99cd242db0074189a355c0aae",
+      "source_path": "reports/spatial_features/amenities_adjusted/amenity_bin_effects.csv",
+      "sha256": "50c76dc94c8389d21aa4126cb0cbcc88aa6afadf0a56af4fbe0e917605479903",
+      "destination": "experiment/appendix/X01/spatial_controls/reports/spatial_features/amenities_adjusted/amenity_bin_effects.csv"
+    },
+    {
+      "source_commit": "7caf2cb77095f3b99cd242db0074189a355c0aae",
+      "source_path": "reports/spatial_features/amenities_adjusted/analysis_manifest.json",
+      "sha256": "7f3a2f49fc3953b034073944ac29690a4e96a388337d3ec13eb5a2c2a29814d1",
+      "destination": "experiment/appendix/X01/spatial_controls/reports/spatial_features/amenities_adjusted/analysis_manifest.json"
+    },
+    {
+      "source_commit": "7caf2cb77095f3b99cd242db0074189a355c0aae",
+      "source_path": "reports/spatial_features/amenity_interactions/analysis_manifest.json",
+      "sha256": "9ff7983ca565ecfa52cb77b6ca789edb83dd0ed0c1858fd1f8c23cbbdbac2b9d",
+      "destination": "experiment/appendix/X01/spatial_controls/reports/spatial_features/amenity_interactions/analysis_manifest.json"
+    },
+    {
+      "source_commit": "7caf2cb77095f3b99cd242db0074189a355c0aae",
+      "source_path": "reports/spatial_features/amenity_interactions/cluster_covariance.csv",
+      "sha256": "251c5a62c69e238e9a923d89815c49b19725dcca822ef502afd3ee9823c02870",
+      "destination": "experiment/appendix/X01/spatial_controls/reports/spatial_features/amenity_interactions/cluster_covariance.csv"
+    },
+    {
+      "source_commit": "7caf2cb77095f3b99cd242db0074189a355c0aae",
+      "source_path": "reports/spatial_features/amenity_interactions/mrt_mall_interaction_heatmap.png",
+      "sha256": "6fcce1a233b74d8a045ab0d37a91eddcd9bb58362db2cf763f3b5fd1dcec5407",
+      "destination": "experiment/appendix/X01/spatial_controls/reports/spatial_features/amenity_interactions/mrt_mall_interaction_heatmap.png"
+    },
+    {
+      "source_commit": "7caf2cb77095f3b99cd242db0074189a355c0aae",
+      "source_path": "reports/spatial_features/amenity_interactions/mrt_mall_interaction_summary_zh.md",
+      "sha256": "bd42926bb057a449abbb823956ecaa8c56fb68cdea3c1771cf33d3641b2bbefd",
+      "destination": "experiment/appendix/X01/spatial_controls/reports/spatial_features/amenity_interactions/mrt_mall_interaction_summary_zh.md"
+    },
+    {
+      "source_commit": "7caf2cb77095f3b99cd242db0074189a355c0aae",
+      "source_path": "reports/spatial_features/amenity_interactions/mrt_mall_joint_cells.csv",
+      "sha256": "c79f5df7e218cb0a14cf6304ab0fe671740d8eed8904cfc058b2903fdc505e61",
+      "destination": "experiment/appendix/X01/spatial_controls/reports/spatial_features/amenity_interactions/mrt_mall_joint_cells.csv"
+    },
+    {
+      "source_commit": "7caf2cb77095f3b99cd242db0074189a355c0aae",
+      "source_path": "reports/spatial_features/tables/adjusted_correlations.csv",
+      "sha256": "306eea405fd7495c191b1d84b84f77694ca6b9f15d16a18633b304b6135744cf",
+      "destination": "experiment/appendix/X01/spatial_controls/reports/spatial_features/tables/adjusted_correlations.csv"
+    },
+    {
+      "source_commit": "7caf2cb77095f3b99cd242db0074189a355c0aae",
+      "source_path": "reports/spatial_features/feature_dictionary.csv",
+      "sha256": "ec33044629968a06aa9562d897104649e58323f2b080d12730076d8cb9dcc97a",
+      "destination": "experiment/appendix/X01/spatial_controls/reports/spatial_features/feature_dictionary.csv"
+    }
+  ],
+  "compact_prediction_bundle": {
+    "path": "reproduction/appendix_diagnostics/inputs/predictions.npz",
+    "sha256": "0cc4e5f08c34682f6c3621e2c8f2f9a93bc3556e02f0eef30116058706516041",
+    "lossless_numeric_subset": true,
+    "rows_J": 28995,
+    "rows_Y": 35158,
+    "full_query_rows": 50000
+  },
+  "scope": "Pinned source and saved predictions; raw code snapshots are not standalone executable integrations",
+  "scientific_training_performed": false
+}

@@ -1,0 +1,21 @@
+{
+  "status": "Source/status audit independently reproduced; historical-date sensitivity refit not run",
+  "flagged_source_locations": 34,
+  "policy": "Supplied STATUS=open snapshot; exact coordinate deduplication",
+  "code_prefixes": [
+    "cr",
+    "cp",
+    "js",
+    "je",
+    "jw"
+  ],
+  "complete_opening_dates_available": false,
+  "remaining_locations_certified_historically_open": false,
+  "model_inputs_changed": false,
+  "models_refitted": 0,
+  "scope": "Flags reproduce the archived JRL/CRL subset; removing only these locations does not reconstruct all historic facility dates",
+  "source_hashes": {
+    "data/auxiliary/sg-mrt-stations.csv": "4757278b94c2d05627a941377d51de60882e3e1477de01758ef37070b716b889",
+    "data/auxiliary/sg-hdb-block.csv": "2255ad61ba6895456a39aec81d12583796d717ef88fe102ee9de71b3796fc223"
+  }
+}

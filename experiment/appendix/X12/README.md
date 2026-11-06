@@ -1,11 +1,22 @@
-# X12 实验审查卡
+# X12 配对差值描述性区间
 
-| 字段 | 内容 |
+当前状态：**partial**。来源与运行范围见[执行状态](../../../docs/planning/appendix-execution-status.md)。
+
+| 推理环节 | 内容 |
 |---|---|
-| 归属 | appendix |
-| 目的 | F1/F2配对区间 |
-| 归档状态 | planned（已有归档不表示本轮新训练） |
-| 完整要求/对照/验收 | docs/planning/main-appendix-experiment-plan.md中同ID要求卡 |
-| 既有证据 | 本目录内文件；文件来源/哈希见review/manifest.json；无文件则尚未实施 |
-| 执行状态 | 历史证据按本卡归档；本轮实际运行范围另见 review/checks/push-validation/summary.json，不代表重跑全部历史搜索 |
-| 复用限制 | 不同窗口、schema、宏观可用性、选择阶段分开比较；负结果不删除 |
+| 问题/假设 | 近期F2−F1差值对月份或楼栋构成有多敏感？ |
+| 对照与口径 | 冻结J预测；seed42；3个月非循环区块与楼栋簇各3000次，保留簇内记录和抽取重数。 |
+| 观察 | RMSE差-0.88258；月份区间[-1.19267,-0.48572]，楼栋区间[-1.56254,-0.17751]。 |
+| 取舍依据 | 以固定预测为条件的描述，不能覆盖训练/开发选模不确定性。Y缺F2不计算，区间跨0也可验收。 |
+| 服务 main | M08；方法质量60%、解释清晰度30%、来源/复现10% |
+
+## 证据入口
+
+- [paired_intervals.csv](evaluation/paired_intervals.csv)
+- [resampling_spec.json](evaluation/resampling_spec.json)
+
+## 本轮解释图表
+
+![配对差值描述性区间](evaluation/paired_intervals.png)
+
+图表由 `python -m analysis.appendix_review run --output-dir output/appendix-review/new-run` 从冻结预测重新生成；不训练、不重新选权。

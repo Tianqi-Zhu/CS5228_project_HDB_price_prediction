@@ -1,0 +1,4 @@
+group,rows,min_month,max_month
+same-month context,380,2025-03,2025-03
+1-10 month,31543,2025-04,2026-01
+11-16 month,18077,2026-02,2026-07

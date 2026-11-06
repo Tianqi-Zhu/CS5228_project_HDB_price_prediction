@@ -1,0 +1,17 @@
+test_auxiliary_features_preserve_rows_and_target_encodings_do_not_use_validation_target (test_pipeline.PipelineChecks.test_auxiliary_features_preserve_rows_and_target_encodings_do_not_use_validation_target) ... ok
+test_duplicate_rows_and_index_preserved (test_pipeline.PipelineChecks.test_duplicate_rows_and_index_preserved) ... ok
+test_models_handle_unseen_categories_and_roundtrip (test_pipeline.PipelineChecks.test_models_handle_unseen_categories_and_roundtrip) ... ok
+test_negative_lease_age_is_missing (test_pipeline.PipelineChecks.test_negative_lease_age_is_missing) ... ok
+test_public_modules_import (test_pipeline.PipelineChecks.test_public_modules_import) ... ok
+test_relu_preserves_source_branch_lease_missing_feature (test_pipeline.PipelineChecks.test_relu_preserves_source_branch_lease_missing_feature) ... ok
+test_saved_result_consistency (test_pipeline.PipelineChecks.test_saved_result_consistency) ... ok
+test_single_analysis_package (test_pipeline.PipelineChecks.test_single_analysis_package) ... ok
+test_source_protection_and_output_guard (test_pipeline.PipelineChecks.test_source_protection_and_output_guard) ... ok
+test_spatial_missing_coordinates_and_explicit_primary_population (test_pipeline.PipelineChecks.test_spatial_missing_coordinates_and_explicit_primary_population) ... ok
+test_submission_uses_template_order_and_rejects_invalid_predictions (test_pipeline.PipelineChecks.test_submission_uses_template_order_and_rejects_invalid_predictions) ... ok
+test_time_boundary_and_recent_window (test_pipeline.PipelineChecks.test_time_boundary_and_recent_window) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 48.502s
+
+OK

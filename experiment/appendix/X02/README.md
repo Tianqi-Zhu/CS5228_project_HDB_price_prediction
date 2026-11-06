@@ -1,13 +1,17 @@
-# X02 实验审查卡
+# X02 清洗敏感性与极端标签
 
-| 字段 | 内容 |
+当前状态：**archived**。来源与运行范围见[执行状态](../../../docs/planning/appendix-execution-status.md)。
+
+| 推理环节 | 内容 |
 |---|---|
-| 归属 | appendix |
-| 目的 | ReLU/IQR及MLP清洗、低价和输入冲突对照 |
-| 归档状态 | partial（已有归档不表示本轮新训练） |
-| 完整要求/对照/验收 | docs/planning/main-appendix-experiment-plan.md中同ID要求卡 |
-| 既有证据 | 本目录内文件；文件来源/哈希见review/manifest.json；无文件则尚未实施 |
-| 执行状态 | 历史证据按本卡归档；本轮实际运行范围另见 review/checks/push-validation/summary.json，不代表重跑全部历史搜索 |
-| 复用限制 | 不同窗口、schema、宏观可用性、选择阶段分开比较；负结果不删除 |
+| 问题/假设 | 低租金或重复输入是否应删除？ |
+| 对照与口径 | MLP/TabM/hybrid 各与自己的未清洗版本比较，保留全部验证行；ReLU/IQR 另有协议。 |
+| 观察 | 轻度清洗只改善部分模型；更强删除未稳定降低 RMSE，不能凭低租金就断定标签错误。 |
+| 取舍依据 | 主线保留全部记录，附录记录删除代价、实际行数与独立校准设置。 |
+| 服务 main | M01/M04；方法质量60%、解释清晰度30%、来源/复现10% |
 
-[MLP完整清洗和诊断证据](../X06/mlp_explain/README.md)。本轮复算历史预测，未重新训练。
+## 证据入口
+
+- [comparison_metrics.csv](../X06/mlp_explain/cleaning/comparison_metrics.csv)
+- [protocol.json](../X06/mlp_explain/cleaning/protocol.json)
+- [README.md](relu_historical/README.md)

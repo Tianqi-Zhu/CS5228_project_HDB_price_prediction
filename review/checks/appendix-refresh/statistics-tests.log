@@ -1,0 +1,12 @@
+test_alignment_rejects_shuffled_predictions_and_duplicate_source_ids (test_appendix_statistics.AppendixStatisticsTests.test_alignment_rejects_shuffled_predictions_and_duplicate_source_ids) ... ok
+test_blend_identity_does_not_assume_low_correlation_or_improvement (test_appendix_statistics.AppendixStatisticsTests.test_blend_identity_does_not_assume_low_correlation_or_improvement) ... ok
+test_cluster_intervals_are_invariant_to_row_order (test_appendix_statistics.AppendixStatisticsTests.test_cluster_intervals_are_invariant_to_row_order) ... ok
+test_cluster_multiplicity_matches_explicitly_repeated_rows (test_appendix_statistics.AppendixStatisticsTests.test_cluster_multiplicity_matches_explicitly_repeated_rows) ... ok
+test_identical_pipelines_have_zero_intervals_under_both_cluster_schemes (test_appendix_statistics.AppendixStatisticsTests.test_identical_pipelines_have_zero_intervals_under_both_cluster_schemes) ... ok
+test_invalid_inputs_and_unknown_resampling_are_rejected (test_appendix_statistics.AppendixStatisticsTests.test_invalid_inputs_and_unknown_resampling_are_rejected) ... ok
+test_moving_blocks_do_not_wrap_at_end_of_ten_month_window (test_appendix_statistics.AppendixStatisticsTests.test_moving_blocks_do_not_wrap_at_end_of_ten_month_window) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.091s
+
+OK

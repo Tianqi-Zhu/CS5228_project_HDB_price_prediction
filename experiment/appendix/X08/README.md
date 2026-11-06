@@ -1,11 +1,16 @@
-# X08 实验审查卡
+# X08 设施时间/来源与特征敏感性
 
-| 字段 | 内容 |
+当前状态：**partial**。来源与运行范围见[执行状态](../../../docs/planning/appendix-execution-status.md)。
+
+| 推理环节 | 内容 |
 |---|---|
-| 归属 | appendix |
-| 目的 | 设施时间可用性审计/修正敏感性 |
-| 归档状态 | planned（已有归档不表示本轮新训练） |
-| 完整要求/对照/验收 | docs/planning/main-appendix-experiment-plan.md中同ID要求卡 |
-| 既有证据 | 本目录内文件；文件来源/哈希见review/manifest.json；无文件则尚未实施 |
-| 执行状态 | 历史证据按本卡归档；本轮实际运行范围另见 review/checks/push-validation/summary.json，不代表重跑全部历史搜索 |
-| 复用限制 | 不同窗口、schema、宏观可用性、选择阶段分开比较；负结果不删除 |
+| 问题/假设 | STATUS=open 是否能证明历史时点已开通？ |
+| 对照与口径 | 来源快照坐标去重，与仅排除JRL/CRL-only坐标的特征级对照；没有修改旧模型输入。 |
+| 观察 | 34个坐标；最近站点受影响训练20557/测试7153行，复现原审计；距离增量并非RMSE增益。 |
+| 取舍依据 | 采用明确快照场景；缺完整开通日期，严格历史重训保持未完成，不认证剩余站点。 |
+| 服务 main | M01/M08；方法质量60%、解释清晰度30%、来源/复现10% |
+
+## 证据入口
+
+- [availability_audit.json](evaluation/availability_audit.json)
+- [feature_sensitivity.csv](evaluation/feature_sensitivity.csv)

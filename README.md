@@ -12,10 +12,26 @@
 | 本分支范围 | 消融、另两提交、调参/负结果、长窗、来源审计及复现细节 |
 | 保留项目架构 | analysis/、data/、docs/、experiment/、requirements/、tests/、environment.yml；另有隔离reproduction/固定提交包 |
 | 最终F1 | kaggle_structure_blend.csv，用户截图415.37529；作为另两提交的对照保留 |
-| 外部F2 | 用户截图413.19635；代码/87列/成员/验证[待补充]，已导入TabPFN背景与探索；最终F2生成链仍待补 |
+| F2当前证据 | J 同行预测、tree7＋TabPFN等权及50,000行组件重组可核验；年度、完整有序字典/信息政策、历史截图分数关联仍缺 |
 | 归档与验证 | 推送前运行记录见 [review/CHECKS.md](review/CHECKS.md)；新训练输出未上传 Kaggle |
 | 对照分支 | main |
 | 文件换行 | .gitattributes禁止隐式文本转换，以保证数据、冻结源和证据SHA256在检出后仍一致 |
+
+## 按实验问题阅读
+
+本分支以 main 之外的“问题/假设 → 匹配对照 → 观察 → 取舍”为入口，不把所有实验排成同一性能榜。
+
+- [13张决策卡与主题索引](experiment/appendix/README.md)
+- [本轮状态、未完成训练与材料缺口](docs/planning/appendix-execution-status.md)
+- [可重算解释分析和复现指南](docs/guides/appendix_review.md)
+
+```powershell
+python review.py verify
+python -m analysis.appendix_review verify
+python -m analysis.appendix_review run --output-dir output/appendix-review/new-run
+```
+
+最后一条复算 X08/X09/X11/X12/X13 的已保存预测/特征诊断，不训练、不使用API，不改main或报告。匹配种子、严格历史设施重训、最终管线长窗与新Conda/GPU重训按真实缺口保持待做。仓库的完整试验档案与最终PDF的精简附录不是同一篇幅要求。
 
 ## Concat Transformer development appendix
 

@@ -5,7 +5,7 @@ import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-manifest = json.loads((Path(__file__).parent / 'source_manifest.json').read_text())
+manifest = json.loads((Path(__file__).parent / 'source_manifest.json').read_text(encoding='utf-8'))
 failures = []
 python_files = 0
 for item in manifest['files']:

@@ -1,0 +1,11 @@
+{
+  "tree_mse": 197014.4076291777,
+  "mean_e_times_d": -4308.351690223495,
+  "mean_d_squared": 6930.291548404479,
+  "fixed_tabpfn_weight": 0.5,
+  "observed_blend_mse": 194438.62882605533,
+  "reconstructed_blend_mse": 194438.62882605533,
+  "error_correlation": 0.982550263649645,
+  "formula": "MSE(tree + w*(tabpfn-tree)) = E[e^2] + 2*w*E[e*d] + w^2*E[d^2]",
+  "weight_search_performed": false
+}

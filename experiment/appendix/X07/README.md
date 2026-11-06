@@ -1,11 +1,15 @@
-# X07 实验审查卡
+# X07 匹配外部种子鲁棒性
 
-| 字段 | 内容 |
+当前状态：**planned**。来源与运行范围见[执行状态](../../../docs/planning/appendix-execution-status.md)。
+
+| 推理环节 | 内容 |
 |---|---|
-| 归属 | appendix |
-| 目的 | 匹配外部种子鲁棒性 |
-| 归档状态 | planned（已有归档不表示本轮新训练） |
-| 完整要求/对照/验收 | docs/planning/main-appendix-experiment-plan.md中同ID要求卡 |
-| 既有证据 | 本目录内文件；文件来源/哈希见review/manifest.json；无文件则尚未实施 |
-| 执行状态 | 历史证据按本卡归档；本轮实际运行范围另见 review/checks/push-validation/summary.json，不代表重跑全部历史搜索 |
-| 复用限制 | 不同窗口、schema、宏观可用性、选择阶段分开比较；负结果不删除 |
+| 问题/假设 | 两终点的小幅差距能否跨完整训练随机种子保持？ |
+| 对照与口径 | F1/F2 配方冻结，Y/J各42/43/44；已有合格42可复用，43/44不重选超参和权重规则。 |
+| 观察 | 当前不存在这组匹配完整重复。子成员四种子平均和 MLP 自身多种子都不能替代。 |
+| 取舍依据 | 保留为后续计算任务；需F2年度原点资料、checkpoint、明确GPU时间/显存，再做完整重复。 |
+| 服务 main | M08；方法质量60%、解释清晰度30%、来源/复现10% |
+
+## 证据入口
+
+- [appendix-execution-status.md](../../../docs/planning/appendix-execution-status.md)

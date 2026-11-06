@@ -12,37 +12,37 @@
     {
       "id": "X01",
       "status": "archived",
-      "purpose": "逐列/组消融与冗余审计",
+      "purpose": "特征冗余与空间关联",
       "evidence_directory": "experiment/appendix/X01"
     },
     {
       "id": "X02",
       "status": "archived",
-      "purpose": "ReLU/IQR与MLP清洗、低价、相同输入冲突对照",
+      "purpose": "清洗敏感性与极端标签",
       "evidence_directory": "experiment/appendix/X02"
     },
     {
       "id": "X03",
       "status": "archived",
-      "purpose": "历史/宏观另两版本与三份原CSV对照",
+      "purpose": "另两提交与信息条件",
       "evidence_directory": "experiment/appendix/X03"
     },
     {
       "id": "X04",
       "status": "archived",
-      "purpose": "种子/删列/覆盖分组及结构负结果",
+      "purpose": "种子、覆盖分组与结构负结果",
       "evidence_directory": "experiment/appendix/X04"
     },
     {
       "id": "X05",
-      "status": "partial",
-      "purpose": "两来源已有时空/经济研究；外部分支动态面/RNN不导入",
+      "status": "archived",
+      "purpose": "时间序列与动态租金面替代路线",
       "evidence_directory": "experiment/appendix/X05"
     },
     {
       "id": "X06",
       "status": "archived",
-      "purpose": "你的分支已有深度/预训练/调参与负结果",
+      "purpose": "神经模型、基础模型与误差解释",
       "evidence_directory": "experiment/appendix/X06"
     },
     {
@@ -53,38 +53,38 @@
     },
     {
       "id": "X08",
-      "status": "planned",
-      "purpose": "设施时间可用性审计/修正敏感性",
+      "status": "partial",
+      "purpose": "设施时间/来源与特征敏感性",
       "evidence_directory": "experiment/appendix/X08"
     },
     {
       "id": "X09",
       "status": "partial",
-      "purpose": "既有长窗参考已归档；F1/F2新匹配长窗未跑",
+      "purpose": "预测跨度与共同月份边界",
       "evidence_directory": "experiment/appendix/X09"
     },
     {
       "id": "X10",
       "status": "archived",
-      "purpose": "已继承公开目标重合审计；不进入性能排名",
+      "purpose": "公开目标重合与无效排名排除",
       "evidence_directory": "experiment/appendix/X10"
     },
     {
       "id": "X11",
-      "status": "pending",
-      "purpose": "F2成员互补分析，依赖外部F2",
+      "status": "partial",
+      "purpose": "F2实际组件互补与消融",
       "evidence_directory": "experiment/appendix/X11"
     },
     {
       "id": "X12",
-      "status": "planned",
-      "purpose": "F1/F2配对区间",
+      "status": "partial",
+      "purpose": "配对差值描述性区间",
       "evidence_directory": "experiment/appendix/X12"
     },
     {
       "id": "X13",
       "status": "partial",
-      "purpose": "原三份复现入口；固定配方重训核验见CHECKS；新建Conda环境未验证",
+      "purpose": "复现层次与环境边界",
       "evidence_directory": "experiment/appendix/X13"
     },
     {
@@ -147,7 +147,9 @@
     },
     {
       "path": "README.md",
-      "sha256": "f1dd97db60cc2aa59517d2877afbe4d96808c0a6b005cf52b1fbae12363dcfa7"
+      "sha256": "44f5c8995eca31d55153d76475cded2f056a9037417022d0ccfbe99676b7295a",
+      "pre_appendix_refresh_sha256": "f1dd97db60cc2aa59517d2877afbe4d96808c0a6b005cf52b1fbae12363dcfa7",
+      "adapted_after_copy": true
     },
     {
       "path": "analysis/README.md",
@@ -887,7 +889,9 @@
     },
     {
       "path": "docs/planning/main-appendix-experiment-plan.md",
-      "sha256": "b66fd40ceaea728b3a06504c74821f889c9442f7ce09022bdc188679fcd23b0a"
+      "sha256": "82dd15fd1c35bd7d7be32d02420cda5ced6092c5e1da4adf62abd709e99299a3",
+      "pre_appendix_refresh_sha256": "b66fd40ceaea728b3a06504c74821f889c9442f7ce09022bdc188679fcd23b0a",
+      "adapted_after_copy": true
     },
     {
       "path": "docs/planning/tabpfn-branch-split.md",
@@ -923,7 +927,9 @@
     },
     {
       "path": "experiment/appendix/README.md",
-      "sha256": "5607e2931237a7a753690c1738de3f8674df265488e4d9a84474c6b69535686b"
+      "sha256": "a3231caf5a7b18ea066a7738fb2a7b219d6ca06e47546b172454057f477d0423",
+      "pre_appendix_refresh_sha256": "5607e2931237a7a753690c1738de3f8674df265488e4d9a84474c6b69535686b",
+      "adapted_after_copy": true
     },
     {
       "path": "experiment/appendix/T01/README.md",
@@ -11583,7 +11589,9 @@
     },
     {
       "path": "experiment/appendix/X01/README.md",
-      "sha256": "8ca60fc8724b1dfe3ced8ad5f55309dc594f1fc36f7014763b1923ec81a06de2"
+      "sha256": "2f6d2564f571a8e1fcae147ce57038f7002e8a02256bc13d750fffd0a4b45709",
+      "pre_appendix_refresh_sha256": "8ca60fc8724b1dfe3ced8ad5f55309dc594f1fc36f7014763b1923ec81a06de2",
+      "adapted_after_copy": true
     },
     {
       "path": "experiment/appendix/X01/deletion_results/README.md",
@@ -11643,7 +11651,9 @@
     },
     {
       "path": "experiment/appendix/X02/README.md",
-      "sha256": "2275bcb00b812a5781da983f3a98b5b55f7500d6667b638a4f5252e4690d085e"
+      "sha256": "a76868301860303cc5691a8f1ae72e031c834c7b574b5426699979d9f9d79c7e",
+      "pre_appendix_refresh_sha256": "2275bcb00b812a5781da983f3a98b5b55f7500d6667b638a4f5252e4690d085e",
+      "adapted_after_copy": true
     },
     {
       "path": "experiment/appendix/X02/relu_historical/README.md",
@@ -11655,7 +11665,9 @@
     },
     {
       "path": "experiment/appendix/X03/README.md",
-      "sha256": "187983272636a5ddb4722ccb1dfcf77843c2b36a4a387ba58dfd4db28304c83d"
+      "sha256": "cbaed52bec870d77502fa6ea81588329f7eea48f0cac551f0ccdd72cd07fd3d8",
+      "pre_appendix_refresh_sha256": "187983272636a5ddb4722ccb1dfcf77843c2b36a4a387ba58dfd4db28304c83d",
+      "adapted_after_copy": true
     },
     {
       "path": "experiment/appendix/X03/submission_selection.json",
@@ -11675,7 +11687,9 @@
     },
     {
       "path": "experiment/appendix/X04/README.md",
-      "sha256": "900f17aefbe212e2dcd934e1b3cc6d558b489b80630dfa8fbd8c592a23010e20"
+      "sha256": "93b0ccc1e5778b9f8bc95bd8308bc53865e4bbb2292e4a6cea955e5f9458bebe",
+      "pre_appendix_refresh_sha256": "900f17aefbe212e2dcd934e1b3cc6d558b489b80630dfa8fbd8c592a23010e20",
+      "adapted_after_copy": true
     },
     {
       "path": "experiment/appendix/X04/round_08_feature_pruning_seeds/README.md",
@@ -11879,7 +11893,9 @@
     },
     {
       "path": "experiment/appendix/X05/README.md",
-      "sha256": "ab2d0029d5693b186e3534fd12bc23621649dad25594ca355db1e0daba32d708"
+      "sha256": "2e707d82f13ee8203fe23c66e031a850826d49d1f6f8d12463d1f274e2947324",
+      "pre_appendix_refresh_sha256": "ab2d0029d5693b186e3534fd12bc23621649dad25594ca355db1e0daba32d708",
+      "adapted_after_copy": true
     },
     {
       "path": "experiment/appendix/X05/concat_explorations/README.md",
@@ -12575,7 +12591,9 @@
     },
     {
       "path": "experiment/appendix/X06/README.md",
-      "sha256": "327e96359347b932b336331f639ed3db61a224f5593afd79ad32c62b9683b811"
+      "sha256": "f9e47e4a8a520749ebcd0a81077b1223ea59984e64d7213c45b955a537d96117",
+      "pre_appendix_refresh_sha256": "327e96359347b932b336331f639ed3db61a224f5593afd79ad32c62b9683b811",
+      "adapted_after_copy": true
     },
     {
       "path": "experiment/appendix/X06/baseline_deep_models/README.md",
@@ -14195,15 +14213,21 @@
     },
     {
       "path": "experiment/appendix/X07/README.md",
-      "sha256": "1569cd0160b2a9d9ed067f6ca93aec53b655779f264a83832c39d0b26efc1dc4"
+      "sha256": "1015cb8dcf94363f3aafb520c42b802eed99031ad55e647aa96fb8e99fc7e3c6",
+      "pre_appendix_refresh_sha256": "1569cd0160b2a9d9ed067f6ca93aec53b655779f264a83832c39d0b26efc1dc4",
+      "adapted_after_copy": true
     },
     {
       "path": "experiment/appendix/X08/README.md",
-      "sha256": "0e67a547061d6a28e9203ac0114b7183364d7961da97667c0545d8033c8d045b"
+      "sha256": "c555a635dc074050bb097db31d6af00846c7dca4605c0ad959109c3ef35971b3",
+      "pre_appendix_refresh_sha256": "0e67a547061d6a28e9203ac0114b7183364d7961da97667c0545d8033c8d045b",
+      "adapted_after_copy": true
     },
     {
       "path": "experiment/appendix/X09/README.md",
-      "sha256": "c3e7161ced03acec9ff5db80aebd58e3981190f98676608e936f8e2af9d16f84"
+      "sha256": "2daa8b0c722d4c6460c8abe5cf39e3ea8d3cb398e2eafb28deb5482f9803353d",
+      "pre_appendix_refresh_sha256": "c3e7161ced03acec9ff5db80aebd58e3981190f98676608e936f8e2af9d16f84",
+      "adapted_after_copy": true
     },
     {
       "path": "experiment/appendix/X09/existing_multi_window_reference/fold_metrics.csv",
@@ -14227,7 +14251,9 @@
     },
     {
       "path": "experiment/appendix/X10/README.md",
-      "sha256": "7b7edb320ffd25fe3f02f85b32514e8285d5c92f7d0caf86dd2c2500b222ccb5"
+      "sha256": "d83d14015095509984867b8daec49a8ebd2e9e931016c71ec2e2355a221639d1",
+      "pre_appendix_refresh_sha256": "7b7edb320ffd25fe3f02f85b32514e8285d5c92f7d0caf86dd2c2500b222ccb5",
+      "adapted_after_copy": true
     },
     {
       "path": "experiment/appendix/X10/source_audit/README.md",
@@ -14255,15 +14281,21 @@
     },
     {
       "path": "experiment/appendix/X11/README.md",
-      "sha256": "b35eccf7ee2e28f24ed3787b3209ae55f935b85d42b841c707036f20d42a0a8d"
+      "sha256": "ae363668c01a3e1c6f3951cbf4036767e662efccb7a6b6e9710a0db351e295ef",
+      "pre_appendix_refresh_sha256": "b35eccf7ee2e28f24ed3787b3209ae55f935b85d42b841c707036f20d42a0a8d",
+      "adapted_after_copy": true
     },
     {
       "path": "experiment/appendix/X12/README.md",
-      "sha256": "0e3e37282d376e0ceccc21af5f68403ecad4f093fc6a1d1872d7a4d36fcf28eb"
+      "sha256": "76a9a281d8197e576b431866913462299318f17b94823e48f04513940b4b24d3",
+      "pre_appendix_refresh_sha256": "0e3e37282d376e0ceccc21af5f68403ecad4f093fc6a1d1872d7a4d36fcf28eb",
+      "adapted_after_copy": true
     },
     {
       "path": "experiment/appendix/X13/README.md",
-      "sha256": "02aa20bebf5386e6797531d5a077ee93f7c1dff59309dbb432d684fb02039aef"
+      "sha256": "5e124e74b56875c643617b72aad49ed5dfb27457283749c075c64e698d3e4e2c",
+      "pre_appendix_refresh_sha256": "02aa20bebf5386e6797531d5a077ee93f7c1dff59309dbb432d684fb02039aef",
+      "adapted_after_copy": true
     },
     {
       "path": "reproduction/concat_explorations/README.md",
@@ -15495,7 +15527,9 @@
     },
     {
       "path": "reproduction/concat_explorations/verify.py",
-      "sha256": "73bd388d7631a4f22a8bc841eff81dd24332fc6cdf13b5f7d92de608401b6e2a"
+      "sha256": "13f12a5de68333affbdd682f1c05fb896793c6eb0584a67db938b4ec7a0938d1",
+      "pre_appendix_refresh_sha256": "73bd388d7631a4f22a8bc841eff81dd24332fc6cdf13b5f7d92de608401b6e2a",
+      "adapted_after_copy": true
     },
     {
       "path": "reproduction/mlp_explain/diagnose.py",
@@ -15899,15 +15933,21 @@
     },
     {
       "path": "review.py",
-      "sha256": "5b424540e301b0aaa26aaf4c2bc50c07826a082390372ca4d6e3cf8d9dd5d518"
+      "sha256": "bdf7c99cc01919613a4d97c0e072a47313a3580b9f824edcdc5a758b445aa490",
+      "pre_appendix_refresh_sha256": "5b424540e301b0aaa26aaf4c2bc50c07826a082390372ca4d6e3cf8d9dd5d518",
+      "adapted_after_copy": true
     },
     {
       "path": "review/CHECKS.md",
-      "sha256": "0f3c766bf4abd7a2ae30f95d24e72faa9094b3fd9394bbf76999d5aa0ad91110"
+      "sha256": "32d984bd5c1f4a1a7dcdf1ce24c90406a49d12040e0f9abade5aa3ee785c09fe",
+      "pre_appendix_refresh_sha256": "0f3c766bf4abd7a2ae30f95d24e72faa9094b3fd9394bbf76999d5aa0ad91110",
+      "adapted_after_copy": true
     },
     {
       "path": "review/source_partition.csv",
-      "sha256": "10e684007c5386a932f479411d22bae0734128b3aa8417253e4a7e05923bace1"
+      "sha256": "06551fa064634233be2520638490fba18ce6a61b11cae95cf3fba24e0c7a7c6a",
+      "pre_appendix_refresh_sha256": "10e684007c5386a932f479411d22bae0734128b3aa8417253e4a7e05923bace1",
+      "adapted_after_copy": true
     },
     {
       "path": "review_tabpfn.py",
@@ -17292,6 +17332,1216 @@
     {
       "path": "workflows/tabpfn/tests/test_worldcover_tree_cover.py",
       "sha256": "90a064106497cb5bee0212c57830b90383f36d3a6bf586b3dcec113d815c8141"
+    },
+    {
+      "path": "analysis/appendix_catalog.py",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "5a147363480270f79ff41f02580c9cacf3e7e6af550140b9aa5f02d9a3fdfb76",
+      "source_sha256": "17684ea79f9f367007c9393151182a7931749b0c318d3f164faea9306053066d",
+      "adapted_after_copy": true,
+      "pre_appendix_refresh_sha256": "17684ea79f9f367007c9393151182a7931749b0c318d3f164faea9306053066d"
+    },
+    {
+      "path": "analysis/appendix_imports.py",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "2ff4c34abec9f561e9fa4871a025070df7b6a3e7e4c54730622aa2c8fe95ea38",
+      "source_sha256": "2ff4c34abec9f561e9fa4871a025070df7b6a3e7e4c54730622aa2c8fe95ea38",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "analysis/appendix_review.py",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "c0ed8f01b13617f32b4c4021e0f5bf597c7c4b28ba3e1948bafdefb5e3f90eaa",
+      "source_sha256": "c0ed8f01b13617f32b4c4021e0f5bf597c7c4b28ba3e1948bafdefb5e3f90eaa",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "analysis/appendix_statistics.py",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "cf0cb12fc7c322ce9b1126e12ef1ffc35a0569c6757d25b095be5756e3faae82",
+      "source_sha256": "cf0cb12fc7c322ce9b1126e12ef1ffc35a0569c6757d25b095be5756e3faae82",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "analysis/appendix_validate.py",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "9837c6caa5a4b8eeb457da7f39260fcb5b176466d3c07d911ac7c3b0c24cd977",
+      "source_sha256": "70278b64530795cd2073f2bbe7a6b8095049ef8beb83c293dcb80532bfb293aa",
+      "adapted_after_copy": true,
+      "pre_appendix_refresh_sha256": "70278b64530795cd2073f2bbe7a6b8095049ef8beb83c293dcb80532bfb293aa"
+    },
+    {
+      "path": "docs/guides/appendix_review.md",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "daab504bc165c2ef7788dabc14952db8bab93b1c347df44241673fb729830609",
+      "source_sha256": "daab504bc165c2ef7788dabc14952db8bab93b1c347df44241673fb729830609",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "docs/planning/appendix-decision-chains.csv",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "f257f115e471e425fbb9b9a0eab540338517b48fe572250da65b087a4bf05cb4",
+      "source_sha256": "82b074d59e204ef748f0592adab4d4ab26f767afdbe4ce097bba640444cae6fc",
+      "adapted_after_copy": true,
+      "pre_appendix_refresh_sha256": "82b074d59e204ef748f0592adab4d4ab26f767afdbe4ce097bba640444cae6fc"
+    },
+    {
+      "path": "docs/planning/appendix-execution-status.md",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "420542beb7d11062b50bcdfda5f201b69529515c2c6bce93f8b47d9357d366cc",
+      "source_sha256": "420542beb7d11062b50bcdfda5f201b69529515c2c6bce93f8b47d9357d366cc",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "experiment/appendix/X01/spatial_controls/reports/spatial_features/amenities_adjusted/amenities_adjusted_summary_zh.md",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "38c0fd04a60205f23d3ce798396eabc6fef9879a711c96edf68315cd65f91ade",
+      "source_sha256": "38c0fd04a60205f23d3ce798396eabc6fef9879a711c96edf68315cd65f91ade",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "experiment/appendix/X01/spatial_controls/reports/spatial_features/amenities_adjusted/amenity_bin_effects.csv",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "50c76dc94c8389d21aa4126cb0cbcc88aa6afadf0a56af4fbe0e917605479903",
+      "source_sha256": "50c76dc94c8389d21aa4126cb0cbcc88aa6afadf0a56af4fbe0e917605479903",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "experiment/appendix/X01/spatial_controls/reports/spatial_features/amenities_adjusted/analysis_manifest.json",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "7f3a2f49fc3953b034073944ac29690a4e96a388337d3ec13eb5a2c2a29814d1",
+      "source_sha256": "7f3a2f49fc3953b034073944ac29690a4e96a388337d3ec13eb5a2c2a29814d1",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "experiment/appendix/X01/spatial_controls/reports/spatial_features/amenity_interactions/analysis_manifest.json",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "9ff7983ca565ecfa52cb77b6ca789edb83dd0ed0c1858fd1f8c23cbbdbac2b9d",
+      "source_sha256": "9ff7983ca565ecfa52cb77b6ca789edb83dd0ed0c1858fd1f8c23cbbdbac2b9d",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "experiment/appendix/X01/spatial_controls/reports/spatial_features/amenity_interactions/cluster_covariance.csv",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "251c5a62c69e238e9a923d89815c49b19725dcca822ef502afd3ee9823c02870",
+      "source_sha256": "251c5a62c69e238e9a923d89815c49b19725dcca822ef502afd3ee9823c02870",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "experiment/appendix/X01/spatial_controls/reports/spatial_features/amenity_interactions/mrt_mall_interaction_heatmap.png",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "6fcce1a233b74d8a045ab0d37a91eddcd9bb58362db2cf763f3b5fd1dcec5407",
+      "source_sha256": "6fcce1a233b74d8a045ab0d37a91eddcd9bb58362db2cf763f3b5fd1dcec5407",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "experiment/appendix/X01/spatial_controls/reports/spatial_features/amenity_interactions/mrt_mall_interaction_summary_zh.md",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "bd42926bb057a449abbb823956ecaa8c56fb68cdea3c1771cf33d3641b2bbefd",
+      "source_sha256": "bd42926bb057a449abbb823956ecaa8c56fb68cdea3c1771cf33d3641b2bbefd",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "experiment/appendix/X01/spatial_controls/reports/spatial_features/amenity_interactions/mrt_mall_joint_cells.csv",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "c79f5df7e218cb0a14cf6304ab0fe671740d8eed8904cfc058b2903fdc505e61",
+      "source_sha256": "c79f5df7e218cb0a14cf6304ab0fe671740d8eed8904cfc058b2903fdc505e61",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "experiment/appendix/X01/spatial_controls/reports/spatial_features/feature_dictionary.csv",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "ec33044629968a06aa9562d897104649e58323f2b080d12730076d8cb9dcc97a",
+      "source_sha256": "ec33044629968a06aa9562d897104649e58323f2b080d12730076d8cb9dcc97a",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "experiment/appendix/X01/spatial_controls/reports/spatial_features/tables/adjusted_correlations.csv",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "306eea405fd7495c191b1d84b84f77694ca6b9f15d16a18633b304b6135744cf",
+      "source_sha256": "306eea405fd7495c191b1d84b84f77694ca6b9f15d16a18633b304b6135744cf",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "experiment/appendix/X05/external_studies/dynamic_surface/analysis/experiments/dynamic_market_index.py",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "9b26c1ebcfaf1f13905f37fb4e0c1d55ae73995d1d42069bc1df1ed3e04e34f4",
+      "source_sha256": "9b26c1ebcfaf1f13905f37fb4e0c1d55ae73995d1d42069bc1df1ed3e04e34f4",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "experiment/appendix/X05/external_studies/dynamic_surface/analysis/experiments/factored_rental_surface.py",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "a1e5eb9c924c8e1a2d69e44aabf8c5c2c0729e37ed895e7bebd7f568b975c4e3",
+      "source_sha256": "a1e5eb9c924c8e1a2d69e44aabf8c5c2c0729e37ed895e7bebd7f568b975c4e3",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "experiment/appendix/X05/external_studies/dynamic_surface/reports/dynamic_market_index/fold_scores.csv",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "c39923b2a29e1a577502ec1f622e5948117904ced407cbc2c3c99bbca2790818",
+      "source_sha256": "c39923b2a29e1a577502ec1f622e5948117904ced407cbc2c3c99bbca2790818",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "experiment/appendix/X05/external_studies/dynamic_surface/reports/dynamic_market_index/pooled_scores.csv",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "b51905c2b0553917386a73d36b9a39ea5c6da08bcc481746590f404c9a13ea80",
+      "source_sha256": "b51905c2b0553917386a73d36b9a39ea5c6da08bcc481746590f404c9a13ea80",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "experiment/appendix/X05/external_studies/dynamic_surface/reports/dynamic_market_index/report.md",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "1d3c25fc2f7f78b09be6818b941587cfa915a9888728122afdd8eb464de531ce",
+      "source_sha256": "1d3c25fc2f7f78b09be6818b941587cfa915a9888728122afdd8eb464de531ce",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "experiment/appendix/X05/external_studies/dynamic_surface/reports/dynamic_market_index/results.json",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "dda118a4b4713634e053390b008a19ae71b8f9a2dad5b9f179f8d766feca4d90",
+      "source_sha256": "dda118a4b4713634e053390b008a19ae71b8f9a2dad5b9f179f8d766feca4d90",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "experiment/appendix/X05/external_studies/dynamic_surface/reports/factored_rental_surface/hybrid_fold_scores.csv",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "bff5162ff3e3e1b706cb66b0ca3c58ed93fb18da1045f3cfacbed80ecba9b64d",
+      "source_sha256": "bff5162ff3e3e1b706cb66b0ca3c58ed93fb18da1045f3cfacbed80ecba9b64d",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "experiment/appendix/X05/external_studies/dynamic_surface/reports/factored_rental_surface/hybrid_pooled_scores.csv",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "eeea1dddcc47cbbdb1f3cfd0c64233fe8971cd3ec2f3549b9c7a4c706cbaf22f",
+      "source_sha256": "eeea1dddcc47cbbdb1f3cfd0c64233fe8971cd3ec2f3549b9c7a4c706cbaf22f",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "experiment/appendix/X05/external_studies/dynamic_surface/reports/factored_rental_surface/report.md",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "375565d8fa76f4de51b92e2e6fed84353fbea9fc43b386a047333f033f370740",
+      "source_sha256": "375565d8fa76f4de51b92e2e6fed84353fbea9fc43b386a047333f033f370740",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "experiment/appendix/X05/external_studies/dynamic_surface/reports/factored_rental_surface/results.json",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "8246bfdadf85ae9cddd88c6e31d99c55f1be61bcdcb3e6549d6846823e995f2e",
+      "source_sha256": "8246bfdadf85ae9cddd88c6e31d99c55f1be61bcdcb3e6549d6846823e995f2e",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "experiment/appendix/X05/external_studies/dynamic_surface/reports/factored_rental_surface/surface_forecast_scores.csv",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "bf458083ca44e6de58aef0ea2157a6ddd33d71cbd5dd27d3fbdb89e7f40c1eb8",
+      "source_sha256": "bf458083ca44e6de58aef0ea2157a6ddd33d71cbd5dd27d3fbdb89e7f40c1eb8",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "experiment/appendix/X05/external_studies/rnn_lstm/analysis/experiments/market_latent.py",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "39d82856d085deae1487552beb88bb89e135ff95f6dc1b7cf299cf3cbb6a8f4d",
+      "source_sha256": "39d82856d085deae1487552beb88bb89e135ff95f6dc1b7cf299cf3cbb6a8f4d",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "experiment/appendix/X05/external_studies/rnn_lstm/analysis/experiments/market_latent_diagnostics.py",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "9045bbb5180e6230a9e8d16aec12093f9aaafc74791a1141bfde13456282769b",
+      "source_sha256": "9045bbb5180e6230a9e8d16aec12093f9aaafc74791a1141bfde13456282769b",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "experiment/appendix/X05/external_studies/rnn_lstm/docs/market_latent.md",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "894ca4040b7dfb71249586c1db66f4422944eac98d80105d516d5476f068026f",
+      "source_sha256": "894ca4040b7dfb71249586c1db66f4422944eac98d80105d516d5476f068026f",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "experiment/appendix/X05/external_studies/rnn_lstm/docs/rnn_lstm_report.md",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "40f878cf7d6f9e8730e17c0b608c1f1a6b268295a9e1d53f80d15ac04e44e99a",
+      "source_sha256": "40f878cf7d6f9e8730e17c0b608c1f1a6b268295a9e1d53f80d15ac04e44e99a",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "experiment/appendix/X05/external_studies/rnn_lstm/reports/experiments/rnn_lstm_summary/cutoffs/cutoff_comparison.csv",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "d656b0fcc973ff057c9d69199838a9e1a1a982fb02b75661a72f58b38d345527",
+      "source_sha256": "d656b0fcc973ff057c9d69199838a9e1a1a982fb02b75661a72f58b38d345527",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "experiment/appendix/X05/external_studies/rnn_lstm/reports/experiments/rnn_lstm_summary/cutoffs/protocol.json",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "43b0293eb5e1d7879be2f62eb746cb698bb1d5fdda19958459a9e968004c8f7a",
+      "source_sha256": "43b0293eb5e1d7879be2f62eb746cb698bb1d5fdda19958459a9e968004c8f7a",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "experiment/appendix/X05/external_studies/rnn_lstm/reports/experiments/rnn_lstm_summary/latest/rental_metrics.csv",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "4bd0274539a730af5ea44b33ea0627eabb44b77cf65474a04b192d8e62b0ba3c",
+      "source_sha256": "4bd0274539a730af5ea44b33ea0627eabb44b77cf65474a04b192d8e62b0ba3c",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "experiment/appendix/X05/external_studies/rnn_lstm/reports/experiments/rnn_lstm_summary/latest/results.json",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "0ee62b5d5dbfe3c48a35ddea59927ac07cc18ab13588af5540112f3d7c671c3a",
+      "source_sha256": "0ee62b5d5dbfe3c48a35ddea59927ac07cc18ab13588af5540112f3d7c671c3a",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "experiment/appendix/X08/evaluation/availability_audit.json",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "8a9550f9120d8c6b3db5de6ac0a03a6825f711b6f7d0188d49b4dafec42a979a",
+      "source_sha256": "8a9550f9120d8c6b3db5de6ac0a03a6825f711b6f7d0188d49b4dafec42a979a",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "experiment/appendix/X08/evaluation/feature_sensitivity.csv",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "e7bfbcb74365208d0df9bbc1353a9990bb22ab9ebc681c0d4d3cc3a40e033843",
+      "source_sha256": "e7bfbcb74365208d0df9bbc1353a9990bb22ab9ebc681c0d4d3cc3a40e033843",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "experiment/appendix/X08/evaluation/location_flags.csv",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "561cac64033e002d163fdf78d5ce93bbec191fd58710ee68c1296f5fdc7c07d6",
+      "source_sha256": "561cac64033e002d163fdf78d5ce93bbec191fd58710ee68c1296f5fdc7c07d6",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "experiment/appendix/X09/evaluation/cutoff_checks.json",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "f736a4de5f8d0914e44d963fa38e7acfeff79eb21241699e41fd0b600d535a35",
+      "source_sha256": "f736a4de5f8d0914e44d963fa38e7acfeff79eb21241699e41fd0b600d535a35",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "experiment/appendix/X09/evaluation/query_horizons.csv",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "bd538e99d33e6d2ffe4da27a1dcedda8e63e77857c7bdd23b9cdb7b125a70523",
+      "source_sha256": "bd538e99d33e6d2ffe4da27a1dcedda8e63e77857c7bdd23b9cdb7b125a70523",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "experiment/appendix/X11/evaluation/blend_identity.json",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "c729f283669760bc12fbd0f2668cb8555f6596f644d11726ab3a8016f5b79432",
+      "source_sha256": "c729f283669760bc12fbd0f2668cb8555f6596f644d11726ab3a8016f5b79432",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "experiment/appendix/X11/evaluation/complementarity.pdf",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "e2f76b798752f1a85e9085954e13d78bcf9057f8672c395ee7f76363a760c4b5",
+      "source_sha256": "e2f76b798752f1a85e9085954e13d78bcf9057f8672c395ee7f76363a760c4b5",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "experiment/appendix/X11/evaluation/complementarity.png",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "6c918e3142640aa75151da24777e8eaa98457c463cd7744a4f89c15cdbee6516",
+      "source_sha256": "6c918e3142640aa75151da24777e8eaa98457c463cd7744a4f89c15cdbee6516",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "experiment/appendix/X11/evaluation/error_moments.json",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "f093b2e4ba22eadab380ca40e779171faa44bcfd3ae9ae7251fd24e276c6adf1",
+      "source_sha256": "f093b2e4ba22eadab380ca40e779171faa44bcfd3ae9ae7251fd24e276c6adf1",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "experiment/appendix/X11/evaluation/group_metrics.csv",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "f9aced2d2b8fcbd8408a284118c1fa541ead1955f2f25ad4dacafe8f240bacdd",
+      "source_sha256": "f9aced2d2b8fcbd8408a284118c1fa541ead1955f2f25ad4dacafe8f240bacdd",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "experiment/appendix/X11/evaluation/member_ablation.csv",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "356248c0c3b8babe28d6b87ca3d9565d2c59719ec947a348fee54e99393387ba",
+      "source_sha256": "356248c0c3b8babe28d6b87ca3d9565d2c59719ec947a348fee54e99393387ba",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "experiment/appendix/X12/evaluation/paired_intervals.csv",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "e9fb981ee7584bf6dfdd471803330354828fc9bdf788de58018fb9fddc3f9884",
+      "source_sha256": "e9fb981ee7584bf6dfdd471803330354828fc9bdf788de58018fb9fddc3f9884",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "experiment/appendix/X12/evaluation/paired_intervals.pdf",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "de6f64c0f95b9473dc6fdd8a3c1db93c34d0c7390b6acd4a9764eeecdac1f0a4",
+      "source_sha256": "de6f64c0f95b9473dc6fdd8a3c1db93c34d0c7390b6acd4a9764eeecdac1f0a4",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "experiment/appendix/X12/evaluation/paired_intervals.png",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "ce17bcf792b84b604808eb77f3156f7fb3042c600bc24e0ddaa63e4fccf24e34",
+      "source_sha256": "ce17bcf792b84b604808eb77f3156f7fb3042c600bc24e0ddaa63e4fccf24e34",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "experiment/appendix/X12/evaluation/resampling_spec.json",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "036653bb7a953e1e71cf6f93363cf03d12319f01bce9badd16ee3ee28d139751",
+      "source_sha256": "036653bb7a953e1e71cf6f93363cf03d12319f01bce9badd16ee3ee28d139751",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "experiment/appendix/X13/evaluation/component_replay.json",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "1f907beeaed9166c011d624fcbf3bfe9bae8ef42a502d3a4f80ac9e98d65f722",
+      "source_sha256": "1f907beeaed9166c011d624fcbf3bfe9bae8ef42a502d3a4f80ac9e98d65f722",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "experiment/appendix/decision-catalog.json",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "70daacd990a4bbc6c151b1994613039d39994707fdde8ed88d8a26808f522c31",
+      "source_sha256": "ca0a9d337c8270224d82d7d8910d824f4bcd0fb1e3832f34aa76d7d164dab060",
+      "adapted_after_copy": true,
+      "pre_appendix_refresh_sha256": "ca0a9d337c8270224d82d7d8910d824f4bcd0fb1e3832f34aa76d7d164dab060"
+    },
+    {
+      "path": "reproduction/appendix_diagnostics/README.md",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "6b780d1b959f83b783c8d0f832fb60ee95053339cb1b261b9509baf803ccd2a7",
+      "source_sha256": "6b780d1b959f83b783c8d0f832fb60ee95053339cb1b261b9509baf803ccd2a7",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "reproduction/appendix_diagnostics/inputs/f2_identity.json",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "8a25c32eaf9e261c397e6360f107cbd02c8e105c95a2d9d5a5789bb72a154570",
+      "source_sha256": "8a25c32eaf9e261c397e6360f107cbd02c8e105c95a2d9d5a5789bb72a154570",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "reproduction/appendix_diagnostics/inputs/main_metadata.json",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "47363f99cc8ea0a1a220e5403fe50d944c1afa523b303ad906d0ae2760765a46",
+      "source_sha256": "47363f99cc8ea0a1a220e5403fe50d944c1afa523b303ad906d0ae2760765a46",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "reproduction/appendix_diagnostics/inputs/main_replay_scope.json",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "d3d4dec5f387e49a5fc479aee1eed6f84e1fce6e78ab019d542baa778f0680fe",
+      "source_sha256": "d3d4dec5f387e49a5fc479aee1eed6f84e1fce6e78ab019d542baa778f0680fe",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "reproduction/appendix_diagnostics/inputs/paired_protocol.json",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "4f00169c0b5c5b3d3cdbffb550024036bee880c9e6cca86337cfb6ad7955088f",
+      "source_sha256": "4f00169c0b5c5b3d3cdbffb550024036bee880c9e6cca86337cfb6ad7955088f",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "reproduction/appendix_diagnostics/inputs/predictions.npz",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "0cc4e5f08c34682f6c3621e2c8f2f9a93bc3556e02f0eef30116058706516041",
+      "source_sha256": "0cc4e5f08c34682f6c3621e2c8f2f9a93bc3556e02f0eef30116058706516041",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "reproduction/appendix_diagnostics/source_manifest.json",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "0666861c2f7a15f9fcc7c741bde229f9de07d46548e001df5eef202775a75b7b",
+      "source_sha256": "0666861c2f7a15f9fcc7c741bde229f9de07d46548e001df5eef202775a75b7b",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/appendix-refresh/catalog-retry.log",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "5017d956372e92f9f1611d469fb978e1501470fbab43fbb0b7fd6760cb02549f",
+      "source_sha256": "5017d956372e92f9f1611d469fb978e1501470fbab43fbb0b7fd6760cb02549f",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/appendix-refresh/concat-archive-retry.log",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "eda5cee07e27fce3fc9347152675fd48c4600bd05b74045be3c4af311fddf120",
+      "source_sha256": "eda5cee07e27fce3fc9347152675fd48c4600bd05b74045be3c4af311fddf120",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/appendix-refresh/execution.json",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "1a3b3ad8ef01e369b13e062b25f3d792da1c75be51e76a9b80cc9c42a4e5bf9b",
+      "source_sha256": "1a3b3ad8ef01e369b13e062b25f3d792da1c75be51e76a9b80cc9c42a4e5bf9b",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/appendix-refresh/initial-core-tests.log",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "2525f422aa0a4e770db13cffbe99d9a31de4b738dee2c75b9c060a9f184ac4d3",
+      "source_sha256": "2525f422aa0a4e770db13cffbe99d9a31de4b738dee2c75b9c060a9f184ac4d3",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/appendix-refresh/inputs.log",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "1f907beeaed9166c011d624fcbf3bfe9bae8ef42a502d3a4f80ac9e98d65f722",
+      "source_sha256": "1f907beeaed9166c011d624fcbf3bfe9bae8ef42a502d3a4f80ac9e98d65f722",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/appendix-refresh/manifest-retry.log",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "410adb4f27a739177bba8ae77c667eda8760d81db0a816de713730cbf70f6839",
+      "source_sha256": "410adb4f27a739177bba8ae77c667eda8760d81db0a816de713730cbf70f6839",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/appendix-refresh/mlp-archive.log",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "82c1c7633ba1c1e86f9a3a855cd7a40e0160c51d1b0fe817110c926f6c19070c",
+      "source_sha256": "82c1c7633ba1c1e86f9a3a855cd7a40e0160c51d1b0fe817110c926f6c19070c",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/appendix-refresh/mlp-diagnose.log",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "582b62ae29d41ac43b3eb5f0e0d471db7dc53dad50fc0541fb8e4ac483ad52c4",
+      "source_sha256": "582b62ae29d41ac43b3eb5f0e0d471db7dc53dad50fc0541fb8e4ac483ad52c4",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/appendix-refresh/mlp-tests.log",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "0ea0021de327b04a8d549862e056574256f6cf43fc60aa992b26d2bb9d4650b6",
+      "source_sha256": "0ea0021de327b04a8d549862e056574256f6cf43fc60aa992b26d2bb9d4650b6",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/appendix-refresh/pipeline-regression-retry.log",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "27583f797b5efc9275bca60fe26cfcaa30044f37f617aee444f7086579be2c50",
+      "source_sha256": "27583f797b5efc9275bca60fe26cfcaa30044f37f617aee444f7086579be2c50",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/appendix-refresh/statistics-tests.log",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "743185ae38cfd4b8ef4db12650d0f2ae9191037993468caa7b8311759d0bf295",
+      "source_sha256": "743185ae38cfd4b8ef4db12650d0f2ae9191037993468caa7b8311759d0bf295",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/appendix-refresh/tabpfn-manifest.log",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "e947e4e9253247fcbf75807fa1eab05798293569359dbaf97a32a070c74f9b42",
+      "source_sha256": "e947e4e9253247fcbf75807fa1eab05798293569359dbaf97a32a070c74f9b42",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/appendix-refresh/tabpfn-original-test-results.json",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "edef30f9682e1669c20fdcc9312b5889390f771edf7609648d409ef3409ebad4",
+      "source_sha256": "edef30f9682e1669c20fdcc9312b5889390f771edf7609648d409ef3409ebad4",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/appendix-refresh/tabpfn-tests-retry.log",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "8fb99eddd0c5b883bd9e995d3baa34cb7d0fff5b04b868e129bc26368d99a072",
+      "source_sha256": "8fb99eddd0c5b883bd9e995d3baa34cb7d0fff5b04b868e129bc26368d99a072",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/appendix-refresh/three-submissions.log",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "acda44274529f53346ceeaf153aef40b0000c395d9b67551dc48acc8b04a66b6",
+      "source_sha256": "acda44274529f53346ceeaf153aef40b0000c395d9b67551dc48acc8b04a66b6",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/appendix-refresh/validation.json",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "9c1a15e0b0c9ca73905a3a5b3c699ed6835bcaee3de73a37deb72463721cdc58",
+      "source_sha256": "9c1a15e0b0c9ca73905a3a5b3c699ed6835bcaee3de73a37deb72463721cdc58",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/cli_help.log",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "5c3f09191bf3618e127d42d2d315958f69200c24fc558856ed5f27f3b7dcea88",
+      "source_sha256": "5c3f09191bf3618e127d42d2d315958f69200c24fc558856ed5f27f3b7dcea88",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/cpu_replay.log",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "1a9e29dbeab8b3445a9d7936c0ba48ef175da7870198b6d0188b84a5d30acbec",
+      "source_sha256": "1a9e29dbeab8b3445a9d7936c0ba48ef175da7870198b6d0188b84a5d30acbec",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/export_check.json",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "49c4fbab0bfe95c100d3cc7849889b9dd9a6e07d888219ef3aec3a4b0d98d902",
+      "source_sha256": "49c4fbab0bfe95c100d3cc7849889b9dd9a6e07d888219ef3aec3a4b0d98d902",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/integrity.log",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "e75a69e1c05a8863f1f606f140e260108fa4c871beaa7d127626d611da681b7c",
+      "source_sha256": "e75a69e1c05a8863f1f606f140e260108fa4c871beaa7d127626d611da681b7c",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/original_csv.log",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "d8b92a9bdeb9aa143eed575689e8cb496001839414a37fb499b402df6f9c2695",
+      "source_sha256": "d8b92a9bdeb9aa143eed575689e8cb496001839414a37fb499b402df6f9c2695",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/push-validation/checkpoint-replay.log",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "d0484d0fee5cdad453e2afc14408267afa1a0654baf6cf4c8d255442cdf68e93",
+      "source_sha256": "d0484d0fee5cdad453e2afc14408267afa1a0654baf6cf4c8d255442cdf68e93",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/push-validation/checkpoint_replay.json",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "59d62b52518c7fcc4a3e2308da8f00d010ea73d518043c34803576bb9b676ea8",
+      "source_sha256": "59d62b52518c7fcc4a3e2308da8f00d010ea73d518043c34803576bb9b676ea8",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/push-validation/clean-cpu-replay.log",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "1a9e29dbeab8b3445a9d7936c0ba48ef175da7870198b6d0188b84a5d30acbec",
+      "source_sha256": "1a9e29dbeab8b3445a9d7936c0ba48ef175da7870198b6d0188b84a5d30acbec",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/push-validation/clean-integrity.log",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "0986300ebe9841a4dbe387a55dabdb15187ba87f04f77096f99bdeca2b4cbbb8",
+      "source_sha256": "0986300ebe9841a4dbe387a55dabdb15187ba87f04f77096f99bdeca2b4cbbb8",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/push-validation/clean-unit-tests.log",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "3fe015b7a681db525ac4e0dae47d58d9bb6941cc52431a1af17649e8841dcd01",
+      "source_sha256": "3fe015b7a681db525ac4e0dae47d58d9bb6941cc52431a1af17649e8841dcd01",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/push-validation/clean_checks.json",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "20a9014fa11b8b90503da983aeb343bbfce4e9ab5b0e39ff13821c329d2b6e76",
+      "source_sha256": "20a9014fa11b8b90503da983aeb343bbfce4e9ab5b0e39ff13821c329d2b6e76",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/push-validation/committed-export-cpu-replay.log",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "1a9e29dbeab8b3445a9d7936c0ba48ef175da7870198b6d0188b84a5d30acbec",
+      "source_sha256": "1a9e29dbeab8b3445a9d7936c0ba48ef175da7870198b6d0188b84a5d30acbec",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/push-validation/committed-export-integrity.log",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "0986300ebe9841a4dbe387a55dabdb15187ba87f04f77096f99bdeca2b4cbbb8",
+      "source_sha256": "0986300ebe9841a4dbe387a55dabdb15187ba87f04f77096f99bdeca2b4cbbb8",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/push-validation/committed-export-unit-tests.log",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "1bfb88f0b5d386715a8207757999d253d8108239f472759a07e8f6042c70fb34",
+      "source_sha256": "1bfb88f0b5d386715a8207757999d253d8108239f472759a07e8f6042c70fb34",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/push-validation/committed-export.json",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "f607f8ac31d3d9d6945f5efc997a3e01aca6464a82146eb7e5444abc0b4b40bf",
+      "source_sha256": "f607f8ac31d3d9d6945f5efc997a3e01aca6464a82146eb7e5444abc0b4b40bf",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/push-validation/cpu-replay.log",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "1a9e29dbeab8b3445a9d7936c0ba48ef175da7870198b6d0188b84a5d30acbec",
+      "source_sha256": "1a9e29dbeab8b3445a9d7936c0ba48ef175da7870198b6d0188b84a5d30acbec",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/push-validation/environment-preflight.json",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "6ee4d3f64d3d0b0386b1a209a56629f1990df454404bbb854cd2d452e5d83c97",
+      "source_sha256": "6ee4d3f64d3d0b0386b1a209a56629f1990df454404bbb854cd2d452e5d83c97",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/push-validation/executed-source-check.json",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "04a231839b62550b840ffa19f5c6f4edc4f7d9cd3fbde72981d5d2bed0ec571a",
+      "source_sha256": "04a231839b62550b840ffa19f5c6f4edc4f7d9cd3fbde72981d5d2bed0ec571a",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/push-validation/fresh-training.log",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "422a54d4065c6afa00f1a6373c524011333dfad11e77542b9b6f102a178a3b68",
+      "source_sha256": "422a54d4065c6afa00f1a6373c524011333dfad11e77542b9b6f102a178a3b68",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/push-validation/fresh-vs-original.json",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "3dbfc59d6e8d307219a90a962b73287950b8fdaee584c4207506139df135ff6c",
+      "source_sha256": "3dbfc59d6e8d307219a90a962b73287950b8fdaee584c4207506139df135ff6c",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/push-validation/integrity.log",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "0986300ebe9841a4dbe387a55dabdb15187ba87f04f77096f99bdeca2b4cbbb8",
+      "source_sha256": "0986300ebe9841a4dbe387a55dabdb15187ba87f04f77096f99bdeca2b4cbbb8",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/push-validation/local_checks.json",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "1620d5ca2a8f0a0b573ca3dfe6bed4a6b7fde415f568bdc758f108117f028f7b",
+      "source_sha256": "1620d5ca2a8f0a0b573ca3dfe6bed4a6b7fde415f568bdc758f108117f028f7b",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/push-validation/original-components.log",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "d8b92a9bdeb9aa143eed575689e8cb496001839414a37fb499b402df6f9c2695",
+      "source_sha256": "d8b92a9bdeb9aa143eed575689e8cb496001839414a37fb499b402df6f9c2695",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/push-validation/selection-validation.log",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "be9a5eaeff67926e9c6f3bded18a07a5d1d86ca30c116bcb39072563db92c3ac",
+      "source_sha256": "be9a5eaeff67926e9c6f3bded18a07a5d1d86ca30c116bcb39072563db92c3ac",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/push-validation/static_checks.json",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "8bf668238e2f4d52ba2504f14d622e1a92b8b05798f71ece642a5754bb7f0c7d",
+      "source_sha256": "8bf668238e2f4d52ba2504f14d622e1a92b8b05798f71ece642a5754bb7f0c7d",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/push-validation/structure.json",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "1b4d477ac401af79fdfb44f72414088654553d5f2f52b2877b34eb2271f856de",
+      "source_sha256": "1b4d477ac401af79fdfb44f72414088654553d5f2f52b2877b34eb2271f856de",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/push-validation/summary.json",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "6da9c8cb388dcca021f854685d7ec490ef3a1d0884eebd2f2ed2810780a106e8",
+      "source_sha256": "6da9c8cb388dcca021f854685d7ec490ef3a1d0884eebd2f2ed2810780a106e8",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/push-validation/training_run.json",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "c9697d6d4f243b949b9800939b3f2e004f00f1c5f90b8f1ab2c3b94a61be0bc2",
+      "source_sha256": "c9697d6d4f243b949b9800939b3f2e004f00f1c5f90b8f1ab2c3b94a61be0bc2",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/push-validation/unit-tests.log",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "48e5d2e85a4c811f481d6c590f75f5df3c7875202844142481e33dfbc024f4c4",
+      "source_sha256": "48e5d2e85a4c811f481d6c590f75f5df3c7875202844142481e33dfbc024f4c4",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/regressions.log",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "2b18ded690642117deb187c6810599022bed2b4399dca96e4657ebe5b95cdf0a",
+      "source_sha256": "2b18ded690642117deb187c6810599022bed2b4399dca96e4657ebe5b95cdf0a",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/summary.json",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "a8360ab5cba72507dd22f24549c21c358f5e3230c614aa5e64782889b9404fa1",
+      "source_sha256": "a8360ab5cba72507dd22f24549c21c358f5e3230c614aa5e64782889b9404fa1",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/tabpfn-split/cli-checks.json",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "c29d47658ad8d93a1f8463b1bc17ee45b3482380c86551ef9453aeecfe9b1bc5",
+      "source_sha256": "c29d47658ad8d93a1f8463b1bc17ee45b3482380c86551ef9453aeecfe9b1bc5",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/tabpfn-split/committed-export.json",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "a50368b8a2ea0c6f60a659242a993e3b43fa4b364a642f206abdc2c91a5a6314",
+      "source_sha256": "a50368b8a2ea0c6f60a659242a993e3b43fa4b364a642f206abdc2c91a5a6314",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/tabpfn-split/concat-explorations-verify.log",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "dc242aff7a8331d0d03e3151fd56fb9eb2667e7a6253ba6ce6d0d6397d641932",
+      "source_sha256": "dc242aff7a8331d0d03e3151fd56fb9eb2667e7a6253ba6ce6d0d6397d641932",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/tabpfn-split/export-F1-cpu-replay.log",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "1a9e29dbeab8b3445a9d7936c0ba48ef175da7870198b6d0188b84a5d30acbec",
+      "source_sha256": "1a9e29dbeab8b3445a9d7936c0ba48ef175da7870198b6d0188b84a5d30acbec",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/tabpfn-split/export-concat-explorations.log",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "dc242aff7a8331d0d03e3151fd56fb9eb2667e7a6253ba6ce6d0d6397d641932",
+      "source_sha256": "dc242aff7a8331d0d03e3151fd56fb9eb2667e7a6253ba6ce6d0d6397d641932",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/tabpfn-split/export-integrity.log",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "c4d1acdac7c86685dda5c5410078b909f01d95e9647f99a19f4ba9d0a1958198",
+      "source_sha256": "c4d1acdac7c86685dda5c5410078b909f01d95e9647f99a19f4ba9d0a1958198",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/tabpfn-split/export-monthly-metrics.log",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "c00fe21a9928e35edf0929b943386bb728fbec67a530e7f1b86993fa1d7777a5",
+      "source_sha256": "c00fe21a9928e35edf0929b943386bb728fbec67a530e7f1b86993fa1d7777a5",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/tabpfn-split/export-original-tabpfn-tests.log",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "3e04190b4859ed86d7e41392a0a24bb7f12d8e359d548e3bdcff1eff3d21a17d",
+      "source_sha256": "3e04190b4859ed86d7e41392a0a24bb7f12d8e359d548e3bdcff1eff3d21a17d",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/tabpfn-split/export-tabpfn-integrity.log",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "3d7ea995b95187ba6b5b8c0982e696b3fc1cd6b081f18ddd266cf2ebfc6b6446",
+      "source_sha256": "3d7ea995b95187ba6b5b8c0982e696b3fc1cd6b081f18ddd266cf2ebfc6b6446",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/tabpfn-split/f1-core-regression.log",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "7331432eff729b828fcc8c9969fdba9082ec1baa1d5def8a8098915d9b483b08",
+      "source_sha256": "7331432eff729b828fcc8c9969fdba9082ec1baa1d5def8a8098915d9b483b08",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/tabpfn-split/f1-cpu-replay.log",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "1a9e29dbeab8b3445a9d7936c0ba48ef175da7870198b6d0188b84a5d30acbec",
+      "source_sha256": "1a9e29dbeab8b3445a9d7936c0ba48ef175da7870198b6d0188b84a5d30acbec",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/tabpfn-split/initial-missing-dependencies.log",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "56081a01064e732511251931dfbbca11e64a3dfb62911fea4aab51f67c18ac3c",
+      "source_sha256": "56081a01064e732511251931dfbbca11e64a3dfb62911fea4aab51f67c18ac3c",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/tabpfn-split/metrics.json",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "c00fe21a9928e35edf0929b943386bb728fbec67a530e7f1b86993fa1d7777a5",
+      "source_sha256": "c00fe21a9928e35edf0929b943386bb728fbec67a530e7f1b86993fa1d7777a5",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/tabpfn-split/original-workflow-tests.log",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "b106c62130672e3b18a920b557f0ed811e38ba075e92e0a3516bed428f25bebd",
+      "source_sha256": "b106c62130672e3b18a920b557f0ed811e38ba075e92e0a3516bed428f25bebd",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/tabpfn-split/post-upstream-F1-cpu.log",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "1a9e29dbeab8b3445a9d7936c0ba48ef175da7870198b6d0188b84a5d30acbec",
+      "source_sha256": "1a9e29dbeab8b3445a9d7936c0ba48ef175da7870198b6d0188b84a5d30acbec",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/tabpfn-split/post-upstream-core-tests.log",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "85c5f05124bc4a6341253a0f6a686fdacfe06d9ec8d573ae60a59f0b7f7cf308",
+      "source_sha256": "85c5f05124bc4a6341253a0f6a686fdacfe06d9ec8d573ae60a59f0b7f7cf308",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/tabpfn-split/post-upstream-integrity.log",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "c4d1acdac7c86685dda5c5410078b909f01d95e9647f99a19f4ba9d0a1958198",
+      "source_sha256": "c4d1acdac7c86685dda5c5410078b909f01d95e9647f99a19f4ba9d0a1958198",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/tabpfn-split/post-upstream-status.json",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "8db926c87abbd729867b7be7c690f4e027804a37f9c913ee338dbb5fd763ceaf",
+      "source_sha256": "8db926c87abbd729867b7be7c690f4e027804a37f9c913ee338dbb5fd763ceaf",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/tabpfn-split/preflight.json",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "205b220eb6f8ad3a89aaf713e187ec65a697dbbac55b6d28823cd149a556161a",
+      "source_sha256": "205b220eb6f8ad3a89aaf713e187ec65a697dbbac55b6d28823cd149a556161a",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/tabpfn-split/regression-status.json",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "2a65f669a2ba263dd6b6e122309b73be1e96d97f5663f708960ffc621afe49d6",
+      "source_sha256": "2a65f669a2ba263dd6b6e122309b73be1e96d97f5663f708960ffc621afe49d6",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/tabpfn-split/root-integrity.log",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "b7c563c3594fee9db9416ac659d7a161377e33645b2cbc495133cb1688178fb6",
+      "source_sha256": "b7c563c3594fee9db9416ac659d7a161377e33645b2cbc495133cb1688178fb6",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/tabpfn-split/summary.json",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "de8e95a6893b9a12e5158521d0f236c2eded722104327eded44b4403fda296f9",
+      "source_sha256": "de8e95a6893b9a12e5158521d0f236c2eded722104327eded44b4403fda296f9",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/tabpfn-split/test-status.json",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "5ac3ab40bb00b12d32ace929e0d73a86f8a2df647915d83aaa308c978855cef0",
+      "source_sha256": "5ac3ab40bb00b12d32ace929e0d73a86f8a2df647915d83aaa308c978855cef0",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/tabpfn-split/upstream-preservation.json",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "76c7f0d943661f68472966cf283c921383bf93435bc3a7fece1521cfe655d713",
+      "source_sha256": "76c7f0d943661f68472966cf283c921383bf93435bc3a7fece1521cfe655d713",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/tabpfn-split/verify.json",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "3d7ea995b95187ba6b5b8c0982e696b3fc1cd6b081f18ddd266cf2ebfc6b6446",
+      "source_sha256": "3d7ea995b95187ba6b5b8c0982e696b3fc1cd6b081f18ddd266cf2ebfc6b6446",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "tests/test_appendix_statistics.py",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "4dab130a01a695fa902859e3140e1c2996442ab329f12672403cf96d76e5206a",
+      "source_sha256": "4dab130a01a695fa902859e3140e1c2996442ab329f12672403cf96d76e5206a",
+      "adapted_after_copy": false
     }
   ],
   "evidence_provenance": [
@@ -45997,7 +47247,7 @@
       "adapted_after_copy": false
     }
   ],
-  "f2_status": "generator-and-predictions-pending; available TabPFN source integrated",
+  "f2_status": "J component identity and full saved-prediction reconstruction verified; annual predictions/schema/policy/screenshot gaps remain",
   "new_training_performed": true,
   "review_date": "2026-11-06",
   "raw_source_preservation": "Original data/submission bytes preserved. Text normalized to LF. Main CLI, feature-only ladder input dependency, archived inner-selection fallback, and curated bundle verification adapted; scientific recipes unchanged.",
@@ -46017,5 +47267,13 @@
     "unit_sources_isolated_from_F1": true,
     "fresh_tabpfn_training_performed": false,
     "user_confirmed_keep_f2_pending": true
+  },
+  "appendix_refresh": {
+    "base_appendix_commit": "444811aaea2f62ab2801395a8295fda011f441a4",
+    "main_evidence_commit": "d075c81a4719cad57f8f46d290760324afa14c6c",
+    "execution_status": "docs/planning/appendix-execution-status.md",
+    "decision_catalog": "experiment/appendix/decision-catalog.json",
+    "scientific_models_fitted": 0,
+    "archived_execution": "review/checks/appendix-refresh/execution.json"
   }
 }

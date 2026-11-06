@@ -1,11 +1,23 @@
-# X11 实验审查卡
+# X11 F2实际组件互补与消融
 
-| 字段 | 内容 |
+当前状态：**partial**。来源与运行范围见[执行状态](../../../docs/planning/appendix-execution-status.md)。
+
+| 推理环节 | 内容 |
 |---|---|
-| 归属 | appendix |
-| 目的 | F2成员互补分析，依赖外部F2 |
-| 归档状态 | pending（已有归档不表示本轮新训练） |
-| 完整要求/对照/验收 | docs/planning/main-appendix-experiment-plan.md中同ID要求卡 |
-| 既有证据 | 本目录内文件；文件来源/哈希见review/manifest.json；无文件则尚未实施 |
-| 执行状态 | 历史证据按本卡归档；本轮实际运行范围另见 review/checks/push-validation/summary.json，不代表重跑全部历史搜索 |
-| 复用限制 | 不同窗口、schema、宏观可用性、选择阶段分开比较；负结果不删除 |
+| 问题/假设 | 固定等权融合为何比两个实际成员的RMSE更低？ |
+| 对照与口径 | 相同28995行上比较tree7、TabPFN87、等权F2；F1只作独立管线对照，不是F2成员。 |
+| 观察 | F2 RMSE440.95196低于tree7的443.86305及TabPFN的441.95927；TabPFN单独MAE更低。误差相关0.98255。 |
+| 取舍依据 | 核验MSE交叉矩恒等式，按月/支持组解释；不以低相关或新权重搜索证明机制；Y未算。 |
+| 服务 main | M05/M08；方法质量60%、解释清晰度30%、来源/复现10% |
+
+## 证据入口
+
+- [member_ablation.csv](evaluation/member_ablation.csv)
+- [error_moments.json](evaluation/error_moments.json)
+- [group_metrics.csv](evaluation/group_metrics.csv)
+
+## 本轮解释图表
+
+![F2实际组件互补与消融](evaluation/complementarity.png)
+
+图表由 `python -m analysis.appendix_review run --output-dir output/appendix-review/new-run` 从冻结预测重新生成；不训练、不重新选权。

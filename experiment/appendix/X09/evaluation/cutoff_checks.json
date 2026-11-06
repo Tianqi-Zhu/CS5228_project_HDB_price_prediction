@@ -1,0 +1,14 @@
+{
+  "status": "Query/context boundary audit complete; matched final long-horizon refits not run",
+  "latest_training_month": "2025-03",
+  "test_months": 17,
+  "first_future_month": "2025-04",
+  "same_month_rows": 380,
+  "validated_final_pair_horizon_months": 10,
+  "no_Y_prediction_slicing_to_fake_L": true,
+  "F1_F2_L_results_available": false,
+  "missing": [
+    "Fixed 2023-12 origin F1/F2 predictions from pre-origin fits/selection",
+    "Full February-2025 strict-context submission refits if claimed"
+  ]
+}

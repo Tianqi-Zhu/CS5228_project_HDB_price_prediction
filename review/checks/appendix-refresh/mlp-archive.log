@@ -1,0 +1,63 @@
+{
+  "manifest_files_verified": 273,
+  "validation": [
+    {
+      "path": "validation/best_point_blend_outer.csv",
+      "n": 35158,
+      "rmse_sgd": 464.21206581350623
+    },
+    {
+      "path": "validation/uncleaned_mlp_outer.csv",
+      "n": 35158,
+      "rmse_sgd": 471.80419980291157
+    },
+    {
+      "path": "validation/uncleaned_hybrid_outer.csv",
+      "n": 35158,
+      "rmse_sgd": 467.0319684853329
+    },
+    {
+      "path": "validation/obvious_low_mlp_outer.csv",
+      "n": 35158,
+      "rmse_sgd": 471.26089832600877
+    },
+    {
+      "path": "validation/risk_corrected_hybrid_outer.csv",
+      "n": 35158,
+      "rmse_sgd": 465.3406739690995
+    }
+  ],
+  "test": [
+    {
+      "path": "predictions/uncleaned_mlp_test_intervals.csv",
+      "n": 50000,
+      "id_order_and_intervals_verified": true
+    },
+    {
+      "path": "predictions/uncleaned_hybrid_test_intervals.csv",
+      "n": 50000,
+      "id_order_and_intervals_verified": true
+    },
+    {
+      "path": "predictions/obvious_low_mlp_test_intervals.csv",
+      "n": 50000,
+      "id_order_and_intervals_verified": true
+    },
+    {
+      "path": "predictions/obvious_low_hybrid_test_intervals.csv",
+      "n": 50000,
+      "id_order_and_intervals_verified": true
+    },
+    {
+      "path": "predictions/highest_only_hybrid_test_intervals.csv",
+      "n": 50000,
+      "id_order_and_intervals_verified": true
+    },
+    {
+      "path": "predictions/risk_corrected_hybrid_test_intervals.csv",
+      "n": 50000,
+      "id_order_and_intervals_verified": true
+    }
+  ],
+  "test_rmse": "unavailable: test labels are not supplied"
+}

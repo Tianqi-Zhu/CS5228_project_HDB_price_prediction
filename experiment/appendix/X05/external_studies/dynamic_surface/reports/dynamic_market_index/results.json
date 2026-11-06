@@ -1,0 +1,144 @@
+{
+  "question": "Do a strong historical tree or a coarse forecast rental index improve fixed-origin rent RMSE?",
+  "source_sha256": {
+    "train.csv": "2fe38ce9e0d8a02e9786f066d4a10d575d91f34be1d9111f0142e3f43fbfc8a5"
+  },
+  "folds": [
+    [
+      "2023-01",
+      "2023-07"
+    ],
+    [
+      "2023-07",
+      "2024-04"
+    ],
+    [
+      "2024-04",
+      "2025-04"
+    ],
+    [
+      "2023-12",
+      "2025-04"
+    ]
+  ],
+  "overlap_fold": [
+    "2023-12",
+    "2025-04"
+  ],
+  "selected_row_model": "catboost",
+  "row_model_settings": {
+    "hist_gradient_boosting": {
+      "max_iter": 200,
+      "learning_rate": 0.05,
+      "max_leaf_nodes": 31,
+      "min_samples_leaf": 30,
+      "l2_regularization": 3.0,
+      "categorical_features": "from_dtype",
+      "early_stopping": false,
+      "random_state": 42
+    },
+    "lightgbm": {
+      "n_estimators": 500,
+      "learning_rate": 0.05,
+      "num_leaves": 31,
+      "min_child_samples": 30,
+      "reg_lambda": 3.0,
+      "verbosity": -1,
+      "n_jobs": 4,
+      "random_state": 42
+    },
+    "catboost": {
+      "iterations": 600,
+      "depth": 7,
+      "learning_rate": 0.05,
+      "l2_leaf_reg": 5.0,
+      "loss_function": "RMSE",
+      "verbose": false,
+      "thread_count": 4,
+      "random_seed": 42
+    }
+  },
+  "reference": "2021-only Ridge hedonic fit; flat-type and area \u00d7 flat-type monthly mean residual indices",
+  "index": {
+    "shrink_count": 20.0,
+    "methods": [
+      "persistence",
+      "recent3",
+      "damped"
+    ],
+    "levels": [
+      "flat_type",
+      "area_flat_type"
+    ],
+    "damped_phi": 0.7,
+    "group_premium_phi": 0.9
+  },
+  "versions": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "sklearn": "1.9.0",
+    "lightgbm": "4.7.0",
+    "catboost": "1.2.10"
+  },
+  "pooled_scores": [
+    {
+      "model": "catboost+flat_type_damped",
+      "n": 79817,
+      "rmse_sgd": 537.4406533958025,
+      "mae_sgd": 409.5707641464482,
+      "bias_sgd": 9.502186266053853,
+      "delta_rmse_vs_row_model_sgd": -1.8475187352065632
+    },
+    {
+      "model": "catboost+area_flat_type_damped",
+      "n": 79817,
+      "rmse_sgd": 537.5769132001094,
+      "mae_sgd": 409.10309700463,
+      "bias_sgd": 12.167716392535088,
+      "delta_rmse_vs_row_model_sgd": -1.711258930899703
+    },
+    {
+      "model": "catboost",
+      "n": 79817,
+      "rmse_sgd": 539.2881721310091,
+      "mae_sgd": 413.6052557533313,
+      "bias_sgd": -26.73570839973872,
+      "delta_rmse_vs_row_model_sgd": 0.0
+    },
+    {
+      "model": "hist_gradient_boosting",
+      "n": 79817,
+      "rmse_sgd": 543.095569861242,
+      "mae_sgd": 414.48997611288183,
+      "bias_sgd": -7.022906571354601,
+      "delta_rmse_vs_row_model_sgd": 3.8073977302328785
+    },
+    {
+      "model": "catboost+area_flat_type_recent3",
+      "n": 79817,
+      "rmse_sgd": 543.9075673586011,
+      "mae_sgd": 418.42464645902646,
+      "bias_sgd": -52.95505649598616,
+      "delta_rmse_vs_row_model_sgd": 4.619395227592008
+    },
+    {
+      "model": "catboost+flat_type_recent3",
+      "n": 79817,
+      "rmse_sgd": 544.0846232463338,
+      "mae_sgd": 419.13636270774947,
+      "bias_sgd": -55.62058662246741,
+      "delta_rmse_vs_row_model_sgd": 4.796451115324658
+    },
+    {
+      "model": "lightgbm",
+      "n": 79817,
+      "rmse_sgd": 545.8288511500886,
+      "mae_sgd": 416.0327234287564,
+      "bias_sgd": -7.176349637648344,
+      "delta_rmse_vs_row_model_sgd": 6.540679019079448
+    }
+  ],
+  "grid_gate_passed": false,
+  "grid_gate_candidates": [],
+  "note": "16-month overlapping fold is reported separately and never pooled; no validation labels feed market forecasts."
+}

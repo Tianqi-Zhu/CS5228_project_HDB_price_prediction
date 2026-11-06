@@ -1,0 +1,23 @@
+{
+  "branch": "appendix",
+  "files_checked": 4408,
+  "experiments": 21,
+  "failures": [],
+  "training_performed": false,
+  "pending": [
+    "X07",
+    "X08",
+    "X09",
+    "X11",
+    "X12",
+    "X13"
+  ],
+  "incomplete_statuses": {
+    "X07": "planned",
+    "X08": "partial",
+    "X09": "partial",
+    "X11": "partial",
+    "X12": "partial",
+    "X13": "partial"
+  }
+}
