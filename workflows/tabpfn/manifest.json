@@ -1663,7 +1663,7 @@
       "source_path": "README.md",
       "source_commit": "7c01b8bc2bf499b38d341d40960cc9d59d362c7e",
       "source_kind": "tabpfn-source",
-      "sha256": "f781edcdb255e7df06040f1292fcf8e5554c4cd390e321be66485e1b8bf2a976"
+      "sha256": "5f85cd9ca4477274b8364bcebccbbee0c3726a3f3fe0ae58b95aa8ec7360c50b"
     },
     {
       "path": "workflows/tabpfn/TABPFN_API_77.md",
@@ -1677,7 +1677,7 @@
       "source_path": "analysis/README.md",
       "source_commit": "7c01b8bc2bf499b38d341d40960cc9d59d362c7e",
       "source_kind": "tabpfn-source",
-      "sha256": "e155b89891f285d8cfcf299664dd997203e21f0cfe5158bf2034038b7960cf79"
+      "sha256": "63e1304b79286c986da093d9ecd96ef3061526f061a0f353cc3dc5bfe0dda32b"
     },
     {
       "path": "workflows/tabpfn/analysis/__init__.py",
@@ -2573,7 +2573,7 @@
       "source_path": "analysis/experiments/README.md",
       "source_commit": "7c01b8bc2bf499b38d341d40960cc9d59d362c7e",
       "source_kind": "tabpfn-source",
-      "sha256": "b1a7200e9186d2b242754db0fc1a62a5fcde091caff4cbeee0b54d931422d7c6"
+      "sha256": "6926be84b480a9edb79ab3caf46d562cc0159be91471209d1b67a02c7aa2bdb4"
     },
     {
       "path": "workflows/tabpfn/analysis/experiments/__init__.py",
@@ -2622,7 +2622,7 @@
       "source_path": "analysis/experiments/baselines/README.md",
       "source_commit": "7c01b8bc2bf499b38d341d40960cc9d59d362c7e",
       "source_kind": "tabpfn-source",
-      "sha256": "f84bc08de51d17712607f0db4c879ef2377cb3d899b67c27c0777b14f96a3065"
+      "sha256": "72cf293b960e5e9c1d8c80d12df285b604e30078ab3721ea9b1c9cb710f32a4d"
     },
     {
       "path": "workflows/tabpfn/analysis/experiments/baselines/auxiliary_ablation.py",
@@ -2811,7 +2811,7 @@
       "source_path": "analysis/experiments/feature_engineering/README.md",
       "source_commit": "7c01b8bc2bf499b38d341d40960cc9d59d362c7e",
       "source_kind": "tabpfn-source",
-      "sha256": "5ca3018c2206f9cf3d3bb5bb244faf0357390328a0b6cbaa178e5fdc3605cf39"
+      "sha256": "cd5e4e52317e350ed8480e7ddf1825aeedd751f790eecf36eedc62c94d976c95"
     },
     {
       "path": "workflows/tabpfn/analysis/experiments/feature_engineering/feature_evidence.py",
@@ -2909,7 +2909,7 @@
       "source_path": "analysis/experiments/model_comparison/README.md",
       "source_commit": "7c01b8bc2bf499b38d341d40960cc9d59d362c7e",
       "source_kind": "tabpfn-source",
-      "sha256": "01e99b9766901de67fc1acf60cfd3ef094641f6e3a9be0e2a605c2109596d032"
+      "sha256": "be4135256994699a1e8a4aa5b1a5428d125c011ca691ec63d49002d5206f46a0"
     },
     {
       "path": "workflows/tabpfn/analysis/experiments/model_comparison/common_feature_models.py",
@@ -2944,7 +2944,7 @@
       "source_path": "analysis/experiments/optimization/README.md",
       "source_commit": "7c01b8bc2bf499b38d341d40960cc9d59d362c7e",
       "source_kind": "tabpfn-source",
-      "sha256": "6a63c6db95161286ea078e2017cd8b8a2d9d554babb31edb66e795e2381de495"
+      "sha256": "e4c8569702b9adccb80d244d080bdfc45e13a38c46b3ab52fdb5b869c95becef"
     },
     {
       "path": "workflows/tabpfn/analysis/experiments/optimization/round_01_history_target_search/README.md",
@@ -3490,7 +3490,7 @@
       "source_path": "analysis/experiments/reporting/README.md",
       "source_commit": "7c01b8bc2bf499b38d341d40960cc9d59d362c7e",
       "source_kind": "tabpfn-source",
-      "sha256": "d4c9b8521e97431ea7c44510f78e7d0eb4577b0db8f49c742a31c88b463f5828"
+      "sha256": "e6dfb08b3bc588ba5128cef674bfcd71578d25f097e6c7c86f60c63bd28963d3"
     },
     {
       "path": "workflows/tabpfn/analysis/experiments/reporting/report_best_scheme.py",
@@ -3574,7 +3574,7 @@
       "source_path": "analysis/experiments/submissions/README.md",
       "source_commit": "7c01b8bc2bf499b38d341d40960cc9d59d362c7e",
       "source_kind": "tabpfn-source",
-      "sha256": "1aeeebdcec62b5fc3aca27860667f7c947ca895b76ccbef3f717b01a20965b41"
+      "sha256": "53a6e8cf1ee95e5dc2d3e29922f1b571dab769ac6037492c7719fdfd77c1fa2e"
     },
     {
       "path": "workflows/tabpfn/analysis/experiments/submissions/best_ensemble_submission.py",
@@ -4379,7 +4379,7 @@
       "source_path": "tests/README.md",
       "source_commit": "7c01b8bc2bf499b38d341d40960cc9d59d362c7e",
       "source_kind": "tabpfn-source",
-      "sha256": "9c7a749bfdb28e13fc4030dd3bea3da4947cc451b03f102f3d8ca81ed77247e9"
+      "sha256": "2a4b39f0ebe10c993275654ebcab3be25ec9815fec4e08b045e145e71cbbcdec"
     },
     {
       "path": "workflows/tabpfn/archived_tests/test_amenity_quality_features.py",
@@ -4932,77 +4932,77 @@
       "source_path": "docs/README.md",
       "source_commit": "7c01b8bc2bf499b38d341d40960cc9d59d362c7e",
       "source_kind": "tabpfn-source",
-      "sha256": "9eefcddfc067c4df51a275eb11fc792487bfd3cb6a9b5578cb730fb6883484ae"
+      "sha256": "1a03c4893e4417115deeb6ee09841bfa370c8aeda7fc7721c0fabbf4f33bb202"
     },
     {
       "path": "workflows/tabpfn/docs/archive/README.md",
       "source_path": "docs/archive/README.md",
       "source_commit": "7c01b8bc2bf499b38d341d40960cc9d59d362c7e",
       "source_kind": "tabpfn-source",
-      "sha256": "c72144683a4bf6e67b55b8ca8ecd6a216b8ececeddddf40f08e27a13952d4e33"
+      "sha256": "170ccf780ddff480ff141e91c46920b69d5a8538138111961f0552364382dca4"
     },
     {
       "path": "workflows/tabpfn/docs/archive/branch_integration.md",
       "source_path": "docs/archive/branch_integration.md",
       "source_commit": "7c01b8bc2bf499b38d341d40960cc9d59d362c7e",
       "source_kind": "tabpfn-source",
-      "sha256": "b79969087d579cedbce940e1b1bf37d176d86fee41c257f247e9abaf1a47dec0"
+      "sha256": "1e3a499b837c6cd5585f1411e770156947b078de245702d6900365520daca46f"
     },
     {
       "path": "workflows/tabpfn/docs/archive/midterm_report.md",
       "source_path": "docs/archive/midterm_report.md",
       "source_commit": "7c01b8bc2bf499b38d341d40960cc9d59d362c7e",
       "source_kind": "tabpfn-source",
-      "sha256": "9dc7333a1e40c54e7db42ae85fa4b363199dc157120139c2126146ee28d5db15"
+      "sha256": "173a2d042953a31c6eaad6ef7df082f8a71d8fdf7f146883473142d7d8eea185"
     },
     {
       "path": "workflows/tabpfn/docs/archive/result_consistency.md",
       "source_path": "docs/archive/result_consistency.md",
       "source_commit": "7c01b8bc2bf499b38d341d40960cc9d59d362c7e",
       "source_kind": "tabpfn-source",
-      "sha256": "4a1a00dce68b85dad91725345cab7ca8151db2b939dad3c95b1e673f3e63c0de"
+      "sha256": "7ecbf6d9350fd57125a746fba8ab6786ae0dbe42a64b3190bacbf0e2fbd36f63"
     },
     {
       "path": "workflows/tabpfn/docs/guides/project_structure.md",
       "source_path": "docs/guides/project_structure.md",
       "source_commit": "7c01b8bc2bf499b38d341d40960cc9d59d362c7e",
       "source_kind": "tabpfn-source",
-      "sha256": "fbf21fc77833627b08943098b2971964213e3fa2c0b10624f2928343d8471cdd"
+      "sha256": "0a9261f7ad77afd7930374f19d53b4f5918152674e99ec73f99c2681c8e24b14"
     },
     {
       "path": "workflows/tabpfn/docs/guides/running_experiments.md",
       "source_path": "docs/guides/running_experiments.md",
       "source_commit": "7c01b8bc2bf499b38d341d40960cc9d59d362c7e",
       "source_kind": "tabpfn-source",
-      "sha256": "1596388d358e54c1f015bc99533f7c5a7131e724c9a4fa3928ff7da5c4b7893c"
+      "sha256": "29f671499c1dc1a13409073cc2eed233eeee2b85ae0353134970d5716ac0940a"
     },
     {
       "path": "workflows/tabpfn/docs/maintenance/README.md",
       "source_path": "docs/maintenance/README.md",
       "source_commit": "7c01b8bc2bf499b38d341d40960cc9d59d362c7e",
       "source_kind": "tabpfn-source",
-      "sha256": "39eb32db1f48aca5b9d05d84fd4bfd30808509866553743a1757f5a6ab302621"
+      "sha256": "d6aef61f7c2dc7c9751f6c00a82d52624d2eccd9ac31db9d08064898057b9a23"
     },
     {
       "path": "workflows/tabpfn/docs/methods/baseline_features.md",
       "source_path": "docs/methods/baseline_features.md",
       "source_commit": "7c01b8bc2bf499b38d341d40960cc9d59d362c7e",
       "source_kind": "tabpfn-source",
-      "sha256": "0e70c2238267b6a835a0c50b13d5ca6b8eb2da20f9ce811efe541fc6f73e3a20"
+      "sha256": "3880c0e43a31d9d1dc9f96ce33c6abd9c5db2a468a06e0423a076a694d899adb"
     },
     {
       "path": "workflows/tabpfn/docs/methods/history_feature_optimization.md",
       "source_path": "docs/methods/history_feature_optimization.md",
       "source_commit": "7c01b8bc2bf499b38d341d40960cc9d59d362c7e",
       "source_kind": "tabpfn-source",
-      "sha256": "a76a4ad1daec8669019b60d3b177547ac78f653137e470be6ce614f1059229ab"
+      "sha256": "76ead62b228803734b5d46de38e70a5169ab398ffbb6945a494937b288c39e36"
     },
     {
       "path": "workflows/tabpfn/docs/methods/model_comparison.md",
       "source_path": "docs/methods/model_comparison.md",
       "source_commit": "7c01b8bc2bf499b38d341d40960cc9d59d362c7e",
       "source_kind": "tabpfn-source",
-      "sha256": "d51c6556b66c4399e09876906bf74ffc89b69854d39f4654f64a543c81780724"
+      "sha256": "74618ebb58cbc0c08fa0ae3cf56724ec5205688a5ca2b5eb91e38806d7396649"
     },
     {
       "path": "workflows/tabpfn/environment.anniversary-original.yml",
@@ -5093,7 +5093,7 @@
       "source_path": "requirements/README.md",
       "source_commit": "7c01b8bc2bf499b38d341d40960cc9d59d362c7e",
       "source_kind": "tabpfn-source",
-      "sha256": "3691a2c3de5ba1fc5d54c109706ed6fb308c662f7d622e940df8821a48589a20"
+      "sha256": "caf37a2536d005dcdf2de0d32d392824c4acf80ba284b0fb4fe202c92eb65f04"
     },
     {
       "path": "workflows/tabpfn/requirements/optional_deep_models.txt",

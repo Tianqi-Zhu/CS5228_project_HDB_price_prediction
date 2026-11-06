@@ -7,7 +7,7 @@
     "experiment/tabpfn": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
     "experiment/tabpfn-anniversary-history": "7c01b8bc2bf499b38d341d40960cc9d59d362c7e",
     "mlp-eda-ensemble": "322fa4c20d83f20e19328823203873a0f81e0f4a",
-    "ziyuan——spatialfeatures": "7caf2cb77095f3b99cd242db0074189a355c0aae",
+    "ziyuan\u2014\u2014spatialfeatures": "7caf2cb77095f3b99cd242db0074189a355c0aae",
     "mlp-full-runtime": "b3a6291fbfeb30ce7ff0d0495d9371d801ff8d1c"
   },
   "experiments": [
@@ -128,11 +128,11 @@
     },
     {
       "path": "README.md",
-      "sha256": "fff7be30756bc407ac535b6362eea160adb7a26e66e9b2a4c9c9dcdbc5ade065"
+      "sha256": "52763aefc1fe5eb61e596cdba50a292ac9c8322ab6d98c9ffb580cacfb199384"
     },
     {
       "path": "README.zh-CN.md",
-      "sha256": "eff420576d7c24b4e1b2fe9e7998db5b60619d4c0888623cf2514f5214a2a978"
+      "sha256": "8d5d2f29c58cd3dff703334f44c54ce8ad6529cedec83d64c3c2c8bf85b3d4d5"
     },
     {
       "path": "TABPFN_API_77.md",
@@ -576,11 +576,11 @@
     },
     {
       "path": "analysis/validation/README.md",
-      "sha256": "e510786146fcc946e5d033051a6a75dd11400b7aeb00511c003311f1bb904bd0"
+      "sha256": "e1ce746f31eac2684cc663cdf9e01d066b9dc98d699ab090da067d9dabe4d1bf"
     },
     {
       "path": "analysis/validation/README.zh-CN.md",
-      "sha256": "c633afef31238a1b7ed45f375cce8836bd8d2aa12a19c32c57e1bfb3e1b6917b"
+      "sha256": "42d17f4e2ed9db41ff9f282b6f767b752f9679be8f33b0529dd0ca26fed4d8b6"
     },
     {
       "path": "analysis/validation/__init__.py",
@@ -600,7 +600,7 @@
     },
     {
       "path": "analysis/validation/main.py",
-      "sha256": "153ffb7a817962730534470b2926198beccb2d62df0bff6f542cb210599b4fbf"
+      "sha256": "cd81f67f1a61d2459f745b8e1560aed3335f2a51f04314b257e483583d6a4c10"
     },
     {
       "path": "analysis/validation/prepare_inputs.py",
@@ -608,7 +608,7 @@
     },
     {
       "path": "analysis/validation/refit_audit.py",
-      "sha256": "a3dfd21426af0d0c8bdbfb8c53b80a234480173f8107dd501ba874b9467f75bc"
+      "sha256": "83479e6aa933a55cfb2ed795094fdef979a40a46f01e94a34f3adf6e0893346d"
     },
     {
       "path": "analysis/validation/repository_audit.py",
@@ -812,11 +812,11 @@
     },
     {
       "path": "docs/documentation-translations.json",
-      "sha256": "34c1f2e7fde95d07eea5204a598c638718ad4f6d5659bd029d8460b6f95f653c"
+      "sha256": "868e7d7f940c8fc50bf4ec626d0c5c2844f0ae98a90e37d065f7fa589489abd5"
     },
     {
       "path": "docs/guides/anniversary_merge.md",
-      "sha256": "b3ed77bdcc90cb6611ae9d218b7cb98b716793e752b59d867d3974647e1297eb"
+      "sha256": "bfe78c904bf5cee468d52c3611464301a493907ecd7fef83c72475559b82b755"
     },
     {
       "path": "docs/guides/repository_layout.md",
@@ -904,11 +904,11 @@
     },
     {
       "path": "docs/planning/main-appendix-experiment-plan.md",
-      "sha256": "e28fc36480e8ee669b6ff820db44b6184f76dca886a3a8298d2166ed8bb214af"
+      "sha256": "237c3761b8bd7d397189cb738ccf3606ccd79bb4b6b0866ff6586314afe40e51"
     },
     {
       "path": "docs/planning/main-appendix-experiment-plan.zh-CN.md",
-      "sha256": "39344a06c911704cfcb117e386ceaaaf04426ee6322b803f34b5f85dd1b5ad3e"
+      "sha256": "20e190223228d4b3b60caff9bd2012379ec3c7b2a1a42bc3c6fb8a71bc4db47a"
     },
     {
       "path": "docs/planning/main-execution-status.md",
@@ -948,7 +948,7 @@
     },
     {
       "path": "environment.review.yml",
-      "sha256": "6af3abc8a09cd89620f746e96470b99b31dca2a9a91c249dd7db9801c6c9ff19"
+      "sha256": "853026e80f89cf7cfadce6764f203c3673f973578659e7ae6a2b80be27d33af8"
     },
     {
       "path": "environment.training.yml",
@@ -3665,150 +3665,6 @@
     {
       "path": "reports/factored_rental_surface/surface_forecast_scores.csv",
       "sha256": "bf458083ca44e6de58aef0ea2157a6ddd33d71cbd5dd27d3fbdb89e7f40c1eb8"
-    },
-    {
-      "path": "reports/final_report/README.md",
-      "sha256": "e8e16e6b53663697f54226ae6ec179d760c455686bf3ae27ae697231845f6113"
-    },
-    {
-      "path": "reports/final_report/build_neural_appendix.py",
-      "sha256": "db92add5053ed60fa62eb24db98a5ce81343988f413155838d157e97e56bf64a"
-    },
-    {
-      "path": "reports/final_report/build_report.py",
-      "sha256": "e4fa9d849314a9ad66aeed919d07d8475d96702241bf5dbb538ea345d14a3f97"
-    },
-    {
-      "path": "reports/final_report/ensemble_member_scores.csv",
-      "sha256": "936ab8ac3f0075b71ff5f9574d68189d104151997ca076a20638adcdeeb64423"
-    },
-    {
-      "path": "reports/final_report/evidence_audit.json",
-      "sha256": "0d89c17eba60876ab6d74f4b594a9b6a20f46408a658abc21d33c12bd6f6d4dd"
-    },
-    {
-      "path": "reports/final_report/figures/appendix_error_diagnostics.pdf",
-      "sha256": "cac1e65cb7826bf5718fca9a94f8f40ce5f68d27b74080aaf6019f2b9bb05251"
-    },
-    {
-      "path": "reports/final_report/figures/appendix_error_diagnostics.png",
-      "sha256": "ece988742610a59f9550e5b982a821b051eeacdc761212d48762b680edd54e14"
-    },
-    {
-      "path": "reports/final_report/figures/appendix_feature_diagnostics.pdf",
-      "sha256": "588fcf7310f3bfc29828e18d149d7b7b9b9429906b0b928267ea15d5b689d393"
-    },
-    {
-      "path": "reports/final_report/figures/appendix_feature_diagnostics.png",
-      "sha256": "a0e4062656e52482cdb9726ed8f266ac302c6534af632649acaf4799298e536e"
-    },
-    {
-      "path": "reports/final_report/figures/eda.pdf",
-      "sha256": "383eb0dacb7618b92eb815249088eeb5d9d8b6a1b54e6116dc143aae54a0515b"
-    },
-    {
-      "path": "reports/final_report/figures/eda.png",
-      "sha256": "41bbfc59c056ad327cf94ab6fec33877587520aae9eaf1832c7e4a9b277ee170"
-    },
-    {
-      "path": "reports/final_report/figures/error_analysis.pdf",
-      "sha256": "4274404925e9b40ec2cd8eb88121bbab968698c8d127e011ceee8e1d46b982d1"
-    },
-    {
-      "path": "reports/final_report/figures/error_analysis.png",
-      "sha256": "cdc0fce85e6ad5717313ae13a1ee267c664fa0085a2a949d905e2f65bd720eaf"
-    },
-    {
-      "path": "reports/final_report/figures/feature_ladder.pdf",
-      "sha256": "e398cabdca84a8a544e51acb98e2baedb0af6ff5be24ac8128136eadf89e59b0"
-    },
-    {
-      "path": "reports/final_report/figures/feature_ladder.png",
-      "sha256": "4e1beb3676e8a27a10552a3096864690db415620c5c387887d855ae68695bfa6"
-    },
-    {
-      "path": "reports/final_report/final_report.pdf",
-      "sha256": "1325096bed40163f84827ea0f5ba9750edb66d279f111e0e90a2ca38d5e86d63"
-    },
-    {
-      "path": "reports/final_report/final_report.tex",
-      "sha256": "e4131095cb3cbd10809a2e33f91cb1d6bbcd6e94583cc03a07603e2fef2676af"
-    },
-    {
-      "path": "reports/final_report/pdf_verification.json",
-      "sha256": "644dfa13f6598af75808863e64cf9f7ce883a405e0c8d50ff4dbd27ab5b2b6ac"
-    },
-    {
-      "path": "reports/final_report/reference_notes.md",
-      "sha256": "fcb4186afc08ee061a8adf52dcc4c22bee1cffbbe552929932d7c101f8365ad3"
-    },
-    {
-      "path": "reports/final_report/reference_pool.bib",
-      "sha256": "83f3ac5092dd4daa9fb5d87d13269ac1b7dff6f98b2dc105f776ca1764ee40da"
-    },
-    {
-      "path": "reports/final_report/supplementary_neural_scores.csv",
-      "sha256": "9c304c33adc2df68402c90d23aba832e76387785abf1b33c2431153bc415b2d3"
-    },
-    {
-      "path": "reports/final_report/supplementary_paired_intervals.csv",
-      "sha256": "87827dd542e79c3f2aecd5a17c8ad048dec3834a1cf78e10fe468882122d934e"
-    },
-    {
-      "path": "reports/final_report/supplementary_rent_band_scores.csv",
-      "sha256": "44c7b9d6d0f0f00f31186c43340a298f1cece60407a83ae4e1451954799e6b9e"
-    },
-    {
-      "path": "reports/final_report/tables/appendix_fine_tuning.tex",
-      "sha256": "88253474bff38dfc322f0e6348256c96f7e41715c785b57072549097b2fdad44"
-    },
-    {
-      "path": "reports/final_report/tables/appendix_fine_tuning_support.tex",
-      "sha256": "2a98bea47c32357c570c4729a92fb49d3bd73343f60eabe533c617c3a35d83be"
-    },
-    {
-      "path": "reports/final_report/tables/appendix_scratch_transformer.tex",
-      "sha256": "70a5b547bef2e421043de1b2559031b49f5edc04bc843e77c3838846f5f99434"
-    },
-    {
-      "path": "reports/final_report/tables/appendix_transformer_tabpfn.tex",
-      "sha256": "8baa2043f24c2f6363726c443cdc8cf628e914b4ca1379ed9ee0791542c7b1f9"
-    },
-    {
-      "path": "reports/final_report/tables/archived_pipelines.tex",
-      "sha256": "26f2b9b49c284e85b794dc77a4a18501d2e550493291a31cfbe04390cda0b69f"
-    },
-    {
-      "path": "reports/final_report/tables/common_models.tex",
-      "sha256": "7ea9ebe1ab0d09f9ecef2b2c4da8029e10ef1c5b02822e67c5ae3a4ce842fe92"
-    },
-    {
-      "path": "reports/final_report/tables/ensemble_members.tex",
-      "sha256": "7e1f94950579c0e2eb54bb17948d468a8c6a88a083235aff1c8c85b6a43b8bb5"
-    },
-    {
-      "path": "reports/final_report/tables/feature_ladder.tex",
-      "sha256": "73d29d15781bdeeebe3e172c2d7bd2512fac432e80c418807ee72f9edc9058ee"
-    },
-    {
-      "path": "reports/final_report/tables/filtering.tex",
-      "sha256": "ed85b45dce2f08c35d6a9c7188a84add54bf739c739ec8fb99fa4c0d39b0a1f6"
-    },
-    {
-      "path": "reports/final_report/tables/paired_intervals.tex",
-      "sha256": "7aa46ab39a151f59bcc2cd380578727278860cb069115e7bfbed550bae2383a1"
-    },
-    {
-      "path": "reports/final_report/tables/submissions.tex",
-      "sha256": "27f429d2fb67deb9d24ca4235aeffe7849ad7c4132f3ef0d466abd3c7d64c6bd"
-    },
-    {
-      "path": "reports/final_report/tables/tabpfn.tex",
-      "sha256": "8c003a40e682bfef0e08c687254b5f1fabff2d05502ba52b9a953a6bc501dfbc"
-    },
-    {
-      "path": "reports/final_report/verify_pdf.py",
-      "sha256": "1642b5239d792d5b625e48c777809c895c4b21c9a402e5f8a58e68924e3af0c9"
     },
     {
       "path": "reports/financial_sector_rent_categories/01_mean_rents_by_room_type.png",
@@ -14232,7 +14088,7 @@
     },
     {
       "path": "reproduction/f1/reproduce.py",
-      "sha256": "fa93c8817412bc89f6f1bb04acf55acbe985a2c21b86dff2e819029da53acdb6"
+      "sha256": "ebff66e25b96e978e893dc943fb0425f9073e59fb829563b5733df825fc543c0"
     },
     {
       "path": "reproduction/f1/runtime/analysis/__init__.py",
@@ -14652,7 +14508,7 @@
     },
     {
       "path": "reproduction/mlp/manifest.json",
-      "sha256": "12850b224cbf96fc98e25984fe64efc20aef1557121a335bf4aee9d1595dccd0"
+      "sha256": "f9cc9ce5346d1eff4867d6a6ca59b11b53b837f933bcdac944102bf08ed423fb"
     },
     {
       "path": "reproduction/mlp/provenance.json",
@@ -15509,14 +15365,6 @@
     {
       "path": "run_tabpfn_ensemble.py",
       "sha256": "b211a69acb5485b31014225bcc75ca1058b275ffcc6da4be8a635a78f2fa9fab"
-    },
-    {
-      "path": "skills/cs5228-final-report/SKILL.md",
-      "sha256": "37ca5f5dfa8ea688726f6951e22fce99b8ce2e29bed04a642f85102a6b30c907"
-    },
-    {
-      "path": "skills/cs5228-final-report/SKILL.zh-CN.md",
-      "sha256": "bfa1cbbac92a28873b23e743dd059d00646266dc9827314be163727b46cc858b"
     },
     {
       "path": "tests/README.md",
@@ -17600,7 +17448,7 @@
     },
     {
       "path": "workflows/tabpfn/manifest.json",
-      "sha256": "2d18d29ad914b6913219db2f5c7506ab719c1cb3658d9b4a9bced245ed785ca3"
+      "sha256": "6ed1b822a976af1523edb829bbfa95b9827f2258ea123428f808e188b48431bd"
     },
     {
       "path": "workflows/tabpfn/requirements-amenity-quality.txt",
@@ -20519,7 +20367,7 @@
       "path": "experiment/main/M01/spatial_evidence/source/EDA_summary_zh.md",
       "source": "reports/spatial_features/EDA_summary_zh.md",
       "source_commit": "7caf2cb77095f3b99cd242db0074189a355c0aae",
-      "source_branch": "ziyuan——spatialfeatures",
+      "source_branch": "ziyuan\u2014\u2014spatialfeatures",
       "source_kind": "curated-M01-frozen-branch-evidence",
       "sha256": "b95120bc4769b45464988a3567078d16d3443d106808529f43b4780251bd3780",
       "source_sha256": "b95120bc4769b45464988a3567078d16d3443d106808529f43b4780251bd3780",
@@ -20529,7 +20377,7 @@
       "path": "experiment/main/M01/spatial_evidence/source/feature_dictionary.csv",
       "source": "reports/spatial_features/feature_dictionary.csv",
       "source_commit": "7caf2cb77095f3b99cd242db0074189a355c0aae",
-      "source_branch": "ziyuan——spatialfeatures",
+      "source_branch": "ziyuan\u2014\u2014spatialfeatures",
       "source_kind": "curated-M01-frozen-branch-evidence",
       "sha256": "ec33044629968a06aa9562d897104649e58323f2b080d12730076d8cb9dcc97a",
       "source_sha256": "ec33044629968a06aa9562d897104649e58323f2b080d12730076d8cb9dcc97a",
@@ -20539,7 +20387,7 @@
       "path": "experiment/main/M01/spatial_evidence/source/build_manifest.json",
       "source": "reports/spatial_features/build_manifest.json",
       "source_commit": "7caf2cb77095f3b99cd242db0074189a355c0aae",
-      "source_branch": "ziyuan——spatialfeatures",
+      "source_branch": "ziyuan\u2014\u2014spatialfeatures",
       "source_kind": "curated-M01-frozen-branch-evidence",
       "sha256": "734964ddc46d61541210ea87210e568a80bfc85a18b93c3e88eea50143b12b03",
       "source_sha256": "734964ddc46d61541210ea87210e568a80bfc85a18b93c3e88eea50143b12b03",
@@ -20549,7 +20397,7 @@
       "path": "experiment/main/M01/spatial_evidence/source/all_numeric_correlations.csv",
       "source": "reports/spatial_features/tables/all_numeric_correlations.csv",
       "source_commit": "7caf2cb77095f3b99cd242db0074189a355c0aae",
-      "source_branch": "ziyuan——spatialfeatures",
+      "source_branch": "ziyuan\u2014\u2014spatialfeatures",
       "source_kind": "curated-M01-frozen-branch-evidence",
       "sha256": "7cd3d3b52881c038f15c8a9a1f2729fc7cd029f4f2a50a3fa5222d7b47e2fc30",
       "source_sha256": "7cd3d3b52881c038f15c8a9a1f2729fc7cd029f4f2a50a3fa5222d7b47e2fc30",
@@ -20559,7 +20407,7 @@
       "path": "experiment/main/M01/spatial_evidence/source/adjusted_correlations.csv",
       "source": "reports/spatial_features/tables/adjusted_correlations.csv",
       "source_commit": "7caf2cb77095f3b99cd242db0074189a355c0aae",
-      "source_branch": "ziyuan——spatialfeatures",
+      "source_branch": "ziyuan\u2014\u2014spatialfeatures",
       "source_kind": "curated-M01-frozen-branch-evidence",
       "sha256": "306eea405fd7495c191b1d84b84f77694ca6b9f15d16a18633b304b6135744cf",
       "source_sha256": "306eea405fd7495c191b1d84b84f77694ca6b9f15d16a18633b304b6135744cf",
@@ -20569,7 +20417,7 @@
       "path": "experiment/main/M01/spatial_evidence/source/analysis_manifest.json",
       "source": "reports/spatial_features/amenities_adjusted/analysis_manifest.json",
       "source_commit": "7caf2cb77095f3b99cd242db0074189a355c0aae",
-      "source_branch": "ziyuan——spatialfeatures",
+      "source_branch": "ziyuan\u2014\u2014spatialfeatures",
       "source_kind": "curated-M01-frozen-branch-evidence",
       "sha256": "7f3a2f49fc3953b034073944ac29690a4e96a388337d3ec13eb5a2c2a29814d1",
       "source_sha256": "7f3a2f49fc3953b034073944ac29690a4e96a388337d3ec13eb5a2c2a29814d1",
@@ -20579,7 +20427,7 @@
       "path": "experiment/main/M01/spatial_evidence/source/amenity_bin_effects.csv",
       "source": "reports/spatial_features/amenities_adjusted/amenity_bin_effects.csv",
       "source_commit": "7caf2cb77095f3b99cd242db0074189a355c0aae",
-      "source_branch": "ziyuan——spatialfeatures",
+      "source_branch": "ziyuan\u2014\u2014spatialfeatures",
       "source_kind": "curated-M01-frozen-branch-evidence",
       "sha256": "50c76dc94c8389d21aa4126cb0cbcc88aa6afadf0a56af4fbe0e917605479903",
       "source_sha256": "50c76dc94c8389d21aa4126cb0cbcc88aa6afadf0a56af4fbe0e917605479903",
@@ -20589,7 +20437,7 @@
       "path": "experiment/main/M01/spatial_evidence/source/amenity_raw_vs_adjusted.png",
       "source": "reports/spatial_features/amenities_adjusted/amenity_raw_vs_adjusted.png",
       "source_commit": "7caf2cb77095f3b99cd242db0074189a355c0aae",
-      "source_branch": "ziyuan——spatialfeatures",
+      "source_branch": "ziyuan\u2014\u2014spatialfeatures",
       "source_kind": "curated-M01-frozen-branch-evidence",
       "sha256": "4993809264949ff9ca357a46b38791313a5384e45ba189310aca08e5193c1cbe",
       "source_sha256": "4993809264949ff9ca357a46b38791313a5384e45ba189310aca08e5193c1cbe",
@@ -20599,7 +20447,7 @@
       "path": "experiment/main/M01/spatial_evidence/source/amenities_adjusted_summary_zh.md",
       "source": "reports/spatial_features/amenities_adjusted/amenities_adjusted_summary_zh.md",
       "source_commit": "7caf2cb77095f3b99cd242db0074189a355c0aae",
-      "source_branch": "ziyuan——spatialfeatures",
+      "source_branch": "ziyuan\u2014\u2014spatialfeatures",
       "source_kind": "curated-M01-frozen-branch-evidence",
       "sha256": "38c0fd04a60205f23d3ce798396eabc6fef9879a711c96edf68315cd65f91ade",
       "source_sha256": "38c0fd04a60205f23d3ce798396eabc6fef9879a711c96edf68315cd65f91ade",
@@ -20761,22 +20609,12 @@
     "kaggle_scores": null,
     "published_submissions": "reports/submissions/tabpfn_ensemble_20261106/publication.json"
   },
-  "final_report_revision": {
-    "main_pages": 7,
-    "references_pages": 1,
-    "appendix_pages": 4,
-    "pipeline_table": "reports/final_report/tables/submissions.tex",
-    "exact_member_table": "reports/final_report/tables/ensemble_members.tex",
-    "exact_member_scores": "reports/final_report/ensemble_member_scores.csv",
-    "source_predictions_rechecked": true,
-    "pdf": "reports/final_report/final_report.pdf"
-  },
   "documentation_languages": {
     "default": "en",
     "additional": [
       "zh-CN"
     ],
-    "translated_documents": 95,
+    "translated_documents": 94,
     "pairs": "docs/documentation-translations.json",
     "policy": "docs/documentation-languages.md",
     "original_chinese_preserved_byte_for_byte": true,

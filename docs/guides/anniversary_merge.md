@@ -23,7 +23,6 @@ The original seven selected test files remain active, with the three new feature
 - The latest analysis, documentation, requirements and test source mapping is in [integration.json](../../review/checks/anniversary-merge/integration.json).
 - Per-file byte hashes and executable entries are in [the workflow manifest](../../workflows/tabpfn/manifest.json).
 - Latest validation and candidate export records are in [the anniversary study](../../reports/tabpfn_anniversary_history_80_20/report.md), [tree/TabPFN blend](../../reports/zch_anniversary_tabpfn_blend/report.md), [half-median ablation](../../reports/half_median_zch_tabpfn_ensemble/report.md), and [category-grouping ablation](../../reports/flat_model_grouping_ensemble/report.md).
-- The existing [final report](../../reports/final_report/final_report.pdf) is preserved. Its chronology and validation caveats remain applicable.
 
 The candidate `submission_zch_tabpfn87_equal_150k.csv`, generator and provenance are now present in the imported branch. Their availability does not by itself verify that the candidate is the file associated with the previously recorded screenshot score of 413.19635. That identity and test-score linkage remain unverified; no development RMSE is relabelled as a Kaggle score.
 

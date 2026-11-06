@@ -6,3 +6,5 @@ dependencies:
   - pip
   - pip:
       - numpy==2.4.6
+      - pandas==3.0.1
+      - matplotlib==3.10.8

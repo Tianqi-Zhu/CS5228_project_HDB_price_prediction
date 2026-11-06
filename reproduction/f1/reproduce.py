@@ -16,12 +16,12 @@ def compose(matrix,names,support24,support36):
     assert matrix.shape==(50000,len(names)) and np.isfinite(matrix).all()
     weights=json.loads((HERE/'weights.json').read_text(encoding='utf-8'))
     final_model=weights['structure']
-    selected=np.ascontiguousarray(matrix[:,[names.index(name) for name in final_model['names']]])
-    structure=selected@np.asarray(final_model['global_weights'])
+    selected=np.ascontiguousarray(matrix[:,[names.index(name) for name in final_model['names']]],dtype=float)
+    structure=(selected*np.asarray(final_model['global_weights'],dtype=float)).sum(axis=1)
     labels=np.array([str(bool(a))+'|'+str(bool(b)) for a,b in zip(support24,support36)])
     for group,learned in final_model['group_weights'].items():
         mask=labels==group
-        structure[mask]=selected[mask]@np.asarray(learned['weights'])
+        structure[mask]=(selected[mask]*np.asarray(learned['weights'],dtype=float)).sum(axis=1)
     return {'kaggle_structure_blend.csv':structure}
 
 

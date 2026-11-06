@@ -9,4 +9,4 @@
 | `evidence_audit.py` | 空间来源/版本、设施统计口径、清洗匹配对照与逐行重算 | M01 来源和紧凑 NPZ；不重新训练 |
 | `refit_audit.py` | 新 F1 Y/J 的代码提交/数据身份、模型重载记录与固定融合重组 | 30 次新训练记录和组件数组；审计本身只用 CPU |
 
-[当前验收状态](../../docs/planning/main-execution-status.md) · [报告评分依据](../../skills/cs5228-final-report/SKILL.md)
+[当前验收状态](../../docs/planning/main-execution-status.md)

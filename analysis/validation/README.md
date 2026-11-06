@@ -11,4 +11,4 @@
 | `evidence_audit.py` | Spatial provenance/versions, facility-statistic definitions, matched cleaning controls and row-level recomputation | M01 sources and compact NPZ files; no retraining |
 | `refit_audit.py` | Code/data identities, model-reload records and fixed-blend reconstruction for new F1 Y/J fits | Records of 30 new fits and component arrays; the audit itself uses CPU only |
 
-[Current acceptance status](../../docs/planning/main-execution-status.md) · [Report assessment criteria](../../skills/cs5228-final-report/SKILL.md)
+[Current acceptance status](../../docs/planning/main-execution-status.md)

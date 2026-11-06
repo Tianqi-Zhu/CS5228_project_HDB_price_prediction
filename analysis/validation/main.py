@@ -20,6 +20,81 @@ from analysis.validation.prepare_inputs import sha
 INPUTS = ROOT / "experiment/main/M00/inputs"
 
 
+def _ensure_optional_training_stubs():
+    import types
+    try:
+        from sklearn.base import BaseEstimator, TransformerMixin  # noqa: F401
+        from sklearn.neighbors import BallTree, NearestNeighbors  # noqa: F401
+    except ImportError:
+        sk = sys.modules.setdefault("sklearn", types.ModuleType("sklearn"))
+        sk.__path__ = getattr(sk, "__path__", [])
+        sk_base = sys.modules.setdefault("sklearn.base", types.ModuleType("sklearn.base"))
+        sk_nb = sys.modules.setdefault("sklearn.neighbors", types.ModuleType("sklearn.neighbors"))
+        for submod, attrs in (
+            ("compose", ("ColumnTransformer",)),
+            ("ensemble", ("RandomForestRegressor",)),
+            ("impute", ("SimpleImputer",)),
+            ("linear_model", ("Ridge",)),
+            ("pipeline", ("Pipeline",)),
+            ("preprocessing", ("OneHotEncoder", "StandardScaler")),
+        ):
+            mod = sys.modules.setdefault(f"sklearn.{submod}", types.ModuleType(f"sklearn.{submod}"))
+            for attr in attrs:
+                setattr(mod, attr, getattr(mod, attr, object))
+            setattr(sk, submod, mod)
+        class BaseEstimator: pass
+        class TransformerMixin:
+            def fit_transform(self, X, y=None, **kwargs):
+                return self.fit(X, y, **kwargs).transform(X)
+        class BallTree:
+            def __init__(self, data, metric="haversine"):
+                self.data = np.asarray(data, dtype=float)
+                self._cache_key = None
+                self._cache_dists = None
+                self._cache_inv = None
+            def _dists(self, X):
+                arr = np.asarray(X, dtype=float)
+                if self._cache_key is not X:
+                    uniq, inv = np.unique(arr, axis=0, return_inverse=True)
+                    dlat = uniq[:, None, 0] - self.data[None, :, 0]
+                    dlon = uniq[:, None, 1] - self.data[None, :, 1]
+                    a = (
+                        np.sin(dlat * 0.5) ** 2
+                        + np.cos(uniq[:, None, 0]) * np.cos(self.data[None, :, 0]) * (np.sin(dlon * 0.5) ** 2)
+                    )
+                    self._cache_dists = 2.0 * np.arcsin(np.sqrt(np.clip(a, 0.0, 1.0)))
+                    self._cache_inv = inv
+                    self._cache_key = X
+                return self._cache_dists, self._cache_inv
+            def query(self, X, k=1):
+                dists, inv = self._dists(X)
+                idx = np.argsort(dists, axis=1)[:, :k]
+                top_d = np.take_along_axis(dists, idx, axis=1)
+                return top_d[inv], idx[inv]
+            def query_radius(self, X, r, count_only=False):
+                dists, inv = self._dists(X)
+                if count_only:
+                    counts = (dists <= float(r)).sum(axis=1)
+                    return counts[inv]
+                return [np.flatnonzero(dists[i] <= float(r)) for i in inv]
+        sk_base.BaseEstimator = BaseEstimator
+        sk_base.TransformerMixin = TransformerMixin
+        sk_nb.BallTree = BallTree
+        sk_nb.NearestNeighbors = object
+        sk.base = sk_base
+        sk.neighbors = sk_nb
+    try:
+        import lightgbm  # noqa: F401
+    except ImportError:
+        lgb = sys.modules.setdefault("lightgbm", types.ModuleType("lightgbm"))
+        lgb.LGBMRegressor = object
+        lgb.early_stopping = lambda *a, **k: None
+    try:
+        import joblib  # noqa: F401
+    except ImportError:
+        sys.modules.setdefault("joblib", types.ModuleType("joblib"))
+
+
 def dump(path, value):
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_bytes((json.dumps(value, ensure_ascii=False, indent=2, allow_nan=False) + "\n").encode("utf-8"))
@@ -152,6 +227,7 @@ def run(output_root=None):
         months = raw.loc[ids, "RENT_APPROVAL_DATE"].to_numpy()
         # Independently rebuild support using only the pre-origin source. Query
         # rents are dropped, so neither labels nor future history enter groups.
+        _ensure_optional_training_stubs()
         from analysis.pipeline.features import build_feature_frame
         from analysis.experiments.second_wave_anniversary import AnniversaryHistory
         history = AnniversaryHistory().fit(build_feature_frame(fit))
