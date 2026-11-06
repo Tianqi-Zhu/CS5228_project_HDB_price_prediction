@@ -1,0 +1,4 @@
+previous_rule,previous_removed,both_removed,annual_rule_only,previous_rule_only
+3-room-or-larger rent <= 1500,3768,857,264,2911
+BROAD_LOW_RENT_FLAG,921,868,253,53
+CONSERVATIVE_LOW_RENT_FLAG,305,301,820,4

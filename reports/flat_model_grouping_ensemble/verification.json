@@ -1,0 +1,19 @@
+{
+  "unit_tests_passed": 4,
+  "all_scores_independently_recomputed": true,
+  "all_member_weights_and_predictions_verified": true,
+  "train_test_sources_unchanged": true,
+  "validation_ids_and_labels_reconciled": true,
+  "statistics_counts_reconciled": true,
+  "unchanged_features_checked_for_both_variants": true,
+  "unseen_improved_maisonette_maps_to_known_parent": true,
+  "source_sha256": "2fe38ce9e0d8a02e9786f066d4a10d575d91f34be1d9111f0142e3f43fbfc8a5",
+  "test_sha256": "a2ec03a0afc07c251c72cc0de2e15ac965a3b06291b304aaac53a375115ff4e0",
+  "prediction_sha256": "e878980367b63330b1c943f521249b04cb045afd0db3643ab5400a862a599f17",
+  "code_sha256": {
+    "analysis\\flat_model_groups.py": "54c6b3a2ba38d94d1e04d9859a0e139de6b98abf2477a290225b1118a318a807",
+    "analysis\\compare_flat_model_grouping.py": "28399eab0a833f9a93ca73992eb433119cfa011c0abd59bb27f8b848320ae01c",
+    "analysis\\train_flat_model_grouping_zch_worker.py": "e61e3a9677d5492057603eb62b33b7d592f21898683367f483ee849181f7e0d6",
+    "tests\\test_flat_model_groups.py": "9798f9a0fde81298ebb9a16361eaf3d7682fc9f054cf60817816587abfac62e5"
+  }
+}

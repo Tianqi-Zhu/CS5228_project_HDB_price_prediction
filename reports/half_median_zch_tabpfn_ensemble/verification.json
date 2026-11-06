@@ -1,0 +1,21 @@
+{
+  "validation_rows": 28995,
+  "training_rows": 120157,
+  "removed_training_rows": 848,
+  "source_unchanged": true,
+  "validation_ids_and_labels_reconciled": true,
+  "seven_tree_members_reconstructed": true,
+  "all_saved_scores_independently_recomputed": true,
+  "blend_formulas_verified": true,
+  "monthly_wins_verified": true,
+  "filter_unit_tests_passed": 3,
+  "existing_anniversary_lookup_test_passed": true,
+  "baseline_reconstructed_rmse_sgd": 440.9519575033717,
+  "source_sha256": "2fe38ce9e0d8a02e9786f066d4a10d575d91f34be1d9111f0142e3f43fbfc8a5",
+  "experiment_code_sha256": {
+    "analysis\\compare_half_median_ensemble.py": "003a82cac50d42be4a08a1813a775219b2100ba140e50b24a4f2d193aacb9f74",
+    "analysis\\train_half_median_zch_worker.py": "172c486bb3a0743a87a9fbe9e5ab41ad7256994f144e410bdfc8a867971f7768",
+    "analysis\\filter_rent_below_half_median.py": "b0b9887d058e2e277424d6e59d7d89c4cdebad33dd253ee088d68d462c3e4f15",
+    "tests\\test_half_median_ensemble.py": "e793c4b0d67abb4bf353fd0c295fb864c2f8a91246b280adfb649ad54c16aa09"
+  }
+}

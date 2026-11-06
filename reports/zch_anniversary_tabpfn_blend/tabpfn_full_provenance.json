@@ -1,0 +1,11 @@
+{
+  "context_rows": 150000,
+  "query_rows": 50000,
+  "features": 87,
+  "checkpoint_sha256": "14e0b81285bca7a6d1ef121169f27f651f76dff49cad6c0b8779d5c836018550",
+  "prediction_sha256": "22fc32b16f47b7a4a393ab0cec7e30ab2a696c934a008b3d4ed9325b980cb19d",
+  "source_train_sha256": "2fe38ce9e0d8a02e9786f066d4a10d575d91f34be1d9111f0142e3f43fbfc8a5",
+  "source_test_sha256": "a2ec03a0afc07c251c72cc0de2e15ac965a3b06291b304aaac53a375115ff4e0",
+  "peak_vram_gib": 11.220685958862305,
+  "settings": "87 features, two frozen Fast views, full context, seed 42, native batching"
+}

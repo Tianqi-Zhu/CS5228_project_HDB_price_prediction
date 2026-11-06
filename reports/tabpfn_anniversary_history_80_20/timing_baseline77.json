@@ -1,0 +1,14 @@
+{
+  "name": "baseline77",
+  "features": 77,
+  "context_rows": 121005,
+  "query_rows": 28995,
+  "n_estimators": 2,
+  "checkpoint_sha256": "14e0b81285bca7a6d1ef121169f27f651f76dff49cad6c0b8779d5c836018550",
+  "original_bundle_sha256": "fba84757b6e23280d2b27eab0ca5d86a427ac19ca33c6b12b5b2dcc4194a0059",
+  "fit_seconds": 28.53158050007187,
+  "predict_seconds": 150.66839469992556,
+  "peak_vram_gib": 9.123612880706787,
+  "prediction_sha256": "1a451ed4e003fa8245b0aaa55ddf3657a216bedb809801a20e1a3447bfa5ff7d",
+  "subsampling": false
+}

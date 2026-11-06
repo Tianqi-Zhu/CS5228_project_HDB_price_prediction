@@ -1,0 +1,13 @@
+{
+  "original_rmse_sgd": 440.9519575033717,
+  "filtered_rmse_sgd": 445.8432167652867,
+  "delta_rmse_sgd": 4.891259261914968,
+  "months_improved": 1,
+  "validation_rows": 28995,
+  "month_cluster_bootstrap_delta_mse_95pct": [
+    2674.1584804715117,
+    5796.792993882466
+  ],
+  "original_prediction_sha256": "728593d8c6615ea00db914a613ee23b1830cb1b6e2dea05bde2276e65cef5466",
+  "filtered_predictions_sha256": "d1b0f451c90a15721e61f6e92f96098cbc076c80c7fda95c226e9207f5dec43b"
+}

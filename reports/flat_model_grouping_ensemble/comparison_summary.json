@@ -1,0 +1,30 @@
+{
+  "comparisons": [
+    {
+      "variant": "grouped",
+      "delta_rmse_sgd": -0.18125073977563488,
+      "months_improved": 6,
+      "delta_mse_month_bootstrap_95pct": [
+        -645.096401569,
+        261.8665659005459
+      ],
+      "affected_rows": 126,
+      "affected_original_rmse": 457.3791988302619,
+      "affected_candidate_rmse": 460.25783503877017
+    },
+    {
+      "variant": "original_plus_group",
+      "delta_rmse_sgd": 0.5900463949868708,
+      "months_improved": 2,
+      "delta_mse_month_bootstrap_95pct": [
+        186.20129657981272,
+        954.2968089156147
+      ],
+      "affected_rows": 126,
+      "affected_original_rmse": 457.3791988302619,
+      "affected_candidate_rmse": 459.9523298772439
+    }
+  ],
+  "source_sha256": "2fe38ce9e0d8a02e9786f066d4a10d575d91f34be1d9111f0142e3f43fbfc8a5",
+  "baseline_predictions_sha256": "728593d8c6615ea00db914a613ee23b1830cb1b6e2dea05bde2276e65cef5466"
+}

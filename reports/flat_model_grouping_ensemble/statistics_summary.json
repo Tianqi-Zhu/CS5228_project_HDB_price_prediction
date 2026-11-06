@@ -1,0 +1,26 @@
+{
+  "source_sha256": "2fe38ce9e0d8a02e9786f066d4a10d575d91f34be1d9111f0142e3f43fbfc8a5",
+  "test_sha256": "a2ec03a0afc07c251c72cc0de2e15ac965a3b06291b304aaac53a375115ff4e0",
+  "training_rows": 150000,
+  "categories": 20,
+  "grouped_categories": 16,
+  "top_four_share_pct": 84.29666666666667,
+  "categories_with_fewer_than_500_rows": 10,
+  "rows_in_categories_with_fewer_than_500": 1145,
+  "rows_whose_label_changes": 621,
+  "training_rows_whose_label_changes": 495,
+  "validation_rows_whose_label_changes": 126,
+  "observed_model_consistency": {
+    "block_type": {
+      "total_keys": 14828,
+      "keys_with_multiple_models": 0,
+      "rental_rows_in_these_keys": 0
+    },
+    "block_type_area_lease": {
+      "total_keys": 14828,
+      "keys_with_multiple_models": 0,
+      "rental_rows_in_these_keys": 0
+    }
+  },
+  "enrichment_provenance": "FLAT_MODEL is supplied in train.csv; original resale enrichment table/join code not found in available data files. Multiple models per observed key do not prove incorrect assignments."
+}

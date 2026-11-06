@@ -1,0 +1,9 @@
+{
+  "origin": "2023-10",
+  "context_rows": 96865,
+  "query_rows": 17977,
+  "checkpoint_sha256": "14e0b81285bca7a6d1ef121169f27f651f76dff49cad6c0b8779d5c836018550",
+  "prediction_sha256": "c80614ded43de34e2fb284e54b3978dbeb21d92e3693044795b6cb43829081c4",
+  "peak_vram_gib": 7.381775379180908,
+  "settings": "87 features, two frozen Fast views, full context, seed 42, native batching"
+}

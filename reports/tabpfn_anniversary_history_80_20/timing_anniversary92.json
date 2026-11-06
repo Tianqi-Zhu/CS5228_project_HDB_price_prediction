@@ -1,0 +1,14 @@
+{
+  "name": "anniversary92",
+  "features": 92,
+  "context_rows": 121005,
+  "query_rows": 28995,
+  "n_estimators": 2,
+  "checkpoint_sha256": "14e0b81285bca7a6d1ef121169f27f651f76dff49cad6c0b8779d5c836018550",
+  "original_bundle_sha256": "fba84757b6e23280d2b27eab0ca5d86a427ac19ca33c6b12b5b2dcc4194a0059",
+  "fit_seconds": 28.629037600010633,
+  "predict_seconds": 119.26519559998997,
+  "peak_vram_gib": 9.131855964660645,
+  "prediction_sha256": "060b808d14517f450b164857b3bc6f68e347773a520aa02e0b1020eba0acf719",
+  "subsampling": false
+}
