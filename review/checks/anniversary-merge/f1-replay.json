@@ -1,0 +1,13 @@
+{
+  "reproduced": [
+    {
+      "file": "output/review_f1_reproduced/kaggle_structure_blend.csv",
+      "rows": 50000,
+      "max_abs_difference": 9.094947017729282e-13
+    }
+  ],
+  "python": "3.13.9",
+  "numpy": "2.5.3",
+  "executable": "C:\\Users\\auror\\Code\\CS5228_project_HDB_price_prediction\\.venv\\Scripts\\python.exe",
+  "mode": "frozen-model-forecast replay; no training or network"
+}

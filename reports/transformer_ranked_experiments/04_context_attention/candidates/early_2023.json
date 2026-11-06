@@ -1,0 +1,7 @@
+{
+  "sha256": "88b24931a46a4c6c34b84d0be801b41f7f2ef691bdce29c80dc8b8e771d1b097",
+  "origin_filter": "candidate month <= row origin",
+  "candidate_bank": "fold fitting rows only",
+  "slots": 32,
+  "search": 128
+}

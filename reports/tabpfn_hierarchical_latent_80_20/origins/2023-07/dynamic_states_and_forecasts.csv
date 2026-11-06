@@ -1,0 +1,2857 @@
+submarket,month,state,fitted_historical
+ang mo kio|2-room,2022-05,0.0,True
+ang mo kio|2-room,2022-06,-2.750412996778626,True
+ang mo kio|2-room,2022-07,0.0,True
+ang mo kio|2-room,2022-08,0.0,True
+ang mo kio|2-room,2022-09,5.743659272413866,True
+ang mo kio|2-room,2022-10,0.0,True
+ang mo kio|2-room,2022-11,2.0599885464517813,True
+ang mo kio|2-room,2022-12,8.015889590893275,True
+ang mo kio|2-room,2023-01,0.0,True
+ang mo kio|2-room,2023-02,0.0,True
+ang mo kio|2-room,2023-03,0.0,True
+ang mo kio|2-room,2023-04,0.0,True
+ang mo kio|2-room,2023-05,5.214902876324148,True
+ang mo kio|2-room,2023-06,0.0,True
+ang mo kio|2-room,2023-07,0.0,False
+ang mo kio|2-room,2023-08,0.0,False
+ang mo kio|2-room,2023-09,0.0,False
+ang mo kio|2-room,2023-10,0.0,False
+ang mo kio|2-room,2023-11,0.0,False
+ang mo kio|2-room,2023-12,0.0,False
+ang mo kio|2-room,2024-01,0.0,False
+ang mo kio|2-room,2024-02,0.0,False
+ang mo kio|2-room,2024-03,0.0,False
+ang mo kio|2-room,2024-04,0.0,False
+ang mo kio|3-room,2022-05,-0.06455437591045297,True
+ang mo kio|3-room,2022-06,-11.707168673758733,True
+ang mo kio|3-room,2022-07,8.557849435526714,True
+ang mo kio|3-room,2022-08,0.8478595960867348,True
+ang mo kio|3-room,2022-09,-0.6869459916846263,True
+ang mo kio|3-room,2022-10,8.515248062674207,True
+ang mo kio|3-room,2022-11,7.330630168007571,True
+ang mo kio|3-room,2022-12,2.663294911260614,True
+ang mo kio|3-room,2023-01,-14.675728896700075,True
+ang mo kio|3-room,2023-02,21.80013561476521,True
+ang mo kio|3-room,2023-03,-5.281992302724993,True
+ang mo kio|3-room,2023-04,-16.026743002002526,True
+ang mo kio|3-room,2023-05,-21.62205736403959,True
+ang mo kio|3-room,2023-06,20.06942799822136,True
+ang mo kio|3-room,2023-07,0.0,False
+ang mo kio|3-room,2023-08,0.0,False
+ang mo kio|3-room,2023-09,0.0,False
+ang mo kio|3-room,2023-10,0.0,False
+ang mo kio|3-room,2023-11,0.0,False
+ang mo kio|3-room,2023-12,0.0,False
+ang mo kio|3-room,2024-01,0.0,False
+ang mo kio|3-room,2024-02,0.0,False
+ang mo kio|3-room,2024-03,0.0,False
+ang mo kio|3-room,2024-04,0.0,False
+ang mo kio|4-room,2022-05,2.0805615751881423,True
+ang mo kio|4-room,2022-06,-2.3295966363536693,True
+ang mo kio|4-room,2022-07,6.512191280980098,True
+ang mo kio|4-room,2022-08,11.420921746792729,True
+ang mo kio|4-room,2022-09,-3.227921010505928,True
+ang mo kio|4-room,2022-10,-3.6558186713918412,True
+ang mo kio|4-room,2022-11,14.900319269311462,True
+ang mo kio|4-room,2022-12,14.148228040844918,True
+ang mo kio|4-room,2023-01,-9.565825832500815,True
+ang mo kio|4-room,2023-02,18.76511790922064,True
+ang mo kio|4-room,2023-03,-36.7614963034411,True
+ang mo kio|4-room,2023-04,-3.0393364426455345,True
+ang mo kio|4-room,2023-05,1.5038615609666648,True
+ang mo kio|4-room,2023-06,-19.131941258234338,True
+ang mo kio|4-room,2023-07,-0.0,False
+ang mo kio|4-room,2023-08,-0.0,False
+ang mo kio|4-room,2023-09,-0.0,False
+ang mo kio|4-room,2023-10,-0.0,False
+ang mo kio|4-room,2023-11,-0.0,False
+ang mo kio|4-room,2023-12,-0.0,False
+ang mo kio|4-room,2024-01,-0.0,False
+ang mo kio|4-room,2024-02,-0.0,False
+ang mo kio|4-room,2024-03,-0.0,False
+ang mo kio|4-room,2024-04,-0.0,False
+ang mo kio|5-room,2022-05,5.202780119687347,True
+ang mo kio|5-room,2022-06,-4.695736014286976,True
+ang mo kio|5-room,2022-07,-1.9585318879493452,True
+ang mo kio|5-room,2022-08,7.603910402263411,True
+ang mo kio|5-room,2022-09,9.911797057413292,True
+ang mo kio|5-room,2022-10,3.594971487004679,True
+ang mo kio|5-room,2022-11,7.107783216852205,True
+ang mo kio|5-room,2022-12,8.416140947233105,True
+ang mo kio|5-room,2023-01,35.86738691795181,True
+ang mo kio|5-room,2023-02,-7.5996175035597355,True
+ang mo kio|5-room,2023-03,8.102004282273327,True
+ang mo kio|5-room,2023-04,3.081604067339423,True
+ang mo kio|5-room,2023-05,-16.908020296857973,True
+ang mo kio|5-room,2023-06,-4.461342928450442,True
+ang mo kio|5-room,2023-07,-0.0,False
+ang mo kio|5-room,2023-08,-0.0,False
+ang mo kio|5-room,2023-09,-0.0,False
+ang mo kio|5-room,2023-10,-0.0,False
+ang mo kio|5-room,2023-11,-0.0,False
+ang mo kio|5-room,2023-12,-0.0,False
+ang mo kio|5-room,2024-01,-0.0,False
+ang mo kio|5-room,2024-02,-0.0,False
+ang mo kio|5-room,2024-03,-0.0,False
+ang mo kio|5-room,2024-04,-0.0,False
+bedok|2-room,2022-05,0.0,True
+bedok|2-room,2022-06,0.0,True
+bedok|2-room,2022-07,1.1497118656899663,True
+bedok|2-room,2022-08,0.0,True
+bedok|2-room,2022-09,0.0,True
+bedok|2-room,2022-10,0.0,True
+bedok|2-room,2022-11,0.0,True
+bedok|2-room,2022-12,0.0,True
+bedok|2-room,2023-01,-4.40882078820143,True
+bedok|2-room,2023-02,0.0,True
+bedok|2-room,2023-03,0.0,True
+bedok|2-room,2023-04,0.0,True
+bedok|2-room,2023-05,0.0,True
+bedok|2-room,2023-06,-19.416331895509348,True
+bedok|2-room,2023-07,-0.0,False
+bedok|2-room,2023-08,-0.0,False
+bedok|2-room,2023-09,-0.0,False
+bedok|2-room,2023-10,-0.0,False
+bedok|2-room,2023-11,-0.0,False
+bedok|2-room,2023-12,-0.0,False
+bedok|2-room,2024-01,-0.0,False
+bedok|2-room,2024-02,-0.0,False
+bedok|2-room,2024-03,-0.0,False
+bedok|2-room,2024-04,-0.0,False
+bedok|3-room,2022-05,8.686791422301768,True
+bedok|3-room,2022-06,13.908405791870582,True
+bedok|3-room,2022-07,1.1218897765641995,True
+bedok|3-room,2022-08,13.08267842053109,True
+bedok|3-room,2022-09,-19.337482371843617,True
+bedok|3-room,2022-10,-19.897321007599,True
+bedok|3-room,2022-11,17.508930115284087,True
+bedok|3-room,2022-12,-0.6951137511759685,True
+bedok|3-room,2023-01,15.997768884330759,True
+bedok|3-room,2023-02,22.826176154399363,True
+bedok|3-room,2023-03,-25.824361651424738,True
+bedok|3-room,2023-04,-2.421084121167518,True
+bedok|3-room,2023-05,-28.514552387823006,True
+bedok|3-room,2023-06,-23.131026108875233,True
+bedok|3-room,2023-07,-0.0,False
+bedok|3-room,2023-08,-0.0,False
+bedok|3-room,2023-09,-0.0,False
+bedok|3-room,2023-10,-0.0,False
+bedok|3-room,2023-11,-0.0,False
+bedok|3-room,2023-12,-0.0,False
+bedok|3-room,2024-01,-0.0,False
+bedok|3-room,2024-02,-0.0,False
+bedok|3-room,2024-03,-0.0,False
+bedok|3-room,2024-04,-0.0,False
+bedok|4-room,2022-05,-3.2755772407823778,True
+bedok|4-room,2022-06,8.37607580619871,True
+bedok|4-room,2022-07,1.7669178074461842,True
+bedok|4-room,2022-08,-0.37184432644144055,True
+bedok|4-room,2022-09,-0.42198054368049814,True
+bedok|4-room,2022-10,5.3016646757430985,True
+bedok|4-room,2022-11,45.7747279009417,True
+bedok|4-room,2022-12,5.444846020420534,True
+bedok|4-room,2023-01,-12.910360355363967,True
+bedok|4-room,2023-02,5.102617328004548,True
+bedok|4-room,2023-03,-12.865796346911727,True
+bedok|4-room,2023-04,-24.468443511803255,True
+bedok|4-room,2023-05,-27.216362988137753,True
+bedok|4-room,2023-06,0.19764235132223756,True
+bedok|4-room,2023-07,0.0,False
+bedok|4-room,2023-08,0.0,False
+bedok|4-room,2023-09,0.0,False
+bedok|4-room,2023-10,0.0,False
+bedok|4-room,2023-11,0.0,False
+bedok|4-room,2023-12,0.0,False
+bedok|4-room,2024-01,0.0,False
+bedok|4-room,2024-02,0.0,False
+bedok|4-room,2024-03,0.0,False
+bedok|4-room,2024-04,0.0,False
+bedok|5-room,2022-05,-2.83726273698593,True
+bedok|5-room,2022-06,-6.701346236542143,True
+bedok|5-room,2022-07,0.0,True
+bedok|5-room,2022-08,6.369829625973711,True
+bedok|5-room,2022-09,0.33049906949987595,True
+bedok|5-room,2022-10,6.527892621795927,True
+bedok|5-room,2022-11,1.7518391411901986,True
+bedok|5-room,2022-12,2.527942387414181,True
+bedok|5-room,2023-01,39.688212030600305,True
+bedok|5-room,2023-02,14.450978736920597,True
+bedok|5-room,2023-03,-16.06414596133403,True
+bedok|5-room,2023-04,-2.7157104105228966,True
+bedok|5-room,2023-05,-32.389279049515395,True
+bedok|5-room,2023-06,16.79419998225233,True
+bedok|5-room,2023-07,0.0,False
+bedok|5-room,2023-08,0.0,False
+bedok|5-room,2023-09,0.0,False
+bedok|5-room,2023-10,0.0,False
+bedok|5-room,2023-11,0.0,False
+bedok|5-room,2023-12,0.0,False
+bedok|5-room,2024-01,0.0,False
+bedok|5-room,2024-02,0.0,False
+bedok|5-room,2024-03,0.0,False
+bedok|5-room,2024-04,0.0,False
+bedok|executive,2022-05,0.0,True
+bedok|executive,2022-06,0.0,True
+bedok|executive,2022-07,0.0,True
+bedok|executive,2022-08,0.0,True
+bedok|executive,2022-09,-1.7246494381937931,True
+bedok|executive,2022-10,0.0,True
+bedok|executive,2022-11,0.0,True
+bedok|executive,2022-12,16.222267074071464,True
+bedok|executive,2023-01,3.3513852456018793,True
+bedok|executive,2023-02,1.7860500082253632,True
+bedok|executive,2023-03,13.534181344520883,True
+bedok|executive,2023-04,-14.940203798986262,True
+bedok|executive,2023-05,-3.2038209976999443,True
+bedok|executive,2023-06,0.0,True
+bedok|executive,2023-07,0.0,False
+bedok|executive,2023-08,0.0,False
+bedok|executive,2023-09,0.0,False
+bedok|executive,2023-10,0.0,False
+bedok|executive,2023-11,0.0,False
+bedok|executive,2023-12,0.0,False
+bedok|executive,2024-01,0.0,False
+bedok|executive,2024-02,0.0,False
+bedok|executive,2024-03,0.0,False
+bedok|executive,2024-04,0.0,False
+bishan|3-room,2022-05,-1.6114625968699325,True
+bishan|3-room,2022-06,5.6498963232829436,True
+bishan|3-room,2022-07,0.0,True
+bishan|3-room,2022-08,5.840404114670117,True
+bishan|3-room,2022-09,3.268222527721616,True
+bishan|3-room,2022-10,8.47870683567301,True
+bishan|3-room,2022-11,15.257115830814495,True
+bishan|3-room,2022-12,-0.16211957867033833,True
+bishan|3-room,2023-01,5.245872452498458,True
+bishan|3-room,2023-02,8.493028656481583,True
+bishan|3-room,2023-03,0.7042098526494596,True
+bishan|3-room,2023-04,-2.937125045641191,True
+bishan|3-room,2023-05,7.393680686301158,True
+bishan|3-room,2023-06,-5.259911832554454,True
+bishan|3-room,2023-07,-0.0,False
+bishan|3-room,2023-08,-0.0,False
+bishan|3-room,2023-09,-0.0,False
+bishan|3-room,2023-10,-0.0,False
+bishan|3-room,2023-11,-0.0,False
+bishan|3-room,2023-12,-0.0,False
+bishan|3-room,2024-01,-0.0,False
+bishan|3-room,2024-02,-0.0,False
+bishan|3-room,2024-03,-0.0,False
+bishan|3-room,2024-04,-0.0,False
+bishan|4-room,2022-05,-2.420627667006053,True
+bishan|4-room,2022-06,-2.5716234450508755,True
+bishan|4-room,2022-07,5.6120624545882,True
+bishan|4-room,2022-08,-2.874284511439139,True
+bishan|4-room,2022-09,20.900393531928845,True
+bishan|4-room,2022-10,10.170754823823417,True
+bishan|4-room,2022-11,-11.554913751840342,True
+bishan|4-room,2022-12,0.8024504949440165,True
+bishan|4-room,2023-01,17.354019466239524,True
+bishan|4-room,2023-02,12.778558499709945,True
+bishan|4-room,2023-03,-36.7258168203517,True
+bishan|4-room,2023-04,6.733591173426016,True
+bishan|4-room,2023-05,2.8321200145844934,True
+bishan|4-room,2023-06,-28.52138972414199,True
+bishan|4-room,2023-07,-0.0,False
+bishan|4-room,2023-08,-0.0,False
+bishan|4-room,2023-09,-0.0,False
+bishan|4-room,2023-10,-0.0,False
+bishan|4-room,2023-11,-0.0,False
+bishan|4-room,2023-12,-0.0,False
+bishan|4-room,2024-01,-0.0,False
+bishan|4-room,2024-02,-0.0,False
+bishan|4-room,2024-03,-0.0,False
+bishan|4-room,2024-04,-0.0,False
+bishan|5-room,2022-05,-1.9784831535741385,True
+bishan|5-room,2022-06,-1.1457114049063133,True
+bishan|5-room,2022-07,0.0,True
+bishan|5-room,2022-08,0.0,True
+bishan|5-room,2022-09,-2.3756552484386737,True
+bishan|5-room,2022-10,-23.32473567294876,True
+bishan|5-room,2022-11,9.113779336631252,True
+bishan|5-room,2022-12,13.138194115208213,True
+bishan|5-room,2023-01,-13.031061503636781,True
+bishan|5-room,2023-02,8.181136067609966,True
+bishan|5-room,2023-03,-7.218742175887749,True
+bishan|5-room,2023-04,-2.1565975704603986,True
+bishan|5-room,2023-05,-7.431477423169237,True
+bishan|5-room,2023-06,-9.465236442760329,True
+bishan|5-room,2023-07,-0.0,False
+bishan|5-room,2023-08,-0.0,False
+bishan|5-room,2023-09,-0.0,False
+bishan|5-room,2023-10,-0.0,False
+bishan|5-room,2023-11,-0.0,False
+bishan|5-room,2023-12,-0.0,False
+bishan|5-room,2024-01,-0.0,False
+bishan|5-room,2024-02,-0.0,False
+bishan|5-room,2024-03,-0.0,False
+bishan|5-room,2024-04,-0.0,False
+bishan|executive,2022-05,0.0,True
+bishan|executive,2022-06,0.0,True
+bishan|executive,2022-07,0.0,True
+bishan|executive,2022-08,0.0,True
+bishan|executive,2022-09,0.0,True
+bishan|executive,2022-10,17.38014614130806,True
+bishan|executive,2022-11,0.0,True
+bishan|executive,2022-12,0.0,True
+bishan|executive,2023-01,0.0,True
+bishan|executive,2023-02,10.970798389425656,True
+bishan|executive,2023-03,0.0,True
+bishan|executive,2023-04,0.0,True
+bishan|executive,2023-05,-10.880429883480907,True
+bishan|executive,2023-06,-7.832410711740944,True
+bishan|executive,2023-07,-0.0,False
+bishan|executive,2023-08,-0.0,False
+bishan|executive,2023-09,-0.0,False
+bishan|executive,2023-10,-0.0,False
+bishan|executive,2023-11,-0.0,False
+bishan|executive,2023-12,-0.0,False
+bishan|executive,2024-01,-0.0,False
+bishan|executive,2024-02,-0.0,False
+bishan|executive,2024-03,-0.0,False
+bishan|executive,2024-04,-0.0,False
+bukit batok|2-room,2022-05,0.0,True
+bukit batok|2-room,2022-06,0.0,True
+bukit batok|2-room,2022-07,0.0,True
+bukit batok|2-room,2022-08,8.75113686041516,True
+bukit batok|2-room,2022-09,0.0,True
+bukit batok|2-room,2022-10,0.0,True
+bukit batok|2-room,2022-11,0.0,True
+bukit batok|2-room,2022-12,0.0,True
+bukit batok|2-room,2023-01,15.605129839520389,True
+bukit batok|2-room,2023-02,10.002613668481674,True
+bukit batok|2-room,2023-03,-20.06676992358834,True
+bukit batok|2-room,2023-04,0.0,True
+bukit batok|2-room,2023-05,-1.202816227156968,True
+bukit batok|2-room,2023-06,0.8637713683931056,True
+bukit batok|2-room,2023-07,0.0,False
+bukit batok|2-room,2023-08,0.0,False
+bukit batok|2-room,2023-09,0.0,False
+bukit batok|2-room,2023-10,0.0,False
+bukit batok|2-room,2023-11,0.0,False
+bukit batok|2-room,2023-12,0.0,False
+bukit batok|2-room,2024-01,0.0,False
+bukit batok|2-room,2024-02,0.0,False
+bukit batok|2-room,2024-03,0.0,False
+bukit batok|2-room,2024-04,0.0,False
+bukit batok|3-room,2022-05,0.0,True
+bukit batok|3-room,2022-06,6.7200863161180955,True
+bukit batok|3-room,2022-07,-0.7492988113036365,True
+bukit batok|3-room,2022-08,3.553538599435401,True
+bukit batok|3-room,2022-09,15.144037502201813,True
+bukit batok|3-room,2022-10,18.308607315406356,True
+bukit batok|3-room,2022-11,23.776910239894296,True
+bukit batok|3-room,2022-12,0.0,True
+bukit batok|3-room,2023-01,-37.834195047212056,True
+bukit batok|3-room,2023-02,17.60467153393685,True
+bukit batok|3-room,2023-03,1.2076480019974027,True
+bukit batok|3-room,2023-04,-27.79307367560484,True
+bukit batok|3-room,2023-05,-7.557705491062014,True
+bukit batok|3-room,2023-06,-10.834348787523002,True
+bukit batok|3-room,2023-07,-0.0,False
+bukit batok|3-room,2023-08,-0.0,False
+bukit batok|3-room,2023-09,-0.0,False
+bukit batok|3-room,2023-10,-0.0,False
+bukit batok|3-room,2023-11,-0.0,False
+bukit batok|3-room,2023-12,-0.0,False
+bukit batok|3-room,2024-01,-0.0,False
+bukit batok|3-room,2024-02,-0.0,False
+bukit batok|3-room,2024-03,-0.0,False
+bukit batok|3-room,2024-04,-0.0,False
+bukit batok|4-room,2022-05,-10.015423641203636,True
+bukit batok|4-room,2022-06,-0.45492708637508295,True
+bukit batok|4-room,2022-07,8.075859919115164,True
+bukit batok|4-room,2022-08,1.3734873511510297,True
+bukit batok|4-room,2022-09,-3.249792118182304,True
+bukit batok|4-room,2022-10,23.90967782164451,True
+bukit batok|4-room,2022-11,-0.4533502597711222,True
+bukit batok|4-room,2022-12,8.720771394584887,True
+bukit batok|4-room,2023-01,-11.89627351064418,True
+bukit batok|4-room,2023-02,-5.037346977411357,True
+bukit batok|4-room,2023-03,8.72779695985114,True
+bukit batok|4-room,2023-04,1.2527758700803882,True
+bukit batok|4-room,2023-05,-1.7343002903573517,True
+bukit batok|4-room,2023-06,-34.762203623600016,True
+bukit batok|4-room,2023-07,-0.0,False
+bukit batok|4-room,2023-08,-0.0,False
+bukit batok|4-room,2023-09,-0.0,False
+bukit batok|4-room,2023-10,-0.0,False
+bukit batok|4-room,2023-11,-0.0,False
+bukit batok|4-room,2023-12,-0.0,False
+bukit batok|4-room,2024-01,-0.0,False
+bukit batok|4-room,2024-02,-0.0,False
+bukit batok|4-room,2024-03,-0.0,False
+bukit batok|4-room,2024-04,-0.0,False
+bukit batok|5-room,2022-05,-1.2314597954127506,True
+bukit batok|5-room,2022-06,0.0,True
+bukit batok|5-room,2022-07,15.231894986687726,True
+bukit batok|5-room,2022-08,10.019990405458246,True
+bukit batok|5-room,2022-09,1.566615223655961,True
+bukit batok|5-room,2022-10,20.08477403864194,True
+bukit batok|5-room,2022-11,-5.7588888837932295,True
+bukit batok|5-room,2022-12,28.988137500921106,True
+bukit batok|5-room,2023-01,11.603747753323137,True
+bukit batok|5-room,2023-02,0.0,True
+bukit batok|5-room,2023-03,-16.429593772062553,True
+bukit batok|5-room,2023-04,2.1369822406399535,True
+bukit batok|5-room,2023-05,-0.7292181954620619,True
+bukit batok|5-room,2023-06,-24.19975031312976,True
+bukit batok|5-room,2023-07,-0.0,False
+bukit batok|5-room,2023-08,-0.0,False
+bukit batok|5-room,2023-09,-0.0,False
+bukit batok|5-room,2023-10,-0.0,False
+bukit batok|5-room,2023-11,-0.0,False
+bukit batok|5-room,2023-12,-0.0,False
+bukit batok|5-room,2024-01,-0.0,False
+bukit batok|5-room,2024-02,-0.0,False
+bukit batok|5-room,2024-03,-0.0,False
+bukit batok|5-room,2024-04,-0.0,False
+bukit batok|executive,2022-05,0.0,True
+bukit batok|executive,2022-06,2.0859936549833638,True
+bukit batok|executive,2022-07,0.0,True
+bukit batok|executive,2022-08,0.0,True
+bukit batok|executive,2022-09,0.0,True
+bukit batok|executive,2022-10,-4.442228842750392,True
+bukit batok|executive,2022-11,-7.951906947628038,True
+bukit batok|executive,2022-12,0.0,True
+bukit batok|executive,2023-01,-2.398928996617901,True
+bukit batok|executive,2023-02,-10.966018942796019,True
+bukit batok|executive,2023-03,-1.7436920549361958,True
+bukit batok|executive,2023-04,0.0,True
+bukit batok|executive,2023-05,21.0324280724065,True
+bukit batok|executive,2023-06,8.528441976421503,True
+bukit batok|executive,2023-07,0.0,False
+bukit batok|executive,2023-08,0.0,False
+bukit batok|executive,2023-09,0.0,False
+bukit batok|executive,2023-10,0.0,False
+bukit batok|executive,2023-11,0.0,False
+bukit batok|executive,2023-12,0.0,False
+bukit batok|executive,2024-01,0.0,False
+bukit batok|executive,2024-02,0.0,False
+bukit batok|executive,2024-03,0.0,False
+bukit batok|executive,2024-04,0.0,False
+bukit merah|1-room,2022-05,0.0,True
+bukit merah|1-room,2022-06,0.0,True
+bukit merah|1-room,2022-07,0.0,True
+bukit merah|1-room,2022-08,0.0,True
+bukit merah|1-room,2022-09,0.0,True
+bukit merah|1-room,2022-10,0.0,True
+bukit merah|1-room,2022-11,8.585360424708176,True
+bukit merah|1-room,2022-12,0.0,True
+bukit merah|1-room,2023-01,0.0,True
+bukit merah|1-room,2023-02,0.0,True
+bukit merah|1-room,2023-03,0.0,True
+bukit merah|1-room,2023-04,0.0,True
+bukit merah|1-room,2023-05,0.0,True
+bukit merah|1-room,2023-06,22.37802853618364,True
+bukit merah|1-room,2023-07,0.0,False
+bukit merah|1-room,2023-08,0.0,False
+bukit merah|1-room,2023-09,0.0,False
+bukit merah|1-room,2023-10,0.0,False
+bukit merah|1-room,2023-11,0.0,False
+bukit merah|1-room,2023-12,0.0,False
+bukit merah|1-room,2024-01,0.0,False
+bukit merah|1-room,2024-02,0.0,False
+bukit merah|1-room,2024-03,0.0,False
+bukit merah|1-room,2024-04,0.0,False
+bukit merah|2-room,2022-05,0.0,True
+bukit merah|2-room,2022-06,-1.832567396271572,True
+bukit merah|2-room,2022-07,4.937414902378529,True
+bukit merah|2-room,2022-08,0.0,True
+bukit merah|2-room,2022-09,0.0,True
+bukit merah|2-room,2022-10,3.23741610735532,True
+bukit merah|2-room,2022-11,3.22347796650806,True
+bukit merah|2-room,2022-12,0.0,True
+bukit merah|2-room,2023-01,-5.567961929743996,True
+bukit merah|2-room,2023-02,-4.271669696082891,True
+bukit merah|2-room,2023-03,0.0,True
+bukit merah|2-room,2023-04,2.8756541662727453,True
+bukit merah|2-room,2023-05,8.064621895317302,True
+bukit merah|2-room,2023-06,3.8550288642985504,True
+bukit merah|2-room,2023-07,0.0,False
+bukit merah|2-room,2023-08,0.0,False
+bukit merah|2-room,2023-09,0.0,False
+bukit merah|2-room,2023-10,0.0,False
+bukit merah|2-room,2023-11,0.0,False
+bukit merah|2-room,2023-12,0.0,False
+bukit merah|2-room,2024-01,0.0,False
+bukit merah|2-room,2024-02,0.0,False
+bukit merah|2-room,2024-03,0.0,False
+bukit merah|2-room,2024-04,0.0,False
+bukit merah|3-room,2022-05,1.8697531137272505,True
+bukit merah|3-room,2022-06,-5.5364042150151,True
+bukit merah|3-room,2022-07,5.144677567598182,True
+bukit merah|3-room,2022-08,-0.550677263398043,True
+bukit merah|3-room,2022-09,15.051603057390544,True
+bukit merah|3-room,2022-10,8.371995942458895,True
+bukit merah|3-room,2022-11,0.823713460190661,True
+bukit merah|3-room,2022-12,25.15666005375894,True
+bukit merah|3-room,2023-01,12.734549361136478,True
+bukit merah|3-room,2023-02,12.001785463790016,True
+bukit merah|3-room,2023-03,6.383719398807198,True
+bukit merah|3-room,2023-04,-3.5539687566815465,True
+bukit merah|3-room,2023-05,-14.561491881527354,True
+bukit merah|3-room,2023-06,-58.56178226706017,True
+bukit merah|3-room,2023-07,-0.0,False
+bukit merah|3-room,2023-08,-0.0,False
+bukit merah|3-room,2023-09,-0.0,False
+bukit merah|3-room,2023-10,-0.0,False
+bukit merah|3-room,2023-11,-0.0,False
+bukit merah|3-room,2023-12,-0.0,False
+bukit merah|3-room,2024-01,-0.0,False
+bukit merah|3-room,2024-02,-0.0,False
+bukit merah|3-room,2024-03,-0.0,False
+bukit merah|3-room,2024-04,-0.0,False
+bukit merah|4-room,2022-05,-10.179723233098953,True
+bukit merah|4-room,2022-06,11.972342159526152,True
+bukit merah|4-room,2022-07,3.3771957240371746,True
+bukit merah|4-room,2022-08,13.90916546278445,True
+bukit merah|4-room,2022-09,12.093725877630623,True
+bukit merah|4-room,2022-10,-6.811707571673458,True
+bukit merah|4-room,2022-11,18.23058271857153,True
+bukit merah|4-room,2022-12,19.501938265039854,True
+bukit merah|4-room,2023-01,-15.489375910052324,True
+bukit merah|4-room,2023-02,4.0025619759389075,True
+bukit merah|4-room,2023-03,-21.919320560765698,True
+bukit merah|4-room,2023-04,-21.150091178057142,True
+bukit merah|4-room,2023-05,-8.797725636475365,True
+bukit merah|4-room,2023-06,-14.017140412254076,True
+bukit merah|4-room,2023-07,-0.0,False
+bukit merah|4-room,2023-08,-0.0,False
+bukit merah|4-room,2023-09,-0.0,False
+bukit merah|4-room,2023-10,-0.0,False
+bukit merah|4-room,2023-11,-0.0,False
+bukit merah|4-room,2023-12,-0.0,False
+bukit merah|4-room,2024-01,-0.0,False
+bukit merah|4-room,2024-02,-0.0,False
+bukit merah|4-room,2024-03,-0.0,False
+bukit merah|4-room,2024-04,-0.0,False
+bukit merah|5-room,2022-05,0.0,True
+bukit merah|5-room,2022-06,-7.926465075522014,True
+bukit merah|5-room,2022-07,1.1706867236152176,True
+bukit merah|5-room,2022-08,-3.192195418625901,True
+bukit merah|5-room,2022-09,-6.670694170245904,True
+bukit merah|5-room,2022-10,3.7564123453062153,True
+bukit merah|5-room,2022-11,13.310481596492123,True
+bukit merah|5-room,2022-12,13.933197204230309,True
+bukit merah|5-room,2023-01,17.58805865593388,True
+bukit merah|5-room,2023-02,-7.596515601075516,True
+bukit merah|5-room,2023-03,-15.484418885571618,True
+bukit merah|5-room,2023-04,6.9778000023359885,True
+bukit merah|5-room,2023-05,-28.21860920905732,True
+bukit merah|5-room,2023-06,-8.83826121835023,True
+bukit merah|5-room,2023-07,-0.0,False
+bukit merah|5-room,2023-08,-0.0,False
+bukit merah|5-room,2023-09,-0.0,False
+bukit merah|5-room,2023-10,-0.0,False
+bukit merah|5-room,2023-11,-0.0,False
+bukit merah|5-room,2023-12,-0.0,False
+bukit merah|5-room,2024-01,-0.0,False
+bukit merah|5-room,2024-02,-0.0,False
+bukit merah|5-room,2024-03,-0.0,False
+bukit merah|5-room,2024-04,-0.0,False
+bukit panjang|2-room,2022-05,0.0,True
+bukit panjang|2-room,2022-06,0.0,True
+bukit panjang|2-room,2022-07,0.0,True
+bukit panjang|2-room,2022-08,0.0,True
+bukit panjang|2-room,2022-09,0.0,True
+bukit panjang|2-room,2022-10,0.0,True
+bukit panjang|2-room,2022-11,0.0,True
+bukit panjang|2-room,2022-12,5.664196083740072,True
+bukit panjang|2-room,2023-01,0.0,True
+bukit panjang|2-room,2023-02,6.0651922937160565,True
+bukit panjang|2-room,2023-03,0.0,True
+bukit panjang|2-room,2023-04,0.0,True
+bukit panjang|2-room,2023-05,0.0,True
+bukit panjang|2-room,2023-06,0.0,True
+bukit panjang|2-room,2023-07,0.0,False
+bukit panjang|2-room,2023-08,0.0,False
+bukit panjang|2-room,2023-09,0.0,False
+bukit panjang|2-room,2023-10,0.0,False
+bukit panjang|2-room,2023-11,0.0,False
+bukit panjang|2-room,2023-12,0.0,False
+bukit panjang|2-room,2024-01,0.0,False
+bukit panjang|2-room,2024-02,0.0,False
+bukit panjang|2-room,2024-03,0.0,False
+bukit panjang|2-room,2024-04,0.0,False
+bukit panjang|3-room,2022-05,6.0386609126241355,True
+bukit panjang|3-room,2022-06,0.0,True
+bukit panjang|3-room,2022-07,0.0,True
+bukit panjang|3-room,2022-08,0.0,True
+bukit panjang|3-room,2022-09,1.2251804013674157,True
+bukit panjang|3-room,2022-10,-7.448437426440706,True
+bukit panjang|3-room,2022-11,4.455206065808742,True
+bukit panjang|3-room,2022-12,-7.689763146332555,True
+bukit panjang|3-room,2023-01,0.0,True
+bukit panjang|3-room,2023-02,17.95175500815323,True
+bukit panjang|3-room,2023-03,-7.779251721715778,True
+bukit panjang|3-room,2023-04,15.271281564869724,True
+bukit panjang|3-room,2023-05,6.215839495790792,True
+bukit panjang|3-room,2023-06,-7.5797587138041145,True
+bukit panjang|3-room,2023-07,-0.0,False
+bukit panjang|3-room,2023-08,-0.0,False
+bukit panjang|3-room,2023-09,-0.0,False
+bukit panjang|3-room,2023-10,-0.0,False
+bukit panjang|3-room,2023-11,-0.0,False
+bukit panjang|3-room,2023-12,-0.0,False
+bukit panjang|3-room,2024-01,-0.0,False
+bukit panjang|3-room,2024-02,-0.0,False
+bukit panjang|3-room,2024-03,-0.0,False
+bukit panjang|3-room,2024-04,-0.0,False
+bukit panjang|4-room,2022-05,2.660098187312705,True
+bukit panjang|4-room,2022-06,8.207657848641606,True
+bukit panjang|4-room,2022-07,6.724009021714374,True
+bukit panjang|4-room,2022-08,2.834031401235329,True
+bukit panjang|4-room,2022-09,18.690956469907594,True
+bukit panjang|4-room,2022-10,11.385370531437461,True
+bukit panjang|4-room,2022-11,7.14204267598495,True
+bukit panjang|4-room,2022-12,9.63505762699899,True
+bukit panjang|4-room,2023-01,-0.7988594222262877,True
+bukit panjang|4-room,2023-02,-12.031828984496551,True
+bukit panjang|4-room,2023-03,4.630830600264939,True
+bukit panjang|4-room,2023-04,8.438398079575574,True
+bukit panjang|4-room,2023-05,-24.59818484958716,True
+bukit panjang|4-room,2023-06,-27.803565527387573,True
+bukit panjang|4-room,2023-07,-0.0,False
+bukit panjang|4-room,2023-08,-0.0,False
+bukit panjang|4-room,2023-09,-0.0,False
+bukit panjang|4-room,2023-10,-0.0,False
+bukit panjang|4-room,2023-11,-0.0,False
+bukit panjang|4-room,2023-12,-0.0,False
+bukit panjang|4-room,2024-01,-0.0,False
+bukit panjang|4-room,2024-02,-0.0,False
+bukit panjang|4-room,2024-03,-0.0,False
+bukit panjang|4-room,2024-04,-0.0,False
+bukit panjang|5-room,2022-05,6.450218578260912,True
+bukit panjang|5-room,2022-06,0.0,True
+bukit panjang|5-room,2022-07,-0.8937719638741395,True
+bukit panjang|5-room,2022-08,6.44044379767688,True
+bukit panjang|5-room,2022-09,6.568474298103255,True
+bukit panjang|5-room,2022-10,12.270687312500884,True
+bukit panjang|5-room,2022-11,9.277696440667004,True
+bukit panjang|5-room,2022-12,19.086486791550126,True
+bukit panjang|5-room,2023-01,0.25208448007180545,True
+bukit panjang|5-room,2023-02,10.170625521122336,True
+bukit panjang|5-room,2023-03,5.548853892936386,True
+bukit panjang|5-room,2023-04,3.27216936266646,True
+bukit panjang|5-room,2023-05,-20.17962575761782,True
+bukit panjang|5-room,2023-06,-32.833101652333575,True
+bukit panjang|5-room,2023-07,-0.0,False
+bukit panjang|5-room,2023-08,-0.0,False
+bukit panjang|5-room,2023-09,-0.0,False
+bukit panjang|5-room,2023-10,-0.0,False
+bukit panjang|5-room,2023-11,-0.0,False
+bukit panjang|5-room,2023-12,-0.0,False
+bukit panjang|5-room,2024-01,-0.0,False
+bukit panjang|5-room,2024-02,-0.0,False
+bukit panjang|5-room,2024-03,-0.0,False
+bukit panjang|5-room,2024-04,-0.0,False
+bukit panjang|executive,2022-05,0.1398927141335668,True
+bukit panjang|executive,2022-06,-3.490709851010753,True
+bukit panjang|executive,2022-07,2.837565314898448,True
+bukit panjang|executive,2022-08,0.0,True
+bukit panjang|executive,2022-09,-1.8115730322823813,True
+bukit panjang|executive,2022-10,11.228045335309496,True
+bukit panjang|executive,2022-11,0.0,True
+bukit panjang|executive,2022-12,6.735618884560926,True
+bukit panjang|executive,2023-01,7.333349104436784,True
+bukit panjang|executive,2023-02,0.0,True
+bukit panjang|executive,2023-03,0.0,True
+bukit panjang|executive,2023-04,-13.433132542734379,True
+bukit panjang|executive,2023-05,-7.6747906406442015,True
+bukit panjang|executive,2023-06,14.543295049230098,True
+bukit panjang|executive,2023-07,0.0,False
+bukit panjang|executive,2023-08,0.0,False
+bukit panjang|executive,2023-09,0.0,False
+bukit panjang|executive,2023-10,0.0,False
+bukit panjang|executive,2023-11,0.0,False
+bukit panjang|executive,2023-12,0.0,False
+bukit panjang|executive,2024-01,0.0,False
+bukit panjang|executive,2024-02,0.0,False
+bukit panjang|executive,2024-03,0.0,False
+bukit panjang|executive,2024-04,0.0,False
+bukit timah|3-room,2022-05,0.0,True
+bukit timah|3-room,2022-06,0.0,True
+bukit timah|3-room,2022-07,0.0,True
+bukit timah|3-room,2022-08,0.0,True
+bukit timah|3-room,2022-09,0.0,True
+bukit timah|3-room,2022-10,0.0,True
+bukit timah|3-room,2022-11,0.0,True
+bukit timah|3-room,2022-12,0.0,True
+bukit timah|3-room,2023-01,0.0,True
+bukit timah|3-room,2023-02,3.3080205975822485,True
+bukit timah|3-room,2023-03,6.635595590792122,True
+bukit timah|3-room,2023-04,0.0,True
+bukit timah|3-room,2023-05,-4.958558580451732,True
+bukit timah|3-room,2023-06,-2.9736230994774737,True
+bukit timah|3-room,2023-07,-0.0,False
+bukit timah|3-room,2023-08,-0.0,False
+bukit timah|3-room,2023-09,-0.0,False
+bukit timah|3-room,2023-10,-0.0,False
+bukit timah|3-room,2023-11,-0.0,False
+bukit timah|3-room,2023-12,-0.0,False
+bukit timah|3-room,2024-01,-0.0,False
+bukit timah|3-room,2024-02,-0.0,False
+bukit timah|3-room,2024-03,-0.0,False
+bukit timah|3-room,2024-04,-0.0,False
+bukit timah|4-room,2022-05,0.0,True
+bukit timah|4-room,2022-06,0.0,True
+bukit timah|4-room,2022-07,0.0,True
+bukit timah|4-room,2022-08,0.0,True
+bukit timah|4-room,2022-09,0.0,True
+bukit timah|4-room,2022-10,0.0,True
+bukit timah|4-room,2022-11,0.0,True
+bukit timah|4-room,2022-12,0.0,True
+bukit timah|4-room,2023-01,3.159538825434439,True
+bukit timah|4-room,2023-02,0.0,True
+bukit timah|4-room,2023-03,0.0,True
+bukit timah|4-room,2023-04,0.0,True
+bukit timah|4-room,2023-05,-7.603128526679954,True
+bukit timah|4-room,2023-06,1.3370524295413704,True
+bukit timah|4-room,2023-07,0.0,False
+bukit timah|4-room,2023-08,0.0,False
+bukit timah|4-room,2023-09,0.0,False
+bukit timah|4-room,2023-10,0.0,False
+bukit timah|4-room,2023-11,0.0,False
+bukit timah|4-room,2023-12,0.0,False
+bukit timah|4-room,2024-01,0.0,False
+bukit timah|4-room,2024-02,0.0,False
+bukit timah|4-room,2024-03,0.0,False
+bukit timah|4-room,2024-04,0.0,False
+bukit timah|5-room,2022-05,0.0,True
+bukit timah|5-room,2022-06,0.0,True
+bukit timah|5-room,2022-07,0.0,True
+bukit timah|5-room,2022-08,0.0,True
+bukit timah|5-room,2022-09,0.0,True
+bukit timah|5-room,2022-10,0.0,True
+bukit timah|5-room,2022-11,-0.9828441169504254,True
+bukit timah|5-room,2022-12,0.0,True
+bukit timah|5-room,2023-01,-21.352885557878103,True
+bukit timah|5-room,2023-02,0.0,True
+bukit timah|5-room,2023-03,22.90539456272163,True
+bukit timah|5-room,2023-04,0.0,True
+bukit timah|5-room,2023-05,-19.847080087305557,True
+bukit timah|5-room,2023-06,0.0,True
+bukit timah|5-room,2023-07,0.0,False
+bukit timah|5-room,2023-08,0.0,False
+bukit timah|5-room,2023-09,0.0,False
+bukit timah|5-room,2023-10,0.0,False
+bukit timah|5-room,2023-11,0.0,False
+bukit timah|5-room,2023-12,0.0,False
+bukit timah|5-room,2024-01,0.0,False
+bukit timah|5-room,2024-02,0.0,False
+bukit timah|5-room,2024-03,0.0,False
+bukit timah|5-room,2024-04,0.0,False
+bukit timah|executive,2022-05,0.0,True
+bukit timah|executive,2022-06,0.0,True
+bukit timah|executive,2022-07,0.0,True
+bukit timah|executive,2022-08,0.0,True
+bukit timah|executive,2022-09,0.0,True
+bukit timah|executive,2022-10,0.0,True
+bukit timah|executive,2022-11,0.0,True
+bukit timah|executive,2022-12,0.0,True
+bukit timah|executive,2023-01,0.0,True
+bukit timah|executive,2023-02,0.0,True
+bukit timah|executive,2023-03,0.0,True
+bukit timah|executive,2023-04,0.0,True
+bukit timah|executive,2023-05,6.300020693736805,True
+bukit timah|executive,2023-06,0.0,True
+bukit timah|executive,2023-07,0.0,False
+bukit timah|executive,2023-08,0.0,False
+bukit timah|executive,2023-09,0.0,False
+bukit timah|executive,2023-10,0.0,False
+bukit timah|executive,2023-11,0.0,False
+bukit timah|executive,2023-12,0.0,False
+bukit timah|executive,2024-01,0.0,False
+bukit timah|executive,2024-02,0.0,False
+bukit timah|executive,2024-03,0.0,False
+bukit timah|executive,2024-04,0.0,False
+central|2-room,2022-05,0.0,True
+central|2-room,2022-06,0.0,True
+central|2-room,2022-07,0.0,True
+central|2-room,2022-08,0.0,True
+central|2-room,2022-09,0.0,True
+central|2-room,2022-10,0.0,True
+central|2-room,2022-11,0.0,True
+central|2-room,2022-12,0.0,True
+central|2-room,2023-01,0.0,True
+central|2-room,2023-02,0.0,True
+central|2-room,2023-03,0.0,True
+central|2-room,2023-04,0.0,True
+central|2-room,2023-05,-11.868073886097646,True
+central|2-room,2023-06,2.981218381576922,True
+central|2-room,2023-07,0.0,False
+central|2-room,2023-08,0.0,False
+central|2-room,2023-09,0.0,False
+central|2-room,2023-10,0.0,False
+central|2-room,2023-11,0.0,False
+central|2-room,2023-12,0.0,False
+central|2-room,2024-01,0.0,False
+central|2-room,2024-02,0.0,False
+central|2-room,2024-03,0.0,False
+central|2-room,2024-04,0.0,False
+central|3-room,2022-05,5.201304650901988,True
+central|3-room,2022-06,0.0,True
+central|3-room,2022-07,-2.6144526104934753,True
+central|3-room,2022-08,0.5560807490145334,True
+central|3-room,2022-09,-4.838350423963453,True
+central|3-room,2022-10,11.066460727138107,True
+central|3-room,2022-11,-8.728251819100052,True
+central|3-room,2022-12,-1.2846920274642288,True
+central|3-room,2023-01,-10.289121324256246,True
+central|3-room,2023-02,-4.5435684771610445,True
+central|3-room,2023-03,-39.348141611504325,True
+central|3-room,2023-04,-19.116336967780075,True
+central|3-room,2023-05,4.631962332244788,True
+central|3-room,2023-06,4.540086231725783,True
+central|3-room,2023-07,0.0,False
+central|3-room,2023-08,0.0,False
+central|3-room,2023-09,0.0,False
+central|3-room,2023-10,0.0,False
+central|3-room,2023-11,0.0,False
+central|3-room,2023-12,0.0,False
+central|3-room,2024-01,0.0,False
+central|3-room,2024-02,0.0,False
+central|3-room,2024-03,0.0,False
+central|3-room,2024-04,0.0,False
+central|4-room,2022-05,9.377902786535884,True
+central|4-room,2022-06,0.0,True
+central|4-room,2022-07,-2.9202213129866936,True
+central|4-room,2022-08,-2.6837802197024287,True
+central|4-room,2022-09,-0.2595406379376313,True
+central|4-room,2022-10,7.7329184874494565,True
+central|4-room,2022-11,9.277849386722092,True
+central|4-room,2022-12,29.04175741294551,True
+central|4-room,2023-01,29.47084453347821,True
+central|4-room,2023-02,4.086761784043716,True
+central|4-room,2023-03,9.839211560739844,True
+central|4-room,2023-04,-0.341704495450796,True
+central|4-room,2023-05,3.110342441487533,True
+central|4-room,2023-06,-4.128446609490967,True
+central|4-room,2023-07,-0.0,False
+central|4-room,2023-08,-0.0,False
+central|4-room,2023-09,-0.0,False
+central|4-room,2023-10,-0.0,False
+central|4-room,2023-11,-0.0,False
+central|4-room,2023-12,-0.0,False
+central|4-room,2024-01,-0.0,False
+central|4-room,2024-02,-0.0,False
+central|4-room,2024-03,-0.0,False
+central|4-room,2024-04,-0.0,False
+central|5-room,2022-05,0.0,True
+central|5-room,2022-06,0.36471545855661025,True
+central|5-room,2022-07,0.0,True
+central|5-room,2022-08,-2.7846191106229585,True
+central|5-room,2022-09,1.1298080986297456,True
+central|5-room,2022-10,5.2139336964562695,True
+central|5-room,2022-11,0.0,True
+central|5-room,2022-12,0.0,True
+central|5-room,2023-01,3.1462255274062145,True
+central|5-room,2023-02,12.33187730010983,True
+central|5-room,2023-03,-4.932674497563021,True
+central|5-room,2023-04,2.296263055280611,True
+central|5-room,2023-05,0.0,True
+central|5-room,2023-06,0.0,True
+central|5-room,2023-07,0.0,False
+central|5-room,2023-08,0.0,False
+central|5-room,2023-09,0.0,False
+central|5-room,2023-10,0.0,False
+central|5-room,2023-11,0.0,False
+central|5-room,2023-12,0.0,False
+central|5-room,2024-01,0.0,False
+central|5-room,2024-02,0.0,False
+central|5-room,2024-03,0.0,False
+central|5-room,2024-04,0.0,False
+choa chu kang|2-room,2022-05,0.0,True
+choa chu kang|2-room,2022-06,0.0,True
+choa chu kang|2-room,2022-07,0.0,True
+choa chu kang|2-room,2022-08,0.0,True
+choa chu kang|2-room,2022-09,0.0,True
+choa chu kang|2-room,2022-10,0.0,True
+choa chu kang|2-room,2022-11,0.0,True
+choa chu kang|2-room,2022-12,0.0,True
+choa chu kang|2-room,2023-01,0.0,True
+choa chu kang|2-room,2023-02,-6.275328527218301,True
+choa chu kang|2-room,2023-03,0.0,True
+choa chu kang|2-room,2023-04,0.0,True
+choa chu kang|2-room,2023-05,0.0,True
+choa chu kang|2-room,2023-06,0.0,True
+choa chu kang|2-room,2023-07,0.0,False
+choa chu kang|2-room,2023-08,0.0,False
+choa chu kang|2-room,2023-09,0.0,False
+choa chu kang|2-room,2023-10,0.0,False
+choa chu kang|2-room,2023-11,0.0,False
+choa chu kang|2-room,2023-12,0.0,False
+choa chu kang|2-room,2024-01,0.0,False
+choa chu kang|2-room,2024-02,0.0,False
+choa chu kang|2-room,2024-03,0.0,False
+choa chu kang|2-room,2024-04,0.0,False
+choa chu kang|3-room,2022-05,0.0,True
+choa chu kang|3-room,2022-06,0.0,True
+choa chu kang|3-room,2022-07,0.0,True
+choa chu kang|3-room,2022-08,-1.55644189293027,True
+choa chu kang|3-room,2022-09,0.0,True
+choa chu kang|3-room,2022-10,6.792967485940496,True
+choa chu kang|3-room,2022-11,8.717896039148151,True
+choa chu kang|3-room,2022-12,-3.7980537159259087,True
+choa chu kang|3-room,2023-01,9.089187153059488,True
+choa chu kang|3-room,2023-02,-4.182589513246768,True
+choa chu kang|3-room,2023-03,-7.02282088922343,True
+choa chu kang|3-room,2023-04,-17.169736796384257,True
+choa chu kang|3-room,2023-05,0.0,True
+choa chu kang|3-room,2023-06,4.018424722922514,True
+choa chu kang|3-room,2023-07,0.0,False
+choa chu kang|3-room,2023-08,0.0,False
+choa chu kang|3-room,2023-09,0.0,False
+choa chu kang|3-room,2023-10,0.0,False
+choa chu kang|3-room,2023-11,0.0,False
+choa chu kang|3-room,2023-12,0.0,False
+choa chu kang|3-room,2024-01,0.0,False
+choa chu kang|3-room,2024-02,0.0,False
+choa chu kang|3-room,2024-03,0.0,False
+choa chu kang|3-room,2024-04,0.0,False
+choa chu kang|4-room,2022-05,-3.3893576291539316,True
+choa chu kang|4-room,2022-06,0.0,True
+choa chu kang|4-room,2022-07,-4.748352373709807,True
+choa chu kang|4-room,2022-08,0.15690546071208866,True
+choa chu kang|4-room,2022-09,-0.4101411438632713,True
+choa chu kang|4-room,2022-10,22.21875130488041,True
+choa chu kang|4-room,2022-11,5.189648459927108,True
+choa chu kang|4-room,2022-12,4.11316779992926,True
+choa chu kang|4-room,2023-01,-3.0506633612301473,True
+choa chu kang|4-room,2023-02,11.702098083558468,True
+choa chu kang|4-room,2023-03,-14.392159950995595,True
+choa chu kang|4-room,2023-04,-5.822310992377672,True
+choa chu kang|4-room,2023-05,-10.125257555949611,True
+choa chu kang|4-room,2023-06,-32.0646601279606,True
+choa chu kang|4-room,2023-07,-0.0,False
+choa chu kang|4-room,2023-08,-0.0,False
+choa chu kang|4-room,2023-09,-0.0,False
+choa chu kang|4-room,2023-10,-0.0,False
+choa chu kang|4-room,2023-11,-0.0,False
+choa chu kang|4-room,2023-12,-0.0,False
+choa chu kang|4-room,2024-01,-0.0,False
+choa chu kang|4-room,2024-02,-0.0,False
+choa chu kang|4-room,2024-03,-0.0,False
+choa chu kang|4-room,2024-04,-0.0,False
+choa chu kang|5-room,2022-05,-4.034395953161109,True
+choa chu kang|5-room,2022-06,0.0,True
+choa chu kang|5-room,2022-07,-2.3027563008877605,True
+choa chu kang|5-room,2022-08,-3.8300551828330502,True
+choa chu kang|5-room,2022-09,-6.032155507725064,True
+choa chu kang|5-room,2022-10,-6.2341207830393355,True
+choa chu kang|5-room,2022-11,-0.2999739455153308,True
+choa chu kang|5-room,2022-12,-11.652661048696485,True
+choa chu kang|5-room,2023-01,11.230344424870248,True
+choa chu kang|5-room,2023-02,-3.4743141809527605,True
+choa chu kang|5-room,2023-03,-10.241373710913315,True
+choa chu kang|5-room,2023-04,-25.316283413822312,True
+choa chu kang|5-room,2023-05,-12.505270287033506,True
+choa chu kang|5-room,2023-06,5.321585032698775,True
+choa chu kang|5-room,2023-07,0.0,False
+choa chu kang|5-room,2023-08,0.0,False
+choa chu kang|5-room,2023-09,0.0,False
+choa chu kang|5-room,2023-10,0.0,False
+choa chu kang|5-room,2023-11,0.0,False
+choa chu kang|5-room,2023-12,0.0,False
+choa chu kang|5-room,2024-01,0.0,False
+choa chu kang|5-room,2024-02,0.0,False
+choa chu kang|5-room,2024-03,0.0,False
+choa chu kang|5-room,2024-04,0.0,False
+choa chu kang|executive,2022-05,0.0,True
+choa chu kang|executive,2022-06,0.0,True
+choa chu kang|executive,2022-07,0.0,True
+choa chu kang|executive,2022-08,0.0,True
+choa chu kang|executive,2022-09,-4.1775854475059155,True
+choa chu kang|executive,2022-10,-5.325098923901818,True
+choa chu kang|executive,2022-11,-7.288310235317921,True
+choa chu kang|executive,2022-12,15.437499598885148,True
+choa chu kang|executive,2023-01,14.639385638379352,True
+choa chu kang|executive,2023-02,-6.5096819868497,True
+choa chu kang|executive,2023-03,-17.27227966431338,True
+choa chu kang|executive,2023-04,0.0,True
+choa chu kang|executive,2023-05,11.303024536362958,True
+choa chu kang|executive,2023-06,6.245510290726024,True
+choa chu kang|executive,2023-07,0.0,False
+choa chu kang|executive,2023-08,0.0,False
+choa chu kang|executive,2023-09,0.0,False
+choa chu kang|executive,2023-10,0.0,False
+choa chu kang|executive,2023-11,0.0,False
+choa chu kang|executive,2023-12,0.0,False
+choa chu kang|executive,2024-01,0.0,False
+choa chu kang|executive,2024-02,0.0,False
+choa chu kang|executive,2024-03,0.0,False
+choa chu kang|executive,2024-04,0.0,False
+clementi|3-room,2022-05,1.9912830472763494,True
+clementi|3-room,2022-06,10.232672222939957,True
+clementi|3-room,2022-07,-7.334375783601441,True
+clementi|3-room,2022-08,0.277381052782224,True
+clementi|3-room,2022-09,-11.056870011223515,True
+clementi|3-room,2022-10,16.957291455442082,True
+clementi|3-room,2022-11,21.123188230547278,True
+clementi|3-room,2022-12,2.2112392285304736,True
+clementi|3-room,2023-01,27.025288462723665,True
+clementi|3-room,2023-02,-8.78888228467665,True
+clementi|3-room,2023-03,-31.64924464288902,True
+clementi|3-room,2023-04,-0.02181054748511383,True
+clementi|3-room,2023-05,-24.94676585662085,True
+clementi|3-room,2023-06,-46.14257110014389,True
+clementi|3-room,2023-07,-0.0,False
+clementi|3-room,2023-08,-0.0,False
+clementi|3-room,2023-09,-0.0,False
+clementi|3-room,2023-10,-0.0,False
+clementi|3-room,2023-11,-0.0,False
+clementi|3-room,2023-12,-0.0,False
+clementi|3-room,2024-01,-0.0,False
+clementi|3-room,2024-02,-0.0,False
+clementi|3-room,2024-03,-0.0,False
+clementi|3-room,2024-04,-0.0,False
+clementi|4-room,2022-05,1.3552048454593393,True
+clementi|4-room,2022-06,4.322892499594511,True
+clementi|4-room,2022-07,1.3292820337920805,True
+clementi|4-room,2022-08,4.495412162935784,True
+clementi|4-room,2022-09,3.0649322040546494,True
+clementi|4-room,2022-10,15.720484279491322,True
+clementi|4-room,2022-11,-3.073495067751242,True
+clementi|4-room,2022-12,7.363468064977737,True
+clementi|4-room,2023-01,-15.465413687700726,True
+clementi|4-room,2023-02,1.7080690064570738,True
+clementi|4-room,2023-03,-24.08132858543757,True
+clementi|4-room,2023-04,-30.43589266699325,True
+clementi|4-room,2023-05,-48.2644850983769,True
+clementi|4-room,2023-06,15.810093223201385,True
+clementi|4-room,2023-07,0.0,False
+clementi|4-room,2023-08,0.0,False
+clementi|4-room,2023-09,0.0,False
+clementi|4-room,2023-10,0.0,False
+clementi|4-room,2023-11,0.0,False
+clementi|4-room,2023-12,0.0,False
+clementi|4-room,2024-01,0.0,False
+clementi|4-room,2024-02,0.0,False
+clementi|4-room,2024-03,0.0,False
+clementi|4-room,2024-04,0.0,False
+clementi|5-room,2022-05,9.028545238520548,True
+clementi|5-room,2022-06,4.273505764004605,True
+clementi|5-room,2022-07,0.0,True
+clementi|5-room,2022-08,5.288477198026178,True
+clementi|5-room,2022-09,0.0,True
+clementi|5-room,2022-10,0.5760658887623806,True
+clementi|5-room,2022-11,-5.076174398698661,True
+clementi|5-room,2022-12,0.0,True
+clementi|5-room,2023-01,3.687354135804784,True
+clementi|5-room,2023-02,1.9104490852757299,True
+clementi|5-room,2023-03,-14.636754231741712,True
+clementi|5-room,2023-04,0.0,True
+clementi|5-room,2023-05,-10.771935926673832,True
+clementi|5-room,2023-06,7.371548093889817,True
+clementi|5-room,2023-07,0.0,False
+clementi|5-room,2023-08,0.0,False
+clementi|5-room,2023-09,0.0,False
+clementi|5-room,2023-10,0.0,False
+clementi|5-room,2023-11,0.0,False
+clementi|5-room,2023-12,0.0,False
+clementi|5-room,2024-01,0.0,False
+clementi|5-room,2024-02,0.0,False
+clementi|5-room,2024-03,0.0,False
+clementi|5-room,2024-04,0.0,False
+clementi|executive,2022-05,0.0,True
+clementi|executive,2022-06,0.0,True
+clementi|executive,2022-07,0.0,True
+clementi|executive,2022-08,0.0,True
+clementi|executive,2022-09,0.20856044571975146,True
+clementi|executive,2022-10,0.0,True
+clementi|executive,2022-11,0.0,True
+clementi|executive,2022-12,0.0,True
+clementi|executive,2023-01,0.0,True
+clementi|executive,2023-02,0.0,True
+clementi|executive,2023-03,0.0,True
+clementi|executive,2023-04,0.0,True
+clementi|executive,2023-05,1.103369525416022,True
+clementi|executive,2023-06,0.0,True
+clementi|executive,2023-07,0.0,False
+clementi|executive,2023-08,0.0,False
+clementi|executive,2023-09,0.0,False
+clementi|executive,2023-10,0.0,False
+clementi|executive,2023-11,0.0,False
+clementi|executive,2023-12,0.0,False
+clementi|executive,2024-01,0.0,False
+clementi|executive,2024-02,0.0,False
+clementi|executive,2024-03,0.0,False
+clementi|executive,2024-04,0.0,False
+geylang|2-room,2022-05,0.0,True
+geylang|2-room,2022-06,0.0,True
+geylang|2-room,2022-07,-3.838017177027982,True
+geylang|2-room,2022-08,-0.99702526092547,True
+geylang|2-room,2022-09,0.0,True
+geylang|2-room,2022-10,0.0,True
+geylang|2-room,2022-11,9.578748573983797,True
+geylang|2-room,2022-12,0.0,True
+geylang|2-room,2023-01,0.0,True
+geylang|2-room,2023-02,-3.5510175360762797,True
+geylang|2-room,2023-03,-11.163654769300008,True
+geylang|2-room,2023-04,0.0,True
+geylang|2-room,2023-05,0.0,True
+geylang|2-room,2023-06,-4.036688971610524,True
+geylang|2-room,2023-07,-0.0,False
+geylang|2-room,2023-08,-0.0,False
+geylang|2-room,2023-09,-0.0,False
+geylang|2-room,2023-10,-0.0,False
+geylang|2-room,2023-11,-0.0,False
+geylang|2-room,2023-12,-0.0,False
+geylang|2-room,2024-01,-0.0,False
+geylang|2-room,2024-02,-0.0,False
+geylang|2-room,2024-03,-0.0,False
+geylang|2-room,2024-04,-0.0,False
+geylang|3-room,2022-05,-15.033139531891525,True
+geylang|3-room,2022-06,2.748805401168467,True
+geylang|3-room,2022-07,-9.206516923822063,True
+geylang|3-room,2022-08,4.693476574753105,True
+geylang|3-room,2022-09,14.561872987094281,True
+geylang|3-room,2022-10,11.718200616677759,True
+geylang|3-room,2022-11,6.910038636282462,True
+geylang|3-room,2022-12,6.623499419151655,True
+geylang|3-room,2023-01,-2.9265366477358628,True
+geylang|3-room,2023-02,-0.45573299892911384,True
+geylang|3-room,2023-03,-6.904476343463403,True
+geylang|3-room,2023-04,-0.36308960122067724,True
+geylang|3-room,2023-05,-3.2194213081654213,True
+geylang|3-room,2023-06,-14.529177964303162,True
+geylang|3-room,2023-07,-0.0,False
+geylang|3-room,2023-08,-0.0,False
+geylang|3-room,2023-09,-0.0,False
+geylang|3-room,2023-10,-0.0,False
+geylang|3-room,2023-11,-0.0,False
+geylang|3-room,2023-12,-0.0,False
+geylang|3-room,2024-01,-0.0,False
+geylang|3-room,2024-02,-0.0,False
+geylang|3-room,2024-03,-0.0,False
+geylang|3-room,2024-04,-0.0,False
+geylang|4-room,2022-05,-3.1010264427247516,True
+geylang|4-room,2022-06,0.0,True
+geylang|4-room,2022-07,0.0,True
+geylang|4-room,2022-08,3.248492075951982,True
+geylang|4-room,2022-09,8.895697648794012,True
+geylang|4-room,2022-10,-4.369999909173192,True
+geylang|4-room,2022-11,12.076473311303003,True
+geylang|4-room,2022-12,-2.149495459491316,True
+geylang|4-room,2023-01,-14.340400064541862,True
+geylang|4-room,2023-02,3.966768169744995,True
+geylang|4-room,2023-03,-26.368120046776202,True
+geylang|4-room,2023-04,-26.53341369840255,True
+geylang|4-room,2023-05,24.892762622754894,True
+geylang|4-room,2023-06,-7.643727072153307,True
+geylang|4-room,2023-07,-0.0,False
+geylang|4-room,2023-08,-0.0,False
+geylang|4-room,2023-09,-0.0,False
+geylang|4-room,2023-10,-0.0,False
+geylang|4-room,2023-11,-0.0,False
+geylang|4-room,2023-12,-0.0,False
+geylang|4-room,2024-01,-0.0,False
+geylang|4-room,2024-02,-0.0,False
+geylang|4-room,2024-03,-0.0,False
+geylang|4-room,2024-04,-0.0,False
+geylang|5-room,2022-05,5.729786833954391,True
+geylang|5-room,2022-06,0.5758354871937891,True
+geylang|5-room,2022-07,0.0,True
+geylang|5-room,2022-08,0.0,True
+geylang|5-room,2022-09,0.0,True
+geylang|5-room,2022-10,0.0,True
+geylang|5-room,2022-11,0.0,True
+geylang|5-room,2022-12,0.0,True
+geylang|5-room,2023-01,-4.707202476278342,True
+geylang|5-room,2023-02,0.0,True
+geylang|5-room,2023-03,-10.232646331719636,True
+geylang|5-room,2023-04,6.511464988018261,True
+geylang|5-room,2023-05,4.23527890448762,True
+geylang|5-room,2023-06,0.0,True
+geylang|5-room,2023-07,0.0,False
+geylang|5-room,2023-08,0.0,False
+geylang|5-room,2023-09,0.0,False
+geylang|5-room,2023-10,0.0,False
+geylang|5-room,2023-11,0.0,False
+geylang|5-room,2023-12,0.0,False
+geylang|5-room,2024-01,0.0,False
+geylang|5-room,2024-02,0.0,False
+geylang|5-room,2024-03,0.0,False
+geylang|5-room,2024-04,0.0,False
+hougang|2-room,2022-05,0.0,True
+hougang|2-room,2022-06,0.0,True
+hougang|2-room,2022-07,0.0,True
+hougang|2-room,2022-08,0.0,True
+hougang|2-room,2022-09,0.0,True
+hougang|2-room,2022-10,0.0,True
+hougang|2-room,2022-11,0.0,True
+hougang|2-room,2022-12,13.039486299948528,True
+hougang|2-room,2023-01,0.0,True
+hougang|2-room,2023-02,0.0,True
+hougang|2-room,2023-03,8.063108919968071,True
+hougang|2-room,2023-04,0.0,True
+hougang|2-room,2023-05,0.0,True
+hougang|2-room,2023-06,0.0,True
+hougang|2-room,2023-07,0.0,False
+hougang|2-room,2023-08,0.0,False
+hougang|2-room,2023-09,0.0,False
+hougang|2-room,2023-10,0.0,False
+hougang|2-room,2023-11,0.0,False
+hougang|2-room,2023-12,0.0,False
+hougang|2-room,2024-01,0.0,False
+hougang|2-room,2024-02,0.0,False
+hougang|2-room,2024-03,0.0,False
+hougang|2-room,2024-04,0.0,False
+hougang|3-room,2022-05,0.0,True
+hougang|3-room,2022-06,2.625247368000028,True
+hougang|3-room,2022-07,8.873100393669796,True
+hougang|3-room,2022-08,11.279934557385074,True
+hougang|3-room,2022-09,11.463541264662327,True
+hougang|3-room,2022-10,4.215483413291348,True
+hougang|3-room,2022-11,-6.322710739580706,True
+hougang|3-room,2022-12,19.19394546175849,True
+hougang|3-room,2023-01,-20.721185104886047,True
+hougang|3-room,2023-02,-7.060123367169434,True
+hougang|3-room,2023-03,0.0,True
+hougang|3-room,2023-04,15.577467500809135,True
+hougang|3-room,2023-05,0.05669540876910027,True
+hougang|3-room,2023-06,-1.8427452632880366,True
+hougang|3-room,2023-07,-0.0,False
+hougang|3-room,2023-08,-0.0,False
+hougang|3-room,2023-09,-0.0,False
+hougang|3-room,2023-10,-0.0,False
+hougang|3-room,2023-11,-0.0,False
+hougang|3-room,2023-12,-0.0,False
+hougang|3-room,2024-01,-0.0,False
+hougang|3-room,2024-02,-0.0,False
+hougang|3-room,2024-03,-0.0,False
+hougang|3-room,2024-04,-0.0,False
+hougang|4-room,2022-05,-21.15582562498909,True
+hougang|4-room,2022-06,0.0,True
+hougang|4-room,2022-07,12.442766575016972,True
+hougang|4-room,2022-08,-2.92598578434704,True
+hougang|4-room,2022-09,1.3969623832796885,True
+hougang|4-room,2022-10,23.541523520244997,True
+hougang|4-room,2022-11,21.739787530571828,True
+hougang|4-room,2022-12,-3.6312463868551395,True
+hougang|4-room,2023-01,-5.994793675913226,True
+hougang|4-room,2023-02,-4.046806972192962,True
+hougang|4-room,2023-03,-58.963888194709824,True
+hougang|4-room,2023-04,0.29118076589013236,True
+hougang|4-room,2023-05,11.679646563462843,True
+hougang|4-room,2023-06,-33.09882512349423,True
+hougang|4-room,2023-07,-0.0,False
+hougang|4-room,2023-08,-0.0,False
+hougang|4-room,2023-09,-0.0,False
+hougang|4-room,2023-10,-0.0,False
+hougang|4-room,2023-11,-0.0,False
+hougang|4-room,2023-12,-0.0,False
+hougang|4-room,2024-01,-0.0,False
+hougang|4-room,2024-02,-0.0,False
+hougang|4-room,2024-03,-0.0,False
+hougang|4-room,2024-04,-0.0,False
+hougang|5-room,2022-05,0.0,True
+hougang|5-room,2022-06,-7.04949016033462,True
+hougang|5-room,2022-07,4.18497706507864,True
+hougang|5-room,2022-08,6.09528631480967,True
+hougang|5-room,2022-09,-1.5226076129599901,True
+hougang|5-room,2022-10,13.551656749707512,True
+hougang|5-room,2022-11,-7.125334250754504,True
+hougang|5-room,2022-12,-2.327142349340711,True
+hougang|5-room,2023-01,-17.4166159582008,True
+hougang|5-room,2023-02,10.827867304382407,True
+hougang|5-room,2023-03,4.32148347726404,True
+hougang|5-room,2023-04,6.339540716541781,True
+hougang|5-room,2023-05,-1.6234761680649339,True
+hougang|5-room,2023-06,-37.9131311868978,True
+hougang|5-room,2023-07,-0.0,False
+hougang|5-room,2023-08,-0.0,False
+hougang|5-room,2023-09,-0.0,False
+hougang|5-room,2023-10,-0.0,False
+hougang|5-room,2023-11,-0.0,False
+hougang|5-room,2023-12,-0.0,False
+hougang|5-room,2024-01,-0.0,False
+hougang|5-room,2024-02,-0.0,False
+hougang|5-room,2024-03,-0.0,False
+hougang|5-room,2024-04,-0.0,False
+hougang|executive,2022-05,0.0,True
+hougang|executive,2022-06,0.0,True
+hougang|executive,2022-07,0.0,True
+hougang|executive,2022-08,0.0,True
+hougang|executive,2022-09,6.243423831765394,True
+hougang|executive,2022-10,12.64960860884844,True
+hougang|executive,2022-11,9.876984167530901,True
+hougang|executive,2022-12,0.0,True
+hougang|executive,2023-01,0.0,True
+hougang|executive,2023-02,0.0,True
+hougang|executive,2023-03,28.395171680117365,True
+hougang|executive,2023-04,-9.769023302159173,True
+hougang|executive,2023-05,0.0,True
+hougang|executive,2023-06,-4.770675542516889,True
+hougang|executive,2023-07,-0.0,False
+hougang|executive,2023-08,-0.0,False
+hougang|executive,2023-09,-0.0,False
+hougang|executive,2023-10,-0.0,False
+hougang|executive,2023-11,-0.0,False
+hougang|executive,2023-12,-0.0,False
+hougang|executive,2024-01,-0.0,False
+hougang|executive,2024-02,-0.0,False
+hougang|executive,2024-03,-0.0,False
+hougang|executive,2024-04,-0.0,False
+jurong east|2-room,2022-05,0.0,True
+jurong east|2-room,2022-06,0.0,True
+jurong east|2-room,2022-07,0.0,True
+jurong east|2-room,2022-08,0.0,True
+jurong east|2-room,2022-09,0.0,True
+jurong east|2-room,2022-10,-0.6653712838670929,True
+jurong east|2-room,2022-11,0.0,True
+jurong east|2-room,2022-12,0.0,True
+jurong east|2-room,2023-01,0.0,True
+jurong east|2-room,2023-02,0.0,True
+jurong east|2-room,2023-03,0.0,True
+jurong east|2-room,2023-04,0.0,True
+jurong east|2-room,2023-05,0.0,True
+jurong east|2-room,2023-06,0.0,True
+jurong east|2-room,2023-07,0.0,False
+jurong east|2-room,2023-08,0.0,False
+jurong east|2-room,2023-09,0.0,False
+jurong east|2-room,2023-10,0.0,False
+jurong east|2-room,2023-11,0.0,False
+jurong east|2-room,2023-12,0.0,False
+jurong east|2-room,2024-01,0.0,False
+jurong east|2-room,2024-02,0.0,False
+jurong east|2-room,2024-03,0.0,False
+jurong east|2-room,2024-04,0.0,False
+jurong east|3-room,2022-05,4.741136057903312,True
+jurong east|3-room,2022-06,-7.429394945998437,True
+jurong east|3-room,2022-07,-11.024302895829472,True
+jurong east|3-room,2022-08,30.10028734223207,True
+jurong east|3-room,2022-09,-1.6062893170371206,True
+jurong east|3-room,2022-10,-13.832507940214464,True
+jurong east|3-room,2022-11,-8.363803785513403,True
+jurong east|3-room,2022-12,11.46998645258191,True
+jurong east|3-room,2023-01,18.369125412748836,True
+jurong east|3-room,2023-02,-6.794642903196682,True
+jurong east|3-room,2023-03,-3.793579470787594,True
+jurong east|3-room,2023-04,-8.443390221904378,True
+jurong east|3-room,2023-05,-25.63321139460902,True
+jurong east|3-room,2023-06,8.88942156063623,True
+jurong east|3-room,2023-07,0.0,False
+jurong east|3-room,2023-08,0.0,False
+jurong east|3-room,2023-09,0.0,False
+jurong east|3-room,2023-10,0.0,False
+jurong east|3-room,2023-11,0.0,False
+jurong east|3-room,2023-12,0.0,False
+jurong east|3-room,2024-01,0.0,False
+jurong east|3-room,2024-02,0.0,False
+jurong east|3-room,2024-03,0.0,False
+jurong east|3-room,2024-04,0.0,False
+jurong east|4-room,2022-05,0.0,True
+jurong east|4-room,2022-06,11.237013530992938,True
+jurong east|4-room,2022-07,13.890451925772911,True
+jurong east|4-room,2022-08,-2.518393324258143,True
+jurong east|4-room,2022-09,-3.758564983701384,True
+jurong east|4-room,2022-10,10.621298588986308,True
+jurong east|4-room,2022-11,2.0278191334775424,True
+jurong east|4-room,2022-12,4.362842391327327,True
+jurong east|4-room,2023-01,16.320371091630157,True
+jurong east|4-room,2023-02,-4.200588043550562,True
+jurong east|4-room,2023-03,-23.871015445790587,True
+jurong east|4-room,2023-04,11.867705156727952,True
+jurong east|4-room,2023-05,-8.377947303597573,True
+jurong east|4-room,2023-06,-24.183104544269025,True
+jurong east|4-room,2023-07,-0.0,False
+jurong east|4-room,2023-08,-0.0,False
+jurong east|4-room,2023-09,-0.0,False
+jurong east|4-room,2023-10,-0.0,False
+jurong east|4-room,2023-11,-0.0,False
+jurong east|4-room,2023-12,-0.0,False
+jurong east|4-room,2024-01,-0.0,False
+jurong east|4-room,2024-02,-0.0,False
+jurong east|4-room,2024-03,-0.0,False
+jurong east|4-room,2024-04,-0.0,False
+jurong east|5-room,2022-05,3.3647584845471665,True
+jurong east|5-room,2022-06,2.4969796591631654,True
+jurong east|5-room,2022-07,17.532312075759027,True
+jurong east|5-room,2022-08,23.626293051718143,True
+jurong east|5-room,2022-09,-3.236598781087396,True
+jurong east|5-room,2022-10,0.0,True
+jurong east|5-room,2022-11,-13.82860238172404,True
+jurong east|5-room,2022-12,-0.2094451623592911,True
+jurong east|5-room,2023-01,-9.678569921788892,True
+jurong east|5-room,2023-02,-10.238790474520462,True
+jurong east|5-room,2023-03,-17.37460054573511,True
+jurong east|5-room,2023-04,6.736093920090074,True
+jurong east|5-room,2023-05,7.163544202932741,True
+jurong east|5-room,2023-06,-3.8592880605401256,True
+jurong east|5-room,2023-07,-0.0,False
+jurong east|5-room,2023-08,-0.0,False
+jurong east|5-room,2023-09,-0.0,False
+jurong east|5-room,2023-10,-0.0,False
+jurong east|5-room,2023-11,-0.0,False
+jurong east|5-room,2023-12,-0.0,False
+jurong east|5-room,2024-01,-0.0,False
+jurong east|5-room,2024-02,-0.0,False
+jurong east|5-room,2024-03,-0.0,False
+jurong east|5-room,2024-04,-0.0,False
+jurong east|executive,2022-05,0.0,True
+jurong east|executive,2022-06,0.0,True
+jurong east|executive,2022-07,-5.987707564773844,True
+jurong east|executive,2022-08,0.0,True
+jurong east|executive,2022-09,-4.705839892542091,True
+jurong east|executive,2022-10,0.0,True
+jurong east|executive,2022-11,8.983587289614062,True
+jurong east|executive,2022-12,0.0,True
+jurong east|executive,2023-01,-11.376260592343561,True
+jurong east|executive,2023-02,0.0,True
+jurong east|executive,2023-03,21.260844868319992,True
+jurong east|executive,2023-04,0.0,True
+jurong east|executive,2023-05,0.8675184254133355,True
+jurong east|executive,2023-06,6.362742527278682,True
+jurong east|executive,2023-07,0.0,False
+jurong east|executive,2023-08,0.0,False
+jurong east|executive,2023-09,0.0,False
+jurong east|executive,2023-10,0.0,False
+jurong east|executive,2023-11,0.0,False
+jurong east|executive,2023-12,0.0,False
+jurong east|executive,2024-01,0.0,False
+jurong east|executive,2024-02,0.0,False
+jurong east|executive,2024-03,0.0,False
+jurong east|executive,2024-04,0.0,False
+jurong west|2-room,2022-05,0.0,True
+jurong west|2-room,2022-06,2.497735471421554,True
+jurong west|2-room,2022-07,0.0,True
+jurong west|2-room,2022-08,0.0,True
+jurong west|2-room,2022-09,0.0,True
+jurong west|2-room,2022-10,0.0,True
+jurong west|2-room,2022-11,0.0,True
+jurong west|2-room,2022-12,-2.3689260849650053,True
+jurong west|2-room,2023-01,-1.0836917577570218,True
+jurong west|2-room,2023-02,0.0,True
+jurong west|2-room,2023-03,0.0,True
+jurong west|2-room,2023-04,0.0,True
+jurong west|2-room,2023-05,-12.338923212225936,True
+jurong west|2-room,2023-06,5.214567398135688,True
+jurong west|2-room,2023-07,0.0,False
+jurong west|2-room,2023-08,0.0,False
+jurong west|2-room,2023-09,0.0,False
+jurong west|2-room,2023-10,0.0,False
+jurong west|2-room,2023-11,0.0,False
+jurong west|2-room,2023-12,0.0,False
+jurong west|2-room,2024-01,0.0,False
+jurong west|2-room,2024-02,0.0,False
+jurong west|2-room,2024-03,0.0,False
+jurong west|2-room,2024-04,0.0,False
+jurong west|3-room,2022-05,-4.053293290773514,True
+jurong west|3-room,2022-06,12.438660943273819,True
+jurong west|3-room,2022-07,-0.9101337598782415,True
+jurong west|3-room,2022-08,3.647416966185123,True
+jurong west|3-room,2022-09,5.221476921264843,True
+jurong west|3-room,2022-10,-5.326344905806984,True
+jurong west|3-room,2022-11,-3.850354241190326,True
+jurong west|3-room,2022-12,1.3422004954981261,True
+jurong west|3-room,2023-01,8.648546416596423,True
+jurong west|3-room,2023-02,-12.929769571160396,True
+jurong west|3-room,2023-03,4.293533731996396,True
+jurong west|3-room,2023-04,-11.45702847227079,True
+jurong west|3-room,2023-05,-5.104025991270494,True
+jurong west|3-room,2023-06,3.1442419444990346,True
+jurong west|3-room,2023-07,0.0,False
+jurong west|3-room,2023-08,0.0,False
+jurong west|3-room,2023-09,0.0,False
+jurong west|3-room,2023-10,0.0,False
+jurong west|3-room,2023-11,0.0,False
+jurong west|3-room,2023-12,0.0,False
+jurong west|3-room,2024-01,0.0,False
+jurong west|3-room,2024-02,0.0,False
+jurong west|3-room,2024-03,0.0,False
+jurong west|3-room,2024-04,0.0,False
+jurong west|4-room,2022-05,14.208830344456748,True
+jurong west|4-room,2022-06,10.978049501893736,True
+jurong west|4-room,2022-07,8.48272414957788,True
+jurong west|4-room,2022-08,-3.8807436470199477,True
+jurong west|4-room,2022-09,10.474864315552542,True
+jurong west|4-room,2022-10,26.731977209845567,True
+jurong west|4-room,2022-11,-14.744388226012818,True
+jurong west|4-room,2022-12,35.79623391282499,True
+jurong west|4-room,2023-01,-1.1130182024242623,True
+jurong west|4-room,2023-02,25.340766903140572,True
+jurong west|4-room,2023-03,-19.44824227268404,True
+jurong west|4-room,2023-04,-39.51668356939811,True
+jurong west|4-room,2023-05,9.591549291888795,True
+jurong west|4-room,2023-06,-25.490155725849647,True
+jurong west|4-room,2023-07,-0.0,False
+jurong west|4-room,2023-08,-0.0,False
+jurong west|4-room,2023-09,-0.0,False
+jurong west|4-room,2023-10,-0.0,False
+jurong west|4-room,2023-11,-0.0,False
+jurong west|4-room,2023-12,-0.0,False
+jurong west|4-room,2024-01,-0.0,False
+jurong west|4-room,2024-02,-0.0,False
+jurong west|4-room,2024-03,-0.0,False
+jurong west|4-room,2024-04,-0.0,False
+jurong west|5-room,2022-05,5.493969437723691,True
+jurong west|5-room,2022-06,-2.023672536562508,True
+jurong west|5-room,2022-07,16.171296244304056,True
+jurong west|5-room,2022-08,3.3885625270978825,True
+jurong west|5-room,2022-09,16.644151150524515,True
+jurong west|5-room,2022-10,-2.0837790378119436,True
+jurong west|5-room,2022-11,14.189096554229597,True
+jurong west|5-room,2022-12,33.81646352138213,True
+jurong west|5-room,2023-01,-36.12641910847041,True
+jurong west|5-room,2023-02,14.696845381349434,True
+jurong west|5-room,2023-03,-3.7842655232057982,True
+jurong west|5-room,2023-04,-52.93578250372295,True
+jurong west|5-room,2023-05,-26.17524685069161,True
+jurong west|5-room,2023-06,-35.0436867978498,True
+jurong west|5-room,2023-07,-0.0,False
+jurong west|5-room,2023-08,-0.0,False
+jurong west|5-room,2023-09,-0.0,False
+jurong west|5-room,2023-10,-0.0,False
+jurong west|5-room,2023-11,-0.0,False
+jurong west|5-room,2023-12,-0.0,False
+jurong west|5-room,2024-01,-0.0,False
+jurong west|5-room,2024-02,-0.0,False
+jurong west|5-room,2024-03,-0.0,False
+jurong west|5-room,2024-04,-0.0,False
+jurong west|executive,2022-05,0.0,True
+jurong west|executive,2022-06,3.727416909369595,True
+jurong west|executive,2022-07,0.0,True
+jurong west|executive,2022-08,9.274845078998482,True
+jurong west|executive,2022-09,0.0,True
+jurong west|executive,2022-10,-18.175856795901606,True
+jurong west|executive,2022-11,0.0,True
+jurong west|executive,2022-12,-12.48435944774103,True
+jurong west|executive,2023-01,-6.526250096384567,True
+jurong west|executive,2023-02,7.515983992225064,True
+jurong west|executive,2023-03,-4.320313711136207,True
+jurong west|executive,2023-04,7.791769376527003,True
+jurong west|executive,2023-05,-22.325265990862018,True
+jurong west|executive,2023-06,1.2645213892403244,True
+jurong west|executive,2023-07,0.0,False
+jurong west|executive,2023-08,0.0,False
+jurong west|executive,2023-09,0.0,False
+jurong west|executive,2023-10,0.0,False
+jurong west|executive,2023-11,0.0,False
+jurong west|executive,2023-12,0.0,False
+jurong west|executive,2024-01,0.0,False
+jurong west|executive,2024-02,0.0,False
+jurong west|executive,2024-03,0.0,False
+jurong west|executive,2024-04,0.0,False
+kallang/whampoa|2-room,2022-05,0.0,True
+kallang/whampoa|2-room,2022-06,-1.0454935396814535,True
+kallang/whampoa|2-room,2022-07,8.11155762934419,True
+kallang/whampoa|2-room,2022-08,0.0,True
+kallang/whampoa|2-room,2022-09,5.506418085281918,True
+kallang/whampoa|2-room,2022-10,-4.071376294078757,True
+kallang/whampoa|2-room,2022-11,0.0,True
+kallang/whampoa|2-room,2022-12,0.0,True
+kallang/whampoa|2-room,2023-01,0.0,True
+kallang/whampoa|2-room,2023-02,0.0,True
+kallang/whampoa|2-room,2023-03,0.0,True
+kallang/whampoa|2-room,2023-04,0.0,True
+kallang/whampoa|2-room,2023-05,0.0,True
+kallang/whampoa|2-room,2023-06,2.6919736921031574,True
+kallang/whampoa|2-room,2023-07,0.0,False
+kallang/whampoa|2-room,2023-08,0.0,False
+kallang/whampoa|2-room,2023-09,0.0,False
+kallang/whampoa|2-room,2023-10,0.0,False
+kallang/whampoa|2-room,2023-11,0.0,False
+kallang/whampoa|2-room,2023-12,0.0,False
+kallang/whampoa|2-room,2024-01,0.0,False
+kallang/whampoa|2-room,2024-02,0.0,False
+kallang/whampoa|2-room,2024-03,0.0,False
+kallang/whampoa|2-room,2024-04,0.0,False
+kallang/whampoa|3-room,2022-05,-10.094923163991655,True
+kallang/whampoa|3-room,2022-06,11.716764591809934,True
+kallang/whampoa|3-room,2022-07,0.7685301598082347,True
+kallang/whampoa|3-room,2022-08,1.06933021308677,True
+kallang/whampoa|3-room,2022-09,-3.6922500498192563,True
+kallang/whampoa|3-room,2022-10,16.520779948787343,True
+kallang/whampoa|3-room,2022-11,20.103230799192865,True
+kallang/whampoa|3-room,2022-12,31.719167346904726,True
+kallang/whampoa|3-room,2023-01,-31.675183117162486,True
+kallang/whampoa|3-room,2023-02,-23.04167849478101,True
+kallang/whampoa|3-room,2023-03,-10.096360637843341,True
+kallang/whampoa|3-room,2023-04,2.3067399748832025,True
+kallang/whampoa|3-room,2023-05,-51.869522826882026,True
+kallang/whampoa|3-room,2023-06,10.175310255691176,True
+kallang/whampoa|3-room,2023-07,0.0,False
+kallang/whampoa|3-room,2023-08,0.0,False
+kallang/whampoa|3-room,2023-09,0.0,False
+kallang/whampoa|3-room,2023-10,0.0,False
+kallang/whampoa|3-room,2023-11,0.0,False
+kallang/whampoa|3-room,2023-12,0.0,False
+kallang/whampoa|3-room,2024-01,0.0,False
+kallang/whampoa|3-room,2024-02,0.0,False
+kallang/whampoa|3-room,2024-03,0.0,False
+kallang/whampoa|3-room,2024-04,0.0,False
+kallang/whampoa|4-room,2022-05,10.35463191035808,True
+kallang/whampoa|4-room,2022-06,-2.1125941705132045,True
+kallang/whampoa|4-room,2022-07,19.332345305680867,True
+kallang/whampoa|4-room,2022-08,20.21053607422185,True
+kallang/whampoa|4-room,2022-09,-0.3997888043024829,True
+kallang/whampoa|4-room,2022-10,24.35057778191477,True
+kallang/whampoa|4-room,2022-11,6.550879733657178,True
+kallang/whampoa|4-room,2022-12,9.3063645812697,True
+kallang/whampoa|4-room,2023-01,-1.6922392917423883,True
+kallang/whampoa|4-room,2023-02,-32.51355046876837,True
+kallang/whampoa|4-room,2023-03,1.7381454075552172,True
+kallang/whampoa|4-room,2023-04,-4.095094597780446,True
+kallang/whampoa|4-room,2023-05,-2.004535303395309,True
+kallang/whampoa|4-room,2023-06,-33.269847243869144,True
+kallang/whampoa|4-room,2023-07,-0.0,False
+kallang/whampoa|4-room,2023-08,-0.0,False
+kallang/whampoa|4-room,2023-09,-0.0,False
+kallang/whampoa|4-room,2023-10,-0.0,False
+kallang/whampoa|4-room,2023-11,-0.0,False
+kallang/whampoa|4-room,2023-12,-0.0,False
+kallang/whampoa|4-room,2024-01,-0.0,False
+kallang/whampoa|4-room,2024-02,-0.0,False
+kallang/whampoa|4-room,2024-03,-0.0,False
+kallang/whampoa|4-room,2024-04,-0.0,False
+kallang/whampoa|5-room,2022-05,-0.2297086185082336,True
+kallang/whampoa|5-room,2022-06,0.0,True
+kallang/whampoa|5-room,2022-07,2.7074439636794354,True
+kallang/whampoa|5-room,2022-08,-7.621816429905169,True
+kallang/whampoa|5-room,2022-09,-1.2780009277435962,True
+kallang/whampoa|5-room,2022-10,7.211687505098879,True
+kallang/whampoa|5-room,2022-11,5.369009262194733,True
+kallang/whampoa|5-room,2022-12,18.906591037451147,True
+kallang/whampoa|5-room,2023-01,11.377117263672444,True
+kallang/whampoa|5-room,2023-02,-8.718769375669602,True
+kallang/whampoa|5-room,2023-03,0.0,True
+kallang/whampoa|5-room,2023-04,-0.5432177193257145,True
+kallang/whampoa|5-room,2023-05,-0.5051531607063526,True
+kallang/whampoa|5-room,2023-06,-10.894648214367875,True
+kallang/whampoa|5-room,2023-07,-0.0,False
+kallang/whampoa|5-room,2023-08,-0.0,False
+kallang/whampoa|5-room,2023-09,-0.0,False
+kallang/whampoa|5-room,2023-10,-0.0,False
+kallang/whampoa|5-room,2023-11,-0.0,False
+kallang/whampoa|5-room,2023-12,-0.0,False
+kallang/whampoa|5-room,2024-01,-0.0,False
+kallang/whampoa|5-room,2024-02,-0.0,False
+kallang/whampoa|5-room,2024-03,-0.0,False
+kallang/whampoa|5-room,2024-04,-0.0,False
+kallang/whampoa|executive,2022-05,0.0,True
+kallang/whampoa|executive,2022-06,0.0,True
+kallang/whampoa|executive,2022-07,0.0,True
+kallang/whampoa|executive,2022-08,0.0,True
+kallang/whampoa|executive,2022-09,0.0,True
+kallang/whampoa|executive,2022-10,0.0,True
+kallang/whampoa|executive,2022-11,0.0,True
+kallang/whampoa|executive,2022-12,0.0,True
+kallang/whampoa|executive,2023-01,0.0,True
+kallang/whampoa|executive,2023-02,-4.687198145031166,True
+kallang/whampoa|executive,2023-03,0.0,True
+kallang/whampoa|executive,2023-04,0.0,True
+kallang/whampoa|executive,2023-05,-13.557644006141164,True
+kallang/whampoa|executive,2023-06,0.0,True
+kallang/whampoa|executive,2023-07,0.0,False
+kallang/whampoa|executive,2023-08,0.0,False
+kallang/whampoa|executive,2023-09,0.0,False
+kallang/whampoa|executive,2023-10,0.0,False
+kallang/whampoa|executive,2023-11,0.0,False
+kallang/whampoa|executive,2023-12,0.0,False
+kallang/whampoa|executive,2024-01,0.0,False
+kallang/whampoa|executive,2024-02,0.0,False
+kallang/whampoa|executive,2024-03,0.0,False
+kallang/whampoa|executive,2024-04,0.0,False
+marine parade|3-room,2022-05,4.40072049519181,True
+marine parade|3-room,2022-06,6.12229124845454,True
+marine parade|3-room,2022-07,-9.371684383791692,True
+marine parade|3-room,2022-08,0.0,True
+marine parade|3-room,2022-09,3.513675656635806,True
+marine parade|3-room,2022-10,-1.6229880372569851,True
+marine parade|3-room,2022-11,0.0,True
+marine parade|3-room,2022-12,20.85567895281648,True
+marine parade|3-room,2023-01,3.6546815560139914,True
+marine parade|3-room,2023-02,-14.453016832135607,True
+marine parade|3-room,2023-03,0.0,True
+marine parade|3-room,2023-04,-2.9959128273177247,True
+marine parade|3-room,2023-05,6.590914444694312,True
+marine parade|3-room,2023-06,7.558285290972657,True
+marine parade|3-room,2023-07,0.0,False
+marine parade|3-room,2023-08,0.0,False
+marine parade|3-room,2023-09,0.0,False
+marine parade|3-room,2023-10,0.0,False
+marine parade|3-room,2023-11,0.0,False
+marine parade|3-room,2023-12,0.0,False
+marine parade|3-room,2024-01,0.0,False
+marine parade|3-room,2024-02,0.0,False
+marine parade|3-room,2024-03,0.0,False
+marine parade|3-room,2024-04,0.0,False
+marine parade|4-room,2022-05,1.3456492383258378,True
+marine parade|4-room,2022-06,-0.24816158446072165,True
+marine parade|4-room,2022-07,0.0,True
+marine parade|4-room,2022-08,-2.748230036225214,True
+marine parade|4-room,2022-09,5.234400678533338,True
+marine parade|4-room,2022-10,19.864176176559184,True
+marine parade|4-room,2022-11,-9.206293095631406,True
+marine parade|4-room,2022-12,0.0,True
+marine parade|4-room,2023-01,0.0,True
+marine parade|4-room,2023-02,-7.146127153641547,True
+marine parade|4-room,2023-03,-3.831459523162309,True
+marine parade|4-room,2023-04,-9.793008660008937,True
+marine parade|4-room,2023-05,-11.551597216960781,True
+marine parade|4-room,2023-06,-18.8950813312764,True
+marine parade|4-room,2023-07,-0.0,False
+marine parade|4-room,2023-08,-0.0,False
+marine parade|4-room,2023-09,-0.0,False
+marine parade|4-room,2023-10,-0.0,False
+marine parade|4-room,2023-11,-0.0,False
+marine parade|4-room,2023-12,-0.0,False
+marine parade|4-room,2024-01,-0.0,False
+marine parade|4-room,2024-02,-0.0,False
+marine parade|4-room,2024-03,-0.0,False
+marine parade|4-room,2024-04,-0.0,False
+marine parade|5-room,2022-05,0.0,True
+marine parade|5-room,2022-06,0.0,True
+marine parade|5-room,2022-07,0.0,True
+marine parade|5-room,2022-08,4.331688437694692,True
+marine parade|5-room,2022-09,0.0,True
+marine parade|5-room,2022-10,-4.909171702670083,True
+marine parade|5-room,2022-11,11.606972136431331,True
+marine parade|5-room,2022-12,0.0,True
+marine parade|5-room,2023-01,-7.291741771237493,True
+marine parade|5-room,2023-02,0.0,True
+marine parade|5-room,2023-03,0.0,True
+marine parade|5-room,2023-04,0.0,True
+marine parade|5-room,2023-05,18.660762084316207,True
+marine parade|5-room,2023-06,9.0106596063262,True
+marine parade|5-room,2023-07,0.0,False
+marine parade|5-room,2023-08,0.0,False
+marine parade|5-room,2023-09,0.0,False
+marine parade|5-room,2023-10,0.0,False
+marine parade|5-room,2023-11,0.0,False
+marine parade|5-room,2023-12,0.0,False
+marine parade|5-room,2024-01,0.0,False
+marine parade|5-room,2024-02,0.0,False
+marine parade|5-room,2024-03,0.0,False
+marine parade|5-room,2024-04,0.0,False
+pasir ris|3-room,2022-05,0.0,True
+pasir ris|3-room,2022-06,0.0,True
+pasir ris|3-room,2022-07,0.0,True
+pasir ris|3-room,2022-08,0.0,True
+pasir ris|3-room,2022-09,0.0,True
+pasir ris|3-room,2022-10,-4.104722817925578,True
+pasir ris|3-room,2022-11,0.0,True
+pasir ris|3-room,2022-12,0.0,True
+pasir ris|3-room,2023-01,2.741874664312522,True
+pasir ris|3-room,2023-02,4.915050463179893,True
+pasir ris|3-room,2023-03,0.0,True
+pasir ris|3-room,2023-04,0.0,True
+pasir ris|3-room,2023-05,-3.0026769039644226,True
+pasir ris|3-room,2023-06,0.0,True
+pasir ris|3-room,2023-07,0.0,False
+pasir ris|3-room,2023-08,0.0,False
+pasir ris|3-room,2023-09,0.0,False
+pasir ris|3-room,2023-10,0.0,False
+pasir ris|3-room,2023-11,0.0,False
+pasir ris|3-room,2023-12,0.0,False
+pasir ris|3-room,2024-01,0.0,False
+pasir ris|3-room,2024-02,0.0,False
+pasir ris|3-room,2024-03,0.0,False
+pasir ris|3-room,2024-04,0.0,False
+pasir ris|4-room,2022-05,-2.62630729049418,True
+pasir ris|4-room,2022-06,0.550840902735505,True
+pasir ris|4-room,2022-07,15.08088323504397,True
+pasir ris|4-room,2022-08,-2.524650922358078,True
+pasir ris|4-room,2022-09,9.239397217448188,True
+pasir ris|4-room,2022-10,11.264290014809147,True
+pasir ris|4-room,2022-11,8.903843014383243,True
+pasir ris|4-room,2022-12,3.222198140166129,True
+pasir ris|4-room,2023-01,27.088929518835318,True
+pasir ris|4-room,2023-02,-1.164772957520972,True
+pasir ris|4-room,2023-03,8.979017591474387,True
+pasir ris|4-room,2023-04,0.0,True
+pasir ris|4-room,2023-05,-30.763828766311203,True
+pasir ris|4-room,2023-06,3.4819531175336356,True
+pasir ris|4-room,2023-07,0.0,False
+pasir ris|4-room,2023-08,0.0,False
+pasir ris|4-room,2023-09,0.0,False
+pasir ris|4-room,2023-10,0.0,False
+pasir ris|4-room,2023-11,0.0,False
+pasir ris|4-room,2023-12,0.0,False
+pasir ris|4-room,2024-01,0.0,False
+pasir ris|4-room,2024-02,0.0,False
+pasir ris|4-room,2024-03,0.0,False
+pasir ris|4-room,2024-04,0.0,False
+pasir ris|5-room,2022-05,10.122910709843325,True
+pasir ris|5-room,2022-06,-3.5552836881750913,True
+pasir ris|5-room,2022-07,0.0,True
+pasir ris|5-room,2022-08,1.0057534264820402,True
+pasir ris|5-room,2022-09,-9.019430579691138,True
+pasir ris|5-room,2022-10,-6.42426400266541,True
+pasir ris|5-room,2022-11,0.0,True
+pasir ris|5-room,2022-12,16.918678375958066,True
+pasir ris|5-room,2023-01,8.078872419165187,True
+pasir ris|5-room,2023-02,27.797848880597464,True
+pasir ris|5-room,2023-03,-7.759563139662558,True
+pasir ris|5-room,2023-04,-2.1512036159847447,True
+pasir ris|5-room,2023-05,-3.721757986025939,True
+pasir ris|5-room,2023-06,-23.25166897610423,True
+pasir ris|5-room,2023-07,-0.0,False
+pasir ris|5-room,2023-08,-0.0,False
+pasir ris|5-room,2023-09,-0.0,False
+pasir ris|5-room,2023-10,-0.0,False
+pasir ris|5-room,2023-11,-0.0,False
+pasir ris|5-room,2023-12,-0.0,False
+pasir ris|5-room,2024-01,-0.0,False
+pasir ris|5-room,2024-02,-0.0,False
+pasir ris|5-room,2024-03,-0.0,False
+pasir ris|5-room,2024-04,-0.0,False
+pasir ris|executive,2022-05,-6.060167296204853,True
+pasir ris|executive,2022-06,0.0,True
+pasir ris|executive,2022-07,0.0,True
+pasir ris|executive,2022-08,13.576758079577607,True
+pasir ris|executive,2022-09,-4.245126367345533,True
+pasir ris|executive,2022-10,-0.6271379389298076,True
+pasir ris|executive,2022-11,-2.685039856285192,True
+pasir ris|executive,2022-12,-4.892967579305265,True
+pasir ris|executive,2023-01,21.90571106140598,True
+pasir ris|executive,2023-02,-16.995496652933237,True
+pasir ris|executive,2023-03,0.0,True
+pasir ris|executive,2023-04,14.733041011334494,True
+pasir ris|executive,2023-05,-13.475019412171962,True
+pasir ris|executive,2023-06,-16.88047546698622,True
+pasir ris|executive,2023-07,-0.0,False
+pasir ris|executive,2023-08,-0.0,False
+pasir ris|executive,2023-09,-0.0,False
+pasir ris|executive,2023-10,-0.0,False
+pasir ris|executive,2023-11,-0.0,False
+pasir ris|executive,2023-12,-0.0,False
+pasir ris|executive,2024-01,-0.0,False
+pasir ris|executive,2024-02,-0.0,False
+pasir ris|executive,2024-03,-0.0,False
+pasir ris|executive,2024-04,-0.0,False
+punggol|2-room,2022-05,0.0,True
+punggol|2-room,2022-06,0.0,True
+punggol|2-room,2022-07,0.0,True
+punggol|2-room,2022-08,0.0,True
+punggol|2-room,2022-09,-10.308029274866751,True
+punggol|2-room,2022-10,-9.86044002601338,True
+punggol|2-room,2022-11,7.057930643304021,True
+punggol|2-room,2022-12,0.0,True
+punggol|2-room,2023-01,0.0,True
+punggol|2-room,2023-02,0.0,True
+punggol|2-room,2023-03,9.501444685556521,True
+punggol|2-room,2023-04,0.09976901870706709,True
+punggol|2-room,2023-05,0.0,True
+punggol|2-room,2023-06,4.994951902263625,True
+punggol|2-room,2023-07,0.0,False
+punggol|2-room,2023-08,0.0,False
+punggol|2-room,2023-09,0.0,False
+punggol|2-room,2023-10,0.0,False
+punggol|2-room,2023-11,0.0,False
+punggol|2-room,2023-12,0.0,False
+punggol|2-room,2024-01,0.0,False
+punggol|2-room,2024-02,0.0,False
+punggol|2-room,2024-03,0.0,False
+punggol|2-room,2024-04,0.0,False
+punggol|3-room,2022-05,5.911663701031735,True
+punggol|3-room,2022-06,0.0,True
+punggol|3-room,2022-07,4.2945347726281895,True
+punggol|3-room,2022-08,0.0,True
+punggol|3-room,2022-09,-1.4671743982355194,True
+punggol|3-room,2022-10,5.526715496855794,True
+punggol|3-room,2022-11,12.489643348425314,True
+punggol|3-room,2022-12,-2.386255003354117,True
+punggol|3-room,2023-01,4.6763852322218815,True
+punggol|3-room,2023-02,-8.766226839495438,True
+punggol|3-room,2023-03,1.4285554508909815,True
+punggol|3-room,2023-04,-5.1245742324144965,True
+punggol|3-room,2023-05,0.0,True
+punggol|3-room,2023-06,0.0,True
+punggol|3-room,2023-07,0.0,False
+punggol|3-room,2023-08,0.0,False
+punggol|3-room,2023-09,0.0,False
+punggol|3-room,2023-10,0.0,False
+punggol|3-room,2023-11,0.0,False
+punggol|3-room,2023-12,0.0,False
+punggol|3-room,2024-01,0.0,False
+punggol|3-room,2024-02,0.0,False
+punggol|3-room,2024-03,0.0,False
+punggol|3-room,2024-04,0.0,False
+punggol|4-room,2022-05,4.5814192038732315,True
+punggol|4-room,2022-06,8.359360159671768,True
+punggol|4-room,2022-07,13.3189524175357,True
+punggol|4-room,2022-08,10.781928786626594,True
+punggol|4-room,2022-09,5.155438196217494,True
+punggol|4-room,2022-10,18.338457237109704,True
+punggol|4-room,2022-11,6.102139890078287,True
+punggol|4-room,2022-12,16.28319260393248,True
+punggol|4-room,2023-01,-21.094093815619384,True
+punggol|4-room,2023-02,-27.552159423329762,True
+punggol|4-room,2023-03,-3.2374136141874335,True
+punggol|4-room,2023-04,-13.904933776431063,True
+punggol|4-room,2023-05,-2.3262176642886057,True
+punggol|4-room,2023-06,-22.425595208451494,True
+punggol|4-room,2023-07,-0.0,False
+punggol|4-room,2023-08,-0.0,False
+punggol|4-room,2023-09,-0.0,False
+punggol|4-room,2023-10,-0.0,False
+punggol|4-room,2023-11,-0.0,False
+punggol|4-room,2023-12,-0.0,False
+punggol|4-room,2024-01,-0.0,False
+punggol|4-room,2024-02,-0.0,False
+punggol|4-room,2024-03,-0.0,False
+punggol|4-room,2024-04,-0.0,False
+punggol|5-room,2022-05,-25.85737302323196,True
+punggol|5-room,2022-06,14.387634430387749,True
+punggol|5-room,2022-07,14.700209776556035,True
+punggol|5-room,2022-08,7.822153687184095,True
+punggol|5-room,2022-09,10.446165163639156,True
+punggol|5-room,2022-10,-0.5337501490755425,True
+punggol|5-room,2022-11,7.595625282741232,True
+punggol|5-room,2022-12,19.903377419598673,True
+punggol|5-room,2023-01,8.839448171825993,True
+punggol|5-room,2023-02,21.305621788430397,True
+punggol|5-room,2023-03,-2.207294947330647,True
+punggol|5-room,2023-04,-8.42490929414742,True
+punggol|5-room,2023-05,6.527189481926894,True
+punggol|5-room,2023-06,-29.00182229416415,True
+punggol|5-room,2023-07,-0.0,False
+punggol|5-room,2023-08,-0.0,False
+punggol|5-room,2023-09,-0.0,False
+punggol|5-room,2023-10,-0.0,False
+punggol|5-room,2023-11,-0.0,False
+punggol|5-room,2023-12,-0.0,False
+punggol|5-room,2024-01,-0.0,False
+punggol|5-room,2024-02,-0.0,False
+punggol|5-room,2024-03,-0.0,False
+punggol|5-room,2024-04,-0.0,False
+punggol|executive,2022-05,0.0,True
+punggol|executive,2022-06,0.0,True
+punggol|executive,2022-07,0.0,True
+punggol|executive,2022-08,0.0,True
+punggol|executive,2022-09,8.146527663504948,True
+punggol|executive,2022-10,0.0,True
+punggol|executive,2022-11,0.0,True
+punggol|executive,2022-12,-1.3116123561475888,True
+punggol|executive,2023-01,-12.749128988801347,True
+punggol|executive,2023-02,0.0,True
+punggol|executive,2023-03,0.0,True
+punggol|executive,2023-04,0.0,True
+punggol|executive,2023-05,-1.3634542965833907,True
+punggol|executive,2023-06,0.0,True
+punggol|executive,2023-07,0.0,False
+punggol|executive,2023-08,0.0,False
+punggol|executive,2023-09,0.0,False
+punggol|executive,2023-10,0.0,False
+punggol|executive,2023-11,0.0,False
+punggol|executive,2023-12,0.0,False
+punggol|executive,2024-01,0.0,False
+punggol|executive,2024-02,0.0,False
+punggol|executive,2024-03,0.0,False
+punggol|executive,2024-04,0.0,False
+queenstown|2-room,2022-05,0.0,True
+queenstown|2-room,2022-06,0.0,True
+queenstown|2-room,2022-07,0.0,True
+queenstown|2-room,2022-08,0.0,True
+queenstown|2-room,2022-09,-1.3372919508130754,True
+queenstown|2-room,2022-10,-3.6346439119638885,True
+queenstown|2-room,2022-11,0.0,True
+queenstown|2-room,2022-12,0.0,True
+queenstown|2-room,2023-01,0.21552881887562406,True
+queenstown|2-room,2023-02,0.0,True
+queenstown|2-room,2023-03,-7.987385041147739,True
+queenstown|2-room,2023-04,0.0,True
+queenstown|2-room,2023-05,0.0,True
+queenstown|2-room,2023-06,0.0,True
+queenstown|2-room,2023-07,0.0,False
+queenstown|2-room,2023-08,0.0,False
+queenstown|2-room,2023-09,0.0,False
+queenstown|2-room,2023-10,0.0,False
+queenstown|2-room,2023-11,0.0,False
+queenstown|2-room,2023-12,0.0,False
+queenstown|2-room,2024-01,0.0,False
+queenstown|2-room,2024-02,0.0,False
+queenstown|2-room,2024-03,0.0,False
+queenstown|2-room,2024-04,0.0,False
+queenstown|3-room,2022-05,5.537649740250427,True
+queenstown|3-room,2022-06,6.706045910224918,True
+queenstown|3-room,2022-07,-2.213669338136451,True
+queenstown|3-room,2022-08,9.744482850229664,True
+queenstown|3-room,2022-09,20.961439777969947,True
+queenstown|3-room,2022-10,-4.29178831682343,True
+queenstown|3-room,2022-11,23.153079323075303,True
+queenstown|3-room,2022-12,3.373594177968644,True
+queenstown|3-room,2023-01,-15.53888770780164,True
+queenstown|3-room,2023-02,16.748657295451604,True
+queenstown|3-room,2023-03,-2.1290610613565475,True
+queenstown|3-room,2023-04,-24.706960807830345,True
+queenstown|3-room,2023-05,-26.740341754995107,True
+queenstown|3-room,2023-06,-12.967001923384439,True
+queenstown|3-room,2023-07,-0.0,False
+queenstown|3-room,2023-08,-0.0,False
+queenstown|3-room,2023-09,-0.0,False
+queenstown|3-room,2023-10,-0.0,False
+queenstown|3-room,2023-11,-0.0,False
+queenstown|3-room,2023-12,-0.0,False
+queenstown|3-room,2024-01,-0.0,False
+queenstown|3-room,2024-02,-0.0,False
+queenstown|3-room,2024-03,-0.0,False
+queenstown|3-room,2024-04,-0.0,False
+queenstown|4-room,2022-05,-5.948546427354962,True
+queenstown|4-room,2022-06,2.94995331886566,True
+queenstown|4-room,2022-07,32.019398793908586,True
+queenstown|4-room,2022-08,-2.306147208827968,True
+queenstown|4-room,2022-09,-12.650662041820944,True
+queenstown|4-room,2022-10,6.833171960278274,True
+queenstown|4-room,2022-11,2.865774131493314,True
+queenstown|4-room,2022-12,4.207879942649496,True
+queenstown|4-room,2023-01,-10.495180074458652,True
+queenstown|4-room,2023-02,19.99822199401976,True
+queenstown|4-room,2023-03,-3.801538098313045,True
+queenstown|4-room,2023-04,-13.491393698273939,True
+queenstown|4-room,2023-05,-11.836477035482568,True
+queenstown|4-room,2023-06,-25.394377893865848,True
+queenstown|4-room,2023-07,-0.0,False
+queenstown|4-room,2023-08,-0.0,False
+queenstown|4-room,2023-09,-0.0,False
+queenstown|4-room,2023-10,-0.0,False
+queenstown|4-room,2023-11,-0.0,False
+queenstown|4-room,2023-12,-0.0,False
+queenstown|4-room,2024-01,-0.0,False
+queenstown|4-room,2024-02,-0.0,False
+queenstown|4-room,2024-03,-0.0,False
+queenstown|4-room,2024-04,-0.0,False
+queenstown|5-room,2022-05,-0.11029006845547785,True
+queenstown|5-room,2022-06,0.0,True
+queenstown|5-room,2022-07,4.234537182901821,True
+queenstown|5-room,2022-08,2.4877084056514565,True
+queenstown|5-room,2022-09,-0.8860284137151383,True
+queenstown|5-room,2022-10,-2.258405884310537,True
+queenstown|5-room,2022-11,0.0,True
+queenstown|5-room,2022-12,18.812520229873957,True
+queenstown|5-room,2023-01,11.648856855283954,True
+queenstown|5-room,2023-02,15.499010512895707,True
+queenstown|5-room,2023-03,0.0,True
+queenstown|5-room,2023-04,-3.4900222310474045,True
+queenstown|5-room,2023-05,-23.892108514936858,True
+queenstown|5-room,2023-06,-18.603223291139322,True
+queenstown|5-room,2023-07,-0.0,False
+queenstown|5-room,2023-08,-0.0,False
+queenstown|5-room,2023-09,-0.0,False
+queenstown|5-room,2023-10,-0.0,False
+queenstown|5-room,2023-11,-0.0,False
+queenstown|5-room,2023-12,-0.0,False
+queenstown|5-room,2024-01,-0.0,False
+queenstown|5-room,2024-02,-0.0,False
+queenstown|5-room,2024-03,-0.0,False
+queenstown|5-room,2024-04,-0.0,False
+sembawang|2-room,2022-05,0.0,True
+sembawang|2-room,2022-06,0.0,True
+sembawang|2-room,2022-07,0.0,True
+sembawang|2-room,2022-08,0.3639049319634321,True
+sembawang|2-room,2022-09,0.0,True
+sembawang|2-room,2022-10,1.204463323038026,True
+sembawang|2-room,2022-11,0.0,True
+sembawang|2-room,2022-12,0.364433022259376,True
+sembawang|2-room,2023-01,1.786186210121848,True
+sembawang|2-room,2023-02,0.0,True
+sembawang|2-room,2023-03,0.0,True
+sembawang|2-room,2023-04,0.0,True
+sembawang|2-room,2023-05,-12.28424612002245,True
+sembawang|2-room,2023-06,-0.6492445302820304,True
+sembawang|2-room,2023-07,-0.0,False
+sembawang|2-room,2023-08,-0.0,False
+sembawang|2-room,2023-09,-0.0,False
+sembawang|2-room,2023-10,-0.0,False
+sembawang|2-room,2023-11,-0.0,False
+sembawang|2-room,2023-12,-0.0,False
+sembawang|2-room,2024-01,-0.0,False
+sembawang|2-room,2024-02,-0.0,False
+sembawang|2-room,2024-03,-0.0,False
+sembawang|2-room,2024-04,-0.0,False
+sembawang|3-room,2022-05,0.0,True
+sembawang|3-room,2022-06,0.0,True
+sembawang|3-room,2022-07,0.0,True
+sembawang|3-room,2022-08,0.0,True
+sembawang|3-room,2022-09,0.0,True
+sembawang|3-room,2022-10,0.0,True
+sembawang|3-room,2022-11,0.0,True
+sembawang|3-room,2022-12,0.0,True
+sembawang|3-room,2023-01,0.0,True
+sembawang|3-room,2023-02,0.0,True
+sembawang|3-room,2023-03,0.0,True
+sembawang|3-room,2023-04,3.7484370927222583,True
+sembawang|3-room,2023-05,0.0,True
+sembawang|3-room,2023-06,0.0,True
+sembawang|3-room,2023-07,0.0,False
+sembawang|3-room,2023-08,0.0,False
+sembawang|3-room,2023-09,0.0,False
+sembawang|3-room,2023-10,0.0,False
+sembawang|3-room,2023-11,0.0,False
+sembawang|3-room,2023-12,0.0,False
+sembawang|3-room,2024-01,0.0,False
+sembawang|3-room,2024-02,0.0,False
+sembawang|3-room,2024-03,0.0,False
+sembawang|3-room,2024-04,0.0,False
+sembawang|4-room,2022-05,0.0,True
+sembawang|4-room,2022-06,-5.209017958352802,True
+sembawang|4-room,2022-07,-4.516892628960926,True
+sembawang|4-room,2022-08,2.0637859798599694,True
+sembawang|4-room,2022-09,3.3799358012617295,True
+sembawang|4-room,2022-10,0.0,True
+sembawang|4-room,2022-11,17.594055435193894,True
+sembawang|4-room,2022-12,28.788857154623653,True
+sembawang|4-room,2023-01,4.1402009714220105,True
+sembawang|4-room,2023-02,-6.858241456866502,True
+sembawang|4-room,2023-03,0.0,True
+sembawang|4-room,2023-04,-4.148530892752097,True
+sembawang|4-room,2023-05,-21.72246416263767,True
+sembawang|4-room,2023-06,-6.410487034752223,True
+sembawang|4-room,2023-07,-0.0,False
+sembawang|4-room,2023-08,-0.0,False
+sembawang|4-room,2023-09,-0.0,False
+sembawang|4-room,2023-10,-0.0,False
+sembawang|4-room,2023-11,-0.0,False
+sembawang|4-room,2023-12,-0.0,False
+sembawang|4-room,2024-01,-0.0,False
+sembawang|4-room,2024-02,-0.0,False
+sembawang|4-room,2024-03,-0.0,False
+sembawang|4-room,2024-04,-0.0,False
+sembawang|5-room,2022-05,0.0,True
+sembawang|5-room,2022-06,6.024797377346267,True
+sembawang|5-room,2022-07,0.9541107572912321,True
+sembawang|5-room,2022-08,-4.715200793594331,True
+sembawang|5-room,2022-09,2.8447316745240925,True
+sembawang|5-room,2022-10,7.2434152295851995,True
+sembawang|5-room,2022-11,-6.966162045452866,True
+sembawang|5-room,2022-12,15.934265832101895,True
+sembawang|5-room,2023-01,-10.005644448776792,True
+sembawang|5-room,2023-02,1.2045637185546452,True
+sembawang|5-room,2023-03,-1.3104914145407935,True
+sembawang|5-room,2023-04,-11.673617855504972,True
+sembawang|5-room,2023-05,-8.23437209579585,True
+sembawang|5-room,2023-06,-7.803699642355755,True
+sembawang|5-room,2023-07,-0.0,False
+sembawang|5-room,2023-08,-0.0,False
+sembawang|5-room,2023-09,-0.0,False
+sembawang|5-room,2023-10,-0.0,False
+sembawang|5-room,2023-11,-0.0,False
+sembawang|5-room,2023-12,-0.0,False
+sembawang|5-room,2024-01,-0.0,False
+sembawang|5-room,2024-02,-0.0,False
+sembawang|5-room,2024-03,-0.0,False
+sembawang|5-room,2024-04,-0.0,False
+sembawang|executive,2022-05,0.0,True
+sembawang|executive,2022-06,-3.30263662752882,True
+sembawang|executive,2022-07,17.51045984088292,True
+sembawang|executive,2022-08,-9.854760215950892,True
+sembawang|executive,2022-09,0.0,True
+sembawang|executive,2022-10,2.268797830008805,True
+sembawang|executive,2022-11,8.188066185839613,True
+sembawang|executive,2022-12,0.0,True
+sembawang|executive,2023-01,-0.462710068493057,True
+sembawang|executive,2023-02,-9.31326618276653,True
+sembawang|executive,2023-03,-11.204711472461165,True
+sembawang|executive,2023-04,0.0,True
+sembawang|executive,2023-05,-4.382468334561946,True
+sembawang|executive,2023-06,2.1101281413448296,True
+sembawang|executive,2023-07,0.0,False
+sembawang|executive,2023-08,0.0,False
+sembawang|executive,2023-09,0.0,False
+sembawang|executive,2023-10,0.0,False
+sembawang|executive,2023-11,0.0,False
+sembawang|executive,2023-12,0.0,False
+sembawang|executive,2024-01,0.0,False
+sembawang|executive,2024-02,0.0,False
+sembawang|executive,2024-03,0.0,False
+sembawang|executive,2024-04,0.0,False
+sengkang|2-room,2022-05,0.0,True
+sengkang|2-room,2022-06,0.0,True
+sengkang|2-room,2022-07,-8.623721880243801,True
+sengkang|2-room,2022-08,0.0,True
+sengkang|2-room,2022-09,-1.6601887307941334,True
+sengkang|2-room,2022-10,0.0,True
+sengkang|2-room,2022-11,0.0,True
+sengkang|2-room,2022-12,0.0,True
+sengkang|2-room,2023-01,0.0,True
+sengkang|2-room,2023-02,-5.4725124694723215,True
+sengkang|2-room,2023-03,0.0,True
+sengkang|2-room,2023-04,0.0,True
+sengkang|2-room,2023-05,7.080296914316122,True
+sengkang|2-room,2023-06,-11.146897681013265,True
+sengkang|2-room,2023-07,-0.0,False
+sengkang|2-room,2023-08,-0.0,False
+sengkang|2-room,2023-09,-0.0,False
+sengkang|2-room,2023-10,-0.0,False
+sengkang|2-room,2023-11,-0.0,False
+sengkang|2-room,2023-12,-0.0,False
+sengkang|2-room,2024-01,-0.0,False
+sengkang|2-room,2024-02,-0.0,False
+sengkang|2-room,2024-03,-0.0,False
+sengkang|2-room,2024-04,-0.0,False
+sengkang|3-room,2022-05,0.0,True
+sengkang|3-room,2022-06,0.0,True
+sengkang|3-room,2022-07,0.0,True
+sengkang|3-room,2022-08,0.0,True
+sengkang|3-room,2022-09,-5.540617030024898,True
+sengkang|3-room,2022-10,-7.5468052598147,True
+sengkang|3-room,2022-11,-8.879921501908225,True
+sengkang|3-room,2022-12,1.1092759461043271,True
+sengkang|3-room,2023-01,-6.054321932456858,True
+sengkang|3-room,2023-02,16.726898638652255,True
+sengkang|3-room,2023-03,0.0,True
+sengkang|3-room,2023-04,5.501029553632302,True
+sengkang|3-room,2023-05,6.937916862768129,True
+sengkang|3-room,2023-06,-6.760794646138693,True
+sengkang|3-room,2023-07,-0.0,False
+sengkang|3-room,2023-08,-0.0,False
+sengkang|3-room,2023-09,-0.0,False
+sengkang|3-room,2023-10,-0.0,False
+sengkang|3-room,2023-11,-0.0,False
+sengkang|3-room,2023-12,-0.0,False
+sengkang|3-room,2024-01,-0.0,False
+sengkang|3-room,2024-02,-0.0,False
+sengkang|3-room,2024-03,-0.0,False
+sengkang|3-room,2024-04,-0.0,False
+sengkang|4-room,2022-05,1.4039511921413057,True
+sengkang|4-room,2022-06,5.977214415888481,True
+sengkang|4-room,2022-07,10.654362547515088,True
+sengkang|4-room,2022-08,14.72360644841334,True
+sengkang|4-room,2022-09,-1.3490650676661586,True
+sengkang|4-room,2022-10,29.064157709875804,True
+sengkang|4-room,2022-11,12.336511497350998,True
+sengkang|4-room,2022-12,-13.622073955286496,True
+sengkang|4-room,2023-01,-5.554020257099938,True
+sengkang|4-room,2023-02,12.503472338458419,True
+sengkang|4-room,2023-03,1.9752634908096982,True
+sengkang|4-room,2023-04,-3.4412145658401965,True
+sengkang|4-room,2023-05,-43.77953897786685,True
+sengkang|4-room,2023-06,-2.3438743093552996,True
+sengkang|4-room,2023-07,-0.0,False
+sengkang|4-room,2023-08,-0.0,False
+sengkang|4-room,2023-09,-0.0,False
+sengkang|4-room,2023-10,-0.0,False
+sengkang|4-room,2023-11,-0.0,False
+sengkang|4-room,2023-12,-0.0,False
+sengkang|4-room,2024-01,-0.0,False
+sengkang|4-room,2024-02,-0.0,False
+sengkang|4-room,2024-03,-0.0,False
+sengkang|4-room,2024-04,-0.0,False
+sengkang|5-room,2022-05,9.099643585803003,True
+sengkang|5-room,2022-06,12.2127314758669,True
+sengkang|5-room,2022-07,-6.1781538138010905,True
+sengkang|5-room,2022-08,22.143474544124306,True
+sengkang|5-room,2022-09,-5.141652422385194,True
+sengkang|5-room,2022-10,56.62813431180215,True
+sengkang|5-room,2022-11,35.58603614873154,True
+sengkang|5-room,2022-12,6.495119688528392,True
+sengkang|5-room,2023-01,25.125302738607846,True
+sengkang|5-room,2023-02,-20.03863449337845,True
+sengkang|5-room,2023-03,-46.39376365471741,True
+sengkang|5-room,2023-04,-49.992705476366346,True
+sengkang|5-room,2023-05,-8.863335617547209,True
+sengkang|5-room,2023-06,-29.49632905544093,True
+sengkang|5-room,2023-07,-0.0,False
+sengkang|5-room,2023-08,-0.0,False
+sengkang|5-room,2023-09,-0.0,False
+sengkang|5-room,2023-10,-0.0,False
+sengkang|5-room,2023-11,-0.0,False
+sengkang|5-room,2023-12,-0.0,False
+sengkang|5-room,2024-01,-0.0,False
+sengkang|5-room,2024-02,-0.0,False
+sengkang|5-room,2024-03,-0.0,False
+sengkang|5-room,2024-04,-0.0,False
+sengkang|executive,2022-05,-6.286678351588364,True
+sengkang|executive,2022-06,0.0,True
+sengkang|executive,2022-07,-0.1806155149142598,True
+sengkang|executive,2022-08,-2.0199181318581383,True
+sengkang|executive,2022-09,0.16257923648863823,True
+sengkang|executive,2022-10,0.0,True
+sengkang|executive,2022-11,12.544234522100007,True
+sengkang|executive,2022-12,-0.06984804474730495,True
+sengkang|executive,2023-01,0.009510767983564344,True
+sengkang|executive,2023-02,-18.725638990290918,True
+sengkang|executive,2023-03,-5.533960366104895,True
+sengkang|executive,2023-04,-16.379918886817578,True
+sengkang|executive,2023-05,5.168055418174904,True
+sengkang|executive,2023-06,1.067023034958093,True
+sengkang|executive,2023-07,0.0,False
+sengkang|executive,2023-08,0.0,False
+sengkang|executive,2023-09,0.0,False
+sengkang|executive,2023-10,0.0,False
+sengkang|executive,2023-11,0.0,False
+sengkang|executive,2023-12,0.0,False
+sengkang|executive,2024-01,0.0,False
+sengkang|executive,2024-02,0.0,False
+sengkang|executive,2024-03,0.0,False
+sengkang|executive,2024-04,0.0,False
+serangoon|3-room,2022-05,-1.7935619174959792,True
+serangoon|3-room,2022-06,-3.023414374170873,True
+serangoon|3-room,2022-07,-1.8032407487297608,True
+serangoon|3-room,2022-08,-3.21682004140848,True
+serangoon|3-room,2022-09,9.00017708321337,True
+serangoon|3-room,2022-10,-2.4079778750781906,True
+serangoon|3-room,2022-11,0.0769231167001251,True
+serangoon|3-room,2022-12,-4.598156875324795,True
+serangoon|3-room,2023-01,6.331113361872113,True
+serangoon|3-room,2023-02,-9.606925781531876,True
+serangoon|3-room,2023-03,-2.940968337819477,True
+serangoon|3-room,2023-04,-2.5856109611423954,True
+serangoon|3-room,2023-05,-16.221620490563577,True
+serangoon|3-room,2023-06,-6.533890288742129,True
+serangoon|3-room,2023-07,-0.0,False
+serangoon|3-room,2023-08,-0.0,False
+serangoon|3-room,2023-09,-0.0,False
+serangoon|3-room,2023-10,-0.0,False
+serangoon|3-room,2023-11,-0.0,False
+serangoon|3-room,2023-12,-0.0,False
+serangoon|3-room,2024-01,-0.0,False
+serangoon|3-room,2024-02,-0.0,False
+serangoon|3-room,2024-03,-0.0,False
+serangoon|3-room,2024-04,-0.0,False
+serangoon|4-room,2022-05,1.2741715733140913,True
+serangoon|4-room,2022-06,-1.5917698655744916,True
+serangoon|4-room,2022-07,0.0,True
+serangoon|4-room,2022-08,0.0,True
+serangoon|4-room,2022-09,-8.155507709099524,True
+serangoon|4-room,2022-10,-5.236525926963025,True
+serangoon|4-room,2022-11,34.33819227891943,True
+serangoon|4-room,2022-12,-1.2107560248273,True
+serangoon|4-room,2023-01,-6.112864342092566,True
+serangoon|4-room,2023-02,-2.892907178724136,True
+serangoon|4-room,2023-03,17.928330684422836,True
+serangoon|4-room,2023-04,14.739083801655674,True
+serangoon|4-room,2023-05,-4.739245955664436,True
+serangoon|4-room,2023-06,-13.425019677185388,True
+serangoon|4-room,2023-07,-0.0,False
+serangoon|4-room,2023-08,-0.0,False
+serangoon|4-room,2023-09,-0.0,False
+serangoon|4-room,2023-10,-0.0,False
+serangoon|4-room,2023-11,-0.0,False
+serangoon|4-room,2023-12,-0.0,False
+serangoon|4-room,2024-01,-0.0,False
+serangoon|4-room,2024-02,-0.0,False
+serangoon|4-room,2024-03,-0.0,False
+serangoon|4-room,2024-04,-0.0,False
+serangoon|5-room,2022-05,0.0,True
+serangoon|5-room,2022-06,-0.30881757989449826,True
+serangoon|5-room,2022-07,2.704139573359575,True
+serangoon|5-room,2022-08,-5.042366133626047,True
+serangoon|5-room,2022-09,0.3800847917821454,True
+serangoon|5-room,2022-10,0.0,True
+serangoon|5-room,2022-11,0.0,True
+serangoon|5-room,2022-12,0.0,True
+serangoon|5-room,2023-01,3.655985605642284,True
+serangoon|5-room,2023-02,13.671642962945066,True
+serangoon|5-room,2023-03,0.0,True
+serangoon|5-room,2023-04,1.6607503208987562,True
+serangoon|5-room,2023-05,0.0,True
+serangoon|5-room,2023-06,0.0,True
+serangoon|5-room,2023-07,0.0,False
+serangoon|5-room,2023-08,0.0,False
+serangoon|5-room,2023-09,0.0,False
+serangoon|5-room,2023-10,0.0,False
+serangoon|5-room,2023-11,0.0,False
+serangoon|5-room,2023-12,0.0,False
+serangoon|5-room,2024-01,0.0,False
+serangoon|5-room,2024-02,0.0,False
+serangoon|5-room,2024-03,0.0,False
+serangoon|5-room,2024-04,0.0,False
+serangoon|executive,2022-05,14.455588883256457,True
+serangoon|executive,2022-06,-2.981876603691271,True
+serangoon|executive,2022-07,0.0,True
+serangoon|executive,2022-08,0.0,True
+serangoon|executive,2022-09,0.0,True
+serangoon|executive,2022-10,0.0,True
+serangoon|executive,2022-11,0.0,True
+serangoon|executive,2022-12,0.0,True
+serangoon|executive,2023-01,0.0,True
+serangoon|executive,2023-02,-19.675003125357357,True
+serangoon|executive,2023-03,-16.190744935810248,True
+serangoon|executive,2023-04,0.0,True
+serangoon|executive,2023-05,-3.170450162564466,True
+serangoon|executive,2023-06,-5.68569749965282,True
+serangoon|executive,2023-07,-0.0,False
+serangoon|executive,2023-08,-0.0,False
+serangoon|executive,2023-09,-0.0,False
+serangoon|executive,2023-10,-0.0,False
+serangoon|executive,2023-11,-0.0,False
+serangoon|executive,2023-12,-0.0,False
+serangoon|executive,2024-01,-0.0,False
+serangoon|executive,2024-02,-0.0,False
+serangoon|executive,2024-03,-0.0,False
+serangoon|executive,2024-04,-0.0,False
+tampines|2-room,2022-05,0.0,True
+tampines|2-room,2022-06,0.0,True
+tampines|2-room,2022-07,0.0,True
+tampines|2-room,2022-08,0.0,True
+tampines|2-room,2022-09,-9.331409447954838,True
+tampines|2-room,2022-10,0.0,True
+tampines|2-room,2022-11,0.0,True
+tampines|2-room,2022-12,0.0,True
+tampines|2-room,2023-01,0.0,True
+tampines|2-room,2023-02,0.0,True
+tampines|2-room,2023-03,0.0,True
+tampines|2-room,2023-04,0.0,True
+tampines|2-room,2023-05,0.0,True
+tampines|2-room,2023-06,0.0,True
+tampines|2-room,2023-07,0.0,False
+tampines|2-room,2023-08,0.0,False
+tampines|2-room,2023-09,0.0,False
+tampines|2-room,2023-10,0.0,False
+tampines|2-room,2023-11,0.0,False
+tampines|2-room,2023-12,0.0,False
+tampines|2-room,2024-01,0.0,False
+tampines|2-room,2024-02,0.0,False
+tampines|2-room,2024-03,0.0,False
+tampines|2-room,2024-04,0.0,False
+tampines|3-room,2022-05,8.983893375853315,True
+tampines|3-room,2022-06,8.269877789364816,True
+tampines|3-room,2022-07,2.560208816157657,True
+tampines|3-room,2022-08,0.0,True
+tampines|3-room,2022-09,3.669990445718104,True
+tampines|3-room,2022-10,-3.2979613259661047,True
+tampines|3-room,2022-11,7.043113196427481,True
+tampines|3-room,2022-12,0.5392208309421527,True
+tampines|3-room,2023-01,-7.350556656554943,True
+tampines|3-room,2023-02,-12.930706102038338,True
+tampines|3-room,2023-03,1.2221118853785593,True
+tampines|3-room,2023-04,6.539013957518796,True
+tampines|3-room,2023-05,-13.611686698982744,True
+tampines|3-room,2023-06,-8.318245736328445,True
+tampines|3-room,2023-07,-0.0,False
+tampines|3-room,2023-08,-0.0,False
+tampines|3-room,2023-09,-0.0,False
+tampines|3-room,2023-10,-0.0,False
+tampines|3-room,2023-11,-0.0,False
+tampines|3-room,2023-12,-0.0,False
+tampines|3-room,2024-01,-0.0,False
+tampines|3-room,2024-02,-0.0,False
+tampines|3-room,2024-03,-0.0,False
+tampines|3-room,2024-04,-0.0,False
+tampines|4-room,2022-05,13.92990886948048,True
+tampines|4-room,2022-06,-0.6456081234209703,True
+tampines|4-room,2022-07,-2.5617038046706218,True
+tampines|4-room,2022-08,14.3949027441552,True
+tampines|4-room,2022-09,15.283843677193387,True
+tampines|4-room,2022-10,21.22501372438679,True
+tampines|4-room,2022-11,16.812233422533954,True
+tampines|4-room,2022-12,53.50654897851824,True
+tampines|4-room,2023-01,8.032057301734847,True
+tampines|4-room,2023-02,-32.08025751729618,True
+tampines|4-room,2023-03,-42.108146649613595,True
+tampines|4-room,2023-04,10.590994235841864,True
+tampines|4-room,2023-05,-18.457555310293227,True
+tampines|4-room,2023-06,-34.137995550922774,True
+tampines|4-room,2023-07,-0.0,False
+tampines|4-room,2023-08,-0.0,False
+tampines|4-room,2023-09,-0.0,False
+tampines|4-room,2023-10,-0.0,False
+tampines|4-room,2023-11,-0.0,False
+tampines|4-room,2023-12,-0.0,False
+tampines|4-room,2024-01,-0.0,False
+tampines|4-room,2024-02,-0.0,False
+tampines|4-room,2024-03,-0.0,False
+tampines|4-room,2024-04,-0.0,False
+tampines|5-room,2022-05,-10.159630140052267,True
+tampines|5-room,2022-06,5.432510470920216,True
+tampines|5-room,2022-07,3.8197266761156543,True
+tampines|5-room,2022-08,15.292102973159361,True
+tampines|5-room,2022-09,12.028321727918943,True
+tampines|5-room,2022-10,12.814167880370324,True
+tampines|5-room,2022-11,12.909514000607276,True
+tampines|5-room,2022-12,19.400125143103438,True
+tampines|5-room,2023-01,7.590861258937652,True
+tampines|5-room,2023-02,-8.127091159619612,True
+tampines|5-room,2023-03,30.53017909460515,True
+tampines|5-room,2023-04,8.13557168476974,True
+tampines|5-room,2023-05,-48.50733107331246,True
+tampines|5-room,2023-06,-37.1179904996911,True
+tampines|5-room,2023-07,-0.0,False
+tampines|5-room,2023-08,-0.0,False
+tampines|5-room,2023-09,-0.0,False
+tampines|5-room,2023-10,-0.0,False
+tampines|5-room,2023-11,-0.0,False
+tampines|5-room,2023-12,-0.0,False
+tampines|5-room,2024-01,-0.0,False
+tampines|5-room,2024-02,-0.0,False
+tampines|5-room,2024-03,-0.0,False
+tampines|5-room,2024-04,-0.0,False
+tampines|executive,2022-05,13.530204170241275,True
+tampines|executive,2022-06,5.422848188638508,True
+tampines|executive,2022-07,1.4359014769230458,True
+tampines|executive,2022-08,8.282441784557243,True
+tampines|executive,2022-09,-7.632887930223864,True
+tampines|executive,2022-10,-9.006259153105406,True
+tampines|executive,2022-11,37.15432273933822,True
+tampines|executive,2022-12,0.0,True
+tampines|executive,2023-01,0.0,True
+tampines|executive,2023-02,-11.976274343964779,True
+tampines|executive,2023-03,0.0,True
+tampines|executive,2023-04,0.0,True
+tampines|executive,2023-05,0.0,True
+tampines|executive,2023-06,4.932914101777033,True
+tampines|executive,2023-07,0.0,False
+tampines|executive,2023-08,0.0,False
+tampines|executive,2023-09,0.0,False
+tampines|executive,2023-10,0.0,False
+tampines|executive,2023-11,0.0,False
+tampines|executive,2023-12,0.0,False
+tampines|executive,2024-01,0.0,False
+tampines|executive,2024-02,0.0,False
+tampines|executive,2024-03,0.0,False
+tampines|executive,2024-04,0.0,False
+toa payoh|2-room,2022-05,0.0,True
+toa payoh|2-room,2022-06,0.0,True
+toa payoh|2-room,2022-07,0.0,True
+toa payoh|2-room,2022-08,-2.0549260995310967,True
+toa payoh|2-room,2022-09,5.712819060554959,True
+toa payoh|2-room,2022-10,0.0,True
+toa payoh|2-room,2022-11,-3.642647837890343,True
+toa payoh|2-room,2022-12,-3.7047277645021253,True
+toa payoh|2-room,2023-01,0.0,True
+toa payoh|2-room,2023-02,0.0,True
+toa payoh|2-room,2023-03,0.0,True
+toa payoh|2-room,2023-04,2.133257906381904,True
+toa payoh|2-room,2023-05,-1.4659230539115127,True
+toa payoh|2-room,2023-06,0.0,True
+toa payoh|2-room,2023-07,0.0,False
+toa payoh|2-room,2023-08,0.0,False
+toa payoh|2-room,2023-09,0.0,False
+toa payoh|2-room,2023-10,0.0,False
+toa payoh|2-room,2023-11,0.0,False
+toa payoh|2-room,2023-12,0.0,False
+toa payoh|2-room,2024-01,0.0,False
+toa payoh|2-room,2024-02,0.0,False
+toa payoh|2-room,2024-03,0.0,False
+toa payoh|2-room,2024-04,0.0,False
+toa payoh|3-room,2022-05,0.06552844127159717,True
+toa payoh|3-room,2022-06,3.932957582117682,True
+toa payoh|3-room,2022-07,18.506629915441525,True
+toa payoh|3-room,2022-08,-5.593198853383431,True
+toa payoh|3-room,2022-09,8.811532524123267,True
+toa payoh|3-room,2022-10,9.361871157425943,True
+toa payoh|3-room,2022-11,27.86567784496695,True
+toa payoh|3-room,2022-12,4.972197307768653,True
+toa payoh|3-room,2023-01,3.4224706229870328,True
+toa payoh|3-room,2023-02,18.904373947387946,True
+toa payoh|3-room,2023-03,-22.000153231914663,True
+toa payoh|3-room,2023-04,-15.655060101103741,True
+toa payoh|3-room,2023-05,-22.47097748775031,True
+toa payoh|3-room,2023-06,-19.346172114955568,True
+toa payoh|3-room,2023-07,-0.0,False
+toa payoh|3-room,2023-08,-0.0,False
+toa payoh|3-room,2023-09,-0.0,False
+toa payoh|3-room,2023-10,-0.0,False
+toa payoh|3-room,2023-11,-0.0,False
+toa payoh|3-room,2023-12,-0.0,False
+toa payoh|3-room,2024-01,-0.0,False
+toa payoh|3-room,2024-02,-0.0,False
+toa payoh|3-room,2024-03,-0.0,False
+toa payoh|3-room,2024-04,-0.0,False
+toa payoh|4-room,2022-05,1.3327387274833544,True
+toa payoh|4-room,2022-06,6.2231023246439365,True
+toa payoh|4-room,2022-07,-2.033970288954244,True
+toa payoh|4-room,2022-08,2.328865453701628,True
+toa payoh|4-room,2022-09,1.3073820702934646,True
+toa payoh|4-room,2022-10,10.74339664630478,True
+toa payoh|4-room,2022-11,24.762811175581106,True
+toa payoh|4-room,2022-12,20.323602138548363,True
+toa payoh|4-room,2023-01,3.650001415970284,True
+toa payoh|4-room,2023-02,-3.363343234783714,True
+toa payoh|4-room,2023-03,-9.006575094634222,True
+toa payoh|4-room,2023-04,-18.624642113653593,True
+toa payoh|4-room,2023-05,-20.238443156905223,True
+toa payoh|4-room,2023-06,-8.543133918699107,True
+toa payoh|4-room,2023-07,-0.0,False
+toa payoh|4-room,2023-08,-0.0,False
+toa payoh|4-room,2023-09,-0.0,False
+toa payoh|4-room,2023-10,-0.0,False
+toa payoh|4-room,2023-11,-0.0,False
+toa payoh|4-room,2023-12,-0.0,False
+toa payoh|4-room,2024-01,-0.0,False
+toa payoh|4-room,2024-02,-0.0,False
+toa payoh|4-room,2024-03,-0.0,False
+toa payoh|4-room,2024-04,-0.0,False
+toa payoh|5-room,2022-05,0.3343504120732901,True
+toa payoh|5-room,2022-06,0.8071130098548411,True
+toa payoh|5-room,2022-07,15.177152854460044,True
+toa payoh|5-room,2022-08,-10.491105968984026,True
+toa payoh|5-room,2022-09,-0.09954781093872203,True
+toa payoh|5-room,2022-10,0.0,True
+toa payoh|5-room,2022-11,0.57532792409347,True
+toa payoh|5-room,2022-12,9.650730776472772,True
+toa payoh|5-room,2023-01,0.0,True
+toa payoh|5-room,2023-02,-9.869439454595545,True
+toa payoh|5-room,2023-03,-2.9117143634662277,True
+toa payoh|5-room,2023-04,-2.4949023050870043,True
+toa payoh|5-room,2023-05,2.0338831771405803,True
+toa payoh|5-room,2023-06,2.357532357988332,True
+toa payoh|5-room,2023-07,0.0,False
+toa payoh|5-room,2023-08,0.0,False
+toa payoh|5-room,2023-09,0.0,False
+toa payoh|5-room,2023-10,0.0,False
+toa payoh|5-room,2023-11,0.0,False
+toa payoh|5-room,2023-12,0.0,False
+toa payoh|5-room,2024-01,0.0,False
+toa payoh|5-room,2024-02,0.0,False
+toa payoh|5-room,2024-03,0.0,False
+toa payoh|5-room,2024-04,0.0,False
+toa payoh|executive,2022-05,0.0,True
+toa payoh|executive,2022-06,0.0,True
+toa payoh|executive,2022-07,0.0,True
+toa payoh|executive,2022-08,0.0,True
+toa payoh|executive,2022-09,-4.73796949912905,True
+toa payoh|executive,2022-10,0.0,True
+toa payoh|executive,2022-11,0.0,True
+toa payoh|executive,2022-12,0.0,True
+toa payoh|executive,2023-01,0.0,True
+toa payoh|executive,2023-02,0.0,True
+toa payoh|executive,2023-03,0.0,True
+toa payoh|executive,2023-04,0.0,True
+toa payoh|executive,2023-05,0.0,True
+toa payoh|executive,2023-06,-6.52324109654933,True
+toa payoh|executive,2023-07,-0.0,False
+toa payoh|executive,2023-08,-0.0,False
+toa payoh|executive,2023-09,-0.0,False
+toa payoh|executive,2023-10,-0.0,False
+toa payoh|executive,2023-11,-0.0,False
+toa payoh|executive,2023-12,-0.0,False
+toa payoh|executive,2024-01,-0.0,False
+toa payoh|executive,2024-02,-0.0,False
+toa payoh|executive,2024-03,-0.0,False
+toa payoh|executive,2024-04,-0.0,False
+woodlands|2-room,2022-05,0.0,True
+woodlands|2-room,2022-06,0.0,True
+woodlands|2-room,2022-07,0.0,True
+woodlands|2-room,2022-08,-3.7110957688982533,True
+woodlands|2-room,2022-09,4.23884482571522,True
+woodlands|2-room,2022-10,0.0,True
+woodlands|2-room,2022-11,0.0,True
+woodlands|2-room,2022-12,0.0,True
+woodlands|2-room,2023-01,0.0,True
+woodlands|2-room,2023-02,-12.490163069209165,True
+woodlands|2-room,2023-03,0.0,True
+woodlands|2-room,2023-04,0.0,True
+woodlands|2-room,2023-05,-2.8070449645854603,True
+woodlands|2-room,2023-06,-5.17748400556815,True
+woodlands|2-room,2023-07,-0.0,False
+woodlands|2-room,2023-08,-0.0,False
+woodlands|2-room,2023-09,-0.0,False
+woodlands|2-room,2023-10,-0.0,False
+woodlands|2-room,2023-11,-0.0,False
+woodlands|2-room,2023-12,-0.0,False
+woodlands|2-room,2024-01,-0.0,False
+woodlands|2-room,2024-02,-0.0,False
+woodlands|2-room,2024-03,-0.0,False
+woodlands|2-room,2024-04,-0.0,False
+woodlands|3-room,2022-05,6.031349186872699,True
+woodlands|3-room,2022-06,5.861758849671319,True
+woodlands|3-room,2022-07,6.668283184431259,True
+woodlands|3-room,2022-08,0.0,True
+woodlands|3-room,2022-09,2.132063334134564,True
+woodlands|3-room,2022-10,-12.876834605040713,True
+woodlands|3-room,2022-11,5.748073697882056,True
+woodlands|3-room,2022-12,7.030462273960273,True
+woodlands|3-room,2023-01,1.9791276598854386,True
+woodlands|3-room,2023-02,12.619564101656282,True
+woodlands|3-room,2023-03,5.942118046346153,True
+woodlands|3-room,2023-04,-7.463008488763608,True
+woodlands|3-room,2023-05,12.196424894117095,True
+woodlands|3-room,2023-06,-8.900231983069599,True
+woodlands|3-room,2023-07,-0.0,False
+woodlands|3-room,2023-08,-0.0,False
+woodlands|3-room,2023-09,-0.0,False
+woodlands|3-room,2023-10,-0.0,False
+woodlands|3-room,2023-11,-0.0,False
+woodlands|3-room,2023-12,-0.0,False
+woodlands|3-room,2024-01,-0.0,False
+woodlands|3-room,2024-02,-0.0,False
+woodlands|3-room,2024-03,-0.0,False
+woodlands|3-room,2024-04,-0.0,False
+woodlands|4-room,2022-05,-3.8038554418501773,True
+woodlands|4-room,2022-06,-2.057418399501526,True
+woodlands|4-room,2022-07,3.8769343065993214,True
+woodlands|4-room,2022-08,1.5266078585617135,True
+woodlands|4-room,2022-09,9.6141264055963,True
+woodlands|4-room,2022-10,0.7924163622357322,True
+woodlands|4-room,2022-11,34.742972276770075,True
+woodlands|4-room,2022-12,33.31894859222409,True
+woodlands|4-room,2023-01,-26.024617969651306,True
+woodlands|4-room,2023-02,37.6727984486651,True
+woodlands|4-room,2023-03,-20.287942845609066,True
+woodlands|4-room,2023-04,-29.338900473558045,True
+woodlands|4-room,2023-05,-24.921333196134086,True
+woodlands|4-room,2023-06,-47.762378785258605,True
+woodlands|4-room,2023-07,-0.0,False
+woodlands|4-room,2023-08,-0.0,False
+woodlands|4-room,2023-09,-0.0,False
+woodlands|4-room,2023-10,-0.0,False
+woodlands|4-room,2023-11,-0.0,False
+woodlands|4-room,2023-12,-0.0,False
+woodlands|4-room,2024-01,-0.0,False
+woodlands|4-room,2024-02,-0.0,False
+woodlands|4-room,2024-03,-0.0,False
+woodlands|4-room,2024-04,-0.0,False
+woodlands|5-room,2022-05,-12.078156017942417,True
+woodlands|5-room,2022-06,-11.318322554871836,True
+woodlands|5-room,2022-07,2.547057791660003,True
+woodlands|5-room,2022-08,6.273616278262132,True
+woodlands|5-room,2022-09,-0.036978430735577716,True
+woodlands|5-room,2022-10,-6.883600063968573,True
+woodlands|5-room,2022-11,5.369669711582672,True
+woodlands|5-room,2022-12,25.442111193665678,True
+woodlands|5-room,2023-01,2.3360761498865865,True
+woodlands|5-room,2023-02,14.884807752429198,True
+woodlands|5-room,2023-03,-12.942726587128217,True
+woodlands|5-room,2023-04,0.41502566993533946,True
+woodlands|5-room,2023-05,-10.046689651110105,True
+woodlands|5-room,2023-06,-11.008649106647328,True
+woodlands|5-room,2023-07,-0.0,False
+woodlands|5-room,2023-08,-0.0,False
+woodlands|5-room,2023-09,-0.0,False
+woodlands|5-room,2023-10,-0.0,False
+woodlands|5-room,2023-11,-0.0,False
+woodlands|5-room,2023-12,-0.0,False
+woodlands|5-room,2024-01,-0.0,False
+woodlands|5-room,2024-02,-0.0,False
+woodlands|5-room,2024-03,-0.0,False
+woodlands|5-room,2024-04,-0.0,False
+woodlands|executive,2022-05,0.0,True
+woodlands|executive,2022-06,0.0,True
+woodlands|executive,2022-07,-2.5967026455985938,True
+woodlands|executive,2022-08,0.0,True
+woodlands|executive,2022-09,-5.662317645832597,True
+woodlands|executive,2022-10,-8.707864577245202,True
+woodlands|executive,2022-11,7.772799813329991,True
+woodlands|executive,2022-12,1.6014689745347768,True
+woodlands|executive,2023-01,-11.972345249816739,True
+woodlands|executive,2023-02,-9.558913542869883,True
+woodlands|executive,2023-03,9.394173993155837,True
+woodlands|executive,2023-04,0.0,True
+woodlands|executive,2023-05,3.6551844136585587,True
+woodlands|executive,2023-06,5.326337855727981,True
+woodlands|executive,2023-07,0.0,False
+woodlands|executive,2023-08,0.0,False
+woodlands|executive,2023-09,0.0,False
+woodlands|executive,2023-10,0.0,False
+woodlands|executive,2023-11,0.0,False
+woodlands|executive,2023-12,0.0,False
+woodlands|executive,2024-01,0.0,False
+woodlands|executive,2024-02,0.0,False
+woodlands|executive,2024-03,0.0,False
+woodlands|executive,2024-04,0.0,False
+yishun|2-room,2022-05,0.0,True
+yishun|2-room,2022-06,0.0,True
+yishun|2-room,2022-07,0.0,True
+yishun|2-room,2022-08,4.725301543297656,True
+yishun|2-room,2022-09,-3.8785639102818887,True
+yishun|2-room,2022-10,-9.870497385342032,True
+yishun|2-room,2022-11,-3.0188611593402124,True
+yishun|2-room,2022-12,0.0,True
+yishun|2-room,2023-01,0.0,True
+yishun|2-room,2023-02,5.598052021722968,True
+yishun|2-room,2023-03,5.009394645360714,True
+yishun|2-room,2023-04,0.0,True
+yishun|2-room,2023-05,0.0,True
+yishun|2-room,2023-06,0.0,True
+yishun|2-room,2023-07,0.0,False
+yishun|2-room,2023-08,0.0,False
+yishun|2-room,2023-09,0.0,False
+yishun|2-room,2023-10,0.0,False
+yishun|2-room,2023-11,0.0,False
+yishun|2-room,2023-12,0.0,False
+yishun|2-room,2024-01,0.0,False
+yishun|2-room,2024-02,0.0,False
+yishun|2-room,2024-03,0.0,False
+yishun|2-room,2024-04,0.0,False
+yishun|3-room,2022-05,2.7092499695462635,True
+yishun|3-room,2022-06,12.341518537037354,True
+yishun|3-room,2022-07,5.4675295773965535,True
+yishun|3-room,2022-08,0.0,True
+yishun|3-room,2022-09,12.330027808937965,True
+yishun|3-room,2022-10,-3.1624136918380805,True
+yishun|3-room,2022-11,20.065762674131904,True
+yishun|3-room,2022-12,15.570831979508563,True
+yishun|3-room,2023-01,-2.422301367298366,True
+yishun|3-room,2023-02,-57.109236723735464,True
+yishun|3-room,2023-03,5.920152480725339,True
+yishun|3-room,2023-04,-7.798726368855511,True
+yishun|3-room,2023-05,-39.770415756496774,True
+yishun|3-room,2023-06,24.55703483132693,True
+yishun|3-room,2023-07,0.0,False
+yishun|3-room,2023-08,0.0,False
+yishun|3-room,2023-09,0.0,False
+yishun|3-room,2023-10,0.0,False
+yishun|3-room,2023-11,0.0,False
+yishun|3-room,2023-12,0.0,False
+yishun|3-room,2024-01,0.0,False
+yishun|3-room,2024-02,0.0,False
+yishun|3-room,2024-03,0.0,False
+yishun|3-room,2024-04,0.0,False
+yishun|4-room,2022-05,-10.491237493224162,True
+yishun|4-room,2022-06,8.82717263793328,True
+yishun|4-room,2022-07,8.247026207839987,True
+yishun|4-room,2022-08,10.962953005903566,True
+yishun|4-room,2022-09,-5.506661321046459,True
+yishun|4-room,2022-10,-2.5983720934019,True
+yishun|4-room,2022-11,39.07635588220144,True
+yishun|4-room,2022-12,26.422716389037095,True
+yishun|4-room,2023-01,2.208294890338939,True
+yishun|4-room,2023-02,1.7711776953037208,True
+yishun|4-room,2023-03,-27.990206465238675,True
+yishun|4-room,2023-04,5.798207796583455,True
+yishun|4-room,2023-05,8.128681564090206,True
+yishun|4-room,2023-06,-23.17155785437583,True
+yishun|4-room,2023-07,-0.0,False
+yishun|4-room,2023-08,-0.0,False
+yishun|4-room,2023-09,-0.0,False
+yishun|4-room,2023-10,-0.0,False
+yishun|4-room,2023-11,-0.0,False
+yishun|4-room,2023-12,-0.0,False
+yishun|4-room,2024-01,-0.0,False
+yishun|4-room,2024-02,-0.0,False
+yishun|4-room,2024-03,-0.0,False
+yishun|4-room,2024-04,-0.0,False
+yishun|5-room,2022-05,0.0,True
+yishun|5-room,2022-06,6.253988330595313,True
+yishun|5-room,2022-07,0.13391100313223886,True
+yishun|5-room,2022-08,1.9655870372630813,True
+yishun|5-room,2022-09,15.178110497133567,True
+yishun|5-room,2022-10,8.179492415630701,True
+yishun|5-room,2022-11,10.878701416584793,True
+yishun|5-room,2022-12,-3.7637229424190104,True
+yishun|5-room,2023-01,7.962430151696434,True
+yishun|5-room,2023-02,4.2150671728582,True
+yishun|5-room,2023-03,5.673814128622248,True
+yishun|5-room,2023-04,3.6945797739752817,True
+yishun|5-room,2023-05,-19.28823098453793,True
+yishun|5-room,2023-06,-18.221265680454806,True
+yishun|5-room,2023-07,-0.0,False
+yishun|5-room,2023-08,-0.0,False
+yishun|5-room,2023-09,-0.0,False
+yishun|5-room,2023-10,-0.0,False
+yishun|5-room,2023-11,-0.0,False
+yishun|5-room,2023-12,-0.0,False
+yishun|5-room,2024-01,-0.0,False
+yishun|5-room,2024-02,-0.0,False
+yishun|5-room,2024-03,-0.0,False
+yishun|5-room,2024-04,-0.0,False
+yishun|executive,2022-05,3.397013532800695,True
+yishun|executive,2022-06,-4.046786620270823,True
+yishun|executive,2022-07,0.0,True
+yishun|executive,2022-08,0.0,True
+yishun|executive,2022-09,10.10982392428759,True
+yishun|executive,2022-10,0.0,True
+yishun|executive,2022-11,0.0,True
+yishun|executive,2022-12,0.0,True
+yishun|executive,2023-01,-4.764920094456013,True
+yishun|executive,2023-02,-3.3949726616780187,True
+yishun|executive,2023-03,0.0,True
+yishun|executive,2023-04,-30.189694026805025,True
+yishun|executive,2023-05,0.0,True
+yishun|executive,2023-06,23.742742336355775,True
+yishun|executive,2023-07,0.0,False
+yishun|executive,2023-08,0.0,False
+yishun|executive,2023-09,0.0,False
+yishun|executive,2023-10,0.0,False
+yishun|executive,2023-11,0.0,False
+yishun|executive,2023-12,0.0,False
+yishun|executive,2024-01,0.0,False
+yishun|executive,2024-02,0.0,False
+yishun|executive,2024-03,0.0,False
+yishun|executive,2024-04,0.0,False

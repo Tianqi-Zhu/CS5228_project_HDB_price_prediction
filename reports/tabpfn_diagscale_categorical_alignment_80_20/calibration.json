@@ -1,0 +1,79 @@
+{
+  "categorical_indices": [
+    0,
+    1,
+    4,
+    6,
+    12,
+    13,
+    14,
+    41,
+    42
+  ],
+  "categorical_names": [
+    "FLAT_TYPE_CLEAN",
+    "FLAT_MODEL_CLEAN",
+    "APPROVAL_MONTH_OF_YEAR",
+    "TOWN_CLEAN",
+    "SUBZONE",
+    "PLANNING_AREA",
+    "REGION",
+    "BLOCK_ID",
+    "STREET_ID"
+  ],
+  "fit_rows": 102829,
+  "calibration_rows": 600,
+  "train_views": 2,
+  "checkpoint_views": 2,
+  "deployment_views": 1,
+  "training_task_size": 1024,
+  "learning_rate": 0.01,
+  "epochs_cap": 8,
+  "patience": 3,
+  "crps_weight": 1,
+  "mse_weight": 1,
+  "epoch_validation": [
+    {
+      "epoch": -1,
+      "delta_l2": 0.0,
+      "validation_mse": 270369.5243881688
+    },
+    {
+      "epoch": 0,
+      "delta_l2": 8.347492218017578,
+      "validation_mse": 268481.5820854352
+    },
+    {
+      "epoch": 1,
+      "delta_l2": 15.554292678833008,
+      "validation_mse": 267943.09625538177
+    },
+    {
+      "epoch": 2,
+      "delta_l2": 20.02651596069336,
+      "validation_mse": 268710.51076902734
+    },
+    {
+      "epoch": 3,
+      "delta_l2": 22.551076889038086,
+      "validation_mse": 268549.1970293803
+    },
+    {
+      "epoch": 4,
+      "delta_l2": 24.115320205688477,
+      "validation_mse": 269416.46825563465
+    }
+  ],
+  "calibration_rmse_weighted": 520.848215460587,
+  "calibration_rmse_unweighted": 520.2200647518328,
+  "frozen_calibration_rmse_weighted": 521.8641848602077,
+  "prior_missing_indices_calibration_rmse_weighted": 521.1364372458313,
+  "delta_l2": 15.554293011999425,
+  "trainable_parameters": 8576,
+  "adapter_modules": 12,
+  "fit_seconds": 698.6961987999966,
+  "peak_vram_gib": 11.834048748016357,
+  "adapter_sha256": "1fa442b5180bbf9604d3e15517af08ad8bf38ac7258077b119d080f7cc9ef83b",
+  "code_sha256": "f572c7082e3dfc4fcb6450703c34a44868192172b191591c1d49f21b132c1103",
+  "outer_labels_used_for_selection": false
+}

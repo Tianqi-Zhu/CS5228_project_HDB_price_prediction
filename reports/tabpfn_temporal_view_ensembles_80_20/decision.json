@@ -1,0 +1,22 @@
+{
+  "models": {
+    "dynamics_optimized": {
+      "main_rmse_sgd": 455.36972746220016,
+      "earlier_nested_transfer_improves": true,
+      "candidate_for_independent_confirmation": false
+    },
+    "macro_optimized": {
+      "main_rmse_sgd": 455.3553416650742,
+      "earlier_nested_transfer_improves": false,
+      "candidate_for_independent_confirmation": false
+    },
+    "all_optimized": {
+      "main_rmse_sgd": 455.36972746220016,
+      "earlier_nested_transfer_improves": false,
+      "candidate_for_independent_confirmation": false
+    }
+  },
+  "production_submission_unchanged": true,
+  "untouched_test_available": false,
+  "deployment": "No automatic deployment; these are exploratory development results"
+}

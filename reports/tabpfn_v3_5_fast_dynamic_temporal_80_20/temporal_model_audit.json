@@ -1,0 +1,2025 @@
+{
+  "reference_end": "2021-12",
+  "reference_training_rows": 37619,
+  "selection_guard": "correction must improve earlier rolling forecast RMSE by at least 1%; simpler mode preferred within 1%",
+  "choices": [
+    {
+      "origin_index": 11,
+      "economic": null,
+      "alpha": null,
+      "rmse": null,
+      "errors": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origin": "2021-12",
+      "inner_origins": [],
+      "candidates": [
+        {
+          "economic": null,
+          "alpha": null,
+          "rmse": null
+        },
+        {
+          "economic": false,
+          "alpha": 1.0,
+          "rmse": null
+        },
+        {
+          "economic": false,
+          "alpha": 10.0,
+          "rmse": null
+        },
+        {
+          "economic": false,
+          "alpha": 100.0,
+          "rmse": null
+        },
+        {
+          "economic": true,
+          "alpha": 1.0,
+          "rmse": null
+        },
+        {
+          "economic": true,
+          "alpha": 10.0,
+          "rmse": null
+        },
+        {
+          "economic": true,
+          "alpha": 100.0,
+          "rmse": null
+        }
+      ]
+    },
+    {
+      "origin_index": 12,
+      "economic": null,
+      "alpha": null,
+      "rmse": null,
+      "errors": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origin": "2022-01",
+      "inner_origins": [],
+      "candidates": [
+        {
+          "economic": null,
+          "alpha": null,
+          "rmse": null
+        },
+        {
+          "economic": false,
+          "alpha": 1.0,
+          "rmse": null
+        },
+        {
+          "economic": false,
+          "alpha": 10.0,
+          "rmse": null
+        },
+        {
+          "economic": false,
+          "alpha": 100.0,
+          "rmse": null
+        },
+        {
+          "economic": true,
+          "alpha": 1.0,
+          "rmse": null
+        },
+        {
+          "economic": true,
+          "alpha": 10.0,
+          "rmse": null
+        },
+        {
+          "economic": true,
+          "alpha": 100.0,
+          "rmse": null
+        }
+      ]
+    },
+    {
+      "origin_index": 13,
+      "economic": null,
+      "alpha": null,
+      "rmse": null,
+      "errors": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origin": "2022-02",
+      "inner_origins": [],
+      "candidates": [
+        {
+          "economic": null,
+          "alpha": null,
+          "rmse": null
+        },
+        {
+          "economic": false,
+          "alpha": 1.0,
+          "rmse": null
+        },
+        {
+          "economic": false,
+          "alpha": 10.0,
+          "rmse": null
+        },
+        {
+          "economic": false,
+          "alpha": 100.0,
+          "rmse": null
+        },
+        {
+          "economic": true,
+          "alpha": 1.0,
+          "rmse": null
+        },
+        {
+          "economic": true,
+          "alpha": 10.0,
+          "rmse": null
+        },
+        {
+          "economic": true,
+          "alpha": 100.0,
+          "rmse": null
+        }
+      ]
+    },
+    {
+      "origin_index": 14,
+      "economic": null,
+      "alpha": null,
+      "rmse": null,
+      "errors": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origin": "2022-03",
+      "inner_origins": [],
+      "candidates": [
+        {
+          "economic": null,
+          "alpha": null,
+          "rmse": null
+        },
+        {
+          "economic": false,
+          "alpha": 1.0,
+          "rmse": null
+        },
+        {
+          "economic": false,
+          "alpha": 10.0,
+          "rmse": null
+        },
+        {
+          "economic": false,
+          "alpha": 100.0,
+          "rmse": null
+        },
+        {
+          "economic": true,
+          "alpha": 1.0,
+          "rmse": null
+        },
+        {
+          "economic": true,
+          "alpha": 10.0,
+          "rmse": null
+        },
+        {
+          "economic": true,
+          "alpha": 100.0,
+          "rmse": null
+        }
+      ]
+    },
+    {
+      "origin_index": 15,
+      "economic": null,
+      "alpha": null,
+      "rmse": null,
+      "errors": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origin": "2022-04",
+      "inner_origins": [],
+      "candidates": [
+        {
+          "economic": null,
+          "alpha": null,
+          "rmse": null
+        },
+        {
+          "economic": false,
+          "alpha": 1.0,
+          "rmse": null
+        },
+        {
+          "economic": false,
+          "alpha": 10.0,
+          "rmse": null
+        },
+        {
+          "economic": false,
+          "alpha": 100.0,
+          "rmse": null
+        },
+        {
+          "economic": true,
+          "alpha": 1.0,
+          "rmse": null
+        },
+        {
+          "economic": true,
+          "alpha": 10.0,
+          "rmse": null
+        },
+        {
+          "economic": true,
+          "alpha": 100.0,
+          "rmse": null
+        }
+      ]
+    },
+    {
+      "origin_index": 16,
+      "economic": null,
+      "alpha": null,
+      "rmse": null,
+      "errors": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origin": "2022-05",
+      "inner_origins": [],
+      "candidates": [
+        {
+          "economic": null,
+          "alpha": null,
+          "rmse": null
+        },
+        {
+          "economic": false,
+          "alpha": 1.0,
+          "rmse": null
+        },
+        {
+          "economic": false,
+          "alpha": 10.0,
+          "rmse": null
+        },
+        {
+          "economic": false,
+          "alpha": 100.0,
+          "rmse": null
+        },
+        {
+          "economic": true,
+          "alpha": 1.0,
+          "rmse": null
+        },
+        {
+          "economic": true,
+          "alpha": 10.0,
+          "rmse": null
+        },
+        {
+          "economic": true,
+          "alpha": 100.0,
+          "rmse": null
+        }
+      ]
+    },
+    {
+      "origin_index": 17,
+      "economic": null,
+      "alpha": null,
+      "rmse": null,
+      "errors": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origin": "2022-06",
+      "inner_origins": [],
+      "candidates": [
+        {
+          "economic": null,
+          "alpha": null,
+          "rmse": null
+        },
+        {
+          "economic": false,
+          "alpha": 1.0,
+          "rmse": null
+        },
+        {
+          "economic": false,
+          "alpha": 10.0,
+          "rmse": null
+        },
+        {
+          "economic": false,
+          "alpha": 100.0,
+          "rmse": null
+        },
+        {
+          "economic": true,
+          "alpha": 1.0,
+          "rmse": null
+        },
+        {
+          "economic": true,
+          "alpha": 10.0,
+          "rmse": null
+        },
+        {
+          "economic": true,
+          "alpha": 100.0,
+          "rmse": null
+        }
+      ]
+    },
+    {
+      "origin_index": 18,
+      "economic": null,
+      "alpha": null,
+      "rmse": null,
+      "errors": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origin": "2022-07",
+      "inner_origins": [],
+      "candidates": [
+        {
+          "economic": null,
+          "alpha": null,
+          "rmse": null
+        },
+        {
+          "economic": false,
+          "alpha": 1.0,
+          "rmse": null
+        },
+        {
+          "economic": false,
+          "alpha": 10.0,
+          "rmse": null
+        },
+        {
+          "economic": false,
+          "alpha": 100.0,
+          "rmse": null
+        },
+        {
+          "economic": true,
+          "alpha": 1.0,
+          "rmse": null
+        },
+        {
+          "economic": true,
+          "alpha": 10.0,
+          "rmse": null
+        },
+        {
+          "economic": true,
+          "alpha": 100.0,
+          "rmse": null
+        }
+      ]
+    },
+    {
+      "origin_index": 19,
+      "economic": null,
+      "alpha": null,
+      "rmse": null,
+      "errors": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origin": "2022-08",
+      "inner_origins": [],
+      "candidates": [
+        {
+          "economic": null,
+          "alpha": null,
+          "rmse": null
+        },
+        {
+          "economic": false,
+          "alpha": 1.0,
+          "rmse": null
+        },
+        {
+          "economic": false,
+          "alpha": 10.0,
+          "rmse": null
+        },
+        {
+          "economic": false,
+          "alpha": 100.0,
+          "rmse": null
+        },
+        {
+          "economic": true,
+          "alpha": 1.0,
+          "rmse": null
+        },
+        {
+          "economic": true,
+          "alpha": 10.0,
+          "rmse": null
+        },
+        {
+          "economic": true,
+          "alpha": 100.0,
+          "rmse": null
+        }
+      ]
+    },
+    {
+      "origin_index": 20,
+      "economic": null,
+      "alpha": null,
+      "rmse": null,
+      "errors": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origin": "2022-09",
+      "inner_origins": [],
+      "candidates": [
+        {
+          "economic": null,
+          "alpha": null,
+          "rmse": null
+        },
+        {
+          "economic": false,
+          "alpha": 1.0,
+          "rmse": null
+        },
+        {
+          "economic": false,
+          "alpha": 10.0,
+          "rmse": null
+        },
+        {
+          "economic": false,
+          "alpha": 100.0,
+          "rmse": null
+        },
+        {
+          "economic": true,
+          "alpha": 1.0,
+          "rmse": null
+        },
+        {
+          "economic": true,
+          "alpha": 10.0,
+          "rmse": null
+        },
+        {
+          "economic": true,
+          "alpha": 100.0,
+          "rmse": null
+        }
+      ]
+    },
+    {
+      "origin_index": 21,
+      "economic": null,
+      "alpha": null,
+      "rmse": null,
+      "errors": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origin": "2022-10",
+      "inner_origins": [],
+      "candidates": [
+        {
+          "economic": null,
+          "alpha": null,
+          "rmse": null
+        },
+        {
+          "economic": false,
+          "alpha": 1.0,
+          "rmse": null
+        },
+        {
+          "economic": false,
+          "alpha": 10.0,
+          "rmse": null
+        },
+        {
+          "economic": false,
+          "alpha": 100.0,
+          "rmse": null
+        },
+        {
+          "economic": true,
+          "alpha": 1.0,
+          "rmse": null
+        },
+        {
+          "economic": true,
+          "alpha": 10.0,
+          "rmse": null
+        },
+        {
+          "economic": true,
+          "alpha": 100.0,
+          "rmse": null
+        }
+      ]
+    },
+    {
+      "origin_index": 22,
+      "economic": null,
+      "alpha": null,
+      "rmse": null,
+      "errors": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origin": "2022-11",
+      "inner_origins": [],
+      "candidates": [
+        {
+          "economic": null,
+          "alpha": null,
+          "rmse": null
+        },
+        {
+          "economic": false,
+          "alpha": 1.0,
+          "rmse": null
+        },
+        {
+          "economic": false,
+          "alpha": 10.0,
+          "rmse": null
+        },
+        {
+          "economic": false,
+          "alpha": 100.0,
+          "rmse": null
+        },
+        {
+          "economic": true,
+          "alpha": 1.0,
+          "rmse": null
+        },
+        {
+          "economic": true,
+          "alpha": 10.0,
+          "rmse": null
+        },
+        {
+          "economic": true,
+          "alpha": 100.0,
+          "rmse": null
+        }
+      ]
+    },
+    {
+      "origin_index": 23,
+      "economic": null,
+      "alpha": null,
+      "rmse": null,
+      "errors": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origin": "2022-12",
+      "inner_origins": [],
+      "candidates": [
+        {
+          "economic": null,
+          "alpha": null,
+          "rmse": null
+        },
+        {
+          "economic": false,
+          "alpha": 1.0,
+          "rmse": null
+        },
+        {
+          "economic": false,
+          "alpha": 10.0,
+          "rmse": null
+        },
+        {
+          "economic": false,
+          "alpha": 100.0,
+          "rmse": null
+        },
+        {
+          "economic": true,
+          "alpha": 1.0,
+          "rmse": null
+        },
+        {
+          "economic": true,
+          "alpha": 10.0,
+          "rmse": null
+        },
+        {
+          "economic": true,
+          "alpha": 100.0,
+          "rmse": null
+        }
+      ]
+    },
+    {
+      "origin_index": 24,
+      "economic": null,
+      "alpha": null,
+      "rmse": null,
+      "errors": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origin": "2023-01",
+      "inner_origins": [],
+      "candidates": [
+        {
+          "economic": null,
+          "alpha": null,
+          "rmse": null
+        },
+        {
+          "economic": false,
+          "alpha": 1.0,
+          "rmse": null
+        },
+        {
+          "economic": false,
+          "alpha": 10.0,
+          "rmse": null
+        },
+        {
+          "economic": false,
+          "alpha": 100.0,
+          "rmse": null
+        },
+        {
+          "economic": true,
+          "alpha": 1.0,
+          "rmse": null
+        },
+        {
+          "economic": true,
+          "alpha": 10.0,
+          "rmse": null
+        },
+        {
+          "economic": true,
+          "alpha": 100.0,
+          "rmse": null
+        }
+      ]
+    },
+    {
+      "origin_index": 25,
+      "economic": null,
+      "alpha": null,
+      "rmse": null,
+      "errors": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origin": "2023-02",
+      "inner_origins": [],
+      "candidates": [
+        {
+          "economic": null,
+          "alpha": null,
+          "rmse": null
+        },
+        {
+          "economic": false,
+          "alpha": 1.0,
+          "rmse": null
+        },
+        {
+          "economic": false,
+          "alpha": 10.0,
+          "rmse": null
+        },
+        {
+          "economic": false,
+          "alpha": 100.0,
+          "rmse": null
+        },
+        {
+          "economic": true,
+          "alpha": 1.0,
+          "rmse": null
+        },
+        {
+          "economic": true,
+          "alpha": 10.0,
+          "rmse": null
+        },
+        {
+          "economic": true,
+          "alpha": 100.0,
+          "rmse": null
+        }
+      ]
+    },
+    {
+      "origin_index": 26,
+      "economic": null,
+      "alpha": null,
+      "rmse": null,
+      "errors": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origin": "2023-03",
+      "inner_origins": [],
+      "candidates": [
+        {
+          "economic": null,
+          "alpha": null,
+          "rmse": null
+        },
+        {
+          "economic": false,
+          "alpha": 1.0,
+          "rmse": null
+        },
+        {
+          "economic": false,
+          "alpha": 10.0,
+          "rmse": null
+        },
+        {
+          "economic": false,
+          "alpha": 100.0,
+          "rmse": null
+        },
+        {
+          "economic": true,
+          "alpha": 1.0,
+          "rmse": null
+        },
+        {
+          "economic": true,
+          "alpha": 10.0,
+          "rmse": null
+        },
+        {
+          "economic": true,
+          "alpha": 100.0,
+          "rmse": null
+        }
+      ]
+    },
+    {
+      "origin_index": 27,
+      "economic": false,
+      "alpha": 1.0,
+      "rmse": 281.40315447716483,
+      "errors": [
+        177.21596880390385,
+        178.68981762677106,
+        229.60926475729792,
+        284.89421412315124,
+        318.7696154511216,
+        352.9153492550997,
+        321.1288256266012,
+        312.8941444255357,
+        280.00111046400036,
+        298.4397320587104,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origin": "2023-04",
+      "inner_origins": [
+        "2022-06"
+      ],
+      "candidates": [
+        {
+          "economic": null,
+          "alpha": null,
+          "rmse": 309.17714821750894
+        },
+        {
+          "economic": false,
+          "alpha": 1.0,
+          "rmse": 281.40315447716483
+        },
+        {
+          "economic": false,
+          "alpha": 10.0,
+          "rmse": 295.11869525386436
+        },
+        {
+          "economic": false,
+          "alpha": 100.0,
+          "rmse": 308.4181235198581
+        },
+        {
+          "economic": true,
+          "alpha": 1.0,
+          "rmse": 288.6423202117747
+        },
+        {
+          "economic": true,
+          "alpha": 10.0,
+          "rmse": 297.91395946024664
+        },
+        {
+          "economic": true,
+          "alpha": 100.0,
+          "rmse": 309.77852574320974
+        }
+      ]
+    },
+    {
+      "origin_index": 28,
+      "economic": true,
+      "alpha": 1.0,
+      "rmse": 216.37833975735535,
+      "errors": [
+        138.99424500323556,
+        183.83487255971917,
+        217.1863372069508,
+        248.2995397742596,
+        276.94199886402475,
+        250.7076360070981,
+        232.14666336710684,
+        203.53613051490248,
+        202.5141385355096,
+        174.2883719461454,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origin": "2023-05",
+      "inner_origins": [
+        "2022-07"
+      ],
+      "candidates": [
+        {
+          "economic": null,
+          "alpha": null,
+          "rmse": 233.73217283532938
+        },
+        {
+          "economic": false,
+          "alpha": 1.0,
+          "rmse": 222.03665271161628
+        },
+        {
+          "economic": false,
+          "alpha": 10.0,
+          "rmse": 228.38325319188272
+        },
+        {
+          "economic": false,
+          "alpha": 100.0,
+          "rmse": 237.2764534647073
+        },
+        {
+          "economic": true,
+          "alpha": 1.0,
+          "rmse": 216.37833975735535
+        },
+        {
+          "economic": true,
+          "alpha": 10.0,
+          "rmse": 219.61866766262904
+        },
+        {
+          "economic": true,
+          "alpha": 100.0,
+          "rmse": 236.4534125506978
+        }
+      ]
+    },
+    {
+      "origin_index": 29,
+      "economic": null,
+      "alpha": null,
+      "rmse": 195.98030039356306,
+      "errors": [
+        176.15880874435308,
+        192.02109329428876,
+        202.97784132536316,
+        229.35784760525996,
+        220.53101083119356,
+        208.46938210059065,
+        184.54467751869785,
+        185.41262790965663,
+        162.70605242663385,
+        188.0757263215883,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origin": "2023-06",
+      "inner_origins": [
+        "2022-08"
+      ],
+      "candidates": [
+        {
+          "economic": null,
+          "alpha": null,
+          "rmse": 195.98030039356306
+        },
+        {
+          "economic": false,
+          "alpha": 1.0,
+          "rmse": 206.0314093321874
+        },
+        {
+          "economic": false,
+          "alpha": 10.0,
+          "rmse": 205.9364868071323
+        },
+        {
+          "economic": false,
+          "alpha": 100.0,
+          "rmse": 204.20555933233408
+        },
+        {
+          "economic": true,
+          "alpha": 1.0,
+          "rmse": 197.9515962399421
+        },
+        {
+          "economic": true,
+          "alpha": 10.0,
+          "rmse": 198.54927910996923
+        },
+        {
+          "economic": true,
+          "alpha": 100.0,
+          "rmse": 203.40286475383687
+        }
+      ]
+    },
+    {
+      "origin_index": 30,
+      "economic": null,
+      "alpha": null,
+      "rmse": 185.93596478560153,
+      "errors": [
+        179.18294158119096,
+        180.8334451637288,
+        203.6977032195321,
+        197.93270956142803,
+        186.88740594508667,
+        169.08818373628318,
+        180.10354035835317,
+        171.5355494716021,
+        195.43048085095393,
+        191.49918418865497,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origin": "2023-07",
+      "inner_origins": [
+        "2022-09"
+      ],
+      "candidates": [
+        {
+          "economic": null,
+          "alpha": null,
+          "rmse": 185.93596478560153
+        },
+        {
+          "economic": false,
+          "alpha": 1.0,
+          "rmse": 200.7991099388419
+        },
+        {
+          "economic": false,
+          "alpha": 10.0,
+          "rmse": 207.40004753451174
+        },
+        {
+          "economic": false,
+          "alpha": 100.0,
+          "rmse": 195.65230011120195
+        },
+        {
+          "economic": true,
+          "alpha": 1.0,
+          "rmse": 197.31794127186905
+        },
+        {
+          "economic": true,
+          "alpha": 10.0,
+          "rmse": 204.84825734587645
+        },
+        {
+          "economic": true,
+          "alpha": 100.0,
+          "rmse": 196.45850988561205
+        }
+      ]
+    },
+    {
+      "origin_index": 31,
+      "economic": null,
+      "alpha": null,
+      "rmse": 194.7522962019669,
+      "errors": [
+        174.19478128379504,
+        193.60095784390862,
+        186.92487720627815,
+        179.67561532789017,
+        165.09716194952583,
+        185.6467049704948,
+        181.60325452240434,
+        208.41810022710672,
+        201.81190576514837,
+        255.67071748364899,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origin": "2023-08",
+      "inner_origins": [
+        "2022-10"
+      ],
+      "candidates": [
+        {
+          "economic": null,
+          "alpha": null,
+          "rmse": 194.7522962019669
+        },
+        {
+          "economic": false,
+          "alpha": 1.0,
+          "rmse": 233.29915149005606
+        },
+        {
+          "economic": false,
+          "alpha": 10.0,
+          "rmse": 228.26662961441758
+        },
+        {
+          "economic": false,
+          "alpha": 100.0,
+          "rmse": 203.68659580349504
+        },
+        {
+          "economic": true,
+          "alpha": 1.0,
+          "rmse": 216.6015885585215
+        },
+        {
+          "economic": true,
+          "alpha": 10.0,
+          "rmse": 223.14820186206208
+        },
+        {
+          "economic": true,
+          "alpha": 100.0,
+          "rmse": 204.38312831412492
+        }
+      ]
+    },
+    {
+      "origin_index": 32,
+      "economic": null,
+      "alpha": null,
+      "rmse": 230.6781279049238,
+      "errors": [
+        186.9740957246088,
+        182.2994675652494,
+        179.08495380721504,
+        176.52977409984928,
+        198.2872451226545,
+        202.23153318563487,
+        236.66872231481355,
+        234.54676095682345,
+        296.4022716406412,
+        348.71678815706434,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origin": "2023-09",
+      "inner_origins": [
+        "2022-11"
+      ],
+      "candidates": [
+        {
+          "economic": null,
+          "alpha": null,
+          "rmse": 230.6781279049238
+        },
+        {
+          "economic": false,
+          "alpha": 1.0,
+          "rmse": 287.7784831963613
+        },
+        {
+          "economic": false,
+          "alpha": 10.0,
+          "rmse": 272.57210146733485
+        },
+        {
+          "economic": false,
+          "alpha": 100.0,
+          "rmse": 234.21198893640994
+        },
+        {
+          "economic": true,
+          "alpha": 1.0,
+          "rmse": 275.9932939614726
+        },
+        {
+          "economic": true,
+          "alpha": 10.0,
+          "rmse": 269.1622554242333
+        },
+        {
+          "economic": true,
+          "alpha": 100.0,
+          "rmse": 234.63950168625274
+        }
+      ]
+    },
+    {
+      "origin_index": 33,
+      "economic": false,
+      "alpha": 100.0,
+      "rmse": 273.3757343279489,
+      "errors": [
+        194.41648837967946,
+        175.22911285149013,
+        171.07431686667704,
+        186.62846084085436,
+        196.28568704578984,
+        248.81842731847922,
+        252.02298383387645,
+        323.89020688277867,
+        396.0429578789059,
+        434.78057485215356,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origin": "2023-10",
+      "inner_origins": [
+        "2022-12"
+      ],
+      "candidates": [
+        {
+          "economic": null,
+          "alpha": null,
+          "rmse": 280.57274895650977
+        },
+        {
+          "economic": false,
+          "alpha": 1.0,
+          "rmse": 323.45921154571136
+        },
+        {
+          "economic": false,
+          "alpha": 10.0,
+          "rmse": 311.1525069636042
+        },
+        {
+          "economic": false,
+          "alpha": 100.0,
+          "rmse": 273.3757343279489
+        },
+        {
+          "economic": true,
+          "alpha": 1.0,
+          "rmse": 326.3885350530756
+        },
+        {
+          "economic": true,
+          "alpha": 10.0,
+          "rmse": 319.5775517204479
+        },
+        {
+          "economic": true,
+          "alpha": 100.0,
+          "rmse": 275.25614702374867
+        }
+      ]
+    },
+    {
+      "origin_index": 34,
+      "economic": false,
+      "alpha": 100.0,
+      "rmse": 249.20089214638932,
+      "errors": [
+        191.83468834050487,
+        163.1531180227949,
+        165.7817419746059,
+        155.05484417566086,
+        197.78285435664608,
+        196.20813192673933,
+        248.3044294320775,
+        314.8628748930723,
+        344.7730617246738,
+        385.73034098403883,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origin": "2023-11",
+      "inner_origins": [
+        "2023-01"
+      ],
+      "candidates": [
+        {
+          "economic": null,
+          "alpha": null,
+          "rmse": 263.7564188209823
+        },
+        {
+          "economic": false,
+          "alpha": 1.0,
+          "rmse": 259.8678493161216
+        },
+        {
+          "economic": false,
+          "alpha": 10.0,
+          "rmse": 265.874672659664
+        },
+        {
+          "economic": false,
+          "alpha": 100.0,
+          "rmse": 249.20089214638932
+        },
+        {
+          "economic": true,
+          "alpha": 1.0,
+          "rmse": 279.8883561988134
+        },
+        {
+          "economic": true,
+          "alpha": 10.0,
+          "rmse": 282.285848471991
+        },
+        {
+          "economic": true,
+          "alpha": 100.0,
+          "rmse": 252.9449512742116
+        }
+      ]
+    },
+    {
+      "origin_index": 35,
+      "economic": false,
+      "alpha": 1.0,
+      "rmse": 209.13732738197524,
+      "errors": [
+        163.24994808302478,
+        154.50880322238743,
+        139.65497488111515,
+        160.1601868892109,
+        160.35792290780182,
+        161.6843728428613,
+        220.16858235104198,
+        246.26876996715325,
+        286.95278166768,
+        313.6638220542544,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origin": "2023-12",
+      "inner_origins": [
+        "2023-02"
+      ],
+      "candidates": [
+        {
+          "economic": null,
+          "alpha": null,
+          "rmse": 247.790002139563
+        },
+        {
+          "economic": false,
+          "alpha": 1.0,
+          "rmse": 209.13732738197524
+        },
+        {
+          "economic": false,
+          "alpha": 10.0,
+          "rmse": 227.3332949644052
+        },
+        {
+          "economic": false,
+          "alpha": 100.0,
+          "rmse": 226.58249143661175
+        },
+        {
+          "economic": true,
+          "alpha": 1.0,
+          "rmse": 255.03729900493792
+        },
+        {
+          "economic": true,
+          "alpha": 10.0,
+          "rmse": 245.64963132152195
+        },
+        {
+          "economic": true,
+          "alpha": 100.0,
+          "rmse": 228.422554395446
+        }
+      ]
+    },
+    {
+      "origin_index": 36,
+      "economic": false,
+      "alpha": 1.0,
+      "rmse": 168.97452289720263,
+      "errors": [
+        169.3976892469629,
+        171.63988354257265,
+        175.05891546448038,
+        206.37841887895337,
+        167.7801901998401,
+        156.80680025297292,
+        146.56302931423582,
+        157.98204624278134,
+        164.04049082915984,
+        167.46192259350613,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origin": "2024-01",
+      "inner_origins": [
+        "2023-03"
+      ],
+      "candidates": [
+        {
+          "economic": null,
+          "alpha": null,
+          "rmse": 175.286352928342
+        },
+        {
+          "economic": false,
+          "alpha": 1.0,
+          "rmse": 168.97452289720263
+        },
+        {
+          "economic": false,
+          "alpha": 10.0,
+          "rmse": 176.86022855533295
+        },
+        {
+          "economic": false,
+          "alpha": 100.0,
+          "rmse": 170.60547669865227
+        },
+        {
+          "economic": true,
+          "alpha": 1.0,
+          "rmse": 218.59374309275404
+        },
+        {
+          "economic": true,
+          "alpha": 10.0,
+          "rmse": 182.17113993936766
+        },
+        {
+          "economic": true,
+          "alpha": 100.0,
+          "rmse": 171.06414962545304
+        }
+      ]
+    },
+    {
+      "origin_index": 37,
+      "economic": false,
+      "alpha": 1.0,
+      "rmse": 236.86180993447766,
+      "errors": [
+        167.66692926083456,
+        174.26888187523892,
+        211.10332068096503,
+        228.83846860383903,
+        248.26526653862422,
+        264.3918190958134,
+        248.47132838644083,
+        245.61065495457046,
+        226.41045746657622,
+        250.42242650339165,
+        274.6075127100151,
+        263.73792727253976,
+        279.02995403501427,
+        238.24027374351027,
+        224.3586027508747,
+        216.820594847262,
+        232.03632272176188
+      ],
+      "origin": "2024-02",
+      "inner_origins": [
+        "2022-06",
+        "2023-04"
+      ],
+      "candidates": [
+        {
+          "economic": null,
+          "alpha": null,
+          "rmse": 291.48179154275977
+        },
+        {
+          "economic": false,
+          "alpha": 1.0,
+          "rmse": 236.86180993447766
+        },
+        {
+          "economic": false,
+          "alpha": 10.0,
+          "rmse": 257.3502336969346
+        },
+        {
+          "economic": false,
+          "alpha": 100.0,
+          "rmse": 283.1420080565699
+        },
+        {
+          "economic": true,
+          "alpha": 1.0,
+          "rmse": 251.32984005956436
+        },
+        {
+          "economic": true,
+          "alpha": 10.0,
+          "rmse": 260.84331027464316
+        },
+        {
+          "economic": true,
+          "alpha": 100.0,
+          "rmse": 283.31224348954015
+        }
+      ]
+    },
+    {
+      "origin_index": 38,
+      "economic": false,
+      "alpha": 1.0,
+      "rmse": 198.02848279073459,
+      "errors": [
+        151.48610890181527,
+        175.84412916341734,
+        194.3241078707637,
+        215.51473682799778,
+        223.72642603025278,
+        214.0248921603497,
+        203.90585247193528,
+        183.7796421270902,
+        200.6607922079474,
+        193.09097276274554,
+        190.04089664880115,
+        184.33141896012188,
+        189.6417490880478,
+        209.279663007515,
+        195.96454179045824,
+        216.69688501272924,
+        211.19960920977167
+      ],
+      "origin": "2024-03",
+      "inner_origins": [
+        "2022-07",
+        "2023-05"
+      ],
+      "candidates": [
+        {
+          "economic": null,
+          "alpha": null,
+          "rmse": 203.4011279448289
+        },
+        {
+          "economic": false,
+          "alpha": 1.0,
+          "rmse": 198.02848279073459
+        },
+        {
+          "economic": false,
+          "alpha": 10.0,
+          "rmse": 196.9204445165409
+        },
+        {
+          "economic": false,
+          "alpha": 100.0,
+          "rmse": 201.9008105102132
+        },
+        {
+          "economic": true,
+          "alpha": 1.0,
+          "rmse": 207.94122170356573
+        },
+        {
+          "economic": true,
+          "alpha": 10.0,
+          "rmse": 197.13302528670982
+        },
+        {
+          "economic": true,
+          "alpha": 100.0,
+          "rmse": 201.23012799886197
+        }
+      ]
+    },
+    {
+      "origin_index": 39,
+      "economic": null,
+      "alpha": null,
+      "rmse": 197.17815636492165,
+      "errors": [
+        160.10710663054886,
+        167.43096764260127,
+        185.80983413126185,
+        193.9798657143257,
+        204.44664840596502,
+        199.77656831550402,
+        178.8758977010419,
+        197.28660833126605,
+        188.54568092445956,
+        212.7945108463486,
+        183.581681913424,
+        177.7892150501056,
+        194.13998647505323,
+        201.24731604404093,
+        228.02352733006776,
+        227.5603775845982,
+        233.20965704230397
+      ],
+      "origin": "2024-04",
+      "inner_origins": [
+        "2022-08",
+        "2023-06"
+      ],
+      "candidates": [
+        {
+          "economic": null,
+          "alpha": null,
+          "rmse": 197.17815636492165
+        },
+        {
+          "economic": false,
+          "alpha": 1.0,
+          "rmse": 234.9139268596035
+        },
+        {
+          "economic": false,
+          "alpha": 10.0,
+          "rmse": 230.4820115518647
+        },
+        {
+          "economic": false,
+          "alpha": 100.0,
+          "rmse": 203.15038004625669
+        },
+        {
+          "economic": true,
+          "alpha": 1.0,
+          "rmse": 253.95921655820788
+        },
+        {
+          "economic": true,
+          "alpha": 10.0,
+          "rmse": 240.37897981382446
+        },
+        {
+          "economic": true,
+          "alpha": 100.0,
+          "rmse": 204.8290129492613
+        }
+      ]
+    },
+    {
+      "origin_index": 40,
+      "economic": null,
+      "alpha": null,
+      "rmse": 251.5662885517082,
+      "errors": [
+        162.82147841351008,
+        172.41327539770595,
+        180.40404885249092,
+        198.45154983435188,
+        194.8767851696592,
+        179.7755796033951,
+        205.0203279441054,
+        203.53337781336512,
+        226.01169542081686,
+        227.73291445002192,
+        227.24276477065152,
+        263.40027923676126,
+        281.17162845735186,
+        317.8270300280968,
+        332.4884517384001,
+        359.26830866133025,
+        387.65656868559
+      ],
+      "origin": "2024-05",
+      "inner_origins": [
+        "2022-09",
+        "2023-07"
+      ],
+      "candidates": [
+        {
+          "economic": null,
+          "alpha": null,
+          "rmse": 251.5662885517082
+        },
+        {
+          "economic": false,
+          "alpha": 1.0,
+          "rmse": 322.0111984304986
+        },
+        {
+          "economic": false,
+          "alpha": 10.0,
+          "rmse": 306.44771855213213
+        },
+        {
+          "economic": false,
+          "alpha": 100.0,
+          "rmse": 260.70095117873757
+        },
+        {
+          "economic": true,
+          "alpha": 1.0,
+          "rmse": 336.62404885379317
+        },
+        {
+          "economic": true,
+          "alpha": 10.0,
+          "rmse": 317.18391015329064
+        },
+        {
+          "economic": true,
+          "alpha": 100.0,
+          "rmse": 260.87979464419925
+        }
+      ]
+    }
+  ],
+  "final_origin_choice": {
+    "economic": null,
+    "alpha": null,
+    "rmse": 251.5662885517082,
+    "errors": [
+      162.82147841351008,
+      172.41327539770595,
+      180.40404885249092,
+      198.45154983435188,
+      194.8767851696592,
+      179.7755796033951,
+      205.0203279441054,
+      203.53337781336512,
+      226.01169542081686,
+      227.73291445002192,
+      227.24276477065152,
+      263.40027923676126,
+      281.17162845735186,
+      317.8270300280968,
+      332.4884517384001,
+      359.26830866133025,
+      387.65656868559
+    ],
+    "origin": "2024-05",
+    "inner_origins": [
+      "2022-09",
+      "2023-07"
+    ],
+    "candidates": [
+      {
+        "economic": null,
+        "alpha": null,
+        "rmse": 251.5662885517082
+      },
+      {
+        "economic": false,
+        "alpha": 1.0,
+        "rmse": 322.0111984304986
+      },
+      {
+        "economic": false,
+        "alpha": 10.0,
+        "rmse": 306.44771855213213
+      },
+      {
+        "economic": false,
+        "alpha": 100.0,
+        "rmse": 260.70095117873757
+      },
+      {
+        "economic": true,
+        "alpha": 1.0,
+        "rmse": 336.62404885379317
+      },
+      {
+        "economic": true,
+        "alpha": 10.0,
+        "rmse": 317.18391015329064
+      },
+      {
+        "economic": true,
+        "alpha": 100.0,
+        "rmse": 260.87979464419925
+      }
+    ]
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "members": {
+    "normalized_market/compact_ratio15_market_last": {
+      "weight": 0.13094,
+      "iterations": 496,
+      "spec": {
+        "name": "compact_ratio15_market_last",
+        "family": "lgb",
+        "features": "compact",
+        "target": "ratio",
+        "forecast": "MARKET_LAST",
+        "leaves": 15,
+        "normalizer": "mean"
+      },
+      "spec_sha256": "f7e8429e1897ea7557748a63f89104106c9613c5f6e257cb5c2878f7c0dc54bf",
+      "prediction_sha256": "17cd3f0695f3f617555302bc7b2923359fb1b940d775e20d639c66ceba5431a3",
+      "seconds": 1.6122162998653948
+    },
+    "anniversary/broad_lgb15": {
+      "weight": 0.09659,
+      "iterations": 405,
+      "spec": {
+        "name": "broad_lgb15",
+        "kind": "broad",
+        "family": "lgb",
+        "leaves": 15
+      },
+      "spec_sha256": "a3f5df42e2fea106c7bda95cc6c6567eddc7627dc61043b85c00f0540120368e",
+      "prediction_sha256": "77bd512202003451fd817f18bec7421b110c0935cf3dbe5fba910fa1529fd425",
+      "seconds": 3.4439441000577062
+    },
+    "anniversary/broad_lgb63": {
+      "weight": 0.10352,
+      "iterations": 95,
+      "spec": {
+        "name": "broad_lgb63",
+        "kind": "broad",
+        "family": "lgb",
+        "leaves": 63
+      },
+      "spec_sha256": "5714b9abec6758a6693d5af21e4f11f8a32c0b35c132700a172a1bb1c4199728",
+      "prediction_sha256": "5069633c3a827aa97b0f1af4129625a6f679ea17d73f683b506c5789725274ce",
+      "seconds": 2.1517305998131633
+    },
+    "anniversary/exact_lgb15": {
+      "weight": 0.17311,
+      "iterations": 401,
+      "spec": {
+        "name": "exact_lgb15",
+        "kind": "exact",
+        "family": "lgb",
+        "leaves": 15
+      },
+      "spec_sha256": "77b3fbb23ac841a0213ab1d38bce78cb916f1aa73d96846c7f321e3c5b9f0954",
+      "prediction_sha256": "f080eb7755fc777cfcd10420d95250dc7fab4306dea1acd98f80813d1d5e1182",
+      "seconds": 3.4132089999038726
+    },
+    "anniversary/exact_lgb63": {
+      "weight": 0.00658,
+      "iterations": 213,
+      "spec": {
+        "name": "exact_lgb63",
+        "kind": "exact",
+        "family": "lgb",
+        "leaves": 63
+      },
+      "spec_sha256": "557cbd0eddd9870f24634cf068a5b8a5febd8465ac1f27bfb271f8ffc2d0f859",
+      "prediction_sha256": "b5a36e4808c8404dd45753e654c3ae34dad58f412ac47b9b3f4eb3dbddc9f491",
+      "seconds": 3.4820121999364346
+    },
+    "anniversary/window_cat6": {
+      "weight": 0.4138,
+      "iterations": 833,
+      "spec": {
+        "name": "window_cat6",
+        "kind": "window",
+        "family": "cat",
+        "depth": 6
+      },
+      "spec_sha256": "98f8618a582f0b6885feac7170226262cca8b5000cca0dd05353ecbfccdd9f33",
+      "prediction_sha256": "f1b298424a45d597eb9cf60cabda7ec01e6057e96226a1ac69e88a30ed065ccd",
+      "seconds": 85.15689349989407
+    },
+    "anniversary/window_lgb63": {
+      "weight": 0.07546,
+      "iterations": 165,
+      "spec": {
+        "name": "window_lgb63",
+        "kind": "window",
+        "family": "lgb",
+        "leaves": 63
+      },
+      "spec_sha256": "170f4202312ae8b38c52f2bbc6cbc58657fc26592416e56d66996565c6a18931",
+      "prediction_sha256": "9dc7afce88ee944419e05db46055a714b7ea4e2e2cc3d96fe5ab58f2962cc8f6",
+      "seconds": 3.2773217000067234
+    }
+  },
+  "source_hashes": {
+    "data\\train.csv": "2fe38ce9e0d8a02e9786f066d4a10d575d91f34be1d9111f0142e3f43fbfc8a5",
+    "data\\auxiliary\\sg-coe-prices.csv": "c8f934ec6e82dad633afa34e466414fd7b572c580fa28dd6c866e76e4be533e0",
+    "data\\auxiliary\\sg-hdb-block.csv": "2255ad61ba6895456a39aec81d12583796d717ef88fe102ee9de71b3796fc223",
+    "data\\auxiliary\\sg-mrt-stations.csv": "4757278b94c2d05627a941377d51de60882e3e1477de01758ef37070b716b889",
+    "data\\auxiliary\\sg-schools.csv": "9bf28c6a2e5511c5cada178d221dfaac12beb3651425b3b86c37815e35de71cb",
+    "data\\auxiliary\\sg-shopping-malls.csv": "cce36a0175433f768d209b74e2e5376aad16befe1ad4f1313da0b18ed6d91a3b",
+    "data\\auxiliary\\sg-stock-prices.csv": "e03802bedbebedab27caafb6755ce055f1654cc17b3fc5fc6e3e7ee6ab2c23b7"
+  },
+  "context_rows": 121005,
+  "validation_targets_blinded": true,
+  "prediction_sha256": "a0b1ad293cf472179461eea71a608da068d3a3df89a30d151f6a676c973fdcd5"
+}

@@ -1,0 +1,596 @@
+{
+  "FOOD_NEAREST_M": {
+    "target_labels_used": false,
+    "policy": "retrospective current geographic snapshot; historical availability unverified",
+    "generation_class": "A",
+    "units": "metres",
+    "observation_timestamp": "current source snapshot; see source_manifest.json",
+    "availability_timestamp": "historical publication unknown; retrospective evaluation only",
+    "geographic_support": "building-centred metric buffer, Gaussian kernel, nearest geometry, or regional density"
+  },
+  "FOOD_COUNT_300M": {
+    "target_labels_used": false,
+    "policy": "retrospective current geographic snapshot; historical availability unverified",
+    "generation_class": "A",
+    "units": "see feature name",
+    "observation_timestamp": "current source snapshot; see source_manifest.json",
+    "availability_timestamp": "historical publication unknown; retrospective evaluation only",
+    "geographic_support": "building-centred metric buffer, Gaussian kernel, nearest geometry, or regional density"
+  },
+  "FOOD_DENSITY_300M_KM2": {
+    "target_labels_used": false,
+    "policy": "retrospective current geographic snapshot; historical availability unverified",
+    "generation_class": "A",
+    "units": "per km2",
+    "observation_timestamp": "current source snapshot; see source_manifest.json",
+    "availability_timestamp": "historical publication unknown; retrospective evaluation only",
+    "geographic_support": "building-centred metric buffer, Gaussian kernel, nearest geometry, or regional density"
+  },
+  "FOOD_COUNT_500M": {
+    "target_labels_used": false,
+    "policy": "retrospective current geographic snapshot; historical availability unverified",
+    "generation_class": "A",
+    "units": "see feature name",
+    "observation_timestamp": "current source snapshot; see source_manifest.json",
+    "availability_timestamp": "historical publication unknown; retrospective evaluation only",
+    "geographic_support": "building-centred metric buffer, Gaussian kernel, nearest geometry, or regional density"
+  },
+  "FOOD_DENSITY_500M_KM2": {
+    "target_labels_used": false,
+    "policy": "retrospective current geographic snapshot; historical availability unverified",
+    "generation_class": "A",
+    "units": "per km2",
+    "observation_timestamp": "current source snapshot; see source_manifest.json",
+    "availability_timestamp": "historical publication unknown; retrospective evaluation only",
+    "geographic_support": "building-centred metric buffer, Gaussian kernel, nearest geometry, or regional density"
+  },
+  "FOOD_COUNT_1000M": {
+    "target_labels_used": false,
+    "policy": "retrospective current geographic snapshot; historical availability unverified",
+    "generation_class": "A",
+    "units": "see feature name",
+    "observation_timestamp": "current source snapshot; see source_manifest.json",
+    "availability_timestamp": "historical publication unknown; retrospective evaluation only",
+    "geographic_support": "building-centred metric buffer, Gaussian kernel, nearest geometry, or regional density"
+  },
+  "FOOD_DENSITY_1000M_KM2": {
+    "target_labels_used": false,
+    "policy": "retrospective current geographic snapshot; historical availability unverified",
+    "generation_class": "A",
+    "units": "per km2",
+    "observation_timestamp": "current source snapshot; see source_manifest.json",
+    "availability_timestamp": "historical publication unknown; retrospective evaluation only",
+    "geographic_support": "building-centred metric buffer, Gaussian kernel, nearest geometry, or regional density"
+  },
+  "FOOD_KDE_200M_KM2": {
+    "target_labels_used": false,
+    "policy": "retrospective current geographic snapshot; historical availability unverified",
+    "generation_class": "A",
+    "units": "per km2",
+    "observation_timestamp": "current source snapshot; see source_manifest.json",
+    "availability_timestamp": "historical publication unknown; retrospective evaluation only",
+    "geographic_support": "building-centred metric buffer, Gaussian kernel, nearest geometry, or regional density"
+  },
+  "FOOD_KDE_500M_KM2": {
+    "target_labels_used": false,
+    "policy": "retrospective current geographic snapshot; historical availability unverified",
+    "generation_class": "A",
+    "units": "per km2",
+    "observation_timestamp": "current source snapshot; see source_manifest.json",
+    "availability_timestamp": "historical publication unknown; retrospective evaluation only",
+    "geographic_support": "building-centred metric buffer, Gaussian kernel, nearest geometry, or regional density"
+  },
+  "FOOD_KDE_1000M_KM2": {
+    "target_labels_used": false,
+    "policy": "retrospective current geographic snapshot; historical availability unverified",
+    "generation_class": "A",
+    "units": "per km2",
+    "observation_timestamp": "current source snapshot; see source_manifest.json",
+    "availability_timestamp": "historical publication unknown; retrospective evaluation only",
+    "geographic_support": "building-centred metric buffer, Gaussian kernel, nearest geometry, or regional density"
+  },
+  "MALL_NEAREST_M": {
+    "target_labels_used": false,
+    "policy": "retrospective current geographic snapshot; historical availability unverified",
+    "generation_class": "A",
+    "units": "metres",
+    "observation_timestamp": "current source snapshot; see source_manifest.json",
+    "availability_timestamp": "historical publication unknown; retrospective evaluation only",
+    "geographic_support": "building-centred metric buffer, Gaussian kernel, nearest geometry, or regional density"
+  },
+  "MALL_COUNT_300M": {
+    "target_labels_used": false,
+    "policy": "retrospective current geographic snapshot; historical availability unverified",
+    "generation_class": "A",
+    "units": "see feature name",
+    "observation_timestamp": "current source snapshot; see source_manifest.json",
+    "availability_timestamp": "historical publication unknown; retrospective evaluation only",
+    "geographic_support": "building-centred metric buffer, Gaussian kernel, nearest geometry, or regional density"
+  },
+  "MALL_DENSITY_300M_KM2": {
+    "target_labels_used": false,
+    "policy": "retrospective current geographic snapshot; historical availability unverified",
+    "generation_class": "A",
+    "units": "per km2",
+    "observation_timestamp": "current source snapshot; see source_manifest.json",
+    "availability_timestamp": "historical publication unknown; retrospective evaluation only",
+    "geographic_support": "building-centred metric buffer, Gaussian kernel, nearest geometry, or regional density"
+  },
+  "MALL_COUNT_500M": {
+    "target_labels_used": false,
+    "policy": "retrospective current geographic snapshot; historical availability unverified",
+    "generation_class": "A",
+    "units": "see feature name",
+    "observation_timestamp": "current source snapshot; see source_manifest.json",
+    "availability_timestamp": "historical publication unknown; retrospective evaluation only",
+    "geographic_support": "building-centred metric buffer, Gaussian kernel, nearest geometry, or regional density"
+  },
+  "MALL_DENSITY_500M_KM2": {
+    "target_labels_used": false,
+    "policy": "retrospective current geographic snapshot; historical availability unverified",
+    "generation_class": "A",
+    "units": "per km2",
+    "observation_timestamp": "current source snapshot; see source_manifest.json",
+    "availability_timestamp": "historical publication unknown; retrospective evaluation only",
+    "geographic_support": "building-centred metric buffer, Gaussian kernel, nearest geometry, or regional density"
+  },
+  "MALL_COUNT_1000M": {
+    "target_labels_used": false,
+    "policy": "retrospective current geographic snapshot; historical availability unverified",
+    "generation_class": "A",
+    "units": "see feature name",
+    "observation_timestamp": "current source snapshot; see source_manifest.json",
+    "availability_timestamp": "historical publication unknown; retrospective evaluation only",
+    "geographic_support": "building-centred metric buffer, Gaussian kernel, nearest geometry, or regional density"
+  },
+  "MALL_DENSITY_1000M_KM2": {
+    "target_labels_used": false,
+    "policy": "retrospective current geographic snapshot; historical availability unverified",
+    "generation_class": "A",
+    "units": "per km2",
+    "observation_timestamp": "current source snapshot; see source_manifest.json",
+    "availability_timestamp": "historical publication unknown; retrospective evaluation only",
+    "geographic_support": "building-centred metric buffer, Gaussian kernel, nearest geometry, or regional density"
+  },
+  "MALL_KDE_200M_KM2": {
+    "target_labels_used": false,
+    "policy": "retrospective current geographic snapshot; historical availability unverified",
+    "generation_class": "A",
+    "units": "per km2",
+    "observation_timestamp": "current source snapshot; see source_manifest.json",
+    "availability_timestamp": "historical publication unknown; retrospective evaluation only",
+    "geographic_support": "building-centred metric buffer, Gaussian kernel, nearest geometry, or regional density"
+  },
+  "MALL_KDE_500M_KM2": {
+    "target_labels_used": false,
+    "policy": "retrospective current geographic snapshot; historical availability unverified",
+    "generation_class": "A",
+    "units": "per km2",
+    "observation_timestamp": "current source snapshot; see source_manifest.json",
+    "availability_timestamp": "historical publication unknown; retrospective evaluation only",
+    "geographic_support": "building-centred metric buffer, Gaussian kernel, nearest geometry, or regional density"
+  },
+  "MALL_KDE_1000M_KM2": {
+    "target_labels_used": false,
+    "policy": "retrospective current geographic snapshot; historical availability unverified",
+    "generation_class": "A",
+    "units": "per km2",
+    "observation_timestamp": "current source snapshot; see source_manifest.json",
+    "availability_timestamp": "historical publication unknown; retrospective evaluation only",
+    "geographic_support": "building-centred metric buffer, Gaussian kernel, nearest geometry, or regional density"
+  },
+  "PARK_NEAREST_M": {
+    "target_labels_used": false,
+    "policy": "retrospective current geographic snapshot; historical availability unverified",
+    "generation_class": "A",
+    "units": "metres",
+    "observation_timestamp": "current source snapshot; see source_manifest.json",
+    "availability_timestamp": "historical publication unknown; retrospective evaluation only",
+    "geographic_support": "building-centred metric buffer, Gaussian kernel, nearest geometry, or regional density"
+  },
+  "PARK_FRACTION_100M": {
+    "target_labels_used": false,
+    "policy": "retrospective current geographic snapshot; historical availability unverified",
+    "generation_class": "A",
+    "units": "fraction",
+    "observation_timestamp": "current source snapshot; see source_manifest.json",
+    "availability_timestamp": "historical publication unknown; retrospective evaluation only",
+    "geographic_support": "building-centred metric buffer, Gaussian kernel, nearest geometry, or regional density"
+  },
+  "PARK_LARGEST_PATCH_FRACTION_100M": {
+    "target_labels_used": false,
+    "policy": "retrospective current geographic snapshot; historical availability unverified",
+    "generation_class": "A",
+    "units": "fraction",
+    "observation_timestamp": "current source snapshot; see source_manifest.json",
+    "availability_timestamp": "historical publication unknown; retrospective evaluation only",
+    "geographic_support": "building-centred metric buffer, Gaussian kernel, nearest geometry, or regional density"
+  },
+  "PARK_FRACTION_300M": {
+    "target_labels_used": false,
+    "policy": "retrospective current geographic snapshot; historical availability unverified",
+    "generation_class": "A",
+    "units": "fraction",
+    "observation_timestamp": "current source snapshot; see source_manifest.json",
+    "availability_timestamp": "historical publication unknown; retrospective evaluation only",
+    "geographic_support": "building-centred metric buffer, Gaussian kernel, nearest geometry, or regional density"
+  },
+  "PARK_LARGEST_PATCH_FRACTION_300M": {
+    "target_labels_used": false,
+    "policy": "retrospective current geographic snapshot; historical availability unverified",
+    "generation_class": "A",
+    "units": "fraction",
+    "observation_timestamp": "current source snapshot; see source_manifest.json",
+    "availability_timestamp": "historical publication unknown; retrospective evaluation only",
+    "geographic_support": "building-centred metric buffer, Gaussian kernel, nearest geometry, or regional density"
+  },
+  "PARK_FRACTION_500M": {
+    "target_labels_used": false,
+    "policy": "retrospective current geographic snapshot; historical availability unverified",
+    "generation_class": "A",
+    "units": "fraction",
+    "observation_timestamp": "current source snapshot; see source_manifest.json",
+    "availability_timestamp": "historical publication unknown; retrospective evaluation only",
+    "geographic_support": "building-centred metric buffer, Gaussian kernel, nearest geometry, or regional density"
+  },
+  "PARK_LARGEST_PATCH_FRACTION_500M": {
+    "target_labels_used": false,
+    "policy": "retrospective current geographic snapshot; historical availability unverified",
+    "generation_class": "A",
+    "units": "fraction",
+    "observation_timestamp": "current source snapshot; see source_manifest.json",
+    "availability_timestamp": "historical publication unknown; retrospective evaluation only",
+    "geographic_support": "building-centred metric buffer, Gaussian kernel, nearest geometry, or regional density"
+  },
+  "PARK_BINARY_ENTROPY": {
+    "target_labels_used": false,
+    "policy": "retrospective current geographic snapshot; historical availability unverified",
+    "generation_class": "A",
+    "units": "see feature name",
+    "observation_timestamp": "current source snapshot; see source_manifest.json",
+    "availability_timestamp": "historical publication unknown; retrospective evaluation only",
+    "geographic_support": "building-centred metric buffer, Gaussian kernel, nearest geometry, or regional density"
+  },
+  "PARK_GAUSSIAN_200M_FRACTION": {
+    "target_labels_used": false,
+    "policy": "retrospective current geographic snapshot; historical availability unverified",
+    "generation_class": "A",
+    "units": "fraction",
+    "observation_timestamp": "current source snapshot; see source_manifest.json",
+    "availability_timestamp": "historical publication unknown; retrospective evaluation only",
+    "geographic_support": "building-centred metric buffer, Gaussian kernel, nearest geometry, or regional density"
+  },
+  "CENSUS2020_DENSITY_RETRO_KM2": {
+    "target_labels_used": false,
+    "policy": "retrospective current geographic snapshot; historical availability unverified",
+    "generation_class": "A",
+    "units": "per km2",
+    "observation_timestamp": "current source snapshot; see source_manifest.json",
+    "availability_timestamp": "historical publication unknown; retrospective evaluation only",
+    "geographic_support": "building-centred metric buffer, Gaussian kernel, nearest geometry, or regional density"
+  },
+  "LOCAL_1000M_12M_COUNT": {
+    "target_labels_used": true,
+    "policy": "lagged prequential, origin-aligned; context labels only",
+    "generation_class": "C",
+    "units": "see feature name",
+    "observation_timestamp": "latest allowed month = row forecast_origin minus 1 month",
+    "availability_timestamp": "assumed 1-month publication lag; row origins in prepared cache",
+    "geographic_support": "same-flat-type nearby buildings; declared radius or kernel"
+  },
+  "LOCAL_1000M_12M_MEAN": {
+    "target_labels_used": true,
+    "policy": "lagged prequential, origin-aligned; context labels only",
+    "generation_class": "C",
+    "units": "see feature name",
+    "observation_timestamp": "latest allowed month = row forecast_origin minus 1 month",
+    "availability_timestamp": "assumed 1-month publication lag; row origins in prepared cache",
+    "geographic_support": "same-flat-type nearby buildings; declared radius or kernel"
+  },
+  "LOCAL_1000M_12M_PREMIUM": {
+    "target_labels_used": true,
+    "policy": "lagged prequential, origin-aligned; context labels only",
+    "generation_class": "C",
+    "units": "see feature name",
+    "observation_timestamp": "latest allowed month = row forecast_origin minus 1 month",
+    "availability_timestamp": "assumed 1-month publication lag; row origins in prepared cache",
+    "geographic_support": "same-flat-type nearby buildings; declared radius or kernel"
+  },
+  "LOCAL_1000M_12M_SHRUNK": {
+    "target_labels_used": true,
+    "policy": "lagged prequential, origin-aligned; context labels only",
+    "generation_class": "C",
+    "units": "see feature name",
+    "observation_timestamp": "latest allowed month = row forecast_origin minus 1 month",
+    "availability_timestamp": "assumed 1-month publication lag; row origins in prepared cache",
+    "geographic_support": "same-flat-type nearby buildings; declared radius or kernel"
+  },
+  "LOCAL_1000M_6M_COUNT": {
+    "target_labels_used": true,
+    "policy": "lagged prequential, origin-aligned; context labels only",
+    "generation_class": "C",
+    "units": "see feature name",
+    "observation_timestamp": "latest allowed month = row forecast_origin minus 1 month",
+    "availability_timestamp": "assumed 1-month publication lag; row origins in prepared cache",
+    "geographic_support": "same-flat-type nearby buildings; declared radius or kernel"
+  },
+  "LOCAL_1000M_6M_MEAN": {
+    "target_labels_used": true,
+    "policy": "lagged prequential, origin-aligned; context labels only",
+    "generation_class": "C",
+    "units": "see feature name",
+    "observation_timestamp": "latest allowed month = row forecast_origin minus 1 month",
+    "availability_timestamp": "assumed 1-month publication lag; row origins in prepared cache",
+    "geographic_support": "same-flat-type nearby buildings; declared radius or kernel"
+  },
+  "LOCAL_1000M_6M_PREMIUM": {
+    "target_labels_used": true,
+    "policy": "lagged prequential, origin-aligned; context labels only",
+    "generation_class": "C",
+    "units": "see feature name",
+    "observation_timestamp": "latest allowed month = row forecast_origin minus 1 month",
+    "availability_timestamp": "assumed 1-month publication lag; row origins in prepared cache",
+    "geographic_support": "same-flat-type nearby buildings; declared radius or kernel"
+  },
+  "LOCAL_1000M_6M_SHRUNK": {
+    "target_labels_used": true,
+    "policy": "lagged prequential, origin-aligned; context labels only",
+    "generation_class": "C",
+    "units": "see feature name",
+    "observation_timestamp": "latest allowed month = row forecast_origin minus 1 month",
+    "availability_timestamp": "assumed 1-month publication lag; row origins in prepared cache",
+    "geographic_support": "same-flat-type nearby buildings; declared radius or kernel"
+  },
+  "LOCAL_2000M_12M_COUNT": {
+    "target_labels_used": true,
+    "policy": "lagged prequential, origin-aligned; context labels only",
+    "generation_class": "C",
+    "units": "see feature name",
+    "observation_timestamp": "latest allowed month = row forecast_origin minus 1 month",
+    "availability_timestamp": "assumed 1-month publication lag; row origins in prepared cache",
+    "geographic_support": "same-flat-type nearby buildings; declared radius or kernel"
+  },
+  "LOCAL_2000M_12M_MEAN": {
+    "target_labels_used": true,
+    "policy": "lagged prequential, origin-aligned; context labels only",
+    "generation_class": "C",
+    "units": "see feature name",
+    "observation_timestamp": "latest allowed month = row forecast_origin minus 1 month",
+    "availability_timestamp": "assumed 1-month publication lag; row origins in prepared cache",
+    "geographic_support": "same-flat-type nearby buildings; declared radius or kernel"
+  },
+  "LOCAL_2000M_12M_PREMIUM": {
+    "target_labels_used": true,
+    "policy": "lagged prequential, origin-aligned; context labels only",
+    "generation_class": "C",
+    "units": "see feature name",
+    "observation_timestamp": "latest allowed month = row forecast_origin minus 1 month",
+    "availability_timestamp": "assumed 1-month publication lag; row origins in prepared cache",
+    "geographic_support": "same-flat-type nearby buildings; declared radius or kernel"
+  },
+  "LOCAL_2000M_12M_SHRUNK": {
+    "target_labels_used": true,
+    "policy": "lagged prequential, origin-aligned; context labels only",
+    "generation_class": "C",
+    "units": "see feature name",
+    "observation_timestamp": "latest allowed month = row forecast_origin minus 1 month",
+    "availability_timestamp": "assumed 1-month publication lag; row origins in prepared cache",
+    "geographic_support": "same-flat-type nearby buildings; declared radius or kernel"
+  },
+  "LOCAL_2000M_6M_COUNT": {
+    "target_labels_used": true,
+    "policy": "lagged prequential, origin-aligned; context labels only",
+    "generation_class": "C",
+    "units": "see feature name",
+    "observation_timestamp": "latest allowed month = row forecast_origin minus 1 month",
+    "availability_timestamp": "assumed 1-month publication lag; row origins in prepared cache",
+    "geographic_support": "same-flat-type nearby buildings; declared radius or kernel"
+  },
+  "LOCAL_2000M_6M_MEAN": {
+    "target_labels_used": true,
+    "policy": "lagged prequential, origin-aligned; context labels only",
+    "generation_class": "C",
+    "units": "see feature name",
+    "observation_timestamp": "latest allowed month = row forecast_origin minus 1 month",
+    "availability_timestamp": "assumed 1-month publication lag; row origins in prepared cache",
+    "geographic_support": "same-flat-type nearby buildings; declared radius or kernel"
+  },
+  "LOCAL_2000M_6M_PREMIUM": {
+    "target_labels_used": true,
+    "policy": "lagged prequential, origin-aligned; context labels only",
+    "generation_class": "C",
+    "units": "see feature name",
+    "observation_timestamp": "latest allowed month = row forecast_origin minus 1 month",
+    "availability_timestamp": "assumed 1-month publication lag; row origins in prepared cache",
+    "geographic_support": "same-flat-type nearby buildings; declared radius or kernel"
+  },
+  "LOCAL_2000M_6M_SHRUNK": {
+    "target_labels_used": true,
+    "policy": "lagged prequential, origin-aligned; context labels only",
+    "generation_class": "C",
+    "units": "see feature name",
+    "observation_timestamp": "latest allowed month = row forecast_origin minus 1 month",
+    "availability_timestamp": "assumed 1-month publication lag; row origins in prepared cache",
+    "geographic_support": "same-flat-type nearby buildings; declared radius or kernel"
+  },
+  "LOCAL_500M_12M_COUNT": {
+    "target_labels_used": true,
+    "policy": "lagged prequential, origin-aligned; context labels only",
+    "generation_class": "C",
+    "units": "see feature name",
+    "observation_timestamp": "latest allowed month = row forecast_origin minus 1 month",
+    "availability_timestamp": "assumed 1-month publication lag; row origins in prepared cache",
+    "geographic_support": "same-flat-type nearby buildings; declared radius or kernel"
+  },
+  "LOCAL_500M_12M_MEAN": {
+    "target_labels_used": true,
+    "policy": "lagged prequential, origin-aligned; context labels only",
+    "generation_class": "C",
+    "units": "see feature name",
+    "observation_timestamp": "latest allowed month = row forecast_origin minus 1 month",
+    "availability_timestamp": "assumed 1-month publication lag; row origins in prepared cache",
+    "geographic_support": "same-flat-type nearby buildings; declared radius or kernel"
+  },
+  "LOCAL_500M_12M_PREMIUM": {
+    "target_labels_used": true,
+    "policy": "lagged prequential, origin-aligned; context labels only",
+    "generation_class": "C",
+    "units": "see feature name",
+    "observation_timestamp": "latest allowed month = row forecast_origin minus 1 month",
+    "availability_timestamp": "assumed 1-month publication lag; row origins in prepared cache",
+    "geographic_support": "same-flat-type nearby buildings; declared radius or kernel"
+  },
+  "LOCAL_500M_12M_SHRUNK": {
+    "target_labels_used": true,
+    "policy": "lagged prequential, origin-aligned; context labels only",
+    "generation_class": "C",
+    "units": "see feature name",
+    "observation_timestamp": "latest allowed month = row forecast_origin minus 1 month",
+    "availability_timestamp": "assumed 1-month publication lag; row origins in prepared cache",
+    "geographic_support": "same-flat-type nearby buildings; declared radius or kernel"
+  },
+  "LOCAL_500M_6M_COUNT": {
+    "target_labels_used": true,
+    "policy": "lagged prequential, origin-aligned; context labels only",
+    "generation_class": "C",
+    "units": "see feature name",
+    "observation_timestamp": "latest allowed month = row forecast_origin minus 1 month",
+    "availability_timestamp": "assumed 1-month publication lag; row origins in prepared cache",
+    "geographic_support": "same-flat-type nearby buildings; declared radius or kernel"
+  },
+  "LOCAL_500M_6M_MEAN": {
+    "target_labels_used": true,
+    "policy": "lagged prequential, origin-aligned; context labels only",
+    "generation_class": "C",
+    "units": "see feature name",
+    "observation_timestamp": "latest allowed month = row forecast_origin minus 1 month",
+    "availability_timestamp": "assumed 1-month publication lag; row origins in prepared cache",
+    "geographic_support": "same-flat-type nearby buildings; declared radius or kernel"
+  },
+  "LOCAL_500M_6M_PREMIUM": {
+    "target_labels_used": true,
+    "policy": "lagged prequential, origin-aligned; context labels only",
+    "generation_class": "C",
+    "units": "see feature name",
+    "observation_timestamp": "latest allowed month = row forecast_origin minus 1 month",
+    "availability_timestamp": "assumed 1-month publication lag; row origins in prepared cache",
+    "geographic_support": "same-flat-type nearby buildings; declared radius or kernel"
+  },
+  "LOCAL_500M_6M_SHRUNK": {
+    "target_labels_used": true,
+    "policy": "lagged prequential, origin-aligned; context labels only",
+    "generation_class": "C",
+    "units": "see feature name",
+    "observation_timestamp": "latest allowed month = row forecast_origin minus 1 month",
+    "availability_timestamp": "assumed 1-month publication lag; row origins in prepared cache",
+    "geographic_support": "same-flat-type nearby buildings; declared radius or kernel"
+  },
+  "LOCAL_HISTORY_UNAVAILABLE": {
+    "target_labels_used": true,
+    "policy": "lagged prequential, origin-aligned; context labels only",
+    "generation_class": "C",
+    "units": "see feature name",
+    "observation_timestamp": "latest allowed month = row forecast_origin minus 1 month",
+    "availability_timestamp": "assumed 1-month publication lag; row origins in prepared cache",
+    "geographic_support": "same-flat-type nearby buildings; declared radius or kernel"
+  },
+  "LOCAL_KERNEL_MASS": {
+    "target_labels_used": true,
+    "policy": "lagged prequential, origin-aligned; context labels only",
+    "generation_class": "C",
+    "units": "see feature name",
+    "observation_timestamp": "latest allowed month = row forecast_origin minus 1 month",
+    "availability_timestamp": "assumed 1-month publication lag; row origins in prepared cache",
+    "geographic_support": "same-flat-type nearby buildings; declared radius or kernel"
+  },
+  "LOCAL_KERNEL_MEAN": {
+    "target_labels_used": true,
+    "policy": "lagged prequential, origin-aligned; context labels only",
+    "generation_class": "C",
+    "units": "see feature name",
+    "observation_timestamp": "latest allowed month = row forecast_origin minus 1 month",
+    "availability_timestamp": "assumed 1-month publication lag; row origins in prepared cache",
+    "geographic_support": "same-flat-type nearby buildings; declared radius or kernel"
+  },
+  "LOCAL_KERNEL_PPSM": {
+    "target_labels_used": true,
+    "policy": "lagged prequential, origin-aligned; context labels only",
+    "generation_class": "C",
+    "units": "see feature name",
+    "observation_timestamp": "latest allowed month = row forecast_origin minus 1 month",
+    "availability_timestamp": "assumed 1-month publication lag; row origins in prepared cache",
+    "geographic_support": "same-flat-type nearby buildings; declared radius or kernel"
+  },
+  "LOCAL_KERNEL_SHRUNK": {
+    "target_labels_used": true,
+    "policy": "lagged prequential, origin-aligned; context labels only",
+    "generation_class": "C",
+    "units": "see feature name",
+    "observation_timestamp": "latest allowed month = row forecast_origin minus 1 month",
+    "availability_timestamp": "assumed 1-month publication lag; row origins in prepared cache",
+    "geographic_support": "same-flat-type nearby buildings; declared radius or kernel"
+  },
+  "CENSUS2020_POPULATION": {
+    "target_labels_used": false,
+    "policy": "published 2020 census, unavailable before July 2021",
+    "generation_class": "A",
+    "units": "see feature name",
+    "observation_timestamp": "Census 2020",
+    "availability_timestamp": "2021-07-01 conservative operational cutoff; published 2021-06-18",
+    "geographic_support": "planning area; no interpolation"
+  },
+  "CENSUS2020_AGE65_SHARE": {
+    "target_labels_used": false,
+    "policy": "published 2020 census, unavailable before July 2021",
+    "generation_class": "A",
+    "units": "fraction",
+    "observation_timestamp": "Census 2020",
+    "availability_timestamp": "2021-07-01 conservative operational cutoff; published 2021-06-18",
+    "geographic_support": "planning area; no interpolation"
+  },
+  "CENSUS2020_UNAVAILABLE": {
+    "target_labels_used": false,
+    "policy": "published 2020 census, unavailable before July 2021",
+    "generation_class": "A",
+    "units": "see feature name",
+    "observation_timestamp": "Census 2020",
+    "availability_timestamp": "2021-07-01 conservative operational cutoff; published 2021-06-18",
+    "geographic_support": "planning area; no interpolation"
+  },
+  "CENSUS_INCOME_NO_EMPLOYED_SHARE": {
+    "target_labels_used": false,
+    "generation_class": "A",
+    "units": "household proportion or unavailable indicator",
+    "policy": "Archived 2022-labelled Census 2020 table; conservative availability August 2022; planning-area support only",
+    "observation_timestamp": "Census 2020",
+    "availability_timestamp": "2022-08-01, next-month cutoff after July 28 2022 metadata date",
+    "geographic_support": "planning area; no household/building income inference"
+  },
+  "CENSUS_INCOME_BELOW3000_SHARE": {
+    "target_labels_used": false,
+    "generation_class": "A",
+    "units": "household proportion or unavailable indicator",
+    "policy": "Archived 2022-labelled Census 2020 table; conservative availability August 2022; planning-area support only",
+    "observation_timestamp": "Census 2020",
+    "availability_timestamp": "2022-08-01, next-month cutoff after July 28 2022 metadata date",
+    "geographic_support": "planning area; no household/building income inference"
+  },
+  "CENSUS_INCOME_GE10000_SHARE": {
+    "target_labels_used": false,
+    "generation_class": "A",
+    "units": "household proportion or unavailable indicator",
+    "policy": "Archived 2022-labelled Census 2020 table; conservative availability August 2022; planning-area support only",
+    "observation_timestamp": "Census 2020",
+    "availability_timestamp": "2022-08-01, next-month cutoff after July 28 2022 metadata date",
+    "geographic_support": "planning area; no household/building income inference"
+  },
+  "CENSUS_INCOME_UNAVAILABLE": {
+    "target_labels_used": false,
+    "generation_class": "A",
+    "units": "household proportion or unavailable indicator",
+    "policy": "Archived 2022-labelled Census 2020 table; conservative availability August 2022; planning-area support only",
+    "observation_timestamp": "Census 2020",
+    "availability_timestamp": "2022-08-01, next-month cutoff after July 28 2022 metadata date",
+    "geographic_support": "planning area; no household/building income inference"
+  }
+}

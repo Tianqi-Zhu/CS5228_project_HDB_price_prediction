@@ -1,0 +1,21 @@
+MODEL,1-room,2-room,3-room,4-room,5-room,executive
+2 room,0,224,0,0,0,0
+3gen,0,0,0,0,12,0
+adjoined flat,0,0,0,48,135,35
+apartment,0,0,0,0,0,4724
+dbss,0,4,193,385,508,0
+improved,42,490,14946,2635,25895,0
+improved maisonette,0,0,0,0,1,0
+maisonette,0,0,0,0,0,2346
+model a,0,1645,8816,30516,1768,0
+model a maisonette,0,0,0,0,140,0
+model a2,0,0,0,1553,0,0
+new generation,0,0,18935,8445,0,0
+premium apartment,0,20,366,5463,5355,1108
+premium apartment loft,0,0,0,47,4,0
+premium maisonette,0,0,0,0,0,21
+simplified,0,0,2273,4521,0,0
+standard,0,715,3478,165,1545,0
+terrace,0,0,17,2,0,0
+type s1,0,0,0,299,0,0
+type s2,0,0,0,0,160,0

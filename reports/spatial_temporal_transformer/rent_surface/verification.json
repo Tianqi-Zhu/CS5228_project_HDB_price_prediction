@@ -1,0 +1,59 @@
+{
+  "settings": {
+    "flat_type": "4-room",
+    "flat_model": "model a",
+    "area": 95.0,
+    "age": 25,
+    "max_floor": 12,
+    "month": "2025-03",
+    "min_history": 5,
+    "grid_km": 0.1,
+    "min_free_gib": 8.0
+  },
+  "script_sha256": "4bfb7acd8a96a4a6af13f2d1c992cbb3ee8af3b1e4daa333b5119d309aa3b566",
+  "prepared_sha256": "683987abe171fabd9e26d29a6b4e8c39205a8eed7f18297a99d20b444cdfdf9c",
+  "landcover_sha256": "24f5c220bc195e2d9e136666901cafad26b8e16790ac19a9a6d7016199c1bfdf",
+  "landcover_display_only": true,
+  "query_audits": {
+    "reference_flat": {
+      "rows": 3553,
+      "rental_cutoff": "2024-05",
+      "target": "2025-03",
+      "max_fitting_label": "2024-05",
+      "query_labels_present": false,
+      "exact_signature_history_fraction": 0.0028145229383619475,
+      "block_type_history_fraction": 1.0
+    },
+    "existing_building": {
+      "rows": 3553,
+      "rental_cutoff": "2024-05",
+      "target": "2025-03",
+      "max_fitting_label": "2024-05",
+      "query_labels_present": false,
+      "exact_signature_history_fraction": 0.007880664227413453,
+      "block_type_history_fraction": 1.0
+    }
+  },
+  "anchors": 3553,
+  "grid_shape": [
+    313,
+    557
+  ],
+  "supported_land_cells": 19326,
+  "nearest_anchor_limit_km": 0.5,
+  "minimum_effective_anchors": 2.0,
+  "bandwidth_km": 0.3,
+  "kernel_radius_km": 1.0,
+  "original_hashes_unchanged": true,
+  "node_predictions_sha256": "ab15213624253a24a8e090820cf622300ccebca069e3aad2b23de684d2bd256d",
+  "no_refit": true,
+  "no_post_origin_labels_used": true,
+  "qa": {
+    "unit_tests_passed": 5,
+    "plots_visually_inspected": 3,
+    "support_and_water_masks_verified": true,
+    "interpolation_within_node_range": true,
+    "self_contained_html": true,
+    "original_hashes_verified_after_mapping": true
+  }
+}

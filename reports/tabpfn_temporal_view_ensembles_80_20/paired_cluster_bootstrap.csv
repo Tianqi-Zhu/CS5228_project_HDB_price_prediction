@@ -1,0 +1,13 @@
+cluster,model,reference,replicates,lower95_sgd,upper95_sgd
+month,dynamics_optimized,baseline,3000,-0.7337068465580018,0.6845032650061512
+month,dynamics_optimized,prior_standard6,3000,-0.662790796557023,1.182428426585767
+month,macro_optimized,baseline,3000,-0.2034881116620994,0.09240822224139864
+month,macro_optimized,prior_standard6,3000,-0.19743962172291418,0.4966688220881935
+month,all_optimized,baseline,3000,-0.7337068465580018,0.6845032650061512
+month,all_optimized,prior_standard6,3000,-0.662790796557023,1.182428426585767
+building,dynamics_optimized,baseline,3000,-0.5356914396171802,0.4740042023015451
+building,dynamics_optimized,prior_standard6,3000,-0.3500697463665574,0.6502313462856394
+building,macro_optimized,baseline,3000,-0.11580582354104933,0.033936306403948936
+building,macro_optimized,prior_standard6,3000,-0.08599220939242826,0.3780349639187336
+building,all_optimized,baseline,3000,-0.5356914396171802,0.4740042023015451
+building,all_optimized,prior_standard6,3000,-0.3500697463665574,0.6502313462856394

@@ -1,0 +1,10 @@
+{
+  "verified": true,
+  "source_hashes_unchanged": true,
+  "submissions_unchanged": true,
+  "all_checkpoint_predictions_exactly_replayed": true,
+  "outer_labels_used_for_selection": false,
+  "earlier_gate_passed": false,
+  "completed_calibration_fits": 4,
+  "completed_outer_fits": 0
+}

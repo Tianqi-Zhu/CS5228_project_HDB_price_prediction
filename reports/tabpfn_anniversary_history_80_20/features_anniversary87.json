@@ -1,0 +1,22 @@
+{
+  "artifact": ".cache/tabpfn_anniversary_history_80_20/anniversary87.joblib",
+  "sha256": "3d6cfda346f1f33139d708aebf66af97e20783377e0c59612d5dba4792881290",
+  "added_columns": [
+    "ANN_BLOCK_12_R1_N",
+    "ANN_BLOCK_12_R1_RENT",
+    "ANN_BLOCK_12_R1_RATIO",
+    "ANN_BLOCK_12_R1_SD",
+    "ANN_BLOCK_12_R1_LOW",
+    "ANN_BLOCK_24_R1_N",
+    "ANN_BLOCK_24_R1_RENT",
+    "ANN_BLOCK_24_R1_RATIO",
+    "ANN_BLOCK_24_R1_SD",
+    "ANN_BLOCK_24_R1_LOW"
+  ],
+  "features": 87,
+  "fitting_rows": 121005,
+  "query_rows": 28995,
+  "original_bundle_sha256": "fba84757b6e23280d2b27eab0ca5d86a427ac19ca33c6b12b5b2dcc4194a0059",
+  "rent_target_and_baseline_unchanged": true,
+  "feature_pool_last_month": "2024-05"
+}

@@ -1,0 +1,9 @@
+{
+  "artifact": ".cache\\tabm_80_20\\inner_features.joblib",
+  "sha256": "681495a85454b918106a2b1ff870cfacc451905c5ed32da72b0988158718fce3",
+  "fitting_rows": 102829,
+  "calibration_rows": 18176,
+  "feature_count": 77,
+  "query_history_cutoff": "2023-11",
+  "query_targets_used_for_features": false
+}

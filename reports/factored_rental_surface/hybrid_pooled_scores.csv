@@ -1,0 +1,5 @@
+model,n,rmse_sgd,mae_sgd,bias_sgd
+full_history_catboost,79817,539.2882,413.6053,-26.7357
+catboost_2022plus,79817,548.4372,418.6251,-37.6367
+direct_hybrid,79817,546.5522,416.4920,-27.0221
+residual_hybrid,79817,538.0589,409.4912,18.8296

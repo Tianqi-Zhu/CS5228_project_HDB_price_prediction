@@ -3,7 +3,7 @@
 | Item | Status |
 |---|---|
 | Requirement | See [requirement cards](../../../docs/planning/main-appendix-experiment-plan.md) |
-| Current execution | partial; actual F2 generator missing |
+| Current execution | partial; candidate source/export integrated, screenshot identity unverified |
 | Scientific scope | Retrospective development; original data and predictions preserved |
 | Implementation | `python -m analysis.main planned` |
 
@@ -15,4 +15,4 @@
 
 - [tabpfn](tabpfn/)
 
-F2 generator/schema/member/CSV inputs remain pending. Available background and a screenshot score cannot complete this requirement.
+The latest anniversary merge supplies a candidate generator, schema/member records and CSV. Its identity against the historical screenshot score remains unverified; available background and a screenshot still cannot complete that requirement. See the [integration record](../../../docs/guides/anniversary_merge.md).

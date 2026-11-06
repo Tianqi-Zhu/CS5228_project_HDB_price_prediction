@@ -1,0 +1,26 @@
+[
+  {
+    "window": "Y",
+    "metric_absolute_differences": {
+      "rmse_sgd": 0.0,
+      "mae_sgd": 0.0,
+      "bias_sgd": 8.881784197001252e-16
+    },
+    "historical_difference_diagnostic_delta": 0.0,
+    "csv_sha256_matches": false,
+    "expected_csv_sha256": "067f1015437d063cdce861bb31084e4d54e80301223fd4e1fd3fc204b5d3f31a",
+    "replayed_csv_sha256": "4470fa7f0924c9155c7e1f5dd5ab6260bae672ed4a1a6ee09a344ce11aa8937d"
+  },
+  {
+    "window": "J",
+    "metric_absolute_differences": {
+      "rmse_sgd": 0.0,
+      "mae_sgd": 0.0,
+      "bias_sgd": 3.552713678800501e-15
+    },
+    "historical_difference_diagnostic_delta": 0.0,
+    "csv_sha256_matches": false,
+    "expected_csv_sha256": "e3a810df60b8ff1b4bd33463fdcfd8c93609db8738a19d3087b8416158127727",
+    "replayed_csv_sha256": "d8150189c5be911d43870257acb9be0517a00385456f8a57241bb233e6f7224a"
+  }
+]

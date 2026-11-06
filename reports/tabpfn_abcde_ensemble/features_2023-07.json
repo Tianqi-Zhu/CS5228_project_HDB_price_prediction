@@ -1,0 +1,14 @@
+{
+  "origin": "2023-07",
+  "end_exclusive": "2024-05",
+  "context_rows": 87937,
+  "query_rows": 2000,
+  "context_max_month": "2023-06",
+  "query_min_month": "2023-07",
+  "query_max_month": "2024-04",
+  "context_ids_sha256": "81d0bc5bee8df1016bd243965afdabc5a07bec1da25e6c4290c7fdf7a40890c3",
+  "query_ids_sha256": "d71087570c3b65c5e490af3e01d74313561126f51ee84edc605184bb083974f3",
+  "sha256": "14d7f2e717b8e839c7caa09cad97e7bd84d6acc30e143e0ba155e8a7b50a0741",
+  "fold_target_labels_in_context": false,
+  "market_last_allowed_month": "2023-06"
+}

@@ -1,0 +1,7 @@
+{
+  "same_features_as": "F1_economy",
+  "columns": [
+    "FOOD_KDE_200M_KM2",
+    "MALL_KDE_200M_KM2"
+  ]
+}

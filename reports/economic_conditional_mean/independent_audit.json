@@ -1,0 +1,11 @@
+{
+  "verified": true,
+  "rows": 8000,
+  "exact_original_query_alignment": true,
+  "all_calibration_scores_recomputed": true,
+  "source_and_checkpoint_hashes_verified": true,
+  "earlier_gate_recomputed": true,
+  "advanced": false,
+  "unsupported_later_scoring_absent": true,
+  "audit_code_sha256": "0a014ebc57115e48c62a3355d8c361f60d341a1908804da6559f7a61b6a92a42"
+}

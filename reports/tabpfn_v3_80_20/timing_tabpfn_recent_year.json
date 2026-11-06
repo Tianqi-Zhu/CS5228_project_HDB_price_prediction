@@ -1,0 +1,8 @@
+{
+  "fit_seconds": 2.594898499955889,
+  "predict_seconds": 32.6393676000298,
+  "peak_vram_gib": 5.864761829376221,
+  "context_rows": 36103,
+  "subsampling": false,
+  "keep_cache_on_device": true
+}

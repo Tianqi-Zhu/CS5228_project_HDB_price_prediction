@@ -1,0 +1,5 @@
+model,fit_seconds,predict_seconds,peak_vram_gib,context_rows,subsampling,keep_cache_on_device,architecture
+calendar,14.935219,682.316456,7.152628,121005,False,True,TabPFNV3p5
+categorical,15.099030,711.227809,7.218972,121005,False,True,TabPFNV3p5
+cyclical,13.945858,682.895567,7.209505,121005,False,True,TabPFNV3p5
+school_interactions,14.961358,778.460886,7.125599,121005,False,True,TabPFNV3p5

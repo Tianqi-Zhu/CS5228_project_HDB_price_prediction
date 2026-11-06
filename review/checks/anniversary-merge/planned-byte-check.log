@@ -1,0 +1,24 @@
+C:/Users/auror/Code/CS5228_project_HDB_price_prediction/.venv/Scripts/python.exe : Traceback (most recent call last):
+At line:4 char:1
++ C:/Users/auror/Code/CS5228_project_HDB_price_prediction/.venv/Scripts ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\auror\Code\CS5228_project_HDB_price_prediction\.cache\merge-tabpfn-main\analysis\main.py", line 74, in
+ <module>
+    if __name__=='__main__': main()
+                             ~~~~^^
+  File "C:\Users\auror\Code\CS5228_project_HDB_price_prediction\.cache\merge-tabpfn-main\analysis\main.py", line 44, in
+ main
+    return run(args.output_dir)
+  File "C:\Users\auror\Code\CS5228_project_HDB_price_prediction\.cache\merge-tabpfn-main\analysis\validation\main.py",
+line 135, in run
+    feature_catalog, refits = catalog(), refit_audit()
+                                         ~~~~~~~~~~~^^
+  File "C:\Users\auror\Code\CS5228_project_HDB_price_prediction\.cache\merge-tabpfn-main\analysis\validation\refit_audi
+t.py", line 64, in audit
+    raise ValueError('Frozen component blend does not reproduce generated CSV bytes')
+ValueError: Frozen component blend does not reproduce generated CSV bytes

@@ -1,0 +1,49 @@
+{
+  "source_branch": "experiment/tabpfn-anniversary-history",
+  "source_commit": "7c01b8bc2bf499b38d341d40960cc9d59d362c7e",
+  "main_parent": "85bae7be9ba3f3c62719bfd7fde1303cd4c1e83f",
+  "main_tests": {
+    "run": 78,
+    "passed": 78,
+    "failures": 0,
+    "errors": 0
+  },
+  "isolated_tabpfn_tests": {
+    "tests_run": 38,
+    "passed": 38,
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0,
+    "declared_missing_resource_skips": [],
+    "successful": true,
+    "original_test_sources_modified": false
+  },
+  "main_package_tests_and_f1_concat_sources_unchanged": true,
+  "report_pdf_unchanged": true,
+  "report_pdf_sha256": "a8bb3634f964ac7e6b1a86a23a2809949f4e2c76c220ff1f75884def2353ddd5",
+  "f1_original_submission_replay": {
+    "reproduced": [
+      {
+        "file": "output/review_f1_reproduced/kaggle_structure_blend.csv",
+        "rows": 50000,
+        "max_abs_difference": 9.094947017729282e-13
+      }
+    ],
+    "python": "3.13.9",
+    "numpy": "2.5.3",
+    "executable": "C:\\Users\\auror\\Code\\CS5228_project_HDB_price_prediction\\.venv\\Scripts\\python.exe",
+    "mode": "frozen-model-forecast replay; no training or network"
+  },
+  "strict_fresh_refit_csv_byte_replay": {
+    "passed": false,
+    "command": "python -m analysis.main planned",
+    "reason": "The strict serialized prediction SHA check fails in this runtime, including with pinned NumPy 2.4.6/pandas 3.0.5. Frozen refit artifacts and generating code are unchanged and their registered hashes pass.",
+    "numeric_metrics_match_within": 1e-10,
+    "numeric_detail": "numeric-replay.json",
+    "checker_weakened": false
+  },
+  "research_training_performed": false,
+  "test_dependencies_installed_in_project_environment": false,
+  "test_dependency_directory": ".cache/merge-test-deps",
+  "f2_score_identity_verified": false
+}

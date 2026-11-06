@@ -1,0 +1,7 @@
+{
+  "selected_before_outer_scoring": "mlp_raw",
+  "baseline_calibration_rmse_sgd": 544.6009406043612,
+  "head_fit_only_before_2023_12": true,
+  "backbone_frozen": true,
+  "full_head_refit_after_calibration": false
+}

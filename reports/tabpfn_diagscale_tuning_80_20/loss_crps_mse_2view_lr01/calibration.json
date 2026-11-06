@@ -1,0 +1,58 @@
+{
+  "name": "loss_crps_mse_2view_lr01",
+  "config": {
+    "lr": 0.01,
+    "train_views": 2,
+    "val_views": 2,
+    "task_size": 1024
+  },
+  "fit_rows": 102829,
+  "calibration_rows": 600,
+  "calibration_rmse_sgd_weighted": 521.1364372458313,
+  "calibration_rmse_sgd_unweighted": 520.6806364428566,
+  "delta_l2": 8.454836219152162,
+  "adapter_modules": 12,
+  "trainable_parameters": 8576,
+  "epoch_validation": [
+    {
+      "epoch": -1,
+      "delta_l2": 0.0,
+      "validation_mse": 267766.4276790826
+    },
+    {
+      "epoch": 0,
+      "delta_l2": 8.45483684539795,
+      "validation_mse": 266894.83719793503
+    },
+    {
+      "epoch": 1,
+      "delta_l2": 15.621593475341797,
+      "validation_mse": 267767.89468634425
+    },
+    {
+      "epoch": 2,
+      "delta_l2": 19.777006149291992,
+      "validation_mse": 269561.4010962676
+    },
+    {
+      "epoch": 3,
+      "delta_l2": 22.295503616333008,
+      "validation_mse": 267095.7294490458
+    }
+  ],
+  "epochs_cap": 8,
+  "patience": 3,
+  "training_task_size": 1024,
+  "loss": {
+    "crps": 1,
+    "mse": 1,
+    "ce": 0
+  },
+  "fit_seconds": 551.3369089000043,
+  "peak_vram_gib": 11.832427024841309,
+  "adapter_sha256": "7a9a0f1fa72dce3416a03344a2dd7a0fdcc2398662d3ea003ceaceaf908b8a56",
+  "inner_feature_sha256": "20c28ccaf736673905b50b9e10635aaf1400c30028d23cec41b3011eb12fab8c",
+  "code_sha256": "1b05ef194780ec94b78d96afd85afbaec05846a3e4684c1d034050d4f689d6b2",
+  "backbone_sha256": "14e0b81285bca7a6d1ef121169f27f651f76dff49cad6c0b8779d5c836018550",
+  "outer_labels_used": false
+}

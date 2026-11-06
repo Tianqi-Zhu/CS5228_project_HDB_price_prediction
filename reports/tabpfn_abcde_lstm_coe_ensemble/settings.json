@@ -1,0 +1,67 @@
+{
+  "members": {
+    "A": "77-feature MSE-only DiagScale, one inference view",
+    "B": "77-feature frozen Fast, two views",
+    "C": "77-feature relative-history frozen Fast, two views",
+    "D": "84-feature seasonal frozen Fast, two views",
+    "E": "89-feature nearby-rent frozen Fast, two views",
+    "F": "85-feature frozen Fast coe_increment: reliability, rent-only LSTM growth, rent+COE minus rent-only LSTM growth"
+  },
+  "candidates": [
+    "ABDEF_refit",
+    "ABCDEF_refit",
+    "ABDE_plus_F",
+    "ABCDE_equal_plus_F"
+  ],
+  "controls": [
+    "A_single",
+    "ABDE",
+    "ABCDE",
+    "ABCDE_equal",
+    "BDE_existing"
+  ],
+  "origins": [
+    "2022-09",
+    "2023-07",
+    "2024-06"
+  ],
+  "method": "Nonnegative sum-one exact face optimization, no intercept; main weights fit only 4000 earlier rows through April2024",
+  "nested": "September2022-June2023 fits weights; July2023-April2024 evaluates transfer; earlier-selected candidate chosen before later evaluation",
+  "add_on": "ABDE_plus_F preserves fitted ABDE ratios; ABCDE_equal_plus_F preserves equal A-E ratios; only the F contribution is fitted",
+  "limitations": "Reused development labels; F also includes reliability flags and rent-only LSTM forecasts, so this does not isolate COE causally. No new model training or submission.",
+  "source_sha256": {
+    "reports\\tabpfn_abcde_ensemble\\settings.json": "91c9423a88f95eab89c93e34ae00fd3dfdadc350133dcfd786583cc8d68b6d93",
+    "reports\\tabpfn_abcde_ensemble\\selection.json": "bdc52ff70e4413d060dc9ae94837792ad37be3e412e80f7614feda5c02a9038b",
+    "reports\\tabpfn_abcde_ensemble\\independent_audit.json": "7d9f99fcd227948c7545c20a0171b8469d24b1fb71f39b4078834d3d98aaa7f6",
+    "reports\\tabpfn_abcde_ensemble\\predictions_all_origins.csv": "34cd9fd15c7f45fdfd60a0c5735f8feda356eae6323cf177501d9be4e42407b2",
+    "reports\\tabpfn_abcde_ensemble\\scores.csv": "68ecdd8a66efe3e45a85f65babe360964dd0f9a9a645178d99103342469b9ed9",
+    "reports\\tabpfn_reliability_macro_80_20\\settings.json": "8d558cf2ea421f349488ce9f5626d5df6a0956cdb20bbde317681982f7e0282f",
+    "reports\\tabpfn_reliability_macro_80_20\\causality_audit.json": "b1452004a38d92cb6469655af510a0fe9d8fcc33fbd59636dde1d006c2bf02aa",
+    "reports\\tabpfn_reliability_macro_80_20\\national_forecasts.csv": "f371430379408de324143c05c638703d77d0e51ea7d1f5b6cab66adc7d1a469d",
+    "reports\\tabpfn_abcde_ensemble\\oof_predictions_2022-09.csv": "0690840ae26c7a2d8ba6cb1408872813a3f929b7a620e29dd74f9b1e2c53338a",
+    "reports\\tabpfn_feature_diversified_ensemble_80_20\\predictions_2022-09_baseline.csv": "818f6c7fdeba711a36bc848c8de377846d619b6724991fd27fbaa070e2f03c38",
+    "reports\\tabpfn_temporal_view_ensembles_80_20\\predictions_2022-09_relative_history.csv": "81a53fee9104a27e5ddc21d094460842ca4caef917126fb4e958ac7031ab0a94",
+    "reports\\tabpfn_feature_diversified_ensemble_80_20\\predictions_2022-09_temporal.csv": "2071e1be331ed7abcd068dc1229f4dba894546bb60c355437ce8ef39302f8240",
+    "reports\\tabpfn_feature_diversified_ensemble_80_20\\predictions_2022-09_spatial.csv": "ba6896fb9b0d60a13c15899b4d42ac9d6fbc21d8c059a6ae54485fc3120efe94",
+    "reports\\tabpfn_reliability_macro_80_20\\predictions_2022-09_coe_increment.csv": "74cf05cabcfbec43b6b986eb85cdd922b92e5a8eceb37ad2e1fbe521dfd9d81f",
+    "reports\\tabpfn_reliability_macro_80_20\\timing_2022-09_coe_increment.json": "13c4ff706a36305063b43597ebddfd00700fdb46afe4afd5725512f7c3482aeb",
+    "reports\\tabpfn_abcde_ensemble\\oof_predictions_2023-07.csv": "5f8ff8cf891d8f1693cb6382a2631d7da8d2b28cad843aaa0fd01b4fe8c1ff8d",
+    "reports\\tabpfn_feature_diversified_ensemble_80_20\\predictions_2023-07_baseline.csv": "95d38ccb1ade70caf2381c2d4ddfd2bcc38fca30edb6d0673181e26526454c5b",
+    "reports\\tabpfn_temporal_view_ensembles_80_20\\predictions_2023-07_relative_history.csv": "7353928cbb000599285fd36be584a7e52844832500f058b2c85dd7861e315057",
+    "reports\\tabpfn_feature_diversified_ensemble_80_20\\predictions_2023-07_temporal.csv": "20dbfe3fc9a2acacf7b2432a4f012e68f26df51d7df196a41c1b02360e871da2",
+    "reports\\tabpfn_feature_diversified_ensemble_80_20\\predictions_2023-07_spatial.csv": "5b074ff9633624e246838474d30721b5808fee15bc40d211a9b55498f8c84b25",
+    "reports\\tabpfn_reliability_macro_80_20\\predictions_2023-07_coe_increment.csv": "49bc1cddd3b06111f4c5550b4e1b9c225bf4f29cedcf9bf46fae311dc21d0b06",
+    "reports\\tabpfn_reliability_macro_80_20\\timing_2023-07_coe_increment.json": "4ae0b17aa24ca00d4605aabd89f880bb6acdd69a5dde582edf6bf29b12972711",
+    "reports\\tabpfn_components_80_20\\outer\\diag_mse_only\\predictions.csv": "ae40d5b1aa0ae54ed25e185986f1540d49d3b9296d5bca1ebfbf549cf621fb2e",
+    "reports\\tabpfn_feature_diversified_ensemble_80_20\\predictions_2024-06_baseline.csv": "bdb86d06a20514723e32e9341c4952099812c2398547cb3040d12d190b11a533",
+    "reports\\tabpfn_temporal_view_ensembles_80_20\\predictions_2024-06_relative_history.csv": "2d555b43ee77056b1ebef6526eac82dc760c8d9e565e17801f5084194c58d052",
+    "reports\\tabpfn_feature_diversified_ensemble_80_20\\predictions_2024-06_temporal.csv": "b322b05927dedaae3f529dd2a53a2b6e07cd111f846eaf2b584230329caf50af",
+    "reports\\tabpfn_feature_diversified_ensemble_80_20\\predictions_2024-06_spatial.csv": "e9bd0ccd5ccde327e45fc9fc14ea040a8a84a2b70f06e1b775f1e2e95ae0186a",
+    "reports\\tabpfn_reliability_macro_80_20\\predictions_2024-06_coe_increment.csv": "7ae55bac51972685724f7b4b558c68c9ed78fa8d8f2d0168928e9f1a271e8fce",
+    "reports\\tabpfn_reliability_macro_80_20\\timing_2024-06_coe_increment.json": "279fa1b2b0e76f8bf903210e66447784d5c169d0d80959232fbd7adce230e306",
+    "reports\\tabpfn_top2_final_submission\\submission_tabpfn_ABCDE_equal_150k.csv": "ef1c3efc55a5b7bd6f3717870a1d07a0cbda78a4f9f153db89e189aa50c00488",
+    "reports\\tabpfn_top2_final_submission\\submission_tabpfn_ABDE_weighted_150k.csv": "5c0fe66ab127ddbf63d1923e4002e2154460167ab2a47ae5f4047b923c37cdd5",
+    "reports\\tabpfn_api_77\\submission_v3.5_plus_77_150k\\submission_tabpfn_api.csv": "df198400d00b57deeba40cd44a6c38ce5b17fde1c3726731b08b028117c3cf44"
+  },
+  "code_sha256": "7ea63c79098f747b99c6cd1787163ceffac00afd59a8f90927041de3d63f36d9"
+}

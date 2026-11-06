@@ -1,0 +1,23 @@
+{
+  "submission": "reports/tabpfn_diagscale_mse_final_submission/submission_tabpfn_diagscale_mse_150k.csv",
+  "sha256": "5616125166abed5a353ab4d2f8a9788109a0b8078480ce622bbf8c7e8fb80500",
+  "rows": 50000,
+  "columns": [
+    "Id",
+    "Predicted"
+  ],
+  "row_order_matches_sample": true,
+  "predictions_positive_and_finite": true,
+  "context_rows": 150000,
+  "refit_pool_rows": 150000,
+  "features": 77,
+  "baseline_added_once": true,
+  "prediction_min_sgd": 1693.9128160071855,
+  "prediction_max_sgd": 6342.988483058258,
+  "prediction_mean_sgd": 3229.9879734452047,
+  "old_submission_unchanged": true,
+  "source_artifacts_unchanged": true,
+  "test_labels_used": false,
+  "adapter_sha256": "90e1d85f781051550570a2cb41bcba13e0cd9cb20350f4cf4c90d8e4848003d8",
+  "features_sha256": "b7d5de3b3bb7b75a689cdb30408f3d4fd26da948cd46dc82c8896b1008bbad1c"
+}

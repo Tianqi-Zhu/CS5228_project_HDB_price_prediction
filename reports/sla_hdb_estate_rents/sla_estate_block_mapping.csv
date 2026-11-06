@@ -1,0 +1,244 @@
+sla_serial,estate,town,street,block,source_url,source_as_of,POSTAL_CODE,YEAR_COMPLETED,LATITUDE,LONGITUDE,rental_rows_2021_2025,match_status
+3533,Central Horizon,toa payoh,toa payoh central,78a,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3533,Central Horizon,toa payoh,toa payoh central,78b,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3533,Central Horizon,toa payoh,toa payoh central,78c,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3533,Central Horizon,toa payoh,toa payoh central,79a,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,311079,2008.0,1.334531,103.847566,73,matched_local_block
+3533,Central Horizon,toa payoh,toa payoh central,79b,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,312079,2007.0,1.334641,103.84799,60,matched_local_block
+3533,Central Horizon,toa payoh,toa payoh central,79c,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,313079,2007.0,1.334661,103.848578,23,matched_local_block
+3533,Central Horizon,toa payoh,toa payoh central,79d,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,314079,2007.0,1.334641,103.849166,25,matched_local_block
+3533,Central Horizon,toa payoh,toa payoh central,79e,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,315079,2007.0,1.334727,103.849823,67,matched_local_block
+3641,Treelodge @ Punggol,punggol,punggol road,305,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3641,Treelodge @ Punggol,punggol,punggol road,305a,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,821305,2010.0,1.405079,103.906706,12,matched_local_block
+3641,Treelodge @ Punggol,punggol,punggol road,305b,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,822305,2010.0,1.405352,103.906251,29,matched_local_block
+3641,Treelodge @ Punggol,punggol,punggol road,305c,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3641,Treelodge @ Punggol,punggol,punggol place,306a,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,NIL,2010.0,1.406093,103.905395,23,matched_local_block
+3641,Treelodge @ Punggol,punggol,punggol place,306b,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,822306,2010.0,1.405792,103.905777,14,matched_local_block
+3641,Treelodge @ Punggol,punggol,punggol place,306c,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,823306,2010.0,1.406404,103.905958,21,matched_local_block
+3641,Treelodge @ Punggol,punggol,punggol drive,305d,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,824305,2010.0,1.405832,103.906791,18,matched_local_block
+3641,Treelodge @ Punggol,punggol,punggol drive,306d,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,824306,2010.0,1.406081,103.906438,20,matched_local_block
+3733,Senja Green,bukit panjang,senja road,632,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3733,Senja Green,bukit panjang,senja road,632a,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3733,Senja Green,bukit panjang,senja road,632b,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3733,Senja Green,bukit panjang,senja road,633,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3733,Senja Green,bukit panjang,senja road,633a,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,671633,2012.0,1.385586,103.758341,18,matched_local_block
+3733,Senja Green,bukit panjang,senja road,633b,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,672633,2012.0,1.38517,103.758529,8,matched_local_block
+3733,Senja Green,bukit panjang,senja road,633c,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,673633,2012.0,1.384735,103.759218,17,matched_local_block
+3733,Senja Green,bukit panjang,senja road,633d,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,674633,2012.0,1.384612,103.759603,14,matched_local_block
+3752,Fajar Hills,bukit panjang,fajar road,442b,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,672442,2015.0,1.381434,103.771366,9,matched_local_block
+3752,Fajar Hills,bukit panjang,fajar road,442c,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,673442,2015.0,1.381488,103.770942,11,matched_local_block
+3752,Fajar Hills,bukit panjang,fajar road,442d,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,674442,2015.0,1.380921,103.770841,9,matched_local_block
+3752,Fajar Hills,bukit panjang,fajar road,443,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3752,Fajar Hills,bukit panjang,fajar road,443a,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,671443,2015.0,1.381466,103.769767,8,matched_local_block
+3752,Fajar Hills,bukit panjang,fajar road,443b,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,672443,2015.0,1.381017,103.769595,3,matched_local_block
+3752,Fajar Hills,bukit panjang,fajar road,443c,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,673443,2015.0,1.380571,103.769733,7,matched_local_block
+3752,Fajar Hills,bukit panjang,fajar road,443d,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,674443,2015.0,1.380614,103.770645,2,matched_local_block
+3774,Senja Parc View,bukit panjang,senja road,636,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3774,Senja Parc View,bukit panjang,senja road,636a,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,671636,2014.0,1.386916,103.758538,23,matched_local_block
+3774,Senja Parc View,bukit panjang,senja road,636b,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,672636,2014.0,1.387625,103.758331,3,matched_local_block
+3774,Senja Parc View,bukit panjang,senja road,636c,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,673636,2014.0,1.387435,103.759119,23,matched_local_block
+3774,Senja Parc View,bukit panjang,senja road,636d,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3859,Tampines Greenleaf,tampines,tampines central 7,522,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3859,Tampines Greenleaf,tampines,tampines central 7,522a,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,521522,2014.0,1.357769,103.938392,13,matched_local_block
+3859,Tampines Greenleaf,tampines,tampines central 7,522b,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,522522,2014.0,1.357823,103.939085,11,matched_local_block
+3859,Tampines Greenleaf,tampines,tampines central 7,522c,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,523522,2014.0,1.358005,103.939416,7,matched_local_block
+3859,Tampines Greenleaf,tampines,tampines central 7,523a,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,521523,2014.0,1.359371,103.938379,9,matched_local_block
+3859,Tampines Greenleaf,tampines,tampines central 7,523b,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,522523,2014.0,1.359867,103.938373,7,matched_local_block
+3859,Tampines Greenleaf,tampines,tampines central 7,523c,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,523523,2014.0,1.359887,103.93887,3,matched_local_block
+3859,Tampines Greenleaf,tampines,tampines central 7,523d,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,524523,2014.0,1.359358,103.938909,8,matched_local_block
+3859,Tampines Greenleaf,tampines,tampines central 7,524,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3859,Tampines Greenleaf,tampines,tampines central 7,524a,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,NIL,2014.0,1.358351,103.938909,14,matched_local_block
+3859,Tampines Greenleaf,tampines,tampines central 7,524b,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,522524,2014.0,1.358958,103.938911,15,matched_local_block
+3862,Matilda Edge,punggol,sumang lane,220,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3862,Matilda Edge,punggol,sumang lane,220a,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,821220,2017.0,1.401522,103.894627,12,matched_local_block
+3862,Matilda Edge,punggol,sumang lane,220b,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,822220,2017.0,1.40151,103.895421,5,matched_local_block
+3862,Matilda Edge,punggol,sumang lane,220c,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,823220,2017.0,1.401611,103.896003,7,matched_local_block
+3862,Matilda Edge,punggol,sumang lane,221,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3862,Matilda Edge,punggol,sumang lane,221a,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,821221,2017.0,1.400986,103.895675,5,matched_local_block
+3862,Matilda Edge,punggol,sumang lane,221b,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,822221,2017.0,1.401022,103.895065,8,matched_local_block
+3862,Matilda Edge,punggol,sumang lane,222,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3862,Matilda Edge,punggol,sumang lane,222a,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,821222,2017.0,1.401126,103.893476,14,matched_local_block
+3862,Matilda Edge,punggol,sumang lane,223,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3862,Matilda Edge,punggol,sumang lane,223a,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3862,Matilda Edge,punggol,sumang lane,224,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3862,Matilda Edge,punggol,sumang lane,224a,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,821224,2017.0,1.401951,103.892808,14,matched_local_block
+3862,Matilda Edge,punggol,sumang lane,224b,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,822224,2017.0,1.401828,103.893372,3,matched_local_block
+3862,Matilda Edge,punggol,sumang lane,224c,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,823224,2017.0,1.401508,103.894127,6,matched_local_block
+3863,Eastwave @ Canberra,sembawang,canberra crescent,119,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3863,Eastwave @ Canberra,sembawang,canberra crescent,119a,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,751119,2016.0,1.446048,103.831125,12,matched_local_block
+3863,Eastwave @ Canberra,sembawang,canberra crescent,119b,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,752119,2016.0,1.44637,103.831575,6,matched_local_block
+3863,Eastwave @ Canberra,sembawang,canberra crescent,120,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3863,Eastwave @ Canberra,sembawang,canberra crescent,120a,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,751120,2016.0,1.446141,103.832236,4,matched_local_block
+3863,Eastwave @ Canberra,sembawang,canberra crescent,120b,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,752120,2016.0,1.446294,103.832704,1,matched_local_block
+3863,Eastwave @ Canberra,sembawang,canberra crescent,120c,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,753120,2016.0,1.447071,103.832802,10,matched_local_block
+3863,Eastwave @ Canberra,sembawang,canberra crescent,120d,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,754120,2016.0,1.446767,103.832294,2,matched_local_block
+3866,Hougang Meadow,hougang,upper serangoon road,364,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3866,Hougang Meadow,hougang,upper serangoon road,364a,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,531364,2016.0,1.370608,103.896776,5,matched_local_block
+3866,Hougang Meadow,hougang,upper serangoon road,364b,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,532364,2016.0,1.370514,103.897133,3,matched_local_block
+3866,Hougang Meadow,hougang,upper serangoon road,365,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3866,Hougang Meadow,hougang,upper serangoon road,365a,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,531365,2016.0,1.369716,103.897624,5,matched_local_block
+3866,Hougang Meadow,hougang,upper serangoon road,365b,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,532365,2016.0,1.369204,103.897513,7,matched_local_block
+3866,Hougang Meadow,hougang,upper serangoon road,365c,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,533365,2016.0,1.369285,103.897135,9,matched_local_block
+3866,Hougang Meadow,hougang,upper serangoon road,365d,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,537365,2016.0,1.369617,103.896613,8,matched_local_block
+3873,Waterway View,punggol,edgedale plains,682,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3873,Waterway View,punggol,edgedale plains,682a,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,821682,2017.0,1.403548,103.916291,6,matched_local_block
+3873,Waterway View,punggol,edgedale plains,682b,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,822682,2017.0,1.403412,103.915952,4,matched_local_block
+3873,Waterway View,punggol,edgedale plains,682c,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,823682,2017.0,1.40362,103.915525,3,matched_local_block
+3873,Waterway View,punggol,edgedale plains,683,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3873,Waterway View,punggol,edgedale plains,683a,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,821683,2017.0,1.404263,103.915371,5,matched_local_block
+3873,Waterway View,punggol,edgedale plains,683b,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,822683,2017.0,1.404701,103.914988,3,matched_local_block
+3873,Waterway View,punggol,edgedale plains,683c,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,823683,2017.0,1.404074,103.914649,1,matched_local_block
+3873,Waterway View,punggol,edgedale plains,684,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3873,Waterway View,punggol,edgedale plains,684a,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,821684,2017.0,1.402794,103.915879,2,matched_local_block
+3873,Waterway View,punggol,edgedale plains,684b,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,822684,2017.0,1.403027,103.915006,2,matched_local_block
+3873,Waterway View,punggol,edgedale plains,684c,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,823684,2017.0,1.403492,103.914765,5,matched_local_block
+3873,Waterway View,punggol,edgedale plains,684d,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3881,Hougang Crimson,hougang,hougang avenue 9,932,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3881,Hougang Crimson,hougang,hougang avenue 9,932a,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,531932,2016.0,1.375266,103.881751,10,matched_local_block
+3881,Hougang Crimson,hougang,hougang avenue 9,932b,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,532932,2016.0,1.375127,103.882235,3,matched_local_block
+3881,Hougang Crimson,hougang,hougang avenue 9,932c,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3881,Hougang Crimson,hougang,hougang avenue 9,933,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3881,Hougang Crimson,hougang,hougang avenue 9,933a,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,531933,2016.0,1.375758,103.882033,6,matched_local_block
+3885,Compassvale Cape,sengkang,compassvale crescent,286,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3885,Compassvale Cape,sengkang,compassvale crescent,286a,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,541286,2016.0,1.397356,103.896193,13,matched_local_block
+3885,Compassvale Cape,sengkang,compassvale crescent,286b,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,542286,2016.0,1.397551,103.895593,7,matched_local_block
+3885,Compassvale Cape,sengkang,compassvale crescent,286c,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,543286,2016.0,1.398118,103.896424,4,matched_local_block
+3885,Compassvale Cape,sengkang,compassvale crescent,287a,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,541287,2016.0,1.398438,103.895958,6,matched_local_block
+3885,Compassvale Cape,sengkang,compassvale crescent,287b,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,542287,2016.0,1.398804,103.896077,2,matched_local_block
+3885,Compassvale Cape,sengkang,compassvale crescent,287c,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,543287,2016.0,1.398731,103.8967,11,matched_local_block
+3885,Compassvale Cape,sengkang,compassvale crescent,287d,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3885,Compassvale Cape,sengkang,compassvale crescent,288,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3885,Compassvale Cape,sengkang,compassvale crescent,288a,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,541288,2016.0,1.398649,103.897002,4,matched_local_block
+3885,Compassvale Cape,sengkang,compassvale crescent,288b,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,542288,2016.0,1.398447,103.897808,9,matched_local_block
+3885,Compassvale Cape,sengkang,compassvale crescent,288c,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,543288,2016.0,1.398389,103.898071,7,matched_local_block
+3885,Compassvale Cape,sengkang,compassvale crescent,288d,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3885,Compassvale Cape,sengkang,compassvale crescent,289,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3885,Compassvale Cape,sengkang,compassvale crescent,289a,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,541289,2016.0,1.397712,103.89772,12,matched_local_block
+3885,Compassvale Cape,sengkang,compassvale crescent,289b,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,542289,2016.0,1.397677,103.897388,5,matched_local_block
+3885,Compassvale Cape,sengkang,compassvale crescent,289c,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3888,Compassvale Boardwalk,sengkang,compassvale crescent,293a,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,541293,2015.0,1.396533,103.895868,9,matched_local_block
+3888,Compassvale Boardwalk,sengkang,compassvale crescent,293b,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,542293,2015.0,1.396992,103.895995,10,matched_local_block
+3888,Compassvale Boardwalk,sengkang,compassvale crescent,293c,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,543293,2015.0,1.397103,103.895715,1,matched_local_block
+3888,Compassvale Boardwalk,sengkang,compassvale crescent,293d,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,544293,2015.0,1.396742,103.895332,11,matched_local_block
+3888,Compassvale Boardwalk,sengkang,compassvale crescent,294a,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,541294,2015.0,1.39607,103.895933,6,matched_local_block
+3889,Keat Hong Colours,choa chu kang,choa chu kang avenue 7,810,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3889,Keat Hong Colours,choa chu kang,choa chu kang avenue 7,810a,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,681810,2016.0,1.374546,103.746304,3,matched_local_block
+3889,Keat Hong Colours,choa chu kang,choa chu kang avenue 7,810b,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,682810,2016.0,1.374218,103.745468,4,matched_local_block
+3889,Keat Hong Colours,choa chu kang,choa chu kang avenue 7,811,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3889,Keat Hong Colours,choa chu kang,choa chu kang avenue 7,811a,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,NIL,2016.0,1.373733,103.745948,6,matched_local_block
+3889,Keat Hong Colours,choa chu kang,choa chu kang avenue 7,811b,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,682811,2016.0,1.373121,103.745382,5,matched_local_block
+3889,Keat Hong Colours,choa chu kang,choa chu kang avenue 7,812,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3889,Keat Hong Colours,choa chu kang,choa chu kang avenue 7,812a,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3889,Keat Hong Colours,choa chu kang,choa chu kang avenue 7,812b,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,682812,2016.0,1.372981,103.746249,10,matched_local_block
+3889,Keat Hong Colours,choa chu kang,choa chu kang avenue 7,812c,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,683812,2016.0,1.372761,103.745918,10,matched_local_block
+3889,Keat Hong Colours,choa chu kang,choa chu kang avenue 7,813,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3889,Keat Hong Colours,choa chu kang,choa chu kang avenue 7,813a,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3889,Keat Hong Colours,choa chu kang,choa chu kang avenue 7,813b,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3892,Keat Hong Axis,choa chu kang,choa chu kang avenue 1,807,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3892,Keat Hong Axis,choa chu kang,choa chu kang avenue 1,807a,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,681807,2015.0,1.375805,103.744793,16,matched_local_block
+3892,Keat Hong Axis,choa chu kang,choa chu kang avenue 1,807b,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,682807,2015.0,1.376044,103.745171,0,matched_local_block
+3892,Keat Hong Axis,choa chu kang,choa chu kang avenue 1,807c,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,683807,2015.0,1.376156,103.745821,8,matched_local_block
+3892,Keat Hong Axis,choa chu kang,choa chu kang avenue 1,808,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3892,Keat Hong Axis,choa chu kang,choa chu kang avenue 1,808a,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,681808,2015.0,1.37548,103.745373,11,matched_local_block
+3892,Keat Hong Axis,choa chu kang,choa chu kang avenue 1,808b,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,682808,2016.0,1.375592,103.746021,17,matched_local_block
+3892,Keat Hong Axis,choa chu kang,choa chu kang avenue 1,808c,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,683808,2016.0,1.375031,103.746187,7,matched_local_block
+3892,Keat Hong Axis,choa chu kang,choa chu kang avenue 1,808d,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,684808,2015.0,1.374884,103.745409,12,matched_local_block
+3892,Keat Hong Axis,choa chu kang,choa chu kang avenue 1,809,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3892,Keat Hong Axis,choa chu kang,choa chu kang avenue 1,809a,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,681809,2015.0,1.37521,103.745018,1,matched_local_block
+3892,Keat Hong Axis,choa chu kang,choa chu kang avenue 1,809b,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,682809,2015.0,1.374762,103.744965,6,matched_local_block
+3892,Keat Hong Axis,choa chu kang,choa chu kang avenue 1,809c,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3894,Punggol Central,punggol,punggol central,301,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3894,Punggol Central,punggol,punggol central,301a,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,821301,2008.0,1.404172,103.906186,13,matched_local_block
+3894,Punggol Central,punggol,punggol central,301b,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,822301,2008.0,1.404265,103.905895,4,matched_local_block
+3894,Punggol Central,punggol,punggol central,301c,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,823301,2009.0,1.404402,103.905664,10,matched_local_block
+3894,Punggol Central,punggol,punggol central,303,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3894,Punggol Central,punggol,punggol central,303a,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,821303,2009.0,1.403778,103.905762,3,matched_local_block
+3894,Punggol Central,punggol,punggol central,303b,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,822303,2009.0,1.403917,103.905531,8,matched_local_block
+3894,Punggol Central,punggol,punggol central,303c,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,823303,2009.0,1.404052,103.9053,7,matched_local_block
+3894,Punggol Central,punggol,punggol central,304,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3897,Trivelis,clementi,clementi avenue 4,311,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3897,Trivelis,clementi,clementi avenue 4,311a,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,121311,2015.0,1.319117,103.765492,43,matched_local_block
+3897,Trivelis,clementi,clementi avenue 4,311b,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,122311,2015.0,1.319447,103.765649,38,matched_local_block
+3897,Trivelis,clementi,clementi avenue 4,311c,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,NIL,2015.0,1.320106,103.765573,40,matched_local_block
+3897,Trivelis,clementi,clementi avenue 4,311d,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3899,Punggol Lodge,punggol,punggol drive,612,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3899,Punggol Lodge,punggol,punggol drive,612a,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,821612,2011.0,1.404164,103.909118,15,matched_local_block
+3899,Punggol Lodge,punggol,punggol drive,612b,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,822612,2011.0,1.404939,103.908157,8,matched_local_block
+3899,Punggol Lodge,punggol,punggol drive,612c,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,823612,2011.0,1.405078,103.90776,20,matched_local_block
+3899,Punggol Lodge,punggol,punggol drive,612d,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,824612,2011.0,1.404727,103.907624,16,matched_local_block
+3899,Punggol Lodge,punggol,punggol drive,613,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3899,Punggol Lodge,punggol,punggol drive,613a,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,821613,2011.0,1.404421,103.907861,19,matched_local_block
+3899,Punggol Lodge,punggol,punggol drive,613b,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,822613,2011.0,1.404277,103.908278,14,matched_local_block
+3899,Punggol Lodge,punggol,punggol drive,613c,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,823613,2011.0,1.403983,103.908664,13,matched_local_block
+3899,Punggol Lodge,punggol,punggol drive,613d,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,824613,2011.0,1.403824,103.908909,13,matched_local_block
+3900,Fernvale Vista II,sengkang,fernvale road,441,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3900,Fernvale Vista II,sengkang,fernvale road,441a,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,791441,2009.0,1.391098,103.875166,15,matched_local_block
+3900,Fernvale Vista II,sengkang,fernvale road,441b,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,792441,2010.0,1.39121,103.874689,19,matched_local_block
+3900,Fernvale Vista II,sengkang,fernvale road,441c,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,793441,2010.0,1.392201,103.874779,18,matched_local_block
+3900,Fernvale Vista II,sengkang,fernvale road,441d,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,794441,2010.0,1.392092,103.875248,23,matched_local_block
+3900,Fernvale Vista II,sengkang,fernvale road,442,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3902,Fernvale Vista I,sengkang,fernvale road,443,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3902,Fernvale Vista I,sengkang,fernvale road,443a,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,791443,2010.0,1.391181,103.874322,8,matched_local_block
+3902,Fernvale Vista I,sengkang,fernvale road,443b,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,792443,2010.0,1.391184,103.873946,16,matched_local_block
+3902,Fernvale Vista I,sengkang,fernvale road,443c,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,793443,2011.0,1.391218,103.873553,18,matched_local_block
+3902,Fernvale Vista I,sengkang,fernvale road,445,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3902,Fernvale Vista I,sengkang,fernvale road,445a,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,791445,2011.0,1.39222,103.87441,25,matched_local_block
+3902,Fernvale Vista I,sengkang,fernvale road,445b,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,792445,2011.0,1.392247,103.874095,15,matched_local_block
+3904,Ghim Moh Valley,queenstown,ghim moh link,22,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,271022,2011.0,1.309357,103.78549,31,matched_local_block
+3904,Ghim Moh Valley,queenstown,ghim moh link,23,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,271023,2011.0,1.308636,103.786332,38,matched_local_block
+3904,Ghim Moh Valley,queenstown,ghim moh link,23a,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3904,Ghim Moh Valley,queenstown,ghim moh link,24,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3904,Ghim Moh Valley,queenstown,ghim moh link,25,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3904,Ghim Moh Valley,queenstown,ghim moh link,26,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,270026,2011.0,1.308388,103.785551,46,matched_local_block
+3904,Ghim Moh Valley,queenstown,ghim moh link,27,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,270027,2011.0,1.308371,103.785134,26,matched_local_block
+3904,Ghim Moh Valley,queenstown,ghim moh link,28,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,270028,2011.0,1.30888,103.784803,36,matched_local_block
+3905,Membina Court @ Bukit Merah,bukit merah,jalan membina,25a,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,162025,2007.0,1.283466,103.826183,22,matched_local_block
+3905,Membina Court @ Bukit Merah,bukit merah,jalan membina,25b,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,164025,2007.0,1.283621,103.825391,62,matched_local_block
+3905,Membina Court @ Bukit Merah,bukit merah,jalan membina,26,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3905,Membina Court @ Bukit Merah,bukit merah,jalan membina,26a,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,162026,2007.0,1.283062,103.82606,23,matched_local_block
+3905,Membina Court @ Bukit Merah,bukit merah,jalan membina,26b,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,165026,2007.0,1.283092,103.825592,42,matched_local_block
+3905,Membina Court @ Bukit Merah,bukit merah,jalan membina,26c,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,166026,2007.0,1.282758,103.825206,52,matched_local_block
+3905,Membina Court @ Bukit Merah,bukit merah,jalan membina,26d,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,167026,2007.0,1.282099,103.825203,58,matched_local_block
+3905,Membina Court @ Bukit Merah,bukit merah,jalan membina,27a,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,163027,2007.0,1.282219,103.824536,36,matched_local_block
+3905,Membina Court @ Bukit Merah,bukit merah,jalan membina,27b,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,164027,2007.0,1.282909,103.824868,24,matched_local_block
+3907,The Peak @ Toa Payoh,toa payoh,lorong 1a toa payoh,138,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3907,The Peak @ Toa Payoh,toa payoh,lorong 1a toa payoh,138a,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,311138,2012.0,1.336711,103.845473,34,matched_local_block
+3907,The Peak @ Toa Payoh,toa payoh,lorong 1a toa payoh,138b,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,312138,2012.0,1.336264,103.845626,15,matched_local_block
+3907,The Peak @ Toa Payoh,toa payoh,lorong 1a toa payoh,138c,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,313138,2012.0,1.336264,103.844907,42,matched_local_block
+3907,The Peak @ Toa Payoh,toa payoh,lorong 1a toa payoh,139,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3907,The Peak @ Toa Payoh,toa payoh,lorong 1a toa payoh,139a,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,311139,2012.0,1.336278,103.844045,23,matched_local_block
+3907,The Peak @ Toa Payoh,toa payoh,lorong 1a toa payoh,139b,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,312139,2012.0,1.336711,103.843878,21,matched_local_block
+3908,The Pinnacle @ Duxton,central,cantonment road,1,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3908,The Pinnacle @ Duxton,central,cantonment road,1a,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,085101,2009.0,1.277843,103.840966,50,matched_local_block
+3908,The Pinnacle @ Duxton,central,cantonment road,1b,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,085201,2009.0,1.277799,103.841403,66,matched_local_block
+3908,The Pinnacle @ Duxton,central,cantonment road,1c,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,085301,2009.0,1.277449,103.841667,77,matched_local_block
+3908,The Pinnacle @ Duxton,central,cantonment road,1d,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,NIL,2009.0,1.27692,103.841486,71,matched_local_block
+3908,The Pinnacle @ Duxton,central,cantonment road,1e,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,NIL,2009.0,1.276622,103.841156,72,matched_local_block
+3908,The Pinnacle @ Duxton,central,cantonment road,1f,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,085601,2009.0,1.275987,103.841192,70,matched_local_block
+3908,The Pinnacle @ Duxton,central,cantonment road,1g,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,085701,2009.0,1.275532,103.841275,53,matched_local_block
+3909,The River Vista @ Kallang,kallang/whampoa,bendemeer road,38a,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,331038,2010.0,1.320058,103.866939,23,matched_local_block
+3909,The River Vista @ Kallang,kallang/whampoa,bendemeer road,38b,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,332038,2010.0,1.320533,103.866795,27,matched_local_block
+3909,The River Vista @ Kallang,kallang/whampoa,bendemeer road,38c,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,333038,2010.0,1.32112,103.866787,23,matched_local_block
+3909,The River Vista @ Kallang,kallang/whampoa,bendemeer road,38d,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,334038,2010.0,1.321636,103.866767,25,matched_local_block
+3909,The River Vista @ Kallang,kallang/whampoa,bendemeer road,39,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3909,The River Vista @ Kallang,kallang/whampoa,bendemeer road,39a,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,331039,2010.0,1.320179,103.866366,24,matched_local_block
+3910,Punggol Vista,punggol,punggol central,601,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3910,Punggol Vista,punggol,punggol central,601a,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,821601,2010.0,1.402468,103.907582,13,matched_local_block
+3910,Punggol Vista,punggol,punggol central,601b,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,822601,2010.0,1.402147,103.907832,11,matched_local_block
+3910,Punggol Vista,punggol,punggol central,601c,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,823601,2010.0,1.402679,103.908106,12,matched_local_block
+3910,Punggol Vista,punggol,punggol central,601d,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,824601,2010.0,1.402964,103.907847,16,matched_local_block
+3910,Punggol Vista,punggol,punggol central,602,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3910,Punggol Vista,punggol,punggol central,602a,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,821602,2010.0,1.403481,103.907117,22,matched_local_block
+3910,Punggol Vista,punggol,punggol central,602b,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,822602,2010.0,1.403013,103.906864,14,matched_local_block
+3910,Punggol Vista,punggol,punggol central,602c,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,823602,2010.0,1.402713,103.907246,14,matched_local_block
+3913,The Premiere @ Tampines,tampines,tampines central 7,515,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3913,The Premiere @ Tampines,tampines,tampines central 7,515a,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,521515,2009.0,1.356966,103.938383,12,matched_local_block
+3913,The Premiere @ Tampines,tampines,tampines central 7,515b,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,522515,2009.0,1.356968,103.938668,19,matched_local_block
+3913,The Premiere @ Tampines,tampines,tampines central 7,515c,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,523515,2009.0,1.356968,103.938987,24,matched_local_block
+3913,The Premiere @ Tampines,tampines,tampines central 7,515d,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,524515,2009.0,1.356962,103.939269,18,matched_local_block
+3913,The Premiere @ Tampines,tampines,tampines central 7,516,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3913,The Premiere @ Tampines,tampines,tampines central 7,517,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3913,The Premiere @ Tampines,tampines,tampines central 7,518,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,,,,,0,not_in_local_block_table
+3913,The Premiere @ Tampines,tampines,tampines central 7,518a,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,521518,2009.0,1.356372,103.938385,5,matched_local_block
+3913,The Premiere @ Tampines,tampines,tampines central 7,518b,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,522518,2009.0,1.35637,103.938669,9,matched_local_block
+3913,The Premiere @ Tampines,tampines,tampines central 7,518c,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,523518,2009.0,1.35637,103.938988,27,matched_local_block
+3913,The Premiere @ Tampines,tampines,tampines central 7,518d,https://app.sla.gov.sg/inlis/assets/SamplePDF/HDBEstate.pdf,2023-08-07,524518,2009.0,1.356375,103.939271,11,matched_local_block

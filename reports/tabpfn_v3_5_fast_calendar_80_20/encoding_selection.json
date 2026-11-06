@@ -1,0 +1,4 @@
+{
+  "encoding": "cyclical",
+  "selection_uses": "earlier sampled-query ten-month folds only"
+}

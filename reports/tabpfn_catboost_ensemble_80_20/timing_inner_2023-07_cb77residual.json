@@ -1,0 +1,9 @@
+{
+  "fit_seconds": 79.48358860000735,
+  "predict_seconds": 0.010942599968984723,
+  "context_rows": 87937,
+  "features": 77,
+  "target": "residual",
+  "model_artifact": ".cache/tabpfn_ensemble/inner_2023-07_cb77residual.cbm",
+  "sha256": "8f3b9c8c67842ed1b73dfee8517c3bf2ff36ad6056c9794814d1897acdf65d1e"
+}

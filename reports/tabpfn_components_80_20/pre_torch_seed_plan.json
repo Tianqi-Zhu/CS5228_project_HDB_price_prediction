@@ -1,0 +1,185 @@
+{
+  "feature_artifact_sha256": "fba84757b6e23280d2b27eab0ca5d86a427ac19ca33c6b12b5b2dcc4194a0059",
+  "columns": [
+    "FLAT_TYPE_CLEAN",
+    "FLAT_MODEL_CLEAN",
+    "FLOOR_AREA_SQM",
+    "APPROVAL_MONTH_INDEX",
+    "APPROVAL_MONTH_OF_YEAR",
+    "FLAT_AGE_YEARS",
+    "TOWN_CLEAN",
+    "LATITUDE",
+    "LONGITUDE",
+    "MAX_FLOOR",
+    "YEAR_COMPLETED",
+    "BUILDING_AGE_FROM_COMPLETION",
+    "SUBZONE",
+    "PLANNING_AREA",
+    "REGION",
+    "NEAREST_MRT_KM",
+    "NEAREST_MALL_KM",
+    "NEAREST_SCHOOL_KM",
+    "DISTANCE_TO_CBD_KM",
+    "AMENITY_DENSITY_1KM",
+    "MRT_COUNT_0.5KM",
+    "MRT_COUNT_1.0KM",
+    "MRT_COUNT_2.0KM",
+    "MALL_COUNT_0.5KM",
+    "MALL_COUNT_1.0KM",
+    "MALL_COUNT_2.0KM",
+    "SCHOOL_COUNT_0.5KM",
+    "SCHOOL_COUNT_1.0KM",
+    "SCHOOL_COUNT_2.0KM",
+    "HIST_SIGNATURE_MEAN",
+    "HIST_SIGNATURE_COUNT",
+    "HIST_SIGNATURE_LAST_MEAN",
+    "HIST_SIGNATURE_RECENCY_MONTHS",
+    "HIST_BLOCK_FLAT_MEAN",
+    "HIST_BLOCK_FLAT_COUNT",
+    "HIST_BLOCK_FLAT_LAST_MEAN",
+    "HIST_BLOCK_FLAT_RECENCY_MONTHS",
+    "HIST_AREA_FLAT_MEAN",
+    "HIST_AREA_FLAT_COUNT",
+    "HIST_AREA_FLAT_LAST_MEAN",
+    "HIST_AREA_FLAT_RECENCY_MONTHS",
+    "BLOCK_ID",
+    "STREET_ID",
+    "RECENT_BLOCK_FLAT_3M_MEAN",
+    "RECENT_BLOCK_FLAT_3M_COUNT",
+    "RECENT_BLOCK_FLAT_6M_MEAN",
+    "RECENT_BLOCK_FLAT_6M_COUNT",
+    "RECENT_BLOCK_FLAT_12M_MEAN",
+    "RECENT_BLOCK_FLAT_12M_COUNT",
+    "RECENT_AREA_FLAT_3M_MEAN",
+    "RECENT_AREA_FLAT_3M_COUNT",
+    "RECENT_AREA_FLAT_6M_MEAN",
+    "RECENT_AREA_FLAT_6M_COUNT",
+    "RECENT_AREA_FLAT_12M_MEAN",
+    "RECENT_AREA_FLAT_12M_COUNT",
+    "RECENT_BLOCK_FLAT_3M_SHRUNK_MEAN",
+    "RECENT_BLOCK_FLAT_6M_SHRUNK_MEAN",
+    "RECENT_BLOCK_FLAT_12M_SHRUNK_MEAN",
+    "RECENT_BLOCK_FLAT_3M_STD",
+    "RECENT_BLOCK_FLAT_6M_STD",
+    "RECENT_BLOCK_FLAT_12M_STD",
+    "RECENT_AREA_FLAT_3M_STD",
+    "RECENT_AREA_FLAT_6M_STD",
+    "RECENT_AREA_FLAT_12M_STD",
+    "AREA_RECENT_MINUS_LONG",
+    "BLOCK_RECENT_MINUS_LONG",
+    "BLOCK_MINUS_AREA_RECENT",
+    "AREA_LAST_MINUS_RECENT",
+    "TEMP_FLAT_RECENT3_MEAN",
+    "TEMP_FLAT_RECENT12_MEAN",
+    "TEMP_FLAT_DAMPED_FORECAST",
+    "TEMP_FORECAST_HORIZON",
+    "TEMP_FLAT_HISTORY_COUNT_3M",
+    "TEMP_FLAT_LAST_OBSERVATION_AGE",
+    "TEMP_LOCAL_FORECAST",
+    "TEMP_LOCAL_WEIGHT",
+    "TEMP_FORECAST_RMSE"
+  ],
+  "categorical_indices": [
+    0,
+    1,
+    4,
+    6,
+    12,
+    13,
+    14,
+    41,
+    42
+  ],
+  "checkpoint_sha256": "14e0b81285bca7a6d1ef121169f27f651f76dff49cad6c0b8779d5c836018550",
+  "diag_adapter_sha256": "1fa442b5180bbf9604d3e15517af08ad8bf38ac7258077b119d080f7cc9ef83b",
+  "candidates": {
+    "icl_rank2": {
+      "component": "icl_lora",
+      "rank": 2,
+      "lr": 0.0003
+    },
+    "icl_rank4": {
+      "component": "icl_lora",
+      "rank": 4,
+      "lr": 0.0003
+    },
+    "icl_last2_rank4": {
+      "component": "icl_lora",
+      "rank": 4,
+      "last_blocks": 2,
+      "lr": 0.0003
+    },
+    "regression_head": {
+      "component": "head",
+      "lr": 3e-05
+    },
+    "diag_crps_mse": {
+      "component": "diagscale",
+      "lr": 0.01
+    },
+    "diag_mse_only": {
+      "component": "diagscale",
+      "lr": 0.01,
+      "crps": 0
+    }
+  },
+  "families": {
+    "icl": [
+      "icl_rank2",
+      "icl_rank4",
+      "icl_last2_rank4"
+    ],
+    "head": [
+      "regression_head"
+    ],
+    "loss_control": [
+      "diag_crps_mse"
+    ],
+    "loss_mse": [
+      "diag_mse_only"
+    ]
+  },
+  "seed": 42,
+  "train_views": 2,
+  "deployment_views": 1,
+  "epochs_cap": 8,
+  "patience": 3,
+  "task_rows": 1024,
+  "query_fraction": 0.2,
+  "checkpoint_selection": "minimum earlier population-weighted one-view rent RMSE, including zero updates",
+  "family_selection": "minimum earlier weighted RMSE, ties use declared order",
+  "view_selection": "minimum earlier weighted RMSE among 1,2,4 views of original winning DiagScale adapter",
+  "outer_labels_used_for_selection": false,
+  "target": "y_train - train_baseline; add query_baseline exactly once",
+  "training_episodes": "unchanged upstream random mixed-month episodes within pre-December-2023 fitting data",
+  "history_policy": "reuse original pseudo-origin training histories; calibration freezes at November 2023; outer at May 2024",
+  "context_rows": 121005,
+  "outer_rows": 28995,
+  "fit_rows": 102829,
+  "calibration_rows": 600,
+  "gpu": "NVIDIA GeForce RTX 4080",
+  "gpu_gib": 15.99169921875,
+  "versions": {
+    "tabpfn": "9.2.0",
+    "torch": "2.11.0+cu128",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.0"
+  },
+  "source_hashes": {
+    "data\\train.csv": "2fe38ce9e0d8a02e9786f066d4a10d575d91f34be1d9111f0142e3f43fbfc8a5",
+    "data\\test.csv": "a2ec03a0afc07c251c72cc0de2e15ac965a3b06291b304aaac53a375115ff4e0",
+    "reports\\tabpfn_v3_5_fast_calendar_80_20\\predictions_outer_categorical.csv": "6ae63cf3d00073220a77f05e547efcc601dcbdae151dc4260c8b72c21a9d83b6",
+    ".cache\\tabpfn_diagscale_80_20\\inner_features.joblib": "20c28ccaf736673905b50b9e10635aaf1400c30028d23cec41b3011eb12fab8c"
+  },
+  "implementation_hashes": {
+    "analysis\\compare_tabpfn_components_80_20.py": "48a96bdbb751fa1c9a34e9768e1f274a913c2f426069a0ad928de09f5531dc12",
+    "analysis\\experiments\\tabpfn_component_adaptation.py": "285d7d44da0529a0f410a30577f21d14c4b2697df7dc1cf5239974175df2628e"
+  },
+  "existing_results_reused": {
+    "all_attention_lora_two_views": "reports/tabpfn_lora_qk_lr00003_80_20/scores_2views.csv",
+    "embedding_mlp": "reports/tabpfn_fast_embedding_head_80_20/scores.csv",
+    "diagscale_one_view": "reports/tabpfn_diagscale_categorical_alignment_80_20/scores.csv",
+    "four_train_four_deploy": "reports/tabpfn_diagscale_four_views_80_20/scores.csv"
+  }
+}

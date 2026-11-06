@@ -1,0 +1,15 @@
+{
+  "artifact": ".cache/tabpfn_v3_features/calendar_inner_2022-09.joblib",
+  "sha256": "c46af1c5d411cc206174ae38d2389f67b99f7e97a2274e7c8f32a5730c344fae",
+  "origin": "2022-09",
+  "context_rows": 60079,
+  "sampled_query_rows": 2000,
+  "represented_query_rows": 27858.0,
+  "horizons": [
+    1,
+    10
+  ],
+  "last_history_month": "2022-08",
+  "query_sampling": "200 per month; no labels; seed 42",
+  "sampling_weights": "month population divided by month sampled count"
+}

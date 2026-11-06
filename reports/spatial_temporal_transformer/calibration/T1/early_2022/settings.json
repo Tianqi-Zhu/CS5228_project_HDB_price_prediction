@@ -1,0 +1,17 @@
+{
+  "spec": {
+    "name": "T1",
+    "information": "rent",
+    "processor": "transformer",
+    "window": 12,
+    "delay": 0
+  },
+  "seed": 42,
+  "validation": true,
+  "epochs": 30,
+  "smoke": false,
+  "device": "cuda",
+  "fit_rows": 60079,
+  "query_rows": 2000,
+  "preparation_sha256": "683987abe171fabd9e26d29a6b4e8c39205a8eed7f18297a99d20b444cdfdf9c"
+}

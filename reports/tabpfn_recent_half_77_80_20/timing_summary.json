@@ -1,0 +1,21 @@
+{
+  "recent_pooled": {
+    "fit_seconds": 6.069371200050227,
+    "predict_seconds": 31.361103800009005,
+    "peak_vram_gib": 6.89003324508667,
+    "context_rows": 60926,
+    "query_rows": 28995,
+    "features": 77,
+    "batch_size": 200,
+    "subsampling": false,
+    "parameter_versions_unchanged": true,
+    "rmse_sgd": 456.7334299142707,
+    "mae_sgd": 331.8372816665204,
+    "bias_sgd": -12.468597641840068
+  },
+  "recent_by_flat_type": {
+    "fit_seconds": 8.811767600243911,
+    "predict_seconds": 15.445639499928802,
+    "peak_vram_gib": 6.681491851806641
+  }
+}

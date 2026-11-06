@@ -1,0 +1,31 @@
+{
+  "source": {
+    "income2022": {
+      "id": "d_2d6793de474551149c438ba349a108fd",
+      "format": "csv",
+      "agency": "SingStat",
+      "observation_end": "2020-12-31",
+      "publication_date": "2022-07-28",
+      "available_at": "2022-08-01",
+      "spatial_support": "planning area; original published income bands; no interpolation",
+      "update_frequency": "decennial census",
+      "policy": "Use the archived 2022 dataset mirror, not the separate income series revised in 2026; conservatively available from August 2022 origins",
+      "source_url": "https://data.gov.sg/datasets/d_2d6793de474551149c438ba349a108fd/view",
+      "license": "Singapore Open Data Licence",
+      "license_url": "https://data.gov.sg/open-data-licence",
+      "retrieved_at": "2026-10-30T07:05:45.287045+00:00",
+      "status": "acquired",
+      "path": ".cache\\tabpfn_local_economy_landscape_80_20_income\\sources\\income2022.csv",
+      "sha256": "0db5175c0794f334eecd1ef6f2640900367fa8153e36fd1b4765b39b06f262fc",
+      "bytes": 3626
+    }
+  },
+  "parent_prepared_sha256": "6824cffb93e47efd97abd2050fd4b4fcaf04f8cbf40d0a4bcd0ccdd0fa4b3a5e",
+  "available_at": "2022-08-01",
+  "feature_block": "Published 2020 population/age + three planning-area household-income-band proportions + availability flags",
+  "selection": "predeclared regional ablation, one fixed representation; does not replace or retune the locked factorial",
+  "code_sha256": {
+    "analysis\\compare_local_income_extension.py": "9319c17fb83b1b822e5a1c962a35829481011c786373220096d9b19e4dd501dd",
+    "analysis\\experiments\\regional_income_features.py": "1a1de0e3da464fcc47465d464ee460cb80d772e67adc8a80b95ad532b17a23fb"
+  }
+}

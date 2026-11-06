@@ -1,0 +1,74 @@
+{
+  "economy": "commercial_kde200",
+  "landscape": "park_structure",
+  "market": "market_smoothed",
+  "kde": "commercial_kde200",
+  "strict_incremental": "market_smoothed",
+  "uses_outer_targets": false,
+  "outer_jobs": {
+    "F1_economy": [
+      "FOOD_KDE_200M_KM2",
+      "MALL_KDE_200M_KM2"
+    ],
+    "F2_landscape": [
+      "PARK_NEAREST_M",
+      "PARK_FRACTION_100M",
+      "PARK_FRACTION_300M",
+      "PARK_FRACTION_500M",
+      "PARK_GAUSSIAN_200M_FRACTION",
+      "PARK_LARGEST_PATCH_FRACTION_500M",
+      "PARK_BINARY_ENTROPY"
+    ],
+    "F3_combined": [
+      "FOOD_KDE_200M_KM2",
+      "MALL_KDE_200M_KM2",
+      "PARK_NEAREST_M",
+      "PARK_FRACTION_100M",
+      "PARK_FRACTION_300M",
+      "PARK_FRACTION_500M",
+      "PARK_GAUSSIAN_200M_FRACTION",
+      "PARK_LARGEST_PATCH_FRACTION_500M",
+      "PARK_BINARY_ENTROPY"
+    ],
+    "strict_incremental": [
+      "LOCAL_500M_6M_SHRUNK",
+      "LOCAL_500M_6M_COUNT",
+      "LOCAL_500M_12M_SHRUNK",
+      "LOCAL_500M_12M_COUNT",
+      "LOCAL_1000M_6M_SHRUNK",
+      "LOCAL_1000M_6M_COUNT",
+      "LOCAL_1000M_12M_SHRUNK",
+      "LOCAL_1000M_12M_COUNT",
+      "LOCAL_KERNEL_SHRUNK",
+      "LOCAL_KERNEL_MASS",
+      "LOCAL_KERNEL_PPSM",
+      "LOCAL_HISTORY_UNAVAILABLE"
+    ],
+    "commercial_fixed": [
+      "FOOD_COUNT_300M",
+      "FOOD_COUNT_500M",
+      "FOOD_COUNT_1000M",
+      "MALL_COUNT_300M"
+    ],
+    "commercial_kde_selected": [
+      "FOOD_KDE_200M_KM2",
+      "MALL_KDE_200M_KM2"
+    ],
+    "market_selected": [
+      "LOCAL_500M_6M_SHRUNK",
+      "LOCAL_500M_6M_COUNT",
+      "LOCAL_500M_12M_SHRUNK",
+      "LOCAL_500M_12M_COUNT",
+      "LOCAL_1000M_6M_SHRUNK",
+      "LOCAL_1000M_6M_COUNT",
+      "LOCAL_1000M_12M_SHRUNK",
+      "LOCAL_1000M_12M_COUNT",
+      "LOCAL_KERNEL_SHRUNK",
+      "LOCAL_KERNEL_MASS",
+      "LOCAL_KERNEL_PPSM",
+      "LOCAL_HISTORY_UNAVAILABLE"
+    ]
+  },
+  "factorial_policy": "Retrospective if selected economy uses static POIs; park boundaries are always retrospective. F0 inherited unchanged.",
+  "chosen_before_outer": true
+}

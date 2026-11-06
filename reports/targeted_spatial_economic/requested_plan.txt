@@ -1,0 +1,214 @@
+# CS5228 — Targeted Spatial-Temporal and Economic Feature Experiments
+
+## Objective
+
+Implement and evaluate three feature-engineering experiments for Singapore HDB rental prediction:
+
+1. **Local rental dynamics:** Hierarchical historical rental trends and cross-fitted residual correction.
+2. **Housing fundamentals:** Town-level housing completions and foreign-workforce demand.
+3. **Long-term rental cycles:** Historical quarterly HDB rental-market indicators.
+
+Compare each against our **existing best-performing frozen TabPFN ensemble**. Focus on incremental predictive value rather than extensive hyperparameter tuning.
+
+## 1. Inspect the existing project first
+
+Before coding:
+
+- Identify the best-performing TabPFN ensemble, its configurations, feature selection, preprocessing, and evaluation procedures.
+- Review existing spatial, temporal, economic, rental-history, and amenity features, along with prior experimental results.
+- Reuse existing datasets, utilities, feature pipelines, model configurations, and cached predictions wherever possible.
+- Identify which validation periods have already been used for model/feature selection.
+
+Do not rebuild functionality that already exists or introduce redundant features without a clear hypothesis.
+
+Preserve all existing scripts, reports, trained artifacts, and submission files. Write new outputs to a separate experiment directory.
+
+## 2. Experiment A — Hierarchical local rental dynamics
+
+**Highest priority.**
+
+### A1. Hierarchical historical rental features
+
+Construct leakage-free rental-history features at multiple spatial resolutions, using existing representations where possible:
+
+- National × flat type.
+- Town × flat type.
+- Nearby comparable properties.
+- Building/street-level history, where sufficient observations exist.
+
+Prioritize:
+
+- Recent local rental level.
+- Local rental growth relative to the broader market.
+- Number of historical comparable transactions.
+- Historical rental dispersion.
+
+Use hierarchical smoothing/shrinkage toward broader geographic levels when local observations are sparse. Prefer a simple empirically justified formulation rather than complex learned representations.
+
+Compute features using only rental records available before the prediction cutoff. Account for rental approval dates and any publication lag. For training rows, prevent self-target leakage and contamination from contemporaneous or future observations.
+
+Compare:
+
+- **A0:** Existing best TabPFN ensemble.
+- **A1:** A0 + hierarchical rental-history features.
+
+### A2. Cross-fitted spatial-temporal residual correction
+
+Test whether historical TabPFN prediction errors contain predictable local structure.
+
+1. Reuse existing valid out-of-fold or forward-origin predictions if available.
+2. Otherwise, generate historical predictions through chronological cross-fitting, ensuring each residual is obtained from a model that did not train on that rental's target.
+3. Estimate smoothed historical residuals using location, comparable property attributes, and time decay.
+4. Correct later predictions using a regularized coefficient:
+
+   `prediction_corrected = prediction_TabPFN + gamma × historical_local_residual`
+
+Tune `gamma` and smoothing parameters on development data only, using a small predefined search space.
+
+**Critical:** Residual correction for a prediction must use residuals from earlier observations whose ground-truth labels were already available at its forecast origin. Cross-fitting alone is insufficient if future residuals enter the correction.
+
+Compare:
+
+- **A0:** Existing TabPFN ensemble.
+- **A2:** A0 + historical residual correction.
+- **A3:** A1 + residual correction, only if A1 and A2 independently show promise.
+
+Do not rerun expensive TabPFN inference unnecessarily. If valid historical residuals cannot be generated within the compute budget, document this and skip A2 rather than using invalid in-sample errors.
+
+## 3. Experiment B — Housing fundamentals
+
+**High priority.**
+
+Investigate whether direct housing supply and rental-demand indicators improve performance beyond existing economic features.
+
+### B1. Town-level housing supply
+
+Use existing data or official HDB datasets to investigate:
+
+- Historical completed HDB residential units by town.
+- Recently completed units relative to existing housing stock.
+- Changes in housing supply, where reliable temporal information exists.
+
+Prioritize one or two economically meaningful normalized features, such as:
+
+`recent_completions / existing_town_housing_stock`
+
+Distinguish completed owner-occupied housing from rental supply; do not assume their effects are equivalent.
+
+### B2. Workforce demand
+
+Investigate official MOM historical data for:
+
+- Employment Pass population changes.
+- S Pass population changes.
+
+Prefer lagged growth indicators over raw population levels.
+
+Check available publication dates and reporting frequency. Never use subsequently reported or revised values at earlier forecast origins; use conservative publication-delay assumptions when necessary.
+
+### Ablations
+
+- **B0:** Existing baseline.
+- **B1:** B0 + housing-supply features.
+- **B2:** B0 + workforce-demand features.
+- **B3:** Both feature groups, only if individually promising.
+
+Use existing economic data integration wherever possible. Skip variables already represented adequately by existing features.
+
+If reliable historical or point-in-time information cannot be obtained, report the limitation rather than fabricate or backward-fill values.
+
+## 4. Experiment C — Long-term rental-cycle features
+
+**Medium–high priority.**
+
+Use official historical quarterly HDB median rent data, potentially extending back to 2005, to supplement the approximately 51 months of transaction-level observations.
+
+Construct a minimal feature set:
+
+- National rental growth over the preceding 4 quarters.
+- National rental growth over the preceding 8 quarters.
+- Recent rental-growth acceleration.
+- Town × flat-type rental growth relative to national growth.
+
+Use existing quarterly rent-index processing if available. Prefer log changes or normalized indices to raw historical rental levels when appropriate.
+
+Handle missing or suppressed observations using past-only methods and explicit missingness indicators where useful.
+
+**Important:** Align each quarterly statistic to its actual publication date, not simply the quarter it describes. Do not use revised or subsequently published rental data before it would have been available.
+
+Compare:
+
+- **C0:** Existing baseline.
+- **C1:** Baseline + long-term rental-cycle features.
+
+Do not implement complex time-series foundation models or latent-factor models at this stage. Consider a lightweight latent representation only if these basic features demonstrate convincing benefits.
+
+## 5. Evaluation requirements
+
+### Fair comparison
+
+- Keep the best TabPFN architecture, frozen weights, ensemble design, and inference settings unchanged.
+- Retain the existing best feature engineering and add only the features under examination.
+- Use identical target rental observations, target transformation, and evaluation metrics.
+- Reapply the established ensemble methodology consistently when introducing new input features.
+- Do not inadvertently alter the training population or prediction coverage because new data are missing.
+- Use cached baseline predictions and feature matrices when valid.
+
+### Strict chronological evaluation
+
+- Preserve point-in-time validity for every feature and target-derived statistic.
+- Use forward-chaining or rolling-origin splits appropriate to the actual forecasting task.
+- Keep feature tuning and final evaluation chronologically separated.
+- Treat previously examined validation periods, including June 2024–March 2025, as development evidence rather than fresh independent confirmation.
+- Prefer a genuinely untouched later holdout if one exists; otherwise report walk-forward results as exploratory.
+- Ensure auxiliary feature models, smoothers, scalers, and correction parameters are fitted only on permitted training/development data.
+
+### Metrics
+
+Report:
+
+- RMSE and MAE, including absolute and percentage differences against the best TabPFN baseline.
+- Per-month improvements and paired prediction-error differences.
+- Results across major towns and flat types.
+- Uncertainty estimates accounting for temporal dependence.
+- Runtime, GPU memory, and incremental inference costs.
+
+Do not overstate significance based on 150,000 rental rows when the number of independent temporal observations is much smaller.
+
+## 6. Compute budget and execution plan
+
+Assume a single RTX 4080.
+
+Execute in this order:
+
+1. **A1:** Hierarchical local rental features.
+2. **C1:** Long-term quarterly rental-cycle features.
+3. **B1/B2:** Housing fundamentals, depending on available data quality.
+4. **A2:** Historical residual correction, if leakage-free residuals can be generated affordably.
+
+Prefer feature caching, batched inference, reuse of existing predictions, and minimal hyperparameter searches.
+
+Do not fine-tune TabPFN weights or run exhaustive experiments.
+
+Only investigate combined feature groups after individual feature groups show meaningful improvements.
+
+## 7. Deliverables
+
+Create a dedicated experiment directory containing:
+
+- Reproducible implementation scripts and configurations.
+- Feature definitions, data sources, and point-in-time availability documentation.
+- Cached intermediate features and predictions where appropriate.
+- Targeted tests for leakage, chronological alignment, cross-fitting, and baseline equivalence.
+- An ablation table comparing all completed variants.
+- A concise report covering results, uncertainty, limitations, and recommendations.
+
+For every experiment, explain whether the proposed features add genuinely new predictive information beyond existing features.
+
+Preserve all existing results and submission artifacts.
+
+## Final recommendation criterion
+
+Retain an additional feature group only if it shows consistent, meaningful out-of-sample improvement over the optimized TabPFN ensemble, without leakage or unreasonable computational overhead.
+
+Report unsuccessful experiments explicitly. Do not fabricate results, continue broad feature searches, or introduce complexity merely to obtain small validation gains.

@@ -1,0 +1,18 @@
+{
+  "source_hashes": {
+    "C:\\Users\\auror\\Code\\CS5228_project_HDB_price_prediction\\reports\\tabpfn_abcde_ensemble\\predictions_all_origins.csv": "34cd9fd15c7f45fdfd60a0c5735f8feda356eae6323cf177501d9be4e42407b2",
+    "C:\\Users\\auror\\Code\\CS5228_project_HDB_price_prediction\\.cache\\spatial_temporal_transformer\\prepared.joblib": "683987abe171fabd9e26d29a6b4e8c39205a8eed7f18297a99d20b444cdfdf9c",
+    "C:\\Users\\auror\\Code\\CS5228_project_HDB_price_prediction\\reports\\spatial_temporal_transformer\\calibration\\T0\\early_2022\\predictions.csv": "529190cb9edb9d5cee6152abdb056b68fc59ebc4bd033e5820c98ada005276df",
+    "C:\\Users\\auror\\Code\\CS5228_project_HDB_price_prediction\\reports\\spatial_temporal_transformer\\calibration\\T0\\early_2023\\predictions.csv": "a1e26ba6c258b4f8335d643aa606510ec2414eabdd0166fbdea71db907e5c169",
+    "C:\\Users\\auror\\Code\\CS5228_project_HDB_price_prediction\\reports\\spatial_temporal_transformer\\outer\\T0\\seed42\\predictions.csv": "908507a55eeb63d1cce453a3f15d26ed43ca4c580e0a9f77b5c0f2736241e3e4",
+    "C:\\Users\\auror\\Code\\CS5228_project_HDB_price_prediction\\reports\\spatial_temporal_transformer\\outer\\T0\\seed43\\predictions.csv": "2ff5c643576755459bd89fc03e356e7d02a149e58353a33c7a4757879f1522cf",
+    "C:\\Users\\auror\\Code\\CS5228_project_HDB_price_prediction\\reports\\spatial_temporal_transformer\\outer\\T0\\seed44\\predictions.csv": "897f494f5e53accaddf5d7b19a90bffb3b45aaacc6ee6cf8ce163ad48e85bdf1"
+  },
+  "chosen_alpha": "none",
+  "selection_target": "historical teacher forecasts only",
+  "first_teacher_rows": 2000,
+  "second_teacher_rows": 2000,
+  "outer_origin_fitting_rows": 121005,
+  "scope": "frozen T0 backbone with ridge teacher imitation head",
+  "outer_labels_used_for_selection": false
+}

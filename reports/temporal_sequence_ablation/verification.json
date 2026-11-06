@@ -1,0 +1,14 @@
+{
+  "forecast_cases": 8858,
+  "models_per_target": 43,
+  "all_same_evaluation_cases": true,
+  "source_and_code_hashes_verified": true,
+  "selection_recomputed_from_development_only": true,
+  "row_shrinkage_recomputed_from_earlier_errors_only": true,
+  "row_scores_recomputed_from_monthly_moments": true,
+  "csv_forecast_math_and_cutoffs_verified": true,
+  "unit_tests_passed": 17,
+  "extended_transfer_recomputed": true,
+  "extended_transfer_candidates_per_scenario": 10,
+  "summary_code_sha256_verified": true
+}

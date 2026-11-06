@@ -1,0 +1,28 @@
+{
+  "verified": true,
+  "plain_unmodified_tabpfn": true,
+  "one_view_reference_replay_error": 4.944240572513081e-09,
+  "plain_two_view_independent_400_replay_error": 0.0,
+  "cached_wrapper_control_max_difference_sgd": 0.554555411590627,
+  "cached_wrapper_control_reused": false,
+  "discrepancy": "Prior two-view reference used an identity adapter wrapper; exact equivalence to plain model was not established. Bare one-view and repeated bare two-view checks passed. Complete standard two-view E0 recomputed; all latent arms use that E0.",
+  "complete_rows": 28995,
+  "native_complete_metrics": {
+    "rmse_sgd": 455.3963192735051,
+    "mae_sgd": 327.7941682855147,
+    "bias_sgd": 10.79320677715342
+  },
+  "baseline_predictions_sha256": "a1b1877fcaf4b644b79ef79ca3af5877b9b51f8f75e0b891483ed234ad72e6fd",
+  "fit_seconds": 25.825613499968313,
+  "predict_seconds": 228.2669577000197,
+  "context_rows": 121005,
+  "query_rows": 28995,
+  "peak_vram_gib": 7.254533767700195,
+  "parameter_digest_before": "830c4522082f7f267cebffb4014e09ab54c93981ebde75bde00d84da9485d6d3",
+  "parameter_digest_after": "830c4522082f7f267cebffb4014e09ab54c93981ebde75bde00d84da9485d6d3",
+  "parameters_unchanged": true,
+  "gradients_prohibited": true,
+  "no_adapters": true,
+  "n_estimators": 2,
+  "subsampling": false
+}

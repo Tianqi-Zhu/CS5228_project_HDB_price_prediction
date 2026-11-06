@@ -1,0 +1,15 @@
+{
+  "fit_seconds": 1.2737065999535844,
+  "predict_seconds": 0.39616210001986474,
+  "peak_vram_gib": 1.2099699974060059,
+  "context_rows": 2752,
+  "query_rows": 646,
+  "features": 77,
+  "batch_size": 200,
+  "subsampling": false,
+  "parameter_versions_unchanged": true,
+  "town": "serangoon",
+  "rmse_sgd": 453.0972986001813,
+  "mae_sgd": 354.6401707779908,
+  "bias_sgd": -68.16753998912097
+}

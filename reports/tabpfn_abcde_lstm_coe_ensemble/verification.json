@@ -1,0 +1,21 @@
+{
+  "verified": true,
+  "earlier_rows": 4000,
+  "later_rows": 28995,
+  "exact_ID_month_target_population_weight_alignment": true,
+  "main_labels_used_for_weights": false,
+  "original_ABDE_ABCDE_weights_and_predictions_reproduced": true,
+  "source_hashes_unchanged": true,
+  "submissions_unchanged": true,
+  "simplex_KKT_verified": true,
+  "existing_up_to_five_member_solver_reproduced": true,
+  "serialized_predictions_replayed": true,
+  "output_sha256": {
+    "error_correlations.csv": "e232ad71b78a6b31a1a07a55252f481d3e002958745b0da19119ca6e88ec8606",
+    "monthly_scores.csv": "5c7d67519178020e941583e33a6c3f439d3f27f7229ed5ef41017dec1f523efc",
+    "paired_comparisons.csv": "d24ae00d26287a09e878fe66a86733173c7976d20a6d41202b9b6e3e62b1c85b",
+    "predictions.csv": "ba48693b5af9d266e3695016a13228eab883f799f4683fe784356dd25ab69346",
+    "scores.csv": "2ab0e3dc145399cb01daa0e5eebc5690c9c23da43039342adbfde4e9b01e28b3",
+    "weights.csv": "8cad4806bddef1c833d590ae99e4ad9c3f19d08a2ae2c5fca582a96d9359146c"
+  }
+}

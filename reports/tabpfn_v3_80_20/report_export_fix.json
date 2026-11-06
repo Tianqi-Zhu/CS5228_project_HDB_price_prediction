@@ -1,0 +1,5 @@
+{
+  "original_runner_sha256": "3d5db9056028011b6a3001f35fd11b64f9b264432944dc60e86a1f50bbfd057d",
+  "report_runner_sha256": "e7b82cf1eecd42e001568b8440c0d6533d655ae87aa7eec8a54ff36442fb42e2",
+  "reason": "Replace optional tabulate export with local Markdown formatting; model fitting and saved predictions unchanged"
+}

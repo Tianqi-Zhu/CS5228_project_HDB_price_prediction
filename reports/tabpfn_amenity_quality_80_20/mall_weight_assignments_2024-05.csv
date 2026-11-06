@@ -1,0 +1,114 @@
+NAME,LATITUDE,LONGITUDE,mall,year,nla_sqm,revenue_sgd_m,footfall_m,available_at,source_file,pdf_page,scope,extraction
+Alexandra Retail Centre,1.27414893629254,103.801399416665,,,,,,,,,,
+Bugis Junction,1.29911287475873,103.855411173758,Bugis Junction,2023.0,36562.36300416,81.2,33.2,2024-05-01,cict_2023.pdf,60.0,whole standalone retail property,standalone profile current-year column
+Bugis+,1.2981408343975,103.855635339249,Bugis+,2023.0,19937.17819008,,15.9,2024-05-01,cict_2023.pdf,67.0,whole standalone retail property,standalone profile current-year column
+Capitol Piazza,1.29307884763132,103.851261982149,,,,,,,,,,
+Cathay Cineleisure Orchard,1.30152101873533,103.836429655016,,,,,,,,,,
+The Centrepoint,1.30229912789348,103.839687516612,,,,,,,,,,
+City Square Mall,1.31142103107683,103.856624019991,,,,,,,,,,
+CityLink Mall,1.2927777312893,103.854173501417,,,,,,,,,,
+Chinatown Point,1.28499882847401,103.844697081142,,,,,,,,,,
+Clarke Quay Central,1.2890782486996584,103.8466025451162,,,,,,,,,,
+Duo,1.29953434891664,103.85840168774,,,,,,,,,,
+Far East Plaza,1.30717698071189,103.833792932243,,,,,,,,,,
+Funan,1.29134759697794,103.849989790085,Funan,2019.0,29486.21715648,,7.9,2020-05-01,cict_2019.pdf,136.0,retail component only; office/warehouse/stake revenue excluded,curated labelled retail NLA; no mixed-use revenue
+Great World,1.29342272650003,103.832022146655,,,,,,,,,,
+HDB Hub,1.33205485190481,103.848507643079,,,,,,,,,,
+Holland Village Shopping Mall,1.311667041754178,103.79406983821728,,,,,,,,,,
+ION Orchard,1.30397974144505,103.832032328465,,,,,,,,,,
+Jelita Mall,1.31754555939886,103.785850542515,,,,,,,,,,
+Junction 8,1.3504812534505,103.848760473211,Junction 8,2023.0,23585.10895872,59.4,26.4,2024-05-01,cict_2023.pdf,63.0,whole standalone retail property,standalone profile current-year column
+Liat Towers,1.30508722710852,103.830722581168,,,,,,,,,,
+Lucky Plaza,1.30450604646634,103.833962339817,,,,,,,,,,
+Marina Bay Sands,1.28399410139205,103.859450636919,,,,,,,,,,
+Marina Bay Link Mall,1.28023825446086,103.853369662547,,,,,,,,,,
+Marina Square,1.29185533273026,103.85857808906,,,,,,,,,,
+Millenia Walk,1.29260544462492,103.859724944443,,,,,,,,,,
+Mustafa Centre,1.31011213190394,103.855290873926,,,,,,,,,,
+Ngee Ann City,1.30224168528687,103.835181912297,,,,,,,,,,
+Orchard Central,1.30083890839245,103.839434733899,,,,,,,,,,
+Orchard Gateway,1.30044325279546,103.839442780042,,,,,,,,,,
+Palais Renaissance,1.30665484543191,103.829588045188,,,,,,,,,,
+The Paragon,1.30387230879994,103.835857545469,,,,,,,,,,
+People's Park Centre,1.28577009981805,103.843980122838,,,,,,,,,,
+People's Park Complex,1.28413397178419,103.842519972666,,,,,,,,,,
+Plaza Singapura,1.30074770963916,103.845047573431,Plaza Singapura,2023.0,45106.748496,90.7,20.4,2024-05-01,cict_2023.pdf,81.0,whole standalone retail property,standalone profile current-year column
+Raffles City,1.29389357863312,103.853119904656,Raffles City,2019.0,39706.759296,,30.1,2020-05-01,cict_2019.pdf,136.0,retail component only; office/warehouse/stake revenue excluded,curated labelled retail NLA; no mixed-use revenue
+Shaw House and Centre,1.306090894948336,103.831591947311,,,,,,,,,,
+Sim Lim Square,1.3030242605718,103.853037814067,,,,,,,,,,
+The South Beach,1.29498804392056,103.856276242094,,,,,,,,,,
+Square 2,1.32070510956845,103.844160709661,,,,,,,,,,
+Suntec City,1.29485990186642,103.860333693777,,,,,,,,,,
+Tanjong Pagar Centre,1.27658360696843,103.845936303594,,,,,,,,,,
+Tekka Centre,1.30624722914968,103.849956033902,,,,,,,,,,
+Tiong Bahru Plaza,1.28645889472825,103.827015256194,Tiong Bahru Plaza,2023.0,19933.0,42.228,16.5,2024-01-01,fct_2023.pdf,78.0,whole standalone retail property,labelled profile and owner gross-revenue table; not tenant sales
+Thomson Plaza,1.35466902496424,103.830919782333,,,,,,,,,,
+Novena Square Shopping Mall,1.320283774365533,103.84387078120326,,,,,,,,,,
+VivoCity,1.26429316783973,103.82230469365,,,,,,,,,,
+Wheelock Place,1.30467628730252,103.830642027577,,,,,,,,,,
+Wisma Atria,1.30370477426147,103.833205752808,,,,,,,,,,
+Bedok Mall,1.32473632784728,103.929256259998,Bedok Mall,2023.0,20668.04640576,55.7,17.7,2024-05-01,cict_2023.pdf,59.0,whole standalone retail property,standalone profile current-year column
+Century Square,1.35236829566862,103.943812302253,Century Square,2023.0,19628.0,32.424,12.4,2024-01-01,fct_2023.pdf,84.0,whole standalone retail property,labelled profile and owner gross-revenue table; not tenant sales
+Changi City Point,1.33403637902708,103.962917615531,Changi City Point,2023.0,19681.0,25.563,10.5,2024-01-01,fct_2023.pdf,82.0,whole standalone retail property,labelled profile and owner gross-revenue table; not tenant sales
+Downtown East,1.37912717878008,103.955444758145,,,,,,,,,,
+Eastpoint Mall,1.34270592355576,103.953024618234,,,,,,,,,,
+Jewel Changi Airport,1.3603410066102,103.98907755021,,,,,,,,,,
+Katong Shopping Centre,1.3040973115095,103.901515916971,,,,,,,,,,
+Kallang Wave Mall,1.30307515150401,103.873149707591,,,,,,,,,,
+Leisure Park Kallang,1.30230108405227,103.876473975883,,,,,,,,,,
+i12 Katong,1.305436367618753,103.90522336771146,,,,,,,,,,
+Our Tampines Hub,1.35354740485205,103.940381104547,,,,,,,,,,
+Parkway Parade,1.30106975506311,103.905279491524,,,,,,,,,,
+Paya Lebar Quarter,1.31770886898996,103.893414663597,,,,,,,,,,
+Paya Lebar Square,1.31881487007651,103.892580778514,,,,,,,,,,
+SingPost Centre,1.31899666903663,103.894894915962,,,,,,,,,,
+Tampines 1,1.3522279450458,103.952437443086,Tampines 1,2023.0,24946.0,46.435,16.9,2024-01-01,fct_2023.pdf,74.0,whole standalone retail property,labelled profile and owner gross-revenue table; not tenant sales
+Tampines Mall,1.35252737278519,103.944698751072,Tampines Mall,2023.0,33101.631861120004,80.7,23.4,2024-05-01,cict_2023.pdf,65.0,whole standalone retail property,standalone profile current-year column
+White Sands,1.36563610941695,103.960861814678,White Sands,2023.0,13970.0,30.878,10.7,2024-01-01,fct_2023.pdf,88.0,whole standalone retail property,labelled profile and owner gross-revenue table; not tenant sales
+Pasir Ris Mall,1.37382437779468,103.948748873616,,,,,,,,,,
+AMK Hub,1.36938922690344,103.84847796594,,,,,,,,,,
+Canberra Plaza,1.44324523168314,103.83052345616,,,,,,,,,,
+Causeway Point,1.4360700650803,103.785981524253,Causeway Point,2023.0,38990.0,93.255,25.9,2024-01-01,fct_2023.pdf,70.0,whole standalone retail property,labelled profile and owner gross-revenue table; not tenant sales
+Northpoint City,1.42969848626288,103.835776491468,,,,,,,,,,
+Sembawang Shopping Centre,1.44182470675733,103.824845207237,,,,,,,,,,
+Sun Plaza,1.44819535371132,103.819502127155,,,,,,,,,,
+Compass One,1.39205314156706,103.89507054384,,,,,,,,,,
+Heartland Mall,1.35954177325561,103.885167372726,,,,,,,,,,
+Hougang Mall,1.37249118635803,103.893774066625,Hougang Mall,2023.0,15393.0,31.564,12.7,2024-01-01,fct_2023.pdf,86.0,whole standalone retail property,labelled profile and owner gross-revenue table; not tenant sales
+NEX,1.35076935257845,103.872296143862,NEX,2023.0,58959.0,,36.2,2024-01-01,fct_2023.pdf,68.0,whole standalone retail property,labelled profile and owner gross-revenue table; not tenant sales
+Oasis Terraces,1.40276110219589,103.913572751045,,,,,,,,,,
+Punggol Plaza,1.39423719717117,103.913047323223,,,,,,,,,,
+Punggol Coast Mall,1.41455331241338,103.908235310028,,,,,,,,,,
+The Seletar Mall,1.39147015374628,103.876125507257,,,,,,,,,,
+Waterway Point,1.40653611690554,103.90198817171,Waterway Point,2023.0,36180.0,,25.5,2024-01-01,fct_2023.pdf,72.0,whole standalone retail property,labelled profile and owner gross-revenue table; not tenant sales
+Northshore Plaza I,1.41684814738514,103.902139835091,,,,,,,,,,
+Northshore Plaza II,1.41802803386252,103.901276571093,,,,,,,,,,
+Anchorvale Village,1.39679315311901,103.888437344772,,,,,,,,,,
+Sengkang Grand Mall,1.38298163203344,103.892721007746,,,,,,,,,,
+Hougang Village,1.37370264129327,103.886062995955,,,,,,,,,,
+Bukit Panjang Plaza,1.37992045176243,103.764357180314,Bukit Panjang Plaza,2023.0,15283.4791104,,8.1,2024-05-01,cict_2023.pdf,68.0,whole standalone retail property,standalone profile current-year column
+Dairy Farm Mall,1.3655707838852,103.77504908361,,,,,,,,,,
+Fajar Shopping Centre,1.38399990872979,103.770492544431,,,,,,,,,,
+Gek Poh Shopping Centre,1.34874357136408,103.697732091001,,,,,,,,,,
+Greenridge Shopping Centre,1.38515282536055,103.76653201961,,,,,,,,,,
+Hillion Mall,1.37843100827586,103.762842789877,,,,,,,,,,
+IMM,1.33487526118006,103.746894773008,IMM,2019.0,39405.846349440006,,16.1,2020-05-01,cict_2019.pdf,136.0,retail component only; office/warehouse/stake revenue excluded,curated labelled retail NLA; no mixed-use revenue
+Jem,1.33329334473462,103.743278742341,,,,,,,,,,
+Junction 10,1.38033681049385,103.760167883439,,,,,,,,,,
+Jurong Point,1.33484487471259,103.720462024278,Jurong Point,2022.0,66890.1888,,,2023-01-01,jurong_point_2022.html,,whole mall approximate disclosed NLA,Link REIT 28 December 2022 acquisition release; approximate NLA as published
+HillV2,1.36267450828024,103.76417292006,,,,,,,,,,
+Le Quest,1.35594171176111,103.741127005764,,,,,,,,,,
+Limbang Shopping Centre,1.39234163999986,103.743247230098,,,,,,,,,,
+Lot 1,1.31573579353366,103.891560467041,Lot 1,2023.0,21085.55266752,45.2,16.3,2024-05-01,cict_2023.pdf,64.0,whole standalone retail property,standalone profile current-year column
+Pioneer Mall,1.34191503828198,103.697357496541,,,,,,,,,,
+Plantation Plaza,1.35895437516952,103.735709438592,,,,,,,,,,
+Parc Point,1.36062515100842,103.738767971079,,,,,,,,,,
+Queensway Shopping Centre,1.28759518939869,103.803397287789,,,,,,,,,,
+The Clementi Mall,1.31489619639366,103.764423054189,,,,,,,,,,
+The Rail Mall,1.3578110348449,103.768080632959,,,,,,,,,,
+Teck Whye Shopping Centre,1.38004752975397,103.752483841199,,,,,,,,,,
+The Star Vista,1.30697044038323,103.788420274115,,,,,,,,,,
+West Coast Plaza,1.30362457527941,103.765858386923,,,,,,,,,,
+Westgate,1.33415767556867,103.742766484424,Westgate,2023.0,38063.58322752,72.6,44.0,2024-05-01,cict_2023.pdf,66.0,whole standalone retail property,standalone profile current-year column
+West Mall,1.35002107594315,103.749216493831,,,,,,,,,,
+Yew Tee Point,1.39803970584673,103.747197720839,,,,,,,,,,

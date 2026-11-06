@@ -1,0 +1,4 @@
+# Install CUDA-enabled PyTorch first; see README.md.
+-r requirements-model.txt
+tabpfn==9.2.0
+torch==2.11.0

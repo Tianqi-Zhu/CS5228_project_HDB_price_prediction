@@ -1,0 +1,151 @@
+{
+  "economic_variable": "COE category A monthly median quota premium",
+  "minimum_history_months": 12,
+  "maximum_forecast_horizon": 17,
+  "alpha_candidates": [
+    100.0,
+    1000.0,
+    10000.0,
+    100000.0,
+    1000000.0
+  ],
+  "target": "observed arithmetic monthly mean rent by cleaned flat type; not composition adjusted",
+  "validation": "fixed origin; all economic features end at that origin; two earlier six-month tuning blocks",
+  "source_sha256": {
+    "data/train.csv": "2fe38ce9e0d8a02e9786f066d4a10d575d91f34be1d9111f0142e3f43fbfc8a5",
+    "data/auxiliary/sg-coe-prices.csv": "c8f934ec6e82dad633afa34e466414fd7b572c580fa28dd6c866e76e4be533e0"
+  },
+  "runner_sha256": "12d46c32d7ee4bca38aa5ba89c219c6640d54d6750bccd6ffc5400406ea5faa7",
+  "folds": [
+    [
+      "2024-06",
+      "2025-04"
+    ],
+    [
+      "2023-11",
+      "2025-04"
+    ]
+  ],
+  "diagnostics": {
+    "2024-06": {
+      "ridge_history": {
+        "alpha": 100000.0,
+        "training_examples": 1985,
+        "training_months": 41,
+        "last_target_month": "2024-05",
+        "last_feature_origin": "2024-04",
+        "tuning": [
+          {
+            "alpha": 100.0,
+            "inner_weighted_mean_rmse": 266.1508078057116
+          },
+          {
+            "alpha": 1000.0,
+            "inner_weighted_mean_rmse": 254.48673618162996
+          },
+          {
+            "alpha": 10000.0,
+            "inner_weighted_mean_rmse": 146.25745125206512
+          },
+          {
+            "alpha": 100000.0,
+            "inner_weighted_mean_rmse": 46.731281973407654
+          },
+          {
+            "alpha": 1000000.0,
+            "inner_weighted_mean_rmse": 63.18748650902209
+          }
+        ]
+      },
+      "ridge_history_coe": {
+        "alpha": 1000.0,
+        "training_examples": 1985,
+        "training_months": 41,
+        "last_target_month": "2024-05",
+        "last_feature_origin": "2024-04",
+        "tuning": [
+          {
+            "alpha": 100.0,
+            "inner_weighted_mean_rmse": 185.83709779592914
+          },
+          {
+            "alpha": 1000.0,
+            "inner_weighted_mean_rmse": 170.850362007697
+          },
+          {
+            "alpha": 10000.0,
+            "inner_weighted_mean_rmse": 241.06277425895829
+          },
+          {
+            "alpha": 100000.0,
+            "inner_weighted_mean_rmse": 318.4700323169321
+          },
+          {
+            "alpha": 1000000.0,
+            "inner_weighted_mean_rmse": 268.69420544881507
+          }
+        ]
+      }
+    },
+    "2023-11": {
+      "ridge_history": {
+        "alpha": 10000.0,
+        "training_examples": 1322,
+        "training_months": 34,
+        "last_target_month": "2023-10",
+        "last_feature_origin": "2023-09",
+        "tuning": [
+          {
+            "alpha": 100.0,
+            "inner_weighted_mean_rmse": 159.8047010721946
+          },
+          {
+            "alpha": 1000.0,
+            "inner_weighted_mean_rmse": 162.1218190652046
+          },
+          {
+            "alpha": 10000.0,
+            "inner_weighted_mean_rmse": 115.59970269272802
+          },
+          {
+            "alpha": 100000.0,
+            "inner_weighted_mean_rmse": 167.56366385253378
+          },
+          {
+            "alpha": 1000000.0,
+            "inner_weighted_mean_rmse": 191.94572680267368
+          }
+        ]
+      },
+      "ridge_history_coe": {
+        "alpha": 100.0,
+        "training_examples": 1322,
+        "training_months": 34,
+        "last_target_month": "2023-10",
+        "last_feature_origin": "2023-09",
+        "tuning": [
+          {
+            "alpha": 100.0,
+            "inner_weighted_mean_rmse": 111.13431458414259
+          },
+          {
+            "alpha": 1000.0,
+            "inner_weighted_mean_rmse": 130.5216779937867
+          },
+          {
+            "alpha": 10000.0,
+            "inner_weighted_mean_rmse": 189.51038208667217
+          },
+          {
+            "alpha": 100000.0,
+            "inner_weighted_mean_rmse": 214.85546808601654
+          },
+          {
+            "alpha": 1000000.0,
+            "inner_weighted_mean_rmse": 173.615831283007
+          }
+        ]
+      }
+    }
+  }
+}

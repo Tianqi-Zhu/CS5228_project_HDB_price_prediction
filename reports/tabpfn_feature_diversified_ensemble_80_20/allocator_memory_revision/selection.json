@@ -1,0 +1,70 @@
+{
+  "origin": "2024-06",
+  "member_order": [
+    "baseline",
+    "spatial",
+    "temporal"
+  ],
+  "selection_case_rows": 4000,
+  "maximum_selection_label_month": "2024-04",
+  "source_prediction_sha256": {
+    "predictions_2022-09_baseline.csv": "cae93427cfc001cbba56c65ad3497f1fb5f99de16cbc42c6641ac153d98727a4",
+    "predictions_2022-09_spatial.csv": "ba6896fb9b0d60a13c15899b4d42ac9d6fbc21d8c059a6ae54485fc3120efe94",
+    "predictions_2022-09_temporal.csv": "2071e1be331ed7abcd068dc1229f4dba894546bb60c355437ce8ef39302f8240",
+    "predictions_2023-07_baseline.csv": "38cff81178af9076cd9ec463ad2b17d4fc0496cbac9232378402d727cee3ba60",
+    "predictions_2023-07_spatial.csv": "5b074ff9633624e246838474d30721b5808fee15bc40d211a9b55498f8c84b25",
+    "predictions_2023-07_temporal.csv": "20dbfe3fc9a2acacf7b2432a4f012e68f26df51d7df196a41c1b02360e871da2"
+  },
+  "evaluation_labels_used": false,
+  "models": {
+    "optimized": {
+      "weights": [
+        0.4916964715040252,
+        0.2516885221939232,
+        0.25661500630205164
+      ],
+      "weighted_mse_sgd2": 361639.9227514963,
+      "weighted_rmse_sgd": 601.3650494928154,
+      "active_members": 3,
+      "solver": "Exact active-face convex quadratic optimization",
+      "intercept": false
+    },
+    "opt_baseline_spatial": {
+      "weights": [
+        0.5838140258264698,
+        0.41618597417353015,
+        0.0
+      ],
+      "weighted_mse_sgd2": 361799.2324673837,
+      "weighted_rmse_sgd": 601.4974916551055,
+      "active_members": 2,
+      "solver": "Exact active-face convex quadratic optimization",
+      "intercept": false
+    },
+    "opt_baseline_temporal": {
+      "weights": [
+        0.6097190945782821,
+        0.0,
+        0.39028090542171784
+      ],
+      "weighted_mse_sgd2": 361766.8880603048,
+      "weighted_rmse_sgd": 601.4706044856264,
+      "active_members": 2,
+      "solver": "Exact active-face convex quadratic optimization",
+      "intercept": false
+    },
+    "opt_spatial_temporal": {
+      "weights": [
+        0.0,
+        0.5525642083304583,
+        0.44743579166954167
+      ],
+      "weighted_mse_sgd2": 362272.248090109,
+      "weighted_rmse_sgd": 601.8905615559269,
+      "active_members": 2,
+      "solver": "Exact active-face convex quadratic optimization",
+      "intercept": false
+    }
+  },
+  "selection_ids_sha256": "9f8382b77b8657f7147a9668a9487d0568f95577e04b28062642d3856346aa5e"
+}

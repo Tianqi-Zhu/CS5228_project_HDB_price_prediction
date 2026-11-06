@@ -1,0 +1,19 @@
+{
+  "artifact": ".cache/tabpfn_diagscale_80_20/inner_features.joblib",
+  "sha256": "20c28ccaf736673905b50b9e10635aaf1400c30028d23cec41b3011eb12fab8c",
+  "fit_rows": 102829,
+  "sampled_calibration_rows": 600,
+  "last_fit_month": "2023-11",
+  "calibration_months": [
+    "2023-12",
+    "2024-01",
+    "2024-02",
+    "2024-03",
+    "2024-04",
+    "2024-05"
+  ],
+  "query_origin": "2023-11",
+  "history_columns_rebuilt": 37,
+  "residual_baseline_finite": true,
+  "context_query_disjoint": true
+}

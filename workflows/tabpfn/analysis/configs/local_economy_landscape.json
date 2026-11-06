@@ -1,0 +1,36 @@
+{
+  "experiment": "tabpfn_local_economy_landscape_80_20",
+  "seed": 42,
+  "baseline": ".cache/tabpfn_v3_features/calendar_80_20_categorical.joblib",
+  "baseline_sha256": "fba84757b6e23280d2b27eab0ca5d86a427ac19ca33c6b12b5b2dcc4194a0059",
+  "baseline_predictions": "reports/tabpfn_v3_5_fast_calendar_80_20/predictions_outer_categorical.csv",
+  "projected_crs": "EPSG:3414",
+  "commercial_radii_m": [300, 500, 1000],
+  "commercial_bandwidths_m": [200, 500, 1000],
+  "landscape_radii_m": [100, 300, 500],
+  "history_radii_m": [500, 1000, 2000],
+  "history_windows_months": [6, 12],
+  "history_publication_lag_months": 1,
+  "history_shrinkage_observations": 20,
+  "history_temporal_half_life_months": 6,
+  "history_continuous_sigma_m": 500,
+  "inner_query_per_month": 60,
+  "inner_origins": ["2022-09", "2023-07"],
+  "pca_dimensions": [8, 16, 32],
+  "satellite_radii_m": [0, 100, 300, 500],
+  "selection_relative_tolerance": 0.001,
+  "outer_batch_size": 200,
+  "datasets": {
+    "subzones": {"id": "d_8594ae9ff96d0c708bc2af633048edfb", "format": "geojson", "agency": "URA", "policy": "Master Plan 2019 geometry, downloaded current mirror; spatial join audit and retrospective density; no claim of archived historical boundary version"},
+    "parks": {"id": "d_77d7ec97be83d44f61b85454f844382f", "format": "geojson", "agency": "NParks", "policy": "retrospective static; historical park boundaries unavailable"},
+    "food": {"id": "d_a57a245b3cf3ec76ad36d55393a16e97", "format": "geojson", "agency": "NEA", "policy": "retrospective static; published mirror updated 2025; opening/closing histories unverified"},
+    "census": {"id": "d_d95ae740c0f8961a0b10435836660ce0", "format": "csv", "agency": "SingStat", "observation_end": "2020-12-31", "available_at": "2021-07-01", "publication_date": "2021-06-18", "policy": "Census 2020 planning-area/subzone totals and age composition; missing before July 2021"}
+  },
+  "satellite": {
+    "dynamic_world": "GOOGLE/DYNAMICWORLD/V1",
+    "alphaearth": "GOOGLE/SATELLITE_EMBEDDING/V1/ANNUAL",
+    "policy": "Require observation_end and verified available_at <= each forecast cutoff; previous completed year alone does not establish publication availability",
+    "alphaearth_catalog_years_checked": [2017, 2024],
+    "alphaearth_catalog_url": "https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_SATELLITE_EMBEDDING_V1_ANNUAL"
+  }
+}

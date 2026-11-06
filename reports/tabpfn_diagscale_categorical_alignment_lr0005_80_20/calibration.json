@@ -1,0 +1,94 @@
+{
+  "categorical_indices": [
+    0,
+    1,
+    4,
+    6,
+    12,
+    13,
+    14,
+    41,
+    42
+  ],
+  "categorical_names": [
+    "FLAT_TYPE_CLEAN",
+    "FLAT_MODEL_CLEAN",
+    "APPROVAL_MONTH_OF_YEAR",
+    "TOWN_CLEAN",
+    "SUBZONE",
+    "PLANNING_AREA",
+    "REGION",
+    "BLOCK_ID",
+    "STREET_ID"
+  ],
+  "fit_rows": 102829,
+  "calibration_rows": 600,
+  "train_views": 2,
+  "checkpoint_views": 2,
+  "deployment_views": 1,
+  "training_task_size": 1024,
+  "learning_rate": 0.005,
+  "epochs_cap": 8,
+  "patience": 3,
+  "crps_weight": 1,
+  "mse_weight": 1,
+  "epoch_validation": [
+    {
+      "epoch": -1,
+      "delta_l2": 0.0,
+      "validation_mse": 270369.5243881688
+    },
+    {
+      "epoch": 0,
+      "delta_l2": 4.457797527313232,
+      "validation_mse": 269118.6615389809
+    },
+    {
+      "epoch": 1,
+      "delta_l2": 8.911450386047363,
+      "validation_mse": 268297.712289048
+    },
+    {
+      "epoch": 2,
+      "delta_l2": 12.077391624450684,
+      "validation_mse": 268008.461642079
+    },
+    {
+      "epoch": 3,
+      "delta_l2": 13.918058395385742,
+      "validation_mse": 267654.85481891764
+    },
+    {
+      "epoch": 4,
+      "delta_l2": 15.1270751953125,
+      "validation_mse": 267918.497232501
+    },
+    {
+      "epoch": 5,
+      "delta_l2": 15.771933555603027,
+      "validation_mse": 267386.9480725548
+    },
+    {
+      "epoch": 6,
+      "delta_l2": 16.006853103637695,
+      "validation_mse": 267482.98637177615
+    },
+    {
+      "epoch": 7,
+      "delta_l2": 16.034936904907227,
+      "validation_mse": 267499.1824901708
+    }
+  ],
+  "calibration_rmse_weighted": 521.891598608691,
+  "calibration_rmse_unweighted": 521.3220289960187,
+  "frozen_calibration_rmse_weighted": 521.8641848602077,
+  "prior_missing_indices_calibration_rmse_weighted": 521.1364372458313,
+  "delta_l2": 15.771933481536188,
+  "trainable_parameters": 8576,
+  "adapter_modules": 12,
+  "fit_seconds": 978.8021200000076,
+  "peak_vram_gib": 11.834048748016357,
+  "adapter_sha256": "ac696189b4fe8ea6085546dd22435771c9e74b6f4c65a2f8d4433d2e26942700",
+  "code_sha256": "0e0f4a82bb9986ae4498849755c2086dd78707073b5969c29981167fa9ee67ed",
+  "outer_labels_used_for_selection": false
+}

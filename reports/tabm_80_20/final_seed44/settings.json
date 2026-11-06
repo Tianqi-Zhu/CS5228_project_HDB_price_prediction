@@ -1,0 +1,12 @@
+{
+  "config": {
+    "embedding": "none",
+    "lr": 0.002,
+    "k": 32
+  },
+  "seed": 44,
+  "epochs": 1,
+  "validation": false,
+  "smoke": false,
+  "fit_rows": 121005
+}

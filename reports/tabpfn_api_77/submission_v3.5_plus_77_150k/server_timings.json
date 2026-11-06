@@ -1,0 +1,14 @@
+{
+  "fit": {
+    "elapsed_s": 27.231,
+    "queue_wait_s": 0.289,
+    "train_set_transform_s": 26.943,
+    "fit_s": 0.0
+  },
+  "predict": {
+    "test_set_transform_queue_wait_s": 0.29,
+    "test_set_transform_s": 1.473,
+    "predict_queue_wait_s": 0.0,
+    "predict_s": 81.914
+  }
+}

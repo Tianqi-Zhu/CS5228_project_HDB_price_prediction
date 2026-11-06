@@ -1,0 +1,75 @@
+{
+  "members": {
+    "A": "77-feature MSE-only DiagScale, one inference view",
+    "B": "77-feature frozen Fast, two views",
+    "C": "77-feature relative-history frozen Fast, two views",
+    "D": "84-feature seasonal frozen Fast, two views",
+    "E": "89-feature nearby-rent frozen Fast, two views"
+  },
+  "origins": [
+    "2022-09",
+    "2023-07",
+    "2024-06"
+  ],
+  "groups": [
+    "A",
+    "BDE",
+    "CDE",
+    "AC",
+    "ABDE",
+    "ACDE",
+    "ABCDE"
+  ],
+  "optimizer": "Existing exact active-face convex MSE simplex, nonnegative sum-one weights, no intercept",
+  "selection": "July2023 nested-transfer RMSE with weights from September2022 only; ties favor fewer active models. Refit each group on both earlier disjoint windows for June2024 evaluation. No new main-period fitted/oracle weights.",
+  "first_origin": "Equal weights, no earlier calibration; reported as cold start only. Individual September predictions calibrate July weights.",
+  "primary_comparison": "ABCDE versus matched CDE and BDE; retain original locked BDE as deployment reference; report A and focused AC/ABDE/ACDE as declared candidates",
+  "A_recipe": {
+    "epochs": 1,
+    "lr": 0.01,
+    "weight_decay": 0.01,
+    "seed": 42,
+    "task_rows": 1024,
+    "query_fraction": 0.2,
+    "training_views": 2,
+    "inference_views": 1,
+    "crps": 0,
+    "mse": 1
+  },
+  "A_provenance": "Reuse September2022 adapter only after exact complete context-frame agreement; newly fit July2023 adapter using only rows through June2023, with no query evaluation or checkpoint selection. Main uses unchanged preDecember2023 selected adapter.",
+  "cost": "Reuse every frozen prediction and main A prediction. Only historical A inference and one historical adapter fit are new.",
+  "evaluation": "All available labeled periods already examined. Existing main scores/error correlations informed hypotheses; this is retrospective development, not independent validation.",
+  "pre_analysis": "The five-member simplex contains CDE and BDE, so optimized calibration loss cannot increase. Added A has strongest standalone RMSE; A/C error correlation is lower than A/B. More weights can overfit shared errors. Prefer zero/sparse weights if unsupported.",
+  "promotion": "Only consider a separate local candidate CSV if earlier-selected family beats both A and locked BDE on later RMSE, improves nested transfer over both, and main block upper95 difference versus both is below zero. Otherwise preserve current candidates and report.",
+  "source_sha256": {
+    "data/train.csv": "2fe38ce9e0d8a02e9786f066d4a10d575d91f34be1d9111f0142e3f43fbfc8a5",
+    "reports/tabpfn_components_80_20/outer/diag_mse_only/predictions.csv": "ae40d5b1aa0ae54ed25e185986f1540d49d3b9296d5bca1ebfbf549cf621fb2e",
+    "reports/tabpfn_feature_diversified_ensemble_80_20/selection.json": "56b77baa971187168a28c4ced8769830e3ced1de1a2b1fbf41cc85863513f72f",
+    "reports/tabpfn_feature_diversified_ensemble_80_20/learned_weights.csv": "0774ba4c84bcbcce69a43a78571a9e6d5d71fc6b877713e0ac7a61381782b758",
+    ".cache/tabpfn_spatial_temporal_residual_80_20/adapter_2022-09.pt": "95ea5528a9471a239e28cf185ea59d0afdbcaed53e923cabc28f47408ae3a208",
+    "reports/tabpfn_spatial_temporal_residual_80_20/adapter_2022-09.json": "bd5c93f3a3acfc900d4d4d2ab886b109b9e2275027b0385554844736b54d5b84",
+    "reports/tabpfn_spatial_temporal_residual_80_20/features_2022-09.json": "ddce26cb7f86e7adfb11e17108d0b1022e88067d1bd0ea5a0cdece455490d217",
+    "reports/tabpfn_components_80_20/candidates/diag_mse_only/calibration.json": "c99dbc22fcee293fda27c38dce1529a7f6bb68eb06abeb4f0aeee963b6e2909d",
+    "reports/tabpfn_feature_ensemble_final_submission/submission_tabpfn_optimized_ensemble_150k.csv": "c67f5374040c74314110afc8dd631ae180bb63a54ef65abd7069be109796cea9",
+    "reports/tabpfn_diagscale_mse_final_submission/submission_tabpfn_diagscale_mse_150k.csv": "5616125166abed5a353ab4d2f8a9788109a0b8078480ce622bbf8c7e8fb80500",
+    "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2022-09_baseline.csv": "818f6c7fdeba711a36bc848c8de377846d619b6724991fd27fbaa070e2f03c38",
+    "reports/tabpfn_temporal_view_ensembles_80_20/predictions_2022-09_relative_history.csv": "81a53fee9104a27e5ddc21d094460842ca4caef917126fb4e958ac7031ab0a94",
+    "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2022-09_temporal.csv": "2071e1be331ed7abcd068dc1229f4dba894546bb60c355437ce8ef39302f8240",
+    "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2022-09_spatial.csv": "ba6896fb9b0d60a13c15899b4d42ac9d6fbc21d8c059a6ae54485fc3120efe94",
+    "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2023-07_baseline.csv": "95d38ccb1ade70caf2381c2d4ddfd2bcc38fca30edb6d0673181e26526454c5b",
+    "reports/tabpfn_temporal_view_ensembles_80_20/predictions_2023-07_relative_history.csv": "7353928cbb000599285fd36be584a7e52844832500f058b2c85dd7861e315057",
+    "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2023-07_temporal.csv": "20dbfe3fc9a2acacf7b2432a4f012e68f26df51d7df196a41c1b02360e871da2",
+    "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2023-07_spatial.csv": "5b074ff9633624e246838474d30721b5808fee15bc40d211a9b55498f8c84b25",
+    "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2024-06_baseline.csv": "bdb86d06a20514723e32e9341c4952099812c2398547cb3040d12d190b11a533",
+    "reports/tabpfn_temporal_view_ensembles_80_20/predictions_2024-06_relative_history.csv": "2d555b43ee77056b1ebef6526eac82dc760c8d9e565e17801f5084194c58d052",
+    "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2024-06_temporal.csv": "b322b05927dedaae3f529dd2a53a2b6e07cd111f846eaf2b584230329caf50af",
+    "reports/tabpfn_feature_diversified_ensemble_80_20/predictions_2024-06_spatial.csv": "e9bd0ccd5ccde327e45fc9fc14ea040a8a84a2b70f06e1b775f1e2e95ae0186a"
+  },
+  "code_sha256": {
+    "analysis/compare_tabpfn_abcde.py": "4c1548c072355977d9d3b470371286e36dc123b300bf6b37b76282efad81f712",
+    "analysis/experiments/temporal_feature_views.py": "f344680909fdca87be9da3214474f08f08c047eedbb89143e2fe9912b83efa99",
+    "analysis/compare_tabpfn_spatial_temporal_residual.py": "2a9c9208e71a768067d745de18d03a517c6dec89d9bbf49b2e1fb0e78336dee5",
+    "analysis/compare_tabpfn_components_80_20.py": "e8a851c3a8c87dc37ab3a237c6bb4ae439f46867a9a7864eb5460b93000790aa",
+    "analysis/experiments/tabpfn_component_adaptation.py": "285d7d44da0529a0f410a30577f21d14c4b2697df7dc1cf5239974175df2628e"
+  }
+}

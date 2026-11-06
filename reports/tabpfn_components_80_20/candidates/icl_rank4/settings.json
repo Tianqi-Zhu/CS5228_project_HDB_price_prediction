@@ -1,0 +1,13 @@
+{
+  "config": {
+    "component": "icl_lora",
+    "rank": 4,
+    "lr": 0.0003
+  },
+  "epochs": 8,
+  "task_rows": 1024,
+  "train_views": 2,
+  "checkpoint_views": 1,
+  "seed": 42,
+  "smoke": false
+}

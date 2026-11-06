@@ -1,0 +1,17 @@
+{
+  "fold": "outer",
+  "seed": 43,
+  "best_epoch": 7,
+  "epochs_run": 7,
+  "rows": 28995,
+  "parameters": 11490,
+  "weighted_rmse_sgd": 458.58713738354254,
+  "rmse_sgd": 458.58713738354254,
+  "mae_sgd": 328.42868720236487,
+  "bias_sgd": 26.295412655118415,
+  "base_rmse_sgd": 459.41504037894174,
+  "mean_correction_sgd": 32.35070037841797,
+  "checkpoint_sha256": "2fac795f5cceb7ebdd54a0248f91d71d43882186af7ded1c22adda40d1a3f953",
+  "predictions_sha256": "6e315b9dd87c2b109042d54696201daf12513abb11fd193de0e4e56805e67ad0",
+  "outer_labels_used_for_selection": false
+}

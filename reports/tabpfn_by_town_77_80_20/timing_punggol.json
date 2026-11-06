@@ -1,0 +1,15 @@
+{
+  "fit_seconds": 1.156160100013949,
+  "predict_seconds": 0.539415100007318,
+  "peak_vram_gib": 2.01605224609375,
+  "context_rows": 5300,
+  "query_rows": 1368,
+  "features": 77,
+  "batch_size": 200,
+  "subsampling": false,
+  "parameter_versions_unchanged": true,
+  "town": "punggol",
+  "rmse_sgd": 360.43975815538477,
+  "mae_sgd": 242.68278943675293,
+  "bias_sgd": 44.94125180160277
+}

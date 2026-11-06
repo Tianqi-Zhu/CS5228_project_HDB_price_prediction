@@ -1,0 +1,46 @@
+{
+  "original_zch_weights": {
+    "normalized_market/compact_ratio15_market_last": 0.13094,
+    "anniversary/broad_lgb15": 0.09659,
+    "anniversary/broad_lgb63": 0.10352,
+    "anniversary/exact_lgb15": 0.17311,
+    "anniversary/exact_lgb63": 0.00658,
+    "anniversary/window_cat6": 0.4138,
+    "anniversary/window_lgb63": 0.07546
+  },
+  "tabpfn_weight": 0.18932279659983356,
+  "weight_fit_months": "2023-10 through 2024-03",
+  "evaluation_months": "2024-06 through 2025-03",
+  "source_sha256": {
+    "normalized_market/compact_ratio15_market_last": {
+      "screen": "c48fad3782faf82ac3674fdff8ba90cf25923362bf579e62628af5282176c9ac",
+      "june": "285a1c16031e931b68867cafcdadc2c867905b51efa720a1a2e13bf548cd0207"
+    },
+    "anniversary/broad_lgb15": {
+      "screen": "5704ca4b61b0d1b2bcc1692e52a6c049c6cfa130015180b6ba1558e0457d1c67",
+      "june": "73e3f8ecb834c9e43b2e3ad5a0d88cc70263eb950d4b4ae311932980436bf7ae"
+    },
+    "anniversary/broad_lgb63": {
+      "screen": "13cbbad6c91509abc1bde0c97d5c2609e245fa4bc1c1f58e2f4fc3934d3738f1",
+      "june": "379099af3a893c834ed2fba5a3978f5563fca881aa57ca4c36616d2bcb41416c"
+    },
+    "anniversary/exact_lgb15": {
+      "screen": "02e052a7b0ef5f608f0e92b7b11576b7691895afb6180f9711d533d6128603af",
+      "june": "d4f2ebc7d01be033f1bad142e17cec82acac5c74d3e3579896a95e4667bc0d0e"
+    },
+    "anniversary/exact_lgb63": {
+      "screen": "b09f5bed18c175c297016fa09186fa3dca0297bfdf76b2df364e282af1fc6b8a",
+      "june": "2720eb41d64250a26d24962ab0deabe26fe636436dd3afaa21b27ef3b25eee0e"
+    },
+    "anniversary/window_cat6": {
+      "screen": "e9bd928f70e3dffdaef8d736bc2f4573796e8ed38296ec72885ccc546fbfd664",
+      "june": "44592ae3642b5b481f58320fe8b60ea1b6e90ce8be51b3a9ea2822f3f6aa0e06"
+    },
+    "anniversary/window_lgb63": {
+      "screen": "68d167096a77bbe31a54f9c325e061c7c68353b7219eff450403a453fcfdec55",
+      "june": "e47a15bf779e2441f1e413fa4fb390b630684b96836c9110fbfbb6c3123108ed"
+    }
+  },
+  "tabpfn_screen_sha256": "c80614ded43de34e2fb284e54b3978dbeb21d92e3693044795b6cb43829081c4",
+  "tabpfn_june_sha256": "934f34441d14a60002380e076cd9fffe945eafbe52d6b07687db592915a97c93"
+}

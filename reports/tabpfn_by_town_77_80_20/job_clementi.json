@@ -1,0 +1,8 @@
+{
+  "town": "clementi",
+  "context_rows": 4404,
+  "query_rows": 1025,
+  "context_ids_sha256": "06bedf260870aade7aea43f5dc0df8dea237cba22f34b85f94963a1f7a97e90e",
+  "query_ids_sha256": "92144bef2e01a66f805824cc355f34848a4d8fdcdff6016b9ac3d75c6b18da19",
+  "settings_sha256": "7ec7fcf4dc279912e4ccac47faafbe82887e1d344fe25f59350c4dbcbc3e5916"
+}

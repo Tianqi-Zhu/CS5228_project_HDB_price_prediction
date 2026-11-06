@@ -1,0 +1,4 @@
+{
+  "reason": "Monolithic6-view larger-context pilot completed but consumed nearly all16GiB systemRAM with GPU memory pressure; no live inference process remained when checked. Use sequential3x2-view baseline seeds42/43/44 as uniform compute control at all origins. Feature members and learned weights unchanged.",
+  "weight_selection_unchanged": true
+}

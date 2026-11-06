@@ -1,0 +1,10 @@
+{
+  "fit_rows": 81924,
+  "epochs": 1,
+  "validation_targets_used": false,
+  "checkpoint_selection": false,
+  "frozen_digest": "2a40eff78f2084e02f1200115df8c0b350a393a3cf11d57e6464d3f70c182639",
+  "frozen_parameters_unchanged": true,
+  "adapter_sha256": "d48d697edc505927af94295cbffd728734ba39be14dd7466b6bd689848c98cf2",
+  "fit_seconds": 42.366030799923465
+}

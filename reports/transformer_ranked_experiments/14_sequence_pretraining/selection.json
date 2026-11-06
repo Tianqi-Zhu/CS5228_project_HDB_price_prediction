@@ -1,0 +1,8 @@
+{
+  "chosen": "none",
+  "earlier_mean_delta": {
+    "pretrain3": -4.453757876296436
+  },
+  "earlier_mean_delta_vs_T0": 2.4244633179524726,
+  "outer_labels_used": false
+}

@@ -1,0 +1,8 @@
+{
+  "town": "serangoon",
+  "context_rows": 2752,
+  "query_rows": 646,
+  "context_ids_sha256": "d087bd65427b67ca9aa97babd662ffa93142b89737b25dd0fac8dbf48ae9b131",
+  "query_ids_sha256": "29c9ee3b59edc20b078e4e67e6c3c125e9e34bb7bce71cc9bfcabf03aa4adc2f",
+  "settings_sha256": "7ec7fcf4dc279912e4ccac47faafbe82887e1d344fe25f59350c4dbcbc3e5916"
+}

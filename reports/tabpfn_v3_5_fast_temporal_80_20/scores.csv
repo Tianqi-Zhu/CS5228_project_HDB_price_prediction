@@ -1,0 +1,4 @@
+model,n,rmse_sgd,mae_sgd,bias_sgd
+tabpfn_fast_temporal,28995,460.71628827,331.25411410,34.16889258
+tabpfn_fast_original,28995,459.81237106,336.60393080,-10.28421532
+catboost_original_68_features,28995,460.78243213,338.90927559,-28.26171265

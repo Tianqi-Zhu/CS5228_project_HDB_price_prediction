@@ -1,0 +1,23 @@
+{
+  "fit_seconds": 15.419540000031702,
+  "predict_seconds": 5.052076900028624,
+  "context_rows": 81924,
+  "query_rows": 2000,
+  "peak_vram_gib": 7.025681495666504,
+  "parameter_digest_before": "830c4522082f7f267cebffb4014e09ab54c93981ebde75bde00d84da9485d6d3",
+  "parameter_digest_after": "830c4522082f7f267cebffb4014e09ab54c93981ebde75bde00d84da9485d6d3",
+  "parameters_unchanged": true,
+  "gradients_prohibited": true,
+  "no_adapters": true,
+  "n_estimators": 2,
+  "subsampling": false,
+  "origin": "2023-05",
+  "context_max_month": "2023-04",
+  "target_min_month": "2023-05",
+  "target_max_month": "2024-02",
+  "context_query_disjoint": true,
+  "target_labels_in_context": false,
+  "context_ids_sha256": "3ec58f944fc9ba34d3f3e80631badd6c73ebd0f3d7f2f93775d31c9cce4d6f42",
+  "query_ids_sha256": "12b35a1b4cfcb46a947df13449097315bd30e48de59948836ea1d0128f149f16",
+  "predictions_sha256": "6e0939b2b3ae546d91d00f68b224c71cb7682451d182f7bdcfdc5e71b7ffb8c5"
+}

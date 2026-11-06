@@ -1,0 +1,3 @@
+model,fit_seconds,predict_seconds,peak_vram_gib,context_rows,subsampling,keep_cache_on_device,architecture
+tabpfn_fast_temporal,15.654409800015856,877.6332881000126,7.156257152557373,121005,False,True,TabPFNV3p5
+tabpfn_fast_original,15.23057199997129,588.2106766999932,7.249665260314941,121005,False,True,TabPFNV3p5

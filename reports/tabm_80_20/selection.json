@@ -1,0 +1,11 @@
+{
+  "candidate": "plain_lr002",
+  "config": {
+    "embedding": "none",
+    "lr": 0.002,
+    "k": 32
+  },
+  "fixed_refit_epochs": 1,
+  "earlier_rmse_sgd": 520.4431335028112,
+  "outer_labels_used_for_selection": false
+}

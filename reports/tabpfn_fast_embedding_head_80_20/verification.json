@@ -1,0 +1,10 @@
+{
+  "rows": 28995,
+  "row_ids_match_saved_outer": true,
+  "reference_first_batch_replayed": true,
+  "all_outputs_finite": true,
+  "backbone_frozen": true,
+  "selected_before_outer_scoring": "mlp_raw",
+  "outer_rmse_sgd": 460.9028627460875,
+  "baseline_rmse_sgd": 455.8135701208574
+}

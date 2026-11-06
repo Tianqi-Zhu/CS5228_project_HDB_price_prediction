@@ -1,0 +1,15 @@
+{
+  "fit_seconds": 9.210500699933618,
+  "predict_seconds": 0.9214522000402212,
+  "peak_vram_gib": 6.9783806800842285,
+  "context_rows": 87937,
+  "query_rows": 600,
+  "features": 81,
+  "batch_size": 200,
+  "subsampling": false,
+  "parameter_versions_unchanged": true,
+  "added_dimensions": 4,
+  "rmse_sgd": 581.1954031569769,
+  "mae_sgd": 443.38775240915965,
+  "bias_sgd": 119.1393839213437
+}

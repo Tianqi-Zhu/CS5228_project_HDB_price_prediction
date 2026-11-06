@@ -1,0 +1,9 @@
+{
+  "design": "conditioned_old",
+  "earlier_best_epochs": [
+    9,
+    1
+  ],
+  "outer_epochs": 5,
+  "outer_labels_used": false
+}

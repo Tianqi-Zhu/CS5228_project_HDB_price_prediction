@@ -1,0 +1,25 @@
+{
+  "fit_rows": 102829,
+  "calibration_rows": 100,
+  "fit_seconds": 50.57903969998006,
+  "peak_vram_gib": 7.439854145050049,
+  "trainable_parameters": 8576,
+  "adapter_modules": 12,
+  "delta_l2": 0.0,
+  "adapter_sha256": "b3978e0f6f33fe6397875967e7d7423c68eb4994270f33e086775f6bee17d7cc",
+  "epoch_validation": [
+    {
+      "epoch": -1,
+      "delta_l2": 0.0,
+      "validation_mse": 339870.54810695903
+    },
+    {
+      "epoch": 0,
+      "delta_l2": 1.7461432218551636,
+      "validation_mse": 340918.5993129145
+    }
+  ],
+  "episode_epochs_built": 1,
+  "mean_retrieval_seconds_per_episode": 0.021086279978044332,
+  "outer_labels_used_for_selection": false
+}

@@ -1,0 +1,379 @@
+phase,model,months,rmse_logpoints,mae_logpoints,bias_logpoints,site_id,company,symbol,radius_m,lag
+development,persistence,21,4.541470414555423,3.873658914515993,0.15872083560949377,st_engineering_amk,ST Engineering,S63.SI,2000,1
+development,rent_market_control,21,4.112685978464685,3.365281198967028,-0.4049369065952494,st_engineering_amk,ST Engineering,S63.SI,2000,1
+development,company_stock,21,4.170725012936166,3.4047215425673394,-0.4237835831713679,st_engineering_amk,ST Engineering,S63.SI,2000,1
+outer,persistence,10,2.732361686049512,2.0782288143026224,0.1890061983999463,st_engineering_amk,ST Engineering,S63.SI,2000,1
+outer,rent_market_control,10,2.872507003213674,2.410434870066891,0.3524061493013179,st_engineering_amk,ST Engineering,S63.SI,2000,1
+outer,company_stock,10,2.7782693555587206,2.2862901428503144,0.2674630031883799,st_engineering_amk,ST Engineering,S63.SI,2000,1
+development,persistence,21,4.541470414555423,3.873658914515993,0.15872083560949377,st_engineering_amk,ST Engineering,S63.SI,2000,3
+development,rent_market_control,21,4.112685978464685,3.365281198967028,-0.4049369065952494,st_engineering_amk,ST Engineering,S63.SI,2000,3
+development,company_stock,21,4.155804377424054,3.3759865044202466,-0.4127301507441423,st_engineering_amk,ST Engineering,S63.SI,2000,3
+outer,persistence,10,2.732361686049512,2.0782288143026224,0.1890061983999463,st_engineering_amk,ST Engineering,S63.SI,2000,3
+outer,rent_market_control,10,2.872507003213674,2.410434870066891,0.3524061493013179,st_engineering_amk,ST Engineering,S63.SI,2000,3
+outer,company_stock,10,2.8514676610779146,2.275351334374657,0.4505293838535699,st_engineering_amk,ST Engineering,S63.SI,2000,3
+development,persistence,21,4.541470414555423,3.873658914515993,0.15872083560949377,st_engineering_amk,ST Engineering,S63.SI,2000,6
+development,rent_market_control,21,4.112685978464685,3.365281198967028,-0.4049369065952494,st_engineering_amk,ST Engineering,S63.SI,2000,6
+development,company_stock,21,4.1250830695374425,3.398139120921932,-0.2690034959067954,st_engineering_amk,ST Engineering,S63.SI,2000,6
+outer,persistence,10,2.732361686049512,2.0782288143026224,0.1890061983999463,st_engineering_amk,ST Engineering,S63.SI,2000,6
+outer,rent_market_control,10,2.872507003213674,2.410434870066891,0.3524061493013179,st_engineering_amk,ST Engineering,S63.SI,2000,6
+outer,company_stock,10,2.724786107504101,2.2063208492690114,0.7552002303565963,st_engineering_amk,ST Engineering,S63.SI,2000,6
+development,persistence,21,2.2168929127133867,1.8426174194679,-0.03366777451908296,st_engineering_amk,ST Engineering,S63.SI,3000,1
+development,rent_market_control,21,2.1292953825496324,1.7551187345065975,0.18381719712968345,st_engineering_amk,ST Engineering,S63.SI,3000,1
+development,company_stock,21,2.1274583209888456,1.7623404915037686,0.21088483331849273,st_engineering_amk,ST Engineering,S63.SI,3000,1
+outer,persistence,10,2.55398371855679,2.199054213641642,0.1811726254203211,st_engineering_amk,ST Engineering,S63.SI,3000,1
+outer,rent_market_control,10,2.416070735784576,2.0317719448566307,0.2856457541214946,st_engineering_amk,ST Engineering,S63.SI,3000,1
+outer,company_stock,10,2.488138496757109,2.100177620505108,0.34035718211818233,st_engineering_amk,ST Engineering,S63.SI,3000,1
+development,persistence,21,2.2168929127133867,1.8426174194679,-0.03366777451908296,st_engineering_amk,ST Engineering,S63.SI,3000,3
+development,rent_market_control,21,2.1292953825496324,1.7551187345065975,0.18381719712968345,st_engineering_amk,ST Engineering,S63.SI,3000,3
+development,company_stock,21,1.969889202876805,1.5027382974440011,0.06281768905797759,st_engineering_amk,ST Engineering,S63.SI,3000,3
+outer,persistence,10,2.55398371855679,2.199054213641642,0.1811726254203211,st_engineering_amk,ST Engineering,S63.SI,3000,3
+outer,rent_market_control,10,2.416070735784576,2.0317719448566307,0.2856457541214946,st_engineering_amk,ST Engineering,S63.SI,3000,3
+outer,company_stock,10,2.339958080540578,2.045147263841595,0.39286959653584297,st_engineering_amk,ST Engineering,S63.SI,3000,3
+development,persistence,21,2.2168929127133867,1.8426174194679,-0.03366777451908296,st_engineering_amk,ST Engineering,S63.SI,3000,6
+development,rent_market_control,21,2.1292953825496324,1.7551187345065975,0.18381719712968345,st_engineering_amk,ST Engineering,S63.SI,3000,6
+development,company_stock,21,2.1131194575781063,1.735014571981451,0.14537865752712817,st_engineering_amk,ST Engineering,S63.SI,3000,6
+outer,persistence,10,2.55398371855679,2.199054213641642,0.1811726254203211,st_engineering_amk,ST Engineering,S63.SI,3000,6
+outer,rent_market_control,10,2.416070735784576,2.0317719448566307,0.2856457541214946,st_engineering_amk,ST Engineering,S63.SI,3000,6
+outer,company_stock,10,2.5395278500869867,2.077632792156667,0.2212721223849446,st_engineering_amk,ST Engineering,S63.SI,3000,6
+development,persistence,21,6.355297857729628,5.407763613506046,-0.1827788321050641,st_engineering_boon_lay,ST Engineering,S63.SI,1000,1
+development,rent_market_control,21,6.073269461442183,5.240890292380075,-0.3209399606319456,st_engineering_boon_lay,ST Engineering,S63.SI,1000,1
+development,company_stock,21,6.1927617865961135,5.34554114388851,-0.22241444754538878,st_engineering_boon_lay,ST Engineering,S63.SI,1000,1
+outer,persistence,10,2.535905008386457,1.8617105815240649,0.47267047141550494,st_engineering_boon_lay,ST Engineering,S63.SI,1000,1
+outer,rent_market_control,10,3.353053977084389,2.3110620981485193,-0.1714977141518737,st_engineering_boon_lay,ST Engineering,S63.SI,1000,1
+outer,company_stock,10,3.3921567151131864,2.3276871333666227,-0.20489436682218348,st_engineering_boon_lay,ST Engineering,S63.SI,1000,1
+development,persistence,21,6.355297857729628,5.407763613506046,-0.1827788321050641,st_engineering_boon_lay,ST Engineering,S63.SI,1000,3
+development,rent_market_control,21,6.073269461442183,5.240890292380075,-0.3209399606319456,st_engineering_boon_lay,ST Engineering,S63.SI,1000,3
+development,company_stock,21,6.224018398528692,5.338090357796789,-0.2817200298714573,st_engineering_boon_lay,ST Engineering,S63.SI,1000,3
+outer,persistence,10,2.535905008386457,1.8617105815240649,0.47267047141550494,st_engineering_boon_lay,ST Engineering,S63.SI,1000,3
+outer,rent_market_control,10,3.353053977084389,2.3110620981485193,-0.1714977141518737,st_engineering_boon_lay,ST Engineering,S63.SI,1000,3
+outer,company_stock,10,3.3503329388669454,2.2850778240095964,-0.1711773788341921,st_engineering_boon_lay,ST Engineering,S63.SI,1000,3
+development,persistence,21,6.355297857729628,5.407763613506046,-0.1827788321050641,st_engineering_boon_lay,ST Engineering,S63.SI,1000,6
+development,rent_market_control,21,6.073269461442183,5.240890292380075,-0.3209399606319456,st_engineering_boon_lay,ST Engineering,S63.SI,1000,6
+development,company_stock,21,6.3720814611097385,5.516238086015385,-0.49743602573889345,st_engineering_boon_lay,ST Engineering,S63.SI,1000,6
+outer,persistence,10,2.535905008386457,1.8617105815240649,0.47267047141550494,st_engineering_boon_lay,ST Engineering,S63.SI,1000,6
+outer,rent_market_control,10,3.353053977084389,2.3110620981485193,-0.1714977141518737,st_engineering_boon_lay,ST Engineering,S63.SI,1000,6
+outer,company_stock,10,3.334708138409324,2.3518431805064735,-0.3401770670227443,st_engineering_boon_lay,ST Engineering,S63.SI,1000,6
+development,persistence,21,3.1794060648705864,2.8138082448057844,-0.06506425484200108,st_engineering_boon_lay,ST Engineering,S63.SI,2000,1
+development,rent_market_control,21,3.0201245350467034,2.6389788455747567,-0.3160512161990396,st_engineering_boon_lay,ST Engineering,S63.SI,2000,1
+development,company_stock,21,3.086471294260119,2.671201620949954,-0.28510625455405353,st_engineering_boon_lay,ST Engineering,S63.SI,2000,1
+outer,persistence,10,2.893193944183573,2.46929539188279,0.14911167841682005,st_engineering_boon_lay,ST Engineering,S63.SI,2000,1
+outer,rent_market_control,10,2.7159622702094173,2.212823328979473,-0.06725792688087465,st_engineering_boon_lay,ST Engineering,S63.SI,2000,1
+outer,company_stock,10,2.76793091015402,2.255799378149774,-0.11952662709058157,st_engineering_boon_lay,ST Engineering,S63.SI,2000,1
+development,persistence,21,3.1794060648705864,2.8138082448057844,-0.06506425484200108,st_engineering_boon_lay,ST Engineering,S63.SI,2000,3
+development,rent_market_control,21,3.0201245350467034,2.6389788455747567,-0.3160512161990396,st_engineering_boon_lay,ST Engineering,S63.SI,2000,3
+development,company_stock,21,3.127541785176655,2.755664697654807,-0.3891408121374327,st_engineering_boon_lay,ST Engineering,S63.SI,2000,3
+outer,persistence,10,2.893193944183573,2.46929539188279,0.14911167841682005,st_engineering_boon_lay,ST Engineering,S63.SI,2000,3
+outer,rent_market_control,10,2.7159622702094173,2.212823328979473,-0.06725792688087465,st_engineering_boon_lay,ST Engineering,S63.SI,2000,3
+outer,company_stock,10,2.6959892321925527,2.1593328466332826,-0.024212020824187185,st_engineering_boon_lay,ST Engineering,S63.SI,2000,3
+development,persistence,21,3.1794060648705864,2.8138082448057844,-0.06506425484200108,st_engineering_boon_lay,ST Engineering,S63.SI,2000,6
+development,rent_market_control,21,3.0201245350467034,2.6389788455747567,-0.3160512161990396,st_engineering_boon_lay,ST Engineering,S63.SI,2000,6
+development,company_stock,21,3.0619644157690415,2.7152863180657536,-0.34682275558664016,st_engineering_boon_lay,ST Engineering,S63.SI,2000,6
+outer,persistence,10,2.893193944183573,2.46929539188279,0.14911167841682005,st_engineering_boon_lay,ST Engineering,S63.SI,2000,6
+outer,rent_market_control,10,2.7159622702094173,2.212823328979473,-0.06725792688087465,st_engineering_boon_lay,ST Engineering,S63.SI,2000,6
+outer,company_stock,10,2.7590731639153554,2.2577704142935806,-0.024753309861937543,st_engineering_boon_lay,ST Engineering,S63.SI,2000,6
+development,persistence,21,2.939112815932998,2.473795409384163,-0.027882833814188664,st_engineering_boon_lay,ST Engineering,S63.SI,3000,1
+development,rent_market_control,21,2.869673252841049,2.519639662792974,-0.23199252279394153,st_engineering_boon_lay,ST Engineering,S63.SI,3000,1
+development,company_stock,21,2.921664618540709,2.5455026767160738,-0.20160056127987577,st_engineering_boon_lay,ST Engineering,S63.SI,3000,1
+outer,persistence,10,2.2301074025681995,1.807862885000091,-0.12577811663263108,st_engineering_boon_lay,ST Engineering,S63.SI,3000,1
+outer,rent_market_control,10,2.299603723638512,1.87381337388844,-0.27840076841938105,st_engineering_boon_lay,ST Engineering,S63.SI,3000,1
+outer,company_stock,10,2.39837451636048,1.9325700040240423,-0.3498734020365209,st_engineering_boon_lay,ST Engineering,S63.SI,3000,1
+development,persistence,21,2.939112815932998,2.473795409384163,-0.027882833814188664,st_engineering_boon_lay,ST Engineering,S63.SI,3000,3
+development,rent_market_control,21,2.869673252841049,2.519639662792974,-0.23199252279394153,st_engineering_boon_lay,ST Engineering,S63.SI,3000,3
+development,company_stock,21,2.9374563370517772,2.5899791998066903,-0.28664375280752413,st_engineering_boon_lay,ST Engineering,S63.SI,3000,3
+outer,persistence,10,2.2301074025681995,1.807862885000091,-0.12577811663263108,st_engineering_boon_lay,ST Engineering,S63.SI,3000,3
+outer,rent_market_control,10,2.299603723638512,1.87381337388844,-0.27840076841938105,st_engineering_boon_lay,ST Engineering,S63.SI,3000,3
+outer,company_stock,10,2.2835437683009,1.8537743720412898,-0.265060799227596,st_engineering_boon_lay,ST Engineering,S63.SI,3000,3
+development,persistence,21,2.939112815932998,2.473795409384163,-0.027882833814188664,st_engineering_boon_lay,ST Engineering,S63.SI,3000,6
+development,rent_market_control,21,2.869673252841049,2.519639662792974,-0.23199252279394153,st_engineering_boon_lay,ST Engineering,S63.SI,3000,6
+development,company_stock,21,2.9166058421697354,2.5439268489489493,-0.26677473676373176,st_engineering_boon_lay,ST Engineering,S63.SI,3000,6
+outer,persistence,10,2.2301074025681995,1.807862885000091,-0.12577811663263108,st_engineering_boon_lay,ST Engineering,S63.SI,3000,6
+outer,rent_market_control,10,2.299603723638512,1.87381337388844,-0.27840076841938105,st_engineering_boon_lay,ST Engineering,S63.SI,3000,6
+outer,company_stock,10,2.337232428514193,1.9038568810088061,-0.30414951557423253,st_engineering_boon_lay,ST Engineering,S63.SI,3000,6
+development,persistence,21,5.133259778118127,4.298578650821268,-0.7213308754899428,st_engineering_paya_lebar,ST Engineering,S63.SI,2000,1
+development,rent_market_control,21,5.031040784527045,4.004754366732189,-0.2489957226214196,st_engineering_paya_lebar,ST Engineering,S63.SI,2000,1
+development,company_stock,21,5.102060006520539,4.020008610174268,-0.18877122600852853,st_engineering_paya_lebar,ST Engineering,S63.SI,2000,1
+outer,persistence,10,6.715458115501019,5.7151794110660985,0.8642262373246219,st_engineering_paya_lebar,ST Engineering,S63.SI,2000,1
+outer,rent_market_control,10,6.44235309506797,5.640054699190087,1.6118301043698753,st_engineering_paya_lebar,ST Engineering,S63.SI,2000,1
+outer,company_stock,10,6.5353357062472215,5.751965869853921,1.4532587094337028,st_engineering_paya_lebar,ST Engineering,S63.SI,2000,1
+development,persistence,21,5.133259778118127,4.298578650821268,-0.7213308754899428,st_engineering_paya_lebar,ST Engineering,S63.SI,2000,3
+development,rent_market_control,21,5.031040784527045,4.004754366732189,-0.2489957226214196,st_engineering_paya_lebar,ST Engineering,S63.SI,2000,3
+development,company_stock,21,5.090801022747659,4.044349514702522,-0.1466333741249613,st_engineering_paya_lebar,ST Engineering,S63.SI,2000,3
+outer,persistence,10,6.715458115501019,5.7151794110660985,0.8642262373246219,st_engineering_paya_lebar,ST Engineering,S63.SI,2000,3
+outer,rent_market_control,10,6.44235309506797,5.640054699190087,1.6118301043698753,st_engineering_paya_lebar,ST Engineering,S63.SI,2000,3
+outer,company_stock,10,6.48028920943907,5.664708235057222,1.6350373029871001,st_engineering_paya_lebar,ST Engineering,S63.SI,2000,3
+development,persistence,21,5.133259778118127,4.298578650821268,-0.7213308754899428,st_engineering_paya_lebar,ST Engineering,S63.SI,2000,6
+development,rent_market_control,21,5.031040784527045,4.004754366732189,-0.2489957226214196,st_engineering_paya_lebar,ST Engineering,S63.SI,2000,6
+development,company_stock,21,5.240654533642078,4.218446905421096,-0.39783505365711913,st_engineering_paya_lebar,ST Engineering,S63.SI,2000,6
+outer,persistence,10,6.715458115501019,5.7151794110660985,0.8642262373246219,st_engineering_paya_lebar,ST Engineering,S63.SI,2000,6
+outer,rent_market_control,10,6.44235309506797,5.640054699190087,1.6118301043698753,st_engineering_paya_lebar,ST Engineering,S63.SI,2000,6
+outer,company_stock,10,6.546530930299678,5.887370500099534,1.3849845577933682,st_engineering_paya_lebar,ST Engineering,S63.SI,2000,6
+development,persistence,21,2.3434323957846264,1.7702848529141293,-0.07268580272639721,st_engineering_paya_lebar,ST Engineering,S63.SI,3000,1
+development,rent_market_control,21,2.1875115725231282,1.8271535183457608,-0.7299384524141038,st_engineering_paya_lebar,ST Engineering,S63.SI,3000,1
+development,company_stock,21,2.260243045409483,1.8864018537264793,-0.6834687261719582,st_engineering_paya_lebar,ST Engineering,S63.SI,3000,1
+outer,persistence,10,2.3848683173374554,1.8234379034053068,-0.2480341197605435,st_engineering_paya_lebar,ST Engineering,S63.SI,3000,1
+outer,rent_market_control,10,2.2703889862544333,1.6661903219942666,-0.2367465866793766,st_engineering_paya_lebar,ST Engineering,S63.SI,3000,1
+outer,company_stock,10,2.2698231042036268,1.710512992188463,-0.3157618421758407,st_engineering_paya_lebar,ST Engineering,S63.SI,3000,1
+development,persistence,21,2.3434323957846264,1.7702848529141293,-0.07268580272639721,st_engineering_paya_lebar,ST Engineering,S63.SI,3000,3
+development,rent_market_control,21,2.1875115725231282,1.8271535183457608,-0.7299384524141038,st_engineering_paya_lebar,ST Engineering,S63.SI,3000,3
+development,company_stock,21,2.218661528003079,1.8477119540643527,-0.7680318371172651,st_engineering_paya_lebar,ST Engineering,S63.SI,3000,3
+outer,persistence,10,2.3848683173374554,1.8234379034053068,-0.2480341197605435,st_engineering_paya_lebar,ST Engineering,S63.SI,3000,3
+outer,rent_market_control,10,2.2703889862544333,1.6661903219942666,-0.2367465866793766,st_engineering_paya_lebar,ST Engineering,S63.SI,3000,3
+outer,company_stock,10,2.3265075906255204,1.7412484063393294,-0.2767767419300496,st_engineering_paya_lebar,ST Engineering,S63.SI,3000,3
+development,persistence,21,2.3434323957846264,1.7702848529141293,-0.07268580272639721,st_engineering_paya_lebar,ST Engineering,S63.SI,3000,6
+development,rent_market_control,21,2.1875115725231282,1.8271535183457608,-0.7299384524141038,st_engineering_paya_lebar,ST Engineering,S63.SI,3000,6
+development,company_stock,21,2.255683461806729,1.8627969790557257,-0.7817999981489763,st_engineering_paya_lebar,ST Engineering,S63.SI,3000,6
+outer,persistence,10,2.3848683173374554,1.8234379034053068,-0.2480341197605435,st_engineering_paya_lebar,ST Engineering,S63.SI,3000,6
+outer,rent_market_control,10,2.2703889862544333,1.6661903219942666,-0.2367465866793766,st_engineering_paya_lebar,ST Engineering,S63.SI,3000,6
+outer,company_stock,10,2.247822245696042,1.6409981061807604,-0.11136833039300811,st_engineering_paya_lebar,ST Engineering,S63.SI,3000,6
+development,persistence,21,3.777562286866393,3.2067365462445823,-0.15392184296426356,venture_amk,Venture,V03.SI,2000,1
+development,rent_market_control,21,3.1207933799590055,2.624865344463472,0.14727068960720693,venture_amk,Venture,V03.SI,2000,1
+development,company_stock,21,3.159606834507238,2.643816615037777,0.19590460003233715,venture_amk,Venture,V03.SI,2000,1
+outer,persistence,10,2.2750504298515812,1.6125389239541388,0.436427665158836,venture_amk,Venture,V03.SI,2000,1
+outer,rent_market_control,10,1.8222584638892727,1.4741810564113393,0.8629899003533297,venture_amk,Venture,V03.SI,2000,1
+outer,company_stock,10,1.8355020850118884,1.4439499206060558,0.8485052881420128,venture_amk,Venture,V03.SI,2000,1
+development,persistence,21,3.777562286866393,3.2067365462445823,-0.15392184296426356,venture_amk,Venture,V03.SI,2000,3
+development,rent_market_control,21,3.1207933799590055,2.624865344463472,0.14727068960720693,venture_amk,Venture,V03.SI,2000,3
+development,company_stock,21,3.225454683517185,2.683700834134414,-0.058327297372667536,venture_amk,Venture,V03.SI,2000,3
+outer,persistence,10,2.2750504298515812,1.6125389239541388,0.436427665158836,venture_amk,Venture,V03.SI,2000,3
+outer,rent_market_control,10,1.8222584638892727,1.4741810564113393,0.8629899003533297,venture_amk,Venture,V03.SI,2000,3
+outer,company_stock,10,1.8788158325441107,1.490450095603722,0.8698353278748814,venture_amk,Venture,V03.SI,2000,3
+development,persistence,21,3.777562286866393,3.2067365462445823,-0.15392184296426356,venture_amk,Venture,V03.SI,2000,6
+development,rent_market_control,21,3.1207933799590055,2.624865344463472,0.14727068960720693,venture_amk,Venture,V03.SI,2000,6
+development,company_stock,21,3.181413948968309,2.5868869239769277,0.06948613198214441,venture_amk,Venture,V03.SI,2000,6
+outer,persistence,10,2.2750504298515812,1.6125389239541388,0.436427665158836,venture_amk,Venture,V03.SI,2000,6
+outer,rent_market_control,10,1.8222584638892727,1.4741810564113393,0.8629899003533297,venture_amk,Venture,V03.SI,2000,6
+outer,company_stock,10,1.9392485307128675,1.5134693722087742,0.9537609681307797,venture_amk,Venture,V03.SI,2000,6
+development,persistence,21,2.1285150239209147,1.7669869366062294,-0.04133339575018525,venture_amk,Venture,V03.SI,3000,1
+development,rent_market_control,21,1.9997758079332326,1.5800764422303397,0.03501450609389156,venture_amk,Venture,V03.SI,3000,1
+development,company_stock,21,1.993415573253511,1.5609298984974602,0.08434724360724116,venture_amk,Venture,V03.SI,3000,1
+outer,persistence,10,2.003446808840152,1.71632878508793,0.17620816008703413,venture_amk,Venture,V03.SI,3000,1
+outer,rent_market_control,10,1.7396777662270093,1.306301258496007,0.3839102399106783,venture_amk,Venture,V03.SI,3000,1
+outer,company_stock,10,1.7610724903319532,1.2791262550790896,0.35535465649099296,venture_amk,Venture,V03.SI,3000,1
+development,persistence,21,2.1285150239209147,1.7669869366062294,-0.04133339575018525,venture_amk,Venture,V03.SI,3000,3
+development,rent_market_control,21,1.9997758079332326,1.5800764422303397,0.03501450609389156,venture_amk,Venture,V03.SI,3000,3
+development,company_stock,21,1.929927852379734,1.5087109204233182,-0.11704011492608571,venture_amk,Venture,V03.SI,3000,3
+outer,persistence,10,2.003446808840152,1.71632878508793,0.17620816008703413,venture_amk,Venture,V03.SI,3000,3
+outer,rent_market_control,10,1.7396777662270093,1.306301258496007,0.3839102399106783,venture_amk,Venture,V03.SI,3000,3
+outer,company_stock,10,1.8884602998005997,1.513747133482586,0.4160465126677745,venture_amk,Venture,V03.SI,3000,3
+development,persistence,21,2.1285150239209147,1.7669869366062294,-0.04133339575018525,venture_amk,Venture,V03.SI,3000,6
+development,rent_market_control,21,1.9997758079332326,1.5800764422303397,0.03501450609389156,venture_amk,Venture,V03.SI,3000,6
+development,company_stock,21,2.01229381718988,1.5557572125159955,-0.06684804917208398,venture_amk,Venture,V03.SI,3000,6
+outer,persistence,10,2.003446808840152,1.71632878508793,0.17620816008703413,venture_amk,Venture,V03.SI,3000,6
+outer,rent_market_control,10,1.7396777662270093,1.306301258496007,0.3839102399106783,venture_amk,Venture,V03.SI,3000,6
+outer,company_stock,10,1.7680556969153656,1.3614247484625497,0.4864436422844678,venture_amk,Venture,V03.SI,3000,6
+development,persistence,21,5.599823148934465,4.475205442794775,0.26519647424358717,venture_marsiling,Venture,V03.SI,2000,1
+development,rent_market_control,21,4.90451177245645,3.930252357710988,0.6723677240798056,venture_marsiling,Venture,V03.SI,2000,1
+development,company_stock,21,4.997857885167086,3.938751967606384,0.6496874073954297,venture_marsiling,Venture,V03.SI,2000,1
+outer,persistence,10,3.8648945040719527,2.857047122962635,-0.36774640901445216,venture_marsiling,Venture,V03.SI,2000,1
+outer,rent_market_control,10,3.83548898272396,3.036859631009004,-0.053731477447299156,venture_marsiling,Venture,V03.SI,2000,1
+outer,company_stock,10,3.872168786761062,3.071361001586257,-0.052649408451601466,venture_marsiling,Venture,V03.SI,2000,1
+development,persistence,21,5.599823148934465,4.475205442794775,0.26519647424358717,venture_marsiling,Venture,V03.SI,2000,3
+development,rent_market_control,21,4.90451177245645,3.930252357710988,0.6723677240798056,venture_marsiling,Venture,V03.SI,2000,3
+development,company_stock,21,5.00004069224365,4.022178721196143,0.6407414799620016,venture_marsiling,Venture,V03.SI,2000,3
+outer,persistence,10,3.8648945040719527,2.857047122962635,-0.36774640901445216,venture_marsiling,Venture,V03.SI,2000,3
+outer,rent_market_control,10,3.83548898272396,3.036859631009004,-0.053731477447299156,venture_marsiling,Venture,V03.SI,2000,3
+outer,company_stock,10,3.730348764187197,2.9193481124889895,-0.012571200799236282,venture_marsiling,Venture,V03.SI,2000,3
+development,persistence,21,5.599823148934465,4.475205442794775,0.26519647424358717,venture_marsiling,Venture,V03.SI,2000,6
+development,rent_market_control,21,4.90451177245645,3.930252357710988,0.6723677240798056,venture_marsiling,Venture,V03.SI,2000,6
+development,company_stock,21,5.095562403968297,4.14409419333982,0.6176135496053715,venture_marsiling,Venture,V03.SI,2000,6
+outer,persistence,10,3.8648945040719527,2.857047122962635,-0.36774640901445216,venture_marsiling,Venture,V03.SI,2000,6
+outer,rent_market_control,10,3.83548898272396,3.036859631009004,-0.053731477447299156,venture_marsiling,Venture,V03.SI,2000,6
+outer,company_stock,10,3.8703415221501416,3.0796279347109645,-0.01038121570756263,venture_marsiling,Venture,V03.SI,2000,6
+development,persistence,21,4.679672100740838,3.8716854900929576,0.2391478329658683,venture_marsiling,Venture,V03.SI,3000,1
+development,rent_market_control,21,4.373281999306885,3.7013748974305067,0.8448679382385086,venture_marsiling,Venture,V03.SI,3000,1
+development,company_stock,21,4.529735927918212,3.7897456566284804,0.7875630422855534,venture_marsiling,Venture,V03.SI,3000,1
+outer,persistence,10,2.7661826438597226,2.2346000298554762,-0.14231153681155848,venture_marsiling,Venture,V03.SI,3000,1
+outer,rent_market_control,10,3.024541795275751,2.58492413848579,0.2557893691420112,venture_marsiling,Venture,V03.SI,3000,1
+outer,company_stock,10,3.0490925086638256,2.608872939083338,0.24639130381417473,venture_marsiling,Venture,V03.SI,3000,1
+development,persistence,21,4.679672100740838,3.8716854900929576,0.2391478329658683,venture_marsiling,Venture,V03.SI,3000,3
+development,rent_market_control,21,4.373281999306885,3.7013748974305067,0.8448679382385086,venture_marsiling,Venture,V03.SI,3000,3
+development,company_stock,21,4.471194638323138,3.770842191778788,0.8381251124422759,venture_marsiling,Venture,V03.SI,3000,3
+outer,persistence,10,2.7661826438597226,2.2346000298554762,-0.14231153681155848,venture_marsiling,Venture,V03.SI,3000,3
+outer,rent_market_control,10,3.024541795275751,2.58492413848579,0.2557893691420112,venture_marsiling,Venture,V03.SI,3000,3
+outer,company_stock,10,2.9590277675268735,2.5455518965849255,0.28249536677692627,venture_marsiling,Venture,V03.SI,3000,3
+development,persistence,21,4.679672100740838,3.8716854900929576,0.2391478329658683,venture_marsiling,Venture,V03.SI,3000,6
+development,rent_market_control,21,4.373281999306885,3.7013748974305067,0.8448679382385086,venture_marsiling,Venture,V03.SI,3000,6
+development,company_stock,21,4.304862724943161,3.5749564514109244,0.6879734390149013,venture_marsiling,Venture,V03.SI,3000,6
+outer,persistence,10,2.7661826438597226,2.2346000298554762,-0.14231153681155848,venture_marsiling,Venture,V03.SI,3000,6
+outer,rent_market_control,10,3.024541795275751,2.58492413848579,0.2557893691420112,venture_marsiling,Venture,V03.SI,3000,6
+outer,company_stock,10,2.8523237191718196,2.520798263225703,0.6680060125913763,venture_marsiling,Venture,V03.SI,3000,6
+development,persistence,12,7.123010668845155,6.201895144307934,-0.9449290272261356,venture_woodlands,Venture,V03.SI,1000,1
+development,rent_market_control,12,6.494807891003246,5.4928397031831375,0.3011384711592777,venture_woodlands,Venture,V03.SI,1000,1
+development,company_stock,12,6.753877278580305,5.725816137471646,0.18431768470862897,venture_woodlands,Venture,V03.SI,1000,1
+outer,persistence,6,2.4017643624239797,1.8970507790399649,0.3298993821291331,venture_woodlands,Venture,V03.SI,1000,1
+outer,rent_market_control,6,3.27745674737854,3.072178231249218,1.6939479976506409,venture_woodlands,Venture,V03.SI,1000,1
+outer,company_stock,6,3.24701882562193,3.0064681879382285,1.7742752246403892,venture_woodlands,Venture,V03.SI,1000,1
+development,persistence,12,7.123010668845155,6.201895144307934,-0.9449290272261356,venture_woodlands,Venture,V03.SI,1000,3
+development,rent_market_control,12,6.494807891003246,5.4928397031831375,0.3011384711592777,venture_woodlands,Venture,V03.SI,1000,3
+development,company_stock,12,6.845763254976444,5.950390876028209,0.6996515520853013,venture_woodlands,Venture,V03.SI,1000,3
+outer,persistence,6,2.4017643624239797,1.8970507790399649,0.3298993821291331,venture_woodlands,Venture,V03.SI,1000,3
+outer,rent_market_control,6,3.27745674737854,3.072178231249218,1.6939479976506409,venture_woodlands,Venture,V03.SI,1000,3
+outer,company_stock,6,3.564054693967557,3.2683648794582094,1.5611262339713097,venture_woodlands,Venture,V03.SI,1000,3
+development,persistence,12,7.123010668845155,6.201895144307934,-0.9449290272261356,venture_woodlands,Venture,V03.SI,1000,6
+development,rent_market_control,12,6.494807891003246,5.4928397031831375,0.3011384711592777,venture_woodlands,Venture,V03.SI,1000,6
+development,company_stock,12,6.635483639883282,5.667349862858354,0.08120782683008294,venture_woodlands,Venture,V03.SI,1000,6
+outer,persistence,6,2.4017643624239797,1.8970507790399649,0.3298993821291331,venture_woodlands,Venture,V03.SI,1000,6
+outer,rent_market_control,6,3.27745674737854,3.072178231249218,1.6939479976506409,venture_woodlands,Venture,V03.SI,1000,6
+outer,company_stock,6,3.320589014476311,3.1104351553162295,1.7526167618867714,venture_woodlands,Venture,V03.SI,1000,6
+development,persistence,21,3.350679677515957,2.6962595642531846,-0.23088166709149813,venture_woodlands,Venture,V03.SI,2000,1
+development,rent_market_control,21,2.8122698152444814,2.0341365615642806,-0.44272232980765225,venture_woodlands,Venture,V03.SI,2000,1
+development,company_stock,21,2.873778118705482,2.074904238345408,-0.45480693290158364,venture_woodlands,Venture,V03.SI,2000,1
+outer,persistence,10,2.1726339762486457,1.8415964586789595,0.2305570840432508,venture_woodlands,Venture,V03.SI,2000,1
+outer,rent_market_control,10,2.1804345687042823,1.6940384703424347,0.27775898135866006,venture_woodlands,Venture,V03.SI,2000,1
+outer,company_stock,10,2.1851342597153187,1.695892756166468,0.2710830540218437,venture_woodlands,Venture,V03.SI,2000,1
+development,persistence,21,3.350679677515957,2.6962595642531846,-0.23088166709149813,venture_woodlands,Venture,V03.SI,2000,3
+development,rent_market_control,21,2.8122698152444814,2.0341365615642806,-0.44272232980765225,venture_woodlands,Venture,V03.SI,2000,3
+development,company_stock,21,2.784082852574997,1.8624582814837827,-0.30571705548071726,venture_woodlands,Venture,V03.SI,2000,3
+outer,persistence,10,2.1726339762486457,1.8415964586789595,0.2305570840432508,venture_woodlands,Venture,V03.SI,2000,3
+outer,rent_market_control,10,2.1804345687042823,1.6940384703424347,0.27775898135866006,venture_woodlands,Venture,V03.SI,2000,3
+outer,company_stock,10,1.9483036605226283,1.4795417845779943,0.2638749125085901,venture_woodlands,Venture,V03.SI,2000,3
+development,persistence,21,3.350679677515957,2.6962595642531846,-0.23088166709149813,venture_woodlands,Venture,V03.SI,2000,6
+development,rent_market_control,21,2.8122698152444814,2.0341365615642806,-0.44272232980765225,venture_woodlands,Venture,V03.SI,2000,6
+development,company_stock,21,2.9399402380032713,2.1995373449685154,-0.3732542496030229,venture_woodlands,Venture,V03.SI,2000,6
+outer,persistence,10,2.1726339762486457,1.8415964586789595,0.2305570840432508,venture_woodlands,Venture,V03.SI,2000,6
+outer,rent_market_control,10,2.1804345687042823,1.6940384703424347,0.27775898135866006,venture_woodlands,Venture,V03.SI,2000,6
+outer,company_stock,10,2.116023395168802,1.6124525855624217,0.21606356974022561,venture_woodlands,Venture,V03.SI,2000,6
+development,persistence,21,2.864626877068643,2.2760748908459196,-0.26319792714551865,venture_woodlands,Venture,V03.SI,3000,1
+development,rent_market_control,21,2.073674952707913,1.595256036494038,-0.20845439102633956,venture_woodlands,Venture,V03.SI,3000,1
+development,company_stock,21,2.1869672597225542,1.7713065668656545,-0.22975337170967747,venture_woodlands,Venture,V03.SI,3000,1
+outer,persistence,10,2.137880937614745,1.8661467779415664,0.2717547316573488,venture_woodlands,Venture,V03.SI,3000,1
+outer,rent_market_control,10,1.8717378683789778,1.5141837473196933,0.4610173885794916,venture_woodlands,Venture,V03.SI,3000,1
+outer,company_stock,10,1.8870167371044606,1.519060378189889,0.4600166724359601,venture_woodlands,Venture,V03.SI,3000,1
+development,persistence,21,2.864626877068643,2.2760748908459196,-0.26319792714551865,venture_woodlands,Venture,V03.SI,3000,3
+development,rent_market_control,21,2.073674952707913,1.595256036494038,-0.20845439102633956,venture_woodlands,Venture,V03.SI,3000,3
+development,company_stock,21,1.9415970084331244,1.4939496871062834,-0.007668331949338152,venture_woodlands,Venture,V03.SI,3000,3
+outer,persistence,10,2.137880937614745,1.8661467779415664,0.2717547316573488,venture_woodlands,Venture,V03.SI,3000,3
+outer,rent_market_control,10,1.8717378683789778,1.5141837473196933,0.4610173885794916,venture_woodlands,Venture,V03.SI,3000,3
+outer,company_stock,10,1.7873535172614436,1.5337144217695773,0.4249048593672485,venture_woodlands,Venture,V03.SI,3000,3
+development,persistence,21,2.864626877068643,2.2760748908459196,-0.26319792714551865,venture_woodlands,Venture,V03.SI,3000,6
+development,rent_market_control,21,2.073674952707913,1.595256036494038,-0.20845439102633956,venture_woodlands,Venture,V03.SI,3000,6
+development,company_stock,21,2.1517387672427124,1.790175487862383,-0.2025502685270737,venture_woodlands,Venture,V03.SI,3000,6
+outer,persistence,10,2.137880937614745,1.8661467779415664,0.2717547316573488,venture_woodlands,Venture,V03.SI,3000,6
+outer,rent_market_control,10,1.8717378683789778,1.5141837473196933,0.4610173885794916,venture_woodlands,Venture,V03.SI,3000,6
+outer,company_stock,10,2.0068872095158836,1.6031931792463552,0.537757522619502,venture_woodlands,Venture,V03.SI,3000,6
+development,persistence,21,5.62660299763714,4.791113556550887,-0.23915708712564385,kulicke_soffa_serangoon,Kulicke & Soffa,KLIC,1000,1
+development,rent_market_control,21,4.556380834417323,3.989172739370841,-0.06792900969220908,kulicke_soffa_serangoon,Kulicke & Soffa,KLIC,1000,1
+development,company_stock,21,4.624655863152685,4.030240039714017,0.05335361461570276,kulicke_soffa_serangoon,Kulicke & Soffa,KLIC,1000,1
+outer,persistence,10,4.229028232350587,3.8039394344282003,0.4442256505057901,kulicke_soffa_serangoon,Kulicke & Soffa,KLIC,1000,1
+outer,rent_market_control,10,3.631401608647295,3.034938058823102,1.056116218598723,kulicke_soffa_serangoon,Kulicke & Soffa,KLIC,1000,1
+outer,company_stock,10,3.586385990530711,3.0660116425054644,0.993822142617358,kulicke_soffa_serangoon,Kulicke & Soffa,KLIC,1000,1
+development,persistence,21,5.62660299763714,4.791113556550887,-0.23915708712564385,kulicke_soffa_serangoon,Kulicke & Soffa,KLIC,1000,3
+development,rent_market_control,21,4.556380834417323,3.989172739370841,-0.06792900969220908,kulicke_soffa_serangoon,Kulicke & Soffa,KLIC,1000,3
+development,company_stock,21,4.654049683728157,4.074396054470449,-0.09372280449733514,kulicke_soffa_serangoon,Kulicke & Soffa,KLIC,1000,3
+outer,persistence,10,4.229028232350587,3.8039394344282003,0.4442256505057901,kulicke_soffa_serangoon,Kulicke & Soffa,KLIC,1000,3
+outer,rent_market_control,10,3.631401608647295,3.034938058823102,1.056116218598723,kulicke_soffa_serangoon,Kulicke & Soffa,KLIC,1000,3
+outer,company_stock,10,3.52329066507649,3.039906930067594,1.0461155181557182,kulicke_soffa_serangoon,Kulicke & Soffa,KLIC,1000,3
+development,persistence,21,5.62660299763714,4.791113556550887,-0.23915708712564385,kulicke_soffa_serangoon,Kulicke & Soffa,KLIC,1000,6
+development,rent_market_control,21,4.556380834417323,3.989172739370841,-0.06792900969220908,kulicke_soffa_serangoon,Kulicke & Soffa,KLIC,1000,6
+development,company_stock,21,4.424413628637779,3.8356598080295505,0.003987756054703251,kulicke_soffa_serangoon,Kulicke & Soffa,KLIC,1000,6
+outer,persistence,10,4.229028232350587,3.8039394344282003,0.4442256505057901,kulicke_soffa_serangoon,Kulicke & Soffa,KLIC,1000,6
+outer,rent_market_control,10,3.631401608647295,3.034938058823102,1.056116218598723,kulicke_soffa_serangoon,Kulicke & Soffa,KLIC,1000,6
+outer,company_stock,10,3.347542288156969,2.8377271016930057,0.9741274787484333,kulicke_soffa_serangoon,Kulicke & Soffa,KLIC,1000,6
+development,persistence,21,3.5966891384506754,3.0701326995915785,-0.17461813408600677,kulicke_soffa_serangoon,Kulicke & Soffa,KLIC,2000,1
+development,rent_market_control,21,3.035632261173996,2.594891044849167,-0.2922749193186519,kulicke_soffa_serangoon,Kulicke & Soffa,KLIC,2000,1
+development,company_stock,21,3.060778842218483,2.6045672599235026,-0.21143075871985412,kulicke_soffa_serangoon,Kulicke & Soffa,KLIC,2000,1
+outer,persistence,10,1.9657717084597703,1.8605093703385847,0.2715256071084243,kulicke_soffa_serangoon,Kulicke & Soffa,KLIC,2000,1
+outer,rent_market_control,10,1.7811257335834043,1.3816310516883497,0.8891457521199777,kulicke_soffa_serangoon,Kulicke & Soffa,KLIC,2000,1
+outer,company_stock,10,1.820164056335576,1.420471615034996,0.9025887862703824,kulicke_soffa_serangoon,Kulicke & Soffa,KLIC,2000,1
+development,persistence,21,3.5966891384506754,3.0701326995915785,-0.17461813408600677,kulicke_soffa_serangoon,Kulicke & Soffa,KLIC,2000,3
+development,rent_market_control,21,3.035632261173996,2.594891044849167,-0.2922749193186519,kulicke_soffa_serangoon,Kulicke & Soffa,KLIC,2000,3
+development,company_stock,21,3.0603006343297636,2.6466752664024704,-0.2817109962465726,kulicke_soffa_serangoon,Kulicke & Soffa,KLIC,2000,3
+outer,persistence,10,1.9657717084597703,1.8605093703385847,0.2715256071084243,kulicke_soffa_serangoon,Kulicke & Soffa,KLIC,2000,3
+outer,rent_market_control,10,1.7811257335834043,1.3816310516883497,0.8891457521199777,kulicke_soffa_serangoon,Kulicke & Soffa,KLIC,2000,3
+outer,company_stock,10,1.770633188854238,1.3550337675826596,0.8851207783263799,kulicke_soffa_serangoon,Kulicke & Soffa,KLIC,2000,3
+development,persistence,21,3.5966891384506754,3.0701326995915785,-0.17461813408600677,kulicke_soffa_serangoon,Kulicke & Soffa,KLIC,2000,6
+development,rent_market_control,21,3.035632261173996,2.594891044849167,-0.2922749193186519,kulicke_soffa_serangoon,Kulicke & Soffa,KLIC,2000,6
+development,company_stock,21,3.1219137788268387,2.656507060544884,-0.30754101428851605,kulicke_soffa_serangoon,Kulicke & Soffa,KLIC,2000,6
+outer,persistence,10,1.9657717084597703,1.8605093703385847,0.2715256071084243,kulicke_soffa_serangoon,Kulicke & Soffa,KLIC,2000,6
+outer,rent_market_control,10,1.7811257335834043,1.3816310516883497,0.8891457521199777,kulicke_soffa_serangoon,Kulicke & Soffa,KLIC,2000,6
+outer,company_stock,10,1.8049738452105162,1.3895319507741526,0.8822186485324408,kulicke_soffa_serangoon,Kulicke & Soffa,KLIC,2000,6
+development,persistence,21,2.0992198529400112,1.8076141553089424,-0.15464532740752765,kulicke_soffa_serangoon,Kulicke & Soffa,KLIC,3000,1
+development,rent_market_control,21,1.966997402429682,1.569893474413222,0.11579907633445914,kulicke_soffa_serangoon,Kulicke & Soffa,KLIC,3000,1
+development,company_stock,21,1.9850071132596747,1.5881934395414232,0.11986348430517287,kulicke_soffa_serangoon,Kulicke & Soffa,KLIC,3000,1
+outer,persistence,10,1.7406997609560166,1.3668585981504644,0.20155382189604448,kulicke_soffa_serangoon,Kulicke & Soffa,KLIC,3000,1
+outer,rent_market_control,10,1.5563431944201742,1.2285487283094085,0.3718008492829309,kulicke_soffa_serangoon,Kulicke & Soffa,KLIC,3000,1
+outer,company_stock,10,1.5134867462992652,1.2119712397128137,0.42600538337169624,kulicke_soffa_serangoon,Kulicke & Soffa,KLIC,3000,1
+development,persistence,21,2.0992198529400112,1.8076141553089424,-0.15464532740752765,kulicke_soffa_serangoon,Kulicke & Soffa,KLIC,3000,3
+development,rent_market_control,21,1.966997402429682,1.569893474413222,0.11579907633445914,kulicke_soffa_serangoon,Kulicke & Soffa,KLIC,3000,3
+development,company_stock,21,1.9540879070029744,1.5819547205421112,0.13306209645844477,kulicke_soffa_serangoon,Kulicke & Soffa,KLIC,3000,3
+outer,persistence,10,1.7406997609560166,1.3668585981504644,0.20155382189604448,kulicke_soffa_serangoon,Kulicke & Soffa,KLIC,3000,3
+outer,rent_market_control,10,1.5563431944201742,1.2285487283094085,0.3718008492829309,kulicke_soffa_serangoon,Kulicke & Soffa,KLIC,3000,3
+outer,company_stock,10,1.5504735319474117,1.2663281287256871,0.3602836417718507,kulicke_soffa_serangoon,Kulicke & Soffa,KLIC,3000,3
+development,persistence,21,2.0992198529400112,1.8076141553089424,-0.15464532740752765,kulicke_soffa_serangoon,Kulicke & Soffa,KLIC,3000,6
+development,rent_market_control,21,1.966997402429682,1.569893474413222,0.11579907633445914,kulicke_soffa_serangoon,Kulicke & Soffa,KLIC,3000,6
+development,company_stock,21,2.0274777191853546,1.613258185479307,0.10104420697334329,kulicke_soffa_serangoon,Kulicke & Soffa,KLIC,3000,6
+outer,persistence,10,1.7406997609560166,1.3668585981504644,0.20155382189604448,kulicke_soffa_serangoon,Kulicke & Soffa,KLIC,3000,6
+outer,rent_market_control,10,1.5563431944201742,1.2285487283094085,0.3718008492829309,kulicke_soffa_serangoon,Kulicke & Soffa,KLIC,3000,6
+outer,company_stock,10,1.5622631422742408,1.241610741216172,0.3709865609514458,kulicke_soffa_serangoon,Kulicke & Soffa,KLIC,3000,6
+development,persistence,21,3.692663064766407,2.947096659370687,-0.3315715911549012,flex_changi,Flex,FLEX,2000,1
+development,rent_market_control,21,2.644516635691043,2.2713448997289865,0.057669907942485006,flex_changi,Flex,FLEX,2000,1
+development,company_stock,21,2.7098397272560875,2.2837033925591834,-0.07986447483805345,flex_changi,Flex,FLEX,2000,1
+outer,persistence,10,2.066810505860307,1.7673891175025513,0.2743477824539109,flex_changi,Flex,FLEX,2000,1
+outer,rent_market_control,10,1.700499901811663,1.2127050191571838,0.027603358539813216,flex_changi,Flex,FLEX,2000,1
+outer,company_stock,10,1.762094056499859,1.2516204853087864,0.007339219690972354,flex_changi,Flex,FLEX,2000,1
+development,persistence,21,3.692663064766407,2.947096659370687,-0.3315715911549012,flex_changi,Flex,FLEX,2000,3
+development,rent_market_control,21,2.644516635691043,2.2713448997289865,0.057669907942485006,flex_changi,Flex,FLEX,2000,3
+development,company_stock,21,2.6408654386057857,2.2133892354096525,-0.01112279468395773,flex_changi,Flex,FLEX,2000,3
+outer,persistence,10,2.066810505860307,1.7673891175025513,0.2743477824539109,flex_changi,Flex,FLEX,2000,3
+outer,rent_market_control,10,1.700499901811663,1.2127050191571838,0.027603358539813216,flex_changi,Flex,FLEX,2000,3
+outer,company_stock,10,1.7093777850526741,1.2781850449804408,0.03574026756510977,flex_changi,Flex,FLEX,2000,3
+development,persistence,21,3.692663064766407,2.947096659370687,-0.3315715911549012,flex_changi,Flex,FLEX,2000,6
+development,rent_market_control,21,2.644516635691043,2.2713448997289865,0.057669907942485006,flex_changi,Flex,FLEX,2000,6
+development,company_stock,21,2.7604894211123057,2.3368409049160177,0.16148089069418814,flex_changi,Flex,FLEX,2000,6
+outer,persistence,10,2.066810505860307,1.7673891175025513,0.2743477824539109,flex_changi,Flex,FLEX,2000,6
+outer,rent_market_control,10,1.700499901811663,1.2127050191571838,0.027603358539813216,flex_changi,Flex,FLEX,2000,6
+outer,company_stock,10,1.749909081220232,1.2948814371079242,-0.05980797872560588,flex_changi,Flex,FLEX,2000,6
+development,persistence,21,2.9834679080878086,2.5167335345154305,-0.24839383040070237,flex_changi,Flex,FLEX,3000,1
+development,rent_market_control,21,2.268485402033564,1.995389428752753,0.3328448363995276,flex_changi,Flex,FLEX,3000,1
+development,company_stock,21,2.2944744395811547,2.013375048218736,0.3144582970889419,flex_changi,Flex,FLEX,3000,1
+outer,persistence,10,2.803925382647912,2.3476103590377755,0.4907846845817886,flex_changi,Flex,FLEX,3000,1
+outer,rent_market_control,10,2.3480075980855006,2.0538502789036897,0.4398403428496792,flex_changi,Flex,FLEX,3000,1
+outer,company_stock,10,2.185143021774898,1.8989726736687906,0.41978590113875924,flex_changi,Flex,FLEX,3000,1
+development,persistence,21,2.9834679080878086,2.5167335345154305,-0.24839383040070237,flex_changi,Flex,FLEX,3000,3
+development,rent_market_control,21,2.268485402033564,1.995389428752753,0.3328448363995276,flex_changi,Flex,FLEX,3000,3
+development,company_stock,21,2.274709712306842,1.9267960007250413,0.31247661839839885,flex_changi,Flex,FLEX,3000,3
+outer,persistence,10,2.803925382647912,2.3476103590377755,0.4907846845817886,flex_changi,Flex,FLEX,3000,3
+outer,rent_market_control,10,2.3480075980855006,2.0538502789036897,0.4398403428496792,flex_changi,Flex,FLEX,3000,3
+outer,company_stock,10,2.382583344013258,2.1180811988911,0.4457477188231895,flex_changi,Flex,FLEX,3000,3
+development,persistence,21,2.9834679080878086,2.5167335345154305,-0.24839383040070237,flex_changi,Flex,FLEX,3000,6
+development,rent_market_control,21,2.268485402033564,1.995389428752753,0.3328448363995276,flex_changi,Flex,FLEX,3000,6
+development,company_stock,21,2.345667745231599,2.04307217754777,0.41017141599680246,flex_changi,Flex,FLEX,3000,6
+outer,persistence,10,2.803925382647912,2.3476103590377755,0.4907846845817886,flex_changi,Flex,FLEX,3000,6
+outer,rent_market_control,10,2.3480075980855006,2.0538502789036897,0.4398403428496792,flex_changi,Flex,FLEX,3000,6
+outer,company_stock,10,2.3236052521659576,2.038664705654644,0.3645758829454798,flex_changi,Flex,FLEX,3000,6
+development,persistence,21,5.0203525857487605,3.866955910463283,-0.2899277805170392,seatrium_admiralty,Seatrium / Sembcorp Marine,5E2.SI,2000,1
+development,rent_market_control,21,4.833823370423025,3.5813008654993572,-0.36441997775384666,seatrium_admiralty,Seatrium / Sembcorp Marine,5E2.SI,2000,1
+development,company_stock,21,4.873769251936793,3.6903030572509885,-0.5109005092335422,seatrium_admiralty,Seatrium / Sembcorp Marine,5E2.SI,2000,1
+outer,persistence,10,2.543942561357491,2.241777999966284,0.2899482863836284,seatrium_admiralty,Seatrium / Sembcorp Marine,5E2.SI,2000,1
+outer,rent_market_control,10,1.8191740185099416,1.681497274039732,0.41050263102015344,seatrium_admiralty,Seatrium / Sembcorp Marine,5E2.SI,2000,1
+outer,company_stock,10,1.7899150188326387,1.6388761666274803,0.44321909497682366,seatrium_admiralty,Seatrium / Sembcorp Marine,5E2.SI,2000,1
+development,persistence,21,5.0203525857487605,3.866955910463283,-0.2899277805170392,seatrium_admiralty,Seatrium / Sembcorp Marine,5E2.SI,2000,3
+development,rent_market_control,21,4.833823370423025,3.5813008654993572,-0.36441997775384666,seatrium_admiralty,Seatrium / Sembcorp Marine,5E2.SI,2000,3
+development,company_stock,21,5.035375628718325,3.5148355239706413,0.006504441454031015,seatrium_admiralty,Seatrium / Sembcorp Marine,5E2.SI,2000,3
+outer,persistence,10,2.543942561357491,2.241777999966284,0.2899482863836284,seatrium_admiralty,Seatrium / Sembcorp Marine,5E2.SI,2000,3
+outer,rent_market_control,10,1.8191740185099416,1.681497274039732,0.41050263102015344,seatrium_admiralty,Seatrium / Sembcorp Marine,5E2.SI,2000,3
+outer,company_stock,10,2.3122646213590152,2.074488459819146,0.2514438416864647,seatrium_admiralty,Seatrium / Sembcorp Marine,5E2.SI,2000,3
+development,persistence,21,5.0203525857487605,3.866955910463283,-0.2899277805170392,seatrium_admiralty,Seatrium / Sembcorp Marine,5E2.SI,2000,6
+development,rent_market_control,21,4.833823370423025,3.5813008654993572,-0.36441997775384666,seatrium_admiralty,Seatrium / Sembcorp Marine,5E2.SI,2000,6
+development,company_stock,21,5.371058416559708,3.9759284460405464,-0.2510796471291474,seatrium_admiralty,Seatrium / Sembcorp Marine,5E2.SI,2000,6
+outer,persistence,10,2.543942561357491,2.241777999966284,0.2899482863836284,seatrium_admiralty,Seatrium / Sembcorp Marine,5E2.SI,2000,6
+outer,rent_market_control,10,1.8191740185099416,1.681497274039732,0.41050263102015344,seatrium_admiralty,Seatrium / Sembcorp Marine,5E2.SI,2000,6
+outer,company_stock,10,1.7846860431988536,1.6608781289286916,0.3671687477423272,seatrium_admiralty,Seatrium / Sembcorp Marine,5E2.SI,2000,6
+development,persistence,21,4.500576051769447,3.545082850659057,-0.25858295116488783,seatrium_admiralty,Seatrium / Sembcorp Marine,5E2.SI,3000,1
+development,rent_market_control,21,4.04546865330698,3.0061869829132015,-0.3225264824420075,seatrium_admiralty,Seatrium / Sembcorp Marine,5E2.SI,3000,1
+development,company_stock,21,4.129134182293732,3.1261760257120152,-0.43417065831378326,seatrium_admiralty,Seatrium / Sembcorp Marine,5E2.SI,3000,1
+outer,persistence,10,2.2017152760579064,1.7208441953173783,0.3104417084113108,seatrium_admiralty,Seatrium / Sembcorp Marine,5E2.SI,3000,1
+outer,rent_market_control,10,1.7291053964735705,1.4841985606584216,0.2964794689116217,seatrium_admiralty,Seatrium / Sembcorp Marine,5E2.SI,3000,1
+outer,company_stock,10,1.651564291521891,1.4155791427370907,0.350023940668437,seatrium_admiralty,Seatrium / Sembcorp Marine,5E2.SI,3000,1
+development,persistence,21,4.500576051769447,3.545082850659057,-0.25858295116488783,seatrium_admiralty,Seatrium / Sembcorp Marine,5E2.SI,3000,3
+development,rent_market_control,21,4.04546865330698,3.0061869829132015,-0.3225264824420075,seatrium_admiralty,Seatrium / Sembcorp Marine,5E2.SI,3000,3
+development,company_stock,21,4.120294382352611,2.9444528874680396,-0.05038624305881609,seatrium_admiralty,Seatrium / Sembcorp Marine,5E2.SI,3000,3
+outer,persistence,10,2.2017152760579064,1.7208441953173783,0.3104417084113108,seatrium_admiralty,Seatrium / Sembcorp Marine,5E2.SI,3000,3
+outer,rent_market_control,10,1.7291053964735705,1.4841985606584216,0.2964794689116217,seatrium_admiralty,Seatrium / Sembcorp Marine,5E2.SI,3000,3
+outer,company_stock,10,1.793008030012686,1.4356865052194216,0.14821627450676972,seatrium_admiralty,Seatrium / Sembcorp Marine,5E2.SI,3000,3
+development,persistence,21,4.500576051769447,3.545082850659057,-0.25858295116488783,seatrium_admiralty,Seatrium / Sembcorp Marine,5E2.SI,3000,6
+development,rent_market_control,21,4.04546865330698,3.0061869829132015,-0.3225264824420075,seatrium_admiralty,Seatrium / Sembcorp Marine,5E2.SI,3000,6
+development,company_stock,21,4.480643157754131,3.2324265348444188,-0.288885843489428,seatrium_admiralty,Seatrium / Sembcorp Marine,5E2.SI,3000,6
+outer,persistence,10,2.2017152760579064,1.7208441953173783,0.3104417084113108,seatrium_admiralty,Seatrium / Sembcorp Marine,5E2.SI,3000,6
+outer,rent_market_control,10,1.7291053964735705,1.4841985606584216,0.2964794689116217,seatrium_admiralty,Seatrium / Sembcorp Marine,5E2.SI,3000,6
+outer,company_stock,10,1.5480921388662223,1.3126358505328402,0.319339258712677,seatrium_admiralty,Seatrium / Sembcorp Marine,5E2.SI,3000,6

@@ -1,0 +1,11 @@
+{
+  "official_school_rankings": false,
+  "school_proxy": "primary admission demand; not teaching quality or secondary school reputation",
+  "all_malls_have_financial_data": false,
+  "revenue": "owner gross property revenue; not tenant sales or net property income",
+  "train_volume": "station entry+exit taps, not train/platform occupancy; Aug\u2013Oct 2023 only; public archive uploaded Dec 6 2023",
+  "bus": "unique service IDs across directions; no timetable-frequency or passenger count interpretation",
+  "rail": "MRT network only; incomplete LRT topology excluded; source CC33/34 mapped to historical CE2/1 branch topology",
+  "geography": "inherited location snapshots; no claim that every school/mall coordinate is historically archived",
+  "source_archive_caveat": "historical registration figures are retrieved from a present-day MOE-derived archive; original version preservation is not cryptographically verifiable"
+}

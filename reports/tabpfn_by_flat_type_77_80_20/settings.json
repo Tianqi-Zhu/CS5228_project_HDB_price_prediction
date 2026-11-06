@@ -1,0 +1,28 @@
+{
+  "baseline_bundle": ".cache\\tabpfn_v3_features\\calendar_80_20_categorical.joblib",
+  "baseline_sha256": "fba84757b6e23280d2b27eab0ca5d86a427ac19ca33c6b12b5b2dcc4194a0059",
+  "baseline_predictions_sha256": "6ae63cf3d00073220a77f05e547efcc601dcbdae151dc4260c8b72c21a9d83b6",
+  "checkpoint_sha256": "14e0b81285bca7a6d1ef121169f27f651f76dff49cad6c0b8779d5c836018550",
+  "code_sha256": {
+    "analysis\\compare_tabpfn_by_flat_type.py": "0b9584f1db454d016330ae37d323057df4cf0f8d9dc33553a1ac60adf0b9ea35",
+    "analysis\\experiments\\flat_type_inference.py": "1713e21b3445854cce84183c4d5378d30e840de69ea0f54bacc48ceac8656aa5",
+    "analysis\\compare_local_economy_landscape.py": "192eaf9a05c1ebf672fa1c38aaa23797a2ccd0300ba83d495a872c4b6f726b47"
+  },
+  "packages": {
+    "tabpfn": "9.2.0",
+    "torch": "2.11.0+cu128",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6"
+  },
+  "grouping": "FLAT_TYPE_CLEAN; route every query to same-type context; no cross-type TabPFN context",
+  "feature_policy": "Original 77 columns, categorical dtypes, history values and temporal residual baselines unchanged; no tree features",
+  "preprocessing": "Native checkpoint preprocessing fitted independently within each type; no external scaler or imputer",
+  "inference": {
+    "n_estimators": 1,
+    "random_state": 42,
+    "batch_size": 200,
+    "subsample_samples": null,
+    "parameter_optimization": false
+  },
+  "unlabelled_test_used": false
+}

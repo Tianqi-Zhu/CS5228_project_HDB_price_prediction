@@ -1,0 +1,22 @@
+{
+  "source": "data/train.csv",
+  "source_sha256": "2fe38ce9e0d8a02e9786f066d4a10d575d91f34be1d9111f0142e3f43fbfc8a5",
+  "rule": "MONTHLY_RENT < 0.5 * median(MONTHLY_RENT within approval year x normalized town x normalized flat type)",
+  "median_reference": "All original training rows, including the assessed row; one pass; no deduplication or iterative recalculation",
+  "types": "All 1- through 5-room types and executive; executive is its own type",
+  "minimum_group_size": null,
+  "total_rows": 150000,
+  "removed_rows": 1121,
+  "retained_rows": 148879,
+  "removed_pct": 0.7473333333333333,
+  "equal_to_half_median_rows_retained": 189,
+  "total_groups": 624,
+  "groups_with_removed_rows": 315,
+  "groups_with_fewer_than_30_rows": 147,
+  "removed_from_groups_with_fewer_than_30_rows": 42,
+  "minimum_flagged_group_size": 3,
+  "removed_with_at_least_5_same_block_layout_year_rows": 289,
+  "removed_also_below_half_same_block_layout_year_median_with_n_ge5": 229,
+  "first_approval_month": "2021-01",
+  "last_approval_month": "2025-03"
+}

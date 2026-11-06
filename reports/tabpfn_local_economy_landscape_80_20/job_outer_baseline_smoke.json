@@ -1,0 +1,11 @@
+{
+  "stage": "outer",
+  "name": "baseline",
+  "added_columns": [],
+  "context_ids_sha256": "98813f363d04c121ef6396d316d7720ea30dde9711656099e028587d96e8c160",
+  "query_ids_sha256": "0b15f5d26fbdb137abd0810585171234d1f682a64b930807e904e8351b8bdade",
+  "prepared_sha256": "6824cffb93e47efd97abd2050fd4b4fcaf04f8cbf40d0a4bcd0ccdd0fa4b3a5e",
+  "code_sha256": "192eaf9a05c1ebf672fa1c38aaa23797a2ccd0300ba83d495a872c4b6f726b47",
+  "checkpoint_sha256": "14e0b81285bca7a6d1ef121169f27f651f76dff49cad6c0b8779d5c836018550",
+  "smoke": true
+}

@@ -1,0 +1,98 @@
+{
+  "code_sha256": "1bb7d24df16128d93e8624849094bf44e202adead1b7347a30b6ec5be88bc57b",
+  "prepared_sha256": "683987abe171fabd9e26d29a6b4e8c39205a8eed7f18297a99d20b444cdfdf9c",
+  "sample_rows": 2000,
+  "sample_seed": 2026,
+  "population_weights": true,
+  "device": "cuda",
+  "full_holdout_prediction_replay": [
+    {
+      "variant": "T0",
+      "seed": 42,
+      "max_prediction_difference_sgd": 5.002220859751105e-11
+    },
+    {
+      "variant": "T0",
+      "seed": 43,
+      "max_prediction_difference_sgd": 5.002220859751105e-11
+    },
+    {
+      "variant": "T0",
+      "seed": 44,
+      "max_prediction_difference_sgd": 5.047695594839752e-11
+    },
+    {
+      "variant": "T1",
+      "seed": 42,
+      "max_prediction_difference_sgd": 5.047695594839752e-11
+    },
+    {
+      "variant": "T1",
+      "seed": 43,
+      "max_prediction_difference_sgd": 5.093170329928398e-11
+    },
+    {
+      "variant": "T1",
+      "seed": 44,
+      "max_prediction_difference_sgd": 5.047695594839752e-11
+    },
+    {
+      "variant": "T2",
+      "seed": 42,
+      "max_prediction_difference_sgd": 5.047695594839752e-11
+    },
+    {
+      "variant": "T2",
+      "seed": 43,
+      "max_prediction_difference_sgd": 5.047695594839752e-11
+    },
+    {
+      "variant": "T2",
+      "seed": 44,
+      "max_prediction_difference_sgd": 5.093170329928398e-11
+    },
+    {
+      "variant": "T3",
+      "seed": 42,
+      "max_prediction_difference_sgd": 5.047695594839752e-11
+    },
+    {
+      "variant": "T3",
+      "seed": 43,
+      "max_prediction_difference_sgd": 5.002220859751105e-11
+    },
+    {
+      "variant": "T3",
+      "seed": 44,
+      "max_prediction_difference_sgd": 5.0249582272954285e-11
+    }
+  ],
+  "original_sources_and_submissions_unchanged": true,
+  "no_refits": true,
+  "seconds": 293.77975779992994,
+  "figures": [
+    "01_seed_stability.png",
+    "02_temporal_bias.png",
+    "03_spatial_residuals.png",
+    "04_town_month_errors.png",
+    "05_spatial_autocorrelation.png",
+    "06_grouped_feature_reliance.png",
+    "07_floor_area_response.png",
+    "08_sequence_and_lag_reliance.png",
+    "09_prediction_components.png",
+    "10_observed_feature_associations.png"
+  ],
+  "macro_row_variation": "zero in fixed-origin holdout; macro importance not identified by row permutation",
+  "ale_refresh_code_sha256": "bc340b9981a4f6b998c531951d1e734c3393e915ffdabf43fa3639191e5b9fa9",
+  "ale_bins": "six initial quantile bins; adjacent sparse bins merged to minimum 20 rows",
+  "render_code_sha256": "b62caf9de37109a618ad7dace491c739b7f369eeee8c5c1bbe3e57e19045affb",
+  "post_render_qa": {
+    "new_unit_tests_passed": 9,
+    "plots_visually_inspected": 10,
+    "sample_weight_sum": 28995.0,
+    "branch_components_reconstruct": true,
+    "all_three_flat_types_have_supported_area_curves": true,
+    "self_contained_dashboard": true,
+    "original_source_and_submission_hashes": "unchanged"
+  }
+}

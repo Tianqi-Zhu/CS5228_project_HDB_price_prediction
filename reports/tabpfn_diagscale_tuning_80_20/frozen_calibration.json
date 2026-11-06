@@ -1,0 +1,7 @@
+{
+  "model": "frozen_1view",
+  "fit_rows": 102829,
+  "query_rows": 600,
+  "rmse_weighted": 521.8641848602077,
+  "rmse_unweighted": 521.33316042075
+}

@@ -1,0 +1,13 @@
+{
+  "fit_rows": 60079,
+  "epochs": 1,
+  "validation_targets_used": false,
+  "checkpoint_selection": false,
+  "frozen_digest": "2a40eff78f2084e02f1200115df8c0b350a393a3cf11d57e6464d3f70c182639",
+  "frozen_parameters_unchanged": true,
+  "adapter_sha256": "95ea5528a9471a239e28cf185ea59d0afdbcaed53e923cabc28f47408ae3a208",
+  "fit_seconds": 40.84890139999334,
+  "reused": true,
+  "source": ".cache\\tabpfn_spatial_temporal_residual_80_20\\adapter_2022-09.pt",
+  "context_exact_replay": true
+}

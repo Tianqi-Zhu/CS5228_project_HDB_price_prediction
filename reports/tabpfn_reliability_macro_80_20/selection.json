@@ -1,0 +1,13 @@
+{
+  "selected": "rent_forecast",
+  "earlier_rmse": {
+    "baseline": 601.9336991618188,
+    "reliability": 614.0620126940327,
+    "rent_forecast": 596.4432560007637,
+    "coe_increment": 607.6292929219736
+  },
+  "nested_July2023_selected": "rent_forecast",
+  "maximum_selection_target_month": "2024-04",
+  "query_rows": 4000,
+  "later_labels_used": false
+}

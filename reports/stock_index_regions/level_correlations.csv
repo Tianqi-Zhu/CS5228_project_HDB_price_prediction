@@ -1,0 +1,37 @@
+region,target,index,pearson_levels,warning
+Singapore,mean_rent,cap_seeded_22,0.7806027979410634,Trending levels; not evidence of a return/growth relationship
+Singapore,adjusted_mean_rent,cap_seeded_22,0.7825125541665718,Trending levels; not evidence of a return/growth relationship
+Singapore,mean_rent,equal_weight_inception,0.682950689766865,Trending levels; not evidence of a return/growth relationship
+Singapore,adjusted_mean_rent,equal_weight_inception,0.6853949836790785,Trending levels; not evidence of a return/growth relationship
+Singapore,mean_rent,equal_weight_matched,0.8516242984240574,Trending levels; not evidence of a return/growth relationship
+Singapore,adjusted_mean_rent,equal_weight_matched,0.8535387057741416,Trending levels; not evidence of a return/growth relationship
+central region,mean_rent,cap_seeded_22,0.7909520139157938,Trending levels; not evidence of a return/growth relationship
+central region,adjusted_mean_rent,cap_seeded_22,0.7915734486549515,Trending levels; not evidence of a return/growth relationship
+central region,mean_rent,equal_weight_inception,0.6850961467228073,Trending levels; not evidence of a return/growth relationship
+central region,adjusted_mean_rent,equal_weight_inception,0.6873793347409881,Trending levels; not evidence of a return/growth relationship
+central region,mean_rent,equal_weight_matched,0.8539574807194974,Trending levels; not evidence of a return/growth relationship
+central region,adjusted_mean_rent,equal_weight_matched,0.8556165683950319,Trending levels; not evidence of a return/growth relationship
+east region,mean_rent,cap_seeded_22,0.7874320007411711,Trending levels; not evidence of a return/growth relationship
+east region,adjusted_mean_rent,cap_seeded_22,0.78983691044852,Trending levels; not evidence of a return/growth relationship
+east region,mean_rent,equal_weight_inception,0.6882098850925729,Trending levels; not evidence of a return/growth relationship
+east region,adjusted_mean_rent,equal_weight_inception,0.6909880960679708,Trending levels; not evidence of a return/growth relationship
+east region,mean_rent,equal_weight_matched,0.8559942325127051,Trending levels; not evidence of a return/growth relationship
+east region,adjusted_mean_rent,equal_weight_matched,0.8585181866726518,Trending levels; not evidence of a return/growth relationship
+north region,mean_rent,cap_seeded_22,0.7702399947685741,Trending levels; not evidence of a return/growth relationship
+north region,adjusted_mean_rent,cap_seeded_22,0.7742744608322271,Trending levels; not evidence of a return/growth relationship
+north region,mean_rent,equal_weight_inception,0.6706022721204498,Trending levels; not evidence of a return/growth relationship
+north region,adjusted_mean_rent,equal_weight_inception,0.6742270478129336,Trending levels; not evidence of a return/growth relationship
+north region,mean_rent,equal_weight_matched,0.8399025231103302,Trending levels; not evidence of a return/growth relationship
+north region,adjusted_mean_rent,equal_weight_matched,0.8431458811646698,Trending levels; not evidence of a return/growth relationship
+north-east region,mean_rent,cap_seeded_22,0.7544782041865876,Trending levels; not evidence of a return/growth relationship
+north-east region,adjusted_mean_rent,cap_seeded_22,0.7585399493247853,Trending levels; not evidence of a return/growth relationship
+north-east region,mean_rent,equal_weight_inception,0.6618163258977865,Trending levels; not evidence of a return/growth relationship
+north-east region,adjusted_mean_rent,equal_weight_inception,0.6663842081613444,Trending levels; not evidence of a return/growth relationship
+north-east region,mean_rent,equal_weight_matched,0.8319838866845563,Trending levels; not evidence of a return/growth relationship
+north-east region,adjusted_mean_rent,equal_weight_matched,0.8356632896692263,Trending levels; not evidence of a return/growth relationship
+west region,mean_rent,cap_seeded_22,0.7892628266097876,Trending levels; not evidence of a return/growth relationship
+west region,adjusted_mean_rent,cap_seeded_22,0.7909360098349371,Trending levels; not evidence of a return/growth relationship
+west region,mean_rent,equal_weight_inception,0.6979088890167534,Trending levels; not evidence of a return/growth relationship
+west region,adjusted_mean_rent,equal_weight_inception,0.6992573122894774,Trending levels; not evidence of a return/growth relationship
+west region,mean_rent,equal_weight_matched,0.8637691605830219,Trending levels; not evidence of a return/growth relationship
+west region,adjusted_mean_rent,equal_weight_matched,0.8651900392341096,Trending levels; not evidence of a return/growth relationship

@@ -45,3 +45,10 @@ Latest main requirement-card execution and whole-tree verification: [checks/main
 本次 78 项 main 测试通过；默认 EDA 的三个层次实际运行完成，18 张表与冻结 M01 结果一致，11 张主图生成成功，原始 CSV 未改变。集成 `planned`、F1 生成链、Concat/TabPFN 文件核验和新帮助入口通过。大模型训练配方、最终结果与冻结运行时均未改动，也没有重新训练研究模型。运行记录位于 [checks/structure-cleanup/](checks/structure-cleanup/)。
 
 提交 `c854542` 的干净导出再次通过完整 78 项测试、626 份文件静态核验、集成 `planned` 与默认 main EDA 运行。未携带本地缓存和训练输出；验证后移除该临时导出，保留 [committed-export.json](checks/structure-cleanup/committed-export.json) 及日志。
+
+
+## Latest anniversary branch merge
+
+Current integration evidence is in [anniversary-merge/summary.json](checks/anniversary-merge/summary.json). The unchanged main package passes 78 tests; the isolated latest workflow passes 38 tests without skips. The original F1 50,000-row numerical replay passes. Source mapping and conflict choices are recorded separately from scientific model results.
+
+The strict fresh-refit serialized CSV SHA check in `analysis.main planned` fails in this runtime. Separate Y/J numerical replay reproduces RMSE/MAE exactly and bias within 4e-15 SGD; this does not establish byte-identical reproduction. The checker and frozen scientific inputs are unchanged. The candidate F2 export/source is present, while its association with the historical displayed score remains unverified.

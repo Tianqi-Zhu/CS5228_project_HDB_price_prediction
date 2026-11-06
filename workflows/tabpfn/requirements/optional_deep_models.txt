@@ -1,0 +1,5 @@
+# Optional sixth-wave models. Activate the core cs5228 environment first.
+# Install into .cache/deep-deps with --no-deps for the existing author loaders.
+# rtdl-num-embeddings and RTDL are supplied by environment.yml.
+tabm==0.0.3
+pytabkit==1.8.0

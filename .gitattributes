@@ -10,3 +10,6 @@ workflows/tabpfn/** -whitespace
 experiment/main/M07/tabpfn/** -whitespace
 experiment/appendix/T*/** -whitespace
 data/processed/** -text -diff -whitespace
+
+# Preserve imported historical report bytes, including generated HTML assets.
+reports/** -whitespace

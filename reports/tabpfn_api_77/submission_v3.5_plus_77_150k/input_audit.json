@@ -1,0 +1,41 @@
+{
+  "verified": true,
+  "context_rows": 150000,
+  "test_rows": 50000,
+  "features": 77,
+  "categorical_columns": [
+    "FLAT_TYPE_CLEAN",
+    "FLAT_MODEL_CLEAN",
+    "APPROVAL_MONTH_OF_YEAR",
+    "TOWN_CLEAN",
+    "SUBZONE",
+    "PLANNING_AREA",
+    "REGION",
+    "BLOCK_ID",
+    "STREET_ID"
+  ],
+  "all_feature_values_missingness_category_codes_and_ids_exact": true,
+  "original_residual_targets_and_baselines_exact": true,
+  "full_context_fits_live_service_limits": true,
+  "subsampling_requested": false,
+  "quote_within_recorded_daily_and_monthly_allowance": true,
+  "test_labels_available": false,
+  "model_selection_source": "https://docs.priorlabs.ai/models/selecting-model-version",
+  "model_selection": "Official hosted Plus selector v3.5_default; eight estimators, no Thinking",
+  "source_sha256": {
+    "data/train.csv": "2fe38ce9e0d8a02e9786f066d4a10d575d91f34be1d9111f0142e3f43fbfc8a5",
+    "data/test.csv": "a2ec03a0afc07c251c72cc0de2e15ac965a3b06291b304aaac53a375115ff4e0",
+    "data/example-submission.csv": "009e05582492d494df615e9526421023c82d070be029d118dc5ff2766810ecfc",
+    ".cache/tabpfn_fast_final_submission/features.joblib": "b7d5de3b3bb7b75a689cdb30408f3d4fd26da948cd46dc82c8896b1008bbad1c",
+    "analysis/tabpfn_api_77.py": "e77cbdcead26fe0f35648c440dbcbbcfb63ece891abf59a3afeb0d6911b626a6",
+    "analysis/audit_tabpfn_plus_submission.py": "856fc34a5203ca0dd820350ecb16f49091c2543c15a488a408ac07f8eed3a402",
+    ".cache/tabpfn_api_77_inputs/submission/manifest.json": "6cc182c9538a5afc9b4f1547896d28e2752e9aba6d75524792712ba680771de8",
+    ".cache/tabpfn_api_77_inputs/submission/train.parquet": "991c8a3de37a543857552fc17530712b00ba18c401a7af4482247ed59575139b",
+    ".cache/tabpfn_api_77_inputs/submission/query.parquet": "982dde88e89f43cdd0333f63c479c8e9b150637af22a6fd527f15fa77f5ef503",
+    ".cache/tabpfn_api_77_inputs/submission/arrays.npz": "e5c73a13018598bc4c926e75a71c00b242eedef7a788da4d8f6cf6ef4ff08261",
+    "reports/tabpfn_diagscale_mse_final_submission/submission_tabpfn_diagscale_mse_150k.csv": "5616125166abed5a353ab4d2f8a9788109a0b8078480ce622bbf8c7e8fb80500",
+    "reports/tabpfn_feature_ensemble_final_submission/submission_tabpfn_optimized_ensemble_150k.csv": "c67f5374040c74314110afc8dd631ae180bb63a54ef65abd7069be109796cea9",
+    "reports/tabpfn_top2_final_submission/submission_tabpfn_ABCDE_equal_150k.csv": "ef1c3efc55a5b7bd6f3717870a1d07a0cbda78a4f9f153db89e189aa50c00488",
+    "reports/tabpfn_top2_final_submission/submission_tabpfn_ABDE_weighted_150k.csv": "5c0fe66ab127ddbf63d1923e4002e2154460167ab2a47ae5f4047b923c37cdd5"
+  }
+}

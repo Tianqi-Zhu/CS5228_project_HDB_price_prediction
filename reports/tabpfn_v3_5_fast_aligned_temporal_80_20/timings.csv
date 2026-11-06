@@ -1,0 +1,3 @@
+model,fit_seconds,predict_seconds,peak_vram_gib,context_rows,subsampling,keep_cache_on_device,batch_size,batch_agreement,batch_max_difference_sgd,target_mode
+tabpfn_aligned_features,14.955965200031642,1181.8739742999896,17.721623420715332,121005,False,True,200,False,0.7306209924545328,raw
+tabpfn_aligned_residual,16.13869190000696,1010.3705197999952,17.720264434814453,121005,False,True,200,False,0.477703460153009,residual

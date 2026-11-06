@@ -1,0 +1,9 @@
+{
+  "fit_seconds": 30.455397199839354,
+  "predict_seconds": 120.58799879997969,
+  "peak_vram_gib": 9.064077854156494,
+  "feature_sha256": "17e7f86acc722f9a1050cab69aadfa0b0bc2a00231e36be951c3c19ec36d88b4",
+  "prediction_sha256": "c90a9104ba91a0842e59eaebb9667c6d81e92d001a55b49800e1664c57d5b7ec",
+  "context_rows": 120157,
+  "subsampling": false
+}

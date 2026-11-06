@@ -1,0 +1,8 @@
+{
+  "town": "queenstown",
+  "context_rows": 4905,
+  "query_rows": 1210,
+  "context_ids_sha256": "353d851d59b877ffc980db18e2520b7b0b3608a718cd071b1c48c64e00b3d759",
+  "query_ids_sha256": "674ccc7d7070279321cac13bdf98011b60681854c224893f8d61a6cfd7fe3586",
+  "settings_sha256": "7ec7fcf4dc279912e4ccac47faafbe82887e1d344fe25f59350c4dbcbc3e5916"
+}

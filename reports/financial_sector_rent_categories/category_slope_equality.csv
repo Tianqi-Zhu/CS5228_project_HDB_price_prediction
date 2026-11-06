@@ -1,0 +1,13 @@
+dimension,signal,target,lag,period,controls,months,categories,equality_p_value,max_t_statistic,block_months,bootstraps,q_all_equality_tests
+room_type,banks_equal,mean_rent,1,development,full_controls,29,5,0.7621189405297352,0.6910492810743237,3,2000,1.0
+room_type,banks_equal,adjusted_mean_rent,1,development,full_controls,29,5,0.7081459270364817,0.6848449229976262,3,2000,1.0
+room_type,finance_equal,mean_rent,1,development,full_controls,29,5,0.3843078460769615,1.561092447531148,3,2000,1.0
+room_type,finance_equal,adjusted_mean_rent,1,development,full_controls,29,5,0.34332833583208394,1.637885893794264,3,2000,1.0
+room_type,banks_cap_seeded,mean_rent,1,development,full_controls,29,5,0.8330834582708646,0.5619709451938419,3,2000,1.0
+room_type,banks_cap_seeded,adjusted_mean_rent,1,development,full_controls,29,5,0.743128435782109,0.749508278538374,3,2000,1.0
+flat_model,banks_equal,mean_rent,1,development,full_controls,29,9,0.9310344827586207,0.6257836090256907,3,2000,1.0
+flat_model,banks_equal,adjusted_mean_rent,1,development,full_controls,29,9,0.9175412293853074,0.6867815064375181,3,2000,1.0
+flat_model,finance_equal,mean_rent,1,development,full_controls,29,9,0.7786106946526736,1.1439525207168748,3,2000,1.0
+flat_model,finance_equal,adjusted_mean_rent,1,development,full_controls,29,9,0.8445777111444278,1.0310053897583842,3,2000,1.0
+flat_model,banks_cap_seeded,mean_rent,1,development,full_controls,29,9,0.9085457271364318,0.6985143757491707,3,2000,1.0
+flat_model,banks_cap_seeded,adjusted_mean_rent,1,development,full_controls,29,9,0.8785607196401799,0.782418908970387,3,2000,1.0

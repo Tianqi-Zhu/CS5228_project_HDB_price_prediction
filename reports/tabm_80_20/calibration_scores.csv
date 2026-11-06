@@ -1,0 +1,4 @@
+name,calibration_rmse_sgd,best_epoch,epochs_run,seconds,parameters,peak_vram_gib
+calibration/plain_lr002,520.44313350,1,13,50.85390780,3144160,0.75673294
+calibration/ple_lr002,521.99401369,2,14,72.25789570,3717600,1.23619938
+calibration/ple_lr001,521.18765265,2,14,72.42916490,3717600,1.23619938

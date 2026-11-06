@@ -1,0 +1,35 @@
+{
+  "n": 149841,
+  "clusters": 9395,
+  "full_design_rank": 320,
+  "slope_rank": 10,
+  "fe_rank": 310,
+  "projection_iterations": 21,
+  "source_rows": 150000,
+  "excluded_rows": 159,
+  "missing_by_required_column": {
+    "MONTHLY_RENT": 0,
+    "NEAREST_OPEN_MRT_KM": 0,
+    "APPROVAL_MONTH_INDEX": 0,
+    "FLAT_TYPE_CLEAN": 0,
+    "TOWN_CLEAN": 0,
+    "STREET_CLEAN": 0,
+    "BLOCK_CLEAN": 0,
+    "FLOOR_AREA_SQM": 0,
+    "BUILDING_AGE_YEARS": 159,
+    "MAX_FLOOR": 159,
+    "DISTANCE_TO_CBD_KM": 0
+  },
+  "month_type_levels": 285,
+  "town_levels": 26,
+  "ci_distribution": "Student t critical value approximated by third-order Cornish-Fisher expansion, df=independent building clusters minus 1",
+  "bin_boundaries": "right closed, left open; baseline [0,0.3], final bin (2,infinity)",
+  "sensitivity": {
+    "n": 149841,
+    "clusters": 9395,
+    "full_design_rank": 321,
+    "slope_rank": 11,
+    "fe_rank": 310,
+    "projection_iterations": 21
+  }
+}

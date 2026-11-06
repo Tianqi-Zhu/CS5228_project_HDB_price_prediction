@@ -1,0 +1,15 @@
+{
+  "fit_seconds": 1.2111392999067903,
+  "predict_seconds": 0.6969933999935165,
+  "peak_vram_gib": 2.454590320587158,
+  "context_rows": 6682,
+  "query_rows": 1601,
+  "features": 77,
+  "batch_size": 200,
+  "subsampling": false,
+  "parameter_versions_unchanged": true,
+  "town": "ang mo kio",
+  "rmse_sgd": 446.7811538246237,
+  "mae_sgd": 333.15925764043476,
+  "bias_sgd": -44.27932500289281
+}

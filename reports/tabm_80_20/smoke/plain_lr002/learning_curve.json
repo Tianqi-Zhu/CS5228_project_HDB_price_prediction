@@ -1,0 +1,7 @@
+[
+  {
+    "epoch": 1,
+    "train_member_mse_standardized": 0.8677626848220825,
+    "calibration_rmse_sgd": 578.3977641865936
+  }
+]

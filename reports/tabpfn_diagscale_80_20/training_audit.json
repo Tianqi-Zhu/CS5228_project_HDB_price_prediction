@@ -1,0 +1,40 @@
+{
+  "fit_rows": 102829,
+  "calibration_rows": 600,
+  "epochs_cap": 5,
+  "adapter_modules": 12,
+  "trainable_parameters": 8576,
+  "delta_l2": 16.102893950131552,
+  "fit_seconds": 288.0105686999741,
+  "peak_vram_gib": 11.8036470413208,
+  "frozen_backbone": true,
+  "finetune_task_size": 4096,
+  "epoch_validation": [
+    {
+      "epoch": -1,
+      "delta_l2": 0.0,
+      "validation_mse": 267754.8278722223
+    },
+    {
+      "epoch": 0,
+      "delta_l2": 10.811185836791992,
+      "validation_mse": 267632.78426214325
+    },
+    {
+      "epoch": 1,
+      "delta_l2": 16.102893829345703,
+      "validation_mse": 266801.61353622767
+    },
+    {
+      "epoch": 2,
+      "delta_l2": 18.24580192565918,
+      "validation_mse": 267390.093472294
+    },
+    {
+      "epoch": 3,
+      "delta_l2": 18.84313201904297,
+      "validation_mse": 267316.96226057765
+    }
+  ],
+  "autocast_dtype": "bfloat16"
+}

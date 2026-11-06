@@ -1,0 +1,35 @@
+basket,symbol,supplied_name
+banks,D05.SI,DBS Group
+banks,O39.SI,OCBC Bank
+banks,U11.SI,UOB
+reits_industrial,A17U.SI,Ascendas Reit
+reits_industrial,M44U.SI,Mapletree Logistics Trust
+reits_industrial,ME8U.SI,Mapletree Industrial Trust
+reits_commercial,C38U.SI,CapitaLand Mall Trust
+reits_commercial,K71U.SI,Keppel REIT
+reits_commercial,N2IU.SI,Mapletree Commercial Trust
+reits_commercial,T82U.SI,Suntec REIT
+reits_all,A17U.SI,Ascendas Reit
+reits_all,M44U.SI,Mapletree Logistics Trust
+reits_all,ME8U.SI,Mapletree Industrial Trust
+reits_all,C38U.SI,CapitaLand Mall Trust
+reits_all,K71U.SI,Keppel REIT
+reits_all,N2IU.SI,Mapletree Commercial Trust
+reits_all,T82U.SI,Suntec REIT
+reits_all,BUOU.SI,Frasers Logistics & Industrial Trust
+reits_all,HMN.SI,CapitaLand Ascott Trust
+developers,C09.SI,City Developments
+developers,U06.SI,Singapore Land
+developers,U14.SI,UOL Group
+developers,Z25.SI,Yanlord
+travel_hospitality,C6L.SI,Singapore Airlines
+travel_hospitality,S58.SI,SATS
+travel_hospitality,S59.SI,SIA Engineering Company
+travel_hospitality,G13.SI,Genting Singapore
+travel_hospitality,H15.SI,Hotel Properties Limited
+travel_hospitality,HMN.SI,CapitaLand Ascott Trust
+engineering,S63.SI,ST Engineering
+engineering,V03.SI,Venture Corporation
+engineering,5E2.SI,Seatrium
+telecom_infrastructure,Z74.SI,Singtel
+telecom_infrastructure,CJLU.SI,NetLink Trust

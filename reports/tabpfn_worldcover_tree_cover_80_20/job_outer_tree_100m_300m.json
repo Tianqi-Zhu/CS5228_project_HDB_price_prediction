@@ -1,0 +1,16 @@
+{
+  "stage": "outer",
+  "variant": "tree_100m_300m",
+  "smoke": false,
+  "added_columns": [
+    "TREE_CLASS_FRACTION_100M",
+    "TREE_CLASS_FRACTION_300M",
+    "TREE_COVER_UNAVAILABLE"
+  ],
+  "context_ids_sha256": "98813f363d04c121ef6396d316d7720ea30dde9711656099e028587d96e8c160",
+  "query_ids_sha256": "8452546a17ec266e405b692de53ff0cc0fcf68f2565c7092d8444e4ecf2edf1b",
+  "features_sha256": "554fec4c4bf84af483387c9aba7bdd2e192957ab26a0fc45d36796d019c1131a",
+  "checkpoint_sha256": "14e0b81285bca7a6d1ef121169f27f651f76dff49cad6c0b8779d5c836018550",
+  "settings_sha256": "c535d3393ffa2e683e1e007d43ad1df5fa67c75ec74acf514efee651db6a686f",
+  "frozen_predict_code_sha256": "192eaf9a05c1ebf672fa1c38aaa23797a2ccd0300ba83d495a872c4b6f726b47"
+}

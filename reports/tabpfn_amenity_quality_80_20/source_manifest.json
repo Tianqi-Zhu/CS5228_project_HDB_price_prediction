@@ -1,0 +1,524 @@
+{
+  "schools_2020_central.html": {
+    "url": "https://sgschooling.com/year/2020/central",
+    "policy": "MOE-derived historical P1 vacancy/application facts, preserved by SG Schooling; published tables are a secondary archive, not official school rankings. Original registration-year availability must be audited.",
+    "retrieved_at": "2026-10-30T13:36:51.662682+00:00",
+    "status": "acquired",
+    "bytes": 39107,
+    "sha256": "7c89487129f8782880ab6aa6ff5a7bdd57733f3ff80b0226e38834cd53022963",
+    "path": ".cache\\tabpfn_amenity_quality_80_20\\sources\\schools_2020_central.html",
+    "content_type": "text/html; charset=utf-8"
+  },
+  "schools_2020_north.html": {
+    "url": "https://sgschooling.com/year/2020/north",
+    "policy": "MOE-derived historical P1 vacancy/application facts, preserved by SG Schooling; published tables are a secondary archive, not official school rankings. Original registration-year availability must be audited.",
+    "retrieved_at": "2026-10-30T13:36:52.284616+00:00",
+    "status": "blocked",
+    "reason": "HTTPError: 404 Client Error: Not Found for url: https://sgschooling.com/year/2020/north"
+  },
+  "schools_2020_north-east.html": {
+    "url": "https://sgschooling.com/year/2020/north-east",
+    "policy": "MOE-derived historical P1 vacancy/application facts, preserved by SG Schooling; published tables are a secondary archive, not official school rankings. Original registration-year availability must be audited.",
+    "retrieved_at": "2026-10-30T13:36:52.467164+00:00",
+    "status": "blocked",
+    "reason": "HTTPError: 404 Client Error: Not Found for url: https://sgschooling.com/year/2020/north-east"
+  },
+  "schools_2020_east.html": {
+    "url": "https://sgschooling.com/year/2020/east",
+    "policy": "MOE-derived historical P1 vacancy/application facts, preserved by SG Schooling; published tables are a secondary archive, not official school rankings. Original registration-year availability must be audited.",
+    "retrieved_at": "2026-10-30T13:36:52.776324+00:00",
+    "status": "blocked",
+    "reason": "HTTPError: 404 Client Error: Not Found for url: https://sgschooling.com/year/2020/east"
+  },
+  "schools_2020_west.html": {
+    "url": "https://sgschooling.com/year/2020/west",
+    "policy": "MOE-derived historical P1 vacancy/application facts, preserved by SG Schooling; published tables are a secondary archive, not official school rankings. Original registration-year availability must be audited.",
+    "retrieved_at": "2026-10-30T13:36:53.028986+00:00",
+    "status": "blocked",
+    "reason": "HTTPError: 404 Client Error: Not Found for url: https://sgschooling.com/year/2020/west"
+  },
+  "schools_2021_central.html": {
+    "url": "https://sgschooling.com/year/2021/central",
+    "policy": "MOE-derived historical P1 vacancy/application facts, preserved by SG Schooling; published tables are a secondary archive, not official school rankings. Original registration-year availability must be audited.",
+    "retrieved_at": "2026-10-30T13:36:53.883346+00:00",
+    "status": "acquired",
+    "bytes": 37073,
+    "sha256": "582ca733eeef4335847bd3230d4e8678bf39d77fbf816fbaad2bf58bc738b50a",
+    "path": ".cache\\tabpfn_amenity_quality_80_20\\sources\\schools_2021_central.html",
+    "content_type": "text/html; charset=utf-8"
+  },
+  "schools_2021_north.html": {
+    "url": "https://sgschooling.com/year/2021/north",
+    "policy": "MOE-derived historical P1 vacancy/application facts, preserved by SG Schooling; published tables are a secondary archive, not official school rankings. Original registration-year availability must be audited.",
+    "retrieved_at": "2026-10-30T13:36:54.535287+00:00",
+    "status": "blocked",
+    "reason": "HTTPError: 404 Client Error: Not Found for url: https://sgschooling.com/year/2021/north"
+  },
+  "schools_2021_north-east.html": {
+    "url": "https://sgschooling.com/year/2021/north-east",
+    "policy": "MOE-derived historical P1 vacancy/application facts, preserved by SG Schooling; published tables are a secondary archive, not official school rankings. Original registration-year availability must be audited.",
+    "retrieved_at": "2026-10-30T13:36:54.695127+00:00",
+    "status": "blocked",
+    "reason": "HTTPError: 404 Client Error: Not Found for url: https://sgschooling.com/year/2021/north-east"
+  },
+  "schools_2021_east.html": {
+    "url": "https://sgschooling.com/year/2021/east",
+    "policy": "MOE-derived historical P1 vacancy/application facts, preserved by SG Schooling; published tables are a secondary archive, not official school rankings. Original registration-year availability must be audited.",
+    "retrieved_at": "2026-10-30T13:36:55.059145+00:00",
+    "status": "blocked",
+    "reason": "HTTPError: 404 Client Error: Not Found for url: https://sgschooling.com/year/2021/east"
+  },
+  "schools_2021_west.html": {
+    "url": "https://sgschooling.com/year/2021/west",
+    "policy": "MOE-derived historical P1 vacancy/application facts, preserved by SG Schooling; published tables are a secondary archive, not official school rankings. Original registration-year availability must be audited.",
+    "retrieved_at": "2026-10-30T13:36:56.641930+00:00",
+    "status": "blocked",
+    "reason": "HTTPError: 404 Client Error: Not Found for url: https://sgschooling.com/year/2021/west"
+  },
+  "schools_2022_central.html": {
+    "url": "https://sgschooling.com/year/2022/central",
+    "policy": "MOE-derived historical P1 vacancy/application facts, preserved by SG Schooling; published tables are a secondary archive, not official school rankings. Original registration-year availability must be audited.",
+    "retrieved_at": "2026-10-30T13:36:57.437299+00:00",
+    "status": "acquired",
+    "bytes": 36325,
+    "sha256": "527aaf161560cbcd13f0a126aaae70d70629445bb2e80ef26a792a79785b2b74",
+    "path": ".cache\\tabpfn_amenity_quality_80_20\\sources\\schools_2022_central.html",
+    "content_type": "text/html; charset=utf-8"
+  },
+  "schools_2022_north.html": {
+    "url": "https://sgschooling.com/year/2022/north",
+    "policy": "MOE-derived historical P1 vacancy/application facts, preserved by SG Schooling; published tables are a secondary archive, not official school rankings. Original registration-year availability must be audited.",
+    "retrieved_at": "2026-10-30T13:37:00.010866+00:00",
+    "status": "blocked",
+    "reason": "HTTPError: 404 Client Error: Not Found for url: https://sgschooling.com/year/2022/north"
+  },
+  "schools_2022_north-east.html": {
+    "url": "https://sgschooling.com/year/2022/north-east",
+    "policy": "MOE-derived historical P1 vacancy/application facts, preserved by SG Schooling; published tables are a secondary archive, not official school rankings. Original registration-year availability must be audited.",
+    "retrieved_at": "2026-10-30T13:37:00.176117+00:00",
+    "status": "blocked",
+    "reason": "HTTPError: 404 Client Error: Not Found for url: https://sgschooling.com/year/2022/north-east"
+  },
+  "schools_2022_east.html": {
+    "url": "https://sgschooling.com/year/2022/east",
+    "policy": "MOE-derived historical P1 vacancy/application facts, preserved by SG Schooling; published tables are a secondary archive, not official school rankings. Original registration-year availability must be audited.",
+    "retrieved_at": "2026-10-30T13:37:00.946913+00:00",
+    "status": "blocked",
+    "reason": "HTTPError: 404 Client Error: Not Found for url: https://sgschooling.com/year/2022/east"
+  },
+  "schools_2022_west.html": {
+    "url": "https://sgschooling.com/year/2022/west",
+    "policy": "MOE-derived historical P1 vacancy/application facts, preserved by SG Schooling; published tables are a secondary archive, not official school rankings. Original registration-year availability must be audited.",
+    "retrieved_at": "2026-10-30T13:37:01.226373+00:00",
+    "status": "blocked",
+    "reason": "HTTPError: 404 Client Error: Not Found for url: https://sgschooling.com/year/2022/west"
+  },
+  "schools_2023_central.html": {
+    "url": "https://sgschooling.com/year/2023/central",
+    "policy": "MOE-derived historical P1 vacancy/application facts, preserved by SG Schooling; published tables are a secondary archive, not official school rankings. Original registration-year availability must be audited.",
+    "retrieved_at": "2026-10-30T13:37:02.032426+00:00",
+    "status": "acquired",
+    "bytes": 36319,
+    "sha256": "fda27851baf87c32cbb0c75056c623b108e54f2b4443203dd885e2907269c4d5",
+    "path": ".cache\\tabpfn_amenity_quality_80_20\\sources\\schools_2023_central.html",
+    "content_type": "text/html; charset=utf-8"
+  },
+  "schools_2023_north.html": {
+    "url": "https://sgschooling.com/year/2023/north",
+    "policy": "MOE-derived historical P1 vacancy/application facts, preserved by SG Schooling; published tables are a secondary archive, not official school rankings. Original registration-year availability must be audited.",
+    "retrieved_at": "2026-10-30T13:37:02.619426+00:00",
+    "status": "blocked",
+    "reason": "HTTPError: 404 Client Error: Not Found for url: https://sgschooling.com/year/2023/north"
+  },
+  "schools_2023_north-east.html": {
+    "url": "https://sgschooling.com/year/2023/north-east",
+    "policy": "MOE-derived historical P1 vacancy/application facts, preserved by SG Schooling; published tables are a secondary archive, not official school rankings. Original registration-year availability must be audited.",
+    "retrieved_at": "2026-10-30T13:37:02.759993+00:00",
+    "status": "blocked",
+    "reason": "HTTPError: 404 Client Error: Not Found for url: https://sgschooling.com/year/2023/north-east"
+  },
+  "schools_2023_east.html": {
+    "url": "https://sgschooling.com/year/2023/east",
+    "policy": "MOE-derived historical P1 vacancy/application facts, preserved by SG Schooling; published tables are a secondary archive, not official school rankings. Original registration-year availability must be audited.",
+    "retrieved_at": "2026-10-30T13:37:03.669210+00:00",
+    "status": "blocked",
+    "reason": "HTTPError: 404 Client Error: Not Found for url: https://sgschooling.com/year/2023/east"
+  },
+  "schools_2023_west.html": {
+    "url": "https://sgschooling.com/year/2023/west",
+    "policy": "MOE-derived historical P1 vacancy/application facts, preserved by SG Schooling; published tables are a secondary archive, not official school rankings. Original registration-year availability must be audited.",
+    "retrieved_at": "2026-10-30T13:37:04.383002+00:00",
+    "status": "blocked",
+    "reason": "HTTPError: 404 Client Error: Not Found for url: https://sgschooling.com/year/2023/west"
+  },
+  "fct_2019.pdf": {
+    "url": "https://fct.frasersproperty.com/misc/ar2019.pdf",
+    "policy": "Owner fiscal-year report; conservative January following year for availability, except publication verified later.",
+    "retrieved_at": "2026-10-30T13:40:56.964332+00:00",
+    "status": "acquired",
+    "bytes": 10755513,
+    "sha256": "1441beac47d0b1293a6d621a3a2426d6193b1bba2597ffa038acc7b21fe1ed09",
+    "path": ".cache\\tabpfn_amenity_quality_80_20\\sources\\fct_2019.pdf",
+    "content_type": "application/pdf"
+  },
+  "fct_2020.pdf": {
+    "url": "https://fct.frasersproperty.com/misc/FCT-AR2020.pdf",
+    "policy": "Owner annual report; fiscal year ends September. Measurements enter from a conservative next-year January origin, after publication verification.",
+    "retrieved_at": "2026-10-30T13:37:05.730567+00:00",
+    "status": "acquired",
+    "bytes": 8799761,
+    "sha256": "eb909fef6443a2873eadd6ef5e890ce1adaf7c505d299a54df2ba193093b9e6c",
+    "path": ".cache\\tabpfn_amenity_quality_80_20\\sources\\fct_2020.pdf",
+    "content_type": "application/pdf"
+  },
+  "fct_2021.pdf": {
+    "url": "https://fct.frasersproperty.com/newsroom/20211227_072751_J69U_VAYJFGMQYP0991KV.1.pdf",
+    "policy": "Owner fiscal-year report; conservative January following year for availability, except publication verified later.",
+    "retrieved_at": "2026-10-30T13:40:53.476675+00:00",
+    "status": "acquired",
+    "bytes": 6104568,
+    "sha256": "0c1827a8c2b3b9f9c1d49d4d4d8aef0bf70fbed14c1cf0540a821c5afdee10b0",
+    "path": ".cache\\tabpfn_amenity_quality_80_20\\sources\\fct_2021.pdf",
+    "content_type": "application/pdf"
+  },
+  "fct_2022.pdf": {
+    "url": "https://fct.frasersproperty.com/misc/ar2022.pdf",
+    "policy": "Owner fiscal-year report; conservative January following year for availability, except publication verified later.",
+    "retrieved_at": "2026-10-30T13:40:48.581662+00:00",
+    "status": "acquired",
+    "bytes": 10436642,
+    "sha256": "2a454bc4c58c687da7534250134a8f6890ab784c4eba77abca2837106853e30f",
+    "path": ".cache\\tabpfn_amenity_quality_80_20\\sources\\fct_2022.pdf",
+    "content_type": "application/pdf"
+  },
+  "fct_2023.pdf": {
+    "url": "https://fct.frasersproperty.com/misc/FCT-AR2023.pdf",
+    "policy": "Owner annual report; fiscal year ends September. Measurements enter from a conservative next-year January origin, after publication verification.",
+    "retrieved_at": "2026-10-30T13:37:16.889535+00:00",
+    "status": "acquired",
+    "bytes": 6550531,
+    "sha256": "a9cef0da3dac4ebddc17a3dac75f135520350c1dbfd4fca45cd69658b7bcc920",
+    "path": ".cache\\tabpfn_amenity_quality_80_20\\sources\\fct_2023.pdf",
+    "content_type": "application/pdf"
+  },
+  "cict_2020_index.html": {
+    "url": "https://investor.cict.com.sg/misc/ar2020/",
+    "policy": "Owner annual report digital edition; used to discover the actual source PDF and publication date.",
+    "retrieved_at": "2026-10-30T13:37:22.195936+00:00",
+    "status": "acquired",
+    "bytes": 3694,
+    "sha256": "e572c9e275231408fd0c98b00ebeee3a8cb3d16c7791750688e519ae123be220",
+    "path": ".cache\\tabpfn_amenity_quality_80_20\\sources\\cict_2020_index.html",
+    "content_type": "text/html"
+  },
+  "cict_2021_index.html": {
+    "url": "https://investor.cict.com.sg/misc/ar2021/",
+    "policy": "Owner annual report digital edition; used to discover the actual source PDF and publication date.",
+    "retrieved_at": "2026-10-30T13:37:22.431427+00:00",
+    "status": "acquired",
+    "bytes": 3734,
+    "sha256": "d9c70169a498f05506fc4da1db7d296ac0185fee38a59adeb9944dbed9905a87",
+    "path": ".cache\\tabpfn_amenity_quality_80_20\\sources\\cict_2021_index.html",
+    "content_type": "text/html"
+  },
+  "cict_2022_index.html": {
+    "url": "https://investor.cict.com.sg/misc/ar2022/",
+    "policy": "Owner annual report digital edition; used to discover the actual source PDF and publication date.",
+    "retrieved_at": "2026-10-30T13:37:22.485547+00:00",
+    "status": "acquired",
+    "bytes": 3402,
+    "sha256": "5ffcc939fb79a1f33b73dd3225b73925c11ff5d219ec03d8281e97ed84a5d0e3",
+    "path": ".cache\\tabpfn_amenity_quality_80_20\\sources\\cict_2022_index.html",
+    "content_type": "text/html"
+  },
+  "cict_2023_index.html": {
+    "url": "https://investor.cict.com.sg/misc/ar2023/",
+    "policy": "Owner annual report digital edition; used to discover the actual source PDF and publication date.",
+    "retrieved_at": "2026-10-30T13:37:22.553315+00:00",
+    "status": "acquired",
+    "bytes": 76072,
+    "sha256": "9e0d1999c85d9b54b5e3a008b890192fbe6d87702f676bfe23eceefdb301c24e",
+    "path": ".cache\\tabpfn_amenity_quality_80_20\\sources\\cict_2023_index.html",
+    "content_type": "text/html"
+  },
+  "bus_commit_2020.json": {
+    "url": "https://api.github.com/repos/cheeaun/sgbusdata/commits?path=data/v1/stops.json&until=2020-12-31T23:59:59Z&per_page=1",
+    "policy": "Public git snapshot of LTA-derived stops/services; commit time is the earliest verifiable archive availability, not an assumed current network.",
+    "retrieved_at": "2026-10-30T13:37:22.771094+00:00",
+    "status": "acquired",
+    "bytes": 2,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "path": ".cache\\tabpfn_amenity_quality_80_20\\sources\\bus_commit_2020.json",
+    "content_type": "application/json; charset=utf-8"
+  },
+  "bus_commit_2021.json": {
+    "url": "https://api.github.com/repos/cheeaun/sgbusdata/commits?path=data/v1/stops.json&until=2021-12-31T23:59:59Z&per_page=1",
+    "policy": "Public git snapshot of LTA-derived stops/services; commit time is the earliest verifiable archive availability, not an assumed current network.",
+    "retrieved_at": "2026-10-30T13:37:23.367036+00:00",
+    "status": "acquired",
+    "bytes": 3297,
+    "sha256": "92092ea419f5c41d2dbd61eba9de5ad4ac7dd2c38a5ceca8700029174e9c6175",
+    "path": ".cache\\tabpfn_amenity_quality_80_20\\sources\\bus_commit_2021.json",
+    "content_type": "application/json; charset=utf-8"
+  },
+  "bus_2021_stops.json": {
+    "url": "https://raw.githubusercontent.com/cheeaun/sgbusdata/fab6b34b67dcea7c2ba93e03bbacc5c2c01ddef4/data/v1/stops.json",
+    "policy": "LTA-derived public snapshot; git fab6b34b67dcea7c2ba93e03bbacc5c2c01ddef4; do not confuse unique bus services with bus frequency or passengers.",
+    "retrieved_at": "2026-10-30T13:37:23.843904+00:00",
+    "status": "acquired",
+    "bytes": 297445,
+    "sha256": "5bd6f363cdfccdf141946329b9dc6d589a7dca914e70a079568ca5e7b7dd64ab",
+    "path": ".cache\\tabpfn_amenity_quality_80_20\\sources\\bus_2021_stops.json",
+    "content_type": "text/plain; charset=utf-8"
+  },
+  "bus_2021_services.json": {
+    "url": "https://raw.githubusercontent.com/cheeaun/sgbusdata/fab6b34b67dcea7c2ba93e03bbacc5c2c01ddef4/data/v1/services.json",
+    "policy": "LTA-derived public snapshot; git fab6b34b67dcea7c2ba93e03bbacc5c2c01ddef4; do not confuse unique bus services with bus frequency or passengers.",
+    "retrieved_at": "2026-10-30T13:37:30.544712+00:00",
+    "status": "acquired",
+    "bytes": 394786,
+    "sha256": "b12d48343fd64c3736a0ad0ebe12ca88553606732fcdc2702f7aaacdf9a7e10e",
+    "path": ".cache\\tabpfn_amenity_quality_80_20\\sources\\bus_2021_services.json",
+    "content_type": "text/plain; charset=utf-8"
+  },
+  "bus_commit_2022.json": {
+    "url": "https://api.github.com/repos/cheeaun/sgbusdata/commits?path=data/v1/stops.json&until=2022-12-31T23:59:59Z&per_page=1",
+    "policy": "Public git snapshot of LTA-derived stops/services; commit time is the earliest verifiable archive availability, not an assumed current network.",
+    "retrieved_at": "2026-10-30T13:37:30.908456+00:00",
+    "status": "acquired",
+    "bytes": 3297,
+    "sha256": "fc926cb6899da541fbc506e44177b9293a810fe9f1be51282996389ddbf2e43b",
+    "path": ".cache\\tabpfn_amenity_quality_80_20\\sources\\bus_commit_2022.json",
+    "content_type": "application/json; charset=utf-8"
+  },
+  "bus_2022_stops.json": {
+    "url": "https://raw.githubusercontent.com/cheeaun/sgbusdata/fd62d86ba0439832b1dd187ea4511b82dc11185c/data/v1/stops.json",
+    "policy": "LTA-derived public snapshot; git fd62d86ba0439832b1dd187ea4511b82dc11185c; do not confuse unique bus services with bus frequency or passengers.",
+    "retrieved_at": "2026-10-30T13:37:31.338257+00:00",
+    "status": "acquired",
+    "bytes": 298991,
+    "sha256": "bfeb4ac3504dffc3d83358a0d59e78d1686ceaa2ecfcc78a9896b5018ec847e2",
+    "path": ".cache\\tabpfn_amenity_quality_80_20\\sources\\bus_2022_stops.json",
+    "content_type": "text/plain; charset=utf-8"
+  },
+  "bus_2022_services.json": {
+    "url": "https://raw.githubusercontent.com/cheeaun/sgbusdata/fd62d86ba0439832b1dd187ea4511b82dc11185c/data/v1/services.json",
+    "policy": "LTA-derived public snapshot; git fd62d86ba0439832b1dd187ea4511b82dc11185c; do not confuse unique bus services with bus frequency or passengers.",
+    "retrieved_at": "2026-10-30T13:37:31.751571+00:00",
+    "status": "acquired",
+    "bytes": 376477,
+    "sha256": "28dc111e463a368ca3744f9d8aca0f2769ba54525693b7f1aa337c91488c65a3",
+    "path": ".cache\\tabpfn_amenity_quality_80_20\\sources\\bus_2022_services.json",
+    "content_type": "text/plain; charset=utf-8"
+  },
+  "bus_commit_2023.json": {
+    "url": "https://api.github.com/repos/cheeaun/sgbusdata/commits?path=data/v1/stops.json&until=2023-12-31T23:59:59Z&per_page=1",
+    "policy": "Public git snapshot of LTA-derived stops/services; commit time is the earliest verifiable archive availability, not an assumed current network.",
+    "retrieved_at": "2026-10-30T13:37:32.520473+00:00",
+    "status": "acquired",
+    "bytes": 3297,
+    "sha256": "121938a0465eac6136e0f6db77f3024ed23b51d61f99f7a93dc0928cfc1ff6f3",
+    "path": ".cache\\tabpfn_amenity_quality_80_20\\sources\\bus_commit_2023.json",
+    "content_type": "application/json; charset=utf-8"
+  },
+  "bus_2023_stops.json": {
+    "url": "https://raw.githubusercontent.com/cheeaun/sgbusdata/91f8a33c04af08d97888a57f4d15d5cddd923bc7/data/v1/stops.json",
+    "policy": "LTA-derived public snapshot; git 91f8a33c04af08d97888a57f4d15d5cddd923bc7; do not confuse unique bus services with bus frequency or passengers.",
+    "retrieved_at": "2026-10-30T13:37:32.956029+00:00",
+    "status": "acquired",
+    "bytes": 396890,
+    "sha256": "021733e492a194510b421db37951f7dbe24ac87e073404cef55eaece39c5ca94",
+    "path": ".cache\\tabpfn_amenity_quality_80_20\\sources\\bus_2023_stops.json",
+    "content_type": "text/plain; charset=utf-8"
+  },
+  "bus_2023_services.json": {
+    "url": "https://raw.githubusercontent.com/cheeaun/sgbusdata/91f8a33c04af08d97888a57f4d15d5cddd923bc7/data/v1/services.json",
+    "policy": "LTA-derived public snapshot; git 91f8a33c04af08d97888a57f4d15d5cddd923bc7; do not confuse unique bus services with bus frequency or passengers.",
+    "retrieved_at": "2026-10-30T13:37:33.343785+00:00",
+    "status": "acquired",
+    "bytes": 378924,
+    "sha256": "56052560fd5a87555e49430798aeb6b8dec889dd1d3a1d3e92492c890aacb818",
+    "path": ".cache\\tabpfn_amenity_quality_80_20\\sources\\bus_2023_services.json",
+    "content_type": "text/plain; charset=utf-8"
+  },
+  "schools_2020_all.html": {
+    "url": "https://sgschooling.com/year/2020/all",
+    "policy": "Historical MOE-derived school registration facts; SG Schooling archive, all planning areas; originals published during the registration year.",
+    "retrieved_at": "2026-10-30T13:38:23.608251+00:00",
+    "status": "acquired",
+    "bytes": 431683,
+    "sha256": "79f101b36008b2d3cc753720e31c20ddafa2d20d6765956494b6c11bf4707437",
+    "path": ".cache\\tabpfn_amenity_quality_80_20\\sources\\schools_2020_all.html",
+    "content_type": "text/html; charset=utf-8"
+  },
+  "schools_2021_all.html": {
+    "url": "https://sgschooling.com/year/2021/all",
+    "policy": "Historical MOE-derived school registration facts; SG Schooling archive, all planning areas; originals published during the registration year.",
+    "retrieved_at": "2026-10-30T13:38:24.046677+00:00",
+    "status": "acquired",
+    "bytes": 420296,
+    "sha256": "1ca022f287cc258afd5b7b1d0895f6b8be51858649d3de75de736550d20a476f",
+    "path": ".cache\\tabpfn_amenity_quality_80_20\\sources\\schools_2021_all.html",
+    "content_type": "text/html; charset=utf-8"
+  },
+  "schools_2022_all.html": {
+    "url": "https://sgschooling.com/year/2022/all",
+    "policy": "Historical MOE-derived school registration facts; SG Schooling archive, all planning areas; originals published during the registration year.",
+    "retrieved_at": "2026-10-30T13:38:24.327298+00:00",
+    "status": "acquired",
+    "bytes": 386057,
+    "sha256": "4b201e5dc7af37f376ce83abdaf7145a4359ef466f010ff1bfae037b34af9fbd",
+    "path": ".cache\\tabpfn_amenity_quality_80_20\\sources\\schools_2022_all.html",
+    "content_type": "text/html; charset=utf-8"
+  },
+  "schools_2023_all.html": {
+    "url": "https://sgschooling.com/year/2023/all",
+    "policy": "Historical MOE-derived school registration facts; SG Schooling archive, all planning areas; originals published during the registration year.",
+    "retrieved_at": "2026-10-30T13:38:24.758829+00:00",
+    "status": "acquired",
+    "bytes": 383622,
+    "sha256": "9cb56327f2b853aab19f1da5b51693aa24481d05e7be370cc4efc937e23d5db0",
+    "path": ".cache\\tabpfn_amenity_quality_80_20\\sources\\schools_2023_all.html",
+    "content_type": "text/html; charset=utf-8"
+  },
+  "cict_reports.html": {
+    "url": "https://investor.cict.com.sg/ar.html",
+    "policy": "Owner annual report download index; actual PDF links, not guessed filenames.",
+    "retrieved_at": "2026-10-30T13:38:25.102491+00:00",
+    "status": "acquired",
+    "bytes": 125197,
+    "sha256": "ff489e22d0b8d5e3bd7f994836c9ef70d5e7ff6514ec75eaf6178e0a99b0f458",
+    "path": ".cache\\tabpfn_amenity_quality_80_20\\sources\\cict_reports.html",
+    "content_type": "text/html"
+  },
+  "cict_2023.pdf": {
+    "url": "https://investor.cict.com.sg/misc/ar2023.pdf",
+    "policy": "Owner calendar-year annual report; use no earlier than verified publication or conservative May of the following year.",
+    "retrieved_at": "2026-10-30T13:38:25.594060+00:00",
+    "status": "acquired",
+    "bytes": 17733912,
+    "sha256": "c5586929ac019c291e0d10c872d34ff004541b96aec68206aea5ea29d21a528e",
+    "path": ".cache\\tabpfn_amenity_quality_80_20\\sources\\cict_2023.pdf",
+    "content_type": "application/pdf"
+  },
+  "cict_2022.pdf": {
+    "url": "https://investor.cict.com.sg/misc/ar2022.pdf",
+    "policy": "Owner calendar-year annual report; use no earlier than verified publication or conservative May of the following year.",
+    "retrieved_at": "2026-10-30T13:38:38.552540+00:00",
+    "status": "acquired",
+    "bytes": 8935310,
+    "sha256": "a119793e6f2500594a5f8d3c204a518f219584d4f324e8bde2e14e61ca5f14ef",
+    "path": ".cache\\tabpfn_amenity_quality_80_20\\sources\\cict_2022.pdf",
+    "content_type": "application/pdf"
+  },
+  "cict_2021.pdf": {
+    "url": "https://investor.cict.com.sg/misc/ar2021.pdf",
+    "policy": "Owner calendar-year annual report; use no earlier than verified publication or conservative May of the following year.",
+    "retrieved_at": "2026-10-30T13:38:44.065896+00:00",
+    "status": "acquired",
+    "bytes": 8219241,
+    "sha256": "f6b19e47d8f582a2325664de6c51da7fb294f37086633f716cdc8f4419216769",
+    "path": ".cache\\tabpfn_amenity_quality_80_20\\sources\\cict_2021.pdf",
+    "content_type": "application/pdf"
+  },
+  "cict_2020.pdf": {
+    "url": "https://ir.listedcompany.com/tracker.pl?type=5&id=143690&m=3babae2de3e5b106c1887901e6c93c30555fc81cb22cba6013d15fb2c1ede33a&redirect=https%3A%2F%2Finvestor.cict.com.sg%2Fmisc%2Far2020.pdf",
+    "policy": "Owner calendar-year annual report; use no earlier than verified publication or conservative May of the following year.",
+    "retrieved_at": "2026-10-30T13:38:49.606565+00:00",
+    "status": "acquired",
+    "bytes": 12140556,
+    "sha256": "7b23b619343c6f067aa9fa5e1899ab1d0ff379a50fc228a82d77434933139d81",
+    "path": ".cache\\tabpfn_amenity_quality_80_20\\sources\\cict_2020.pdf",
+    "content_type": "application/pdf"
+  },
+  "fct_reports.html": {
+    "url": "https://fct.frasersproperty.com/ar.html",
+    "policy": "Owner financial report index",
+    "retrieved_at": "2026-10-30T13:38:55.982782+00:00",
+    "status": "acquired",
+    "bytes": 90289,
+    "sha256": "48f54fd273f79491f08553f3fa729fc9c0aa570b3577ddc09bfa1126af6ff342",
+    "path": ".cache\\tabpfn_amenity_quality_80_20\\sources\\fct_reports.html",
+    "content_type": "text/html"
+  },
+  "bus_commit_2020_legacy.json": {
+    "url": "https://api.github.com/repos/cheeaun/sgbusdata/commits?path=data/stops.json&until=2020-12-31T23:59:59Z&per_page=1",
+    "policy": "Resolve the historical pre-v1 directory",
+    "retrieved_at": "2026-10-30T13:38:56.253456+00:00",
+    "status": "acquired",
+    "bytes": 2,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "path": ".cache\\tabpfn_amenity_quality_80_20\\sources\\bus_commit_2020_legacy.json",
+    "content_type": "application/json; charset=utf-8"
+  },
+  "train_kaggle_metadata.json": {
+    "url": "https://www.kaggle.com/api/v1/datasets/list/yorkyong/singapore-passenger-volume-by-train-stations",
+    "policy": "Public archive of LTA station passenger counts; inspect observation coverage before download",
+    "retrieved_at": "2026-10-30T13:38:56.768214+00:00",
+    "status": "acquired",
+    "bytes": 1567,
+    "sha256": "c32cf7ea75cd5a5904e8db0fc5396d1a4a292f8fc1a3bbcc910e6366e6d71399",
+    "path": ".cache\\tabpfn_amenity_quality_80_20\\sources\\train_kaggle_metadata.json",
+    "content_type": "application/json"
+  },
+  "cict_2019.pdf": {
+    "url": "https://investor.cict.com.sg/newsroom/20200409_063017_C38U_131S366GOBVE1WAR.2.pdf",
+    "policy": "Owner CMT Annual Report 2019, published April 9 2020; available May 2020 conservatively",
+    "retrieved_at": "2026-10-30T13:41:04.153185+00:00",
+    "status": "acquired",
+    "bytes": 10749801,
+    "sha256": "0fcf1b88bb0db252861193b04a1884623ecd1486a1cef67bdb5067b3d3aec9ab",
+    "path": ".cache\\tabpfn_amenity_quality_80_20\\sources\\cict_2019.pdf",
+    "content_type": "application/pdf"
+  },
+  "train_2023_archive.zip": {
+    "url": "https://www.kaggle.com/api/v1/datasets/download/yorkyong/singapore-passenger-volume-by-train-stations",
+    "policy": "LTA passenger volume archive covering August\u2013October 2023, uploaded December 6 2023; available January 2024 conservatively. No imputation into earlier dates.",
+    "retrieved_at": "2026-10-30T13:41:10.487701+00:00",
+    "status": "acquired",
+    "bytes": 213268,
+    "sha256": "184b10eea25e9235978b3b770172af6ea0619f2c07b2721449691d206b58e336",
+    "path": ".cache\\tabpfn_amenity_quality_80_20\\sources\\train_2023_archive.zip",
+    "content_type": "application/zip"
+  },
+  "bus_first_commit.json": {
+    "url": "https://api.github.com/repos/cheeaun/sgbusdata/commits?path=data/v1/stops.json&until=2021-06-30T23:59:59Z&per_page=1",
+    "policy": "Earlier public bus snapshot to improve chronological source coverage",
+    "retrieved_at": "2026-10-30T13:41:12.092774+00:00",
+    "status": "acquired",
+    "bytes": 3220,
+    "sha256": "063ae0d3a22374ecf992b3ed8b763c3cff6f349f3c96a3b4f1b52385da9756de",
+    "path": ".cache\\tabpfn_amenity_quality_80_20\\sources\\bus_first_commit.json",
+    "content_type": "application/json; charset=utf-8"
+  },
+  "bus_first_stops.json": {
+    "url": "https://raw.githubusercontent.com/cheeaun/sgbusdata/dccd8d898ac2b6ca02c705c3d5bb2f1d858a146f/data/v1/stops.json",
+    "policy": "LTA-derived public bus archive; effective from the documented git commit month end",
+    "retrieved_at": "2026-10-30T13:41:13.031257+00:00",
+    "status": "acquired",
+    "bytes": 296528,
+    "sha256": "5515611496beede06d0e02ac157e3edf6eb8fa22e7d7e541327bc0d95a9220ee",
+    "path": ".cache\\tabpfn_amenity_quality_80_20\\sources\\bus_first_stops.json",
+    "content_type": "text/plain; charset=utf-8"
+  },
+  "bus_first_services.json": {
+    "url": "https://raw.githubusercontent.com/cheeaun/sgbusdata/dccd8d898ac2b6ca02c705c3d5bb2f1d858a146f/data/v1/services.json",
+    "policy": "LTA-derived public bus archive; effective from the documented git commit month end",
+    "retrieved_at": "2026-10-30T13:41:13.595744+00:00",
+    "status": "acquired",
+    "bytes": 392830,
+    "sha256": "76c1a7128047da8c475cf4ff02089a6d7debe64ed298eedad22cba339970ca49",
+    "path": ".cache\\tabpfn_amenity_quality_80_20\\sources\\bus_first_services.json",
+    "content_type": "text/plain; charset=utf-8"
+  },
+  "jurong_point_2022.html": {
+    "url": "https://www.linkreit.com/en/media/news-releases/link-enters-singapore-through-the-acquisition-of-jurong-point-and-swing-by-thomson-plaza/",
+    "policy": "Link REIT acquisition release dated December 28 2022; Jurong Point NLA approximately 720,000 sqft. Partial Thomson Plaza interest is excluded.",
+    "retrieved_at": "2026-10-30T13:56:10.393244+00:00",
+    "status": "acquired",
+    "bytes": 70661,
+    "sha256": "0fcce69451f1659d055987bd4bc3529fbb29f9bab331dc9910f8fc8c1b1dd5a0",
+    "path": ".cache\\tabpfn_amenity_quality_80_20\\sources\\jurong_point_2022.html",
+    "content_type": "text/html; charset=utf-8"
+  }
+}

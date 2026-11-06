@@ -1,0 +1,10 @@
+{
+  "fit_seconds": 19.87382969999453,
+  "predict_seconds": 2486.9757653000415,
+  "peak_vram_gib": 7.345986843109131,
+  "context_rows": 150000,
+  "test_rows": 50000,
+  "n_estimators": 1,
+  "batch_size": 200,
+  "subsampled": false
+}

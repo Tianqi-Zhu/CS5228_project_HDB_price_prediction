@@ -1,0 +1,4 @@
+candidate,learning_rate,train_views,checkpoint_views,training_task_rows,best_epoch,fit_rows,calibration_rows,weighted_calibration_rmse_sgd,unweighted_calibration_rmse_sgd,fit_seconds,peak_allocated_vram_gib
+loss_crps_mse_1view_lr03,0.03,1,1,2048,2,102829,600,525.33202173,524.56685337,316.31613450,11.80364704
+loss_crps_mse_1view_lr01,0.01,1,1,2048,2,102829,600,523.18796546,522.51702328,335.67079150,11.80364704
+loss_crps_mse_2view_lr01,0.01,2,2,1024,1,102829,600,521.13643725,520.68063644,551.33690890,11.83242702

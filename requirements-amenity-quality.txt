@@ -1,0 +1,4 @@
+-r requirements-spatial.txt
+beautifulsoup4==4.14.3
+lxml==6.0.2
+pypdf==6.3.0

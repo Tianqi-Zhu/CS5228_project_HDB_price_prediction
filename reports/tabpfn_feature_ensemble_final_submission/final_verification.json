@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "submission_sha256": "c67f5374040c74314110afc8dd631ae180bb63a54ef65abd7069be109796cea9",
+  "rows": 50000,
+  "all_three_members_full150000_context": true,
+  "fixed_validated_weights_exact": true,
+  "reloaded_csv_matches_independent_weighted_average": true,
+  "predictions_within_member_convex_hull": true,
+  "source_checkpoint_and_older_submissions_hashes_unchanged": true,
+  "source_raw_data_unchanged": true,
+  "tests_passed": 26,
+  "real_test_feature_cutoff_audits_passed": true,
+  "temporal_reconstruction_matrix_replay_exact": true,
+  "cache_repair_did_not_change_statistical_configuration": true,
+  "artifacts_sha256": {
+    "settings.json": "80d7623c55951be5bd5092e6de9361860d3860a81a1b5ba0c2c48aa415881529",
+    "verification.json": "00848ceb04d29918c2592dc6b2646004183eb6f7fca8805ac52d3dc0664c32f2",
+    "predictions_members.csv": "42ebdf6f6ca8a83d13f69d6a27bf56cbdeccccf91abfd7ba0258972b38859126",
+    "spatial_context_replay.json": "80abe614ce19b5e2707d4fdf934d3835229ae31e61dbab63695ae268f5f27506",
+    "test_feature_audit.json": "73d01e2623c6da83a343efd599f431aa4bb6f94cf16f87cb7961d6bac46edb92",
+    "tests.log": "51139d3e42c84977be8d2e175863d745922727a216c60b6aa183a72c1536f483",
+    "report.md": "5c9dbcf9149f0c931afa1d852ebc8ab94fb67fed39937cebcd05e4c74bb30406"
+  }
+}

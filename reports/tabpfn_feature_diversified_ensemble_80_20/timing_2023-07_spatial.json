@@ -1,0 +1,21 @@
+{
+  "origin": "2023-07",
+  "member": "spatial",
+  "n_estimators": 2,
+  "features": 89,
+  "context_rows": 87937,
+  "query_rows": 2000,
+  "fit_seconds": 17.55186829995364,
+  "predict_seconds": 66.37901409994811,
+  "peak_vram_gib": 7.014063835144043,
+  "weights_digest_before": "830c4522082f7f267cebffb4014e09ab54c93981ebde75bde00d84da9485d6d3",
+  "weights_digest_after": "830c4522082f7f267cebffb4014e09ab54c93981ebde75bde00d84da9485d6d3",
+  "parameters_unchanged": true,
+  "gradients_prohibited": true,
+  "no_adapters": true,
+  "subsampling": false,
+  "context_ids_sha256": "81d0bc5bee8df1016bd243965afdabc5a07bec1da25e6c4290c7fdf7a40890c3",
+  "query_ids_sha256": "d71087570c3b65c5e490af3e01d74313561126f51ee84edc605184bb083974f3",
+  "prediction_sha256": "5b074ff9633624e246838474d30721b5808fee15bc40d211a9b55498f8c84b25",
+  "cached_prediction_reused": false
+}

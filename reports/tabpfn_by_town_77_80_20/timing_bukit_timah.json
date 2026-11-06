@@ -1,0 +1,15 @@
+{
+  "fit_seconds": 2.193355099996552,
+  "predict_seconds": 0.15018799994140863,
+  "peak_vram_gib": 0.4448223114013672,
+  "context_rows": 355,
+  "query_rows": 83,
+  "features": 77,
+  "batch_size": 200,
+  "subsampling": false,
+  "parameter_versions_unchanged": true,
+  "town": "bukit timah",
+  "rmse_sgd": 593.5627114089676,
+  "mae_sgd": 383.11500825851766,
+  "bias_sgd": 75.7997944867289
+}

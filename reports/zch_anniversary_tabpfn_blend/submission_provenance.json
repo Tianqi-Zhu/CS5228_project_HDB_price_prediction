@@ -1,0 +1,13 @@
+{
+  "submission": "reports/zch_anniversary_tabpfn_blend/submission_zch_tabpfn87_equal_150k.csv",
+  "sha256": "f4f72ee713b1dc5c7f7a1598341ce584d84bbcbad634c80950998149ba0286eb",
+  "rows": 50000,
+  "weights": {
+    "zch_original": 0.5,
+    "tabpfn87": 0.5
+  },
+  "zch_prediction_sha256": "4b2551b07f17e6cc9445a3811cf34be946e6e89de0d11bedc062ca07c1d4aaa2",
+  "tabpfn_prediction_sha256": "22fc32b16f47b7a4a393ab0cec7e30ab2a696c934a008b3d4ed9325b980cb19d",
+  "selection": "Prespecified equal blend; June 2024-March 2025 development RMSE 440.951958",
+  "test_labels_used": false
+}

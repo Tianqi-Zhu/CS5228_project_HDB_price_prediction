@@ -1,0 +1,7 @@
+{
+  "fit_seconds": 1.917334199999459,
+  "predict_seconds": 10.147398600005545,
+  "peak_vram_gib": 3.2936625480651855,
+  "model_path": "C:\\Users\\auror\\Code\\CS5228_project_HDB_price_prediction\\.cache\\tabpfn\\tabpfn-v3-regressor-v3_default.ckpt",
+  "checkpoint_sha256": "311ce18d97e9533d8585eaadafe040fbdd8070533209ed8696641dadc97a7301"
+}

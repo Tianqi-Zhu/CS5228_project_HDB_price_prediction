@@ -1,0 +1,7 @@
+origin,cluster,clusters,replicates,model,reference,rmse_difference_sgd,lower95_sgd,upper95_sgd,probability_difference_negative
+2024-06,month,10,5000,E1,E0,0.0,0.0,0.0,0.0
+2024-06,month,10,5000,E2,E0,0.0,0.0,0.0,0.0
+2024-06,month,10,5000,E2,E1,0.0,0.0,0.0,0.0
+2024-06,building,8210,5000,E1,E0,0.0,0.0,0.0,0.0
+2024-06,building,8210,5000,E2,E0,0.0,0.0,0.0,0.0
+2024-06,building,8210,5000,E2,E1,0.0,0.0,0.0,0.0

@@ -1,0 +1,8 @@
+{
+  "town": "sembawang",
+  "context_rows": 2816,
+  "query_rows": 737,
+  "context_ids_sha256": "e96588f5fbafe39ebf89a184aaddd6dc43e72dbf2aede06012ea9c7f314a6129",
+  "query_ids_sha256": "ce20b131a71aa5d66d790c3836ca47226c6f5adb29bb31bdba7d5ef3398029b2",
+  "settings_sha256": "7ec7fcf4dc279912e4ccac47faafbe82887e1d344fe25f59350c4dbcbc3e5916"
+}

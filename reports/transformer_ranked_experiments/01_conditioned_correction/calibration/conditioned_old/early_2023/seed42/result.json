@@ -1,0 +1,20 @@
+{
+  "design": "conditioned_old",
+  "fold": "early_2023",
+  "seed": 42,
+  "best_epoch": 1,
+  "epochs_run": 6,
+  "rows": 2000,
+  "parameters": 14690,
+  "weighted_rmse_sgd": 566.7252673199434,
+  "rmse_sgd": 566.056871421551,
+  "mae_sgd": 434.1581326623767,
+  "bias_sgd": 56.56090840816154,
+  "mean_correction_sgd": 9.668967247009277,
+  "peak_allocated_vram_gib": 0.04003572463989258,
+  "seconds": 8.289352499996312,
+  "checkpoint_sha256": "cd9fcbef836fd23ca8571ab023b20bc46a5a3c7875cc14a28e7adc567a125c94",
+  "predictions_sha256": "5c585c2fd0c812c0df9a0e0725f211cc196414a761b75732a5de000d8625a2ac",
+  "base_checkpoint_sha256": "e9d6e547b4817e61f294494d4583a4b45d1d728c574bce1127bb413067ba17c3",
+  "outer_labels_used_for_selection": false
+}

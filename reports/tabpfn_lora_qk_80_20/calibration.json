@@ -1,0 +1,63 @@
+{
+  "method": "Q/K LoRA",
+  "rank": 8,
+  "alpha": 8,
+  "learning_rate": 0.003,
+  "train_views": 2,
+  "checkpoint_views": 2,
+  "one_view_calibration_views": 1,
+  "finetuner_final_inference_views": 1,
+  "epochs_cap": 8,
+  "patience": 3,
+  "task_size": 1024,
+  "crps_weight": 1,
+  "mse_weight": 1,
+  "categorical_indices": [
+    0,
+    1,
+    4,
+    6,
+    12,
+    13,
+    14,
+    41,
+    42
+  ],
+  "fit_rows": 102829,
+  "calibration_rows": 600,
+  "calibration_rmse_weighted": 521.895560355736,
+  "calibration_rmse_unweighted": 521.3632868857505,
+  "frozen_calibration_rmse_weighted": 521.8641848602077,
+  "diagscale_lr0003_calibration_rmse_weighted": 520.6074218716535,
+  "epoch_validation": [
+    {
+      "epoch": -1,
+      "lora_b_l2": 0.0,
+      "validation_mse": 270369.5243881688
+    },
+    {
+      "epoch": 0,
+      "lora_b_l2": 8.976487159729004,
+      "validation_mse": 271467.2952558554
+    },
+    {
+      "epoch": 1,
+      "lora_b_l2": 13.991280555725098,
+      "validation_mse": 277665.10245946626
+    },
+    {
+      "epoch": 2,
+      "lora_b_l2": 16.565872192382812,
+      "validation_mse": 287271.8904084206
+    }
+  ],
+  "attention_modules": 18,
+  "trainable_parameters": 299008,
+  "fit_seconds": 500.5157476000022,
+  "peak_vram_gib": 11.838587760925293,
+  "adapter_sha256": "3b7527bf3d069b4c1400bc1c8938dcf6adcac1947969f7b65d48c85b92526c77",
+  "code_sha256": "dc88e20277eb1c962e80176860372588c1d49e7e8fdc63a8eab26a588a8f1327",
+  "inner_feature_sha256": "20c28ccaf736673905b50b9e10635aaf1400c30028d23cec41b3011eb12fab8c",
+  "backbone_sha256": "14e0b81285bca7a6d1ef121169f27f651f76dff49cad6c0b8779d5c836018550",
+  "outer_labels_used_for_selection": false
+}

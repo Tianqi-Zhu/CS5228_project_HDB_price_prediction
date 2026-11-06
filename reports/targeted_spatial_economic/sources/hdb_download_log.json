@@ -1,0 +1,18 @@
+[
+  {
+    "year": 2020,
+    "url": "https://assets.hdb.gov.sg/about-us/news-and-publications/annual-report/2020/ebook/AR2020KS.pdf",
+    "error": "404 Client Error: Not Found for url: https://assets.hdb.gov.sg/about-us/news-and-publications/annual-report/2020/ebook/AR2020KS.pdf"
+  },
+  {
+    "year": 2021,
+    "url": "https://assets.hdb.gov.sg/about-us/news-and-publications/annual-report/2021/assets/ebooks/key-statistics.pdf",
+    "error": "45s download budget"
+  },
+  {
+    "year": 2022,
+    "url": "https://assets.hdb.gov.sg/about-us/news-and-publications/annual-report/2022/ebooks/Key%20Statistics%20FY21.pdf",
+    "status": 200,
+    "bytes": 3059731
+  }
+]

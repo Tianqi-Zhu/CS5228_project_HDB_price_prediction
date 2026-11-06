@@ -1,0 +1,23 @@
+{
+  "code_sha256": "6af2a007a33bc866bf3afd856c258f5d4cd035c1e8a0db1605370030cd2c447f",
+  "early_stopping_months": [
+    "2023-09",
+    "2023-12"
+  ],
+  "strength_selection_months": [
+    "2023-12",
+    "2024-06"
+  ],
+  "strengths": [
+    0,
+    0.25,
+    0.5,
+    0.75,
+    1
+  ],
+  "outer_labels_used": false,
+  "variants": [
+    "E1",
+    "E2"
+  ]
+}

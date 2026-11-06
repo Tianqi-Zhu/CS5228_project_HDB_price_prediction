@@ -1,0 +1,28 @@
+{
+  "name": "regression_head",
+  "config": {
+    "component": "head",
+    "lr": 3e-05
+  },
+  "weighted_rmse_sgd": 775.2255762580091,
+  "initial_weighted_rmse_sgd": 775.2255762580091,
+  "selected_epoch": -1,
+  "epochs_run": 1,
+  "fit_rows": 1024,
+  "calibration_rows": 24,
+  "seconds": 3.315357099985704,
+  "peak_vram_gib": 1.1043014526367188,
+  "frozen_parameters_unchanged": true,
+  "frozen_digest": "b83f1c4312309e3c6c3bbda3b8571be6c16370fde431c633d217d265e5b2ef65",
+  "trainable_parameters": 9320328,
+  "trainable_names": [
+    "heads.output_projection.weight",
+    "heads.output_projection.bias",
+    "heads.mlp_regression.norm.weight",
+    "heads.mlp_regression.mlp.0.weight",
+    "heads.mlp_regression.mlp.2.weight"
+  ],
+  "adapter_sha256": "069a4a712a063365cf84d1039a3866a0782bba0596bf71b93cde0181ee57751b",
+  "max_checkpoint_replay_difference": 0.0,
+  "outer_labels_used_for_selection": false
+}

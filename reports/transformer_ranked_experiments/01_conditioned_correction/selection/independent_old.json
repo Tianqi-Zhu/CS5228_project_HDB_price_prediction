@@ -1,0 +1,9 @@
+{
+  "design": "independent_old",
+  "earlier_best_epochs": [
+    17,
+    1
+  ],
+  "outer_epochs": 9,
+  "outer_labels_used": false
+}

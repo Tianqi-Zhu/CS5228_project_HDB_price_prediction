@@ -1,0 +1,60 @@
+{
+  "config_sha256": "02783d8874165bee4de782fc89059f4079249fb874560b2816abb7581caa499c",
+  "geocodes": [
+    {
+      "site_id": "st_engineering_amk",
+      "cache": ".cache\\company_worksite_stocks\\geocodes\\567710.json",
+      "sha256": "10af035aed52941f639d22ffa479f2d7d204497eb039abebbb23b18a80246ad4"
+    },
+    {
+      "site_id": "st_engineering_boon_lay",
+      "cache": ".cache\\company_worksite_stocks\\geocodes\\619523.json",
+      "sha256": "73303f0a8dc1b23deb20b89af47d99c6c76cdb40412a82baffc65c323fa7eebb"
+    },
+    {
+      "site_id": "st_engineering_paya_lebar",
+      "cache": ".cache\\company_worksite_stocks\\geocodes\\539938.json",
+      "sha256": "94675a5db6cafa7e34030907ae3b21473475f69b576567c3a6d92b4bc58122c1"
+    },
+    {
+      "site_id": "venture_amk",
+      "cache": ".cache\\company_worksite_stocks\\geocodes\\569873.json",
+      "sha256": "ecd27778f45eac38152b86e27d1f5039d45c95a7a30b440dd4b8552c6a92ed6b"
+    },
+    {
+      "site_id": "venture_marsiling",
+      "cache": ".cache\\company_worksite_stocks\\geocodes\\739152.json",
+      "sha256": "b204eb924bca532d02c78ca96116fe083eeb0e0482d48c7435992eb5e75af3fb"
+    },
+    {
+      "site_id": "venture_woodlands",
+      "cache": ".cache\\company_worksite_stocks\\geocodes\\738960.json",
+      "sha256": "5536cd8b743731cb778db592a4a0623436fa1b6df803d46d2653e614a0211141"
+    },
+    {
+      "site_id": "kulicke_soffa_serangoon",
+      "cache": ".cache\\company_worksite_stocks\\geocodes\\554369.json",
+      "sha256": "d58ffd9032c625bb729d28778c39a9f86700533cfa1cd3b65a15c3382fdbe362"
+    },
+    {
+      "site_id": "flex_changi",
+      "cache": ".cache\\company_worksite_stocks\\geocodes\\486123.json",
+      "sha256": "0e904df527598570f4022e45173893195200a381cf00cb3ed6ba99f69b68cf64"
+    },
+    {
+      "site_id": "sia_engineering_changi",
+      "cache": ".cache\\company_worksite_stocks\\geocodes\\819831.json",
+      "sha256": "cb3f7f3b863896f2ea1c360beab5bc7d1165c6490e8d9387db5d133176382715"
+    },
+    {
+      "site_id": "seatrium_tuas",
+      "cache": ".cache\\company_worksite_stocks\\geocodes\\637051.json",
+      "sha256": "81cadebaea6944217cbf5416187627312e34962b14b31dd8f589157690664cfe"
+    },
+    {
+      "site_id": "seatrium_admiralty",
+      "cache": ".cache\\company_worksite_stocks\\geocodes\\759947.json",
+      "sha256": "169669417e5e94aee8cffe59e6a733f1e42c13661591a93d3e5bdc68ee630ed2"
+    }
+  ]
+}

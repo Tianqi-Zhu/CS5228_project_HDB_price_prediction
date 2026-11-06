@@ -1,0 +1,31 @@
+{
+  "train": {
+    "rows": 121005,
+    "base_features_unchanged": 68,
+    "labels_unchanged": true,
+    "strictly_earlier_origins": true,
+    "finite_baselines": true
+  },
+  "query": {
+    "rows": 28995,
+    "base_features_unchanged": 68,
+    "labels_unchanged": true,
+    "strictly_earlier_origins": true,
+    "finite_baselines": true
+  },
+  "feature_sha256": "bd455f99f20e84493d3396c5efc5e7b8bc247e3b6908770f4acb56c203d13931",
+  "validation_features_complete": true,
+  "nonoverlapping_months": true,
+  "temporal_tests_passed": 9,
+  "prediction_checks": {
+    "previous_best_rmse": 455.86289685,
+    "new_rmse": 457.96656719,
+    "rmse_difference": 2.103670339999951,
+    "months_improved": 0,
+    "months_total": 10,
+    "prediction_rows": 28995,
+    "unique_row_ids": true,
+    "all_finite": true,
+    "saved_metrics_recomputed": true
+  }
+}

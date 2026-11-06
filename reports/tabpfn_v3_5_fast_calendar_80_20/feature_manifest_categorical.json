@@ -1,0 +1,14 @@
+{
+  "features": 77,
+  "encoding": "categorical",
+  "new_columns": [],
+  "new_context_missing": {},
+  "new_query_missing": {},
+  "elapsed_month_index_preserved": true,
+  "existing_history_missingness_preserved": true,
+  "residual_baseline_and_labels_unchanged": true,
+  "artifact": ".cache/tabpfn_v3_features/calendar_80_20_categorical.joblib",
+  "sha256": "fba84757b6e23280d2b27eab0ca5d86a427ac19ca33c6b12b5b2dcc4194a0059",
+  "residual_target": "y_train - train_baseline",
+  "reconstruction": "predicted_residual + query_baseline"
+}

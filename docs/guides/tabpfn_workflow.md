@@ -42,7 +42,7 @@ CUDA 构建按原文件说明准备。本轮未验证全新环境安装；原记
 
 `run` 要求显式传入原始参数；无参数不会触发原脚本的默认训练。完整推理需要相应包、指定 checkpoint、原特征/适配缓存及其哈希。`preflight` 会显示当前缺口，补齐后再执行原配方。main 只包含必要入口；完整探索与历史提交入口位于 appendix。
 
-`submission_zch_tabpfn87_equal_150k.csv` 仍待提供实际生成提交、schema、权重、CSV 与预测。现有 ABCDE/ABDE 配方及开发集结果是不同候选，不能替代该 F2。
+`submission_zch_tabpfn87_equal_150k.csv` 的候选导出、生成源码和来源记录现已随周年分支合并。它与历史截图分数的文件身份关联仍未核实；现有 ABCDE/ABDE 是不同候选，不能据此替代或确认 F2。新增入口与验证见[周年合并指南](anniversary_merge.md)。
 
 ## Validation dependency snapshot
 

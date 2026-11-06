@@ -1,0 +1,24 @@
+{
+  "sources_sha256": {
+    "C:\\Users\\auror\\Code\\CS5228_project_HDB_price_prediction\\analysis\\run_transformer_group_calibration.py": "5fac2a397d160ca509f406c21d7064d9c2a640d9b9fc16f4c6fc8c5e46496119",
+    "C:\\Users\\auror\\Code\\CS5228_project_HDB_price_prediction\\analysis\\experiments\\spatial_temporal_transformer.py": "1f15e0e50fef5709ff6f1587da70f91ad20ff72c01f9ed16be4bd0e969677656",
+    "C:\\Users\\auror\\Code\\CS5228_project_HDB_price_prediction\\.cache\\spatial_temporal_transformer\\prepared.joblib": "683987abe171fabd9e26d29a6b4e8c39205a8eed7f18297a99d20b444cdfdf9c"
+  },
+  "designs": [
+    "group005",
+    "group02"
+  ],
+  "group_penalties": {
+    "group005": 0.05,
+    "group02": 0.2
+  },
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "selection_folds": [
+    "early_2022",
+    "early_2023"
+  ]
+}

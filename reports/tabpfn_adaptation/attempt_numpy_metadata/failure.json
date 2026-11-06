@@ -1,0 +1,4 @@
+{
+  "type": "UFuncTypeError",
+  "message": "ufunc 'maximum' did not contain a loop with signature matching types (dtype('<U7'), dtype('<U7')) -> None"
+}

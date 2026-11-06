@@ -1,0 +1,3486 @@
+{
+  "source_commit": "7c01b8bc2bf499b38d341d40960cc9d59d362c7e",
+  "main_parent": "85bae7be9ba3f3c62719bfd7fde1303cd4c1e83f",
+  "conflicts_detected": 280,
+  "canonical_roots_preserved": [
+    "analysis/",
+    "tests/",
+    "docs/",
+    "requirements/"
+  ],
+  "individual_resolutions": [
+    {
+      "path": ".gitignore",
+      "resolution": "keep-main-canonical"
+    },
+    {
+      "path": "README.md",
+      "resolution": "keep-main-canonical"
+    },
+    {
+      "path": "data/README.md",
+      "resolution": "keep-main-canonical"
+    },
+    {
+      "path": "experiment/README.md",
+      "resolution": "keep-main-canonical"
+    },
+    {
+      "path": "experiment/eda/README.md",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/eda/figures/01_target_distribution.png",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/eda/figures/02_monthly_rent_trend.png",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/eda/figures/03_median_rent_by_town.png",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/eda/figures/04_median_rent_by_flat_type.png",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/eda/figures/05_rent_vs_floor_area.png",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/eda/figures/06_rent_by_lease_commencement_age.png",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/eda/figures/07_numeric_train_test_drift.png",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/eda/figures/08_raw_distance_rent_association.png",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/eda/figures/09_monthly_rent_by_flat_type.png",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/eda/figures/10_rent_by_open_mrt_distance.png",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/eda/figures/11_block_rent_map.png",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/eda/notes.md",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/eda/progress_report.pdf",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/eda/report.md",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/eda/summary.json",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/eda/supplementary/auxiliary/report.md",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/eda/supplementary/train_test/01_rent_distribution.png",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/eda/supplementary/train_test/02_monthly_median.png",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/eda/supplementary/train_test/03_flat_type.png",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/eda/supplementary/train_test/04_town_median.png",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/eda/supplementary/train_test/05_floor_area.png",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/eda/supplementary/train_test/summary.json",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/eda/tables/annual_rent_trend.csv",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/eda/tables/auxiliary_data_audit.csv",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/eda/tables/baseline_validation.csv",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/eda/tables/block_coordinate_rent_summary.csv",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/eda/tables/categorical_normalization.csv",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/eda/tables/data_quality.csv",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/eda/tables/location_feature_summary.csv",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/eda/tables/monthly_rent_by_flat_type.csv",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/eda/tables/monthly_rent_trend.csv",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/eda/tables/rent_by_building_age.csv",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/eda/tables/rent_by_flat_type.csv",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/eda/tables/rent_by_floor_area_bin.csv",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/eda/tables/rent_by_mall_distance.csv",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/eda/tables/rent_by_open_mrt_distance.csv",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/eda/tables/rent_by_primary_school_distance.csv",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/eda/tables/rent_by_town.csv",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/eda/tables/repeated_feature_rows.csv",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/eda/tables/train_test_drift.csv",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/main/M01/eda/README.md",
+      "resolution": "keep-main-canonical"
+    },
+    {
+      "path": "experiment/main/M01/eda/figures/01_target_distribution.png",
+      "resolution": "keep-main-canonical"
+    },
+    {
+      "path": "experiment/main/M01/eda/figures/02_monthly_rent_trend.png",
+      "resolution": "keep-main-canonical"
+    },
+    {
+      "path": "experiment/main/M01/eda/figures/03_median_rent_by_town.png",
+      "resolution": "keep-main-canonical"
+    },
+    {
+      "path": "experiment/main/M01/eda/figures/04_median_rent_by_flat_type.png",
+      "resolution": "keep-main-canonical"
+    },
+    {
+      "path": "experiment/main/M01/eda/figures/05_rent_vs_floor_area.png",
+      "resolution": "keep-main-canonical"
+    },
+    {
+      "path": "experiment/main/M01/eda/figures/06_rent_by_lease_commencement_age.png",
+      "resolution": "keep-main-canonical"
+    },
+    {
+      "path": "experiment/main/M01/eda/figures/07_numeric_train_test_drift.png",
+      "resolution": "keep-main-canonical"
+    },
+    {
+      "path": "experiment/main/M01/eda/figures/08_raw_distance_rent_association.png",
+      "resolution": "keep-main-canonical"
+    },
+    {
+      "path": "experiment/main/M01/eda/figures/09_monthly_rent_by_flat_type.png",
+      "resolution": "keep-main-canonical"
+    },
+    {
+      "path": "experiment/main/M01/eda/figures/10_rent_by_open_mrt_distance.png",
+      "resolution": "keep-main-canonical"
+    },
+    {
+      "path": "experiment/main/M01/eda/figures/11_block_rent_map.png",
+      "resolution": "keep-main-canonical"
+    },
+    {
+      "path": "experiment/main/M01/eda/notes.md",
+      "resolution": "keep-main-canonical"
+    },
+    {
+      "path": "experiment/main/M01/eda/report.md",
+      "resolution": "keep-main-canonical"
+    },
+    {
+      "path": "experiment/main/M01/eda/summary.json",
+      "resolution": "keep-main-canonical"
+    },
+    {
+      "path": "experiment/main/M01/eda/supplementary/auxiliary/01_auxiliary_locations.png",
+      "resolution": "keep-main-canonical"
+    },
+    {
+      "path": "experiment/main/M01/eda/supplementary/auxiliary/02_nearest_distances.png",
+      "resolution": "keep-main-canonical"
+    },
+    {
+      "path": "experiment/main/M01/eda/supplementary/auxiliary/03_economic_coverage.png",
+      "resolution": "keep-main-canonical"
+    },
+    {
+      "path": "experiment/main/M01/eda/supplementary/auxiliary/report.md",
+      "resolution": "keep-main-canonical"
+    },
+    {
+      "path": "experiment/main/M01/eda/supplementary/auxiliary/summary.json",
+      "resolution": "keep-main-canonical"
+    },
+    {
+      "path": "experiment/main/M01/eda/supplementary/train_test/01_rent_distribution.png",
+      "resolution": "keep-main-canonical"
+    },
+    {
+      "path": "experiment/main/M01/eda/supplementary/train_test/02_monthly_median.png",
+      "resolution": "keep-main-canonical"
+    },
+    {
+      "path": "experiment/main/M01/eda/supplementary/train_test/03_flat_type.png",
+      "resolution": "keep-main-canonical"
+    },
+    {
+      "path": "experiment/main/M01/eda/supplementary/train_test/04_town_median.png",
+      "resolution": "keep-main-canonical"
+    },
+    {
+      "path": "experiment/main/M01/eda/supplementary/train_test/05_floor_area.png",
+      "resolution": "keep-main-canonical"
+    },
+    {
+      "path": "experiment/main/M01/eda/supplementary/train_test/summary.json",
+      "resolution": "keep-main-canonical"
+    },
+    {
+      "path": "experiment/main/M01/eda/tables/annual_rent_trend.csv",
+      "resolution": "keep-main-canonical"
+    },
+    {
+      "path": "experiment/main/M01/eda/tables/auxiliary_data_audit.csv",
+      "resolution": "keep-main-canonical"
+    },
+    {
+      "path": "experiment/main/M01/eda/tables/baseline_validation.csv",
+      "resolution": "keep-main-canonical"
+    },
+    {
+      "path": "experiment/main/M01/eda/tables/block_coordinate_rent_summary.csv",
+      "resolution": "keep-main-canonical"
+    },
+    {
+      "path": "experiment/main/M01/eda/tables/categorical_normalization.csv",
+      "resolution": "keep-main-canonical"
+    },
+    {
+      "path": "experiment/main/M01/eda/tables/data_quality.csv",
+      "resolution": "keep-main-canonical"
+    },
+    {
+      "path": "experiment/main/M01/eda/tables/location_feature_summary.csv",
+      "resolution": "keep-main-canonical"
+    },
+    {
+      "path": "experiment/main/M01/eda/tables/monthly_rent_by_flat_type.csv",
+      "resolution": "keep-main-canonical"
+    },
+    {
+      "path": "experiment/main/M01/eda/tables/monthly_rent_trend.csv",
+      "resolution": "keep-main-canonical"
+    },
+    {
+      "path": "experiment/main/M01/eda/tables/rent_by_building_age.csv",
+      "resolution": "keep-main-canonical"
+    },
+    {
+      "path": "experiment/main/M01/eda/tables/rent_by_flat_type.csv",
+      "resolution": "keep-main-canonical"
+    },
+    {
+      "path": "experiment/main/M01/eda/tables/rent_by_floor_area_bin.csv",
+      "resolution": "keep-main-canonical"
+    },
+    {
+      "path": "experiment/main/M01/eda/tables/rent_by_mall_distance.csv",
+      "resolution": "keep-main-canonical"
+    },
+    {
+      "path": "experiment/main/M01/eda/tables/rent_by_open_mrt_distance.csv",
+      "resolution": "keep-main-canonical"
+    },
+    {
+      "path": "experiment/main/M01/eda/tables/rent_by_primary_school_distance.csv",
+      "resolution": "keep-main-canonical"
+    },
+    {
+      "path": "experiment/main/M01/eda/tables/rent_by_town.csv",
+      "resolution": "keep-main-canonical"
+    },
+    {
+      "path": "experiment/main/M01/eda/tables/repeated_feature_rows.csv",
+      "resolution": "keep-main-canonical"
+    },
+    {
+      "path": "experiment/main/M01/eda/tables/train_test_drift.csv",
+      "resolution": "keep-main-canonical"
+    },
+    {
+      "path": "experiment/main/M01/spatial_evidence/source/EDA_summary_zh.md",
+      "resolution": "keep-main-canonical"
+    },
+    {
+      "path": "experiment/main/M01/spatial_evidence/source/amenities_adjusted_summary_zh.md",
+      "resolution": "keep-main-canonical"
+    },
+    {
+      "path": "experiment/main/M01/spatial_evidence/source/analysis_manifest.json",
+      "resolution": "keep-main-canonical"
+    },
+    {
+      "path": "experiment/main/M01/spatial_evidence/source/feature_dictionary.csv",
+      "resolution": "keep-main-canonical"
+    },
+    {
+      "path": "experiment/main/M02/catboost_baseline/flat_type_errors.csv",
+      "resolution": "keep-main-canonical"
+    },
+    {
+      "path": "experiment/main/M02/catboost_baseline/model_metrics.csv",
+      "resolution": "keep-main-canonical"
+    },
+    {
+      "path": "experiment/main/M02/catboost_baseline/monthly_errors.csv",
+      "resolution": "keep-main-canonical"
+    },
+    {
+      "path": "experiment/main/M02/catboost_baseline/monthly_validation_error.png",
+      "resolution": "keep-main-canonical"
+    },
+    {
+      "path": "experiment/main/M02/catboost_baseline/results.json",
+      "resolution": "keep-main-canonical"
+    },
+    {
+      "path": "experiment/main/M02/classical_models/family_metrics.csv",
+      "resolution": "keep-main-canonical"
+    },
+    {
+      "path": "experiment/main/M02/classical_models/family_monthly_errors.csv",
+      "resolution": "keep-main-canonical"
+    },
+    {
+      "path": "experiment/main/M02/classical_models/model_comparison_by_month.png",
+      "resolution": "keep-main-canonical"
+    },
+    {
+      "path": "experiment/main/M02/classical_models/results.json",
+      "resolution": "keep-main-canonical"
+    },
+    {
+      "path": "experiment/studies/README.md",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/studies/economic_signals/report.md",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/studies/spatial_features/EDA_summary_zh.md",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/studies/spatial_features/amenities_adjusted/amenities_adjusted_summary_zh.md",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/studies/spatial_features/amenities_adjusted/amenity_bin_effects.csv",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/studies/spatial_features/amenities_adjusted/amenity_raw_vs_adjusted.png",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/studies/spatial_features/amenities_adjusted/analysis_manifest.json",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/studies/spatial_features/feature_dictionary.csv",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/studies/spatial_features/figures/01_raw_spearman.png",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/studies/spatial_features/figures/02_adjusted_pearson.png",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/studies/spatial_features/figures/03_feature_redundancy.png",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/studies/spatial_features/figures/04_distance_hexbin.png",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/studies/spatial_features/figures/05_distance_bins.png",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/studies/spatial_features/figures/06_recent_stability.png",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/studies/spatial_features/mrt_adjusted/MRT_adjusted_summary_zh.md",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/studies/spatial_features/mrt_adjusted/analysis_manifest.json",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/studies/spatial_features/mrt_adjusted/coefficient_cluster_covariance.csv",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/studies/spatial_features/mrt_adjusted/far_distance_contrasts.csv",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/studies/spatial_features/mrt_adjusted/mrt_adjusted_differences.png",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/studies/spatial_features/mrt_adjusted/mrt_bin_effects.csv",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/studies/spatial_features/mrt_matched/contrasts.csv",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/studies/spatial_features/mrt_matched/covariate_balance.csv",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/studies/spatial_features/mrt_matched/mrt_contrasts.png",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/studies/spatial_features/mrt_matched/notes_zh.md",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/studies/spatial_features/tables/adjusted_correlations.csv",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/studies/spatial_features/tables/all_numeric_correlations.csv",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/studies/spatial_features/tables/distance_and_count_bins.csv",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/studies/spatial_features/tables/feature_redundancy_spearman.csv",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/studies/spatial_features/tables/recent_12month_correlations.csv",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/studies/temporal_correlations/01_standardized_levels.png",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/studies/temporal_correlations/02_monthly_changes.png",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/studies/temporal_correlations/03_correlation_heatmaps.png",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/studies/temporal_correlations/04_lag_correlations.png",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/studies/temporal_correlations/lag_correlations.csv",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/studies/temporal_correlations/monthly_series.csv",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/studies/temporal_correlations/pair_correlations.csv",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "experiment/studies/temporal_correlations/summary.json",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "midterm_report.md",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "reports/auxiliary_ablation/feature_coverage.csv",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "reports/auxiliary_ablation/results.json",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "reports/auxiliary_data_eda/01_auxiliary_locations.png",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "reports/auxiliary_data_eda/02_nearest_distances.png",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "reports/auxiliary_data_eda/03_economic_coverage.png",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "reports/auxiliary_data_eda/summary.json",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "reports/economic_feature_ablation/feature_coverage.csv",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "reports/economic_feature_ablation/forward_scores.csv",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "reports/economic_feature_ablation/monthly_errors.csv",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "reports/economic_feature_ablation/report.md",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "reports/economic_feature_ablation/results.json",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "reports/economic_signals/01_monthly_market_signals.png",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "reports/economic_signals/02_forward_rmse_delta.png",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "reports/economic_signals/forward_scores.csv",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "reports/economic_signals/monthly_series.csv",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "reports/economic_signals/rent_growth_correlations.csv",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "reports/economic_signals/results.json",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "reports/eda/README.md",
+      "resolution": "both-branches-removed"
+    },
+    {
+      "path": "reports/eda/figures/01_target_distribution.png",
+      "resolution": "both-branches-removed"
+    },
+    {
+      "path": "reports/eda/figures/02_monthly_rent_trend.png",
+      "resolution": "both-branches-removed"
+    },
+    {
+      "path": "reports/eda/figures/03_median_rent_by_town.png",
+      "resolution": "both-branches-removed"
+    },
+    {
+      "path": "reports/eda/figures/04_median_rent_by_flat_type.png",
+      "resolution": "both-branches-removed"
+    },
+    {
+      "path": "reports/eda/figures/05_rent_vs_floor_area.png",
+      "resolution": "both-branches-removed"
+    },
+    {
+      "path": "reports/eda/figures/06_rent_by_lease_commencement_age.png",
+      "resolution": "both-branches-removed"
+    },
+    {
+      "path": "reports/eda/figures/07_numeric_train_test_drift.png",
+      "resolution": "both-branches-removed"
+    },
+    {
+      "path": "reports/eda/figures/08_raw_distance_rent_association.png",
+      "resolution": "both-branches-removed"
+    },
+    {
+      "path": "reports/eda/figures/09_monthly_rent_by_flat_type.png",
+      "resolution": "both-branches-removed"
+    },
+    {
+      "path": "reports/eda/figures/10_rent_by_open_mrt_distance.png",
+      "resolution": "both-branches-removed"
+    },
+    {
+      "path": "reports/eda/figures/11_block_rent_map.png",
+      "resolution": "both-branches-removed"
+    },
+    {
+      "path": "reports/eda/notes.md",
+      "resolution": "both-branches-removed"
+    },
+    {
+      "path": "reports/eda/report.md",
+      "resolution": "both-branches-removed"
+    },
+    {
+      "path": "reports/eda/summary.json",
+      "resolution": "both-branches-removed"
+    },
+    {
+      "path": "reports/eda/supplementary/auxiliary/01_auxiliary_locations.png",
+      "resolution": "both-branches-removed"
+    },
+    {
+      "path": "reports/eda/supplementary/auxiliary/02_nearest_distances.png",
+      "resolution": "both-branches-removed"
+    },
+    {
+      "path": "reports/eda/supplementary/auxiliary/03_economic_coverage.png",
+      "resolution": "both-branches-removed"
+    },
+    {
+      "path": "reports/eda/supplementary/auxiliary/report.md",
+      "resolution": "both-branches-removed"
+    },
+    {
+      "path": "reports/eda/supplementary/auxiliary/summary.json",
+      "resolution": "both-branches-removed"
+    },
+    {
+      "path": "reports/eda/supplementary/train_test/01_rent_distribution.png",
+      "resolution": "both-branches-removed"
+    },
+    {
+      "path": "reports/eda/supplementary/train_test/02_monthly_median.png",
+      "resolution": "both-branches-removed"
+    },
+    {
+      "path": "reports/eda/supplementary/train_test/03_flat_type.png",
+      "resolution": "both-branches-removed"
+    },
+    {
+      "path": "reports/eda/supplementary/train_test/04_town_median.png",
+      "resolution": "both-branches-removed"
+    },
+    {
+      "path": "reports/eda/supplementary/train_test/05_floor_area.png",
+      "resolution": "both-branches-removed"
+    },
+    {
+      "path": "reports/eda/supplementary/train_test/summary.json",
+      "resolution": "both-branches-removed"
+    },
+    {
+      "path": "reports/eda/tables/annual_rent_trend.csv",
+      "resolution": "both-branches-removed"
+    },
+    {
+      "path": "reports/eda/tables/auxiliary_data_audit.csv",
+      "resolution": "both-branches-removed"
+    },
+    {
+      "path": "reports/eda/tables/baseline_validation.csv",
+      "resolution": "both-branches-removed"
+    },
+    {
+      "path": "reports/eda/tables/block_coordinate_rent_summary.csv",
+      "resolution": "both-branches-removed"
+    },
+    {
+      "path": "reports/eda/tables/categorical_normalization.csv",
+      "resolution": "both-branches-removed"
+    },
+    {
+      "path": "reports/eda/tables/data_quality.csv",
+      "resolution": "both-branches-removed"
+    },
+    {
+      "path": "reports/eda/tables/location_feature_summary.csv",
+      "resolution": "both-branches-removed"
+    },
+    {
+      "path": "reports/eda/tables/monthly_rent_by_flat_type.csv",
+      "resolution": "both-branches-removed"
+    },
+    {
+      "path": "reports/eda/tables/monthly_rent_trend.csv",
+      "resolution": "both-branches-removed"
+    },
+    {
+      "path": "reports/eda/tables/rent_by_building_age.csv",
+      "resolution": "both-branches-removed"
+    },
+    {
+      "path": "reports/eda/tables/rent_by_flat_type.csv",
+      "resolution": "both-branches-removed"
+    },
+    {
+      "path": "reports/eda/tables/rent_by_floor_area_bin.csv",
+      "resolution": "both-branches-removed"
+    },
+    {
+      "path": "reports/eda/tables/rent_by_mall_distance.csv",
+      "resolution": "both-branches-removed"
+    },
+    {
+      "path": "reports/eda/tables/rent_by_open_mrt_distance.csv",
+      "resolution": "both-branches-removed"
+    },
+    {
+      "path": "reports/eda/tables/rent_by_primary_school_distance.csv",
+      "resolution": "both-branches-removed"
+    },
+    {
+      "path": "reports/eda/tables/rent_by_town.csv",
+      "resolution": "both-branches-removed"
+    },
+    {
+      "path": "reports/eda/tables/repeated_feature_rows.csv",
+      "resolution": "both-branches-removed"
+    },
+    {
+      "path": "reports/eda/tables/train_test_drift.csv",
+      "resolution": "both-branches-removed"
+    },
+    {
+      "path": "reports/experiments/model_baseline/flat_type_errors.csv",
+      "resolution": "both-branches-removed"
+    },
+    {
+      "path": "reports/experiments/model_baseline/model_metrics.csv",
+      "resolution": "both-branches-removed"
+    },
+    {
+      "path": "reports/experiments/model_baseline/monthly_errors.csv",
+      "resolution": "both-branches-removed"
+    },
+    {
+      "path": "reports/experiments/model_baseline/monthly_validation_error.png",
+      "resolution": "both-branches-removed"
+    },
+    {
+      "path": "reports/experiments/model_baseline/results.json",
+      "resolution": "both-branches-removed"
+    },
+    {
+      "path": "reports/experiments/model_families/family_metrics.csv",
+      "resolution": "both-branches-removed"
+    },
+    {
+      "path": "reports/experiments/model_families/family_monthly_errors.csv",
+      "resolution": "both-branches-removed"
+    },
+    {
+      "path": "reports/experiments/model_families/model_comparison_by_month.png",
+      "resolution": "both-branches-removed"
+    },
+    {
+      "path": "reports/experiments/model_families/results.json",
+      "resolution": "both-branches-removed"
+    },
+    {
+      "path": "reports/group_temporal_panel/01_planning_area_correlations.png",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "reports/group_temporal_panel/02_forward_rmse_delta.png",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "reports/group_temporal_panel/03_flat_type_correlations.png",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "reports/group_temporal_panel/04_planning_area_median_correlations.png",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "reports/group_temporal_panel/group_correlations.csv",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "reports/group_temporal_panel/group_forward_scores.csv",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "reports/group_temporal_panel/monthly_panel.csv",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "reports/group_temporal_panel/pooled_forward_scores.csv",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "reports/group_temporal_panel/report.md",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "reports/group_temporal_panel/results.json",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "reports/model_baseline/flat_type_errors.csv",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "reports/model_baseline/model_metrics.csv",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "reports/model_baseline/monthly_errors.csv",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "reports/model_baseline/monthly_validation_error.png",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "reports/model_baseline/results.json",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "reports/model_families/family_metrics.csv",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "reports/model_families/family_monthly_errors.csv",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "reports/model_families/model_comparison_by_month.png",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "reports/model_families/results.json",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "reports/spatiotemporal_hybrid/evaluation_rmse.png",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "reports/spatiotemporal_hybrid/fold_metrics.csv",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "reports/spatiotemporal_hybrid/monthly_errors.csv",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "reports/spatiotemporal_hybrid/pooled_metrics.csv",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "reports/spatiotemporal_hybrid/report.md",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "reports/spatiotemporal_hybrid/results.json",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "reports/studies/spatial_features/EDA_summary_zh.md",
+      "resolution": "both-branches-removed"
+    },
+    {
+      "path": "reports/studies/spatial_features/amenities_adjusted/amenities_adjusted_summary_zh.md",
+      "resolution": "both-branches-removed"
+    },
+    {
+      "path": "reports/studies/spatial_features/amenities_adjusted/analysis_manifest.json",
+      "resolution": "both-branches-removed"
+    },
+    {
+      "path": "reports/studies/spatial_features/feature_dictionary.csv",
+      "resolution": "both-branches-removed"
+    },
+    {
+      "path": "requirements-eda.txt",
+      "resolution": "retain-incoming-legacy-evidence"
+    },
+    {
+      "path": "requirements-model.txt",
+      "resolution": "retain-incoming-legacy-evidence"
+    }
+  ],
+  "source_mapping": [
+    {
+      "source_path": "README.md",
+      "path": "workflows/tabpfn/README.md",
+      "sha256": "f781edcdb255e7df06040f1292fcf8e5554c4cd390e321be66485e1b8bf2a976"
+    },
+    {
+      "source_path": "TABPFN_API_77.md",
+      "path": "workflows/tabpfn/TABPFN_API_77.md",
+      "sha256": "0bf03e1eb53aa6dc7ed57e0d4752efe684068ecbdca4dfb31abd9e45a6dea0ca"
+    },
+    {
+      "source_path": "analysis/README.md",
+      "path": "workflows/tabpfn/analysis/README.md",
+      "sha256": "e155b89891f285d8cfcf299664dd997203e21f0cfe5158bf2034038b7960cf79"
+    },
+    {
+      "source_path": "analysis/__init__.py",
+      "path": "workflows/tabpfn/analysis/__init__.py",
+      "sha256": "5edd93a3508298630215cabf6445b44d1ca8c72803b81659f95061aa22899eae"
+    },
+    {
+      "source_path": "analysis/acquire_amenity_quality.py",
+      "path": "workflows/tabpfn/analysis/acquire_amenity_quality.py",
+      "sha256": "831210a225ec19fb48f6e6909b6fad161e534d5930717753e046ca3cb378ed52"
+    },
+    {
+      "source_path": "analysis/acquire_company_worksites.py",
+      "path": "workflows/tabpfn/analysis/acquire_company_worksites.py",
+      "sha256": "4ec1a84f49740c23d1fec4af0a310f72ba8d669a261a30e8649532cfe735537f"
+    },
+    {
+      "source_path": "analysis/acquire_local_spatial_sources.py",
+      "path": "workflows/tabpfn/analysis/acquire_local_spatial_sources.py",
+      "sha256": "a506b0202c286c54076a67e58abbfda689588db191c4254b0ad16969ef07c1d0"
+    },
+    {
+      "source_path": "analysis/acquire_targeted_economic_sources.py",
+      "path": "workflows/tabpfn/analysis/acquire_targeted_economic_sources.py",
+      "sha256": "ff84a6c313f81163e8b3ff82b5262c1ea4361f56f7fb0f2cec93ff926b8f60ea"
+    },
+    {
+      "source_path": "analysis/acquire_worksite_market_controls.py",
+      "path": "workflows/tabpfn/analysis/acquire_worksite_market_controls.py",
+      "sha256": "3a43596a8027c5ae69393c8abb8e83f40332585fef42d4e19b2b9eb34d7eda23"
+    },
+    {
+      "source_path": "analysis/analyze_sla_hdb_estate_rents.py",
+      "path": "workflows/tabpfn/analysis/analyze_sla_hdb_estate_rents.py",
+      "sha256": "30e2268ba6947074e122bd68d41ab35bf3fe75774bb4e453865d0802d05e1a5d"
+    },
+    {
+      "source_path": "analysis/analyze_tabpfn_remaining_gaps.py",
+      "path": "workflows/tabpfn/analysis/analyze_tabpfn_remaining_gaps.py",
+      "sha256": "265665d9142fc02b71c0729baef37075992e89273adbbb3ff897fd804df6152f"
+    },
+    {
+      "source_path": "analysis/analyze_transformer_gaussian_nll.py",
+      "path": "workflows/tabpfn/analysis/analyze_transformer_gaussian_nll.py",
+      "sha256": "fc7003bbfd5e442ab7fc99be224fab05ec5e8971cf4d2ad8687f3129b877102c"
+    },
+    {
+      "source_path": "analysis/artifact_catalog.py",
+      "path": "workflows/tabpfn/analysis/artifact_catalog.py",
+      "sha256": "839ff50e1c8f996f521b300b9fa95578d1983bc06509e2a9ad7ffb60319e4837"
+    },
+    {
+      "source_path": "analysis/audit_diagscale_submission_cleaning.py",
+      "path": "workflows/tabpfn/analysis/audit_diagscale_submission_cleaning.py",
+      "sha256": "7c010cd7cacc5eafb8d040a8a8883f2c3cff6769705a4c99bf68c366b0fc5eb5"
+    },
+    {
+      "source_path": "analysis/audit_economic_conditional_mean.py",
+      "path": "workflows/tabpfn/analysis/audit_economic_conditional_mean.py",
+      "sha256": "ca44c129e49cdbbfa8f757379e23efa0617858de3529bcf3366d772b3cf60414"
+    },
+    {
+      "source_path": "analysis/audit_tabpfn_abcde.py",
+      "path": "workflows/tabpfn/analysis/audit_tabpfn_abcde.py",
+      "sha256": "16c4e6980b811646282c9af3c0ab0e996c01dc788111a3b9c3e5b3c0607f70df"
+    },
+    {
+      "source_path": "analysis/audit_tabpfn_feature_ensemble.py",
+      "path": "workflows/tabpfn/analysis/audit_tabpfn_feature_ensemble.py",
+      "sha256": "4bdf3df351c4c29422be0a8d8c941535345816fde68a6e640eb97584e3db7606"
+    },
+    {
+      "source_path": "analysis/audit_tabpfn_feature_ensemble_submission.py",
+      "path": "workflows/tabpfn/analysis/audit_tabpfn_feature_ensemble_submission.py",
+      "sha256": "0e09a2d7f534acb6c793b29fba4af74d936d261e27f12515197595248907840d"
+    },
+    {
+      "source_path": "analysis/audit_tabpfn_hierarchical_latent.py",
+      "path": "workflows/tabpfn/analysis/audit_tabpfn_hierarchical_latent.py",
+      "sha256": "7c61789f69582cb1e90356675903a950bf28bcc156204afa7b8d94449cb39cf4"
+    },
+    {
+      "source_path": "analysis/audit_tabpfn_plus_submission.py",
+      "path": "workflows/tabpfn/analysis/audit_tabpfn_plus_submission.py",
+      "sha256": "f231f74e1aa1ac0651cef8e6993c39b8d41db448666ba0af36e0120c183e3384"
+    },
+    {
+      "source_path": "analysis/audit_tabpfn_temporal_view_ensembles.py",
+      "path": "workflows/tabpfn/analysis/audit_tabpfn_temporal_view_ensembles.py",
+      "sha256": "ff879a3548effa45e0ed96270ecaab65983eb0acc5e8f2abda358b415e86c41d"
+    },
+    {
+      "source_path": "analysis/audit_tabpfn_top2_submission.py",
+      "path": "workflows/tabpfn/analysis/audit_tabpfn_top2_submission.py",
+      "sha256": "0ff6dd591ed67ef9cabd4f2401c67d8eb575ac934b4de2f35e0922d0dc688949"
+    },
+    {
+      "source_path": "analysis/audit_targeted_spatial_economic.py",
+      "path": "workflows/tabpfn/analysis/audit_targeted_spatial_economic.py",
+      "sha256": "b4064474225a401ef2b59261bec45ec2b459a656a5f122e662c9e9b718fd0d5c"
+    },
+    {
+      "source_path": "analysis/authenticate_tabpfn.py",
+      "path": "workflows/tabpfn/analysis/authenticate_tabpfn.py",
+      "sha256": "eb00be4d57fadda03c154553392da80b10cfc98aa0b88714e71e6a6238838ecc"
+    },
+    {
+      "source_path": "analysis/benchmark_tabpfn_feature_ensemble_baseline.py",
+      "path": "workflows/tabpfn/analysis/benchmark_tabpfn_feature_ensemble_baseline.py",
+      "sha256": "3b861b90eeb934414f925369b256d60a3e670bf1b6430bb2c2ccd2a7d994f653"
+    },
+    {
+      "source_path": "analysis/check_diagscale_categorical_alignment_80_20.py",
+      "path": "workflows/tabpfn/analysis/check_diagscale_categorical_alignment_80_20.py",
+      "sha256": "5772309d600d611a53ce37dbda5433974c9732b2e8132466429696a83fd72c6c"
+    },
+    {
+      "source_path": "analysis/check_tabpfn_context_zero_adapter.py",
+      "path": "workflows/tabpfn/analysis/check_tabpfn_context_zero_adapter.py",
+      "sha256": "5dab73109f080a9dc1d6b944e85fa74db5e12e27f6f590c7a90ef3334915ac84"
+    },
+    {
+      "source_path": "analysis/clean_rent_per_room.py",
+      "path": "workflows/tabpfn/analysis/clean_rent_per_room.py",
+      "sha256": "e6ea4793438383ed9f2d5ef9ff0c83da02f4ea8e407a132437207b152c362008"
+    },
+    {
+      "source_path": "analysis/compare_amenity_quality.py",
+      "path": "workflows/tabpfn/analysis/compare_amenity_quality.py",
+      "sha256": "61528d4a1e2d09de857ed6ee6eac639ad5a20bb46a2bd5f63bf9f6e4e8008b36"
+    },
+    {
+      "source_path": "analysis/compare_auxiliary_features.py",
+      "path": "workflows/tabpfn/analysis/compare_auxiliary_features.py",
+      "sha256": "3a3ac9eb1d7f4bcb1e3ddce7f606f2cd1a4fc344caa4a65cee21590a156da884"
+    },
+    {
+      "source_path": "analysis/compare_bayesian_amenity_factors.py",
+      "path": "workflows/tabpfn/analysis/compare_bayesian_amenity_factors.py",
+      "sha256": "451ba0e8ab379864c19b6859b2d9b5a565628ab420780fa9d099bddb54ac493e"
+    },
+    {
+      "source_path": "analysis/compare_coarse_rental_surface.py",
+      "path": "workflows/tabpfn/analysis/compare_coarse_rental_surface.py",
+      "sha256": "e94d0db81ad8531e32dafc6fb2b1b368e614c27164a994a89ce4bd7413c5ece9"
+    },
+    {
+      "source_path": "analysis/compare_company_worksite_followup.py",
+      "path": "workflows/tabpfn/analysis/compare_company_worksite_followup.py",
+      "sha256": "96c4b3311f4e35a1ef4ea64bd1bd03ea6beb77bc1f3fa04ba834441a393d5770"
+    },
+    {
+      "source_path": "analysis/compare_company_worksite_stocks.py",
+      "path": "workflows/tabpfn/analysis/compare_company_worksite_stocks.py",
+      "sha256": "a1f1e2f352a03a9d9519444e235291a759e7e9616f647ef1c557c888932787db"
+    },
+    {
+      "source_path": "analysis/compare_dynamic_market_index.py",
+      "path": "workflows/tabpfn/analysis/compare_dynamic_market_index.py",
+      "sha256": "f22c8f072d75d470f345a694d47639dca2e596515e8110c6bac8ab52e2597d9e"
+    },
+    {
+      "source_path": "analysis/compare_economic_features.py",
+      "path": "workflows/tabpfn/analysis/compare_economic_features.py",
+      "sha256": "534a12b41d23aebbd447905f2c3b60d9cdbea27a3081df8ad34ac8f57ede47be"
+    },
+    {
+      "source_path": "analysis/compare_factored_rental_surface.py",
+      "path": "workflows/tabpfn/analysis/compare_factored_rental_surface.py",
+      "sha256": "b68c734c7ce15349cf02c5c523b4c13fab4c384a2bc48dcd68aaac9812e71339"
+    },
+    {
+      "source_path": "analysis/compare_financial_sector_rent_categories.py",
+      "path": "workflows/tabpfn/analysis/compare_financial_sector_rent_categories.py",
+      "sha256": "2ee7c9d6ac9a342052138ab501792ee16862fca9d6bed02544a63d6fa8689cec"
+    },
+    {
+      "source_path": "analysis/compare_financial_sector_rents.py",
+      "path": "workflows/tabpfn/analysis/compare_financial_sector_rents.py",
+      "sha256": "dd6ef914f9e09111ae3cfc0cc561350f7a2074fd8ca7d5c0de324646b329d341"
+    },
+    {
+      "source_path": "analysis/compare_flat_model_grouping.py",
+      "path": "workflows/tabpfn/analysis/compare_flat_model_grouping.py",
+      "sha256": "856bcda5b62e97d98ca440b1c013d782b604b2de28a270709c80e1f21e2a0d5d"
+    },
+    {
+      "source_path": "analysis/compare_flat_type_economic_forecast.py",
+      "path": "workflows/tabpfn/analysis/compare_flat_type_economic_forecast.py",
+      "sha256": "eb957535ac9f5980ec6b2b017e4e0ac837678c348e5f036aaacc79fdd6d673e2"
+    },
+    {
+      "source_path": "analysis/compare_half_median_ensemble.py",
+      "path": "workflows/tabpfn/analysis/compare_half_median_ensemble.py",
+      "sha256": "db731918e4ecff2d400ebfe00b4bfd1f48997bb1afa588571359d8d174e90ca9"
+    },
+    {
+      "source_path": "analysis/compare_local_comparable_graph.py",
+      "path": "workflows/tabpfn/analysis/compare_local_comparable_graph.py",
+      "sha256": "730d28a28643353e55e3c31dab98856756bc10863fdb76b0fa2586e73fe96a15"
+    },
+    {
+      "source_path": "analysis/compare_local_economy_landscape.py",
+      "path": "workflows/tabpfn/analysis/compare_local_economy_landscape.py",
+      "sha256": "152f4c7ee70145b6431bbc89248d0fabcb69cca659edcdbb605eb296890ad2d4"
+    },
+    {
+      "source_path": "analysis/compare_local_income_extension.py",
+      "path": "workflows/tabpfn/analysis/compare_local_income_extension.py",
+      "sha256": "2b2c0d5d6e9c6eaad455892f5fcf0c278f10782cf3a51361bab48db0bc01d2c6"
+    },
+    {
+      "source_path": "analysis/compare_model_families.py",
+      "path": "workflows/tabpfn/analysis/compare_model_families.py",
+      "sha256": "a3abdc8c7d9fb2cfb8dce21d71dcfd8aa69c5326423aa395cbb3c9fc8237edbb"
+    },
+    {
+      "source_path": "analysis/compare_recent_history.py",
+      "path": "workflows/tabpfn/analysis/compare_recent_history.py",
+      "sha256": "d04ceb8c631d29cf4a34c89dc0088a00a84c5d55e402951c24a8c0fe52ec30c3"
+    },
+    {
+      "source_path": "analysis/compare_spatiotemporal_hybrid.py",
+      "path": "workflows/tabpfn/analysis/compare_spatiotemporal_hybrid.py",
+      "sha256": "481505d77ef9849097c149de1ffc884d7550e408e24c29edc47f4da33a01f181"
+    },
+    {
+      "source_path": "analysis/compare_stock_index_regions.py",
+      "path": "workflows/tabpfn/analysis/compare_stock_index_regions.py",
+      "sha256": "a3a95a17dd2cca6a990c1e3a43dfaca22980705aa0120e256775d1dce87f545a"
+    },
+    {
+      "source_path": "analysis/compare_stock_sectors.py",
+      "path": "workflows/tabpfn/analysis/compare_stock_sectors.py",
+      "sha256": "c8d54f03e7c43311ba14772f5c7dabb14a35e4851ea103f41a8fd5f678c3ee23"
+    },
+    {
+      "source_path": "analysis/compare_tabm_80_20.py",
+      "path": "workflows/tabpfn/analysis/compare_tabm_80_20.py",
+      "sha256": "1988a5cdf14b217533628441acf5ceabf0874fb2b605986b545eef611b72844a"
+    },
+    {
+      "source_path": "analysis/compare_tabpfn.py",
+      "path": "workflows/tabpfn/analysis/compare_tabpfn.py",
+      "sha256": "e2cd4f069b8802271cf9d866617b6614ec57034d361735a2a97b7d405debe16d"
+    },
+    {
+      "source_path": "analysis/compare_tabpfn_abcde.py",
+      "path": "workflows/tabpfn/analysis/compare_tabpfn_abcde.py",
+      "sha256": "44d79821d7dbec04e3cef13b6aedc8338b76a62d849d02aebf21484e5174a7c0"
+    },
+    {
+      "source_path": "analysis/compare_tabpfn_abcde_lstm_coe.py",
+      "path": "workflows/tabpfn/analysis/compare_tabpfn_abcde_lstm_coe.py",
+      "sha256": "82a3a8ec5594136138dacd46202063169ff05f4e427987cd6650dec9a791517f"
+    },
+    {
+      "source_path": "analysis/compare_tabpfn_adaptation.py",
+      "path": "workflows/tabpfn/analysis/compare_tabpfn_adaptation.py",
+      "sha256": "85711a7fe21fbde306077347ae28a49a50d66178918d471a4bab89b51c9b7ccf"
+    },
+    {
+      "source_path": "analysis/compare_tabpfn_aligned_temporal_80_20.py",
+      "path": "workflows/tabpfn/analysis/compare_tabpfn_aligned_temporal_80_20.py",
+      "sha256": "5db840857d405026681072516502a3439394e2856c75c3187c2d563dad1ee095"
+    },
+    {
+      "source_path": "analysis/compare_tabpfn_anniversary_history_80_20.py",
+      "path": "workflows/tabpfn/analysis/compare_tabpfn_anniversary_history_80_20.py",
+      "sha256": "94288b5b3847bcf945669e28f539e043296aeb4a6b82ce668b862de63fe0752e"
+    },
+    {
+      "source_path": "analysis/compare_tabpfn_by_flat_type.py",
+      "path": "workflows/tabpfn/analysis/compare_tabpfn_by_flat_type.py",
+      "sha256": "a86687b83830dfe849262968e3ffc977d476bb10a9d2959afb7e6290c83ef90f"
+    },
+    {
+      "source_path": "analysis/compare_tabpfn_by_town.py",
+      "path": "workflows/tabpfn/analysis/compare_tabpfn_by_town.py",
+      "sha256": "38959c6b195b4db8eb4ddcc6c5d13601be5334e8596dc06b0576bf7164d03ff9"
+    },
+    {
+      "source_path": "analysis/compare_tabpfn_calendar_80_20.py",
+      "path": "workflows/tabpfn/analysis/compare_tabpfn_calendar_80_20.py",
+      "sha256": "6d1bd3d952ba3d8b0a1c2da4f7542bfc418f1c6c521f2f1df92fdc00eece864c"
+    },
+    {
+      "source_path": "analysis/compare_tabpfn_catboost_ensemble.py",
+      "path": "workflows/tabpfn/analysis/compare_tabpfn_catboost_ensemble.py",
+      "sha256": "035915ad042307541e7521ae95680eea8cc54489c71a59879e4c717101d0b2ee"
+    },
+    {
+      "source_path": "analysis/compare_tabpfn_components_80_20.py",
+      "path": "workflows/tabpfn/analysis/compare_tabpfn_components_80_20.py",
+      "sha256": "ba085f9ac46953f045562f670823987356bbc9ada46960ba1ec013f5c7eff9c5"
+    },
+    {
+      "source_path": "analysis/compare_tabpfn_context_sampling.py",
+      "path": "workflows/tabpfn/analysis/compare_tabpfn_context_sampling.py",
+      "sha256": "698bc2ac70c73583787ce59f0da301075f4505804ca788fa6d994b2faa42e0ad"
+    },
+    {
+      "source_path": "analysis/compare_tabpfn_deduplicated_77_80_20.py",
+      "path": "workflows/tabpfn/analysis/compare_tabpfn_deduplicated_77_80_20.py",
+      "sha256": "cd09758ac00541b8b4e23bcc23b7501de41c413b7c1ac4dd9fec476d91bb193e"
+    },
+    {
+      "source_path": "analysis/compare_tabpfn_diagscale_80_20.py",
+      "path": "workflows/tabpfn/analysis/compare_tabpfn_diagscale_80_20.py",
+      "sha256": "5f9ceb1e93c72389f2dd0113cc3feead25c5d1594309ddaee5da88eb8107fa76"
+    },
+    {
+      "source_path": "analysis/compare_tabpfn_dynamic_temporal_80_20.py",
+      "path": "workflows/tabpfn/analysis/compare_tabpfn_dynamic_temporal_80_20.py",
+      "sha256": "aa82216fb416f288dc9a599104ff2b8a9c4a6ca03c3d9f3784c29ae35b8d880c"
+    },
+    {
+      "source_path": "analysis/compare_tabpfn_fast_embedding_head_80_20.py",
+      "path": "workflows/tabpfn/analysis/compare_tabpfn_fast_embedding_head_80_20.py",
+      "sha256": "2b9c0741cef04b8d709e67cfec3cba2d60ed75568dc7bb439c40c971b12a6338"
+    },
+    {
+      "source_path": "analysis/compare_tabpfn_fast_temporal_80_20.py",
+      "path": "workflows/tabpfn/analysis/compare_tabpfn_fast_temporal_80_20.py",
+      "sha256": "3b1dfd179f46669e51142d40eaf72a1efe46a88f131c4793cc50be1ee5166a00"
+    },
+    {
+      "source_path": "analysis/compare_tabpfn_fast_temporal_levels_80_20.py",
+      "path": "workflows/tabpfn/analysis/compare_tabpfn_fast_temporal_levels_80_20.py",
+      "sha256": "03f68b8fe6bd1f99d5d4332369766def7c2f38acba9354d6878bfef1ab9fbd84"
+    },
+    {
+      "source_path": "analysis/compare_tabpfn_feature_ensemble.py",
+      "path": "workflows/tabpfn/analysis/compare_tabpfn_feature_ensemble.py",
+      "sha256": "3b85a2faec6a9cfe4fcb175c1e0761dadb8bbbfde3d3ba50dfb20708066c3fb6"
+    },
+    {
+      "source_path": "analysis/compare_tabpfn_filtered_1500_80_20.py",
+      "path": "workflows/tabpfn/analysis/compare_tabpfn_filtered_1500_80_20.py",
+      "sha256": "f8376db717a0872fb891b479093a78eecee1dc170e8409fb11942acb68cac34a"
+    },
+    {
+      "source_path": "analysis/compare_tabpfn_hierarchical_latent.py",
+      "path": "workflows/tabpfn/analysis/compare_tabpfn_hierarchical_latent.py",
+      "sha256": "25b163b53bef4f26bb7317adaa3c829eee413268fe52f59c0a203f7601305a12"
+    },
+    {
+      "source_path": "analysis/compare_tabpfn_lora_qk_80_20.py",
+      "path": "workflows/tabpfn/analysis/compare_tabpfn_lora_qk_80_20.py",
+      "sha256": "4848ee7f9f7c63f73af8f62e5177828f054a8ff31b80f6ec68b5661e81897e8b"
+    },
+    {
+      "source_path": "analysis/compare_tabpfn_recent_half.py",
+      "path": "workflows/tabpfn/analysis/compare_tabpfn_recent_half.py",
+      "sha256": "f68d55640467c90573754657a7226aa219a4e717e5c8f247e2b2eb32cec3f0a2"
+    },
+    {
+      "source_path": "analysis/compare_tabpfn_reliability_macro.py",
+      "path": "workflows/tabpfn/analysis/compare_tabpfn_reliability_macro.py",
+      "sha256": "62f5d851d2839389ac655f8963ef053e8203b3b4a33d7977606a8ced3bb26fde"
+    },
+    {
+      "source_path": "analysis/compare_tabpfn_sampled_finetuning.py",
+      "path": "workflows/tabpfn/analysis/compare_tabpfn_sampled_finetuning.py",
+      "sha256": "2358ec99598c321343c8468056456a7af5af61a5ecb2c2a190c1737b2f076d22"
+    },
+    {
+      "source_path": "analysis/compare_tabpfn_spatial_temporal_residual.py",
+      "path": "workflows/tabpfn/analysis/compare_tabpfn_spatial_temporal_residual.py",
+      "sha256": "d23b02ed55e9c658ccb46c47d90da38332926bd16410aaff60d60fd29ef06a12"
+    },
+    {
+      "source_path": "analysis/compare_tabpfn_temporal_view_ensembles.py",
+      "path": "workflows/tabpfn/analysis/compare_tabpfn_temporal_view_ensembles.py",
+      "sha256": "71dc5c5a6bc51e7c1e9e0bc9dae8d11bda8150392115a7e7923aaa997bf28418"
+    },
+    {
+      "source_path": "analysis/compare_tabpfn_v3_5_fast_80_20.py",
+      "path": "workflows/tabpfn/analysis/compare_tabpfn_v3_5_fast_80_20.py",
+      "sha256": "f6219a6058535f6d53b1a6d637cf910e50e1cf3c32bf1e0f02af2b02394f092f"
+    },
+    {
+      "source_path": "analysis/compare_tabpfn_v3_80_20.py",
+      "path": "workflows/tabpfn/analysis/compare_tabpfn_v3_80_20.py",
+      "sha256": "f87994a4df3159adaea27bb00789c807dbd0278d6399b13e8cdbe96409ba0306"
+    },
+    {
+      "source_path": "analysis/compare_tabpfn_v3_prepared.py",
+      "path": "workflows/tabpfn/analysis/compare_tabpfn_v3_prepared.py",
+      "sha256": "b041ff3d6a7eda16d22d6eddaef42574803f29f3b553f0da417912f78f13e5d1"
+    },
+    {
+      "source_path": "analysis/compare_tabpfn_v3_recent_year.py",
+      "path": "workflows/tabpfn/analysis/compare_tabpfn_v3_recent_year.py",
+      "sha256": "2de04b6e54f45cd6aef2b6f17629182960c120e32ff1b7fba58d70f40b3de941"
+    },
+    {
+      "source_path": "analysis/compare_temporal_sequence_ablation.py",
+      "path": "workflows/tabpfn/analysis/compare_temporal_sequence_ablation.py",
+      "sha256": "bf430812c6d7dd981bff4e6b395ab96bd7cceb11f5dc29a5348ad02cf9cf1b70"
+    },
+    {
+      "source_path": "analysis/compare_worksite_tabpfn_correction.py",
+      "path": "workflows/tabpfn/analysis/compare_worksite_tabpfn_correction.py",
+      "sha256": "8fb23ea99e926daf6c79ca393352351fcf8a719f4184d7dbd5d6813ca69f3a29"
+    },
+    {
+      "source_path": "analysis/compare_worldcover_tree_cover.py",
+      "path": "workflows/tabpfn/analysis/compare_worldcover_tree_cover.py",
+      "sha256": "8c89579d5062d9cb0146a807474ac082efd6587ab45f47143234b702845ee3c5"
+    },
+    {
+      "source_path": "analysis/compare_zch_anniversary_tabpfn_ensemble.py",
+      "path": "workflows/tabpfn/analysis/compare_zch_anniversary_tabpfn_ensemble.py",
+      "sha256": "f10c7e808c711b428147f7319c8974a1c68ca165c06335ebd86dd3d0a62b03de"
+    },
+    {
+      "source_path": "analysis/config.py",
+      "path": "workflows/tabpfn/analysis/config.py",
+      "sha256": "d1840e8c7ea5a1883a299b3e3179e00a22912ea0338ff1671ebdffc4b2ed6475"
+    },
+    {
+      "source_path": "analysis/configs/amenity_quality.json",
+      "path": "workflows/tabpfn/analysis/configs/amenity_quality.json",
+      "sha256": "c132d1c0540c4ccce51cd22779b3a4b87e9116ca0c0a57b0c9885a52e58ae398"
+    },
+    {
+      "source_path": "analysis/configs/company_worksite_followup.json",
+      "path": "workflows/tabpfn/analysis/configs/company_worksite_followup.json",
+      "sha256": "4a7a432f5e8f9e398b093875485b7bb3b6cc30ae1ead8e4c0a9ffae9b6b97e9d"
+    },
+    {
+      "source_path": "analysis/configs/company_worksites.json",
+      "path": "workflows/tabpfn/analysis/configs/company_worksites.json",
+      "sha256": "ddb4f4564a37fd20b12bcbce9f5a70ce95bbef66548e3c6e1da4d875fbbfbbef"
+    },
+    {
+      "source_path": "analysis/configs/financial_sector_rent_categories.json",
+      "path": "workflows/tabpfn/analysis/configs/financial_sector_rent_categories.json",
+      "sha256": "bd23eb8e7efa16c02709572b1b0fba528f89799891fdfd537e09ca83c98636bb"
+    },
+    {
+      "source_path": "analysis/configs/financial_sector_rents.json",
+      "path": "workflows/tabpfn/analysis/configs/financial_sector_rents.json",
+      "sha256": "a0bef6060c3f884c9d0fc7b7d7097f090560315856b258ea4b1393892c333b7b"
+    },
+    {
+      "source_path": "analysis/configs/hdb_sla_named_estates_2023.json",
+      "path": "workflows/tabpfn/analysis/configs/hdb_sla_named_estates_2023.json",
+      "sha256": "aafe531d7e2400df02df792a731d44136dd95b2ca937da9dc8dcd5322e0a2bc7"
+    },
+    {
+      "source_path": "analysis/configs/local_economy_landscape.json",
+      "path": "workflows/tabpfn/analysis/configs/local_economy_landscape.json",
+      "sha256": "c37ed576dd7fa1904d52103d20b8b6004728f325ccb715c292d8a8249e5088ba"
+    },
+    {
+      "source_path": "analysis/configs/local_income_extension.json",
+      "path": "workflows/tabpfn/analysis/configs/local_income_extension.json",
+      "sha256": "a734bb17606604f9f0930d05bfd4d6e6f4572ccaa0d1ab262c009685b3ed4b5f"
+    },
+    {
+      "source_path": "analysis/configs/sti_etf_weights_2020_12.csv",
+      "path": "workflows/tabpfn/analysis/configs/sti_etf_weights_2020_12.csv",
+      "sha256": "89a07a7389f702666442f44611ab715277c50057705feff06904ad01e9783afd"
+    },
+    {
+      "source_path": "analysis/configs/stock_index_methodology.json",
+      "path": "workflows/tabpfn/analysis/configs/stock_index_methodology.json",
+      "sha256": "9cca33f706d21e4c4edf647dd686b595ffc2ae0cb074bb8133b0e6c117303504"
+    },
+    {
+      "source_path": "analysis/configs/worldcover_tree_cover.json",
+      "path": "workflows/tabpfn/analysis/configs/worldcover_tree_cover.json",
+      "sha256": "b2f06f84e5086b5323d27f1c64e0b41056b4c11ca4eda5446fb1131ea9ee92aa"
+    },
+    {
+      "source_path": "analysis/data.py",
+      "path": "workflows/tabpfn/analysis/data.py",
+      "sha256": "fefdfd0c1cec930a993183e68d127be32821a7407118b27fcd1c2fbb9221f1b9"
+    },
+    {
+      "source_path": "analysis/describe_building_rent_distribution.py",
+      "path": "workflows/tabpfn/analysis/describe_building_rent_distribution.py",
+      "sha256": "b226940d31036e4afbbc97268039c4b22d88707e7a157280aedade75a17875b1"
+    },
+    {
+      "source_path": "analysis/download_tabpfn_v3_checkpoint.py",
+      "path": "workflows/tabpfn/analysis/download_tabpfn_v3_checkpoint.py",
+      "sha256": "ace1907b8484d012ec9652bef09ee966c16da1c44694127be511a96fc92f9e8e"
+    },
+    {
+      "source_path": "analysis/eda/__init__.py",
+      "path": "workflows/tabpfn/analysis/eda/__init__.py",
+      "sha256": "cf08c516c9f44065f61e8b4f7d1530de0dc5f2212ed5c391fd862f8d52c2c8f5"
+    },
+    {
+      "source_path": "analysis/eda/audits/__init__.py",
+      "path": "workflows/tabpfn/analysis/eda/audits/__init__.py",
+      "sha256": "f5e791af718dbbd832e6682f0d56c5993b3bd3b53b707f6dbab62e0bc9610e1c"
+    },
+    {
+      "source_path": "analysis/eda/audits/auxiliary.py",
+      "path": "workflows/tabpfn/analysis/eda/audits/auxiliary.py",
+      "sha256": "9d068f0a0915a2fabd19c42bf7176256a8e334cf376bf0d0398b4abb3a9df16f"
+    },
+    {
+      "source_path": "analysis/eda/audits/main_data.py",
+      "path": "workflows/tabpfn/analysis/eda/audits/main_data.py",
+      "sha256": "20c0cf0caa341969307f4a25315f8fc802e50b13071498dae7bb76899d90b85f"
+    },
+    {
+      "source_path": "analysis/eda/auxiliary_data.py",
+      "path": "workflows/tabpfn/analysis/eda/auxiliary_data.py",
+      "sha256": "c247f0939bee1408f2c88f78319dd19e1cbe2efb365850339690c12898f26fb8"
+    },
+    {
+      "source_path": "analysis/eda/economic_signals.py",
+      "path": "workflows/tabpfn/analysis/eda/economic_signals.py",
+      "sha256": "c5141f45a0704aed7edb7d6d920caa3fbe9b17ef8435e4201f80da7478e96390"
+    },
+    {
+      "source_path": "analysis/eda/group_temporal_panel.py",
+      "path": "workflows/tabpfn/analysis/eda/group_temporal_panel.py",
+      "sha256": "cb01996f9638a47daadc712d4fb9ec4a27250d74d6e47f81d9c22609565c9dac"
+    },
+    {
+      "source_path": "analysis/eda/overview.py",
+      "path": "workflows/tabpfn/analysis/eda/overview.py",
+      "sha256": "b46032e3a4e23cea326ae7c12307cf2c2fbc955149811cce55337afbb7040f63"
+    },
+    {
+      "source_path": "analysis/eda/pdf_report.py",
+      "path": "workflows/tabpfn/analysis/eda/pdf_report.py",
+      "sha256": "bf7e4ed28e3e7b631d6fe3fc4a0e8319282ecd7e2b7e1c00c3cbbdd7141251e6"
+    },
+    {
+      "source_path": "analysis/eda/run.py",
+      "path": "workflows/tabpfn/analysis/eda/run.py",
+      "sha256": "b60d7892fb0837daf21e9df26c699a6095c4bf9c24950cbf82a29bbf9c65cd8c"
+    },
+    {
+      "source_path": "analysis/eda/temporal_correlations.py",
+      "path": "workflows/tabpfn/analysis/eda/temporal_correlations.py",
+      "sha256": "2ff58f5637776f5033a38d658dc682c4546acb76b4ee48ce111b93c291ddcbf4"
+    },
+    {
+      "source_path": "analysis/eda/train_test.py",
+      "path": "workflows/tabpfn/analysis/eda/train_test.py",
+      "sha256": "f166591172222df3a08bdb02cf20010a50315234fb873430b2105c942fc1ba4c"
+    },
+    {
+      "source_path": "analysis/eda_auxiliary_data.py",
+      "path": "workflows/tabpfn/analysis/eda_auxiliary_data.py",
+      "sha256": "08cee16e062d1c5ee581759e0f2ba063d8ba4cdcda8f9e843539c9f33a222831"
+    },
+    {
+      "source_path": "analysis/eda_economic_signals.py",
+      "path": "workflows/tabpfn/analysis/eda_economic_signals.py",
+      "sha256": "14137c498f08678bf52bf237e2b90aa72757e8e57c4067d4935ee875ec1ccf2f"
+    },
+    {
+      "source_path": "analysis/eda_group_temporal_panel.py",
+      "path": "workflows/tabpfn/analysis/eda_group_temporal_panel.py",
+      "sha256": "3012b44a06aec2441b8a630fadb66ec2677c08e1e6425025908729034cbfc98b"
+    },
+    {
+      "source_path": "analysis/eda_temporal_correlations.py",
+      "path": "workflows/tabpfn/analysis/eda_temporal_correlations.py",
+      "sha256": "94887f30e086bf300b3df5901912ac7d574e3c57b1281de9e8dca09e359cce4a"
+    },
+    {
+      "source_path": "analysis/eda_train_test.py",
+      "path": "workflows/tabpfn/analysis/eda_train_test.py",
+      "sha256": "226d92026f97c86a1b9f9e254172567006dde538ceebba229d2f82a8d7b7cca0"
+    },
+    {
+      "source_path": "analysis/evaluate_tabpfn_hierarchical_latent.py",
+      "path": "workflows/tabpfn/analysis/evaluate_tabpfn_hierarchical_latent.py",
+      "sha256": "97004333cf8d499c3c7927de94a74f5063a3977168cf5db535710bba76d796a0"
+    },
+    {
+      "source_path": "analysis/evaluate_tabpfn_spatial_temporal_residual.py",
+      "path": "workflows/tabpfn/analysis/evaluate_tabpfn_spatial_temporal_residual.py",
+      "sha256": "a4ff25de29469a8b22c37a0b753c10ece541a0a67d3d6e4093632fe0261f5e5e"
+    },
+    {
+      "source_path": "analysis/evaluate_transformer_comparable_control.py",
+      "path": "workflows/tabpfn/analysis/evaluate_transformer_comparable_control.py",
+      "sha256": "7b9227a28f9f6d8d945be412c9411414dfb17d2f88c5d5e27c3a6d30ba86c1b1"
+    },
+    {
+      "source_path": "analysis/evaluate_transformer_context_ensemble.py",
+      "path": "workflows/tabpfn/analysis/evaluate_transformer_context_ensemble.py",
+      "sha256": "82bcd4a9d77ca5b1a902fe6769595a54b8e8e9a966949b80b37d0d042ac5a5b2"
+    },
+    {
+      "source_path": "analysis/evaluate_transformer_dynamic_latents.py",
+      "path": "workflows/tabpfn/analysis/evaluate_transformer_dynamic_latents.py",
+      "sha256": "13ccac901e51ba2c3a7fe1b589d4bacaee72111d17c10ebf520ebf8a991ef115"
+    },
+    {
+      "source_path": "analysis/evaluate_transformer_forced_decay.py",
+      "path": "workflows/tabpfn/analysis/evaluate_transformer_forced_decay.py",
+      "sha256": "d8ad93168b1a7dcae19d7426fe7f613f5eb7a27e75eaae5cb4a2d329eb6194c0"
+    },
+    {
+      "source_path": "analysis/evaluate_transformer_hierarchical_calibration.py",
+      "path": "workflows/tabpfn/analysis/evaluate_transformer_hierarchical_calibration.py",
+      "sha256": "12bbe1e92e93f75ecd597e83be7657f8ccfcdc89ea359067cdfc341207d423a5"
+    },
+    {
+      "source_path": "analysis/evaluate_transformer_tabpfn_correction.py",
+      "path": "workflows/tabpfn/analysis/evaluate_transformer_tabpfn_correction.py",
+      "sha256": "d2a6fb749f0b0892fcfe53136f4c18582f685df6d14c46b37f29a07e03db0590"
+    },
+    {
+      "source_path": "analysis/evaluate_transformer_tabpfn_distillation.py",
+      "path": "workflows/tabpfn/analysis/evaluate_transformer_tabpfn_distillation.py",
+      "sha256": "281c83f9b31952933ae8ce246d0a2933f03e5d8dfaa69bb0d07d2957b947897f"
+    },
+    {
+      "source_path": "analysis/evaluate_transformer_uncertainty.py",
+      "path": "workflows/tabpfn/analysis/evaluate_transformer_uncertainty.py",
+      "sha256": "f557c5607d661b3463e05e3d5b4cda21cb10df89dd67e560916fc6aa8284ed25"
+    },
+    {
+      "source_path": "analysis/evaluation.py",
+      "path": "workflows/tabpfn/analysis/evaluation.py",
+      "sha256": "a7a81b63717b8ce1b59e51a969b98560112da0a0a090c8f0d24d50ed041efe97"
+    },
+    {
+      "source_path": "analysis/experiment_catalog.py",
+      "path": "workflows/tabpfn/analysis/experiment_catalog.py",
+      "sha256": "7bc4fb6e15bd7b6e20dcf103c856247d557b4b837e063a6a13ba6a46dc37df95"
+    },
+    {
+      "source_path": "analysis/experiments/README.md",
+      "path": "workflows/tabpfn/analysis/experiments/README.md",
+      "sha256": "b1a7200e9186d2b242754db0fc1a62a5fcde091caff4cbeee0b54d931422d7c6"
+    },
+    {
+      "source_path": "analysis/experiments/__init__.py",
+      "path": "workflows/tabpfn/analysis/experiments/__init__.py",
+      "sha256": "3f2cf64bdb2c12999da989b6f1dbed3d40b99184f18de75ba6ab90b3a3a4891e"
+    },
+    {
+      "source_path": "analysis/experiments/aligned_temporal_features.py",
+      "path": "workflows/tabpfn/analysis/experiments/aligned_temporal_features.py",
+      "sha256": "3e8c4ebc0fb741a57099e8fec8f2c6a32dfabfe262dd7a077610ff2714fe4f70"
+    },
+    {
+      "source_path": "analysis/experiments/amenity_quality_features.py",
+      "path": "workflows/tabpfn/analysis/experiments/amenity_quality_features.py",
+      "sha256": "bde450b46ab7d26ec35988fe0c46635bc754818b7a67c66c0ec5e42d004819fe"
+    },
+    {
+      "source_path": "analysis/experiments/amenity_quality_sources.py",
+      "path": "workflows/tabpfn/analysis/experiments/amenity_quality_sources.py",
+      "sha256": "ff388922bd978a41e0056f9311ad6c7fcfbd74935b2862fb00f93e4f5b89476e"
+    },
+    {
+      "source_path": "analysis/experiments/auxiliary_ablation.py",
+      "path": "workflows/tabpfn/analysis/experiments/auxiliary_ablation.py",
+      "sha256": "6965b5c4342cae7013a5917e550cc9c029a912f8151bf945358d91f02130b1c7"
+    },
+    {
+      "source_path": "analysis/experiments/baseline.py",
+      "path": "workflows/tabpfn/analysis/experiments/baseline.py",
+      "sha256": "83e4324683c9b9438439f6f35b8712937860f364ef1b33c87f8fb0e077a85b8e"
+    },
+    {
+      "source_path": "analysis/experiments/baselines/README.md",
+      "path": "workflows/tabpfn/analysis/experiments/baselines/README.md",
+      "sha256": "f84bc08de51d17712607f0db4c879ef2377cb3d899b67c27c0777b14f96a3065"
+    },
+    {
+      "source_path": "analysis/experiments/baselines/auxiliary_ablation.py",
+      "path": "workflows/tabpfn/analysis/experiments/baselines/auxiliary_ablation.py",
+      "sha256": "f812bd091182914f215295a2b05f6e62374196a6754a411bd7eb1319abf5de40"
+    },
+    {
+      "source_path": "analysis/experiments/baselines/auxiliary_boosting.py",
+      "path": "workflows/tabpfn/analysis/experiments/baselines/auxiliary_boosting.py",
+      "sha256": "f78b4c5d30d3b45f3c86d71998d39f7b8ad60dca11af6964356df1f989f576ff"
+    },
+    {
+      "source_path": "analysis/experiments/baselines/auxiliary_catboost.py",
+      "path": "workflows/tabpfn/analysis/experiments/baselines/auxiliary_catboost.py",
+      "sha256": "abb7639871d96290758daf81cd03af62646daf4562851491454c08c96211c358"
+    },
+    {
+      "source_path": "analysis/experiments/baselines/baseline.py",
+      "path": "workflows/tabpfn/analysis/experiments/baselines/baseline.py",
+      "sha256": "7bc74ab6cb8079db293ba9492fdd0e9f136a8f8c717d4ed621154cc6d9ecae4d"
+    },
+    {
+      "source_path": "analysis/experiments/baselines/compare_models.py",
+      "path": "workflows/tabpfn/analysis/experiments/baselines/compare_models.py",
+      "sha256": "1a13003cbfcc55680d259e139954c6c6bd01511349828c67a178a57e8c302463"
+    },
+    {
+      "source_path": "analysis/experiments/baselines/deep_learning.py",
+      "path": "workflows/tabpfn/analysis/experiments/baselines/deep_learning.py",
+      "sha256": "c0894f41206fdfe0cf4842bc8cd07c69228869486dffc7217454e53c777a824d"
+    },
+    {
+      "source_path": "analysis/experiments/baselines/economic_feature_ablation.py",
+      "path": "workflows/tabpfn/analysis/experiments/baselines/economic_feature_ablation.py",
+      "sha256": "9c3dd1d1e3a0e78cea848ad03671005f206caf817ed1e01345a6f6058ee5d70b"
+    },
+    {
+      "source_path": "analysis/experiments/baselines/historical_priors.py",
+      "path": "workflows/tabpfn/analysis/experiments/baselines/historical_priors.py",
+      "sha256": "458b16b24c2e255ec70fd9ddf1ff0fd8510e478902e577bdb8f53b5cef1f36a9"
+    },
+    {
+      "source_path": "analysis/experiments/baselines/neural_tabm.py",
+      "path": "workflows/tabpfn/analysis/experiments/baselines/neural_tabm.py",
+      "sha256": "86fb233a93e7d29716e05c5643d35f985bd3d244e303f6c2296310818e4aa955"
+    },
+    {
+      "source_path": "analysis/experiments/baselines/relu_mlp.py",
+      "path": "workflows/tabpfn/analysis/experiments/baselines/relu_mlp.py",
+      "sha256": "664f5e9a1b48a82921596bee6a9aa9edc89f43b62a47426b67aec9c61a7202f8"
+    },
+    {
+      "source_path": "analysis/experiments/baselines/spatiotemporal_hybrid.py",
+      "path": "workflows/tabpfn/analysis/experiments/baselines/spatiotemporal_hybrid.py",
+      "sha256": "09588b60013b16cc4e3676b71e332104f91dbf26d8915afcbc20756be8dc57f5"
+    },
+    {
+      "source_path": "analysis/experiments/baselines/summarize_deep_learning.py",
+      "path": "workflows/tabpfn/analysis/experiments/baselines/summarize_deep_learning.py",
+      "sha256": "5cdd7035c65ecdf09285bef5eab773dcfb96bd3e8e785f5b860fda3f2562eab8"
+    },
+    {
+      "source_path": "analysis/experiments/bayesian_amenity_factors.py",
+      "path": "workflows/tabpfn/analysis/experiments/bayesian_amenity_factors.py",
+      "sha256": "d54ca8251eafad4951441bf95a418df0182c9e1863e2f755bed0a47e64a8c81b"
+    },
+    {
+      "source_path": "analysis/experiments/calendar_encoding.py",
+      "path": "workflows/tabpfn/analysis/experiments/calendar_encoding.py",
+      "sha256": "e8ac207e91c086270e0a163ca9eaa669e520354d2f3b2787ae074996d9e2d4c5"
+    },
+    {
+      "source_path": "analysis/experiments/canonical_rental_dedup.py",
+      "path": "workflows/tabpfn/analysis/experiments/canonical_rental_dedup.py",
+      "sha256": "16b4be29cf5247f7b38aa4322ff1584a2a055ea550efaac94abd87c331bd58f8"
+    },
+    {
+      "source_path": "analysis/experiments/coarse_rental_surface.py",
+      "path": "workflows/tabpfn/analysis/experiments/coarse_rental_surface.py",
+      "sha256": "9049bd8835028c2e7b9021297b894d7e2f99c15bf38dbd1a34703c90c2a098e5"
+    },
+    {
+      "source_path": "analysis/experiments/company_worksite_followup.py",
+      "path": "workflows/tabpfn/analysis/experiments/company_worksite_followup.py",
+      "sha256": "52b50acbcc9100fbca1a735c7585762603648eee7c7a01996c5cfe5e6b6afe73"
+    },
+    {
+      "source_path": "analysis/experiments/company_worksite_stocks.py",
+      "path": "workflows/tabpfn/analysis/experiments/company_worksite_stocks.py",
+      "sha256": "85772c704b99ddcf53cca3a6a4eeaa29425fc5dbf04544f7364591cc08e9b9c0"
+    },
+    {
+      "source_path": "analysis/experiments/comprehensive_temporal.py",
+      "path": "workflows/tabpfn/analysis/experiments/comprehensive_temporal.py",
+      "sha256": "5eca130d172619e2b3113f11b9d2d956bd10dfea4ff6e256579914a4ebe79aec"
+    },
+    {
+      "source_path": "analysis/experiments/conditioned_rent_correction.py",
+      "path": "workflows/tabpfn/analysis/experiments/conditioned_rent_correction.py",
+      "sha256": "9df24555da20e31bb1b5bb1b8d49963d73a0db7e35ab7917adeb537084cd4f73"
+    },
+    {
+      "source_path": "analysis/experiments/diagscale_tabpfn.py",
+      "path": "workflows/tabpfn/analysis/experiments/diagscale_tabpfn.py",
+      "sha256": "1b4dbfd62803e6dcb594665219daeeb328d09cd632a8b3d13d8ac28dee9d2431"
+    },
+    {
+      "source_path": "analysis/experiments/dynamic_market_index.py",
+      "path": "workflows/tabpfn/analysis/experiments/dynamic_market_index.py",
+      "sha256": "272824fb01e648e5ed9379efb11d1e103a2ee93111cdb8ea098d7181354281a2"
+    },
+    {
+      "source_path": "analysis/experiments/economic_conditional_mean.py",
+      "path": "workflows/tabpfn/analysis/experiments/economic_conditional_mean.py",
+      "sha256": "8a0fb942cd17bdb7a5856898f0705a70f3ca4c70c080cc45124ebb287c681698"
+    },
+    {
+      "source_path": "analysis/experiments/economic_feature_ablation.py",
+      "path": "workflows/tabpfn/analysis/experiments/economic_feature_ablation.py",
+      "sha256": "4c05be911e843d45e1a0eabb464f5c27f44c472e95c7b40557544529c061954b"
+    },
+    {
+      "source_path": "analysis/experiments/factored_rental_surface.py",
+      "path": "workflows/tabpfn/analysis/experiments/factored_rental_surface.py",
+      "sha256": "51168f6ec6967ae0064f351a98cf10844351935ef9abae490a073a23f5cd1627"
+    },
+    {
+      "source_path": "analysis/experiments/feature_diversified_ensemble.py",
+      "path": "workflows/tabpfn/analysis/experiments/feature_diversified_ensemble.py",
+      "sha256": "c51b403fb165a88ba7ddb5f4e04899293fc4125c2bf83dac50dfe7fdc295a11d"
+    },
+    {
+      "source_path": "analysis/experiments/feature_engineering/README.md",
+      "path": "workflows/tabpfn/analysis/experiments/feature_engineering/README.md",
+      "sha256": "5ca3018c2206f9cf3d3bb5bb244faf0357390328a0b6cbaa178e5fdc3605cf39"
+    },
+    {
+      "source_path": "analysis/experiments/feature_engineering/feature_evidence.py",
+      "path": "workflows/tabpfn/analysis/experiments/feature_engineering/feature_evidence.py",
+      "sha256": "2c1a1cbb8bab29ba48509c17b99cd7c06467a794a584b4163a05499fc07a49ad"
+    },
+    {
+      "source_path": "analysis/experiments/feature_engineering/feature_optimization.py",
+      "path": "workflows/tabpfn/analysis/experiments/feature_engineering/feature_optimization.py",
+      "sha256": "918a13a34ea09381b8258fc35dde17e968aa57be99f1fd9bc4e309411ababc05"
+    },
+    {
+      "source_path": "analysis/experiments/feature_engineering/feature_selection.py",
+      "path": "workflows/tabpfn/analysis/experiments/feature_engineering/feature_selection.py",
+      "sha256": "eed694fe87b42cdec644e6a08963191122065d4180f41404f45c9f82a9255858"
+    },
+    {
+      "source_path": "analysis/experiments/financial_sector_rent_categories.py",
+      "path": "workflows/tabpfn/analysis/experiments/financial_sector_rent_categories.py",
+      "sha256": "0b29b4c26a5cc902eafd5652a9c2137188ab7685ed23e13761bb903b85f84ad9"
+    },
+    {
+      "source_path": "analysis/experiments/financial_sector_rents.py",
+      "path": "workflows/tabpfn/analysis/experiments/financial_sector_rents.py",
+      "sha256": "7e18a946e42a827f53ad6ab6cc576c09d0cf30e8e6b9b1edc35d18d0cbffc688"
+    },
+    {
+      "source_path": "analysis/experiments/flat_type_economic_forecast.py",
+      "path": "workflows/tabpfn/analysis/experiments/flat_type_economic_forecast.py",
+      "sha256": "52710e0ac19b03b6fb51acc79078263f3cf9d0a9c8ea8e1b177d2d0ae693cc3c"
+    },
+    {
+      "source_path": "analysis/experiments/flat_type_inference.py",
+      "path": "workflows/tabpfn/analysis/experiments/flat_type_inference.py",
+      "sha256": "67ff5c9d9e4dbc4b7d5a4ae7480f1632df97fed939272aa4c4494689b3651538"
+    },
+    {
+      "source_path": "analysis/experiments/gpu_capacity.py",
+      "path": "workflows/tabpfn/analysis/experiments/gpu_capacity.py",
+      "sha256": "42966186963f22062b5094b28a36767442b0c8d20f8418618f5924d608e82cc1"
+    },
+    {
+      "source_path": "analysis/experiments/hierarchical_latent_residual.py",
+      "path": "workflows/tabpfn/analysis/experiments/hierarchical_latent_residual.py",
+      "sha256": "a044a8c858988e9b2bfd71c67d38753393df030889977d0df47582ccac98d688"
+    },
+    {
+      "source_path": "analysis/experiments/local_comparable_graph.py",
+      "path": "workflows/tabpfn/analysis/experiments/local_comparable_graph.py",
+      "sha256": "d6525abc600e2e160deeed4b157136694d1c7fba0f28e4da91663e3c411f4039"
+    },
+    {
+      "source_path": "analysis/experiments/local_market_fields.py",
+      "path": "workflows/tabpfn/analysis/experiments/local_market_fields.py",
+      "sha256": "36711022a8a5834480a0018db66d7f6492f8b94cb7894ed55e1323fd021dab0e"
+    },
+    {
+      "source_path": "analysis/experiments/local_spatial_features.py",
+      "path": "workflows/tabpfn/analysis/experiments/local_spatial_features.py",
+      "sha256": "c869f0065c8d84d73d5b12dcc90804017779be15e1744c21fad13dda15b5fa66"
+    },
+    {
+      "source_path": "analysis/experiments/lora_qk_tabpfn.py",
+      "path": "workflows/tabpfn/analysis/experiments/lora_qk_tabpfn.py",
+      "sha256": "ded6a7d91321d341103a9ef2068207aa6106a37bb528ee1d4b1e2689ef0601fa"
+    },
+    {
+      "source_path": "analysis/experiments/model_comparison/README.md",
+      "path": "workflows/tabpfn/analysis/experiments/model_comparison/README.md",
+      "sha256": "01e99b9766901de67fc1acf60cfd3ef094641f6e3a9be0e2a605c2109596d032"
+    },
+    {
+      "source_path": "analysis/experiments/model_comparison/common_feature_models.py",
+      "path": "workflows/tabpfn/analysis/experiments/model_comparison/common_feature_models.py",
+      "sha256": "04a1ef7b715470fbde5703025c0d8fdfeaa3b6700caf950fd441b338a0d9a3dd"
+    },
+    {
+      "source_path": "analysis/experiments/model_comparison/download_tabicl.py",
+      "path": "workflows/tabpfn/analysis/experiments/model_comparison/download_tabicl.py",
+      "sha256": "ce97b6342b8be3673bfc872f46b11feb5703d830d7e316e96a80de17af7bcdad"
+    },
+    {
+      "source_path": "analysis/experiments/model_comparison/model_search.py",
+      "path": "workflows/tabpfn/analysis/experiments/model_comparison/model_search.py",
+      "sha256": "ec26b291e05c0ae2b43e6e4c9117285191f4ec753911d1e7fc7e27535a31995a"
+    },
+    {
+      "source_path": "analysis/experiments/model_families.py",
+      "path": "workflows/tabpfn/analysis/experiments/model_families.py",
+      "sha256": "3fd3a358a0087a57769ce431ca90f22b0141ed2f888e8249c6d7c9bfb5fa2353"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/README.md",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/README.md",
+      "sha256": "6a63c6db95161286ea078e2017cd8b8a2d9d554babb31edb66e795e2381de495"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_01_history_target_search/README.md",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_01_history_target_search/README.md",
+      "sha256": "f3fc44b0ea062679eac30ec2bff3ecd29daf974e6de40781ed03aa15eb7a52ce"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_01_history_target_search/frontier_compact.py",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_01_history_target_search/frontier_compact.py",
+      "sha256": "38509e8796a8dcf7dc47af615bd6a1038949f37197107a0007429f8e7607dc56"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_01_history_target_search/frontier_ensemble.py",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_01_history_target_search/frontier_ensemble.py",
+      "sha256": "5845177c15a963b4aa30e4cc1c3366df4f06a81f8488c5f3a17b5312e8e4c393"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_01_history_target_search/frontier_june_calibration.py",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_01_history_target_search/frontier_june_calibration.py",
+      "sha256": "fa4f0755dcfb2b87b4572c8c9506fc70de71e559d6d7bc1d1a60bba505005785"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_01_history_target_search/frontier_matched.py",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_01_history_target_search/frontier_matched.py",
+      "sha256": "ea60c93c68e8cbfaa927af73a7b3674109e9acba0358e5c5ff83c020ef914b74"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_01_history_target_search/frontier_matched_report.py",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_01_history_target_search/frontier_matched_report.py",
+      "sha256": "9219d91b86429b2ab516c202dae2b349377237a32b26d2a45b54efceed3e6e0a"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_01_history_target_search/frontier_mixture.py",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_01_history_target_search/frontier_mixture.py",
+      "sha256": "e44bc8065b130399f80bdeee9290a6780cbbc1ff524c2faebd1636d4323f4786"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_01_history_target_search/frontier_refinement.py",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_01_history_target_search/frontier_refinement.py",
+      "sha256": "8c98ff255cf224ba28ebd548229733f092b6e2389177b3db929361434e92cbf7"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_01_history_target_search/frontier_report.py",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_01_history_target_search/frontier_report.py",
+      "sha256": "58fb0920950d2df891ef65e58125e171c32dcdfcaff751f5d1ad481e6e91400a"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_01_history_target_search/frontier_search.py",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_01_history_target_search/frontier_search.py",
+      "sha256": "fbbcb530f1fce86a43caf0e0c44e9404ec582d9633438656926a6aac12370b11"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_02_anniversary_history/README.md",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_02_anniversary_history/README.md",
+      "sha256": "6ffa5ca9d0e463aecf19414f24ea01dea1d640087af527bc66e3dfea4efe9e61"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_02_anniversary_history/second_wave_anniversary.py",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_02_anniversary_history/second_wave_anniversary.py",
+      "sha256": "c4a724902a29188aff82b4d4374c617f44401c404b6815fa5bb3e28b4d6eab8a"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_02_anniversary_history/second_wave_cohort_extensions.py",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_02_anniversary_history/second_wave_cohort_extensions.py",
+      "sha256": "1799258378132902d4149aec8920487b3bb5acf7d2868399bcca54c29f98502f"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_02_anniversary_history/second_wave_ensemble.py",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_02_anniversary_history/second_wave_ensemble.py",
+      "sha256": "71691a5e758c86a07877b3d0b1bd66a82113447ae6dc9423339d4678f8fd5907"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_02_anniversary_history/second_wave_foundation.py",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_02_anniversary_history/second_wave_foundation.py",
+      "sha256": "e0267cff6e2bf97044c22b842030ee1705e18f37b05289a433c04c49063e04e5"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_02_anniversary_history/second_wave_normalized.py",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_02_anniversary_history/second_wave_normalized.py",
+      "sha256": "020d67777d83c1c81cb799d8796552ffbba20fbf7597792d3038e1ce6636fdcb"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_02_anniversary_history/second_wave_refined_blend.py",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_02_anniversary_history/second_wave_refined_blend.py",
+      "sha256": "e57f371eefb5d6fa7b38b5d78db44a7c8ce87d57fd0ab2cf5ac36cc96b473c15"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_02_anniversary_history/second_wave_report.py",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_02_anniversary_history/second_wave_report.py",
+      "sha256": "152b85c01a4bd501ea5b8152b2cb008e59ee4859ba46412bf4ff355e9757d825"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_02_anniversary_history/second_wave_stacking.py",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_02_anniversary_history/second_wave_stacking.py",
+      "sha256": "4d710c0a814db20669da0171665ebd0b5c7324e94c08364a88e1bbf60110aa3b"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_02_anniversary_history/second_wave_stress.py",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_02_anniversary_history/second_wave_stress.py",
+      "sha256": "62cac71f54177906ff782cd29b63bef28e00f1b97e77a0c0e0d5b8b666178e71"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_03_tree_transformer_ensemble/README.md",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_03_tree_transformer_ensemble/README.md",
+      "sha256": "80083d14f25d78158f1990502f77e131b6710d656870075fdae4eeaf7eb1f8d2"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_03_tree_transformer_ensemble/third_wave_ablations.py",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_03_tree_transformer_ensemble/third_wave_ablations.py",
+      "sha256": "b558357b18842712bb5cabf777b61d04062c156a657c746096d3cd5c8cbdb3d9"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_03_tree_transformer_ensemble/third_wave_adaptive.py",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_03_tree_transformer_ensemble/third_wave_adaptive.py",
+      "sha256": "adad5dfcf77af175eeb7a4dac38176c9d4a1feb5ec10b9193b2f3ea99ed78da2"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_03_tree_transformer_ensemble/third_wave_cross_ensemble.py",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_03_tree_transformer_ensemble/third_wave_cross_ensemble.py",
+      "sha256": "e1d04dcc015b2b2d96bb39abe6591b0678524989a5aa1eea2ecfa71cc29b7f01"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_03_tree_transformer_ensemble/third_wave_cross_type.py",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_03_tree_transformer_ensemble/third_wave_cross_type.py",
+      "sha256": "57c3496ddf075fd9b3cf4bff3d503bf4c99138d770bd8447c4e38c4155b0ea39"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_03_tree_transformer_ensemble/third_wave_ensemble.py",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_03_tree_transformer_ensemble/third_wave_ensemble.py",
+      "sha256": "f48ae5a94f630515881ed5da148ca717dcd12fbde5d93f4930e739d0e5c78d82"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_03_tree_transformer_ensemble/third_wave_features.py",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_03_tree_transformer_ensemble/third_wave_features.py",
+      "sha256": "d7c6bf7d2861d07943b511bc66024991d192548b5e5fd073356458741fc71dd9"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_03_tree_transformer_ensemble/third_wave_mixture.py",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_03_tree_transformer_ensemble/third_wave_mixture.py",
+      "sha256": "f27d0daa9d8d39e5c041b8d5f1963a06a3ff273a112309e38d9628c5c69f4b42"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_03_tree_transformer_ensemble/third_wave_models.py",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_03_tree_transformer_ensemble/third_wave_models.py",
+      "sha256": "b71e9e98bfaf0f8a2bebada5dae4e7a2fb961d8cb14ad9323e40f0dc9558b658"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_03_tree_transformer_ensemble/third_wave_report.py",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_03_tree_transformer_ensemble/third_wave_report.py",
+      "sha256": "607e22797898872a64d06c7addb1018e2310c8de83e4a77800d171ea94795f79"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_03_tree_transformer_ensemble/third_wave_training.py",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_03_tree_transformer_ensemble/third_wave_training.py",
+      "sha256": "d9a17d1891ac1349addc576f0cc943dbc79edf4ec55b8549879c455147a73a93"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_04_macro_spatial_diagnostics/README.md",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_04_macro_spatial_diagnostics/README.md",
+      "sha256": "88b7743d0665bb86afbec3c168776c468a6fb1f62bd88eb8334fe2e87d34e1fa"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_04_macro_spatial_diagnostics/fourth_wave_diagnostics.py",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_04_macro_spatial_diagnostics/fourth_wave_diagnostics.py",
+      "sha256": "0a19d45b5229eb0f3f8ebbf007e0e8b824560265b304bdaf70e0d1a2284f90ce"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_04_macro_spatial_diagnostics/fourth_wave_distribution.py",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_04_macro_spatial_diagnostics/fourth_wave_distribution.py",
+      "sha256": "2ec0d54821c2554515a13f4a37dfd49436ae7d762ced115446aee76d771e295a"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_04_macro_spatial_diagnostics/fourth_wave_ensemble.py",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_04_macro_spatial_diagnostics/fourth_wave_ensemble.py",
+      "sha256": "123fb8870b423dee5ce1c087f16d4226c46b83c7ff07ef489058277661b34df8"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_04_macro_spatial_diagnostics/fourth_wave_experts.py",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_04_macro_spatial_diagnostics/fourth_wave_experts.py",
+      "sha256": "ec19fa4f6ea4f1f4be89c3e5b709739ca20050ce1bd5e0c551e7e831b742c250"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_04_macro_spatial_diagnostics/fourth_wave_flows.py",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_04_macro_spatial_diagnostics/fourth_wave_flows.py",
+      "sha256": "1eac32bb46ab0aaaa95b3537e122aae8b8afb0b0936b8d086b5af5870eb8fe34"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_04_macro_spatial_diagnostics/fourth_wave_given_ensemble.py",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_04_macro_spatial_diagnostics/fourth_wave_given_ensemble.py",
+      "sha256": "a8e79cd211c097450fd4626a0adf3bc1d0a11346d12fcee718ca7793d3bb64dd"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_04_macro_spatial_diagnostics/fourth_wave_horizons.py",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_04_macro_spatial_diagnostics/fourth_wave_horizons.py",
+      "sha256": "c7714a67e5d94a65ddc3cc3dc9f9ffbe03d75ea9ab627d995980db4d72edabcf"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_04_macro_spatial_diagnostics/fourth_wave_known_macro.py",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_04_macro_spatial_diagnostics/fourth_wave_known_macro.py",
+      "sha256": "c551811073529104fd5378aa67787f3cf8b9ffd2d53d33543206913f0691832a"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_04_macro_spatial_diagnostics/fourth_wave_report.py",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_04_macro_spatial_diagnostics/fourth_wave_report.py",
+      "sha256": "449f7a38f3ab02e79d1764a641cec769034f8d23dbe8232274073cc045b84e57"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_04_macro_spatial_diagnostics/fourth_wave_spatial.py",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_04_macro_spatial_diagnostics/fourth_wave_spatial.py",
+      "sha256": "fa97382b85b3fd39dba273aa434c3263e4edf0e57b95619277bdaf18e9585084"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_05_feature_interactions/README.md",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_05_feature_interactions/README.md",
+      "sha256": "c98d0aa809184bb70d4a2b0372cfe541d6bebbdb9c2dc02f17f5a9558fe6c348"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_05_feature_interactions/fifth_wave_features.py",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_05_feature_interactions/fifth_wave_features.py",
+      "sha256": "ab085bb9cb6a9e5c0d8cb4cfb36b335b2f8bcdf4abfcdd388e732f6e7d26647c"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_05_feature_interactions/fifth_wave_report.py",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_05_feature_interactions/fifth_wave_report.py",
+      "sha256": "473e3479b3d7f764407b8b5b64ebbe1fc8ff2961812427eda615c4adb51a7563"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_06_deep_models/README.md",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_06_deep_models/README.md",
+      "sha256": "2e6852b81894153329667665bf54d98e3ea3b34d088f01b47796f1ae4cfd6683"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_06_deep_models/sixth_wave_deep.py",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_06_deep_models/sixth_wave_deep.py",
+      "sha256": "5c803334025a33a6290ba4bb23b0b8b95ac1ad523604c1256ba135cc5f317d79"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_06_deep_models/sixth_wave_ensemble.py",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_06_deep_models/sixth_wave_ensemble.py",
+      "sha256": "2a0e7f0543ba74ca101671e7199fa35c3d6afcb24784b3187ac8dae5cd2aa912"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_06_deep_models/sixth_wave_report.py",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_06_deep_models/sixth_wave_report.py",
+      "sha256": "1476962146686bedd2129052026194b2ec42550fe3931683e2b8106e369ce6a4"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_06_deep_models/sixth_wave_sources.py",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_06_deep_models/sixth_wave_sources.py",
+      "sha256": "4cc5ec0bc7f78af0436d0556b83db6797bd585e5221e227de8b9691e2fe2ac37"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_07_pretrained_transformers/README.md",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_07_pretrained_transformers/README.md",
+      "sha256": "6ac03d1603799afd59b18b725e5a82c98a1c3baf9b2a33664442b514fe978b3c"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_07_pretrained_transformers/seventh_wave_adaptation.py",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_07_pretrained_transformers/seventh_wave_adaptation.py",
+      "sha256": "8548e5e05d56b96009cb80011026911e911e715206fcf0a24dcb0375240cbbab"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_07_pretrained_transformers/seventh_wave_diagnostics.py",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_07_pretrained_transformers/seventh_wave_diagnostics.py",
+      "sha256": "b4a96c17a53f4e6cb5438bac83dd1ec3c79e7d3d9ab677d469691e170590867d"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_07_pretrained_transformers/seventh_wave_ensemble.py",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_07_pretrained_transformers/seventh_wave_ensemble.py",
+      "sha256": "b7c6b3d7f84969aa4b8bbda18ab9bd2f7f58b56a82efb6cd94b5b1050be47a68"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_07_pretrained_transformers/seventh_wave_report.py",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_07_pretrained_transformers/seventh_wave_report.py",
+      "sha256": "0d58bc411fb21209eccbe28287748323e4819ea427bd0ae986914018814a1845"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_07_pretrained_transformers/seventh_wave_sources.py",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_07_pretrained_transformers/seventh_wave_sources.py",
+      "sha256": "831056b44ff75abe96806709b42a2faa975600f70c61fafb9f1166f4fb56e867"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_07_pretrained_transformers/seventh_wave_transformers.py",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_07_pretrained_transformers/seventh_wave_transformers.py",
+      "sha256": "efaee42226323b8fd28572363d90680d66f51c5fe3599bfab262922dee56d800"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_08_feature_pruning_seeds/README.md",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_08_feature_pruning_seeds/README.md",
+      "sha256": "3a0e4a3e77b2bfac3af1a711db983a6f052efa44279972269e41b29b160c8c2a"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_08_feature_pruning_seeds/eighth_wave_meta.py",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_08_feature_pruning_seeds/eighth_wave_meta.py",
+      "sha256": "2a4df50aff73271da4e7b676ca0c2b19fe0fc41d1d1bd7f91b0af773d0f49a94"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_08_feature_pruning_seeds/eighth_wave_refinement.py",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_08_feature_pruning_seeds/eighth_wave_refinement.py",
+      "sha256": "f10817e709fb87cacf4e715f6b6b7cca7bf9b2519b7180f854174a6a7d89d221"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_08_feature_pruning_seeds/eighth_wave_report.py",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_08_feature_pruning_seeds/eighth_wave_report.py",
+      "sha256": "30f725a7910627e688f50529b09dc63eac3df8ce9a336d7dc3e0a5455cabc1f1"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_08_feature_pruning_seeds/eighth_wave_submission.py",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_08_feature_pruning_seeds/eighth_wave_submission.py",
+      "sha256": "b85a9a8a24f3b0b5bc5cd500ef8591bb48e866294628c303197edcf0738d1081"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_09_grouped_blending/README.md",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_09_grouped_blending/README.md",
+      "sha256": "8b2773d2ec35eeeddf54d0572bda859b6357ca47fb7cd0e86538a07301d3f301"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_09_grouped_blending/ninth_wave_blending.py",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_09_grouped_blending/ninth_wave_blending.py",
+      "sha256": "53bc9ca11941a8fd54b3fe18059796fbe410cefcd1dc680ddaba2339539eb5e8"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_09_grouped_blending/ninth_wave_report.py",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_09_grouped_blending/ninth_wave_report.py",
+      "sha256": "52e8bb3c51cf7f4719fd7710a374bb0bf497068f20f69313caa80135f3caeb7f"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_10_plr_transformer_final/README.md",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_10_plr_transformer_final/README.md",
+      "sha256": "e84a97fe1c853362f6984d8072741e7a02171ae3cf201cb086fe8330714da99e"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_10_plr_transformer_final/tenth_wave_ensemble.py",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_10_plr_transformer_final/tenth_wave_ensemble.py",
+      "sha256": "ee6f2457d58a9dd794cb9a42172641273408e2cbdebaeac881aadf29ae8c6237"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_10_plr_transformer_final/tenth_wave_report.py",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_10_plr_transformer_final/tenth_wave_report.py",
+      "sha256": "226bb646c0a7a48846deb7914b6d26c6fac97b4b508021ed5e5075f102ddc4a9"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_10_plr_transformer_final/tenth_wave_structures.py",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_10_plr_transformer_final/tenth_wave_structures.py",
+      "sha256": "3d0349a9b530985757a6db34788e0a9cd4b6c33e5a26ebf28b0af423270f9e6f"
+    },
+    {
+      "source_path": "analysis/experiments/optimization/round_10_plr_transformer_final/tenth_wave_trees.py",
+      "path": "workflows/tabpfn/analysis/experiments/optimization/round_10_plr_transformer_final/tenth_wave_trees.py",
+      "sha256": "47020d39db8c7556454fc2281a0cf1ab59b5e88839176c751db46f26e5adc715"
+    },
+    {
+      "source_path": "analysis/experiments/origin_macro_views.py",
+      "path": "workflows/tabpfn/analysis/experiments/origin_macro_views.py",
+      "sha256": "4734aea1f039f0aa2d919a0c340573e31c9b52e1752d6844854e20e0aabc909e"
+    },
+    {
+      "source_path": "analysis/experiments/prediction_blending.py",
+      "path": "workflows/tabpfn/analysis/experiments/prediction_blending.py",
+      "sha256": "f206461ce2226674232ca22fb3cf7c04bd6e9eacd69b545f98b70b262c228c6e"
+    },
+    {
+      "source_path": "analysis/experiments/recent_history.py",
+      "path": "workflows/tabpfn/analysis/experiments/recent_history.py",
+      "sha256": "1b455164c922224556f561ca10e475dbd784ce58eee38d0e08a5cff9baf6019a"
+    },
+    {
+      "source_path": "analysis/experiments/recent_time_context.py",
+      "path": "workflows/tabpfn/analysis/experiments/recent_time_context.py",
+      "sha256": "d91d17fe9725cf2e0a5411103945989d55c161bb337e5ef8aacda43013657ec5"
+    },
+    {
+      "source_path": "analysis/experiments/regional_income_features.py",
+      "path": "workflows/tabpfn/analysis/experiments/regional_income_features.py",
+      "sha256": "2b88f79ccd77eedb89244dccede368a5691eabf76fed84430f94d8f74cf4e297"
+    },
+    {
+      "source_path": "analysis/experiments/reliability_macro_features.py",
+      "path": "workflows/tabpfn/analysis/experiments/reliability_macro_features.py",
+      "sha256": "4fdba669b8c79f4d088d5240e47ce98fdb575332bf28bdfcd3d5c00fd559b324"
+    },
+    {
+      "source_path": "analysis/experiments/rental_context_attention.py",
+      "path": "workflows/tabpfn/analysis/experiments/rental_context_attention.py",
+      "sha256": "cc8088ce584387779511eeba8415bcc49b3b6c5cad9f820ad0e603ba235df05d"
+    },
+    {
+      "source_path": "analysis/experiments/reporting/README.md",
+      "path": "workflows/tabpfn/analysis/experiments/reporting/README.md",
+      "sha256": "d4c9b8521e97431ea7c44510f78e7d0eb4577b0db8f49c742a31c88b463f5828"
+    },
+    {
+      "source_path": "analysis/experiments/reporting/report_best_scheme.py",
+      "path": "workflows/tabpfn/analysis/experiments/reporting/report_best_scheme.py",
+      "sha256": "2616838d9f2f9a5899349e208a7631aee2e1d571c7e46f59c811f067747b2875"
+    },
+    {
+      "source_path": "analysis/experiments/reporting/report_model_catalog.py",
+      "path": "workflows/tabpfn/analysis/experiments/reporting/report_model_catalog.py",
+      "sha256": "39b884536bb4efff51f1701ea814933aecf5f9a05cecfb487fdb13dd1f217ef8"
+    },
+    {
+      "source_path": "analysis/experiments/reporting/report_selection_blend.py",
+      "path": "workflows/tabpfn/analysis/experiments/reporting/report_selection_blend.py",
+      "sha256": "33cd1c17829cabd7ac240242d846e0fd778160f4a029e6f8601e5dfef399e24a"
+    },
+    {
+      "source_path": "analysis/experiments/reporting/report_selection_summary.py",
+      "path": "workflows/tabpfn/analysis/experiments/reporting/report_selection_summary.py",
+      "sha256": "e19c1534dcfd29acce28547df1c665951231cbcf87e6e80ed4118b90e3dd7e53"
+    },
+    {
+      "source_path": "analysis/experiments/reporting/report_selection_trials.py",
+      "path": "workflows/tabpfn/analysis/experiments/reporting/report_selection_trials.py",
+      "sha256": "3a45aec980d61f7a3df9471cacb8059f53cbc8867dad7c88368906c0f8accb15"
+    },
+    {
+      "source_path": "analysis/experiments/satellite_feature_import.py",
+      "path": "workflows/tabpfn/analysis/experiments/satellite_feature_import.py",
+      "sha256": "503287cffaa9af86bac6c2099a2cc1cb4ac08ce1c4515e2bf08ab87991ba5b32"
+    },
+    {
+      "source_path": "analysis/experiments/spatial_temporal_residual.py",
+      "path": "workflows/tabpfn/analysis/experiments/spatial_temporal_residual.py",
+      "sha256": "ae96541ac6ff42c215100957315c4008c2723bed47566ad035f4049bafcee6be"
+    },
+    {
+      "source_path": "analysis/experiments/spatial_temporal_transformer.py",
+      "path": "workflows/tabpfn/analysis/experiments/spatial_temporal_transformer.py",
+      "sha256": "038ec318bc683cf37a3d332b9656b9db2afced7355ef1a3fa0361b503a92b0dc"
+    },
+    {
+      "source_path": "analysis/experiments/spatiotemporal_hybrid.py",
+      "path": "workflows/tabpfn/analysis/experiments/spatiotemporal_hybrid.py",
+      "sha256": "9f275e624dc244dd0aef1085c5c76bec8808552ae6a1b01ce1738d8c24dfca10"
+    },
+    {
+      "source_path": "analysis/experiments/stock_index_regions.py",
+      "path": "workflows/tabpfn/analysis/experiments/stock_index_regions.py",
+      "sha256": "d5ca656cddab2591b2d1c27fbc049ba8a2cad5f2491d6dc78a3a9dbf9b6acbcc"
+    },
+    {
+      "source_path": "analysis/experiments/stock_sector_signals.py",
+      "path": "workflows/tabpfn/analysis/experiments/stock_sector_signals.py",
+      "sha256": "094de11b1082a85dc6e3dc37d29be1172495f9890322da757542702a35242918"
+    },
+    {
+      "source_path": "analysis/experiments/submissions/README.md",
+      "path": "workflows/tabpfn/analysis/experiments/submissions/README.md",
+      "sha256": "1aeeebdcec62b5fc3aca27860667f7c947ca895b76ccbef3f717b01a20965b41"
+    },
+    {
+      "source_path": "analysis/experiments/submissions/best_ensemble_submission.py",
+      "path": "workflows/tabpfn/analysis/experiments/submissions/best_ensemble_submission.py",
+      "sha256": "a36a1c21bc1c162889cde31b04c9c4651dca4921039c877260f6390973f2fedf"
+    },
+    {
+      "source_path": "analysis/experiments/submissions/canonical_final.py",
+      "path": "workflows/tabpfn/analysis/experiments/submissions/canonical_final.py",
+      "sha256": "4221e0484935627416df84e47fd28b3d20a09e670fa30345be8ccdb884f1a284"
+    },
+    {
+      "source_path": "analysis/experiments/submissions/final_submission_selection.py",
+      "path": "workflows/tabpfn/analysis/experiments/submissions/final_submission_selection.py",
+      "sha256": "3e51d59a3fb7f7c9d5836db03130d4817cdf00c9dd7e2b35c36c406a3abea799"
+    },
+    {
+      "source_path": "analysis/experiments/tabm_regression.py",
+      "path": "workflows/tabpfn/analysis/experiments/tabm_regression.py",
+      "sha256": "0baac96f76430ac4a8a0c1d14c55c86a73bf9db409ae74c7812caf170dc444b1"
+    },
+    {
+      "source_path": "analysis/experiments/tabpfn_adaptation.py",
+      "path": "workflows/tabpfn/analysis/experiments/tabpfn_adaptation.py",
+      "sha256": "d789212dae3d1104c858433fddbb181d22f947e220978e6cd09f58c5ee291c9f"
+    },
+    {
+      "source_path": "analysis/experiments/tabpfn_adaptation_features.py",
+      "path": "workflows/tabpfn/analysis/experiments/tabpfn_adaptation_features.py",
+      "sha256": "62c11554fce20dd2cdff23f82ff71d292ed80d8ce3dbe6fb610877e65f75faea"
+    },
+    {
+      "source_path": "analysis/experiments/tabpfn_anniversary_history.py",
+      "path": "workflows/tabpfn/analysis/experiments/tabpfn_anniversary_history.py",
+      "sha256": "89182991ddc3a4716b8b4ce8938f65601a40dc1e0d83a126b944d68427493ad8"
+    },
+    {
+      "source_path": "analysis/experiments/tabpfn_comparison.py",
+      "path": "workflows/tabpfn/analysis/experiments/tabpfn_comparison.py",
+      "sha256": "55275d096770fc82c639980d9c38e4abf81980bb74801f7bc1ebd4769e6a5f41"
+    },
+    {
+      "source_path": "analysis/experiments/tabpfn_component_adaptation.py",
+      "path": "workflows/tabpfn/analysis/experiments/tabpfn_component_adaptation.py",
+      "sha256": "ea94b89d89a156411ae1468c80e8c9bb4a97ca01d865889eb47d5fb5d5c44635"
+    },
+    {
+      "source_path": "analysis/experiments/tabpfn_context_sampler.py",
+      "path": "workflows/tabpfn/analysis/experiments/tabpfn_context_sampler.py",
+      "sha256": "5caea87c0737ae69d917a5c9d323b60af30299693bce8da213a26626dc0f1641"
+    },
+    {
+      "source_path": "analysis/experiments/tabpfn_embedding_head.py",
+      "path": "workflows/tabpfn/analysis/experiments/tabpfn_embedding_head.py",
+      "sha256": "5fe89d0e137c425eb7c8cae2dd1bf0bdfa4da316d275e73e607bc57aced8343e"
+    },
+    {
+      "source_path": "analysis/experiments/tabpfn_residual_heads.py",
+      "path": "workflows/tabpfn/analysis/experiments/tabpfn_residual_heads.py",
+      "sha256": "79e64125a29d95850363e551d0e2c8444b6ce451d6491f13d342f5fdae2d0943"
+    },
+    {
+      "source_path": "analysis/experiments/tabpfn_sampled_finetuning.py",
+      "path": "workflows/tabpfn/analysis/experiments/tabpfn_sampled_finetuning.py",
+      "sha256": "0e1d42e3faa16c35f99f12ccc1798c6d9ad24604d007a5e8f3f6dc4e26333f0d"
+    },
+    {
+      "source_path": "analysis/experiments/tabpfn_temporal_features.py",
+      "path": "workflows/tabpfn/analysis/experiments/tabpfn_temporal_features.py",
+      "sha256": "9efca56818329865791bf40fa6c6f291678aa7c9ee98b0f6f204f0bb686f2963"
+    },
+    {
+      "source_path": "analysis/experiments/targeted_spatial_economic.py",
+      "path": "workflows/tabpfn/analysis/experiments/targeted_spatial_economic.py",
+      "sha256": "d8cc887ac6ba835e4c93e6f88ed7191c46ea4d1935586535dde27611d949c179"
+    },
+    {
+      "source_path": "analysis/experiments/temporal_feature_views.py",
+      "path": "workflows/tabpfn/analysis/experiments/temporal_feature_views.py",
+      "sha256": "5e55c428486359633e62cbb4268ffc2f0c33928cd905622f7a44895d732bf188"
+    },
+    {
+      "source_path": "analysis/experiments/temporal_sequence_ablation.py",
+      "path": "workflows/tabpfn/analysis/experiments/temporal_sequence_ablation.py",
+      "sha256": "87b214588a17ebcfd7012c0ea418a051fdd1120f15bceae94df2c16889684dcf"
+    },
+    {
+      "source_path": "analysis/experiments/worksite_tabpfn_correction.py",
+      "path": "workflows/tabpfn/analysis/experiments/worksite_tabpfn_correction.py",
+      "sha256": "c21438f6fe350fe50834d07ee68cb7b83e35b60a03fa246149c0c627269e5622"
+    },
+    {
+      "source_path": "analysis/experiments/worldcover_training_data.py",
+      "path": "workflows/tabpfn/analysis/experiments/worldcover_training_data.py",
+      "sha256": "7f4bffe219be2e22d651dd592145786b49b2050ba54b5dcc49b6614dca80c3f3"
+    },
+    {
+      "source_path": "analysis/experiments/worldcover_tree_cover.py",
+      "path": "workflows/tabpfn/analysis/experiments/worldcover_tree_cover.py",
+      "sha256": "5bff6c9d43526acb1e923d49b779ee3dc7f0e05a1455c28909bb0eb8b7a9797d"
+    },
+    {
+      "source_path": "analysis/export_satellite_features.py",
+      "path": "workflows/tabpfn/analysis/export_satellite_features.py",
+      "sha256": "3e84c4016bec43c00441041fafe6d831e07e61f10f3db604676c24715c39f1ab"
+    },
+    {
+      "source_path": "analysis/filter_rent_below_half_median.py",
+      "path": "workflows/tabpfn/analysis/filter_rent_below_half_median.py",
+      "sha256": "05421d82fdcfeb611ff5dfd46eaef7c55a26b52cb37a219b938301167d874cc3"
+    },
+    {
+      "source_path": "analysis/filter_whole_flat_rent_1500.py",
+      "path": "workflows/tabpfn/analysis/filter_whole_flat_rent_1500.py",
+      "sha256": "ff9f5231534e9a14615e4e4277707e7623e5d053060f28a1ac5b5868228f7f19"
+    },
+    {
+      "source_path": "analysis/flag_possible_partial_rentals.py",
+      "path": "workflows/tabpfn/analysis/flag_possible_partial_rentals.py",
+      "sha256": "41ae04bb2f12ee2cd7bff616e619b79a131bd7ddd8795f9c092b9f5ebf53b52d"
+    },
+    {
+      "source_path": "analysis/flat_model_groups.py",
+      "path": "workflows/tabpfn/analysis/flat_model_groups.py",
+      "sha256": "ee827d437c125f7303c139ca9476043c24f8cf2748987a83c10b69fb0069595f"
+    },
+    {
+      "source_path": "analysis/interpret_spatial_temporal_transformer.py",
+      "path": "workflows/tabpfn/analysis/interpret_spatial_temporal_transformer.py",
+      "sha256": "c09ad6d01a37ffddf51521745b6e6ebf14ef0ae370b7aee4b056b4e85cbe6f9f"
+    },
+    {
+      "source_path": "analysis/interpret_tabpfn_abcde.py",
+      "path": "workflows/tabpfn/analysis/interpret_tabpfn_abcde.py",
+      "sha256": "f56055462783240cc4c601782091d581a7f5ce92b388040e231eb521dc280cb5"
+    },
+    {
+      "source_path": "analysis/main.py",
+      "path": "workflows/tabpfn/analysis/main.py",
+      "sha256": "8c62f45871635fdc2d8a9d98ccddaef2151fe8fa1cf5e8104eeffa22ea094aaa"
+    },
+    {
+      "source_path": "analysis/modeling.py",
+      "path": "workflows/tabpfn/analysis/modeling.py",
+      "sha256": "90aeb71cfa22995008a19c208aa850cd16ae2bd4c6815d5a225f08e84c2f7286"
+    },
+    {
+      "source_path": "analysis/pipeline/__init__.py",
+      "path": "workflows/tabpfn/analysis/pipeline/__init__.py",
+      "sha256": "2010dcbecdd36c9d7ffab6fc08bb3e55b876486d8a7e1ffd25143c3738ef07ac"
+    },
+    {
+      "source_path": "analysis/pipeline/auxiliary.py",
+      "path": "workflows/tabpfn/analysis/pipeline/auxiliary.py",
+      "sha256": "529d5aa2e210483c300c8ff341ab5530c048c536fba42997648abcc5050ff212"
+    },
+    {
+      "source_path": "analysis/pipeline/config.py",
+      "path": "workflows/tabpfn/analysis/pipeline/config.py",
+      "sha256": "8f8c38b6b6c5977e4b6ad473149f4c94425fe1234bfa01998752568b535a42c3"
+    },
+    {
+      "source_path": "analysis/pipeline/data.py",
+      "path": "workflows/tabpfn/analysis/pipeline/data.py",
+      "sha256": "245dd0f8f8e491afdfcfd62715d25b9c501d58bdc080c8380c28837b3734fb54"
+    },
+    {
+      "source_path": "analysis/pipeline/evaluation.py",
+      "path": "workflows/tabpfn/analysis/pipeline/evaluation.py",
+      "sha256": "49ec1cd8e2f9d2b88a948d006cbd3ca083ff7a3f43969c23097075f6422b39e9"
+    },
+    {
+      "source_path": "analysis/pipeline/features.py",
+      "path": "workflows/tabpfn/analysis/pipeline/features.py",
+      "sha256": "209c73ff59a2311a9742028c3d5f4d637934359fd6f9fa46139bf3e2dfb70792"
+    },
+    {
+      "source_path": "analysis/pipeline/models.py",
+      "path": "workflows/tabpfn/analysis/pipeline/models.py",
+      "sha256": "24b62fcd49a314b7c1d68035714017fee3d49e1939e8617b2898ec74274b6a5a"
+    },
+    {
+      "source_path": "analysis/pipeline/neural_models.py",
+      "path": "workflows/tabpfn/analysis/pipeline/neural_models.py",
+      "sha256": "85cd5a88bf578270558ca5d277d69314a0608c34ce92d0b77f0fe22cf889f4aa"
+    },
+    {
+      "source_path": "analysis/pipeline/paths.py",
+      "path": "workflows/tabpfn/analysis/pipeline/paths.py",
+      "sha256": "362f5f632e460577b61e32bae97616ec43d02436a48a9b24d3a1c6784e94c9f4"
+    },
+    {
+      "source_path": "analysis/pipeline/spatial.py",
+      "path": "workflows/tabpfn/analysis/pipeline/spatial.py",
+      "sha256": "397fe69513005d35d931223f49d97ad85bf9884c59e5caaeeea9bd0dc04e7b19"
+    },
+    {
+      "source_path": "analysis/pipeline/training.py",
+      "path": "workflows/tabpfn/analysis/pipeline/training.py",
+      "sha256": "e1f4ac19ae6ff7aee4d5554e79180640f8a543eb55737790a3e76048c9793530"
+    },
+    {
+      "source_path": "analysis/pipeline/workflow.py",
+      "path": "workflows/tabpfn/analysis/pipeline/workflow.py",
+      "sha256": "5f20c88c323ba4ca30f204ff72dbcf3a8486107d9218e32d60210ed633ed1823"
+    },
+    {
+      "source_path": "analysis/plot_factored_rental_surface.py",
+      "path": "workflows/tabpfn/analysis/plot_factored_rental_surface.py",
+      "sha256": "2524a608dafd9ab288554541c96790d5654d49fa6e9ae8d7301b4d0afc05f54d"
+    },
+    {
+      "source_path": "analysis/plot_tabpfn.py",
+      "path": "workflows/tabpfn/analysis/plot_tabpfn.py",
+      "sha256": "76322974d7a907b74a4fd2be277ce8a6649f401e2e8f978df0f2728c792ea8eb"
+    },
+    {
+      "source_path": "analysis/plot_tabpfn_adaptation.py",
+      "path": "workflows/tabpfn/analysis/plot_tabpfn_adaptation.py",
+      "sha256": "559631f096455e215ea7bc71363d4b6e7cf8ffc499d0581b108be65ce24aa500"
+    },
+    {
+      "source_path": "analysis/plot_tabpfn_context_sampling.py",
+      "path": "workflows/tabpfn/analysis/plot_tabpfn_context_sampling.py",
+      "sha256": "ae5d30317caaab14fccb105f002c3e61e61dee7659857f232663440101ec78c9"
+    },
+    {
+      "source_path": "analysis/plot_transformer_rent_surface.py",
+      "path": "workflows/tabpfn/analysis/plot_transformer_rent_surface.py",
+      "sha256": "2292e805883e95e30e60b6e2cfd558af6646bc355b20609973222e8b707dd308"
+    },
+    {
+      "source_path": "analysis/prepare_tabpfn_v3_features.py",
+      "path": "workflows/tabpfn/analysis/prepare_tabpfn_v3_features.py",
+      "sha256": "d4e4f8e0e07880fbdca87781d84356f3228a9250675c09cadfdbd0f14a39ea85"
+    },
+    {
+      "source_path": "analysis/prepare_tabpfn_worldcover_training.py",
+      "path": "workflows/tabpfn/analysis/prepare_tabpfn_worldcover_training.py",
+      "sha256": "234a5157ebc9338e9c5addb9925329dcf89f174e48894a0671eadf110d0a9ecb"
+    },
+    {
+      "source_path": "analysis/prepare_worldcover_tree_cover.py",
+      "path": "workflows/tabpfn/analysis/prepare_worldcover_tree_cover.py",
+      "sha256": "7a59db655233909fbc1206f00cfb9c66f814f78309130ea7f7ed57bead3334fb"
+    },
+    {
+      "source_path": "analysis/probe_tabpfn_estimator_batching.py",
+      "path": "workflows/tabpfn/analysis/probe_tabpfn_estimator_batching.py",
+      "sha256": "8c21ec8bb0a5bec176209d35729a8a77dd0801bbe28e22a47e70d03dc7c4687c"
+    },
+    {
+      "source_path": "analysis/project_review.py",
+      "path": "workflows/tabpfn/analysis/project_review.py",
+      "sha256": "347620ce2eebe96f274c6d8c9f6d303439341e622f43110f265e7070b6efdc24"
+    },
+    {
+      "source_path": "analysis/refine_amenity_bus_names.py",
+      "path": "workflows/tabpfn/analysis/refine_amenity_bus_names.py",
+      "sha256": "27cc87f3ccb38312be94d688c66547624875914cfcc1913b230228b2dcee44e2"
+    },
+    {
+      "source_path": "analysis/refit_tabpfn_diagscale_80_20.py",
+      "path": "workflows/tabpfn/analysis/refit_tabpfn_diagscale_80_20.py",
+      "sha256": "b1093589c7c8e438a190132877f1ca0a1bce46ed95f0396753cae7e292df1c00"
+    },
+    {
+      "source_path": "analysis/refit_zch_anniversary_for_tabpfn_blend.py",
+      "path": "workflows/tabpfn/analysis/refit_zch_anniversary_for_tabpfn_blend.py",
+      "sha256": "5ad14cfd85dbd7e62fbddd2a6b845ace463b448be8887818983ff7657d1219be"
+    },
+    {
+      "source_path": "analysis/report_bundle.py",
+      "path": "workflows/tabpfn/analysis/report_bundle.py",
+      "sha256": "1233f53f8cf3f0fe09cd7cc134aa1648249d72b9049bf464a228ae18f31c9b24"
+    },
+    {
+      "source_path": "analysis/resource_preflight.py",
+      "path": "workflows/tabpfn/analysis/resource_preflight.py",
+      "sha256": "88e01d3b6eb094094548bd524e40e97f82c83c1ceb56966a65a8b7dd7b9b2d7d"
+    },
+    {
+      "source_path": "analysis/run_conditioned_rent_corrections.py",
+      "path": "workflows/tabpfn/analysis/run_conditioned_rent_corrections.py",
+      "sha256": "e0ac99d61f3b65a2ca06e173542696601992c189705199506bbf4f64ace47142"
+    },
+    {
+      "source_path": "analysis/run_economic_conditional_mean.py",
+      "path": "workflows/tabpfn/analysis/run_economic_conditional_mean.py",
+      "sha256": "2d9cb67883d5574ed11cc9e3bcfbe7b3e34d2557bff56b738750c7b26e5fc096"
+    },
+    {
+      "source_path": "analysis/run_spatial_temporal_transformer.py",
+      "path": "workflows/tabpfn/analysis/run_spatial_temporal_transformer.py",
+      "sha256": "c83da4f86784f283195bd7a2ae227f9f12729313a34ccd1421897ef77606f27c"
+    },
+    {
+      "source_path": "analysis/run_targeted_housing_supply.py",
+      "path": "workflows/tabpfn/analysis/run_targeted_housing_supply.py",
+      "sha256": "297604838cc8ef656cef9609d2de109ff9714729fd85cce690634ec17eab79dd"
+    },
+    {
+      "source_path": "analysis/run_targeted_spatial_economic.py",
+      "path": "workflows/tabpfn/analysis/run_targeted_spatial_economic.py",
+      "sha256": "f9203263694c57e93e363da7d87c269440e0c9bd9f4591d49f0290c11203ba27"
+    },
+    {
+      "source_path": "analysis/run_teacher_anchored_spatiotemporal.py",
+      "path": "workflows/tabpfn/analysis/run_teacher_anchored_spatiotemporal.py",
+      "sha256": "11bbb2ba9d62dc8a4d022138313a5bf3a53ea6fc846c923ad87e083abb29917d"
+    },
+    {
+      "source_path": "analysis/run_transformer_capacity_ablation.py",
+      "path": "workflows/tabpfn/analysis/run_transformer_capacity_ablation.py",
+      "sha256": "b5eb64433b815486875057bbf79051913ffdd20bbf1d925865fbdaafa04b3902"
+    },
+    {
+      "source_path": "analysis/run_transformer_context_attention.py",
+      "path": "workflows/tabpfn/analysis/run_transformer_context_attention.py",
+      "sha256": "c2c23b1c8d827770ae38576e4818879c2b5fdb0abc40f91fcadf03b8123add9f"
+    },
+    {
+      "source_path": "analysis/run_transformer_gaussian_nll.py",
+      "path": "workflows/tabpfn/analysis/run_transformer_gaussian_nll.py",
+      "sha256": "b672637a16272094363b936948364b198592ebec22039bea8ae9e2ae108d648b"
+    },
+    {
+      "source_path": "analysis/run_transformer_group_calibration.py",
+      "path": "workflows/tabpfn/analysis/run_transformer_group_calibration.py",
+      "sha256": "099e78c4e7bd35fba8f90b9aa1587575ecc94069b90d4f233f96ddb0768932d2"
+    },
+    {
+      "source_path": "analysis/run_transformer_horizon_weighting.py",
+      "path": "workflows/tabpfn/analysis/run_transformer_horizon_weighting.py",
+      "sha256": "f62476ca02557dbccf079154d5f6f563dfaaf28b00da39a3adab677a56d50306"
+    },
+    {
+      "source_path": "analysis/run_transformer_huber_loss.py",
+      "path": "workflows/tabpfn/analysis/run_transformer_huber_loss.py",
+      "sha256": "4057579038b00fddc955c0cc90c9da4d47078384ba72d0191856a83bbd3ba110"
+    },
+    {
+      "source_path": "analysis/run_transformer_internal_decay.py",
+      "path": "workflows/tabpfn/analysis/run_transformer_internal_decay.py",
+      "sha256": "3aac4a9f189cd6224880728750cd52ecb771de828384a06626d5016f130fcd3b"
+    },
+    {
+      "source_path": "analysis/run_transformer_location_embeddings.py",
+      "path": "workflows/tabpfn/analysis/run_transformer_location_embeddings.py",
+      "sha256": "1a89a4906906439a426941e1b6b51d777bd1663df64af8514f8d22af229c2cf8"
+    },
+    {
+      "source_path": "analysis/run_transformer_rent_innovations.py",
+      "path": "workflows/tabpfn/analysis/run_transformer_rent_innovations.py",
+      "sha256": "6f3cec97a116eb206940df3d6330a84ac2ca05ea4206c2417dad983eb4bfa2d5"
+    },
+    {
+      "source_path": "analysis/run_transformer_sequence_pretraining.py",
+      "path": "workflows/tabpfn/analysis/run_transformer_sequence_pretraining.py",
+      "sha256": "0b2217ad49cd8f44ca6b43f4875488d6cc772ff119602e93df7f4980fffa9f87"
+    },
+    {
+      "source_path": "analysis/score_diagscale_four_view_inference_80_20.py",
+      "path": "workflows/tabpfn/analysis/score_diagscale_four_view_inference_80_20.py",
+      "sha256": "35bb0480e694a61e7d9d2f6e8cfc8661b81a07e129aa896e3c36490848686356"
+    },
+    {
+      "source_path": "analysis/score_tabpfn_components_individually.py",
+      "path": "workflows/tabpfn/analysis/score_tabpfn_components_individually.py",
+      "sha256": "f2397e33cfdd33a3a3a6d175c54412aa7d1a213598162ba7c6d0e24e4f4fc2db"
+    },
+    {
+      "source_path": "analysis/start_transformer_experiments.ps1",
+      "path": "workflows/tabpfn/analysis/start_transformer_experiments.ps1",
+      "sha256": "1a945baf20899cbe036bb9c582e127bae2b97c9cd4fc1c7cca5c98f889e9db7b"
+    },
+    {
+      "source_path": "analysis/studies/__init__.py",
+      "path": "workflows/tabpfn/analysis/studies/__init__.py",
+      "sha256": "171def38f61e964fe5e363bb80fabcd5294a4c33d03c5df71f8c19440163bb90"
+    },
+    {
+      "source_path": "analysis/studies/economic_signals.py",
+      "path": "workflows/tabpfn/analysis/studies/economic_signals.py",
+      "sha256": "b011a95274c89b8628b3ba228f64d09a9d0e45a42f6cb16a8e93239544f480f7"
+    },
+    {
+      "source_path": "analysis/studies/group_temporal_panel.py",
+      "path": "workflows/tabpfn/analysis/studies/group_temporal_panel.py",
+      "sha256": "fa6b6b90bbccff7ab878099d6b8e531a21c317404bbc3ba0607ce863b6f84e25"
+    },
+    {
+      "source_path": "analysis/studies/source_overlap.py",
+      "path": "workflows/tabpfn/analysis/studies/source_overlap.py",
+      "sha256": "50492d8d6df13e91fbeae16a46d922be2f3ac73748cb60a09f9e1bfbbbbe8d98"
+    },
+    {
+      "source_path": "analysis/studies/spatial/__init__.py",
+      "path": "workflows/tabpfn/analysis/studies/spatial/__init__.py",
+      "sha256": "55144fe9a1e470ee714b8542b98d60cac64d9d4e2fa8c3a20ea54c55d3407585"
+    },
+    {
+      "source_path": "analysis/studies/spatial/amenities_fixed_effects.py",
+      "path": "workflows/tabpfn/analysis/studies/spatial/amenities_fixed_effects.py",
+      "sha256": "d60ddd99fb62ce29300e3782ba6d07c8e430c775c185da3fb3b8ad0ea7b1277d"
+    },
+    {
+      "source_path": "analysis/studies/spatial/common.py",
+      "path": "workflows/tabpfn/analysis/studies/spatial/common.py",
+      "sha256": "5873bada29ddcf4913ef715573ccc5e46448d646879a045cbae3ac0e80fb79aa"
+    },
+    {
+      "source_path": "analysis/studies/spatial/mrt_fixed_effects.py",
+      "path": "workflows/tabpfn/analysis/studies/spatial/mrt_fixed_effects.py",
+      "sha256": "8c72d0641390c4483de2982925deaee69003c411e4b785564c8e88e82c8631de"
+    },
+    {
+      "source_path": "analysis/studies/spatial/mrt_matching.py",
+      "path": "workflows/tabpfn/analysis/studies/spatial/mrt_matching.py",
+      "sha256": "7ae6fe1ed59e8b37c702e7e5a8a7f27c4a92ce3419d8d816910db0192f391904"
+    },
+    {
+      "source_path": "analysis/studies/spatial/overview.py",
+      "path": "workflows/tabpfn/analysis/studies/spatial/overview.py",
+      "sha256": "a6d8139d3204ca164804b597702a42e353aab0a71d5cbfc08e4521257298de80"
+    },
+    {
+      "source_path": "analysis/studies/spatial/run.py",
+      "path": "workflows/tabpfn/analysis/studies/spatial/run.py",
+      "sha256": "b84c128e43fe9e7dbc156ada97ef2ce1f695ff18c061111b6cd37aacbe13d32a"
+    },
+    {
+      "source_path": "analysis/studies/temporal_correlations.py",
+      "path": "workflows/tabpfn/analysis/studies/temporal_correlations.py",
+      "sha256": "aa8bcedc4040fb88bb8ebcb03191318ba1f87cbf80245eabbef2a2b91d2c3937"
+    },
+    {
+      "source_path": "analysis/summarize_amenity_quality.py",
+      "path": "workflows/tabpfn/analysis/summarize_amenity_quality.py",
+      "sha256": "0094727b2eea55fb16e2ed945bf233230772444e651de3c3b9e878e9ea6b7683"
+    },
+    {
+      "source_path": "analysis/summarize_company_worksite_followup.py",
+      "path": "workflows/tabpfn/analysis/summarize_company_worksite_followup.py",
+      "sha256": "65e66ffd1e00496770d753330592dd6ada45be7f3701cfb5594f9e26284b18ed"
+    },
+    {
+      "source_path": "analysis/summarize_local_economy_landscape.py",
+      "path": "workflows/tabpfn/analysis/summarize_local_economy_landscape.py",
+      "sha256": "d3a4df48387b13e55e2d54f05bbcebf551ad393f0e4a79814a7d45fb0d465bfe"
+    },
+    {
+      "source_path": "analysis/summarize_tabm_80_20.py",
+      "path": "workflows/tabpfn/analysis/summarize_tabm_80_20.py",
+      "sha256": "77b8fa535a4551269504d4f8c11bd3a11325a23eeb475b5980500ad211b33132"
+    },
+    {
+      "source_path": "analysis/summarize_tabpfn_abcde.py",
+      "path": "workflows/tabpfn/analysis/summarize_tabpfn_abcde.py",
+      "sha256": "d8ab685835737a7add8be7b5710aec68b5edb3014befda19a10756145feb16e2"
+    },
+    {
+      "source_path": "analysis/summarize_tabpfn_api_77.py",
+      "path": "workflows/tabpfn/analysis/summarize_tabpfn_api_77.py",
+      "sha256": "4c7eae71339e91d8f3cd86bd6538e0009a90a063eb7790db1a026fe7594d5552"
+    },
+    {
+      "source_path": "analysis/summarize_tabpfn_components.py",
+      "path": "workflows/tabpfn/analysis/summarize_tabpfn_components.py",
+      "sha256": "95152a766a1370c520ea4e3b0300b1aaecd5a0318f3564e16990c21440cfc2bd"
+    },
+    {
+      "source_path": "analysis/summarize_tabpfn_context_sampling.py",
+      "path": "workflows/tabpfn/analysis/summarize_tabpfn_context_sampling.py",
+      "sha256": "80408c6773cbe5ed52f368d9a42e602c669c98300540cdce948f0b0b7545d706"
+    },
+    {
+      "source_path": "analysis/summarize_tabpfn_contexts.py",
+      "path": "workflows/tabpfn/analysis/summarize_tabpfn_contexts.py",
+      "sha256": "490d0d6d4a1dc63c456fabf8bb1908adc654fbe25efc419c146ab785ba5ef2bd"
+    },
+    {
+      "source_path": "analysis/summarize_tabpfn_feature_ensemble.py",
+      "path": "workflows/tabpfn/analysis/summarize_tabpfn_feature_ensemble.py",
+      "sha256": "139a44415f282856788988a06d72526e77bfdeb8b382f673335867056ae3f9c6"
+    },
+    {
+      "source_path": "analysis/summarize_tabpfn_hierarchical_latent.py",
+      "path": "workflows/tabpfn/analysis/summarize_tabpfn_hierarchical_latent.py",
+      "sha256": "20d22932f30487c7cbf48cf7febed887f9ec9a11fe867eff2924cf842f33580b"
+    },
+    {
+      "source_path": "analysis/summarize_tabpfn_reliability_macro.py",
+      "path": "workflows/tabpfn/analysis/summarize_tabpfn_reliability_macro.py",
+      "sha256": "0efb8da0fabd81793b14d7a064e35dbeb9166014f296e098d1cf193916c360ca"
+    },
+    {
+      "source_path": "analysis/summarize_tabpfn_spatial_temporal_residual.py",
+      "path": "workflows/tabpfn/analysis/summarize_tabpfn_spatial_temporal_residual.py",
+      "sha256": "8513c21749551d0a8ab0829d25f40377fe1b4088dedfc3335a836891fbd0284c"
+    },
+    {
+      "source_path": "analysis/summarize_targeted_spatial_economic.py",
+      "path": "workflows/tabpfn/analysis/summarize_targeted_spatial_economic.py",
+      "sha256": "064a680c908708305a02aab5aae572d4318472ceb35fc5104bdd402b21531bc4"
+    },
+    {
+      "source_path": "analysis/summarize_temporal_sequence_ablation.py",
+      "path": "workflows/tabpfn/analysis/summarize_temporal_sequence_ablation.py",
+      "sha256": "2d0033418dc4d7d038f452501e043897b9a8c202b5ed047fbae3784523eb73bd"
+    },
+    {
+      "source_path": "analysis/summarize_worldcover_tree_cover.py",
+      "path": "workflows/tabpfn/analysis/summarize_worldcover_tree_cover.py",
+      "sha256": "8864a1fb4224e791b7c5bf94b405cea26f82b12496890a4036f548bf3f53a251"
+    },
+    {
+      "source_path": "analysis/tabpfn_api_77.py",
+      "path": "workflows/tabpfn/analysis/tabpfn_api_77.py",
+      "sha256": "f3e17cfab2061d2e027793cf6f0cd63185eb563152975c76100338fa3a876a90"
+    },
+    {
+      "source_path": "analysis/train_baseline.py",
+      "path": "workflows/tabpfn/analysis/train_baseline.py",
+      "sha256": "dae009f73c8f3e7f593f36857a4d45f50414a22b958d535602e68cc62c91c7ce"
+    },
+    {
+      "source_path": "analysis/train_dynamic_market_submission.py",
+      "path": "workflows/tabpfn/analysis/train_dynamic_market_submission.py",
+      "sha256": "ddb75da8e0f6cb86d717a49e5bce9caa1e37c5fe1e921a04bd52366ac566a815"
+    },
+    {
+      "source_path": "analysis/train_flat_model_grouping_zch_worker.py",
+      "path": "workflows/tabpfn/analysis/train_flat_model_grouping_zch_worker.py",
+      "sha256": "945de99269af7d5f5cef44ab9cccf058d80923f4a8858845f4041c2d21ddc192"
+    },
+    {
+      "source_path": "analysis/train_half_median_zch_worker.py",
+      "path": "workflows/tabpfn/analysis/train_half_median_zch_worker.py",
+      "sha256": "52fdf07b0d2a85340db47942de23933222b08d420c0a9fe3de0a8e247ae25ddc"
+    },
+    {
+      "source_path": "analysis/train_tabpfn_diagscale_mse_submission.py",
+      "path": "workflows/tabpfn/analysis/train_tabpfn_diagscale_mse_submission.py",
+      "sha256": "8a856f5c548e7a9ecf2a6069ce9a4b765b84721134233ba2ce35f73a78e220a5"
+    },
+    {
+      "source_path": "analysis/train_tabpfn_fast_submission.py",
+      "path": "workflows/tabpfn/analysis/train_tabpfn_fast_submission.py",
+      "sha256": "746e3d2a6cc7446a43b92522cb86e3c58a12dbe6063c4ebe21160becbb020532"
+    },
+    {
+      "source_path": "analysis/train_tabpfn_feature_ensemble_submission.py",
+      "path": "workflows/tabpfn/analysis/train_tabpfn_feature_ensemble_submission.py",
+      "sha256": "930a1e54487efbb7b09d0f173afd1e6a7d8096b50f4b15b27ee87959254e0c68"
+    },
+    {
+      "source_path": "analysis/train_tabpfn_top2_submission.py",
+      "path": "workflows/tabpfn/analysis/train_tabpfn_top2_submission.py",
+      "sha256": "a26a0b00322d027a2de017593a2e3b3885294dd21c08c397bf468585333e3d03"
+    },
+    {
+      "source_path": "analysis/tune_tabpfn_diagscale_80_20.py",
+      "path": "workflows/tabpfn/analysis/tune_tabpfn_diagscale_80_20.py",
+      "sha256": "6a9907aa9f26538075898dc9c037072db8fd908dbbb4dba5f45a0ebf18914ba0"
+    },
+    {
+      "source_path": "analysis/verification.py",
+      "path": "workflows/tabpfn/analysis/verification.py",
+      "sha256": "40845d5bfa03290f196d7dfc054955f2d4f3b8aff333c472ae19d5383b46ba1b"
+    },
+    {
+      "source_path": "docs/README.md",
+      "path": "workflows/tabpfn/docs/README.md",
+      "sha256": "9eefcddfc067c4df51a275eb11fc792487bfd3cb6a9b5578cb730fb6883484ae"
+    },
+    {
+      "source_path": "docs/archive/README.md",
+      "path": "workflows/tabpfn/docs/archive/README.md",
+      "sha256": "c72144683a4bf6e67b55b8ca8ecd6a216b8ececeddddf40f08e27a13952d4e33"
+    },
+    {
+      "source_path": "docs/archive/branch_integration.md",
+      "path": "workflows/tabpfn/docs/archive/branch_integration.md",
+      "sha256": "b79969087d579cedbce940e1b1bf37d176d86fee41c257f247e9abaf1a47dec0"
+    },
+    {
+      "source_path": "docs/archive/midterm_report.md",
+      "path": "workflows/tabpfn/docs/archive/midterm_report.md",
+      "sha256": "9dc7333a1e40c54e7db42ae85fa4b363199dc157120139c2126146ee28d5db15"
+    },
+    {
+      "source_path": "docs/archive/result_consistency.md",
+      "path": "workflows/tabpfn/docs/archive/result_consistency.md",
+      "sha256": "4a1a00dce68b85dad91725345cab7ca8151db2b939dad3c95b1e673f3e63c0de"
+    },
+    {
+      "source_path": "docs/guides/project_structure.md",
+      "path": "workflows/tabpfn/docs/guides/project_structure.md",
+      "sha256": "fbf21fc77833627b08943098b2971964213e3fa2c0b10624f2928343d8471cdd"
+    },
+    {
+      "source_path": "docs/guides/running_experiments.md",
+      "path": "workflows/tabpfn/docs/guides/running_experiments.md",
+      "sha256": "1596388d358e54c1f015bc99533f7c5a7131e724c9a4fa3928ff7da5c4b7893c"
+    },
+    {
+      "source_path": "docs/maintenance/README.md",
+      "path": "workflows/tabpfn/docs/maintenance/README.md",
+      "sha256": "39eb32db1f48aca5b9d05d84fd4bfd30808509866553743a1757f5a6ab302621"
+    },
+    {
+      "source_path": "docs/methods/baseline_features.md",
+      "path": "workflows/tabpfn/docs/methods/baseline_features.md",
+      "sha256": "0e70c2238267b6a835a0c50b13d5ca6b8eb2da20f9ce811efe541fc6f73e3a20"
+    },
+    {
+      "source_path": "docs/methods/history_feature_optimization.md",
+      "path": "workflows/tabpfn/docs/methods/history_feature_optimization.md",
+      "sha256": "a76a4ad1daec8669019b60d3b177547ac78f653137e470be6ce614f1059229ab"
+    },
+    {
+      "source_path": "docs/methods/model_comparison.md",
+      "path": "workflows/tabpfn/docs/methods/model_comparison.md",
+      "sha256": "d51c6556b66c4399e09876906bf74ffc89b69854d39f4654f64a543c81780724"
+    },
+    {
+      "source_path": "environment.yml",
+      "path": "workflows/tabpfn/environment.anniversary-original.yml",
+      "sha256": "44d1fc2aeab860261ef051975217464635527954b55a1009f0ce32f2b645421f"
+    },
+    {
+      "source_path": "requirements-amenity-quality.txt",
+      "path": "workflows/tabpfn/requirements-amenity-quality.txt",
+      "sha256": "38cfe89e93dd8c25d9fe1563b0a46aa9cf5add507332cd670fb7d90739acafd6"
+    },
+    {
+      "source_path": "requirements-eda.txt",
+      "path": "workflows/tabpfn/requirements-eda.txt",
+      "sha256": "abad37867ddcffdfe085b71863356f3a8c2e5abc3e7e658375f7d4b0bc49e59c"
+    },
+    {
+      "source_path": "requirements-model.txt",
+      "path": "workflows/tabpfn/requirements-model.txt",
+      "sha256": "2261168aa2fc1d163aa207f9c9f7987367fa730d3c99c99bab210ba2070bf595"
+    },
+    {
+      "source_path": "requirements-spatial.txt",
+      "path": "workflows/tabpfn/requirements-spatial.txt",
+      "sha256": "d0fba01cf91aa4fd9cd22d15ff62e36302b75d2f782f7b409e4c797d0e06b36b"
+    },
+    {
+      "source_path": "requirements-tabm.txt",
+      "path": "workflows/tabpfn/requirements-tabm.txt",
+      "sha256": "0d0d7a60398095781c846fc02ecc29c9a6c62914b2833134b4e41cae2412bc42"
+    },
+    {
+      "source_path": "requirements-tabpfn-api.txt",
+      "path": "workflows/tabpfn/requirements-tabpfn-api.txt",
+      "sha256": "eeb430d53ff741cec485f88af8000972821fa02d97ff8a8d6f1735c7186faf35"
+    },
+    {
+      "source_path": "requirements-tabpfn.txt",
+      "path": "workflows/tabpfn/requirements-tabpfn.txt",
+      "sha256": "7b1f54da19286913f8b1acdd16c10c59f1823f6ea511c783723bb99128e26331"
+    },
+    {
+      "source_path": "requirements-transformer.txt",
+      "path": "workflows/tabpfn/requirements-transformer.txt",
+      "sha256": "c60d794ca592bf9082a43d92712b43058a7a5ab02ffb8ac52f3b89b91c082b2f"
+    },
+    {
+      "source_path": "requirements-worldcover.txt",
+      "path": "workflows/tabpfn/requirements-worldcover.txt",
+      "sha256": "09ffbe5874e62d6ab494babe89e79d5ec198df74a1a8c73c386ab7e77ff45c9e"
+    },
+    {
+      "source_path": "requirements/README.md",
+      "path": "workflows/tabpfn/requirements/README.md",
+      "sha256": "3691a2c3de5ba1fc5d54c109706ed6fb308c662f7d622e940df8821a48589a20"
+    },
+    {
+      "source_path": "requirements/optional_deep_models.txt",
+      "path": "workflows/tabpfn/requirements/optional_deep_models.txt",
+      "sha256": "b64316dca6867bdcd04e331cb4191d52888e76f56d4c9f1c4738e26bb1750ce0"
+    },
+    {
+      "source_path": "requirements/optional_pretrained_transformers.txt",
+      "path": "workflows/tabpfn/requirements/optional_pretrained_transformers.txt",
+      "sha256": "d04669b567ece84db4fb7c8009278f1772c05dbbf17c5610ab7e9c6afd10e7c5"
+    },
+    {
+      "source_path": "tests/README.md",
+      "path": "workflows/tabpfn/archived_tests/README.md",
+      "sha256": "9c7a749bfdb28e13fc4030dd3bea3da4947cc451b03f102f3d8ca81ed77247e9"
+    },
+    {
+      "source_path": "tests/test_aligned_temporal_features.py",
+      "path": "workflows/tabpfn/tests/test_aligned_temporal_features.py",
+      "sha256": "0a2580543555791695c27b884e7180beb5dc482bfe334bd0a92770782b18958c"
+    },
+    {
+      "source_path": "tests/test_amenity_quality_features.py",
+      "path": "workflows/tabpfn/archived_tests/test_amenity_quality_features.py",
+      "sha256": "8b4f403b48ab78db34afcde005dc9265355063898aba7f5cf7dd5744832f1cdd"
+    },
+    {
+      "source_path": "tests/test_artifact_catalog.py",
+      "path": "workflows/tabpfn/archived_tests/test_artifact_catalog.py",
+      "sha256": "7e6ad5cc350866cee8dff0dafced915f29f0e3ee305ad63951a805c7ba20a50f"
+    },
+    {
+      "source_path": "tests/test_artifact_verification.py",
+      "path": "workflows/tabpfn/archived_tests/test_artifact_verification.py",
+      "sha256": "489778b9af4b99430590812f2be0539a417e9803abbf38842dd7fb9756c3b479"
+    },
+    {
+      "source_path": "tests/test_auxiliary_features.py",
+      "path": "workflows/tabpfn/archived_tests/test_auxiliary_features.py",
+      "sha256": "0f0c399055b4b3331b0bd658b46a9f61e12f537e7b10d72b16d4527533d2d3f4"
+    },
+    {
+      "source_path": "tests/test_bayesian_amenity_factors.py",
+      "path": "workflows/tabpfn/archived_tests/test_bayesian_amenity_factors.py",
+      "sha256": "4e021df395edee92526e19bd05eff178111959b39ec678bc1ffcebe516806e03"
+    },
+    {
+      "source_path": "tests/test_calendar_encoding.py",
+      "path": "workflows/tabpfn/tests/test_calendar_encoding.py",
+      "sha256": "1186517208b77a766c7e6f8c85dc5e7cc4a02dc6b36f8aa553363e4f4a93e356"
+    },
+    {
+      "source_path": "tests/test_canonical_rental_dedup.py",
+      "path": "workflows/tabpfn/archived_tests/test_canonical_rental_dedup.py",
+      "sha256": "bb8952864888e33a2ee5c9f1c056bc228c6270a0fae5eccc075f172572afb2b7"
+    },
+    {
+      "source_path": "tests/test_company_worksite_followup.py",
+      "path": "workflows/tabpfn/archived_tests/test_company_worksite_followup.py",
+      "sha256": "7ec07dc90ecfc4b5daf1a298a9f03cf519dac6f7134b43463489bc055a2af902"
+    },
+    {
+      "source_path": "tests/test_company_worksite_stocks.py",
+      "path": "workflows/tabpfn/archived_tests/test_company_worksite_stocks.py",
+      "sha256": "dd1269aeac26d6aa7bd6879f3b122d9332aca6dbde4e4f43b480e2e0c2b3e466"
+    },
+    {
+      "source_path": "tests/test_comprehensive_temporal.py",
+      "path": "workflows/tabpfn/archived_tests/test_comprehensive_temporal.py",
+      "sha256": "99a4fce866f1ac15b48cde3331c308f79f22c27a20492398c53db592339ed114"
+    },
+    {
+      "source_path": "tests/test_diagscale_tabpfn.py",
+      "path": "workflows/tabpfn/archived_tests/test_diagscale_tabpfn.py",
+      "sha256": "3e2ea280ab7c25b61956b728db79372c82deb11284f0a00f8e3ebad6b2cebcb0"
+    },
+    {
+      "source_path": "tests/test_dynamic_market_index.py",
+      "path": "workflows/tabpfn/archived_tests/test_dynamic_market_index.py",
+      "sha256": "d819f1c2774a2e630f72162cecfd791c0121fa24753e26076ee44ec54c64e523"
+    },
+    {
+      "source_path": "tests/test_economic_conditional_mean.py",
+      "path": "workflows/tabpfn/archived_tests/test_economic_conditional_mean.py",
+      "sha256": "d9623a07b9c1dd5e8a3567d1efaa42c0adebf5121b78735897e0ac8245b18068"
+    },
+    {
+      "source_path": "tests/test_economic_feature_ablation.py",
+      "path": "workflows/tabpfn/archived_tests/test_economic_feature_ablation.py",
+      "sha256": "56b8e5d22550163f3b68e00402f70a7415237ad2fb61e871f7d447a02454dac0"
+    },
+    {
+      "source_path": "tests/test_economic_signals.py",
+      "path": "workflows/tabpfn/archived_tests/test_economic_signals.py",
+      "sha256": "de12ae34702c1b94c80f7a0d1f3beaf9d9d49cde5893eb36ccf2191ba65ba4f8"
+    },
+    {
+      "source_path": "tests/test_eighth_wave.py",
+      "path": "workflows/tabpfn/archived_tests/test_eighth_wave.py",
+      "sha256": "26e280c1985be36e23c08c5a1321c946b69c948f2e0fa2da5892a2b29b5fa998"
+    },
+    {
+      "source_path": "tests/test_ensemble_resume.py",
+      "path": "workflows/tabpfn/archived_tests/test_ensemble_resume.py",
+      "sha256": "2ddce894dd1d510c9f97eba8102d57535e494d11b59230032e0cb8f1d2833b42"
+    },
+    {
+      "source_path": "tests/test_experiment_catalog.py",
+      "path": "workflows/tabpfn/archived_tests/test_experiment_catalog.py",
+      "sha256": "ac5ef5ce180b564ef89eeec949668ea98f3651a33dee9d4523c719c25b88c79e"
+    },
+    {
+      "source_path": "tests/test_feature_diversified_ensemble.py",
+      "path": "workflows/tabpfn/archived_tests/test_feature_diversified_ensemble.py",
+      "sha256": "a6f97014cb3229fe514170fcc7f57d45862843ea5deb23975a0f9c1bc985ae61"
+    },
+    {
+      "source_path": "tests/test_feature_evidence.py",
+      "path": "workflows/tabpfn/archived_tests/test_feature_evidence.py",
+      "sha256": "2bc3efb9916cf532c265634606ef970612a5acf7e63f43477fd5d8b76e84ce21"
+    },
+    {
+      "source_path": "tests/test_feature_selection.py",
+      "path": "workflows/tabpfn/archived_tests/test_feature_selection.py",
+      "sha256": "731c8a2a2c3510d78b1cdb97aa05b1375342b61129e1563a0bc65bfda077dc96"
+    },
+    {
+      "source_path": "tests/test_fifth_wave.py",
+      "path": "workflows/tabpfn/archived_tests/test_fifth_wave.py",
+      "sha256": "ad2135d62dc2c329676ac3335b624067783dcd449461e505b819275c85aa4437"
+    },
+    {
+      "source_path": "tests/test_financial_sector_rent_categories.py",
+      "path": "workflows/tabpfn/archived_tests/test_financial_sector_rent_categories.py",
+      "sha256": "e72a4ffd24fc6a862e07786a471fe9008fa733de540157873b118551455d474d"
+    },
+    {
+      "source_path": "tests/test_financial_sector_rents.py",
+      "path": "workflows/tabpfn/archived_tests/test_financial_sector_rents.py",
+      "sha256": "026f908c83a1cef5f699d197c7c2a2a0b53169b046e22cbde27de96f04a20cd0"
+    },
+    {
+      "source_path": "tests/test_flat_model_groups.py",
+      "path": "workflows/tabpfn/tests/test_flat_model_groups.py",
+      "sha256": "935e70e4173ad999312a3e4a7c850cdcf8eee464ecb7fb29bee0b9179951194c"
+    },
+    {
+      "source_path": "tests/test_flat_type_economic_forecast.py",
+      "path": "workflows/tabpfn/archived_tests/test_flat_type_economic_forecast.py",
+      "sha256": "74370697e2c15cb6e99b92296e359dc6d3067f41c8f1988685a491833ba510bc"
+    },
+    {
+      "source_path": "tests/test_flat_type_inference.py",
+      "path": "workflows/tabpfn/archived_tests/test_flat_type_inference.py",
+      "sha256": "61cc67f3ed66255a0c91a6b33c7c5ce868f7214a9cdf622b88be22b158726a05"
+    },
+    {
+      "source_path": "tests/test_fourth_wave.py",
+      "path": "workflows/tabpfn/archived_tests/test_fourth_wave.py",
+      "sha256": "189e0ee7a4eefacc015a770a01249fff37774dee15a28c987430707902b82c1e"
+    },
+    {
+      "source_path": "tests/test_frontier_search.py",
+      "path": "workflows/tabpfn/archived_tests/test_frontier_search.py",
+      "sha256": "8de128b7b58d1dbefdd63476a948643387e876a16419b98528ae0668493fa672"
+    },
+    {
+      "source_path": "tests/test_group_temporal_panel.py",
+      "path": "workflows/tabpfn/archived_tests/test_group_temporal_panel.py",
+      "sha256": "5ccb7b7dc38a8b070843457833a90985068e47239af48d76dc81ca7bcfef0c3d"
+    },
+    {
+      "source_path": "tests/test_half_median_ensemble.py",
+      "path": "workflows/tabpfn/tests/test_half_median_ensemble.py",
+      "sha256": "f15af1b54d8dad4e13ef17a992cc3594df0235c3ff6f9c0f46e4b1de58a28a5a"
+    },
+    {
+      "source_path": "tests/test_hierarchical_latent_residual.py",
+      "path": "workflows/tabpfn/archived_tests/test_hierarchical_latent_residual.py",
+      "sha256": "ac84fad15f76c0a35d8b305339916ff694752f429dc6568c1d6bbd6ba90ca623"
+    },
+    {
+      "source_path": "tests/test_local_comparable_graph.py",
+      "path": "workflows/tabpfn/archived_tests/test_local_comparable_graph.py",
+      "sha256": "ebe3b5306c42f1c6e1a58fd1ba92cdc280203226b93b4b01885d1b3559835af4"
+    },
+    {
+      "source_path": "tests/test_local_spatial_experiments.py",
+      "path": "workflows/tabpfn/archived_tests/test_local_spatial_experiments.py",
+      "sha256": "ed72c052fa61b3be82ffb3f1ec1c015b4cce5de2ef0ded6aa5dccfcadbf00d41"
+    },
+    {
+      "source_path": "tests/test_lora_qk_tabpfn.py",
+      "path": "workflows/tabpfn/archived_tests/test_lora_qk_tabpfn.py",
+      "sha256": "4095938724427e5af2601cd23e23a8c23c5b7a12c551491c42e255410a58aa4e"
+    },
+    {
+      "source_path": "tests/test_merged_workflows.py",
+      "path": "workflows/tabpfn/archived_tests/test_merged_workflows.py",
+      "sha256": "2e2a622e6a0af32b59a0aa0bbe18ec6a68d376b479b3cb5743e3a6152b23bebc"
+    },
+    {
+      "source_path": "tests/test_model_search.py",
+      "path": "workflows/tabpfn/archived_tests/test_model_search.py",
+      "sha256": "b1a4392b294e041d3e693432f4efd964e88f3074561bcadf953fdfd0b126b58d"
+    },
+    {
+      "source_path": "tests/test_neural_tabm.py",
+      "path": "workflows/tabpfn/archived_tests/test_neural_tabm.py",
+      "sha256": "dfdd53020589543595803a7dadfe5d9ffd830daf14afd886d0fdf669da7eb282"
+    },
+    {
+      "source_path": "tests/test_ninth_wave.py",
+      "path": "workflows/tabpfn/archived_tests/test_ninth_wave.py",
+      "sha256": "3ad971da6b57531c5446c9792461627c5102703085f0b60c27a8c7844d0e9563"
+    },
+    {
+      "source_path": "tests/test_origin_macro_views.py",
+      "path": "workflows/tabpfn/archived_tests/test_origin_macro_views.py",
+      "sha256": "11144901785cefa27320c3f6e97f8d5c53987dd126995e804cd7e200076c718f"
+    },
+    {
+      "source_path": "tests/test_output_defaults.py",
+      "path": "workflows/tabpfn/archived_tests/test_output_defaults.py",
+      "sha256": "7a4c0208a56f64b7ea24c7749c04deb3a840e6719394027fd56913e2b1ea5397"
+    },
+    {
+      "source_path": "tests/test_pipeline.py",
+      "path": "workflows/tabpfn/archived_tests/test_pipeline.py",
+      "sha256": "f9b6c73b2e2c13535b821746f38357d35f221940a2bc5748408f503ecf85b42c"
+    },
+    {
+      "source_path": "tests/test_prediction_blending.py",
+      "path": "workflows/tabpfn/archived_tests/test_prediction_blending.py",
+      "sha256": "be27dcc1c5c8feda820ccbf75ef9a28ea2912bfbce17f5f2d7a4e38fed9c87bd"
+    },
+    {
+      "source_path": "tests/test_project_paths.py",
+      "path": "workflows/tabpfn/archived_tests/test_project_paths.py",
+      "sha256": "dc2289cacf14865f5549172654b939658bba9928de176ebba6ff16390f3303d5"
+    },
+    {
+      "source_path": "tests/test_recent_time_context.py",
+      "path": "workflows/tabpfn/tests/test_recent_time_context.py",
+      "sha256": "8043beace0e684388fc1ae0e13aad22dc74ff14826b3aa0f43825aa6c1d5486e"
+    },
+    {
+      "source_path": "tests/test_reliability_macro_features.py",
+      "path": "workflows/tabpfn/archived_tests/test_reliability_macro_features.py",
+      "sha256": "bf3699f2a2b3842af5594ff7014a5b5dd6c3954d5e0464ad0c2656bf28c6cc27"
+    },
+    {
+      "source_path": "tests/test_report_bundle.py",
+      "path": "workflows/tabpfn/archived_tests/test_report_bundle.py",
+      "sha256": "27ffe66f24c7e939f61babcccd9429263cfdcd6f5356c56dface1aa58cfcf851"
+    },
+    {
+      "source_path": "tests/test_resource_preflight.py",
+      "path": "workflows/tabpfn/archived_tests/test_resource_preflight.py",
+      "sha256": "53c837298cc13b07d2116d424dda4e831d0cb39e1cad779fd4927de103ee835b"
+    },
+    {
+      "source_path": "tests/test_second_wave.py",
+      "path": "workflows/tabpfn/archived_tests/test_second_wave.py",
+      "sha256": "ea118e74442b6c92a7ba8fee1b2788fb61a35fe98d984f5e8ce40238fc5a880a"
+    },
+    {
+      "source_path": "tests/test_seventh_wave.py",
+      "path": "workflows/tabpfn/archived_tests/test_seventh_wave.py",
+      "sha256": "f656350758ae7ddec9c1a0176ed836eb2b859fc39fa0378bf1666c6b35b1f484"
+    },
+    {
+      "source_path": "tests/test_sixth_wave.py",
+      "path": "workflows/tabpfn/archived_tests/test_sixth_wave.py",
+      "sha256": "011b979e49ffadc52f2007c16e9eb01ef07c09306986d2208e927abd25e12faa"
+    },
+    {
+      "source_path": "tests/test_source_overlap.py",
+      "path": "workflows/tabpfn/archived_tests/test_source_overlap.py",
+      "sha256": "5f9f6e5004d2ecfc12247dac221c7965d33b9a47db8bf8a9bb0233fdb0b7587b"
+    },
+    {
+      "source_path": "tests/test_spatial_controls.py",
+      "path": "workflows/tabpfn/archived_tests/test_spatial_controls.py",
+      "sha256": "f9e58e1c65f2fb0db7dc30358f81f38b7653e4bae2e0d96bed66f911fd1dbc7a"
+    },
+    {
+      "source_path": "tests/test_spatial_temporal_residual.py",
+      "path": "workflows/tabpfn/archived_tests/test_spatial_temporal_residual.py",
+      "sha256": "af69e9f333af57f074dff8719056c0423317f7cd686b92df60c2b8eb9f6c8128"
+    },
+    {
+      "source_path": "tests/test_spatial_temporal_transformer.py",
+      "path": "workflows/tabpfn/archived_tests/test_spatial_temporal_transformer.py",
+      "sha256": "ae7ae6839d5157816041aafccf741acafbab64e9c57ba8275cce877d4e565561"
+    },
+    {
+      "source_path": "tests/test_spatiotemporal_hybrid.py",
+      "path": "workflows/tabpfn/archived_tests/test_spatiotemporal_hybrid.py",
+      "sha256": "e3d0afeabff0d8eac2a87385454d44fd63547f15984c390d73b30820eb71de07"
+    },
+    {
+      "source_path": "tests/test_stock_index_regions.py",
+      "path": "workflows/tabpfn/archived_tests/test_stock_index_regions.py",
+      "sha256": "3d5d1954f65faf8007879d5d6b6eb67b0fd4190ee2dc988bc001b08f69ef7cd8"
+    },
+    {
+      "source_path": "tests/test_stock_sector_signals.py",
+      "path": "workflows/tabpfn/archived_tests/test_stock_sector_signals.py",
+      "sha256": "4b4dca9ab1ae0221048132f0a91260d3628856256db0d14b65b08cbb26c626c0"
+    },
+    {
+      "source_path": "tests/test_tabm_regression.py",
+      "path": "workflows/tabpfn/archived_tests/test_tabm_regression.py",
+      "sha256": "6c4f25d854c6de0410e28e974744e77fce57d1386bd0451da758e08d318de2aa"
+    },
+    {
+      "source_path": "tests/test_tabpfn_abcde.py",
+      "path": "workflows/tabpfn/archived_tests/test_tabpfn_abcde.py",
+      "sha256": "ce2c23275e3c36608243979b16597a379f76eb0233144abcae29047e6fe2f86f"
+    },
+    {
+      "source_path": "tests/test_tabpfn_abcde_lstm_coe.py",
+      "path": "workflows/tabpfn/archived_tests/test_tabpfn_abcde_lstm_coe.py",
+      "sha256": "baee714c1d40aa804affd03b9a84bd973cc8ceb03243b10b3600ee9b4419c7f3"
+    },
+    {
+      "source_path": "tests/test_tabpfn_adaptation.py",
+      "path": "workflows/tabpfn/tests/test_tabpfn_adaptation.py",
+      "sha256": "e27d994e6f7c3a6d8948d68fe585e2d4d09bb49aae66bcac5f2f034eed6ec7f4"
+    },
+    {
+      "source_path": "tests/test_tabpfn_anniversary_history.py",
+      "path": "workflows/tabpfn/tests/test_tabpfn_anniversary_history.py",
+      "sha256": "addc601a8617632e74adf4d6ff93b9cd4274c9be2a259e45c14df97113d544b6"
+    },
+    {
+      "source_path": "tests/test_tabpfn_api_77.py",
+      "path": "workflows/tabpfn/archived_tests/test_tabpfn_api_77.py",
+      "sha256": "8c6361d0bca16a43d1ec8cb43ea36883d6968a53d8d258f8dcc3c643533df9b0"
+    },
+    {
+      "source_path": "tests/test_tabpfn_comparison.py",
+      "path": "workflows/tabpfn/tests/test_tabpfn_comparison.py",
+      "sha256": "fc23497ca3aeae983ec38afe04e644b3cc5cde477b45ac8636bc19ee466b478b"
+    },
+    {
+      "source_path": "tests/test_tabpfn_component_adaptation.py",
+      "path": "workflows/tabpfn/tests/test_tabpfn_component_adaptation.py",
+      "sha256": "78416b94b4f39a477d0834cb738828303589eb5a3d229563d30936c4507ad8cb"
+    },
+    {
+      "source_path": "tests/test_tabpfn_context_sampler.py",
+      "path": "workflows/tabpfn/archived_tests/test_tabpfn_context_sampler.py",
+      "sha256": "4ed862c9d8a990df94580876dcff9550984d9add7e28ce3c4d96dcf293176fda"
+    },
+    {
+      "source_path": "tests/test_tabpfn_embedding_head.py",
+      "path": "workflows/tabpfn/archived_tests/test_tabpfn_embedding_head.py",
+      "sha256": "673d34c9403cee92799324d52c594619b1fb53bfcc5c3c3f22dd1c3e4b1488f0"
+    },
+    {
+      "source_path": "tests/test_tabpfn_fast_submission.py",
+      "path": "workflows/tabpfn/tests/test_tabpfn_fast_submission.py",
+      "sha256": "59351b3144152676c3631dae57e187f27db38f4678854d6a030e60e418e84cc7"
+    },
+    {
+      "source_path": "tests/test_tabpfn_spatiotemporal_hybrid.py",
+      "path": "workflows/tabpfn/archived_tests/test_tabpfn_spatiotemporal_hybrid.py",
+      "sha256": "9add4abf90fde7e7733bc63c5dd72b3047e44fa5a57ce02823d9af0eeaff6268"
+    },
+    {
+      "source_path": "tests/test_tabpfn_temporal_features.py",
+      "path": "workflows/tabpfn/archived_tests/test_tabpfn_temporal_features.py",
+      "sha256": "9e2ae36fb20a0b04ee6c4e2903b0596597001f964c2d6822e8bf39122626bc28"
+    },
+    {
+      "source_path": "tests/test_targeted_spatial_economic.py",
+      "path": "workflows/tabpfn/archived_tests/test_targeted_spatial_economic.py",
+      "sha256": "911f008420989d33ae2cf745a14c6acdadc8c756d50fb9cf104a39564c3f0ee4"
+    },
+    {
+      "source_path": "tests/test_temporal_correlations.py",
+      "path": "workflows/tabpfn/archived_tests/test_temporal_correlations.py",
+      "sha256": "d47e93fa13cc249f303f36a71d55561acb387e1edbd70846e56f6c353e27dbe4"
+    },
+    {
+      "source_path": "tests/test_temporal_feature_views.py",
+      "path": "workflows/tabpfn/archived_tests/test_temporal_feature_views.py",
+      "sha256": "e79141aa1d62cf2dd22cc5d105e5fe8cd4a2e56aaef738d92a130abb23ff03fc"
+    },
+    {
+      "source_path": "tests/test_temporal_sequence_ablation.py",
+      "path": "workflows/tabpfn/archived_tests/test_temporal_sequence_ablation.py",
+      "sha256": "67dbe641b78f5c215d1294e7a64b1bc2a435d44813d78ce07e09d2f13339a172"
+    },
+    {
+      "source_path": "tests/test_tenth_wave.py",
+      "path": "workflows/tabpfn/archived_tests/test_tenth_wave.py",
+      "sha256": "8acb0b9a195ed295065470dbd93a5b441837fb900b9b22e0a2e1c4e677536a2e"
+    },
+    {
+      "source_path": "tests/test_third_wave.py",
+      "path": "workflows/tabpfn/archived_tests/test_third_wave.py",
+      "sha256": "b358f538ff97066f4e7f51d6d0bf03cf816e06e6edb96fa566e51425d959211a"
+    },
+    {
+      "source_path": "tests/test_transformer_interpretation.py",
+      "path": "workflows/tabpfn/archived_tests/test_transformer_interpretation.py",
+      "sha256": "12b56ea33cf5468a67d9e66f57f1b4c0d2e505cedde793b863c67a74e40444ef"
+    },
+    {
+      "source_path": "tests/test_transformer_ranked_experiments.py",
+      "path": "workflows/tabpfn/archived_tests/test_transformer_ranked_experiments.py",
+      "sha256": "d14650b784385c3adb3ed67abf3fca4c87afece3bff0794264436c7666c6c247"
+    },
+    {
+      "source_path": "tests/test_transformer_rent_surface.py",
+      "path": "workflows/tabpfn/archived_tests/test_transformer_rent_surface.py",
+      "sha256": "244c79c575248e37147a273427878bc74edcaa3bb38ff0824e222e1583368746"
+    },
+    {
+      "source_path": "tests/test_worldcover_training_data.py",
+      "path": "workflows/tabpfn/archived_tests/test_worldcover_training_data.py",
+      "sha256": "50c27a7e3cc0525364d678d457153588122df403b2443285208a9dfc687b3996"
+    },
+    {
+      "source_path": "tests/test_worldcover_tree_cover.py",
+      "path": "workflows/tabpfn/archived_tests/test_worldcover_tree_cover.py",
+      "sha256": "90a064106497cb5bee0212c57830b90383f36d3a6bf586b3dcec113d815c8141"
+    },
+    {
+      "source_path": "tests/test_zch_auxiliary_features.py",
+      "path": "workflows/tabpfn/archived_tests/test_zch_auxiliary_features.py",
+      "sha256": "685c6667b9dada59f2314dce284566a5ca73456a7c31e7eb55e071f2db0c3997"
+    },
+    {
+      "source_path": "tests/test_zch_economic_feature_ablation.py",
+      "path": "workflows/tabpfn/archived_tests/test_zch_economic_feature_ablation.py",
+      "sha256": "06d9d072aae3faf26cfde1f35b6c173ce747d156399ac092a3426ec30b83cc7a"
+    },
+    {
+      "source_path": "tests/test_zch_economic_signals.py",
+      "path": "workflows/tabpfn/archived_tests/test_zch_economic_signals.py",
+      "sha256": "e43ea7bed8eb6d7c94167493a9e751c3d9de9e7869a513d420e14846e08cb064"
+    },
+    {
+      "source_path": "tests/test_zch_group_temporal_panel.py",
+      "path": "workflows/tabpfn/archived_tests/test_zch_group_temporal_panel.py",
+      "sha256": "3293782754e2186c8fefe41239aca7bb030b387e9dda23d075f5a0dd1ca6d249"
+    },
+    {
+      "source_path": "tests/test_zch_temporal_correlations.py",
+      "path": "workflows/tabpfn/archived_tests/test_zch_temporal_correlations.py",
+      "sha256": "196ff23940e85506f6d1eb4f77394feac7d40f8a897cd301705fb7bca27a8b08"
+    }
+  ],
+  "main_original_tests_preserved": true,
+  "training_performed": false
+}

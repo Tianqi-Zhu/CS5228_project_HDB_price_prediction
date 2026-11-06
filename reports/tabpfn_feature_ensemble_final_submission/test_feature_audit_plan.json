@@ -1,0 +1,4 @@
+{
+  "code_sha256": "503459b6d79227749b8b4b316aae7030f56687634bcb26e84177050f20e5a406",
+  "purpose": "Replay sampled true test rows and poison unavailable rental labels; never fit or select on test targets"
+}

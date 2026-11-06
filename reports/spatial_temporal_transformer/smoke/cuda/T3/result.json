@@ -1,0 +1,21 @@
+{
+  "run": "smoke/cuda/T3",
+  "variant": "T3",
+  "seed": 42,
+  "best_epoch": 1,
+  "epochs_run": 1,
+  "weighted_rmse_sgd": 1073.4372018675047,
+  "rmse_sgd": 1076.7657029392499,
+  "mae_sgd": 958.4111211900291,
+  "bias_sgd": 909.6030210356367,
+  "rows": 64,
+  "parameters": 563267,
+  "sequence_gate": 0.09977039694786072,
+  "seconds": 0.84471770003438,
+  "peak_allocated_vram_gib": 0.29184961318969727,
+  "checkpoint_replay_max_difference": 0.0,
+  "checkpoint_sha256": "b7c8ec66cca8eb298c5424e7c1e199cfeafd9b636a0edb84a4603a4ab7ab9b7d",
+  "predictions_sha256": "41e3b75310ea5505e0a844ad9baf7b3173e86416a5ea39ef982f6defd62b29ae",
+  "preprocessors_sha256": "555a886b09fe60167ef3dfa8200f8481cba1fe30fe8775d43d6830c492227e0b",
+  "outer_labels_used_for_selection": false
+}

@@ -1,0 +1,44 @@
+{
+  "model": "catboost",
+  "n": 79817,
+  "rmse_sgd": 539.2881721310091,
+  "mae_sgd": 413.6052557533313,
+  "bias_sgd": -26.73570839973872,
+  "timings": [
+    {
+      "validation_start": "2023-01",
+      "model": "catboost",
+      "fit_predict_seconds": 50.27485909999814
+    },
+    {
+      "validation_start": "2023-07",
+      "model": "catboost",
+      "fit_predict_seconds": 59.223929900006624
+    },
+    {
+      "validation_start": "2024-04",
+      "model": "catboost",
+      "fit_predict_seconds": 67.76818630000344
+    }
+  ],
+  "source_sha256": {
+    "data\\train.csv": "2fe38ce9e0d8a02e9786f066d4a10d575d91f34be1d9111f0142e3f43fbfc8a5",
+    "data\\test.csv": "a2ec03a0afc07c251c72cc0de2e15ac965a3b06291b304aaac53a375115ff4e0",
+    "data\\auxiliary\\sg-hdb-block.csv": "2255ad61ba6895456a39aec81d12583796d717ef88fe102ee9de71b3796fc223",
+    "data\\auxiliary\\sg-mrt-stations.csv": "4757278b94c2d05627a941377d51de60882e3e1477de01758ef37070b716b889",
+    "data\\auxiliary\\sg-shopping-malls.csv": "cce36a0175433f768d209b74e2e5376aad16befe1ad4f1313da0b18ed6d91a3b",
+    "data\\auxiliary\\sg-schools.csv": "9bf28c6a2e5511c5cada178d221dfaac12beb3651425b3b86c37815e35de71cb"
+  },
+  "settings": {
+    "iterations": 600,
+    "depth": 7,
+    "learning_rate": 0.05,
+    "l2_leaf_reg": 5.0,
+    "loss_function": "RMSE",
+    "verbose": false,
+    "thread_count": 4,
+    "random_seed": 42,
+    "allow_writing_files": false
+  },
+  "version": "1.2.10"
+}

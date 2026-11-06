@@ -1,0 +1,32 @@
+{
+  "name": "smoke/plain_lr002",
+  "config": {
+    "embedding": "none",
+    "lr": 0.002,
+    "k": 32
+  },
+  "seed": 42,
+  "best_epoch": 1,
+  "epochs_run": 1,
+  "calibration_rmse_sgd": 578.3977641865936,
+  "seconds": 3.1162409000098705,
+  "parameters": 3144160,
+  "peak_vram_gib": 0.7483129501342773,
+  "fit_rows": 102829,
+  "processed_numeric_features": 112,
+  "category_cardinalities": [
+    7,
+    20,
+    13,
+    27,
+    157,
+    32,
+    6,
+    9257,
+    575
+  ],
+  "model_sha256": "bc6ac3b83376bf6090e2cf7086cc9d7f8a9477b90e2f79fb7bc5dde6587ef6a4",
+  "preprocessor_sha256": "760a663cc58f4fffa2183808cc56daa011ef0953fd47afc47a50a782b6837dac",
+  "outer_labels_used_for_selection": false,
+  "checkpoint_replay_max_difference": 0.0
+}

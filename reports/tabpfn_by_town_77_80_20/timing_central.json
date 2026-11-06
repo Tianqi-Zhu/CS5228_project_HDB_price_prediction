@@ -1,0 +1,15 @@
+{
+  "fit_seconds": 1.8408960999222472,
+  "predict_seconds": 0.38704990001861006,
+  "peak_vram_gib": 0.9308857917785645,
+  "context_rows": 1855,
+  "query_rows": 423,
+  "features": 77,
+  "batch_size": 200,
+  "subsampling": false,
+  "parameter_versions_unchanged": true,
+  "town": "central",
+  "rmse_sgd": 481.776314565735,
+  "mae_sgd": 367.14085561778535,
+  "bias_sgd": -59.096826745093466
+}

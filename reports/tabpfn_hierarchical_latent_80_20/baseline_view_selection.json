@@ -1,0 +1,15 @@
+{
+  "scores": [
+    {
+      "views": 1,
+      "weighted_rmse_sgd": 521.8641848602077
+    },
+    {
+      "views": 2,
+      "weighted_rmse_sgd": 520.4728517009034
+    }
+  ],
+  "selected_views": 2,
+  "selection_period": "December2023-May2024 sampled earlier calibration",
+  "outer_labels_used": false
+}

@@ -1,0 +1,131 @@
+{
+  "config": {
+    "experiment": "tabpfn_local_economy_landscape_80_20",
+    "seed": 42,
+    "baseline": ".cache/tabpfn_v3_features/calendar_80_20_categorical.joblib",
+    "baseline_sha256": "fba84757b6e23280d2b27eab0ca5d86a427ac19ca33c6b12b5b2dcc4194a0059",
+    "baseline_predictions": "reports/tabpfn_v3_5_fast_calendar_80_20/predictions_outer_categorical.csv",
+    "projected_crs": "EPSG:3414",
+    "commercial_radii_m": [
+      300,
+      500,
+      1000
+    ],
+    "commercial_bandwidths_m": [
+      200,
+      500,
+      1000
+    ],
+    "landscape_radii_m": [
+      100,
+      300,
+      500
+    ],
+    "history_radii_m": [
+      500,
+      1000,
+      2000
+    ],
+    "history_windows_months": [
+      6,
+      12
+    ],
+    "history_publication_lag_months": 1,
+    "history_shrinkage_observations": 20,
+    "history_temporal_half_life_months": 6,
+    "history_continuous_sigma_m": 500,
+    "inner_query_per_month": 60,
+    "inner_origins": [
+      "2022-09",
+      "2023-07"
+    ],
+    "pca_dimensions": [
+      8,
+      16,
+      32
+    ],
+    "satellite_radii_m": [
+      0,
+      100,
+      300,
+      500
+    ],
+    "selection_relative_tolerance": 0.001,
+    "outer_batch_size": 200,
+    "datasets": {
+      "subzones": {
+        "id": "d_8594ae9ff96d0c708bc2af633048edfb",
+        "format": "geojson",
+        "agency": "URA",
+        "policy": "Master Plan 2019 geometry, downloaded current mirror; spatial join audit and retrospective density; no claim of archived historical boundary version"
+      },
+      "parks": {
+        "id": "d_77d7ec97be83d44f61b85454f844382f",
+        "format": "geojson",
+        "agency": "NParks",
+        "policy": "retrospective static; historical park boundaries unavailable"
+      },
+      "food": {
+        "id": "d_a57a245b3cf3ec76ad36d55393a16e97",
+        "format": "geojson",
+        "agency": "NEA",
+        "policy": "retrospective static; published mirror updated 2025; opening/closing histories unverified"
+      },
+      "census": {
+        "id": "d_d95ae740c0f8961a0b10435836660ce0",
+        "format": "csv",
+        "agency": "SingStat",
+        "observation_end": "2020-12-31",
+        "available_at": "2021-07-01",
+        "publication_date": "2021-06-18",
+        "policy": "Census 2020 planning-area/subzone totals and age composition; missing before July 2021"
+      }
+    },
+    "satellite": {
+      "dynamic_world": "GOOGLE/DYNAMICWORLD/V1",
+      "alphaearth": "GOOGLE/SATELLITE_EMBEDDING/V1/ANNUAL",
+      "policy": "Require observation_end and verified available_at <= each forecast cutoff; previous completed year alone does not establish publication availability",
+      "alphaearth_catalog_years_checked": [
+        2017,
+        2024
+      ],
+      "alphaearth_catalog_url": "https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_SATELLITE_EMBEDDING_V1_ANNUAL"
+    }
+  },
+  "source_sha256": {
+    "subzones": "77e30aa02b1784b649d9b6f23e3b2ebb825af787de554f3a3fb76bbee3013c42",
+    "parks": "032a96ae1cde6057a2fd701b51388fc019df1b6e63e2a599e97a5942ada70526",
+    "food": "8483e841e0b799b2ed06b3f7846a29692915e86c5f2e34c12b624fd5b3fe172c",
+    "census": "9d1183c4335a8189272e244ae86bd9770d61854bc30527055df50697bf730c84"
+  },
+  "baseline_predictions_sha256": "6ae63cf3d00073220a77f05e547efcc601dcbdae151dc4260c8b72c21a9d83b6",
+  "checkpoint_sha256": "14e0b81285bca7a6d1ef121169f27f651f76dff49cad6c0b8779d5c836018550",
+  "input_sha256": {
+    "data\\train.csv": "2fe38ce9e0d8a02e9786f066d4a10d575d91f34be1d9111f0142e3f43fbfc8a5",
+    "data\\test.csv": "a2ec03a0afc07c251c72cc0de2e15ac965a3b06291b304aaac53a375115ff4e0",
+    "data\\auxiliary\\sg-hdb-block.csv": "2255ad61ba6895456a39aec81d12583796d717ef88fe102ee9de71b3796fc223",
+    "data\\auxiliary\\sg-shopping-malls.csv": "cce36a0175433f768d209b74e2e5376aad16befe1ad4f1313da0b18ed6d91a3b"
+  },
+  "inference": {
+    "frozen": true,
+    "version": "v3.5-fast",
+    "n_estimators": 1,
+    "random_state": 42,
+    "batch_size": 200,
+    "fit_mode": "fit_with_cache",
+    "subsampling": false,
+    "context_rows": 121005,
+    "target": "y_train - train_baseline; query_baseline added once"
+  },
+  "versions": {
+    "tabpfn": "9.2.0",
+    "torch": "2.11.0+cu128",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.0",
+    "pyproj": "3.7.2",
+    "shapely": "2.1.2"
+  },
+  "selection": "Earlier pooled weighted RMSE; fewer added dimensions within 0.1% of best; baseline competes for retained recommendation. Forced nonempty groups for factorial are reported even if screening is worse.",
+  "strict_scope": "New feature availability only; inherited 77 features include static amenity snapshots and are preserved for paired comparison."
+}

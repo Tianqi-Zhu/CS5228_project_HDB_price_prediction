@@ -1,0 +1,35 @@
+{
+  "verified": true,
+  "submissions": {
+    "ABCDE_equal": {
+      "file": "submission_tabpfn_ABCDE_equal_150k.csv",
+      "sha256": "ef1c3efc55a5b7bd6f3717870a1d07a0cbda78a4f9f153db89e189aa50c00488",
+      "rows": 50000,
+      "maximum_rounding_error_sgd": 4.999524207960349e-07
+    },
+    "ABDE": {
+      "file": "submission_tabpfn_ABDE_weighted_150k.csv",
+      "sha256": "5c0fe66ab127ddbf63d1923e4002e2154460167ab2a47ae5f4047b923c37cdd5",
+      "rows": 50000,
+      "maximum_rounding_error_sgd": 4.99991983815562e-07
+    }
+  },
+  "all150000_training_labels_preserved": true,
+  "all200000_C_feature_rows_reconstructed": true,
+  "all_original_baselines_and_missingness_preserved": true,
+  "all50000_test_ids_and_five_member_vectors_verified": true,
+  "exact_original_weights_preserved": true,
+  "both_outputs_reconstructed_independently": true,
+  "C_full_context_and_frozen_backbone_verified": true,
+  "existing_sources_and_submissions_unchanged": true,
+  "test_targets_used": false,
+  "test_rmse_available": false,
+  "test_month_range": [
+    "2025-03",
+    "2026-07"
+  ],
+  "beyond_validated10month_rows": 18077,
+  "maximum_horizon": 16,
+  "audit_code_sha256": "939f81f56e15c8580361674909554dd78e4f9458cd85c675840ad41d26baf9d3",
+  "production_code_sha256": "9cca4ccdff77aa5568b67896cf8ab5fe6a185b44190389202f6d20eacdc17555"
+}

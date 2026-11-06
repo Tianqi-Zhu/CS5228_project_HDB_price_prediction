@@ -1,0 +1,4 @@
+origin,site_id,rows,available_rows,future_signal_rows,latest_used_stock_month,cutoff
+2022-09,kulicke_soffa_serangoon,2000,1200,800,2022-08,2022-08
+2023-07,kulicke_soffa_serangoon,2000,1200,800,2023-06,2023-06
+2024-06,kulicke_soffa_serangoon,28995,17175,11820,2024-05,2024-05

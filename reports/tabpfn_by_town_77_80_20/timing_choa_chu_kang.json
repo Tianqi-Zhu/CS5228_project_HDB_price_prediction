@@ -1,0 +1,15 @@
+{
+  "fit_seconds": 1.188431299990043,
+  "predict_seconds": 0.4541548000415787,
+  "peak_vram_gib": 1.6952881813049316,
+  "context_rows": 4272,
+  "query_rows": 1028,
+  "features": 77,
+  "batch_size": 200,
+  "subsampling": false,
+  "parameter_versions_unchanged": true,
+  "town": "choa chu kang",
+  "rmse_sgd": 426.44156045803294,
+  "mae_sgd": 304.7222020828379,
+  "bias_sgd": 58.823682505063815
+}

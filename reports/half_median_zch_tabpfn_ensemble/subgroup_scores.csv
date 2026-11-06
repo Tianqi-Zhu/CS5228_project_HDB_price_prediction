@@ -1,0 +1,7 @@
+group,model,rows,rmse_sgd,mae_sgd,bias_sgd
+below_training_cutoff,original_equal_blend,189,1751.0355376490,1686.5660935117,1686.5660935117
+below_training_cutoff,filtered_equal_blend,189,1860.7053457679,1811.4334469787,1811.4334469787
+other_with_training_cutoff,original_equal_blend,19875,415.1123079949,310.3652351165,-11.2969339363
+other_with_training_cutoff,filtered_equal_blend,19875,414.9271355194,306.7960431776,21.9517539387
+no_same_year_training_cutoff,original_equal_blend,8931,427.6609801650,308.9111073457,-11.8410996939
+no_same_year_training_cutoff,filtered_equal_blend,8931,434.6673477008,306.6472012627,19.2194932162

@@ -1,0 +1,89 @@
+{
+  "objective": "Three frozen TabPFN feature representations; external convex ensembling vs internal estimator count",
+  "origins": [
+    "2022-09",
+    "2023-07",
+    "2024-06"
+  ],
+  "members": [
+    "baseline",
+    "spatial",
+    "temporal"
+  ],
+  "baseline": "Retained77 original categorical-month residual features; plain two-estimator V3.5FAST",
+  "spatial": "Original77 plus existing12 market_smoothed fields; no new external inputs or duplicate amenity counts",
+  "temporal": "Original trend/history/residual baseline retained; categorical month replaced by sin/cos plus6 existing recurring calendar windows,84 features",
+  "selection_basis": "Existing earlier local-market screening favors smoothed over raw fields; prior controlled calendar screening favors cyclical+calendar. Broader dynamic20-feature replacement and raw neighborhood means failed; do not repeat broad searches.",
+  "feature_counts": {
+    "baseline": 77,
+    "spatial": 89,
+    "temporal": 84
+  },
+  "inference": {
+    "checkpoint": "V3_5_FAST",
+    "estimators_per_member": 2,
+    "standard_control_estimators": 6,
+    "standard_control_execution": "Three sequential two-view baseline models, seeds42/43/44; six total views, no feature diversity. Monolithic six-view pilot archived due19.54GiB allocation and near-exhausted16GiB hostRAM.",
+    "seed": 42,
+    "device": "cuda",
+    "batch_size": 200,
+    "full_context": true,
+    "subsampling": false,
+    "fit_mode": "fit_with_cache",
+    "keep_cache_on_device": true,
+    "n_preprocessing_jobs": 1
+  },
+  "allocator_memory_policy": "Release unused CUDA allocator cache before prediction batches; live fitted context retained. If an incomplete cache exists, replay first200 rows within1e-5 SGD, then recompute complete predictions for a full comparable timing.",
+  "target": "raw SGD minus original local temporal baseline; add original query baseline once for every member/control",
+  "weights": "Exact nonnegative sum-to-one MSE optimization on earlier out-of-time SGD predictions, no intercept; no outer evaluation labels",
+  "nested_evaluation": "September2022 optimized cold-start baseline; July2023 weights learned from September2022; June2024 weights learned from both earlier disjoint ten-month windows",
+  "earlier_query_sampling": "Original200 query rows/month, seed42, label-independent; month population/sample weights. Context and main28995 queries are not sampled",
+  "final_test_status": "All available labeled months previously examined. Untouched labeled chronological test unavailable; report development backtests, not final test claims",
+  "historical_availability": "New spatial fields use original conservative extra one-month publication lag and original pseudo-origins. Calendar additions are deterministic recurring proxies, not exact school dates. Inherited static MRT timing issue remains fixed.",
+  "no_finetuning": true,
+  "new_external_datasets": false,
+  "source_sha256": {
+    ".cache/tabpfn_local_economy_landscape_80_20/prepared.joblib": "6824cffb93e47efd97abd2050fd4b4fcaf04f8cbf40d0a4bcd0ccdd0fa4b3a5e",
+    "reports/tabpfn_local_economy_landscape_80_20/prepared_manifest.json": "d19a318c0365599193ca0555b9ff4ffd55bb62ca5472ded32c6a4969300f6aa3",
+    "reports/tabpfn_local_economy_landscape_80_20/canonical_buildings.csv": "0768c6637c380aaa4c37f16f8554eb981e704d6ceac094fa2d9dbfe5b5b877ab",
+    "reports/tabpfn_local_economy_landscape_80_20/transaction_building_links.csv": "303444f287ae7abef034ce596935f4eea2c48cb5b65d2262f958d1e77f9b9af7",
+    "analysis/configs/local_economy_landscape.json": "1a163c8164abe66a691bf96a7d307b129b3f2e306ba763b668916297058f6ab2",
+    "data/train.csv": "2fe38ce9e0d8a02e9786f066d4a10d575d91f34be1d9111f0142e3f43fbfc8a5",
+    "data/test.csv": "a2ec03a0afc07c251c72cc0de2e15ac965a3b06291b304aaac53a375115ff4e0",
+    "data/auxiliary/sg-hdb-block.csv": "2255ad61ba6895456a39aec81d12583796d717ef88fe102ee9de71b3796fc223",
+    ".cache/tabpfn/tabpfn-v3.5-fast-20260909.safetensors": "14e0b81285bca7a6d1ef121169f27f651f76dff49cad6c0b8779d5c836018550",
+    "reports/tabpfn_hierarchical_latent_80_20/settings.json": "a448d9844cf8741bef8825e3e49677b6b2dd9dff38baad434497584d9bbca04e",
+    "reports/tabpfn_hierarchical_latent_80_20/baseline_predictions.csv": "a1b1877fcaf4b644b79ef79ca3af5877b9b51f8f75e0b891483ed234ad72e6fd",
+    "reports/tabpfn_hierarchical_latent_80_20/baseline_replay.json": "9df590bebe0322193a9c80e143b19fa1a8d53816ae2d03293725e364a8bd056e",
+    "reports/tabpfn_diagscale_mse_final_submission/submission_tabpfn_diagscale_mse_150k.csv": "5616125166abed5a353ab4d2f8a9788109a0b8078480ce622bbf8c7e8fb80500",
+    "reports/tabpfn_hierarchical_latent_80_20/historical_predictions_2022-09.csv": "0204f95efcf0b0c7b80a60977b469280b1677fcfbb772b395a5622e467f88f7c",
+    "reports/tabpfn_hierarchical_latent_80_20/historical_provenance_2022-09.json": "f6854d060d7e91a3f7f8e63f277b964313650fca3471340984299e3a37e99daf",
+    "reports/tabpfn_hierarchical_latent_80_20/historical_predictions_2023-07.csv": "913a218e3fe7af12540021618a1c2a7f63e0a4af5822bc691a29893870fed531",
+    "reports/tabpfn_hierarchical_latent_80_20/historical_provenance_2023-07.json": "1ba56fd0745761470928f917d1e04a817e3d93099b7d3995c2265009327f6e44",
+    ".cache/tabpfn_v3_features/calendar_80_20_categorical.joblib": "fba84757b6e23280d2b27eab0ca5d86a427ac19ca33c6b12b5b2dcc4194a0059",
+    ".cache/tabpfn_diagscale_80_20/inner_features.joblib": "20c28ccaf736673905b50b9e10635aaf1400c30028d23cec41b3011eb12fab8c",
+    ".cache/tabpfn_fast_embedding_head/features_2022-05.joblib": "d3d5a48655f8ba994bb925eadf3393e413ecaa2d52f1905a1e1512f7e64603b6",
+    ".cache/tabpfn_fast_embedding_head/features_2022-09.joblib": "0708f513519ea1fd36a3f7a1037585e087a9aa273a5bf7c07b3f48a6186844ca",
+    ".cache/tabpfn_fast_embedding_head/features_2023-01.joblib": "2147318b08a5dc1570d581d6ee4db514cd40ac1b0723fd91a8c2a86f9c63b21c",
+    ".cache/tabpfn_fast_embedding_head/features_2023-05.joblib": "b4b23c862f67785ade587805982a2cca1ec48d9c6ec1f9e1503833f35649f6fc",
+    ".cache/tabpfn_v3_features/calendar_inner_2023-07.joblib": "f93b6e7ed610ad1df01ae987ddb8fe260c9f5ab15d218aca406a08536f5518b6",
+    "reports/tabpfn_v3_5_fast_calendar_80_20/inner_features_2023-07.json": "a70512a492e4977cb62279ec6e24f2e711122555c35bad97d35b8c227b54e0a1",
+    ".cache/tabpfn_fast_embedding_head/features_2023-08.joblib": "27d146499ada977a77305d9c3c27db4518e616b72452bcdc7c09b99a7589b0a5",
+    ".cache/tabpfn_fast_embedding_head/features_2024-02.joblib": "e4e4fe0884e7b4bd9ef84dfa26f22798389452ca2cec0da2edddfe7d8c74370a"
+  },
+  "code_sha256": {
+    "analysis/compare_tabpfn_feature_ensemble.py": "da2624d6b9105ccd45b5a1cd65f5c00fd23022f613c798d308f77c7516bb79b6",
+    "analysis/experiments/feature_diversified_ensemble.py": "39457d27f1441dc9e55c96706c6fa764e679792fcb0d010a294def612b0cb812",
+    "analysis/experiments/calendar_encoding.py": "3cdf03e2f6772d7530231caf5d56bbc668d13aa9307d9c0346308940c5fd2f20",
+    "analysis/experiments/local_market_fields.py": "004c5ccf498f38c5f7447ad0ed648c3e15e0e3cf3ab8cdc991a0acda4eb2da4f",
+    "analysis/compare_tabpfn_hierarchical_latent.py": "9a347137236cfaa42b1d3e0b026e03a68ca4cc17fbecac00d1edb526b40e6fea",
+    "analysis/experiments/local_spatial_features.py": "40b338b36fb44069f53948ddde085edd0dc02978b013d938a39a8b525b9b2408"
+  },
+  "packages": {
+    "tabpfn": "9.2.0",
+    "torch": "2.11.0+cu128",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scipy": "1.18.1"
+  }
+}

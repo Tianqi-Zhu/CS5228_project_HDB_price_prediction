@@ -1,0 +1,3 @@
+{
+  "reason": "Pandas StringDtype joblib deserialization failed only in the temporal inference worker. Rebuild temporal matrices from verified77-feature baseline instead; complete150000/50000-row matrices and dtypes exactly match cached values. No statistical configuration,labels,weights or other-member predictions change."
+}

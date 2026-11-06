@@ -1,0 +1,5 @@
+{
+  "criterion": "development holdout RMSE",
+  "model": "previous_best_residual",
+  "rmse_sgd": 455.86289685278933
+}
