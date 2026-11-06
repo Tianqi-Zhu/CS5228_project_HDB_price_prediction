@@ -1,0 +1,76 @@
+{
+  "competition": "cs-5228-2610-project",
+  "branch": "mlp-eda-ensemble",
+  "observed_on": "2026-11-05",
+  "score_source": "User-provided Kaggle submission-list screenshots in this conversation",
+  "leaderboard_partition": null,
+  "api_verified": false,
+  "hidden_test_labels_available_locally": false,
+  "results": [
+    {
+      "filename": "submission_mlp_uncleaned.csv",
+      "model": "MLP ensemble (seeds 42,43,44)",
+      "policy": "uncleaned",
+      "fit_end": "2023-12",
+      "fitting_rows": 105837,
+      "epochs_per_seed": 3,
+      "rows": 50000,
+      "kaggle_displayed_score": 461.64312,
+      "local_submission_sha256": "b18145ae89a2ceef5536048dc53e9aa99763a89ecc0b626ca73cb5d3d3eaccf5",
+      "score_evidence": "evidence/kaggle_frozen_2026-11-05.png",
+      "published_submission": null
+    },
+    {
+      "filename": "submission_mlp_cleaned.csv",
+      "model": "MLP ensemble (seeds 42,43,44)",
+      "policy": "obvious_low",
+      "fit_end": "2023-12",
+      "fitting_rows": 104505,
+      "epochs_per_seed": 3,
+      "rows": 50000,
+      "kaggle_displayed_score": 458.91884,
+      "local_submission_sha256": "934a3ebb456fc886b24ded02159b796496c1909558a8aceb7fe8aec74a6ec7ee",
+      "score_evidence": "evidence/kaggle_frozen_2026-11-05.png",
+      "published_submission": null
+    },
+    {
+      "filename": "submission_mlp_fullfit_uncleaned.csv",
+      "model": "MLP ensemble (seeds 42,43,44)",
+      "policy": "uncleaned",
+      "fit_end": "2025-03",
+      "fitting_rows": 150000,
+      "epochs_per_seed": 3,
+      "rows": 50000,
+      "kaggle_displayed_score": 439.38193,
+      "local_submission_sha256": "dae2326ac94f4379874b73cf9d8fdbfc1165c671c2dfc571d0211f23ef717199",
+      "score_evidence": "evidence/kaggle_fullfit_2026-11-05.png",
+      "published_submission": "submission_mlp_fullfit_uncleaned.csv"
+    },
+    {
+      "filename": "submission_mlp_fullfit_cleaned.csv",
+      "model": "MLP ensemble (seeds 42,43,44)",
+      "policy": "obvious_low",
+      "fit_end": "2025-03",
+      "fitting_rows": 147983,
+      "epochs_per_seed": 3,
+      "rows": 50000,
+      "kaggle_displayed_score": 437.34455,
+      "local_submission_sha256": "a398a2d94a02dae24f71b627e262d2f2ba4fab36775c2a7c9cdddf6d07e520ef",
+      "score_evidence": "evidence/kaggle_fullfit_2026-11-05.png",
+      "published_submission": "submission_mlp_fullfit_cleaned.csv"
+    }
+  ],
+  "lowest_displayed_candidate": "submission_mlp_fullfit_cleaned.csv",
+  "final_selection_performed_by_assistant": false,
+  "improvements": {
+    "uncleaned_fullfit": 22.26119,
+    "cleaned_fullfit": 21.57429,
+    "cleaning_after_fullfit": 2.03738
+  },
+  "limits": [
+    "Screenshots do not identify public/private leaderboard partition.",
+    "No new Kaggle upload was performed by the assistant.",
+    "Full-data model is not independently evaluated on previously reserved local months.",
+    "Original quantile time preprocessing remains; this is a fixed-configuration full refit."
+  ]
+}

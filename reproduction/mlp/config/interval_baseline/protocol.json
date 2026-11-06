@@ -1,0 +1,80 @@
+{
+  "specs": {
+    "mlp": {
+      "name": "residual_mlp",
+      "architecture": "mlp",
+      "blocks": 2,
+      "width": 128,
+      "history": false,
+      "adjusted_history": true,
+      "residual_reference": true,
+      "quantile": true,
+      "lr": 0.0005,
+      "aux_weight": 0.1,
+      "max_epochs": 35
+    },
+    "tabm": {
+      "name": "piecewise_tabm",
+      "encoding": "quantile",
+      "history": true,
+      "quantile": true,
+      "k": 16,
+      "width": 128,
+      "blocks": 2,
+      "lr": 0.001
+    }
+  },
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "predict_test": true,
+  "max_selection_epochs": 35,
+  "source_sha256": {
+    "data/auxiliary/sg-coe-prices.csv": "e32fccd39da32780b6b7f35d069c813ed3edb0c110ea60761656bcee58d501a5",
+    "data/auxiliary/sg-hdb-block.csv": "e6ccc60c1f901f8f476eb6fe14c07ef5941d2afd06a081a1e4c00f717da27f83",
+    "data/auxiliary/sg-mrt-stations.csv": "899460b39fb251bd6883fffc9e6a772081f8e5217a657550afc3c49cfdcd3227",
+    "data/auxiliary/sg-schools.csv": "118c7ce8d96bbc934bd53655e73e6d0848c27853a625394ecc6a67a5af54f192",
+    "data/auxiliary/sg-shopping-malls.csv": "00e05b0176ac412695fc4ce1fc5a5338a1993593ffaffe26156dc2ea04ddf2c8",
+    "data/auxiliary/sg-stock-prices.csv": "c52fef9f33cfcb11285e2b9546124e02f32488e563af44e9fb3a505d10e2edff",
+    "data/train.csv": "6d7a417de72112361f8353659ba6fe44a442b07465b488aff1b03f7ec1ea3ba6",
+    "data/test.csv": "dfc407406d957bbf7c2f005e5d9852b1bfc6546cd4186f07e6824d8e03e64cfc"
+  },
+  "code_sha256": {
+    "analysis/experiments/neural_ensemble_uncertainty.py": "9134c3c0473796d8094a456052b12e7e96b217cb1cd6c3d5479d609c1f7a395e",
+    "analysis/experiments/embedding_rent_search.py": "2043659725d3d07b978b0a8e47addd0a69a1c18428a4ce2ff9a5b10da9bac014",
+    "analysis/experiments/tabm_rent_search.py": "ead468afadc52c23f43b925ef71b5d76cb7b5f6967f715d7cb99cba7559afcbf",
+    "analysis/experiments/deep_learning.py": "9cff560ea3f6dc327441d6e5d646fda338755299cb6ddc90d97237ac437dc38d",
+    "analysis/experiments/adjusted_rent_history.py": "84ecd79e0b45fa968f24221bac9159f3b3e46d1fe0583ca69e26eea3ede41d74",
+    "analysis/experiments/spatiotemporal_hybrid.py": "35e99a6ab69f4879285de70a746783b336d09a622df0d63fc2fd07070e46db0d",
+    "analysis/pipeline/auxiliary.py": "e9739209de7251997625c415391cbb483a2223aad38107ad2a01de50bf6c1072",
+    "analysis/pipeline/data.py": "b6f1ef6a2d21d9ea69e23d63c5f7f53310ddb0faac3f71a936ba7119c3b24ec0"
+  },
+  "versions": {
+    "torch": "2.14.1",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.1",
+    "tabm": "0.0.3",
+    "rtdl-num-embeddings": "0.0.12"
+  },
+  "selection_fit": "2021-01..2023-09",
+  "selection_tune": "2023-10..2023-12",
+  "final_fit": "2021-01..2023-12",
+  "calibration": "2024-01..2024-03",
+  "outer": "2024-04..2025-03",
+  "history_origin": "2023-12",
+  "aggregation": "equal independent seeds; hybrid is equal family means; no calibration-based model selection",
+  "primary_interval": "abs residual / max(independent-network std, 100 SGD); finite-sample rank quantile",
+  "reference_interval": "constant-width absolute residual calibration; descriptive control, no method selection",
+  "limits": [
+    "Time-series dependence and drift: nominal coverage is not guaranteed.",
+    "No posterior probability or confidence-of-correctness per row.",
+    "Disagreement is not total predictive uncertainty or standard error of the mean.",
+    "Historical architectures and outer period previously inspected: exploratory development.",
+    "Models retain December-2023 fitting origin after calibration; no post-calibration refit.",
+    "Static facility snapshots inherited; not fully historical point-in-time geography.",
+    "Long-horizon test intervals are extrapolations, not validated test accuracy."
+  ]
+}

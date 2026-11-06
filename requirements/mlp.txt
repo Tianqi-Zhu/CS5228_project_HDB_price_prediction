@@ -1,0 +1,13 @@
+# Tested CPU MLP environment, separate from F1 CUDA requirements.
+numpy==2.5.3
+pandas==3.0.6
+scipy==1.18.1
+scikit-learn==1.9.1
+joblib==1.6.0
+torch==2.14.1
+lightgbm==4.7.0
+catboost==1.2.10
+matplotlib==3.11.2
+threadpoolctl==3.7.0
+tabm==0.0.3
+rtdl-num-embeddings==0.0.12

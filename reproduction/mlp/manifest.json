@@ -1,0 +1,444 @@
+{
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "12a1af5c9892961dd18679d999953108a214d9ebb373f165e02f1dfe2f56f0ea",
+      "bytes": 3648
+    },
+    {
+      "path": "artifacts/fullfit/evidence/kaggle_frozen_2026-11-05.png",
+      "sha256": "e11702a3a7c11513936ee643f7bc63d4cfc598e508b866ae5cd0f0eb5fe4da38",
+      "bytes": 59734
+    },
+    {
+      "path": "artifacts/fullfit/evidence/kaggle_fullfit_2026-11-05.png",
+      "sha256": "bbca85cf70ac3e7157d10aec699ef4526ee9fede20868534e30d9d69c3882232",
+      "bytes": 62667
+    },
+    {
+      "path": "artifacts/fullfit/kaggle_results.json",
+      "sha256": "ceb11d295d25e26de19edad0efb156aff0ebb7f11101fa37b85149b3834cb1de",
+      "bytes": 2961
+    },
+    {
+      "path": "artifacts/fullfit/manifest.json",
+      "sha256": "1ee5e362bafee6774a8a11d9c0279a4fe8b48f3ab534f9df9f40e8b805beebfd",
+      "bytes": 4399
+    },
+    {
+      "path": "artifacts/fullfit/obvious_low/removed_training_rows.csv",
+      "sha256": "2fa64257d2fb6f6bda2d0a1ac88cb010e32ed41351fbd9a464648569d33e55fd",
+      "bytes": 355591
+    },
+    {
+      "path": "artifacts/fullfit/obvious_low/seed42/summary.json",
+      "sha256": "d27a7032e41ce8a572d5a0fac04a1722c0186a862ee94a00452b176311832e43",
+      "bytes": 160
+    },
+    {
+      "path": "artifacts/fullfit/obvious_low/seed43/summary.json",
+      "sha256": "d1689056de82762c36bfcfb3f8fbf3dc6d209a78b028bb945727cb130ade119a",
+      "bytes": 159
+    },
+    {
+      "path": "artifacts/fullfit/obvious_low/seed44/summary.json",
+      "sha256": "4cafcafd95e2cff45bffe1513af76039297deac4502f67341d5bdf2a8c016a06",
+      "bytes": 160
+    },
+    {
+      "path": "artifacts/fullfit/obvious_low/summary.json",
+      "sha256": "b6a93a8f7071b3807ae396f7ab4ce78ea019c5540ba822787f5714c8cc7091d0",
+      "bytes": 1235
+    },
+    {
+      "path": "artifacts/fullfit/protocol.json",
+      "sha256": "0d925a4bb5ca7d48f632e78c36d1cbae676e1bf9c7409b223139725c1fd0bf8b",
+      "bytes": 3058
+    },
+    {
+      "path": "artifacts/fullfit/publication_checks.json",
+      "sha256": "7d2d43ab994e98b7b853ebae090c132fceefcc54f06fd017e72c602ee27ae20d",
+      "bytes": 433
+    },
+    {
+      "path": "artifacts/fullfit/source/analysis/experiments/adjusted_rent_history.py",
+      "sha256": "4105dbd33f79b131dbd111c2a9e7cb3c58f3477d3239364b91c98f5bb3129f99",
+      "bytes": 2884
+    },
+    {
+      "path": "artifacts/fullfit/source/analysis/experiments/cleaned_neural_ensemble.py",
+      "sha256": "58f402925229529fabe54c7117e02a0c855d3e37ed33e23de12a67215f145f14",
+      "bytes": 18185
+    },
+    {
+      "path": "artifacts/fullfit/source/analysis/experiments/deep_learning.py",
+      "sha256": "9cff560ea3f6dc327441d6e5d646fda338755299cb6ddc90d97237ac437dc38d",
+      "bytes": 22269
+    },
+    {
+      "path": "artifacts/fullfit/source/analysis/experiments/embedding_rent_search.py",
+      "sha256": "2043659725d3d07b978b0a8e47addd0a69a1c18428a4ce2ff9a5b10da9bac014",
+      "bytes": 14365
+    },
+    {
+      "path": "artifacts/fullfit/source/analysis/experiments/mlp_fullfit_submission.py",
+      "sha256": "427fa8fe95a543f18e3e73679568a1f55dca22e5cb58e2b587fd6b09b64159ae",
+      "bytes": 11422
+    },
+    {
+      "path": "artifacts/fullfit/source/analysis/experiments/spatiotemporal_hybrid.py",
+      "sha256": "35e99a6ab69f4879285de70a746783b336d09a622df0d63fc2fd07070e46db0d",
+      "bytes": 25439
+    },
+    {
+      "path": "artifacts/fullfit/source/analysis/pipeline/auxiliary.py",
+      "sha256": "e9739209de7251997625c415391cbb483a2223aad38107ad2a01de50bf6c1072",
+      "bytes": 16204
+    },
+    {
+      "path": "artifacts/fullfit/submission_mlp_fullfit_cleaned.csv",
+      "sha256": "a398a2d94a02dae24f71b627e262d2f2ba4fab36775c2a7c9cdddf6d07e520ef",
+      "bytes": 1233500
+    },
+    {
+      "path": "artifacts/fullfit/submission_mlp_fullfit_uncleaned.csv",
+      "sha256": "dae2326ac94f4379874b73cf9d8fdbfc1165c671c2dfc571d0211f23ef717199",
+      "bytes": 1233328
+    },
+    {
+      "path": "artifacts/fullfit/summary.json",
+      "sha256": "dcad3e6891e4c54348576ecb1c7035e7d738434970744b9c3130cda9456ef5d5",
+      "bytes": 3002
+    },
+    {
+      "path": "artifacts/fullfit/uncleaned/seed42/summary.json",
+      "sha256": "8417a53012c724c778b95b0d9f0e34d8107fc94a4e36b715d0f82684509b8e76",
+      "bytes": 161
+    },
+    {
+      "path": "artifacts/fullfit/uncleaned/seed43/summary.json",
+      "sha256": "963bcba2d65a7c682e0b7239bb6fbd3b048382514f3508c75aea64b523559e55",
+      "bytes": 160
+    },
+    {
+      "path": "artifacts/fullfit/uncleaned/seed44/summary.json",
+      "sha256": "3caf07c9c7c714a4b5244d4cf7eeb0c48a871b3179a8e7a80de84f524779f828",
+      "bytes": 160
+    },
+    {
+      "path": "artifacts/fullfit/uncleaned/summary.json",
+      "sha256": "96544a2e71056ee011fba11b03cf679ac226848e1d63df6475ba6fe885df8cfc",
+      "bytes": 1234
+    },
+    {
+      "path": "artifacts/fullfit/verification.json",
+      "sha256": "b41c1fd822606ef53114b29b58531bcd6c6e1f03b43b40e6cc206427b9034abd",
+      "bytes": 694
+    },
+    {
+      "path": "artifacts/recency/completion.json",
+      "sha256": "bbd5c97521912bf1026b50f0d931015824f576c5e4941824a72d8d7544d5040c",
+      "bytes": 235
+    },
+    {
+      "path": "artifacts/recency/evaluation_summary.json",
+      "sha256": "7a6a59e431f18f6ce549257ea51387940cff21a8a127f612282b2f67ba235929",
+      "bytes": 5158
+    },
+    {
+      "path": "artifacts/recency/fullfit/obvious_low/monthly_training_weights.csv",
+      "sha256": "67996cf22945db6301797bdeeae0d94e86a9848b846f269be57362c5389ba7b5",
+      "bytes": 1196
+    },
+    {
+      "path": "artifacts/recency/fullfit/protocol.json",
+      "sha256": "147607d8a12c221d5a13439f2055abc303176817e06f4e0136452934ffc47b33",
+      "bytes": 3440
+    },
+    {
+      "path": "artifacts/recency/fullfit/submission_mlp_timeweighted_h36_cleaned.csv",
+      "sha256": "70a3a5129feb8138c25a13a6b98251d1eea7784c05963bdb400e06beb5b56095",
+      "bytes": 1233326
+    },
+    {
+      "path": "artifacts/recency/fullfit/submission_mlp_timeweighted_h36_uncleaned.csv",
+      "sha256": "0d3d86a85fe7bdfe3c58a085a54e97c5606e9a2c77227f370572216aa009dfb6",
+      "bytes": 1233208
+    },
+    {
+      "path": "artifacts/recency/fullfit/summary.json",
+      "sha256": "9144455e27c9b4e91c589514ecb9379a50b4a0eb4342f4387e6323f7f57acac4",
+      "bytes": 3721
+    },
+    {
+      "path": "artifacts/recency/fullfit/uncleaned/monthly_training_weights.csv",
+      "sha256": "6424eaefbc28f0e24b1db8d13d8550d80734abbdd1d4d6a3f20da5e79e7e92b4",
+      "bytes": 1189
+    },
+    {
+      "path": "artifacts/recency/manifest.json",
+      "sha256": "2b3b103ab6dd88d11bc8154549783d75f5fff7d3aa7ed577a44129a091d5de6d",
+      "bytes": 2961
+    },
+    {
+      "path": "artifacts/recency/outer/h36/predictions.csv",
+      "sha256": "6267f649334f41b2475e2aa2bfa15010d4379fc1053501c02930e339defd5a06",
+      "bytes": 3942701
+    },
+    {
+      "path": "artifacts/recency/outer/h36/results.json",
+      "sha256": "aca8a0ec98e9472f4186bcf516dad89be4ac74490f19d6e67f273b1cd20dab14",
+      "bytes": 1871
+    },
+    {
+      "path": "artifacts/recency/outer/uniform/predictions.csv",
+      "sha256": "ec2bf73153e7e62984d803944180647802972c3c7f9de56fb95cb13b2208f3c8",
+      "bytes": 3943341
+    },
+    {
+      "path": "artifacts/recency/outer/uniform/results.json",
+      "sha256": "549c352da4d7009ef1ad9d20e8dbb9e60817c8f2a0bfd90a5f6d75dc3e0ad5f5",
+      "bytes": 1662
+    },
+    {
+      "path": "artifacts/recency/outer_comparison.csv",
+      "sha256": "6e726589b79707766d73fc9306de06ee98506d27f051d1d388ede1ddac82e36e",
+      "bytes": 370
+    },
+    {
+      "path": "artifacts/recency/pooled_selection_metrics.csv",
+      "sha256": "4920792548c12c805311a0fb840d03283033001c05a3018a8b93c31687e4ac0a",
+      "bytes": 373
+    },
+    {
+      "path": "artifacts/recency/protocol.json",
+      "sha256": "a99252e4c30fb0c0fb7cff976551f888be2a337afa607531101678afbc7313ae",
+      "bytes": 2206
+    },
+    {
+      "path": "artifacts/recency/publication_checks.json",
+      "sha256": "93313856b7453fb7f7b8cbb40831a29a49efb8c9ebec24e49c4b6b9bf83d0afa",
+      "bytes": 395
+    },
+    {
+      "path": "artifacts/recency/selection.json",
+      "sha256": "5624431866b87a323fa0d8539adc414a1ddad38fa5c21abb14758e3482c846d6",
+      "bytes": 1022
+    },
+    {
+      "path": "artifacts/recency/selection_fold_metrics.csv",
+      "sha256": "14ffa27d31c50fe0fd4f54ebcce53dd9ec900f96e72e7d8a026c0ab448782a7d",
+      "bytes": 1468
+    },
+    {
+      "path": "config/interval_baseline/mlp_selected.json",
+      "sha256": "e0e722943718f17868e50edf8eea89d14c9e3b635f81b4acce3c50052595022c",
+      "bytes": 84
+    },
+    {
+      "path": "config/interval_baseline/protocol.json",
+      "sha256": "3a25640574db5dec23173c2a934b7fb8f6367785bef92fe7e55db079c72dd7ed",
+      "bytes": 3760
+    },
+    {
+      "path": "config/interval_baseline/tabm_selected.json",
+      "sha256": "fad1a82cde9b350d26444735697250f34b920ded0ee5a68066f2a9d3baa7868a",
+      "bytes": 84
+    },
+    {
+      "path": "data_identity.json",
+      "sha256": "66fa2f547cdf26e97003f634937249092742b80b69e083bc9eb4e820f5ba1077",
+      "bytes": 3140
+    },
+    {
+      "path": "integration_validation.json",
+      "sha256": "c1f900fc01213efd65ba53fc93cf95639b72d8c8004d7e20fc5f90375f0a06ef",
+      "bytes": 953
+    },
+    {
+      "path": "provenance.json",
+      "sha256": "c75ec95d76d12701e2ae50d1e7b34aee591df7e69368a355d03a0fbe4f029122",
+      "bytes": 9822
+    },
+    {
+      "path": "run.py",
+      "sha256": "47474a9c8eb1b7f4ff1ef5e7516e3762f59f9238949432fa109d5ee5f3f2ed65",
+      "bytes": 1353
+    },
+    {
+      "path": "runtime/analysis/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "runtime/analysis/experiments/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "runtime/analysis/experiments/adjusted_rent_history.py",
+      "sha256": "4105dbd33f79b131dbd111c2a9e7cb3c58f3477d3239364b91c98f5bb3129f99",
+      "bytes": 2884
+    },
+    {
+      "path": "runtime/analysis/experiments/auxiliary_ablation.py",
+      "sha256": "631e1b7df3a558024b156d4578762995b2b405aa0235a1cc4737295d1ed921dc",
+      "bytes": 11249
+    },
+    {
+      "path": "runtime/analysis/experiments/cleaned_neural_ensemble.py",
+      "sha256": "16cc5cfdf65c7deb8bbc7f3512283569463806d682c372c0cf59cb80a641f50d",
+      "bytes": 18433
+    },
+    {
+      "path": "runtime/analysis/experiments/deep_learning.py",
+      "sha256": "9cff560ea3f6dc327441d6e5d646fda338755299cb6ddc90d97237ac437dc38d",
+      "bytes": 22269
+    },
+    {
+      "path": "runtime/analysis/experiments/embedding_rent_search.py",
+      "sha256": "58245090d34160ad7d87898b467c215c51f2ac6580df4aa5f30f6b87cea4e31a",
+      "bytes": 14401
+    },
+    {
+      "path": "runtime/analysis/experiments/historical_priors.py",
+      "sha256": "e099386c2b3c6dd8a0b5d80192e0413a6b6b92f7373d32b1666e105685c34871",
+      "bytes": 7183
+    },
+    {
+      "path": "runtime/analysis/experiments/mlp_fullfit_submission.py",
+      "sha256": "df13e08b03bd06729930001969a6715ce6c78e6bf0946ff929cf44dc4d246964",
+      "bytes": 12901
+    },
+    {
+      "path": "runtime/analysis/experiments/mlp_recency_experiment.py",
+      "sha256": "3f0c96543d182d53298eed6fa3a2863cebb01538e0297ee345c4d270a2a0f14c",
+      "bytes": 9230
+    },
+    {
+      "path": "runtime/analysis/experiments/neural_ensemble_uncertainty.py",
+      "sha256": "0321b387b83e81ddd757e81a25c3680d8080f599f00a5aff9c52c25acf4459c0",
+      "bytes": 19119
+    },
+    {
+      "path": "runtime/analysis/experiments/property_features.py",
+      "sha256": "0a95eef36666e420091e4620c66237c149328ea9bd7d6e771f737e839aed222f",
+      "bytes": 1110
+    },
+    {
+      "path": "runtime/analysis/experiments/recency_weighting.py",
+      "sha256": "b4cb9570bb76f50831472f503eb3d6a7c870143a80d56fee9944dabe541df9cb",
+      "bytes": 2071
+    },
+    {
+      "path": "runtime/analysis/experiments/spatiotemporal_hybrid.py",
+      "sha256": "35e99a6ab69f4879285de70a746783b336d09a622df0d63fc2fd07070e46db0d",
+      "bytes": 25439
+    },
+    {
+      "path": "runtime/analysis/experiments/tabm_rent_search.py",
+      "sha256": "ead468afadc52c23f43b925ef71b5d76cb7b5f6967f715d7cb99cba7559afcbf",
+      "bytes": 15920
+    },
+    {
+      "path": "runtime/analysis/pipeline/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "runtime/analysis/pipeline/auxiliary.py",
+      "sha256": "e9739209de7251997625c415391cbb483a2223aad38107ad2a01de50bf6c1072",
+      "bytes": 16204
+    },
+    {
+      "path": "runtime/analysis/pipeline/config.py",
+      "sha256": "fb75e79a9d94eac6d90bef32bd812d2de4a16b64d92ea348146d0f1d2dcee0f3",
+      "bytes": 1997
+    },
+    {
+      "path": "runtime/analysis/pipeline/data.py",
+      "sha256": "b6f1ef6a2d21d9ea69e23d63c5f7f53310ddb0faac3f71a936ba7119c3b24ec0",
+      "bytes": 8699
+    },
+    {
+      "path": "runtime/analysis/pipeline/evaluation.py",
+      "sha256": "8fff1b4ea1ed7bf35c1bb7651a3117f7a487dd53ecb23667fbe594744d3d90b1",
+      "bytes": 7530
+    },
+    {
+      "path": "runtime/analysis/pipeline/models.py",
+      "sha256": "5a83f8f8e9e6323c8c4907780076b438674d750c2755738f7c1a8733c7baea4d",
+      "bytes": 3831
+    },
+    {
+      "path": "runtime/analysis/pipeline/spatial.py",
+      "sha256": "7248009a117cf10e7cf19adbb8351942f195d6945dad14d3186af4865fc456d4",
+      "bytes": 1674
+    },
+    {
+      "path": "runtime/tests/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "runtime/tests/test_adjusted_rent_history.py",
+      "sha256": "1f59fae8f9cd3282b3c32a78643ebaf2bf18a83aa195fb11f95fbf8f89c12d03",
+      "bytes": 2336
+    },
+    {
+      "path": "runtime/tests/test_cleaned_neural_ensemble.py",
+      "sha256": "b101bd42599d571110a8e7731368774c8a181eda7d45285ed8eaad5649efb68d",
+      "bytes": 3126
+    },
+    {
+      "path": "runtime/tests/test_neural_ensemble_uncertainty.py",
+      "sha256": "0ebe3782b59bb5d8a748857cf47331b9e2cd4816b838866822ab98ffa47de57b",
+      "bytes": 3668
+    },
+    {
+      "path": "runtime/tests/test_raw_time_feature.py",
+      "sha256": "94766a0f7d18d70f4c84b8bccd10aa03ced74a598b138c7a4e2e415b33bd4de4",
+      "bytes": 1009
+    },
+    {
+      "path": "runtime/tests/test_recency_weighting.py",
+      "sha256": "5ab6206fbcf3199603183043ab96768cbfa819f6edb2bbbb321bf9e0c34e1265",
+      "bytes": 2350
+    },
+    {
+      "path": "runtime/tests/test_rent_target_units.py",
+      "sha256": "0915371583233028f7fa485417262b4a7300f0beb116899fbc554b8e6f59ef71",
+      "bytes": 599
+    },
+    {
+      "path": "runtime/tests/test_spatiotemporal_hybrid.py",
+      "sha256": "ed9c17422740ea62e6696e8a36d3f7a7ea8948c7a5da70e2db7c4a47f7573df2",
+      "bytes": 2534
+    },
+    {
+      "path": "runtime/tests/test_tabm_epoch_selection.py",
+      "sha256": "27557139bb045d5af40b11a5e6972461f22952388a98517ca2a8aeb405666509",
+      "bytes": 1178
+    },
+    {
+      "path": "runtime/tests/test_tabm_mixture.py",
+      "sha256": "09d568f5080ed151c6c4f2096974d57a72520dedba748e7946c456639e3179a5",
+      "bytes": 883
+    },
+    {
+      "path": "runtime/tests/test_tabm_numeric_gradients.py",
+      "sha256": "3ad313207c5c45b3b8b5495ef2ee73c4d5823d338c9c3e6be6fb8e905db89361",
+      "bytes": 767
+    },
+    {
+      "path": "runtime/tests/test_tabm_periodic.py",
+      "sha256": "fc8083277562b9ccb3778e8fd5d8e3be23fad420e9a0f0d7d49ae2f1db73de45",
+      "bytes": 812
+    },
+    {
+      "path": "verify.py",
+      "sha256": "1bc23e0cdad764854cee820870b148ac74e8d2eb1dc9dbd6f8ef6b0793f406bc",
+      "bytes": 2234
+    }
+  ]
+}

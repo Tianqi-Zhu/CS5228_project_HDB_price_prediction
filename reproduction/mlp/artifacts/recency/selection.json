@@ -1,0 +1,42 @@
+{
+  "pooled_metrics": [
+    {
+      "half_life_months": null,
+      "rows": 35882,
+      "rmse_sgd": 577.6236361644562,
+      "mae_sgd": 459.00236838580054,
+      "bias_sgd": -44.84313615124938
+    },
+    {
+      "half_life_months": 6,
+      "rows": 35882,
+      "rmse_sgd": 578.5250932550691,
+      "mae_sgd": 461.013290460267,
+      "bias_sgd": -54.71148754448457
+    },
+    {
+      "half_life_months": 12,
+      "rows": 35882,
+      "rmse_sgd": 578.1931168500407,
+      "mae_sgd": 460.3339129161687,
+      "bias_sgd": -51.60274913499001
+    },
+    {
+      "half_life_months": 24,
+      "rows": 35882,
+      "rmse_sgd": 577.8959088754663,
+      "mae_sgd": 459.79007346816456,
+      "bias_sgd": -49.15558350828272
+    },
+    {
+      "half_life_months": 36,
+      "rows": 35882,
+      "rmse_sgd": 577.7108227971148,
+      "mae_sgd": 459.40346886708,
+      "bias_sgd": -47.375182685529474
+    }
+  ],
+  "best_overall_half_life_months": null,
+  "best_weighted_half_life_months": 36,
+  "locked_before_outer_evaluation": true
+}

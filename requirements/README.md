@@ -38,3 +38,7 @@ python -m pip install --no-deps --target .cache/transformer-deps -r requirements
 
 旧的profiles/extras分层清单与根requirements.txt已按审核稿移除，
 核心版本以environment.yml为准，避免多个基础安装入口各自漂移。
+
+## MLP独立CPU环境
+
+[mlp.txt](mlp.txt)记录MLP运行依赖。该路线无需CUDA，入口为`python -m analysis.main mlp`；建议使用独立环境，保留F1与Concat原环境。测试版本和命令见[MLP说明](../reproduction/mlp/README.md)。

@@ -1,0 +1,176 @@
+{
+  "source_branch": "mlp-eda-ensemble",
+  "source_commit": "b3a6291fbfeb30ce7ff0d0495d9371d801ff8d1c",
+  "original_fullfit_commit": "322fa4c20d83f20e19328823203873a0f81e0f4a",
+  "integration_base": "c649e9532929f3d88f56cfbb1c50d5d718a6a4ae",
+  "implementation": "Isolated dependency-complete MLP runtime; main shared analysis, F1, Concat and TabPFN sources are retained.",
+  "relocations": [
+    {
+      "path": "reproduction/mlp/runtime/analysis/experiments/adjusted_rent_history.py",
+      "source_path": "analysis/experiments/adjusted_rent_history.py",
+      "source_commit": "b3a6291fbfeb30ce7ff0d0495d9371d801ff8d1c",
+      "source_sha256": "4105dbd33f79b131dbd111c2a9e7cb3c58f3477d3239364b91c98f5bb3129f99",
+      "runtime_sha256": "4105dbd33f79b131dbd111c2a9e7cb3c58f3477d3239364b91c98f5bb3129f99",
+      "changes": "Byte-identical source copy."
+    },
+    {
+      "path": "reproduction/mlp/runtime/analysis/experiments/auxiliary_ablation.py",
+      "source_path": "analysis/experiments/auxiliary_ablation.py",
+      "source_commit": "b3a6291fbfeb30ce7ff0d0495d9371d801ff8d1c",
+      "source_sha256": "631e1b7df3a558024b156d4578762995b2b405aa0235a1cc4737295d1ed921dc",
+      "runtime_sha256": "631e1b7df3a558024b156d4578762995b2b405aa0235a1cc4737295d1ed921dc",
+      "changes": "Byte-identical source copy."
+    },
+    {
+      "path": "reproduction/mlp/runtime/analysis/experiments/cleaned_neural_ensemble.py",
+      "source_path": "analysis/experiments/cleaned_neural_ensemble.py",
+      "source_commit": "b3a6291fbfeb30ce7ff0d0495d9371d801ff8d1c",
+      "source_sha256": "58f402925229529fabe54c7117e02a0c855d3e37ed33e23de12a67215f145f14",
+      "runtime_sha256": "16cc5cfdf65c7deb8bbc7f3512283569463806d682c372c0cf59cb80a641f50d",
+      "changes": "Repository/data and code-snapshot path relocation only."
+    },
+    {
+      "path": "reproduction/mlp/runtime/analysis/experiments/deep_learning.py",
+      "source_path": "analysis/experiments/deep_learning.py",
+      "source_commit": "b3a6291fbfeb30ce7ff0d0495d9371d801ff8d1c",
+      "source_sha256": "9cff560ea3f6dc327441d6e5d646fda338755299cb6ddc90d97237ac437dc38d",
+      "runtime_sha256": "9cff560ea3f6dc327441d6e5d646fda338755299cb6ddc90d97237ac437dc38d",
+      "changes": "Byte-identical source copy."
+    },
+    {
+      "path": "reproduction/mlp/runtime/analysis/experiments/embedding_rent_search.py",
+      "source_path": "analysis/experiments/embedding_rent_search.py",
+      "source_commit": "b3a6291fbfeb30ce7ff0d0495d9371d801ff8d1c",
+      "source_sha256": "58245090d34160ad7d87898b467c215c51f2ac6580df4aa5f30f6b87cea4e31a",
+      "runtime_sha256": "58245090d34160ad7d87898b467c215c51f2ac6580df4aa5f30f6b87cea4e31a",
+      "changes": "Byte-identical source copy."
+    },
+    {
+      "path": "reproduction/mlp/runtime/analysis/experiments/historical_priors.py",
+      "source_path": "analysis/experiments/historical_priors.py",
+      "source_commit": "b3a6291fbfeb30ce7ff0d0495d9371d801ff8d1c",
+      "source_sha256": "e099386c2b3c6dd8a0b5d80192e0413a6b6b92f7373d32b1666e105685c34871",
+      "runtime_sha256": "e099386c2b3c6dd8a0b5d80192e0413a6b6b92f7373d32b1666e105685c34871",
+      "changes": "Byte-identical source copy."
+    },
+    {
+      "path": "reproduction/mlp/runtime/analysis/experiments/mlp_fullfit_submission.py",
+      "source_path": "analysis/experiments/mlp_fullfit_submission.py",
+      "source_commit": "b3a6291fbfeb30ce7ff0d0495d9371d801ff8d1c",
+      "source_sha256": "d704d07437550bccccbb70c0181339941d9b45a83fc8893c467de741f37c56e7",
+      "runtime_sha256": "df13e08b03bd06729930001969a6715ce6c78e6bf0946ff929cf44dc4d246964",
+      "changes": "Repository/data and code-snapshot path relocation only."
+    },
+    {
+      "path": "reproduction/mlp/runtime/analysis/experiments/mlp_recency_experiment.py",
+      "source_path": "analysis/experiments/mlp_recency_experiment.py",
+      "source_commit": "b3a6291fbfeb30ce7ff0d0495d9371d801ff8d1c",
+      "source_sha256": "f8bb3c549a1e358a66100716e9a12091f0efec0e60a049b05c15994ca9d22aed",
+      "runtime_sha256": "3f0c96543d182d53298eed6fa3a2863cebb01538e0297ee345c4d270a2a0f14c",
+      "changes": "Repository/data and code-snapshot path relocation only."
+    },
+    {
+      "path": "reproduction/mlp/runtime/analysis/experiments/neural_ensemble_uncertainty.py",
+      "source_path": "analysis/experiments/neural_ensemble_uncertainty.py",
+      "source_commit": "b3a6291fbfeb30ce7ff0d0495d9371d801ff8d1c",
+      "source_sha256": "9134c3c0473796d8094a456052b12e7e96b217cb1cd6c3d5479d609c1f7a395e",
+      "runtime_sha256": "0321b387b83e81ddd757e81a25c3680d8080f599f00a5aff9c52c25acf4459c0",
+      "changes": "Repository/data and code-snapshot path relocation only."
+    },
+    {
+      "path": "reproduction/mlp/runtime/analysis/experiments/property_features.py",
+      "source_path": "analysis/experiments/property_features.py",
+      "source_commit": "b3a6291fbfeb30ce7ff0d0495d9371d801ff8d1c",
+      "source_sha256": "0a95eef36666e420091e4620c66237c149328ea9bd7d6e771f737e839aed222f",
+      "runtime_sha256": "0a95eef36666e420091e4620c66237c149328ea9bd7d6e771f737e839aed222f",
+      "changes": "Byte-identical source copy."
+    },
+    {
+      "path": "reproduction/mlp/runtime/analysis/experiments/recency_weighting.py",
+      "source_path": "analysis/experiments/recency_weighting.py",
+      "source_commit": "b3a6291fbfeb30ce7ff0d0495d9371d801ff8d1c",
+      "source_sha256": "b4cb9570bb76f50831472f503eb3d6a7c870143a80d56fee9944dabe541df9cb",
+      "runtime_sha256": "b4cb9570bb76f50831472f503eb3d6a7c870143a80d56fee9944dabe541df9cb",
+      "changes": "Byte-identical source copy."
+    },
+    {
+      "path": "reproduction/mlp/runtime/analysis/experiments/spatiotemporal_hybrid.py",
+      "source_path": "analysis/experiments/spatiotemporal_hybrid.py",
+      "source_commit": "b3a6291fbfeb30ce7ff0d0495d9371d801ff8d1c",
+      "source_sha256": "35e99a6ab69f4879285de70a746783b336d09a622df0d63fc2fd07070e46db0d",
+      "runtime_sha256": "35e99a6ab69f4879285de70a746783b336d09a622df0d63fc2fd07070e46db0d",
+      "changes": "Byte-identical source copy."
+    },
+    {
+      "path": "reproduction/mlp/runtime/analysis/experiments/tabm_rent_search.py",
+      "source_path": "analysis/experiments/tabm_rent_search.py",
+      "source_commit": "b3a6291fbfeb30ce7ff0d0495d9371d801ff8d1c",
+      "source_sha256": "ead468afadc52c23f43b925ef71b5d76cb7b5f6967f715d7cb99cba7559afcbf",
+      "runtime_sha256": "ead468afadc52c23f43b925ef71b5d76cb7b5f6967f715d7cb99cba7559afcbf",
+      "changes": "Byte-identical source copy."
+    },
+    {
+      "path": "reproduction/mlp/runtime/analysis/pipeline/auxiliary.py",
+      "source_path": "analysis/pipeline/auxiliary.py",
+      "source_commit": "b3a6291fbfeb30ce7ff0d0495d9371d801ff8d1c",
+      "source_sha256": "e9739209de7251997625c415391cbb483a2223aad38107ad2a01de50bf6c1072",
+      "runtime_sha256": "e9739209de7251997625c415391cbb483a2223aad38107ad2a01de50bf6c1072",
+      "changes": "Byte-identical source copy."
+    },
+    {
+      "path": "reproduction/mlp/runtime/analysis/pipeline/config.py",
+      "source_path": "analysis/pipeline/config.py",
+      "source_commit": "b3a6291fbfeb30ce7ff0d0495d9371d801ff8d1c",
+      "source_sha256": "b05b0889656da3901dcea783cde9d1521c4c50fa5f50727a23979e117dbf9ec0",
+      "runtime_sha256": "fb75e79a9d94eac6d90bef32bd812d2de4a16b64d92ea348146d0f1d2dcee0f3",
+      "changes": "Repository/data and code-snapshot path relocation only."
+    },
+    {
+      "path": "reproduction/mlp/runtime/analysis/pipeline/data.py",
+      "source_path": "analysis/pipeline/data.py",
+      "source_commit": "b3a6291fbfeb30ce7ff0d0495d9371d801ff8d1c",
+      "source_sha256": "b6f1ef6a2d21d9ea69e23d63c5f7f53310ddb0faac3f71a936ba7119c3b24ec0",
+      "runtime_sha256": "b6f1ef6a2d21d9ea69e23d63c5f7f53310ddb0faac3f71a936ba7119c3b24ec0",
+      "changes": "Byte-identical source copy."
+    },
+    {
+      "path": "reproduction/mlp/runtime/analysis/pipeline/evaluation.py",
+      "source_path": "analysis/pipeline/evaluation.py",
+      "source_commit": "b3a6291fbfeb30ce7ff0d0495d9371d801ff8d1c",
+      "source_sha256": "8fff1b4ea1ed7bf35c1bb7651a3117f7a487dd53ecb23667fbe594744d3d90b1",
+      "runtime_sha256": "8fff1b4ea1ed7bf35c1bb7651a3117f7a487dd53ecb23667fbe594744d3d90b1",
+      "changes": "Byte-identical source copy."
+    },
+    {
+      "path": "reproduction/mlp/runtime/analysis/pipeline/models.py",
+      "source_path": "analysis/pipeline/models.py",
+      "source_commit": "b3a6291fbfeb30ce7ff0d0495d9371d801ff8d1c",
+      "source_sha256": "5a83f8f8e9e6323c8c4907780076b438674d750c2755738f7c1a8733c7baea4d",
+      "runtime_sha256": "5a83f8f8e9e6323c8c4907780076b438674d750c2755738f7c1a8733c7baea4d",
+      "changes": "Byte-identical source copy."
+    },
+    {
+      "path": "reproduction/mlp/runtime/analysis/pipeline/spatial.py",
+      "source_path": "analysis/pipeline/spatial.py",
+      "source_commit": "b3a6291fbfeb30ce7ff0d0495d9371d801ff8d1c",
+      "source_sha256": "7248009a117cf10e7cf19adbb8351942f195d6945dad14d3186af4865fc456d4",
+      "runtime_sha256": "7248009a117cf10e7cf19adbb8351942f195d6945dad14d3186af4865fc456d4",
+      "changes": "Byte-identical source copy."
+    }
+  ],
+  "tests": [
+    "test_adjusted_rent_history",
+    "test_cleaned_neural_ensemble",
+    "test_neural_ensemble_uncertainty",
+    "test_raw_time_feature",
+    "test_recency_weighting",
+    "test_rent_target_units",
+    "test_tabm_epoch_selection",
+    "test_tabm_mixture",
+    "test_tabm_numeric_gradients",
+    "test_tabm_periodic",
+    "test_spatiotemporal_hybrid"
+  ],
+  "historical_evidence": "Earlier 65MB MLP exploratory archive remains on the source branch; matched M01 imports remain unchanged.",
+  "kaggle": "437.34455/439.38193 belong to the original fullfit submissions. Weighted candidates have no observed Kaggle score."
+}
