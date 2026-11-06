@@ -12,6 +12,7 @@ from analysis.pipeline.evaluation import metrics
 from analysis.experiments.auxiliary_ablation import BASE,BLOCK,AMENITIES,CATEGORICAL
 from analysis.experiments.spatiotemporal_hybrid import add_month,historical_features,HISTORY_FEATURES
 from analysis.experiments.deep_learning import build_network,ExperimentConfig
+from analysis.experiments.recency_weighting import recency_weights,weight_summary,training_loss
 
 
 def prepare(fit,val,history,quantile,raw_time=False):
@@ -80,20 +81,16 @@ def fit_model(f,v,spec,epochs=None):
         bands=torch.tensor(np.digitize(f.MONTHLY_RENT,boundaries),dtype=torch.long)
         meta['band_boundaries']=boundaries
     optimizer=torch.optim.AdamW(net.parameters(),lr=spec['lr'],weight_decay=spec.get('weight_decay',.01))
-    weights = torch.ones(len(y))
-    if spec.get('half_life'):
-        months = pd.PeriodIndex(f.RENT_APPROVAL_DATE, freq='M').asi8
-        weights = torch.tensor(2.**(-(months.max()-months)/spec['half_life']),dtype=torch.float32)
-        weights /= weights.mean()
+    half_life=spec.get('half_life')
+    weights=torch.as_tensor(recency_weights(f.RENT_APPROVAL_DATE,half_life))
     best=float('inf');selected=1;stale=0;trace=[]
     for epoch in range(1,(epochs or spec.get('max_epochs',60))+1):
         net.train();order=torch.randperm(len(y))
         for ix in order.split(1024):
             optimizer.zero_grad();p=net(c[ix],n[ix])
-            regression=p[:,0] if p.ndim==2 else p
-            loss=((regression-y[ix]).square()*weights[ix]).mean()
-            if spec.get('aux_weight'):
-                loss=loss+spec['aux_weight']*nn.functional.cross_entropy(p[:,1:],bands[ix])
+            loss=training_loss(p,y[ix],weights[ix],aux_weight=spec.get('aux_weight',0.),
+                               band_targets=bands[ix] if spec.get('aux_weight') else None,
+                               weight_auxiliary=half_life is not None)
             loss.backward()
             nn.utils.clip_grad_norm_(net.parameters(),1.);optimizer.step()
         if epochs is None:
@@ -102,7 +99,8 @@ def fit_model(f,v,spec,epochs=None):
             if score<best-.1:best=score;selected=epoch;stale=0
             else:stale+=1
             if stale>=8:break
-    meta.update(target_mean=mu,target_std=sd,config=spec)
+    meta.update(target_mean=mu,target_std=sd,config=spec,
+                training_weight_summary=weight_summary(f.RENT_APPROVAL_DATE,half_life))
     return net,meta,selected,best,trace,predict(net,cv,nv)*sd+mu+reference_val, predict(net,c,n)*sd+mu+reference_fit
 
 

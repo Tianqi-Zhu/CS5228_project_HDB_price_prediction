@@ -1,0 +1,10 @@
+{
+  "completed": true,
+  "weighted_half_life_months": 36,
+  "selection_model_fits": 30,
+  "outer_model_fits": 6,
+  "fullfit_model_fits": 6,
+  "source_hashes_unchanged": true,
+  "kaggle_score": null,
+  "kaggle_upload_performed": false
+}

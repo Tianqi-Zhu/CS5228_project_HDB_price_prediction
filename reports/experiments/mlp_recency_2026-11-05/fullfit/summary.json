@@ -1,0 +1,126 @@
+{
+  "completed": true,
+  "models": [
+    {
+      "policy": "uncleaned",
+      "fitting_rows": 150000,
+      "removed_rows": 0,
+      "months": [
+        "2021-01",
+        "2025-03"
+      ],
+      "test_rows": 50000,
+      "overlapping_test_month_rows": 380,
+      "epochs": 3,
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "members": [
+        {
+          "seed": 42,
+          "epochs": 3,
+          "fitting_rows": 150000,
+          "train_rmse_sgd": 477.5789231099692,
+          "reload_max_difference": 0.0,
+          "seconds": 7.0036386660067365
+        },
+        {
+          "seed": 43,
+          "epochs": 3,
+          "fitting_rows": 150000,
+          "train_rmse_sgd": 477.72121329440876,
+          "reload_max_difference": 0.0,
+          "seconds": 6.7838990410091355
+        },
+        {
+          "seed": 44,
+          "epochs": 3,
+          "fitting_rows": 150000,
+          "train_rmse_sgd": 479.3098011489122,
+          "reload_max_difference": 0.0,
+          "seconds": 7.111624375014799
+        }
+      ],
+      "submission": "submission_mlp_timeweighted_h36_uncleaned.csv",
+      "submission_sha256": "0d3d86a85fe7bdfe3c58a085a54e97c5606e9a2c77227f370572216aa009dfb6",
+      "training_weight_summary": {
+        "half_life_months": 36,
+        "anchor_month": "2025-03",
+        "oldest_month": "2021-01",
+        "rows": 150000,
+        "weight_min": 0.5958347916603088,
+        "weight_max": 1.5603538751602173,
+        "weight_mean": 1.0000000020515918,
+        "effective_sample_size": 138772.40068751373
+      },
+      "prediction_min_sgd": 1401.1896009146592,
+      "prediction_max_sgd": 5958.240796499849,
+      "test_rmse_sgd": null,
+      "note": "All supplied labels offered to fitting; cleaning policy may remove rows. No independent validation of this full-data fit."
+    },
+    {
+      "policy": "obvious_low",
+      "fitting_rows": 147983,
+      "removed_rows": 2017,
+      "months": [
+        "2021-01",
+        "2025-03"
+      ],
+      "test_rows": 50000,
+      "overlapping_test_month_rows": 380,
+      "epochs": 3,
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "members": [
+        {
+          "seed": 42,
+          "epochs": 3,
+          "fitting_rows": 147983,
+          "train_rmse_sgd": 451.3380327841584,
+          "reload_max_difference": 0.0,
+          "seconds": 6.646455125010107
+        },
+        {
+          "seed": 43,
+          "epochs": 3,
+          "fitting_rows": 147983,
+          "train_rmse_sgd": 452.06351366431534,
+          "reload_max_difference": 0.0,
+          "seconds": 6.412243792001391
+        },
+        {
+          "seed": 44,
+          "epochs": 3,
+          "fitting_rows": 147983,
+          "train_rmse_sgd": 453.17003706894803,
+          "reload_max_difference": 0.0,
+          "seconds": 6.915552124992246
+        }
+      ],
+      "submission": "submission_mlp_timeweighted_h36_cleaned.csv",
+      "submission_sha256": "70a3a5129feb8138c25a13a6b98251d1eea7784c05963bdb400e06beb5b56095",
+      "training_weight_summary": {
+        "half_life_months": 36,
+        "anchor_month": "2025-03",
+        "oldest_month": "2021-01",
+        "rows": 147983,
+        "weight_min": 0.5965006947517395,
+        "weight_max": 1.5620976686477661,
+        "weight_mean": 1.0000000045095288,
+        "effective_sample_size": 136848.755817403
+      },
+      "prediction_min_sgd": 1409.0211470758013,
+      "prediction_max_sgd": 5949.793690036939,
+      "test_rmse_sgd": null,
+      "note": "All supplied labels offered to fitting; cleaning policy may remove rows. No independent validation of this full-data fit."
+    }
+  ],
+  "source_hashes_unchanged": true,
+  "test_rmse_sgd": null,
+  "kaggle_upload_performed": false
+}

@@ -1,0 +1,64 @@
+{
+  "half_lives_months": [
+    null,
+    6,
+    12,
+    24,
+    36
+  ],
+  "selection_folds": [
+    [
+      "early_1",
+      "2023-04",
+      "2023-10"
+    ],
+    [
+      "early_2",
+      "2023-10",
+      "2024-04"
+    ]
+  ],
+  "outer": [
+    "2024-04",
+    "2025-03"
+  ],
+  "cleaning_policy": "obvious_low",
+  "spec": {
+    "name": "residual_mlp",
+    "architecture": "mlp",
+    "blocks": 2,
+    "width": 128,
+    "history": false,
+    "adjusted_history": true,
+    "residual_reference": true,
+    "quantile": true,
+    "lr": 0.0005,
+    "aux_weight": 0.1,
+    "max_epochs": 35
+  },
+  "epochs": 3,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "selection_metric": "Row-pooled unweighted RMSE of the two non-overlapping earlier validation windows.",
+  "source_sha256": {
+    "data/train.csv": "6d7a417de72112361f8353659ba6fe44a442b07465b488aff1b03f7ec1ea3ba6",
+    "data/test.csv": "dfc407406d957bbf7c2f005e5d9852b1bfc6546cd4186f07e6824d8e03e64cfc",
+    "data/example-submission.csv": "ab751676b2bfc6121ac3543075d4f2c8978a6d73a14a3442a1bb7bdbf7867678",
+    "data/auxiliary/sg-coe-prices.csv": "e32fccd39da32780b6b7f35d069c813ed3edb0c110ea60761656bcee58d501a5",
+    "data/auxiliary/sg-hdb-block.csv": "e6ccc60c1f901f8f476eb6fe14c07ef5941d2afd06a081a1e4c00f717da27f83",
+    "data/auxiliary/sg-mrt-stations.csv": "899460b39fb251bd6883fffc9e6a772081f8e5217a657550afc3c49cfdcd3227",
+    "data/auxiliary/sg-schools.csv": "118c7ce8d96bbc934bd53655e73e6d0848c27853a625394ecc6a67a5af54f192",
+    "data/auxiliary/sg-shopping-malls.csv": "00e05b0176ac412695fc4ce1fc5a5338a1993593ffaffe26156dc2ea04ddf2c8",
+    "data/auxiliary/sg-stock-prices.csv": "c52fef9f33cfcb11285e2b9546124e02f32488e563af44e9fb3a505d10e2edff"
+  },
+  "limits": [
+    "All local windows have been examined in earlier project work; this is development evidence.",
+    "Only training loss weights change. History aggregates and numeric preprocessing keep their original definitions.",
+    "The auxiliary price-band loss receives the same sample weights as regression.",
+    "Best positive half-life is exported for comparison even if uniform weighting wins local selection.",
+    "No new Kaggle submission or test score is obtained automatically."
+  ]
+}

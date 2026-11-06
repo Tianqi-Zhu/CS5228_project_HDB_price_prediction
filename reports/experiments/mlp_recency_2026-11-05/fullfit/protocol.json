@@ -1,0 +1,66 @@
+{
+  "spec": {
+    "name": "residual_mlp",
+    "architecture": "mlp",
+    "blocks": 2,
+    "width": 128,
+    "history": false,
+    "adjusted_history": true,
+    "residual_reference": true,
+    "quantile": true,
+    "lr": 0.0005,
+    "aux_weight": 0.1,
+    "max_epochs": 35,
+    "half_life": 36.0
+  },
+  "epochs": 3,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "policies": [
+    "uncleaned",
+    "obvious_low"
+  ],
+  "fitting_months": [
+    "2021-01",
+    "2025-03"
+  ],
+  "source_sha256": {
+    "data/train.csv": "6d7a417de72112361f8353659ba6fe44a442b07465b488aff1b03f7ec1ea3ba6",
+    "data/test.csv": "dfc407406d957bbf7c2f005e5d9852b1bfc6546cd4186f07e6824d8e03e64cfc",
+    "data/example-submission.csv": "ab751676b2bfc6121ac3543075d4f2c8978a6d73a14a3442a1bb7bdbf7867678",
+    "data/auxiliary/sg-coe-prices.csv": "e32fccd39da32780b6b7f35d069c813ed3edb0c110ea60761656bcee58d501a5",
+    "data/auxiliary/sg-hdb-block.csv": "e6ccc60c1f901f8f476eb6fe14c07ef5941d2afd06a081a1e4c00f717da27f83",
+    "data/auxiliary/sg-mrt-stations.csv": "899460b39fb251bd6883fffc9e6a772081f8e5217a657550afc3c49cfdcd3227",
+    "data/auxiliary/sg-schools.csv": "118c7ce8d96bbc934bd53655e73e6d0848c27853a625394ecc6a67a5af54f192",
+    "data/auxiliary/sg-shopping-malls.csv": "00e05b0176ac412695fc4ce1fc5a5338a1993593ffaffe26156dc2ea04ddf2c8",
+    "data/auxiliary/sg-stock-prices.csv": "c52fef9f33cfcb11285e2b9546124e02f32488e563af44e9fb3a505d10e2edff"
+  },
+  "code_sha256": {
+    "analysis/experiments/mlp_fullfit_submission.py": "d704d07437550bccccbb70c0181339941d9b45a83fc8893c467de741f37c56e7",
+    "analysis/experiments/adjusted_rent_history.py": "4105dbd33f79b131dbd111c2a9e7cb3c58f3477d3239364b91c98f5bb3129f99",
+    "analysis/experiments/embedding_rent_search.py": "58245090d34160ad7d87898b467c215c51f2ac6580df4aa5f30f6b87cea4e31a",
+    "analysis/experiments/cleaned_neural_ensemble.py": "58f402925229529fabe54c7117e02a0c855d3e37ed33e23de12a67215f145f14",
+    "analysis/experiments/spatiotemporal_hybrid.py": "35e99a6ab69f4879285de70a746783b336d09a622df0d63fc2fd07070e46db0d",
+    "analysis/experiments/deep_learning.py": "9cff560ea3f6dc327441d6e5d646fda338755299cb6ddc90d97237ac437dc38d",
+    "analysis/pipeline/auxiliary.py": "e9739209de7251997625c415391cbb483a2223aad38107ad2a01de50bf6c1072",
+    "analysis/experiments/recency_weighting.py": "b4cb9570bb76f50831472f503eb3d6a7c870143a80d56fee9944dabe541df9cb"
+  },
+  "versions": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.1",
+    "torch": "2.14.1"
+  },
+  "selection": "Keep the earlier selected architecture, optimizer, 3 epochs and three seeds; optional training half-life is supplied explicitly.",
+  "recency_half_life_months": 36,
+  "recency_weighting": "Mean-one 2 ** (-months_before_last_fitting_month / half_life); weights apply to regression and auxiliary classification losses. None means uniform.",
+  "information_boundary": "Test labels absent; each test history uses only fitting months strictly before that query month.",
+  "supervised_overlap_note": "Full-label model fitting includes March 2025; March 2025 test histories exclude that month. This overlap subset is not wholly ex ante.",
+  "uncertainty": "Seed standard deviation is model disagreement, not a calibrated prediction interval.",
+  "time_encoding": "Original quantile preprocessing retained to isolate the full-data refit; no raw-time change.",
+  "test_rmse_sgd": null,
+  "kaggle_upload_performed": false
+}

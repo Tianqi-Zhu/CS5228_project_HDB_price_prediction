@@ -26,6 +26,7 @@ from analysis.experiments.cleaned_neural_ensemble import _normalise, training_cl
 from analysis.experiments.deep_learning import build_network, ExperimentConfig
 from analysis.experiments.embedding_rent_search import fit_model, predict
 from analysis.experiments.neural_ensemble_uncertainty import ensemble_summary
+from analysis.experiments.recency_weighting import recency_weights,weight_summary
 
 
 def write_json(path, value):
@@ -69,12 +70,15 @@ def validate_submission(sample, prediction):
     return result
 
 
-def run(out, baseline):
+def run(out, baseline,half_life_months=None):
     out=check_output_path(out)
     if out.exists() and any(out.iterdir()):
         raise ValueError('Use a new empty output directory')
     original=json.loads((baseline/'protocol.json').read_text())
-    spec=original['specs']['mlp']
+    spec=dict(original['specs']['mlp'])
+    if half_life_months is not None:
+        recency_weights(['2025-03'],half_life_months)
+        spec['half_life']=float(half_life_months)
     epochs=int(json.loads((baseline/'mlp_selected.json').read_text())['epochs'])
     seeds=original['seeds']
     if spec.get('history') or not spec.get('adjusted_history'):
@@ -87,12 +91,15 @@ def run(out, baseline):
               ROOT/'analysis/experiments/embedding_rent_search.py',
               ROOT/'analysis/experiments/cleaned_neural_ensemble.py',
               ROOT/'analysis/experiments/spatiotemporal_hybrid.py',
-              ROOT/'analysis/experiments/deep_learning.py',ROOT/'analysis/pipeline/auxiliary.py']
+              ROOT/'analysis/experiments/deep_learning.py',ROOT/'analysis/pipeline/auxiliary.py',
+              ROOT/'analysis/experiments/recency_weighting.py']
         protocol={'spec':spec,'epochs':epochs,'seeds':seeds,'policies':['uncleaned','obvious_low'],
                   'fitting_months':['2021-01','2025-03'],'source_sha256':hashes,
                   'code_sha256':{str(p.relative_to(ROOT)):sha256(p) for p in code},
                   'versions':{p:version(p) for p in ['numpy','pandas','scikit-learn','torch']},
-                  'selection':'Keep the earlier selected architecture, optimizer, 3 epochs and three seeds; no new selection.',
+                  'selection':'Keep the earlier selected architecture, optimizer, 3 epochs and three seeds; optional training half-life is supplied explicitly.',
+                  'recency_half_life_months':half_life_months,
+                  'recency_weighting':'Mean-one 2 ** (-months_before_last_fitting_month / half_life); weights apply to regression and auxiliary classification losses. None means uniform.',
                   'information_boundary':'Test labels absent; each test history uses only fitting months strictly before that query month.',
                   'supervised_overlap_note':'Full-label model fitting includes March 2025; March 2025 test histories exclude that month. This overlap subset is not wholly ex ante.',
                   'uncertainty':'Seed standard deviation is model disagreement, not a calibrated prediction interval.',
@@ -128,6 +135,9 @@ def run(out, baseline):
                 removed.to_csv(directory/'removed_training_rows.csv',index=False)
             pd.DataFrame({'SOURCE_ROW':fitting.index,'ORIGINAL_CSV_LINE':fitting.index+2}).to_csv(
                 directory/'retained_training_rows.csv',index=False)
+            row_weights=recency_weights(fitting.RENT_APPROVAL_DATE,half_life_months)
+            pd.DataFrame({'month':fitting.RENT_APPROVAL_DATE,'weight':row_weights}).groupby('month').agg(
+                rows=('weight','size'),weight=('weight','mean')).to_csv(directory/'monthly_training_weights.csv')
             print(f'POLICY {policy}: fitting={len(fitting):,}, removed={len(removed):,}, months={fitting.RENT_APPROVAL_DATE.min()}..{fitting.RENT_APPROVAL_DATE.max()}',flush=True)
             parts=[];members=[]
             for seed in seeds:
@@ -150,7 +160,8 @@ def run(out, baseline):
                                   'prediction_sgd':mean,'ensemble_std_sgd':std})
             for i,seed in enumerate(seeds):details[f'seed{seed}_prediction_sgd']=values[:,i]
             details.to_csv(directory/'prediction_details.csv',index=False)
-            name='submission_mlp_fullfit_'+('uncleaned' if policy=='uncleaned' else 'cleaned')+'.csv'
+            prefix='submission_mlp_fullfit_' if half_life_months is None else f'submission_mlp_timeweighted_h{half_life_months:g}_'
+            name=prefix+('uncleaned' if policy=='uncleaned' else 'cleaned')+'.csv'
             path=out/name
             validate_submission(sample,mean).to_csv(path,index=False,float_format='%.17g')
             saved=pd.read_csv(path)
@@ -160,6 +171,7 @@ def run(out, baseline):
                      'months':[fitting.RENT_APPROVAL_DATE.min(),fitting.RENT_APPROVAL_DATE.max()],
                      'test_rows':len(test),'overlapping_test_month_rows':int((test.RENT_APPROVAL_DATE<=fitting.RENT_APPROVAL_DATE.max()).sum()),
                      'epochs':epochs,'seeds':seeds,'members':members,'submission':name,'submission_sha256':sha256(path),
+                     'training_weight_summary':weight_summary(fitting.RENT_APPROVAL_DATE,half_life_months),
                      'prediction_min_sgd':float(mean.min()),'prediction_max_sgd':float(mean.max()),
                      'test_rmse_sgd':None,'note':'All supplied labels offered to fitting; cleaning policy may remove rows. No independent validation of this full-data fit.'}
             write_json(directory/'summary.json',summary);summaries.append(summary)
@@ -172,10 +184,11 @@ def run(out, baseline):
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output-dir',type=Path,required=True)
-    parser.add_argument('--baseline-dir',type=Path,default=ROOT/'reports/experiments/neural_ensemble_uncertainty/run-2026-11-02')
+    parser.add_argument('--baseline-dir',type=Path,default=ROOT/'reports/experiments/mlp_summary/uncertainty')
+    parser.add_argument('--half-life-months',type=float,help='Positive exponential training-weight half-life; omitted means uniform')
     parser.add_argument('--threads',type=int,default=2)
     args=parser.parse_args();torch.set_num_threads(args.threads)
-    run(args.output_dir,args.baseline_dir)
+    run(args.output_dir,args.baseline_dir,args.half_life_months)
 
 
 if __name__=='__main__':main()

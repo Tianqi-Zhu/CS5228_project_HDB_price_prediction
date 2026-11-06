@@ -1,0 +1,10 @@
+{
+  "unit_tests_passed": 45,
+  "outer_prediction_files_recomputed": 2,
+  "test_csvs_verified": 2,
+  "rows_per_test_csv": 50000,
+  "checkpoint_reload_max_difference": 0,
+  "source_hashes_unchanged": true,
+  "kaggle_score": null,
+  "notes": "No new Kaggle score. Uniform weights won earlier pooled selection; h36 is the best weighted candidate and improved annual development RMSE by 0.520482."
+}
