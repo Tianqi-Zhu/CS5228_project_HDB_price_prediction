@@ -1,0 +1,191 @@
+{
+  "selected_weighted_half_life_months": 36,
+  "earlier_selection": {
+    "pooled_metrics": [
+      {
+        "half_life_months": null,
+        "rows": 35882,
+        "rmse_sgd": 577.6236361644562,
+        "mae_sgd": 459.00236838580054,
+        "bias_sgd": -44.84313615124938
+      },
+      {
+        "half_life_months": 6,
+        "rows": 35882,
+        "rmse_sgd": 578.5250932550691,
+        "mae_sgd": 461.013290460267,
+        "bias_sgd": -54.71148754448457
+      },
+      {
+        "half_life_months": 12,
+        "rows": 35882,
+        "rmse_sgd": 578.1931168500407,
+        "mae_sgd": 460.3339129161687,
+        "bias_sgd": -51.60274913499001
+      },
+      {
+        "half_life_months": 24,
+        "rows": 35882,
+        "rmse_sgd": 577.8959088754663,
+        "mae_sgd": 459.79007346816456,
+        "bias_sgd": -49.15558350828272
+      },
+      {
+        "half_life_months": 36,
+        "rows": 35882,
+        "rmse_sgd": 577.7108227971148,
+        "mae_sgd": 459.40346886708,
+        "bias_sgd": -47.375182685529474
+      }
+    ],
+    "best_overall_half_life_months": null,
+    "best_weighted_half_life_months": 36,
+    "locked_before_outer_evaluation": true
+  },
+  "outer_baseline": {
+    "half_life_months": null,
+    "start": "2024-04",
+    "end_exclusive": "2025-04",
+    "fitting_rows": 113324,
+    "removed_rows": 1518,
+    "rows": 35158,
+    "epochs": 3,
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "members": [
+      {
+        "seed": 42,
+        "weight_summary": {
+          "half_life_months": null,
+          "anchor_month": "2024-03",
+          "oldest_month": "2021-01",
+          "rows": 113324,
+          "weight_min": 1.0,
+          "weight_max": 1.0,
+          "weight_mean": 1.0,
+          "effective_sample_size": 113324.0
+        },
+        "reload_max_difference": 0.0
+      },
+      {
+        "seed": 43,
+        "weight_summary": {
+          "half_life_months": null,
+          "anchor_month": "2024-03",
+          "oldest_month": "2021-01",
+          "rows": 113324,
+          "weight_min": 1.0,
+          "weight_max": 1.0,
+          "weight_mean": 1.0,
+          "effective_sample_size": 113324.0
+        },
+        "reload_max_difference": 0.0
+      },
+      {
+        "seed": 44,
+        "weight_summary": {
+          "half_life_months": null,
+          "anchor_month": "2024-03",
+          "oldest_month": "2021-01",
+          "rows": 113324,
+          "weight_min": 1.0,
+          "weight_max": 1.0,
+          "weight_mean": 1.0,
+          "effective_sample_size": 113324.0
+        },
+        "reload_max_difference": 0.0
+      }
+    ],
+    "weight_summary": {
+      "half_life_months": null,
+      "anchor_month": "2024-03",
+      "oldest_month": "2021-01",
+      "rows": 113324,
+      "weight_min": 1.0,
+      "weight_max": 1.0,
+      "weight_mean": 1.0,
+      "effective_sample_size": 113324.0
+    },
+    "rmse_sgd": 470.23426008836935,
+    "mae_sgd": 341.454784176405,
+    "bias_sgd": 18.332611107091836,
+    "seconds": 13.150662458996521
+  },
+  "outer_weighted": {
+    "half_life_months": 36,
+    "start": "2024-04",
+    "end_exclusive": "2025-04",
+    "fitting_rows": 113324,
+    "removed_rows": 1518,
+    "rows": 35158,
+    "epochs": 3,
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "members": [
+      {
+        "seed": 42,
+        "weight_summary": {
+          "half_life_months": 36,
+          "anchor_month": "2024-03",
+          "oldest_month": "2021-01",
+          "rows": 113324,
+          "weight_min": 0.6812883019447327,
+          "weight_max": 1.4160703420639038,
+          "weight_mean": 1.0000000025656652,
+          "effective_sample_size": 108058.97165426573
+        },
+        "reload_max_difference": 0.0
+      },
+      {
+        "seed": 43,
+        "weight_summary": {
+          "half_life_months": 36,
+          "anchor_month": "2024-03",
+          "oldest_month": "2021-01",
+          "rows": 113324,
+          "weight_min": 0.6812883019447327,
+          "weight_max": 1.4160703420639038,
+          "weight_mean": 1.0000000025656652,
+          "effective_sample_size": 108058.97165426573
+        },
+        "reload_max_difference": 0.0
+      },
+      {
+        "seed": 44,
+        "weight_summary": {
+          "half_life_months": 36,
+          "anchor_month": "2024-03",
+          "oldest_month": "2021-01",
+          "rows": 113324,
+          "weight_min": 0.6812883019447327,
+          "weight_max": 1.4160703420639038,
+          "weight_mean": 1.0000000025656652,
+          "effective_sample_size": 108058.97165426573
+        },
+        "reload_max_difference": 0.0
+      }
+    ],
+    "weight_summary": {
+      "half_life_months": 36,
+      "anchor_month": "2024-03",
+      "oldest_month": "2021-01",
+      "rows": 113324,
+      "weight_min": 0.6812883019447327,
+      "weight_max": 1.4160703420639038,
+      "weight_mean": 1.0000000025656652,
+      "effective_sample_size": 108058.97165426573
+    },
+    "rmse_sgd": 469.7137780044678,
+    "mae_sgd": 341.4754763889763,
+    "bias_sgd": 13.06759073246729,
+    "seconds": 12.855016541987425
+  },
+  "outer_rmse_reduction_sgd": 0.520482083901527,
+  "note": "Later annual development comparison; no hidden test labels."
+}

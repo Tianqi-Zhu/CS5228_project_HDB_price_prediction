@@ -29,6 +29,7 @@ python -m analysis.main validation-refits
 |---|---|---|
 | F1：分组融合＋PLR-FT | 原提交显示 415.37529；年度/近期开发 RMSE 451.0295/441.8345；冻结 CSV、组件重组与全量训练路径独立保留 | [F1 复现包](reproduction/f1/README.md) |
 | Concat Transformer | 独立同输入架构探索，年度开发 RMSE 459.2189；原团队记录 Public Score 418.38657；保留他人合并的代码、容量比较、权重与重放入口 | [方法](experiment/main/M05/concat_transformer/README.md)、[复现](reproduction/concat_transformer/README.md) |
+| MLP独立集成 | 原全量清洗／未清洗提交显示437.34455／439.38193；CPU训练、预测区间、时间加权及测试入口已接入；不改变F1配方 | [MLP复现包](reproduction/mlp/README.md)、[报告](docs/mlp_prediction_report.md) |
 | F2：TabPFN87 相关提交 | 截图显示 413.19635；候选生成器、schema、成员及 CSV 已合并；与该截图分数对应的文件身份及配对确认仍待核实。现有 77 列背景不能替代 F2 身份 | [状态](experiment/main/M07/README.md)、[TabPFN 工作流](docs/guides/tabpfn_workflow.md) |
 
 完整性检查用 `python -m analysis.validation.repository_audit`，实际验证范围和日志见 [review/CHECKS.md](review/CHECKS.md)。截图分数不作为新运行结果；不同信息条件、窗口和 schema 分开比较。
@@ -44,3 +45,7 @@ The latest anniversary branch is integrated through the existing isolated workfl
 - Run `python review_tabpfn.py verify`, `python review_tabpfn.py prepare`, and `python review_tabpfn.py test` to inspect and test the imported sources without overlaying main's `analysis` package.
 
 The 87-input candidate export and its source/provenance are now included. Association with the historical 413.19635 screenshot score remains unverified; this merge does not assign that score to a newly validated model.
+
+## MLP完整接入
+
+`python -m analysis.main mlp verify`核对MLP提交与数据；`python -m analysis.main mlp fullfit --output-dir output/mlp/new-run`从原始数据重训。完整命令和环境见[MLP入口](reproduction/mlp/README.md)。MLP的历史完整探索保留在源分支，本main提供所需实现、配置、原提交和加权对照。

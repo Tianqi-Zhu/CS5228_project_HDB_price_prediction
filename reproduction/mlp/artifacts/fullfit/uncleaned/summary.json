@@ -1,0 +1,49 @@
+{
+  "policy": "uncleaned",
+  "fitting_rows": 150000,
+  "removed_rows": 0,
+  "months": [
+    "2021-01",
+    "2025-03"
+  ],
+  "test_rows": 50000,
+  "overlapping_test_month_rows": 380,
+  "epochs": 3,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "members": [
+    {
+      "seed": 42,
+      "epochs": 3,
+      "fitting_rows": 150000,
+      "train_rmse_sgd": 476.62106492223626,
+      "reload_max_difference": 0.0,
+      "seconds": 6.716270208009519
+    },
+    {
+      "seed": 43,
+      "epochs": 3,
+      "fitting_rows": 150000,
+      "train_rmse_sgd": 476.67310885148794,
+      "reload_max_difference": 0.0,
+      "seconds": 6.05625258301734
+    },
+    {
+      "seed": 44,
+      "epochs": 3,
+      "fitting_rows": 150000,
+      "train_rmse_sgd": 477.7859125292018,
+      "reload_max_difference": 0.0,
+      "seconds": 5.808917707996443
+    }
+  ],
+  "submission": "submission_mlp_fullfit_uncleaned.csv",
+  "submission_sha256": "dae2326ac94f4379874b73cf9d8fdbfc1165c671c2dfc571d0211f23ef717199",
+  "prediction_min_sgd": 1422.4429870942652,
+  "prediction_max_sgd": 5941.714429312349,
+  "test_rmse_sgd": null,
+  "note": "All supplied labels offered to fitting; cleaning policy may remove rows. No independent validation of this full-data fit."
+}

@@ -1,0 +1,14 @@
+{
+  "unit_tests_passed": 39,
+  "fullfit_base_models": 6,
+  "replayed_model_max_difference": 0,
+  "test_csvs_verified": 2,
+  "rows_per_test_csv": 50000,
+  "source_hashes_unchanged": true,
+  "training_source_snapshots_verified": true,
+  "screenshot_scores_transcribed_from_user": true,
+  "leaderboard_partition": null,
+  "score_api_verified": false,
+  "docs_relative_links_verified": true,
+  "publication_branch": "mlp-eda-ensemble"
+}

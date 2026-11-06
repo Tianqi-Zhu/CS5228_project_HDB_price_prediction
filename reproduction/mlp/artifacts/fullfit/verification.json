@@ -1,0 +1,31 @@
+{
+  "checks": [
+    {
+      "file": "submission_mlp_fullfit_uncleaned.csv",
+      "rows": 50000,
+      "header": [
+        "Id",
+        "Predicted"
+      ],
+      "fitting_rows": 150000,
+      "retained_2024_2025_rows": 44163,
+      "ensemble_mean_verified": true,
+      "reload_max_difference": 0
+    },
+    {
+      "file": "submission_mlp_fullfit_cleaned.csv",
+      "rows": 50000,
+      "header": [
+        "Id",
+        "Predicted"
+      ],
+      "fitting_rows": 147983,
+      "retained_2024_2025_rows": 43478,
+      "ensemble_mean_verified": true,
+      "reload_max_difference": 0
+    }
+  ],
+  "source_hashes_unchanged": true,
+  "test_rmse_sgd": null,
+  "kaggle_upload_performed": false
+}

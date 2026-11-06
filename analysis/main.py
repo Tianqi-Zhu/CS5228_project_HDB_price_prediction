@@ -15,6 +15,8 @@ def main(argv=None):
         child.add_argument('--output-dir',type=Path)
     concat=commands.add_parser('concat',help='Concat Transformer: verify, replay, prepare or explicitly train')
     concat.add_argument('concat_args',nargs=argparse.REMAINDER)
+    mlp=commands.add_parser('mlp',help='Integrated CPU MLP: verify, test, fullfit, recency and intervals',add_help=False)
+    mlp.add_argument('mlp_args',nargs=argparse.REMAINDER)
     commands.add_parser('list',help='List experiments without running them')
     commands.add_parser('verify',help='Verify shipped file hashes without training')
     eda=commands.add_parser('eda',help='Run EDA only')
@@ -42,6 +44,10 @@ def main(argv=None):
     if args.command=='planned':
         from analysis.validation.main import run
         return run(args.output_dir)
+    if args.command=='mlp':
+        import subprocess,sys
+        root=Path(__file__).resolve().parents[1]
+        return subprocess.run([sys.executable,str(root/'reproduction/mlp/run.py'),*args.mlp_args],check=True).returncode
     if args.command=='concat':
         import sys
         from analysis.experiments.concat_transformer.__main__ import main as concat_main

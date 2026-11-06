@@ -1,0 +1,72 @@
+{
+  "half_life_months": 36,
+  "start": "2024-04",
+  "end_exclusive": "2025-04",
+  "fitting_rows": 113324,
+  "removed_rows": 1518,
+  "rows": 35158,
+  "epochs": 3,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "members": [
+    {
+      "seed": 42,
+      "weight_summary": {
+        "half_life_months": 36,
+        "anchor_month": "2024-03",
+        "oldest_month": "2021-01",
+        "rows": 113324,
+        "weight_min": 0.6812883019447327,
+        "weight_max": 1.4160703420639038,
+        "weight_mean": 1.0000000025656652,
+        "effective_sample_size": 108058.97165426573
+      },
+      "reload_max_difference": 0.0
+    },
+    {
+      "seed": 43,
+      "weight_summary": {
+        "half_life_months": 36,
+        "anchor_month": "2024-03",
+        "oldest_month": "2021-01",
+        "rows": 113324,
+        "weight_min": 0.6812883019447327,
+        "weight_max": 1.4160703420639038,
+        "weight_mean": 1.0000000025656652,
+        "effective_sample_size": 108058.97165426573
+      },
+      "reload_max_difference": 0.0
+    },
+    {
+      "seed": 44,
+      "weight_summary": {
+        "half_life_months": 36,
+        "anchor_month": "2024-03",
+        "oldest_month": "2021-01",
+        "rows": 113324,
+        "weight_min": 0.6812883019447327,
+        "weight_max": 1.4160703420639038,
+        "weight_mean": 1.0000000025656652,
+        "effective_sample_size": 108058.97165426573
+      },
+      "reload_max_difference": 0.0
+    }
+  ],
+  "weight_summary": {
+    "half_life_months": 36,
+    "anchor_month": "2024-03",
+    "oldest_month": "2021-01",
+    "rows": 113324,
+    "weight_min": 0.6812883019447327,
+    "weight_max": 1.4160703420639038,
+    "weight_mean": 1.0000000025656652,
+    "effective_sample_size": 108058.97165426573
+  },
+  "rmse_sgd": 469.7137780044678,
+  "mae_sgd": 341.4754763889763,
+  "bias_sgd": 13.06759073246729,
+  "seconds": 12.855016541987425
+}

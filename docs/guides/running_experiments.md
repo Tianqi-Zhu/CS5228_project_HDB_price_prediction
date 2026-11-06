@@ -54,3 +54,7 @@ python -m analysis.main common-models --device cuda --output-dir output/review_c
 最新五项补齐与验收见 [五项优化](../planning/main-five-item-completion.md)。`planned` 同时调用三个新增的离线核验；其 `new_models_fitted=0` 表示该审计命令本身不训练，另外记录已完成的 30 次 Y/J 基础模型训练。原输入包保留，PLE/PLR 的旧 57 列元数据通过独立 schema 清单勘误，不修改原预测。
 
 本地复用第三方依赖目录时，F1/main 使用 `.cache/deep-deps` 与 `.cache/model-deps`；TabPFN SDK 的 `.cache/tabpfn-split-deps` 只用于隔离工作目录的 TabPFN 测试/入口。不要把这三套目录合为 main 的通用搜索路径。正式安装仍以对应环境与 requirements 为准，本轮没有新建 Conda 环境。
+
+## MLP集成训练与预测
+
+完整MLP已通过独立运行时接入。运行`python -m analysis.main mlp verify`核验原提交，`python -m analysis.main mlp fullfit --output-dir output/mlp/new-run`重训。可选`--half-life-months 36`；区间与清洗入口见[MLP复现说明](../../reproduction/mlp/README.md)。新训练文件没有自动获得原截图成绩。

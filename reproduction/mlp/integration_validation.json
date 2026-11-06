@@ -1,0 +1,26 @@
+{
+  "base_main_commit": "c649e9532929f3d88f56cfbb1c50d5d718a6a4ae",
+  "source_commit": "b3a6291fbfeb30ce7ff0d0495d9371d801ff8d1c",
+  "runtime_unit_tests_passed": 32,
+  "main_integration_tests_passed": 5,
+  "fresh_fullfit_models": 6,
+  "all_checkpoint_reload_differences": 0,
+  "submissions": [
+    {
+      "file": "submission_mlp_fullfit_uncleaned.csv",
+      "rows": 50000,
+      "byte_identical_to_original": true,
+      "sha256": "dae2326ac94f4379874b73cf9d8fdbfc1165c671c2dfc571d0211f23ef717199"
+    },
+    {
+      "file": "submission_mlp_fullfit_cleaned.csv",
+      "rows": 50000,
+      "byte_identical_to_original": true,
+      "sha256": "a398a2d94a02dae24f71b627e262d2f2ba4fab36775c2a7c9cdddf6d07e520ef"
+    }
+  ],
+  "main_data_rewritten": false,
+  "raw_values_and_order_match_source": true,
+  "kaggle_upload_performed": false,
+  "fresh_retrain_kaggle_score_claim": "CSV bytes match the original uploaded files; no new upload or score lookup."
+}

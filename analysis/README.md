@@ -22,3 +22,7 @@
 F1 固定配方独立放在 `reproduction/f1/runtime/`，避免当前代码修改影响旧提交复现。TabPFN 另存 `workflows/tabpfn/`，通过根目录 `review_tabpfn.py` 在 `output/` 中组装独立工作目录。
 
 [实验结果与状态](../experiment/main/README.md) · [当前要求卡与规划](../docs/planning/main-appendix-experiment-plan.md)
+
+## MLP独立运行入口
+
+`python -m analysis.main mlp`列出命令；`mlp verify`离线核验，`mlp fullfit`全量CPU训练，`mlp recency-search`完成时间权重对照。运行时位于[reproduction/mlp](../reproduction/mlp/README.md)，不覆盖main共享管线。
