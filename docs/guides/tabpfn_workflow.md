@@ -57,3 +57,5 @@ On Windows, original experiment paths can exceed the default Git path limit. Thi
 ## Best observed standalone model
 
 Use [the 87-feature reproduction guide](tabpfn_best.md) for the tested local validation and full-data inference commands. `run_tabpfn_best.py` rebuilds missing features from raw data and separates archived reference predictions from newly generated outputs.
+
+For regenerated original and grouped-category tree/TabPFN submissions, see [the ensemble guide](tabpfn_ensemble.md).

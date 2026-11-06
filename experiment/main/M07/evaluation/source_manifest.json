@@ -13,5 +13,11 @@
   "reports/tabpfn_anniversary_history_80_20/features_anniversary87.json": "e72217fe6f6d362551efb7f6c44d353d6cadf06f4b167196fba6b3331d7fcde0",
   "review/checks/tabpfn-replication/summary.json": "67e696af4c96b56706fb771ead470853712b86d286a1ffa84e2ab84cea964147",
   "workflows/tabpfn/analysis/compare_zch_anniversary_tabpfn_ensemble.py": "f10c7e808c711b428147f7319c8974a1c68ca165c06335ebd86dd3d0a62b03de",
-  "analysis/validation/main.py": "19e733594ee2b3aab3b382608267f2fa0239723a2a25ee45e5ceda6dd5046592"
+  "analysis/validation/main.py": "153ffb7a817962730534470b2926198beccb2d62df0bff6f542cb210599b4fbf",
+  "reports/submissions/tabpfn_ensemble_20261106/publication.json": "bf0c5d663cea3da222daa317654794ab40e7e3d72c820e0fdc194c8a865f6ce1",
+  "reports/submissions/tabpfn_ensemble_20261106/submission_ensemble_original_150k.csv": "dcdae91f36428ed5693ad820439c63dbc86e0d0949afbc0f19c09d55f8c9ac7c",
+  "reports/submissions/tabpfn_ensemble_20261106/submission_ensemble_grouped_150k.csv": "8d5892b767fcc21fafecdb4b76b17b366d11016e6eb04c454ff95752466aed9f",
+  "review/checks/tabpfn-ensemble/audit.json": "7e78c32ca806d23f58e104c10dfd2d59c365dfd22e4b78b24872afe0da5d1371",
+  "review/checks/tabpfn-ensemble/training_runner.py": "80fc03eba884d8a6279ccfa348568e2a0656e870fb827d5bec6d95fa8a9fc132",
+  "run_tabpfn_ensemble.py": "b211a69acb5485b31014225bcc75ca1058b275ffcc6da4be8a635a78f2fa9fab"
 }

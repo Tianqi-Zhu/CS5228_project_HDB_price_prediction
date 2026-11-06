@@ -89,6 +89,8 @@ from a different machine. CPU component reconstruction via
 `python -m analysis.main final-pair` remains available without those assets.
 
 The new CLI was also checked with a second fresh validation fit/inference run;
-its prediction CSV again matched exactly. Full-data raw features were rebuilt
-and matched historical values, but a fresh 150,000-row GPU fit and 50,000-row
-inference run were not completed in this audit; validation was prioritized.
+its prediction CSV again matched exactly. The initial audit prioritized validation.
+The subsequent [ensemble audit](tabpfn_ensemble.md) also completed a fresh
+150,000-row standalone TabPFN fit and all 50,000 test predictions, reproducing
+the archived standalone test predictions exactly. It additionally verified the
+grouped-category ensemble and generated two Kaggle-ready submissions.

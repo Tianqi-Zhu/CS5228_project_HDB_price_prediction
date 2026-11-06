@@ -4,8 +4,8 @@
     "main": {
       "tests_passed": 85,
       "skipped": 0,
-      "local_log": "output/main-refresh/main-tests-final.log",
-      "log_sha256": "9b630eea9a8662401e978f428b9c39ec63a6b4446e817707ac5e9f3c513ea5a2"
+      "local_log": "output/main-refresh/merged-main-tests.log",
+      "log_sha256": "e16dacf7b3d6e6f7eb272c39c8cbfd7fa13358a77c9d5fbc3aa00f2cb1bb6ae9"
     },
     "mlp": {
       "tests_passed": 32,
@@ -21,7 +21,7 @@
     }
   },
   "planned": {
-    "run_id": "b6e47f1b8439be7b",
+    "run_id": "eb16eee13b1a2f23",
     "tasks": {
       "M00": "F1 fresh Y/J generation verified; 26 old artifacts audited; F2 recent IDs/labels and full-candidate component identities checked",
       "M01": "completed for supplied facility snapshot scenario; strict historical facilities remain X08",
@@ -32,7 +32,7 @@
       "M06": "archived three-way submission selection; not relabelled as independent test",
       "M07": "candidate composition/CSV reconstructed; ordered dictionary and screenshot association pending",
       "M08": "recent J paired scores complete; annual Y and full information-policy equivalence pending",
-      "M09": "F1 passed; F2 component reconstruction passed; fresh full checkpoint inference not performed"
+      "M09": "F1 and F2 component replay passed; full F2 fits/inference recorded in source audit, not rerun on this machine"
     },
     "new_models_fitted": 0,
     "predictions_audited": 26,
@@ -66,11 +66,6 @@
           "F2 annual-origin predictions",
           "Complete input/information-policy equivalence audit"
         ]
-      },
-      "M09": {
-        "status": "partial",
-        "F1": "verified separately below",
-        "F2": "component reconstruction passed; fresh local checkpoint inference/full refit not performed; historical screenshot association unverified"
       }
     },
     "results_are_development_not_independent_test": true
@@ -80,5 +75,9 @@
   "fresh_tabpfn_inference_on_this_machine": false,
   "optional_dependencies": "Existing .cache/deep-deps/.cache/model-deps for MLP; .cache/tabpfn-split-deps for isolated TabPFN tests only",
   "local_gpu": "RTX 4060 Laptop, 8 GiB; source replay used RTX 4080 with 9.13 GiB allocation",
-  "clean_export": "Pending separate check after this source snapshot is committed"
+  "clean_export": "Pending separate check after this source snapshot is committed",
+  "merged_remote_commit": "c81f77115adf1adfcda1d291f3028d2a06d5b45f",
+  "fresh_original_and_grouped_full_inference_source_record": "review/checks/tabpfn-ensemble/audit.json",
+  "published_original_and_grouped_csvs_independently_checked": true,
+  "merged_tree_main_tests_passed": 85
 }

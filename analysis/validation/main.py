@@ -285,9 +285,7 @@ def run(output_root=None):
          "conclusion_scope": "Retrospective development comparison. Fixed blending rule is not identical numeric weights across different member sets. Architectural epoch/parameter budgets differ.",
          "same_27_block_separate_from_62_block": True, "new_search_performed": False})
     pending = {"M07": {"status": "partial", "missing": final_pair['manifest']['missing']},
-               "M08": {"status": "partial", "completed_windows": ["J"], "missing": final_pair['protocol']['missing']},
-               "M09": {"status": "partial", "F1": "verified separately below",
-                       "F2": "component reconstruction passed; fresh local checkpoint inference/full refit not performed; historical screenshot association unverified"}}
+               "M08": {"status": "partial", "completed_windows": ["J"], "missing": final_pair['protocol']['missing']}}
     write_evidence(out, final_pair)
     replay_results = []
     for script in ["verify.py", "reproduce.py"]:
@@ -313,7 +311,7 @@ def run(output_root=None):
               "M06": "archived three-way submission selection; not relabelled as independent test",
               "M07": "candidate composition/CSV reconstructed; ordered dictionary and screenshot association pending",
               "M08": "recent J paired scores complete; annual Y and full information-policy equivalence pending",
-              "M09": "F1 passed; F2 component reconstruction passed; fresh full checkpoint inference not performed"}
+              "M09": "F1 and F2 component replay passed; full F2 fits/inference recorded in source audit, not rerun on this machine"}
     summary = {"run_id": signature, "tasks": status, "new_models_fitted": 0, "predictions_audited": len(checks),
                "group_rows": len(group_rows), "raw_inputs_unchanged": before == after,
                "fresh_F1_validation_models_previously_trained": 30,

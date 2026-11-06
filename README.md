@@ -32,7 +32,7 @@ python -m analysis.main final-pair
 | Concat Transformer | 独立同输入架构探索，年度开发 RMSE 459.2189；原团队记录 Public Score 418.38657；保留他人合并的代码、容量比较、权重与重放入口 | [方法](experiment/main/M05/concat_transformer/README.md)、[复现](reproduction/concat_transformer/README.md) |
 | MLP独立集成 | 原全量清洗／未清洗提交显示437.34455／439.38193；CPU训练、预测区间、时间加权及测试入口已接入；不改变F1配方 | [MLP复现包](reproduction/mlp/README.md)、[报告](docs/mlp_prediction_report.md) |
 | TabPFN87 单模型 | 近期 RMSE 441.9593；远端已记录独立 fit/inference 验证；本机仍需 SDK 与原 checkpoint | [独立运行](docs/guides/tabpfn_best.md) |
-| F2：七树＋TabPFN87 等权融合 | 近期 RMSE 440.9520；50,000 行候选组件重组及 28,995 行 F1/F2 配对可离线核验。年度结果、完整有序字典和截图 413.19635 的关联仍待补 | [F2 状态](experiment/main/M07/README.md)、[配对结果](experiment/main/M08/README.md) |
+| F2：七树＋TabPFN87 等权融合 | 原类别近期 RMSE 440.9520，可独立配对与重组；新增 grouped 候选 440.7707，作为分类敏感性方案单列。两份新提交与完整推理记录已合并，尚无新 Kaggle 成绩；年度、完整有序字典、截图关联仍待补 | [F2 状态](experiment/main/M07/README.md)、[配对结果](experiment/main/M08/README.md)、[新提交与复现](docs/guides/tabpfn_ensemble.md) |
 
 完整性检查用 `python -m analysis.validation.repository_audit`，实际验证范围和日志见 [review/CHECKS.md](review/CHECKS.md)。截图分数不作为新运行结果；不同信息条件、窗口和 schema 分开比较。
 

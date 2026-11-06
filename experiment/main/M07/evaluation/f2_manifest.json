@@ -52,6 +52,83 @@
   "screenshot_score_identity_verified": false,
   "standalone_validation_replication_record": "review/checks/tabpfn-replication/summary.json",
   "standalone_replay_reported_by_source": true,
+  "subsequent_full_data_replication_record": "review/checks/tabpfn-ensemble/audit.json",
+  "published_candidates": {
+    "submissions": [
+      {
+        "variant": "original",
+        "path": "reports/submissions/tabpfn_ensemble_20261106/submission_ensemble_original_150k.csv",
+        "sha256": "dcdae91f36428ed5693ad820439c63dbc86e0d0949afbc0f19c09d55f8c9ac7c",
+        "rows": 50000,
+        "actual_kaggle_score": null,
+        "max_difference_from_six_decimal_archived_F2_sgd": 4.999888005841058e-07
+      },
+      {
+        "variant": "grouped",
+        "path": "reports/submissions/tabpfn_ensemble_20261106/submission_ensemble_grouped_150k.csv",
+        "sha256": "8d5892b767fcc21fafecdb4b76b17b366d11016e6eb04c454ff95752466aed9f",
+        "rows": 50000,
+        "actual_kaggle_score": null
+      }
+    ],
+    "source_reported_recommendation": "submission_ensemble_grouped_150k.csv",
+    "fresh_full_original_tabpfn_reported": true,
+    "fresh_grouped_validation_and_full_reported": true,
+    "fresh_tree_fits_reported": 28,
+    "validation_scores": [
+      {
+        "variant": "original",
+        "model": "trees",
+        "rows": 28995,
+        "rmse_sgd": 443.8630505338,
+        "mae_sgd": 322.9187729235,
+        "bias_sgd": -4.9028830147
+      },
+      {
+        "variant": "original",
+        "model": "tabpfn",
+        "rows": 28995,
+        "rmse_sgd": 441.9592693871,
+        "mae_sgd": 318.2158373906,
+        "bias_sgd": 4.1083714317
+      },
+      {
+        "variant": "original",
+        "model": "ensemble",
+        "rows": 28995,
+        "rmse_sgd": 440.9519575034,
+        "mae_sgd": 318.8879165138,
+        "bias_sgd": -0.3972557915
+      },
+      {
+        "variant": "grouped",
+        "model": "trees",
+        "rows": 28995,
+        "rmse_sgd": 443.9558745401,
+        "mae_sgd": 322.9574123672,
+        "bias_sgd": -3.9561224683
+      },
+      {
+        "variant": "grouped",
+        "model": "tabpfn",
+        "rows": 28995,
+        "rmse_sgd": 442.0894791036,
+        "mae_sgd": 316.5159453007,
+        "bias_sgd": 23.4519164193
+      },
+      {
+        "variant": "grouped",
+        "model": "ensemble",
+        "rows": 28995,
+        "rmse_sgd": 440.7707067636,
+        "mae_sgd": 317.7624849367,
+        "bias_sgd": 9.7478969755
+      }
+    ],
+    "verification_scope": "CSV/evidence/runner identities independently checked; validation scores and GPU training read from source audit, not rerun locally",
+    "F2_in_paired_comparison": "original categories; grouped retained as a separate sensitivity candidate",
+    "kaggle_score_link_verified": false
+  },
   "missing": [
     "Complete exported ordered 87-input dictionary",
     "Candidate association with the historical screenshot score"

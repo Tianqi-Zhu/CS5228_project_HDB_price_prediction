@@ -76,8 +76,8 @@
     },
     {
       "id": "M09",
-      "status": "partial",
-      "purpose": "F1 recorded generation/replay and F2 component reconstruction; fresh full inference separate",
+      "status": "verified_component_scope",
+      "purpose": "F1 generation/replay and F2 component reconstruction passed; source full GPU runs retained separately",
       "evidence_directory": "experiment/main/M09",
       "execution_summary": "docs/planning/main-execution-status.md"
     },
@@ -128,7 +128,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "5396cb0f2560224100fd10c7a5a72456b3aafde0e15432bce3a7260c80f756e4"
+      "sha256": "eff420576d7c24b4e1b2fe9e7998db5b60619d4c0888623cf2514f5214a2a978"
     },
     {
       "path": "TABPFN_API_77.md",
@@ -556,11 +556,11 @@
     },
     {
       "path": "analysis/validation/final_pair.py",
-      "sha256": "fa89c7937114cff29d58698220fc65f755ca8eb37256f52748b1925a05b2e47e"
+      "sha256": "2c5a2a3a9f535c4395171db9717a8105dcd423ee028c0a76c7e76d5fca1d72a1"
     },
     {
       "path": "analysis/validation/main.py",
-      "sha256": "19e733594ee2b3aab3b382608267f2fa0239723a2a25ee45e5ceda6dd5046592"
+      "sha256": "153ffb7a817962730534470b2926198beccb2d62df0bff6f542cb210599b4fbf"
     },
     {
       "path": "analysis/validation/prepare_inputs.py",
@@ -776,11 +776,15 @@
     },
     {
       "path": "docs/guides/tabpfn_best.md",
-      "sha256": "ede4792629121d8226e386f2e9fb13721e56dfc0055db123995252a36d446731"
+      "sha256": "2504ce05ae9e54e0db9d3557b42e9fc0645e94404589851fb3fbeffec2ef7f8d"
+    },
+    {
+      "path": "docs/guides/tabpfn_ensemble.md",
+      "sha256": "20531f5977223e36a1333f7b117405360a72fa69b15cdfd891ec50a407e05b74"
     },
     {
       "path": "docs/guides/tabpfn_workflow.md",
-      "sha256": "8ff69b5ada0fb983002dd51c1c07dc356f6b0d5898a8b54630377c0e5acb85e1"
+      "sha256": "36ff38348e6e8bb5a60fb79a9d4ca7d4b1decf4618b22e14b789c0d4e18932d0"
     },
     {
       "path": "docs/methods/baseline_features.md",
@@ -1168,7 +1172,7 @@
     },
     {
       "path": "experiment/main/M00/evaluation/source_manifest.json",
-      "sha256": "8a0d612a15f60ad135cde12839e79f0a01d7c896e8d2cc9dce539ca912567839"
+      "sha256": "b4999c05fea3da94d010d487dd0b95079785fd53b9152c160a48f08418ddf5c5"
     },
     {
       "path": "experiment/main/M00/inputs/metadata.json",
@@ -1844,15 +1848,15 @@
     },
     {
       "path": "experiment/main/M07/README.md",
-      "sha256": "1d8502b992e400f6c4ae35e7304d1e43a4a32e0a384a2af8c9dc5800cae8df5a"
+      "sha256": "0569464e9490015884bda0232139902254283f08c6ef36eb6e121b2b845a0493"
     },
     {
       "path": "experiment/main/M07/evaluation/f2_manifest.json",
-      "sha256": "c52ce05a1a8c9f39fba20583707fb3dcf01d0b306ac414fea402d4baaaa26150"
+      "sha256": "8a25c32eaf9e261c397e6360f107cbd02c8e105c95a2d9d5a5789bb72a154570"
     },
     {
       "path": "experiment/main/M07/evaluation/source_manifest.json",
-      "sha256": "56bffd41838307741bdd1c1b323a59e8236b0158b86cbfa92f2abcf417e7a5c5"
+      "sha256": "51a5538f2f938858fb056dc2fdf20a1fcb6e4d152fd4dbc27da4599212f43dad"
     },
     {
       "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/calibration_scores.csv",
@@ -2416,7 +2420,7 @@
     },
     {
       "path": "experiment/main/M09/README.md",
-      "sha256": "287c013cb657195ee48a675c1617ca4032d3558fedd99c2459953455fb167fb2"
+      "sha256": "a7a6b2d93183920738a22bed3560c50a20cbbb116a0bb9a9344de5d8a40bde9d"
     },
     {
       "path": "experiment/main/M09/evaluation/f2_reconstruction.json",
@@ -2440,7 +2444,7 @@
     },
     {
       "path": "experiment/main/evaluation-summary.json",
-      "sha256": "7de5db0183affd1b4eb27740803962f9d4d4aa1e2d3f7c876b1fe62c059b0b0b"
+      "sha256": "157ea7623ec567da1b313a4ea782e28879200c17c96091f3ef584578fdf07a77"
     },
     {
       "path": "experiment/studies/README.md",
@@ -5453,6 +5457,18 @@
     {
       "path": "reports/stock_sector_signals/stock_coverage.csv",
       "sha256": "a1918af16284e771914bcebe74585e86a0bf34d73bec9e886116ef74fd59d72e"
+    },
+    {
+      "path": "reports/submissions/tabpfn_ensemble_20261106/publication.json",
+      "sha256": "bf0c5d663cea3da222daa317654794ab40e7e3d72c820e0fdc194c8a865f6ce1"
+    },
+    {
+      "path": "reports/submissions/tabpfn_ensemble_20261106/submission_ensemble_grouped_150k.csv",
+      "sha256": "8d5892b767fcc21fafecdb4b76b17b366d11016e6eb04c454ff95752466aed9f"
+    },
+    {
+      "path": "reports/submissions/tabpfn_ensemble_20261106/submission_ensemble_original_150k.csv",
+      "sha256": "dcdae91f36428ed5693ad820439c63dbc86e0d0949afbc0f19c09d55f8c9ac7c"
     },
     {
       "path": "reports/tabm_80_20/calibration/plain_lr002/learning_curve.json",
@@ -14528,7 +14544,7 @@
     },
     {
       "path": "review/CHECKS.md",
-      "sha256": "d1e0c0c5a9f62e5a65b3995ee0def23a036d99cb9211215a1b4fd63434d763fa"
+      "sha256": "33e2c9aba21bdbaaa96ae30b7ad479d1fc9c8d0a17157c32c71b7bcff1e97808"
     },
     {
       "path": "review/checks/anniversary-merge/f1-replay.json",
@@ -14760,7 +14776,7 @@
     },
     {
       "path": "review/checks/main-refresh/summary.json",
-      "sha256": "c39b9f6358f73a0df9ac4d354e265b5137b56c838bf389c6ce4a3c839da2f2e0"
+      "sha256": "35b4e4b19f650f749a3cfcc7ac8c4405a1a01b8a39b1e2b57d69e08bfb827bca"
     },
     {
       "path": "review/checks/original_csv.log",
@@ -14987,6 +15003,50 @@
       "sha256": "66364c9b6aa704b8de435d899ac4f58c07f8164d5ced996871016a34017497ff"
     },
     {
+      "path": "review/checks/tabpfn-ensemble/audit.json",
+      "sha256": "7e78c32ca806d23f58e104c10dfd2d59c365dfd22e4b78b24872afe0da5d1371"
+    },
+    {
+      "path": "review/checks/tabpfn-ensemble/tabpfn_predict_grouped.json",
+      "sha256": "1fa104738497f5dc8d9bf62ae6616cabc504e75c65606a44e01abcc141604220"
+    },
+    {
+      "path": "review/checks/tabpfn-ensemble/tabpfn_predict_original.json",
+      "sha256": "c685fb5f0ddcf9f647b59acdbf9317c2881bcd29940081cd450f67ea84b9bc6d"
+    },
+    {
+      "path": "review/checks/tabpfn-ensemble/tabpfn_validate_grouped.json",
+      "sha256": "89975d5f3dcb3efce8f19db2dc1b09fee8a0d30a5c2d0a927ef687c301da8335"
+    },
+    {
+      "path": "review/checks/tabpfn-ensemble/tabpfn_validate_original.json",
+      "sha256": "e07b09e25896b7d9fc3834237059b368aa31bedb2af29c71e7c306040643a319"
+    },
+    {
+      "path": "review/checks/tabpfn-ensemble/training_runner.py",
+      "sha256": "80fc03eba884d8a6279ccfa348568e2a0656e870fb827d5bec6d95fa8a9fc132"
+    },
+    {
+      "path": "review/checks/tabpfn-ensemble/trees_predict_grouped.json",
+      "sha256": "be0bbbe4241588749d97be6a6b92a91cf634b4cc25efcf5aac539ae96309263d"
+    },
+    {
+      "path": "review/checks/tabpfn-ensemble/trees_predict_original.json",
+      "sha256": "26d922af443f9f59d633d4db140d65cfc76fa4792f7e90f2d5647525aeed9512"
+    },
+    {
+      "path": "review/checks/tabpfn-ensemble/trees_validate_grouped.json",
+      "sha256": "f5688d224b7c0f047d8459d7bafd4d67edd8497d72d8c3f2529addf9e8384796"
+    },
+    {
+      "path": "review/checks/tabpfn-ensemble/trees_validate_original.json",
+      "sha256": "5ec6ee664cc6df05045bf7e17265db051a9d39e2498f1479c8a0cf9edbb342fa"
+    },
+    {
+      "path": "review/checks/tabpfn-ensemble/validation_scores.csv",
+      "sha256": "333d669ec06dbdd9a93e984ad96baa7e0c5af0cc53b8096f7f57e7c1cf4fe9ea"
+    },
+    {
       "path": "review/checks/tabpfn-replication/scores.csv",
       "sha256": "ce38964d147e36ceffc1ee517d9fad710a26e017207f03bd4fa486549a0c5c34"
     },
@@ -15109,6 +15169,10 @@
     {
       "path": "run_tabpfn_best.py",
       "sha256": "bf6a00e245bdb4ec4f75f0e87ceafd49a0c7e32ee0aaf792803943821019f974"
+    },
+    {
+      "path": "run_tabpfn_ensemble.py",
+      "sha256": "b211a69acb5485b31014225bcc75ca1058b275ffcc6da4be8a635a78f2fa9fab"
     },
     {
       "path": "skills/cs5228-final-report/SKILL.md",
@@ -20250,6 +20314,19 @@
     "evidence": "review/checks/tabpfn-replication/summary.json",
     "fresh_validation_verified": true,
     "raw_feature_rebuild_verified": true,
-    "fresh_full_data_gpu_inference_verified": false
+    "fresh_full_data_gpu_inference_verified": true,
+    "subsequent_full_data_evidence": "review/checks/tabpfn-ensemble/audit.json"
+  },
+  "tabpfn_ensemble": {
+    "guide": "docs/guides/tabpfn_ensemble.md",
+    "runner": "run_tabpfn_ensemble.py",
+    "evidence": "review/checks/tabpfn-ensemble/audit.json",
+    "fresh_tree_fits": 28,
+    "fresh_original_full_tabpfn_verified": true,
+    "fresh_grouped_validation_and_full_tabpfn_verified": true,
+    "recommended_variant": "grouped",
+    "submissions_uploaded": false,
+    "kaggle_scores": null,
+    "published_submissions": "reports/submissions/tabpfn_ensemble_20261106/publication.json"
   }
 }

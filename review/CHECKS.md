@@ -2,9 +2,11 @@
 
 ## 当前 main 更新后的核验
 
-基于 `4b91fad` 整理后的本机记录见 [main-refresh/summary.json](checks/main-refresh/summary.json)。85 项 main 测试、32 项独立 MLP 测试、38 项隔离 TabPFN 测试与集成 `planned` 通过；MLP 和 TabPFN 分别复用已有隔离依赖，未把两套运行时合入 F1 环境。
+基于 `4b91fad` 整理、再合入 `c81f771` 新融合提交后的本机记录见 [main-refresh/summary.json](checks/main-refresh/summary.json)。85 项 main 测试、32 项独立 MLP 测试、38 项隔离 TabPFN 测试与集成 `planned` 通过；可选依赖分别复用既有隔离目录，未把 TabPFN SDK 合入 F1 环境。
 
 本轮新增 `analysis.main final-pair`：F2 的 50,000 行候选可按两路保存组件重组，最大差约 `5.0e-7` SGD，符合六位小数的舍入容差；近期 28,995 行 F1/F2 配对完成。年度 F2、完整有序字典、信息政策完全等价和历史截图关联仍未验收，main 全部 P0 尚未完成。
+
+后续合并保留两份新发布的原类别/分组类别 CSV、28 次树训练重载与完整 TabPFN 推理的来源记录，并独立核对 CSV、运行器和审计文件哈希。近期配对仍使用原类别 F2；grouped 的 440.7707 是另列的开发期敏感性结果，未冒充新的 Kaggle 成绩。
 
 下文是不同提交、机器和环境下的历史记录；其中“F2 生成器缺失”和 Python 3.13 字节重组失败不能代替本机当前 Python 3.11 的核验状态。F1 固定生成链在本机已通过；本轮未新跑完整研究模型训练或 TabPFN checkpoint 推理。
 

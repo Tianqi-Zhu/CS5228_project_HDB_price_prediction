@@ -13,6 +13,7 @@ from analysis.pipeline.config import ROOT
 from analysis.validation.prepare_inputs import sha
 
 FOLDER = 'reports/zch_anniversary_tabpfn_blend'
+PUBLICATION = 'reports/submissions/tabpfn_ensemble_20261106'
 SOURCES = [
     'data/train.csv', 'data/example-submission.csv',
     'experiment/main/M00/inputs/validation.npz', 'experiment/main/M00/inputs/metadata.json',
@@ -24,6 +25,10 @@ SOURCES = [
     'review/checks/tabpfn-replication/summary.json',
     'workflows/tabpfn/analysis/compare_zch_anniversary_tabpfn_ensemble.py',
     'analysis/validation/main.py',
+    f'{PUBLICATION}/publication.json', f'{PUBLICATION}/submission_ensemble_original_150k.csv',
+    f'{PUBLICATION}/submission_ensemble_grouped_150k.csv',
+    'review/checks/tabpfn-ensemble/audit.json', 'review/checks/tabpfn-ensemble/training_runner.py',
+    'run_tabpfn_ensemble.py',
 ]
 
 
@@ -51,6 +56,47 @@ def rebuild_components(trees, tabpfn, sample):
         if not np.isfinite(values).all() or (values <= 0).any():
             raise ValueError('Invalid component rents')
     return (trees.predicted.to_numpy(float) + tabpfn.predicted.to_numpy(float)) / 2
+
+
+def published_candidates(sample, archived_original):
+    folder = ROOT / PUBLICATION
+    publication = json.loads((folder / 'publication.json').read_text())
+    record = json.loads((ROOT / publication['evidence']).read_text())
+    if sha(ROOT / publication['evidence']) != publication['evidence_sha256']:
+        raise ValueError('Published ensemble evidence changed')
+    if sha(ROOT / 'run_tabpfn_ensemble.py') != record['current_runner_sha256']:
+        raise ValueError('Published current runner changed')
+    if sha(ROOT / 'review/checks/tabpfn-ensemble/training_runner.py') != record['training_runner_sha256']:
+        raise ValueError('Published training source changed')
+    rows = []
+    for item in publication['submissions']:
+        path = (folder / item['file']).resolve()
+        if not path.is_relative_to(folder.resolve()) or sha(path) != item['sha256']:
+            raise ValueError('Published submission path/hash mismatch')
+        frame = pd.read_csv(path, float_precision='round_trip')
+        if list(frame) != ['Id', 'Predicted'] or len(frame) != 50000 or frame.Id.duplicated().any() or not np.array_equal(frame.Id, sample.Id):
+            raise ValueError('Published submission IDs/schema mismatch')
+        values = frame.Predicted.to_numpy(float)
+        if not np.isfinite(values).all() or (values <= 0).any():
+            raise ValueError('Invalid published submission rents')
+        row = {'variant': item['variant'], 'path': path.relative_to(ROOT).as_posix(),
+               'sha256': sha(path), 'rows': len(frame), 'actual_kaggle_score': None}
+        if item['variant'] == 'original':
+            difference = float(np.max(abs(values - archived_original)))
+            if difference > 0.5e-6 + 1e-10:
+                raise ValueError('Fresh original candidate differs from archived F2 beyond CSV rounding')
+            row['max_difference_from_six_decimal_archived_F2_sgd'] = difference
+        rows.append(row)
+    if {r['variant'] for r in rows} != {'original', 'grouped'}:
+        raise ValueError('Expected separate original/grouped published candidates')
+    return {'submissions': rows, 'source_reported_recommendation': publication['recommended_submission'],
+            'fresh_full_original_tabpfn_reported': record['original_full_tabpfn_freshly_fitted_this_audit'],
+            'fresh_grouped_validation_and_full_reported': record['grouped_validation_and_full_tabpfn_freshly_fitted_this_audit'],
+            'fresh_tree_fits_reported': record['fresh_tree_fits'],
+            'validation_scores': publication['validation_scores'],
+            'verification_scope': 'CSV/evidence/runner identities independently checked; validation scores and GPU training read from source audit, not rerun locally',
+            'F2_in_paired_comparison': 'original categories; grouped retained as a separate sensitivity candidate',
+            'kaggle_score_link_verified': False}
 
 
 def audit():
@@ -91,6 +137,7 @@ def audit():
     tolerance = 0.5e-6 + 1e-10  # Six-decimal archived CSV; no model tolerance.
     if difference > tolerance:
         raise ValueError('F2 does not reproduce its recorded equal-weight components')
+    published = published_candidates(sample, submission.Predicted.to_numpy(float))
 
     raw = pd.read_csv(ROOT / 'data/train.csv')
     bank = np.load(ROOT / 'experiment/main/M00/inputs/validation.npz', allow_pickle=False)
@@ -131,6 +178,8 @@ def audit():
                 'displayed_score_user_screenshot': 413.19635, 'screenshot_score_identity_verified': False,
                 'standalone_validation_replication_record': 'review/checks/tabpfn-replication/summary.json',
                 'standalone_replay_reported_by_source': replication['new_cli_validation']['fresh_fit_and_inference'],
+                'subsequent_full_data_replication_record': 'review/checks/tabpfn-ensemble/audit.json',
+                'published_candidates': published,
                 'missing': ['Complete exported ordered 87-input dictionary', 'Candidate association with the historical screenshot score']}
     protocol = {'status': 'partial', 'paired_comparison_performed': True, 'eligible': True,
                 'eligible_windows': ['J'], 'unavailable_windows': ['Y'], 'n': len(ids), 'fit_rows': 121005,
@@ -151,6 +200,7 @@ def audit():
         raise AssertionError('Source inputs changed during final-pair audit')
     return {'manifest': manifest, 'protocol': protocol, 'reconstruction': reconstruction,
             'metrics': scores, 'groups': groups, 'monthly': monthly,
+            'published_candidates': published,
             'source_sha256': before, 'raw_inputs_unchanged': True, 'new_models_fitted': 0}
 
 
