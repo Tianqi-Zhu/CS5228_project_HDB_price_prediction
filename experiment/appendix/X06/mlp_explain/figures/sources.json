@@ -1,0 +1,22 @@
+[
+  {
+    "path": "experiment/appendix/X06/mlp_explain/validation/uncleaned_mlp_outer.csv",
+    "sha256": "d042a393787df55b8d418ae48f3d43fb40cb5d859ba10309216bafce99ba5186"
+  },
+  {
+    "path": "experiment/appendix/X06/mlp_explain/validation/uncleaned_hybrid_outer.csv",
+    "sha256": "f0c025d6ee2e0ee730d63d3d7db74b9dde8153e0e1fadcf90f3b6121d0ffc9f7"
+  },
+  {
+    "path": "experiment/appendix/X06/mlp_explain/validation/obvious_low_mlp_outer.csv",
+    "sha256": "26e51ded7277b6083971b6fafa6d2a81fab1638884a70fb44f91deb664acd96e"
+  },
+  {
+    "path": "experiment/appendix/X06/mlp_explain/uncertainty_diagnostics/indistinguishable_inputs_proof_case.csv",
+    "sha256": "14bcd44299945f4804cd3fe6218cebac206f6b62124addb75de451940df311d1"
+  },
+  {
+    "path": "experiment/appendix/X06/mlp_explain/cleaning/comparison_metrics.csv",
+    "sha256": "720cb6728dd01eaa76adec7861caa4197b39071471eddec6b52d7ed4813fcce2"
+  }
+]

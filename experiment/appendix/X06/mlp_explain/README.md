@@ -26,6 +26,38 @@ python reproduction/mlp_explain/run.py diagnose --output-dir output/mlp_explain/
 
 原融合最差5%记录贡献41.53%的平方误差；≤1,900 SGD组占3.71%记录、贡献26.36%的平方误差。风险修正候选的1,422条误差≥1,000记录中，1,182条集成标准差仍<100。这些数字对应不同模型，不能混作最终全量MLP的成绩。
 
+## 解释性实验图表
+
+以下图片来自已归档的35,158条开发验证记录（2024-04至2025-03）。PNG为300 dpi；同名PDF和SVG可用于LaTeX与排版。
+
+### 1. 月度误差与预测分布
+
+![月度误差与MLP预测分布](figures/01_mlp_prediction_diagnostics.png)
+
+左图对比未清洗MLP、明显低价清洗MLP和MLP+TabM等权融合；右图仅为未清洗MLP。三者均截至2023-12拟合，不能与全量清洗MLP的Kaggle显示成绩437.34455直接比较。TabM为表格神经网络，等权融合为两组模型预测各占50%。[矢量PDF](figures/01_mlp_prediction_diagnostics.pdf)
+
+### 2. 误差集中度与模型分歧
+
+![MLP误差集中度与模型分歧](figures/02_mlp_error_and_uncertainty.png)
+
+纯MLP最差5%记录贡献40.16%的平方误差；1,455条误差至少1,000 SGD的记录中，1,412条集成标准差仍低于100 SGD。低分歧不能保证预测准确。这里使用纯MLP，不能套用上文融合模型的41.53%或风险修正候选的1,182/1,422。[矢量PDF](figures/02_mlp_error_and_uncertainty.pdf)
+
+### 3. 相同输入与清洗敏感性
+
+![相同输入案例与清洗对照](figures/03_identical_inputs_and_cleaning.png)
+
+左图为原MLP+TabM融合的三条相同输入案例：真实租金4,000/5,000/6,000，最优统一预测5,000。局部最小RMSE不是全数据的不可约误差下限。右图保留全部验证行，仅改变拟合数据的清洗政策；更强清洗未必降低RMSE。[矢量PDF](figures/03_identical_inputs_and_cleaning.pdf)
+
+图表数字见[统计摘要](figures/figure_statistics.json)，源数据和SHA256见[来源清单](figures/sources.json)。
+
+重新生成图表（无需训练）：
+
+```bash
+python reproduction/mlp_explain/plot_figures.py
+```
+
+输出位于 `output/figures/mlp_explain/` 与 `output/pdf/mlp_explain/`。绘图需要NumPy、Pandas、Matplotlib与SciPy。
+
 ## 重新训练对照
 
 安装依赖并测试：

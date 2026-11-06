@@ -1,0 +1,11 @@
+{
+  "validation_period": "2024-04 to 2025-03",
+  "fitting_end": "2023-12",
+  "n": 35158,
+  "training_performed": false,
+  "mlp_rmse": 471.804199802911,
+  "mlp_worst5_sse_share": 0.40155825902556197,
+  "mlp_disagreement_error_spearman": -0.04548055423644665,
+  "mlp_errors_at_least_1000": 1455,
+  "mlp_large_errors_std_below100": 1412
+}

@@ -12999,7 +12999,7 @@
     },
     {
       "path": "experiment/appendix/X06/mlp_explain/README.md",
-      "sha256": "bc85a5c2249b4b182041798fbf24f17e1e5334dcea3d1e6f4e097af1f8fd59d1"
+      "sha256": "42a7815550597b09c4b0a24e337c34aedb4a9657f326c99e09b00dc196051de7"
     },
     {
       "path": "experiment/appendix/X06/mlp_explain/cleaning/checkpoint_replay_verification.json",
@@ -13128,6 +13128,62 @@
     {
       "path": "experiment/appendix/X06/mlp_explain/eda/summary.json",
       "sha256": "058bd981b9a4cbfd65771207e19524ba5dc6d924dbca944d7d5aa38b39ecfbe8"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/figures/01_mlp_prediction_diagnostics.pdf",
+      "sha256": "3846f666e661d325905e4073e81efa99013056755238d47dfbab500c8052eb92"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/figures/01_mlp_prediction_diagnostics.png",
+      "sha256": "de7a4cf3d302837addc39be88adde8babaed51802b5fcd8ea78a880073bb3375"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/figures/01_mlp_prediction_diagnostics.svg",
+      "sha256": "8168bd44a0938ff8ede7ae73d99bd510dfa944e342339d995ff1d6e62697fb98"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/figures/02_mlp_error_and_uncertainty.pdf",
+      "sha256": "eb3baa6009b7dddb409213b31d6779a00af71ab62f3b67318eabccd6283ef510"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/figures/02_mlp_error_and_uncertainty.png",
+      "sha256": "261d30e7bc8c7de1eef968648fd1934a9c89bd58e2f55beafa62e60d2edb9d6a"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/figures/02_mlp_error_and_uncertainty.svg",
+      "sha256": "d02939db3d71833f7b93a7e14af58789b304ebbd6dae91e7bbc2f61ca72c3fac"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/figures/03_identical_inputs_and_cleaning.pdf",
+      "sha256": "78cadc9bb3678f0624e9ffce1bf3d7fc7c113c057859b056db501d2a323f123a"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/figures/03_identical_inputs_and_cleaning.png",
+      "sha256": "db7420d1bf6286b831e5df89d67ae30e81312da23fb4614e82ee472ad0bc9f39"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/figures/03_identical_inputs_and_cleaning.svg",
+      "sha256": "26e87f4cd1be446994c6e168179924c594a422823752999568f0a6ab93910c4f"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/figures/MLP_clean_monthly.csv",
+      "sha256": "4be60e2c82348a45fad627d32f8d3ab4315b5f44142f18ddac1ea77901457ce0"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/figures/MLP_hybrid_monthly.csv",
+      "sha256": "c0c8b5417db9ef731600c16ce2e0a9fcf6d5c5bb2cd5f9a92a2da6d89399d0ec"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/figures/MLP_monthly.csv",
+      "sha256": "cf304e25a9935e215e20e45d494a955c4ac6967c1060501b21a6cff7235a79ad"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/figures/figure_statistics.json",
+      "sha256": "847013318ec071cdc05b53c19f2c1c0ba546fda4bdf94acbb45a06fb0fb87bfc"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/figures/sources.json",
+      "sha256": "b3d6c956bdd93dfda3d11633fda668da6ae951fe613a6ff415ecb95caee5ec00"
     },
     {
       "path": "experiment/appendix/X06/mlp_explain/historical/embedding_rent_search/ensemble-2026-10-30/outer_metrics.csv",
@@ -13887,7 +13943,7 @@
     },
     {
       "path": "experiment/appendix/X06/mlp_explain/mlp_prediction_report.md",
-      "sha256": "7cf144543da0115e3c17df6b56914a679b150c9739f661fd08228bd70f2c3b62"
+      "sha256": "a735ade43c43baeb6a3add68efd3d1b16cc417c4b31e53874cfe3bc8ed526155"
     },
     {
       "path": "experiment/appendix/X06/mlp_explain/predictions/highest_only_hybrid_test_intervals.csv",
@@ -15444,6 +15500,10 @@
     {
       "path": "reproduction/mlp_explain/diagnose.py",
       "sha256": "dcb0f45fbbbd988adec7abe56e2b67242aa4c515738d053ec853b3d0d01f1491"
+    },
+    {
+      "path": "reproduction/mlp_explain/plot_figures.py",
+      "sha256": "881d61a15c4834459e8a45e47c589f6728a86844330c8f46d0b4618fb58bf8c8"
     },
     {
       "path": "reproduction/mlp_explain/provenance.json",
