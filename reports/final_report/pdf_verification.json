@@ -1,0 +1,63 @@
+{
+  "pdf": "output\\pdf\\final_report.pdf",
+  "total_pages": 10,
+  "main_pages": 7,
+  "references_start": 8,
+  "appendix_start": 9,
+  "diagnostics_start": 10,
+  "appendix_pages": 2,
+  "resolved_bibliography_entries": 10,
+  "page_bounds_and_reference_checks": "passed",
+  "pages": [
+    {
+      "page": 1,
+      "words": 732,
+      "first_text": "Forecasting HDB Monthly Rents with Historical Cohorts and Heterogeneous Ensembles [Team name] CS5228"
+    },
+    {
+      "page": 2,
+      "words": 672,
+      "first_text": "2021 2022 2023 2024 2025 2000 2200 2400 2600 2800 3000 3200 Monthly rent (SGD) (a) Observed market s"
+    },
+    {
+      "page": 3,
+      "words": 838,
+      "first_text": "monthly mean and months since the latest observation. For a \ufb01tting record in month t, these statisti"
+    },
+    {
+      "page": 4,
+      "words": 807,
+      "first_text": "variants. Common-input comparisons restrict eligibility to the compact pro\ufb01le. Inner-selected traini"
+    },
+    {
+      "page": 5,
+      "words": 641,
+      "first_text": "19 Static 27 + History 47 + Ratios 62 + Cohorts 450 460 470 480 RMSE (SGD) (a) Annual: Apr 2024-Mar "
+    },
+    {
+      "page": 6,
+      "words": 683,
+      "first_text": "TABLE III ENHANCED PIPELINE VALIDATION IN SGD. ANNUAL: APRIL 2024\u2013MARCH 2025, 35,158 ROWS. RECENT: J"
+    },
+    {
+      "page": 7,
+      "words": 556,
+      "first_text": "Jun Jul Aug Sep Oct Nov Dec Jan Feb Mar 420 440 460 480 RMSE (SGD) (a) Recent development months Sev"
+    },
+    {
+      "page": 8,
+      "words": 281,
+      "first_text": "REFERENCES [1] T. F. Sing, J. J. Yang, and S. M. Yu, \u201cBoosted tree ensembles for arti\ufb01cial intellige"
+    },
+    {
+      "page": 9,
+      "words": 456,
+      "first_text": "APPENDIX A TEAM WORKLOAD AND REPRODUCTION NOTES Team details are placeholders. Insert the con\ufb01rmed t"
+    },
+    {
+      "page": 10,
+      "words": 437,
+      "first_text": "APPENDIX B SUPPLEMENTARY VALIDATION DIAGNOSTICS These supplementary results retain the main text\u2019s i"
+    }
+  ]
+}
