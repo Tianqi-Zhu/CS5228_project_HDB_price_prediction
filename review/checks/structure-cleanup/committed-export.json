@@ -1,0 +1,29 @@
+{
+  "source_commit_tested": "c854542e6bb7fdc4e8028fb6af5a927de6af071a",
+  "local_cache_or_training_outputs_copied": false,
+  "uses_installed_local_dependency_environment": true,
+  "checks": [
+    {
+      "check": "clean-static",
+      "returncode": 0,
+      "seconds": 10.81471620000957
+    },
+    {
+      "check": "clean-tests",
+      "returncode": 0,
+      "seconds": 13.62491030000092
+    },
+    {
+      "check": "clean-planned",
+      "returncode": 0,
+      "seconds": 22.830574499996146
+    },
+    {
+      "check": "clean-EDA-default",
+      "returncode": 0,
+      "seconds": 4.428318999998737
+    }
+  ],
+  "all_passed": true,
+  "temporary_export_removed_after_checks": true
+}

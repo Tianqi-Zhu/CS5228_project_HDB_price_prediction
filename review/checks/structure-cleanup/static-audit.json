@@ -1,7 +1,7 @@
 {
   "files_checked": 626,
   "python_files_parsed": 201,
-  "active_links_checked": 282,
+  "active_links_checked": 283,
   "failures": [],
   "all_passed": true,
   "scope": "Hash all registered source/data/evidence, parse every shipped Python file, check current navigation. Frozen historical report links and archived training runtime are not executed.",

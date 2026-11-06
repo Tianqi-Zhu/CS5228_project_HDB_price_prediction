@@ -43,3 +43,5 @@ Latest main requirement-card execution and whole-tree verification: [checks/main
 规则及保留理由见[目录说明](../docs/guides/repository_layout.md)，逐项操作见 [cleanup.json](checks/structure-cleanup/cleanup.json)。删除前核验了旧导出目录及压缩包的 Git 对象身份，未删除分支工作目录、模型输出或已安装依赖。旧阶段 PDF 另有字节一致的本地备份。
 
 本次 78 项 main 测试通过；默认 EDA 的三个层次实际运行完成，18 张表与冻结 M01 结果一致，11 张主图生成成功，原始 CSV 未改变。集成 `planned`、F1 生成链、Concat/TabPFN 文件核验和新帮助入口通过。大模型训练配方、最终结果与冻结运行时均未改动，也没有重新训练研究模型。运行记录位于 [checks/structure-cleanup/](checks/structure-cleanup/)。
+
+提交 `c854542` 的干净导出再次通过完整 78 项测试、626 份文件静态核验、集成 `planned` 与默认 main EDA 运行。未携带本地缓存和训练输出；验证后移除该临时导出，保留 [committed-export.json](checks/structure-cleanup/committed-export.json) 及日志。

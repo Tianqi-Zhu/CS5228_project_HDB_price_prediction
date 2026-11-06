@@ -2292,7 +2292,7 @@
     },
     {
       "path": "review/CHECKS.md",
-      "sha256": "e8592a995519650379d60d846013719f03078f74fd95c0147b6eaa92e4767df2"
+      "sha256": "3c11b07ad1ea171222c405a9b6a0b981a5ef9eaf79a95c75de5545927d5c602d"
     },
     {
       "path": "review/checks/concat_transformer/integration.json",
@@ -5605,6 +5605,8 @@
     "record": "review/checks/structure-cleanup/cleanup.json",
     "tracked_generated_pdf_removed": "experiment/main/M01/eda/progress_report.pdf",
     "removed_temporary_bytes": 5265847404,
-    "frozen_reproduction_runtime_unchanged": true
+    "frozen_reproduction_runtime_unchanged": true,
+    "clean_export_source_commit": "c854542e6bb7fdc4e8028fb6af5a927de6af071a",
+    "clean_export_all_checks_passed": true
   }
 }

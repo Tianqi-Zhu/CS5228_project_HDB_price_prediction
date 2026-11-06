@@ -1,0 +1,49 @@
+{
+  "output": "C:\\Users\\Lenovo\\Desktop\\CS5228\\CS5228_project_HDB_price_prediction\\output\\structure_cleanup\\committed-export\\output\\planning_validation\\main\\b95ccc1106d66591",
+  "run_id": "b95ccc1106d66591",
+  "tasks": {
+    "M00": "F1 fresh Y/J generation verified; 26 old prediction artifacts audited but their original commits remain unproven; F2 pending",
+    "M01": "completed for supplied facility snapshot scenario; strict historical facilities remain X08",
+    "M02": "archived and previously refitted; no new training required",
+    "M03": "completed frozen 16-fit paired recalculation",
+    "M04": "completed for F1 and two 62-input controls on Y/J",
+    "M05": "completed controlled recalculation; annual PLR fusion regression preserved",
+    "M06": "archived three-way submission selection; not relabelled as independent test",
+    "M07": "partial; actual F2 generator missing",
+    "M08": "pending F2",
+    "M09": "F1 passed; F2 pending"
+  },
+  "new_models_fitted": 0,
+  "predictions_audited": 26,
+  "group_rows": 144,
+  "raw_inputs_unchanged": true,
+  "fresh_F1_validation_models_previously_trained": 30,
+  "fresh_F1_generation_audit_passed": true,
+  "unified_feature_schemas_verified": true,
+  "imported_M01_evidence_verified": true,
+  "prediction_scenario": "supplied-snapshot-fixed-origin-v1",
+  "all_numeric_checks_passed": true,
+  "all_main_P0_completed": false,
+  "remaining_required_inputs": {
+    "M07": {
+      "status": "partial",
+      "available": "77/84/89-column TabPFN background imported",
+      "missing": [
+        "actual F2 generator commit and entry point",
+        "ordered 87-column schema",
+        "actual members/weights and target inversion",
+        "original submission CSV and checkpoint/seed/view identity"
+      ]
+    },
+    "M08": {
+      "status": "pending",
+      "reason": "M07 identity and Y/J F2 row predictions absent; screenshot scores cannot supply paired errors"
+    },
+    "M09": {
+      "status": "partial",
+      "F1": "verified separately below",
+      "F2": "no independent reconstruction possible without the M07 inputs"
+    }
+  },
+  "results_are_development_not_independent_test": true
+}
