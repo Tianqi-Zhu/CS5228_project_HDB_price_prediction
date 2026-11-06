@@ -1,0 +1,65 @@
+{
+  "name": "ridge_10000",
+  "spec": {
+    "name": "ridge_10000",
+    "kind": "ridge",
+    "alpha": 10000,
+    "cap": 600
+  },
+  "selection_scores": [
+    {
+      "name": "identity",
+      "rmse_sgd": 537.2409279321982,
+      "mae_sgd": 408.5503166211693,
+      "mean_adjustment": 0.0
+    },
+    {
+      "name": "history_0.1",
+      "rmse_sgd": 536.9561520449989,
+      "mae_sgd": 409.0035232266754,
+      "mean_adjustment": -7.419587407489677
+    },
+    {
+      "name": "history_0.25",
+      "rmse_sgd": 537.7585821750442,
+      "mae_sgd": 410.532632774796,
+      "mean_adjustment": -18.548968518724188
+    },
+    {
+      "name": "history_0.5",
+      "rmse_sgd": 542.2517909845747,
+      "mae_sgd": 415.5229118854284,
+      "mean_adjustment": -36.94721056827999
+    },
+    {
+      "name": "ridge_100",
+      "rmse_sgd": 537.7018972513508,
+      "mae_sgd": 412.1135859337579,
+      "mean_adjustment": -27.426362679419565
+    },
+    {
+      "name": "ridge_1000",
+      "rmse_sgd": 536.754534127604,
+      "mae_sgd": 411.5145435646375,
+      "mean_adjustment": -25.995539780214454
+    },
+    {
+      "name": "ridge_10000",
+      "rmse_sgd": 535.4037484275603,
+      "mae_sgd": 410.3548851913554,
+      "mean_adjustment": -24.50104602355442
+    },
+    {
+      "name": "mlp_10",
+      "rmse_sgd": 537.3809942184511,
+      "mae_sgd": 411.4845675784217,
+      "mean_adjustment": -28.651425853787785
+    },
+    {
+      "name": "mlp_100",
+      "rmse_sgd": 535.9395407145271,
+      "mae_sgd": 410.0340269253429,
+      "mean_adjustment": -18.718070274850472
+    }
+  ]
+}

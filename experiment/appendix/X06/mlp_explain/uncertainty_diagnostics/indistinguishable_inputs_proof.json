@@ -1,0 +1,36 @@
+{
+  "source_rows": [
+    136403,
+    136702,
+    135551
+  ],
+  "csv_lines": [
+    136405,
+    136704,
+    135553
+  ],
+  "actual_rents": [
+    4000.0,
+    5000.0,
+    6000.0
+  ],
+  "current_prediction": 5028.492802217907,
+  "oracle_group_mean": 5000.0,
+  "minimum_group_mse": 666666.6666666666,
+  "minimum_group_rmse": 816.496580927726,
+  "current_group_rmse": 816.9935779704119,
+  "max_group_rmse_improvement_without_distinguishing_inputs": 0.4969970426859618,
+  "encoded_input_checks": {
+    "mlp": {
+      "categorical_input_dimensions": 8,
+      "numeric_input_dimensions": 49,
+      "encoded_inputs_identical": true
+    },
+    "tabm": {
+      "categorical_input_dimensions": 8,
+      "numeric_input_dimensions": 48,
+      "encoded_inputs_identical": true
+    }
+  },
+  "warning": "This is a retrospective finite-group mathematical bound, not a population Bayes-error estimate or a lower bound of 816 SGD for the full validation set."
+}

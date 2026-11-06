@@ -1,0 +1,2 @@
+model,tabm_weight,n_validation,rmse_sgd,mae_sgd,bias_sgd
+inner_selected_neural_family_blend,0.6,35158,465.5034347225325,336.6620297911702,26.65341856420605

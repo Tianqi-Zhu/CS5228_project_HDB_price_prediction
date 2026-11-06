@@ -1,0 +1,2 @@
+model,epochs,inner_rmse,n_fit,n_validation,train_rmse,rmse_sgd,mae_sgd,bias_sgd
+full_history_mlp,10,547.2394021408704,114842,35158,474.0925765482119,481.2515473633226,352.3322526521735,34.02874013535215

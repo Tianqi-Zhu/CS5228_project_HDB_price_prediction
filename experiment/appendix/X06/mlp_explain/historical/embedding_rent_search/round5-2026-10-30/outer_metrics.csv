@@ -1,0 +1,2 @@
+model,epochs,inner_rmse,n_fit,n_validation,train_rmse,rmse_sgd,mae_sgd,bias_sgd
+comparable_resnet,12,543.646934486326,114842,35158,475.58977350955047,483.8933345267578,346.6855857550091,95.43911840555047

@@ -1,0 +1,61 @@
+{
+  "specifications": [
+    {
+      "history": true,
+      "quantile": true,
+      "architecture": "resnet",
+      "blocks": 2,
+      "start": "2021-01",
+      "width": 128,
+      "lr": 0.0005,
+      "aux_weight": 0.1,
+      "comparables_dir": "reports/experiments/historical_neighbors/run-2026-10-30",
+      "name": "comparable_resnet"
+    },
+    {
+      "history": true,
+      "quantile": true,
+      "architecture": "mlp",
+      "blocks": 2,
+      "start": "2021-01",
+      "width": 128,
+      "lr": 0.0005,
+      "aux_weight": 0.1,
+      "comparables_dir": "reports/experiments/historical_neighbors/run-2026-10-30",
+      "name": "comparable_mlp"
+    },
+    {
+      "history": true,
+      "quantile": true,
+      "architecture": "resnet",
+      "blocks": 3,
+      "start": "2021-01",
+      "width": 192,
+      "lr": 0.0005,
+      "aux_weight": 0.1,
+      "comparables_dir": "reports/experiments/historical_neighbors/run-2026-10-30",
+      "name": "comparable_wide",
+      "weight_decay": 0.005
+    },
+    {
+      "history": true,
+      "quantile": true,
+      "architecture": "resnet",
+      "blocks": 2,
+      "start": "2021-01",
+      "width": 128,
+      "lr": 0.0005,
+      "aux_weight": 0.1,
+      "comparables_dir": "reports/experiments/historical_neighbors/run-2026-10-30",
+      "name": "comparable_recent",
+      "half_life": 18
+    }
+  ],
+  "inner_fit_end": "2023-09",
+  "inner_validation": "2023-10..2024-03",
+  "outer_validation": "2024-04..2025-03",
+  "seed": 42,
+  "target": 450,
+  "selection": "inner RMSE only",
+  "caveat": "Previously inspected outer; single-seed exploratory study. Histories frozen at origin; actual outer rents not features."
+}

@@ -1,0 +1,59 @@
+{
+  "specifications": [
+    {
+      "encoding": "quantile",
+      "k": 16,
+      "width": 128,
+      "blocks": 2,
+      "lr": 0.001,
+      "distribution_dir": "reports/experiments/rental_distribution_history/run-2026-10-30",
+      "name": "distribution_raw"
+    },
+    {
+      "encoding": "quantile",
+      "k": 16,
+      "width": 128,
+      "blocks": 2,
+      "lr": 0.001,
+      "distribution_dir": "reports/experiments/rental_distribution_history/run-2026-10-30",
+      "name": "distribution_adjusted",
+      "adjusted_history": true,
+      "history": false
+    },
+    {
+      "encoding": "quantile",
+      "k": 16,
+      "width": 128,
+      "blocks": 2,
+      "lr": 0.0005,
+      "distribution_dir": "reports/experiments/rental_distribution_history/run-2026-10-30",
+      "name": "distribution_slow"
+    },
+    {
+      "encoding": "quantile",
+      "k": 16,
+      "width": 192,
+      "blocks": 3,
+      "lr": 0.001,
+      "distribution_dir": "reports/experiments/rental_distribution_history/run-2026-10-30",
+      "name": "distribution_wide",
+      "n_bins": 32
+    }
+  ],
+  "seed": 42,
+  "fit": "2021-01..2024-03",
+  "inner_fit": "2021-01..2023-09",
+  "inner_tune": "2023-10..2024-03",
+  "outer": "2024-04..2025-03",
+  "scenario": "Fixed-origin historical features; no validation target history updates",
+  "implementation": "Official TabM backbone plus learned category embeddings; optional external numerical embeddings.",
+  "numerical_embedding": {
+    "version": "B",
+    "activation": false
+  },
+  "versions": {
+    "tabm": "0.0.3",
+    "rtdl_num_embeddings": "0.0.12"
+  },
+  "caveat": "Previously inspected outer; exploration. No guarantee of RMSE 450."
+}

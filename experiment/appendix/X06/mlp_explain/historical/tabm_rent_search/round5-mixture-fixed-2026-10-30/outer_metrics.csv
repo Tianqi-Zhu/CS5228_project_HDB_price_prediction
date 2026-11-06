@@ -1,0 +1,2 @@
+model,epochs,inner_rmse,n_fit,n_validation,rmse_sgd,mae_sgd,bias_sgd
+three_experts_05,6,539.6660068878203,114842,35158,467.65111584987756,340.7552957225018,4.112595388307337

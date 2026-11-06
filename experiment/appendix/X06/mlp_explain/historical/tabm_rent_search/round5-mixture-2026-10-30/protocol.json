@@ -1,0 +1,51 @@
+{
+  "specifications": [
+    {
+      "encoding": "quantile",
+      "k": 16,
+      "width": 128,
+      "blocks": 2,
+      "lr": 0.001,
+      "mixture": true,
+      "name": "three_experts_01",
+      "aux_weight": 0.1
+    },
+    {
+      "encoding": "quantile",
+      "k": 16,
+      "width": 128,
+      "blocks": 2,
+      "lr": 0.001,
+      "mixture": true,
+      "name": "three_experts_05",
+      "aux_weight": 0.5
+    },
+    {
+      "encoding": "quantile",
+      "k": 16,
+      "width": 128,
+      "blocks": 2,
+      "lr": 0.0005,
+      "mixture": true,
+      "name": "three_experts_slow",
+      "aux_weight": 0.1
+    }
+  ],
+  "seed": 42,
+  "fit": "2021-01..2024-03",
+  "inner_fit_end_exclusive": "2023-10",
+  "inner_tune_start": "2023-10",
+  "inner_tune_end_exclusive": "2024-04",
+  "outer": "2024-04..2025-03",
+  "scenario": "Fixed-origin historical features; no validation target history updates",
+  "implementation": "Official TabM backbone plus learned category embeddings; optional external numerical embeddings.",
+  "numerical_embedding": {
+    "version": "B",
+    "activation": false
+  },
+  "versions": {
+    "tabm": "0.0.3",
+    "rtdl_num_embeddings": "0.0.12"
+  },
+  "caveat": "Previously inspected outer; exploration. No guarantee of RMSE 450."
+}

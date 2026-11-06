@@ -1,0 +1,9 @@
+{
+  "normalized": true,
+  "floor_sgd": 100.0,
+  "quantiles": {
+    "90": 8.074858497600376,
+    "95": 10.141752164291438
+  },
+  "n_calibration": 9005
+}

@@ -1,0 +1,5 @@
+model,epochs,inner_rmse
+comparable_resnet,12,543.646934486326
+comparable_mlp,21,556.6402855115213
+comparable_wide,5,554.3385701853476
+comparable_recent,12,544.4259078850587

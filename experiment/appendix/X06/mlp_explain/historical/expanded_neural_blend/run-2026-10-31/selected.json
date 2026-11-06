@@ -1,0 +1,10 @@
+{
+  "weights": {
+    "incumbent": 0.6959954941713773,
+    "mixture": 5.421010862427523e-20,
+    "raw_time": 0.10962502790429199,
+    "per_sqm": 0.19437947792433075
+  },
+  "inner_rmse": 536.3461050468677,
+  "selection": "SLSQP nonnegative sum-one weights, normalized MSE plus .001 L2 shrinkage toward incumbent"
+}

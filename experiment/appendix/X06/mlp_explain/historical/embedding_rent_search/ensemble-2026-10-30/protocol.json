@@ -1,0 +1,50 @@
+{
+  "specifications": [
+    {
+      "history": true,
+      "quantile": true,
+      "architecture": "resnet",
+      "blocks": 3,
+      "start": "2021-01",
+      "width": 192,
+      "lr": 0.0005,
+      "aux_weight": 0.1,
+      "name": "seed_42",
+      "weight_decay": 0.005,
+      "seed": 42
+    },
+    {
+      "history": true,
+      "quantile": true,
+      "architecture": "resnet",
+      "blocks": 3,
+      "start": "2021-01",
+      "width": 192,
+      "lr": 0.0005,
+      "aux_weight": 0.1,
+      "name": "seed_43",
+      "weight_decay": 0.005,
+      "seed": 43
+    },
+    {
+      "history": true,
+      "quantile": true,
+      "architecture": "resnet",
+      "blocks": 3,
+      "start": "2021-01",
+      "width": 192,
+      "lr": 0.0005,
+      "aux_weight": 0.1,
+      "name": "seed_44",
+      "weight_decay": 0.005,
+      "seed": 44
+    }
+  ],
+  "inner_fit_end": "2023-09",
+  "inner_validation": "2023-10..2024-03",
+  "outer_validation": "2024-04..2025-03",
+  "seed": 42,
+  "target": 450,
+  "selection": "inner RMSE only",
+  "caveat": "Previously inspected outer; single-seed exploratory study. Histories frozen at origin; actual outer rents not features."
+}

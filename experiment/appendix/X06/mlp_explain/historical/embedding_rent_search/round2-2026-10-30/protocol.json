@@ -1,0 +1,85 @@
+{
+  "specifications": [
+    {
+      "history": true,
+      "architecture": "mlp",
+      "blocks": 3,
+      "start": "2021-01",
+      "width": 256,
+      "dropout": 0.15,
+      "weight_decay": 0.001,
+      "name": "wide_history_standard",
+      "quantile": false,
+      "lr": 0.0005
+    },
+    {
+      "history": true,
+      "architecture": "mlp",
+      "blocks": 3,
+      "start": "2021-01",
+      "width": 256,
+      "dropout": 0.15,
+      "weight_decay": 0.001,
+      "name": "wide_history_quantile",
+      "quantile": true,
+      "lr": 0.0005
+    },
+    {
+      "history": true,
+      "architecture": "mlp",
+      "blocks": 3,
+      "start": "2021-01",
+      "width": 256,
+      "dropout": 0.15,
+      "weight_decay": 0.001,
+      "name": "recency12_quantile",
+      "quantile": true,
+      "lr": 0.0005,
+      "half_life": 12
+    },
+    {
+      "history": true,
+      "architecture": "mlp",
+      "blocks": 3,
+      "start": "2021-01",
+      "width": 256,
+      "dropout": 0.15,
+      "weight_decay": 0.001,
+      "name": "recency6_standard",
+      "quantile": false,
+      "lr": 0.0003,
+      "half_life": 6
+    },
+    {
+      "history": true,
+      "architecture": "mlp",
+      "blocks": 3,
+      "start": "2023-01",
+      "width": 256,
+      "dropout": 0.15,
+      "weight_decay": 0.001,
+      "name": "recent2023",
+      "quantile": false,
+      "lr": 0.0005
+    },
+    {
+      "history": true,
+      "architecture": "mlp",
+      "blocks": 3,
+      "start": "2022-01",
+      "width": 256,
+      "dropout": 0.15,
+      "weight_decay": 0.001,
+      "name": "recent2022",
+      "quantile": false,
+      "lr": 0.0005
+    }
+  ],
+  "inner_fit_end": "2023-09",
+  "inner_validation": "2023-10..2024-03",
+  "outer_validation": "2024-04..2025-03",
+  "seed": 42,
+  "target": 450,
+  "selection": "inner RMSE only",
+  "caveat": "Previously inspected outer; single-seed exploratory study. Histories frozen at origin; actual outer rents not features."
+}

@@ -1,0 +1,11 @@
+{
+  "outer_source_ids_and_labels_verified": true,
+  "test_ids_and_months_verified": true,
+  "test_labels_absent": true,
+  "calibration_recomputed": true,
+  "n_outer": 35158,
+  "n_test": 50000,
+  "outer_rmse_recomputed": 465.34067396909956,
+  "source_unchanged": true,
+  "corrector_reload_verified": true
+}

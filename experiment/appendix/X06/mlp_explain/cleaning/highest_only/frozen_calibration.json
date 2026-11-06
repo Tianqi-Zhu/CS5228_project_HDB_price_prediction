@@ -1,0 +1,29 @@
+{
+  "mlp": {
+    "normalized": true,
+    "floor_sgd": 100.0,
+    "quantiles": {
+      "90": 8.4306174367329,
+      "95": 10.744588179195748
+    },
+    "n_calibration": 9005
+  },
+  "tabm": {
+    "normalized": true,
+    "floor_sgd": 100.0,
+    "quantiles": {
+      "90": 9.024520670572915,
+      "95": 11.71284912109375
+    },
+    "n_calibration": 9005
+  },
+  "hybrid": {
+    "normalized": true,
+    "floor_sgd": 100.0,
+    "quantiles": {
+      "90": 8.09153040339093,
+      "95": 10.568223172238563
+    },
+    "n_calibration": 9005
+  }
+}

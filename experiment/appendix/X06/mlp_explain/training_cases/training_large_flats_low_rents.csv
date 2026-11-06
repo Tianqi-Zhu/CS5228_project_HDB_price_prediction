@@ -1,0 +1,232 @@
+SOURCE_ROW,ORIGINAL_CSV_LINE,RENT_APPROVAL_DATE,TOWN,BLOCK,STREET,FLAT_TYPE,FLAT_MODEL,FLOOR_AREA_SQM,FURNISHED,LEASE_COMMENCE_DATE,FEE,MONTHLY_RENT
+103648,103650,2023-12,jurong west,853,Jurong West Street 81,4-room,model a,107,yes,1996,0,1300
+105381,105383,2023-12,punggol,205a,punggol field,5-room,improved,110,yes,2004,0,1250
+104736,104738,2023-12,sembawang,467,admiralty drive,executive,premium apartment,137,yes,2001,0,1200
+103654,103656,2023-12,tampines,286,tampines street 22,4-room,model a,103,yes,1984,0,1200
+103227,103229,2023-12,bishan,138,bishan street 12,5-room,improved,119,yes,1987,0,1200
+105395,105397,2023-12,hougang,975,hougang street 91,executive,apartment,137,yes,1999,0,1150
+104413,104415,2023-12,yishun,317b,yishun avenue 9,4-room,model a,92,yes,2015,0,1100
+105393,105395,2023-12,bedok,62,new upper changi road,4-room,new generation,92,yes,1978,0,1000
+103592,103594,2023-12,bukit panjang,629,senja road,4-room,premium apartment,90,yes,2004,0,900
+104414,104416,2023-12,jurong west,656a,jurong west street 61,5-room,improved,111,yes,2002,0,750
+105612,105614,2023-12,jurong west,664d,jurong west street 64,4-room,model a,90,yes,2000,0,700
+101929,101931,2023-11,punggol,256a,Sumang Walk,4-room,model a,93,yes,2016,0,1300
+101811,101813,2023-11,hougang,567,Hougang Street 51,5-room,improved,118,yes,1997,0,1200
+100177,100179,2023-11,tampines,503,tampines central 1,4-room,model a,105,yes,1990,0,1200
+101221,101223,2023-11,yishun,296,yishun street 20,4-room,model a,91,yes,2000,0,1000
+101133,101135,2023-11,bedok,105,bedok reservoir road,4-room,new generation,91,yes,1985,0,850
+102409,102411,2023-11,ang mo kio,310a,ang mo kio avenue 1,5-room,improved,119,yes,2012,0,760
+102704,102706,2023-11,hougang,830,hougang central,4-room,model a,111,yes,1992,0,750
+102591,102593,2023-11,bukit merah,25,telok blangah crescent,5-room,standard,114,yes,1975,0,600
+101669,101671,2023-11,bedok,524,Bedok North Street 3,4-room,new generation,92,yes,1979,0,580
+97182,97184,2023-10,bukit panjang,476,segar road,5-room,premium apartment,110,yes,2002,0,1250
+98745,98747,2023-10,jurong east,316,jurong east street 32,4-room,model a,105,yes,1984,0,800
+97018,97020,2023-10,jurong west,276b,jurong west avenue 3,5-room,improved,111,yes,2002,0,700
+97916,97918,2023-10,bukit panjang,259,Bukit Panjang Ring Road,5-room,improved,123,yes,1989,0,680
+99880,99882,2023-10,geylang,99,aljunied crescent,4-room,new generation,92,yes,1978,0,600
+95795,95797,2023-09,kallang/whampoa,54,Geylang Bahru,5-room,standard,117,yes,1974,0,1300
+95600,95602,2023-09,yishun,662,yishun avenue 4,4-room,model a,104,yes,1987,0,1200
+96688,96690,2023-09,hougang,452,hougang avenue 10,4-room,model a,110,yes,1992,0,1000
+95475,95477,2023-09,punggol,196c,punggol field,5-room,improved,112,yes,2003,0,1000
+94437,94439,2023-09,toa payoh,12,joo seng road,4-room,model a,113,yes,1984,0,900
+96168,96170,2023-09,kallang/whampoa,56,geylang bahru,5-room,standard,120,yes,1974,0,700
+94298,94300,2023-09,bukit timah,5,toh yi drive,4-room,model a,104,yes,1989,0,700
+91626,91628,2023-08,woodlands,762,woodlands avenue 6,4-room,model a,103,yes,1998,0,1250
+93256,93258,2023-08,bukit batok,210,bukit batok street 21,4-room,model a,112,yes,1985,0,1200
+93218,93220,2023-08,ang mo kio,558,ang mo kio avenue 10,4-room,new generation,92,yes,1980,0,1200
+93096,93098,2023-08,yishun,765,yishun street 72,4-room,simplified,90,yes,1985,0,1200
+91873,91875,2023-08,bishan,210,bishan street 23,4-room,model a,103,yes,1992,0,1200
+91938,91940,2023-08,choa chu kang,526,choa chu kang street 51,executive,apartment,142,yes,1995,0,1175
+93204,93206,2023-08,bedok,121,bedok reservoir road,4-room,new generation,93,yes,1985,0,1000
+92715,92717,2023-08,hougang,302,hougang avenue 5,5-room,model a,134,yes,1983,0,1000
+92344,92346,2023-08,jurong west,649a,jurong west street 61,5-room,improved,110,yes,2000,0,1000
+91421,91423,2023-08,sengkang,334c,anchorvale crescent,4-room,premium apartment,92,yes,2015,0,900
+92624,92626,2023-08,hougang,991b,buangkok link,4-room,model a,93,yes,2019,0,800
+92523,92525,2023-08,punggol,227b,sumang lane,4-room,premium apartment,93,yes,2018,0,600
+90085,90087,2023-07,punggol,637a,punggol drive,4-room,premium apartment,92,yes,2005,0,1300
+88411,88413,2023-07,choa chu kang,15,teck whye lane,4-room,new generation,92,yes,1979,0,1300
+88981,88983,2023-07,choa chu kang,666,Choa Chu Kang Crescent,5-room,improved,124,yes,1999,0,1200
+88917,88919,2023-07,yishun,653,yishun avenue 4,4-room,model a,104,yes,1987,0,1100
+88350,88352,2023-07,choa chu kang,512,Choa Chu Kang Street 51,5-room,model a,134,yes,1994,0,1100
+90623,90625,2023-07,punggol,160b,punggol central,5-room,premium apartment,114,yes,2004,0,1000
+90293,90295,2023-07,pasir ris,232,pasir ris drive 4,5-room,improved,127,yes,1993,0,1000
+89079,89081,2023-07,toa payoh,118,potong pasir avenue 1,4-room,new generation,97,yes,1984,0,800
+89258,89260,2023-07,jurong west,276b,jurong west avenue 3,5-room,improved,111,yes,2002,0,700
+85516,85518,2023-06,bedok,422,bedok north road,4-room,new generation,92,yes,1979,0,1300
+85257,85259,2023-06,jurong west,683c,Jurong West Street 64,5-room,premium apartment,111,yes,2000,0,1300
+86913,86915,2023-06,punggol,646,punggol central,5-room,premium apartment,110,yes,2005,0,1200
+87510,87512,2023-06,yishun,318c,yishun avenue 9,4-room,model a,92,yes,2015,0,1100
+87887,87889,2023-06,hougang,980d,buangkok crescent,5-room,improved,110,yes,2003,0,1000
+87514,87516,2023-06,ang mo kio,105,Ang Mo Kio Avenue 4,4-room,new generation,92,yes,1978,0,1000
+86715,86717,2023-06,pasir ris,483,pasir ris drive 4,5-room,improved,122,yes,1989,0,750
+85504,85506,2023-06,clementi,350,Clementi Avenue 2,4-room,new generation,92,yes,1978,0,600
+83680,83682,2023-05,sembawang,492,admiralty link,4-room,model a,90,yes,2004,0,1000
+83583,83585,2023-05,jurong west,275d,Jurong West Street 25,5-room,improved,111,yes,2002,0,1000
+83192,83194,2023-05,jurong west,966,jurong west street 93,5-room,improved,123,yes,1989,0,1000
+82721,82723,2023-05,pasir ris,132,pasir ris street 11,executive,apartment,149,yes,1994,0,1000
+84520,84522,2023-05,woodlands,547,woodlands drive 16,4-room,model a,101,yes,2000,0,800
+83840,83842,2023-05,tampines,497h,tampines street 45,5-room,premium apartment,130,yes,1996,0,600
+81859,81861,2023-04,woodlands,659,Woodlands Ring Road,4-room,model a,101,yes,1998,0,1300
+80356,80358,2023-04,woodlands,753,Woodlands Circle,4-room,model a,103,yes,1997,0,1200
+81744,81746,2023-04,bukit merah,6b,Boon Tiong Road,4-room,model a,100,yes,2005,0,1000
+80318,80320,2023-04,bukit panjang,610,senja road,5-room,improved,110,yes,2002,0,1000
+79249,79251,2023-04,bedok,107,bedok north road,4-room,new generation,91,yes,1977,0,1000
+79241,79243,2023-04,woodlands,552,woodlands drive 44,5-room,improved,115,yes,2000,0,933
+80280,80282,2023-04,bishan,149,bishan street 11,5-room,improved,122,yes,1987,0,900
+78996,78998,2023-04,pasir ris,415,pasir ris drive 6,5-room,improved,122,yes,1990,0,800
+80577,80579,2023-04,woodlands,627,woodlands avenue 6,4-room,model a2,90,yes,1998,0,750
+78581,78583,2023-03,bukit merah,8,cantonment close,4-room,model a,90,yes,2002,0,1200
+77969,77971,2023-03,woodlands,606,Woodlands Ring Road,5-room,improved,121,yes,1998,0,1200
+77551,77553,2023-03,pasir ris,187,Pasir Ris Street 11,5-room,model a,140,yes,1993,0,1200
+76882,76884,2023-03,woodlands,331,woodlands avenue 1,4-room,model a,103,yes,1994,0,1200
+78089,78091,2023-03,choa chu kang,248,choa chu kang avenue 2,5-room,improved,123,yes,1993,0,1000
+76889,76891,2023-03,hougang,154,hougang street 11,4-room,new generation,93,yes,1984,0,1000
+76435,76437,2023-03,sengkang,127,Rivervale Street,4-room,model a,100,yes,1999,0,950
+76238,76240,2023-03,bukit batok,118,bukit batok west avenue 6,4-room,model a,103,yes,1984,0,900
+76094,76096,2023-03,woodlands,703,woodlands drive 40,4-room,model a,101,yes,1996,0,800
+76703,76705,2023-03,choa chu kang,406,Choa Chu Kang Avenue 3,4-room,model a,123,yes,1993,0,750
+76261,76263,2023-03,jurong west,200,boon lay drive,5-room,standard,112,yes,1976,0,600
+75398,75400,2023-02,hougang,673,hougang avenue 8,4-room,model a,104,yes,1986,0,1200
+74550,74552,2023-02,bukit panjang,176,lompang road,4-room,model a,101,yes,1997,0,1200
+73744,73746,2023-02,jurong west,648b,Jurong West Street 61,4-room,model a,91,yes,2001,0,1200
+73140,73142,2023-02,yishun,242,Yishun Ring Road,5-room,model a,134,yes,1986,0,1200
+74639,74641,2023-02,bedok,763,bedok reservoir view,4-room,premium apartment,105,yes,2000,0,1000
+71931,71933,2023-01,bukit timah,13,toh yi drive,5-room,improved,122,yes,1988,0,1300
+72034,72036,2023-01,hougang,575,Hougang Street 51,5-room,improved,118,yes,1997,0,1000
+71485,71487,2023-01,jurong east,332,jurong east avenue 1,4-room,model a,106,yes,1985,0,850
+70072,70074,2022-12,tampines,870,tampines street 83,4-room,model a,104,yes,1989,0,1300
+69879,69881,2022-12,punggol,256a,sumang walk,4-room,model a,93,yes,2016,0,1300
+68243,68245,2022-12,punggol,306a,punggol place,4-room,premium apartment,96,yes,2012,0,1300
+68600,68602,2022-12,tampines,107,tampines street 11,4-room,model a,115,yes,1984,0,1200
+68194,68196,2022-12,clementi,375,clementi avenue 4,4-room,new generation,91,yes,1980,0,1100
+67562,67564,2022-12,clementi,609,clementi west street 1,4-room,new generation,92,yes,1979,0,1100
+68988,68990,2022-12,bukit batok,288e,bukit batok street 25,4-room,model a,101,yes,1998,0,1050
+69036,69038,2022-12,sengkang,215b,compassvale drive,4-room,premium apartment,92,yes,2017,0,900
+69153,69155,2022-12,hougang,230,Hougang Avenue 1,4-room,model a,109,yes,1984,0,750
+67984,67986,2022-12,ang mo kio,421,ang mo kio avenue 10,4-room,new generation,99,yes,1979,0,700
+69423,69425,2022-12,hougang,830,Hougang Central,4-room,model a,111,yes,1992,0,600
+66431,66433,2022-11,yishun,677c,yishun ring road,5-room,improved,113,yes,2018,0,1300
+66455,66457,2022-11,yishun,346,Yishun Avenue 11,5-room,improved,122,yes,1988,0,1200
+66200,66202,2022-11,jurong west,920,Jurong West Street 92,5-room,improved,122,yes,1989,0,1200
+66998,67000,2022-11,hougang,473a,upper serangoon crescent,4-room,model a,93,yes,2017,0,1000
+66333,66335,2022-11,bukit timah,17,toh yi drive,4-room,model a,104,yes,1988,0,1000
+66007,66009,2022-11,clementi,605,clementi west street 1,5-room,improved,119,yes,1979,0,950
+65259,65261,2022-11,yishun,653,yishun avenue 4,4-room,model a,104,yes,1987,0,950
+67003,67005,2022-11,hougang,580,hougang avenue 4,5-room,improved,119,yes,1997,0,900
+67343,67345,2022-11,jurong west,166a,yung kuang road,4-room,model a,93,yes,2018,0,800
+66850,66852,2022-11,woodlands,682b,woodlands drive 62,4-room,premium apartment,105,yes,2000,0,800
+65226,65228,2022-11,sengkang,150,rivervale crescent,4-room,model a,90,yes,2005,0,600
+62834,62836,2022-10,sengkang,290b,compassvale crescent,4-room,model a,90,yes,2001,0,1200
+64713,64715,2022-10,jurong west,334,kang ching road,executive,apartment,139,yes,1997,0,1000
+64164,64166,2022-10,bukit batok,392,bukit batok west avenue 5,4-room,model a,92,yes,2004,0,1000
+64558,64560,2022-10,yishun,805,yishun ring road,4-room,model a,103,yes,1987,0,950
+64755,64757,2022-10,bishan,146,bishan street 11,5-room,improved,122,yes,1987,0,600
+62414,62416,2022-09,woodlands,683d,woodlands drive 62,5-room,premium apartment,119,yes,2000,0,1200
+60782,60784,2022-09,choa chu kang,157,jalan teck whye,4-room,model a2,100,yes,1998,0,1200
+60718,60720,2022-09,ang mo kio,429,ang mo kio avenue 3,4-room,new generation,92,yes,1978,0,1200
+61007,61009,2022-09,jurong west,463,jurong west street 41,4-room,new generation,94,yes,1985,0,1000
+61270,61272,2022-09,bukit batok,118,bukit batok west avenue 6,4-room,model a,103,yes,1984,0,900
+62049,62051,2022-09,woodlands,849,woodlands street 82,executive,apartment,176,yes,1995,0,750
+60614,60616,2022-09,clementi,612,clementi west street 1,4-room,model a,104,yes,1983,0,750
+60405,60407,2022-09,bukit merah,6a,boon tiong road,4-room,model a,100,yes,2005,0,750
+61898,61900,2022-09,bishan,293,bishan street 22,4-room,premium apartment,103,yes,1998,0,600
+61253,61255,2022-09,ang mo kio,423,ang mo kio avenue 3,4-room,model a,109,yes,1993,0,600
+60263,60265,2022-09,geylang,99,aljunied crescent,4-room,new generation,92,yes,1978,0,600
+59827,59829,2022-08,choa chu kang,552,choa chu kang street 52,4-room,model a,105,yes,1994,0,1300
+58347,58349,2022-08,choa chu kang,489c,choa chu kang avenue 5,4-room,model a,93,yes,2016,0,1300
+54596,54598,2022-06,jurong west,675a,Jurong West Street 64,4-room,premium apartment,91,yes,2008,0,1300
+53955,53957,2022-06,hougang,549,hougang street 51,4-room,model a,103,yes,1992,0,1300
+53302,53304,2022-06,woodlands,682c,Woodlands Drive 73,4-room,premium apartment,105,yes,2000,0,1300
+52864,52866,2022-06,sengkang,114,rivervale walk,4-room,model a,103,yes,1998,0,1220
+53918,53920,2022-06,sengkang,228b,compassvale walk,4-room,model a,102,yes,1999,0,1200
+52790,52792,2022-06,choa chu kang,691b,choa chu kang crescent,4-room,model a,90,yes,2003,0,1200
+52733,52735,2022-06,geylang,415,eunos road 5,4-room,model a,107,yes,1984,0,1150
+54635,54637,2022-06,bukit merah,59,telok blangah heights,4-room,new generation,92,yes,1976,0,1100
+52838,52840,2022-06,woodlands,896c,woodlands drive 50,4-room,model a,99,yes,1997,0,1050
+52243,52245,2022-05,punggol,624a,punggol central,4-room,model a,95,yes,2014,0,1300
+51591,51593,2022-05,serangoon,230,serangoon avenue 4,4-room,new generation,99,yes,1985,0,1300
+51724,51726,2022-05,bedok,121,bedok north road,4-room,new generation,92,yes,1978,0,1200
+51575,51577,2022-05,punggol,114,edgefield plains,4-room,premium apartment,95,yes,2003,0,1200
+50041,50043,2022-05,bedok,762,Bedok Reservoir View,4-room,premium apartment,105,yes,2000,0,1150
+49588,49590,2022-05,jurong west,618,jurong west street 65,4-room,model a,91,yes,2000,0,1000
+46423,46425,2022-03,woodlands,510,woodlands drive 14,executive,premium apartment,147,yes,1999,0,1200
+42665,42667,2022-02,choa chu kang,443,Choa Chu Kang Avenue 4,4-room,model a2,91,yes,1997,0,1300
+41622,41624,2022-02,sengkang,188d,rivervale drive,5-room,improved,115,yes,2000,0,1300
+43489,43491,2022-02,choa chu kang,476c,choa chu kang avenue 5,4-room,model a,92,yes,2013,0,1200
+36993,36995,2021-12,hougang,409,hougang avenue 10,4 room,new generation,98,yes,1985,0,1300
+36736,36738,2021-12,bukit panjang,148,gangsa road,4 room,model a,103,yes,1988,0,1300
+35893,35895,2021-12,choa chu kang,141,teck whye lane,4 room,model a,103,yes,1989,0,1300
+35724,35726,2021-12,hougang,970,hougang street 91,4 room,model a,101,yes,1999,0,1300
+35918,35920,2021-12,woodlands,12c,Marsiling Lane,4 room,model a,93,yes,2013,0,1250
+36424,36426,2021-12,serangoon,142,serangoon north avenue 1,executive,maisonette,146,yes,1986,0,1200
+36081,36083,2021-12,woodlands,667,woodlands ring road,4 room,model a,91,yes,2001,0,1200
+35514,35516,2021-12,jurong east,261,jurong east street 24,4 room,new generation,93,yes,1983,0,1200
+35031,35033,2021-12,woodlands,122,Marsiling Rise,executive,apartment,170,yes,1995,0,1200
+35004,35006,2021-12,woodlands,739,Woodlands Circle,4 room,model a2,91,yes,1997,0,1200
+34987,34989,2021-12,tampines,879b,tampines avenue 8,4 room,model a,93,yes,2017,0,1200
+33168,33170,2021-11,punggol,256a,sumang walk,4 room,model a,93,yes,2016,0,1300
+31783,31785,2021-11,bukit panjang,437,fajar road,4 room,model a,100,yes,1997,0,1300
+32924,32926,2021-11,serangoon,307,serangoon avenue 2,4 room,new generation,91,yes,1985,0,1200
+32053,32055,2021-11,choa chu kang,113,teck whye lane,4 room,model a,104,yes,1989,0,1200
+33099,33101,2021-11,jurong west,334,kang ching road,executive,apartment,139,yes,1997,0,1000
+31141,31143,2021-10,hougang,567,hougang street 51,5 room,improved,118,yes,1997,0,1200
+27870,27872,2021-09,yishun,426c,yishun avenue 11,4 room,model a,92,yes,2015,0,1300
+26510,26512,2021-09,bukit panjang,603,Senja Road,4 room,model a,99,yes,1999,0,1300
+28391,28393,2021-09,hougang,18,hougang avenue 3,4 room,new generation,92,yes,1978,0,1200
+27108,27110,2021-09,jurong west,153,yung ho road,4 room,model a,103,yes,1990,0,1200
+26930,26932,2021-09,choa chu kang,805a,keat hong close,4 room,model a,93,yes,2017,0,1200
+26695,26697,2021-09,ang mo kio,173,ang mo kio avenue 4,4 room,new generation,92,yes,1982,0,1200
+26493,26495,2021-09,bukit batok,210,bukit batok street 21,4 room,model a,112,yes,1985,0,1200
+26152,26154,2021-09,ang mo kio,134,ang mo kio avenue 3,4 room,new generation,98,yes,1978,0,1200
+25804,25806,2021-09,sengkang,114,rivervale walk,4 room,model a,103,yes,1998,0,1200
+28027,28029,2021-09,jurong west,410,jurong west street 42,executive,maisonette,156,yes,1985,0,1000
+22938,22940,2021-08,yishun,513d,Yishun Street 51,5 room,improved,113,yes,2018,0,1300
+23474,23476,2021-08,woodlands,896a,woodlands drive 50,4 room,model a,99,yes,1997,0,1200
+23132,23134,2021-08,pasir ris,569,pasir ris street 51,4 room,model a,104,yes,1992,0,1140
+23272,23274,2021-08,bukit timah,5,Toh Yi Drive,4 room,model a,104,yes,1989,0,1100
+20915,20917,2021-07,choa chu kang,476d,choa chu kang avenue 5,4 room,model a,92,yes,2013,0,1300
+20611,20613,2021-07,sembawang,354b,admiralty drive,5 room,improved,110,yes,2001,0,1300
+20802,20804,2021-07,jurong west,851,jurong west street 81,4 room,model a,108,yes,1996,0,1200
+20516,20518,2021-07,yishun,336a,yishun street 31,4 room,model a,92,yes,2015,0,1200
+19328,19330,2021-07,sembawang,501a,wellington circle,4 room,model a,91,yes,2001,0,1200
+20059,20061,2021-07,bukit batok,388,bukit batok west avenue 5,5 room,improved,110,yes,2005,0,1000
+18444,18446,2021-06,punggol,637c,punggol drive,4 room,premium apartment,91,yes,2005,0,1300
+17852,17854,2021-06,bedok,422,bedok north road,4 room,new generation,92,yes,1979,0,1300
+16151,16153,2021-06,jurong east,110,Jurong East Street 13,4 room,new generation,94,yes,1982,0,1300
+18708,18710,2021-06,choa chu kang,691a,choa chu kang crescent,4 room,model a,91,yes,2003,0,1250
+18317,18319,2021-06,woodlands,307,Woodlands Avenue 1,executive,apartment,176,yes,1994,0,1250
+19041,19043,2021-06,sengkang,470c,fernvale link,4 room,model a,93,yes,2016,0,1200
+18514,18516,2021-06,yishun,505b,yishun street 51,4 room,model a,92,yes,2016,0,1200
+16915,16917,2021-06,yishun,506c,yishun avenue 4,4 room,model a,93,yes,2018,0,1200
+16599,16601,2021-06,jurong west,268b,boon lay drive,4 room,model a,90,yes,2002,0,1200
+11837,11839,2021-04,bedok,10f,Bedok South Avenue 2,executive,apartment,142,yes,1993,0,1300
+11679,11681,2021-04,woodlands,29,Marsiling Drive,4 room,new generation,98,yes,1979,0,1250
+12446,12448,2021-04,yishun,115b,Yishun Ring Road,5 room,improved,111,yes,2001,0,1200
+11775,11777,2021-04,ang mo kio,231,ang mo kio avenue 3,4 room,new generation,92,yes,1977,0,1200
+11084,11086,2021-04,sengkang,120b,Rivervale Drive,5 room,premium apartment,121,yes,2001,0,1200
+10264,10266,2021-04,punggol,661a,edgedale plains,4 room,premium apartment,92,yes,2017,0,1068
+8893,8895,2021-03,bukit panjang,486,Segar Road,4 room,model a,93,yes,2014,0,1300
+8043,8045,2021-03,tampines,710,Tampines Street 71,4 room,model a,100,yes,1997,0,1300
+8336,8338,2021-03,woodlands,780c,woodlands crescent,4 room,model a,92,yes,2015,0,1250
+7728,7730,2021-03,choa chu kang,297,choa chu kang avenue 2,4 room,premium apartment,101,yes,1999,0,1250
+5813,5815,2021-03,tampines,487b,tampines street 45,4 room,model a,105,yes,1989,0,1250
+9061,9063,2021-03,hougang,673,hougang avenue 8,4 room,model a,104,yes,1986,0,1200
+8916,8918,2021-03,tampines,916,tampines street 91,4 room,model a,104,yes,1984,0,1200
+7577,7579,2021-03,ang mo kio,134,ang mo kio avenue 3,4 room,new generation,98,yes,1978,0,1200
+7331,7333,2021-03,sengkang,332c,anchorvale link,4 room,model a,92,yes,2015,0,1200
+7328,7330,2021-03,woodlands,331,woodlands avenue 1,4 room,model a,103,yes,1994,0,1200
+6101,6103,2021-03,woodlands,782c,woodlands crescent,4 room,model a,92,yes,2015,0,1200
+4375,4377,2021-02,sengkang,149,rivervale crescent,4 room,model a,100,yes,1999,0,1250
+4910,4912,2021-02,sembawang,501a,wellington circle,4 room,model a,91,yes,2001,0,1200
+3519,3521,2021-02,woodlands,524,woodlands drive 14,executive,premium apartment,141,yes,2000,0,1200
+3306,3308,2021-02,yishun,364,yishun ring road,executive,maisonette,145,yes,1988,0,1200
+5493,5495,2021-02,bedok,763,bedok reservoir view,4 room,premium apartment,105,yes,2000,0,1000
+4613,4615,2021-02,jurong west,854,jurong west street 81,4 room,model a,107,yes,1996,0,1000
+3096,3098,2021-01,sengkang,260d,sengkang east way,4 room,model a,90,yes,2001,0,1300
+1264,1266,2021-01,choa chu kang,435,choa chu kang avenue 4,4 room,model a,104,yes,1993,0,1250
+1361,1363,2021-01,jurong west,463,jurong west street 41,4 room,new generation,94,yes,1985,0,1200
+661,663,2021-01,serangoon,539,Serangoon North Avenue 4,executive,maisonette,147,yes,1992,0,1200
+405,407,2021-01,sengkang,164a,rivervale crescent,4 room,model a,93,yes,2017,0,1200
+274,276,2021-01,punggol,635a,punggol drive,4 room,premium apartment,91,yes,2007,0,1200
+181,183,2021-01,jurong west,441,Jurong West Avenue 1,4 room,model a,104,yes,1984,0,1200
+2881,2883,2021-01,woodlands,629,woodlands ring road,4 room,model a,100,yes,1998,0,1190

@@ -1,0 +1,8 @@
+{
+  "outer_rows": 35158,
+  "calibration_rows": 9005,
+  "raw_sources_unchanged": true,
+  "query_targets_removed_before_inference": true,
+  "outer_ids_match_source": true,
+  "test_labels_available": false
+}

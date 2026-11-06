@@ -1,0 +1,2 @@
+model,n_validation,rmse_sgd,mae_sgd,bias_sgd
+constrained_neural_family_blend,35158,464.2120658135066,336.9396232128917,14.733807849534326

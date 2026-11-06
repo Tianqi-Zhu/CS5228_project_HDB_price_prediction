@@ -1,0 +1,5 @@
+model,epochs,inner_rmse
+periodic_01,5,538.6567304710551
+periodic_1,6,540.5755001749119
+periodic_lite,4,539.7489717936712
+periodic_per_sqm,8,540.8303105392448

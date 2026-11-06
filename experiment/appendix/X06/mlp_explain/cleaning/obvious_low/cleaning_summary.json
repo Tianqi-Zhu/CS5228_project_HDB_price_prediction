@@ -1,0 +1,11 @@
+{
+  "policy": "obvious_low",
+  "n_before": 105837,
+  "n_removed": 1332,
+  "n_retained": 104505,
+  "removed_fraction": 0.012585390742367981,
+  "large_low_flag": 231,
+  "local_low_flag": 451,
+  "comparable_low_flag": 907,
+  "hypothesis_not_verified_rental_scope": true
+}

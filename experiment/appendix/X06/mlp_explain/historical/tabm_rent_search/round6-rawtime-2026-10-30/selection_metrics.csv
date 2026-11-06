@@ -1,0 +1,4 @@
+model,epochs,inner_rmse
+raw_time_piecewise,2,543.4995191360174
+raw_time_adjusted,8,541.389769286379
+raw_time_per_sqm,12,543.3331317467765

@@ -1,0 +1,2 @@
+model,n_fit,n_validation,rmse_sgd,mae_sgd,bias_sgd
+equal_weight_three_seed_ensemble,114842,35158,471.94245878592096,346.0289264976032,-7.55520424511091

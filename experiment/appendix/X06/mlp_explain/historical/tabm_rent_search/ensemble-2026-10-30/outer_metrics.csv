@@ -1,0 +1,2 @@
+model,n_fit,n_validation,rmse_sgd,mae_sgd,bias_sgd
+equal_three_seed_tabm,114842,35158,467.5421149011705,336.2292616781409,41.41829489348753

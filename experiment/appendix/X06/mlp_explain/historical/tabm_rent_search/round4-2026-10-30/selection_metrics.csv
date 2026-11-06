@@ -1,0 +1,5 @@
+model,epochs,inner_rmse
+per_sqm,5,540.7234673327941
+market_ratio,8,542.7696782578317
+per_sqm_slow,11,539.7949940815317
+market_ratio_adjusted,2,545.0461130862557

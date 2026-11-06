@@ -1,0 +1,5 @@
+{
+  "model": "three_experts_05",
+  "epochs": 6,
+  "inner_rmse": 539.6660068878203
+}

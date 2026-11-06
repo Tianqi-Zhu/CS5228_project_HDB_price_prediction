@@ -1,0 +1,34 @@
+{
+  "seed": 42,
+  "features": "same 29 spatial features, optionally 3 latent coordinates",
+  "training_filter": "no IQR filter, identical rows to previous tree comparison",
+  "inner_fit": "2022-01..2023-09",
+  "epoch_selection": "2023-10..2024-03",
+  "outer_fit": "2022-01..2024-03",
+  "outer_validation": "2024-04..2025-03",
+  "architectures": {
+    "six": [
+      128,
+      128,
+      128,
+      64,
+      64,
+      32
+    ],
+    "eight": [
+      128,
+      128,
+      128,
+      128,
+      64,
+      64,
+      32,
+      16
+    ]
+  },
+  "max_epochs": 60,
+  "patience": 8,
+  "min_improvement_sgd": 0.1,
+  "raw_train_sha256": "6d7a417de72112361f8353659ba6fe44a442b07465b488aff1b03f7ec1ea3ba6",
+  "caveat": "Previously reused outer period; exploratory one-seed depth ablation. Monthly-updated latent inputs."
+}

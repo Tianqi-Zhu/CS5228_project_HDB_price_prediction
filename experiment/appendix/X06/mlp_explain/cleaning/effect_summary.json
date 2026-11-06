@@ -1,0 +1,16 @@
+[
+  {
+    "policy": "obvious_low",
+    "fraction_records_smaller_absolute_error": 0.5507708060754309,
+    "fraction_records_larger_absolute_error": 0.4492291939245691,
+    "mean_absolute_error_change": -6.657969116433309,
+    "rmse_change": 1.7593960816081449
+  },
+  {
+    "policy": "highest_only",
+    "fraction_records_smaller_absolute_error": 0.5279879401558678,
+    "fraction_records_larger_absolute_error": 0.4720120598441322,
+    "mean_absolute_error_change": -4.567471864051458,
+    "rmse_change": 9.217697440668417
+  }
+]

@@ -1,0 +1,5 @@
+model,epochs,inner_rmse
+distribution_raw,6,539.7141498426791
+distribution_adjusted,4,539.1542920531713
+distribution_slow,6,539.0194811336837
+distribution_wide,4,539.2615926147496

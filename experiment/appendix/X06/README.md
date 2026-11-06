@@ -13,3 +13,7 @@
 ## Ziyuan concat exploration archive
 
 See [methods and evidence](concat_explorations/README.md) for the newly imported local experiments. This addition archives historical source/results; it does not mark every planned experiment complete.
+
+## MLP解释性实验
+
+[报告、逐行结果与运行入口](mlp_explain/README.md)：误差分组、相同输入、confidence、清洗、风险修正和历史深度实验。

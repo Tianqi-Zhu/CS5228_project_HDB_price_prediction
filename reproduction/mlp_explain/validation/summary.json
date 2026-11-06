@@ -1,0 +1,80 @@
+{
+  "training_performed": false,
+  "archive_verification": {
+    "manifest_files_verified": 273,
+    "validation": [
+      {
+        "path": "validation/best_point_blend_outer.csv",
+        "n": 35158,
+        "rmse_sgd": 464.21206581350623
+      },
+      {
+        "path": "validation/uncleaned_mlp_outer.csv",
+        "n": 35158,
+        "rmse_sgd": 471.80419980291157
+      },
+      {
+        "path": "validation/uncleaned_hybrid_outer.csv",
+        "n": 35158,
+        "rmse_sgd": 467.0319684853329
+      },
+      {
+        "path": "validation/obvious_low_mlp_outer.csv",
+        "n": 35158,
+        "rmse_sgd": 471.26089832600877
+      },
+      {
+        "path": "validation/risk_corrected_hybrid_outer.csv",
+        "n": 35158,
+        "rmse_sgd": 465.3406739690995
+      }
+    ],
+    "test": [
+      {
+        "path": "predictions/uncleaned_mlp_test_intervals.csv",
+        "n": 50000,
+        "id_order_and_intervals_verified": true
+      },
+      {
+        "path": "predictions/uncleaned_hybrid_test_intervals.csv",
+        "n": 50000,
+        "id_order_and_intervals_verified": true
+      },
+      {
+        "path": "predictions/obvious_low_mlp_test_intervals.csv",
+        "n": 50000,
+        "id_order_and_intervals_verified": true
+      },
+      {
+        "path": "predictions/obvious_low_hybrid_test_intervals.csv",
+        "n": 50000,
+        "id_order_and_intervals_verified": true
+      },
+      {
+        "path": "predictions/highest_only_hybrid_test_intervals.csv",
+        "n": 50000,
+        "id_order_and_intervals_verified": true
+      },
+      {
+        "path": "predictions/risk_corrected_hybrid_test_intervals.csv",
+        "n": 50000,
+        "id_order_and_intervals_verified": true
+      }
+    ],
+    "test_rmse": "unavailable: test labels are not supplied"
+  },
+  "uncleaned_hybrid": {
+    "n": 35158,
+    "rmse": 467.0319684853353,
+    "mae": 343.6607609361106,
+    "bias": -16.2609677192417,
+    "sse": 7668622865.369844,
+    "coverage90": 0.9279253654929177
+  },
+  "worst_5pct_sse_share": 0.41529927655122356,
+  "risk_corrected_large_errors": 1422,
+  "risk_corrected_large_errors_with_std_below_100": 1182,
+  "case_optimal_constant": 5000.0,
+  "case_minimum_rmse": 816.496580927726,
+  "limits": "Development-period, retrospective diagnostics. Case bound is local only. Encoded equality is inherited evidence; no checkpoints are replayed here. True-rent groups are unavailable at inference."
+}

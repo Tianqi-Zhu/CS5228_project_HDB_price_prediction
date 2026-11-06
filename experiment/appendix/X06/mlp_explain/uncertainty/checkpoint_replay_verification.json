@@ -1,0 +1,12 @@
+{
+  "mlp": {
+    "n_replayed": 100,
+    "max_difference_sgd": 4.547473508864641e-13,
+    "target_column_absent": true
+  },
+  "tabm": {
+    "n_replayed": 100,
+    "max_difference_sgd": 0.0,
+    "target_column_absent": true
+  }
+}

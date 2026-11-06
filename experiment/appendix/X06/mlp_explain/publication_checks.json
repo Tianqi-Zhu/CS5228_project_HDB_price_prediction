@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-05",
+  "related_unit_tests": 37,
+  "unit_tests_passed": true,
+  "published_holdout_files_recomputed": 5,
+  "published_test_prediction_files": 6,
+  "rows_per_test_file": 50000,
+  "local_document_links_verified": true,
+  "original_data_unmodified": true,
+  "test_loss_available": false,
+  "cli_import_fix": "Added missing pathlib.Path import to rental_distribution_history CLI; statistical feature function unchanged."
+}

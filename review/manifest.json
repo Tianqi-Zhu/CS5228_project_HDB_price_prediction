@@ -5,7 +5,8 @@
     "zch-complete-proj": "048eca867b6c9ad03a0a15f5a3de9f7432d3ba2f",
     "results/hdb-rental-final-ensemble": "6f97e107ed2db72347c3d7d1f85b63999b3fcbbb",
     "experiment/tabpfn": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
-    "experiment/tabpfn-anniversary-history": "1e69bb7995686d6a2bb7d502475e19ae72f081e3"
+    "experiment/tabpfn-anniversary-history": "1e69bb7995686d6a2bb7d502475e19ae72f081e3",
+    "mlp-eda-ensemble": "b3a6291fbfeb30ce7ff0d0495d9371d801ff8d1c"
   },
   "experiments": [
     {
@@ -16,8 +17,8 @@
     },
     {
       "id": "X02",
-      "status": "partial",
-      "purpose": "已继承ReLU/IQR；其他成员MLP不导入",
+      "status": "archived",
+      "purpose": "ReLU/IQR与MLP清洗、低价、相同输入冲突对照",
       "evidence_directory": "experiment/appendix/X02"
     },
     {
@@ -146,7 +147,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "7c174fb6c9cdcb01f88251efc465ada50f2891cc2dca649265dfd840ac7d6eb6"
+      "sha256": "f1dd97db60cc2aa59517d2877afbe4d96808c0a6b005cf52b1fbae12363dcfa7"
     },
     {
       "path": "analysis/README.md",
@@ -11642,7 +11643,7 @@
     },
     {
       "path": "experiment/appendix/X02/README.md",
-      "sha256": "a6c603371d3109c7f73b9c7d65d8692aaca0559b2b6d034b4fa0c17f7279960e"
+      "sha256": "2275bcb00b812a5781da983f3a98b5b55f7500d6667b638a4f5252e4690d085e"
     },
     {
       "path": "experiment/appendix/X02/relu_historical/README.md",
@@ -12574,7 +12575,7 @@
     },
     {
       "path": "experiment/appendix/X06/README.md",
-      "sha256": "c2bbeca543765e4835e6d8de72f3d37b721fbab9fac37caa18e336554643136f"
+      "sha256": "327e96359347b932b336331f639ed3db61a224f5593afd79ad32c62b9683b811"
     },
     {
       "path": "experiment/appendix/X06/baseline_deep_models/README.md",
@@ -12995,6 +12996,1114 @@
     {
       "path": "experiment/appendix/X06/features_economic_ablation/results.json",
       "sha256": "bc4d19706572b508b192b1355cbe9f31e84bd67f5e38b338f6577e1906568824"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/README.md",
+      "sha256": "bc85a5c2249b4b182041798fbf24f17e1e5334dcea3d1e6f4e097af1f8fd59d1"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/cleaning/checkpoint_replay_verification.json",
+      "sha256": "739ec55cdaa229a11fe6b90dcf691145794e402b3c93545e81af4170cd284070"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/cleaning/cleaning_summary.json",
+      "sha256": "1d0cd1c14ad47457fbab74ca94959e795ff54ec43d1aab8b2e4fbfbd4480e8c9"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/cleaning/comparison_metrics.csv",
+      "sha256": "720cb6728dd01eaa76adec7861caa4197b39071471eddec6b52d7ed4813fcce2"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/cleaning/effect_summary.json",
+      "sha256": "a3813807b88e2caa15282c99618767b92632475128e421dcd3da3a0cea074ab2"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/cleaning/highest_only/cleaning_summary.json",
+      "sha256": "91ddfec5e8497a751cd1fb7920fc98f21a37d713ba52278ee224dc6aa97be1c0"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/cleaning/highest_only/frozen_calibration.json",
+      "sha256": "6eebcf9b5c6b392102bf822f952186bd7d1c6a29d83e8dcedc366b19a180ada8"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/cleaning/highest_only/outer_case_comparison.csv",
+      "sha256": "acb04f75f688ff029138589b687fb772132654d3c57a44371e51ade6da9446b8"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/cleaning/highest_only/removed_training_rows.csv",
+      "sha256": "c0e8397b5a91f3b12d16c1d3109e97b42eec540f1bc887454418cf0cb016032b"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/cleaning/independent_cleaning_audit.json",
+      "sha256": "0cdf015e7a84da031ac04c54544f40505f4c735b9ee5f1b55cb90bb7dfae4d71"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/cleaning/independent_prediction_verification.json",
+      "sha256": "8fb804934e95e7d688852d79f357ffc2cd219b613bc5fdc83c7ed1ff11f5bc9a"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/cleaning/obvious_low/cleaning_summary.json",
+      "sha256": "da59c72f1d2ad37d340679573c956889ac269bce4264a55faaf2276d6239c317"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/cleaning/obvious_low/frozen_calibration.json",
+      "sha256": "a047306ea82d81a1006186952e2129d89fbe0c9a7b7662462bfec486320f43c2"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/cleaning/obvious_low/outer_case_comparison.csv",
+      "sha256": "6c9ccf876008053ca228d8dc28af7f67a4d475c427acacaa781d48958910bb00"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/cleaning/obvious_low/removed_training_rows.csv",
+      "sha256": "bffcaa9387f04c90ed8e2716bb5562d70aa6708ba24fb656d4db526ba02de130"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/cleaning/protocol.json",
+      "sha256": "45135a55d0da6dafd8a1cf0d577ac7f01baf8936fb921691797a5240e1d94611"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/cleaning/rent_band_metrics.csv",
+      "sha256": "8e7c5e5f1150fb58629d4a4c0de5ac15e550e7c9e2defd50e1c9dbaec36c8cb9"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/cleaning/verification.json",
+      "sha256": "d2cf2dcc1c8907319f89657722517d817049a4c54d760cd11f73716b9c3b9aa1"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/delivery.json",
+      "sha256": "384aa26380983804bd6dcc0ccdaf5b95ca493d44a7df687f8cc82be250325e48"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/eda/FLAT_MODEL_CLEAN_profile.csv",
+      "sha256": "4aa9c9d791f25275471e6ea873b073f69180a13f2aaa23232115a48c198ea1ed"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/eda/FLAT_TYPE_CLEAN_profile.csv",
+      "sha256": "ac3d7316256d11a2561f7d4d9b3d9e9f49c83dd5ce4d2f5a7e57d0fee3c659d3"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/eda/RENT_APPROVAL_DATE_profile.csv",
+      "sha256": "97620ea1fabc001a66e1763adc210b6c276e87f20f32bdc7fc7d8ad96ba609b8"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/eda/TOWN_profile.csv",
+      "sha256": "88ba82aa8a598476fbdd4613caeb7631efadec00d010c9b1a311cab843ddb6f1"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/eda/age_band_profile.csv",
+      "sha256": "8abe7e6620fccf2477bfe40e4da5e6609dfb4cfbc919bc010c8e4663486dba54"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/eda/area_band_profile.csv",
+      "sha256": "f69076dba387da2041e2a551a214efdd492a8abe22b19171bf5d7b179efdce68"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/eda/enriched_attribute_consistency.json",
+      "sha256": "7f12233b2a95c3c13947c2a9592cc9c40d09f2d853d00b91c19dce72af568085"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/eda/history_band_profile.csv",
+      "sha256": "7c4d244b23c749b155584bc5e2cc94bc0a51eaf31f387c12c8d2ab5df40aa2b1"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/eda/large_area_very_low_rent_by_year.csv",
+      "sha256": "ace1d9a7901d0ddf7b05f18d6c61624f7c4f85ea4b44ebe6698ebb18ea15b416"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/eda/largest_30_errors.csv",
+      "sha256": "ea64d084efe4dbcb9d359577682f704b7a631582c72999f7055cf225f7382029"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/eda/low_rent_source_case_context.csv",
+      "sha256": "f82b6feefc4a1276c6cb37c506411589ef22ebc10160ee701f3380df54569415"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/eda/official_low_rent_source_checks.json",
+      "sha256": "15a9779f129dcf2d2a85cc45758eae64ded69b40d566cbb16281f4bcfd14bb1a"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/eda/rent_band_profile.csv",
+      "sha256": "5fec8cdbcd154bee20dd1a50eb881f51a773786a859b9445f1a4aa5baacb2c8d"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/eda/summary.json",
+      "sha256": "058bd981b9a4cbfd65771207e19524ba5dc6d924dbca944d7d5aa38b39ecfbe8"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/embedding_rent_search/ensemble-2026-10-30/outer_metrics.csv",
+      "sha256": "1c9796d8cbba87c21014356fce1aa61e4ed35a8b0278670019249f3b42c91f97"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/embedding_rent_search/ensemble-2026-10-30/protocol.json",
+      "sha256": "1fb19799ab39407ac63851dbe06fae2c968509b217142a548262dd732f198c0d"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/embedding_rent_search/ensemble-2026-10-30/seed_42_epochs.csv",
+      "sha256": "fb954a2bf80e055a7c4bc779a135a74d959ccf114b2e3c140c9bf7813c4acf68"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/embedding_rent_search/ensemble-2026-10-30/seed_43_epochs.csv",
+      "sha256": "e55e6872d75c2324841f7d0ac687c18b113f0701493e14ccebcb418323a70390"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/embedding_rent_search/ensemble-2026-10-30/seed_44_epochs.csv",
+      "sha256": "5c4cccbcd64b2039c76a968d0d73355fa69389a59d0f5715152e2573d82491a2"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/embedding_rent_search/ensemble-2026-10-30/selection_metrics.csv",
+      "sha256": "b3be12ec88b9cd1876d4ce9f9c7250e8b003ced981888b091f2f3695fa38036e"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/embedding_rent_search/round2-2026-10-30/outer_metrics.csv",
+      "sha256": "6c2b60848243aff1b77456e0333d56d68bc7986fe568d9e3e81f69c1c5eb05eb"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/embedding_rent_search/round2-2026-10-30/protocol.json",
+      "sha256": "d08db5b68ccc62f8c419936118bbacf1274472e1a1fea9d754956ff1cca5f951"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/embedding_rent_search/round2-2026-10-30/recency12_quantile_epochs.csv",
+      "sha256": "51e286a94dc30806fc87b62a39e0ef0e485ae1b2be01efd6cdc77dba95c237d3"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/embedding_rent_search/round2-2026-10-30/recency6_standard_epochs.csv",
+      "sha256": "1db6f137ede75f3b4e48a297ffc4b22ee2eaf1a8cb8bf3230df118764f7969a2"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/embedding_rent_search/round2-2026-10-30/recent2022_epochs.csv",
+      "sha256": "806b29280348304fc3dd19585ed247cf4e2435128a9fe35f66d48365b298273d"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/embedding_rent_search/round2-2026-10-30/recent2023_epochs.csv",
+      "sha256": "5abd19ccba071bb49c6dbc26046268f2d2fd24383c88ae43cd6c0f09c8c15af1"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/embedding_rent_search/round2-2026-10-30/selected.json",
+      "sha256": "2ff4a00b627f6e86b42260e0dce0f2a54dcfeeb3fea887ef78e236503bc57237"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/embedding_rent_search/round2-2026-10-30/selection_metrics.csv",
+      "sha256": "3c3ba917af8da3ec7dc4816b6f8f18f214da8b7caa6b0cf72d5809c83ba77e73"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/embedding_rent_search/round2-2026-10-30/wide_history_quantile_epochs.csv",
+      "sha256": "f97bd464f59e72fd9c1c772c6b3e7211d00c46c1d09ce44a5b369d08fea68be1"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/embedding_rent_search/round2-2026-10-30/wide_history_standard_epochs.csv",
+      "sha256": "c23ba545a510014f13d57b1d286e82bc4d6d2952eac178533466c766284ba2cf"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/embedding_rent_search/round3-2026-10-30/aux_band_002_epochs.csv",
+      "sha256": "12d4754de1971d12f23c186ac1be14dcfe46212b35876c4ab6622505f53855f0"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/embedding_rent_search/round3-2026-10-30/aux_band_01_epochs.csv",
+      "sha256": "a8b99d8f9d7c8a0962aa0268b4bd1e256a66720c00464928c41772fc313ab6a4"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/embedding_rent_search/round3-2026-10-30/aux_band_05_epochs.csv",
+      "sha256": "812188eeecaa6d6e145a5547f50819a2df018967159de62cfde1110bd28fea69"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/embedding_rent_search/round3-2026-10-30/aux_resnet_01_epochs.csv",
+      "sha256": "f8563be2b6ab6d82d3619a023e4facca16421335fbe4381d3278b4397632dc17"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/embedding_rent_search/round3-2026-10-30/outer_metrics.csv",
+      "sha256": "5a37ca74840153e0503ea087b8543c96671f622429a80cedfbb0c29a8e1aebfe"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/embedding_rent_search/round3-2026-10-30/protocol.json",
+      "sha256": "3022d568ed16ceadde922266782d5890594d70820f93007ecbf98cb41eaa933c"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/embedding_rent_search/round3-2026-10-30/selected.json",
+      "sha256": "000a1c537b203e2e5235d612fb220abed9bd4861ae5eb1be7bb7b4c5f6499818"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/embedding_rent_search/round3-2026-10-30/selection_metrics.csv",
+      "sha256": "df56e3f36adee14c8483b22a3d5e19e7e751c86d2bae1dce4bf3c5de5de40878"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/embedding_rent_search/round4-2026-10-30/aux_resnet_recency_epochs.csv",
+      "sha256": "3b242ad913094f20a8ec6ef6a233e893da52127d35f54f1c6b5dab516af29235"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/embedding_rent_search/round4-2026-10-30/aux_resnet_regularized_epochs.csv",
+      "sha256": "53a6b8b98b7ee4dbfabd73a75cb7a1d5bd00f44f1998a67f70f08e3254f6cb9f"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/embedding_rent_search/round4-2026-10-30/aux_resnet_slow_epochs.csv",
+      "sha256": "35d6d81e8a2cacc6152a5f009a509a412b59018042a059f988fd36b86ee8bd54"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/embedding_rent_search/round4-2026-10-30/aux_resnet_strong_task_epochs.csv",
+      "sha256": "b4fc92b3625fba1862ed4b211a0b2080030fc714897f2088da56419e78496d04"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/embedding_rent_search/round4-2026-10-30/aux_resnet_wide_epochs.csv",
+      "sha256": "fb954a2bf80e055a7c4bc779a135a74d959ccf114b2e3c140c9bf7813c4acf68"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/embedding_rent_search/round4-2026-10-30/outer_metrics.csv",
+      "sha256": "6a515c7ed2f117f60edd081585d3dd12b2c195d831acc1c7907b124ef4692cef"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/embedding_rent_search/round4-2026-10-30/protocol.json",
+      "sha256": "f47f662cc3276639dca070424986fc05e65207f8beeb817c20dd2c6118e4da2f"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/embedding_rent_search/round4-2026-10-30/selected.json",
+      "sha256": "4183015eb097177417df9d3f9c0fc1105eb805b4a83355cdb6a8747a8fbc12e1"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/embedding_rent_search/round4-2026-10-30/selection_metrics.csv",
+      "sha256": "3bf187001931e9dcf27746a00ccb2b9d0061a8f8f1a3b8b0dff4edefda123639"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/embedding_rent_search/round5-2026-10-30/comparable_mlp_epochs.csv",
+      "sha256": "648d7a1a429c7868583ced4faaa14942aa4e2abc677970c2e13559ecd318908b"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/embedding_rent_search/round5-2026-10-30/comparable_recent_epochs.csv",
+      "sha256": "29efd379fa1c9e1e47b799e23d45f904f745eabd11ee02ba79cc44c6b6ede746"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/embedding_rent_search/round5-2026-10-30/comparable_resnet_epochs.csv",
+      "sha256": "2aa73abbac5e61dc4d46a04d50ebcc84d9482b0aad77d76bfb21517ca14ff3e5"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/embedding_rent_search/round5-2026-10-30/comparable_wide_epochs.csv",
+      "sha256": "aecdac975e6f01fff04a50a8faca699aefda9e4db5d48bf981d971055237d84d"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/embedding_rent_search/round5-2026-10-30/outer_metrics.csv",
+      "sha256": "e3e94c49317d9e06053c27dda179b0f882d57668c6d0ae2bb1df79296ebc44ac"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/embedding_rent_search/round5-2026-10-30/protocol.json",
+      "sha256": "f7867ac795a67d0d2b0ba3083d3b94a783d21f1e9c98896b90116808a520acef"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/embedding_rent_search/round5-2026-10-30/selected.json",
+      "sha256": "5412b983c9d09db8a54a5b4b222b127d6537f36962d33f57bbd0612fd32e219b"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/embedding_rent_search/round5-2026-10-30/selection_metrics.csv",
+      "sha256": "694e848bbaaa1d1d065dd1b4173263fc5ec3143d6eec5d9f49e9ca9af2b655f3"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/embedding_rent_search/round6-2026-10-30/adjusted_mlp_epochs.csv",
+      "sha256": "2323b7e82a4fbf76cc6db1ddf382d1b203166059589d83369ef4833c611c4a6b"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/embedding_rent_search/round6-2026-10-30/adjusted_resnet_epochs.csv",
+      "sha256": "b13d28c13dd897f283952fa1df25b16dd4c5448799f52d653f2c6508f90bac6d"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/embedding_rent_search/round6-2026-10-30/adjusted_wide_epochs.csv",
+      "sha256": "907829e49478601663b821dfede8d36f635abeb51594c6cc808627046b41f0ee"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/embedding_rent_search/round6-2026-10-30/adjusted_with_raw_epochs.csv",
+      "sha256": "fba3e9ca1722341fc7aed98ab4f268d97f67325665b31cbcdbe68cb0c7f072c6"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/embedding_rent_search/round6-2026-10-30/outer_metrics.csv",
+      "sha256": "0e526c9482d3bb997b10f3856a27d29fd079acbbcf9014d857d5d5c4cdfbe2d2"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/embedding_rent_search/round6-2026-10-30/protocol.json",
+      "sha256": "3e4d4704ef825d8bf92b0d2d9178305a63d296395b77a5fcb63dd1086eedc40d"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/embedding_rent_search/round6-2026-10-30/selected.json",
+      "sha256": "955cfa010b2d1eab5a85ae3fd61e68d7b09a95a4c3939a45c9dddbab056683ae"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/embedding_rent_search/round6-2026-10-30/selection_metrics.csv",
+      "sha256": "4e5d7e7a37d81dc9c72b62e5d171260d0367826425541f7768e5010945f9722d"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/embedding_rent_search/round7-2026-10-30/adjusted_residual_epochs.csv",
+      "sha256": "a6755eb28c3e2d5a099afaf3205eaacdd4b40c0a7d60022871deb5939c3e7d11"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/embedding_rent_search/round7-2026-10-30/adjusted_residual_mlp_epochs.csv",
+      "sha256": "de4c55b9ff7ff087d2deac633f21da5c593a34e3cc92246b26b363bfb8e44e8e"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/embedding_rent_search/round7-2026-10-30/adjusted_residual_wide_epochs.csv",
+      "sha256": "729f648ddcd39683bd60f45152234870087aa8b4afd7155884b15ce94364b3e4"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/embedding_rent_search/round7-2026-10-30/outer_metrics.csv",
+      "sha256": "14636be8b6fb8f595a044de297766db642088bc8fe4962062003fed3676892f4"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/embedding_rent_search/round7-2026-10-30/protocol.json",
+      "sha256": "3d7cac3bedf14da744fb666b7d32a372a91361c345384017ae523899864be178"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/embedding_rent_search/round7-2026-10-30/selected.json",
+      "sha256": "ae240f20d73ccd0341f12b51b93463ac10b035e1ceb8619bba9668d98cecb578"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/embedding_rent_search/round7-2026-10-30/selection_metrics.csv",
+      "sha256": "07031f4f16f266b0f83392b3c6153e7e75519203ccd446244d70f751adac64c4"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/embedding_rent_search/run-2026-10-30/embedding_history_epochs.csv",
+      "sha256": "ad3943c39297c84a6129bb0d61a183c31154a81b5941f9f3f5eb1e2f0f0718e4"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/embedding_rent_search/run-2026-10-30/embedding_mlp_epochs.csv",
+      "sha256": "bf0c4c2231d80f74fafb65f6c9cc379272d2ad67dffbe4639601c04fb20934c7"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/embedding_rent_search/run-2026-10-30/full_history_mlp_epochs.csv",
+      "sha256": "88129f32089a5772bc9b79130a09d36b45fa6b160f0e2efd6faab3dcc397ddf1"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/embedding_rent_search/run-2026-10-30/outer_metrics.csv",
+      "sha256": "5fd3a1ee73c9c9ed0e88664d31ee257c30021d40a3ff2855175dd1642171cac2"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/embedding_rent_search/run-2026-10-30/protocol.json",
+      "sha256": "4e7a18d6a47ff4b3ab9a6b26ccde6c5217bd1478edea7c8f8aed62cd3440e991"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/embedding_rent_search/run-2026-10-30/quantile_history_epochs.csv",
+      "sha256": "a8108cac635b517001da98d50a81d947a484471878a4c23027e6e316ac42e99f"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/embedding_rent_search/run-2026-10-30/resnet_history_epochs.csv",
+      "sha256": "6cd167f03d4aa6171590aff6ab975f64fa82de2f8d266d79e9aaeece16af97da"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/embedding_rent_search/run-2026-10-30/selected.json",
+      "sha256": "dddb50fa7b0f95484f6dff500c1d8e7c80cf737c824dbbe59d7b45dee98fb971"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/embedding_rent_search/run-2026-10-30/selection_metrics.csv",
+      "sha256": "b05de2277b9612964b93f12923503bd06851488e25723d483a0f8955e1c63151"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/expanded_neural_blend/run-2026-10-31/outer_metrics.csv",
+      "sha256": "5d352ee61f934ee918dfc417ec874c7e81c512f8e6f8d6a9a5c8ee55f954a332"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/expanded_neural_blend/run-2026-10-31/protocol.json",
+      "sha256": "09213b2f56fba9e04f251ca77aead2d53bb27471ceea598fb5a77da66a8e6a5b"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/expanded_neural_blend/run-2026-10-31/selected.json",
+      "sha256": "04f4e7964dcdf68036f80d3c1c7d077bba857409b7855fdcefb56ee0285aff64"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/market_latent_mlp/run-2026-10-26/deep_lstm_epochs.csv",
+      "sha256": "f0d0243952964478ff00a8dcfe5de84cd740e80bedd2ac99ec45e8f8e6078ba5"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/market_latent_mlp/run-2026-10-26/deep_none_epochs.csv",
+      "sha256": "46e340a3a4646cf334cd7a7a19b139e4ab32646f0383c48063b9e8baced57f56"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/market_latent_mlp/run-2026-10-26/deep_rnn_epochs.csv",
+      "sha256": "52c9a9eba46c4990e73661e31dc909d0ed62bcb9513438b27ebe3edf2fb9816a"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/market_latent_mlp/run-2026-10-26/metrics.csv",
+      "sha256": "bff6625503faa416112a768dabfb3a4eccec9eae4ee9db35291917a06d956fa9"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/market_latent_mlp/run-2026-10-26/protocol.json",
+      "sha256": "02275b9e833341ed178df4302d2e285dd29add93f63af064ee7383c72b2bf465"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/market_latent_mlp/run-2026-10-26/shallow_lstm_epochs.csv",
+      "sha256": "13a68c4fcc41e5dee245e725e92865a2e3b0eb19a19fef40e21ff5965d826fa6"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/market_latent_mlp/run-2026-10-26/shallow_none_epochs.csv",
+      "sha256": "3fe9510a9edec0e0f920dfe74a76268cdacdbefe79e5975b652d7c583a33edb0"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/market_latent_mlp/run-2026-10-26/shallow_rnn_epochs.csv",
+      "sha256": "8c6230812cee73df912c79f2995dd5b2dfd89642a4e24e6a85f70dbb57b71972"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/market_latent_mlp/run-2026-10-30/all_depth_metrics.csv",
+      "sha256": "66e810f89840948c105295c2efd7cd3f40ab569dad711e85d8ef25a55a5dd2d1"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/market_latent_mlp/run-2026-10-30/eight_lstm_epochs.csv",
+      "sha256": "65aa7409c323fefb42c10f10b4c5e007cf2f1ab0405698934da99e7fb5c82a6c"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/market_latent_mlp/run-2026-10-30/eight_none_epochs.csv",
+      "sha256": "ad19e6d0b1d88ecd28eed848169f375422de14a92914b6db4585b5ac5e016068"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/market_latent_mlp/run-2026-10-30/eight_rnn_epochs.csv",
+      "sha256": "924be73dfeaba67a4666c1bbb2c68ee8ab3272a519a59afa3f760d4a2ac5d8d5"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/market_latent_mlp/run-2026-10-30/metrics.csv",
+      "sha256": "e5bac11daca21cfb2de438b7e1ba1b516b6716a58998d0272329538ee3e3ac07"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/market_latent_mlp/run-2026-10-30/protocol.json",
+      "sha256": "638ede18498e55ecff60ec01741c1f70983f1704b3c650d90b445412dab5c798"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/market_latent_mlp/run-2026-10-30/six_lstm_epochs.csv",
+      "sha256": "4f6ef0199a4ce4b6ae9f57c1e1d5b9cff7df0c41ca665c48c2e1b077450c8249"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/market_latent_mlp/run-2026-10-30/six_none_epochs.csv",
+      "sha256": "7b35261c6fabf30749029a6e6303e4a7dacb496f0e97262ee78988d8af9da1fe"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/market_latent_mlp/run-2026-10-30/six_rnn_epochs.csv",
+      "sha256": "c0a62011656721eb09f9942acae029b7bcfabaceb31337e88823583f57866162"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/mlp_family_blend/run-2026-10-30/inner_blend_metrics.csv",
+      "sha256": "78ffbaddf221aaceba0e4550ad327bab7ef1ccd43959fd226243f69dd0355975"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/mlp_family_blend/run-2026-10-30/outer_metrics.csv",
+      "sha256": "1cda74482e45f96efd9d76bd1ef20782033b469f73603f3269c48a84bf20ca2d"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/mlp_family_blend/run-2026-10-30/protocol.json",
+      "sha256": "956b43fa3e709f5c9dbc63234e0c80d4485f7e7853c777bfd8226451af13b1f5"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/mlp_family_blend/run-2026-10-30/selected.json",
+      "sha256": "2f3d6af88b69a21e8fb11ecb9f51a50c3f3de1517b25c7887457abc52296ee4e"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/mlp_history_improvement/addresses-2026-10-30/address_history_4slow_epochs.csv",
+      "sha256": "c29b5e93b6fadc0a3940e5340da5b67fde66accfb3435f1e65c1ee03c92cf87e"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/mlp_history_improvement/addresses-2026-10-30/address_history_8slow_epochs.csv",
+      "sha256": "fa0121e451233735b2460aa37687855fb495e3e913abce3c1da7fac82ba21c2c"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/mlp_history_improvement/addresses-2026-10-30/address_history_8slower_epochs.csv",
+      "sha256": "af7a84aa1c3962fb1e32fe2dbf18a14a0cd802b014dd7f1175bf885f6d7aa710"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/mlp_history_improvement/addresses-2026-10-30/metrics.csv",
+      "sha256": "3ac11a6e7b7b7765d81f6e87a65f51be8845479fbe790b8e10002e5ba3fd123e"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/mlp_history_improvement/addresses-2026-10-30/protocol.json",
+      "sha256": "aafca48cfd279cd22fa0cbbfbe6739678a32b5d91a2688c41a472871790df1e2"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/mlp_history_improvement/run-2026-10-30/history_2layers_epochs.csv",
+      "sha256": "a82f27525ec2da18a1d70804d2fa65991f47bc8ddee9fa3c6f1cae412569a5a7"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/mlp_history_improvement/run-2026-10-30/history_8layers_epochs.csv",
+      "sha256": "b6174c8e5cd1874a600f335bb2f453a7ff94f9cb00b41f9c862ff44426d68868"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/mlp_history_improvement/run-2026-10-30/metrics.csv",
+      "sha256": "9145eae7dcfd3a6a908dda023832bc1d0f4212b4cca14d612635152a275fb7d5"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/mlp_history_improvement/run-2026-10-30/protocol.json",
+      "sha256": "84dea5011ed58980d0a75df77daab7b8e413f925e62889cd2b807fd72a3d1846"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/mlp_history_improvement/run-2026-10-30/residual_2layers_epochs.csv",
+      "sha256": "da117b3687d751badbfb6f9794289de94ba72b7fed02851d5d55514bd63c1460"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/mlp_history_improvement/run-2026-10-30/residual_4layers_slow_epochs.csv",
+      "sha256": "4804189c8b9d5dd26e871b86880ae15eca6a440762265225b797a6102c4dbc58"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/mlp_temporal_calibration/run-2026-10-30/outer_metrics.csv",
+      "sha256": "e17c7f23f8a061b613194c3cc3194af02bbec568cf65e1e98342c31617bfa9d9"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/mlp_temporal_calibration/run-2026-10-30/protocol.json",
+      "sha256": "e71fd4425256f0a4bc5fc11bece88053cd196c5b27f3da78f526b47309cfcb53"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/mlp_temporal_calibration/run-2026-10-30/selected.json",
+      "sha256": "b4f7eb9e25a8e756c7e69d88d70e5e9305cc287c344c3af02f1dd36454744f3e"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/mlp_temporal_calibration/run-2026-10-30/selection_metrics.csv",
+      "sha256": "d19836b31a20b87cbed9456a09a3dda8a99d3bde355fb51a03433eaf29d6148e"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/ensemble-2026-10-30/outer_metrics.csv",
+      "sha256": "d9e03ed8de45f32104591df17976545e726bd99430795102dcfd8b9bf90623e3"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/ensemble-2026-10-30/protocol.json",
+      "sha256": "d9fb9a85f7d98f72d7fd12d2379f63a48c66e880a26f107eeec6b135276cef3e"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/ensemble-2026-10-30/seed_42_trace.csv",
+      "sha256": "f62e7ea9ce7e5fc265029ad6f50811f4f673291c8c160600dd986009cdbf131d"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/ensemble-2026-10-30/seed_43_trace.csv",
+      "sha256": "54a8ee6d56d3f7e5bcd12a96ab37007313347134c87501dd75bf9d43bef95dc4"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/ensemble-2026-10-30/seed_44_trace.csv",
+      "sha256": "58c425d2d757e849aa7d1e42656fb3d1aea681c5dbc3f37189d83e1536076269"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/ensemble-2026-10-30/selected.json",
+      "sha256": "8ed0644b3ec834ba021c7da7db9145b468e319e82e0eca881a985f34956d4440"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/ensemble-2026-10-30/selection_metrics.csv",
+      "sha256": "cb1aaed1b7c24767145e5a15974c69bca999e6b39d2e2fbecbf152237cc43a94"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/late-inner-2026-10-31/outer_metrics.csv",
+      "sha256": "4d744256c79e5c3b429352fbbca2fae528bc2efc402cfe4c899c358c25b7b29c"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/late-inner-2026-10-31/protocol.json",
+      "sha256": "7c37d0f025f2b072903555075806bf95641cebdec2f56818bee412c0d0b94cee"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/late-inner-2026-10-31/selected.json",
+      "sha256": "db8137960a7a7109cfd62718c8b27892fdc96012428c2bcbec4e3df031b948fb"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/late-inner-2026-10-31/selection_metrics.csv",
+      "sha256": "08d684a71a2996916b1c09389d793f55735041a610cf0e77412ae69e71ce65da"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/late-inner-2026-10-31/tabm_piecewise_16_trace.csv",
+      "sha256": "f3997b2b978f876dcf37d86d09b4ef2ff83f819f3b1cf93556694614c1685c2e"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/late-inner-2026-10-31/tabm_piecewise_trace.csv",
+      "sha256": "e741be3f312b5c9314ee8f8ac6f4c85bdb0d5cb87e5ded97708ecf73957c6584"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/late-inner-2026-10-31/tabm_plain_trace.csv",
+      "sha256": "7281d42fc86b22aacc6969bdf3a6d7eb1da622729a0fa960f252bde53d19a7ac"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/late-inner-2026-10-31/tabm_supervised_bins_trace.csv",
+      "sha256": "c8b4c3db7fe9e42f51a923daa4d3f6d3e7096bd9f3e14e12b9395f9da46ac0b3"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/piecewise-fixed-2026-10-30/outer_metrics.csv",
+      "sha256": "d2ae448bb2a859eb6f46fecb5453f4d8e6c4f246a714c7bf150f26945f2d513e"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/piecewise-fixed-2026-10-30/protocol.json",
+      "sha256": "41cc97a01f574c22891d2fa0509f299931af43bf3ae63698788bfe5f1dbd5258"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/piecewise-fixed-2026-10-30/selected.json",
+      "sha256": "e1a5b6960a794682da23a649fbf26a9840ccea9840d273fedfbfdfd01674ed49"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/piecewise-fixed-2026-10-30/selection_metrics.csv",
+      "sha256": "033016637aa492f515fa41fdcb8e26633cdbc08258c7d8ff65eeb727af2fd36c"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/piecewise-fixed-2026-10-30/tabm_piecewise_16_trace.csv",
+      "sha256": "f62e7ea9ce7e5fc265029ad6f50811f4f673291c8c160600dd986009cdbf131d"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/piecewise-fixed-2026-10-30/tabm_piecewise_trace.csv",
+      "sha256": "522a3247beb01cf34857058c82d6bc7a376b7545c566f04974e877d29956239f"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/piecewise-fixed-2026-10-30/tabm_plain_trace.csv",
+      "sha256": "d13ec411826ed96c1ee05455b1edc88a97cddd727897e1c688238bb87af11b37"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/piecewise-fixed-2026-10-30/tabm_supervised_bins_trace.csv",
+      "sha256": "fda7c74bb6d4c411ce84d9bc584c800a7a52f5513b265ed284336ed93f01ffda"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/round2-2026-10-30/adjusted_only_trace.csv",
+      "sha256": "202ac305ff1ba7e8d224d9944ecd0e1e76d51e84381d3c9fa362545cc6b832af"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/round2-2026-10-30/adjusted_plus_raw_trace.csv",
+      "sha256": "f12aec79af30f0db6d7c79f9b951294b8b9cf8bb3e7fb72a96c321e0c36d0696"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/round2-2026-10-30/outer_metrics.csv",
+      "sha256": "9ae382c32f17cdc628b2d09f7b53fbd76ebbdb89d9270adf72ce7aab7cf0d0e9"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/round2-2026-10-30/piecewise32_members32_trace.csv",
+      "sha256": "af583b327c098e2f2df4ffef68de95efd5835507daf870acf778c20376d9f340"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/round2-2026-10-30/piecewise32_wide_trace.csv",
+      "sha256": "40aa6d948aab7023824de1c459aa0bdf570bf0a20f796bb7f6ab59338dec49bf"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/round2-2026-10-30/protocol.json",
+      "sha256": "b221dea72db5ccc7e8ca9f606bbc2b9a06fc09fb32cf2497b4fdc19d01fb86b8"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/round2-2026-10-30/selected.json",
+      "sha256": "81fe6dc5f95ccda72992cf60b47d067818e0b32680ef9ca98181203d3e93c78c"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/round2-2026-10-30/selection_metrics.csv",
+      "sha256": "a17cd317fc6217a3fe4c932400d039be7f2e197a1bd30c7ef1b07ab83d207f3c"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/round2-2026-10-30/standard_piecewise_trace.csv",
+      "sha256": "49a7e7a04c39599c4e99c3e5605c7c562b92c0daab689a82677ea7c1b060ac21"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/round3-2026-10-30/distribution_adjusted_trace.csv",
+      "sha256": "57b2e0575ef13d7336a55a86b9f6f18765efc182f80787de5158d016b0913659"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/round3-2026-10-30/distribution_raw_trace.csv",
+      "sha256": "c9de3495504f305d5102533b09f95387c78295e0ead1654b4b6aee08512bec03"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/round3-2026-10-30/distribution_slow_trace.csv",
+      "sha256": "1166aae9c154352802399b32ae67c97a6ad48239a93c0fe76c45fc2dfff6ea0c"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/round3-2026-10-30/distribution_wide_trace.csv",
+      "sha256": "ad62060e256b8a80044002209f3fc63ce97575c10d9abeda0819bd5616393eed"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/round3-2026-10-30/outer_metrics.csv",
+      "sha256": "021fa755b25617a98e39217a2bf46f6b2549efee328709eb7153b049a04db28f"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/round3-2026-10-30/protocol.json",
+      "sha256": "8b2373acd6a25b4e2aebb480a9f206dcd53fa7f804c1b8e326d77d0f7c372714"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/round3-2026-10-30/selected.json",
+      "sha256": "394d469f2c1ac6f9862f55afd70d08995dcf4f8909a1b3991b6a297311154bfc"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/round3-2026-10-30/selection_metrics.csv",
+      "sha256": "80a4a6e5c161e948ced6c78b6961af1cb905f2a6ba4dde830e562c6e18afa1c1"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/round4-2026-10-30/market_ratio_adjusted_trace.csv",
+      "sha256": "05a38393ca9401ed35b3123bd39338f13953ffaadbc07241a152e8121287854b"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/round4-2026-10-30/market_ratio_trace.csv",
+      "sha256": "63830369b40cf2df82397995a8881f7795d0e73ad052401e2f0a3991eaf6ef82"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/round4-2026-10-30/outer_metrics.csv",
+      "sha256": "9ef07eeeaec79a7fc604304eb560c11dafae42db3292f59a45ab2b2869b7f109"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/round4-2026-10-30/per_sqm_slow_trace.csv",
+      "sha256": "fc25ffb69f1b373d35438f7eda2e8ca48b778b19a298a87ad906a268697aabc4"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/round4-2026-10-30/per_sqm_trace.csv",
+      "sha256": "986906eaa9e1cf1e68b78adbfb86ba668a86d1843f9a9a118089a37ca459d86b"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/round4-2026-10-30/protocol.json",
+      "sha256": "51f7590c10237edb296652737bb865e95bab9a81d0c8251711dcb25838f33548"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/round4-2026-10-30/selected.json",
+      "sha256": "ab504c574a2e98660c962862c1c3253cb48fcae4df9e21d398204132728065b8"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/round4-2026-10-30/selection_metrics.csv",
+      "sha256": "502325d6a2e99646dd9b19c3b390c4500c829f03e672e0c041a475284376c779"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/round5-mixture-2026-10-30/INVALID.json",
+      "sha256": "5f957f5f1c22298677a39d90a460e36f2eb37c4ac73382e09afb06315b600615"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/round5-mixture-2026-10-30/protocol.json",
+      "sha256": "6c2c28f4d6becf66a89b23322aa670660c4692e97de3bb81620d3286abb9824c"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/round5-mixture-2026-10-30/selection_metrics.csv",
+      "sha256": "000e9c5ae0989796f26599a8b94a054e324402c8cf26201dc22601b35d29c68a"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/round5-mixture-2026-10-30/three_experts_01_trace.csv",
+      "sha256": "f8b7cbfb274903bd1313d8813fcce86eb618401c5d671b1fc809b3698c949059"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/round5-mixture-fixed-2026-10-30/outer_metrics.csv",
+      "sha256": "8b2b964fd54cee14aa2610b93360175dc2129a2503b74931560a6d2438ec5f80"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/round5-mixture-fixed-2026-10-30/protocol.json",
+      "sha256": "6c2c28f4d6becf66a89b23322aa670660c4692e97de3bb81620d3286abb9824c"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/round5-mixture-fixed-2026-10-30/selected.json",
+      "sha256": "ccec0f979077b6d8c7b10e89d06abf837f518bf1da969f9c8f1008227f8ca16c"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/round5-mixture-fixed-2026-10-30/selection_metrics.csv",
+      "sha256": "2b6c53004bc4fb8aab14f65ff99b25cb331f75c1650f9ef613588cdcd8ea4c4b"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/round5-mixture-fixed-2026-10-30/three_experts_01_trace.csv",
+      "sha256": "f8b7cbfb274903bd1313d8813fcce86eb618401c5d671b1fc809b3698c949059"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/round5-mixture-fixed-2026-10-30/three_experts_05_trace.csv",
+      "sha256": "33daf4412b1ca3f95424122a482cc6966ae61fe647b29c051b6252833bd6734d"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/round5-mixture-fixed-2026-10-30/three_experts_slow_trace.csv",
+      "sha256": "15b38fbe59dbfaefe73a7051d8e21b68e15312c62c8e9bb3e970d0fa07b8f16a"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/round6-rawtime-2026-10-30/outer_metrics.csv",
+      "sha256": "38595afb5058665442ccea7a7ec3ca61f851356c285156889da9e133f2d62f4a"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/round6-rawtime-2026-10-30/protocol.json",
+      "sha256": "1acbf1fde786ef8b9f6c435cc8ce8f90d69fdc9afc4b212c8a0b77ca03e1090b"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/round6-rawtime-2026-10-30/raw_time_adjusted_trace.csv",
+      "sha256": "4e2288d4811b94c39fd3eaaa29a4ef2936a1d7c438ba63d64fb09fc412a0d8fa"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/round6-rawtime-2026-10-30/raw_time_per_sqm_trace.csv",
+      "sha256": "fc358e57fa4e56a55089c9c61e0f512e48439a5f983c5450f1259593030b9235"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/round6-rawtime-2026-10-30/raw_time_piecewise_trace.csv",
+      "sha256": "4e0c609acb26efca158523001c4e8a180c9f540c70feb13b40401c7bd254f88d"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/round6-rawtime-2026-10-30/selected.json",
+      "sha256": "ab3f8187a1c165bf314166b7fce944bab20268357126a08ba0abe49b5bc5a273"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/round6-rawtime-2026-10-30/selection_metrics.csv",
+      "sha256": "569fb283c60f294e3f28494582a851711156041c25fda86876ae6cc2ba62c816"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/round7-periodic-2026-10-31/outer_metrics.csv",
+      "sha256": "4c6e39f5ab4994604290f5fb2b8a444779e22eaf1a350b67425dd3184acdc5b0"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/round7-periodic-2026-10-31/periodic_01_trace.csv",
+      "sha256": "0659118009bf092d5f31c9bfc2413aca67a6045ad5bd22f6096ccfb692b97234"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/round7-periodic-2026-10-31/periodic_1_trace.csv",
+      "sha256": "e6d326fb4152fb434a025f5568d45ac20c690c9197b1ba74fa4c9ddcf086ff22"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/round7-periodic-2026-10-31/periodic_lite_trace.csv",
+      "sha256": "9d1571f733899203838cd83eef659d6dbcfbac5d93230bf8f572160f55236945"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/round7-periodic-2026-10-31/periodic_per_sqm_trace.csv",
+      "sha256": "da724ebe401111d16c7b76f9dfb4c3aefa86e85f759f9bc07fed0d18eca6beb5"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/round7-periodic-2026-10-31/protocol.json",
+      "sha256": "abcdfcce19b5460448a99c04ceec7c558730bf4790291b17299497df55b82929"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/round7-periodic-2026-10-31/selected.json",
+      "sha256": "57a051caac411d813e29bd9ae319792610dabfbc573288a2a47f4dad160ac94d"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/round7-periodic-2026-10-31/selection_metrics.csv",
+      "sha256": "f22249094e566175f467cf83b7b8ad4f3243d654d17dfe4103adb08a008fd0d2"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/run-2026-10-30/outer_metrics.csv",
+      "sha256": "3f42c0a8392df01c63b2f97bd73e8dbacf4b581e8a51c33e173965fa789c0181"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/run-2026-10-30/protocol.json",
+      "sha256": "157534b9b0a5140bd5d0ec095004ec0942a6c5428ac23ae824e06aed73add909"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/run-2026-10-30/selected.json",
+      "sha256": "812626dd36dee6f750a244a2efd23ac40e8114e16bcb74f749367d74b04b7e6a"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/run-2026-10-30/selection_metrics.csv",
+      "sha256": "399ba9c7f71543a0503ec497d5ff1b487652a625814be5dc9bc42f9de933cbe5"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/run-2026-10-30/tabm_piecewise_16_trace.csv",
+      "sha256": "3131a091f77304999c736412086f737e141a3f32109b736c1e1c5881c8d92384"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/run-2026-10-30/tabm_piecewise_trace.csv",
+      "sha256": "3307a1e3820bcf38e8f36c2285512b9b316ffb8679f2415621aa589b33e62964"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/run-2026-10-30/tabm_plain_trace.csv",
+      "sha256": "d13ec411826ed96c1ee05455b1edc88a97cddd727897e1c688238bb87af11b37"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical/tabm_rent_search/run-2026-10-30/tabm_supervised_bins_trace.csv",
+      "sha256": "3307a1e3820bcf38e8f36c2285512b9b316ffb8679f2415621aa589b33e62964"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/historical_catalog.csv",
+      "sha256": "112965fa5a085c49dfafe72b44f265e8a5eb3a5150343721bf1f1ba8ae4f6789"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/manifest.json",
+      "sha256": "c3d8ad099477cdadb34969277ace3654fac0ed1c739035d0aea9ab239c3e74c1"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/mlp_eda.md",
+      "sha256": "5160883ebda838072f93e9df285fd5c198c34550a45f892fac1b17f209070ca5"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/mlp_prediction_report.md",
+      "sha256": "7cf144543da0115e3c17df6b56914a679b150c9739f661fd08228bd70f2c3b62"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/predictions/highest_only_hybrid_test_intervals.csv",
+      "sha256": "3034aa2a78cead58e753ad06d4f72d976d47cfa077b88907b11bddf00a299791"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/predictions/obvious_low_hybrid_test_intervals.csv",
+      "sha256": "1f757675d3b32df76abe0be8c556fd493fa6d83c2261a0c397fd527e54fd43ef"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/predictions/obvious_low_mlp_test_intervals.csv",
+      "sha256": "3113ba38e9a0b469c636b02cb6d8e093eded5a64ebafe73a5d93e567d0a61684"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/predictions/risk_corrected_hybrid_test_intervals.csv",
+      "sha256": "c458e3ccb0196249314c08beb6fd38cde99fe13ea53980cccf627bd658e321e9"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/predictions/uncleaned_hybrid_test_intervals.csv",
+      "sha256": "70a6a32fb2fbb07db490d66e527211068f87c31cab44f3c89381a686b6a036ab"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/predictions/uncleaned_mlp_test_intervals.csv",
+      "sha256": "7fce514928454ca9328c526561aa083e75d6a957abaa5b93fe989428235a74d5"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/publication_checks.json",
+      "sha256": "5de27062ba3c126a713082eabd977da5eac3e8b3188808b9c36d6a47fd4ed6f9"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/recent_tail/december_selection_scores.csv",
+      "sha256": "d6d8e0872c77cb134da022789e4787b129b28ab36d3f70c89d7657dbcbdf9370"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/recent_tail/frozen_calibration.json",
+      "sha256": "21a73f7b8ca33a4303e7e7d614b5f5f4e487a03e02408d57a3524dd0105cad7f"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/recent_tail/independent_verification.json",
+      "sha256": "d0589ecd93c23ce0c17eabe9ce24276357f77444aa35a1538ecce29bc79711e3"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/recent_tail/jurong_west_case.csv",
+      "sha256": "b6c85a9812473c9bb94d514a3571b2e475ed9cdee3965e33ada8db4cc4dfde0f"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/recent_tail/outer_metrics.csv",
+      "sha256": "94e31bb00881374e9cf274c136ab6bc4304b005fd0b7a8bf57c49364071ad3c6"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/recent_tail/predeclared_candidate_outer_diagnostics.csv",
+      "sha256": "4375497acc94b5c5888c819967b186db323ac4b1e4a456d1ab3761d4d31b82b4"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/recent_tail/protocol.json",
+      "sha256": "61a224556378f4c6892c05a36b1c3838d2edd9bf70e5dd282300639791aa035d"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/recent_tail/selected.json",
+      "sha256": "539930b70db8c34497ddfc903ad4a0141c727100081f4a0f5dd91b1b3b40d616"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/risk_correction/december_selection_scores.csv",
+      "sha256": "b25d45c6f0dd483469b37e797e1d62deff08f523f3a470e14b49544cda1d5712"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/risk_correction/frozen_calibration.json",
+      "sha256": "98e18fd7c5493530d15cbbb14410357db924394e5f7010c0ab44fa9620fd6a58"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/risk_correction/independent_verification.json",
+      "sha256": "57a8d39f049383f5451736a0c294c8624ac2bfc69ad016a9eaca414e62d1559b"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/risk_correction/jurong_west_case.csv",
+      "sha256": "0b491c132e46799d1932722c06b6e21630bf8011aa3b6d2de5a1e2b714c4bb40"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/risk_correction/outer_metrics.csv",
+      "sha256": "21fbc7defe38868c75e148d8b0aab0c7e9bd41c45532487b59ce5741cbaa09eb"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/risk_correction/protocol.json",
+      "sha256": "bbcf606f6aed955df62131a4a897a00d0224091a2120a8ee5d82100c2fc8cd80"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/risk_correction/result.json",
+      "sha256": "11571320e997ff8f5615ade8d1ed111ee6f85c26eb3113c6aa3f98ebf9bd6430"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/risk_correction/selected.json",
+      "sha256": "faf0ace07c66ddfb3b003cc26a950335a5433a0d0c080081c251e24006f7168e"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/training_cases/training_large_flats_low_rents.csv",
+      "sha256": "fce30ce8b483eb46bc9f4c2a842a8f259ce180896e056b266fb81dfacfe351a0"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/training_cases/training_similar_inputs_different_rents.csv",
+      "sha256": "699036051cf5be8a90545b77436a4e7795279c21fd3a0e0c845bde816ccdb66b"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/uncertainty/checkpoint_replay_verification.json",
+      "sha256": "02c6d890a5cb6d1d4e2a21c4f1a6b3138651359297a44095d580c95847636a0c"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/uncertainty/flat_type_metrics.csv",
+      "sha256": "94f4b14376971a040b04db6ff4055c5924ec3f58f3c05444ed2f5f33e544c8a2"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/uncertainty/frozen_calibration.json",
+      "sha256": "c7190e398d36aad135fc7ea105c2584badb22b6e0087662f87070eee375f39c4"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/uncertainty/independent_output_audit.json",
+      "sha256": "6596d7371ea4b5b85d0d923b529846677763f40e0b80f076339aac1d6d814907"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/uncertainty/mlp_selected.json",
+      "sha256": "e0e722943718f17868e50edf8eea89d14c9e3b635f81b4acce3c50052595022c"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/uncertainty/mlp_selection_trace.csv",
+      "sha256": "c9bd2d2ccf44267b79e8b9b3aad25bea6147ba7e7c2ac83112d4810a7386132b"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/uncertainty/monthly_metrics.csv",
+      "sha256": "956513304d0463eb289391caa5b9823c03547cdd068a14da53dbc207249c45ea"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/uncertainty/outer_metrics.csv",
+      "sha256": "96859693cbd5ce9aa13f3229f401bf94806db87ee410e7203397673579b37fe9"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/uncertainty/partition_counts.json",
+      "sha256": "8660666beffbf1c291e27d564b03553e283b5d0fa73eaa5fdeb85e60c654b67e"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/uncertainty/protocol.json",
+      "sha256": "3a25640574db5dec23173c2a934b7fb8f6367785bef92fe7e55db079c72dd7ed"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/uncertainty/tabm_selected.json",
+      "sha256": "fad1a82cde9b350d26444735697250f34b920ded0ee5a68066f2a9d3baa7868a"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/uncertainty/tabm_selection_trace.csv",
+      "sha256": "d086516ba5aaffbc45d751bf4043dd634665b9957ce94bf5243a73d501a8c6e8"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/uncertainty/verification.json",
+      "sha256": "12e81f963a1b1d453d14f7338c3d7ae995b68c05899ac6253b5f832d5ca58711"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/uncertainty_diagnostics/identical_inputs_different_rents.csv",
+      "sha256": "391ef1f4a8f93c617936f7357f26edefe1e6b5ed7fd36cc6b7e377a3b3373c69"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/uncertainty_diagnostics/indistinguishable_inputs_proof.json",
+      "sha256": "3017e0bde67b962cc275161453d603e85c990ae7c6bee7d5e80536e3b2541a7f"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/uncertainty_diagnostics/indistinguishable_inputs_proof_case.csv",
+      "sha256": "14bcd44299945f4804cd3fe6218cebac206f6b62124addb75de451940df311d1"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/uncertainty_diagnostics/largest_errors.csv",
+      "sha256": "4efa4b3856c6f09e0668dbc57f603ffc536b578de9e112d3f543a15275bc9a8b"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/uncertainty_diagnostics/monthly_errors.csv",
+      "sha256": "65cd8de53386bf2fc3469140c686a3cce41d4a2292746517f2f4a63b885c058f"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/uncertainty_diagnostics/rent_band_errors.csv",
+      "sha256": "61c31dc905c2e74ba30a47ee48d6a5c4138ef5622c589d42e8c8d362e62ec074"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/uncertainty_diagnostics/summary.json",
+      "sha256": "60469aca5c04cfc5aa5debd67e030dd878f745668bc6f4cdf324d9d72e6deacf"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/validation/best_point_blend_outer.csv",
+      "sha256": "22ddd0d5aa248000d58f2034b562db317cc9fcca3ee5c1c8ea61877673a39524"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/validation/obvious_low_mlp_calibration.csv",
+      "sha256": "3b95c5b6930a1e5058d0d2b816e92d1b6115535d1c6d0c917680c8af08cdd574"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/validation/obvious_low_mlp_outer.csv",
+      "sha256": "26e51ded7277b6083971b6fafa6d2a81fab1638884a70fb44f91deb664acd96e"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/validation/risk_corrected_hybrid_calibration.csv",
+      "sha256": "86385c2fcc20b16c7ab78178f9e4573c60e54e2d04d87d0ddef9226a48c1a6cb"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/validation/risk_corrected_hybrid_outer.csv",
+      "sha256": "8146f643936342440d3f326ac5ce5b7a42286a53cb282dbdab60586498c3046e"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/validation/uncleaned_hybrid_calibration.csv",
+      "sha256": "5bd815d98490d089d61d87de206886b0dacc5817188288534927dba7ff157e17"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/validation/uncleaned_hybrid_outer.csv",
+      "sha256": "f0c025d6ee2e0ee730d63d3d7db74b9dde8153e0e1fadcf90f3b6121d0ffc9f7"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/validation/uncleaned_mlp_calibration.csv",
+      "sha256": "a16373080ba94d534db550469c5068f54b509514d81429ae7e559db33660a242"
+    },
+    {
+      "path": "experiment/appendix/X06/mlp_explain/validation/uncleaned_mlp_outer.csv",
+      "sha256": "d042a393787df55b8d418ae48f3d43fb40cb5d859ba10309216bafce99ba5186"
     },
     {
       "path": "experiment/appendix/X06/optimization_history/01_history_target_search.md",
@@ -14331,6 +15440,186 @@
     {
       "path": "reproduction/concat_explorations/verify.py",
       "sha256": "73bd388d7631a4f22a8bc841eff81dd24332fc6cdf13b5f7d92de608401b6e2a"
+    },
+    {
+      "path": "reproduction/mlp_explain/diagnose.py",
+      "sha256": "dcb0f45fbbbd988adec7abe56e2b67242aa4c515738d053ec853b3d0d01f1491"
+    },
+    {
+      "path": "reproduction/mlp_explain/provenance.json",
+      "sha256": "07b4d08cd9518bf6e424ef4657373ab07ead63d232e8d6865f1e54bbec5da781"
+    },
+    {
+      "path": "reproduction/mlp_explain/requirements.txt",
+      "sha256": "17abc4509a239fee4692e519b75712b8ad68ce5a52e258f9c804fac909623245"
+    },
+    {
+      "path": "reproduction/mlp_explain/run.py",
+      "sha256": "39ddd0bcded6dbfe4706c2e44b61803a87eb68b504a9754324f7cc9c3fbbdd98"
+    },
+    {
+      "path": "reproduction/mlp_explain/runtime/analysis/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reproduction/mlp_explain/runtime/analysis/experiments/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reproduction/mlp_explain/runtime/analysis/experiments/adjusted_rent_history.py",
+      "sha256": "4105dbd33f79b131dbd111c2a9e7cb3c58f3477d3239364b91c98f5bb3129f99"
+    },
+    {
+      "path": "reproduction/mlp_explain/runtime/analysis/experiments/auxiliary_ablation.py",
+      "sha256": "631e1b7df3a558024b156d4578762995b2b405aa0235a1cc4737295d1ed921dc"
+    },
+    {
+      "path": "reproduction/mlp_explain/runtime/analysis/experiments/cleaned_neural_ensemble.py",
+      "sha256": "16cc5cfdf65c7deb8bbc7f3512283569463806d682c372c0cf59cb80a641f50d"
+    },
+    {
+      "path": "reproduction/mlp_explain/runtime/analysis/experiments/deep_learning.py",
+      "sha256": "9cff560ea3f6dc327441d6e5d646fda338755299cb6ddc90d97237ac437dc38d"
+    },
+    {
+      "path": "reproduction/mlp_explain/runtime/analysis/experiments/embedding_rent_search.py",
+      "sha256": "58245090d34160ad7d87898b467c215c51f2ac6580df4aa5f30f6b87cea4e31a"
+    },
+    {
+      "path": "reproduction/mlp_explain/runtime/analysis/experiments/historical_priors.py",
+      "sha256": "e099386c2b3c6dd8a0b5d80192e0413a6b6b92f7373d32b1666e105685c34871"
+    },
+    {
+      "path": "reproduction/mlp_explain/runtime/analysis/experiments/historical_risk_correction.py",
+      "sha256": "6d44c5a8293e547c91315ff73c8a15e5cdd6d6bf87473c59db675474aba65a7e"
+    },
+    {
+      "path": "reproduction/mlp_explain/runtime/analysis/experiments/mlp_fullfit_submission.py",
+      "sha256": "df13e08b03bd06729930001969a6715ce6c78e6bf0946ff929cf44dc4d246964"
+    },
+    {
+      "path": "reproduction/mlp_explain/runtime/analysis/experiments/mlp_recency_experiment.py",
+      "sha256": "3f0c96543d182d53298eed6fa3a2863cebb01538e0297ee345c4d270a2a0f14c"
+    },
+    {
+      "path": "reproduction/mlp_explain/runtime/analysis/experiments/neural_ensemble_uncertainty.py",
+      "sha256": "0321b387b83e81ddd757e81a25c3680d8080f599f00a5aff9c52c25acf4459c0"
+    },
+    {
+      "path": "reproduction/mlp_explain/runtime/analysis/experiments/property_features.py",
+      "sha256": "0a95eef36666e420091e4620c66237c149328ea9bd7d6e771f737e839aed222f"
+    },
+    {
+      "path": "reproduction/mlp_explain/runtime/analysis/experiments/recency_weighting.py",
+      "sha256": "b4cb9570bb76f50831472f503eb3d6a7c870143a80d56fee9944dabe541df9cb"
+    },
+    {
+      "path": "reproduction/mlp_explain/runtime/analysis/experiments/recent_tail_correction.py",
+      "sha256": "8914da7300e30223f14b30b9e12d4285e464ba1c6400811f1779fc0360d8e3fc"
+    },
+    {
+      "path": "reproduction/mlp_explain/runtime/analysis/experiments/spatiotemporal_hybrid.py",
+      "sha256": "35e99a6ab69f4879285de70a746783b336d09a622df0d63fc2fd07070e46db0d"
+    },
+    {
+      "path": "reproduction/mlp_explain/runtime/analysis/experiments/tabm_rent_search.py",
+      "sha256": "ead468afadc52c23f43b925ef71b5d76cb7b5f6967f715d7cb99cba7559afcbf"
+    },
+    {
+      "path": "reproduction/mlp_explain/runtime/analysis/experiments/verify_mlp_delivery.py",
+      "sha256": "4ac731a82ea3844ea16c3e532e01a4b4a2d994ab41255391f4768d6e713e29f4"
+    },
+    {
+      "path": "reproduction/mlp_explain/runtime/analysis/pipeline/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reproduction/mlp_explain/runtime/analysis/pipeline/auxiliary.py",
+      "sha256": "e9739209de7251997625c415391cbb483a2223aad38107ad2a01de50bf6c1072"
+    },
+    {
+      "path": "reproduction/mlp_explain/runtime/analysis/pipeline/config.py",
+      "sha256": "fb75e79a9d94eac6d90bef32bd812d2de4a16b64d92ea348146d0f1d2dcee0f3"
+    },
+    {
+      "path": "reproduction/mlp_explain/runtime/analysis/pipeline/data.py",
+      "sha256": "b6f1ef6a2d21d9ea69e23d63c5f7f53310ddb0faac3f71a936ba7119c3b24ec0"
+    },
+    {
+      "path": "reproduction/mlp_explain/runtime/analysis/pipeline/evaluation.py",
+      "sha256": "8fff1b4ea1ed7bf35c1bb7651a3117f7a487dd53ecb23667fbe594744d3d90b1"
+    },
+    {
+      "path": "reproduction/mlp_explain/runtime/analysis/pipeline/models.py",
+      "sha256": "5a83f8f8e9e6323c8c4907780076b438674d750c2755738f7c1a8733c7baea4d"
+    },
+    {
+      "path": "reproduction/mlp_explain/runtime/analysis/pipeline/spatial.py",
+      "sha256": "7248009a117cf10e7cf19adbb8351942f195d6945dad14d3186af4865fc456d4"
+    },
+    {
+      "path": "reproduction/mlp_explain/runtime/tests/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reproduction/mlp_explain/runtime/tests/test_adjusted_rent_history.py",
+      "sha256": "1f59fae8f9cd3282b3c32a78643ebaf2bf18a83aa195fb11f95fbf8f89c12d03"
+    },
+    {
+      "path": "reproduction/mlp_explain/runtime/tests/test_cleaned_neural_ensemble.py",
+      "sha256": "b101bd42599d571110a8e7731368774c8a181eda7d45285ed8eaad5649efb68d"
+    },
+    {
+      "path": "reproduction/mlp_explain/runtime/tests/test_historical_risk_correction.py",
+      "sha256": "ca3baebf24103765771f1f34a3a63c59df9dd6e13c52d8122c1252b0af7945f6"
+    },
+    {
+      "path": "reproduction/mlp_explain/runtime/tests/test_neural_ensemble_uncertainty.py",
+      "sha256": "0ebe3782b59bb5d8a748857cf47331b9e2cd4816b838866822ab98ffa47de57b"
+    },
+    {
+      "path": "reproduction/mlp_explain/runtime/tests/test_raw_time_feature.py",
+      "sha256": "94766a0f7d18d70f4c84b8bccd10aa03ced74a598b138c7a4e2e415b33bd4de4"
+    },
+    {
+      "path": "reproduction/mlp_explain/runtime/tests/test_recency_weighting.py",
+      "sha256": "5ab6206fbcf3199603183043ab96768cbfa819f6edb2bbbb321bf9e0c34e1265"
+    },
+    {
+      "path": "reproduction/mlp_explain/runtime/tests/test_rent_target_units.py",
+      "sha256": "0915371583233028f7fa485417262b4a7300f0beb116899fbc554b8e6f59ef71"
+    },
+    {
+      "path": "reproduction/mlp_explain/runtime/tests/test_spatiotemporal_hybrid.py",
+      "sha256": "ed9c17422740ea62e6696e8a36d3f7a7ea8948c7a5da70e2db7c4a47f7573df2"
+    },
+    {
+      "path": "reproduction/mlp_explain/runtime/tests/test_tabm_epoch_selection.py",
+      "sha256": "27557139bb045d5af40b11a5e6972461f22952388a98517ca2a8aeb405666509"
+    },
+    {
+      "path": "reproduction/mlp_explain/runtime/tests/test_tabm_mixture.py",
+      "sha256": "09d568f5080ed151c6c4f2096974d57a72520dedba748e7946c456639e3179a5"
+    },
+    {
+      "path": "reproduction/mlp_explain/runtime/tests/test_tabm_numeric_gradients.py",
+      "sha256": "3ad313207c5c45b3b8b5495ef2ee73c4d5823d338c9c3e6be6fb8e905db89361"
+    },
+    {
+      "path": "reproduction/mlp_explain/runtime/tests/test_tabm_periodic.py",
+      "sha256": "fc8083277562b9ccb3778e8fd5d8e3be23fad420e9a0f0d7d49ae2f1db73de45"
+    },
+    {
+      "path": "reproduction/mlp_explain/validation/monthly.csv",
+      "sha256": "0a6545de72346903758803257741106827c3cb0c5b661fa5b6cf8c69c85e3a0b"
+    },
+    {
+      "path": "reproduction/mlp_explain/validation/rent_bands.csv",
+      "sha256": "9f98bf112b041c53233c293b4b49eae61b1548e54cbc1121d987b2d57e8fc6aa"
+    },
+    {
+      "path": "reproduction/mlp_explain/validation/summary.json",
+      "sha256": "cbf35563462a0e9bf1ce38e7d8138e1235f6c3c6d18ea79264c012502b3be971"
     },
     {
       "path": "reproduction/three_submissions/README.md",

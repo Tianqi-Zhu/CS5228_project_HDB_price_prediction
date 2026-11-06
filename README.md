@@ -25,3 +25,7 @@ Ziyuan’s earlier [spatial/temporal feature explorations](experiment/appendix/X
 |---|---|
 | TabPFN workflow | [Integration guide](docs/guides/tabpfn_workflow.md) |
 | TabPFN classification | [Decisions](docs/planning/tabpfn-branch-split.md), [directory table](docs/planning/tabpfn-classification.csv) |
+
+## MLP解释性实验
+
+[完整报告与历史证据](experiment/appendix/X06/mlp_explain/README.md)包括误差分组、相同输入不同租金、预测区间、清洗对照和历史风险修正。运行 `python reproduction/mlp_explain/run.py verify` 核验归档；`diagnose` 从逐行预测复算诊断；训练命令见该目录说明。
