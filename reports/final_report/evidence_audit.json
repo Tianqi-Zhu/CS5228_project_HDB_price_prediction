@@ -1,0 +1,154 @@
+{
+  "checks": {
+    "raw_row_counts": true,
+    "annual_and_recent_split_sizes": true,
+    "duplicate_count": true,
+    "recent_prediction_ids_months_labels": true,
+    "latest_tree_tabpfn_metrics_recomputed": true,
+    "all_three_tabpfn_cohort_ablation_metrics_recomputed": true,
+    "filter_control_reproduces_unfiltered_blend": true
+  },
+  "data": {
+    "train": 150000,
+    "test": 50000,
+    "exact_duplicates": 425,
+    "monthly_mean_first": 2048.9012464046023,
+    "monthly_mean_last": 3162.707783641161
+  },
+  "recomputed_recent_metrics": {
+    "zch_original": {
+      "rows": 28995,
+      "rmse": 443.8630505338079,
+      "mae": 322.91877292353905,
+      "bias": -4.9028830147458455
+    },
+    "tabpfn87": {
+      "rows": 28995,
+      "rmse": 441.9592693870502,
+      "mae": 318.21583739055575,
+      "bias": 4.108371431650679
+    },
+    "equal_blend": {
+      "rows": 28995,
+      "rmse": 440.9519575033717,
+      "mae": 318.8879165137924,
+      "bias": -0.397255791547583
+    },
+    "locked_blend": {
+      "rows": 28995,
+      "rmse": 442.30246724206717,
+      "mae": 321.03249177129806,
+      "bias": -3.1968471220812904
+    }
+  },
+  "recomputed_cohort_metrics": {
+    "baseline77": {
+      "rmse": 455.3959272763664,
+      "mae": 327.79369889407883
+    },
+    "anniversary87": {
+      "rmse": 441.9592693870502,
+      "mae": 318.21583739055575
+    },
+    "anniversary92": {
+      "rmse": 442.0164056869385,
+      "mae": 317.81458048755917
+    }
+  },
+  "supplementary_diagnostics": {
+    "paired_saved_predictions_aligned": true,
+    "paired_replicates": 5000,
+    "block_months": 3,
+    "circular_blocks": true,
+    "seed": 42,
+    "intervals": [
+      {
+        "contrast": "87 vs 77 inputs",
+        "delta_rmse_sgd": -13.43665788931628,
+        "lower95_sgd": -16.273341114988,
+        "upper95_sgd": -10.990633209317764,
+        "months_improved": 10
+      },
+      {
+        "contrast": "92 vs 87 inputs",
+        "delta_rmse_sgd": 0.0571362998883842,
+        "lower95_sgd": -0.5415580940760492,
+        "upper95_sgd": 0.7733853414179066,
+        "months_improved": 4
+      },
+      {
+        "contrast": "Equal blend vs 87",
+        "delta_rmse_sgd": -1.007311883678483,
+        "lower95_sgd": -1.5269790852961094,
+        "upper95_sgd": -0.5669141745470798,
+        "months_improved": 10
+      },
+      {
+        "contrast": "Earlier-locked blend vs 87",
+        "delta_rmse_sgd": 0.3431978550169674,
+        "lower95_sgd": -0.6555242163090611,
+        "upper95_sgd": 1.155810307798447,
+        "months_improved": 2
+      },
+      {
+        "contrast": "Coarser categories vs original",
+        "delta_rmse_sgd": -0.18125073977563488,
+        "lower95_sgd": -0.498934878916198,
+        "upper95_sgd": 0.14276621862512684,
+        "months_improved": 6
+      },
+      {
+        "contrast": "Half-median filter vs original",
+        "delta_rmse_sgd": 4.891259261915138,
+        "lower95_sgd": 3.1702380570221793,
+        "upper95_sgd": 6.460754544174863,
+        "months_improved": 1
+      }
+    ],
+    "rent_band_rows_total": 28995
+  },
+  "final_selection": {
+    "file": "kaggle_structure_blend.csv",
+    "path": "output/submissions/candidates/kaggle_structure_blend.csv",
+    "method": "\u5206\u7ec4\u878d\u5408\uff0bPLR-FT",
+    "report_role": "\u63a8\u8350final",
+    "local_annual_rmse": 451.02950249165616,
+    "local_recent_rmse": 441.8345348836222,
+    "kaggle_displayed_score": 415.37529,
+    "sha256": "386a12fac6a8e9e94892b338c29f38b7efd842811517d4aa487126922a6b7e92",
+    "rows": 50000
+  },
+  "limitations": [
+    "Archived final-structure scores and Kaggle value are read from the saved selection record; the screenshot was not supplied in this turn.",
+    "Root output/ model binaries and final submission CSV are absent from this checkout; no full final-model replay is claimed.",
+    "The report does not train models or upload predictions.",
+    "Names, student IDs, confirmed team name and actual workload ownership require the team."
+  ],
+  "source_sha256": {
+    "data/train.csv": "2fe38ce9e0d8a02e9786f066d4a10d575d91f34be1d9111f0142e3f43fbfc8a5",
+    "data/test.csv": "a2ec03a0afc07c251c72cc0de2e15ac965a3b06291b304aaac53a375115ff4e0",
+    "reports/train_test_eda/summary.json": "8a5dcd010aa9f0f12b1b3e95f96f86f4fcc266e8d2462d406f8c9ce87db24ee6",
+    "reports/auxiliary_data_eda/summary.json": "4841c93ee27407183d6ff96378b2fb0c04a798586718cff669af6c396b5e6de9",
+    "experiment/03_model_comparison/recommended_models.csv": "f8d6eed18a3b71b4ec75dffb59404013491306b1a2add8a14e0704447754bce0",
+    "experiment/03_model_comparison/same_input_models.csv": "4b5a0bc55ebe051fd91b911b593d3be3b835053b714406a23da8b65d95da8b31",
+    "experiment/02_feature_engineering/controlled_feature_ladder.csv": "df63ebf1869e91baee9e46207d419ae6b790e4815e41ce1f973d151097bbed73",
+    "experiment/02_feature_engineering/group_feature_effects.csv": "d27103684eda5804ef7ef8029564141bb79250676875f14895477f2f1b18223c",
+    "experiment/01_final/submission_selection.json": "3941b763900dcd3ba13bb3f8e31d907bcca49160cecde9fe8b2116337f3c3516",
+    "experiment/04_optimization_history/09_grouped_blending.md": "351fd137ed40d5e79abe8fa65dbb5a2bebc7be3abff22a151057a8ec71a83f0d",
+    "experiment/04_optimization_history/10_plr_transformer_final.md": "cc712383f9712164a04462781ee3aa78fa9bf3817446de9b275a176bbdc186c3",
+    "reports/tabpfn_anniversary_history_80_20/report.md": "b51e3d81f1b31d59b88aad0ec28ade0eb2c7722e0d60c4fb381d3feb7913acb7",
+    "reports/zch_anniversary_tabpfn_blend/predictions_june.csv": "728593d8c6615ea00db914a613ee23b1830cb1b6e2dea05bde2276e65cef5466",
+    "reports/half_median_zch_tabpfn_ensemble/scores.csv": "8dbcfd90b0eaf4e540f2152f5978ebb7eabaa18f9628569e7dfbe473001711ed",
+    "reports/half_median_zch_tabpfn_ensemble/subgroup_scores.csv": "f0c7a587639e7ee32b79054067351acdaeb03b9011379242bd919ddf09a8af49",
+    "reports/flat_model_grouping_ensemble/scores.csv": "8f4358003bf0df5fe887582a3dc9bc02ab679903d974f182c8918a6393dd3378",
+    "reports/tabpfn_anniversary_history_80_20/scores.csv": "58c714fafb59f1c235016589ca78a73a6fb72d560cf93b940294cb2508d55342",
+    "reports/tabpfn_anniversary_history_80_20/predictions_baseline77.csv": "1a451ed4e003fa8245b0aaa55ddf3657a216bedb809801a20e1a3447bfa5ff7d",
+    "reports/tabpfn_anniversary_history_80_20/predictions_anniversary87.csv": "934f34441d14a60002380e076cd9fffe945eafbe52d6b07687db592915a97c93",
+    "reports/tabpfn_anniversary_history_80_20/predictions_anniversary92.csv": "060b808d14517f450b164857b3bc6f68e347773a520aa02e0b1020eba0acf719",
+    "reports/tabpfn_feature_ensemble_final_submission/report.md": "5c9dbcf9149f0c931afa1d852ebc8ab94fb67fed39937cebcd05e4c74bb30406",
+    "reports/tabpfn_anniversary_history_80_20/coverage.csv": "5ce9ab023f7fe84db915fb2076b8db68710a2dec2979613b07299653caa7cb96",
+    "reports/half_median_zch_tabpfn_ensemble/comparison_predictions.csv": "d1b0f451c90a15721e61f6e92f96098cbc076c80c7fda95c226e9207f5dec43b",
+    "reports/flat_model_grouping_ensemble/comparison_predictions.csv": "e878980367b63330b1c943f521249b04cb045afd0db3643ab5400a862a599f17",
+    "reports/final_report/reference_pool.bib": "061331a5312bf09f28d2b68c970c20665ccde47851c70814ec33fd19b2e7c27f"
+  }
+}

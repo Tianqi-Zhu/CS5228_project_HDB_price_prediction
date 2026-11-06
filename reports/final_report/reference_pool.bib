@@ -1,0 +1,710 @@
+% CS5228_project: Singapore HDB monthly rent prediction
+% Related work and data sources discussed in the project conversations.
+% Compiled 2026-11-05. The file is a reference pool, not a claim that every
+% item was implemented or should be cited in the final report.
+% For long author lists, "and others" is intentional and valid BibTeX.
+
+% ===========================================================================
+% 1. HOUSING VALUATION, RENT PREDICTION, AND SPATIAL HOUSING MODELS
+% ===========================================================================
+
+@article{sing2022boosted,
+  author  = {Sing, Tien Foo and Yang, Jesse Jingye and Yu, Shi Ming},
+  title   = {Boosted Tree Ensembles for Artificial Intelligence Based Automated Valuation Models ({AI-AVM})},
+  journal = {The Journal of Real Estate Finance and Economics},
+  year    = {2022},
+  volume  = {65},
+  number  = {4},
+  pages   = {649--674},
+  doi     = {10.1007/s11146-021-09861-1},
+  url     = {https://doi.org/10.1007/s11146-021-09861-1}
+}
+
+@article{geerts2025gnnhousing,
+  author  = {Geerts, Margot and vanden Broucke, Seppe and De Weerdt, Jochen},
+  title   = {Graph Neural Networks for House Price Prediction: Do or Don't?},
+  journal = {International Journal of Data Science and Analytics},
+  year    = {2025},
+  volume  = {20},
+  number  = {4},
+  pages   = {3563--3593},
+  doi     = {10.1007/s41060-024-00682-y},
+  url     = {https://doi.org/10.1007/s41060-024-00682-y}
+}
+
+@article{lee2024geographiccnn,
+  author  = {Lee, Hojun and Han, Hoon and Pettit, Chris and Gao, Qishuo and Shi, Vivien},
+  title   = {Machine Learning Approach to Residential Valuation: A Convolutional Neural Network Model for Geographic Variation},
+  journal = {The Annals of Regional Science},
+  year    = {2024},
+  volume  = {72},
+  number  = {2},
+  pages   = {579--599},
+  doi     = {10.1007/s00168-023-01212-7},
+  url     = {https://doi.org/10.1007/s00168-023-01212-7}
+}
+
+@article{deng2025imagefusion,
+  author  = {Deng, Lin},
+  title   = {Real Estate Valuation with Multi-Source Image Fusion and Enhanced Machine Learning Pipeline},
+  journal = {PLOS ONE},
+  year    = {2025},
+  volume  = {20},
+  number  = {5},
+  pages   = {e0321951},
+  doi     = {10.1371/journal.pone.0321951},
+  url     = {https://doi.org/10.1371/journal.pone.0321951}
+}
+
+@misc{adzanoukpe2024ghana,
+  author       = {Adzanoukpe, Philip},
+  title        = {Predicting House Rental Prices in Ghana Using Machine Learning},
+  year         = {2024},
+  howpublished = {Preprints.org preprint},
+  url          = {https://www.preprints.org/manuscript/202412.1927},
+  note         = {Preprint; verify publication status before citing a journal version}
+}
+
+@article{rosen1974hedonic,
+  author  = {Rosen, Sherwin},
+  title   = {Hedonic Prices and Implicit Markets: Product Differentiation in Pure Competition},
+  journal = {Journal of Political Economy},
+  year    = {1974},
+  volume  = {82},
+  number  = {1},
+  pages   = {34--55},
+  doi     = {10.1086/260169}
+}
+
+% ===========================================================================
+% 2. TABULAR FOUNDATION MODELS, FINETUNING, RETRIEVAL, AND ENSEMBLES
+% ===========================================================================
+
+@inproceedings{hollmann2023tabpfn,
+  author    = {Hollmann, Noah and M\"uller, Samuel and Eggensperger, Katharina and Hutter, Frank},
+  title     = {{TabPFN}: A Transformer That Solves Small Tabular Classification Problems in a Second},
+  booktitle = {International Conference on Learning Representations},
+  year      = {2023},
+  eprint    = {2207.01848},
+  archivePrefix = {arXiv},
+  url       = {https://arxiv.org/abs/2207.01848}
+}
+
+@article{hollmann2025tabpfn,
+  author  = {Hollmann, Noah and M\"uller, Samuel and Purucker, Lennart and Krishnakumar, Arjun and K\"orfer, Moritz and Hoo, Shi Bin and Schirrmeister, Robin Tibor and Hutter, Frank},
+  title   = {Accurate Predictions on Small Data with a Tabular Foundation Model},
+  journal = {Nature},
+  year    = {2025},
+  volume  = {637},
+  pages   = {319--326},
+  doi     = {10.1038/s41586-024-08328-6},
+  url     = {https://doi.org/10.1038/s41586-024-08328-6}
+}
+
+@misc{grinsztajn2025tabpfn25,
+  author        = {Grinsztajn, L\'eo and Fl\"oge, Klemens and Key, Oscar and Birkel, Felix and Jund, Philipp and Roof, Brendan and J\"ager, Benjamin and others},
+  title         = {{TabPFN-2.5}: Advancing the State of the Art in Tabular Foundation Models},
+  year          = {2025},
+  eprint        = {2511.08667},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2511.08667}
+}
+
+@misc{grinsztajn2026tabpfn3,
+  author        = {Grinsztajn, L\'eo and Fl\"oge, Klemens and Key, Oscar and others},
+  title         = {{TabPFN-3}: Technical Report},
+  year          = {2026},
+  eprint        = {2605.13986},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2605.13986}
+}
+
+@misc{jager2026tabpfn35,
+  author        = {J\"ager, Benjamin and Erickson, Nick and Grinsztajn, L\'eo and Birkel, Felix and Fl\"oge, Klemens and Key, Oscar and Kaya, K\"ur{\c{s}}at and K\"ubler, Jonas and Frankel, Ad\`ele and Schr\"oder, Tobias and others},
+  title         = {{TabPFN-3.5}: Technical Report},
+  year          = {2026},
+  eprint        = {2609.17895},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2609.17895},
+  note          = {Also covers TabPFN-3.5-Plus, Fast and Thinking variants}
+}
+
+@misc{ning2026testtime,
+  author        = {Ning, Kanghui and Bilo\v{s}, Marin and Wilson, James T. and Zhang, Yilang and Rasul, Kashif and Song, Dongjin and Schneider, Anderson and Nevmyvaka, Yuriy},
+  title         = {Test-Time Compute for Tabular Foundation Models: Mechanisms, Gains, and Limits},
+  year          = {2026},
+  eprint        = {2610.12005},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2610.12005},
+  note          = {Introduces DiagScale and studies aggregation and context construction}
+}
+
+@misc{rubachev2025finetuning,
+  author        = {Rubachev, Ivan and Kotelnikov, Akim and Kartashev, Nikolay and Babenko, Artem},
+  title         = {On Finetuning Tabular Foundation Models},
+  year          = {2025},
+  eprint        = {2506.08982},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2506.08982}
+}
+
+@inproceedings{thomas2024localpfn,
+  author    = {Thomas, Valentin and Ma, Junwei and Hosseinzadeh, Reza and Golestan, Kaveh and Yu, Guangwei and Volkovs, Maksims and Caterini, Anthony},
+  title     = {Retrieval \& Fine-Tuning for In-Context Tabular Models},
+  booktitle = {Advances in Neural Information Processing Systems},
+  year      = {2024},
+  volume    = {37},
+  eprint    = {2406.05207},
+  url       = {https://arxiv.org/abs/2406.05207},
+  note      = {Introduces LoCalPFN}
+}
+
+@inproceedings{ye2025closerlook,
+  author    = {Ye, Han-Jia and Liu, Si-Yang and Chao, Wei-Lun},
+  title     = {A Closer Look at {TabPFN} v2: Understanding Its Strengths and Extending Its Capabilities},
+  booktitle = {Advances in Neural Information Processing Systems},
+  year      = {2025},
+  volume    = {38},
+  eprint    = {2502.17361},
+  url       = {https://arxiv.org/abs/2502.17361}
+}
+
+@inproceedings{gorishniy2024tabr,
+  author    = {Gorishniy, Yury and Rubachev, Ivan and Kartashev, Nikolay and Shlenskii, Daniil and Kotelnikov, Akim and Babenko, Artem},
+  title     = {{TabR}: Tabular Deep Learning Meets Nearest Neighbors},
+  booktitle = {International Conference on Learning Representations},
+  year      = {2024},
+  eprint    = {2307.14338},
+  url       = {https://arxiv.org/abs/2307.14338}
+}
+
+@inproceedings{gorishniy2025tabm,
+  author    = {Gorishniy, Yury and Kotelnikov, Akim and Babenko, Artem},
+  title     = {{TabM}: Advancing Tabular Deep Learning with Parameter-Efficient Ensembling},
+  booktitle = {International Conference on Learning Representations},
+  year      = {2025},
+  eprint    = {2410.24210},
+  url       = {https://arxiv.org/abs/2410.24210}
+}
+
+@inproceedings{qu2026tabiclv2,
+  author    = {Qu, Jingang and Holzm\"uller, David and Varoquaux, Ga\"el and Le Morvan, Marine},
+  title     = {{TabICL}v2: A Better, Faster, Scalable, and Open Tabular Foundation Model},
+  booktitle = {Proceedings of the 43rd International Conference on Machine Learning},
+  year      = {2026},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {306},
+  pages     = {102477--102555},
+  url       = {https://proceedings.mlr.press/v306/qu26a.html}
+}
+
+@inproceedings{erickson2025tabarena,
+  author    = {Erickson, Nick and Purucker, Lennart and Tschalzev, Andrej and Holzm\"uller, David and Desai, Prateek Mutalik and Salinas, David and Hutter, Frank},
+  title     = {{TabArena}: A Living Benchmark for Machine Learning on Tabular Data},
+  booktitle = {Advances in Neural Information Processing Systems, Datasets and Benchmarks Track},
+  year      = {2025},
+  eprint    = {2506.16791},
+  url       = {https://arxiv.org/abs/2506.16791}
+}
+
+@misc{purucker2026beyondarena,
+  author        = {Purucker, Lennart and Tschalzev, Andrej and Erickson, Nick and Holzm\"uller, David and Araiza, Alan and Pfefferle, Alexander Tobias and Al Najjar, Mustafa and Varoquaux, Ga\"el and Hutter, Frank},
+  title         = {Beyond {IID}: How General Are Tabular Foundation Models, Really?},
+  year          = {2026},
+  eprint        = {2606.30410},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2606.30410},
+  note          = {Introduces BeyondArena, including temporal and grouped evaluation}
+}
+
+@inproceedings{feuer2024tunetables,
+  author    = {Feuer, Benjamin and Schirrmeister, Robin Tibor and Cherepanova, Valeriia and Hegde, Chinmay and Hutter, Frank and Goldblum, Micah and Cohen, Niv and White, Colin},
+  title     = {{TuneTables}: Context Optimization for Scalable Prior-Data Fitted Networks},
+  booktitle = {Advances in Neural Information Processing Systems},
+  volume    = {37},
+  year      = {2024},
+  eprint    = {2402.11137},
+  url       = {https://arxiv.org/abs/2402.11137}
+}
+
+@inproceedings{ma2025tabdpt,
+  author    = {Ma, Junwei and Thomas, Valentin and Hosseinzadeh, Rasa and Labach, Alex and Cresswell, Jesse C. and Golestan, Keyvan and Yu, Guangwei and Caterini, Anthony L. and Volkovs, Maksims},
+  title     = {{TabDPT}: Scaling Tabular Foundation Models on Real Data},
+  booktitle = {Advances in Neural Information Processing Systems},
+  volume    = {38},
+  year      = {2025},
+  eprint    = {2410.18164},
+  url       = {https://arxiv.org/abs/2410.18164}
+}
+
+@inproceedings{holzmuller2024better,
+  author    = {Holzm\"uller, David and Grinsztajn, L\'eo and Steinwart, Ingo},
+  title     = {Better by Default: Strong Pre-Tuned {MLP}s and Boosted Trees on Tabular Data},
+  booktitle = {Advances in Neural Information Processing Systems},
+  volume    = {37},
+  year      = {2024}
+}
+
+@inproceedings{grinsztajn2022tree,
+  author    = {Grinsztajn, L\'eo and Oyallon, Edouard and Varoquaux, Ga\"el},
+  title     = {Why Do Tree-Based Models Still Outperform Deep Learning on Tabular Data?},
+  booktitle = {Advances in Neural Information Processing Systems},
+  year      = {2022},
+  volume    = {35},
+  url       = {https://arxiv.org/abs/2207.08815}
+}
+
+@inproceedings{chen2016xgboost,
+  author    = {Chen, Tianqi and Guestrin, Carlos},
+  title     = {{XGBoost}: A Scalable Tree Boosting System},
+  booktitle = {Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining},
+  year      = {2016},
+  pages     = {785--794},
+  doi       = {10.1145/2939672.2939785}
+}
+
+@inproceedings{ke2017lightgbm,
+  author    = {Ke, Guolin and Meng, Qi and Finley, Thomas and Wang, Taifeng and Chen, Wei and Ma, Weidong and Ye, Qiwei and Liu, Tie-Yan},
+  title     = {{LightGBM}: A Highly Efficient Gradient Boosting Decision Tree},
+  booktitle = {Advances in Neural Information Processing Systems},
+  year      = {2017},
+  volume    = {30}
+}
+
+@inproceedings{prokhorenkova2018catboost,
+  author    = {Prokhorenkova, Liudmila and Gusev, Gleb and Vorobev, Aleksandr and Dorogush, Anna Veronika and Gulin, Andrey},
+  title     = {{CatBoost}: Unbiased Boosting with Categorical Features},
+  booktitle = {Advances in Neural Information Processing Systems},
+  year      = {2018},
+  volume    = {31},
+  url       = {https://arxiv.org/abs/1706.09516}
+}
+
+@article{breiman2001randomforest,
+  author  = {Breiman, Leo},
+  title   = {Random Forests},
+  journal = {Machine Learning},
+  year    = {2001},
+  volume  = {45},
+  pages   = {5--32},
+  doi     = {10.1023/A:1010933404324}
+}
+
+@book{breiman1984cart,
+  author    = {Breiman, Leo and Friedman, Jerome H. and Olshen, Richard A. and Stone, Charles J.},
+  title     = {Classification and Regression Trees},
+  publisher = {Wadsworth},
+  year      = {1984}
+}
+
+@article{hoerl1970ridge,
+  author  = {Hoerl, Arthur E. and Kennard, Robert W.},
+  title   = {Ridge Regression: Biased Estimation for Nonorthogonal Problems},
+  journal = {Technometrics},
+  year    = {1970},
+  volume  = {12},
+  number  = {1},
+  pages   = {55--67},
+  doi     = {10.1080/00401706.1970.10488634}
+}
+
+@article{freund1997adaboost,
+  author  = {Freund, Yoav and Schapire, Robert E.},
+  title   = {A Decision-Theoretic Generalization of On-Line Learning and an Application to Boosting},
+  journal = {Journal of Computer and System Sciences},
+  year    = {1997},
+  volume  = {55},
+  number  = {1},
+  pages   = {119--139},
+  doi     = {10.1006/jcss.1997.1504}
+}
+
+@article{zou2005elasticnet,
+  author  = {Zou, Hui and Hastie, Trevor},
+  title   = {Regularization and Variable Selection via the Elastic Net},
+  journal = {Journal of the Royal Statistical Society: Series B},
+  year    = {2005},
+  volume  = {67},
+  number  = {2},
+  pages   = {301--320},
+  doi     = {10.1111/j.1467-9868.2005.00503.x}
+}
+
+@inproceedings{hu2022lora,
+  author    = {Hu, Edward J. and Shen, Yelong and Wallis, Phillip and Allen-Zhu, Zeyuan and Li, Yuanzhi and Wang, Shean and Wang, Lu and Chen, Weizhu},
+  title     = {{LoRA}: Low-Rank Adaptation of Large Language Models},
+  booktitle = {International Conference on Learning Representations},
+  year      = {2022},
+  eprint    = {2106.09685},
+  url       = {https://arxiv.org/abs/2106.09685}
+}
+
+@inproceedings{caruana2004ensemble,
+  author    = {Caruana, Rich and Niculescu-Mizil, Alexandru and Crew, Geoff and Ksikes, Alex},
+  title     = {Ensemble Selection from Libraries of Models},
+  booktitle = {Proceedings of the 21st International Conference on Machine Learning},
+  year      = {2004},
+  doi       = {10.1145/1015330.1015432}
+}
+
+% ===========================================================================
+% 3. TEMPORAL/SPATIAL STATISTICS, LATENT MODELS, UNCERTAINTY
+% These are useful background references for experiments proposed in chat.
+% ===========================================================================
+
+@book{hyndman2021forecasting,
+  author    = {Hyndman, Rob J. and Athanasopoulos, George},
+  title     = {Forecasting: Principles and Practice},
+  edition   = {3},
+  publisher = {OTexts},
+  year      = {2021},
+  url       = {https://otexts.com/fpp3/}
+}
+
+@book{durbin2012statespace,
+  author    = {Durbin, James and Koopman, Siem Jan},
+  title     = {Time Series Analysis by State Space Methods},
+  edition   = {2},
+  publisher = {Oxford University Press},
+  year      = {2012}
+}
+
+@book{gelman2013bayesian,
+  author    = {Gelman, Andrew and Carlin, John B. and Stern, Hal S. and Dunson, David B. and Vehtari, Aki and Rubin, Donald B.},
+  title     = {Bayesian Data Analysis},
+  edition   = {3},
+  publisher = {Chapman and Hall/CRC},
+  year      = {2013}
+}
+
+@book{wood2017gam,
+  author    = {Wood, Simon N.},
+  title     = {Generalized Additive Models: An Introduction with {R}},
+  edition   = {2},
+  publisher = {Chapman and Hall/CRC},
+  year      = {2017}
+}
+
+@book{rasmussen2006gp,
+  author    = {Rasmussen, Carl Edward and Williams, Christopher K. I.},
+  title     = {Gaussian Processes for Machine Learning},
+  publisher = {MIT Press},
+  year      = {2006},
+  url       = {https://gaussianprocess.org/gpml/}
+}
+
+@article{brunsdon1996gwr,
+  author  = {Brunsdon, Chris and Fotheringham, A. Stewart and Charlton, Martin E.},
+  title   = {Geographically Weighted Regression: A Method for Exploring Spatial Nonstationarity},
+  journal = {Geographical Analysis},
+  year    = {1996},
+  volume  = {28},
+  number  = {4},
+  pages   = {281--298},
+  doi     = {10.1111/j.1538-4632.1996.tb00936.x}
+}
+
+@inproceedings{kingma2014vae,
+  author    = {Kingma, Diederik P. and Welling, Max},
+  title     = {Auto-Encoding Variational Bayes},
+  booktitle = {International Conference on Learning Representations},
+  year      = {2014},
+  eprint    = {1312.6114},
+  url       = {https://arxiv.org/abs/1312.6114}
+}
+
+@inproceedings{higgins2017betavae,
+  author    = {Higgins, Irina and Matthey, Loic and Pal, Arka and Burgess, Christopher and Glorot, Xavier and Botvinick, Matthew and Mohamed, Shakir and Lerchner, Alexander},
+  title     = {{beta-VAE}: Learning Basic Visual Concepts with a Constrained Variational Framework},
+  booktitle = {International Conference on Learning Representations},
+  year      = {2017},
+  url       = {https://openreview.net/forum?id=Sy2fzU9gl}
+}
+
+@inproceedings{kim2018factorvae,
+  author    = {Kim, Hyunjik and Mnih, Andriy},
+  title     = {Disentangling by Factorising},
+  booktitle = {International Conference on Machine Learning},
+  year      = {2018},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {80},
+  pages     = {2649--2658},
+  url       = {https://proceedings.mlr.press/v80/kim18b.html}
+}
+
+@inproceedings{romano2019cqr,
+  author    = {Romano, Yaniv and Patterson, Evan and Cand\`es, Emmanuel},
+  title     = {Conformalized Quantile Regression},
+  booktitle = {Advances in Neural Information Processing Systems},
+  year      = {2019},
+  volume    = {32},
+  url       = {https://arxiv.org/abs/1905.03222}
+}
+
+@inproceedings{geifman2017selective,
+  author    = {Geifman, Yonatan and El-Yaniv, Ran},
+  title     = {Selective Classification for Deep Neural Networks},
+  booktitle = {Advances in Neural Information Processing Systems},
+  year      = {2017},
+  volume    = {30},
+  url       = {https://arxiv.org/abs/1705.08500}
+}
+
+@article{chernozhukov2018dml,
+  author  = {Chernozhukov, Victor and Chetverikov, Denis and Demirer, Mert and Duflo, Esther and Hansen, Christian and Newey, Whitney and Robins, James},
+  title   = {Double/Debiased Machine Learning for Treatment and Structural Parameters},
+  journal = {The Econometrics Journal},
+  year    = {2018},
+  volume  = {21},
+  number  = {1},
+  pages   = {C1--C68},
+  doi     = {10.1111/ectj.12097},
+  note    = {Methodological background for cross-fitting; do not describe predictive residual cross-fitting as causal DML}
+}
+
+@inproceedings{shi2015convlstm,
+  author    = {Shi, Xingjian and Chen, Zhourong and Wang, Hao and Yeung, Dit-Yan and Wong, Wai-Kin and Woo, Wang-chun},
+  title     = {Convolutional {LSTM} Network: A Machine Learning Approach for Precipitation Nowcasting},
+  booktitle = {Advances in Neural Information Processing Systems},
+  year      = {2015},
+  volume    = {28},
+  eprint    = {1506.04214},
+  url       = {https://arxiv.org/abs/1506.04214}
+}
+
+@article{zhu2021igtd,
+  author  = {Zhu, Yitan and Brettin, Thomas and Xia, Fangfang and Partin, Alexander and Shukla, Maulik and Yoo, Hyunseung and others},
+  title   = {Converting Tabular Data into Images for Deep Learning with Convolutional Neural Networks},
+  journal = {Scientific Reports},
+  year    = {2021},
+  volume  = {11},
+  pages   = {11325},
+  doi     = {10.1038/s41598-021-90923-y},
+  url     = {https://doi.org/10.1038/s41598-021-90923-y}
+}
+
+% ===========================================================================
+% 4. EARTH OBSERVATION, GREENERY, STREET VIEW AND MULTIMODAL FEATURES
+% ===========================================================================
+
+@misc{brown2025alphaearth,
+  author        = {Brown, Christopher F. and Kazmierski, Michal R. and Pasquarella, Valerie J. and Rucklidge, William J. and Samsikova, Masha and Zhang, Chenhui and Shelhamer, Evan and others},
+  title         = {{AlphaEarth Foundations}: An Embedding Field Model for Accurate and Efficient Global Mapping from Sparse Label Data},
+  year          = {2025},
+  eprint        = {2507.22291},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2507.22291}
+}
+
+@article{brown2022dynamicworld,
+  author  = {Brown, Christopher F. and Brumby, Steven P. and Guzder-Williams, Brookie and Birch, Tanya and Hyde, Samantha B. and Mazzariello, Joseph and others},
+  title   = {Dynamic World, Near Real-Time Global 10 m Land Use Land Cover Mapping},
+  journal = {Scientific Data},
+  year    = {2022},
+  volume  = {9},
+  pages   = {251},
+  doi     = {10.1038/s41597-022-01307-4},
+  url     = {https://doi.org/10.1038/s41597-022-01307-4}
+}
+
+@misc{zanaga2022worldcover,
+  author = {Zanaga, Daniele and Van De Kerchove, Ruben and Daems, Dirk and De Keersmaecker, Wanda and Brockmann, Carsten and Kirches, Guido and Wevers, Jan and others},
+  title  = {{ESA WorldCover} 10 m 2021 v200},
+  year   = {2022},
+  howpublished = {European Space Agency global land-cover dataset},
+  url    = {https://esa-worldcover.org/en/data-access},
+  note   = {Use the source-specified WorldCover data citation for the exact version downloaded}
+}
+
+@inproceedings{cong2022satmae,
+  author    = {Cong, Yezhen and Khanna, Samar and Meng, Chenlin and Liu, Patrick and Rozi, Erik and He, Yutong and Burke, Marshall and Lobell, David and Ermon, Stefano},
+  title     = {{SatMAE}: Pre-Training Transformers for Temporal and Multi-Spectral Satellite Imagery},
+  booktitle = {Advances in Neural Information Processing Systems},
+  volume    = {35},
+  year      = {2022},
+  eprint    = {2207.08051},
+  url       = {https://arxiv.org/abs/2207.08051}
+}
+
+@misc{szwarcman2024prithvi,
+  author        = {Szwarcman, Daniela and others},
+  title         = {{Prithvi-EO-2.0}: A Versatile Multi-Temporal Foundation Model for Earth Observation Applications},
+  year          = {2024},
+  eprint        = {2412.02732},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2412.02732},
+  note          = {Original 2024 preprint; subsequently published in IEEE TGRS}
+}
+
+@inproceedings{jakubik2025terramind,
+  author    = {Jakubik, Johannes and Yang, Felix and Blumenstiel, Benedikt and Scheurer, Erik and Sedona, Rocco and Maurogiovanni, Stefano and Bosmans, Jente and others},
+  title     = {{TerraMind}: Large-Scale Generative Multimodality for Earth Observation},
+  booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  year      = {2025},
+  pages     = {7383--7394},
+  url       = {https://openaccess.thecvf.com/content/ICCV2025/html/Jakubik_TerraMind_Large-Scale_Generative_Multimodality_for_Earth_Observation_ICCV_2025_paper.html}
+}
+
+@misc{simeoni2025dinov3,
+  author        = {Sim\'eoni, Oriane and Vo, Huy V. and Seitzer, Maximilian and Baldassarre, Federico and Oquab, Maxime and Jose, Cijo and others},
+  title         = {{DINOv3}},
+  year          = {2025},
+  eprint        = {2508.10104},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2508.10104}
+}
+
+@article{oquab2024dinov2,
+  author  = {Oquab, Maxime and Darcet, Timoth\'ee and Moutakanni, Th\'eo and Vo, Huy V. and Szafraniec, Marc and Khalidov, Vasil and Fernandez, Pierre and others},
+  title   = {{DINOv2}: Learning Robust Visual Features without Supervision},
+  journal = {Transactions on Machine Learning Research},
+  year    = {2024},
+  eprint  = {2304.07193},
+  url     = {https://arxiv.org/abs/2304.07193}
+}
+
+@inproceedings{yan2024urbanclip,
+  author    = {Yan, Yibo and Wen, Haomin and Zhong, Siru and Chen, Wei and Chen, Haodong and Wen, Qingsong and Zimmermann, Roger and Liang, Yuxuan},
+  title     = {{UrbanCLIP}: Learning Text-Enhanced Urban Region Profiling with Contrastive Language-Image Pretraining from the Web},
+  booktitle = {Proceedings of the ACM Web Conference},
+  year      = {2024},
+  pages     = {4006--4017},
+  doi       = {10.1145/3589334.3645378},
+  url       = {https://doi.org/10.1145/3589334.3645378}
+}
+
+@article{ito2025zensvi,
+  author  = {Ito, Koichi and Zhu, Yihan and Abdelrahman, Mahmoud and Liang, Xiucheng and Fan, Zicheng and Hou, Yujun and Zhao, Tianhong and Ma, Rui and Fujiwara, Kunihiko and Ouyang, Jiani and Quintana, Matias and Biljecki, Filip},
+  title   = {{ZenSVI}: An Open-Source Software for the Integrated Acquisition, Processing and Analysis of Street View Imagery towards Scalable Urban Science},
+  journal = {Computers, Environment and Urban Systems},
+  year    = {2025},
+  volume  = {119},
+  pages   = {102283},
+  doi     = {10.1016/j.compenvurbsys.2025.102283},
+  url     = {https://doi.org/10.1016/j.compenvurbsys.2025.102283}
+}
+
+% ===========================================================================
+% 5. SINGAPORE OFFICIAL DATA AND GEOGRAPHIC SOURCES
+% Dataset access dates matter because these datasets are periodically revised.
+% ===========================================================================
+
+@misc{hdb2026renttransactions,
+  author       = {{Housing and Development Board}},
+  title        = {Renting Out of Flats from Jan 2021},
+  year         = {2026},
+  howpublished = {data.gov.sg dataset},
+  url          = {https://data.gov.sg/datasets/d_c9f57187485a850908655db0e8cfe651/view},
+  note         = {Dataset ID d_c9f57187485a850908655db0e8cfe651; accessed 2026-11-05}
+}
+
+@misc{hdb2026propertyinfo,
+  author       = {{Housing and Development Board}},
+  title        = {{HDB} Property Information},
+  year         = {2026},
+  howpublished = {data.gov.sg dataset},
+  url          = {https://data.gov.sg/datasets/d_17f5382f26140b1fdae0ba2ef6239d2f/view},
+  note         = {Dataset ID d_17f5382f26140b1fdae0ba2ef6239d2f; accessed 2026-11-05}
+}
+
+@misc{hdb2026medianrent,
+  author       = {{Housing and Development Board}},
+  title        = {Median Rent by Town and Flat Type},
+  year         = {2026},
+  howpublished = {data.gov.sg quarterly dataset},
+  url          = {https://data.gov.sg/datasets/d_23000a00c52996c55106084ed0339566/view},
+  note         = {Available from 2005 Q2; NOT an official aggregate HDB rental index; accessed 2026-11-05}
+}
+
+@misc{hdb2026rentalstatistics,
+  author       = {{Housing and Development Board}},
+  title        = {{HDB} Rental Statistics},
+  year         = {2026},
+  url          = {https://www.hdb.gov.sg/renting-a-flat/renting-from-open-market/rental-statistics},
+  note         = {Explains self-declared rents, rounding and suppressed low-count medians; accessed 2026-11-05}
+}
+
+@misc{hdb2026completiondevelopments,
+  author       = {{Housing and Development Board}},
+  title        = {Completion Status of {HDB} Residential Developments},
+  year         = {2026},
+  howpublished = {data.gov.sg dataset},
+  url          = {https://data.gov.sg/datasets/d_582672d2f972194786d01efe151892b7/view},
+  note         = {Accessed 2026-11-05}
+}
+
+@misc{hdb2026completionunits,
+  author       = {{Housing and Development Board}},
+  title        = {Completion Status of {HDB} Residential Units by Town/Estate},
+  year         = {2026},
+  howpublished = {data.gov.sg dataset},
+  url          = {https://data.gov.sg/datasets/d_9bbcd0c9b0351c7f41c9bfdcdc746668/view},
+  note         = {Accessed 2026-11-05}
+}
+
+@misc{hdb2026unitsstock,
+  author       = {{Housing and Development Board}},
+  title        = {Number of Sold and Rented {HDB} Residential Units},
+  year         = {2026},
+  howpublished = {data.gov.sg dataset},
+  url          = {https://data.gov.sg/datasets/d_67966e5fd5dce14cf9fa5f0bc5164faf/view},
+  note         = {Accessed 2026-11-05}
+}
+
+@misc{sla2026onemap,
+  author       = {{Singapore Land Authority}},
+  title        = {{OneMap} API Documentation},
+  year         = {2026},
+  url          = {https://www.onemap.gov.sg/apidocs/},
+  note         = {Singapore geocoding and geographic reference data; accessed 2026-11-05}
+}
+
+@misc{lta2026mrt,
+  author       = {{Land Transport Authority}},
+  title        = {{LTA MRT} Station Exit ({GeoJSON})},
+  year         = {2026},
+  howpublished = {data.gov.sg dataset},
+  url          = {https://data.gov.sg/datasets/d_b39d3a0871985372d7e1637193335da5/view},
+  note         = {Accessed 2026-11-05}
+}
+
+@misc{lta2026datamall,
+  author       = {{Land Transport Authority}},
+  title        = {{LTA DataMall}},
+  year         = {2026},
+  url          = {https://datamall.lta.gov.sg/},
+  note         = {Public transport and transport-related APIs; accessed 2026-11-05}
+}
+
+@misc{mom2026foreignworkforce,
+  author       = {{Ministry of Manpower, Singapore}},
+  title        = {Foreign Workforce Numbers},
+  year         = {2026},
+  url          = {https://www.mom.gov.sg/foreign-workforce-numbers},
+  note         = {Employment Pass, S Pass and Work Permit aggregate statistics; accessed 2026-11-05}
+}
+
+@misc{singstat2026rentalindex,
+  author       = {{Singapore Department of Statistics}},
+  title        = {Rental Index of Residential Properties (1st Quarter 2009 = 100), Quarterly},
+  year         = {2026},
+  howpublished = {SingStat Table Builder, source: Urban Redevelopment Authority},
+  url          = {https://tablebuilder.singstat.gov.sg/table/TS/M212311},
+  note         = {Private residential market index; HDB flats excluded; accessed 2026-11-05}
+}
+
+@misc{ura2026rentalmethodology,
+  author       = {{Urban Redevelopment Authority}},
+  title        = {{REALIS}: Coverage and Methodology},
+  year         = {2026},
+  url          = {https://eservice.ura.gov.sg/reis/coverageandMethodology},
+  note         = {Defines coverage of private residential rental indices, excluding HDB flats; accessed 2026-11-05}
+}
+
+@misc{osm2026,
+  author       = {{OpenStreetMap contributors}},
+  title        = {{OpenStreetMap}},
+  year         = {2026},
+  url          = {https://www.openstreetmap.org/},
+  note         = {Crowdsourced geographic data; cite attribution and data extract date for actual use}
+}
