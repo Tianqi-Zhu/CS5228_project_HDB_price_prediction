@@ -1,0 +1,39 @@
+{
+  "status": "passed",
+  "source_commit": "9dd06ad4b55f098a254a89769cbfffc2a91a4301",
+  "checks": [
+    {
+      "check": "clean-manifest",
+      "exit_code": 0,
+      "log": "output\\appendix-refresh\\clean-manifest.log"
+    },
+    {
+      "check": "clean-catalog",
+      "exit_code": 0,
+      "log": "output\\appendix-refresh\\clean-catalog.log"
+    },
+    {
+      "check": "clean-inputs",
+      "exit_code": 0,
+      "log": "output\\appendix-refresh\\clean-inputs.log"
+    },
+    {
+      "check": "clean-core-tests",
+      "exit_code": 0,
+      "log": "output\\appendix-refresh\\clean-core-tests.log"
+    },
+    {
+      "check": "clean-analysis",
+      "exit_code": 0,
+      "log": "output\\appendix-refresh\\clean-analysis.log"
+    }
+  ],
+  "scientific_models_fitted": 0,
+  "no_main_worktree_required": true,
+  "regenerated_numeric_tables_match_archives": true,
+  "environment": "Existing cs5228 Python plus explicit read-only external optional dependency directories; not a fresh Conda install",
+  "archive": "output/appendix-refresh/export-9dd06ad.zip",
+  "export": "output/appendix-refresh/export-9dd06ad",
+  "temporary_exports_removed_after_verification": true,
+  "recreate_from_commit": "9dd06ad4b55f098a254a89769cbfffc2a91a4301"
+}

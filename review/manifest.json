@@ -6,7 +6,10 @@
     "results/hdb-rental-final-ensemble": "6f97e107ed2db72347c3d7d1f85b63999b3fcbbb",
     "experiment/tabpfn": "c0c987e26da7de953ecb6cd01539488976e6ddd1",
     "experiment/tabpfn-anniversary-history": "1e69bb7995686d6a2bb7d502475e19ae72f081e3",
-    "mlp-eda-ensemble": "b3a6291fbfeb30ce7ff0d0495d9371d801ff8d1c"
+    "mlp-eda-ensemble": "b3a6291fbfeb30ce7ff0d0495d9371d801ff8d1c",
+    "rnn-lstm-market-features": "cb167e9f39bbed2a2d8d4e82752e76ba4c4cbfea",
+    "experiment/dynamic-rental-surface-plan": "469e34e32e36f74a9a0381a72ed26f20bf5ffec6",
+    "ziyuan——spatialfeatures": "7caf2cb77095f3b99cd242db0074189a355c0aae"
   },
   "experiments": [
     {
@@ -15939,13 +15942,13 @@
     },
     {
       "path": "review/CHECKS.md",
-      "sha256": "32d984bd5c1f4a1a7dcdf1ce24c90406a49d12040e0f9abade5aa3ee785c09fe",
+      "sha256": "041c656c57854b9c2d6f48ec35291d452e6be12ce2ef74c1c647bd3425f0fc89",
       "pre_appendix_refresh_sha256": "0f3c766bf4abd7a2ae30f95d24e72faa9094b3fd9394bbf76999d5aa0ad91110",
       "adapted_after_copy": true
     },
     {
       "path": "review/source_partition.csv",
-      "sha256": "06551fa064634233be2520638490fba18ce6a61b11cae95cf3fba24e0c7a7c6a",
+      "sha256": "75c0799858ee24917466f5d769a14627a77cf7a3bef7220377de8c622d72b099",
       "pre_appendix_refresh_sha256": "10e684007c5386a932f479411d22bae0734128b3aa8417253e4a7e05923bace1",
       "adapted_after_copy": true
     },
@@ -17404,9 +17407,10 @@
       "source": null,
       "source_commit": null,
       "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
-      "sha256": "420542beb7d11062b50bcdfda5f201b69529515c2c6bce93f8b47d9357d366cc",
+      "sha256": "71a1d2d464ca1e8559250df478e012845748a6073fea5fc419eba43ef005d3d4",
       "source_sha256": "420542beb7d11062b50bcdfda5f201b69529515c2c6bce93f8b47d9357d366cc",
-      "adapted_after_copy": false
+      "adapted_after_copy": true,
+      "pre_appendix_refresh_sha256": "420542beb7d11062b50bcdfda5f201b69529515c2c6bce93f8b47d9357d366cc"
     },
     {
       "path": "experiment/appendix/X01/spatial_controls/reports/spatial_features/amenities_adjusted/amenities_adjusted_summary_zh.md",
@@ -17896,6 +17900,60 @@
       "adapted_after_copy": false
     },
     {
+      "path": "review/checks/appendix-refresh/clean-analysis.log",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "f7baf29c8f4ec0e057d4d8b95be3085871037486ddc733167720c1e04818ca7e",
+      "source_sha256": "f7baf29c8f4ec0e057d4d8b95be3085871037486ddc733167720c1e04818ca7e",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/appendix-refresh/clean-catalog.log",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "e0375fd4d986bb307251b61c8bd54f0e8f848ac9f1271d28f4252c6dd0a6b68f",
+      "source_sha256": "e0375fd4d986bb307251b61c8bd54f0e8f848ac9f1271d28f4252c6dd0a6b68f",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/appendix-refresh/clean-core-tests.log",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "423b93ed661d9ab7347c180808e2f4edddf36641a5806cd7f03f256df07bd392",
+      "source_sha256": "423b93ed661d9ab7347c180808e2f4edddf36641a5806cd7f03f256df07bd392",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/appendix-refresh/clean-export.json",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "c4c3cbd8913953a189e9b79794abb4ce47aba0ed9edf7d94ec9ea2a1d055ffd6",
+      "source_sha256": "c4c3cbd8913953a189e9b79794abb4ce47aba0ed9edf7d94ec9ea2a1d055ffd6",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/appendix-refresh/clean-inputs.log",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "1f907beeaed9166c011d624fcbf3bfe9bae8ef42a502d3a4f80ac9e98d65f722",
+      "source_sha256": "1f907beeaed9166c011d624fcbf3bfe9bae8ef42a502d3a4f80ac9e98d65f722",
+      "adapted_after_copy": false
+    },
+    {
+      "path": "review/checks/appendix-refresh/clean-manifest.log",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "ac5692300cadaa62b669d77603d2feffb69b8b95b52e555b0665a622b914af23",
+      "source_sha256": "ac5692300cadaa62b669d77603d2feffb69b8b95b52e555b0665a622b914af23",
+      "adapted_after_copy": false
+    },
+    {
       "path": "review/checks/appendix-refresh/concat-archive-retry.log",
       "source": null,
       "source_commit": null,
@@ -18013,6 +18071,15 @@
       "adapted_after_copy": false
     },
     {
+      "path": "review/checks/appendix-refresh/temp-cleanup.json",
+      "source": null,
+      "source_commit": null,
+      "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
+      "sha256": "09a84441ad79548f68661e690582123b6a50884b9e90f7a75e14d75b3dcdafd6",
+      "source_sha256": "09a84441ad79548f68661e690582123b6a50884b9e90f7a75e14d75b3dcdafd6",
+      "adapted_after_copy": false
+    },
+    {
       "path": "review/checks/appendix-refresh/three-submissions.log",
       "source": null,
       "source_commit": null,
@@ -18026,9 +18093,10 @@
       "source": null,
       "source_commit": null,
       "source_kind": "appendix-explanatory-analysis-or-pinned-evidence",
-      "sha256": "9c1a15e0b0c9ca73905a3a5b3c699ed6835bcaee3de73a37deb72463721cdc58",
+      "sha256": "cac03d116218802279d4255155248011f864d545f7761f0b8ac204ee4554f7da",
       "source_sha256": "9c1a15e0b0c9ca73905a3a5b3c699ed6835bcaee3de73a37deb72463721cdc58",
-      "adapted_after_copy": false
+      "adapted_after_copy": true,
+      "pre_appendix_refresh_sha256": "9c1a15e0b0c9ca73905a3a5b3c699ed6835bcaee3de73a37deb72463721cdc58"
     },
     {
       "path": "review/checks/cli_help.log",

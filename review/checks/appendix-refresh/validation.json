@@ -1,5 +1,5 @@
 {
-  "status": "passed within declared local scope",
+  "status": "passed; final committed-export validation complete",
   "main_unchanged": true,
   "scientific_models_fitted": 0,
   "initial_attempts": [
@@ -103,7 +103,15 @@
     "first_attempt_failures": 1,
     "skipped": 4,
     "failure": "Only source_partition.csv hash bookkeeping; corrected then all 12 pipeline tests rerun successfully",
-    "full_clean_export_recheck": "pending next validation stage"
+    "full_clean_export_recheck": {
+      "tests_run": 140,
+      "passed": 136,
+      "skipped": 4,
+      "failures": 0,
+      "errors": 0,
+      "source_commit": "9dd06ad4b55f098a254a89769cbfffc2a91a4301",
+      "log": "review/checks/appendix-refresh/clean-core-tests.log"
+    }
   },
   "MLP_tests": {
     "tests_run": 37,
@@ -142,5 +150,56 @@
     "All historical searches rerun",
     "Independent unseen evaluation",
     "Fresh Conda installation"
-  ]
+  ],
+  "clean_export": {
+    "status": "passed",
+    "source_commit": "9dd06ad4b55f098a254a89769cbfffc2a91a4301",
+    "checks": [
+      {
+        "check": "clean-manifest",
+        "exit_code": 0,
+        "log": "output\\appendix-refresh\\clean-manifest.log"
+      },
+      {
+        "check": "clean-catalog",
+        "exit_code": 0,
+        "log": "output\\appendix-refresh\\clean-catalog.log"
+      },
+      {
+        "check": "clean-inputs",
+        "exit_code": 0,
+        "log": "output\\appendix-refresh\\clean-inputs.log"
+      },
+      {
+        "check": "clean-core-tests",
+        "exit_code": 0,
+        "log": "output\\appendix-refresh\\clean-core-tests.log"
+      },
+      {
+        "check": "clean-analysis",
+        "exit_code": 0,
+        "log": "output\\appendix-refresh\\clean-analysis.log"
+      }
+    ],
+    "scientific_models_fitted": 0,
+    "no_main_worktree_required": true,
+    "regenerated_numeric_tables_match_archives": true,
+    "environment": "Existing cs5228 Python plus explicit read-only external optional dependency directories; not a fresh Conda install",
+    "archive": "output/appendix-refresh/export-9dd06ad.zip",
+    "export": "output/appendix-refresh/export-9dd06ad",
+    "temporary_exports_removed_after_verification": true,
+    "recreate_from_commit": "9dd06ad4b55f098a254a89769cbfffc2a91a4301"
+  },
+  "temp_cleanup": {
+    "status": "completed",
+    "removed_new_temporary_paths": [
+      "output/appendix-refresh/export-9dd06ad",
+      "output/appendix-refresh/export-9dd06ad.zip",
+      "output/appendix-refresh/clean-check.tar",
+      "output/appendix-refresh/validation-01/tabpfn-tests"
+    ],
+    "removed_logical_bytes": 2620512594,
+    "source_export_commit": "9dd06ad4b55f098a254a89769cbfffc2a91a4301",
+    "retained": "Committed validation logs, numerical results and source manifests"
+  }
 }

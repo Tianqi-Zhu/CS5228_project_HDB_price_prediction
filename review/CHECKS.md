@@ -12,6 +12,22 @@ python -m analysis.appendix_catalog audit
 python -m unittest discover -s tests -p test_appendix_statistics.py -v
 ```
 
+## 最终验收
+
+当前最终验收：[validation.json](checks/appendix-refresh/validation.json)、[干净导出](checks/appendix-refresh/clean-export.json)。提交 `9dd06ad` 的干净导出通过4,423份文件校验、845份Python语法和116处活动链接检查；在无main工作区/无历史训练缓存的导出中独立复算X08/X09/X11/X12/X13，数字表与归档一致。新环境仅复用了本机现有Python和显式依赖路径，没有声称新建Conda环境。
+
+| 验收项 | 结果与边界 |
+|---|---|
+| 干净导出核心测试 | 140项运行，136通过、4项可选作者包/源码缺失跳过；无错误/失败 |
+| 新统计契约测试 | 7项通过，包含在核心集合内，不重复计数 |
+| MLP隔离测试 | 37项通过，无跳过 |
+| TabPFN隔离原测试 | 280项运行，279通过、1项因原档案未附带2020/2023学校HTML快照而声明跳过 |
+| 三份原提交 | 每份50,000行CPU组件重放通过 |
+| F2组件 | 50,000行保存预测按等权重组，在原六位小数舍入容差内；不是新GPU推理 |
+| 历史Concat源码 | 481文件、303份Python语法通过；Windows清单读取显式UTF-8 |
+
+首次尝试的来源分区哈希登记和Windows编码失败、修正后的回归均在记录中保留；SDK测试复用既有RTDL依赖后通过，没有安装或升级依赖。
+
 ## 历史验证记录
 
 本分支保留原项目架构、三个环境文件、requirements/ 和全部九份原始 CSV。数据与原始提交按 SHA256 核对，未重新生成或缩减。

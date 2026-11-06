@@ -1,0 +1,12 @@
+{
+  "status": "completed",
+  "removed_new_temporary_paths": [
+    "output/appendix-refresh/export-9dd06ad",
+    "output/appendix-refresh/export-9dd06ad.zip",
+    "output/appendix-refresh/clean-check.tar",
+    "output/appendix-refresh/validation-01/tabpfn-tests"
+  ],
+  "removed_logical_bytes": 2620512594,
+  "source_export_commit": "9dd06ad4b55f098a254a89769cbfffc2a91a4301",
+  "retained": "Committed validation logs, numerical results and source manifests"
+}
