@@ -53,3 +53,7 @@ One appendix integration test needs two untracked archived school HTML inputs (2
 Model checkpoints and legacy caches belong inside the generated workspace, e.g. `output/tabpfn-workspace/.cache/tabpfn/`. `preflight --workspace output/another-run` inspects that exact execution directory. It does not silently borrow the root F1 model cache.
 
 On Windows, original experiment paths can exceed the default Git path limit. This repository enables `git config --local core.longpaths true`. When cloning into a deep directory, use `git -c core.longpaths=true clone <repository-url>` so the archived paths are preserved.
+
+## Best observed standalone model
+
+Use [the 87-feature reproduction guide](tabpfn_best.md) for the tested local validation and full-data inference commands. `run_tabpfn_best.py` rebuilds missing features from raw data and separates archived reference predictions from newly generated outputs.

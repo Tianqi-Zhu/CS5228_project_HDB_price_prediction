@@ -763,8 +763,12 @@
       "sha256": "e9fe66201f610c8bc55e7c00a1aa096680cd3e34583413c19ee0d52b1d8a7325"
     },
     {
+      "path": "docs/guides/tabpfn_best.md",
+      "sha256": "4d5d0f98bf813592e816ef72babacbe0240c2ce4bd2b5e22d12c9ecd73c59b92"
+    },
+    {
       "path": "docs/guides/tabpfn_workflow.md",
-      "sha256": "d50f230df307e3e752ab4a31f2e65604823c66d1b6390364b95ed64c6348d62f"
+      "sha256": "8ff69b5ada0fb983002dd51c1c07dc356f6b0d5898a8b54630377c0e5acb85e1"
     },
     {
       "path": "docs/methods/baseline_features.md",
@@ -14571,6 +14575,18 @@
       "sha256": "66364c9b6aa704b8de435d899ac4f58c07f8164d5ced996871016a34017497ff"
     },
     {
+      "path": "review/checks/tabpfn-replication/scores.csv",
+      "sha256": "ce38964d147e36ceffc1ee517d9fad710a26e017207f03bd4fa486549a0c5c34"
+    },
+    {
+      "path": "review/checks/tabpfn-replication/summary.json",
+      "sha256": "67e696af4c96b56706fb771ead470853712b86d286a1ffa84e2ab84cea964147"
+    },
+    {
+      "path": "review/checks/tabpfn-replication/timing_anniversary87.json",
+      "sha256": "18d6d979a33c8bb4fdbf2095fd8e9f88d6d8fceff309c6173ffa38d5902e1d45"
+    },
+    {
       "path": "review/checks/tabpfn-split/cli-checks.json",
       "sha256": "c29d47658ad8d93a1f8463b1bc17ee45b3482380c86551ef9453aeecfe9b1bc5"
     },
@@ -14677,6 +14693,10 @@
     {
       "path": "review_tabpfn.py",
       "sha256": "8c11748b930e6830cc4d8f5458a2d56e42688bb51e9a99d5d068ac93e48306d1"
+    },
+    {
+      "path": "run_tabpfn_best.py",
+      "sha256": "bf6a00e245bdb4ec4f75f0e87ceafd49a0c7e32ee0aaf792803943821019f974"
     },
     {
       "path": "skills/cs5228-final-report/SKILL.md",
@@ -19803,5 +19823,13 @@
     "isolated_workflow_manifest": "workflows/tabpfn/manifest.json",
     "integration_record": "review/checks/anniversary-merge/integration.json",
     "research_training_performed": false
+  },
+  "tabpfn_replication": {
+    "guide": "docs/guides/tabpfn_best.md",
+    "runner": "run_tabpfn_best.py",
+    "evidence": "review/checks/tabpfn-replication/summary.json",
+    "fresh_validation_verified": true,
+    "raw_feature_rebuild_verified": true,
+    "fresh_full_data_gpu_inference_verified": false
   }
 }

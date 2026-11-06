@@ -1,0 +1,2 @@
+model,features,rows,rmse_sgd,mae_sgd,bias_sgd
+anniversary87,87,28995,441.95926939,318.21583739,4.10837143
