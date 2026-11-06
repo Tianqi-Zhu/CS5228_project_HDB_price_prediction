@@ -20,4 +20,4 @@
 
 **元数据勘误：**旧 `M00/inputs/metadata.json` 的 PLE/PLR schema 为 57 列，整理时遗漏了训练函数 `sixth_wave_deep.prepare` 强制设置的 `adjusted=True`。实际训练记录为 62 列，新 PLR 保存模型也验证了完整有序 62 列。原预测包及其旧元数据保留；本清单列出 4 条修正记录，新的 `planned` 注册表使用修正后的输入。整理脚本已修正，不改写原指标或预测。
 
-运行 `python -m analysis.main schemas` 复核并写入新的 `output/feature_catalog/`。相同列数、不同目标还原、不同拟合截止时间或不同预算，均不能仅凭本表视为完全匹配实验。F2 的实际 87 列仍待生成材料，F1 的 broad87 不构成 F2 身份证据。
+运行 `python -m analysis.main schemas` 复核并写入新的 `output/feature_catalog/`。相同列数、不同目标还原、不同拟合截止时间或不同预算，均不能仅凭本表视为完全匹配实验。F2 已有 87 列数量、十个新增周年字段和复现记录，但完整导出有序字典仍待补；F1 的 broad87 不构成 F2 身份证据，详情见 [M07](../../M07/README.md)。

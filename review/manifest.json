@@ -14,7 +14,7 @@
     {
       "id": "M00",
       "status": "partial",
-      "purpose": "协议/行ID/目标与源身份审计",
+      "purpose": "F1 generation and F2 candidate/recent row identity; old artifact generator commits incomplete",
       "evidence_directory": "experiment/main/M00",
       "execution_summary": "docs/planning/main-execution-status.md"
     },
@@ -63,21 +63,21 @@
     {
       "id": "M07",
       "status": "partial",
-      "purpose": "TabPFN 77-column background archived; F2 generator/predictions pending",
+      "purpose": "Integrated seven-tree/TabPFN87 candidate reconstructed; ordered dictionary and screenshot linkage incomplete",
       "evidence_directory": "experiment/main/M07",
       "execution_summary": "docs/planning/main-execution-status.md"
     },
     {
       "id": "M08",
-      "status": "pending",
-      "purpose": "F1/F2配对评估，依赖外部F2",
+      "status": "partial",
+      "purpose": "Recent J paired F1/F2 metrics complete; annual Y and full information-policy audit incomplete",
       "evidence_directory": "experiment/main/M08",
       "execution_summary": "docs/planning/main-execution-status.md"
     },
     {
       "id": "M09",
       "status": "partial",
-      "purpose": "F1原CSV核查/CPU重组；F2复现待补",
+      "purpose": "F1 recorded generation/replay and F2 component reconstruction; fresh full inference separate",
       "evidence_directory": "experiment/main/M09",
       "execution_summary": "docs/planning/main-execution-status.md"
     },
@@ -128,7 +128,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "2d915e412e01e1a82f6b01b98e064fa6f346864df1034fec16e49f71f5837d23"
+      "sha256": "5396cb0f2560224100fd10c7a5a72456b3aafde0e15432bce3a7260c80f756e4"
     },
     {
       "path": "TABPFN_API_77.md",
@@ -136,7 +136,7 @@
     },
     {
       "path": "analysis/README.md",
-      "sha256": "f5ea4561d18d19d28bde6c23051a6265055cacd76031ab5854c994c947f745ff"
+      "sha256": "4b09faf2570f041100f5809f42a54a2f9b6b55e371007bbeb5687b88c2d4662e"
     },
     {
       "path": "analysis/__init__.py",
@@ -428,7 +428,7 @@
     },
     {
       "path": "analysis/main.py",
-      "sha256": "3374f47481c7ebe2fe98156dcb94c9c8800f85131d4e76f1fe52a4b97a0c3e46"
+      "sha256": "5dbe3b94c7569190f7f92eb492e7498b1e494bc9591b188d44c91ccbfe9aa2f4"
     },
     {
       "path": "analysis/pipeline/__init__.py",
@@ -555,8 +555,12 @@
       "sha256": "b2bdda7f613c4ca8034e1928b005d118f80103f0eb306125565e9311d8d39a3f"
     },
     {
+      "path": "analysis/validation/final_pair.py",
+      "sha256": "fa89c7937114cff29d58698220fc65f755ca8eb37256f52748b1925a05b2e47e"
+    },
+    {
       "path": "analysis/validation/main.py",
-      "sha256": "5679104ff1c88e27d8d20855a81b70efe9ee3a6d6df79dc127151174ff0e4ed4"
+      "sha256": "19e733594ee2b3aab3b382608267f2fa0239723a2a25ee45e5ceda6dd5046592"
     },
     {
       "path": "analysis/validation/prepare_inputs.py",
@@ -764,15 +768,15 @@
     },
     {
       "path": "docs/guides/repository_layout.md",
-      "sha256": "c68bc7b1b4ba2698a300ce0bbf3dd27c620e8c74f69742e20ff182c15c910fb6"
+      "sha256": "8e449970c2c48641ba32e117ef79df641e3e7983427c2f7a45d4917f3480cb6e"
     },
     {
       "path": "docs/guides/running_experiments.md",
-      "sha256": "69617a8fd158267e4c4934fb62aac488abafd95c3b2c1925d76ea14eb71e9025"
+      "sha256": "7b6ced1b8c7537604d9bec732f761c03e15c14a5131ef0dd2493b3d5c9ca8555"
     },
     {
       "path": "docs/guides/tabpfn_best.md",
-      "sha256": "4d5d0f98bf813592e816ef72babacbe0240c2ce4bd2b5e22d12c9ecd73c59b92"
+      "sha256": "ede4792629121d8226e386f2e9fb13721e56dfc0055db123995252a36d446731"
     },
     {
       "path": "docs/guides/tabpfn_workflow.md",
@@ -792,11 +796,11 @@
     },
     {
       "path": "docs/methods/prediction-scenario.json",
-      "sha256": "3f0cdeaa7b3b5c7d6d52cb55c4f60d47a664b46707ea09a30cd9ce5e3460e020"
+      "sha256": "224b1689cb70e25b10408ee307038e5fab03d1df06f3437cbf12745523e44059"
     },
     {
       "path": "docs/methods/prediction-scenario.md",
-      "sha256": "42abea515a33f943ac9bd41f59fcf74011ab4eb07e46e2a0325b2671bce21f0d"
+      "sha256": "55a34c2fb56ec740fa74b9cf21ec8ca9ff377439b292cc23ba153e159ed98d40"
     },
     {
       "path": "docs/mlp_eda.md",
@@ -808,15 +812,15 @@
     },
     {
       "path": "docs/planning/main-appendix-experiment-plan.md",
-      "sha256": "f49ed62894e5f8513361fc743a7332f1b442c27dbeb95aa4e4fe6aec14b42531"
+      "sha256": "39344a06c911704cfcb117e386ceaaaf04426ee6322b803f34b5f85dd1b5ad3e"
     },
     {
       "path": "docs/planning/main-execution-status.md",
-      "sha256": "a3d829e9aeb167e4e065d5bc13b1ea8a430b492b922ac195731a4a5f814b3ef5"
+      "sha256": "b909ad5f5c16307147ae51b914c0f2c21104e87db643ed6e5ab68282fa7f18ea"
     },
     {
       "path": "docs/planning/main-five-item-completion.md",
-      "sha256": "17eb0be5b08b2f8ff664769d6c9dd25acdf1a3fd624e271b9f616a095ab58fa0"
+      "sha256": "dd3e5bf6c656b0e19bbaf0d9536b817e50bb01e041576ebfa56c885d8c603ad6"
     },
     {
       "path": "docs/planning/tabpfn-branch-split.md",
@@ -1148,7 +1152,11 @@
     },
     {
       "path": "experiment/main/M00/evaluation/alignment_checks.json",
-      "sha256": "29d85085d26127c9f78df4dca458a6e743735056f3f3fd133372c54b495efc84"
+      "sha256": "ef1507c545ae40f6023f0fef85fea24894f3a2e1cf69613de6dfe1f63302c063"
+    },
+    {
+      "path": "experiment/main/M00/evaluation/fresh_F1_validation_audit.json",
+      "sha256": "32b98ed86218dedf36d91f4816dccc0871a69405474c51e7e6aac8c87ef82379"
     },
     {
       "path": "experiment/main/M00/evaluation/metric_recalculation.csv",
@@ -1160,7 +1168,7 @@
     },
     {
       "path": "experiment/main/M00/evaluation/source_manifest.json",
-      "sha256": "5367610645e30cf11b8ca58a3e41932b95806c76f45c0db960e3f4f7cc824994"
+      "sha256": "8a0d612a15f60ad135cde12839e79f0a01d7c896e8d2cc9dce539ca912567839"
     },
     {
       "path": "experiment/main/M00/inputs/metadata.json",
@@ -1403,6 +1411,10 @@
       "sha256": "83cab56a6306618caefaa3ad10bfbc5119ff6d825510e07933ebdedc2c85d5f2"
     },
     {
+      "path": "experiment/main/M01/evaluation/prediction_scenario.json",
+      "sha256": "f06c3f5c90113c2efd7714c09b83cfa14903581b402ff2558a7321d4621413b9"
+    },
+    {
       "path": "experiment/main/M01/evidence-audit.json",
       "sha256": "832c7e5c6aea1a59b01f3cdda1965c0e6ec50b065adb1285f99e6215af372e6b"
     },
@@ -1520,7 +1532,7 @@
     },
     {
       "path": "experiment/main/M03/feature_schemas/README.md",
-      "sha256": "d06a06b7518b66421b12ba054f85833d8bd3e0905da3b888dec2a5c94dd44174"
+      "sha256": "557d7bb453ae2d88f1296a738cd42c3c749225b673874d12dfa68c99280a9d86"
     },
     {
       "path": "experiment/main/M03/feature_schemas/registry.csv",
@@ -1832,11 +1844,15 @@
     },
     {
       "path": "experiment/main/M07/README.md",
-      "sha256": "dd128379a56264cdc4e310e1cb5daf34282ed6fe54b96789e952b052a14e74b3"
+      "sha256": "1d8502b992e400f6c4ae35e7304d1e43a4a32e0a384a2af8c9dc5800cae8df5a"
     },
     {
       "path": "experiment/main/M07/evaluation/f2_manifest.json",
-      "sha256": "c86a40f117a02df238cab274cfd14d9de3b4abfbd0ad6e6f1cc32af67487b002"
+      "sha256": "c52ce05a1a8c9f39fba20583707fb3dcf01d0b306ac414fea402d4baaaa26150"
+    },
+    {
+      "path": "experiment/main/M07/evaluation/source_manifest.json",
+      "sha256": "56bffd41838307741bdd1c1b323a59e8236b0158b86cbfa92f2abcf417e7a5c5"
     },
     {
       "path": "experiment/main/M07/tabpfn/tabpfn_components_80_20/calibration_scores.csv",
@@ -2380,15 +2396,31 @@
     },
     {
       "path": "experiment/main/M08/README.md",
-      "sha256": "d82ebf8bca296d10a6fcf8d58b452674b136727f718ce3583d0eed54936238fd"
+      "sha256": "1802840c63784934c3e39b8b6988ecf60db8a4a132be1182a913c6908d3dbe5b"
+    },
+    {
+      "path": "experiment/main/M08/evaluation/final_pair_metrics.csv",
+      "sha256": "3051dc4bf4b7e1849e6088ce92cc641886187bdec7640d5c6ace8f42400396f1"
+    },
+    {
+      "path": "experiment/main/M08/evaluation/grouped_pair.csv",
+      "sha256": "da57bc70e4095b278f7eae291192a81e8cd0ed6075cc2fc5fa07108c32f51439"
+    },
+    {
+      "path": "experiment/main/M08/evaluation/monthly_pair.csv",
+      "sha256": "aabde1ffd0b76da8f59bbee39303585762602c7c09c660334f0ffddd762ee30c"
     },
     {
       "path": "experiment/main/M08/evaluation/protocol_checks.json",
-      "sha256": "9b50f5f37ca3c05751eeb1cea529a19a997ce6f08d80bfcb181918b6333b93c4"
+      "sha256": "4f00169c0b5c5b3d3cdbffb550024036bee880c9e6cca86337cfb6ad7955088f"
     },
     {
       "path": "experiment/main/M09/README.md",
-      "sha256": "8265f6bb4254e89ee357aec4e98a669d3fb46e0d06f2cfa15d21bea5c92a67d2"
+      "sha256": "287c013cb657195ee48a675c1617ca4032d3558fedd99c2459953455fb167fb2"
+    },
+    {
+      "path": "experiment/main/M09/evaluation/f2_reconstruction.json",
+      "sha256": "5c3b5409e5e00ea7f0169ad51627bb51bb832015eede8d229d52b29db2f1b07e"
     },
     {
       "path": "experiment/main/M09/evaluation/reproduce.py.log",
@@ -2396,7 +2428,7 @@
     },
     {
       "path": "experiment/main/M09/evaluation/verification.json",
-      "sha256": "c126a1faa1be7051c12159f3637800e2d1b3dfd3480b679ae64b703c4660f0b6"
+      "sha256": "d3d4dec5f387e49a5fc479aee1eed6f84e1fce6e78ab019d542baa778f0680fe"
     },
     {
       "path": "experiment/main/M09/evaluation/verify.py.log",
@@ -2404,11 +2436,11 @@
     },
     {
       "path": "experiment/main/README.md",
-      "sha256": "acaa5e4167cdd75825fe4e0dcbc38dbf7c5dde746647dac4abfc590d220ee317"
+      "sha256": "6cf825587190ed3dcef15deab50dda5a9292a44cd571e94908d4879ce6026d61"
     },
     {
       "path": "experiment/main/evaluation-summary.json",
-      "sha256": "41f125c5d098d694d7ef86764f16d6514514d41ed5b2bbc21c14eada5414c338"
+      "sha256": "7de5db0183affd1b4eb27740803962f9d4d4aa1e2d3f7c876b1fe62c059b0b0b"
     },
     {
       "path": "experiment/studies/README.md",
@@ -14492,11 +14524,11 @@
     },
     {
       "path": "review.py",
-      "sha256": "5b424540e301b0aaa26aaf4c2bc50c07826a082390372ca4d6e3cf8d9dd5d518"
+      "sha256": "b03632b2dd4ea2a04968b04f5919f6f9af18ca2e2227412211a8528e37d8d663"
     },
     {
       "path": "review/CHECKS.md",
-      "sha256": "09016facc7335cb4b9345a9ecf9b87455aae33bdbd88c5ce9fbb3fd4c57fdf31"
+      "sha256": "d1e0c0c5a9f62e5a65b3995ee0def23a036d99cb9211215a1b4fd63434d763fa"
     },
     {
       "path": "review/checks/anniversary-merge/f1-replay.json",
@@ -14725,6 +14757,10 @@
     {
       "path": "review/checks/main-final/unit-tests.log",
       "sha256": "565f7675a5da1db8051438e1007c9028f857471a4bc8914f6b723fea92a63475"
+    },
+    {
+      "path": "review/checks/main-refresh/summary.json",
+      "sha256": "c39b9f6358f73a0df9ac4d354e265b5137b56c838bf389c6ce4a3c839da2f2e0"
     },
     {
       "path": "review/checks/original_csv.log",
@@ -15080,7 +15116,7 @@
     },
     {
       "path": "tests/README.md",
-      "sha256": "0f2dfdef1e6d3adf47d243a01037956a8ead8c5c30ec9d5ead3ec54b1def4249"
+      "sha256": "165311f2c3bba52538914267acc9b1f51d3beed99f722917cf233c158beebf19"
     },
     {
       "path": "tests/test_auxiliary_features.py",
@@ -15107,8 +15143,12 @@
       "sha256": "ba0f7cd53f81ebe09ee8deacfb6c24c34053153b755b51242d6e77a52342f0e3"
     },
     {
+      "path": "tests/test_final_pair.py",
+      "sha256": "50f380c7dedf977b038813f1a23277a2b83e0f835fa1f42589d5bf5b5e1b8e12"
+    },
+    {
       "path": "tests/test_main_cli.py",
-      "sha256": "ee16cf3432905eac8b8e29fb837a99c417b950df351e873a57363d68fbf66beb"
+      "sha256": "f4c9437cf60e06804130e283c1f436249baa1ccd143c40935bdd104f770e14b3"
     },
     {
       "path": "tests/test_main_evidence_completion.py",

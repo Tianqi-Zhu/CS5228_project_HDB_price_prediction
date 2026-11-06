@@ -1,0 +1,84 @@
+{
+  "base_main_commit": "4b91fadfc5a93cccc911dd19558276d44d1e2492",
+  "checks": {
+    "main": {
+      "tests_passed": 85,
+      "skipped": 0,
+      "local_log": "output/main-refresh/main-tests-final.log",
+      "log_sha256": "9b630eea9a8662401e978f428b9c39ec63a6b4446e817707ac5e9f3c513ea5a2"
+    },
+    "mlp": {
+      "tests_passed": 32,
+      "skipped": 0,
+      "local_log": "output/main-refresh/mlp-tests-local-deps.log",
+      "log_sha256": "1b8ef45c6aa87889ea438830895a7dd5218204aa6376a369445ae8d4e0665c12"
+    },
+    "tabpfn": {
+      "tests_passed": 38,
+      "skipped": 0,
+      "local_log": "output/main-refresh/tabpfn-tests-local-deps.log",
+      "log_sha256": "eb36b0290a450dbcb7c4776ff064900f8aa6813c8a48cf100c7a7be8809d1068"
+    }
+  },
+  "planned": {
+    "run_id": "b6e47f1b8439be7b",
+    "tasks": {
+      "M00": "F1 fresh Y/J generation verified; 26 old artifacts audited; F2 recent IDs/labels and full-candidate component identities checked",
+      "M01": "completed for supplied facility snapshot scenario; strict historical facilities remain X08",
+      "M02": "archived and previously refitted; no new training required",
+      "M03": "completed frozen 16-fit paired recalculation",
+      "M04": "completed for F1 and two 62-input controls on Y/J",
+      "M05": "completed controlled recalculation; annual PLR fusion regression preserved",
+      "M06": "archived three-way submission selection; not relabelled as independent test",
+      "M07": "candidate composition/CSV reconstructed; ordered dictionary and screenshot association pending",
+      "M08": "recent J paired scores complete; annual Y and full information-policy equivalence pending",
+      "M09": "F1 passed; F2 component reconstruction passed; fresh full checkpoint inference not performed"
+    },
+    "new_models_fitted": 0,
+    "predictions_audited": 26,
+    "group_rows": 144,
+    "raw_inputs_unchanged": true,
+    "fresh_F1_validation_models_previously_trained": 30,
+    "fresh_F1_generation_audit_passed": true,
+    "unified_feature_schemas_verified": true,
+    "imported_M01_evidence_verified": true,
+    "prediction_scenario": "supplied-snapshot-fixed-origin-v1",
+    "all_numeric_checks_passed": true,
+    "all_main_P0_completed": false,
+    "F2_component_reconstruction_passed": true,
+    "F1_F2_paired_windows": [
+      "J"
+    ],
+    "remaining_required_inputs": {
+      "M07": {
+        "status": "partial",
+        "missing": [
+          "Complete exported ordered 87-input dictionary",
+          "Candidate association with the historical screenshot score"
+        ]
+      },
+      "M08": {
+        "status": "partial",
+        "completed_windows": [
+          "J"
+        ],
+        "missing": [
+          "F2 annual-origin predictions",
+          "Complete input/information-policy equivalence audit"
+        ]
+      },
+      "M09": {
+        "status": "partial",
+        "F1": "verified separately below",
+        "F2": "component reconstruction passed; fresh local checkpoint inference/full refit not performed; historical screenshot association unverified"
+      }
+    },
+    "results_are_development_not_independent_test": true
+  },
+  "source_inputs_preserved": true,
+  "new_scientific_model_training": false,
+  "fresh_tabpfn_inference_on_this_machine": false,
+  "optional_dependencies": "Existing .cache/deep-deps/.cache/model-deps for MLP; .cache/tabpfn-split-deps for isolated TabPFN tests only",
+  "local_gpu": "RTX 4060 Laptop, 8 GiB; source replay used RTX 4080 with 9.13 GiB allocation",
+  "clean_export": "Pending separate check after this source snapshot is committed"
+}

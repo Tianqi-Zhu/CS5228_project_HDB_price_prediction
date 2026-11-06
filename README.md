@@ -21,31 +21,30 @@ python -m analysis.main planned
 python -m analysis.main schemas
 python -m analysis.main evidence
 python -m analysis.main validation-refits
+python -m analysis.main final-pair
 ```
 
-`planned` 重算已冻结开发预测的指标、对齐、分组误差与结构对照，并核验新增的 F1 Y/J 生成链、统一特征清单及 M01 来源证据，不训练、不搜索；结果写入 `output/planning_validation/main/<内容摘要>/`。三个专项命令也可单独运行。已有 run 不覆盖，重复运行可指定新的 `--output-dir output/planning_validation/recheck`。所有 Y/J 结果均为已查看过的开发期证据。
+`planned` 重算冻结开发预测、分组误差和结构对照，核验 F1 Y/J 生成链、特征清单、M01 来源，并完成 F2 候选组件重组与近期配对评价，不训练、不搜索。`final-pair` 可单独执行最后一项。新结果统一进入忽略的 `output/`，已有 run 不覆盖；重复运行需使用新的 `--output-dir`。Y/J 均为已查看过的开发期。
 
 | 方法 | 状态与证据 | 入口 |
 |---|---|---|
 | F1：分组融合＋PLR-FT | 原提交显示 415.37529；年度/近期开发 RMSE 451.0295/441.8345；冻结 CSV、组件重组与全量训练路径独立保留 | [F1 复现包](reproduction/f1/README.md) |
 | Concat Transformer | 独立同输入架构探索，年度开发 RMSE 459.2189；原团队记录 Public Score 418.38657；保留他人合并的代码、容量比较、权重与重放入口 | [方法](experiment/main/M05/concat_transformer/README.md)、[复现](reproduction/concat_transformer/README.md) |
 | MLP独立集成 | 原全量清洗／未清洗提交显示437.34455／439.38193；CPU训练、预测区间、时间加权及测试入口已接入；不改变F1配方 | [MLP复现包](reproduction/mlp/README.md)、[报告](docs/mlp_prediction_report.md) |
-| F2：TabPFN87 相关提交 | 截图显示 413.19635；候选生成器、schema、成员及 CSV 已合并；与该截图分数对应的文件身份及配对确认仍待核实。现有 77 列背景不能替代 F2 身份 | [状态](experiment/main/M07/README.md)、[TabPFN 工作流](docs/guides/tabpfn_workflow.md) |
+| TabPFN87 单模型 | 近期 RMSE 441.9593；远端已记录独立 fit/inference 验证；本机仍需 SDK 与原 checkpoint | [独立运行](docs/guides/tabpfn_best.md) |
+| F2：七树＋TabPFN87 等权融合 | 近期 RMSE 440.9520；50,000 行候选组件重组及 28,995 行 F1/F2 配对可离线核验。年度结果、完整有序字典和截图 413.19635 的关联仍待补 | [F2 状态](experiment/main/M07/README.md)、[配对结果](experiment/main/M08/README.md) |
 
 完整性检查用 `python -m analysis.validation.repository_audit`，实际验证范围和日志见 [review/CHECKS.md](review/CHECKS.md)。截图分数不作为新运行结果；不同信息条件、窗口和 schema 分开比较。
 
 `data/` 保存 150,000 行训练记录、50,000 行测试记录、提交模板及六份辅助表。`analysis/` 是共享实现；`reproduction/` 保存固定模型与配方；`workflows/tabpfn/` 保存隔离工作流；`experiment/main/` 保存科学证据。可重建缓存、训练输出和大型临时目录统一在忽略的 `output/` 或 `.cache/`。
 
-## Latest TabPFN anniversary merge
+## 独立工作流
 
-The latest anniversary branch is integrated through the existing isolated workflow. Main's canonical training/review entry points and frozen F1/Concat evidence remain in place.
+| 工作流 | 不训练的核验入口 | 实际训练或推理 |
+|---|---|---|
+| F1 | `python reproduction/f1/verify.py` | [固定配方](reproduction/f1/README.md) |
+| Concat | `python -m analysis.main concat verify` | [原模型重放与训练](reproduction/concat_transformer/README.md) |
+| MLP | `python -m analysis.main mlp verify` | [CPU 全量、区间、时间加权](reproduction/mlp/README.md) |
+| TabPFN | `python review_tabpfn.py verify`；`python run_tabpfn_best.py preflight` | [SDK/checkpoint 前提与独立运行](docs/guides/tabpfn_best.md) |
 
-- [Merged workflow, source mapping, and validation boundaries](docs/guides/anniversary_merge.md)
-- [Final report PDF and editable source](reports/final_report/README.md)
-- Run `python review_tabpfn.py verify`, `python review_tabpfn.py prepare`, and `python review_tabpfn.py test` to inspect and test the imported sources without overlaying main's `analysis` package.
-
-The 87-input candidate export and its source/provenance are now included. Association with the historical 413.19635 screenshot score remains unverified; this merge does not assign that score to a newly validated model.
-
-## MLP完整接入
-
-`python -m analysis.main mlp verify`核对MLP提交与数据；`python -m analysis.main mlp fullfit --output-dir output/mlp/new-run`从原始数据重训。完整命令和环境见[MLP入口](reproduction/mlp/README.md)。MLP的历史完整探索保留在源分支，本main提供所需实现、配置、原提交和加权对照。
+各工作流使用同一份根 `data/`，隔离的运行时不能相互覆盖。完整探索和历史来源保留，不将 MLP 或 Concat 直接加入 F1/F2。TabPFN 合并记录见[来源与边界](docs/guides/anniversary_merge.md)。已有[报告材料](reports/final_report/README.md)仅保留，本轮不继续改稿。

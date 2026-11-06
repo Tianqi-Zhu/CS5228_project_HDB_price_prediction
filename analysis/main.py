@@ -10,7 +10,8 @@ def main(argv=None):
     planned.add_argument('--output-dir',type=Path)
     for command, help_text in [('schemas','Verify ordered feature inputs and schema transitions'),
                                ('evidence','Verify imported spatial EDA and matched cleaning controls'),
-                               ('validation-refits','Verify fresh F1 Y/J source, alignment and frozen blend replay')]:
+                               ('validation-refits','Verify fresh F1 Y/J source, alignment and frozen blend replay'),
+                               ('final-pair','Reconstruct F2 and compare frozen recent F1/F2 predictions; no training')]:
         child=commands.add_parser(command,help=help_text)
         child.add_argument('--output-dir',type=Path)
     concat=commands.add_parser('concat',help='Concat Transformer: verify, replay, prepare or explicitly train')
@@ -33,11 +34,13 @@ def main(argv=None):
     common.add_argument('--output-dir',type=Path)
     common.add_argument('--device',choices=('cpu','cuda'),default='cuda')
     args=parser.parse_args(argv)
-    if args.command in ('schemas','evidence','validation-refits'):
+    if args.command in ('schemas','evidence','validation-refits','final-pair'):
         if args.command=='schemas':
             from analysis.validation.feature_catalog import run
         elif args.command=='evidence':
             from analysis.validation.evidence_audit import run
+        elif args.command=='final-pair':
+            from analysis.validation.final_pair import run
         else:
             from analysis.validation.refit_audit import run
         return run(args.output_dir)

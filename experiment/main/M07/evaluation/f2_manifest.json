@@ -1,17 +1,59 @@
 {
-  "filename": "submission_zch_tabpfn87_equal_150k.csv",
-  "displayed_score_user_screenshot": 413.19635,
-  "schema": null,
-  "members": null,
-  "weights": null,
-  "csv_sha256": null,
-  "validated": false,
   "status": "partial",
-  "available": "77/84/89-column TabPFN background imported",
+  "candidate_reconstruction_verified": true,
+  "filename": "submission_zch_tabpfn87_equal_150k.csv",
+  "csv_sha256": "312df81f6395bf34711fb07f3e4d31dc98d6d0022af2ff2f870556aaeb12eded",
+  "members": {
+    "seven_tree_ensemble": [
+      "normalized_market/compact_ratio15_market_last",
+      "anniversary/broad_lgb15",
+      "anniversary/broad_lgb63",
+      "anniversary/exact_lgb15",
+      "anniversary/exact_lgb63",
+      "anniversary/window_cat6",
+      "anniversary/window_lgb63"
+    ],
+    "frozen_tabpfn87": {
+      "context_rows": 150000,
+      "query_rows": 50000,
+      "features": 87,
+      "checkpoint_sha256": "14e0b81285bca7a6d1ef121169f27f651f76dff49cad6c0b8779d5c836018550",
+      "prediction_sha256": "22fc32b16f47b7a4a393ab0cec7e30ab2a696c934a008b3d4ed9325b980cb19d",
+      "source_train_sha256": "2fe38ce9e0d8a02e9786f066d4a10d575d91f34be1d9111f0142e3f43fbfc8a5",
+      "source_test_sha256": "a2ec03a0afc07c251c72cc0de2e15ac965a3b06291b304aaac53a375115ff4e0",
+      "peak_vram_gib": 11.220685958862305,
+      "settings": "87 features, two frozen Fast views, full context, seed 42, native batching"
+    }
+  },
+  "weights": {
+    "zch_original": 0.5,
+    "tabpfn87": 0.5
+  },
+  "F1_is_a_component": false,
+  "generator": "review_tabpfn.py run anniversary-blend -- --stage submission",
+  "schema": {
+    "count": 87,
+    "anniversary_added_columns": [
+      "ANN_BLOCK_12_R1_N",
+      "ANN_BLOCK_12_R1_RENT",
+      "ANN_BLOCK_12_R1_RATIO",
+      "ANN_BLOCK_12_R1_SD",
+      "ANN_BLOCK_12_R1_LOW",
+      "ANN_BLOCK_24_R1_N",
+      "ANN_BLOCK_24_R1_RENT",
+      "ANN_BLOCK_24_R1_RATIO",
+      "ANN_BLOCK_24_R1_SD",
+      "ANN_BLOCK_24_R1_LOW"
+    ],
+    "complete_ordered_dictionary_verified": false
+  },
+  "target": "Components are SGD rents; equal blend adds no residual baseline again",
+  "displayed_score_user_screenshot": 413.19635,
+  "screenshot_score_identity_verified": false,
+  "standalone_validation_replication_record": "review/checks/tabpfn-replication/summary.json",
+  "standalone_replay_reported_by_source": true,
   "missing": [
-    "actual F2 generator commit and entry point",
-    "ordered 87-column schema",
-    "actual members/weights and target inversion",
-    "original submission CSV and checkpoint/seed/view identity"
+    "Complete exported ordered 87-input dictionary",
+    "Candidate association with the historical screenshot score"
   ]
 }

@@ -14,6 +14,8 @@ python -m analysis.main planned
 | 空间辅助特征及特征筛选 | `test_auxiliary_features.py`、`test_feature_selection.py`、`test_feature_evidence.py` |
 | 历史、周年窗口与融合边界 | `test_second_wave.py`、`test_third_wave.py`、`test_ninth_wave.py`、`test_tenth_wave.py` |
 | 行 ID、标签、分组误差与指标 | `test_main_validation.py` |
+| F2 组件顺序、数值有效性及换行身份 | `test_final_pair.py` |
+| MLP 隔离、数据身份与四份提交 | `test_mlp_integration.py`；独立运行时测试通过 `mlp test` 执行 |
 | 特征元数据修正与清洗匹配对照 | `test_main_evidence_completion.py` |
 | F1 固定权重、成员顺序与支持组 | `test_f1_validation.py` |
 | CLI 帮助及参数转发 | `test_main_cli.py` |

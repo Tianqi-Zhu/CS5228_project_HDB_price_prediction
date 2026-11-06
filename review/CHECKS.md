@@ -1,5 +1,13 @@
 # 分支运行核验
 
+## 当前 main 更新后的核验
+
+基于 `4b91fad` 整理后的本机记录见 [main-refresh/summary.json](checks/main-refresh/summary.json)。85 项 main 测试、32 项独立 MLP 测试、38 项隔离 TabPFN 测试与集成 `planned` 通过；MLP 和 TabPFN 分别复用已有隔离依赖，未把两套运行时合入 F1 环境。
+
+本轮新增 `analysis.main final-pair`：F2 的 50,000 行候选可按两路保存组件重组，最大差约 `5.0e-7` SGD，符合六位小数的舍入容差；近期 28,995 行 F1/F2 配对完成。年度 F2、完整有序字典、信息政策完全等价和历史截图关联仍未验收，main 全部 P0 尚未完成。
+
+下文是不同提交、机器和环境下的历史记录；其中“F2 生成器缺失”和 Python 3.13 字节重组失败不能代替本机当前 Python 3.11 的核验状态。F1 固定生成链在本机已通过；本轮未新跑完整研究模型训练或 TabPFN checkpoint 推理。
+
 本分支保留原项目架构、三个环境文件、requirements/ 和全部九份原始 CSV。数据与原始提交按 SHA256 核对，未重新生成或缩减。
 
 初次拆分记录在 [checks/summary.json](checks/summary.json) 和 [checks/export_check.json](checks/export_check.json)：选定的 53 项测试中 52 项通过、1 项因未附带历史缓存而跳过；原提交 CPU 重组在 50,000 行上的预测差为零。这些记录不代表完成了所有历史研究实验。

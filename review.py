@@ -25,7 +25,7 @@ def main(argv=None):
             failures.append({'path':row['path'],'reason':'sha256 mismatch'})
     result={'branch':manifest['branch'],'files_checked':len(manifest['files']),
             'experiments':len(manifest['experiments']), 'failures':failures,
-            'training_performed':False, 'pending':[r['id'] for r in manifest['experiments'] if r['status']=='pending']}
+            'training_performed':False, 'pending':[r['id'] for r in manifest['experiments'] if r['status'] in ('pending','partial')]}
     print(json.dumps(result,ensure_ascii=False,indent=2))
     if failures: raise SystemExit(1)
 

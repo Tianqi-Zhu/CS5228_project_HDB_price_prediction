@@ -1,7 +1,8 @@
 """Execute main requirement cards using frozen development predictions.
 
 No model fitting, hyperparameter search, API use or prediction overwriting.
-M07/M08 and the F2 half of M09 remain pending until their real inputs exist.
+F2 candidate reconstruction and recent pairing are audited separately from
+the unavailable annual predictions and historical screenshot association.
 """
 from pathlib import Path
 import argparse
@@ -119,10 +120,12 @@ def run(output_root=None):
     data_paths = [ROOT / "data/train.csv", ROOT / "data/test.csv", ROOT / "data/example-submission.csv",
                   *sorted((ROOT / "data/auxiliary").glob("*.csv"))]
     before = {p.relative_to(ROOT).as_posix(): sha(p) for p in data_paths}
+    from analysis.validation.final_pair import audit as pair_audit, write_evidence
+    final_pair = pair_audit()
     code_paths = [*sorted(Path(__file__).parent.glob('*.py')),
                   ROOT / 'analysis/pipeline/config.py', ROOT / 'docs/methods/prediction-scenario.json']
     code = {p.relative_to(ROOT).as_posix(): sha(p) for p in code_paths}
-    signature = hashlib.sha256(json.dumps([meta["array_sha256"], before, code], sort_keys=True).encode()).hexdigest()[:16]
+    signature = hashlib.sha256(json.dumps([meta["array_sha256"], before, code, final_pair['source_sha256']], sort_keys=True).encode()).hexdigest()[:16]
     out = (Path(output_root) if output_root else ROOT / "output/planning_validation/main" / signature).resolve()
     if not out.is_relative_to(ROOT / "output") or out == ROOT / "output":
         raise ValueError("Generated evaluations must stay under this repository's output/.")
@@ -257,7 +260,9 @@ def run(output_root=None):
     table(out / "M00/metric_recalculation.csv", recalculated)
     dump(out / "M00/alignment_checks.json", {"all_passed": True, "checks": checks,
          "limitation": meta["source_attribution_limit"], "Y_J_overlap_rows": len(set(arrays["Y__row"]) & set(arrays["J__row"])),
-         "Y_J_are_independent": False, "F2_eligible_for_paired_comparison": False})
+         "Y_J_are_independent": False, "F2_eligible_for_paired_comparison": True,
+         "F2_eligible_windows": final_pair['protocol']['eligible_windows'],
+         "F2_identical_information_policies_verified": False})
     dump(out / "M00/source_manifest.json", {"raw_data": before, "code": code, "frozen_archive": {"path": str(bank.relative_to(ROOT)), "sha256": sha(bank)},
          "historical_source_files": meta["sources"], "source_branch_snapshot": meta["source_branch_snapshot"], "generator_commit_verified": False})
     dump(out / "M01/data_policy_audit.json", quality)
@@ -279,13 +284,11 @@ def run(output_root=None):
     dump(out / "M05/selection_audit.json", {"historical_choices": meta["historical_selections"],
          "conclusion_scope": "Retrospective development comparison. Fixed blending rule is not identical numeric weights across different member sets. Architectural epoch/parameter budgets differ.",
          "same_27_block_separate_from_62_block": True, "new_search_performed": False})
-    pending = {"M07": {"status": "partial", "available": "77/84/89-column TabPFN background imported",
-                        "missing": ["actual F2 generator commit and entry point", "ordered 87-column schema", "actual members/weights and target inversion", "original submission CSV and checkpoint/seed/view identity"]},
-               "M08": {"status": "pending", "reason": "M07 identity and Y/J F2 row predictions absent; screenshot scores cannot supply paired errors"},
-               "M09": {"status": "partial", "F1": "verified separately below", "F2": "no independent reconstruction possible without the M07 inputs"}}
-    dump(out / "M07/f2_manifest.json", {"filename": "submission_zch_tabpfn87_equal_150k.csv", "displayed_score_user_screenshot": 413.19635,
-         "schema": None, "members": None, "weights": None, "csv_sha256": None, "validated": False, **pending["M07"]})
-    dump(out / "M08/protocol_checks.json", {"paired_comparison_performed": False, "eligible": False, **pending["M08"]})
+    pending = {"M07": {"status": "partial", "missing": final_pair['manifest']['missing']},
+               "M08": {"status": "partial", "completed_windows": ["J"], "missing": final_pair['protocol']['missing']},
+               "M09": {"status": "partial", "F1": "verified separately below",
+                       "F2": "component reconstruction passed; fresh local checkpoint inference/full refit not performed; historical screenshot association unverified"}}
+    write_evidence(out, final_pair)
     replay_results = []
     for script in ["verify.py", "reproduce.py"]:
         command = [sys.executable, "-X", "utf8", str(ROOT / "reproduction/f1" / script)]
@@ -297,18 +300,20 @@ def run(output_root=None):
         replay_results.append({"command": ["python", "reproduction/f1/" + script], "returncode": result.returncode})
     replay = json.loads((ROOT / "output/review_f1_reproduced/verification_run.json").read_text(encoding="utf-8"))
     dump(out / "M09/verification.json", {"F1": {"status": "passed", "checks": replay_results, "replay": replay,
-         "full_training_this_run": False, "previous_full_training_evidence": "review/checks/push-validation/training_run.json"}, "F2": pending["M09"]["F2"]})
+         "full_training_this_run": False, "previous_full_training_evidence": "review/checks/push-validation/training_run.json"}, "F2": final_pair['reconstruction']})
     plots(out, monthly, group_rows)
     after = {p.relative_to(ROOT).as_posix(): sha(p) for p in data_paths}
     if before != after:
         raise AssertionError("Raw inputs changed")
-    status = {"M00": "F1 fresh Y/J generation verified; 26 old prediction artifacts audited but their original commits remain unproven; F2 pending",
+    status = {"M00": "F1 fresh Y/J generation verified; 26 old artifacts audited; F2 recent IDs/labels and full-candidate component identities checked",
               "M01": "completed for supplied facility snapshot scenario; strict historical facilities remain X08",
               "M02": "archived and previously refitted; no new training required",
               "M03": "completed frozen 16-fit paired recalculation", "M04": "completed for F1 and two 62-input controls on Y/J",
               "M05": "completed controlled recalculation; annual PLR fusion regression preserved",
               "M06": "archived three-way submission selection; not relabelled as independent test",
-              "M07": "partial; actual F2 generator missing", "M08": "pending F2", "M09": "F1 passed; F2 pending"}
+              "M07": "candidate composition/CSV reconstructed; ordered dictionary and screenshot association pending",
+              "M08": "recent J paired scores complete; annual Y and full information-policy equivalence pending",
+              "M09": "F1 passed; F2 component reconstruction passed; fresh full checkpoint inference not performed"}
     summary = {"run_id": signature, "tasks": status, "new_models_fitted": 0, "predictions_audited": len(checks),
                "group_rows": len(group_rows), "raw_inputs_unchanged": before == after,
                "fresh_F1_validation_models_previously_trained": 30,
@@ -317,6 +322,7 @@ def run(output_root=None):
                "imported_M01_evidence_verified": imported['all_passed'],
                "prediction_scenario": "supplied-snapshot-fixed-origin-v1",
                "all_numeric_checks_passed": True, "all_main_P0_completed": False,
+               "F2_component_reconstruction_passed": True, "F1_F2_paired_windows": ["J"],
                "remaining_required_inputs": pending, "results_are_development_not_independent_test": True}
     dump(out / "summary.json", summary)
     print(json.dumps({"output": str(out), **summary}, ensure_ascii=False, indent=2))

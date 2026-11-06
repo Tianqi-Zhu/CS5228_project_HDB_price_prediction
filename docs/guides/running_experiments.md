@@ -9,6 +9,7 @@
 | 原配方全量重训 | `python reproduction/f1/train.py` | CUDA/完整训练依赖，结果写入 output/ |
 | Y/J 固定配方重训 | `python reproduction/f1/validate.py --window Y --output-dir output/f1-validation/new-Y` | CUDA；J 使用另一个新目录；每窗 15 个基础模型 |
 | Y/J 生成链核验 | `python -m analysis.main validation-refits` | CPU；校验代码/数据身份、逐行对齐与固定融合重组 |
+| F2 候选与近期配对 | `python -m analysis.main final-pair` | CPU；50,000 行组件重组、28,995 行配对及月份/房型/覆盖分组；不训练、不读测试标签 |
 | 有序特征清单 | `python -m analysis.main schemas` | CPU；区分两套 62 列及各组件输入 |
 | 空间与清洗证据 | `python -m analysis.main evidence` | CPU；核验来源字节、数据版本、匹配对照和已附逐行预测 |
 | 训练实验入口 | `python -m analysis.main --help` | main为精选入口；appendix保留原CLI；真正执行baseline/common-models/ladder等会训练 |

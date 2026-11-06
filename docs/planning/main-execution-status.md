@@ -4,16 +4,16 @@
 
 | 卡片 | 本轮执行 | 当前状态 | 证据 |
 |---|---|---|---|
-| M00 | 旧 26 组预测审计；新增 F1 两窗从原始数据生成、保存/重载与固定融合复算 | F1 新生成链完成；旧档案原生成提交未全恢复，F2 缺失 | [协议注册表](../../experiment/main/M00/evaluation/protocol_registry.csv)、[新 F1 生成链](../../reproduction/f1/validation_evidence/audit.json) |
+| M00 | 旧 26 组预测审计；F1 固定生成链；F2 近期行 ID/标签和候选组件身份 | F1 已完成；F2 近期数值配对可执行，旧档案原生成提交未全恢复 | [协议注册表](../../experiment/main/M00/evaluation/protocol_registry.csv)、[新 F1 生成链](../../reproduction/f1/validation_evidence/audit.json) |
 | M01 | 原始行数与数据政策；补入空间关联/受控分箱、清洗匹配对照和显式场景声明 | 已完成所给设施快照情景；原回归未独立重估，历史设施仍为 X08 | [数据政策](../../experiment/main/M01/evaluation/data_policy_audit.json)、[M01 新材料](../../experiment/main/M01/README.md)、[预测场景](../methods/prediction-scenario.md) |
 | M02 | 复用已经核验和重训的 C7 传统模型表 | 既有实验可用；本轮不重复训练 | [C7 对照](../../experiment/main/M02/README.md) |
 | M03 | 固定阶梯 16 组预测重算；统一有序 schema 与组件输入，纠正 PLE/PLR 旧元数据遗漏 | 已完成；两套 62 列输入单独命名 | [增量表](../../experiment/main/M03/evaluation/feature_ladder_deltas.csv)、[特征清单](../../experiment/main/M03/feature_schemas/README.md) |
 | M04 | F1、62 列 LightGBM/CatBoost 的月份、户型、24/36 月支持组、拟合集 q10/q90 租金组；144 行分组记录；输入相同组诊断 | 已完成两窗匹配诊断 | [误差组](../../experiment/main/M04/evaluation/error_groups.csv)、[支持审计](../../experiment/main/M04/evaluation/feature_support_audit.json)、[相同输入](../../experiment/main/M04/evaluation/identical_input_diagnostics.csv) |
 | M05 | PLE/PLR 单模型与固定融合规则下不新增/新增 PLE/新增 PLR 的配对比较；保留预算差异及负结果 | 已补齐可重算证据；共同 27 列块独立保留 | [结构增量](../../experiment/main/M05/evaluation/controlled_structure_deltas.csv)、[选择审计](../../experiment/main/M05/evaluation/selection_audit.json) |
 | M06 | 复用三份历史提交的身份与选择依据 | 既有实验可用；历史/宏观替代方案留 appendix | [F1 选择](../../experiment/main/M06/f1_selection.json) |
-| M07 | 对已有来源和可用 TabPFN 背景登记缺口 | 部分完成；实际 F2 生成链仍缺失 | [F2 清单](../../experiment/main/M07/evaluation/f2_manifest.json) |
-| M08 | 显式检查是否可进入配对评价 | 未执行数值比较；缺少 F2 同协议预测 | [协议检查](../../experiment/main/M08/evaluation/protocol_checks.json) |
-| M09 | F1 verify、50,000 行 CPU 重组、既有全量训练与新增 Y/J 30 个模型的生成/重载 | F1 在所列范围通过；F2 未完成 | [原提交验收](../../experiment/main/M09/evaluation/verification.json)、[Y/J 验收](../../reproduction/f1/validation_evidence/audit.json) |
+| M07 | 核验七树＋TabPFN87 组成、固定等权公式、来源哈希和 50,000 行候选 | 候选组件重组通过；完整有序字典、截图关联待补 | [F2 清单](../../experiment/main/M07/evaluation/f2_manifest.json) |
+| M08 | 相同 28,995 行近期 F1/F2 数值比较及月/房型/覆盖分组 | J 已完成；Y 与完整信息政策等价审计待补 | [协议检查](../../experiment/main/M08/evaluation/protocol_checks.json)、[配对指标](../../experiment/main/M08/evaluation/final_pair_metrics.csv) |
+| M09 | F1 verify/CPU 重组/固定生成链；F2 候选组件重组 | F1 在所列范围通过；F2 组件重组通过，未将其当成新 GPU 推理 | [验收](../../experiment/main/M09/evaluation/verification.json)、[F2 重组](../../experiment/main/M09/evaluation/f2_reconstruction.json) |
 
 ## 本轮结果的读取范围
 
@@ -27,6 +27,7 @@
 
 ```powershell
 python -m analysis.main planned
+python -m analysis.main final-pair
 python -m analysis.validation.repository_audit
 ```
 
@@ -36,11 +37,11 @@ python -m analysis.validation.repository_audit
 
 ## 必须继续补齐的材料
 
-1. F2 实际生成提交、入口、87 列有序 schema、成员/权重、目标还原和 checkpoint/seed/view。
-2. 原始 F2 50,000 行提交，以及 Y/J 的原点前拟合预测与行 ID；不能用全量 150,000 行模型回测已参与拟合的记录。
+1. F2 的完整导出有序 87 列字典，以及现有候选与历史 413.19635 截图分数的确切关联；成员、等权公式、候选和推理配置现已可查。
+2. F2 的年度 Y 原点前拟合预测，以及两管线完整输入/信息政策等价审计；近期 J 数值配对已完成。不能用全量 150,000 行模型回测已参与拟合的记录。
 3. 旧缓存的原始生成代码树仍有来源缺口；新 F1 Y/J 已由固定提交重新生成并核验。严格历史设施情景若作为主张，仍需要 X08 的真实日期和匹配重训。
 
-这些缺口意味着 **main 全部 P0 尚未完成**。当前完成的是可由仓库材料独立执行的审计、诊断与 F1 复现，不把缺失实验记为失败或通过。
+这些缺口意味着 **main 全部 P0 尚未完成**。当前可执行审计、诊断、F1 生成链核验、F2 组件重组与近期配对。远端新增的[独立 TabPFN 复现记录](../guides/tabpfn_best.md)和[MLP 复现包](../../reproduction/mlp/README.md)分别保留其训练环境与验证范围；它们不替代缺失的 F2 年度或截图证据。
 
 ## Whole-main portability check
 

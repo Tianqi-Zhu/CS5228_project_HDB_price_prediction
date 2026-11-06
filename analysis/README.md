@@ -5,6 +5,7 @@
 | main 要求卡审计与误差诊断 | `validation/` | `python -m analysis.main planned` |
 | 特征口径与 M01 新证据 | `validation/` | `python -m analysis.main schemas`、`evidence` |
 | F1 Y/J 生成链 | `reproduction/f1/validate.py`、`validation/refit_audit.py` | 固定配方重训；`python -m analysis.main validation-refits` 离线核验 |
+| F2 组件与近期 F1/F2 配对 | `validation/final_pair.py` | `python -m analysis.main final-pair`；不训练 |
 | 文件完整性 | 根目录 `review.py` | `python review.py verify` |
 | 全 main 静态审查 | `validation/repository_audit.py` | `python -m analysis.validation.repository_audit` |
 | EDA | `eda/` | `python -m analysis.main eda --scope all` |

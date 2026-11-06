@@ -10,6 +10,7 @@
 | `experiment/main/M00`—`M09` | 已冻结实验材料、主要结果、配套表图 | 保留来源与可核验材料；不是每次运行的临时输出目录 |
 | `reproduction/f1/` | F1 固定配方、原始提交、组件预测及新 Y/J 生成证据 | 保留；独立冻结运行时承担原模型复现职责 |
 | `reproduction/concat_transformer/` | 已合并的 Concat 架构、权重、预处理和重放输入 | 保留；大型 `bank.npz` 用于离线重放，不能当作无用缓存删除 |
+| `reproduction/mlp/` | 独立 CPU MLP 运行时、四份全量提交、清洗/时间权重与原始来源记录 | 保留；`artifacts/fullfit/source/` 是旧提交生成源快照，和当前 `runtime/` 不完全相同，不能按同名重复删除 |
 | `workflows/tabpfn/` | 隔离的 TabPFN 工作流与依赖说明 | 保留；生成工作目录放到 `output/` |
 | `docs/` | 运行、方法、规划与当前状态 | 从根 README 进入；`docs/reviews/` 的旧计划文件只作跳转 |
 | `requirements/` 与根环境文件 | 核心及可选模型环境 | 保留，不按本机已安装情况删减 |
@@ -23,6 +24,7 @@
 ```powershell
 python -m analysis.main --help
 python -m analysis.main planned
+python -m analysis.main final-pair
 python -m analysis.main eda
 python -m analysis.validation.repository_audit
 ```

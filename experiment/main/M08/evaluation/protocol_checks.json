@@ -1,6 +1,27 @@
 {
-  "paired_comparison_performed": false,
-  "eligible": false,
-  "status": "pending",
-  "reason": "M07 identity and Y/J F2 row predictions absent; screenshot scores cannot supply paired errors"
+  "status": "partial",
+  "paired_comparison_performed": true,
+  "eligible": true,
+  "eligible_windows": [
+    "J"
+  ],
+  "unavailable_windows": [
+    "Y"
+  ],
+  "n": 28995,
+  "fit_rows": 121005,
+  "fit_end_exclusive": "2024-06",
+  "query_end_exclusive": "2025-04",
+  "row_ids_labels_months_match": true,
+  "information_policies_identical_verified": false,
+  "comparison_scope": "Complete-pipeline retrospective scores on common records; no isolated architecture or identical information-policy claim",
+  "development_period_reused": true,
+  "Y_J_independent": false,
+  "delta_F2_minus_F1_rmse_sgd": -0.8825773802504955,
+  "delta_F2_minus_F1_mae_sgd": -2.932841752567583,
+  "F2_better_months": 9,
+  "missing": [
+    "F2 annual-origin predictions",
+    "Complete input/information-policy equivalence audit"
+  ]
 }

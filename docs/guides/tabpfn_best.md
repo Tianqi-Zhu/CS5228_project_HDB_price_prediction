@@ -20,17 +20,19 @@ Use the existing CUDA environment or install the archived dependencies in
 The tested local SDK is TabPFN 9.2.0 with PyTorch 2.11.0+cu128.
 The runner uses local inference, with no paid API calls.
 
-The checkpoint is ignored by Git. On this machine it is already present at
-`.cache/tabpfn/tabpfn-v3.5-fast-20260909.safetensors`. On another machine, supply
-the same checkpoint with `--checkpoint PATH`; SHA256 must be
+The checkpoint is ignored by Git. The default location is
+`.cache/tabpfn/tabpfn-v3.5-fast-20260909.safetensors`; its presence in the source
+author's recorded environment does not imply it exists in another checkout.
+Run `preflight` first, or supply the same checkpoint with `--checkpoint PATH`.
+SHA256 must be
 `14e0b81285bca7a6d1ef121169f27f651f76dff49cad6c0b8779d5c836018550`.
 The runner does not download a substitute checkpoint or authenticate for you.
 
 ```powershell
 git switch main
-.venv\Scripts\python.exe run_tabpfn_best.py preflight
-.venv\Scripts\python.exe run_tabpfn_best.py validate
-.venv\Scripts\python.exe run_tabpfn_best.py predict
+python run_tabpfn_best.py preflight
+python run_tabpfn_best.py validate
+python run_tabpfn_best.py predict
 ```
 
 `validate` rebuilds features from the raw CSVs when they are absent, fits the
@@ -60,8 +62,8 @@ a new fit and inference run, choose a new workspace; the runner never imports
 old predictions from the project root:
 
 ```powershell
-.venv\Scripts\python.exe run_tabpfn_best.py validate --workspace output/tabpfn-validation-fresh
-.venv\Scripts\python.exe run_tabpfn_best.py predict --workspace output/tabpfn-test-fresh
+python run_tabpfn_best.py validate --workspace output/tabpfn-validation-fresh
+python run_tabpfn_best.py predict --workspace output/tabpfn-test-fresh
 ```
 
 `prepare` rebuilds validation features without GPU fitting. For faster replay
@@ -80,6 +82,11 @@ used verified historical feature bundles and reproduced every historical
 validation prediction exactly, including the CSV SHA256. Raw feature rebuilding
 is checked separately in the evidence record. Timing varies by hardware and
 feature generation adds CPU time.
+
+The current local RTX 4060 Laptop has 8 GiB VRAM and lacks the default SDK/checkpoint;
+the recorded 9.13 GiB validation allocation and 11.22 GiB full-data allocation are
+from a different machine. CPU component reconstruction via
+`python -m analysis.main final-pair` remains available without those assets.
 
 The new CLI was also checked with a second fresh validation fit/inference run;
 its prediction CSV again matched exactly. Full-data raw features were rebuilt
