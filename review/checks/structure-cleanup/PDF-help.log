@@ -1,0 +1,9 @@
+usage: pdf_report.py [-h] [--eda-dir EDA_DIR] [--output OUTPUT]
+
+Build the 16:9 PDF progress deck from the checked EDA outputs.
+
+options:
+  -h, --help         show this help message and exit
+  --eda-dir EDA_DIR  Input EDA evidence; defaults to frozen main M01
+  --output OUTPUT    Generated progress deck; defaults to
+                     output/reports/progress_report.pdf

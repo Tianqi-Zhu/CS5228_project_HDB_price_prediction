@@ -1,0 +1,84 @@
+[
+  {
+    "check": "EDA-default",
+    "returncode": 0,
+    "seconds": 18.716788899997482,
+    "command": [
+      "python",
+      "-m",
+      "analysis.main",
+      "eda"
+    ]
+  },
+  {
+    "check": "PDF-help",
+    "returncode": 0,
+    "seconds": 3.2128811000002315,
+    "command": [
+      "python",
+      "-m",
+      "analysis.eda.pdf_report",
+      "--help"
+    ]
+  },
+  {
+    "check": "bundle-help",
+    "returncode": 0,
+    "seconds": 0.1507195000012871,
+    "command": [
+      "python",
+      "-m",
+      "analysis.report_bundle",
+      "--help"
+    ]
+  },
+  {
+    "check": "concat-verify",
+    "returncode": 0,
+    "seconds": 0.319948000003933,
+    "command": [
+      "python",
+      "-m",
+      "analysis.main",
+      "concat",
+      "verify"
+    ]
+  },
+  {
+    "check": "tabpfn-verify",
+    "returncode": 0,
+    "seconds": 0.39466900000115857,
+    "command": [
+      "python",
+      "review_tabpfn.py",
+      "verify"
+    ]
+  },
+  {
+    "check": "planned",
+    "returncode": 0,
+    "seconds": 28.56275659998937,
+    "command": [
+      "python",
+      "-m",
+      "analysis.main",
+      "planned",
+      "--output-dir",
+      "output/structure_cleanup/planned"
+    ]
+  },
+  {
+    "check": "tests",
+    "returncode": 0,
+    "seconds": 13.004523100011284,
+    "command": [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-v"
+    ]
+  }
+]

@@ -1,0 +1,116 @@
+{
+  "default_output": "output/eda",
+  "source_csvs_unchanged": true,
+  "tables": [
+    {
+      "table": "annual_rent_trend.csv",
+      "rows": 5,
+      "columns": 6,
+      "matches_frozen_main": true
+    },
+    {
+      "table": "auxiliary_data_audit.csv",
+      "rows": 6,
+      "columns": 9,
+      "matches_frozen_main": true
+    },
+    {
+      "table": "baseline_validation.csv",
+      "rows": 8,
+      "columns": 8,
+      "matches_frozen_main": true
+    },
+    {
+      "table": "block_coordinate_rent_summary.csv",
+      "rows": 9406,
+      "columns": 4,
+      "matches_frozen_main": true
+    },
+    {
+      "table": "categorical_normalization.csv",
+      "rows": 5,
+      "columns": 6,
+      "matches_frozen_main": true
+    },
+    {
+      "table": "data_quality.csv",
+      "rows": 50,
+      "columns": 4,
+      "matches_frozen_main": true
+    },
+    {
+      "table": "location_feature_summary.csv",
+      "rows": 12,
+      "columns": 7,
+      "matches_frozen_main": true
+    },
+    {
+      "table": "monthly_rent_by_flat_type.csv",
+      "rows": 255,
+      "columns": 4,
+      "matches_frozen_main": true
+    },
+    {
+      "table": "monthly_rent_trend.csv",
+      "rows": 51,
+      "columns": 6,
+      "matches_frozen_main": true
+    },
+    {
+      "table": "rent_by_building_age.csv",
+      "rows": 8,
+      "columns": 4,
+      "matches_frozen_main": true
+    },
+    {
+      "table": "rent_by_flat_type.csv",
+      "rows": 6,
+      "columns": 6,
+      "matches_frozen_main": true
+    },
+    {
+      "table": "rent_by_floor_area_bin.csv",
+      "rows": 18,
+      "columns": 4,
+      "matches_frozen_main": true
+    },
+    {
+      "table": "rent_by_mall_distance.csv",
+      "rows": 5,
+      "columns": 4,
+      "matches_frozen_main": true
+    },
+    {
+      "table": "rent_by_open_mrt_distance.csv",
+      "rows": 5,
+      "columns": 4,
+      "matches_frozen_main": true
+    },
+    {
+      "table": "rent_by_primary_school_distance.csv",
+      "rows": 5,
+      "columns": 4,
+      "matches_frozen_main": true
+    },
+    {
+      "table": "rent_by_town.csv",
+      "rows": 26,
+      "columns": 6,
+      "matches_frozen_main": true
+    },
+    {
+      "table": "repeated_feature_rows.csv",
+      "rows": 13434,
+      "columns": 15,
+      "matches_frozen_main": true
+    },
+    {
+      "table": "train_test_drift.csv",
+      "rows": 10,
+      "columns": 9,
+      "matches_frozen_main": true
+    }
+  ],
+  "figures": 11,
+  "frozen_evidence_directory_not_overwritten": true
+}

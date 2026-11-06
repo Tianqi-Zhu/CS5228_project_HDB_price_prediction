@@ -37,3 +37,9 @@ Latest main requirement-card execution and whole-tree verification: [checks/main
 提交 `8ebf6eb` 的干净导出也已通过：625 份注册文件检查、73 项 main 测试、30 项隔离 TabPFN 测试、集成 `planned`、F1 新入口帮助及 Concat 50,000 行 CPU 重放。导出未带入本地缓存或既有训练输出；本机第三方依赖按环境隔离复用。详见 [summary.json](checks/five-item-validation/summary.json) 和各 `clean-*.log`。
 
 本轮新训练限于 F1 固定配方 Y/J，未重跑全部历史搜索、完整 Concat 八轮重训或新的独立留出测试。大型新检查点留在本地忽略目录，随分支保存紧凑预测与生成记录。F2 仍待实际生成材料；main 全部 P0 未完成。
+
+## 结构与中间产物清理
+
+规则及保留理由见[目录说明](../docs/guides/repository_layout.md)，逐项操作见 [cleanup.json](checks/structure-cleanup/cleanup.json)。删除前核验了旧导出目录及压缩包的 Git 对象身份，未删除分支工作目录、模型输出或已安装依赖。旧阶段 PDF 另有字节一致的本地备份。
+
+本次 78 项 main 测试通过；默认 EDA 的三个层次实际运行完成，18 张表与冻结 M01 结果一致，11 张主图生成成功，原始 CSV 未改变。集成 `planned`、F1 生成链、Concat/TabPFN 文件核验和新帮助入口通过。大模型训练配方、最终结果与冻结运行时均未改动，也没有重新训练研究模型。运行记录位于 [checks/structure-cleanup/](checks/structure-cleanup/)。

@@ -1,45 +1,36 @@
-# 测试与运行核查
+# main 测试与运行核验
 
-在仓库根目录、激活 `cs5228` 环境后执行：
+在仓库根目录、安装对应环境后运行：
 
 ```powershell
-conda activate cs5228
 python -m unittest discover -s tests -v
-python -m analysis.main verify
+python -m analysis.validation.repository_audit
+python -m analysis.main planned
 ```
 
-第一条发现全部 `test_*.py`，检查数据处理、时间边界、模型适配和输出行为。
-第二条核对当前环境、既有报告指标、数据来源哈希和最终融合组件。
-两者用途不同；都通过也不代表已经从零重训十轮实验，或验证了新机器的GPU兼容性。
+| 范围 | 当前实际存在的测试文件 |
+|---|---|
+| 数据、共享管线、公共模块与保存结果 | `test_pipeline.py` |
+| 空间辅助特征及特征筛选 | `test_auxiliary_features.py`、`test_feature_selection.py`、`test_feature_evidence.py` |
+| 历史、周年窗口与融合边界 | `test_second_wave.py`、`test_third_wave.py`、`test_ninth_wave.py`、`test_tenth_wave.py` |
+| 行 ID、标签、分组误差与指标 | `test_main_validation.py` |
+| 特征元数据修正与清洗匹配对照 | `test_main_evidence_completion.py` |
+| F1 固定权重、成员顺序与支持组 | `test_f1_validation.py` |
+| CLI 帮助及参数转发 | `test_main_cli.py` |
+| Concat 集成、梯度及 Windows/POSIX 运行兼容 | `test_concat_integration.py`、`test_concat_portability.py` |
+| 可生成产物与冻结证据目录隔离 | `test_output_layout.py` |
 
-## 按问题找测试
+专项运行可用 `python -m unittest discover -s tests -p test_output_layout.py -v`。旧完整仓库中其他实验的测试不属于当前 main 测试清单，不能据旧文档把它们计入本分支覆盖范围。
 
-| 问题 | 测试文件 |
-| --- | --- |
-| 共享管线、模型保存、输出位置 | `test_pipeline.py`、`test_project_paths.py`、`test_output_defaults.py` |
-| 空间辅助表、经济信号与特征选择 | `test_auxiliary_features.py`、`test_economic_feature_ablation.py`、`test_economic_signals.py`、`test_feature_selection.py`、`test_feature_evidence.py` |
-| 模型搜索、TabM与时空混合 | `test_model_search.py`、`test_neural_tabm.py`、`test_spatiotemporal_hybrid.py` |
-| 十轮探索中的时间截止、特征与融合 | `test_frontier_search.py`、`test_second_wave.py` 至 `test_tenth_wave.py` |
-| 面板、空间与相关研究 | `test_group_temporal_panel.py`、`test_spatial_controls.py`、`test_temporal_correlations.py` |
-| 来源审计的键匹配 | `test_source_overlap.py`，属于独立研究，不为最终方法提供测试租金标签 |
-| 实验索引、阅读报告与组件完整性 | `test_experiment_catalog.py`、`test_report_bundle.py`、`test_artifact_verification.py` |
-| 资源缺失、哈希变动、路径越界与无建模依赖的预检 | `test_resource_preflight.py` |
-| 当前产物覆盖、作废状态、指标上下文与最终组件追溯 | `test_artifact_catalog.py` |
-
-不移动已有测试模块，便于沿用历史命令。只检查一类时可以使用发现模式：
+TabPFN 使用独立工作目录，避免覆盖 main 的 `analysis` 包：
 
 ```powershell
-python -m unittest discover -s tests -p test_project_paths.py -v
-python -m unittest discover -s tests -p 'test_*wave.py' -v
-python -m unittest discover -s tests -p test_artifact_verification.py -v
+python review_tabpfn.py prepare --workspace output/tabpfn-tests
+python review_tabpfn.py test --workspace output/tabpfn-tests
 ```
 
-## 依赖与判读
+原 TabPFN 测试需要该工作流的依赖；缺失源分支外部资源的测试由其声明文件控制并显式报告。不会下载权重或调用 API。main 的临时第三方依赖路径与 TabPFN SDK 路径应分开，见[运行指南](../docs/guides/running_experiments.md)。
 
-- 完整集合需要比赛数据和核心环境。既有结果一致性是一项本地集成检查：新克隆没有 `output/experiment_runs/` 时明确跳过；目录存在却不完整或指标不一致时仍报错。完整结果核查须先按[运行指南](../docs/guides/running_experiments.md)准备产物。
-- 可选TabM、RealMLP、ModernNCA与TabDPT适配测试在对应包／作者源码未准备时明确跳过，并给出准备入口；文件存在却导入或行为异常时仍报错。核心环境中的RTDL等依赖缺失不会被当作可选测试跳过。
-- 一部分模型适配测试使用小型临时样本或模拟训练器；它们检查实现行为，不衡量模型的实际RMSE。
-- 文件重载和哈希核验检查产物是否完整，不能证明某个特征的泛化收益，也不能替代时间验证或Kaggle成绩。
-- 测试只使用受控的小样本和已保存结果，不会上传Kaggle，也不会启动十轮完整训练。
+测试主要检查实现与信息边界，不代替模型泛化评价或完整重训。`review.py verify` 和 `repository_audit` 检查文件身份、语法及导航；`planned` 重算冻结预测，并核验已完成的新 F1 生成链。全量训练、Y/J 固定配方训练、原提交重放和大型模型核验见[复现入口](../reproduction/f1/README.md)。
 
-环境入口见[依赖说明](../requirements/README.md)，数据角色见[数据说明](../data/README.md)。
+数据、模型结果和最终结论分别由对应实验材料支撑；F2 未完成部分仍保留待补。历史验收记录见 [review/CHECKS.md](../review/CHECKS.md)。

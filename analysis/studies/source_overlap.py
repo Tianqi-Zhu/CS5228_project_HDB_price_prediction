@@ -18,7 +18,7 @@ import urllib.request
 import numpy as np
 import pandas as pd
 
-from analysis.pipeline.config import DATA, ROOT, TARGET
+from analysis.pipeline.config import DATA, ROOT, TARGET, STUDY_REPORTS
 from analysis.pipeline.data import check_output_path, load_main, protect_sources, sha256
 from analysis.pipeline.evaluation import metrics
 
@@ -27,7 +27,7 @@ DATASET_ID = "d_c9f57187485a850908655db0e8cfe651"
 SOURCE_PAGE = f"https://data.gov.sg/datasets/{DATASET_ID}/view"
 API = "https://data.gov.sg/api/action/datastore_search"
 CACHE = ROOT / ".cache/public_rents/hdb_public_rents.csv"
-OUT = ROOT / "experiment/studies/source_overlap"
+OUT = STUDY_REPORTS / "source_overlap"
 KEYS = ["month", "town", "block", "street", "flat_type"]
 STREET_WORDS = {
     "AVENUE": "AVE", "ROAD": "RD", "STREET": "ST", "DRIVE": "DR", "CRESCENT": "CRES",

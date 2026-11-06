@@ -1,0 +1,24 @@
+{
+  "base_commit": "e3fb28f952cbddef4f0f8993090324f01e9842bd",
+  "protected_paths": [
+    "data",
+    "environment.yml",
+    "environment.review.yml",
+    "environment.training.yml",
+    "requirements",
+    "reproduction",
+    "experiment/main/M00",
+    "experiment/main/M03",
+    "experiment/main/M04",
+    "experiment/main/M05",
+    "experiment/main/M06",
+    "experiment/main/M07",
+    "experiment/main/M08",
+    "experiment/main/M09",
+    "workflows/tabpfn"
+  ],
+  "changed_files": [],
+  "all_preserved": true,
+  "training_models_preserved": true,
+  "installed_dependency_directories_preserved": true
+}

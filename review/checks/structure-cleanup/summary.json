@@ -1,0 +1,18 @@
+{
+  "base_commit": "e3fb28f",
+  "all_runtime_checks_passed": true,
+  "main_tests_passed": 78,
+  "EDA_layers_actually_run": [
+    "main",
+    "auxiliary",
+    "overview"
+  ],
+  "EDA_tables_compared_to_frozen_main": 18,
+  "EDA_figures_generated": 11,
+  "original_data_and_model_artifacts_preserved": true,
+  "temporary_targets_removed": 15,
+  "temporary_bytes_removed": 5265847404,
+  "tracked_generated_PDF_removed_with_backup": true,
+  "new_research_model_training": false,
+  "F2": "still pending actual generation material"
+}

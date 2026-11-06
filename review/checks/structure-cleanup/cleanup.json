@@ -1,0 +1,258 @@
+{
+  "base_commit": "e3fb28f952cbddef4f0f8993090324f01e9842bd",
+  "scope": "Remove verified disposable local exports/download cache; remove regenerable old progress PDF from main; keep research data/results/runtime",
+  "temporary_targets_removed": [
+    {
+      "path": "output/five-item-clean",
+      "bytes_removed": 113490069,
+      "removed": true
+    },
+    {
+      "path": "output/planning_validation/clean-export/caaab16969d5",
+      "bytes_removed": 104899668,
+      "removed": true
+    },
+    {
+      "path": "output/repository_review/clean_exports/main-5cb78b690b",
+      "bytes_removed": 37879605,
+      "removed": true
+    },
+    {
+      "path": "output/repository_review/clean_exports/appendix-9881111e48",
+      "bytes_removed": 43079720,
+      "removed": true
+    },
+    {
+      "path": "output/tabpfn_split/committed-exports/appendix-b4015b4",
+      "bytes_removed": 1470774798,
+      "removed": true
+    },
+    {
+      "path": "output/tabpfn_split/committed-exports/appendix-c99a40a",
+      "bytes_removed": 1465590121,
+      "removed": true
+    },
+    {
+      "path": "output/tabpfn_split/committed-exports/main-1a26740",
+      "bytes_removed": 64956121,
+      "removed": true
+    },
+    {
+      "path": "output/tabpfn_split/committed-exports/main-d5452ab",
+      "bytes_removed": 96513968,
+      "removed": true
+    },
+    {
+      "path": "output/five-item-clean.zip",
+      "bytes_removed": 55887858,
+      "removed": true
+    },
+    {
+      "path": "output/planning_validation/clean-export/caaab16969d5.tar",
+      "bytes_removed": 76666880,
+      "removed": true
+    },
+    {
+      "path": "output/tabpfn_split/committed-exports/appendix-b4015b4.tar",
+      "bytes_removed": 748113920,
+      "removed": true
+    },
+    {
+      "path": "output/tabpfn_split/committed-exports/appendix-c99a40a.tar",
+      "bytes_removed": 742440960,
+      "removed": true
+    },
+    {
+      "path": "output/tabpfn_split/committed-exports/main-1a26740.tar",
+      "bytes_removed": 38410240,
+      "removed": true
+    },
+    {
+      "path": "output/tabpfn_split/committed-exports/main-d5452ab.tar",
+      "bytes_removed": 70000640,
+      "removed": true
+    },
+    {
+      "path": "output/tabpfn_split/pip-cache",
+      "bytes_removed": 137142836,
+      "removed": true
+    }
+  ],
+  "total_temporary_bytes_removed": 5265847404,
+  "GiB_removed": 4.904202561825514,
+  "verification": {
+    "export_candidates": [
+      {
+        "path": "output/five-item-clean",
+        "source_commit": "8ebf6eb3550b552e1d8e2408c4575c60deadc099",
+        "tracked_files_compared_to_Git_objects": 727,
+        "mismatches": [],
+        "unknown_files": [],
+        "files": 1088,
+        "bytes": 113490069,
+        "safe_to_remove": true
+      },
+      {
+        "path": "output/planning_validation/clean-export/caaab16969d5",
+        "source_commit": "caaab16969d5d88487d1d9f156dbd8861c891808",
+        "tracked_files_compared_to_Git_objects": 659,
+        "mismatches": [],
+        "unknown_files": [],
+        "files": 1005,
+        "bytes": 104899668,
+        "safe_to_remove": true
+      },
+      {
+        "path": "output/repository_review/clean_exports/main-5cb78b690b",
+        "source_commit": "5cb78b690b0294a34d1fb3e3d101468f5af4e381",
+        "tracked_files_compared_to_Git_objects": 291,
+        "mismatches": [],
+        "unknown_files": [],
+        "files": 294,
+        "bytes": 37879605,
+        "safe_to_remove": true
+      },
+      {
+        "path": "output/repository_review/clean_exports/appendix-9881111e48",
+        "source_commit": "9881111e48816809f922195d53c43c3134482941",
+        "tracked_files_compared_to_Git_objects": 443,
+        "mismatches": [],
+        "unknown_files": [],
+        "files": 448,
+        "bytes": 43079720,
+        "safe_to_remove": true
+      },
+      {
+        "path": "output/tabpfn_split/committed-exports/appendix-b4015b4",
+        "source_commit": "b4015b45c0e124d2ed847535c5d49b956a786440",
+        "tracked_files_compared_to_Git_objects": 4002,
+        "mismatches": [],
+        "unknown_files": [],
+        "files": 7154,
+        "bytes": 1470774798,
+        "safe_to_remove": true
+      },
+      {
+        "path": "output/tabpfn_split/committed-exports/appendix-c99a40a",
+        "source_commit": "c99a40a79223c09c0a79a2593439d6f8ce183d1d",
+        "tracked_files_compared_to_Git_objects": 3509,
+        "mismatches": [],
+        "unknown_files": [],
+        "files": 6661,
+        "bytes": 1465590121,
+        "safe_to_remove": true
+      },
+      {
+        "path": "output/tabpfn_split/committed-exports/main-1a26740",
+        "source_commit": "1a26740c5ec5e861f13fd23f2cbdb7bef5fd4930",
+        "tracked_files_compared_to_Git_objects": 555,
+        "mismatches": [],
+        "unknown_files": [],
+        "files": 787,
+        "bytes": 64956121,
+        "safe_to_remove": true
+      },
+      {
+        "path": "output/tabpfn_split/committed-exports/main-d5452ab",
+        "source_commit": "d5452abdda7d17915e6a8edf824ce2f2ba5835a1",
+        "tracked_files_compared_to_Git_objects": 596,
+        "mismatches": [],
+        "unknown_files": [],
+        "files": 832,
+        "bytes": 96513968,
+        "safe_to_remove": true
+      }
+    ],
+    "archive_candidates": [
+      {
+        "path": "output/five-item-clean.zip",
+        "source_commit": "8ebf6eb3550b552e1d8e2408c4575c60deadc099",
+        "files": 727,
+        "bytes": 55887858,
+        "mismatches": [],
+        "missing_git_files": [],
+        "safe_to_remove": true
+      },
+      {
+        "path": "output/planning_validation/clean-export/caaab16969d5.tar",
+        "source_commit": "caaab16969d5d88487d1d9f156dbd8861c891808",
+        "files": 659,
+        "bytes": 76666880,
+        "mismatches": [],
+        "missing_git_files": [],
+        "safe_to_remove": true
+      },
+      {
+        "path": "output/tabpfn_split/committed-exports/appendix-b4015b4.tar",
+        "source_commit": "b4015b45c0e124d2ed847535c5d49b956a786440",
+        "files": 4002,
+        "bytes": 748113920,
+        "mismatches": [],
+        "missing_git_files": [],
+        "safe_to_remove": true
+      },
+      {
+        "path": "output/tabpfn_split/committed-exports/appendix-c99a40a.tar",
+        "source_commit": "c99a40a79223c09c0a79a2593439d6f8ce183d1d",
+        "files": 3509,
+        "bytes": 742440960,
+        "mismatches": [],
+        "missing_git_files": [],
+        "safe_to_remove": true
+      },
+      {
+        "path": "output/tabpfn_split/committed-exports/main-1a26740.tar",
+        "source_commit": "1a26740c5ec5e861f13fd23f2cbdb7bef5fd4930",
+        "files": 555,
+        "bytes": 38410240,
+        "mismatches": [],
+        "missing_git_files": [],
+        "safe_to_remove": true
+      },
+      {
+        "path": "output/tabpfn_split/committed-exports/main-d5452ab.tar",
+        "source_commit": "d5452abdda7d17915e6a8edf824ce2f2ba5835a1",
+        "files": 596,
+        "bytes": 70000640,
+        "mismatches": [],
+        "missing_git_files": [],
+        "safe_to_remove": true
+      }
+    ],
+    "cache_candidates": [
+      {
+        "path": "output/tabpfn_split/pip-cache",
+        "reason": "Regenerable pip download cache; not the installed SDK/dependency paths",
+        "safe_to_remove": true
+      }
+    ]
+  },
+  "tracked_generated_file_removed": {
+    "path": "experiment/main/M01/eda/progress_report.pdf",
+    "bytes": 1044543,
+    "sha256": "5cb7263724bd50cd95219d879041387dbf22d95b4ecc0c9f90b626a4b2d081a3",
+    "local_backup": "output/archive/main-structure-cleanup/progress_report.pdf",
+    "backup_verified_against_Git": true,
+    "regeneration": "python -m analysis.eda.pdf_report"
+  },
+  "preserved": [
+    "data/",
+    "environment.yml",
+    "environment.review.yml",
+    "environment.training.yml",
+    "requirements/",
+    "reproduction/",
+    "output/models/",
+    "output/five_item_validation/",
+    ".cache/",
+    ".integration-work/",
+    "six pre-existing untracked review drafts"
+  ],
+  "git_history_rewritten": false,
+  "default_generated_paths": {
+    "EDA": "output/eda/",
+    "studies": "output/studies/",
+    "progress_PDF": "output/reports/progress_report.pdf",
+    "legacy_reading_bundle": "output/reading_bundle/"
+  }
+}

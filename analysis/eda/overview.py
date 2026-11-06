@@ -2,7 +2,7 @@
 """Reproducible exploratory audit for the CS5228 HDB rental competition.
 
 Run from the repository root: python -m analysis.eda.run --scope overview
-Writes only experiment/eda/{figures,tables,summary.json}; source CSV files are read-only.
+Defaults to output/eda/{figures,tables,summary.json}; source CSV files are read-only.
 """
 from __future__ import annotations
 
@@ -21,8 +21,8 @@ import pandas as pd
 from analysis.pipeline.data import check_output_path, norm_text, norm_flat_type, norm_block
 from analysis.pipeline.spatial import nearest_distances as haversine_nearest, primary_schools
 
-from analysis.pipeline.config import ROOT, DATA, DATE, TARGET
-DEFAULT_OUT = ROOT / "experiment" / "eda"
+from analysis.pipeline.config import ROOT, DATA, DATE, TARGET, EDA_REPORTS
+DEFAULT_OUT = EDA_REPORTS
 OUT = DEFAULT_OUT
 FIG = OUT / "figures"
 TAB = OUT / "tables"

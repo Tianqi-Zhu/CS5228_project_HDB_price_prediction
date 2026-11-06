@@ -1,0 +1,9 @@
+usage: report_bundle.py [-h] [--output-dir OUTPUT_DIR]
+
+Refresh a small reading bundle from local experiment outputs, without
+training.
+
+options:
+  -h, --help            show this help message and exit
+  --output-dir OUTPUT_DIR
+                        Generated bundle; defaults to output/reading_bundle

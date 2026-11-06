@@ -2,6 +2,7 @@
 """Build the 16:9 PDF progress deck from the checked EDA outputs."""
 from __future__ import annotations
 
+import argparse
 import json
 from pathlib import Path
 
@@ -14,11 +15,11 @@ from reportlab.pdfbase.pdfmetrics import stringWidth
 from reportlab.pdfgen import canvas
 
 from analysis.pipeline.config import ROOT
-DEFAULT_EDA = ROOT / "experiment" / "eda"
+DEFAULT_EDA = ROOT / "experiment/main/M01/eda"
 EDA = DEFAULT_EDA
 FIG = EDA / "figures"
 TAB = EDA / "tables"
-DEFAULT_OUT = DEFAULT_EDA / "progress_report.pdf"
+DEFAULT_OUT = ROOT / "output/reports/progress_report.pdf"
 OUT = DEFAULT_OUT
 W, H = 960, 540
 NAVY = colors.HexColor("#17324D")
@@ -129,7 +130,7 @@ def slide_scope(c, s):
 
 
 def slide_data(c, s):
-    page_base(c, 3, "Competition data and prediction boundary", "Source: data/train.csv and data/test.csv; row counts and dates: experiment/eda/summary.json")
+    page_base(c, 3, "Competition data and prediction boundary", "Source: data/train.csv and data/test.csv; row counts and dates: experiment/main/M01/eda/summary.json")
     data = [
         ("Labeled training", f"{s['inputs']['train_rows']:,} rows", f"{s['inputs']['train_date_min'][:7]} to {s['inputs']['train_date_max'][:7]}"),
         ("Competition test", f"{s['inputs']['test_rows']:,} rows", f"{s['inputs']['test_date_min'][:7]} to {s['inputs']['test_date_max'][:7]}"),
@@ -149,7 +150,7 @@ def slide_data(c, s):
 
 def slide_target(c, s):
     t = s["target"]
-    page_base(c, 4, "Target distribution", "Source: experiment/eda/summary.json; experiment/eda/figures/01_target_distribution.png")
+    page_base(c, 4, "Target distribution", "Source: experiment/main/M01/eda/summary.json; experiment/main/M01/eda/figures/01_target_distribution.png")
     image(c, "01_target_distribution.png", 88, 114, 500, 310)
     bullets(c, [f"Mean {money(t['mean'])}; median {money(t['quantiles']['0.5'])} per month.",
                  f"Middle 50%: {money(t['quantiles']['0.25'])} to {money(t['quantiles']['0.75'])}.",
@@ -162,7 +163,7 @@ def slide_time(c, s, tab):
     annual = tab["annual_rent_trend"]
     first = annual.loc[annual.year == annual.year.min()].iloc[0]
     last = annual.loc[annual.year == annual.year.max()].iloc[0]
-    page_base(c, 5, "Rent levels change across approval time", "Source: experiment/eda/tables/annual_rent_trend.csv; monthly series in experiment/eda/tables/monthly_rent_trend.csv")
+    page_base(c, 5, "Rent levels change across approval time", "Source: experiment/main/M01/eda/tables/annual_rent_trend.csv; monthly series in experiment/main/M01/eda/tables/monthly_rent_trend.csv")
     image(c, "02_monthly_rent_trend.png", 64, 108, 565, 324)
     bullets(c, [f"Annual median: {money(first['median'])} in {int(first['year'])} to {money(last['median'])} in {int(last['year'])}.",
                  f"The {int(last['year'])} figure covers {int(last['rows']):,} rows through March only.",
@@ -172,7 +173,7 @@ def slide_time(c, s, tab):
 
 def slide_property(c, s):
     area = s["property"]["area_sqm"]
-    page_base(c, 6, "Property and flat-type patterns", "Source: experiment/eda/figures/05_rent_vs_floor_area.png and 09_monthly_rent_by_flat_type.png")
+    page_base(c, 6, "Property and flat-type patterns", "Source: experiment/main/M01/eda/figures/05_rent_vs_floor_area.png and 09_monthly_rent_by_flat_type.png")
     image(c, "05_rent_vs_floor_area.png", 58, 150, 405, 272)
     image(c, "09_monthly_rent_by_flat_type.png", 495, 150, 405, 272)
     draw_paragraph(c, f"Area spans {area['min']:.0f}-{area['max']:.0f} sqm (median {area['median']:.0f}); rank association with rent is {area['spearman_approx']:.2f}. Large-area bins are sparse.", 68, 127, 385, 14, 19, INK)
@@ -182,7 +183,7 @@ def slide_property(c, s):
 
 def slide_spatial(c, s, tab):
     b = s["spatial"]["block_join"]
-    page_base(c, 7, "Block reference data provides full coordinate coverage", "Source: data/auxiliary/sg-hdb-block.csv; map and join diagnostics: experiment/eda/summary.json")
+    page_base(c, 7, "Block reference data provides full coordinate coverage", "Source: data/auxiliary/sg-hdb-block.csv; map and join diagnostics: experiment/main/M01/eda/summary.json")
     image(c, "11_block_rent_map.png", 370, 86, 520, 365)
     c.setFillColor(NAVY); c.setFont("Helvetica-Bold", 27); c.drawString(76, 365, "100%")
     c.setFillColor(INK); c.setFont("Helvetica", 16); c.drawString(76, 333, "train and test rows matched")
@@ -194,7 +195,7 @@ def slide_spatial(c, s, tab):
 
 
 def slide_distance(c, s):
-    page_base(c, 8, "Raw distance associations are modest", "Source: experiment/eda/figures/10_rent_by_open_mrt_distance.png; experiment/eda/tables/location_feature_summary.csv")
+    page_base(c, 8, "Raw distance associations are modest", "Source: experiment/main/M01/eda/figures/10_rent_by_open_mrt_distance.png; experiment/main/M01/eda/tables/location_feature_summary.csv")
     image(c, "10_rent_by_open_mrt_distance.png", 74, 115, 500, 322)
     loc = pd.read_csv(TAB / "rent_by_open_mrt_distance.csv")
     band = loc.iloc[:, 0].astype(str).tolist()
@@ -211,7 +212,7 @@ def slide_distance(c, s):
 def slide_quality(c, s, tab):
     quality = tab["data_quality"]
     cat = tab["categorical_normalization"].set_index("field")
-    page_base(c, 9, "Data quality decisions preserve prediction-row integrity", "Source: experiment/eda/tables/data_quality.csv and categorical_normalization.csv")
+    page_base(c, 9, "Data quality decisions preserve prediction-row integrity", "Source: experiment/main/M01/eda/tables/data_quality.csv and categorical_normalization.csv")
     entries = [
         ("No missing values", "in the supplied train and test columns"),
         ("Constant fields", "FURNISHED = yes; FEE = 0"),
@@ -229,7 +230,7 @@ def slide_quality(c, s, tab):
 def slide_drift(c, s, tab):
     dates = s["inputs"]
     drift = tab["train_test_drift"]
-    page_base(c, 10, "The competition test set is a future-time test", "Source: experiment/eda/summary.json; experiment/eda/tables/train_test_drift.csv")
+    page_base(c, 10, "The competition test set is a future-time test", "Source: experiment/main/M01/eda/summary.json; experiment/main/M01/eda/tables/train_test_drift.csv")
     image(c, "07_numeric_train_test_drift.png", 65, 140, 480, 285)
     bullets(c, [f"Train: {dates['train_date_min'][:7]} to {dates['train_date_max'][:7]}.",
                  f"Test: {dates['test_date_min'][:7]} to {dates['test_date_max'][:7]}.",
@@ -240,7 +241,7 @@ def slide_drift(c, s, tab):
 
 def slide_aux(c, s, tab):
     aux = tab["auxiliary_data_audit"].set_index("file")
-    page_base(c, 11, "Auxiliary data creates useful features with timing constraints", "Source: data/auxiliary/*.csv; audit: experiment/eda/tables/auxiliary_data_audit.csv")
+    page_base(c, 11, "Auxiliary data creates useful features with timing constraints", "Source: data/auxiliary/*.csv; audit: experiment/main/M01/eda/tables/auxiliary_data_audit.csv")
     rows = [
         ("HDB blocks", int(aux.loc["sg-hdb-block.csv", "rows"]), "coordinates, completion year, planning area"),
         ("MRT stations", int(aux.loc["sg-mrt-stations.csv", "rows"]), "open and planned station points"),
@@ -263,7 +264,7 @@ def slide_baselines(c, s, tab):
     temporal_recent = b.query("split == 'temporal_2024plus' and baseline == 'previous_12m_town_flat_median'").iloc[0]
     recent = b.query("split == 'recent_2025Q1' and baseline == 'previous_12m_town_flat_median'").iloc[0]
     random = b.query("split == 'random_80_20_seed5228' and baseline == 'train_only_town_flat_median'").iloc[0]
-    page_base(c, 12, "Recent history improves the temporal baseline", "Source: experiment/eda/tables/baseline_validation.csv; median predictor by TOWN x FLAT_TYPE")
+    page_base(c, 12, "Recent history improves the temporal baseline", "Source: experiment/main/M01/eda/tables/baseline_validation.csv; median predictor by TOWN x FLAT_TYPE")
     headers = ["Validation", "Fit window", "Rows", "MAE", "RMSE"]
     rows = [
         ("Random 20%", "all dates", f"{int(random.validation_rows):,}", money(random.mae), money(random.rmse)),
@@ -288,7 +289,7 @@ def slide_baselines(c, s, tab):
 
 
 def slide_decisions(c, s):
-    page_base(c, 13, "Current decisions and open challenges", "Evidence: experiment/eda/summary.json and experiment/eda/tables/*.csv")
+    page_base(c, 13, "Current decisions and open challenges", "Evidence: experiment/main/M01/eda/summary.json and experiment/main/M01/eda/tables/*.csv")
     bullets(c, ["Use chronological holdouts as the primary model-selection evidence; keep random split as a diagnostic comparison.",
                  "Normalize text labels and preserve all test rows in source order.",
                  "Use property, time and town with LightGBM/CatBoost as supervised benchmarks; add spatial features as a separate ablation.",
@@ -346,5 +347,15 @@ def main(eda_dir=None, output_path=None):
     print(OUT)
 
 
+def cli(argv=None):
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--eda-dir', type=Path, default=DEFAULT_EDA,
+                        help='Input EDA evidence; defaults to frozen main M01')
+    parser.add_argument('--output', type=Path, default=DEFAULT_OUT,
+                        help='Generated progress deck; defaults to output/reports/progress_report.pdf')
+    args = parser.parse_args(argv)
+    main(args.eda_dir, args.output)
+
+
 if __name__ == "__main__":
-    main()
+    cli()

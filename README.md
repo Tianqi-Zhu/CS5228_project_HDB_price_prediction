@@ -11,6 +11,7 @@
 | 原实验要求卡、main/appendix 规划 | [统一规划](docs/planning/main-appendix-experiment-plan.md) |
 | 环境、训练与离线验证命令 | [运行指南](docs/guides/running_experiments.md) |
 | 代码结构 | [analysis/](analysis/README.md) |
+| 目录职责与中间产物清理 | [仓库结构](docs/guides/repository_layout.md) |
 | 课程评分依据 | [SKILL.md](skills/cs5228-final-report/SKILL.md) |
 
 ```powershell

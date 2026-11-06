@@ -39,12 +39,13 @@ for folder in ROUND_NAMES:
     READING_FILES['04_optimization_history/' + folder.removeprefix('round_') + '.md'] = RUNS / folder / 'README.md'
 
 
-def rewrite_links(body, source, destination):
-    preferred = {str(path.resolve()): ROOT / 'experiment' / name for name, path in READING_FILES.items()}
+def rewrite_links(body, source, destination, bundle_root=None):
+    bundle_root = Path(bundle_root) if bundle_root is not None else ROOT / 'experiment'
+    preferred = {str(path.resolve()): bundle_root / name for name, path in READING_FILES.items()}
     # The full original report has its own navigation page in the reading bundle.
-    preferred[str((RUNS / '00_report_and_final/README.md').resolve())] = ROOT / 'experiment/01_final/README.md'
-    preferred[str((RUNS / 'foundation_feature_review/README.md').resolve())] = ROOT / 'experiment/02_feature_engineering/README.md'
-    preferred[str((ROOT / 'project_report.md').resolve())] = ROOT / 'experiment/02_feature_engineering/BASELINE_27_FEATURES.md'
+    preferred[str((RUNS / '00_report_and_final/README.md').resolve())] = bundle_root / '01_final/README.md'
+    preferred[str((RUNS / 'foundation_feature_review/README.md').resolve())] = bundle_root / '02_feature_engineering/BASELINE_27_FEATURES.md'
+    preferred[str((ROOT / 'project_report.md').resolve())] = bundle_root / '02_feature_engineering/BASELINE_27_FEATURES.md'
     def replace(match):
         target = match.group(1)
         if target.startswith(('https:', 'http:', 'mailto:', '#', 'data:')):
@@ -65,21 +66,26 @@ def rewrite_links(body, source, destination):
     return re.sub(r'\]\(([^)]+)\)', replace, body)
 
 
-def refresh():
-    evidence = []
-    for name, source in READING_FILES.items():
+def refresh(output_dir=None):
+    destination_root = Path(output_dir or ROOT / 'output/reading_bundle').resolve()
+    if not destination_root.is_relative_to(ROOT / 'output') or destination_root == ROOT / 'output':
+        raise ValueError('Generated reading bundles must be below output/, outside frozen experiment evidence')
+    # Validate every source before creating a partial bundle.
+    for source in READING_FILES.values():
         if not source.is_file():
             raise FileNotFoundError(source)
-        destination = ROOT / 'experiment' / name
+    evidence = []
+    for name, source in READING_FILES.items():
+        destination = destination_root / name
         destination.parent.mkdir(parents=True, exist_ok=True)
         if source.suffix == '.md':
-            body = rewrite_links(source.read_text(encoding='utf-8-sig'), source, destination)
+            body = rewrite_links(source.read_text(encoding='utf-8-sig'), source, destination, destination_root)
             destination.write_text(body, encoding='utf-8', newline='\n')
         else:
             shutil.copy2(source, destination)
         evidence.append({'report': destination.relative_to(ROOT).as_posix(),
                          'source': source.relative_to(ROOT).as_posix()})
-    manifest = ROOT / 'output/checks/records/reading_bundle_sources.json'
+    manifest = destination_root / 'sources.json'
     manifest.parent.mkdir(parents=True, exist_ok=True)
     manifest.write_text(json.dumps({'mode': 'Copy selected existing results; no training', 'files': evidence},
                                    indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
@@ -88,8 +94,9 @@ def refresh():
 
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.parse_args(argv)
-    refresh()
+    parser.add_argument('--output-dir', type=Path, help='Generated bundle; defaults to output/reading_bundle')
+    args = parser.parse_args(argv)
+    refresh(args.output_dir)
 
 
 if __name__ == '__main__':

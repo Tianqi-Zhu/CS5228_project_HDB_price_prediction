@@ -92,11 +92,11 @@
     },
     {
       "path": "README.md",
-      "sha256": "047f975bdd6395308d9d16af2e102b6094cd33a7dbab95ffca617f24f3d756aa"
+      "sha256": "9a0387aae61d1a74e8c93631c9b1d43ea3e39ec53d835fbc5578008c59249ec4"
     },
     {
       "path": "analysis/README.md",
-      "sha256": "0b88070110ddba297b36afd9ab58d7a8608c23433abf406b19e5eb9558230293"
+      "sha256": "e81b3301c9ecac3567e922faaf19df90884b736ea940fa041e0c0a10a7bd2bea"
     },
     {
       "path": "analysis/__init__.py",
@@ -116,7 +116,7 @@
     },
     {
       "path": "analysis/eda/audits/auxiliary.py",
-      "sha256": "09d69fd9796675d694fd5749760a32167b8f3e79e302f8823c0efb946f9da245"
+      "sha256": "fdbdcff8ad6292a73d965bb83bc4cd010033890d06cbd15d559a38e47e5a1c8f"
     },
     {
       "path": "analysis/eda/audits/main_data.py",
@@ -124,15 +124,15 @@
     },
     {
       "path": "analysis/eda/overview.py",
-      "sha256": "2de579f5864b915c53e7eaca9da8dcc0fcf3243144d24476bc9d2425805bbac9"
+      "sha256": "7b7cb0e535db2eb9cb930d0cb94c8c4385d914fb913241dc4aea487b79b5d30f"
     },
     {
       "path": "analysis/eda/pdf_report.py",
-      "sha256": "17a13dcc32880670255a75ccb8429b66c9573707810810d7f63d84e9db5ccb8a"
+      "sha256": "6068d2770e6251fdf2fced5d2bc944885a2d05f9455b381a759afeeff559b41d"
     },
     {
       "path": "analysis/eda/run.py",
-      "sha256": "99055b96c24e715c9f2b9ca3f19e17f852d64458d7bc1f5bff196753264e0000"
+      "sha256": "8da9b322b38569d94d073180a79881e3b662443ed29c46b79ffcd5bbc758390b"
     },
     {
       "path": "analysis/experiment_catalog.py",
@@ -400,7 +400,7 @@
     },
     {
       "path": "analysis/pipeline/config.py",
-      "sha256": "ddcf3c8ce10025c82b1fc7c0463c44e0a62df4fbe0a8cc6bf3be889768ee9dc0"
+      "sha256": "b5c50f97164a976c82011ce75ddf44187c79368f5815105bd5b28df4272421a0"
     },
     {
       "path": "analysis/pipeline/data.py",
@@ -444,7 +444,7 @@
     },
     {
       "path": "analysis/report_bundle.py",
-      "sha256": "cc89c3ab59e9d3d1c18dd2384ac370e7c9858ef772bb193b83f055a2de341e56"
+      "sha256": "92672449dc57d43f3300af9584eeff761f218d444e9c639fb02ac6e2403804fb"
     },
     {
       "path": "analysis/resource_preflight.py",
@@ -464,7 +464,7 @@
     },
     {
       "path": "analysis/studies/source_overlap.py",
-      "sha256": "b6505a650c6e2068a6aef8cade3e2ea861389a684273520d32e95330d6719e68"
+      "sha256": "3f5ad3ff5bfb7ad891c1bcdcb41d85cd56cd1ff5bbac99827154564ed2ce96fd"
     },
     {
       "path": "analysis/studies/spatial/__init__.py",
@@ -528,7 +528,7 @@
     },
     {
       "path": "analysis/validation/repository_audit.py",
-      "sha256": "98012441e7f7e20bbad1052f7dbec082379eb5b82951d05e62669e9714c1cb8c"
+      "sha256": "e8199882a8c9924ef147a0b3e87401fed82b52ad752fb01894cf1e72c18ac3e4"
     },
     {
       "path": "analysis/verification.py",
@@ -575,8 +575,12 @@
       "sha256": "2fe38ce9e0d8a02e9786f066d4a10d575d91f34be1d9111f0142e3f43fbfc8a5"
     },
     {
+      "path": "docs/guides/repository_layout.md",
+      "sha256": "c68bc7b1b4ba2698a300ce0bbf3dd27c620e8c74f69742e20ff182c15c910fb6"
+    },
+    {
       "path": "docs/guides/running_experiments.md",
-      "sha256": "d6953e36eb172c7cac31208a657f601d23c6e933b39eb74b71791c8271a67bd4"
+      "sha256": "e9fe66201f610c8bc55e7c00a1aa096680cd3e34583413c19ee0d52b1d8a7325"
     },
     {
       "path": "docs/guides/tabpfn_workflow.md",
@@ -728,7 +732,7 @@
     },
     {
       "path": "experiment/main/M01/eda/README.md",
-      "sha256": "1b6c0653680ca5fc69454513fba57dbadcc079c791532524b99080005d4ef852"
+      "sha256": "23c6426394e3c52583fecd649ee60392f9a8d03fada91c7f175f48bf57178a57"
     },
     {
       "path": "experiment/main/M01/eda/figures/01_target_distribution.png",
@@ -776,15 +780,11 @@
     },
     {
       "path": "experiment/main/M01/eda/notes.md",
-      "sha256": "3e8d3fba99947b5c753c84a417b18679932a0e4f734d0201f207a296fb34cd43"
-    },
-    {
-      "path": "experiment/main/M01/eda/progress_report.pdf",
-      "sha256": "5cb7263724bd50cd95219d879041387dbf22d95b4ecc0c9f90b626a4b2d081a3"
+      "sha256": "6c2b546beb206f37ed67c215918202ae4d400699594df4c9e4c98347a378c384"
     },
     {
       "path": "experiment/main/M01/eda/report.md",
-      "sha256": "a2e5c6e429df88fdb28d43f7af0909df9b81a00a82033fb62387961a257b2c7b"
+      "sha256": "ac9a5da2a42a762eb4cddddf7680232fb968329968324bb30f23a849d4248cca"
     },
     {
       "path": "experiment/main/M01/eda/summary.json",
@@ -2292,7 +2292,7 @@
     },
     {
       "path": "review/CHECKS.md",
-      "sha256": "5f2d276a94a3f6c9b165413c62319f1408dd0e02f899a20f83c3b983f0ef33fe"
+      "sha256": "e8592a995519650379d60d846013719f03078f74fd95c0147b6eaa92e4767df2"
     },
     {
       "path": "review/checks/concat_transformer/integration.json",
@@ -2312,7 +2312,7 @@
     },
     {
       "path": "tests/README.md",
-      "sha256": "3fca830db727334de2c5ae6dc843f1d589d3c28a5b83e189f97223cf74bd2ae6"
+      "sha256": "0f2dfdef1e6d3adf47d243a01037956a8ead8c5c30ec9d5ead3ec54b1def4249"
     },
     {
       "path": "tests/test_auxiliary_features.py",
@@ -2353,6 +2353,10 @@
     {
       "path": "tests/test_ninth_wave.py",
       "sha256": "cea93e19c247ab94b235392b4f83742e100ab5d03be2082c3a49bcda1a5dd2dc"
+    },
+    {
+      "path": "tests/test_output_layout.py",
+      "sha256": "95154d6fa429475961aef96419680599a4a4c0c545cd3173c72840987d0bd23f"
     },
     {
       "path": "tests/test_pipeline.py",
@@ -2853,23 +2857,15 @@
       "source": "experiment/eda/notes.md",
       "source_kind": "zch-commit",
       "source_sha256": "54ba1ababe2c2851c79b026121d9aae6ed9b40939417e8aaea0b43f370e2d73e",
-      "sha256": "3e8d3fba99947b5c753c84a417b18679932a0e4f734d0201f207a296fb34cd43",
+      "sha256": "6c2b546beb206f37ed67c215918202ae4d400699594df4c9e4c98347a378c384",
       "adapted_after_copy": true
-    },
-    {
-      "path": "experiment/main/M01/eda/progress_report.pdf",
-      "source": "experiment/eda/progress_report.pdf",
-      "source_kind": "zch-commit",
-      "source_sha256": "5cb7263724bd50cd95219d879041387dbf22d95b4ecc0c9f90b626a4b2d081a3",
-      "sha256": "5cb7263724bd50cd95219d879041387dbf22d95b4ecc0c9f90b626a4b2d081a3",
-      "adapted_after_copy": false
     },
     {
       "path": "experiment/main/M01/eda/README.md",
       "source": "experiment/eda/README.md",
       "source_kind": "zch-commit",
       "source_sha256": "1ca46bd61bfa7b9bd2c909d1d4740d06e43f18ac76a32320f57c317f7e241b4a",
-      "sha256": "1b6c0653680ca5fc69454513fba57dbadcc079c791532524b99080005d4ef852",
+      "sha256": "23c6426394e3c52583fecd649ee60392f9a8d03fada91c7f175f48bf57178a57",
       "adapted_after_copy": true
     },
     {
@@ -2877,7 +2873,7 @@
       "source": "experiment/eda/report.md",
       "source_kind": "zch-commit",
       "source_sha256": "b8bd06faaaaaad065c837411f1ce61dcfeca0bc313dc082ad4af04bd60dd50b6",
-      "sha256": "a2e5c6e429df88fdb28d43f7af0909df9b81a00a82033fb62387961a257b2c7b",
+      "sha256": "ac9a5da2a42a762eb4cddddf7680232fb968329968324bb30f23a849d4248cca",
       "adapted_after_copy": true
     },
     {
@@ -5604,5 +5600,11 @@
     "fresh_F1_validation_audit": "reproduction/f1/validation_evidence/audit.json",
     "clean_export_source_commit": "8ebf6eb3550b552e1d8e2408c4575c60deadc099",
     "clean_export_all_checks_passed": true
+  },
+  "structure_cleanup": {
+    "record": "review/checks/structure-cleanup/cleanup.json",
+    "tracked_generated_pdf_removed": "experiment/main/M01/eda/progress_report.pdf",
+    "removed_temporary_bytes": 5265847404,
+    "frozen_reproduction_runtime_unchanged": true
   }
 }

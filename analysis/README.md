@@ -15,6 +15,8 @@
 
 训练命令的参数见 `python -m analysis.main --help` 和[运行指南](../docs/guides/running_experiments.md)。`planned` 只分析冻结预测，不训练；输出是开发期分析，F2 缺失项继续待补。
 
+目录职责、保留原因和清理记录见[仓库结构](../docs/guides/repository_layout.md)。EDA 与 studies 的新输出默认进入 `output/`；`experiment/main/` 保存冻结证据。
+
 `pipeline/` 提供原始数据、特征和学习器的共享实现。`experiments/` 按用途与历史轮次保留主线依赖，`studies/` 保留测试与预处理需要的研究模块。旧模块别名供检查点重载使用，不把依赖模块视为新的 main 实验。
 
 F1 固定配方独立放在 `reproduction/f1/runtime/`，避免当前代码修改影响旧提交复现。TabPFN 另存 `workflows/tabpfn/`，通过根目录 `review_tabpfn.py` 在 `output/` 中组装独立工作目录。

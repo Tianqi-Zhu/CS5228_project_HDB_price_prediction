@@ -106,7 +106,7 @@
 
 ```bash
 python -m analysis.eda.run --scope overview
-python -m analysis.main report
+python -m analysis.eda.pdf_report
 ```
 
-EDA 脚本从 `data/` 读取原始 CSV，只在 `experiment/eda/` 写入汇总、表格和图；报告构建器读取这些产物并生成 `experiment/eda/progress_report.pdf`。当前表格与报告应随脚本重跑后一起更新，以免数字版本不一致。
+EDA 脚本从 `data/` 读取原始 CSV，默认将汇总、表格和图写入 `output/eda/`；本目录保存冻结证据。旧阶段 PDF 可由 `python -m analysis.eda.pdf_report` 从本目录重建至 `output/reports/progress_report.pdf`；使用新 EDA 输出时显式指定 `--eda-dir output/eda`，避免混用版本。

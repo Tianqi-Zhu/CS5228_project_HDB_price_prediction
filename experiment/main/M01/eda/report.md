@@ -132,6 +132,6 @@ COE 表有 539 行，股票表有 91,642 行、77 个代码。股票表有 510 �
 
 ## 9. 复现与文件位置
 
-从仓库根目录运行 `python -m analysis.eda.run` 或 `python -m analysis.main eda` 可重建全部 EDA；增加 `--scope overview` 可只重建主报告图表。EDA 依赖见 `environment.yml`。PDF 构建实现位于 `analysis/eda/pdf_report.py`，运行 `python -m analysis.main report` 可重新生成 `experiment/eda/progress_report.pdf`。
+从仓库根目录运行 `python -m analysis.main eda` 可在 `output/eda/` 重建全部 EDA；增加 `--scope overview` 可只重建主报告图表。本目录保留冻结证据，重跑不会默认覆盖。EDA 依赖见 `environment.yml`。旧阶段 PDF 不再随 main 提交；可运行 `python -m analysis.eda.pdf_report` 从本目录的图表和表格生成 `output/reports/progress_report.pdf`。
 
 源文件校验值、目标描述统计、连接覆盖和基线结果均保存在 [summary.json](summary.json)。所有图表引用本地数据，没有使用未经验证的外部价格或排名。

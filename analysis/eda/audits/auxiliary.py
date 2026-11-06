@@ -3,7 +3,7 @@
 Run from the repository root with the dependencies in environment.yml:
     python -m analysis.eda.run --scope auxiliary
 
-Only experiment/eda/supplementary/auxiliary is written. Source CSV hashes are
+Defaults to output/eda/supplementary/auxiliary. Source CSV hashes are
 checked before and after the analysis.
 """
 

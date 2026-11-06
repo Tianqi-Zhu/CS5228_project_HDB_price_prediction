@@ -39,6 +39,8 @@ python -m analysis.main common-models --device cuda --output-dir output/review_c
 
 各子命令的 `--help` 只显示参数，不触发训练。`compare` 在缺少基线时先生成指定目录的基线。`ladder` 直接从原始数据构建特征，不依赖旧融合预测。`common-models` 优先使用本地历史内层搜索记录，缺少时使用随分支保存的 `experiment/main/M05/selection_records/` 固定记录，不在外层评估集上重新选参。
 
+不指定 EDA 输出目录时，统一写到 `output/eda/`，包括 overview 和两个专项 audit；补充 studies 默认写到 `output/studies/`。冻结证据仍放在 `experiment/main/`。旧阶段 PDF 和阅读包分别生成到 `output/reports/` 与 `output/reading_bundle/`；详见[仓库结构与产物规则](repository_layout.md)。
+
 ## 独立concat Transformer
 
 `python -m analysis.main concat verify`核对归档；`python -m analysis.main concat predict --device cpu`加载最终权重重放。原始数据重建、验证训练和全量重训命令见[复现说明](../../reproduction/concat_transformer/README.md)。只有显式select/refit才启动训练。
