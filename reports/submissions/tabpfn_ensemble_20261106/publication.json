@@ -1,0 +1,103 @@
+{
+  "generated_date_singapore": "2026-11-06",
+  "recommended_submission": "submission_ensemble_grouped_150k.csv",
+  "submissions": [
+    {
+      "variant": "original",
+      "file": "submission_ensemble_original_150k.csv",
+      "sha256": "dcdae91f36428ed5693ad820439c63dbc86e0d0949afbc0f19c09d55f8c9ac7c",
+      "rows": 50000,
+      "columns": [
+        "Id",
+        "Predicted"
+      ],
+      "unique_ordered_ids_match_sample": true,
+      "finite_positive_predictions": true,
+      "minimum_prediction_sgd": 1466.5425049626754,
+      "maximum_prediction_sgd": 5293.461693581054,
+      "mean_prediction_sgd": 3187.785669055158
+    },
+    {
+      "variant": "grouped",
+      "file": "submission_ensemble_grouped_150k.csv",
+      "sha256": "8d5892b767fcc21fafecdb4b76b17b366d11016e6eb04c454ff95752466aed9f",
+      "rows": 50000,
+      "columns": [
+        "Id",
+        "Predicted"
+      ],
+      "unique_ordered_ids_match_sample": true,
+      "finite_positive_predictions": true,
+      "minimum_prediction_sgd": 1454.0606184972469,
+      "maximum_prediction_sgd": 5320.022091605852,
+      "mean_prediction_sgd": 3190.099746718134
+    }
+  ],
+  "validation_scores": [
+    {
+      "variant": "original",
+      "model": "trees",
+      "rows": 28995,
+      "rmse_sgd": 443.8630505338,
+      "mae_sgd": 322.9187729235,
+      "bias_sgd": -4.9028830147
+    },
+    {
+      "variant": "original",
+      "model": "tabpfn",
+      "rows": 28995,
+      "rmse_sgd": 441.9592693871,
+      "mae_sgd": 318.2158373906,
+      "bias_sgd": 4.1083714317
+    },
+    {
+      "variant": "original",
+      "model": "ensemble",
+      "rows": 28995,
+      "rmse_sgd": 440.9519575034,
+      "mae_sgd": 318.8879165138,
+      "bias_sgd": -0.3972557915
+    },
+    {
+      "variant": "grouped",
+      "model": "trees",
+      "rows": 28995,
+      "rmse_sgd": 443.9558745401,
+      "mae_sgd": 322.9574123672,
+      "bias_sgd": -3.9561224683
+    },
+    {
+      "variant": "grouped",
+      "model": "tabpfn",
+      "rows": 28995,
+      "rmse_sgd": 442.0894791036,
+      "mae_sgd": 316.5159453007,
+      "bias_sgd": 23.4519164193
+    },
+    {
+      "variant": "grouped",
+      "model": "ensemble",
+      "rows": 28995,
+      "rmse_sgd": 440.7707067636,
+      "mae_sgd": 317.7624849367,
+      "bias_sgd": 9.7478969755
+    }
+  ],
+  "tree_weight": 0.5,
+  "tabpfn_weight": 0.5,
+  "training_rows": 150000,
+  "test_rows": 50000,
+  "category_preprocessing": {
+    "type s1": "type s",
+    "type s2": "type s",
+    "model a maisonette": "maisonette",
+    "premium maisonette": "maisonette",
+    "improved maisonette": "maisonette"
+  },
+  "preprocessing_scope": "Direct FLAT_MODEL_CLEAN feature in both model families; identical train/test mapping; fitting-only category vocabulary; original historical values and keys retained; no row filtering.",
+  "evidence": "review/checks/tabpfn-ensemble/audit.json",
+  "evidence_sha256": "7e78c32ca806d23f58e104c10dfd2d59c365dfd22e4b78b24872afe0da5d1371",
+  "baseline_matches_archived_submission_at_six_decimal_precision": true,
+  "actual_kaggle_scores": null,
+  "uploaded": false
+}

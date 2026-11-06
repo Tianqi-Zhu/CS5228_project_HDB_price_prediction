@@ -764,11 +764,15 @@
     },
     {
       "path": "docs/guides/tabpfn_best.md",
-      "sha256": "4d5d0f98bf813592e816ef72babacbe0240c2ce4bd2b5e22d12c9ecd73c59b92"
+      "sha256": "ccc64ea9ee1c0039bbe7d8c1a34bf9189049095dca8359706b75bdd464ea79eb"
+    },
+    {
+      "path": "docs/guides/tabpfn_ensemble.md",
+      "sha256": "93766b0dc087157668a880a7fc1ebacf367bd2b14dbf7d52596e7d4ec55dd99f"
     },
     {
       "path": "docs/guides/tabpfn_workflow.md",
-      "sha256": "8ff69b5ada0fb983002dd51c1c07dc356f6b0d5898a8b54630377c0e5acb85e1"
+      "sha256": "36ff38348e6e8bb5a60fb79a9d4ca7d4b1decf4618b22e14b789c0d4e18932d0"
     },
     {
       "path": "docs/methods/baseline_features.md",
@@ -5405,6 +5409,18 @@
     {
       "path": "reports/stock_sector_signals/stock_coverage.csv",
       "sha256": "a1918af16284e771914bcebe74585e86a0bf34d73bec9e886116ef74fd59d72e"
+    },
+    {
+      "path": "reports/submissions/tabpfn_ensemble_20261106/publication.json",
+      "sha256": "bf0c5d663cea3da222daa317654794ab40e7e3d72c820e0fdc194c8a865f6ce1"
+    },
+    {
+      "path": "reports/submissions/tabpfn_ensemble_20261106/submission_ensemble_grouped_150k.csv",
+      "sha256": "8d5892b767fcc21fafecdb4b76b17b366d11016e6eb04c454ff95752466aed9f"
+    },
+    {
+      "path": "reports/submissions/tabpfn_ensemble_20261106/submission_ensemble_original_150k.csv",
+      "sha256": "dcdae91f36428ed5693ad820439c63dbc86e0d0949afbc0f19c09d55f8c9ac7c"
     },
     {
       "path": "reports/tabm_80_20/calibration/plain_lr002/learning_curve.json",
@@ -14575,6 +14591,50 @@
       "sha256": "66364c9b6aa704b8de435d899ac4f58c07f8164d5ced996871016a34017497ff"
     },
     {
+      "path": "review/checks/tabpfn-ensemble/audit.json",
+      "sha256": "7e78c32ca806d23f58e104c10dfd2d59c365dfd22e4b78b24872afe0da5d1371"
+    },
+    {
+      "path": "review/checks/tabpfn-ensemble/tabpfn_predict_grouped.json",
+      "sha256": "1fa104738497f5dc8d9bf62ae6616cabc504e75c65606a44e01abcc141604220"
+    },
+    {
+      "path": "review/checks/tabpfn-ensemble/tabpfn_predict_original.json",
+      "sha256": "c685fb5f0ddcf9f647b59acdbf9317c2881bcd29940081cd450f67ea84b9bc6d"
+    },
+    {
+      "path": "review/checks/tabpfn-ensemble/tabpfn_validate_grouped.json",
+      "sha256": "89975d5f3dcb3efce8f19db2dc1b09fee8a0d30a5c2d0a927ef687c301da8335"
+    },
+    {
+      "path": "review/checks/tabpfn-ensemble/tabpfn_validate_original.json",
+      "sha256": "e07b09e25896b7d9fc3834237059b368aa31bedb2af29c71e7c306040643a319"
+    },
+    {
+      "path": "review/checks/tabpfn-ensemble/training_runner.py",
+      "sha256": "80fc03eba884d8a6279ccfa348568e2a0656e870fb827d5bec6d95fa8a9fc132"
+    },
+    {
+      "path": "review/checks/tabpfn-ensemble/trees_predict_grouped.json",
+      "sha256": "be0bbbe4241588749d97be6a6b92a91cf634b4cc25efcf5aac539ae96309263d"
+    },
+    {
+      "path": "review/checks/tabpfn-ensemble/trees_predict_original.json",
+      "sha256": "26d922af443f9f59d633d4db140d65cfc76fa4792f7e90f2d5647525aeed9512"
+    },
+    {
+      "path": "review/checks/tabpfn-ensemble/trees_validate_grouped.json",
+      "sha256": "f5688d224b7c0f047d8459d7bafd4d67edd8497d72d8c3f2529addf9e8384796"
+    },
+    {
+      "path": "review/checks/tabpfn-ensemble/trees_validate_original.json",
+      "sha256": "5ec6ee664cc6df05045bf7e17265db051a9d39e2498f1479c8a0cf9edbb342fa"
+    },
+    {
+      "path": "review/checks/tabpfn-ensemble/validation_scores.csv",
+      "sha256": "a6f32ddcd6f7cabe4db289af1643a793c637bb3ac364f56213b814680a0abb0f"
+    },
+    {
       "path": "review/checks/tabpfn-replication/scores.csv",
       "sha256": "ce38964d147e36ceffc1ee517d9fad710a26e017207f03bd4fa486549a0c5c34"
     },
@@ -14697,6 +14757,10 @@
     {
       "path": "run_tabpfn_best.py",
       "sha256": "bf6a00e245bdb4ec4f75f0e87ceafd49a0c7e32ee0aaf792803943821019f974"
+    },
+    {
+      "path": "run_tabpfn_ensemble.py",
+      "sha256": "b211a69acb5485b31014225bcc75ca1058b275ffcc6da4be8a635a78f2fa9fab"
     },
     {
       "path": "skills/cs5228-final-report/SKILL.md",
@@ -19830,6 +19894,19 @@
     "evidence": "review/checks/tabpfn-replication/summary.json",
     "fresh_validation_verified": true,
     "raw_feature_rebuild_verified": true,
-    "fresh_full_data_gpu_inference_verified": false
+    "fresh_full_data_gpu_inference_verified": true,
+    "subsequent_full_data_evidence": "review/checks/tabpfn-ensemble/audit.json"
+  },
+  "tabpfn_ensemble": {
+    "guide": "docs/guides/tabpfn_ensemble.md",
+    "runner": "run_tabpfn_ensemble.py",
+    "evidence": "review/checks/tabpfn-ensemble/audit.json",
+    "fresh_tree_fits": 28,
+    "fresh_original_full_tabpfn_verified": true,
+    "fresh_grouped_validation_and_full_tabpfn_verified": true,
+    "recommended_variant": "grouped",
+    "submissions_uploaded": false,
+    "kaggle_scores": null,
+    "published_submissions": "reports/submissions/tabpfn_ensemble_20261106/publication.json"
   }
 }
