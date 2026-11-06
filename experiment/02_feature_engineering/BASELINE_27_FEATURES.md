@@ -1,110 +1,112 @@
-# HDB 月租预测：基础特征与共同输入模型阶段报告
+[Chinese version](BASELINE_27_FEATURES.zh-CN.md)
 
-本文件保留基础27列方案、字段消融和共同输入模型的证据。
-完整后续探索见[报告筛选与历轮进展](../01_final/README.md)，
-当前最终方案见[FINAL_MODEL.md](../01_final/README.md)。
-文中的“默认方案”和“当前结果”按基础阶段理解，不代表后续最终融合。
+# HDB monthly rents: baseline features and common-input models
+
+This file preserves evidence for the baseline 27-input policy, field ablations and common-input comparisons.
+See [model selection and later rounds](../01_final/README.md) for subsequent exploration,
+and [FINAL_MODEL.md](../01_final/README.md) for the current final method.
+Interpret "default" and "current result" here as the baseline stage, not the later final blend.
 
 <!-- final-selection-link -->
-最终模型与准确提交成绩已更新：[最终选择与报告结论](../01_final/README.md)。推荐结构融合版，Kaggle显示415.37529；历史/宏观版分别415.86912/415.78232。以下保留各阶段实验正文。
+Final method/exact submission scores are updated in [selection and report conclusions](../01_final/README.md). Recommended structural blend: displayed415.37529; history/macro 415.86912/415.78232. Earlier stage narratives remain below.
 
-本报告围绕三个问题组织：已有字段怎样转成合理输入、每列/每组带来多少预测增量、
-同一信息条件下传统 ML 与深度学习有何差别。主线使用比赛训练标签及所给辅助表，
-不使用官方公开源中目标月份的租金。公开目标匹配作为独立的数据重合审计附录，不参与主线排名。
+This report asks how raw fields become sensible inputs, how much each field/group adds,
+and how classical/deep models compare under common information. Main uses competition labels and supplied auxiliaries,
+excluding target-month rents from public sources. Public-target matching is a separate overlap audit outside predictive rankings.
 
-## 1. 问题、数据与验证
+## 1. Task, data and validation
 
-预测单位是单条租赁记录，目标为 SGD 月租金，主指标 RMSE，辅以 MAE 和预测减真实的平均偏差。
-训练集 150,000 行（2021-01..2025-03），测试集 50,000 行（2025-03..2026-07）。
-所给六类辅助数据包括楼栋、MRT、商场、学校、COE、股票；拥有数据不代表必须全部作为输入。
-保留重复记录，常量 FURNISHED/FEE 不入模，不凭租金大小删除异常行。
+Predict individual monthly rents in SGD; primary RMSE, with MAE and mean predicted-minus-actual bias.
+Train150,000 rows(2021-01..2025-03); test 50,000(2025-03..2026-07).
+Six auxiliaries cover blocks, MRT, malls, schools, COE and stocks; availability does not require including every source.
+Retain duplicates; exclude constant FURNISHED/FEE; do not delete records solely by rent magnitude.
 
-三个年度选择窗为 2022-04..2023-03、2023-04..2024-03、2024-04..2025-03；
-分别只用窗口起点之前的数据拟合。另报告 2023-12..2025-03 的16个月压力窗，
-它与年度窗重叠，不计入三年度汇总。汇总 RMSE 由各折平方误差按样本量合并后开平方，
-不直接平均 RMSE。历史统计在拟合截止冻结，验证中不接收真实租金更新。
+Three annual selection windows: 2022-04..2023-03,2023-04..2024-03,2024-04..2025-03;
+fit only before each origin. Separately report sixteen-month2023-12..2025-03 stress evaluation,
+which overlaps annual windows and is excluded from pooling. Pool sample-weighted squared errors before square root,
+not RMSE values directly. Histories freeze at fitting cutoff without validation-rent updates.
 
-全部标签月份此前都已经看过，这些是方案选择证据，不是新的独立测试。
-静态设施快照缺少完整开通日期，因此空间特征是比赛所给信息条件下的代理，
-不能声称已实现所有字段的历史可获得性审计。
+Every labelled month was previously examined; these support selection, not independent testing.
+Static facilities lack complete opening dates; spatial features are proxies under supplied competition information,
+not evidence of complete historical-availability auditing.
 
-## 2. 特征工程的假设与取舍
+## 2. Feature hypotheses and choices
 
-默认输入为27列：房屋5、时间3、区位5、MRT/商场/小学各2、两种粒度的过去租金各4。
-完整字段定义、来源、构造原因和时间边界见 [字段字典](feature_dictionary.csv)，
-实现与用法见 [特征工程说明](../../docs/methods/baseline_features.md)。
+Default27 inputs: five property, three time, five location, two each for MRT/malls/primary schools, and four histories at each of two levels.
+See [field dictionary](feature_dictionary.csv) for definitions, sources, rationale and cutoffs,
+and [feature guide](../../docs/methods/baseline_features.md) for implementation/usage.
 
-房型统一写法；地址只用于楼栋连接与历史分组。楼栋最高楼层不等于出租单元楼层，
-审批年减租约起始年只是楼龄代理。球面距离是可达性代理，不能解释成通勤时间或因果效应。
-最近设施距离与1km数量分别描述最近选择和周边选择；是否有增量由成组删除实验判断。
+Normalize flat-type formats; addresses support block joins/history keys. Building height is not unit floor,
+and approval-minus-lease year only proxies age. Spherical distance proxies accessibility, not commuting time or causality.
+Nearest distances/counts within1km describe nearest alternatives/local choice; group deletion tests incremental value.
 
-历史租金按“楼栋×户型”和“规划区×户型”形成过去均价、记录数、最近均价和距最近记录月数。
-每条拟合行只查询严格更早月份；验证行只查询拟合集历史。未知组为缺失/计数0，
-模型可利用粗粒度历史。类别词表、数值变换仅在拟合集学习。
+Block/type and planning-area/type histories provide past mean, count, last-month mean and months since observation.
+Fitting rows query strictly earlier months; validation queries fitting histories only. Unseen groups have missing statistics/count0;
+coarser histories remain usable. Vocabularies/numerical transforms fit on fitting data only.
 
-原31列中 SIGNATURE 历史与 BLOCK_FLAT 历史在当前数据上逐行完全重复，故删除4列。
-这一结构性审计比按单次重要性排名删列更有依据，但换数据后需重新核对。
+Original SIGNATURE and BLOCK_FLAT histories duplicate row by row; remove four fields from 31.
+This structural audit is stronger than deleting by one importance ranking, but needs rechecking on new data.
 
-## 3. 特征方案从基础到历史
+## 3. From baseline attributes to historical features
 
-下面固定同一 LightGBM 参数及相同拟合/验证行，400棵树、31叶节点、学习率0.05、种子42。
-相邻方案包含的变化不止一个字段，因此这里是方案比较，不把差异全部归因于某一个变量。
+Fix LightGBM at 400 trees, 31 leaves, learning rate0.05, seed 42 and identical fitting/validation rows.
+Adjacent policies can change several fields; compare policies without attributing everything to one variable.
 
 
-| 特征方案 | 2022年度窗 | 2023年度窗 | 2024年度窗 | 16个月压力窗 |
+| Feature policy | 2022 annual window | 2023 annual window | 2024 annual window | 16-month stress window |
 | --- | --- | --- | --- | --- |
-| 基础7列 | 722.46 | 595.68 | 485.09 | 502.21 |
-| 空间29列 | 719.97 | 591.90 | 476.97 | 495.21 |
-| 精简静态19列 | 719.59 | 589.76 | 477.02 | 493.89 |
-| 静态＋历史31列 | 711.08 | 582.59 | 468.49 | 491.22 |
-| 删除重复历史后27列 | 711.08 | 582.59 | 468.49 | 491.22 |
+| Seven basic inputs | 722.46 | 595.68 | 485.09 | 502.21 |
+| 29 spatial inputs | 719.97 | 591.90 | 476.97 | 495.21 |
+| 19 compact static inputs | 719.59 | 589.76 | 477.02 | 493.89 |
+| 31 static/history inputs | 711.08 | 582.59 | 468.49 | 491.22 |
+| 27 after duplicate-history removal | 711.08 | 582.59 | 468.49 | 491.22 |
 
 
-更丰富的40列静态和52列历史方案没有稳定胜过精简方案；变量更多并不保证收益。
-进一步的历史窗口、衰减、平滑、多半径、地址类别和市场基准分解已做100次固定模型拟合，
-见 [深入特征实验](../../docs/methods/history_feature_optimization.md)。溢价特征仅有小幅不稳定收益，
-市场趋势残差分解改善部分上涨窗口，但在转折期可能变差，保留为独立研究路线。
+Richer40-static/52-history policies do not consistently outperform compact inputs; more variables do not guarantee gains.
+Historical windows, decay, smoothing, multiple radii, address categories and market decomposition received100 fixed-model fits;
+see [detailed experiments](../../docs/methods/history_feature_optimization.md). Premium gains are small/unstable;
+trend-residual decomposition helps some rising-market windows but can worsen turning points, so remains separate research.
 
-COE/股票已有四窗对照，组合在该历史月度更新协议下4/4变差。
-这是不同协议下的负结果，不能和本报告固定预测起点的分数直接混排；未来各月的真实宏观观测
-在批量预测起点尚未知，故不放进默认输入。见 [经济消融](../../output/experiment_runs/features_economic_ablation/report.md)。
+COE/stocks have four-window controls; their joint bundle worsens4/4 under the earlier monthly-update protocol.
+Those negative results use a different protocol and cannot be ranked against fixed-origin scores. Realized future macro observations
+are unknown at the batch forecast origin and excluded by default. See [economic ablation](../../output/experiment_runs/features_economic_ablation/report.md).
 
-## 4. 每个输入/每组的 RMSE 增量
+## 4. RMSE contribution of each input/group
 
-新增156次训练：完整27列＋逐列删除27个＋成组删除8个＋联合删除3个，共39配置×4窗。
-每次删除都重新训练，参数、行、时间切点固定。定义：
+Add156 fits: full27,27 single deletions, eight groups, three joint deletions=39 configurations×four windows.
+Refit after every deletion, fixing settings, rows and cutoffs. Define:
 
 ```text
-ΔRMSE = 删除指定输入并重训后的 RMSE − 完整27列模型的 RMSE
-正值：删除后变差；负值：删除后反而变好。
+Delta RMSE = RMSE after deleting specified inputs and refitting − full27-input RMSE
+Positive means deletion worsens;negative means it improves.
 ```
 
-单列删除衡量“其他输入仍在时的边际贡献”。保留的历史编码仍可能携带房型/位置/时间信息，
-因此删除面积、位置或户型列，不代表移除了关于房屋规模或区位的全部信息。
-贡献不是可相加的解释份额，也不是变量的因果效应；原始源级干预需要重新设计派生特征。
+Single deletion measures marginal contribution while others remain. Historical encodings still carry type/location/time information,
+so removing area, location or type fields does not remove all related information.
+Contributions are neither additive shares nor causal effects; source-level intervention requires redesigning derived features.
 
-### 成组和联合删除
+### Group and joint deletions
 
 
-| 删掉的模型输入组 | 三年度汇总ΔRMSE | 最新年度ΔRMSE | 删除后变差年度数 | 16个月ΔRMSE |
+| Deleted input group | Pooled annual delta RMSE | Latest annual delta RMSE | Annual windows worsened | 16-month delta RMSE |
 | --- | --- | --- | --- | --- |
-| 时间＋全部历史 | +141.33 | +114.11 | 3/3 | +141.62 |
-| 全部历史 | +7.94 | +8.53 | 3/3 | +2.67 |
-| 楼栋×户型历史 | +6.18 | +9.27 | 3/3 | +5.79 |
-| 时间 | +4.03 | +3.43 | 3/3 | +4.33 |
-| 房屋属性 | +3.46 | +3.54 | 3/3 | +15.28 |
-| 区位 | +2.51 | +0.24 | 2/3 | +4.16 |
+| Time + all histories | +141.33 | +114.11 | 3/3 | +141.62 |
+| All histories | +7.94 | +8.53 | 3/3 | +2.67 |
+| Block/type histories | +6.18 | +9.27 | 3/3 | +5.79 |
+| Time | +4.03 | +3.43 | 3/3 | +4.33 |
+| Property attributes | +3.46 | +3.54 | 3/3 | +15.28 |
+| Location | +2.51 | +0.24 | 2/3 | +4.16 |
 | MRT | +0.74 | -0.01 | 1/3 | +1.55 |
-| 小学 | +0.61 | +0.37 | 2/3 | -0.88 |
-| 全部设施 | +0.58 | +0.01 | 2/3 | +0.90 |
-| 商场 | -0.19 | -0.43 | 1/3 | +0.66 |
-| 规划区×户型历史 | -0.26 | -1.06 | 1/3 | -4.30 |
+| Primary schools | +0.61 | +0.37 | 2/3 | -0.88 |
+| All amenities | +0.58 | +0.01 | 2/3 | +0.90 |
+| Malls | -0.19 | -0.43 | 1/3 | +0.66 |
+| Planning-area/type histories | -0.26 | -1.06 | 1/3 | -4.30 |
 
 
-### 单列删除中汇总影响最大的八列
+### Eight largest pooled single-deletion effects
 
 
-| 删除单列 | 汇总ΔRMSE | 最新ΔRMSE | 删除后变差年度数 |
+| Deleted field | Pooled delta RMSE | Latest delta RMSE | Annual windows worsened |
 | --- | --- | --- | --- |
 | APPROVAL_MONTH_INDEX | +13.51 | +5.02 | 3/3 |
 | HIST_BLOCK_FLAT_MEAN | +5.10 | +7.56 | 3/3 |
@@ -116,43 +118,43 @@ COE/股票已有四窗对照，组合在该历史月度更新协议下4/4变差�
 | HIST_AREA_FLAT_COUNT | +1.16 | -0.27 | 1/3 |
 
 
-全部27列见 [逐列结果](single_feature_effects.csv)，含每列最新窗口与压力窗差值。
-完整按折结果见 [fold_effects.csv](../../output/experiment_runs/features_ablation_evidence/fold_effects.csv)。
-![成组删除](../../output/experiment_runs/features_ablation_evidence/group_deletion.png)
+See all 27 [single-field results](single_feature_effects.csv),including latest/stress differences.
+Complete folds:[fold_effects.csv](../../output/experiment_runs/features_ablation_evidence/fold_effects.csv).
+![Group deletions](../../output/experiment_runs/features_ablation_evidence/group_deletion.png)
 
-时间与历史特征可相互替代部分信号，应同时看联合删除而非只看单列排名。
-某列删除后略好，不等于它在所有模型中无价值，也不据此把各单列的“改善”组合成新最优方案。
-本次不自动改变27列默认方案，避免继续用已看过的外层标签逐步挑选。
+Time/history inputs partly substitute; examine joint deletion, not single rankings alone.
+A slightly beneficial deletion does not prove universal uselessness or justify combining individual gains into a new optimum.
+Keep the 27-input default rather than continuing stepwise selection on examined outer labels.
 
-最新窗附带配对3个月连续区块重采样，2000次，报告2.5/97.5百分位。
-它仅反映固定预测下的月份敏感性，12个月的支持有限，不包括训练随机性或未来市场不确定性，
-没有多重比较校正，不能当作正式显著性证明。
+Latest-window paired three-month contiguous-block resampling uses 2000 draws and 2.5/97.5 percentiles.
+It describes month sensitivity conditional on fixed predictions; only twelve months, without fitting randomness/future-market uncertainty
+or multiplicity correction. It is not formal significance evidence.
 
-## 5. 模型层面：同信息比较与整条管线比较
+## 5. Common-information models versus complete pipelines
 
-选择这些模型是为检验不同建模假设，而不是凑架构数量：
+Models test distinct hypotheses rather than increase architecture counts:
 
-| 对照 | 本项目要检验的问题 |
+| Control | Question tested |
 | --- | --- |
-| LightGBM、CatBoost、XGBoost、HistGradientBoosting | 对混合数值/类别表格的非线性树集成，是主要预测基准 |
-| ExtraTrees | 随机树集成能否与逐步提升树形成有效对照 |
-| Embedding MLP / ResNet | 类别向量与连续输入联合训练，在相同信息下是否优于树 |
-| FT-Transformer 96/192 | 特征token的注意力交互以及更大宽度是否提供额外收益 |
-| TabNet | 顺序注意力式特征选择，在本表格与有限预算下是否有效 |
+| LightGBM, CatBoost, XGBoost, HistGradientBoosting | Nonlinear ensembles for mixed numerical/categorical tables; main predictive references |
+| ExtraTrees | Whether randomized trees provide useful contrast with boosting |
+| Embedding MLP / ResNet | Whether jointly learned embeddings/numerical inputs outperform trees under identical information |
+| FT-Transformer 96/192 | Whether token attention and greater width add value |
+| TabNet | Whether sequential attentive feature selection helps this table under limited budget |
 
-方法出处：[LightGBM原论文](https://proceedings.neurips.cc/paper_files/paper/2017/hash/6449f44a102fde848669bdd9eb6b76fa-Abstract.html)、
-[FT-Transformer与表格深度基线](https://arxiv.org/abs/2106.11959)、
-[TabNet原论文](https://arxiv.org/abs/1908.07442)。本项目的数值结果来自下面的本地实验，
-不以论文在其他数据集上的排名推断本数据的排名。
+Sources:[LightGBM paper](https://proceedings.neurips.cc/paper_files/paper/2017/hash/6449f44a102fde848669bdd9eb6b76fa-Abstract.html),
+[FT-Transformer/tabular deep baselines](https://arxiv.org/abs/2106.11959),
+[TabNet paper](https://arxiv.org/abs/1908.07442). Project scores come from local experiments below,
+not rankings transferred from other datasets.
 
-### 同27列、同114,842条拟合行、同35,158条验证行
+### Same27 inputs, 114,842 fitting rows and 35,158 validation rows
 
-只从原搜索中 compact 配置的内部2023-10..2024-03分数选择参数和轮数；
-再用2024-04之前全部记录重训。没有残差偏移或历史预热删行。
-完全一致的已有外层拟合可复用，其他模型补训。预处理按模型适配，但原始27个输入相同。
+Select parameters/epochs only from original compact-input inner2023-10..2024-03 trials;
+refit all pre-April2024 rows. No market-residual offset or warm-up row deletion.
+Reuse exactly matched old outer fits; fit others anew. Model-adapted preprocessing is allowed, but all 27 raw inputs match.
 
 
-| 模型 | 相同27列 RMSE | MAE | 相对LGB ΔRMSE | 月份区块敏感性区间 |
+| Model | Same27-input RMSE | MAE | Delta RMSE versus LGB | Month-block sensitivity interval |
 | --- | --- | --- | --- | --- |
 | XGBoost | 467.03 | 338.87 | -1.84 | [-2.48, -1.28] |
 | HistGradientBoosting | 468.02 | 339.25 | -0.85 | [-1.90, +0.44] |
@@ -166,93 +168,93 @@ COE/股票已有四窗对照，组合在该历史月度更新协议下4/4变差�
 | TabNet | 498.53 | 383.79 | +29.67 | [+18.74, +39.56] |
 
 
-这一表更接近架构对照，仍有搜索预算不等、预处理不同、只跑一个种子的限制。
-本表LightGBM按内部验证选择参数与轮数，和第4节固定400树的468.49基线配置不同；
-同样27列并不代表超参数相同，因此两处LightGBM分数不同不构成结果冲突。
-小差异不能作为模型家族普遍优劣的证明。配对区块区间的含义与上节相同。
+This better approximates an architecture control, but unequal search budgets, preprocessing and one seed remain limitations.
+LightGBM here selects settings/duration internally, unlike section4's fixed 400-tree468.49 reference;
+identical27 inputs need not imply identical hyperparameters, so differing scores are not contradictory.
+Small differences do not establish universal model-family superiority. Paired-block intervals retain the previous interpretation.
 
-### 各模型允许选择自身特征/目标表示的完整管线
+### Full pipelines with model-specific features/targets
 
-原模型搜索包含30个内部候选配置及10种模型规格，允许精简、溢价、地址和市场残差版本。
+Original search covers30 inner configurations and ten specifications, allowing compact, premium, entity and market-residual inputs.
 
-最新年度观察最小 RMSE 为 **465.66**（内部选权融合）。
+Lowest observed latest-annual RMSE is **465.66**,an inner-weighted blend.
 
-这张表比较完整管线，不能将收益全归因于架构。详见 [原模型比较](../../docs/methods/model_comparison.md)。
-早期及16个月复核仅覆盖部分树模型，不把神经网络的最新一年结果泛化为全时期结论。
+This compares pipelines, not architecture alone. See [original model comparison](../../docs/methods/model_comparison.md).
+Early/16-month checks cover selected trees; one recent neural year cannot support all-period conclusions.
 
-## 6. 误差从哪里来
+## 6. Sources of error
 
-下面使用固定27列 LightGBM 的最新窗诊断，与第4节删除基线一致。
-偏差为预测减真实；按真实租金分组是事后诊断，不能在预测时以未知租金决定模型或修正量。
+These latest-window diagnostics use the same fixed 27-input LightGBM as section4's deletion control.
+Bias is prediction minus actual. True-rent grouping is post-hoc; unknown query rents cannot select models/corrections.
 
 
-| 真实租金段（仅诊断） | 样本数 | RMSE | 预测减真实偏差 | 该窗平方误差占比 |
+| Actual rent band (diagnostic only) | Samples | RMSE | Predicted-minus-actual bias | Share of window SSE |
 | --- | --- | --- | --- | --- |
 | 2000-3000 | 14059 | 407.49 | +161.91 | 30.3% |
 | 3000-4000 | 16629 | 325.73 | -147.05 | 22.9% |
 | <=2000 | 2107 | 1143.13 | +1023.21 | 35.7% |
 | >4000 | 2363 | 604.82 | -453.30 | 11.2% |
-最新窗口中，真实租金≤2000的2,107条记录（占6.0%）贡献35.7%的平方误差，因此低租金记录的系统高估比继续堆设施字段更值得作为下一步研究假设。
+In the latest window, 2,107 records with true rent≤2000(6.0%) contribute35.7% of squared error. Their systematic overprediction merits study more than adding further amenity fields.
 
 
 
-低租金组高估、高租金组低估的现象要结合回归到均值、缺失房屋细节和真实市场变化分析，
-不能直接推成因果机制，也不能只根据目标分组误差做泄漏式校准。
-进一步的按月份、预测跨度、Town、户型、历史支持量和历史陈旧程度见
-[error_diagnostics.csv](../../output/experiment_runs/features_ablation_evidence/error_diagnostics.csv)。
-表中同时记录样本数和平方误差占比，避免只关注小样本高RMSE组。
-按月的观察用于定位问题，不新增任何未来标签特征。
+Interpret low-rent overprediction/high-rent underprediction alongside mean regression, missing unit details and market change,
+not as direct causal mechanisms or permission for target-leaking group calibration.
+Further breakdowns by month, horizon, town, type, history support and staleness are in
+[error_diagnostics.csv](../../output/experiment_runs/features_ablation_evidence/error_diagnostics.csv).
+Tables include counts/SSE shares to avoid focusing only on small high-RMSE groups.
+Monthly diagnostics locate problems without creating future-label inputs.
 
-## 7. 最终复现与信息边界
+## 7. Final reproduction and information boundaries
 
-为了提供最简单可复现的正式预测路径，保留固定27列、400树 LightGBM 作为默认参考管线，
-其最新窗 RMSE 为468.49，不将它称作465.66的搜索最优融合。
-命令 `python -m analysis.main canonical-submit` 使用全部150,000条标签拟合，
-保存包含词表和历史统计的完整模型，再重载核对，生成50,000行测试预测。
+Retain fixed 27-input, 400-tree LightGBM as the simplest reproducible reference,
+latest RMSE 468.49; it is not the 465.66 search-selected blend.
+`python -m analysis.main canonical-submit` fits all 150,000 labels,
+saves vocabularies/histories with the model, reloads/checks it and predicts50,000 test rows.
 
-本次模型重载最大预测差为 0；预测行数 50,000。
+Maximum reloaded-prediction difference is0; 50,000 output rows.
 
-输出在 `output/submissions/baselines/baseline_27_features/`，不自动上传；检查摘要在
-[baseline_27_feature_submission/summary.json](../../output/experiment_runs/baseline_27_feature_submission/summary.json)。
-测试2025-03的重叠月份历史排除同月标签，但最终基础模型仍以全部已知训练标签拟合，
-因此不宣称这380条测试记录获得了完全事前的模型拟合。
+Outputs:`output/submissions/baselines/baseline_27_features/`,without automatic upload; check summary in
+[baseline_27_feature_submission/summary.json](../../output/experiment_runs/baseline_27_feature_submission/summary.json).
+March2025 query histories exclude same-month labels, but the final supervised model fits all known labels,
+so those380 queries are not completely pre-month fitted predictions.
 
-公开原始租金匹配已独立放在 `experiment/public-rent-lookup` 分支。
-其约180是公开目标重建误差、约173是候选方差估算，不能并入普通预测模型排名。
-没有证据确定其他队伍使用了什么方法；是否允许目标恢复应依据课程/比赛要求。
+Public-rent matching is isolated in `experiment/public-rent-lookup`.
+Approximately180 is public-target reconstruction error, and 173 a candidate-variance estimate, not ordinary forecasting scores.
+Other teams' methods are unknown; course/competition rules determine whether reconstruction is allowed.
 
-## 8. 当前完成度与剩余工作
+## 8. Completion and remaining work
 
-| 项目 | 当前状态 |
+| Item | Current status |
 | --- | --- |
-| 数据质量、连接率和主/辅助 EDA | 已有报告；原始数据哈希保护 |
-| 明确的默认特征与每列构造理由 | 已完成27列字典和统一实现 |
-| 特征组、历史表示与冗余审计 | 已有多窗口比较及重复列删除复验 |
-| 每列/每组实际 RMSE 增量 | 本轮补齐156次重训与按折结果 |
-| 同特征 ML/DL 比较 | 本轮补齐10规格共同输入对照 |
-| 不同特征适配的模型搜索 | 已完成30个内部配置；单独解释协议 |
-| 误差分析与模型复现导出 | 本轮补齐历史支持/陈旧度/跨度诊断及最终重载核对 |
-| 神经网络多随机种子、更多前向窗口 | 尚未补齐，不夸大当前架构排名；可作为有限后续实验 |
-| 所有设施历史开通时点 | 仍缺数据，保留限制或做无设施敏感性对照 |
-| 真正未看过的独立测试/实际Kaggle成绩 | 尚无；当前外层不能重新称为未触碰测试 |
-| 最终课程格式、页数、分工与参考文献排版 | 需按课程原始rubric定稿；本仓库未提供完整rubric |
+| Data quality, join coverage and main/auxiliary EDA | Reports available; raw hashes protected |
+| Explicit default inputs and per-field rationale | 27-field dictionary/shared implementation complete |
+| Feature groups, history representations and redundancy | Multi-window comparisons and duplicate-deletion confirmation available |
+| Actual per-field/group RMSE increments | Added156 refits and fold results |
+| Same-input ML/DL comparison | Completed ten common-input specifications |
+| Search with model-adapted inputs | Completed 30 inner configurations under a separately described protocol |
+| Error analysis and reproducible export | Added history-support/staleness/horizon diagnostics and final reload checks |
+| Multiple neural seeds/more forward windows | Outstanding; avoid universal architecture rankings; bounded future work |
+| Historical opening dates for every facility | Missing; retain limitations or run no-facility sensitivity |
+| Genuinely untouched test/actual Kaggle results | Not available; current outer data cannot be relabelled untouched |
+| Final course format, pages, workload and references | Finalize against original course rubric; the complete rubric is absent here |
 
-不为增加复杂度额外引入潜变量模型。只有误差诊断形成新假设、能说明输入来源和验证方式，
-才继续扩展。下一步最值得做的是围绕现有证据定稿报告与答辩，而非无限堆变量或架构。
+Do not add latent-variable models merely for complexity. Extend only with diagnostic-driven hypotheses, clear input provenance and validation.
+Prioritize an evidence-based report/presentation over endlessly adding fields/architectures.
 
-## 9. 复跑入口
+## 9. Rerun entry points
 
 ```powershell
-# 每列/每组删除实验与误差诊断
+# Per-field/group deletion refits and error diagnostics
 python -m analysis.main feature-evidence
-# 同27列模型对照：需先具备原model-search的内部trial结果
+# Common27-model controls require original model-search inner trial results
 python -m analysis.main common-models
-# 简单默认管线全量重训、模型重载与本地提交CSV
+# Refit simple default on all data,reload and export local submission CSV
 python -m analysis.main canonical-submit
-# 只读取已有实验结果，重新生成本报告、字段字典和索引
+# Read existing results to regenerate this report,dictionary and index
 python -m analysis.main project-review
 ```
 
-环境与原模型搜索复跑见 [模型说明](../../docs/methods/model_comparison.md)。历史实验入口保留在
-[运行指南](../../docs/guides/running_experiments.md)，不需要为读当前主线逐个运行。
-机器可读项目缺口与证据路径见 [output/experiment_runs/foundation_feature_review/README.md](README.md)。
+See [model guide](../../docs/methods/model_comparison.md) for environments/original searches. Historical entry points remain in
+the [running guide](../../docs/guides/running_experiments.md); reading main results does not require running each.
+Machine-readable gaps/evidence paths:[output/experiment_runs/foundation_feature_review/README.md](README.md).

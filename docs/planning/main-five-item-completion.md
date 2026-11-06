@@ -1,49 +1,51 @@
-# main 五项优化与验收
+[Chinese version](main-five-item-completion.zh-CN.md)
 
-本文保留当时的五项验收记录；后续 main 已合并 F2 候选与 MLP 材料，当前状态以[执行表](main-execution-status.md)及 M07--M09 的新核验为准，不能沿用下文旧的“生成器缺失”状态。
+# Main five-item improvement and acceptance record
 
-本次完成实验材料和运行入口，不撰写报告正文。原始数据、原提交、已合并的 Concat 架构及其他组员内容保留；F2 按既定决定继续待补。
+This page preserves the original five-item acceptance record. Later main integrates F2 candidates/MLP materials; follow [current status](main-execution-status.md) and new M07–M09 checks rather than old "missing generator" statements below.
 
-| 项目 | 已完成内容 | 证据 / 入口 |
+This round completes experiment materials/commands, not manuscript prose. Raw data, original submissions, integrated Concat architecture and others' work are retained; F2 remains pending as previously decided.
+
+| Item | Completed work | Evidence / entry point |
 |---|---|---|
-| 1. 统一特征口径 | C7、19/27/47/62、adjusted62、F1 异质组件和 Concat 原始/编码输入分别注册；纠正 PLE/PLR 旧元数据遗漏的 5 列 | [schema 清单](../../experiment/main/M03/feature_schemas/README.md)；`python -m analysis.main schemas` |
-| 2. F1 Y/J 生成链 | 从原始数据按固定配方新训练 30 个基础模型，全部保存并重载；固定原点前权重重组，未重新选参/选权 | [新生成链](../../reproduction/f1/README.md)、[验收表](../../reproduction/f1/validation_evidence/validation_results.csv)；`python -m analysis.main validation-refits` |
-| 3. 预测场景 | 主实验明确为所给设施快照与固定历史原点；训练/查询边界、同月测试行和宏观使用分开声明 | [场景定义](../methods/prediction-scenario.md)；`planned` 按原表验证行数和月份 |
-| 4. 复用空间 EDA | 导入冻结来源，主线选取 6 项原始/调整后关联、18 项设施分箱对照；区分两种调整模型及历史设施边界 | [空间材料](../../experiment/main/M01/spatial_evidence/README.md) |
-| 5. 复用清洗对照 | 导入 9 组匹配汇总；3 组逐行预测独立重算；保留轻度清洗 MLP 的小幅改善及其他反向结果 | [清洗材料](../../experiment/main/M01/cleaning_evidence/README.md)；`python -m analysis.main evidence` |
+| 1. Common feature definitions | Register C7,19/27/47/62, adjusted62, F1 heterogeneous members and raw/encoded Concat inputs separately; restore five fields omitted in old PLE/PLR metadata | [Schema inventory](../../experiment/main/M03/feature_schemas/README.md); `python -m analysis.main schemas` |
+| 2. F1 Y/J generation chains | Train30 new fixed-recipe base models from raw data, save/reload all, and reconstruct pre-origin weights without new parameter/weight selection | [New generation chain](../../reproduction/f1/README.md), [acceptance table](../../reproduction/f1/validation_evidence/validation_results.csv); `python -m analysis.main validation-refits` |
+| 3. Prediction scenario | Explicit supplied-snapshot/fixed-history-origin main task; separately disclose fitting/query boundaries, same-month test rows and macro usage | [Scenario](../methods/prediction-scenario.md); `planned` checks raw counts/months |
+| 4. Reuse spatial EDA | Import frozen sources; select six raw/adjusted associations and 18 controlled facility-bin comparisons; distinguish two adjustment models and historical availability | [Spatial evidence](../../experiment/main/M01/spatial_evidence/README.md) |
+| 5. Reuse cleaning controls | Import nine matched summaries; independently recompute three row-level predictions; retain slight cleaned-MLP gains and contrary results | [Cleaning evidence](../../experiment/main/M01/cleaning_evidence/README.md); `python -m analysis.main evidence` |
 
-## 新训练的身份与结果
+## New-fit identity and results
 
-| 窗口 | 拟合 / 查询行 | 基础模型 / 逻辑组件 | RMSE (SGD) | MAE (SGD) | 端到端记录耗时 |
+| Window | Fitting / query rows | Base models / logical components | RMSE (SGD) | MAE (SGD) | Recorded end-to-end time |
 |---|---|---|---|---|---|
-| Y | 114,842 / 35,158 | 15 / 12 | 451.029502492 | 328.729828598 | 384.97 秒 |
-| J | 121,005 / 28,995 | 15 / 12 | 441.834534884 | 321.820758266 | 391.51 秒 |
+| Y | 114,842 / 35,158 | 15 / 12 | 451.029502492 | 328.729828598 | 384.97 seconds |
+| J | 121,005 / 28,995 | 15 / 12 | 441.834534884 | 321.820758266 | 391.51 seconds |
 
-生成提交为 `29ea4ac`，完整提交号见各窗 `generating_commit` 字段。每窗 39 份训练源文件均按提交对象及当前字节核验。两窗与旧 F1 预测的最大差均约 `9.09e-13` SGD；RMSE 相同。新 CSV 可从归档组件逐字节重组。新训练记录与旧预测档案分别保留，不把新提交冒充旧缓存的原始生成提交。
+Generator commit is `29ea4ac`; full IDs are in each window's `generating_commit`. All39 training sources per window match commit objects/current bytes. Maximum difference from old F1 predictions is about `9.09e-13` SGD in both windows; RMSE matches. New CSV bytes reconstruct from archived components. Preserve new-run and old-cache provenance separately; the new commit is not the old cache's generator.
 
-大型模型、特征缓存和完整新训练 CSV 留在忽略的 `output/five_item_validation/`。随分支提交紧凑组件数组、运行记录及哈希，支持 CPU 审查；CUDA 原配方入口支持从原始数据重新训练。
+Large models, feature caches and complete new training CSVs stay in ignored `output/five_item_validation/`. Compact component arrays, run records and hashes are tracked for CPU review; the CUDA fixed recipe retrains from raw data.
 
-## 结构与重复内容处理
+## Structure and duplicate-content handling
 
-| 内容 | 唯一主要入口 | 处理 |
+| Content | Primary entry point | Action |
 |---|---|---|
-| 数据 | 根 `data/` | 九份原始 CSV 不重复复制，不改换行字节 |
-| 场景 | `docs/methods/prediction-scenario.json` | Markdown 解释，审计读取 JSON 并验证样本范围 |
-| 特征 | `M03/feature_schemas/` | 统一有序列和转换；旧元数据保留并显式勘误 |
-| 来源 | `M01/imported-evidence.json` | 原分支、提交、路径、文件哈希；主线选表由核验入口再生成 |
-| 训练 | `reproduction/f1/validate.py` | 复用冻结运行时，不另写模型实现，不新增第二份数据 |
-| 离线验收 | `python -m analysis.main planned` | 集成三个专项核验；单独命令用于定位问题 |
-| 执行记录 | [review/CHECKS.md](../../review/CHECKS.md) | 历史记录保留，新增验收按目录区分 |
+| Data | Root `data/` | Do not duplicate nine raw CSVs or change their newline bytes |
+| Scenario | `docs/methods/prediction-scenario.json` | Markdown explains; audits read JSON and check sample scope |
+| Features | `M03/feature_schemas/` | Ordered columns/transforms; retain old metadata with explicit corrections |
+| Provenance | `M01/imported-evidence.json` | Original branch, commit, path and hash; verification regenerates selected main tables |
+| Training | `reproduction/f1/validate.py` | Reuse frozen runtime without a second model implementation or data copy |
+| Offline acceptance | `python -m analysis.main planned` | Integrate three focused checks; standalone commands help locate issues |
+| Execution records | [review/CHECKS.md](../../review/CHECKS.md) | Retain history; separate new acceptance directories |
 
-## 仍保留的边界
+## Remaining boundaries
 
-| 项目 | 状态与影响 |
+| Item | Status and implications |
 |---|---|
-| F2 | 实际生成代码、87 列 schema、成员权重、提交 CSV 和 Y/J 配对预测待补；M07/M08/M09 对应部分未完成 |
-| 旧档案生成身份 | 新 F1 生成链已建立；旧 26 组缓存的精确原生成提交仍不能全部独立恢复 |
-| 独立性 | Y/J 重叠且已反复查看；本次固定配方复训不产生新的独立测试集 |
-| 空间统计 | 来源字节、输入版本和统计口径核验通过；原回归未在本轮独立重估，设施关联不是因果效应 |
-| 清洗证据 | 3 组逐行重算，另外 6 组只核验来源汇总；拟合截止时间不同，不能转写成 F1 清洗增益 |
-| 运行范围 | 新 Y/J 全流程已跑；既有模型重放及测试另列验收。未声称重跑所有历史模型搜索或完整 Concat 八轮重训，也未新装一套 Conda 环境 |
+| F2 | Actual generator, 87-input schema, member weights, submission CSV and Y/J paired predictions remain outstanding; corresponding M07/M08/M09 work is incomplete |
+| Identity of old generators | New F1 generation chains exist; exact original commits for all 26 old cached groups cannot yet be independently recovered |
+| Independence | Y/J overlap and were repeatedly inspected; fixed-recipe refits do not create an independent test |
+| Spatial statistics | Source bytes, input versions and definitions verified; original regressions not independently reestimated this round; facility associations are not causal |
+| Cleaning evidence | Three row-level recomputations; the other six verify source summaries only. Different fitting cutoffs prevent treating these as F1 cleaning gains. |
+| Execution scope | New Y/J pipelines ran end to end; existing-model replay/tests have separate acceptance. No claim of rerunning every search, full eight-epoch Concat training or fresh Conda installation. |
 
-本次五项材料可独立审查；整个双终点方案仍因 F2 材料缺失而不能标记全部 P0 完成。
+The five items are independently reviewable, but missing F2 evidence prevents declaring all two-endpoint P0 work complete.

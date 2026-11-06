@@ -1,45 +1,47 @@
-# 第七轮：更新的 Transformer 表格模型
+[Chinese version](07_pretrained_transformers.zh-CN.md)
 
-本轮完成15组完整较早窗口配置，连同后续窗口共25次完整评估。包含14组冻结上下文推理及1组TabDPT监督适配的早期配置；不把冻结推理次数称为从头训练次数。
+# Round 7:newer tabular Transformers
 
-## 路线与版本
+Fifteen complete earlier configurations, 25 full evaluations including later windows: 14 frozen-context and one early supervised TabDPT adaptation. Frozen inference calls are not training-from-scratch counts.
 
-- [TabDPT 1.3 / Turbo后续版](https://github.com/layer6ai-labs/TabDPT-inference)：作者2026-09发布的v1.3权重，`tabdpt==1.3.2`。预训练Transformer使用源记录租金作为上下文，比较全池随机抽样与逐条最近邻检索。作者说明其预训练使用真实世界表格数据；本项目未额外下载HDB租金标签。
-- TabDPT监督适配：另写本项目训练器，更新作者骨干最后两个Transformer块、对应标签编码器与回归头，冻结其余参数及注意力缩放kappa；不是作者原始训练配方。每个epoch将全部拟合记录各作为一次查询，查询自己的标签不进入512条训练上下文。BF16、MSE、AdamW学习率0.00003，最多8轮，早停耐心3轮；包含0轮原权重的匹配对照。后续只按早期固定轮数重训，不用后续标签早停。
-- [Nori 1.5](https://github.com/Synthefy/synthefy-nori)：`synthefy-nori==0.22.0`，约20.8M参数，分两阶段编码、特征注意力与样本注意力；另测较小的Nori-6M作为规模对照。作者说明权重由合成数据预训练。
-- [TabICLv2](https://github.com/soda-inria/tabicl)：已有2026-02回归权重、`tabicl==2.1.1`；本轮换为62＋5个候选强历史输入及新的历史基准，区别于第二轮较少特征的旧配置。
-- [TabPFN-3.5](https://github.com/PriorLabs/TabPFN)：作者访问方式要求用户登录并接受模型许可。用户选择先继续公开权重模型，因此本轮不测试该版本。此前TabPFN结果仍按各自旧版本与输入记录。
+## Routes and versions
 
-所有预测在本地运行；下载作者权重，未向模型服务发送项目数据。原始租金、相对过去基准的残差，以及原始租金/过去基准的比率，分别独立筛选；后两者在输出时加回/乘回源历史计算的基准。比率分母不使用验证月的实际平均租金。
+- [TabDPT1.3 / post-Turbo](https://github.com/layer6ai-labs/TabDPT-inference):author September2026 v1.3 weights,`tabdpt==1.3.2`. Compare random whole-pool context and per-query neighbors. Authors report real-world tabular pretraining; no extra HDB labels downloaded here.
+- Custom supervised TabDPT trainer updates last two blocks, label encoder and regression head; others/kappa frozen. Not the author training recipe. Each fitting row is a query once per epoch, excluding its own label from 512-row context. BF16, MSE, AdamW0.00003, max8 epochs, patience3; matched epoch0 control. Later refits use earlier fixed epochs without later stopping.
+- [Nori1.5](https://github.com/Synthefy/synthefy-nori):`synthefy-nori==0.22.0`,about 20.8M parameters, two-stage encoding/feature/sample attention; Nori-6M is a size control. Authors report synthetic pretraining.
+- [TabICLv2](https://github.com/soda-inria/tabicl):existing February2026 regression weights,`tabicl==2.1.1`; new 62+five strong-history candidates/baseline differ from round 2's smaller inputs.
+- [TabPFN-3.5](https://github.com/PriorLabs/TabPFN):requires user login/license acceptance. User chose available public weights first, so this version is untested here. Prior TabPFN scores retain their own versions/inputs.
 
-## 时间、特征与硬件预算
+All inference is local using downloaded author weights; no project data sent to model services. Independently screen raw, residual and ratio targets; restore historical baselines by addition/multiplication. Ratio denominators never use actual validation-month mean rents.
 
-较早窗口2023-10—2024-03共17,977条；年度2024-04—2025-03共35,158条；近期2024-06—2025-03共28,995条。每个起点的租金历史冻结，保留每一条验证记录。后续配置、上下文大小、视图数和融合权重均在较早窗口锁定。三个窗口都属于反复查看过的开发数据，后两者重叠。
+## Temporal, feature and hardware budgets
 
-候选输入为62列历史/静态特征＋5列过去市场与同期收缩表示，仅按相应拟合上下文删除全缺失/常量列。TabDPT类别用源池词表编码，源池拟合填补与缩放；Nori使用原生类别和数值处理，并禁用HighDimFeatureSelector的fit_on_test。TabICL采用原生类别/数值流水线。
+Earlier2023-10–2024-03:17,977 rows; annual 2024-04–2025-03:35,158; recent 2024-06–2025-03:28,995. Histories freeze per origin and retain all rows. Lock later settings, contexts, views, weights earlier. All windows are reused development; last two overlap.
 
-另对三条路线各加入一组历史成熟上下文对照：仅从时间已满24个月、且24个月同期楼栋历史计数大于0的源记录中选择上下文。筛选不使用租金数值，也不减少验证记录；用于检验冷启动缺失历史与查询输入分布不一致的影响。成熟上下文的可用源池和有效列数可以变化，不能解释成只有模型结构发生变化的消融。
+Candidate62 histories/static + five past-market/shrinkage fields; drop missing/constants only from fitting context. TabDPT vocabularies, imputation/scaling fit source pools. Nori uses native handling with HighDimFeatureSelector fit_on_test disabled. TabICL uses native pipelines.
 
-RTX4060 Laptop 8GB：TabDPT禁用当前Windows构建不支持的Flash-only路径与torch.compile，使用作者公开use_flash=False选项；Nori禁用多流水线同时执行，固定原生分块元素预算，不量化上下文缓存，不允许静默丢弃已选上下文。起初的全查询试运行曾显存不足，改用上述固定分块后重新计算，失败运行不记成绩。
+Each route adds a mature-context control: source rows at least24 months into history with positive24-month block support. Selection ignores rent values/retains all queries. Changed available pools/columns mean this is not architecture-only ablation.
 
-Nori每视图2048条上下文；Nori1.5使用默认4条预处理流水线，Nori6M限制4条（作者默认8条）。TabDPT用2个视图、2048随机上下文，或每条查询128个近邻；检索配置采用BF16，随机上下文配置采用FP32。其源池仍包含全部拟合期记录。TabICLv2用24,000条随机上下文、2个视图（作者默认8个）。这些预算不能用于宣布模型架构的普遍优劣。源池筛选和随机抽样不读取查询租金。失败及因耗时丢弃的未完成运行见`runtime_adjustments.json`。
+RTX4060 Laptop8GB: TabDPT uses public use_flash=False because Windows lacks the Flash-only path; torch.compile disabled. Nori disables concurrent pipelines and fixes native chunk-element budget, without quantizing caches or silently dropping contexts. Initial full-query OOM runs are excluded; recompute with fixed chunks.
 
-## 后续相同窗口对比
+Nori: 2048 context/view; 1.5 defaults four pipelines, 6M capped four (default eight). TabDPT: two views, 2048 random context or128 neighbors/query; BF16 retrieval, FP32 random. All fitting rows remain in its source pool. TabICL: 24,000 random context, two views (default eight). Unequal budgets prohibit universal architecture claims. Sampling excludes query rents. Failed/time-stopped runs:`runtime_adjustments.json`.
 
-| 路线 | 年度RMSE | 近期RMSE | 较早窗口选定配置 |
+## Later matched-window comparisons
+
+| Route | Annual RMSE | Recent RMSE | Earlier-selected configuration |
 |---|---:|---:|---|
-| TabDPT 1.3 冻结 | 462.9712 | 476.9916 | `tabdpt13_residual_global2048` |
-| TabDPT 1.3 监督适配 | 464.1707 | 463.0065 | `tabdpt13_adapt_residual` |
+| Frozen TabDPT1.3 | 462.9712 | 476.9916 | `tabdpt13_residual_global2048` |
+| Supervised-adapted TabDPT1.3 | 464.1707 | 463.0065 | `tabdpt13_adapt_residual` |
 | Nori | 459.5105 | 462.0088 | `nori15_raw_2048` |
 | TabICLv2 | 460.6730 | 454.6275 | `tabicl2_raw_mature24000` |
-| FT-Transformer（此前67列方案） | 471.5338 | 458.6012 | — |
-| 原历史主融合 | 451.1810 | 442.9025 | — |
-| 第六轮深度融合 | 450.4924 | 444.6888 | — |
-| 加入新Transformer的融合 | 450.4823 | 442.9704 | — |
+| FT-Transformer (previous67-input policy) | 471.5338 | 458.6012 | — |
+| Original history blend | 451.1810 | 442.9025 | — |
+| Round 6 deep blend | 450.4924 | 444.6888 | — |
+| Blend with new Transformers | 450.4823 | 442.9704 | — |
 
-完整较早窗口成绩（包含负结果；128查询试运行不参与选择）：
+Full earlier-window scores, including negative results; 128-query smoke runs do not select candidates:
 
-| 配置 | RMSE | MAE | 偏差 | 上下文/视图 | 秒 |
+| Configuration | RMSE | MAE | Bias | Context/views | Seconds |
 |---|---:|---:|---:|---:|---:|
 | `tabdpt13_adapt_residual` | 530.2387 | 405.4116 | +21.9536 | 2048/2 | 223.0 |
 | `tabdpt13_residual_global2048` | 533.0680 | 404.0540 | +50.7355 | 2048/2 | 5.1 |
@@ -57,33 +59,33 @@ Nori每视图2048条上下文；Nori1.5使用默认4条预处理流水线，Nori
 | `tabicl2_residual_24000` | 586.8685 | 433.0859 | +229.8313 | 24000/2 | 13.4 |
 | `tabicl2_ratio_24000` | 592.3055 | 439.0568 | +195.5518 | 24000/2 | 14.2 |
 
-### 匹配的监督适配对照
+### Matched supervised-adaptation control
 
-相同原始权重、输入、BF16精度、2个视图和2048条推理上下文，比较0轮冻结与较早窗口选定轮数的监督适配。训练时保持骨干推理模式下的上下文归一化，同时对指定参数反向传播。
+Match original weights, inputs, BF16, two views and 2048 inference context; compare frozen epoch0 with earlier-selected adaptation. Preserve backbone inference-mode context normalization while differentiating designated parameters.
 
-| 窗口 | 冻结RMSE | 适配后RMSE | 选定训练轮数 | 每轮监督行数 |
+| Window | Frozen RMSE | Adapted RMSE | Selected epochs | Supervised rows per epoch |
 |---|---:|---:|---:|---:|
 | june | 475.3917 | 463.0065 | 1 | 121005 |
 | outer | 463.2935 | 464.1707 | 1 | 114842 |
 | screen | 533.1687 | 530.2387 | 1 | 96865 |
 
-## 为什么这些深度模型没有稳定超过原方案
+## Why these deep models do not consistently beat the reference
 
-以下区分已观察到的现象与原因假设。不能据此认定网络容量无效，也不能将全部差距归因于数据噪声。
+Separate observations from explanations below. Results do not establish useless capacity or attribute all gaps to noise.
 
-### 历史特征可用性发生变化
+### Historical-feature availability changes
 
-| 近期窗口同期历史 | 拟合源池可用比例 | 查询可用比例 | Nori随机2048上下文可用比例 |
+| Recent-window cohort history | Available share in fitting source pool | Available query share | Available share in Nori random2048 context |
 |---|---:|---:|---:|
-| 12个月 | 44.8% | 62.6% | 44.1% |
-| 24个月 | 31.9% | 71.3% | 31.6% |
-| 36个月 | 8.5% | 63.2% | 8.5% |
+| 12 months | 44.8% | 62.6% | 44.1% |
+| 24 months | 31.9% | 71.3% | 31.6% |
+| 36 months | 8.5% | 63.2% | 8.5% |
 
-这表明训练中的冷启动/缺失组合与后续查询明显不同。此前未给神经路线单独控制这项分布差异，是实验设计仍需补足的检查。成熟上下文使TabICLv2早期原始目标从549.7987降至534.0392，但Nori没有相同收益，因而不能将其视为所有差距的唯一原因。
+Fitting cold-start/missingness differs from later queries. Neural routes need a controlled check of this shift. Mature context improves TabICL early raw-target 549.7987→534.0392, but not Nori, so it is not the sole explanation.
 
-### 部分误差表现为整体低估
+### Some errors are broad underprediction
 
-| 近期模型 | 实际RMSE | 平均偏差 | 去掉均值后的误差标准差（仅分解） |
+| Recent model | Actual RMSE | Mean bias | Centered error SD (decomposition only) |
 |---|---:|---:|---:|
 | history_ensemble | 442.9025 | -20.6662 | 442.4201 |
 | old_ft_transformer | 458.6012 | -94.1569 | 448.8313 |
@@ -92,31 +94,31 @@ Nori每视图2048条上下文；Nori1.5使用默认4条预处理流水线，Nori
 | modernnca | 463.9001 | -69.5800 | 458.6523 |
 | mlp_plr | 448.0631 | -47.7676 | 445.5096 |
 
-最后一列通过验证标签计算，仅是MSE＝误差方差＋偏差平方的分解，**不是合法校准后的预测成绩**。TabM的−116元偏差和RealMLP的−67元偏差表明，需要检验跨时间水平校准；不能直接用验证集均值去修正提交。
+Last column uses true validation labels to decompose MSE=variance+bias²,**not a valid calibrated prediction score**. TabM−116/RealMLP−67 biases motivate temporal calibration checks, not correction using validation means.
 
-### 上下文、训练适配与比较基准
+### Context, adaptation and reference choice
 
-冻结Nori每视图只使用2048条源记录，其有效监督覆盖与使用十万条以上拟合记录的树模型不同。TabDPT监督适配已让每条拟合记录参与训练，但早期训练损失从0.8269降到0.8149时，时间验证分数在首轮后回升；增加训练轮数未稳定解决泛化问题。输入表示、时间变化、预训练任务和本任务的差异仍需逐项消融，不能只归因为模型发布时间或参数量。
+Frozen Nori uses 2048 source rows/view, unlike trees fitting over 100,000. TabDPT adaptation trains on every fitting row, but early loss0.8269→0.8149 coincides with temporal validation worsening after epoch1. More epochs do not consistently fix transfer. Ablate representation, drift and pretraining/task mismatch rather than blaming release date/parameter count.
 
-原442.90参照是历史特征＋10个成员的融合。应先比较同信息范围的单模型，再检查最终融合是否获得互补收益；表格中的不同特征支持、上下文大小与预处理预算仍然构成限制。
+Reference442.90 combines histories/ten models. First compare same-information standalones, then blend complementarity. Unequal support, contexts and preprocessing remain limitations.
 
 
-## 融合与结论边界
+## Blending and limits
 
-候选包含原历史融合、第六轮融合及本轮完整较早窗口配置。非负和为1，每个新增候选最多0.4，并以0.001系数向原历史融合收缩。后续窗口不重新调权；权重见`ensemble_selection.json`。
+Candidates include history blend, round 6 blend and complete new earlier runs. Nonnegative, sum1, new-member cap0.4,0.001 shrinkage toward history. No later reweighting; see `ensemble_selection.json`.
 
-430目标尚未达到。近期新融合为442.9704，历史主方案为442.9025。近期历史主方案继续保留，未覆盖已有提交文件。
+Target 430 unmet; new recent 442.9704 versus history 442.9025. Retain history and existing submissions.
 
-已逐行核对25份完整预测的ID、月份、标签、样本数和重算指标；本轮新下载权重与官方LFS哈希一致，已有TabICL权重与原下载清单一致，融合逐行重组一致，7项测试通过。两份后续监督适配权重均重载并完整复现全部验证行；其他冻结配置核对了逐行预测和重建配方，不声称全部重载。
+Check25 full files'IDs, months, labels, counts/metrics; new weights match official LFS hashes, existing TabICL matches download manifest, blend reconstructs; seven tests pass. Two later supervised checkpoints reload all rows; other frozen runs verify predictions/recipes without claiming every checkpoint reload.
 
-- `verified_metrics.csv`：全部完整配置及上下文/时间/显存预算。
-- `selected_model_comparison.csv`：早期选择后的年度与近期对照。
-- `checkpoint_manifest.json` / `verification.json`：不可变权重提交、哈希和核验。
-- `monthly_comparison_*.csv`：逐月融合误差。
+- `verified_metrics.csv`:complete configurations/context/time/VRAM budgets.
+- `selected_model_comparison.csv`:earlier-selected annual/recent controls.
+- `checkpoint_manifest.json` / `verification.json`:immutable weight commits/hashes/checks.
+- `monthly_comparison_*.csv`:monthly blend errors.
 
-## 复现
+## Reproduction
 
-保留前六轮逐行预测；在既有CUDA环境中按隔离目录安装依赖。
+Preserve rounds1–6 row predictions; install isolated dependencies in existing CUDA environment.
 
 ```powershell
 python -m pip install --no-deps --target .cache/transformer-deps -r requirements/optional_pretrained_transformers.txt

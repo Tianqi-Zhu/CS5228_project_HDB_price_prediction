@@ -1,71 +1,73 @@
 ---
 name: cs5228-final-report
-description: 编写、修改或审查 CS5228 HDB 房价预测项目的最终报告与提交材料时使用，依据课程要求检查研究内容、8 页限制、评分标准与可复现性。适用于本项目报告工作，不用于无关论文或普通代码修改。
+description: Use when writing, editing or reviewing this CS5228 HDB price-prediction project's final report and submission materials. Check course requirements, research content, the eight-page limit, assessment criteria and reproducibility. Applies to this project's report work, not unrelated papers or ordinary code changes.
 ---
 
-# CS5228 最终项目报告
+[Chinese version](SKILL.zh-CN.md)
 
-将课程要求作为验收标准，帮助完成科学论文形式的最终报告及可复现的项目提交材料。根据用户当前请求进行规划、撰写或审查；仅阅读或审查要求时，不自动改写整份报告、运行全部实验或提交材料。
+# CS5228 final project report
 
-## 必须满足的课程要求
+Use course requirements as acceptance criteria for a scientific-paper-style final report and reproducible submission. Plan, write or review according to the current request. Reading or reviewing requirements alone does not authorize rewriting the whole report, running all experiments or submitting materials.
 
-- 最终报告为 PDF，正文最多 **8 页**，正文中的表格、图和绘图均计入页数；参考文献和附录不计入。
-- 正文应独立可读、完整可理解，不能依赖附录才能理解研究方法或主要结论。
-- 附录应少量使用，可放补充 EDA、补充评估图表和团队分工。
-- 报告包含队名、所有团队成员的姓名与学号；附录包含工作分工概览，可用表格或 Gantt 图表示。
-- 章节结构可自行安排，但应覆盖下面四类核心内容。
-- 最终通过 Canvas 提交报告 PDF 和源代码压缩包；源代码也可用 GitHub 仓库链接代替。
-- 原始要求中的截止日期是占位符，具体日期未知。不得自行推断或把占位符写成有效截止日期。
+## Mandatory course requirements
 
-## 核心内容与写作依据
+- Submit a PDF with at most **eight main-text pages**, including main-text tables, figures and plots; references and appendices are excluded.
+- The main text must stand alone and fully explain methods and key conclusions without relying on appendices.
+- Use appendices sparingly for supplementary EDA, evaluation figures/tables and team contributions.
+- Include team name and all members' names/student IDs; provide a contribution overview in the appendix, optionally as a table or Gantt chart.
+- Section structure is flexible but must cover the four core areas below.
+- Submit the report PDF and source-code archive through Canvas; a GitHub repository link may replace the code archive.
+- The original deadline is a placeholder; the actual date is unknown. Do not infer a date or treat the placeholder as valid.
 
-### 研究动机
+## Core content and writing evidence
 
-明确研究问题、目标、实际价值、受益对象与挑战。结合 HDB 房价预测的实际使用场景论证意义，例如购房预算参考或价格影响因素分析；将这些作为可选方向，具体表述应符合已完成的研究。仅以获得 Kaggle 高排名为目标不满足要求。
+### Motivation
 
-### 探索性数据分析与预处理
+State the research question, goals, practical value, beneficiaries and challenges. Ground motivation in actual HDB price-prediction uses, such as budgeting or factor analysis, as optional directions consistent with completed work. Kaggle ranking alone is insufficient motivation.
 
-说明如何理解数据，以及 EDA 如何支持预处理决策。根据实际数据解释缺失值处理、类别属性处理、数据缩减、数据变换、异常值处理和特征生成等适用步骤，不要求使用所有步骤。建立“观察结果 → 处理选择 → 选择依据”的联系。
+### Exploratory data analysis and preprocessing
 
-### 数据挖掘方法
+Explain data understanding and how EDA supports preprocessing. Cover applicable missing-value handling, categorical processing, reduction, transformations, outliers and feature generation, grounded in actual data; using every technique is unnecessary. Connect observations → treatment choices → rationale.
 
-说明所选方法及其适用原因、实际应用方式、超参数选择与调优过程。讨论合理的替代方法并解释关键设计决策。无需重复讲解常见算法原理；对较高级的方法或模型提供相关文献引用。
+### Data-mining methods
 
-### 评估与结果解释
+Explain methods, suitability, actual implementation and hyperparameter selection/tuning. Discuss reasonable alternatives and key design decisions. Avoid reteaching common algorithms; cite relevant literature for advanced methods or models.
 
-采用与问题一致的实验设置和指标，比较不同方法，解释哪些方法最好及可能原因。分析表现较差的情况、常见错误、原则性局限及未来改进方向。区分有证据支持的结论与待验证的解释。
+### Evaluation and interpretation
 
-## 评分标准
+Use task-appropriate settings and metrics, compare methods and explain which work best and why. Analyze failures, common errors, fundamental limitations and future improvements. Distinguish supported conclusions from untested explanations.
 
-| 维度 | 权重 | 检查重点 |
+## Assessment criteria
+
+| Dimension | Weight | Review focus |
 | --- | --- | --- |
-| 方法质量 | 60% | EDA 支撑预处理；缺失值和类别属性处理正确；图表适当；方法选择与实现合理；替代方案与设计决策有解释；实验设置和指标正确；讨论错误与局限 |
-| 报告质量 | 30% | 方法与结果清楚、简洁、完整；相关工作引用恰当；正文不超过 8 页 |
-| 可复现性 | 10% | 代码完整、组织清楚、可读且有文档，外部读者能够追溯步骤并复现结果 |
+| Method quality | 60% | EDA-supported preprocessing; correct missing/categorical handling; appropriate figures; sound method selection/implementation; explained alternatives/designs; valid experiments/metrics; errors and limitations |
+| Report quality | 30% | Clear, concise, complete methods/results; appropriate related-work citations; main text within eight pages |
+| Reproducibility | 10% | Complete, organized, readable, documented code enabling external readers to trace steps and reproduce results |
 
-## 在 HDB 项目中的执行建议
+## Recommendations for the HDB project
 
-以下为落实评分标准的项目建议，不应描述为课程额外硬性规定。
+These are project recommendations for meeting assessment criteria, not additional mandatory course rules.
 
-- 在写作前检查已有代码、实验配置、日志、图表及评估结果，使报告与实际实现一致。
-- 根据预测使用场景解释数据划分方式；检查时间、重复样本、目标派生特征及预处理拟合过程是否引入泄漏。
-- 在可比的数据划分和指标下比较模型，清楚区分训练、验证、调参与最终测试。
-- 结合实际可用数据，考虑按房型、地区、价格区间或交易时间分析误差；选择能解释问题的分组即可。
-- 为复现记录环境依赖、数据来源或获取步骤、处理流程、执行命令、配置、随机种子和结果输出位置等必要信息。
-- 把支撑主要论点的图表保留在正文，详细补充结果可放附录；不要通过附录隐藏必要方法说明。
+- Inspect code, configurations, logs, figures and results before writing so the report matches implementation.
+- Justify splits through the prediction scenario; inspect leakage through time, duplicates, target-derived features and preprocessing fitting.
+- Compare models under comparable splits/metrics and distinguish training, validation, tuning and final testing.
+- Where data allow, analyze errors by flat type, region, price range or transaction time; select groups that explain the issue.
+- Record dependencies, data sources/acquisition, processing, commands, configuration, seeds and output paths needed for reproduction.
+- Keep figures supporting main arguments in the body and detailed supplements in appendices; do not hide essential methods there.
 
-## 工作方式与交付检查
+## Workflow and delivery checks
 
-1. 根据当前请求检查已有材料与缺口。对缺失的队员信息、分工、实验结果或数据来源明确标记待补充，不编造。
-2. 用真实证据组织论述，优先补齐影响方法质量的缺口，再压缩与润色表达。用户只要求局部工作时保持范围。
-3. 制作最终 PDF 时，优先遵循项目已有模板；课程提供 Word 和 LaTeX 模板，但当前未读取其具体内容，不推断字体、栏数、页边距等格式细节。
-4. 最终交付前检查实际渲染的 PDF：正文页数、参考文献与附录边界、图表可读性、布局、引用和团队信息。仅有源文件时，不声称 PDF 已通过验收。
-5. 检查复现说明是否足以让外部读者获取数据、运行代码并核对主要结果。未实际执行的验证应明确说明。
-6. 审查时给出具体问题、证据位置及建议修改，区分“课程要求未满足”“方法风险”和“可选改进”。
+1. Inspect available materials and gaps for the current request. Mark missing team details, contributions, results or sources explicitly; do not invent them.
+2. Organize claims around real evidence, prioritizing method-quality gaps before compression and polishing. Respect requests limited to local edits.
+3. Prefer the project's existing final-PDF template. Course Word/LaTeX templates exist but their contents have not been read; do not infer fonts, columns, margins or other details.
+4. Inspect the rendered final PDF for main-text page count, reference/appendix boundaries, figure readability, layout, citations and team details. Source files alone do not establish PDF acceptance.
+5. Check that reproduction instructions let external readers obtain data, run code and verify main results. Clearly state checks not actually executed.
+6. Reviews should identify specific issues, evidence locations and proposed edits, distinguishing unmet course requirements, methodological risks and optional improvements.
 
-## 课程模板入口
+## Course template links
 
-用户提供的 Canvas 链接可能需要登录；如需使用模板，先检查项目是否已有下载文件。未获取内容时，说明模板尚未核对。
+User-provided Canvas links may require login. Check for downloaded project templates first; if unavailable, state that template contents remain unverified.
 
-- [模板页面](https://canvas.nus.edu.sg/courses/93866/files/9565679?wrap=1)
-- [模板下载](https://canvas.nus.edu.sg/courses/93866/files/9565679/download?download_frd=1)
+- [Template page](https://canvas.nus.edu.sg/courses/93866/files/9565679?wrap=1)
+- [Template download](https://canvas.nus.edu.sg/courses/93866/files/9565679/download?download_frd=1)

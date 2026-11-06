@@ -1,44 +1,46 @@
-# 环境与可选扩展
+[Chinese version](README.zh-CN.md)
 
-核心依赖统一维护在根目录 `environment.yml`，覆盖数据分析、常规模型、报告工具和最终树／Transformer融合。
+# Environment and optional extensions
 
-## 主环境
+Core dependencies are maintained in root `environment.yml`, covering analysis, conventional models, reporting and final tree/Transformer blending.
 
-在仓库根目录执行：
+## Main environment
+
+Run from the repository root:
 
 ```powershell
 conda env create -f environment.yml
 conda activate cs5228
 ```
 
-该文件采用当前已验证的Windows／NVIDIA配置，固定PyTorch 2.11.0+cu128、RTDL和数值嵌入等训练版本；绘图、PDF、Excel等工具保留适度版本范围。
-版本来自本机已运行的环境及隔离依赖，见审核记录；本次不会自动安装或更新当前环境。
-其他硬件使用者需要选择兼容的PyTorch构建。
+This file uses the verified Windows/NVIDIA configuration, pinning PyTorch 2.11.0+cu128, RTDL and numeric-embedding training versions; plotting, PDF and Excel tools retain moderate version ranges.
+Versions come from the executed local environment and isolated dependencies; see audit records. This change does not install or update the current environment.
+Other hardware requires a compatible PyTorch build.
 
-可执行 `python -m analysis.resource_preflight --profile core` 查看核心版本和元数据所在位置；
-`--profile wave06`、`--profile wave07`检查可选路线。预检不安装或导入模型，完整使用边界见[运行指南](../docs/guides/running_experiments.md)。
+Run `python -m analysis.resource_preflight --profile core` to inspect core versions and metadata locations;
+`--profile wave06` and `--profile wave07` check optional routes. Preflight neither installs nor imports models; see the [running guide](../docs/guides/running_experiments.md) for boundaries.
 
-## 可选扩展
+## Optional extensions
 
-| 文件 | 用途 | 安装位置 |
+| File | Purpose | Installation location |
 | --- | --- | --- |
-| [optional_deep_models.txt](optional_deep_models.txt) | 第六轮TabM与RealMLP；数值嵌入已进入主环境 | `.cache/deep-deps/` |
-| [optional_pretrained_transformers.txt](optional_pretrained_transformers.txt) | 第七轮TabDPT、Nori与相关支持包 | `.cache/transformer-deps/` |
+| [optional_deep_models.txt](optional_deep_models.txt) | Wave-six TabM and RealMLP; numeric embeddings are already in the main environment | `.cache/deep-deps/` |
+| [optional_pretrained_transformers.txt](optional_pretrained_transformers.txt) | Wave-seven TabDPT, Nori and related support packages | `.cache/transformer-deps/` |
 
-仅复现相应路线时，在主环境激活后执行：
+Only when reproducing these routes, activate the main environment and run:
 
 ```powershell
 python -m pip install --no-deps --target .cache/deep-deps -r requirements/optional_deep_models.txt
 python -m pip install --no-deps --target .cache/transformer-deps -r requirements/optional_pretrained_transformers.txt
 ```
 
-可选实验继续沿用作者源码、公开权重及既有 `.cache/foundation-deps/` 共享支持包的准备流程，
-见[运行指南](../docs/guides/running_experiments.md)和appendix 分支的 `experiment/appendix/X06/README.md`。
-可选TXT用于专项隔离安装；源码、权重和共享支持包仍是相应路线的复现前置条件。
+Optional experiments retain the author-source, public-weight and existing `.cache/foundation-deps/` shared-support setup,
+documented in the [running guide](../docs/guides/running_experiments.md) and the appendix branch's `experiment/appendix/X06/README.md`.
+Optional TXT files support isolated route-specific installation; source code, weights and shared support packages remain prerequisites.
 
-旧的profiles/extras分层清单与根requirements.txt已按审核稿移除，
-核心版本以environment.yml为准，避免多个基础安装入口各自漂移。
+Old profiles/extras manifests and root requirements.txt were removed according to the audit draft;
+environment.yml is authoritative for core versions, avoiding drifting base-installation entry points.
 
-## MLP独立CPU环境
+## Standalone MLP CPU environment
 
-[mlp.txt](mlp.txt)记录MLP运行依赖。该路线无需CUDA，入口为`python -m analysis.main mlp`；建议使用独立环境，保留F1与Concat原环境。测试版本和命令见[MLP说明](../reproduction/mlp/README.md)。
+[mlp.txt](mlp.txt) lists MLP dependencies. This route needs no CUDA and runs through `python -m analysis.main mlp`; use a separate environment to preserve F1 and Concat. Tested versions and commands are in the [MLP guide](../reproduction/mlp/README.md).

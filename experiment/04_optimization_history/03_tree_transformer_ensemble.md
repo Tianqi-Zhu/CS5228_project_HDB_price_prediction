@@ -1,71 +1,73 @@
-# 第三轮：特征与模型两条路线的对照实验
+[Chinese version](03_tree_transformer_ensemble.zh-CN.md)
 
-数据固定为 `data/train.csv` 和 `data/auxiliary/`。原始文件未改动；不使用外部租金目标、测试标签或未来实测宏观数据。
+# Round 3:controlled feature and model routes
 
-模型参数与融合权重先在 2023-10 至 2024-03 的较早窗口选定，然后冻结迭代次数并从各预测起点重新训练。所有验证行均保留。
+Use fixed `data/train.csv`/`data/auxiliary/`; raw files unchanged. No external rent targets, test labels or realized future macro inputs.
 
-| 时间窗口 | 行数 | 前轮融合 RMSE | 本轮冻结融合 RMSE | 差值 | 改善月份 |
+Select parameters/weights on 2023-10–2024-03, then refit at each origin with fixed iterations. Retain every validation row.
+
+| Temporal window | Rows | Previous blend RMSE | Current frozen blend RMSE | Difference | Months improved |
 |---|---:|---:|---:|---:|---:|
 | 2024-04—2025-03 | 35,158 | 452.9386 | 451.3097 | -1.6289 | 10/12 |
 | 2024-06—2025-03 | 28,995 | 443.8630 | 443.0052 | -0.8578 | 7/10 |
 
-跨户型共享历史作为单独扩展，沿用同一较早窗口选权，未改变上表原有融合：
+Cross-type shared history is a separate extension with the same earlier weight selection; it does not replace the original blend above:
 
-| 时间窗口 | 原第三轮融合 | 跨户型扩展融合 | MAE | 偏差 |
+| Temporal window | Original round 3 blend | Cross-type extended blend | MAE | Bias |
 |---|---:|---:|---:|---:|
 | 2024-04—2025-03 | 451.3097 | 451.4509 | 331.0261 | -16.3999 |
 | 2024-06—2025-03 | 443.0052 | 443.0735 | 324.7667 | -28.2698 |
 
-另做一次时间自适应融合：仅使用 2024-06 起点以前的 2023-10—2024-03 与 2024-04—05 预测误差，按事先固定的 50/50 损失和 0.002 收缩系数选权；近期 RMSE 为 443.1081，未超过原第三轮融合，故保留为失败记录。
+A temporal-adaptive blend uses only prediction errors from 2023-10–2024-03 and 2024-04–2024-05, before the 2024-06 origin, with prespecified 50/50 losses and 0.002 shrinkage. Recent RMSE is 443.1081, below the performance of the original wave-three blend; retain it as an unsuccessful attempt.
 
-RMSE 降低并不表示每项指标都改善：原第三轮融合的一年 MAE 为 331.05，前轮为 328.44；近期 MAE 为 324.82，前轮为 322.92。请按实际目标选择。
+Lower RMSE does not improve every metric: round 3 annual MAE331.05 versus 328.44, recent 324.82 versus 322.92. Choose according to the actual objective.
 
-固定 GPU CatBoost 深度 8，仅替换特征的对照：
+Fixed depth8 GPU CatBoost, changing features only:
 
-| 窗口 | 原 62 特征 RMSE | 新 77 特征 RMSE |
+| Window | Original62-input RMSE | New77-input RMSE |
 |---|---:|---:|
 | screen | 526.0796 | 525.2100 |
 | outer | 454.7682 | 458.7133 |
 | june | 445.5774 | 449.5340 |
 
-该对照保留了不同窗口的全部结果，不能将早期窗口的单模型改善直接解释为后续窗口收益。不同模型使用相同 62 特征的完整对照见 `controlled_model_comparison.csv`。
+Retain every window; early standalone improvement does not imply later gain. Full matched62-input model controls:`controlled_model_comparison.csv`.
 
-## 特征工程
+## Feature engineering
 
-- 原有楼栋×户型历史之外，加入 12/18/24/30/36 个月前、前后各三个月的高斯加权统计；每条记录只能检索严格早于自身月份的历史。
-- 新增区域当月历史价格归一化、低租金及高租金占比、最小/最大比例、有效样本量，以及向楼栋长期均值收缩后的租金估计。
-- 月份跨度大时，只查询预测起点已经观察到的历史；不存在的月份不补造。统计单位是楼栋及户型，不能据此识别租户或具体房屋续约。
+- Add Gaussian-weighted statistics12/18/24/30/36 months earlier over±three months, strictly before each row's month.
+- Add historical local-market normalization, low/high shares, min/max ratios, effective support, and rents shrunk toward long-run block means.
+- Long horizons query only origin-observed months; no invented missing months. Block/type statistics do not identify tenants or renewals.
 
-## 模型与训练
+## Models and training
 
-- 同样的强特征上比较 XGBoost 深度 3/5/7/9、MLP、ResNet、FT-Transformer；比较直接预测与对历史基准的残差预测。
-- 新特征比较 LightGBM 15/31 叶及 GPU CatBoost 深度 6/8；另外尝试低租金概率分类器及两个条件回归专家。
-- 缩短监督训练历史、近期加权、仅在两年前历史有支持的样本上训练，均保留全部更早记录作为历史统计池。
-- 单模型较弱不代表完全无用；最终融合权重仅由较早窗口决定，后续窗口不再调权。
+- Compare XGBoost depths3/5/7/9, MLP, ResNet and FT on strong shared features; direct versus historical-baseline residual targets.
+- New features: LightGBM15/31 leaves, GPU CatBoost6/8; also low-rent classifier/two conditional experts.
+- Shorter supervised history, recent weights or two-year-supported samples retain every earlier record in history pools.
+- Weak standalone models may still help; weights use earlier windows only, without later retuning.
 
-## 检验与限制
+## Checks and limitations
 
-- 共完成 76 个较早窗口配置，独立重算 102 份预测文件，重载检验 22 个入选模型；源文件 SHA-256 一致。
-- 15 个单元测试通过，覆盖历史窗口因果性、未观察月份、跨户型归一化、加权统计、监督样本筛选及原有特征边界。
-- 两个后续窗口都已多次用于研究，属于开发集；它们相互重叠，不能合并为独立测试样本。月度块重采样区间仅作开发诊断。
-- 400—430 的目标尚未达到。所有试验与失败结果保存在 `verified_metrics.csv`，不只保留最低分。
+- Completed 76 earlier configurations; recomputed102 prediction files, reloaded22 selected models; source SHA-256 unchanged.
+- Fifteen tests cover causal windows, unobserved months, cross-type normalization, weights, supervised selection and existing boundaries.
+- Both later windows are repeatedly inspected, overlapping development data; month-block intervals are diagnostics only.
+- Target 400–430 unmet. `verified_metrics.csv` retains all trials/failures, not just minima.
 
-复现：`python -m analysis.experiments.third_wave_training screen`、`third_wave_models screen`、`third_wave_features screen`、`third_wave_mixture screen`；再运行 `third_wave_ensemble select/outer/june` 与 `third_wave_report`。已有锁定文件和结果会保留。
+Reproduce:`python -m analysis.experiments.third_wave_training screen`, `third_wave_models screen`, `third_wave_features screen`, `third_wave_mixture screen`,then `third_wave_ensemble select/outer/june` and `third_wave_report`. Preserve locked files/completed results.
 
-## 开发集消融的最低值
+## Lowest development ablation
 
 
-把本轮新增的特征组、模型组、训练策略组及混合专家组分别加到前轮融合中，其他新增组的权重还给前轮融合。使用原有冻结权重，不重新拟合系数。
+Separately add this round's feature, model, training-strategy or expert group to the previous blend, returning other new weights to it. Reuse fixed weights without refitting.
 
-| 保留的本轮新增组 | 一年 RMSE | 近期 RMSE |
+| Retained new group | Annual RMSE | Recent RMSE |
 |---|---:|---:|
 | training | 452.7714 | 443.6751 |
 | models | 451.1810 | 442.9025 |
 | features | 451.6424 | 443.0659 |
 | mixture | 452.6346 | 443.6439 |
 
-最低开发值来自仅保留本轮新增模型组：前轮融合权重约 76.26%，FT-Transformer 15.99%，XGBoost 残差模型 5.52%，XGBoost 深度 7 为 2.23%。一年 451.1810，近期 442.9025。该方案近期 MAE 为 323.7295，前轮为 322.9187。
+Lowest development result keeps new model group only: previous blend76.26%, FT15.99%, residual XGBoost5.52%, depth7 XGBoost2.23%. Annual451.1810, recent 442.9025; recent MAE323.7295 versus 322.9187.
 
-**这是查看后续开发窗口后的分组选择。预先锁定的完整第三轮方案仍为一年 451.3097／近期 443.0052；不能把消融最低值称为独立测试成绩。**
+**Group selection follows later-window inspection. Earlier-locked full round 3 remains451.3097 annual/443.0052 recent; the ablation minimum is not independent-test performance.**
 
-八份消融预测均保留全部对应验证行，标签及月份与源数据逐行核对，指标与分组对照重新计算一致。文件位于 `output/models/round_03_tree_transformer_ensemble/ablations/`。
+All eight ablations retain complete validation rows; source labels/months and recomputed/group metrics match. Files:`output/models/round_03_tree_transformer_ensemble/ablations/`.

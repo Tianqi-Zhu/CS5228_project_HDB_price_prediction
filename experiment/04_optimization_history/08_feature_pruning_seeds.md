@@ -1,12 +1,14 @@
-# 第八轮：小幅优化的实际训练结果
+[Chinese version](08_feature_pruning_seeds.zh-CN.md)
 
-本轮最低近期候选为 **442.7032**：删除FT-Transformer的五列36个月同期统计，用42/43/44/45四个种子、各固定3轮重新训练并等权平均，替换原融合中15.9872%的FT成员，其他成员及权重保持原样。相比原历史方案442.9025降低 **0.1993**。
+# Round 8:actual training for small improvements
 
-年度窗口为451.4310，原方案为451.1810，反而升高0.2500。近期10个月中有5个月改善，描述性月块重采样区间为[-0.3017, 0.0065]，仍跨过0。它是值得提交比较的小幅优化候选，尚不能证明稳定提升。已生成的CSV及全量训练细节见本轮提交记录。
+Best recent candidate **442.7032** removes five36-month FT fields, refits seeds 42/43/44/45 for three epochs and equally averages, replacing original 15.9872% FT member only. Improves history 442.9025 by **0.1993**.
 
-本轮不以430为硬目标，尝试从已训练模型的组合稳定性和历史特征可用性入手。所有分数仍是反复查看过的本地时间开发窗口，不能当作独立测试或Kaggle成绩。
+Annual451.4310 worsens451.1810 by 0.2500. Five/ten recent months improve; descriptive block interval[-0.3017,0.0065] crosses0. Worth submission comparison, not stable-gain proof. See submission record for CSV/full fits.
 
-| 方案 | 年度 RMSE（35,158行） | 近期 RMSE（28,995行） |
+Explore ensemble stability/history availability without a hard430 target. Repeated local development scores are not independent tests or Kaggle results.
+
+| Policy | Annual RMSE(35,158 rows) | Recent RMSE(28,995 rows) |
 |---|---:|---:|
 | ft_seedmean_replacement | 451.4310 | 442.7032 |
 | ft_seedmean_given_macro | 451.5252 | 442.7710 |
@@ -44,29 +46,29 @@
 | tabm_no36_seedmean | 456.4700 | 461.2430 |
 | tabm_no36_seed44 | 456.5778 | 469.1322 |
 
-## 训练与选择方法
+## Training and selection
 
-1. 二层残差模型：37组基础预测（实际注册数 37），13个配置。用2023-10至2024-01拟合、2024-02至03选择，选中 `ridge_predictions_10.0`。年度元模型只能用2024-04以前的预测和标签；六月模型可再使用4—5月的历史样本。原点权重归一化为均值1，避免改变正则强度。后期共26次拟合。
-2. CatBoost种子平均：固定原CPU算法、62输入、833轮，新增43/44/45三个种子，与原42等权平均。共9次新拟合。只在早期窗口从替换比例0/0.5/1选择，锁定为 0.0；原叶子权重 0.3155610738 保持不变。
-3. 深度特征删减：移除五列36个月同期统计。原较早期训练池中这些字段恒定/全缺失，本来已被神经网络编码器删除，故早期输入和预测严格等价；后期重新训练FT-Transformer（固定3轮）及TabM三个种子（固定18/15/15轮），共8次。所有样本均保留。
-4. 固定组合：FT直接替换原权重 0.1598721528 的叶子；TabM平均预测与原方案混合，权重由早期预测的最小二乘确定，上限0.3，结果 0.300000。还报告两种预先列出的组合，不使用后期标签调融合权重。
+1. Second-level residual model: 37 base predictions (37 actually registered), 13 configurations. Fit on 2023-10–2024-01 and select on 2024-02–2024-03, choosing `ridge_predictions_10.0`. Annual meta-fitting uses only predictions and labels before 2024-04; the June model may add historical April–May records. Normalize origin weights to mean 1 to preserve regularization strength. There are 26 later fits.
+2. CatBoost averaging: fixed CPU recipe, 62 inputs, 833 iterations; new seeds 43/44/45 plus original 42, nine fits. Earlier replacement ratios0/0.5/1 select0.0; original leaf weight0.3155610738 retained.
+3. Neural pruning: remove five36-month fields. They were constant/all missing and already dropped in early encoders, so early inputs/predictions are identical. Later refit FT (three epochs) and three TabM seeds(18/15/15):eight fits, all rows retained.
+4. Fixed combinations: replace FT leaf at 0.1598721528. Blend TabM mean at earlier least-squares weight capped0.3, selected0.300000. Two prespecified combinations also reported without later-label weighting.
 
-## 核查与解释
+## Checks and interpretation
 
-另在看到FT删减单种子结果后追加43/44/45三个种子的固定3轮训练，三个时间窗口共9次，与42等权平均，不按后期分数筛选种子。共39次元模型拟合、9次CatBoost拟合、8次深度删减拟合、9次FT种子拟合，合计65次实际拟合（不含全量提交重训）。保存模型共 52 份已重新加载并复现完整窗口预测。信息截止、样本权重尺度、类别映射和特征删减另有自动测试。
-初次元模型尝试存在样本权重尺度不一致，已完整归档到 `archive_weight_scale_debug`，修正后全量重跑；归档分数不参与本报告或最佳结果选择。
-`bag_half_exploratory` 和 `bag_full_exploratory` 是早期未被选中的固定比例对照；不能称为早期选出的最佳方案。`given_macro` 使用比赛所给预测月份的COE/股票信息，按此前固定权重融合，与纯历史信息方案分开解释。
-后期表格中的最低值属于开发集探索结果；各方案权重虽在早期锁定，架构和窗口本身经过多轮讨论和筛选，仍应通过Kaggle提交检验。原最佳提交文件保持原样。
+After inspecting single-seed pruning, add seeds 43/44/45 at three fixed epochs across three windows: nine fits, equally averaged with 42 without seed selection. Total39 meta+nine Cat+eight pruning+nine FT=65 fits (excludes submission refits). Reload52 saved models for complete-window replay. Additional tests cover cutoffs, weight scales, categories and pruning.
+Initial inconsistent meta-weight scales are archived in `archive_weight_scale_debug`; corrected runs fully repeated. Debug scores do not enter this report/selection.
+`bag_half_exploratory`/`bag_full_exploratory` are unselected earlier fixed-ratio controls, not earlier winners. `given_macro` uses supplied prediction-month COE/stocks at existing weights; explain separately from history-only.
+Later minima are exploratory development choices. Earlier-locked weights do not erase repeated architecture/window selection; Kaggle testing remains needed. Preserve original submissions.
 
-完整数据：[指标](../../output/experiment_runs/round_08_feature_pruning_seeds/metrics.csv)、[模型复现](../../output/experiment_runs/round_08_feature_pruning_seeds/verification.json)、[月度稳定性](../../output/experiment_runs/round_08_feature_pruning_seeds/monthly_comparison.json)、[二层模型计划](../../output/experiment_runs/round_08_feature_pruning_seeds/plan.json)、[种子选择](../../output/experiment_runs/round_08_feature_pruning_seeds/bag_selection.json)、[深度对照计划](../../output/experiment_runs/round_08_feature_pruning_seeds/deep_plan.json)。
-## Kaggle反馈与新提交文件
+Full evidence:[metrics](../../output/experiment_runs/round_08_feature_pruning_seeds/metrics.csv), [replay](../../output/experiment_runs/round_08_feature_pruning_seeds/verification.json), [monthly stability](../../output/experiment_runs/round_08_feature_pruning_seeds/monthly_comparison.json), [meta plan](../../output/experiment_runs/round_08_feature_pruning_seeds/plan.json), [seed selection](../../output/experiment_runs/round_08_feature_pruning_seeds/bag_selection.json), [neural controls](../../output/experiment_runs/round_08_feature_pruning_seeds/deep_plan.json).
+## Kaggle feedback/new submissions
 
-用户反馈原历史版、宏观版均约415，小数级差别，正常方案最佳约411；精确小数和榜单类型未知，不能拟合固定分差。约170分的方法被用户描述为cheat方法，不纳入有效对照。
+User reports history/macro near415, normal-method best near411; exact decimals/partition unknown, so no fixed conversion. User-described cheating scores near170 are excluded.
 
-全量150,000行分别重训四个FT种子，均固定3轮；保存模型已重新加载，生成50,000行测试预测。新文件均通过ID、有限数值、落盘一致性和源文件哈希检查，原提交保持原样。
+Refit four FT seeds on 150,000 rows, three epochs; reload models and predict50,000 queries. IDs, finite values, saved consistency/source hashes pass. Preserve originals.
 
-- 优先试：[历史版，本地442.7032](../../output/submissions/candidates/kaggle_history_ft_no36_mean.csv)。
-- 补充：[宏观版，本地442.7710](../../output/submissions/candidates/kaggle_macro_ft_no36_mean.csv)。
-- [全量训练与导出记录](../../output/submissions/components/round_08_ft_seed_average/summary.json)。
+- First choice:[history, local442.7032](../../output/submissions/candidates/kaggle_history_ft_no36_mean.csv).
+- Additional:[macro, local442.7710](../../output/submissions/candidates/kaggle_macro_ft_no36_mean.csv).
+- [Full training/export record](../../output/submissions/components/round_08_ft_seed_average/summary.json).
 
-新文件尚未上传，新Kaggle分数未知。
+New files not uploaded; Kaggle scores unknown.

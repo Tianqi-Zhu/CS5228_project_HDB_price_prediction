@@ -1,21 +1,23 @@
-# 清洗策略：匹配对照
+[Chinese version](README.zh-CN.md)
 
-| 材料 | 作用 |
+# Cleaning strategies: matched comparisons
+
+| Material | Purpose |
 |---|---|
-| [匹配比较表](matched_cleaning_comparison.csv) | 每个 MLP、TabM、hybrid 分别以自身未清洗版本为对照，9 组结果和配对差值 |
-| [紧凑逐行预测](matched_predictions.npz) | 未清洗 MLP、轻度清洗 MLP、未清洗 hybrid 的 ID、标签、预测；可独立重算 |
-| [预测来源](prediction-provenance.json) | 原始 CSV 路径、提交、哈希与无损转换说明 |
-| [完整原协议](source/protocol.json) | 种子 42/43/44，MLP 3 epochs、TabM 4 epochs，规则、校准和聚合方式 |
-| [样本变化](source/cleaning_summary.json) | 105,837 行拟合；轻度清洗删 1,332 行，保留最高值删 15,537 行 |
-| [独立核验](../evidence-audit.json) | 3 组逐行重算；另外 6 组只核验原来源汇总及来源文件身份 |
+| [Matched comparison table](matched_cleaning_comparison.csv) | Nine MLP, TabM and hybrid results with paired differences against each family's uncleaned baseline |
+| [Compact row-level predictions](matched_predictions.npz) | IDs, labels and predictions for uncleaned MLP, mildly cleaned MLP and uncleaned hybrid; independently recomputable |
+| [Prediction provenance](prediction-provenance.json) | Original CSV paths, commit, hashes and lossless-conversion notes |
+| [Full original protocol](source/protocol.json) | Seeds 42/43/44, MLP 3 epochs, TabM 4 epochs, rules, calibration and aggregation |
+| [Sample changes](source/cleaning_summary.json) | 105,837 fitting rows; mild cleaning removes 1,332, highest-value retention removes 15,537 |
+| [Independent verification](../evidence-audit.json) | Three row-level recomputations; the other six checked against original summaries and source-file identity only |
 
-来源：`mlp-eda-ensemble @322fa4c20d83f20e19328823203873a0f81e0f4a`，完整清洗探索归 appendix X02。本组选取用于 M01 的数据保留决策与 M04 的误差解释。
+Source: `mlp-eda-ensemble @322fa4c20d83f20e19328823203873a0f81e0f4a`. Full cleaning exploration belongs to appendix X02. These selections support M01 data-retention decisions and M04 error interpretation.
 
-| 协议 | 固定设置 |
+| Protocol | Fixed configuration |
 |---|---|
-| 拟合 | 2021-01—2023-12，105,837 行；清洗后重建历史、词表、填补及缩放 |
-| 校准 | 2024-01—2024-03，未经筛除 |
-| 外层 | 2024-04—2025-03，全部 35,158 行；不删除低租金验证记录 |
-| 融合 | 每族等权平均 3 个种子；hybrid 再等权平均两族 |
+| Fitting | 2021-01–2023-12, 105,837 rows; rebuild history, vocabulary, imputation and scaling after cleaning |
+| Calibration | 2024-01–2024-03, unfiltered |
+| Outer validation | 2024-04–2025-03, all 35,158 rows; do not delete low-rent validation records |
+| Blend | Equal average over three seeds per family; hybrid then equally averages the two families |
 
-轻度清洗 MLP 的 RMSE 为 471.260898，较未清洗 471.804200 改善约 0.543301 SGD；同规则下 TabM 与 hybrid 的 RMSE 变差，`highest_only` 三族均变差。低租金是否代表不同出租范围并未核实。当前 main 保留全部记录；这组证据支持谨慎处理删除规则，不能替代 F1 自身的清洗消融，也不能与 F1 不同拟合截止时间的分数混排。
+Mild-cleaning MLP RMSE is 471.260898 versus 471.804200 uncleaned, an improvement of about 0.543301 SGD. The same rule worsens TabM and hybrid RMSE; `highest_only` worsens all three. Whether low rents represent different rental scope is unverified. Main currently keeps all records. This evidence supports caution with deletion rules, cannot replace F1's own cleaning ablation, and must not be ranked alongside F1 scores using different fitting cutoffs.

@@ -1,78 +1,80 @@
-# 第五轮：不同模型 × 特征工程的受控对照
+[Chinese version](05_feature_interactions.zh-CN.md)
 
-本轮按照用户要求，把重点放在不同模型和特征工程，暂停新增参数搜索。比较3个代表模型×6种输入×3个时间窗，共54次拟合。每个模型的参数、训练轮数和随机种子保持固定。
+# Round 5:controlled model × feature comparisons
 
-## 1. 已经证实的特征收益
+Focus on models/features as requested, pause new parameter search. Three representative learners×six inputs×three windows=54 fits, with settings, durations, seeds fixed within learners.
 
-原有固定轮数对照表明，LightGBM年度RMSE随19→27→47→62列为481.60→467.80→466.97→457.84；GPU CatBoost为479.33→466.43→465.99→455.17。特征工程已经带来实质收益，不能将近期调参收益小解释成模型整体失效。
+## 1. Established feature gains
 
-## 2. 本轮新增特征及假设
+Fixed-duration LightGBM annual RMSE over 19→27→47→62 inputs: 481.60→467.80→466.97→457.84; GPU CatBoost479.33→466.43→465.99→455.17. Substantial feature gains remain real despite small recent tuning increments.
 
-| 特征组 | 新增列数 | 假设与来源 |
+## 2. New feature hypotheses
+
+| Feature group | Added fields | Hypothesis/provenance |
 |---|---:|---|
-| 历史分布 | 60 | 楼栋×户型和街道×户型，在全部过去/最近12个月计算真实Q10/Q25/中位数/Q75/Q90、IQR、低价占比和低/高价成分均值、离散模态占比、熵、低价最近出现月数、最近月份中位数、近6个月与更早中位数差。租金按其已观测源月份同户型均值归一化。 |
-| 建筑结构 | 12 | 从所给楼栋表计算300m/800m/1.5km楼栋数，最近16栋的高度、建成年份分布、高层/老楼占比，以及本楼相对差异。没有使用租金标签。 |
+| Historical distribution | 60 | Block/type and street/type full/latest12-month Q10/Q25/median/Q75/Q90, IQR, low shares, low/high component means, modal-bin shares, entropy, time since low rent, last-month median and recent 6-month/earlier median difference. Normalize by observed source-month/type mean. |
+| Building structure | 12 | Supplied-building counts within300m/800m/1.5km; nearest16 height/completion-year distributions, high-rise/old shares and own-building contrasts. No rental labels. |
 
-另做两类删减：`no36`删除5列36个月同期统计，剩57列；`only24`再删除5列12个月同期统计，剩52列。它们保留普通历史和相对市场历史，只缩减同期历史窗口。
+Pruning controls:`no36` removes five36-month fields, leaving57;`only24` also removes five12-month fields, leaving52. Ordinary/market-relative histories remain.
 
-历史分布只使用严格早于每条记录信息截止月的源租金。后续月份的统计在预测起点冻结，只有距最近低价月份的时间继续增长。未知组保持计数0/其他统计缺失。建筑表是比赛提供的静态快照，不宣称每个时点都能取得完整历史建筑存量。
+Distribution histories use rents strictly before each information-cutoff month. Future queries freeze statistics; only time-since-low-rent grows. Unknown groups have count0/missing statistics. Building data are a competition snapshot, not verified historical inventories.
 
-原始字段审计确认：FURNISHED为常量yes、FEE为常量0；楼栋×户型内面积与房型各只有一个值。因此把这两项再次加入同一分组键不能增加租户/单元辨识能力；数据没有具体楼层、装修或合同续约ID。
+Raw audit: FURNISHED is constant yes, FEE constant0; area/model are unique within block/type. Readding them to that key cannot distinguish tenants/units. No unit-floor, renovation or renewal IDs exist.
 
-## 3. 模型设置
+## 3. Model settings
 
-| 模型 | 固定设置 |
+| Model | Fixed configuration |
 |---|---|
-| LightGBM | 15叶，353棵，学习率0.03，L2=10，最小叶样本40 |
-| GPU CatBoost | 深度6，535轮，学习率0.04，L2=10 |
-| GPU XGBoost | 深度3，1046轮，学习率0.03，L2=20，最小子节点权重20 |
+| LightGBM | 15 leaves, 353 trees, learning rate0.03, L2=10, min leaf40 |
+| GPU CatBoost | Depth6,535 iterations, learning rate0.04, L2=10 |
+| GPU XGBoost | Depth3,1046 iterations, learning rate0.03, L2=20, min child weight20 |
 
-这些轮数来自此前较早窗口实验。本轮不根据任何验证窗口重新早停或选择参数。各模型内部六种输入使用完全相同的拟合/验证行；各模型允许正常的类别处理方式。GPU CatBoost存在少量数值非确定性；零点几的差异需要多种子/新窗口复核，不能过度解释。
+Durations come from earlier experiments; no validation-specific stopping/retuning. Six inputs within each model share rows; normal categorical handling may differ by learner. GPU CatBoost has small numerical nondeterminism; sub-SGD changes need new seeds/windows.
 
-## 4. 主要对照结果
+## 4. Main controls
 
-### 2024-04—2025-03：35,158行
+### 2024-04–2025-03:35,158 rows
 
-| 模型 | 原62列 | ＋历史分布 | ＋建筑结构 | 两组合并 | 删36个月 | 只留24个月同期 |
+| Model | Original62 inputs | + Historical distribution | + Building structure | Both additions | Remove36-month fields | Retain24-month anniversary only |
 |---|---:|---:|---:|---:|---:|---:|
 | LightGBM | 457.8450 | 457.0086 | 457.5161 | 456.7527 | 457.8827 | 459.3434 |
 | CatBoost | 455.2039 | 455.4363 | 455.0816 | 455.2448 | 455.5086 | 456.4758 |
 | XGBoost | 455.8482 | 455.8993 | 455.6901 | 455.3031 | 456.2694 | 457.1674 |
 
-### 2024-06—2025-03：28,995行
+### 2024-06–2025-03:28,995 rows
 
-| 模型 | 原62列 | ＋历史分布 | ＋建筑结构 | 两组合并 | 删36个月 | 只留24个月同期 |
+| Model | Original62 inputs | + Historical distribution | + Building structure | Both additions | Remove36-month fields | Retain24-month anniversary only |
 |---|---:|---:|---:|---:|---:|---:|
 | LightGBM | 447.1701 | 447.2156 | 447.1111 | 446.9913 | 447.3701 | 448.6101 |
 | CatBoost | 446.1608 | 446.2064 | 446.0444 | 446.1903 | 446.0275 | 447.3196 |
 | XGBoost | 445.6576 | 445.8572 | 446.0440 | 445.9626 | 445.8147 | 447.5220 |
 
-### 较早窗口2023-10—2024-03：17,977行
+### Earlier2023-10–2024-03:17,977 rows
 
-| 模型 | 原62列 | ＋历史分布 | ＋建筑结构 | 两组合并 | 删36个月 | 只留24个月同期 |
+| Model | Original62 inputs | + Historical distribution | + Building structure | Both additions | Remove36-month fields | Retain24-month anniversary only |
 |---|---:|---:|---:|---:|---:|---:|
 | LightGBM | 527.6640 | 528.3354 | 527.7810 | 528.3203 | 527.6640 | 529.5079 |
 | CatBoost | 526.1404 | 526.1294 | 526.2390 | 526.2576 | 526.5394 | 527.8272 |
 | XGBoost | 525.9392 | 526.6298 | 526.0118 | 526.1097 | 526.2006 | 527.7293 |
 
-### 本轮实际结论
+### Findings this round
 
-- 历史分布单独加入，未在两个后续窗口同时改善任何一个模型。它仍未补足难预测的租约差异。
-- 周边建筑结构对LightGBM和CatBoost有小幅、方向一致的改善，但对XGBoost的近期窗口变差。
-- 两组合并只在LightGBM的两个后续窗口都改善；XGBoost的年度改善没有延续到近期。
-- 只保留24个月同期统计，在三个模型、三个窗口中均比原62列更差。原来的12/24/36个月组合应保留。
-- 本轮没有足够证据替换442.90的原有融合方案；重点成果是模型与特征交互的受控证据，而不是新的最低RMSE。
+- Historical distributions alone improve neither later window consistently for any learner; unobserved contract differences remain.
+- Building structure slightly improves LightGBM/CatBoost consistently, but worsens recent XGBoost.
+- Combined groups improve both later windows only for LightGBM; XGBoost annual gains do not transfer recently.
+- Keeping24-month cohorts alone worsens all three models/windows; retain12/24/36-month combination.
+- Insufficient evidence replaces442.90 blend. Main contribution is controlled model/feature interaction, not a new minimum.
 
-## 5. 如何解释，而不是只找最低分
+## 5. Interpretation beyond minimum scores
 
-定义ΔRMSE=新增特征后RMSE−原62列RMSE；负值为改善。每个模型和特征组的早期、年度、近期差值见`feature_stability.csv`。两个后续窗口相互重叠，2/2改善只说明本次两个切点方向一致，不等于两次独立验证。
+Delta RMSE=augmented minus original 62-input RMSE; negative improves. Early/annual/recent differences:`feature_stability.csv`. Overlapping later windows mean2/2 directional agreement, not two independent confirmations.
 
-新增特征并不天然有效。分布统计在样本稀少时不稳定，最大桶占比和熵受分箱影响；建筑结构可能被已有经纬度、楼龄和设施特征替代。加减列也会改变随机列采样路径，固定种子不等于排除了所有随机影响。小幅差值需要更多种子和新的时间窗口复核。
+Distribution estimates are unstable with sparse support; modal shares/entropy depend on bins. Existing coordinates, age/amenities may replace building information. Added/deleted fields alter random column sampling; one fixed seed does not remove randomness. Check small changes with more seeds/new windows.
 
-本表是单模型与特征的机制对照，不能与442.90的完整异质融合混称同条件架构排名。本轮不因为某个后续开发窗的偶然最低值自动更换提交方案。430目标仍需经相同完整验证窗口确认。
+These standalone feature controls are not matched architecture comparisons against the heterogeneous442.90 blend. A chance later minimum does not replace submissions; target 430 needs complete common-window validation.
 
-## 6. 核验
+## 6. Verification
 
-54份逐行预测已按原始ID、月份、标签、样本数及重算指标核验，36个后续模型重载预测一致；原始输入哈希不变。29项相关测试通过。所有验证样本保留，无目标月份租金参与特征、无外部公开租金目标。
+Verify54 row files against raw IDs/months/labels/counts/metrics; 36 later models reload exactly; raw hashes unchanged; 29 tests pass. Retain all validation rows, no target-month rent features/public rent answers.
 
-结果表：`model_feature_matrix.csv`；稳定性：`feature_stability.csv`；图：`model_feature_interaction.png`；源字段审计：`source_audit.json`；验证：`verification.json`。
+Tables:`model_feature_matrix.csv`; stability:`feature_stability.csv`; plot:`model_feature_interaction.png`; field audit:`source_audit.json`; checks:`verification.json`.

@@ -6,7 +6,9 @@
     "recent_prediction_ids_months_labels": true,
     "latest_tree_tabpfn_metrics_recomputed": true,
     "all_three_tabpfn_cohort_ablation_metrics_recomputed": true,
-    "filter_control_reproduces_unfiltered_blend": true
+    "filter_control_reproduces_unfiltered_blend": true,
+    "exact_grouped_ensemble_members_rescored": true,
+    "archived_F1_matches_recorded_fresh_fixed_recipe_validation": true
   },
   "data": {
     "train": 150000,
@@ -54,6 +56,93 @@
       "rmse": 442.0164056869385,
       "mae": 317.81458048755917
     }
+  },
+  "exact_grouped_ensemble_members": {
+    "rows": 28995,
+    "fitting_rows": 121005,
+    "member_scores": [
+      {
+        "member": "normalized_market/compact_ratio15_market_last",
+        "label": "Market-ratio LGB15",
+        "final_weight": 0.06547,
+        "iterations": 496,
+        "rmse_sgd": 471.7270245989129,
+        "mae_sgd": 350.74645181636225,
+        "prediction_sha256": "73df44d6c2d6adb02ad2c7b36a0aebdeb89d78cfe493ecd76c6368a46e7d7622"
+      },
+      {
+        "member": "anniversary/broad_lgb15",
+        "label": "Broad LGB15",
+        "final_weight": 0.048295,
+        "iterations": 405,
+        "rmse_sgd": 448.3075377758762,
+        "mae_sgd": 325.26759925643586,
+        "prediction_sha256": "0bc19801db18ac38f7cf94cc279389a339b35fc925240417467ee19e09a0701a"
+      },
+      {
+        "member": "anniversary/broad_lgb63",
+        "label": "Broad LGB63",
+        "final_weight": 0.05176,
+        "iterations": 95,
+        "rmse_sgd": 451.190424570231,
+        "mae_sgd": 327.3265041423099,
+        "prediction_sha256": "ce804ff6c7f93ae98b6f610a873a57aea1c8a364a29f438cd5f3882d792ff354"
+      },
+      {
+        "member": "anniversary/exact_lgb15",
+        "label": "Exact LGB15",
+        "final_weight": 0.086555,
+        "iterations": 401,
+        "rmse_sgd": 449.3579391805983,
+        "mae_sgd": 326.93038816293546,
+        "prediction_sha256": "c56d34730b3c51a3bdd202f0bca18776b920dbf3658c526f4856475bef2650b7"
+      },
+      {
+        "member": "anniversary/exact_lgb63",
+        "label": "Exact LGB63",
+        "final_weight": 0.00329,
+        "iterations": 213,
+        "rmse_sgd": 448.9081169261675,
+        "mae_sgd": 325.5001160356095,
+        "prediction_sha256": "8e1419c7560649bb6c88e21c26fb9276fad22808061fb11c413e8fbb8dc01da7"
+      },
+      {
+        "member": "anniversary/window_cat6",
+        "label": "Window Cat6",
+        "final_weight": 0.2069,
+        "iterations": 833,
+        "rmse_sgd": 446.6030292450385,
+        "mae_sgd": 325.2555705618976,
+        "prediction_sha256": "581b59e0927361499a8818efad76aeb13c7dd2e172019ccb3c4fd1066613b707"
+      },
+      {
+        "member": "anniversary/window_lgb63",
+        "label": "Window LGB63",
+        "final_weight": 0.03773,
+        "iterations": 165,
+        "rmse_sgd": 447.23459828875366,
+        "mae_sgd": 323.8226790479982,
+        "prediction_sha256": "6bbf203403bd15057cb52c2f586a5bb787321b275b46a5480781897b6a4fcb10"
+      },
+      {
+        "member": "tabpfn87",
+        "label": "Frozen TabPFN87",
+        "final_weight": 0.5,
+        "iterations": null,
+        "rmse_sgd": 442.0894791035927,
+        "mae_sgd": 316.51594530074857,
+        "prediction_sha256": "a8c32216be8f887852c298708ed9b823b62accf2431d37f453df9df6556d5853"
+      }
+    ],
+    "seven_tree": {
+      "rmse_sgd": 443.95587454006085,
+      "mae_sgd": 322.95741236716117
+    },
+    "combined": {
+      "rmse_sgd": 440.7707067635961,
+      "mae_sgd": 317.76248493665776
+    },
+    "all_member_ids_and_hashes_verified": true
   },
   "supplementary_diagnostics": {
     "paired_saved_predictions_aligned": true,
@@ -107,6 +196,621 @@
     ],
     "rent_band_rows_total": 28995
   },
+  "supplementary_neural_experiments": {
+    "all_prediction_ids_months_labels_checked": true,
+    "all_reported_rmse_recomputed": true,
+    "validation_rows_per_prediction": 28995,
+    "scratch_seed_means": {
+      "T0": 461.16383984380053,
+      "T1": 465.3093769323238,
+      "T2": 466.77681027476234,
+      "T3": 465.0860654381865,
+      "decayed": 460.2081465582862
+    },
+    "abcde_rmse": 454.70398730500875,
+    "comparisons": [
+      {
+        "study": "fine_tuning",
+        "model": "Frozen control",
+        "views": 1,
+        "trainable_parameters": "0",
+        "rmse": 455.8135701208574,
+        "mae": 329.7484760241786,
+        "bias": 0.7675347713033298,
+        "delta_vs_matched_frozen": 0.0
+      },
+      {
+        "study": "fine_tuning",
+        "model": "DiagScale, LR 0.003",
+        "views": 1,
+        "trainable_parameters": "8,576",
+        "rmse": 456.13330559422974,
+        "mae": 331.18686021306365,
+        "bias": -1.82320023371133,
+        "delta_vs_matched_frozen": 0.3197354733723614
+      },
+      {
+        "study": "fine_tuning",
+        "model": "DiagScale, LR 0.005",
+        "views": 1,
+        "trainable_parameters": "8,576",
+        "rmse": 457.05717309797507,
+        "mae": 331.79844796473566,
+        "bias": 2.186014376065183,
+        "delta_vs_matched_frozen": 1.243602977117689
+      },
+      {
+        "study": "fine_tuning",
+        "model": "DiagScale, LR 0.01",
+        "views": 1,
+        "trainable_parameters": "8,576",
+        "rmse": 455.21168908881884,
+        "mae": 330.6249703347197,
+        "bias": -2.798012656138645,
+        "delta_vs_matched_frozen": -0.6018810320385342
+      },
+      {
+        "study": "fine_tuning",
+        "model": "DiagScale, LR 0.05",
+        "views": 1,
+        "trainable_parameters": "8,576",
+        "rmse": 460.0744591640199,
+        "mae": 338.543933736646,
+        "bias": -29.30824183478427,
+        "delta_vs_matched_frozen": 4.2608890431625355
+      },
+      {
+        "study": "fine_tuning",
+        "model": "DiagScale, matched CRPS+MSE",
+        "views": 1,
+        "trainable_parameters": "8,576",
+        "rmse": 455.121759212724,
+        "mae": 330.87208605816267,
+        "bias": -9.000024128830194,
+        "delta_vs_matched_frozen": -0.691810908133391
+      },
+      {
+        "study": "fine_tuning",
+        "model": "DiagScale, matched MSE only",
+        "views": 1,
+        "trainable_parameters": "8,576",
+        "rmse": 455.0710283636764,
+        "mae": 330.78978114524807,
+        "bias": -8.427615551174402,
+        "delta_vs_matched_frozen": -0.7425417571809589
+      },
+      {
+        "study": "fine_tuning",
+        "model": "ICL Q/K LoRA, rank 2",
+        "views": 1,
+        "trainable_parameters": "65,536",
+        "rmse": 455.47210483912477,
+        "mae": 330.47166432055405,
+        "bias": -5.54947401088433,
+        "delta_vs_matched_frozen": -0.34146528173261004
+      },
+      {
+        "study": "fine_tuning",
+        "model": "Native regression decoder",
+        "views": 1,
+        "trainable_parameters": "9,320,328",
+        "rmse": 455.98980916109144,
+        "mae": 331.04203588257906,
+        "bias": -6.986177354274063,
+        "delta_vs_matched_frozen": 0.17623904023406567
+      },
+      {
+        "study": "fine_tuning",
+        "model": "Frozen control",
+        "views": 2,
+        "trainable_parameters": "0",
+        "rmse": 455.3959272763438,
+        "mae": 327.79369889404,
+        "bias": 10.792209361883428,
+        "delta_vs_matched_frozen": 0.0
+      },
+      {
+        "study": "fine_tuning",
+        "model": "All-attention Q/K LoRA, rank 8",
+        "views": 2,
+        "trainable_parameters": "299,008",
+        "rmse": 457.0432613573032,
+        "mae": 333.37810128441356,
+        "bias": -14.375348158899465,
+        "delta_vs_matched_frozen": 1.6473340809594106
+      },
+      {
+        "study": "month_coherent_support",
+        "model": "S1",
+        "inference": "S0",
+        "rmse": 459.62697680466306,
+        "mae": 332.7733732263145,
+        "bias": 15.164657458051733
+      },
+      {
+        "study": "month_coherent_support",
+        "model": "S1",
+        "inference": "S4",
+        "rmse": 460.7859623433725,
+        "mae": 332.97732627368447,
+        "bias": 7.661267364233831
+      },
+      {
+        "study": "month_coherent_support",
+        "model": "S2",
+        "inference": "S0",
+        "rmse": 459.0633988647383,
+        "mae": 331.9102548370775,
+        "bias": 15.974154497365754
+      },
+      {
+        "study": "month_coherent_support",
+        "model": "S2",
+        "inference": "S4",
+        "rmse": 460.819319861896,
+        "mae": 340.80399945291646,
+        "bias": -39.57806908901708
+      },
+      {
+        "study": "month_coherent_support",
+        "model": "S3",
+        "inference": "S0",
+        "rmse": 457.23980072670605,
+        "mae": 332.23965890787656,
+        "bias": 1.312298577539576
+      },
+      {
+        "study": "month_coherent_support",
+        "model": "S3",
+        "inference": "S4",
+        "rmse": 460.92861969942373,
+        "mae": 342.411117936337,
+        "bias": -45.8291916519086
+      },
+      {
+        "study": "month_coherent_support",
+        "model": "S4",
+        "inference": "S0",
+        "rmse": 457.7088263815112,
+        "mae": 336.1259645550381,
+        "bias": -24.866417771273323
+      },
+      {
+        "study": "month_coherent_support",
+        "model": "S4",
+        "inference": "S4",
+        "rmse": 459.3243451534462,
+        "mae": 338.02902578351996,
+        "bias": -31.465405130550092
+      },
+      {
+        "study": "scratch_transformer",
+        "model": "T0",
+        "seed": 42,
+        "rmse": 462.33619368622044,
+        "mae": 332.96657522612253,
+        "bias": 31.101428014068276
+      },
+      {
+        "study": "scratch_transformer",
+        "model": "T0",
+        "seed": 43,
+        "rmse": 459.4150403135811,
+        "mae": 333.9358772537089,
+        "bias": -6.055288623703238
+      },
+      {
+        "study": "scratch_transformer",
+        "model": "T0",
+        "seed": 44,
+        "rmse": 461.7402855316001,
+        "mae": 337.5896254804338,
+        "bias": -20.889584417131545
+      },
+      {
+        "study": "scratch_transformer",
+        "model": "T1",
+        "seed": 42,
+        "rmse": 461.90138537412633,
+        "mae": 330.19343070418455,
+        "bias": 43.20530080351186
+      },
+      {
+        "study": "scratch_transformer",
+        "model": "T1",
+        "seed": 43,
+        "rmse": 465.8753931062461,
+        "mae": 332.37559580579176,
+        "bias": 62.2525793104687
+      },
+      {
+        "study": "scratch_transformer",
+        "model": "T1",
+        "seed": 44,
+        "rmse": 468.1513523165988,
+        "mae": 330.4111721195841,
+        "bias": 89.23942338069968
+      },
+      {
+        "study": "scratch_transformer",
+        "model": "T2",
+        "seed": 42,
+        "rmse": 470.8562990354057,
+        "mae": 331.11555166101226,
+        "bias": 100.51047564945752
+      },
+      {
+        "study": "scratch_transformer",
+        "model": "T2",
+        "seed": 43,
+        "rmse": 466.34385171013145,
+        "mae": 330.97119890229004,
+        "bias": 74.34097786237395
+      },
+      {
+        "study": "scratch_transformer",
+        "model": "T2",
+        "seed": 44,
+        "rmse": 463.1302800787499,
+        "mae": 328.47307790525434,
+        "bias": 54.7039136389026
+      },
+      {
+        "study": "scratch_transformer",
+        "model": "T3",
+        "seed": 42,
+        "rmse": 465.96017968221054,
+        "mae": 329.90990988187986,
+        "bias": 74.62898847632397
+      },
+      {
+        "study": "scratch_transformer",
+        "model": "T3",
+        "seed": 43,
+        "rmse": 467.0677050067844,
+        "mae": 332.2459988532409,
+        "bias": 72.60330530259365
+      },
+      {
+        "study": "scratch_transformer",
+        "model": "T3",
+        "seed": 44,
+        "rmse": 462.2303116255644,
+        "mae": 329.0486592477483,
+        "bias": 46.12974812436812
+      },
+      {
+        "study": "scratch_transformer",
+        "model": "decayed T0/T1",
+        "seed": 42,
+        "rmse": 461.89317134170693,
+        "mae": 332.1632625605575,
+        "bias": 33.948292169266246
+      },
+      {
+        "study": "scratch_transformer",
+        "model": "decayed T0/T1",
+        "seed": 43,
+        "rmse": 458.61213229757834,
+        "mae": 332.1065964644881,
+        "bias": 2.5641601904978932
+      },
+      {
+        "study": "scratch_transformer",
+        "model": "decayed T0/T1",
+        "seed": 44,
+        "rmse": 460.1191360355734,
+        "mae": 333.95074254771436,
+        "bias": -2.8832107035108225
+      },
+      {
+        "study": "tabpfn_reference",
+        "model": "Frozen TabPFN, original 77 inputs",
+        "rmse": 455.3959272763438,
+        "mae": 327.79369889404,
+        "bias": 10.792209361883428
+      },
+      {
+        "study": "tabpfn_reference",
+        "model": "TabPFN CDE, earlier-selected family",
+        "rmse": 455.3597608080261,
+        "mae": 329.03271134584026,
+        "bias": 0.8565102781319509
+      },
+      {
+        "study": "tabpfn_reference",
+        "model": "TabPFN ABCDE equal ensemble",
+        "rmse": 454.70398730500875,
+        "mae": 328.5257868910954,
+        "bias": 0.988389087968402
+      }
+    ]
+  },
+  "supplementary_auxiliary_temporal_experiments": {
+    "no_models_refitted": true,
+    "direct_features_reconciled_with_rounded_monthly_scores": true,
+    "aggregate_forecast_rmse_recomputed": true,
+    "tree_corrections_reconstructed_from_residual_moments": true,
+    "tabpfn_prediction_ids_dates_labels_checked": true,
+    "comparisons": [
+      {
+        "study": "direct_economic_features",
+        "window": "2022-07",
+        "model": "E_amenities",
+        "rmse_sgd": 658.1408,
+        "verification": "pooled_saved_monthly_errors"
+      },
+      {
+        "study": "direct_economic_features",
+        "window": "2022-07",
+        "model": "E_plus_coe",
+        "rmse_sgd": 658.6412,
+        "verification": "pooled_saved_monthly_errors"
+      },
+      {
+        "study": "direct_economic_features",
+        "window": "2022-07",
+        "model": "E_plus_sg_stocks",
+        "rmse_sgd": 660.9283,
+        "verification": "pooled_saved_monthly_errors"
+      },
+      {
+        "study": "direct_economic_features",
+        "window": "2022-07",
+        "model": "E_plus_both",
+        "rmse_sgd": 661.9834,
+        "verification": "pooled_saved_monthly_errors"
+      },
+      {
+        "study": "direct_economic_features",
+        "window": "2023-01",
+        "model": "E_amenities",
+        "rmse_sgd": 642.737,
+        "verification": "pooled_saved_monthly_errors"
+      },
+      {
+        "study": "direct_economic_features",
+        "window": "2023-01",
+        "model": "E_plus_coe",
+        "rmse_sgd": 642.9391,
+        "verification": "pooled_saved_monthly_errors"
+      },
+      {
+        "study": "direct_economic_features",
+        "window": "2023-01",
+        "model": "E_plus_sg_stocks",
+        "rmse_sgd": 645.3222,
+        "verification": "pooled_saved_monthly_errors"
+      },
+      {
+        "study": "direct_economic_features",
+        "window": "2023-01",
+        "model": "E_plus_both",
+        "rmse_sgd": 645.3935,
+        "verification": "pooled_saved_monthly_errors"
+      },
+      {
+        "study": "direct_economic_features",
+        "window": "2023-07",
+        "model": "E_amenities",
+        "rmse_sgd": 567.689,
+        "verification": "pooled_saved_monthly_errors"
+      },
+      {
+        "study": "direct_economic_features",
+        "window": "2023-07",
+        "model": "E_plus_coe",
+        "rmse_sgd": 567.4503,
+        "verification": "pooled_saved_monthly_errors"
+      },
+      {
+        "study": "direct_economic_features",
+        "window": "2023-07",
+        "model": "E_plus_sg_stocks",
+        "rmse_sgd": 567.513,
+        "verification": "pooled_saved_monthly_errors"
+      },
+      {
+        "study": "direct_economic_features",
+        "window": "2023-07",
+        "model": "E_plus_both",
+        "rmse_sgd": 567.9947,
+        "verification": "pooled_saved_monthly_errors"
+      },
+      {
+        "study": "direct_economic_features",
+        "window": "2024-04",
+        "model": "E_amenities",
+        "rmse_sgd": 478.8218,
+        "verification": "pooled_saved_monthly_errors"
+      },
+      {
+        "study": "direct_economic_features",
+        "window": "2024-04",
+        "model": "E_plus_coe",
+        "rmse_sgd": 479.6289,
+        "verification": "pooled_saved_monthly_errors"
+      },
+      {
+        "study": "direct_economic_features",
+        "window": "2024-04",
+        "model": "E_plus_sg_stocks",
+        "rmse_sgd": 479.5432,
+        "verification": "pooled_saved_monthly_errors"
+      },
+      {
+        "study": "direct_economic_features",
+        "window": "2024-04",
+        "model": "E_plus_both",
+        "rmse_sgd": 479.9191,
+        "verification": "pooled_saved_monthly_errors"
+      },
+      {
+        "study": "adjusted_monthly_mean",
+        "scenario": "fixed_origin",
+        "model": "persistence__rent__w12",
+        "rmse_sgd": 45.38808621863959,
+        "verification": "saved_forecasts_equal_target_month_weight"
+      },
+      {
+        "study": "adjusted_monthly_mean",
+        "scenario": "rolling",
+        "model": "persistence__rent__w12",
+        "rmse_sgd": 37.745965330663914,
+        "verification": "saved_forecasts_equal_target_month_weight"
+      },
+      {
+        "study": "adjusted_monthly_mean",
+        "scenario": "fixed_origin",
+        "model": "lstm__rent__w12",
+        "rmse_sgd": 258.4827623596212,
+        "verification": "saved_forecasts_equal_target_month_weight"
+      },
+      {
+        "study": "adjusted_monthly_mean",
+        "scenario": "rolling",
+        "model": "lstm__rent__w12",
+        "rmse_sgd": 126.40899069312555,
+        "verification": "saved_forecasts_equal_target_month_weight"
+      },
+      {
+        "study": "adjusted_monthly_mean",
+        "scenario": "fixed_origin",
+        "model": "lstm__rent_coe__w12",
+        "rmse_sgd": 23.244015714568306,
+        "verification": "saved_forecasts_equal_target_month_weight"
+      },
+      {
+        "study": "adjusted_monthly_mean",
+        "scenario": "rolling",
+        "model": "lstm__rent_coe__w6",
+        "rmse_sgd": 44.95846847753601,
+        "verification": "saved_forecasts_equal_target_month_weight"
+      },
+      {
+        "study": "adjusted_monthly_mean",
+        "scenario": "fixed_origin",
+        "model": "lstm__rent_stock__w12",
+        "rmse_sgd": 133.2164302597826,
+        "verification": "saved_forecasts_equal_target_month_weight"
+      },
+      {
+        "study": "adjusted_monthly_mean",
+        "scenario": "rolling",
+        "model": "lstm__rent_stock__w12",
+        "rmse_sgd": 125.09526505340544,
+        "verification": "saved_forecasts_equal_target_month_weight"
+      },
+      {
+        "study": "adjusted_monthly_mean",
+        "scenario": "fixed_origin",
+        "model": "lstm__rent_stock_coe__w3",
+        "rmse_sgd": 31.827650874686576,
+        "verification": "saved_forecasts_equal_target_month_weight"
+      },
+      {
+        "study": "adjusted_monthly_mean",
+        "scenario": "rolling",
+        "model": "lstm__rent_stock_coe__w3",
+        "rmse_sgd": 61.502630252723186,
+        "verification": "saved_forecasts_equal_target_month_weight"
+      },
+      {
+        "study": "tree_correction",
+        "scenario": "fixed_origin",
+        "model": "persistence",
+        "rmse_sgd": 471.63097332729643,
+        "verification": "pooled_saved_monthly_residual_moments"
+      },
+      {
+        "study": "tree_correction",
+        "scenario": "rolling",
+        "model": "persistence",
+        "rmse_sgd": 469.61842756741544,
+        "verification": "pooled_saved_monthly_residual_moments"
+      },
+      {
+        "study": "tree_correction",
+        "scenario": "fixed_origin",
+        "model": "rent_lstm",
+        "rmse_sgd": 469.3980326007399,
+        "verification": "pooled_saved_monthly_residual_moments"
+      },
+      {
+        "study": "tree_correction",
+        "scenario": "rolling",
+        "model": "rent_lstm",
+        "rmse_sgd": 470.09649863785756,
+        "verification": "pooled_saved_monthly_residual_moments"
+      },
+      {
+        "study": "tree_correction",
+        "scenario": "fixed_origin",
+        "model": "joint",
+        "rmse_sgd": 470.37504850822125,
+        "verification": "pooled_saved_monthly_residual_moments"
+      },
+      {
+        "study": "tree_correction",
+        "scenario": "rolling",
+        "model": "joint",
+        "rmse_sgd": 470.048970083078,
+        "verification": "pooled_saved_monthly_residual_moments"
+      },
+      {
+        "study": "tree_correction",
+        "scenario": "fixed_origin",
+        "model": "joint_lstm",
+        "rmse_sgd": 470.9050367829175,
+        "verification": "pooled_saved_monthly_residual_moments"
+      },
+      {
+        "study": "tree_correction",
+        "scenario": "rolling",
+        "model": "joint_lstm",
+        "rmse_sgd": 470.2711283696657,
+        "verification": "pooled_saved_monthly_residual_moments"
+      },
+      {
+        "study": "tree_correction",
+        "scenario": "fixed_origin",
+        "model": "rent_coe_lstm",
+        "rmse_sgd": 471.2275493062512,
+        "verification": "pooled_saved_monthly_residual_moments"
+      },
+      {
+        "study": "tree_correction",
+        "scenario": "rolling",
+        "model": "rent_coe_lstm",
+        "rmse_sgd": 470.28385831685335,
+        "verification": "pooled_saved_monthly_residual_moments"
+      },
+      {
+        "study": "tabpfn_macro_inputs",
+        "model": "baseline",
+        "rmse_sgd": 455.3959272763664,
+        "verification": "original_labels_aligned_row_predictions"
+      },
+      {
+        "study": "tabpfn_macro_inputs",
+        "model": "reliability",
+        "rmse_sgd": 455.9617590810804,
+        "verification": "original_labels_aligned_row_predictions"
+      },
+      {
+        "study": "tabpfn_macro_inputs",
+        "model": "rent_forecast",
+        "rmse_sgd": 456.7072985399569,
+        "verification": "original_labels_aligned_row_predictions"
+      },
+      {
+        "study": "tabpfn_macro_inputs",
+        "model": "coe_increment",
+        "rmse_sgd": 456.90510792079743,
+        "verification": "original_labels_aligned_row_predictions"
+      }
+    ]
+  },
   "final_selection": {
     "file": "kaggle_structure_blend.csv",
     "path": "output/submissions/candidates/kaggle_structure_blend.csv",
@@ -120,8 +824,8 @@
   },
   "limitations": [
     "Archived final-structure scores and Kaggle value are read from the saved selection record; the screenshot was not supplied in this turn.",
-    "Root output/ model binaries and final submission CSV are absent from this checkout; no full final-model replay is claimed.",
-    "The report does not train models or upload predictions.",
+    "F1 validation refits and the tree/TabPFN full-data refits have separate recorded evidence; this report builder scores saved predictions and does not rerun training.",
+    "New original/grouped tree-TabPFN test CSVs have no observed Kaggle score; this builder does not upload predictions.",
     "Names, student IDs, confirmed team name and actual workload ownership require the team."
   ],
   "source_sha256": {
@@ -129,26 +833,103 @@
     "data/test.csv": "a2ec03a0afc07c251c72cc0de2e15ac965a3b06291b304aaac53a375115ff4e0",
     "reports/train_test_eda/summary.json": "8a5dcd010aa9f0f12b1b3e95f96f86f4fcc266e8d2462d406f8c9ce87db24ee6",
     "reports/auxiliary_data_eda/summary.json": "4841c93ee27407183d6ff96378b2fb0c04a798586718cff669af6c396b5e6de9",
-    "experiment/03_model_comparison/recommended_models.csv": "f8d6eed18a3b71b4ec75dffb59404013491306b1a2add8a14e0704447754bce0",
-    "experiment/03_model_comparison/same_input_models.csv": "4b5a0bc55ebe051fd91b911b593d3be3b835053b714406a23da8b65d95da8b31",
-    "experiment/02_feature_engineering/controlled_feature_ladder.csv": "df63ebf1869e91baee9e46207d419ae6b790e4815e41ce1f973d151097bbed73",
-    "experiment/02_feature_engineering/group_feature_effects.csv": "d27103684eda5804ef7ef8029564141bb79250676875f14895477f2f1b18223c",
-    "experiment/01_final/submission_selection.json": "3941b763900dcd3ba13bb3f8e31d907bcca49160cecde9fe8b2116337f3c3516",
-    "experiment/04_optimization_history/09_grouped_blending.md": "351fd137ed40d5e79abe8fa65dbb5a2bebc7be3abff22a151057a8ec71a83f0d",
-    "experiment/04_optimization_history/10_plr_transformer_final.md": "cc712383f9712164a04462781ee3aa78fa9bf3817446de9b275a176bbdc186c3",
-    "reports/tabpfn_anniversary_history_80_20/report.md": "b51e3d81f1b31d59b88aad0ec28ade0eb2c7722e0d60c4fb381d3feb7913acb7",
-    "reports/zch_anniversary_tabpfn_blend/predictions_june.csv": "728593d8c6615ea00db914a613ee23b1830cb1b6e2dea05bde2276e65cef5466",
-    "reports/half_median_zch_tabpfn_ensemble/scores.csv": "8dbcfd90b0eaf4e540f2152f5978ebb7eabaa18f9628569e7dfbe473001711ed",
-    "reports/half_median_zch_tabpfn_ensemble/subgroup_scores.csv": "f0c7a587639e7ee32b79054067351acdaeb03b9011379242bd919ddf09a8af49",
-    "reports/flat_model_grouping_ensemble/scores.csv": "8f4358003bf0df5fe887582a3dc9bc02ab679903d974f182c8918a6393dd3378",
-    "reports/tabpfn_anniversary_history_80_20/scores.csv": "58c714fafb59f1c235016589ca78a73a6fb72d560cf93b940294cb2508d55342",
+    "experiment/03_model_comparison/recommended_models.csv": "5fc452f358fd6af92b1e6b716010cf357b79c9f3693a6444723692c1bf3dd0ab",
+    "experiment/03_model_comparison/same_input_models.csv": "5f152ffc72dc801c726f609134188528e3bd7da84f47abab96e6d4d2d2b6535c",
+    "experiment/02_feature_engineering/controlled_feature_ladder.csv": "7bb0e8a9229172e00c595a522c8d207773691039a12589a0200ba3b582726f82",
+    "experiment/02_feature_engineering/group_feature_effects.csv": "94c466795806902f44196fabd82ff3c3bb211b438dbbe414611c60ea07e22dd0",
+    "experiment/01_final/submission_selection.json": "b6629f53e48ff1ec3223a138acc619e74712f5c9cc0029e88941d405452dee8b",
+    "experiment/04_optimization_history/09_grouped_blending.md": "b6be9e7fd9822a9d4051f087f3544c4197343cde755e8e7df8f361b33af4f91b",
+    "experiment/04_optimization_history/10_plr_transformer_final.md": "b5e05bf7e9f3ca0d00b3504f175c5ad6b709e1e382f2b011b969837ba7027ec3",
+    "reports/tabpfn_anniversary_history_80_20/report.md": "eb7f428f54f366dae57c13a747d62179d4fe40b18941e842b2dda13bb1bdc5c9",
+    "reports/zch_anniversary_tabpfn_blend/predictions_june.csv": "ca9b26659134f48142cfa72d3c08a3fc0a0aa28cb12b66ff4b51c81f70d117f6",
+    "reports/half_median_zch_tabpfn_ensemble/scores.csv": "c02afdb90657802c08133b6e1c83202b4cdb8a75f7820db7a79f0ebe2be0e1d5",
+    "reports/half_median_zch_tabpfn_ensemble/subgroup_scores.csv": "fb33affecd1f28e2af81ca82003303f94ff8daba4696ab56d5fa0dc3cf091574",
+    "reports/flat_model_grouping_ensemble/scores.csv": "aebd73d3ae7234c1c5dcca6dc2cb86e13284a3fe6cdb6b97672e5997cf02b815",
+    "reports/tabpfn_anniversary_history_80_20/scores.csv": "bccf7606bdfab6a97a0ea03d5442d7267c20250adebb12eb3e86fa0ab3252520",
     "reports/tabpfn_anniversary_history_80_20/predictions_baseline77.csv": "1a451ed4e003fa8245b0aaa55ddf3657a216bedb809801a20e1a3447bfa5ff7d",
     "reports/tabpfn_anniversary_history_80_20/predictions_anniversary87.csv": "934f34441d14a60002380e076cd9fffe945eafbe52d6b07687db592915a97c93",
     "reports/tabpfn_anniversary_history_80_20/predictions_anniversary92.csv": "060b808d14517f450b164857b3bc6f68e347773a520aa02e0b1020eba0acf719",
-    "reports/tabpfn_feature_ensemble_final_submission/report.md": "5c9dbcf9149f0c931afa1d852ebc8ab94fb67fed39937cebcd05e4c74bb30406",
-    "reports/tabpfn_anniversary_history_80_20/coverage.csv": "5ce9ab023f7fe84db915fb2076b8db68710a2dec2979613b07299653caa7cb96",
-    "reports/half_median_zch_tabpfn_ensemble/comparison_predictions.csv": "d1b0f451c90a15721e61f6e92f96098cbc076c80c7fda95c226e9207f5dec43b",
-    "reports/flat_model_grouping_ensemble/comparison_predictions.csv": "e878980367b63330b1c943f521249b04cb045afd0db3643ab5400a862a599f17",
-    "reports/final_report/reference_pool.bib": "061331a5312bf09f28d2b68c970c20665ccde47851c70814ec33fd19b2e7c27f"
+    "reports/tabpfn_feature_ensemble_final_submission/report.md": "41042065162782b2476bcd5a6fb2b345af0670ee8dab7372e44dbd00929d1745",
+    "reports/tabpfn_anniversary_history_80_20/coverage.csv": "eef76ccde5ffdc6be54e75af8b94a9494a62fd53cf63c564ec34f2484f703d21",
+    "reports/half_median_zch_tabpfn_ensemble/comparison_predictions.csv": "aa5a4a55d997e82fa972d62dfa0f853d3434decb413a76b28a9f283ccddceac5",
+    "reports/flat_model_grouping_ensemble/comparison_predictions.csv": "a01b0311500c16914e1a3b32378d2a6985ae3933f7525510b8e19dbeae23d3e5",
+    "reports/final_report/reference_pool.bib": "83f3ac5092dd4daa9fb5d87d13269ac1b7dff6f98b2dc105f776ca1764ee40da",
+    "reports/submissions/tabpfn_ensemble_20261106/publication.json": "bf0c5d663cea3da222daa317654794ab40e7e3d72c820e0fdc194c8a865f6ce1",
+    "review/checks/tabpfn-ensemble/trees_validate_grouped.json": "f5688d224b7c0f047d8459d7bafd4d67edd8497d72d8c3f2529addf9e8384796",
+    "review/checks/tabpfn-ensemble/tabpfn_validate_grouped.json": "89975d5f3dcb3efce8f19db2dc1b09fee8a0d30a5c2d0a927ef687c301da8335",
+    "reproduction/f1/validation_evidence/validation_results.csv": "f454a0f691e1161bfa7a679a14fae13268ac58b2cba5627d31f13f14e74eebda",
+    "reports/final_report/build_report.py": "e4fa9d849314a9ad66aeed919d07d8475d96702241bf5dbb538ea345d14a3f97",
+    "reports/spatial_temporal_transformer/outer/T0/seed42/predictions.csv": "d15c3e0c53a0a5194ae2dcab8c606836b5108cfc095c0a38b929ab9440023c23",
+    "reports/spatial_temporal_transformer/outer/T0/seed43/predictions.csv": "f1c150dcce9ebce41b2e6a488201921da4a31af1471f4ff5de80e97492ac3869",
+    "reports/spatial_temporal_transformer/outer/T0/seed44/predictions.csv": "e3af6b1c139b1defacaa7f1f4b0c66a1eebc865598e718c0edc9624e5829e034",
+    "reports/spatial_temporal_transformer/outer/T1/seed42/predictions.csv": "f3a04e4e6193b57287a9b666a9c13da725f236c7350e07fcc231eac9aff351b3",
+    "reports/spatial_temporal_transformer/outer/T1/seed43/predictions.csv": "0902b5816bc361b7ee1a39b7e43765466b481cf5eded9d0b07548f9c8cdc000e",
+    "reports/spatial_temporal_transformer/outer/T1/seed44/predictions.csv": "48caee6183aa220b1f814e6f6e675890c35780e97785e027f217054eaf095028",
+    "reports/spatial_temporal_transformer/outer/T2/seed42/predictions.csv": "1acf75aedd65cbc4a6a6dbff7e2f6d64ba80aeba5295159aea8527ed33065062",
+    "reports/spatial_temporal_transformer/outer/T2/seed43/predictions.csv": "7cc8b4783335c173b97f7a887d931400bac3a3f2ef7e62867402d1cd15d7998f",
+    "reports/spatial_temporal_transformer/outer/T2/seed44/predictions.csv": "728a19de87b7b5ec9b9fdfd541dbc994cb54ad76aca65adfe9cea894d37223a0",
+    "reports/spatial_temporal_transformer/outer/T3/seed42/predictions.csv": "73cc5a8ee64b8c31ecd627d317b12ad89e68759353462ec9338487b14f4f11cd",
+    "reports/spatial_temporal_transformer/outer/T3/seed43/predictions.csv": "c9fe43de1c4362da6320043c4206c40be16ba8e53f9de45ff71c5ddf7c2596f4",
+    "reports/spatial_temporal_transformer/outer/T3/seed44/predictions.csv": "acec9f0b6ca3fead0f2d58cc884e4df1a932f8750ee100c367437dc560748f59",
+    "reports/spatial_temporal_transformer/scores.csv": "edda0e8be069d26894a46b33cc70526121455206e6515aa80e9475750535539e",
+    "reports/spatial_temporal_transformer/settings.json": "733986f3a9afcdda18cf13ecf2ec641595de8f997d4dac99977b16029ea3d2aa",
+    "reports/tabpfn_abcde_ensemble/predictions_all_origins.csv": "34cd9fd15c7f45fdfd60a0c5735f8feda356eae6323cf177501d9be4e42407b2",
+    "reports/tabpfn_abcde_ensemble/scores.csv": "5aa8435b1e520592e1b7311587524ff0b18618279b823e931f813a38baff317c",
+    "reports/tabpfn_components_80_20/outer/diag_crps_mse/predictions.csv": "4cff493494848d1a862303d901e39ca889cebfb17a50ad55240ad9808aa3c734",
+    "reports/tabpfn_components_80_20/outer/diag_mse_only/predictions.csv": "ae40d5b1aa0ae54ed25e185986f1540d49d3b9296d5bca1ebfbf549cf621fb2e",
+    "reports/tabpfn_components_80_20/outer/icl_rank2/predictions.csv": "d66fafdb15308ff83999614763b7fc3344a8e07b89899812e18d0e4474b1fbbd",
+    "reports/tabpfn_components_80_20/outer/regression_head/predictions.csv": "2efe2b4439153192867b16fdf2099f69be40e523c7e80fa812eee2857d27ce9b",
+    "reports/tabpfn_components_80_20/plan.json": "0403bec933cc8561fe43e68a314adea9179d1d5ee50c5bca9c7b2c7a3eafbcb7",
+    "reports/tabpfn_components_80_20/report.md": "0524b4f4f20a1f1ac1aef3293a2fb1fdff632bef4901d0d89c5be5952846b310",
+    "reports/tabpfn_components_80_20/scores.csv": "f312c1c03dbba953d9825b409d0f4883f96018f59a48feba4ab7648d86b79dd9",
+    "reports/tabpfn_context_sampling/combined_outer_scores.csv": "452856805149d6a34c3d7c7bdf8a54478d6a04fc18f12b82dafb57d8c1e1cd55",
+    "reports/tabpfn_context_sampling/phase_b_S1_seed42_episodes100_epochs8_patience8/outer_predictions_full_S0.csv": "d84aa312025f46482ad2c810d8838c1bfd11efd833df5baabdbed17945361f1a",
+    "reports/tabpfn_context_sampling/phase_b_S1_seed42_episodes100_epochs8_patience8/outer_predictions_full_S4.csv": "e32fb95692f94a1691654262709abeed9b8d11773e1f8f1b1cd0ecadda9e7109",
+    "reports/tabpfn_context_sampling/phase_b_S2_seed42_episodes100_epochs8_patience8/outer_predictions_full_S0.csv": "6eebf5b012fcecb343789659baf23f92a2278c4ccc672fb8202c7f74c6a300a7",
+    "reports/tabpfn_context_sampling/phase_b_S2_seed42_episodes100_epochs8_patience8/outer_predictions_full_S4.csv": "0d51cef136f015d0ecd6a4b9b1f2106ebf052b164e3a89ada11478b6fed2cbf6",
+    "reports/tabpfn_context_sampling/phase_b_S3_seed42_episodes100_epochs8/outer_predictions_full_S0.csv": "a05160f0ba352f7984bd150507549b9f1b5d6a0e8488a0802b71d23543977484",
+    "reports/tabpfn_context_sampling/phase_b_S3_seed42_episodes100_epochs8/outer_predictions_full_S4.csv": "cc1e18bf63e0f041b89c8fe94349788aa2bb84b334470a202cc2fb2b521f7117",
+    "reports/tabpfn_context_sampling/phase_b_S4_seed42_episodes100_epochs8/outer_predictions_full_S0.csv": "fccc42f8a6abd8abfc2e809dce87da000a540f365536f7a9201f6e13c605bd63",
+    "reports/tabpfn_context_sampling/phase_b_S4_seed42_episodes100_epochs8/outer_predictions_full_S4.csv": "ee3a6d25e3689a3feb9bd71035baa7d594050c0dd6442b5e0825938b536df741",
+    "reports/tabpfn_context_sampling/report.md": "51128d1416e1ae395381f5b76523d1527f378104605f5024309de513da541a0a",
+    "reports/tabpfn_diagscale_categorical_alignment_80_20/predictions.csv": "c8c4b4f7f69955ba575381cba2a9a0ba91281234453bf42c9633e2ba8b9879b4",
+    "reports/tabpfn_diagscale_categorical_alignment_80_20/scores.csv": "d354e3efac26dc0bb11a9bd148ce4435ae6bdbbc2ff2ef472f023d081002e580",
+    "reports/tabpfn_diagscale_categorical_alignment_lr0003_80_20/predictions.csv": "5b84bb71840b8e99299a3ca9ca3e6f8c5ff6ac3842e91926fefcf8956b71e194",
+    "reports/tabpfn_diagscale_categorical_alignment_lr0003_80_20/scores.csv": "f5a641e0078a4dde5737b1f77c1a2fca750c505407314de6f0bab7dbd48d9918",
+    "reports/tabpfn_diagscale_categorical_alignment_lr0005_80_20/predictions.csv": "70a8d7839797847213da0428644ce9741be87d8b2b0013dc4fbffff5da52251f",
+    "reports/tabpfn_diagscale_categorical_alignment_lr0005_80_20/scores.csv": "050532c7cf00426bf2d9448048debdef2afb8453adf23aff2c3f0d9053de1f9e",
+    "reports/tabpfn_diagscale_categorical_alignment_lr005_80_20/predictions.csv": "dce461c77df69df4c2ca41c28edaa529d0713c8e0f6279fbc61f98511befa074",
+    "reports/tabpfn_diagscale_categorical_alignment_lr005_80_20/scores.csv": "fb8d1517789fb87f4fa01f306d7614eca560d1ed9293e2b920c1c817834d4cc6",
+    "reports/tabpfn_diagscale_learning_rates_80_20/report.md": "f9b326aa47aab6c495b57a4fc2557cac2854e178787d861af32d00b89821cf77",
+    "reports/tabpfn_lora_qk_lr00003_80_20/predictions_2views.csv": "8ee1be48d91ad5748780e0361941d5a6ec8e8a5d4bc26ba169626622f52cdd9b",
+    "reports/transformer_ranked_experiments/23_forced_decay/outer_seed42.csv": "f5b85ece7d7a4948a5679cbfb29a2e672357ec0f11d13c721dc4807b5f7b7bdb",
+    "reports/transformer_ranked_experiments/23_forced_decay/outer_seed43.csv": "b70d70b8e424ae562515115987e000b786e8cdd5828a5d8aebe5dff788b8784f",
+    "reports/transformer_ranked_experiments/23_forced_decay/outer_seed44.csv": "39941e825f08d77fac5484cc921621a3a320cfb6ce533602683f060a5e0a1eb9",
+    "reports/transformer_ranked_experiments/23_forced_decay/scores.csv": "ebaca1e5fd5ac8649fbd94e0cae29d0acdc30cb1d284e4f78a58926e3450bd2d",
+    "reports/transformer_ranked_experiments/report.md": "5147d3ad8942758363dfde24b45f17871748f16184c7532cea645bfbdee37e40",
+    "reports/economic_feature_ablation/forward_scores.csv": "8cc6a04a895aa2a172a1a71567482ae14511c3a26f713e76e7e99769c24553b6",
+    "reports/economic_feature_ablation/monthly_errors.csv": "9062ca6b2b8aa1ee7084c9554675bffe8db85655b12f41181d7b89f80a7d775d",
+    "reports/economic_feature_ablation/report.md": "a2bc7032a0e6cb754369a001172c7a062ecf75c0f9399cc2cf7b14cb9ccf065e",
+    "reports/economic_signals/forward_scores.csv": "950db4d9f98350ce1a408d70bb203326b15189ce545e2b88f2dadaca5426c7c5",
+    "reports/economic_signals/report.md": "201d78bf36effd5e82124cc9f7cbd9c89f717120b78cf685b462e3736922336a",
+    "reports/final_report/build_auxiliary_appendix.py": "705c778bd1861bea473fbf1ea928766fef3377112a7e61cc89bd65307651868e",
+    "reports/flat_type_coe_forecast/report.md": "cb52ea892f8badac86369a3f8390a7023f82aedaa217ac0989e8e798b1e1c3cf",
+    "reports/flat_type_coe_forecast/scores.csv": "6c239cf9fe22afa3aadba19f399db165927c068f67d04dd6134e8fbea75f1bc8",
+    "reports/stock_sector_signals/report.md": "88a73809cb1e18e03de94caf0cf80086d9c734028b7a9bbfb480a28758c8052b",
+    "reports/stock_sector_signals/row_selected_comparison.csv": "4242c0152a5c17be3c8d91734efa60176590853232a3da8bb291c41e55c78869",
+    "reports/tabpfn_reliability_macro_80_20/predictions_2024-06_coe_increment.csv": "7ae55bac51972685724f7b4b558c68c9ed78fa8d8f2d0168928e9f1a271e8fce",
+    "reports/tabpfn_reliability_macro_80_20/predictions_2024-06_reliability.csv": "749dedf254c2bea7cf5ee633bd2393a76a7500f7218a112ed482db263394a57c",
+    "reports/tabpfn_reliability_macro_80_20/predictions_2024-06_rent_forecast.csv": "825e5d71ba94556190db5ecafc67250d2530861fe7ef6bbf14b8c8dcbbd30447",
+    "reports/tabpfn_reliability_macro_80_20/report.md": "108ca825dc6264087df9e09bd8ecb312198ac352a723803b6f76a17a01f1ded7",
+    "reports/tabpfn_reliability_macro_80_20/scores.csv": "13bc5b376f6bff67e2af64b1d81ebc2d1ab310e5f4773c2525ac88227bf87898",
+    "reports/tabpfn_reliability_macro_80_20/settings.json": "58d2fb801376d123ce92d1bba1e2739c8fdebf89d12cf09085a2c59eb94596a4",
+    "reports/temporal_sequence_ablation/findings.md": "d9f0d86fcc49318f2214e96e07d42451afecebd1ef3528db1f9691b8c9165931",
+    "reports/temporal_sequence_ablation/followup_rent_coe_sensitivity.csv": "848f60a959e76bdd80eace9c4f4badb3c59ff07a7d365aa21333190cef3000be",
+    "reports/temporal_sequence_ablation/forecast_predictions.csv": "4d0f5da39d9358c20c82267553a91b9496dad027eb512250f5340c8a2c9bc943",
+    "reports/temporal_sequence_ablation/input_processing_rmse_sgd.csv": "415a5fc2a00a381772b7ec18b5c6ce7a71304fd1a4024cfc703337d88f114cb0",
+    "reports/temporal_sequence_ablation/report.md": "a4ff71add09413c738dee771fb2ef322fda6a19273d0f8ef9fb47ae6360c489b",
+    "reports/temporal_sequence_ablation/row_transfer_extended_monthly.csv": "f5da91441c3fb477bffe42bf262835d5ab80d2f64f5e89e6c09578c7c352ec46",
+    "reports/temporal_sequence_ablation/row_transfer_extended_scores.csv": "d617cf45a6867631e01b12edc0b08e91af481234bb6db1d4c04c8531f6053eeb",
+    "reports/temporal_sequence_ablation/selected_comparisons.csv": "e7286db715834e4b3f37ac619d32c57fbb8936973aea1dee82adc7f47e74e0d3"
   }
 }

@@ -1,4 +1,6 @@
-# 模型搜索与共同输入对照
+[Chinese version](README.zh-CN.md)
+
+# Model search and common-input comparisons
 
 [Back to experiment index](../README.md)
 

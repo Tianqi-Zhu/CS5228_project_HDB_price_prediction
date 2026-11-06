@@ -1,275 +1,277 @@
-> 当前执行状态以[main要求卡执行表](main-execution-status.md)和[五项优化](main-five-item-completion.md)为准。下文保留实验设计与验收条件；离线审计及 F1 Y/J 固定配方复训已完成，F2依赖继续待补。
+[Chinese version](main-appendix-experiment-plan.zh-CN.md)
 
-# A. main 分支规划表
+> Follow the [main requirement-card status](main-execution-status.md) and [five improvements](main-five-item-completion.md) for current execution. Below are historical designs and acceptance criteria. Offline audits and fixed-recipe F1 Y/J refits are complete; F2 dependencies remain outstanding.
 
-本表保留最初要求卡与验收目标。实际已完成范围以[当前执行表](main-execution-status.md)为准：F2 候选组件和近期 J 配对已可核验，年度 Y、完整有序字典及截图关联仍待补。
+# A. Main branch plan
 
-| 规划边界/共用定义 | 当前采用值 | 状态/约束 |
+This table preserves original requirement cards and acceptance goals. See [current status](main-execution-status.md) for completion: F2 candidate components and recent J pairing are verifiable; annual Y, the complete ordered dictionary and screenshot association remain outstanding.
+
+| Planning boundary/shared definition | Current value | Status/constraint |
 |---|---|---|
-| 本阶段 | 已执行 main 新增卡的可完成部分，并检查整体仓库 | 以[执行表](main-execution-status.md)为准；F2依赖不编造；验证后正常推送；不撰写报告正文 |
-| main / appendix | 实验归属已落实为两个物理分支；保留他人已合并内容，在当前 main 增补 | 用户已授权核验后正常推送，不强制覆盖远端 |
-| 项目任务 | 预测单条HDB月租 `MONTHLY_RENT`，单位SGD；150,000标签、50,000查询 | 原表哈希、日期和样本数已有核验；采用[所给设施快照与固定原点情景](../methods/prediction-scenario.md) |
-| 六阶段 | S1 EDA/预处理；S2传统模型；S3特征工程；S4能力/瓶颈；S5复杂模型；S6两个最终结果 | 节点只作实验锚点；阶段关系是受控实验判断，不宣称住房特征的因果效应 |
-| 最终F1 | 分组融合＋PLR-FT，`kaggle_structure_blend.csv` | 你的三份中保留；Y451.0295/J441.8345；Kaggle显示415.37529；已有方法/CSV证据 |
-| 最终F2 | `submission_zch_tabpfn87_equal_150k.csv` | 按用户决定保留；截图413.19635；87列、成员、公式、实际训练量和Y/J结果：[待补充] |
-| Y统一窗 | 拟合≤2024-03，验证2024-04—2025-03 | 114,842/35,158行；所有验证行保留 |
-| J统一窗 | 拟合≤2024-05，验证2024-06—2025-03 | 121,005/28,995行；与Y重叠，不作为独立测试合并 |
-| 指标 | SGD RMSE主指标；MAE、预测−真实平均偏差、每月/组样本数辅助 | pooled RMSE按SSE合并后开平方；不同预测目标/协议分表 |
-| 随机性 | 重算指标不训练；抽样/区块重采样固定42；复用训练沿用原seed | 只有新增匹配重训才预设42/43/44；不能改seed后复用旧指标 |
-| 时间约束 | 历史特征拟合行只取更早月份；查询历史冻结于原点；变换仅拟合集学习 | 全量提交的380条2025-03查询单列边界；给定未来宏观与真实固定原点预测分层 |
-| 数据边界 | F1既有train＋所给aux；F2实际来源：[待补充] | 外部同目标月份租金不纳入预测实验；外部其他数据按来源/发布时间标注 |
-| 评分约束 | [SKILL.md](../../skills/cs5228-final-report/SKILL.md)：方法60%、报告30%、复现10% | 无子项分值、精确扣分表、创新/实验数量独立权重；不臆造。未来交付正文PDF≤8页含图表、引用/附录除外、正文自足、附录少用、团队/分工及源码可复现；本阶段只产实验材料 |
-| 算力/预算 | 本轮 F1 使用 RTX4060 Laptop 8GB，Y/J 各训练 15 个基础模型 | 实测端到端耗时见[五项验收](main-five-item-completion.md)；未调用付费 API。后续额外 GPU 小时、截止日期及 API 预算：[待补充] |
-| 证据版本 | 复用已冻结13分支快照及[现有分支证据](tabpfn-branch-split.md) | 以C表提交为准；后续改分支须新建run ID和代码哈希，不混用旧结果 |
-| 评分标签 | M=方法质量60%；Q=报告质量30%；R=可复现性10% | 标签用于实验取舍，不增加课程分项 |
+| Current stage | Execute feasible parts of new main cards and audit the repository | Follow the [status table](main-execution-status.md); do not fabricate F2 dependencies; push normally after verification; do not draft the report body |
+| main / appendix | Experiment ownership is implemented in two physical branches; preserve others' integrated work and extend current main | The user authorized a normal verified push, without force-overwriting the remote |
+| Project task | Predict individual HDB `MONTHLY_RENT` in SGD; 150,000 labels and 50,000 queries | Raw hashes, dates and counts are verified; use the [supplied-snapshot/fixed-origin scenario](../methods/prediction-scenario.md) |
+| Six stages | S1 EDA/preprocessing; S2 classical models; S3 features; S4 capability/bottlenecks; S5 complex models; S6 two final results | Nodes anchor experiments; controlled comparisons relate stages without claiming causal housing-feature effects |
+| Final F1 | Grouped blending + PLR-FT, `kaggle_structure_blend.csv` | Retain one of your three variants; Y451.0295/J441.8345; displayed Kaggle 415.37529; method/CSV evidence exists |
+| Final F2 | `submission_zch_tabpfn87_equal_150k.csv` | Retain as requested; screenshot 413.19635; 87 inputs, members, formula, actual training count and Y/J results: [to be supplied] |
+| Common Y window | Fit through 2024-03; validate 2024-04 through 2025-03 | 114,842/35,158 rows; retain every validation row |
+| Common J window | Fit through 2024-05; validate 2024-06 through 2025-03 | 121,005/28,995 rows; overlaps Y and must not be pooled as an independent test |
+| Metrics | SGD RMSE primary; MAE, mean predicted-minus-actual bias and monthly/group counts secondary | Pool RMSE through combined SSE before square root; separate targets/protocols into distinct tables |
+| Randomness | Metric recomputation trains nothing; sampling/block resampling seed 42; reused training retains original seeds | Prespecify42/43/44 only for new matched refits; changing seeds cannot reuse old scores |
+| Temporal constraints | Fitting histories use earlier months; query histories freeze at the origin; transforms learn from fitting data only | Separately disclose380 March2025 full-data queries; distinguish supplied future macro observations from prospective fixed-origin forecasts |
+| Data boundary | F1 uses existing train and supplied aux; actual F2 sources: [to be supplied] | Exclude external target-month rents from prediction experiments; identify other external data by source/release date |
+| Assessment constraints | [SKILL.md](../../skills/cs5228-final-report/SKILL.md): methods60%, report30%, reproduction10% | Do not invent sub-scores, exact deductions or separate novelty/experiment-count weights. Eventual PDF body≤8 pages including figures/tables, excluding references/appendices; self-contained body, limited appendices, team/workload and reproducible source. This stage produces experiment materials only. |
+| Compute/budget | F1 used an RTX4060 Laptop8GB; 15 base models trained for each Y/J window | See [five-item acceptance](main-five-item-completion.md) for measured end-to-end times. No paid API was used. Additional GPU hours, deadline and API budget: [to be supplied] |
+| Evidence version | Reuse frozen snapshots from 13 branches and [existing branch evidence](tabpfn-branch-split.md) | Use commits in table C; subsequent branch changes require new run IDs/code hashes, without mixing old results |
+| Assessment tags | M=method quality60%; Q=report quality30%; R=reproducibility10% | Tags guide experiment selection without adding assessment categories |
 
-| 实验ID | 故事线阶段 | 实验目的 | 使用分支（复用/修改/新增） | 数据与特征 | 模型与对照 | 关键指标 | 支撑的阶段性判断 | 优先级 | 验收标准 |
+| Experiment ID | Narrative stage | Purpose | Branch use (reuse/modify/new) | Data and features | Models and controls | Key metrics | Supported stage-level conclusion | Priority | Acceptance criteria |
 |---|---|---|---|---|---|---|---|---|---|
-| M00 | S1/S6共用门槛 | 冻结可比协议和结果身份 | 新增审计；复用B11/B12清单，补B05 | 原始数据哈希；Y/J行ID；schema/target/as-of/macro/seed | 预测及其原始标签/配置重算对照；无训练模型 | 行数、错配数、哈希、截止违规数、重算误差 | 哪些分数允许进入同一比较表；M/R | P0 | 每条记录有来源提交、数据/特征/预测哈希、目标还原和信息条件；错配/重复ID/非法截止为0；F2缺项明确标记并阻止配对结论 |
-| M01 | S1 | 确定保留/变换/标记的数据政策 | 复用B12 EDA、B13空间、B09清洗审计；发现不一致才修改后复用 | 原主表、六类aux、常量/别名/重复/派生缺失 | 原始与规范化口径；无租金删除 vs 已有拟合期清洗对照 | 覆盖、缺失、重复、常量、异常年龄、日期/租金分布 | 预处理是否有数据依据；M | P0 | train150,000/test50,000、原始重复425/5,508可复核；测试行全保留；连接不增行；每个处理有规则/证据，未证实低租金不自动删；MRT仅可称快照或附带X08 |
-| M02 | S2 | 在加入历史特征前建立传统模型参照 | 复用B12 `baseline_classical_models` 与CatBoost C基线；重算纳入M00 | Y；C方案7列：户型/型号/面积/月序号/月份1–12/房龄/Town；合法训练期预处理 | 均值、Ridge、RandomForest、LGB、Cat；已存RMSE624.8788/493.7719/485.0928/487.2160（依序为后四模型） | RMSE/MAE/偏差、n、固定超参/轮数 | 基础属性/时间/区域输入下线性与树的参照；M/Q | P0 | 以`baseline_classical_models/results.json`确认同C7/同Y；Cat C来源有哈希；均值单列同Y；与后续19/27列配置不作跨表单因素归因；缺失仅补对应单元 |
-| M03 | S3 | 检验新增历史与同期组是否有增量 | 复用B12固定阶梯；不是复用另一套27列超参 | Y/J；19→27→47→62嵌套schema | 固定LGB353棵/15叶/lr.03/L2=10；固定GPU Cat535轮/深6/lr.04/L2=10；各自比较4层 | 每层RMSE/MAE/偏差、配对Δ、历史覆盖 | 哪组信息支持保留，是否跨模型/窗口一致；M | P0 | 已有16次拟合的设置和查询对齐；验证历史不更新；表内才计算特征Δ；收益不一致也可验收，不预设每层必胜 |
-| M04 | S4 | 定位剩余误差并区分覆盖/漂移/不可区分输入问题 | 新增离线诊断；复用B12预测与B09定义，不能转移B09误差数值 | M03代表预测及F1同Y/J；月份/户型/24与36月历史支持；真实租金仅事后分组 | 62列代表模型 vs F1；全体 vs 事先指定分组；训练期组阈值 | 分组n/RMSE/偏差/SSE占比、月度误差、相同模型输入组内诊断 | 复杂模型应针对哪类误差；不能由局部冲突证明全局误差下限；M | P0 | 分组完整覆盖或清楚注明重叠；SSE可对账；每组输入只用部署可知字段（事后租金组另标）；没有“必须达到某误差下限”的验收要求 |
-| M05 | S5 | 检验复杂模型与融合增量是否成立 | 复用B12共同27输入表及第10轮，必要时补元数据；B04提供F2背景 | 两个独立对照块：共同27列/Y；统一62列神经组/Y/J。不同树/网络schema分开 | 块1：同27列树 vs EmbeddingMLP/FT；块2：PLE128/3 vs PLR128/3，以及固定第9轮融合下无新增/加PLE/加PLR | 单模型与完整融合RMSE/MAE/偏差、按月Δ | 结构在相同输入下是否有增益，单模型与融合互补是否不同；M/Q | P0 | 块1按共同输入PROTOCOL核查预算；块2保持分组规则/正则，只变新增预测；容量/epoch差异标记；不跨两块算结构增益，保留PLR年度变差 |
-| M06 | S6/F1选择 | 从你的三份中保留一份 | 复用B11/B12；不重新搜参数 | 同Y/J预测；三份50,000行CSV另做身份核验 | 历史/宏观/结构三管线；宏观情景单列 | Y/J RMSE、显示成绩、来源/CSV哈希 | F1选择依据；M/Q/R | P0 | 结构版在已归档三指标均最低可复核；另两版本不删除，转X03；不称全局/独立测试最优 |
-| M07 | S5/S6/F2身份 | 建立第二最终方案的真实生成链 | 新增来源审计；B05修改后复用，B04提供背景 | 87列schema、成员/目标/截止、训练量、全量CSV：[待补充] | 提交CSV vs 由实际成员/配置重建；F1是否为成员以哈希检查 | 行/ID、成员数、公式、最大重建差、哈希 | F2是什么、与F1是否嵌套；M/R | P0 | 得到实际生成提交/入口/配置、87列有序字典、checkpoint/seed/view、原始CSV及哈希；重建数值≤1e−8 SGD或解释输出舍入容差；不能由文件名推定50/50 |
-| M08 | S6/F1–F2比较 | 同协议比较两个最终管线 | 新增离线配对评估；B11/B12复用，B05缺预测时定向重训 | Y/J相同查询/标签；各原点拟合上限相同，特征可不同但需记录 | 冻结F1 vs 冻结F2；无当期标签再选权 | 全体RMSE/MAE/偏差、逐月与覆盖组Δ；显示分数另表 | 哪个时期/支持条件下更好；M | P0 | 35,158/28,995行逐行对齐；本地标签从未进入查询特征/早停/新选权；开发期复用声明；负结果同样保留；不得用413与441混算增益 |
-| M09 | S6/交付门槛 | 对两个终点分别完成最小复现 | 修改后复用B11验证模式；新增F2复现要求 | 原数据/配置/模型/预测清单；F1/F2独立manifest | 原始CSV vs 按保存模型/组件重放；源文件运行前后哈希 | CSV身份、逐行差、预测有限性、输入未变、环境/命令完整性 | 两结果均可追溯和复现；R | P0 | F1已核验旧证据可复用；F2必须单独验收；各自50,000行、Id对齐、有限正值、重放容差明确；无法重放即未完成；CPU重组与完整重训能力分开登记 |
+| M00 | Shared S1/S6 gate | Freeze comparison protocols and result identities | New audit; reuse B11/B12 inventories and complete B05 | Raw hashes; Y/J row IDs; schema/target/as-of/macro/seed | Independently recompute predictions against original labels/settings; no trained model | Counts, mismatches, hashes, cutoff violations and recomputation error | Which scores may share a comparison table; M/R | P0 | Each record has source commit, data/feature/prediction hashes, target restoration and information policy. Zero misaligned/duplicate IDs or invalid cutoffs. Explicitly mark missing F2 evidence and block unsupported pairing conclusions. |
+| M01 | S1 | Decide which data to retain, transform or flag | Reuse B12 EDA, B13 spatial and B09 cleaning audits; modify only identified inconsistencies | Raw main table, six aux sources, constants/aliases/duplicates/derived missingness | Raw versus normalized definitions; no rent deletion versus existing fitting-only cleaning controls | Coverage, missingness, duplicates, constants, invalid ages and date/rent distributions | Data justification for preprocessing; M | P0 | Recheck train 150,000/test 50,000 and raw duplicates425/5,508; retain all test rows; joins cannot multiply rows. Document every rule/evidence; do not automatically delete unverified low rents. MRT claims require snapshot wording or X08. |
+| M02 | S2 | Establish classical references before adding histories | Reuse B12 `baseline_classical_models` and CatBoost C baseline; include recomputation in M00 | Y; seven C inputs: type/model/area/month index/month1–12/age/town; valid fit-only preprocessing | Mean, Ridge, RandomForest, LGB, Cat; saved RMSE 624.8788/493.7719/485.0928/487.2160 for the latter four, respectively | RMSE/MAE/bias, n and fixed hyperparameters/iterations | Linear/tree references using basic property/time/location inputs; M/Q | P0 | Confirm common C7/Y from `baseline_classical_models/results.json`; hash Cat C provenance; list same-Y mean separately. Do not attribute differences from later19/27-input configurations to one factor. Fill only missing cells. |
+| M03 | S3 | Test incremental value of histories and anniversary cohorts | Reuse B12 fixed ladder, not another 27-input model's hyperparameters | Y/J; nested19→27→47→62 schemas | Fixed LGB353 trees/15 leaves/lr.03/L2=10; GPU Cat535 iterations/depth6/lr.04/L2=10; four levels each | RMSE/MAE/bias per level, paired deltas and history coverage | Which information to retain and consistency across learners/windows; M | P0 | Align settings/queries for 16 existing fits; do not update validation histories. Compute feature deltas within tables only. Mixed gains are acceptable; every level need not win. |
+| M04 | S4 | Locate residual errors and distinguish coverage, drift and indistinguishable inputs | New offline diagnostics; reuse B12 predictions and B09 definitions, not B09 error values | M03 representative and F1 predictions on identical Y/J; month/type/24-/36-month support; actual-rent groups are post-hoc only | Representative62-input model versus F1; full data versus prespecified groups with training-derived thresholds | Group n/RMSE/bias/SSE share, monthly errors and within-identical-input diagnostics | Which errors warrant complex models; local conflicts do not prove a global error floor; M | P0 | Groups cover all rows or disclose overlap; reconcile SSE. Group inputs must be known at deployment, with actual-rent diagnostics separately labelled. No mandatory error-floor target. |
+| M05 | S5 | Test complex-model and blending increments | Reuse B12 common27-input table and round 10, completing metadata if needed; B04 gives F2 context | Separate comparison blocks: common27/Y and common62 neural models/Y/J; distinguish tree/network schemas | Block1: same27 trees versus EmbeddingMLP/FT. Block2: PLE128/3 versus PLR128/3, plus fixed round 9 blends with no addition/PLE/PLR | Standalone/full-blend RMSE/MAE/bias and monthly deltas | Architectural benefit under matched inputs versus blend complementarity; M/Q | P0 | Check block1 budgets against common-input PROTOCOL. Fix block2 grouping/regularization, changing only the added predictions. Mark capacity/epoch differences. No cross-block architecture attribution; retain PLR's annual deterioration. |
+| M06 | S6/F1 selection | Retain one of your three candidates | Reuse B11/B12 without new parameter search | Same Y/J predictions; separately verify identities of three50,000-row CSVs | History/macro/structure pipelines; separate macro information setting | Y/J RMSE, displayed scores and source/CSV hashes | F1 selection rationale; M/Q/R | P0 | Verify structural candidate is lowest on all three archived metrics. Retain other variants in X03; do not claim global or independent-test optimality. |
+| M07 | S5/S6/F2 identity | Establish the second final pipeline's actual generation chain | New provenance audit; reuse modified B05, with B04 background | 87-input schema, members/target/cutoff, training count and full-data CSV: [to be supplied] | Submission CSV versus reconstruction from actual members/settings; check whether F1 is a member by hashes | Rows/IDs, member count, formula, maximum reconstruction error and hashes | What F2 is and whether it contains F1; M/R | P0 | Obtain actual generator/entry point/settings, ordered87-column dictionary, checkpoint/seed/views and original CSV/hash. Reconstruction≤1e−8 SGD or explain output rounding tolerance. Filename alone cannot establish50/50 weights. |
+| M08 | S6/F1–F2 comparison | Compare final pipelines under one protocol | New offline pairing; reuse B11/B12; targeted refit only if B05 predictions are missing | Identical Y/J queries/labels and fitting cutoffs; differing features must be documented | Frozen F1 versus frozen F2; no reweighting with current query labels | Overall RMSE/MAE/bias, monthly/support-group deltas; separate displayed-score table | Which periods/support conditions favor each method; M | P0 | Align35,158/28,995 rows. Query labels never enter features, stopping or new weights. Disclose reused development periods and retain negative results. Do not compute gains between413 and 441 from different evaluations. |
+| M09 | S6/delivery gate | Minimal reproduction for each final method | Adapt B11 verification pattern and add independent F2 requirements | Original data/configuration/model/prediction inventories; independent F1/F2 manifests | Original CSV versus saved-model/component replay; source hashes before/after execution | CSV identity, row differences, finite predictions, unchanged inputs and complete environments/commands | Both results traceable and reproducible; R | P0 | Reuse verified F1 evidence; accept F2 independently. Each needs50,000 aligned IDs, finite positive values and explicit replay tolerance. Unreplayable work remains incomplete; distinguish CPU reconstruction from full retraining. |
 
-# B. appendix 分支规划表
+# B. Appendix branch plan
 
-| 实验ID | 补充目的 | 使用分支（复用/修改/新增） | 实验类型（消融/鲁棒性/敏感性/额外对比/失败案例/复现） | 数据与特征 | 模型与对照 | 关键指标 | 服务 main 的哪个判断 | 优先级 | 验收标准 |
+| Experiment ID | Supplementary purpose | Branch use (reuse/modify/new) | Experiment type (ablation/robustness/sensitivity/additional comparison/failure/reproduction) | Data and features | Models and controls | Key metrics | Main conclusion supported | Priority | Acceptance criteria |
 |---|---|---|---|---|---|---|---|---|---|
-| X01 | 审计特征冗余与组作用 | 复用B12的156次删列/组重训、31→27去冗余 | 消融 | 原三年度及L压力窗分开；27列逐列/组/联合删除 | 完整27列 vs 每次删除重训 | ΔRMSE、各折n、删后改善次数 | M03信息增量、M04瓶颈 | P1 | 不相加特征贡献；不作因果解释；不把删除某列当移除所有同源信息 |
-| X02 | 评估极端标签清洗的代价 | 复用B09/B10，不强行合并训练协议 | 敏感性/失败案例 | B09区间校准协议及B10 Q1，各自全验证保留 | 原始 vs 明显低价/最高价清洗；Q1 IQR对照分别列 | RMSE/MAE/偏差、删除数、尾部SSE | M01预处理政策、M04误差 | P1 | B09的105,837拟合与全量147,983分层；不转移指标；不将低租金存在等同标签错误 |
-| X03 | 保留你的另两版本与信息条件对照 | 复用B11/B12历史/宏观/结构归档 | 额外对比/消融 | Y/J及三份全量提交；macro_policy显式记录 | 415.86912历史、415.78232给定宏观 vs F1 | RMSE/MAE/偏差、显示分数、权重 | M06三选一、M08信息可比性 | P1 | 原版本与原权重齐；明确未来宏观是额外给定信息，不把其微小分差归因架构 |
-| X04 | 保留从覆盖与随机性到F1的对照 | 复用B12第8/9/10轮 | 消融/敏感性/失败案例 | 同Y/J；删36月字段、种子平均、覆盖分组及收缩 | 固定替换、全局权重、覆盖分组、增PLR | ΔRMSE、月度Δ、组n、权重约束 | M04支持差异、M05复杂模型增量 | P1 | 锁定vs后期选优分开；第9轮年度更好必须保留；不把所有组合变化算PLR收益 |
-| X05 | 记录其他时空/宏观假设 | 复用B01/B02/B07 | 额外对比/失败案例 | U月更新、F三折、L16月分表；RNN月序列和PCA空间面 | RNN/LSTM vs 匹配无latent；面模型 vs 同样本Cat；宏观 vs 同协议无宏观 | 原目标RMSE、折/训练量、月度偏差 | M03为何保留已有历史组，M05替代路线 | P2 | 不混U与固定原点；面诊断不是个体租金成绩；未运行配置不填失败分数 |
-| X06 | 记录不同神经/基础模型与预算 | 复用B04/B06/B09/B10及B12第6/7轮 | 额外对比/超参敏感性 | 每条记录附schema/上下文/查询/seed/view/预算 | 官方TabM vs 自定义style分别命名；TabPFN冻结/适配；ReLU/MLP等各自匹配基线 | RMSE/MAE、时间/内存（仅已有实测）、预算 | M02/M05模型选择 | P2 | 不做异输入统一架构排名；许可/外部数据标注；缺实测成本写[待补充] |
-| X07 | 检查两个终点对训练随机性的敏感性 | 新增匹配重复，先检查B11/B05模型可用性 | 鲁棒性 | Y/J；冻结全部配方与选择规则 | F1/F2，各42/43/44；F1内部四种子均值与外部重复区分 | 各seed RMSE、平均/标准差、配对方向 | M08比较是否稳定 | P1，预算不足不阻断点估计，只限制稳定性结论 | 原seed42对照齐；新增seed不能重选超参/权重配方；结果不一致则降级稳定性主张，不删差种子 |
-| X08 | 修正未来MRT及信息时间可用性 | 新增审计＋受控敏感性；B04审计/B12/B13修改后复用 | 敏感性/数据审计 | 同aux快照；原STATUS vs 经核实开通日/纯未来线路分离；相同Y/J | 原特征/新特征的固定模型；条件满足再重训F1/F2 | 受影响行、特征Δ、RMSE/偏差、来源版本 | M01合法含义、M08共同信息边界 | 审计P0；历史可用性主张则重训P0，否则快照情景重训P1 | 来源/规则可追溯；训练与推理同时改；纠正部分站不宣称修复所有设施；不得用只改推理输入的旧模型验收 |
-| X09 | 检查远期与共同月份边界 | 新增/修改后复用；B02/B04原L仅作背景 | 鲁棒性/敏感性 | 固定2023-12原点16月、同查询；全量2025-03共同月另审计 | F1/F2同原点；≤10月 vs 11–16月；全量≤2025-02 strict方案为可选独立对照 | 分跨度RMSE/偏差/n、strict与当前差 | M08适用跨度和部署边界 | P1 | 不把Y模型删前几月当新L实验；不把L与Y/J合并；预算只先做L，strict另预算 |
-| X10 | 审计公开目标重合，避免错误排名 | 复用B03 | 复现/数据来源审计 | 独立公开快照、train重建与测试匹配统计 | 公共候选均值重建 vs 已知训练目标；不是未来预测模型 | 覆盖/歧义/重建误差、假设条件 | M00/M08目标与信息范围 | P2 | 181.25标重建；173.41标估算；不进F1/F2成绩比较、训练或回填 |
-| X11 | 检验F2实际融合是否互补 | 新增配对误差分析；M07先确定成员 | 消融/统计诊断 | F2实际成员同原点预测；与F1身份对应 | 实际zch成员、纯TabPFN87、实际固定融合；必要时另列F1 | 配对RMSE、E[e·d]、误差相关、月/覆盖组Δ、权重 | M05/M08融合收益的机制判断 | 声称互补增量时P0；仅完整管线比较则P1 | 不在Y/J重新找最佳权重；不凭相关系数低证明增益；成员不含F1则不能作“给F1加TabPFN”归因 |
-| X12 | 补充配对差值的不确定性 | 新增，仅使用M08已冻结预测 | 统计诊断 | Y和J分别；月份移动区块，楼栋重采样为敏感性 | F2−F1；固定差值定义/组阈值 | RMSE差与描述性区间、月/楼栋簇数 | M08差异可靠程度 | P1 | 42、3,000次、3个月区块；记录算法；10/12个月有限、开发重复/选择不确定性未消除；区间跨0仍合格 |
-| X13 | 核验新环境与完整重训路径 | 复用B11检查模式；F2新增独立流程 | 复现 | 固定环境锁文件、数据/源/权重清单 | 原CSV vs CPU重组 vs 原配方重训，三个层级分开 | 重载差、版本/资源、数据未变、时间/内存实测 | M09复现完整度 | P1；若M09无任何重放可用则相应部分P0 | 不要求CUDA跨机器位级一致；容差预设并记录；不把依赖dry-run当训练成功；不覆盖原CSV |
+| X01 | Audit feature redundancy and group effects | Reuse B12's156 individual/group deletion refits and 31→27 deduplication | Ablation | Original three annual windows and separate L stress window; individual/group/joint deletions from 27 fields | Full27 inputs versus each deletion/refit | Delta RMSE, fold n and deletion-improvement counts | M03 information increments and M04 bottlenecks | P1 | Do not add contributions or infer causality; deleting one field does not remove every representation of its source information |
+| X02 | Evaluate the cost of cleaning extreme labels | Reuse B09/B10 without forcing their fitting protocols together | Sensitivity/failure analysis | B09 interval-calibration and B10 Q1 protocols, each retaining full validation | Raw versus obvious-low/highest-only cleaning; Q1 IQR controls separately | RMSE/MAE/bias, removed counts and tail SSE | M01 preprocessing and M04 errors | P1 | Separate B09's105,837-row fitting protocol from 147,983-row full refit; do not transfer metrics or equate low rents with wrong labels |
+| X03 | Retain your other two versions and information-setting controls | Reuse B11/B12 history/macro/structure archives | Additional comparison/ablation | Y/J and three full submissions; explicitly record macro_policy | History415.86912 and supplied-macro 415.78232 versus F1 | RMSE/MAE/bias, displayed scores and weights | M06 three-way selection and M08 information comparability | P1 | Preserve original variants/weights; future macro values are additional supplied information, not an architectural explanation for tiny score differences |
+| X04 | Retain coverage/randomness controls leading to F1 | Reuse B12 rounds8/9/10 | Ablation/sensitivity/failure analysis | Same Y/J; remove36-month fields, average seeds, group by support and shrink weights | Fixed replacement, global versus support-conditioned weights and PLR addition | Delta RMSE, monthly deltas, group n and weight constraints | M04 support differences and M05 complexity increments | P1 | Separate locked choices from later selection. Retain round 9's better annual score; do not attribute all combined changes to PLR. |
+| X05 | Record alternative spatiotemporal/macro hypotheses | Reuse B01/B02/B07 | Additional comparison/failure analysis | Separate U monthly-updated, F three-fold and L16-month tables; RNN monthly sequences and PCA rental surfaces | RNN/LSTM versus matched no-latent controls; surface model versus same-row Cat; macro versus same-protocol no-macro | Original-target RMSE, folds/fitting counts and monthly bias | M03 rationale for current histories and M05 alternatives | P2 | Do not mix U and fixed origins; surface diagnostics are not individual-rental scores. Unrun configurations have no failure scores. |
+| X06 | Record alternative neural/foundation models and budgets | Reuse B04/B06/B09/B10 and B12 rounds6/7 | Additional comparison/hyperparameter sensitivity | Record schema/context/queries/seed/views/budget for each result | Distinguish official TabM from custom style models, frozen/adapted TabPFN and matched ReLU/MLP baselines | RMSE/MAE, existing measured time/memory only, and budget | M02/M05 model selection | P2 | No architecture ranking across different inputs. Disclose licensing/external data; missing measured cost is [to be supplied]. |
+| X07 | Check training-randomness sensitivity of both final methods | New matched repeats after checking B11/B05 model availability | Robustness | Y/J; freeze all recipes and selection rules | F1/F2 seeds 42/43/44; distinguish F1's internal four-seed average from external repeats | Per-seed RMSE, mean/standard deviation and paired directions | Stability of M08 comparison | P1; insufficient budget limits stability claims without blocking point estimates | Retain original seed 42 controls. New seeds must not retune hyperparameters/weight recipes. Downgrade stability claims if inconsistent; do not discard poor seeds. |
+| X08 | Correct future-MRT and temporal information availability | New audit/controlled sensitivity; adapt B04 audit and B12/B13 | Sensitivity/data audit | Same aux snapshot; original STATUS versus verified opening dates/future-only lines; identical Y/J | Fixed models with original/new features; refit F1/F2 only when prerequisites hold | Affected rows, feature deltas, RMSE/bias and source version | M01 interpretation and M08 common information boundaries | Audit P0; retraining P0 for historical-availability claims, otherwise snapshot-scenario retraining P1 | Trace sources/rules; change training and inference together. Fixing some stations does not validate all facilities. Inference-only changes to old models cannot pass acceptance. |
+| X09 | Check long horizons and overlapping-month boundaries | New/adapted reuse; original B02/B04 L results are background only | Robustness/sensitivity | Fixed2023-12 origin over 16 months and identical queries; separately audit full-data March2025 overlap | F1/F2 same origin; ≤10 versus 11–16 months; optional strict full-data fit through 2025-02 as a separate control | Horizon-band RMSE/bias/n and strict-versus-current deltas | M08 validated horizons and deployment boundaries | P1 | Removing early months from a Y model is not a new L experiment. Do not pool L with Y/J. Budget L first; strict fitting needs a separate budget. |
+| X10 | Audit public-target overlap to avoid invalid rankings | Reuse B03 | Reproduction/data-source audit | Independent public snapshot, train reconstruction and test-match statistics | Public-candidate mean reconstruction versus known training targets; not a future forecasting model | Coverage, ambiguity, reconstruction error and assumptions | M00/M08 target and information scope | P2 | Label181.25 as reconstruction and 173.41 as an estimate; exclude from F1/F2 comparisons, fitting and target filling |
+| X11 | Test complementarity in F2's actual blend | New paired-error analysis after M07 establishes members | Ablation/statistical diagnostic | Same-origin predictions from actual F2 members; identify relation to F1 | Actual zch component, standalone TabPFN87 and fixed actual blend; list F1 separately if needed | Paired RMSE, E[e·d], error correlation, monthly/support deltas and weights | Mechanism of M05/M08 blending gains | P0 for complementarity claims; P1 for complete-pipeline comparisons only | Do not reoptimize Y/J weights. Low correlation alone does not prove improvement. If F1 is not a member, do not describe F2 as adding TabPFN to F1. |
+| X12 | Add uncertainty for paired differences | New analysis using only frozen M08 predictions | Statistical diagnostics | Y and J separately; moving month blocks, with building resampling as sensitivity | F2−F1; fixed difference definitions/group thresholds | RMSE deltas, descriptive intervals and month/building cluster counts | Reliability of M08 differences | P1 | Seed42,3,000 replicates, three-month blocks; record algorithm. Only10/12 months and repeated development selection remain limitations; an interval crossing0 still passes acceptance. |
+| X13 | Verify fresh environment and full retraining paths | Reuse B11 checking pattern; add independent F2 workflow | Reproduction | Fixed environment locks and data/source/weight manifests | Original CSV, CPU reconstruction and original-recipe retraining are three distinct levels | Reload errors, versions/resources, unchanged data and measured time/memory | M09 reproduction completeness | P1; relevant parts become P0 if M09 has no usable replay | No requirement for bitwise cross-machine CUDA identity; prespecify/document tolerances. A dependency dry run is not successful training. Preserve original CSVs. |
 
-# C. 分支决策表
+# C. Branch decisions
 
-| 已有分支/候选实验 | 决策（复用/修改后复用/新增/废弃） | 修改内容（如特征修改） | 放入 main 还是 appendix | 理由 | 对故事线判断的影响 |
+| Existing branch/candidate | Decision (reuse/adapt/new/discard) | Changes, including features | Main or appendix | Reason | Effect on the narrative |
 |---|---|---|---|---|---|
-| B01 `codex/rnn-lstm-market-features` @ cb167e9f | 复用 | 仅补统一协议标签；不将U改名固定原点 | appendix X05 | 保留RNN/LSTM与匹配树的负结果 | S5替代表示，不作为F1/F2必经步骤 |
-| B02 `experiment/dynamic-rental-surface-plan` @ 469e34e3 | 复用 | 分离面误差/逐行误差、匹配2022+训练子集 | appendix X05/X09背景 | 现成市场分解与长跨度证据 | S3/S5额外对照；不替代最终两模型的L实验 |
-| B03 `experiment/public-rent-lookup` @ b1429600 | 复用审计；废弃其“预测排名”用途 | 明确目标重建与173.41估算；不删源分支 | appendix X10 | 信息条件不同 | S1/S6排除无效对比 |
-| B04 `experiment/tabpfn` @ c0c987e2 | 修改后复用 | 按F2实际模型挑必要实现；补schema/view/context/许可；旧适配广表留附录 | main M07背景；appendix X06/X08/X11 | 不能用整个分支代替最终87列实现 | S5/S6区分基础模型与最终管线 |
-| B05 `experiment/tabpfn-anniversary-history` @ 1e69bb79 | 修改后复用 | 补推实际生成代码/87列/成员/CSV/验证；MRT更正如采用须新run | main M07/M08/M09；appendix X08/X11/X13 | 当前只证实合并与用户指定来源 | 决定F2是否可解释、可比、可复现；缺证则相应P0不通过 |
-| B06 `feature/neural-tabm-experiment` @ 21e4ec69 | 复用 | 自定义style命名、OOF选权偏差标签 | appendix X06 | 与官方TabM不同，少量改善不是独立测试 | S5额外模型与选择偏差对照 |
-| B07 `feature/temporal-auxiliary-analysis` @ c3c339eb | 复用 | 月更新经济与固定原点历史分开；主评估保留统一后端身份 | main M01/M03背景；appendix X03/X05 | 历史与时间边界依据充分 | S1/S3合法历史、S5宏观限制 |
-| B08 ?Git `main`???? @ b05b17f7 | 废弃其“有效性能实验”用途；保留Git历史 | 不覆盖、不虚构模型成绩；将未来物理main整合另列待定 | 不入main实验集；仅复现背景 | 代码骨架无实测性能 | 不能当S2训练基线 |
-| B09 `mlp-eda-ensemble` @ 322fa4c2 | 复用 | 冻结/校准/全量层级分表，低价规则与区间分开 | main M01/M04定义参考；appendix X02/X06 | 清洗/区间和大误差证据多 | S1/S4不能凭同输入冲突推全局下限 |
-| B10 `relu-rental-prediction` @ dde07705 | 复用 | 保留Q1、训练期IQR及数值库差异；缺原输出标注 | appendix X02/X06 | 短窗口不与Y/J混排 | S2/S5神经参照和嵌套验证 |
-| B11 `results/hdb-rental-final-ensemble` @ 6f97e107 | 复用；复现清单修改后复用 | 三选一定位F1；F2单独清单，不继承旧三CSV通过状态 | main M06/M09；appendix X03/X13 | F1证据齐、CPU重组与完整训练分层 | S6 F1选择与验收 |
-| B12 `zch-complete-proj` @ 048eca86 | 复用 | S2用已存C7传统基线；共同27输入的神经/树对照归S5；保留各表真实参数；MRT若修正另做X08 | main M00–M06/M08；appendix X01/X03/X04 | 区分基础传统尝试、历史信息增量与增强输入下的复杂模型比较 | S1–S6提供共同参照与F1；不把已加历史27列伪装成最初基线 |
-| B13 `ziyuan——spatialfeatures` @ 7caf2cb7 | 复用；MRT敏感性修改后复用 | 固定效应/匹配为关联；26列与27列区分；明确学校/站去重口径 | main M01；appendix X01/X08 | 支撑定义和混杂检查 | S1空间特征合法含义，S4解释边界 |
-| M00/M04/M07/M08/M09 | 新增审计/分析；M09复用F1接口 | 只在计划的新run目录输出，不改原始结果；详D卡 | main | 填补协议、F2身份和双方法验证缺口 | P0通过后两个终点才都获实验支持 |
-| X07/X08/X09/X11/X12/X13 | 新增或修改后复用；条件优先级见B/D | 仅缺失部分重算/重训；既有匹配产物可复用 | appendix | 稳定性、时间可用性、跨度、互补与复现 | 支撑关键判断；负结果不作废 |
-| 你的历史415.86912与宏观415.78232 | 复用，不保留最终名额 | X03保存完整配置、成绩和信息情景 | main M06紧凑选择；细节appendix | 避免把相近三个版本当三个终点 | 支撑F1选择，不抹去替代实验 |
+| B01 `codex/rnn-lstm-market-features` @ cb167e9f | Reuse | Add common protocol labels only; do not rename U as fixed-origin | appendix X05 | Retain matched RNN/LSTM/tree negative results | S5 alternative representations, not required F1/F2 stages |
+| B02 `experiment/dynamic-rental-surface-plan` @ 469e34e3 | Reuse | Separate surface and row errors; match the 2022+ fitting subset | Appendix X05/X09 background | Existing market-decomposition and long-horizon evidence | S3/S5 additional controls; not a replacement for L evaluation of both final methods |
+| B03 `experiment/public-rent-lookup` @ b1429600 | Reuse audit; discard its predictive-ranking role | Identify target reconstruction and 173.41 estimate; preserve the source branch | appendix X10 | Different information conditions | S1/S6 exclusion of invalid comparisons |
+| B04 `experiment/tabpfn` @ c0c987e2 | Adapt and reuse | Select implementations required by actual F2; complete schema/views/context/licensing. Keep broad old adaptation results in appendix. | Main M07 context; appendix X06/X08/X11 | A whole branch cannot substitute for the final 87-input implementation | S5/S6 distinguish foundation models from final pipelines |
+| B05 `experiment/tabpfn-anniversary-history` @ 1e69bb79 | Adapt and reuse | Supply actual generator/87 fields/members/CSV/validation; adopted MRT corrections require a new run | main M07/M08/M09; appendix X08/X11/X13 | Only integration and user-designated provenance are currently confirmed | Determines F2 interpretability, comparability and reproducibility; missing evidence fails corresponding P0 checks |
+| B06 `feature/neural-tabm-experiment` @ 21e4ec69 | Reuse | Name custom style models and label OOF weight-selection bias | appendix X06 | Differs from official TabM; small gains are not independent-test evidence | S5 additional models and selection-bias controls |
+| B07 `feature/temporal-auxiliary-analysis` @ c3c339eb | Reuse | Separate monthly-updated economics from fixed-origin histories; preserve a common backend identity for main evaluation | Main M01/M03 context; appendix X03/X05 | Sufficient evidence for historical/temporal boundaries | S1/S3 valid histories and S5 macro limits |
+| B08 ?Git `main`???? @ b05b17f7 | Discard as an effective-performance experiment; retain Git history | Do not overwrite/fabricate scores; list future physical main integration as pending | Exclude from main experiments; reproduction background only | Code scaffold without measured performance | Cannot serve as an S2 fitted baseline |
+| B09 `mlp-eda-ensemble` @ 322fa4c2 | Reuse | Separate frozen/calibration/full-data tables and distinguish low-rent rules from intervals | Main M01/M04 definition references; appendix X02/X06 | Extensive cleaning/interval and large-error evidence | S1/S4 identical-input conflicts do not prove a global floor |
+| B10 `relu-rental-prediction` @ dde07705 | Reuse | Retain Q1, fitting-only IQR and numerical-library differences; mark missing original outputs | appendix X02/X06 | Do not combine short windows with Y/J rankings | S2/S5 neural references and nested validation |
+| B11 `results/hdb-rental-final-ensemble` @ 6f97e107 | Reuse; adapt reproduction inventory | Select F1 from three candidates; F2 needs a separate manifest and does not inherit the old three-CSV acceptance | main M06/M09; appendix X03/X13 | Complete F1 evidence; distinguish CPU reconstruction from full training | S6 F1 selection and acceptance |
+| B12 `zch-complete-proj` @ 048eca86 | Reuse | S2 uses saved C7 classical baselines; common27 neural/tree comparisons belong to S5. Preserve actual settings; MRT corrections require X08. | main M00–M06/M08; appendix X01/X03/X04 | Distinguish initial classical trials, historical-information increments and complex-model comparisons with enhanced inputs | Common S1–S6 references and F1; do not present history-enhanced27 inputs as the initial baseline |
+| B13 `ziyuan——spatialfeatures` @ 7caf2cb7 | Reuse; adapt MRT sensitivity | Fixed effects/matching estimate associations; distinguish26/27 inputs and clarify school/station deduplication | main M01; appendix X01/X08 | Supports definitions and confounding checks | S1 interpretation of spatial inputs and S4 explanatory boundaries |
+| M00/M04/M07/M08/M09 | New audit/analysis; M09 reuses F1 interface | Write only to planned new run directories, preserving original results; see D cards | main | Fill protocol, F2 identity and two-method validation gaps | Both endpoints gain experimental support only after P0 acceptance |
+| X07/X08/X09/X11/X12/X13 | New or adapted reuse; conditional priorities in B/D | Recompute/refit missing parts only; reuse existing matched artifacts | appendix | Stability, temporal availability, horizons, complementarity and reproduction | Support key conclusions; negative results remain valid |
+| Your historical415.86912 and macro 415.78232 variants | Reuse without a final-method slot | X03 retains complete settings, scores and information scenarios | Compact main M06 selection; appendix details | Avoid treating three similar versions as three endpoints | Support F1 selection while preserving alternatives |
 
-# D. 新增实验要求卡
+# D. New experiment requirement cards
 
-| 通用执行规则 | 要求 |
+| Shared execution rules | Requirement |
 |---|---|
-| 卡片覆盖 | 以下覆盖所有新增/需要修改后重新评估的分析；纯复用且不改变输入/配置的项目不重复训练 |
-| 产物根目录 | `output/planning_validation/main/<run_id>/`；run_id按输入、代码与数据摘要生成；已实施离线部分，当前状态见[执行表](main-execution-status.md) |
-| 可执行性 | 输入、算法、控制变量和验收按卡执行；实施入口：`python -m analysis.main planned`；数值执行范围见[执行表](main-execution-status.md)。已有复用入口见[运行指南](../guides/running_experiments.md)，不得把旧报告生成器当只读检查而误触训练/覆盖 |
-| 预算单位 | 优先写新增基础模型拟合数、完整管线评估数、bootstrap次数；实际GPU小时、授权API费用、截止时间：[待补充]。有依赖/预算缺口先登记，不按猜测启动 |
-| 验收含义 | 合法、对齐、可复核即为实验完成；支持/不支持假设都保留；不以“必须降分”作为实验完成标准 |
-| 结果选择 | Y/J均是已查看开发期；不在该两窗新增搜索或根据其结果重定义主指标/组别/终点 |
+| Card coverage | Covers all new/modified analyses requiring reevaluation; unchanged reuse does not trigger redundant training |
+| Artifact root | `output/planning_validation/main/<run_id>/`; derive run_id from inputs/code/data digests. Offline parts are implemented; see [status](main-execution-status.md). |
+| Executability | Follow card inputs, algorithms, controls and acceptance. Entry point: `python -m analysis.main planned`; see [status](main-execution-status.md) for numerical scope and [running guide](../guides/running_experiments.md) for reused commands. Legacy report generators may train/overwrite and are not read-only checks. |
+| Budget units | Prefer counts of new base-model fits, full-pipeline evaluations and bootstrap replicates. Actual GPU hours, authorized API costs and deadline: [to be supplied]. Record missing dependencies/budget before execution rather than guessing. |
+| Meaning of acceptance | Valid, aligned, verifiable work is complete whether it supports or rejects the hypothesis; lower scores are not mandatory |
+| Result selection | Y/J are already examined development periods; do not add searches or redefine primary metrics/groups/endpoints based on them |
 
-### D-M00：统一协议与结果身份审计
+### D-M00: common protocol and result-identity audit
 
-| 字段 | 要求 |
+| Fields | Requirement |
 |---|---|
-| 实验ID/目的与假设/阶段 | M00；已有结果能否在明确条件下复用；S1与S6共用 |
-| 变量与控制变量 | 变量=结果来源/管线；控制=原始数据版本、Y/J查询ID/标签、SGD目标、指标实现；schema和信息政策必须逐条记录 |
-| 数据切分与随机种子/重复次数 | Y/J固定；全量CSV只查格式/身份；无随机性，审计1次，输入改变须新run |
-| 对照与评价指标 | CSV/保存预测vs原始标签独立重算；n、ID唯一性/对齐、SHA256、各指标差、时间违规清单；可先复用`analysis/verify_repository_review.py`的现有检查 |
-| 方法 | 为每条实验填写commit、data_hash、schema_hash、fit_end、query_range、target_transform、history_policy、macro_policy、seed、selection_stage、prediction_hash、score_source；按源行ID连接，不按文件行号猜对齐 |
-| 预期输出（表/图） | `protocol_registry.csv`、`alignment_checks.json`、`source_manifest.json`、`metric_recalculation.csv`；无必要新图 |
-| 验收标准 | ID/标签/日期错配0，重复预测ID0；全精度预测重算指标容差1e−6 SGD；只有舍入CSV时，容差上限=预测最末位半单位＋已报告指标末位半单位，先记录精度再验；缺配置结果标不可比并关联补证，不默认为一致 |
-| 优先级/预算 | P0；新增模型拟合0；一次扫描已有预测，数据/配置修订后只重验受影响单元；实际I/O时间[待补充] |
+| ID/purpose/hypothesis/stage | M00; whether existing results can be reused under explicit conditions; shared S1/S6 |
+| Variables and controls | Variable=result source/pipeline; controls=raw-data version, Y/J query IDs/labels, SGD target and metric implementation. Record schema/information policy per result. |
+| Splits, seeds and repeats | Fixed Y/J; full-data CSV format/identity only. Deterministic single audit; changed inputs require a new run. |
+| Controls and evaluation metrics | Independently recompute saved CSV/predictions against original labels; n, unique/aligned IDs, SHA256, metric differences and temporal violations. Existing `analysis/verify_repository_review.py` checks may be reused. |
+| Method | Record commit, data_hash, schema_hash, fit_end, query_range, target_transform, history_policy, macro_policy, seed, selection_stage, prediction_hash and score_source. Join by source-row ID rather than assuming row-order alignment. |
+| Expected tables/figures | `protocol_registry.csv`, `alignment_checks.json`, `source_manifest.json`, `metric_recalculation.csv`; no new figure required |
+| Acceptance criteria | Zero ID/label/date mismatches and duplicate prediction IDs. Full-precision metric tolerance1e−6 SGD. For rounded CSVs, bound tolerance by half the last prediction unit plus half the reported metric unit; record precision first. Mark missing configurations incomparable and link evidence gaps instead of assuming equivalence. |
+| Priority/budget | P0; zero new fits; one scan of saved predictions. Recheck affected cells only after data/config changes; actual I/O time [to be supplied]. |
 
-### D-M04：特征能力与剩余误差诊断
+### D-M04: feature capability and remaining-error diagnostics
 
-| 字段 | 要求 |
+| Fields | Requirement |
 |---|---|
-| 实验ID/目的与假设/阶段 | M04；检验误差是否集中在历史覆盖不足、特定月份/房型和未区分输入组；S4 |
-| 变量与控制变量 | 变量=固定模型/预先指定组；控制=相同Y/J行、原预测、目标/尺度；不改模型、阈值不从验证效果挑选 |
-| 数据切分与随机种子/重复次数 | Y/J分别；历史支持按原点可知24/36月存在性分4组；租金低/中/高按各拟合集q10/q90分界并标事后诊断；房型按统一类别；确定性重算1次 |
-| 对照与评价指标 | M03的62列代表模型与F1；全体vs各组；n、RMSE、MAE、bias、SSE占比、每月Δ |
-| 方法 | 从各原点已保存feature frame读取支持字段；按ID合并预测与原始标签；每组SSE汇总对账；相同输入组以**实际模型有序输入**分组，仅报告本地条件差异，不推断全局不可约误差 |
-| 预期输出（表/图） | `error_groups.csv`、`monthly_errors.csv`、`feature_support_audit.json`；月×模型误差图及覆盖组误差图各1张 |
-| 验收标准 | 完整Y/J行保留，非重叠组n/SSE加总匹配；重叠组明确标记；每组n<100标稀疏但保留表内值；不从其他模型搬用低租金25.7%等数值；推理不使用真实租金分组 |
-| 优先级/预算 | P0；新增模型拟合0；最多3套冻结预测×2窗；缺代表预测时先回收归档，重训另登记 |
+| ID/purpose/hypothesis/stage | M04; test whether errors concentrate in sparse histories, months/types or indistinguishable inputs; S4 |
+| Variables and controls | Variables=fixed model/prespecified groups; controls=identical Y/J rows, original predictions and target/scale. Do not change models or select thresholds by validation performance. |
+| Splits, seeds and repeats | Y/J separately; four24-/36-month support groups using origin-known availability. Mark low/mid/high rent groups using fitting q10/q90 as post-hoc; normalize flat types. One deterministic recomputation. |
+| Controls and evaluation metrics | M03 representative62-input model and F1; overall/group n, RMSE, MAE, bias, SSE share and monthly deltas |
+| Method | Read support from saved origin-specific feature frames; merge predictions/raw labels by ID and reconcile group SSE. Group identical inputs by **actual ordered model inputs**; describe local variation without inferring global irreducible error. |
+| Expected tables/figures | `error_groups.csv`, `monthly_errors.csv`, `feature_support_audit.json`; one month/model error plot and one support-group plot |
+| Acceptance criteria | Retain complete Y/J. Nonoverlapping n/SSE must reconcile; label overlaps and groups n<100 as sparse without omitting values. Do not copy another model's25.7% low-rent contribution. Inference cannot use actual-rent groups. |
+| Priority/budget | P0; zero fits; at most three frozen prediction sets×two windows. Recover missing representative archives before separately registering refits. |
 
-### D-M07：F2身份、schema与组合重建
+### D-M07: F2 identity, schema and reconstruction
 
-| 字段 | 要求 |
+| Fields | Requirement |
 |---|---|
-| 实验ID/目的与假设/阶段 | M07；确认截图413.19635的实际生成方法及其与F1关系；S5/S6 |
-| 变量与控制变量 | 变量=成员预测和已记录固定组合；控制=原CSV、原配置、Id及原权重；不能试权重去拟合截图分数 |
-| 数据切分与随机种子/重复次数 | 全量50,000查询用于身份核查；Y/J/内部选择信息先恢复；seed/view/checkpoint与实际训练行数[待补充]；确定性重建1次 |
-| 对照与评价指标 | 原CSV vs 实际公式重建；成员与F1/历史/宏观已归档预测按哈希比对；列数、n、ID、最大差、源哈希 |
-| 方法 | 取得实际生成commit/入口、87列完整有序字典及来源/时间规则、成员全精度预测、权重和目标基准；核查是否一次加回SGD基准；输出依赖图的边仅在对应成员ID确认后建立 |
-| 预期输出（表/图） | `f2_manifest.json`、`feature_dictionary_87.csv`、`component_registry.csv`、`reconstruction_checks.json`、确认后的组件依赖图 |
-| 验收标准 | 每个输入/权重有来源；50,000行对齐、有限正值；重建≤1e−8 SGD或按已证明CSV舍入容差；87只是列数不能代替字典；当前远程合并提交不足以通过此卡 |
-| 优先级/预算 | P0；先0训练恢复材料与CPU组合；模型/CSV缺失时停止数值验证并列[待补充]，不先启动新TabPFN训练 |
+| ID/purpose/hypothesis/stage | M07; establish the generator behind screenshot 413.19635 and its relation to F1; S5/S6 |
+| Variables and controls | Variables=member predictions/recorded fixed combination; controls=original CSV/settings/IDs/weights. Do not fit weights to the screenshot score. |
+| Splits, seeds and repeats | Use all 50,000 queries for identity checks; recover Y/J/inner-selection records first. Seeds/views/checkpoint and actual fitting count [to be supplied]; one deterministic reconstruction. |
+| Controls and evaluation metrics | Original CSV versus actual formula; compare member hashes with archived F1/history/macro predictions; columns, n, IDs, max difference, source hashes |
+| Method | Obtain generator commit/entry point, ordered87-input dictionary with provenance/cutoffs, full-precision members, weights and target baseline. Verify SGD baseline is added once. Draw dependency edges only after member identity is confirmed. |
+| Expected tables/figures | `f2_manifest.json`, `feature_dictionary_87.csv`, `component_registry.csv`, `reconstruction_checks.json`, confirmed component dependency graph |
+| Acceptance criteria | Trace every input/weight; 50,000 aligned finite positive predictions; reconstruction≤1e−8 SGD or demonstrated CSV-rounding tolerance. A count of 87 is not a dictionary. The current remote merge commit alone cannot pass this card. |
+| Priority/budget | P0; recover artifacts and reconstruct on CPU before training. Missing models/CSV stop numerical verification and remain [to be supplied]; do not launch new TabPFN training first. |
 
-### D-M08：两个最终管线同协议比较
+### D-M08: matched-protocol comparison of final pipelines
 
-| 字段 | 要求 |
+| Fields | Requirement |
 |---|---|
-| 实验ID/目的与假设/阶段 | M08；比较F1/F2在相同记录和信息条件下的误差及适用边界；S6 |
-| 变量与控制变量 | 变量=完整管线F1/F2；控制=原点、拟合集上限、查询ID/标签、指标、源数据政策；不同输入/预训练来源显式保留，不能作单架构归因 |
-| 数据切分与随机种子/重复次数 | Y/J全量；优先原始冻结seed预测；缺匹配原点时固定原配方seed42重建，epoch与组合规则按原点前的既定规则确定；每管线每窗1次 |
-| 对照与评价指标 | F1 vs F2；RMSE/MAE/bias、逐月、户型、历史支持组n与Δ；先定比较目标，不以胜负改规则 |
-| 方法 | 先M00+M07；同协议预测齐则CPU重算；不齐则只补缺失管线/原点，拟合期从头建立历史/词表/变换，不能用150k全量模型预测它已训练过的Y/J记录；F2内部选权不得读取相应Y/J标签 |
-| 预期输出（表/图） | `final_pair_metrics.csv`、`paired_predictions`、`monthly_pair.csv`、`protocol_checks.json`；月度差与覆盖组误差图 |
-| 验收标准 | Y35,158/J28,995全对齐、信息政策一致；模型/权重选择时间记录齐；所有正负差保留；两个窗不合并独立样本；不得把现有已看开发窗称新盲测 |
-| 优先级/预算 | P0；CPU重算优先；最多2管线×2窗=4管线评估，其中已有合格预测复用；实际模型拟合数/VRAM/GPU小时由M07清单决定：[待补充] |
+| ID/purpose/hypothesis/stage | M08; compare F1/F2 errors and applicability on identical records/information; S6 |
+| Variables and controls | Variable=complete F1/F2 pipeline; controls=origin, fitting cutoff, query IDs/labels, metrics, source-data policy. Document different inputs/pretraining; no architecture-only attribution. |
+| Splits, seeds and repeats | Complete Y/J; prefer original frozen-seed predictions. Rebuild missing origins with fixed original recipe/seed 42; epochs and combination rules follow pre-origin selection. One evaluation per pipeline/window. |
+| Controls and evaluation metrics | F1 versus F2; overall RMSE/MAE/bias and month/type/support-group n/deltas. Fix the comparison objective before seeing winners. |
+| Method | Complete M00+M07 first. Recompute matched predictions on CPU; otherwise refit only missing pipeline/origin, rebuilding histories/vocabularies/transforms within fitting data. Never backtest150k models on their fitting Y/J rows. F2 inner weights must exclude corresponding Y/J labels. |
+| Expected tables/figures | `final_pair_metrics.csv`, `paired_predictions`, `monthly_pair.csv`, `protocol_checks.json`; monthly differences and support-group plots |
+| Acceptance criteria | Fully align Y35,158/J28,995 and information policies; retain model/weight selection dates and positive/negative differences. Do not pool overlapping windows as independent data or call examined development periods blind tests. |
+| Priority/budget | P0; CPU first; at most two pipelines×two windows=four evaluations, reusing valid predictions. Actual fits/VRAM/GPU hours depend on M07 inventory: [to be supplied]. |
 
-### D-M09：两个终点的最小复现验收
+### D-M09: minimum reproduction acceptance for both endpoints
 
-| 字段 | 要求 |
+| Fields | Requirement |
 |---|---|
-| 实验ID/目的与假设/阶段 | M09；确认两个最终结果均有可执行来源和预测重放；S6 |
-| 变量与控制变量 | 变量=原CSV与重放模式；控制=数据/代码/权重/预处理/成员/Id；不覆盖原CSV |
-| 数据切分与随机种子/重复次数 | 全量50,000；固定原seed与已学权重；各管线重放1次；Y/J来源已由M00核验 |
-| 对照与评价指标 | 原始CSV vs 重组/重载预测；最大绝对差、ID/行/列检查、正值/有限值、运行前后输入哈希 |
-| 方法 | F1复用B11标准库verify与CPU重组证据，当前环境缺包记缺口；F2按M07建立独立manifest和入口；分开登记“组件重组”“加载模型推理”“从原数据重训”，不混算通过级别 |
-| 预期输出（表/图） | 每个终点`manifest.json`、`verification.json`、可执行命令/环境清单；无需为验收生成论文 |
-| 验收标准 | 两份各50,000条合法预测；重放容差按M07/原格式；代码/数据/产物身份明确；F1已通过不替代F2；完整重训能力不足另列X13而不夸大复现层级 |
-| 优先级/预算 | P0；先0新增训练；1次F1复核＋1次F2独立重放；缺重载资源和完整训练资源分别[待补充] |
+| ID/purpose/hypothesis/stage | M09; confirm executable provenance and prediction replay for both final results; S6 |
+| Variables and controls | Variables=original CSV/replay mode; controls=data, code, weights, preprocessing, members, IDs. Preserve original CSVs. |
+| Splits, seeds and repeats | All50,000 queries; original seeds/learned weights; one replay per pipeline. M00 verifies Y/J provenance. |
+| Controls and evaluation metrics | Original CSV versus reconstructed/reloaded predictions; maximum absolute difference, IDs/rows/columns, positive/finite values, input hashes before/after |
+| Method | Reuse B11 standard-library F1 verification/CPU reconstruction and record missing packages. Build independent F2 manifest/entry point from M07. Register component reconstruction, loaded-model inference and raw-data retraining as separate acceptance levels. |
+| Expected tables/figures | Per-endpoint `manifest.json`, `verification.json`, executable commands and environment inventory; no paper generation needed |
+| Acceptance criteria | Two valid50,000-row outputs; M07/original-format tolerances; clear code/data/artifact identities. F1 acceptance does not substitute for F2. Register incomplete full retraining under X13 without overstating reproduction. |
+| Priority/budget | P0; zero new fits initially; one F1 recheck and one independent F2 replay. Missing reload and training resources separately [to be supplied]. |
 
-### D-X07：匹配随机种子鲁棒性
+### D-X07: matched-seed robustness
 
-| 字段 | 要求 |
+| Fields | Requirement |
 |---|---|
-| 实验ID/目的与假设/阶段 | X07；差异是否依赖单个训练种子；服务S5/S6 |
-| 变量与控制变量 | 变量=外部训练seed；控制=schema、数据原点、超参/epoch选择规则、预算、融合算法；F1原四seed子成员均值不拆成外部重复 |
-| 数据切分与随机种子/重复次数 | Y/J；42/43/44共3个外部重复；合格42归档复用，仅补43/44；两方法是否共享预训练seed策略见M07 |
-| 对照与评价指标 | 同seed下F2−F1，各seedRMSE/MAE/bias与汇总均值/SD；不使用最低seed作为结果 |
-| 预期输出（表/图） | `seed_metrics.csv`、`fixed_recipe.json`、配对seed点图、每次训练资源记录 |
-| 验收标准 | 全部预定重复保留；失败记录原因；冻结选择规则，内部需要训练期选权则只按各原点前标签重拟合；不因换seed更换特征 |
-| 优先级/预算 | P1；最多2方法×2窗×3seed=12管线评估，若42已有合格则最多新增8；每管线可能含多个基础模型，实际预算[待补充]；先做预算预检再排期 |
+| ID/purpose/hypothesis/stage | X07; whether differences depend on one training seed; S5/S6 |
+| Variables and controls | Variable=external training seed; controls=schema, origin, hyperparameter/epoch rules, budget, blend algorithm. F1's internal four-seed average is not four external repeats. |
+| Splits, seeds and repeats | Y/J; three external repeats42/43/44. Reuse valid42 artifacts and add43/44 only. M07 determines shared-pretraining seed policy. |
+| Controls and evaluation metrics | Same-seed F2−F1; per-seed RMSE/MAE/bias and mean/SD. Do not report the best seed as the result. |
+| Expected tables/figures | `seed_metrics.csv`, `fixed_recipe.json`, paired-seed point plot and resource records per fit |
+| Acceptance criteria | Retain all planned repeats and failure reasons. Freeze selection rules; inner weight fitting uses only pre-origin labels. Do not change features for a new seed. |
+| Priority/budget | P1; at most two methods×two windows×three seeds=12 evaluations, at most eight new if42 is valid. Each pipeline may contain many models; actual budget [to be supplied]. Preflight before scheduling. |
 
-### D-X08：设施时间可用性审计与敏感性
+### D-X08: temporal amenity availability and sensitivity
 
-| 字段 | 要求 |
+| Fields | Requirement |
 |---|---|
-| 实验ID/目的与假设/阶段 | X08；现有MRT源状态是否导致错误历史可达性含义，修正是否改变比较；服务S1/S6 |
-| 变量与控制变量 | 变量=设施可用性政策；控制=坐标计算、去重/计数半径、原始CSV、Y/J、模型超参/固定轮数；规划设施与实际运营字段分离 |
-| 数据切分与随机种子/重复次数 | 原点前运营依据[待补充：日期来源/版本]；先审计全主表和查询，再Y/J；seed42单次受控敏感性 |
-| 对照与评价指标 | 原STATUS快照 vs 可验证日期/纯未来线路修正；字段受影响比例、特征差、RMSE/MAE/bias；不直接读取验证租金确定站点列表 |
-| 方法 | 复核B04已有34纯未来线路坐标标记；与B12/B13使用的去重口径对齐；缺完整日期时只声明部分修正；修改时重建所有受影响训练/查询特征、重训并另存版本；合格冻结原结果可复用 |
-| 预期输出（表/图） | `facility_source_manifest.json`、`availability_issues.csv`、`feature_deltas.csv`、`sensitivity_metrics.csv`；受影响样本表及简洁对照图 |
-| 验收标准 | 审计问题和采用的信息情景公开；不得声称不存在未来站影响而不给证据；若主张历史as-of有效，须在更正政策下验收两个终点；若仅使用所给快照，明确该含义并登记敏感性未完成 |
-| 优先级/预算 | 审计P0（0拟合）；修正重训为历史as-of主张的P0，否则P1；最多2政策×2方法×2窗=8管线评估，合格旧政策复用；基础模型数/小时[待补充] |
+| ID/purpose/hypothesis/stage | X08; whether MRT source status misrepresents historical accessibility and whether correction changes comparisons; S1/S6 |
+| Variables and controls | Variable=availability policy; controls=distance calculation, deduplication/count radii, raw CSV, Y/J, hyperparameters/fixed duration. Separate planned facilities from operating status. |
+| Splits, seeds and repeats | Pre-origin operation evidence [to be supplied: date source/version]. Audit full main/query tables before Y/J sensitivity; one controlled seed 42 run. |
+| Controls and evaluation metrics | Original STATUS versus verifiable-date/future-only-line correction; affected-field rates, feature deltas, RMSE/MAE/bias. Do not use validation rents to choose stations. |
+| Method | Review B04's34 future-only coordinates and reconcile B12/B13 deduplication. Incomplete dates permit partial-correction claims only. Rebuild all affected training/query features, refit and save a new version; reuse valid frozen controls. |
+| Expected tables/figures | `facility_source_manifest.json`, `availability_issues.csv`, `feature_deltas.csv`, `sensitivity_metrics.csv`; affected-row table and compact comparison chart |
+| Acceptance criteria | Disclose issues/information scenario. No unsupported claim that future stations have no effect. Historical-as-of claims require both endpoints under corrected policy; supplied-snapshot claims must explicitly mark unfinished sensitivity. |
+| Priority/budget | Audit P0(zero fits); corrected refits P0 for historical-as-of claims, otherwise P1. At most two policies×two methods×two windows=eight evaluations, reusing valid old-policy results. Fits/hours [to be supplied]. |
 
-### D-X09：匹配长跨度与共同月审计
+### D-X09: matched long horizons and overlapping-month audit
 
-| 字段 | 要求 |
+| Fields | Requirement |
 |---|---|
-| 实验ID/目的与假设/阶段 | X09；F1/F2在超过10个月时是否出现不同外推退化；服务S6 |
-| 变量与控制变量 | 变量=方法与预测跨度；控制=同一2023-12原点、拟合≤2023-11、预处理/历史/选择均原点前；不能套Y/J模型 |
-| 数据切分与随机种子/重复次数 | 2023-12—2025-03 16个月全查询；seed42各1次；无可用较早选择材料时标[待补充]，不回看长窗调参 |
-| 对照与评价指标 | F1 vs F2；全部/1–10/11–16月RMSE/MAE/bias/n；明确F2预测基准是否10月平台 |
-| 预期输出（表/图） | `long_horizon_metrics.csv`、`horizon_predictions`、`cutoff_checks.json`；月度/跨度图；380条共同月的信息边界审计表 |
-| 验收标准 | 相同长窗行/原点；没有使用后期保存权重倒推历史；不与Y/J合并pool；全量strict≤2025-02重训若需要须单独提出执行预算 |
-| 优先级/预算 | P1；先最多2方法×1原点=2管线评估；基础模型数与GPU小时[待补充]；不在本卡默认追加strict全量重训 |
+| ID/purpose/hypothesis/stage | X09; whether F1/F2 extrapolation degrades differently beyond ten months; S6 |
+| Variables and controls | Variables=method/horizon; controls=common2023-12 origin, fit through 2023-11, pre-origin preprocessing/history/selection. Do not reuse Y/J models. |
+| Splits, seeds and repeats | All queries over 2023-12 through 2025-03, sixteen months; one seed 42 run each. Missing earlier selection evidence remains [to be supplied]; do not tune against the long window. |
+| Controls and evaluation metrics | F1 versus F2; overall/1–10/11–16-month RMSE/MAE/bias/n; disclose any F2 month10 plateau |
+| Expected tables/figures | `long_horizon_metrics.csv`, `horizon_predictions`, `cutoff_checks.json`; monthly/horizon plots and information audit for 380 overlapping-month rows |
+| Acceptance criteria | Identical long-window rows/origin; no backward use of later weights; no pooling with Y/J. Strict full-data refits through 2025-02 require a separate execution budget. |
+| Priority/budget | P1; initially at most two methods×one origin=two evaluations; fits/GPU hours [to be supplied]. No automatic strict full-data refit under this card. |
 
-### D-X11：F2实际成员的互补与消融
+### D-X11: complementarity and ablation of actual F2 members
 
-| 字段 | 要求 |
+| Fields | Requirement |
 |---|---|
-| 实验ID/目的与假设/阶段 | X11；F2新增成员是否提供可观察的误差互补；服务S5/S6 |
-| 变量与控制变量 | 变量=实际已冻结成员集合/原权重组合；控制=同Y/J、目标还原、原点、实际原权重；F1是否属于集合由M07判定 |
-| 数据切分与随机种子/重复次数 | M08的匹配原点预测；确定性重算1次；如报告不确定性复用X12，不能重选权 |
-| 对照与评价指标 | 实际zch成员、纯TabPFN87、实际组合；RMSE/MAE/bias、误差相关和E[(p−y)(a−p)]；成员不止两路则按真实公式扩展 |
-| 方法 | 不预设p/a就是F1/TabPFN；从实际成员表确定；按原固定权重重建并核查MSE恒等式；删成员敏感性需预先声明剩余权重归一规则，不求Y/J最优权重 |
-| 预期输出（表/图） | `member_ablation.csv`、`error_moments.csv`、`blend_identity.json`；成员差与月度Δ图 |
-| 验收标准 | 重建与F2吻合；不能仅因相关低宣称改进；明确完整管线差异与新增成员效果；若F2不是融合，卡标不适用并记录原因，改用其实际方法必要消融 |
-| 优先级/预算 | 声称融合互补增益时P0，否则P1；已有成员预测时0训练，按实际k成员×2窗重算；缺成员模型先回收，不自动扩大搜索 |
+| ID/purpose/hypothesis/stage | X11; observable error complementarity from F2's added members; S5/S6 |
+| Variables and controls | Variables=frozen actual member set/original weights; controls=same Y/J, target restoration, origin, actual original weights. M07 determines whether F1 is a member. |
+| Splits, seeds and repeats | Matched M08 predictions; one deterministic recomputation. Reuse X12 for uncertainty without reselecting weights. |
+| Controls and evaluation metrics | Actual zch component, standalone TabPFN87, actual combination; RMSE/MAE/bias, error correlation, E[(p−y)(a−p)]. Extend to the real formula if more than two branches. |
+| Method | Identify p/a from actual members, not assumed F1/TabPFN. Reconstruct fixed weights and check the MSE identity. Prespecify renormalization for member deletion; do not optimize Y/J weights. |
+| Expected tables/figures | `member_ablation.csv`, `error_moments.csv`, `blend_identity.json`; member differences and monthly-delta plots |
+| Acceptance criteria | Match F2 reconstruction; low correlation alone is insufficient. Distinguish complete-pipeline and added-member effects. If F2 is not a blend, mark inapplicable with reasons and test actual-method ablations instead. |
+| Priority/budget | P0 for complementarity-gain claims, otherwise P1. Zero training with available predictions; recompute actual k members×two windows. Recover missing members before expanding search. |
 
-### D-X12：配对差值描述性区间
+### D-X12: descriptive intervals for paired differences
 
-| 字段 | 要求 |
+| Fields | Requirement |
 |---|---|
-| 实验ID/目的与假设/阶段 | X12；量化已冻结预测下的月份/楼栋敏感性；服务S6 |
-| 变量与控制变量 | 变量=重采样月份区块或楼栋；控制=同次抽样同时作用于F1/F2、相同配对记录和模型；不重训不选权 |
-| 数据切分与随机种子/重复次数 | Y/J分别；seed42；3,000次3个月非循环移动区块重采样：从起点0至T−3均匀有放回取区块，拼接至≥T个月再截到T；每个被抽月份保留其全部交易权重。楼栋按Town/Street/Block规范化键有放回抽取同数量簇，另做3,000次敏感性 |
-| 对照与评价指标 | 每次重算F2−F1的RMSE/MAE差；点估计、2.5%/97.5%分位区间、簇数和组n；Y/J分别计算，不当独立复样；簇抽样按抽取重数加权，不去重后丢失权重 |
-| 预期输出（表/图） | `paired_intervals.csv`、`resampling_spec.json`；差值区间图 |
-| 验收标准 | 区块内保留其全部交易与配对；不对逐行误差做独立bootstrap冒充时间不确定性；标记开发重复/模型选择/训练不确定性未包含；跨0不算失败 |
-| 优先级/预算 | P1；新增模型拟合0；2窗×2种方案×3,000次指标重算；先预聚合SSE/绝对误差以控制CPU内存 |
+| ID/purpose/hypothesis/stage | X12; quantify month/building sensitivity conditional on frozen predictions; S6 |
+| Variables and controls | Variable=resampled month blocks/buildings; controls=identical draws applied to paired F1/F2 records/models. No refitting/reweighting. |
+| Splits, seeds and repeats | Y/J separately; seed 42; 3,000 noncircular moving-block draws of three months. Sample starts uniformly with replacement from 0 throughT−3, concatenate at leastT months, then truncate toT; retain every transaction weight. Separately resample the same number of normalized Town/Street/Block clusters with replacement for 3,000 building-sensitivity replicates. |
+| Controls and evaluation metrics | Recompute F2−F1 RMSE/MAE differences per draw; point estimates, 2.5%/97.5% quantiles, cluster counts/group n. Analyze Y/J separately, not as independent replications. Preserve sampling multiplicities rather than deduplicating clusters. |
+| Expected tables/figures | `paired_intervals.csv`, `resampling_spec.json`; difference-interval plot |
+| Acceptance criteria | Retain all paired transactions inside blocks. Independent-row bootstrap is not temporal uncertainty. Disclose omitted development reuse, selection and fitting uncertainty. Crossing0 is not failure. |
+| Priority/budget | P1; zero fits; two windows×two schemes×3,000 metric recomputations. Preaggregate SSE/absolute errors to bound CPU memory. |
 
-### D-X13：独立环境与完整重训能力
+### D-X13: independent environments and full retraining
 
-| 字段 | 要求 |
+| Fields | Requirement |
 |---|---|
-| 实验ID/目的与假设/阶段 | X13；验证M09之外的安装/重载/完整重训层级；服务S6与R10% |
-| 变量与控制变量 | 变量=环境与运行模式；控制=数据、代码、配方、checkpoint来源、训练seed与已学权重；原结果只读 |
-| 数据切分与随机种子/重复次数 | 全量提交配方固定；CPU重组各1次；GPU完整重训如排期各1次；不重跑历轮搜索，不在原训练标签上报告独立验证分 |
-| 对照与评价指标 | 原CSV vs 新环境重组/模型重载/原配方重训；数据哈希、运行版本、预测差、时间/显存实测、失败原因 |
-| 预期输出（表/图） | 环境锁文件、`clean_environment_checks.json`、`checkpoint_replay.json`、`training_run.json`；两终点复现层级表 |
-| 验收标准 | CPU重组与完整训练分别给通过状态；许可/权重下载条件齐；GPU随机差容差预先定义；新训练CSV的Kaggle分数仍未知；不能从pip解析成功推导训练成功 |
-| 优先级/预算 | P1；若M09不能重放则必需部分P0；先CPU0训练，GPU最多2条最终全量管线；F1约15基础预测器、F2实际数[待补充]；当前GPU小时/VRAM[待补充] |
+| ID/purpose/hypothesis/stage | X13; installation, reload and full-training levels beyond M09; S6/R10% |
+| Variables and controls | Variables=environment/run mode; controls=data, code, recipe, checkpoint source, seeds, learned weights. Original results are read-only. |
+| Splits, seeds and repeats | Fix full-data recipes; one CPU reconstruction each; one full GPU refit each if scheduled. Do not rerun historical searches or report independent validation on fitting labels. |
+| Controls and evaluation metrics | Original CSV versus new-environment reconstruction/model reload/original-recipe refit; hashes, versions, prediction differences, measured time/VRAM and failure reasons |
+| Expected tables/figures | Environment locks, `clean_environment_checks.json`, `checkpoint_replay.json`, `training_run.json`; reproduction-level table for both endpoints |
+| Acceptance criteria | Separate CPU and full-training acceptance; document licensing/download prerequisites and prespecified GPU tolerances. New refits have unknown Kaggle scores. Successful pip resolution does not prove successful training. |
+| Priority/budget | P1; required M09 replay gaps become P0. Start with zero-fit CPU checks; at most two full final pipelines. F1 has about 15 predictors; F2 count and GPU hours/VRAM [to be supplied]. |
 
-# E. 故事线—分支映射表
+# E. Narrative-to-branch mapping
 
-| 故事线阶段 | main实验 | appendix实验 | 主要来源 | 该阶段达到什么条件才进入下一阶段 |
+| Narrative stage | Main experiments | Appendix experiments | Primary sources | Conditions for progressing to the next stage |
 |---|---|---|---|---|
-| S1 EDA与预处理 | M00、M01 | X02、X08审计、X10 | B12/B13/B09；B04时间问题 | 数据/查询身份、处理规则、历史截止及快照/as-of含义已冻结；未解风险标记且不作不支持的历史可用性主张 |
-| S2传统模型 | M02 | X06传统/简神经对照 | B12 C7传统基线；B10另窗 | 均值＋线性＋RandomForest＋两类提升树的同C7/同Y结果齐；无可靠增益也可转特征实验；27列复杂模型对照留S5 |
-| S3特征工程 | M03 | X01、X03、X05 | B12固定阶梯；B07/B13依据 | 四层嵌套输入在固定模型和Y/J的增量可核查；保留/拒绝组有证据，不强求所有层改善 |
-| S4能力评估/瓶颈 | M04 | X01、X02、X04 | B12原预测；B09只作诊断定义参考 | 同模型的月份/支持/尾部误差完成对账，提出可测的复杂模型目标；不能把局部不可区分输入当全局RMSE下限 |
-| S5复杂模型 | M05、M07方法身份部分 | X04、X05、X06、X11 | B12共同27列树/神经对照和第10轮；B04/B05 | 同输入复杂模型对照与选择过程已知；F2的实际特征、成员、目标和截止已确认；负结果保留，不编“复杂必胜” |
-| S6两个最终结果 | M06、M07、M08、M09 | X03、X07、X08、X09、X11、X12、X13 | B11/B12支撑F1；B05实际生成链支撑F2 | F1三选一、F2生成链、相同协议双方法结果与独立复现清单均通过；仅有两份截图不能验收完成 |
+| S1 EDA/preprocessing | M00, M01 | X02, X08 audit, X10 | B12/B13/B09; B04 temporal issues | Freeze data/query identities, processing rules, history cutoffs and snapshot/as-of meanings. Mark unresolved risks without unsupported historical-availability claims. |
+| S2 classical models | M02 | X06 classical/simple-neural controls | B12 C7 classical baselines; B10 separate window | Complete same-C7/Y mean, linear, RandomForest and two boosted-tree references. Features may be studied even without a reliable gain; 27-input complex models belong to S5. |
+| S3 feature engineering | M03 | X01, X03, X05 | B12 fixed ladder; B07/B13 rationale | Verify four nested-input increments with fixed learners on Y/J; justify retained/rejected groups without requiring every level to improve |
+| S4 capability/bottlenecks | M04 | X01, X02, X04 | B12 original predictions; B09 diagnostic definitions only | Reconcile same-model month/support/tail errors and propose testable complex-model objectives. Local indistinguishability is not a global RMSE floor. |
+| S5 complex models | M05 and M07 method identity | X04, X05, X06, X11 | B12 common27-input tree/neural controls and round 10; B04/B05 | Document matched-input controls/selection and confirm F2 features, members, target, cutoff. Retain negative results; do not assume complex models must win. |
+| S6 two final results | M06, M07, M08, M09 | X03, X07, X08, X09, X11, X12, X13 | B11/B12 support F1; B05 actual generator supports F2 | Accept F1 selection, F2 generation, matched two-method results and independent reproduction inventories. Two screenshots alone are insufficient. |
 
-# F. 缺口与待补充清单
+# F. Remaining gaps
 
-| 类别/缺口 | 当前已有材料 | [待补充]项 | 影响的实验/优先级 | 可由谁补齐/处理方式 |
+| Category/gap | Available evidence | [To be supplied] | Experiments/priority affected | Provider/resolution |
 |---|---|---|---|---|
-| F2生成来源 | 用户截图413.19635；指定B05；当前冻结头1e69bb7为合并 | [待补充] 实际生成commit、脚本、完整配置与运行记录 | M07/M08/M09，P0 | 生成者提供/推送；取得后可直接审计 |
-| F2 87列与成员 | B04已知77/84/89列；不能代替87 | [待补充] 有序87列字典、来源、as-of、类别/缺失策略、checkpoint/adapter/view/seed、实际训练/context量、融合公式/成员ID | M07、X08/X11，P0 | 生成者提供，仓库材料匹配核对；不可按文件名猜 |
-| F2数值文件 | 只有截图，无已核查CSV和成员预测 | [待补充] 原50,000行CSV、SHA256、全精度成员预测、Y/J对应逐行预测/标签ID | M00/M07/M08/M09，P0 | 生成者提供现成产物；若缺Y/J，规划定向重训 |
-| F1/F2关系 | F1完整包齐；B05合并两代码侧 | [待补充] F2是否含F1或其他zch版本的预测身份 | M07/M08/X11，P0 | 哈希与实际配置核查；不得把Git合并当模型融合 |
-| 预测情景 | 所给aux含未来宏观、静态设施；最终F1不含宏观支线 | [待补充] 比赛所给快照情景还是严格历史部署情景；F2外部数据/宏观政策 | M00/M01/X08，P0 | 团队确认情景；必要规则文件由课程材料补充 |
-| MRT历史来源 | B04已有纯未来线路问题审计；共享管线按STATUS过滤 | [待补充] 可核实开通日期/版本，当前先修正范围，学校/商场是否有历史日期 | X08审计P0；修正条件P0/P1 | 可按已有源审计；完整历史日期缺口需获准数据源 |
-| 统一验证与选择记录 | Y/J和F1已有；大多数期已用于开发 | [待补充] F2原点前模型/epoch/权重规则与相同查询行；新真正未查看数据是否存在 | M00/M08，P0；独立泛化后续 | 配方回收与审计；不能把已看月份重新称盲测 |
-| 环境与资源 | 历史设备/环境记录分散；F1 CPU包可用 | [待补充] 当前CPU/RAM/GPU/VRAM、可用GPU小时、并发限制、可用checkpoint与许可/API费用 | X07/X08/X09/X13及M08缺预测重训 | 团队/运行环境确认；规划期间不安装不训练 |
-| 实际执行分支 | 已有13分支及快照 | [待补充] main/appendix物理整合分支名、review/merge政策、代码负责人 | C表执行前；不阻碍本规划 | 团队确认；当前不创建/覆盖分支 |
-| 交付时间与团队信息 | Skill只有占位deadline | [待补充] 真实deadline、队名/姓名/学号/分工；官方模板/细化扣分表若另有 | 排期与未来交付；本阶段不写文稿 | 用户/课程材料提供；不能由Git作者映射学号 |
-| 统计与成本材料 | 部分旧路线已有时间/种子/区间，协议不同 | [待补充] F1/F2匹配训练重复、同硬件成本、配对区间 | X07/X12/X13，P1 | 新分析或匹配重复；预算不足只限制相应结论 |
+| F2 generation provenance | User screenshot 413.19635; designated B05; current frozen head1e69bb7 is a merge | [To be supplied] Actual generator commit, script, complete settings and run record | M07/M08/M09, P0 | Generator author supplies/pushes artifacts for direct audit |
+| F2's87 inputs and members | B04 documents77/84/89 inputs, not a substitute for 87 | [To be supplied] Ordered87-field dictionary, provenance, as-of/category/missing policy, checkpoint/adapter/views/seed, actual fitting/context size, formula/member IDs | M07, X08/X11, P0 | Generator supplies; match repository evidence rather than guessing from filenames |
+| F2 numerical files | Screenshot only; no verified CSV/member predictions | [To be supplied] Original50,000-row CSV, SHA256, full-precision members, Y/J row predictions and label IDs | M00/M07/M08/M09, P0 | Obtain existing artifacts; plan targeted Y/J refits if absent |
+| F1/F2 relationship | Complete F1 package; B05 merges both code sides | [To be supplied] Whether F2 contains F1 or another zch variant's predictions | M07/M08/X11, P0 | Verify hashes/settings; Git integration is not model blending |
+| Prediction scenario | Supplied aux includes future macro/static facilities; final F1 excludes the macro branch | [To be supplied] Competition-snapshot versus strict historical deployment setting; F2 external-data/macro policy | M00/M01/X08, P0 | Team confirms scenario; course materials supply any required rules |
+| Historical MRT sources | B04 audits future-only lines; shared pipeline filters STATUS | [To be supplied] Verifiable opening dates/versions, initial correction scope, and historical school/mall dates | X08 audit P0; correction conditional P0/P1 | Audit existing sources; complete historical dates require an authorized source |
+| Common validation and selection records | Y/J and F1 available; most periods already used in development | [To be supplied] F2 pre-origin model/epoch/weight rules and identical queries; availability of genuinely untouched data | M00/M08 P0; independent generalization later | Recover/audit recipes; do not relabel examined months blind tests |
+| Environments/resources | Historical device/environment records are scattered; F1 CPU package works | [To be supplied] Current CPU/RAM/GPU/VRAM, GPU hours, concurrency, checkpoints, licenses/API costs | X07/X08/X09/X13 and M08 missing-prediction refits | Team/runtime confirmation; planning performs no installation/training |
+| Execution branches | Existing13 branches/snapshots | [To be supplied] Physical main/appendix integration branch names, review/merge policy and owners | Required before table C execution; does not block this plan | Team confirmation; no branch creation/overwrite now |
+| Deadline and team details | Skill contains a placeholder deadline only | [To be supplied] Actual deadline, team/member names, student IDs, workload and any official template/detailed deductions | Scheduling/eventual delivery; no manuscript in this stage | User/course materials; Git authors do not identify student IDs |
+| Statistical/cost evidence | Some old routes have time/seed/interval records under different protocols | [To be supplied] Matched F1/F2 training repeats, same-hardware costs and paired intervals | X07/X12/X13, P1 | New analysis/matched repeats; limited budget narrows corresponding claims |
 
-# G. 优先级与执行建议
+# G. Priorities and execution advice
 
-| 优先级/执行顺序 | 实验 | 依赖关系 | 执行建议 | 完成判据/最小交付 |
+| Priority/order | Experiment | Dependencies | Execution advice | Completion/minimum delivery |
 |---|---|---|---|---|
-| P0-1 身份与政策 | M00、M01、X08审计；并行回收M07材料 | 已有数据/13分支；F2生成者材料 | 先做0训练的注册、对齐、EDA和时间问题审计；确认快照/as-of情景 | 协议注册表/输入与源版本齐；F2缺口不隐藏；时间风险处置规则明确 |
-| P0-2 最大限度复用 | M02、M03、M05、M06；M04重算 | M00/M01；现成冻结指标/预测 | 不重跑已对齐传统模型、16次特征阶梯和F1三选一；只补缺元数据或诊断 | 同输入模型表、固定阶梯、同模型误差表、F1选择清单；所有表有匹配对照 |
-| P0-3 固定F2实现 | M07完成；X11若主张融合互补 | 生成代码/schema/CSV/成员 | 优先恢复成员与CPU重建；不先展开新模型或权重搜索 | 87列/成员/公式/目标还原/训练量/原点/文件身份可核查；明确与F1关系 |
-| P0-4 双方法评估 | M08；若严格历史as-of则X08修正评估 | M00+M07；F1/F2同原点预测 | 已有合格预测直接重算；缺匹配原点才按卡定向重训；当前无实际GPU预算则先列精确待执行数 | F1/F2同Y/J全量误差、月/覆盖组对照；信息政策齐；不能用截图替代 |
-| P0-5 独立终点验收 | M09；X13中必须的重放部分 | M07/M08及可用环境/权重 | 每个终点单独manifest；旧F1检查不代替F2；CPU重组/模型重载/训练层级分开 | 两个50,000行结果可追溯并重放，源数据不变；独立泛化与完整重训缺口照实保留 |
-| P1-1 低成本可信度补充 | X01/X02/X03/X04复用，X11若非P0、X12 | 相应已对齐归档；X12依赖M08 | 先处理0新增训练的消融、未选版本、选择偏差和配对区间 | 关键判断有正/负对照，区间与协议限制齐；PDF篇幅不在此阶段展开 |
-| P1-2 有预算的强核查 | X07、X08修正（若非P0）、X09、X13完整重训 | F2实现已固定、环境和GPU时数已确认 | 按操作数排期，优先对主结论敏感项；只补缺失重复/原点 | 稳定性、远期边界、设施敏感性、复现层级有独立登记；失败与负结果保留 |
-| P2 探索归档 | X05/X06/X10中不影响主线的详细材料 | 已有源报告/指标 | 按主题复用，不重启大搜索；未跑/损坏/不可比条目独立标记 | 13分支去重完整覆盖，可查原始文件，目标重建不进入预测排名 |
+| P0-1 Identity and policy | M00, M01, X08 audit; recover M07 concurrently | Existing data/13 branches; F2 generator artifacts | Start with zero-fit registration, alignment, EDA and temporal audit; confirm snapshot/as-of setting | Complete protocol/input/source records; expose F2 gaps and temporal-risk rules |
+| P0-2 Maximize reuse | M02, M03, M05, M06; recompute M04 | M00/M01; existing frozen metrics/predictions | Do not rerun aligned classical models, 16 ladder fits or F1 selection; complete missing metadata/diagnostics only | Matched-input table, fixed ladder, same-model errors, F1 selection inventory; controls in every table |
+| P0-3 Fix the F2 implementation | Complete M07; X11 if claiming complementarity | Generator/schema/CSV/members | Recover members and reconstruct on CPU before new models or weight searches | Verify87 fields, members, formula, target restoration, training counts, origins, file identities and F1 relationship |
+| P0-4 Two-method evaluation | M08; X08 correction/evaluation for strict-as-of claims | M00+M07; same-origin F1/F2 predictions | Recompute valid predictions; targeted recipe refits only for missing origins. Without a GPU budget, list precise pending operations first. | Complete Y/J overall/month/support comparisons and information policies; screenshots cannot substitute |
+| P0-5 Independent endpoint acceptance | M09; required X13 replay | M07/M08, available environments/weights | Separate manifest per endpoint; old F1 checks do not cover F2. Distinguish CPU reconstruction, model reload and training. | Two traceable, replayable50,000-row outputs with unchanged sources; honestly retain independent-generalization/full-refit gaps |
+| P1-1 Low-cost confidence checks | Reuse X01/X02/X03/X04; X11 if not P0, and X12 | Relevant aligned archives; X12 needs M08 | First handle zero-fit ablations, unselected variants, selection bias and paired intervals | Positive/negative controls, intervals and protocol limitations support key conclusions; PDF length is outside this stage |
+| P1-2 Budgeted stronger checks | X07, X08 correction if not P0, X09, X13 full refits | Fixed F2 implementation, confirmed environment/GPU hours | Schedule operation counts, prioritizing main-conclusion sensitivities; add only missing repeats/origins | Separately register stability, long horizons, amenity sensitivity and reproduction levels; retain failures/negative results |
+| P2 Exploratory archive | Nonessential X05/X06/X10 details | Existing source reports/metrics | Reuse by topic without restarting broad searches; separately mark unrun, broken or incomparable entries | Deduplicate and cover13 branches with inspectable originals; target reconstruction stays outside prediction rankings |
 
-| 最小可交付版本/验收门槛 | 必须包含 | 不足时的状态 |
+| Minimum deliverable/acceptance gate | Required content | Status if incomplete |
 |---|---|---|
-| **main P0** | M00–M09完整验收；X08时间审计及所选情景要求的修正；若依赖融合互补解释，则X11也为P0；F1/F2各有对照、指标、来源和复现清单 | F2仅有截图或缺同协议预测时，标“F1已支持，F2身份/评估/复现[待补充]”，不能宣布两个最终结果均获支持 |
-| **appendix P0/P1** | X08等条件P0，以及X01–X04、X11/X12等关键对照；预算允许再完成X07/X09/X13的匹配训练/外推 | 缺训练重复/长窗/完整重训时，对应稳定性、远期和重训结论标[待补充]；不影响已完成确定性比较，但不得扩大主张 |
-| **最终目标** | **main的P0完成后，应能支撑两个最终结果；appendix的P0/P1应能支撑main关键判断的可信度** | 阶段是否通过由证据与验收判断，不以复杂模型必胜、F2必降分或任何特定RMSE为条件 |
+| **main P0** | Complete M00–M09, X08 audit and scenario-required corrections; X11 is P0 if complementarity is essential. F1/F2 each require controls, metrics, provenance and reproduction inventories. | If F2 has only a screenshot or lacks matched predictions, state "F1 supported; F2 identity/evaluation/reproduction [to be supplied]" rather than claiming both final methods supported |
+| **appendix P0/P1** | Conditional P0 such as X08 and key X01–X04/X11/X12 controls; budget permitting, matched X07/X09/X13 training/extrapolation | Missing repeats, long windows or full refits leave corresponding claims [to be supplied]. Deterministic comparisons remain valid without extending their scope. |
+| **Final objective** | **Main P0 should support both final results; appendix P0/P1 should support the credibility of main conclusions** | Evidence and acceptance determine progression, not mandatory complex-model/F2 wins or a particular RMSE |
 
 ## TabPFN source integration update
 

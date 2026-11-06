@@ -1,31 +1,33 @@
-# 逐列与成组重训消融
+[Chinese version](FEATURE_ABLATION.zh-CN.md)
 
-本轮补足“每个变量对RMSE的实际增量”证据，使用默认27列、固定LightGBM参数。
-27个单列删除、8个组删除、3个联合删除及完整基线，共39配置×4窗=156次拟合。
-比较同一折的相同拟合/验证行；三个非重叠年度窗合并，16个月重叠压力窗单列。
+# Single-field/group deletion and refitting ablations
+
+This round measures actual RMSE increments with the default27 inputs/fixed LightGBM.
+Full baseline, 27 single, eight group and three joint deletions: 39 configurations×four windows=156 fits.
+Match fitting/validation rows per fold; pool three disjoint annual windows and list overlapping16-month stress separately.
 
 ```text
-ΔRMSE = 删除指定列并重训的RMSE − 完整27列模型RMSE
+Delta RMSE = deleted-field refit RMSE − full27-input RMSE
 ```
 
-正值表示删除后变差。删除之后保留的相关输入和派生历史仍可替代部分信息，
-不能把单列贡献相加，也不能解释成因果效应或彻底删除原始源信息。
+Positive means worse after deletion; retained correlated features/derived histories can replace information,
+so contributions are not additive, causal or complete source removal.
 
-| 文件 | 内容 |
+| File | Content |
 | --- | --- |
-| `feature_effects.csv` | 每个删除方案的三窗汇总、最新窗、压力窗变化和稳定性 |
-| `fold_effects.csv` | 全部156次拟合的参数口径、样本数、RMSE/MAE/偏差及配对差值 |
-| `monthly_paired_sse.csv` | 重采样使用的各月样本量与基线/候选平方误差和 |
-| `error_diagnostics.csv` | 按月份、预测跨度、Town、户型、历史支持量/陈旧度、真实租金段诊断 |
-| `group_deletion.png` | 成组汇总图；时间+全部历史的联合删除因量级大而在标题单独列出 |
-| `results.json` | 完整字段、参数、时间窗、源文件哈希、环境版本及局限 |
+| `feature_effects.csv` | Three-window, latest/stress changes and stability for every deletion |
+| `fold_effects.csv` | Settings, counts, RMSE/MAE/bias and paired differences for 156 fits |
+| `monthly_paired_sse.csv` | Monthly counts and baseline/candidate SSE for resampling |
+| `error_diagnostics.csv` | Diagnostics by month, horizon, town, type, history support/staleness and true-rent band |
+| `group_deletion.png` | Group summary plot; large time+all-history joint deletion listed separately in title |
+| `results.json` | Complete fields, settings, windows, source hashes, versions and limits |
 
-区间来自固定预测的配对3个月循环连续区块重采样（2000次），仅作月份敏感性分析。
-不包含训练随机性、未来市场不确定性或多重比较修正。此前已查看这些标签，
-所以本轮仍是探索性解释与选择证据，不是独立测试。默认方案不因单列排名自动改变。
+Intervals use 2000 paired circular three-month contiguous-block draws of fixed predictions, describing month sensitivity only.
+They omit fitting randomness, future-market uncertainty and multiple comparisons. Labels were previously inspected,
+so results remain exploratory interpretation/selection, not independent testing. Rankings do not automatically change the default.
 
 ```powershell
 python -m analysis.main feature-evidence
 ```
 
-完整叙述见 [当前项目报告](BASELINE_27_FEATURES.md)。
+Full narrative:[current project report](BASELINE_27_FEATURES.md).

@@ -1,71 +1,73 @@
-# 本地维护与目录变更
+[Chinese version](README.zh-CN.md)
 
-这里只保留清理规则和变更摘要。机器核查JSON统一放在`output/checks/records/`，不与使用说明混排。
+# Local maintenance and directory changes
 
-## 六项后续优化
+This holds cleanup rules and change summaries only. Machine-check JSON goes to `output/checks/records/`, separate from usage docs.
 
-缓存说明、审核导航、数据说明、测试说明、只读资源预检和当前模型清单已按顺序完成。
-每项之后均运行完整测试、7项既有结果核查及CLI检查；测试由122项增至133项。
-六种预检配置通过，1,698份既有数据／模型／提交文件最终SHA-256不变。
-具体范围和逐步记录见[六项检查入口](../../output/checks/runs/directory_polish_20261105/README.md)。
+## Six follow-up improvements
 
-## 当前output布局
+Cache guidance, review navigation, data/testing guides, read-only preflight and current model catalog were completed sequentially.
+Each step ran all tests, seven existing-result checks and CLI checks; tests increased from 122 to 133.
+All six preflight profiles pass; final SHA-256 values for 1,698 existing data/model/submission files are unchanged.
+Scope and step records: [six-check entry](../../output/checks/runs/directory_polish_20261105/README.md).
 
-运行产物按提交、模型、实验明细、核查记录和备份分为五类。
-提交区再分为 `final/`、`candidates/`、`components/` 和 `baselines/`；
-基础管线后续默认输出也写入对应分类。
-本次移动10组目录、184个已有文件，没有删除产物。
-121项原有测试和1项默认输出路径测试通过，最终50,000行融合与原CSV的最大差异约为9.1×10⁻¹³。
-查看[output导航](../../output/README.md)和[本次核查记录](../../output/checks/records/2026-11-05/output_layout.json)。
+## Current output layout
 
-## 当前环境与端到端审核
+Runtime artifacts are grouped into submissions, models, detailed experiments, checks and backups.
+Submission categories are `final/`, `candidates/`, `components/` and `baselines/`;
+baseline-pipeline defaults also use these categories.
+Ten directory groups and 184 existing files were moved, with no artifacts deleted.
+All121 existing tests and one default-output-path test pass; the final 50,000-row blend differs from the original CSV by at most about 9.1×10⁻¹³.
+See [output navigation](../../output/README.md) and [check records](../../output/checks/records/2026-11-05/output_layout.json).
 
-核心依赖已合并到根`environment.yml`，另保留两份可选扩展；没有安装或升级现有环境。
-本机主流程、15个最终模型重载与融合已实际跑通，121项测试通过。
-完整范围、路径修复和新环境验证的边界见[环境与运行审核](../../output/checks/runs/environment_merge_20261105/AUDIT.md)。
+## Current environment and end-to-end audit
 
-## 已完成的清理与核查
+Core dependencies are consolidated in root `environment.yml` with two optional extensions; the installed environment was not changed.
+Local main workflow, 15 final-model reloads/blending and 121 tests pass.
+Scope, path fixes and fresh-environment limitations: [environment/run audit](../../output/checks/runs/environment_merge_20261105/AUDIT.md).
 
-用户确认的27个临时目标已删除，共4,192个文件，约150.77MiB。
-规则和具体对象见[清理判断规则](#清理判断规则)，实际结果见[执行核查](../../output/checks/records/2026-11-05/cleanup_result_2026-11-05.json)。
-119项测试通过；最终PLR-FT重现全部50,000行预测，最大差异为0。
-前次文档与依赖目录调整的检查见[项目完整性核查](../../output/checks/records/2026-11-05/project_integrity.json)：
-421个本地链接有效，七个依赖入口均能解析，包版本约束保持不变。
+## Completed cleanup and checks
 
-本次经用户审核的精简已完成，`docs/`从15份减至11份；依赖文件保持不变。
-最新链接与运行检查见[文档精简核查](../../output/checks/records/2026-11-05/docs_pruning_execution.json)。
+The27 user-approved temporary targets were deleted: 4,192 files, about 150.77MiB.
+Rules and targets: [cleanup criteria](#cleanup-criteria); results: [execution check](../../output/checks/records/2026-11-05/cleanup_result_2026-11-05.json).
+All119 tests pass; final PLR-FT reproduces all 50,000 predictions with maximum difference0.
+Earlier documentation/dependency restructuring: [project integrity check](../../output/checks/records/2026-11-05/project_integrity.json):
+421 valid local links; seven dependency entries parse; version constraints unchanged.
 
-## 2026-11-05：按阅读和运行用途重组
+User-reviewed pruning is complete, reducing `docs/` from 15 files to 11; dependency files unchanged.
+Latest link/run checks: [documentation pruning](../../output/checks/records/2026-11-05/docs_pruning_execution.json).
 
-- 阅读报告分为最终结论、特征工程、模型对比与优化历程；数据EDA和解释性研究继续单列。
-- 原逐次实验记录整体移到 `output/experiment_runs/`，保留所有配置与负结果。
-- 模型、候选提交和轮次目录使用有含义的名字。
-- 86个实验模块移入六类代码目录；旧模块命令与已保存模型的导入名继续可用。
-- 基础阶段正文移到运行记录区，由阅读材料更新器提取；机器维护记录移到`output/checks/records/`。
-- 原始数据、预测CSV及模型二进制以哈希核对；路径修改不改变模型数值参数。
+## 2026-11-05: reorganization by reading and execution purpose
 
-当前来源见[阅读文件清单](../../output/checks/records/reading_bundle_sources.json)，
-目录迁移和实际验证见[directory_layout_2026-11-05.json](../../output/checks/records/2026-11-05/directory_layout_2026-11-05.json)。
-旧记录中的路径与哈希属于相应阶段，不冒充本次重跑证据。
+- Reading reports cover final conclusions, feature engineering, model comparisons and optimization history; EDA and interpretive studies stay separate.
+- Detailed experiment records moved intact to `output/experiment_runs/`, retaining configurations and negative results.
+- Model, candidate-submission and wave directories use meaningful names.
+-86 experiment modules moved into six code categories; original commands and saved-model import names remain valid.
+- Baseline-stage prose moved to run records for extraction by the reading updater; machine maintenance records moved to `output/checks/records/`.
+- Raw data, prediction CSVs and model binaries were hash-checked; path changes do not alter model parameters.
 
-完整修改前副本、逐文件映射和哈希保存在本地
-`.cache/maintenance/directory-rename-20261105/`；本次没有提交或推送。
+Current sources: [reading-file manifest](../../output/checks/records/reading_bundle_sources.json);
+migration and actual checks: [directory_layout_2026-11-05.json](../../output/checks/records/2026-11-05/directory_layout_2026-11-05.json).
+Old paths/hashes belong to their historical stages and are not presented as fresh rerun evidence.
 
-## 此前记录
+Full pre-edit copies, file mappings and hashes remain locally in
+`.cache/maintenance/directory-rename-20261105/`; no commit or push was made.
 
-- [2026-11-05导航整理](../../output/checks/records/2026-11-05/local_navigation_2026-11-05.json)
-- [2026-10-25原产物整理](../../output/checks/records/2026-10-25/cleanup_2026-10-25.json)
+## Earlier records
 
-原模型索引在本地 `output/models/index.json`（如存在）。
+- [2026-11-05 navigation cleanup](../../output/checks/records/2026-11-05/local_navigation_2026-11-05.json)
+- [2026-10-25 artifact cleanup](../../output/checks/records/2026-10-25/cleanup_2026-10-25.json)
 
-## 清理判断规则
+The original model index is local at `output/models/index.json`, if present.
 
-删除对象应同时满足：
+## Cleanup criteria
 
-1. 当前代码运行、模型重载、融合、提交导出及实验材料更新不依赖它。
-2. 不承担唯一的实验结果、负结果、参数／种子、数据版本或来源核验记录。
-3. 已确认有内容一致的正式副本，或可以低成本自动再生。
-4. 删除不改变原始数据、预测和模型，不影响保留实验的复现，也不触及其他Git工作树。
+A deletion target must meet all conditions:
 
-“可以重新训练”不等于可以无代价删除。训练成本、随机性和权重可获得性也属于保留价值。
-检索不到文字引用也不能独立证明无用，还要检查动态路径、融合配方、序列化模型与生成流程。
+1. Current execution, model reloads, blending, submission export and report updates do not depend on it.
+2. It is not the sole record of results, negative results, parameters/seeds, data versions or provenance checks.
+3. An identical official copy exists, or regeneration is inexpensive and automatic.
+4. Deletion does not alter raw data, predictions or models, impair retained experiments' reproduction, or touch other Git worktrees.
+
+Retrainability does not imply cost-free deletion. Training cost, randomness and weight availability matter for retention.
+No textual references alone does not prove uselessness; check dynamic paths, recipes, serialized models and generation workflows too.

@@ -1,56 +1,58 @@
-# TabPFN 分支拆分决策
+[Chinese version](tabpfn-branch-split.zh-CN.md)
 
-| 来源 | 固定提交 | 本次处理 |
+# TabPFN branch-split decisions
+
+| Provenance | Frozen commit | Action this round |
 |---|---|---|
-| `experiment/tabpfn` | `c0c987e26da7de953ecb6cd01539488976e6ddd1` | 拆分代码、结果、环境与派生数据；逐目录决策见 `tabpfn-classification.csv` |
-| `experiment/tabpfn-anniversary-history` | `1e69bb7995686d6a2bb7d502475e19ae72f081e3` | 核对合并差异；复用已经拆分的 zch 内容；保存合并证据，不另算一次模型实验 |
+| `experiment/tabpfn` | `c0c987e26da7de953ecb6cd01539488976e6ddd1` | Split code, results, environments and derived data; directory decisions in `tabpfn-classification.csv` |
+| `experiment/tabpfn-anniversary-history` | `1e69bb7995686d6a2bb7d502475e19ae72f081e3` | Check merge differences, reuse already separated zch content and retain integration evidence; not another model experiment |
 
-## main 最小实验集
+## Minimal main experiment set
 
-| 内容 | 位置 | 纳入范围 | 验收边界 |
+| Content | Location | Included scope | Acceptance boundary |
 |---|---|---|---|
-| 77 列、同起点历史与时间基线 | `experiment/main/M07/tabpfn/tabpfn_v3_5_fast_aligned_temporal_80_20/` | 已有基线和残差表示对照 | 原汇总与月度指标可核对；逐行预测和特征缓存缺失 |
-| 月份编码控制 | `experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/` | integer/categorical 作为同口径控制；其余候选是附录补充 | 455.863/455.814 是既有开发集结果，不是新测试结果 |
-| DiagScale 组件 | `experiment/main/M07/tabpfn/tabpfn_components_80_20/` | frozen 与 MSE-only 的必要对照；完整候选表保留作追溯 | 不将组件改善等同于最终 F2 的证据 |
-| 必要代码与测试 | `workflows/tabpfn/analysis/`、`workflows/tabpfn/tests/` | 依赖闭包；依赖模块不自动成为主线实验 | 与根目录 `analysis/` 和 F1 固定运行包隔离 |
-| 最终 F2 | `M07/M08/M09` 的既有规划 | 继续待补 | 用户确认先拆分现有材料；不推断 87 列、成员、权重或提交哈希 |
+| 77 inputs, matched-origin histories and temporal baseline | `experiment/main/M07/tabpfn/tabpfn_v3_5_fast_aligned_temporal_80_20/` | Existing baseline/residual-representation controls | Summary/monthly metrics verifiable; row predictions and feature caches missing |
+| Month-encoding control | `experiment/main/M07/tabpfn/tabpfn_v3_5_fast_calendar_80_20/` | Integer/categorical are matched controls; other candidates supplement the appendix | 455.863/455.814 are existing development results, not new tests |
+| DiagScale components | `experiment/main/M07/tabpfn/tabpfn_components_80_20/` | Essential frozen/MSE-only comparison; retain complete candidates for provenance | Component gains are not evidence for final F2 |
+| Required code and tests | `workflows/tabpfn/analysis/`, `workflows/tabpfn/tests/` | Dependency closure; dependencies are not automatically main experiments | Isolated from root `analysis/` and frozen F1 runtime |
+| Final F2 | Existing `M07/M08/M09` plan | Still outstanding | User requested splitting current materials first; do not infer87 fields, members, weights or submission hashes |
 
-原始表含完整控制行，主线选用范围由上表规定；详细候选表进入附录分类。正文页数限制适用于未来报告，不等于删除用于追溯的代码和表格。
+Original tables retain all controls; the table above defines main selections. Detailed candidates belong to appendix categories. The future report's page limit does not justify deleting provenance code/tables.
 
-## appendix 分类
+## Appendix classification
 
-| 分类 | 目录 | 展示价值 |
+| Category | Directory | Presentation value |
 |---|---|---|
-| 数据、EDA、清洗和去重 | `T01`、`data/processed/` | 保留过滤、低租金、去重等替代数据口径；不替换原始训练集 |
-| 时间、市场和经济替代 | `T02` | 宏观、股票、动态市场和时间因素的正负结果 |
-| 空间和外部特征 | `T03` | 设施、收入、局部经济和外部数据的替代方案 |
-| TabPFN 上下文和表示 | `T04` | 上下文大小、采样、历史及日历表示的控制 |
-| 适配和残差 | `T05` | DiagScale、学习率、LoRA、残差头和 API 路线 |
-| 融合及历史提交 | `T06` | ABCDE、ABDE、BDE 等对照；旧提交配方与选择规则 |
-| 额外复杂模型 | `T07` | TabM、从零训练的 Transformer、结构和损失探索 |
-| 其他基线与合并记录 | `T08` | 原始环境、合并差异和早期基线追溯 |
+| Data, EDA, cleaning and deduplication | `T01`, `data/processed/` | Retain filtering, low-rent and deduplication alternatives without replacing raw training data |
+| Temporal, market and economic alternatives | `T02` | Positive/negative macro, stock, dynamic-market and temporal-factor results |
+| Spatial/external features | `T03` | Amenity, income, local-economy and external-data alternatives |
+| TabPFN context and representations | `T04` | Context-size, sampling, history and calendar controls |
+| Adaptation/residuals | `T05` | DiagScale, learning rates, LoRA, residual heads and API route |
+| Ensembles/historical submissions | `T06` | ABCDE, ABDE, BDE controls and old submission recipes/selection rules |
+| Additional complex models | `T07` | TabM, scratch Transformers, architecture and loss exploration |
+| Other baselines/integration records | `T08` | Original environments, merge differences and early-baseline provenance |
 
-附录保存 81 个原始结果目录，其中主线的 3 个控制目录作为共享参考保留，不重复计为新实验。未来报告应按科学问题精选图表，遵守课程“附录少量使用”的要求；代码仓库的完整归档不等于报告附录全部展示。
+Appendix preserves81 original result directories, including three shared main controls not counted as new experiments. Future reports should select figures by scientific question and use appendices sparingly; complete repository archives need not all appear in the paper.
 
-## 可比性与复现缺口
+## Comparability and reproduction gaps
 
-| 问题 | 处理 | 对评分的影响 |
+| Issue | Action | Assessment implication |
 |---|---|---|
-| F2 文件名仅有截图与用户来源线索 | 保留 413.19635 为截图信息；生成器、87 列 schema、实际融合对象、提交 CSV、行级预测继续待补 | 方法质量 60%：最终方法与比较尚不能验收；可复现性 10%：最终生成链未闭合 |
-| ABCDE/ABDE 与 F2 身份不同 | 原记录 A/B/C 为 77 列，D 为 84 列，E 为 89 列；不将旧等权 ABCDE 更名为 F2 | 避免编造方法和错误归因 |
-| 验证窗口和行数不同 | TabPFN 主要控制为 June 2024–March 2025 的 28,995 行；与 F1 年度 35,158 行分开；配对比较仍需行 ID 和预测 | 方法质量：不能按不同窗口的最小 RMSE 排名 |
-| 同一开发集被多次查看 | 保留既有候选选择规则、门槛失败与负结果；不称为独立测试 | 方法质量与报告质量：解释选择偏差和适用边界 |
-| 最终 CSV、成员预测和多个特征/模型缓存未入 Git | 显式记录缺失；只核对当前可用的源文件与聚合表 | 可复现性：不能把原 `verified=true` 当成本轮重跑结果 |
-| 历史设置与当前快照的哈希可能不同 | 在 `review_tabpfn.py preflight` 中区分纯 LF/CRLF 换行差异与其他版本差异，原记录不改写 | 可复现性：需匹配原生成版本或另建完整重跑记录 |
-| 原环境不含 SDK；指定 checkpoint 缺失 | 环境文件保留；以仓库隔离依赖执行原测试；不下载 TabPFN checkpoint、不调用收费 API | 仅已执行项目可标记通过，完整推理仍待资源补齐 |
-| 同名 `analysis` 模块冲突 | 独立工作流在 `output/` 中组装原架构，再启动单独进程 | 保持已验证 F1 可运行，避免静默改变预处理与模型实现 |
+| Only screenshot/user provenance for F2 filename | Preserve413.19635 as screenshot information; generator, 87-input schema, actual blend members, submission CSV and row predictions remain outstanding | Methods60%:final method/comparison not accepted; reproducibility10%:generation chain incomplete |
+| ABCDE/ABDE have different identities from F2 | Original A/B/C use 77 fields, D84, E89; do not rename old equal ABCDE as F2 | Prevent invented methods and misattribution |
+| Different validation windows/counts | Main TabPFN controls use 28,995 June2024–March2025 rows, separate from F1's35,158 annual rows; pairing still needs IDs/predictions | Methods: do not rank minimum RMSEs across windows |
+| Repeated inspection of one development set | Retain selection rules, failed gates and negative results; not independent tests | Methods/report quality: explain selection bias and applicability |
+| Final CSVs, members and several feature/model caches absent from Git | Explicitly mark missing items; verify available source files/aggregate tables only | Reproducibility: old `verified=true` is not this round's rerun |
+| Historical settings/current snapshot hashes may differ | `review_tabpfn.py preflight` distinguishes LF/CRLF-only differences from other revisions; preserve historical records | Reproducibility: match original generator version or record a complete fresh run |
+| Original environment lacks SDK; specified checkpoint missing | Preserve environments; run original tests with isolated dependencies; no checkpoint download or paid API call | Only executed work can pass; full inference still awaits resources |
+| Same-name `analysis` conflicts | Assemble original architecture under `output/`,then launch a separate process | Keep verified F1 runnable without silently changing preprocessing/models |
 
-## 评分对齐
+## Alignment with assessment
 
-| 评分项 | 本次交付 | 未完成内容 |
+| Assessment category | Delivered this round | Incomplete work |
 |---|---|---|
-| 方法质量 60% | 原始 EDA、控制、替代方案、负结果、选择门槛、窗口区分 | F2 实际生成链、F1/F2 同行配对评估 |
-| 报告质量 30% | main/appendix 分类和可追溯索引；本轮不撰写报告正文 | 未来 PDF 的 8 页、自包含性、引用与团队信息验收 |
-| 可复现性 10% | 原架构隔离、环境文件、原始/派生数据、哈希清单、测试和指标核验入口 | 缺失权重、缓存、最终预测；完整 TabPFN 重训及新环境安装 |
+| Method quality60% | Original EDA, controls, alternatives, negative results, selection gates and window distinctions | Actual F2 generator and same-row F1/F2 pairing |
+| Report quality30% | Main/appendix classification and traceable index; no manuscript drafting this round | Future PDF: 8-page body, self-containment, citations and team details |
+| Reproducibility10% | Isolated architecture, environments, raw/derived data, hash inventories, test/metric commands | Missing weights, caches, final predictions; full TabPFN retraining/fresh installation |
 
-原课程未给出逐项扣分公式或“创新性”等单独权重，本方案不新增这些评分标准。
+The course provides no itemized deduction formula or separate novelty weight; this plan adds neither.

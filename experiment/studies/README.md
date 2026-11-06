@@ -1,8 +1,12 @@
+[Chinese version](README.zh-CN.md)
+
 # Explanatory studies
 
-- `economic_signals/`：先行经济信号与租金变化。
-- `temporal_correlations/`：时间序列水平、变化和滞后相关。
-- `group_temporal_panel/`：规划区和户型分组时间面板。
-- `spatial_features/`：空间描述、固定效应、联合设施控制和重叠分层匹配。
+- `economic_signals/`: leading economic signals and rent changes.
+- `temporal_correlations/`: time-series levels, changes and lagged correlations.
+- `group_temporal_panel/`: planning-area and flat-type temporal panels.
+- `spatial_features/`: spatial descriptions, fixed effects, joint facility controls and overlap-stratified matching.
 
-这些输出用于解释和诊断，不应与预测模型的 RMSE 表直接合并排名。
+Spatial reports: [feature associations](spatial_features/EDA_summary.md), [joint facility controls](spatial_features/amenities_adjusted/amenities_adjusted_summary.md), [MRT controls](spatial_features/mrt_adjusted/MRT_adjusted_summary.md) and [matched MRT comparisons](spatial_features/mrt_matched/notes.md).
+
+These outputs support interpretation and diagnostics and must not be merged directly into predictive RMSE rankings.

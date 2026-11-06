@@ -1,4 +1,6 @@
-# 报告生成、模型筛选与历史分支盘点
+[Chinese version](README.zh-CN.md)
+
+# Report generation, model selection and historical branch inventory
 
 [Back to experiment index](../README.md)
 

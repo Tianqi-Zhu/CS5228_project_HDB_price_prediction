@@ -1,23 +1,25 @@
-# 有序特征清单
+[Chinese version](README.zh-CN.md)
 
-| 表 | 用途 |
+# Ordered feature catalog
+
+| Table | Purpose |
 |---|---|
-| [schema 注册表](registry.csv) | 特征集 ID、列数、有序名称哈希、来源和统计层级 |
-| [名称、已记录类型与来源](schemas.json) | 统一 7/19/27/47/62、adjusted62、F1 异质成员和 Concat 输入；仅在来源记录时列出 dtype |
-| [转换表](transitions.csv) | 新增、移除列与是否真正嵌套 |
-| [F1 组件输入](F1_member_inputs.csv) | 两窗 30 个基础模型的实际列数、轮数、检查点哈希及生成提交 |
+| [Schema registry](registry.csv) | Feature-set ID, column count, ordered-name hash, source and statistical level |
+| [Names, recorded types and sources](schemas.json) | Unified 7/19/27/47/62, adjusted62, heterogeneous F1 members and Concat inputs; dtypes only where sources record them |
+| [Transitions](transitions.csv) | Added/removed columns and whether sets are truly nested |
+| [F1 component inputs](F1_member_inputs.csv) | Actual column counts, rounds, checkpoint hashes and generating commits for 30 base models across two windows |
 
-| 特征集 | 定义与比较范围 |
+| Feature set | Definition and comparison scope |
 |---|---|
-| C7 | 初始传统模型；月份整数编码，不是 static19 的严格子集 |
-| ladder19 | 住宅、时空、设施快照；月份使用 sin/cos |
-| ladder27 | 19 + 8 个历史统计；也是共同输入模型比较所用原始列集，模型各自编码 |
-| ladder47 | 27 + 20 个市场相对历史统计 |
-| ladder62 | 47 + 12/24/36 月周年窗口各 5 个统计 |
-| adjusted62 | ladder62 移除 5 个 36 月统计，再加入 5 个 COHORT24/市场调整特征；与 ladder62 同列数但不同输入 |
-| F1 | 12 路逻辑预测、15 个基础模型；22/62/67/87 等异质输入，不能统称“62 列模型” |
-| Concat | 原始列集合与 adjusted62 一致；编码后 95 个数值输入（含缺失标记）+4 个分类输入，与原始 62 列分层记录 |
+| C7 | Initial traditional models; integer month encoding, not a strict subset of static19 |
+| ladder19 | Property, space/time and facility snapshot; month encoded with sin/cos |
+| ladder27 | 19 + eight historical statistics; also the raw shared-input comparison set, encoded separately by each model |
+| ladder47 | 27 + 20 market-relative historical statistics |
+| ladder62 | 47 + five statistics each for 12/24/36-month anniversary windows |
+| adjusted62 | ladder62 minus five 36-month statistics plus five COHORT24/market-adjusted features; same count, different inputs |
+| F1 | 12 logical predictions and 15 base models; heterogeneous 22/62/67/87 inputs cannot all be called 62-column models |
+| Concat | Same raw columns as adjusted62; encoded into 95 numeric inputs including missingness flags and four categorical inputs, recorded separately from the 62 raw columns |
 
-**元数据勘误：**旧 `M00/inputs/metadata.json` 的 PLE/PLR schema 为 57 列，整理时遗漏了训练函数 `sixth_wave_deep.prepare` 强制设置的 `adjusted=True`。实际训练记录为 62 列，新 PLR 保存模型也验证了完整有序 62 列。原预测包及其旧元数据保留；本清单列出 4 条修正记录，新的 `planned` 注册表使用修正后的输入。整理脚本已修正，不改写原指标或预测。
+**Metadata correction:** the old `M00/inputs/metadata.json` listed 57-column PLE/PLR schemas, omitting `adjusted=True` enforced by `sixth_wave_deep.prepare`. Training records actually use 62 columns; newly saved PLR models also verify all 62 ordered columns. Original predictions and metadata remain intact. This catalog lists four corrections, and new `planned` registrations use corrected inputs. The cataloging script is fixed without rewriting original metrics or predictions.
 
-运行 `python -m analysis.main schemas` 复核并写入新的 `output/feature_catalog/`。相同列数、不同目标还原、不同拟合截止时间或不同预算，均不能仅凭本表视为完全匹配实验。F2 已有 87 列数量、十个新增周年字段和复现记录，但完整导出有序字典仍待补；F1 的 broad87 不构成 F2 身份证据，详情见 [M07](../../M07/README.md)。
+Run `python -m analysis.main schemas` to verify and write fresh `output/feature_catalog/` outputs. Equal column counts do not establish matched experiments when target reconstruction, fitting cutoffs or budgets differ. F2 has an 87-column count, ten added anniversary fields and reproduction records, but still lacks a complete ordered dictionary. F1 broad87 does not establish F2 identity; see [M07](../../M07/README.md).

@@ -1,10 +1,12 @@
-# 测试与运行核查
+[Chinese version](README.zh-CN.md)
+
+# Tests and execution checks
 
 Both merged workflows are covered. Original TabPFN checks retain their module
 names; overlapping zch checks are also available as `test_zch_*.py`.
 `test_merged_workflows.py` checks namespace separation and output paths.
 
-在仓库根目录、激活 `cs5228` 环境后执行：
+Activate `cs5228` and run from the repository root:
 
 ```powershell
 conda activate cs5228
@@ -12,25 +14,25 @@ python -m unittest discover -s tests -v
 python -m analysis.main verify
 ```
 
-第一条发现全部 `test_*.py`，检查数据处理、时间边界、模型适配和输出行为。
-第二条核对当前环境、既有报告指标、数据来源哈希和最终融合组件。
-两者用途不同；都通过也不代表已经从零重训十轮实验，或验证了新机器的GPU兼容性。
+The first command discovers all `test_*.py`, checking data handling, temporal boundaries, model adapters and outputs.
+The second checks the environment, saved report metrics, source hashes and final blend components.
+They serve different purposes; passing both does not establish retraining all ten waves or GPU compatibility on another machine.
 
-## 按问题找测试
+## Find tests by topic
 
-| 问题 | 测试文件 |
+| Issue | Test files |
 | --- | --- |
-| 共享管线、模型保存、输出位置 | `test_pipeline.py`、`test_project_paths.py`、`test_output_defaults.py` |
-| 空间辅助表、经济信号与特征选择 | `test_auxiliary_features.py`、`test_economic_feature_ablation.py`、`test_economic_signals.py`、`test_feature_selection.py`、`test_feature_evidence.py` |
-| 模型搜索、TabM与时空混合 | `test_model_search.py`、`test_neural_tabm.py`、`test_spatiotemporal_hybrid.py` |
-| 十轮探索中的时间截止、特征与融合 | `test_frontier_search.py`、`test_second_wave.py` 至 `test_tenth_wave.py` |
-| 面板、空间与相关研究 | `test_group_temporal_panel.py`、`test_spatial_controls.py`、`test_temporal_correlations.py` |
-| 来源审计的键匹配 | `test_source_overlap.py`，属于独立研究，不为最终方法提供测试租金标签 |
-| 实验索引、阅读报告与组件完整性 | `test_experiment_catalog.py`、`test_report_bundle.py`、`test_artifact_verification.py` |
-| 资源缺失、哈希变动、路径越界与无建模依赖的预检 | `test_resource_preflight.py` |
-| 当前产物覆盖、作废状态、指标上下文与最终组件追溯 | `test_artifact_catalog.py` |
+| Shared pipeline, model saving and output locations | `test_pipeline.py`, `test_project_paths.py`, `test_output_defaults.py` |
+| Spatial auxiliaries, economic signals and feature selection | `test_auxiliary_features.py`, `test_economic_feature_ablation.py`, `test_economic_signals.py`, `test_feature_selection.py`, `test_feature_evidence.py` |
+| Model search, TabM and spatiotemporal hybrids | `test_model_search.py`, `test_neural_tabm.py`, `test_spatiotemporal_hybrid.py` |
+| Time cutoffs, features and blending across ten waves | `test_frontier_search.py`, `test_second_wave.py` through `test_tenth_wave.py` |
+| Panel, spatial and correlation studies | `test_group_temporal_panel.py`, `test_spatial_controls.py`, `test_temporal_correlations.py` |
+| Source-audit key matching | `test_source_overlap.py`, a separate study that supplies no test-rent labels to the final method |
+| Experiment index, reading reports and component completeness | `test_experiment_catalog.py`, `test_report_bundle.py`, `test_artifact_verification.py` |
+| Missing resources, changed hashes, path escapes and preflight without modeling dependencies | `test_resource_preflight.py` |
+| Artifact coverage, invalidation status, metric context and final-component tracing | `test_artifact_catalog.py` |
 
-不移动已有测试模块，便于沿用历史命令。只检查一类时可以使用发现模式：
+Existing test modules stay in place to preserve historical commands. Use a discovery pattern for one category:
 
 ```powershell
 python -m unittest discover -s tests -p test_project_paths.py -v
@@ -38,12 +40,12 @@ python -m unittest discover -s tests -p 'test_*wave.py' -v
 python -m unittest discover -s tests -p test_artifact_verification.py -v
 ```
 
-## 依赖与判读
+## Dependencies and interpretation
 
-- 完整集合需要比赛数据和核心环境。既有结果一致性是一项本地集成检查：新克隆没有 `output/experiment_runs/` 时明确跳过；目录存在却不完整或指标不一致时仍报错。完整结果核查须先按[运行指南](../docs/guides/running_experiments.md)准备产物。
-- 可选TabM、RealMLP、ModernNCA与TabDPT适配测试在对应包／作者源码未准备时明确跳过，并给出准备入口；文件存在却导入或行为异常时仍报错。核心环境中的RTDL等依赖缺失不会被当作可选测试跳过。
-- 一部分模型适配测试使用小型临时样本或模拟训练器；它们检查实现行为，不衡量模型的实际RMSE。
-- 文件重载和哈希核验检查产物是否完整，不能证明某个特征的泛化收益，也不能替代时间验证或Kaggle成绩。
-- 测试只使用受控的小样本和已保存结果，不会上传Kaggle，也不会启动十轮完整训练。
+- Full tests require competition data and the core environment. Saved-result consistency is a local integration check: a new clone without `output/experiment_runs/` explicitly skips it; an existing but incomplete directory or inconsistent metrics still fail. Prepare artifacts via the [running guide](../docs/guides/running_experiments.md).
+- Optional TabM, RealMLP, ModernNCA and TabDPT adapter tests explicitly skip missing packages/author sources with setup guidance, but fail when existing files import or behave incorrectly. Missing core dependencies such as RTDL do not count as optional skips.
+- Some adapter tests use small temporary samples or mock trainers; they check implementation behavior, not actual model RMSE.
+- Reloading and hashes establish artifact integrity, not feature generalization, temporal-validation performance or Kaggle scores.
+- Tests use controlled small samples and saved results; they neither upload to Kaggle nor launch ten-wave full training.
 
-环境入口见[依赖说明](../requirements/README.md)，数据角色见[数据说明](../data/README.md)。
+Environment: [dependencies](../requirements/README.md); data roles: [data guide](../data/README.md).

@@ -1,111 +1,113 @@
-# CS5228 HDB 月租预测：中期实验报告
+[Chinese version](midterm_report.zh-CN.md)
 
-> 本文保留中期阶段口径。当前特征增量、共同输入模型比较、误差诊断及完成度见
-> [当前实验报告](../../experiment/02_feature_engineering/BASELINE_27_FEATURES.md)，不将不同阶段的分数直接混排。
+# CS5228 HDB monthly rent prediction: midterm experiment report
 
-## 研究目标与当前范围
+> This document retains midterm-stage definitions. For current feature increments, shared-input comparisons, error diagnostics and completion status, see
+> the [current experiment report](../../experiment/02_feature_engineering/BASELINE_27_FEATURES.md); do not directly rank scores across stages.
 
-根据新加坡 HDB 组屋的属性、地址和租赁审批时间预测每月租金（SGD），评价指标为均方根误差（RMSE）。本报告记录目前完成的主数据与六份辅助数据的探索性分析，以及**未使用辅助特征**的第一轮传统机器学习实验。现有分数均来自训练集内部的时间验证，尚无 Kaggle 测试集分数。
+## Research goal and current scope
 
-代码已经统一到 [`analysis/`](../../analysis)，按数据、模型、训练、评估、EDA 和实验拆分。运行方法见 [README](../../README.md)，模块职责见 [项目结构说明](../guides/project_structure.md)。
+Predict monthly rent (SGD) from Singapore HDB property attributes, addresses and rental approval time, evaluated by root mean squared error (RMSE). This report records completed EDA of the main and six auxiliary datasets and first-round traditional machine-learning experiments **without auxiliary features**. Scores are internal temporal-validation results; no Kaggle test scores are available yet.
 
-更新后的仓库还保留了[综合 EDA](../../experiment/eda/report.md)及 15 页 PDF，包括分布漂移、设施距离关联和近期中位数基线。它使用的统计基线验证窗口与本报告的四模型窗口不同，分数不能直接混排。统一管线已具备全量重训和 `Id,Predicted` 文件生成能力，迁移核验产生的预测仅用于检查行数、顺序和模型保存，不是新模型效果实验或 Kaggle 成绩。
+Code is unified under [`analysis/`](../../analysis), separated into data, models, training, evaluation, EDA and experiments. Commands: [README](../../README.md); module roles: [project structure](../guides/project_structure.md).
 
-## 主数据 EDA（train/test）
+The updated repository also retains [integrated EDA](../../experiment/eda/report.md) and a 15-page PDF covering drift, facility associations and recent-median baselines. Its statistical baselines use different windows from the four models here, so scores are not directly rankable. The unified pipeline supports full refitting and `Id,Predicted` generation; migration-check predictions test row count, order and model persistence, not new effectiveness or Kaggle scores.
 
-`analysis/eda/audits/main_data.py` 只读取 `data/train.csv` 和 `data/test.csv`，不修改原始文件。它生成[数据检查与划分摘要](../../experiment/eda/supplementary/train_test/summary.json)和五张适合用于幻灯片的图：
+## Main-data EDA (train/test)
 
-1. [月租分布](../../experiment/eda/supplementary/train_test/01_rent_distribution.png)
-2. [各月租金中位数与验证时间段](../../experiment/eda/supplementary/train_test/02_monthly_median.png)
-3. [不同房型的租金](../../experiment/eda/supplementary/train_test/03_flat_type.png)
-4. [不同 Town 的租金](../../experiment/eda/supplementary/train_test/04_town_median.png)
-5. [面积与租金](../../experiment/eda/supplementary/train_test/05_floor_area.png)
+`analysis/eda/audits/main_data.py` reads only `data/train.csv` and `data/test.csv`, without modifying them. It generates a [data-check/split summary](../../experiment/eda/supplementary/train_test/summary.json) and five presentation-ready figures:
 
-### 初步发现
+1. [Monthly rent distribution](../../experiment/eda/supplementary/train_test/01_rent_distribution.png)
+2. [Monthly median rents and validation period](../../experiment/eda/supplementary/train_test/02_monthly_median.png)
+3. [Rent by flat type](../../experiment/eda/supplementary/train_test/03_flat_type.png)
+4. [Rent by Town](../../experiment/eda/supplementary/train_test/04_town_median.png)
+5. [Floor area and rent](../../experiment/eda/supplementary/train_test/05_floor_area.png)
 
-- 训练集有 150,000 条记录，审批月份为 2021-01 至 2025-03；测试集有 50,000 条记录，月份为 2025-03 至 2026-07。其中 49,620 条测试记录晚于训练集的最后一个月。
-- 两个文件都没有缺失值。训练集月租范围为 S$300–S$7,600，中位数为 S$2,700；面积范围为 31–215 平方米，租金和面积均为正数。
-- 两个文件中的 `FURNISHED` 恒为 `yes`，`FEE` 恒为 0，因此它们无法解释本数据集中的租金差异。
-- `FLAT_TYPE` 同时存在 `4 room` 和 `4-room` 等写法。2021 年的房型标签使用空格，之后大多使用连字符；比较房型或训练模型前需要统一写法。
-- 训练集中有 425 条完全重复的记录，以及 1 条租约起始年份晚于租金审批年份的记录。数据没有租赁协议 ID，完全相同的记录也可能对应不同审批；目前仅标记这些记录，不擅自删除或修改。
-- 未控制房型、面积和位置差异时，各月租金中位数从 2021-01 的 S$2,000 上升到 2025-03 的 S$3,200；不能仅凭这条趋势推断单套房屋的涨幅。
+### Initial findings
 
-### 时间验证方案
+- Training contains 150,000 records from 2021-01 to 2025-03; test contains 50,000 from 2025-03 to 2026-07. Of those, 49,620 are later than the final training month.
+- Neither file has missing values. Training rents range from S$300 to S$7,600 with median S$2,700; areas span 31–215 square meters. Rents and areas are all positive.
+- `FURNISHED` is always `yes` and `FEE` always 0 in both files, so they cannot explain rent differences within these data.
+- `FLAT_TYPE` includes variants such as `4 room` and `4-room`. Labels use spaces in 2021 and mostly hyphens afterward; normalize before comparisons or training.
+- Training contains 425 exact duplicate records and one lease commencement year later than approval year. Without rental agreement IDs, identical records may represent different approvals; currently they are flagged rather than deleted or modified.
+- Without controlling flat type, area and location, monthly median rent rises from S$2,000 in 2021-01 to S$3,200 in 2025-03. This alone does not measure appreciation for an individual flat.
 
-使用 **2021-01 至 2024-03** 的审批记录训练模型（114,842 条），使用 **2024-04 至 2025-03** 的记录验证（35,158 条）。同一个审批月份不会同时出现在两边；用 RMSE 评分。编码、缺失值填补等预处理只在训练期拟合，Kaggle 测试集不参与模型选择。
+### Temporal-validation design
 
-这样划分是因为几乎所有 Kaggle 测试记录都晚于训练记录。随机划分可能让模型利用较晚的审批记录去预测较早的记录，与实际预测场景不符。不过，当前验证期只有 12 个月，短于测试集约 16 个月的未来预测跨度，仍可能低估长期预测误差。最终项目应考虑更长的验证窗口或多个时间切点。
+Train on **2021-01 to 2024-03** approvals (114,842 records) and validate on **2024-04 to 2025-03** (35,158). No approval month appears on both sides. Score with RMSE, fit encoding/imputation only within training, and exclude Kaggle test data from model selection.
 
-上述图表只描述训练数据中的相关现象；如果没有控制其他变量，不能把月份、房型或 Town 之间的差异解释为各因素的独立影响。
+Almost all Kaggle test records follow the training period. Random splits can use later approvals to predict earlier ones, unlike the actual task. However, the 12-month validation period is shorter than the roughly 16-month future test horizon and may still underestimate long-horizon error. Consider longer windows or multiple temporal origins.
 
-## 辅助数据 EDA（auxiliary_data）
+These figures describe training-data associations. Without other controls, differences across months, flat types or Towns do not isolate independent factor effects.
 
-`analysis/eda/audits/auxiliary.py` 对六个 auxiliary CSV 做了数据质量、时间覆盖、地址匹配和设施距离检查。完整数字、三张图与逐文件预处理建议见[辅助数据 EDA 报告](../../experiment/eda/supplementary/auxiliary/report.md)及[机器可读摘要](../../experiment/eda/supplementary/auxiliary/summary.json)。主要发现如下：
+## Auxiliary-data EDA (auxiliary_data)
 
-- 规范化 `TOWN + BLOCK + STREET` 后，楼栋表能匹配训练集和测试集的全部记录。9,464 条楼栋记录中有 285 条邮编为 `NIL`，11 条最高楼层及完工年份为 `-1`；这些占位值需要转成缺失值。
-- MRT、商场和学校坐标可用于计算楼栋到设施的直线距离，但文件缺少设施的历史开通／开办日期。MRT 的 243 条线路记录仅对应 192 个独立地点，计算附近站点数时需要去重。
-- COE 数据覆盖 2021-01 至 2026-08，其中最后一个月不完整；股票数据覆盖 2021-01 至 2026-07，85 行行情字段全空、72 行 OHLC 范围异常。股票来自不同交易市场，不能直接平均价格水平。若在训练截止日一次预测未来所有月份，截止日之后的经济数据不能当作当时已知的特征；详见报告中的两种预测场景。
+`analysis/eda/audits/auxiliary.py` checks six auxiliary CSVs for quality, coverage, matching and distances. Full statistics, three figures and per-file recommendations: [auxiliary EDA report](../../experiment/eda/supplementary/auxiliary/report.md) and [machine-readable summary](../../experiment/eda/supplementary/auxiliary/summary.json). Main findings:
 
-这些检查说明辅助表可以开始做特征实验，尚不能说明加入后一定会降低预测误差。
+- Normalized `TOWN + BLOCK + STREET` matches every training and test record. Of 9,464 buildings, 285 postal codes are `NIL` and 11 maximum-floor/completion-year entries are `-1`; convert these placeholders to missing.
+- MRT, mall and school coordinates support straight-line distances, but historical opening dates are missing. The 243 MRT line records represent only 192 distinct locations, requiring deduplication for nearby-station counts.
+- COE spans 2021-01 to 2026-08 with an incomplete final month; stocks span 2021-01 to 2026-07, with 85 entirely missing market rows and 72 anomalous OHLC ranges. Prices from different markets must not be averaged directly. At a fixed training cutoff, subsequently released economic data are not known features; see the report's two prediction scenarios.
 
-## 时间验证：第一轮特征比较
+These checks support starting auxiliary-feature experiments, not assuming they will reduce prediction error.
 
-在 `cs5228` 环境中运行：
+## Temporal validation: first feature comparison
+
+Run in the `cs5228` environment:
 
 ```powershell
 conda activate cs5228
 python -m analysis.main baseline
 ```
 
-`analysis/experiments/baselines/baseline.py` 读取原始 CSV，在内存中生成新特征，并在训练后核对原始文件的 SHA-256 哈希。它使用上述时间划分，固定 CatBoost 参数，比较三组特征：
+`analysis/experiments/baselines/baseline.py` reads raw CSVs, constructs features in memory and checks source SHA-256 after training. Using the temporal split above and fixed CatBoost parameters, it compares three feature groups:
 
-| 模型 | 使用的特征 | 验证 RMSE（SGD） | 平均预测值减真实值（SGD） |
+| Model | Features used | Validation RMSE (SGD) | Mean prediction minus actual rent (SGD) |
 | --- | --- | ---: | ---: |
-| 训练期租金均值 | 不使用房屋特征 | 846.75 | -531.44 |
-| A：房屋属性 | 统一写法后的房型、房屋模型、面积 | 761.42 | -534.06 |
-| B：房屋属性 + 时间相关特征 | A 加审批月份序号、年内月份、距租约起始的年数 | 529.96 | -49.91 |
-| C：B + Town | B 加 Town | **487.22** | -48.29 |
+| Training-period mean rent | No property features | 846.75 | -531.44 |
+| A: property attributes | Normalized flat type, flat model and area | 761.42 | -534.06 |
+| B: property attributes + temporal features | A plus approval-month index, month of year and years since lease commencement | 529.96 | -49.91 |
+| C: B + Town | B plus Town | **487.22** | -48.29 |
 
-A 到 B 的改进较大，与验证期租金明显高于早期训练期相符；但 B 同时加入审批时间和租约年数，不能把改进单独归因于某一个特征。C 在这组三种 CatBoost 模型中 RMSE 最低，不过每个验证月份仍平均低估约 S$5–S$84，见[逐月误差图](../../output/experiment_runs/baseline_mean_catboost/monthly_validation_error.png)。在样本量较充足的房型中，Executive 的 RMSE 最高（S$594.62，1,778 条）。
+The large A→B gain is consistent with higher validation-period rents, but B adds approval time and lease years together, so neither can receive sole credit. C has the lowest CatBoost RMSE here, yet monthly mean underprediction remains S$5–S$84; see [monthly errors](../../output/experiment_runs/baseline_mean_catboost/monthly_validation_error.png). Among adequately represented types, Executive has the highest RMSE (S$594.62, 1,778 rows).
 
-详细结果见[模型指标](../../output/experiment_runs/baseline_mean_catboost/model_metrics.csv)、[逐月误差](../../output/experiment_runs/baseline_mean_catboost/monthly_errors.csv)、[分房型误差](../../output/experiment_runs/baseline_mean_catboost/flat_type_errors.csv)及[运行参数与完整结果](../../output/experiment_runs/baseline_mean_catboost/results.json)。这些数值来自一次时间验证，**不是 Kaggle 测试集分数**。
+See [metrics](../../output/experiment_runs/baseline_mean_catboost/model_metrics.csv), [monthly errors](../../output/experiment_runs/baseline_mean_catboost/monthly_errors.csv), [flat-type errors](../../output/experiment_runs/baseline_mean_catboost/flat_type_errors.csv) and [parameters/full results](../../output/experiment_runs/baseline_mean_catboost/results.json). These come from one temporal validation, **not the Kaggle test set**.
 
-### 传统机器学习模型比较
+### Traditional machine-learning comparison
 
-为了比较模型选择的影响，四种模型使用 C 的**同样七个特征**和**同样 35,158 条验证记录**。Ridge 和随机森林对类别特征进行独热编码，且只在训练期拟合编码与缺失值填补。LightGBM 使用类别列，类别取值依据训练期确定；CatBoost 的结果来自上面的 C 模型。各模型使用固定的初始参数，尚未进行超参数搜索。
+Four models use C's **same seven features** and **same 35,158 validation rows**. Ridge and Random Forest use one-hot categories with training-only encoding/imputation. LightGBM uses categorical columns with training-defined levels; CatBoost reuses C above. Initial parameters are fixed, without hyperparameter search.
 
-固定参数包括：CatBoost 迭代 400 次、深度 6、学习率 0.05；随机森林 160 棵树、最大深度 18；LightGBM 400 棵树、31 个叶子、学习率 0.05；Ridge 的正则化系数为 10。完整参数记录在两份 `results.json` 中。这些参数用于建立可复现的比较，不能保证是最优设置。
+Fixed parameters: CatBoost 400 iterations, depth 6, learning rate 0.05; Random Forest 160 trees, depth 18; LightGBM 400 trees, 31 leaves, learning rate 0.05; Ridge regularization 10. Full settings are in both `results.json` files. They establish reproducibility, not optimality.
 
-| 模型 | 验证 RMSE（SGD） | 平均预测值减真实值（SGD） |
+| Model | Validation RMSE (SGD) | Mean prediction minus actual rent (SGD) |
 | --- | ---: | ---: |
-| Ridge 回归 | 624.88 | +361.99 |
-| 随机森林 | 493.77 | -56.65 |
+| Ridge regression | 624.88 | +361.99 |
+| Random Forest | 493.77 | -56.65 |
 | CatBoost C | 487.22 | -48.29 |
 | LightGBM | **485.09** | -42.68 |
 
-Ridge 在较晚的验证期明显高估租金；逐月偏差与历史上涨趋势被外推过强的解释一致，但尚未通过单独实验验证原因。LightGBM 在这次验证中的 RMSE 最低，比 CatBoost 低约 S$2.1。一次划分产生的这点差距不足以证明它通常更好；更长的测试期也可能改变模型排名。见[逐月模型比较图](../../output/experiment_runs/baseline_classical_models/model_comparison_by_month.png)、[模型比较指标](../../output/experiment_runs/baseline_classical_models/family_metrics.csv)和[运行详情](../../output/experiment_runs/baseline_classical_models/results.json)。
+Ridge substantially overpredicts later rents; monthly bias is consistent with excessive extrapolation of historical growth, though no separate experiment confirms this explanation. LightGBM has the lowest RMSE here, about S$2.1 below CatBoost. This small single-split gap does not establish general superiority; longer horizons may change rankings. See [monthly comparison](../../output/experiment_runs/baseline_classical_models/model_comparison_by_month.png), [metrics](../../output/experiment_runs/baseline_classical_models/family_metrics.csv) and [run details](../../output/experiment_runs/baseline_classical_models/results.json).
 
-## 后续工作：辅助数据与模型改进计划
+## Next steps: auxiliary data and model improvements
 
-当前最好的验证 RMSE 约为 S$485，但现有模型只知道房屋的基本属性、审批月份和 Town。同一个 Town 内部的位置、交通和周边设施可能仍有差别；另外，树模型在较晚的验证月份普遍低估租金。因此，后续分别检验**空间信息**和**时间变化**能否带来稳定收益，而不预设辅助数据一定有效。
+Best current validation RMSE is about S$485, but models only use basic property attributes, approval month and Town. Within-town location, transport and amenities may differ; trees also tend to underestimate later rents. Test **spatial information** and **time variation** separately for stable gains, without assuming auxiliary data help.
 
-### 辅助数据的具体假设
+### Specific auxiliary-data hypotheses
 
-辅助文件大多没有对应的月租标签，计划先将它们连接或聚合成主模型的输入特征；不需要给每个文件单独训练一个租金预测模型。
+Most auxiliary files have no monthly-rent labels. Join or aggregate them into main-model features rather than training a separate rent model per file.
 
-| 优先级与数据 | 拟生成的特征 | 假设与需要核查的问题 |
+| Priority and data | Proposed features | Hypothesis and checks |
 | --- | --- | --- |
-| 1. [`sg-hdb-block.csv`](../../data/auxiliary/sg-hdb-block.csv) | 楼栋经纬度、邮编、最高楼层、完工年份、Subzone 等。 | 同 Town 内的精确位置或楼栋属性可能解释租金差异。地址匹配率已达到 100%；接下来要处理 `NIL`／`-1` 占位值，并比较完工年份与现有楼龄特征是否重复。 |
-| 2. [`sg-mrt-stations.csv`](../../data/auxiliary/sg-mrt-stations.csv) | 最近 MRT 站的直线距离、一定半径内的站点数。 | 交通便利程度可能影响租金。需要核对车站在审批月份是否已经运营；仅有当前 `STATUS` 时，不能把规划中的站点当作过去已运营的站点。先用坐标计算距离，再评估是否值得寻找步行时间数据。 |
-| 3. [`sg-shopping-malls.csv`](../../data/auxiliary/sg-shopping-malls.csv) 与 [`sg-schools.csv`](../../data/auxiliary/sg-schools.csv) | 最近商场／小学的距离、附近设施数量。 | 周边设施可能补充 Town 与 MRT 距离无法表示的信息。检查坐标质量、学校类型和设施在历史审批月份是否存在；比较新特征是否真的降低未来月份的 RMSE。 |
-| 4. [`sg-coe-prices.csv`](../../data/auxiliary/sg-coe-prices.csv) | 上一个已公布月份的 COE 价格、配额或投标量。 | 经济环境可能与租金变化有关。按审批月份连接，严格只用当时已经公布的数据；多轮招标需先确定月度汇总方式。 |
-| 5. [`sg-stock-prices.csv`](../../data/auxiliary/sg-stock-prices.csv) | 少量代表性公司的滞后月度收益率或汇总指标。 | 股价可能反映经济环境，但公司和日期很多，容易引入噪声。先确定股票选择与聚合规则，再检查对较晚月份的预测是否有稳定帮助。 |
+| 1. [`sg-hdb-block.csv`](../../data/auxiliary/sg-hdb-block.csv) | Building coordinates, postal code, maximum floor, completion year, Subzone and related fields. | Precise location and building attributes may explain within-Town variation. Address coverage is 100%; handle `NIL`/`-1` and compare completion year against the existing age feature for redundancy. |
+| 2. [`sg-mrt-stations.csv`](../../data/auxiliary/sg-mrt-stations.csv) | Straight-line distance to nearest MRT and station counts within chosen radii. | Transport access may affect rent. Verify whether stations operated at approval time; current `STATUS` cannot treat planned stations as historically operating. Calculate coordinate distances first, then assess whether walking-time data are worthwhile. |
+| 3. [`sg-shopping-malls.csv`](../../data/auxiliary/sg-shopping-malls.csv) and [`sg-schools.csv`](../../data/auxiliary/sg-schools.csv) | Nearest mall/primary-school distances and nearby counts. | Amenities may add information beyond Town and MRT distance. Check coordinates, school types and historical existence, then test future-month RMSE gains. |
+| 4. [`sg-coe-prices.csv`](../../data/auxiliary/sg-coe-prices.csv) | COE prices, quotas or bids from the last published month. | Economic conditions may relate to rent changes. Join by approval month using only published information; define monthly aggregation across bidding rounds first. |
+| 5. [`sg-stock-prices.csv`](../../data/auxiliary/sg-stock-prices.csv) | Lagged monthly returns or aggregate indicators for a small set of representative companies. | Stock prices may reflect economic conditions but many companies/dates can introduce noise. Define selection and aggregation rules, then test stable value for later months. |
 
-### 实验顺序与判断标准
+### Experiment order and criteria
 
-1. 以当前 **C 特征 + LightGBM/CatBoost** 为对照，先单独加入楼栋信息，再依次测试 MRT、商场／学校和宏观指标。每一步记录连接成功率、缺失比例，以及验证集的 RMSE、MAE 和平均偏差；只有在相同验证规则下比较，才能判断新增特征的作用。
-2. 把当前的单次时间划分扩展成多个按月份向前预测的验证窗口，并增加一个更长的预测跨度。比较全历史训练、只用较近年份训练或提高近期样本权重的方案，检查后期低估是否减轻。
-3. 将审批时间与楼龄拆开做特征消融，确认现有 A→B 的收益分别来自哪里。之后再小范围调整 LightGBM 和 CatBoost 参数；两者在当前划分仅相差约 S$2.1，不宜只凭一次分数确定最终模型。
-4. 确定特征与模型后，使用全部有租金标签的 `train.csv` 重新训练，再预测 Kaggle `test.csv`。最终报告同时呈现改进幅度、未改善的尝试和可能原因。
+1. Use **C features + LightGBM/CatBoost** as controls. Add building information, then MRT, malls/schools and macro indicators separately. Record join coverage, missingness, RMSE, MAE and mean bias under matched validation rules to identify incremental value.
+2. Extend the single split to multiple forward monthly origins and a longer horizon. Compare full history, recent years and recency weighting, checking whether later underprediction decreases.
+3. Ablate approval time and age separately to identify the A→B gains. Then tune LightGBM and CatBoost narrowly; their roughly S$2.1 gap on one split is insufficient to select the final model alone.
+4. After selecting features and model, refit on all labeled `train.csv` rows and predict Kaggle `test.csv`. Report gains, unsuccessful attempts and possible explanations.
 
-所有连接、缺失值处理和新特征计算都在新数据框中完成，保持原始 CSV 不变。如果后期尝试将多个子模型的预测作为主模型输入，应只使用按时间划分得到的训练期外预测，避免把训练目标泄漏给主模型。
+Perform joins, imputation and feature calculations in new dataframes, leaving raw CSVs intact. If submodel predictions later become main-model inputs, use temporal out-of-fold predictions only to avoid target leakage.

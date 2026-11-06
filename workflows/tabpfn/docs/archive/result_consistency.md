@@ -1,62 +1,64 @@
-# 实验结果一致性检查
+[Chinese version](result_consistency.zh-CN.md)
 
-本检查用于区分真正的结果冲突和由验证窗口、特征或模型流程不同造成的数值差异。机器可读检查可通过以下命令重复执行：
+# Experiment-result consistency checks
+
+These checks distinguish actual conflicts from numerical differences caused by windows, features or model workflows. Repeat machine-readable checks with:
 
 ```powershell
 conda activate cs5228
 python -m analysis.main verify
 ```
 
-## 已确认一致
+## Confirmed consistency
 
-- CatBoost 特征集 C 在 `baseline_mean_catboost` 和 `baseline_classical_models` 中完全复用，RMSE 均为 **487.2160049568078**。
-- LightGBM 特征集 C 在 `baseline_classical_models`、`features_auxiliary_ablation` 和深度学习汇总的参考值中完全复用，RMSE 均为 **485.09281617236115**。
-- `baseline_tabm` 与 `baseline_spatiotemporal` 使用相同的三个历史树模型时间折；TabM 没有把不同切分的树结果误当作自身基准。
-- 当前训练、测试和提交模板的 SHA-256 与已保存结果中的公共输入哈希一致。
-- 必需的 EDA、研究和实验结果文件均存在。
+- CatBoost C is reused exactly in `baseline_mean_catboost` and `baseline_classical_models`, both with RMSE **487.2160049568078**.
+- LightGBM C is reused exactly in `baseline_classical_models`, `features_auxiliary_ablation` and the deep-learning summary reference, all with RMSE **485.09281617236115**.
+- `baseline_tabm` and `baseline_spatiotemporal` share three historical-tree folds; TabM does not mistake differently split trees for its baseline.
+- Current training, test and submission-template SHA-256 values match common input hashes in saved results.
+- Required EDA, study and experiment-result files exist.
 
-## 看似矛盾、实际口径不同的结果
+## Apparent conflicts with different definitions
 
-| 数值 | 判断 | 原因 |
+| Values | Assessment | Reason |
 | --- | --- | --- |
-| 辅助特征 E：476.9744；旧空间基准：477.2036 | 不冲突 | 都是 2024-04 至 2025-03，但 E 使用 29 个统一属性、时间、楼栋和设施特征；旧空间实验使用 9 个旧基础特征加 17 个空间特征，时间编码、楼龄和装修字段定义不同。 |
-| 深度融合：466.4699；ReLU MLP：463.9719 | 不能直接比较 | 深度融合评估完整 12 个月；ReLU 使用嵌套选择后只评估 2025-01 至 2025-03 的 3 个月。后者数值更低不代表在相同窗口更优。 |
-| TabM 最新折融合：468.8345；三折 pooled：542.7844 | 不冲突 | 468.8345 只来自最新 12 个月；542.7844 汇总了三个起点，其中较早时期更难。历史树最新折 469.6138 与 pooled 543.0956 同理。 |
-| CatBoost C：487.2160；旧空间实验的 CatBoost base：487.0542 | 不冲突 | 两者同一窗口但基础特征不同：当前 C 为 7 个标准特征；旧空间 base 为 9 个特征，并使用装修、周期正余弦和另一种租约年龄定义。 |
-| 近期 EDA 分组中位数基准约 490.889；ReLU 分组均值基准 491.267 | 不冲突 | 都只看 2025 年第一季度，但分组、清洗和聚合基准的实现不同。 |
+| Auxiliary E: 476.9744; old spatial baseline: 477.2036 | No conflict | Both use 2024-04 to 2025-03, but E has 29 unified property/time/building/facility features; old spatial experiments have nine old baseline plus 17 spatial features, with different time, age and furnishing definitions. |
+| Deep blend: 466.4699; ReLU MLP: 463.9719 | Not directly comparable | Deep blending evaluates all 12 months; nested-selected ReLU evaluates only 2025-01 to 2025-03. Lower RMSE does not establish superiority on the same window. |
+| Latest TabM blend fold: 468.8345; three-fold pooled: 542.7844 | No conflict | 468.8345 covers only the latest 12 months; 542.7844 pools three origins including harder earlier periods. The same explains historical-tree latest 469.6138 versus pooled 543.0956. |
+| CatBoost C: 487.2160; old spatial CatBoost base: 487.0542 | No conflict | Same window, different baselines: current C uses seven standard features; old base uses nine including furnishing, cyclical sin/cos and another lease-age definition. |
+| Recent EDA grouped-median baseline about 490.889; ReLU grouped-mean baseline 491.267 | No conflict | Both cover Q1 2025 but differ in grouping, cleaning and aggregation implementations. |
 
-## 输入哈希说明
+## Input hashes
 
-旧 ReLU 分支记录的 CSV 字节级 SHA-256 与当前 Windows 工作区不同，但 Git 中对应数据文件的 blob ID 相同。这表示逻辑文件版本一致，差异来自跨平台检出时的换行字节转换，而不是数据内容被另一实验替换。统一验证器使用当前工作区生成结果中记录的 SHA-256 做一致性校验。
+Old ReLU CSV byte-level SHA-256 differs from current Windows files, but corresponding Git blob IDs match. Logical versions are identical; cross-platform checkout line endings explain the bytes, not replacement by another experiment. The unified verifier checks SHA-256 recorded in current-workspace results.
 
-## 当前环境复跑差异
+## Current-environment rerun differences
 
-2026-10-04 在 `cs5228`（Python 3.11.15、NumPy 2.4.6、pandas 3.0.5、scikit-learn 1.9.0）中进行了独立输出目录复跑：
+On 2026-10-04, reruns used independent output directories in `cs5228` (Python 3.11.15, NumPy 2.4.6, pandas 3.0.5, scikit-learn 1.9.0):
 
-- CatBoost、LightGBM、辅助特征消融、分组时间面板和四类空间控制表与已保存指标完全一致。
-- ReLU 恢复源分支的租约缺失指示和异常租约语义后，同样选择 2 个 epoch，RMSE 为 463.7769；相对历史 463.9719 仅差 -0.1951 SGD。
-- 经济信号和经济特征消融使用未固定小版本的 scikit-learn `HistGradientBoostingRegressor`，相对旧分支四折结果最大漂移分别为 3.3847 和 5.2615 SGD。
-- 时空历史模型同样依赖 `HistGradientBoostingRegressor`，相对旧分支单折 RMSE 最大漂移 4.0719 SGD；验证切分、行数和输入 Git blob 未改变。
-- 时间相关研究的核心相关系数表完全一致；中间月度序列的最大数值差为 0.001045，不改变四位小数结果。
+- CatBoost, LightGBM, auxiliary ablation, grouped panels and four spatial-control tables exactly match saved metrics.
+- Restoring source-branch lease-missing indicators and anomalous-lease semantics again selects two ReLU epochs, RMSE 463.7769 versus historical 463.9719, a difference of -0.1951 SGD.
+- Economic signals and ablations use unpinned scikit-learn `HistGradientBoostingRegressor` minor versions, with maximum four-fold drift of 3.3847 and 5.2615 SGD respectively.
+- Spatiotemporal history also depends on `HistGradientBoostingRegressor`, with maximum fold-RMSE drift 4.0719 SGD; splits, row counts and input Git blobs are unchanged.
+- Core temporal-correlation tables match exactly; intermediate monthly series differ by at most 0.001045 without changing four-decimal results.
 
-这些是软件版本下的数值复现差异，不应与不同验证窗口之间的口径差异混为一谈。完整运行清单见 [历史核验摘要](#历史核验摘要)。
+These are software-version reproduction differences, distinct from validation-window differences. See the [historical verification summary](#historical-verification-summary) for the full run list.
 
-## 结论
+## Conclusion
 
-当前未发现数据错配、切分错配或结果文件互相覆盖。现有差异可由验证窗口、特征定义、汇总范围或已记录的软件版本漂移解释。比较模型优劣时应优先使用同一时间切分和同一环境下的结果，不能只按所有报告里的最低 RMSE 排名。
+No mismatched data/splits or overwritten result files were found. Differences follow windows, feature definitions, aggregation or recorded software drift. Prefer same-split, same-environment comparisons rather than ranking the lowest RMSE from every report.
 
-## 历史核验摘要
+## Historical verification summary
 
-本节合并原整合核验和2026-10-04环境复跑记录，均属于早期阶段。历史9项／30项测试与当前119项测试分别解释，不互相替代；这些早期分数不代表最终融合成绩。
+This combines original integration checks and 2026-10-04 reruns, all from early stages. Historical 9/30-test records and current 119 tests are distinct, not replacements; early scores are not final-blend results.
 
-### 整合阶段的数值与流程保留
+### Numerical and workflow preservation during integration
 
-主表与六份辅助表的EDA摘要保持一致；综合EDA的11张图、18份表按统计分组核对，浮点容差为1e-10。
-pandas 3的字符串类型展示和中位数并列排序可以与旧版本不同，统计值未变。
+Main/six-auxiliary EDA summaries match. Integrated EDA's 11 figures and 18 tables were checked by statistical group with float tolerance 1e-10.
+pandas 3 string-type displays and median-tie order may differ from earlier versions without changing statistics.
 
-| 模型 | 迁移前 RMSE | 迁移后 RMSE |
+| Model | Pre-migration RMSE | Post-migration RMSE |
 | --- | ---: | ---: |
-| 均值预测 | 846.7549 | 846.7549 |
+| Mean prediction | 846.7549 | 846.7549 |
 | CatBoost A | 761.4192 | 761.4192 |
 | CatBoost B | 529.9588 | 529.9588 |
 | CatBoost C | 487.2160 | 487.2160 |
@@ -64,35 +66,35 @@ pandas 3的字符串类型展示和中位数并列排序可以与旧版本不同
 | Random Forest | 493.7719 | 493.7719 |
 | LightGBM | 485.0928 | 485.0928 |
 
-统一LightGBM验证约485.09，MAE约361.41。该阶段完成150,000条训练的全量拟合、50,000条Id/Predicted导出、模型保存重载后逐行一致，以及原始CSV哈希检查。
-EDA PDF共15页，已渲染检查；当时9项回归检查通过，验证的是迁移与流程，不是新的泛化评估或Kaggle提交。
+Unified LightGBM validation is about RMSE 485.09/MAE361.41. That stage completed full fitting on 150,000 rows, 50,000-row Id/Predicted export, identical row predictions after reload, and raw-CSV hashes.
+The 15-page EDA PDF was rendered and checked. Nine regression checks passed then, validating migration/workflow rather than new generalization or a Kaggle submission.
 
-### 2026-10-04独立环境复跑
+### 2026-10-04 independent-environment rerun
 
-当时使用Python 3.11.15、NumPy 2.4.6、pandas 3.0.5、scikit-learn 1.9.0、CatBoost 1.2.10、LightGBM 4.7.0、PyTorch 2.11.0+cu128及CUDA 12.8；RTX 4060 Laptop GPU可用，pip check通过。
-输出写入当时的独立临时目录，正式指标未被覆盖。
+Environment: Python 3.11.15, NumPy 2.4.6, pandas 3.0.5, scikit-learn 1.9.0, CatBoost 1.2.10, LightGBM 4.7.0, PyTorch 2.11.0+cu128 and CUDA12.8. RTX4060 Laptop GPU available; pip check passed.
+Outputs used a separate temporary directory without overwriting official metrics.
 
-| 流程 | 结果 |
+| Workflow | Result |
 | --- | --- |
-| `compileall` | 通过 |
-| `python -m unittest discover -s tests -v` | 30/30 通过 |
-| `python -m analysis.main verify` | 所有结构、哈希和跨报告复用检查通过 |
-| 完整 EDA | 150,000 训练行、50,000 测试行；11 图、18 表；楼栋匹配率 100% |
-| CatBoost A/B/C 基线 | 与已保存 `model_metrics.csv` 完全一致 |
-| Ridge/RF/CatBoost/LightGBM 比较 | 与已保存 `family_metrics.csv` 完全一致 |
-| LightGBM 时间验证 | RMSE 485.09，成功生成月度、地区和房型误差 |
-| `submit` → 保存模型 → `predict` | 50,000 行；列为 `Id,Predicted`；重新加载最大预测差为 0 |
-| 深度模型 CUDA 冒烟 | 辅助特征 MLP 训练 1 epoch 成功 |
-| 深度结果汇总 | 历史融合 RMSE 466.469947，和已保存汇总一致 |
-| TabM CUDA 冒烟 | 1 个时间折、1 epoch、2 个成员成功 |
-| ReLU 完整嵌套验证 | 选择 2 epoch；RMSE 463.776866 |
-| 辅助特征消融 | 8 个阶段全部完成；正式指标完全一致 |
-| 经济信号与经济特征消融 | 四个前向折全部完成；存在已解释的 sklearn 版本漂移 |
-| 分组时间面板 | 完成；正式 pooled 指标完全一致 |
-| 空间 overview、MRT 固定效应、匹配、设施固定效应 | 全部完成；抽查四份核心表完全一致 |
-| 时空历史模型 | 三个前向折与最终 50,000 行预测完成；存在已解释的 sklearn 版本漂移 |
-| 时间相关研究 | 完成；核心相关系数表完全一致 |
-| PDF 报告 | 从临时 EDA 输出成功构建 |
+| `compileall` | Pass |
+| `python -m unittest discover -s tests -v` | 30/30 pass |
+| `python -m analysis.main verify` | All structure, hash and cross-report reuse checks pass |
+| Full EDA | 150,000 training rows, 50,000 test rows; 11 figures, 18 tables; 100% building matching |
+| CatBoost A/B/C baselines | Exact match to saved `model_metrics.csv` |
+| Ridge/RF/CatBoost/LightGBM comparison | Exact match to saved `family_metrics.csv` |
+| LightGBM temporal validation | RMSE 485.09; monthly, region and flat-type errors generated |
+| `submit` → save model → `predict` | 50,000 rows, `Id,Predicted` columns; maximum reload prediction difference 0 |
+| Deep-model CUDA smoke test | One auxiliary-feature MLP epoch succeeds |
+| Deep-result summary | Historical blend RMSE 466.469947 matches saved summary |
+| TabM CUDA smoke test | One temporal fold, one epoch, two members succeed |
+| Full nested ReLU validation | Two epochs selected; RMSE 463.776866 |
+| Auxiliary-feature ablation | All eight stages complete; official metrics match exactly |
+| Economic signals and feature ablation | All four forward folds complete; explained sklearn-version drift |
+| Grouped temporal panel | Complete; official pooled metrics match exactly |
+| Spatial overview, MRT fixed effects, matching and facility fixed effects | All complete; four sampled core tables match exactly |
+| Spatiotemporal history model | Three forward folds and final 50,000-row prediction complete; explained sklearn-version drift |
+| Temporal-correlation study | Complete; core correlation tables match exactly |
+| PDF report | Successfully built from temporary EDA outputs |
 
-测试入口使用标准库unittest，未依赖pytest。joblib对旧式物理CPU探测的回退提示不构成模型错误。
-软件版本导致的ReLU、经济与时空模型漂移见本页“当前环境复跑差异”；保留历史结果，不将新复跑数值倒写为原结果。
+Tests use standard-library unittest, without pytest. joblib's fallback warning for old physical-CPU detection is not a model error.
+ReLU, economic and spatiotemporal software drift is described under current-environment rerun differences. Historical results remain intact rather than being overwritten by rerun values.

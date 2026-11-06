@@ -1,4 +1,6 @@
-# 基础模型与早期实验
+[Chinese version](README.zh-CN.md)
+
+# Baseline models and early experiments
 
 [Back to experiment index](../README.md)
 

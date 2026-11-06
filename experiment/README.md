@@ -1,3 +1,5 @@
-# 实验审查入口
+[Chinese version](README.zh-CN.md)
 
-[main实验索引](main/README.md)
+# Experiment review entry point
+
+[Main experiment index](main/README.md)

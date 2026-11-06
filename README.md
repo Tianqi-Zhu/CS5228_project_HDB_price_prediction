@@ -1,18 +1,22 @@
-# HDB 月租预测实验
+[Chinese version](README.zh-CN.md)
 
-预测单条 HDB 的 `MONTHLY_RENT`（SGD）。`main` 保存必要对照与最终方法，`appendix` 保存替代方案、消融、负结果和完整探索。比赛原始数据、环境文件和项目架构均保留。
+English is the default documentation language; Chinese is available as an additional version. See the [language policy and translation index](docs/documentation-languages.md).
 
-| 从这里开始 | 位置 |
+# HDB monthly rent prediction experiments
+
+Predict individual HDB `MONTHLY_RENT` values in SGD. `main` retains essential controls and final methods; `appendix` retains alternatives, ablations, negative results and the full exploration. Original competition data, environment files and project architecture are preserved.
+
+| Start here | Location |
 |---|---|
-| 实验索引与当前状态 | [M00–M09](experiment/main/README.md) |
-| 新增要求卡的执行结果与缺口 | [执行状态](docs/planning/main-execution-status.md) |
-| 五项补齐与本次验收 | [五项优化](docs/planning/main-five-item-completion.md) |
-| 预测情景与信息可用边界 | [场景定义](docs/methods/prediction-scenario.md) |
-| 原实验要求卡、main/appendix 规划 | [统一规划](docs/planning/main-appendix-experiment-plan.md) |
-| 环境、训练与离线验证命令 | [运行指南](docs/guides/running_experiments.md) |
-| 代码结构 | [analysis/](analysis/README.md) |
-| 目录职责与中间产物清理 | [仓库结构](docs/guides/repository_layout.md) |
-| 课程评分依据 | [SKILL.md](skills/cs5228-final-report/SKILL.md) |
+| Experiment index and current status | [M00–M09](experiment/main/README.md) |
+| Results and remaining gaps for the new requirement cards | [Execution status](docs/planning/main-execution-status.md) |
+| Five completed improvements and acceptance checks | [Five improvements](docs/planning/main-five-item-completion.md) |
+| Prediction scenario and information availability | [Scenario definition](docs/methods/prediction-scenario.md) |
+| Original experiment requirements and main/appendix plan | [Unified plan](docs/planning/main-appendix-experiment-plan.md) |
+| Environment, training and offline verification commands | [Running guide](docs/guides/running_experiments.md) |
+| Code structure | [analysis/](analysis/README.md) |
+| Directory responsibilities and intermediate-artifact cleanup | [Repository layout](docs/guides/repository_layout.md) |
+| Course assessment criteria | [SKILL.md](skills/cs5228-final-report/SKILL.md) |
 
 ```powershell
 python review.py list
@@ -24,27 +28,27 @@ python -m analysis.main validation-refits
 python -m analysis.main final-pair
 ```
 
-`planned` 重算冻结开发预测、分组误差和结构对照，核验 F1 Y/J 生成链、特征清单、M01 来源，并完成 F2 候选组件重组与近期配对评价，不训练、不搜索。`final-pair` 可单独执行最后一项。新结果统一进入忽略的 `output/`，已有 run 不覆盖；重复运行需使用新的 `--output-dir`。Y/J 均为已查看过的开发期。
+`planned` recomputes frozen development predictions, grouped errors and structural controls; verifies the F1 Y/J generation chain, feature lists and M01 provenance; and reconstructs F2 candidates and the recent paired comparison. It performs no training or search. `final-pair` runs the last comparison independently. New results go into ignored `output/`; existing runs are not overwritten, so repeat runs require a new `--output-dir`. Y/J are previously examined development periods.
 
-| 方法 | 状态与证据 | 入口 |
+| Method | Status and evidence | Entry point |
 |---|---|---|
-| F1：分组融合＋PLR-FT | 原提交显示 415.37529；年度/近期开发 RMSE 451.0295/441.8345；冻结 CSV、组件重组与全量训练路径独立保留 | [F1 复现包](reproduction/f1/README.md) |
-| Concat Transformer | 独立同输入架构探索，年度开发 RMSE 459.2189；原团队记录 Public Score 418.38657；保留他人合并的代码、容量比较、权重与重放入口 | [方法](experiment/main/M05/concat_transformer/README.md)、[复现](reproduction/concat_transformer/README.md) |
-| MLP独立集成 | 原全量清洗／未清洗提交显示437.34455／439.38193；CPU训练、预测区间、时间加权及测试入口已接入；不改变F1配方 | [MLP复现包](reproduction/mlp/README.md)、[报告](docs/mlp_prediction_report.md) |
-| TabPFN87 单模型 | 近期 RMSE 441.9593；远端已记录独立 fit/inference 验证；本机仍需 SDK 与原 checkpoint | [独立运行](docs/guides/tabpfn_best.md) |
-| F2：七树＋TabPFN87 等权融合 | 原类别近期 RMSE 440.9520，可独立配对与重组；新增 grouped 候选 440.7707，作为分类敏感性方案单列。两份新提交与完整推理记录已合并，尚无新 Kaggle 成绩；年度、完整有序字典、截图关联仍待补 | [F2 状态](experiment/main/M07/README.md)、[配对结果](experiment/main/M08/README.md)、[新提交与复现](docs/guides/tabpfn_ensemble.md) |
+| F1: grouped blending + PLR-FT | Original displayed submission score 415.37529; annual/recent development RMSE 451.0295/441.8345. Frozen CSVs, component reconstruction and full-data training are retained separately. | [F1 reproduction package](reproduction/f1/README.md) |
+| Concat Transformer | Independent architecture exploration with matched inputs; annual development RMSE 459.2189; team-recorded Public Score 418.38657. Integrated code, capacity comparisons, weights and replay commands are preserved. | [Method](experiment/main/M05/concat_transformer/README.md), [reproduction](reproduction/concat_transformer/README.md) |
+| Independent MLP ensemble | Original full-data cleaned/uncleaned submissions display 437.34455/439.38193. CPU training, prediction intervals, temporal weighting and test commands are integrated; the F1 recipe is unchanged. | [MLP reproduction package](reproduction/mlp/README.md), [report](docs/mlp_prediction_report.md) |
+| Standalone TabPFN87 | Recent RMSE 441.9593; independent remote fit/inference verification is recorded. Local execution still requires the SDK and original checkpoint. | [Standalone execution](docs/guides/tabpfn_best.md) |
+| F2: equal blend of seven trees and TabPFN87 | Original-category recent RMSE 440.9520, independently pairable and reconstructable. The new grouped candidate scores 440.7707 and is listed separately as a category sensitivity variant. Both new submissions and complete inference records are integrated, with no new Kaggle score. Annual evaluation, the complete ordered dictionary and screenshot association remain outstanding. | [F2 status](experiment/main/M07/README.md), [paired results](experiment/main/M08/README.md), [new submissions and reproduction](docs/guides/tabpfn_ensemble.md) |
 
-完整性检查用 `python -m analysis.validation.repository_audit`，实际验证范围和日志见 [review/CHECKS.md](review/CHECKS.md)。截图分数不作为新运行结果；不同信息条件、窗口和 schema 分开比较。
+Run `python -m analysis.validation.repository_audit` for integrity checks; see [review/CHECKS.md](review/CHECKS.md) for actual verification scope and logs. Screenshot scores are not new execution results. Compare different information settings, windows and schemas separately.
 
-`data/` 保存 150,000 行训练记录、50,000 行测试记录、提交模板及六份辅助表。`analysis/` 是共享实现；`reproduction/` 保存固定模型与配方；`workflows/tabpfn/` 保存隔离工作流；`experiment/main/` 保存科学证据。可重建缓存、训练输出和大型临时目录统一在忽略的 `output/` 或 `.cache/`。
+`data/` holds 150,000 training records, 50,000 test records, the submission template and six auxiliary tables. `analysis/` contains shared implementations; `reproduction/` holds fixed models and recipes; `workflows/tabpfn/` contains the isolated workflow; `experiment/main/` stores scientific evidence. Rebuildable caches, training outputs and large temporary directories belong in ignored `output/` or `.cache/`.
 
-## 独立工作流
+## Independent workflows
 
-| 工作流 | 不训练的核验入口 | 实际训练或推理 |
+| Workflow | Verification without training | Training or inference |
 |---|---|---|
-| F1 | `python reproduction/f1/verify.py` | [固定配方](reproduction/f1/README.md) |
-| Concat | `python -m analysis.main concat verify` | [原模型重放与训练](reproduction/concat_transformer/README.md) |
-| MLP | `python -m analysis.main mlp verify` | [CPU 全量、区间、时间加权](reproduction/mlp/README.md) |
-| TabPFN | `python review_tabpfn.py verify`；`python run_tabpfn_best.py preflight` | [SDK/checkpoint 前提与独立运行](docs/guides/tabpfn_best.md) |
+| F1 | `python reproduction/f1/verify.py` | [Fixed recipe](reproduction/f1/README.md) |
+| Concat | `python -m analysis.main concat verify` | [Original-model replay and training](reproduction/concat_transformer/README.md) |
+| MLP | `python -m analysis.main mlp verify` | [CPU full-data training, intervals and temporal weighting](reproduction/mlp/README.md) |
+| TabPFN | `python review_tabpfn.py verify`; `python run_tabpfn_best.py preflight` | [SDK/checkpoint prerequisites and standalone execution](docs/guides/tabpfn_best.md) |
 
-各工作流使用同一份根 `data/`，隔离的运行时不能相互覆盖。完整探索和历史来源保留，不将 MLP 或 Concat 直接加入 F1/F2。TabPFN 合并记录见[来源与边界](docs/guides/anniversary_merge.md)。已有[报告材料](reports/final_report/README.md)仅保留，本轮不继续改稿。
+All workflows share the root `data/` directory; isolated runtimes must not overwrite one another. Full exploration and historical provenance are retained. MLP and Concat are not added directly to F1/F2. See [provenance and boundaries](docs/guides/anniversary_merge.md) for the TabPFN integration. Existing [report materials](reports/final_report/README.md) are retained; this integration round does not revise the manuscript.

@@ -1,38 +1,40 @@
-# 最终模型选择与报告结论（2026-11-05）
+[Chinese version](README.zh-CN.md)
 
-**在用户截图中的三份已提交方案中，推荐 `kaggle_structure_blend.csv` 作为 final，Kaggle显示分数为415.37529。** 原样副本为[final/submission.csv](../../output/submissions/final/submission.csv)，已核对文件哈希和50,000行预测。
+# Final model selection and report conclusions (2026-11-05)
 
-## 1. 三份提交的统一比较
+**Among the three submitted candidates in the user screenshot, recommend `kaggle_structure_blend.csv`,displayed Kaggle 415.37529.** Identical [final/submission.csv](../../output/submissions/final/submission.csv) passes hash/50,000-row checks.
 
-| 方案 | 年度本地RMSE | 近期本地RMSE | Kaggle显示分数 | 报告角色 |
+## 1. Consistent comparison of three submissions
+
+| Policy | Local annual RMSE | Local recent RMSE | Displayed Kaggle score | Report role |
 |---|---:|---:|---:|---|
-| 历史特征主融合 | 451.1810 | 442.9025 | 415.86912 | 主基线 |
-| 比赛所给宏观增强 | 451.2081 | 442.8892 | 415.78232 | 宏观消融 |
-| 分组融合＋PLR-FT | 451.0295 | 441.8345 | 415.37529 | 推荐final |
+| Main history-feature blend | 451.1810 | 442.9025 | 415.86912 | Main reference |
+| Supplied-macro augmentation | 451.2081 | 442.8892 | 415.78232 | Macro ablation |
+| Grouped blending + PLR-FT | 451.0295 | 441.8345 | 415.37529 | Recommended final |
 
-最终方案的Kaggle分数比历史主融合降低0.49383，比宏观版降低0.40703。在这三份对应的年度和近期本地验证中，它也均优于另外两份，因此有一致的选择依据。分差较小，不宣称统计显著领先或未知私榜一定领先。
-Kaggle数值由用户提供的提交列表截图读取，截图未标明public/private类型，报告统一写“Kaggle显示分数”。本地年度为2024-04至2025-03的35,158行，近期为2024-06至2025-03的28,995行，两者重叠且均经过多轮开发筛选；不能作为两个独立测试。
+Final Kaggle score improves history by 0.49383 and macro by 0.40703. It also beats both on corresponding annual/recent validation, supporting consistent selection among three. Differences are small; no statistically significant or guaranteed unseen-private-board superiority claim.
+User submission screenshots supply scores without public/private identification; call them displayed Kaggle scores. Local annual is35,158 April2024–March2025 rows, recent 28,995 June2024–March2025. They overlap and underwent repeated selection, so are not independent tests.
 
-## 2. Final方法的准确描述
+## 2. Precise final-method description
 
-最终方法是 **历史特征驱动的树模型与Transformer分组融合**，不是单独一个Transformer。其12路预测包含LightGBM、CatBoost、XGBoost、原FT-Transformer、去掉稀疏36月字段的FT四种子平均，以及新增PLR-FT。四种子平均占一路，底层共15个已训练预测器；不把它们称为15种不同架构。
-输入来自train.csv及比赛所给auxiliary。主要历史信息包括楼栋/街道/区域与户型层面的过去租金统计、相对市场价格，以及12/24/36个月同期记录的计数和租金分布。新增神经网络去掉五列36月同期统计，使用调整后的历史基准学习租金残差；PLR-FT采用128维、3个注意力块和可学习周期数值嵌入。
-融合根据24个月和36个月同期历史是否存在分成最多四组。拟合历史预测误差时减去当月误差均值；非负权重和为1，单路最高0.6。全局权重向原融合收缩，组内权重向全局收缩，正则均为0.003；小于500条拟合样本的组及未知组回退到全局。推理直接加权，不读取查询租金。
-提交阶段基础模型使用全部150,000条已提供训练标签拟合。最终融合使用2023-10至2024-03、2024-04至2025-03的历史样本外预测，共53,135行，两类预测原点总损失等权，标签截止2025-03；生成全部50,000条测试预测。没有使用测试集真实租金、外部租金答案匹配或手工回填预测。
+Final method is a **history-driven grouped blend of trees and Transformers**,not one Transformer. Twelve channels include LightGBM, CatBoost, XGBoost, original FT, pruned36-month FT four-seed mean, and PLR-FT. The seed mean is one channel; 15 underlying predictors are not15 architectures.
+Inputs come from train.csv/supplied auxiliary data: past rents at block/street/area/type levels, market-relative prices, and 12/24/36-month cohort counts/distributions. New neural models remove five36-month fields and predict residuals from an adjusted historical baseline. PLR-FT uses width128, three attention blocks and learned periodic numerical embeddings.
+Blend at most four24-/36-month support groups. Center historical errors by month; nonnegative weights sum1 with channel cap0.6. Global weights shrink to original, groups to global, regularization0.003. Groups below500/unseen groups use global weights. Inference does not read query rents.
+Submission base models fit all 150,000 supplied labels. Blend fitting uses 53,135 historical out-of-time rows from 2023-10 through 2024-03 and 2024-04 through 2025-03, equally weighting total loss by origin group, with labels through 2025-03. Predict all 50,000 test rows without hidden rents, external answer matching or manual filling.
 
-## 3. 报告叙事与对照
+## 3. Report narrative and controls
 
-正文先用共同输入的传统模型/神经网络表比较模型，再用固定模型的特征阶梯解释历史与辅助信息的增量，最后展示本页三份完整管线的提交对照。保留历史主融合作为强基线、宏观增强作为辅助数据消融、最终结构融合作为final。不同输入的单模型不作公平架构排名。
-模型结构章节保留FT线性/PLE/PLR、DCN和专家网络的有限预算对照，说明更复杂的网络并未普遍获胜。PLR单模型不是本轮最低单模型，但在固定融合目标、正则和分组规则的对照中提供互补。其他结构及负结果放扩展表，不把每个搜索配置都写入正文。
-三份Kaggle提交比较的是完整管线。最新方案相对原历史版同时经历了历史字段删减、种子平均、分组融合和PLR输出加入，不能把全部0.49383的Kaggle提升归因于PLR本身。单独加入PLR的本地对照是第九轮441.9591/450.8650与第十轮441.8345/451.0295：近期降低0.1245，年度升高0.1645；这是互补性证据，不是稳定单模型替代的证明。第九轮方案不在此次截图的三份提交中，其年度更低仍应如实保留。
+First compare classical/neural methods on shared inputs, then explain history/auxiliary increments with a fixed-model ladder, and finally compare these three complete submissions. Retain history as strong reference, macro as auxiliary ablation, structure as final. Differing-input standalone scores are not fair architecture rankings.
+Retain bounded FT linear/PLE/PLR, DCN and expert controls to show complexity does not universally win. PLR is not the best standalone network, but complements the fixed-objective/regularization/grouping blend. Supplementary tables retain other structures/negative results without every search configuration entering the body.
+The three Kaggle submissions compare pipelines. History pruning, seed averaging, grouped blending and PLR all changed; not all 0.49383 gain belongs to PLR. Matched PLR addition changes round 9 recent/annual 441.9591/450.8650 to 441.8345/451.0295:recent−0.1245, annual+0.1645. This supports complementarity, not stable standalone replacement. Round 9 is absent from the screenshot's three submissions; retain its better annual result.
 
-## 4. 可用于报告结果部分的表述
+## 4. Suggested results wording
 
-> 我们最终采用历史特征驱动的树模型与Transformer分组融合方案。与历史主融合及所给宏观增强相比，该方案在相同年度和近期时间验证中的RMSE分别为451.0295和441.8345，并在三份已提交方案中取得最低的Kaggle显示分数415.37529，较历史主融合降低0.49383。历史同期信息构成主要预测基础，条件融合与PLR数值嵌入提供额外互补。由于本地窗口被反复用于开发、且最终方案也参考了候选提交分数，这些结果应解释为开发与提交比较证据，不作为独立泛化检验；宏观信息与单个结构的作用通过各自受控对照分别讨论。
+> We select a history-driven grouped tree/Transformer ensemble. Its annual/recent RMSEs451.0295/441.8345 outperform the history and supplied-macro pipelines on matched windows; its displayed Kaggle 415.37529 is lowest among three submissions, 0.49383 below history. Anniversary histories supply the main predictive foundation; conditional fusion and periodic embeddings add complementarity. Reused development windows and submission-informed selection make these development/submission comparisons, not independent generalization tests. Controlled studies separately address macro and architectural contributions.
 
-## 5. 复现与证据
+## 5. Reproduction and evidence
 
-- [最终选择清单](submission_selection.json)和[三份提交对照表](submission_comparison.csv)。
-- [最终模型/预测清单](../../output/submissions/components/round_10_final_structure/summary.json)、[全量融合权重](../../output/submissions/components/round_10_final_structure/blend_model.json)。
-- [第九轮融合对照](../04_optimization_history/09_grouped_blending.md)、[第十轮结构对照](../04_optimization_history/10_plr_transformer_final.md)。
-- [结构与融合重载核查](../../output/experiment_runs/round_10_plr_transformer_final/verification.json)：23份基础模型与27份融合权重复现、9项相关测试通过；最终新网络另完成全量重训及重载。
+- [Final selection](submission_selection.json) and [three-submission comparison](submission_comparison.csv).
+- [Final model/prediction inventory](../../output/submissions/components/round_10_final_structure/summary.json), [full-data blend weights](../../output/submissions/components/round_10_final_structure/blend_model.json).
+- [Round 9 blending controls](../04_optimization_history/09_grouped_blending.md), [round 10 architecture controls](../04_optimization_history/10_plr_transformer_final.md).
+- [Architecture/blend reload checks](../../output/experiment_runs/round_10_plr_transformer_final/verification.json):23 base models and 27 weight sets replay; nine tests pass. New final networks also complete full-data refitting/reloading.

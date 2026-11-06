@@ -1,4 +1,6 @@
-# 性能优化历程
+[Chinese version](README.zh-CN.md)
+
+# Optimization history
 
 [Back to experiment index](../README.md)
 

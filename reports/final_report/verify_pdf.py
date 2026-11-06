@@ -15,6 +15,9 @@ def main():
     RENDER.mkdir(parents=True, exist_ok=True)
     doc = fitz.open(PDF)
     references, appendix, diagnostics = None, None, None
+    fine_tuning, scratch_transformer = None, None
+    interpretation = None
+    auxiliary_temporal = None
     details = []
     for i, page in enumerate(doc):
         text = page.get_text()
@@ -24,6 +27,14 @@ def main():
             appendix = i + 1
         if "SUPPLEMENTARY VALIDATION DIAGNOSTICS" in text.upper():
             diagnostics = i + 1
+        if "TABPFN FINE-TUNING EXPERIMENTS" in text.upper():
+            fine_tuning = i + 1
+        if "SMALL TRANSFORMERS TRAINED FROM SCRATCH VERSUS TABPFN" in text.upper():
+            scratch_transformer = i + 1
+        if "INTERPRETING TABPFN'S PREDICTIVE ADVANTAGE" in text.upper() or "INTERPRETING TABPFN’S PREDICTIVE ADVANTAGE" in text.upper():
+            interpretation = i + 1
+        if "AUXILIARY TEMPORAL-DATA EXPERIMENTS" in text.upper():
+            auxiliary_temporal = i + 1
         assert "\ufffd" not in text, f"Replacement character on page {i+1}"
         assert "??" not in text, f"Unresolved reference on page {i+1}"
         outside = []
@@ -37,6 +48,11 @@ def main():
     assert references is not None, "Separate references page not found"
     assert appendix is not None, "Workload appendix not found"
     assert diagnostics is not None, "Supplementary diagnostics appendix not found"
+    assert fine_tuning is not None, "TabPFN fine-tuning appendix not found"
+    assert scratch_transformer is not None, "Scratch Transformer comparison appendix not found"
+    assert interpretation is not None, "TabPFN interpretation appendix not found"
+    assert auxiliary_temporal is not None, "Auxiliary temporal-data appendix not found"
+    assert appendix < diagnostics < fine_tuning < scratch_transformer < interpretation < auxiliary_temporal, "Appendix order changed"
     main_pages = references - 1
     assert main_pages <= 8, f"Main text exceeds limit: {main_pages} pages"
     manuscript = (ROOT / "reports/final_report/final_report.tex").read_text(encoding="utf-8")
@@ -47,6 +63,9 @@ def main():
     record = {"pdf": str(PDF.relative_to(ROOT)), "total_pages": len(doc), "main_pages": main_pages,
               "references_start": references, "appendix_start": appendix,
               "diagnostics_start": diagnostics, "appendix_pages": len(doc)-appendix+1,
+              "fine_tuning_start": fine_tuning, "scratch_transformer_start": scratch_transformer,
+              "tabpfn_interpretation_start": interpretation,
+              "auxiliary_temporal_start": auxiliary_temporal,
               "resolved_bibliography_entries": len(bibkeys),
               "page_bounds_and_reference_checks": "passed", "pages": details}
     (ROOT / "reports/final_report/pdf_verification.json").write_text(json.dumps(record,indent=2) + "\n",encoding="utf-8")

@@ -1,20 +1,22 @@
-# TabPFN 拆分与执行
+[Chinese version](tabpfn_workflow.zh-CN.md)
 
-| 入口 | 用途 |
+# TabPFN isolation and execution
+
+| Entry point | Purpose |
 |---|---|
-| `python review_tabpfn.py list` | 查看当前分支包含的原始入口与 F2 状态 |
-| `python review_tabpfn.py verify` | 按哈希核对原始代码、结果和派生数据，不训练 |
-| `python review_tabpfn.py metrics` | 从月度汇总重算已有整体 RMSE、MAE、bias；不执行模型推理 |
-| `python review_tabpfn.py preflight` | 列出本机包、checkpoint、缺失资源和历史哈希差异，不下载或认证 |
-| `python review_tabpfn.py test` | 在独立工作目录运行当前分支所附的原始测试 |
-| `python review_tabpfn.py prepare` | 复制原代码、共享数据和结果到 `output/tabpfn-workspace/` |
-| `python review_tabpfn.py run aligned -- --help` | 查看原始参数，不训练 |
+| `python review_tabpfn.py list` | Inspect original entry points and F2 status in the current branch |
+| `python review_tabpfn.py verify` | Verify original code, results and derived-data hashes without training |
+| `python review_tabpfn.py metrics` | Recompute existing pooled RMSE, MAE and bias from monthly summaries; no model inference |
+| `python review_tabpfn.py preflight` | List local packages, checkpoints, missing resources and historical hash differences; no downloads or authentication |
+| `python review_tabpfn.py test` | Run bundled original tests in an independent working directory |
+| `python review_tabpfn.py prepare` | Copy original code, shared data and results into `output/tabpfn-workspace/` |
+| `python review_tabpfn.py run aligned -- --help` | Inspect original arguments without training |
 
-分支分类见[拆分决策](../planning/tabpfn-branch-split.md)和[逐目录决策表](../planning/tabpfn-classification.csv)。本次实际核验记录位于 `review/checks/tabpfn-split/`。
+See [split decisions](../planning/tabpfn-branch-split.md) and the [directory classification](../planning/tabpfn-classification.csv). Actual verification records are in `review/checks/tabpfn-split/`.
 
-## 环境与架构
+## Environment and architecture
 
-`workflows/tabpfn/` 保存 TabPFN 原始 `analysis/`、`tests/`、`environment.yml` 与 `requirements-*.txt`。`environment.anniversary-original.yml` 保存合并分支的环境，根目录已有环境文件继续用于 F1。原始 README 和 API 文档作为来源材料保留，原命令应在组装后的独立工作目录中理解。
+`workflows/tabpfn/` preserves the original TabPFN `analysis/`, `tests/`, `environment.yml` and `requirements-*.txt`. `environment.anniversary-original.yml` preserves the merged branch's environment; existing root environments continue to serve F1. Original README/API documentation is retained as source material; interpret its commands relative to the assembled isolated workspace.
 
 ```powershell
 conda env create -f workflows/tabpfn/environment.yml
@@ -22,27 +24,27 @@ conda activate cs5228-hdb
 python -m pip install -r workflows/tabpfn/requirements-tabpfn.txt
 ```
 
-CUDA 构建按原文件说明准备。本轮未验证全新环境安装；原记录与本机的 GPU、NumPy/Pandas 版本存在差异，完整推理需另行核验。API 路线依赖 `requirements-tabpfn-api.txt`，本次不调用它。
+Prepare CUDA following the original files. A fresh environment installation was not verified in this round; recorded GPU and NumPy/Pandas versions differ from this machine, so full inference needs separate verification. The API route requires `requirements-tabpfn-api.txt` and is not invoked here.
 
-原来的同名模块保留在独立工作流内；`review_tabpfn.py` 将其放入 `output/`，并以单独进程运行。根目录 `analysis/`、F1 固定包和原始数据不被替换。训练输出与缓存写到该工作目录。需要新目录时，使用 `--workspace output/tabpfn-new-run`；现有工作目录与新快照不一致时入口会拒绝复用。
+Same-named original modules remain inside the isolated workflow. `review_tabpfn.py` places them under `output/` and runs them in a separate process, preserving root `analysis/`, the fixed F1 package and raw data. Outputs/caches stay in that workspace. Use `--workspace output/tabpfn-new-run` for a new directory; the entry point refuses reuse when an existing workspace differs from the new snapshot.
 
-## 数据和结果
+## Data and results
 
-| 内容 | 处理 |
+| Content | Action |
 |---|---|
-| 九份比赛原始 CSV | 继续使用根目录 `data/`，组装时复制到工作目录；保留 150,000 条原训练样本 |
-| 清洗、去重等派生数据 | 保存在 appendix 的 `data/processed/`，明确作为替代数据口径 |
-| 原结果目录 | 按分类保存；组装后还原为 `reports/<原目录名>/`，使原相对路径可追溯 |
-| 原代码与来源哈希 | `workflows/tabpfn/manifest.json`；不修改历史结果中的 source/code 哈希以伪装成新运行 |
-| 最终提交 CSV 与成员预测 | 来源 Git 未包含的文件继续标记缺失；不从汇总表反造预测 |
+| Nine original competition CSVs | Continue using root `data/`, copied during workspace assembly; preserve all 150,000 original training samples |
+| Cleaned, deduplicated and other derived data | Stored in appendix's `data/processed/` and explicitly identified as alternative data definitions |
+| Original result directories | Retained by classification; restored as `reports/<original-directory-name>/` in the assembled workspace for relative-path traceability |
+| Original code and provenance hashes | `workflows/tabpfn/manifest.json`; historical source/code hashes are not rewritten to imply a new run |
+| Final submission CSVs and member predictions | Files absent from the source Git repository remain marked missing; predictions are not fabricated from summary tables |
 
-`metrics` 仅检查汇总一致性。组件月表未提供行数时，按原始训练集的对应月份人数加权；较早的抽样验证不混入完整 holdout 的汇总检查。原始逐行预测缺失时，该检查不能证明模型推理、样本行对齐或无泄漏。
+`metrics` checks summary consistency only. If component monthly tables omit row counts, it weights months by corresponding counts in the raw training data; earlier sampled validations are excluded from complete-holdout checks. Without original row predictions, this cannot verify inference, row alignment or absence of leakage.
 
-## 运行边界
+## Execution boundaries
 
-`run` 要求显式传入原始参数；无参数不会触发原脚本的默认训练。完整推理需要相应包、指定 checkpoint、原特征/适配缓存及其哈希。`preflight` 会显示当前缺口，补齐后再执行原配方。main 只包含必要入口；完整探索与历史提交入口位于 appendix。
+`run` requires explicit original arguments; omitting them does not trigger a script's default training. Full inference requires the appropriate packages, checkpoint, feature/adapter caches and hashes. `preflight` lists current gaps; restore resources before running the original recipe. Main includes essential entry points; appendix retains full exploration and historical submission commands.
 
-`submission_zch_tabpfn87_equal_150k.csv` 的候选导出、生成源码和来源记录现已随周年分支合并。它与历史截图分数的文件身份关联仍未核实；现有 ABCDE/ABDE 是不同候选，不能据此替代或确认 F2。新增入口与验证见[周年合并指南](anniversary_merge.md)。
+The candidate export, generator source and provenance for `submission_zch_tabpfn87_equal_150k.csv` are now integrated from the anniversary branch. Its file identity relative to the historical screenshot score remains unverified. Existing ABCDE/ABDE are different candidates and cannot replace or confirm F2. See the [anniversary integration guide](anniversary_merge.md) for new commands and verification.
 
 ## Validation dependency snapshot
 

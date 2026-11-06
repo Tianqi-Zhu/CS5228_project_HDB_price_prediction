@@ -1,142 +1,144 @@
-# 深入特征工程实验
+[Chinese version](history_feature_optimization.zh-CN.md)
 
-本轮完成 18 组特征消融、3 组精简复验、4 组市场基准分解；每组覆盖三个年度窗口和
-一个十六个月窗口，共 100 次固定配置 LightGBM 训练。参数、源文件哈希和完整结果在
-`output/experiment_runs/features_history_optimization`。
+# Detailed feature-engineering experiments
 
-结论：默认方案由 31 列精简到 **27 列**，性能保持相同。历史溢价有小幅潜力，但精简后
-优势不够稳定，暂作为研究选项。更大的改善来自市场基准分解，需要单独验证市场转折期。
+This round completed 18 feature ablations, three compact-policy confirmations and four market-baseline decompositions, each covering three annual windows and
+one sixteen-month window: 100 fixed-configuration LightGBM fits. Parameters, source hashes and complete results are in
+`output/experiment_runs/features_history_optimization`.
 
-## 1. 可以确定删除的重复信息
+Conclusion: the default shrinks from 31 to **27 inputs** with identical performance. Historical premiums show modest potential, but their compact
+version is insufficiently stable for the default. Larger gains come from market-baseline decomposition, which needs separate testing at market turning points.
 
-150,000 条训练记录共有 14,828 个“规范化地址 + 户型”组合。在每个组合内，房屋模型、
-面积和租约开始年份均固定。因此，原先 `SIGNATURE` 与 `BLOCK_FLAT` 的四个历史特征
-逐行完全相同：均价、计数、最近月份均价、距最近月份的月数。
+## 1. Confirmed duplicate information
 
-审计对全部训练行执行数值完全相等检查，结果见
-`output/experiment_runs/features_history_optimization/redundancy_audit.json`。
-删除四列后，四个窗口的 RMSE 均与原方案完全相同。
+The 150,000 training records contain 14,828 normalized-address/flat-type combinations. Within each, flat model,
+area and lease commencement year are constant. Thus the four original `SIGNATURE` and `BLOCK_FLAT` history statistics
+are identical row by row: mean, count, latest-month mean and months since the latest observation.
 
-新的默认 `RentalFeatureEngineer()` 对应 `compact_history_27`：
+Exact numerical equality was checked across every training row; see
+`output/experiment_runs/features_history_optimization/redundancy_audit.json`.
+After deleting four columns, all four windows have exactly the same RMSE as the original policy.
 
-- 19 个静态字段保持不变。
-- 楼栋 + 户型、规划区 + 户型各保留四个历史统计，共 8 个。
-- 原 31 列可用 `RentalFeatureEngineer("compact_history")` 复现。
+The new default `RentalFeatureEngineer()` uses `compact_history_27`:
 
-该等价关系来自当前数据的属性结构；如果未来数据出现同楼栋同户型的面积、模型或
-租约年份差异，需要重新检查，不能视为一般房地产数据的规律。
+- Retain the 19 static fields.
+- Keep four history statistics each for block/flat-type and planning-area/flat-type: eight in total.
+- Reproduce the original 31 inputs with `RentalFeatureEngineer("compact_history")`.
 
-## 2. 历史覆盖率揭示的瓶颈
+This equivalence follows from this dataset's attribute structure. Recheck if future records have different areas, models or
+lease years within the same block/type; it is not a general property-data rule.
 
-详见 `output/experiment_runs/features_history_optimization/history_support.csv`。
-2024-04 起的验证窗中，楼栋 + 户型历史覆盖率为 98.83%，历史样本数中位数为 11，
-12.14% 的验证行最多只有 3 条历史记录。规划区 + 户型则完全覆盖，历史样本数中位数为
-1,899。细粒度历史的距离最近记录月数中位数为 10，十六个月窗口中为 12。
+## 2. Bottlenecks revealed by historical coverage
 
-因此，小样本支持和历史陈旧都值得检查；“历史缺失很多”并不是主要解释。计数可以
-帮助模型判断统计的可靠性，`RECENCY_MONTHS` 则显式表示历史陈旧程度。
+See `output/experiment_runs/features_history_optimization/history_support.csv`.
+In validation from 2024-04, block/type history covers 98.83% of rows, with median support 11;
+12.14% of rows have at most three earlier records. Planning-area/type coverage is complete, with median support
+1,899. Median fine-grained history age is ten months, rising to twelve in the sixteen-month window.
 
-## 3. 十八组同模型消融
+Small support and stale histories therefore warrant attention; widespread missing history is not the main explanation. Counts
+convey statistical reliability, while `RECENCY_MONTHS` explicitly measures staleness.
 
-所有候选使用原始全部拟合行、相同 LightGBM 参数和相同时间窗。三个排名窗口为
-2022-04 至 2023-03、2023-04 至 2024-03、2024-04 至 2025-03。十六个月窗口独立列示，
-与年度窗口重叠，不计入汇总。所有历史查询都只看预测月份之前、且属于拟合集的标签。
+## 3. Eighteen matched-model ablations
 
-| 方案 | 特征数 | 三年度汇总 RMSE | 最新年度 RMSE | 16个月 RMSE |
+All candidates use every original fitting row, identical LightGBM settings and identical windows. The three ranking windows are
+2022-04 through 2023-03, 2023-04 through 2024-03 and 2024-04 through 2025-03. Report the sixteen-month window separately;
+it overlaps annual windows and is excluded from pooling. History queries use only fitting labels before the prediction month.
+
+| Policy | Features | Pooled three-year RMSE | Latest annual RMSE | 16-month RMSE |
 | --- | ---: | ---: | ---: | ---: |
-| 原默认 | 31 | 591.96 | 468.49 | 491.22 |
-| 去掉重复历史（新默认） | 27 | 591.96 | 468.49 | 491.22 |
-| 加入同户型月度溢价 | 43 | 590.42 | 467.02 | 489.45 |
-| 加入过去市场背景 | 37 | 586.95 | 468.98 | 491.68 |
-| 历史均价按12个月半衰期衰减 | 31 | 590.64 | 469.85 | 494.18 |
-| 只保留最近12个月历史 | 31 | 593.69 | 475.41 | 493.96 |
-| 历史均价向粗粒度均价收缩 | 31 | 592.13 | 469.35 | 500.41 |
-| 加入面积/房间数、房间数、竣工租约间隔 | 34 | 591.99 | 468.44 | 492.70 |
-| 加入0.5km、2km设施数量 | 37 | 592.07 | 468.45 | 491.53 |
-| 加入街道类别 | 32 | 600.09 | 475.53 | 496.83 |
-| 加入地址类别 | 32 | 598.75 | 476.03 | 501.86 |
+| Original default | 31 | 591.96 | 468.49 | 491.22 |
+| Remove duplicate history (new default) | 27 | 591.96 | 468.49 | 491.22 |
+| Add same-type monthly premiums | 43 | 590.42 | 467.02 | 489.45 |
+| Add historical market context | 37 | 586.95 | 468.98 | 491.68 |
+| History mean with 12-month half-life decay | 31 | 590.64 | 469.85 | 494.18 |
+| Retain only the latest 12 months of history | 31 | 593.69 | 475.41 | 493.96 |
+| Shrink history means toward coarser-group means | 31 | 592.13 | 469.35 | 500.41 |
+| Add area/room count, room count and completion-to-lease gap | 34 | 591.99 | 468.44 | 492.70 |
+| Add amenity counts within 0.5km and 2km | 37 | 592.07 | 468.45 | 491.53 |
+| Add street category | 32 | 600.09 | 475.53 | 496.83 |
+| Add address category | 32 | 598.75 | 476.03 | 501.86 |
 
-完整十八组见 `pooled_metrics.csv`、`fold_metrics.csv`、`monthly_errors.csv`。
+See all eighteen candidates in `pooled_metrics.csv`, `fold_metrics.csv` and `monthly_errors.csv`.
 
-### 历史均价与溢价应区分
+### Distinguish historical rent means from premiums
 
-对已观察月份 m 的每条租金，计算：
-
-```text
-溢价 = 租金 - 当月同户型平均租金
-```
-
-然后按地址/户型等层级汇总，使用 20 条伪样本的层级平滑。预测月份 t 的编码只汇总
-m < t 的拟合集月份，因此当月同户型均值不会泄露到 t 的输入。它表达区域或房屋属性
-相对当时市场的差异，而原租金均价仍包含整体市场价格水平。
-
-原历史 + 溢价的组合在三个年度窗和十六个月窗都略有改善；只用溢价替换原历史则变差。
-说明本次实验中，价格水平和相对溢价是互补信息。
-
-但不能直接认为新增十二列都有效：部分统计与原列重复，而重复分组经过层级平滑后
-还会形成不同的收缩程度。进一步精简为 31 列后，汇总 RMSE 仅从 591.9623 降到
-591.9048，早期年度从 711.08 变差到 712.24。详见
-`output/experiment_runs/features_history_optimization/refined`。
-因此，保留 `compact_premium_research` 作为可复现实验配置，默认采用更简单的 27 列。
-
-### “更近期”并没有稳定胜出
-
-近期十二个月、六个月/十二个月半衰期、原均价层级平滑，在部分年度有效，但最新年度或
-长预测窗变差。历史窗口在拟合起点冻结，不会随未来时间移动而把所有历史耗空；
-因此这里的负结果不能归咎于该类实现错误。
-
-街道和地址类别在本次四个窗口均变差。房屋衍生属性、多设施半径也没有稳定增量，
-不加入默认方案。上述结论仅针对本次固定模型和参数，不是对这些字段的一般性否定。
-
-## 4. 更大的空间：市场基准分解
-
-这是独立的目标表示实验，不与上面的纯特征消融混称。所有实验臂都排除相同的前六个
-拟合月份；这些已知月份仍可用于后续行的历史统计。每行的市场背景只使用更早月份。
-
-先估计同户型市场基准，再让树预测房屋相对基准的残差：
+For each rent in an observed month m, calculate:
 
 ```text
-训练目标 = 实际租金 - 过去信息推算的市场基准
-最终预测 = 市场基准 + 树预测残差
+premium = rent - same-flat-type mean rent in that month
 ```
 
-市场背景包含过去最后一个月、三个月/十二个月均价、六个月对数斜率、预测基准和预测
-月数。趋势版本限制月度对数斜率到 ±0.02，并按每月 0.85 衰减；这些常数固定用于全部
-窗口，没有针对某折调整。未来月份不使用真实租金或未来经济观测。
+Aggregate by address/type and other levels with hierarchical smoothing equivalent to 20 pseudo-observations. Encoding for month t includes only
+fitting months m < t, so its inputs do not contain the same-month type mean. It represents property/location differences
+relative to the market then; ordinary rent means also contain the overall market level.
 
-| 目标表示 | 三年度汇总 RMSE | 最新年度 RMSE | 16个月 RMSE |
+Combining original histories with premiums improves slightly in all three annual windows and the sixteen-month window; replacing histories with premiums worsens results.
+Price levels and relative premiums are therefore complementary in this experiment.
+
+This does not show that all twelve added fields help: some duplicate original fields, and smoothing identical groups
+can produce different shrinkage. After further compaction to 31 fields, pooled RMSE falls only from 591.9623 to
+591.9048, while the early annual score worsens from 711.08 to 712.24. See
+`output/experiment_runs/features_history_optimization/refined`.
+Retain `compact_premium_research` as a reproducible research option; keep the simpler 27-input default.
+
+### More recent history does not win consistently
+
+A recent twelve-month window, six-/twelve-month half-lives and hierarchical smoothing help some annual periods but worsen the latest annual or
+long-horizon window. History windows freeze at the fitting origin; future query dates do not gradually empty the historical pool.
+These negative results therefore cannot be blamed on that implementation error.
+
+Street and address categories worsen all four windows. Derived property features and multiple amenity radii also give no stable increment,
+so they are excluded by default. These conclusions concern this learner/settings, not the universal value of those fields.
+
+## 4. Larger potential: market-baseline decomposition
+
+This is a separate target-representation experiment, not a pure feature ablation. Every arm excludes the same first six
+fitting months, although those known months can support later histories. Each row's market context uses earlier months only.
+
+Estimate a same-type market baseline, then let the tree predict the property's residual:
+
+```text
+training target = actual rent - market baseline forecast from past information
+final prediction = market baseline + tree-predicted residual
+```
+
+Market context includes the latest observed month, three-/twelve-month means, six-month log slope, forecast baseline and
+forecast horizon. The trend variant clips monthly log slopes to ±0.02 and damps by 0.85 each month. These constants are fixed across
+windows, without fold-specific adjustment. Forecasts use neither future actual rents nor future economic observations.
+
+| Target representation | Pooled three-year RMSE | Latest annual RMSE | 16-month RMSE |
 | --- | ---: | ---: | ---: |
-| 原目标，原31列匹配训练行对照 | 592.61 | 469.19 | 497.24 |
-| 原目标，额外加入市场背景的37列对照 | 589.74 | 469.57 | 496.86 |
-| 最近已知月份市场基准 + 残差 | 583.01 | 467.55 | 488.54 |
-| 衰减趋势市场基准 + 残差 | 563.29 | 468.15 | 490.79 |
+| Original target; matched-row original 31-input control | 592.61 | 469.19 | 497.24 |
+| Original target; 37-input control with market context | 589.74 | 469.57 | 496.86 |
+| Latest-observed-month market baseline + residual | 583.01 | 467.55 | 488.54 |
+| Damped-trend market baseline + residual | 563.29 | 468.15 | 490.79 |
 
-趋势分解在 2022-04 窗口由相同 37 列对照的 703.06 降至 621.15，却在 2023-04
-窗口从 583.98 变差到 593.24。它降低了上涨期的低估，也可能在市场转折时高估。
-最近月份基准的收益较温和，但 2023-04 窗口与匹配31列对照仅相差约 0.36。
+Trend decomposition improves the 2022-04 score from 703.06 for the matched 37-input control to 621.15, but worsens the 2023-04
+score from 583.98 to 593.24. It reduces underprediction during rising markets but may overpredict at turning points.
+The latest-month baseline gives a smaller gain; its 2023-04 difference from the matched 31-input control is only about 0.36.
 
-这些结果支持继续研究市场水平与房屋相对价格的分解。单纯把时间序号、未来市场水平
-再塞入树中，不能保证外推。市场分解涉及预测目标和预测值的变换，需要作为单独模型
-路线验证；没有据此改变默认特征处理器。
+These results support further work separating market levels from relative property prices. Simply supplying time indices or future market levels
+to a tree does not guarantee extrapolation. Decomposition transforms both targets and predictions and must be validated as a separate
+modelling route. It has not changed the default feature processor.
 
-## 复跑与实现
+## Reproduction and implementation
 
 ```powershell
-# 全部消融、市场分解、精简复验及结构审计
+# All ablations, market decompositions, compact-policy confirmations and structural audits
 python -m analysis.main feature-optimize
 
-# 也可只跑一个阶段
+# Or run one stage only
 python -m analysis.main feature-optimize --stage features
 python -m analysis.main feature-optimize --stage market
 python -m analysis.main feature-optimize --stage refined
 python -m analysis.main feature-optimize --stage audit
 ```
 
-统一实现仍在 `analysis/pipeline/features.py`，默认使用
-`RentalFeatureEngineer("compact_history_27")`。`HistoryPolicy` 明确记录数值表示、
-时间窗口、半衰期、平滑和输出统计，避免在不同实验中隐式采用不同算法。
-新增测试覆盖所有历史策略的同月/未来标签隔离、固定预测起点、衰减权重和市场趋势边界。
+The shared implementation remains in `analysis/pipeline/features.py`, defaulting to
+`RentalFeatureEngineer("compact_history_27")`. `HistoryPolicy` explicitly records numerical representation,
+windows, half-lives, smoothing and output statistics, preventing implicit algorithm differences across experiments.
+New tests cover same-month/future-label isolation for every history policy, fixed origins, decay weights and market-trend boundaries.
 
-本轮结果仍然复用了项目已查看过的月份，只是方案选择证据，没有新独立测试标签。
-较小差异尚无跨模型或月份抽样不确定性验证。后续若调整趋势参数或选择更复杂方案，
-应在拟合集内部选择，在固定外层窗口中只评估一次，避免继续围绕最新年度调参。
+These results reuse previously examined months and support policy selection only; no new independent test labels are available.
+Small differences have not been assessed across models or with month-resampling uncertainty. Future trend-parameter tuning or more complex selection
+should occur inside fitting data, followed by one evaluation on fixed outer windows, rather than continued tuning around the latest year.

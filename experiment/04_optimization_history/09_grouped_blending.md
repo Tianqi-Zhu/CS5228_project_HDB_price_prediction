@@ -1,45 +1,47 @@
-# 第九轮：只改变融合方式
+[Chinese version](09_grouped_blending.zh-CN.md)
 
-本轮31种融合配置的最低近期开发RMSE为 **441.9591**，年度为 **450.8650**。前一轮为442.7032/451.4310，原历史主方案为442.9025/451.1810。单模型和输入特征均保持不变。
+# Round 9:change only blending
 
-## 方案与信息边界
+Lowest among 31 configurations: recent **441.9591**,annual **450.8650**. Previous442.7032/451.4310; original history 442.9025/451.1810. Base models/features unchanged.
 
-组件为原主融合的10个叶子预测＋新FT四种子平均，共11路。比较非负和为1的加权平均、带正则的权重收缩、按24/36月历史覆盖/户型/种子分歧分组、有限负权重、冻结权重与使用最新已观测预测更新权重。非负方案每路最高0.6。
-有效变化是以月份为单位，将拟合样本的各模型误差减去当月误差均值，再学习权重；目的是降低历史时期整体租金水平偏差对权重的干扰。分组权重向全局权重收缩。预测时直接组合模型输出，不读取待预测月份租金，不对验证标签反推校准。
-最低候选 `followup_support_pair_centered_0.003` 按24个月、36个月同期历史是否存在，分为最多4组；全局正则0.003，组内权重向全局权重收缩的正则0.003。少于500个拟合样本的组回退到全局权重，未知组同样回退。
+## Policies/information boundaries
 
-## 选择口径
+Eleven channels: ten old leaves+new four-seed FT. Compare nonnegative sum1 weights, regularized shrinkage, 24-/36-month/type/disagreement groups, limited negatives, frozen versus latest-observed updating. Nonnegative channel cap0.6.
+Useful change: subtract monthly mean errors before learning weights to reduce market-level bias effects. Shrink groups to global. Inference combines outputs without query rents or validation-based calibration.
+The lowest candidate, `followup_support_pair_centered_0.003`, uses up to four groups based on availability of 24-/36-month anniversary history. Global regularization is 0.003; within-group weights shrink toward global weights with regularization 0.003. Groups with fewer than 500 fitting records, and unseen groups, fall back to global weights.
 
-先用2023-10至2024-01拟合、2024-02至03选配置，早期选中 `support24_mse`，后期近期RMSE为 442.7381。本文最低候选是查看后期结果后的探索选择，不能称为早期锁定方案或独立测试最佳。初批22种，随后另有9种分组收缩对照，均保留完整结果。
-年度权重仅用2024-04之前的样本；六月权重最多加入4—5月的年度模型预测，且预测由4月之前拟合的单模型产生。两个原点的总损失权重各占一半。冻结权重对照仅使用早期6个月。年度和近期窗口部分重叠，也都是多轮使用过的开发集。
+## Selection scope
 
-## 主要结果
+Fit on 2023-10–2024-01 and select on 2024-02–2024-03: the early choice is `support24_mse`, with later recent RMSE 442.7381. The reported minimum was selected after inspecting later results and is not an early-locked choice or independent-test winner. Full results retain the initial 22 configurations and nine subsequent group-shrinkage controls.
+Annual weights use pre-April2024; June adds April–May predictions from pre-April models. Origin groups each contribute half total loss. Frozen controls use early six months only. Annual/recent overlap and are repeatedly examined.
 
-| 方案 | 年度RMSE | 近期RMSE |
+## Main results
+
+| Policy | Annual RMSE | Recent RMSE |
 |---|---:|---:|
 | previous_history | 451.1810 | 442.9025 |
 | previous_ft_seedmean | 451.4310 | 442.7032 |
 | global_mse_0.003 | 450.8960 | 442.8107 |
 | global_month_centered_0.003 | 450.9816 | 442.2495 |
-| support24_month_centered | 450.8048 | 442.1071 |
+| support 24_month_centered | 450.8048 | 442.1071 |
 | followup_support24_centered_0.003 | 450.6221 | 442.0146 |
 | followup_support_pair_centered_0.003 | 450.8650 | 441.9591 |
-| support24_mse | 450.7252 | 442.7381 |
+| support 24_mse | 450.7252 | 442.7381 |
 
-完整31种对照见[comparison.csv](../../output/experiment_runs/round_09_grouped_blending/comparison.csv)。正负结果均保留，原提交文件保持不变。
+All31 controls:[comparison.csv](../../output/experiment_runs/round_09_grouped_blending/comparison.csv). Retain positive/negative results and original submissions.
 
-## 稳定性与核查
+## Stability/checks
 
-- outer：相对前一轮差值 -0.5660；10/12个月改善；描述性月块区间 [-0.8809, -0.3242]。
-- june：相对前一轮差值 -0.7441；10/10个月改善；描述性月块区间 [-1.0774, -0.4845]。
+- outer: new−previous−0.5660; ten/twelve months improve; descriptive block interval[-0.8809,-0.3242].
+- june: new−previous−0.7441; ten/ten improve; descriptive block interval[-1.0774,-0.4845].
 
-重采样是在配置搜索后的开发数据上进行，只描述波动，不是独立确认的置信区间。共31×3=93次全局/分组权重拟合流程，包含重复的冻结/更新年度对照，不能计作93个独立模型。93份JSON权重均重新加载并复现预测，RMSE及约束重新核对；5项信息截止、权重约束、月度中心化、组回退和预测不读取标签的测试通过。
+Post-search development resampling describes variability, not independently confirmed confidence.31×three=93 global/group fitting workflows include repeated frozen/updated annual controls, not93 independent models. Reload93 JSONs, reproduce metrics/constraints; five tests cover cutoffs, weights, centering, fallback and label-free prediction.
 
-## 全量提交文件
+## Full-data submission
 
-复用此前已在全部150,000条训练标签上拟合的单模型及其50,000条预测，只重训融合权重。最终融合使用2023-10至2024-03及2024-04至2025-03的历史样本外预测拟合，原点总损失等权，标签截止2025-03；不读取测试标签。最终权重和六月验证权重因拟合截止不同而不同，均单独保存。
-- [新融合CSV](../../output/submissions/candidates/kaggle_blend_support_centered.csv)。
-- [提交清单](../../output/submissions/components/round_09_grouped_blend/summary.json)。
-- [六月验证权重](../../output/experiment_runs/round_09_grouped_blending/weights_june.csv)、[全量融合权重](../../output/experiment_runs/round_09_grouped_blending/weights_full.csv)、[模型复现](../../output/experiment_runs/round_09_grouped_blending/verification.json)。
+Reuse150,000-label base models/50,000 predictions; refit blend weights only on historical out-of-time October2023–March2024 and April2024–March2025, origins equally weighted, labels throughMarch2025. No test labels. Full/June weights differ by cutoff and are saved separately.
+- [New blend CSV](../../output/submissions/candidates/kaggle_blend_support_centered.csv).
+- [Submission inventory](../../output/submissions/components/round_09_grouped_blend/summary.json).
+- [June weights](../../output/experiment_runs/round_09_grouped_blending/weights_june.csv), [full-data weights](../../output/experiment_runs/round_09_grouped_blending/weights_full.csv), [replay](../../output/experiment_runs/round_09_grouped_blending/verification.json).
 
-新文件尚未提交，Kaggle分数未知。用户反馈原历史/宏观两份文件均约415，正常方案最佳约411；不能把本地改善直接换算成榜单改善。
+Not submitted; Kaggle unknown. User reports old history/macro near415 and normal best near411; local gains do not directly convert to leaderboard gains.

@@ -1,4 +1,6 @@
-# CS5228 HDB 月租预测
+[Chinese version](README.zh-CN.md)
+
+# CS5228 HDB monthly rent prediction
 
 This branch contains the TabPFN workflows in `analysis/` and `reports/` and the merged zch workflow in `analysis/pipeline/`, grouped experiment modules, and `experiment/`. Existing TabPFN entry points and report paths remain available. The [zch workflow guide](#zch-project-workflow) below describes its pipeline, results and output directories.
 
@@ -64,7 +66,7 @@ family from the lowest observed later score, and retains both prior submissions.
 Reproduce with `.venv/Scripts/python.exe analysis/compare_tabpfn_abcde.py --stage all`.
 
 The [two full-data ensemble submissions](reports/tabpfn_top2_final_submission/report.md)
-prepare equal-weight ABCDE and weighted ABDE using all150,000 training rows and
+prepare equal-weight ABCDE and weighted ABDE using all 150,000 training rows and
 50,000 test rows. They reuse audited full-data A/B/D/E predictions, newly fit the
 relative-history C model, and preserve the original ensemble weights. The report
 links both upload CSVs and distinguishes development scores from the unlabeled
@@ -227,63 +229,63 @@ quarterly historical origins with 1/3/6/12-month horizons; the final three
 pre-outer months select hyperparameters. Query rents never enter their labelled
 TabPFN context, and outer labels never train or select a head.
 
-根据新加坡 HDB 组屋的属性、位置和租赁审批时间预测每月租金（SGD）。项目使用 Kaggle 提供的训练集、测试集与辅助数据；比赛评价指标为均方根误差（RMSE）。
+Predict monthly Singapore HDB rent (SGD) from property attributes, location and rental approval time. The project uses Kaggle training, test and auxiliary data; competition evaluation uses root mean squared error (RMSE).
 
-## 数据与任务
+## Data and task
 
-| 路径 | 用途 |
+| Path | Purpose |
 | --- | --- |
-| `data/train.csv` | 带有 `MONTHLY_RENT` 标签的训练数据 |
-| `data/test.csv` | 待预测数据，没有租金标签 |
-| `data/example-submission.csv` | Kaggle 提交格式示例：`Id,Predicted` |
-| `data/auxiliary/` | 楼栋、MRT、商场、学校、COE 和股票数据 |
+| `data/train.csv` | Training data labeled with `MONTHLY_RENT` |
+| `data/test.csv` | Prediction inputs without rent labels |
+| `data/example-submission.csv` | Kaggle submission template: `Id,Predicted` |
+| `data/auxiliary/` | Building, MRT, mall, school, COE and stock data |
 
-所有原始 CSV 保持不变。数据清理与特征构造在内存中的副本上完成，图表和指标写入 `reports/`。
+Raw CSVs remain unchanged. Cleaning and feature construction use in-memory copies; figures and metrics go to `reports/`.
 
-## 项目结构
+## Project structure
 
 ```text
 analysis/
-  eda_train_test.py          主数据 EDA 运行入口
-  eda_auxiliary_data.py      辅助数据 EDA 运行入口
-  eda_temporal_correlations.py  租金与经济指标的月度相关性图表
-  train_baseline.py          CatBoost 特征比较运行入口
-  compare_model_families.py  模型家族比较运行入口
-  compare_auxiliary_features.py  辅助特征逐步消融实验入口
-  compare_spatiotemporal_hybrid.py  固定起点时空混合模型评估与预测入口
-  config.py                  路径、验证时间点、特征组和固定模型参数
-  data.py                    数据校验、特征构造、时间划分和地址规范化
-  evaluation.py              RMSE、MAE、平均偏差及分组误差
-  modeling.py                模型输入预处理与模型管线
-  eda/                       两套 EDA 的实现
-  experiments/               三组模型实验的实现
-data/                         Kaggle 原始数据
-reports/                      可重建的统计摘要、图表和实验指标
-midterm_report.md             中期分析、实验结果与后续计划
-environment.yml              独立 Conda 环境定义
-requirements-eda.txt         主数据 EDA 所需依赖
-requirements-model.txt       全部现有脚本所需依赖
+  eda_train_test.py          Main-data EDA entry
+  eda_auxiliary_data.py      Auxiliary-data EDA entry
+  eda_temporal_correlations.py  Monthly rent/economic correlation figures
+  train_baseline.py          CatBoost feature comparison entry
+  compare_model_families.py  Model-family comparison entry
+  compare_auxiliary_features.py  Incremental auxiliary-feature ablation entry
+  compare_spatiotemporal_hybrid.py  Fixed-origin spatiotemporal hybrid evaluation/prediction entry
+  config.py                  Paths, validation dates, feature groups and fixed parameters
+  data.py                    Validation, feature construction, temporal splits and address normalization
+  evaluation.py              RMSE, MAE, mean bias and grouped errors
+  modeling.py                Model-input preprocessing and pipelines
+  eda/                       Two EDA implementations
+  experiments/               Three model-experiment implementations
+data/                         Raw Kaggle data
+reports/                      Rebuildable summaries, figures and experiment metrics
+midterm_report.md             Midterm analysis, results and next steps
+environment.yml              Standalone Conda environment definition
+requirements-eda.txt         Main-data EDA dependencies
+requirements-model.txt       Dependencies for all existing scripts
 ```
 
-`analysis/` 包含运行入口和可复用模块。两套 EDA 分别检查 train/test 和辅助数据，模型实验目前只使用主数据特征。
+`analysis/` contains entry points and reusable modules. Two EDA workflows inspect train/test and auxiliary data separately; current modeling uses only main-data features.
 
-## 安装与运行
+## Installation and execution
 
-在项目根目录创建独立环境：
+Create a standalone environment from the project root:
 
 ```powershell
 conda env create -f environment.yml
 conda activate cs5228-hdb
 ```
 
-如果已有 Miniconda `cs5228` 环境，也可以在该环境中安装依赖：
+With an existing Miniconda `cs5228` environment, install dependencies there:
 
 ```powershell
 conda activate cs5228
 python -m pip install -r requirements-model.txt
 ```
 
-按顺序运行：
+Run in order:
 
 ```powershell
 python analysis/eda_train_test.py
@@ -297,88 +299,88 @@ python analysis/compare_auxiliary_features.py
 python analysis/compare_spatiotemporal_hybrid.py
 ```
 
-`compare_model_families.py` 读取 `train_baseline.py` 的 CatBoost 结果，因此要先运行后者。`compare_auxiliary_features.py` 可独立运行，采用 2024-04 时间切分，依次加入楼栋、周边设施、COE、股票和交互特征。每次运行固定使用同一种模型：环境中有 LightGBM 时使用 LightGBM，否则使用 scikit-learn 的 HistGradientBoosting。输出写入 `reports/auxiliary_ablation/`：`ablation_metrics.csv`、`monthly_errors.csv`、`feature_coverage.csv`、`feature_importance.csv`、`ablation_rmse.png` 和 `results.json`。运行小型功能检查：`python -m unittest discover -s tests`。
+`compare_model_families.py` reads CatBoost results from `train_baseline.py`, so run the latter first. `compare_auxiliary_features.py` runs independently with a 2024-04 split, adding building, facility, COE, stock and interaction features in stages. Each run uses one model: LightGBM when available, otherwise scikit-learn HistGradientBoosting. Outputs under `reports/auxiliary_ablation/`: `ablation_metrics.csv`, `monthly_errors.csv`, `feature_coverage.csv`, `feature_importance.csv`, `ablation_rmse.png` and `results.json`. Small functional checks: `python -m unittest discover -s tests`.
 
-`compare_spatiotemporal_hybrid.py` 使用多个固定预测起点比较空间基线、仅使用历史租金特征、递归时空残差校正及两者组合。验证期标签不会作为滞后特征反馈给模型。结果和最终测试集预测写入 `reports/spatiotemporal_hybrid/`。
+`compare_spatiotemporal_hybrid.py` compares spatial baselines, historical-rent features, recursive spatiotemporal residual correction and their combination at multiple fixed origins. Validation labels never feed back as lagged features. Results and final test predictions go to `reports/spatiotemporal_hybrid/`.
 
 `python analysis/compare_local_comparable_graph.py` evaluates a block-level nearby-comparable graph against the historical-rent baseline. It uses fixed-origin 6-, 9-, 12-, and 16-month validation windows and writes metrics, coverage, settings, and a concise report to `reports/local_comparable_graph/`. The final 16-month window overlaps the earlier windows and is evaluated separately.
 
 `python analysis/compare_bayesian_amenity_factors.py` evaluates a Gaussian Bayesian additive model with separate MRT and mall distance curves, pooled town/subzone effects, a monthly random-walk effect, and optional rent histories. It compares four ablations with the historical tree baseline on the same forward windows. Posterior-mean RMSE, sampled 90% interval coverage, amenity contrasts, priors, and limitations are saved in `reports/bayesian_amenity_factors/`. It uses the existing SciPy dependency; PyMC is not required.
 
-经济特征采用审批月之前 1、3、6 个日历月的数值，适用于逐月更新预测的情景；若在训练截止月一次性预测以后所有月份，不能把之后公布的经济数据当作已知。设施表是当前快照，缺少历史开通日期，因此相关特征仅作地理代理变量解释。
+Economic features use values from 1, 3 and 6 calendar months before approval, suitable for monthly updates. Fixed-cutoff forecasts cannot treat subsequently released data as known. Facility tables are current snapshots without historical opening dates; interpret their features as geographic proxies only.
 
-`eda_temporal_correlations.py` 在 `reports/temporal_correlations/` 输出标准化水平、月度变化、相关矩阵和滞后相关性四张图，以及月度数据、相关系数和分析说明。相关系数仅使用 2024-04 之前的月份；后续月份只用于描述性时间序列图。租金组合调整模型只使用房型、房屋模型、Town、面积和租约开始年份，不使用审批月份。
+`eda_temporal_correlations.py` writes four plots (standardized levels, monthly changes, correlation matrix and lagged correlations), monthly data, coefficients and notes to `reports/temporal_correlations/`. Correlations use months before 2024-04 only; later months appear only in descriptive plots. Rent-composition adjustment uses flat type, flat model, Town, area and lease commencement year, excluding approval month.
 
-## 当前进度
+## Current progress
 
-已完成主数据和六份辅助数据的第一轮 EDA，以及尚未加入辅助特征的初步模型比较。验证采用按审批月份向前预测的划分；目前没有生成最终的 Kaggle 提交文件。实验设计、指标、局限和辅助数据预处理建议见 [中期实验报告](midterm_report.md)与[辅助数据详细报告](reports/auxiliary_data_eda/report.md)。
+First-round EDA of main and six auxiliary datasets and initial models without auxiliary features are complete. Validation forecasts forward by approval month; no final Kaggle submission is generated yet. See the [midterm report](midterm_report.md) and [detailed auxiliary report](reports/auxiliary_data_eda/report.md) for design, metrics, limitations and preprocessing recommendations.
 
 ## zch project workflow
 
-## 先看什么
+## Where to start
 
-| 你的目的 | 从这里进入 |
+| Your goal | Start here |
 | --- | --- |
-| 了解最终方法与成绩 | [最终结论](experiment/01_final/README.md) |
-| 从基础到final阅读完整研究过程 | [完整实验报告](experiment/01_final/EXPERIMENT_REPORT.md) |
-| 理解特征工程为什么有效 | [特征工程](experiment/02_feature_engineering/README.md) |
-| 比较不同模型 | [模型对比](experiment/03_model_comparison/README.md) |
-| 查看每轮探索及负结果 | [优化历程](experiment/04_optimization_history/README.md) |
-| 运行代码 | [运行指南](docs/guides/running_experiments.md) |
-| 了解原始数据及使用边界 | [数据说明](data/README.md) |
-| 检查实现与既有结果 | [测试说明](tests/README.md) |
-| 查看已保存模型、参数及指标来源 | [产物清单用法](docs/guides/running_experiments.md#基础特征与模型对照) |
+| Understand final methods and scores | [Final conclusions](experiment/01_final/README.md) |
+| Read the full research process from baseline to final | [Full experiment report](experiment/01_final/EXPERIMENT_REPORT.md) |
+| Understand why feature engineering works | [Feature engineering](experiment/02_feature_engineering/README.md) |
+| Compare models | [Model comparison](experiment/03_model_comparison/README.md) |
+| Inspect each exploration round and negative results | [Optimization history](experiment/04_optimization_history/README.md) |
+| Run code | [Running guide](docs/guides/running_experiments.md) |
+| Understand raw data and usage boundaries | [Data guide](data/README.md) |
+| Check implementation and existing results | [Testing guide](tests/README.md) |
+| Find saved models, parameters and metric sources | [Artifact catalog guide](docs/guides/running_experiments.md#baseline-features-and-model-comparisons) |
 
-## 最终三份提交
+## Three final submissions
 
-| 方法 | 本地年度RMSE | 本地近期RMSE | Kaggle显示分数 |
+| Method | Local annual RMSE | Local recent RMSE | Displayed Kaggle score |
 | --- | ---: | ---: | ---: |
-| 历史特征主融合 | 451.1810 | 442.9025 | 415.86912 |
-| 所给宏观增强 | 451.2081 | 442.8892 | 415.78232 |
-| **分组融合＋PLR-FT（final）** | **451.0295** | **441.8345** | **415.37529** |
+| Main history-feature blend | 451.1810 | 442.9025 | 415.86912 |
+| Provided macro-data augmentation | 451.2081 | 442.8892 | 415.78232 |
+| **Grouped blend + PLR-FT (final)** | **451.0295** | **441.8345** | **415.37529** |
 
-本地年度为2024-04至2025-03，近期为2024-06至2025-03；窗口重叠且已用于开发。
-Kaggle数值来自用户截图，未标注公榜／私榜。final是三份提交中的选择，第九轮的年度分数仍更低。
-最终方法和信息边界见[最终报告](experiment/01_final/README.md)。
+Local annual validation spans 2024-04 to 2025-03; recent validation spans 2024-06 to 2025-03. Windows overlap and have been used for development.
+Kaggle values come from user screenshots without public/private labels. Final is selected among three submissions; wave nine still has lower annual RMSE.
+See the [final report](experiment/01_final/README.md) for methods and information boundaries.
 
-## 目录怎么读
+## Directory guide
 
 ```text
-experiment/       给人读：最终结论、特征、模型、优化历程、数据分析
-analysis/      看实现：共享管线与按用途分组的实验代码
-docs/          查用法：运行、目录、依赖说明与历史维护
-data/          原始比赛数据，保持不变
-output/        运行产物：试验明细、模型、逐行预测、提交文件
-requirements/  分层依赖
-tests/         自动检查
+experiment/       Read: final conclusions, features, models, optimization and data analysis
+analysis/      Implementation: shared pipeline and grouped experiment code
+docs/          Usage: execution, layout, dependencies and maintenance history
+data/          Raw competition data, unchanged
+output/        Runtime artifacts: trials, models, row-level predictions and submissions
+requirements/  Layered dependencies
+tests/         Automated checks
 ```
 
-`experiment/`只保留汇总与阅读材料。完整试验配置、逐次指标与选择记录在
-`output/experiment_runs/`，模型在 `output/models/`，最终提交在
-`output/submissions/final/submission.csv`，候选在 `output/submissions/candidates/`。
-这些运行产物不随Git分发。详细目录见[结构说明](docs/guides/project_structure.md)。
+`experiment/` retains summaries and reading materials. Full trial configurations, metrics and selection records are in
+`output/experiment_runs/`, models in `output/models/`, final submission at
+`output/submissions/final/submission.csv` and candidates in `output/submissions/candidates/`.
+Runtime artifacts are not distributed through Git. See the [layout guide](docs/guides/project_structure.md).
 
-## 环境与常用命令
+## Environment and common commands
 
-在仓库根目录执行：
+Run from the repository root:
 
 ```powershell
 conda env create -f environment.yml
 conda activate cs5228
 python -m analysis.main --help
 
-# 只查看入口，不训练
+# Inspect entry points without training
 python -m analysis.main experiment-list --group wave10
 
-# 只检查环境与资源，不安装、不训练
+# Check environment/resources without installation or training
 python -m analysis.main preflight --profile final
 
-# 从已有结果更新阅读报告，不训练
+# Refresh reading reports from existing results without training
 python -m analysis.main experiment-refresh
 ```
 
-仅查看索引可用标准库入口 `python -m analysis.experiment_catalog --group final --json`。
-GPU及额外作者模型依赖见[requirements说明](requirements/README.md)和[运行指南](docs/guides/running_experiments.md)。
+For an index-only standard-library entry, use `python -m analysis.experiment_catalog --group final --json`.
+GPU and author-model dependencies: [requirements](requirements/README.md) and [running guide](docs/guides/running_experiments.md).
 
-最终三份方案使用比赛训练标签与所给辅助数据；测试表作为查询输入，不使用其真实租金。
-其他探索中的公开预训练权重在相应轮次注明。原始数据和预测数值未因目录整理而改变。
+All three final methods use competition training labels and supplied auxiliary data. Test tables are query inputs; true test rents are not used.
+Public pretrained weights in other explorations are identified per wave. Directory cleanup does not change raw data or prediction values.

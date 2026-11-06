@@ -1,168 +1,170 @@
-# 报告模型筛选与历史分支对照（截至2026-11-05）
+[Chinese version](EXPERIMENT_REPORT.zh-CN.md)
+
+# Report model selection and historical branches (through 2026-11-05)
 
 <!-- final-choice:start -->
-**最终选择（2026-11-05，用户截图）：** 推荐`kaggle_structure_blend.csv`作为final，Kaggle显示 **415.37529**；宏观版415.78232、历史版415.86912。最终方法、本地对照与可用于报告的结论见[FINAL_MODEL.md](README.md)，原样提交副本为[final/submission.csv](../../output/submissions/final/submission.csv)。这是三份已提交方案中的选择。
+**Final choice (2026-11-05, user screenshot):** Recommend `kaggle_structure_blend.csv`,displayed Kaggle **415.37529**,versus macro 415.78232/history 415.86912. See [FINAL_MODEL.md](README.md) for method, local controls and report conclusions, and [final/submission.csv](../../output/submissions/final/submission.csv) for the identical copy. Selection is among these three submitted candidates.
 <!-- final-choice:end -->
 
 <!-- tenth-wave-status:start -->
-**第十轮结构更新（2026-11-05）：** 完成数值嵌入FT、Deep & Cross、条件专家及非对称树实际训练：19次神经网络和4次树拟合，固定第九轮融合规则对照。新结构加入固定融合后的最低候选近期441.8345、年度451.0295；用户已提交，截图显示Kaggle415.37529，选作三份提交中的final。 完整表格和选择口径见[第14节](#14-模型结构的实际训练对照)。
+**Round 10 architecture update (2026-11-05):** Actually trained numerical-embedding FT, Deep & Cross, conditional experts and asymmetric trees: 19 neural and four tree fits, with fixed round 9 blending controls. Lowest later blend scores 441.8345 recent/451.0295 annual; user submitted it, screenshot 415.37529, and selected it among three submissions. See [section14](#14-actual-architecture-training-comparisons) for full tables/selection scope.
 <!-- tenth-wave-status:end -->
 
-最终模型与提交选择：[FINAL_MODEL.md](README.md)。截至2026-11-04的阶段快照：[REVIEW.md](../../output/experiment_runs/00_report_and_final/REVIEW.md)。本文件保留完整证据与历轮补充。
+Final model/submission selection: [FINAL_MODEL.md](README.md). Snapshot through 2026-11-04: [REVIEW.md](../../output/experiment_runs/00_report_and_final/REVIEW.md). This file retains complete evidence and subsequent rounds.
 
 <!-- ninth-wave-status:start -->
-**第九轮融合更新（2026-11-05）：** 保留已有单模型，比较31种融合配置。开发集最低候选近期 **441.9591**、年度 **450.8650**，相对上一版442.7032/451.4310分别降低0.7441/0.5660。采用按24/36月同期历史覆盖分组、月度中心化误差拟合、向全局权重收缩的非负融合；近期10个月均改善。此候选为查看后期开发结果后的探索选择，仍需Kaggle提交检验。已导出[新融合CSV](../../output/submissions/candidates/kaggle_blend_support_centered.csv)，详见[第13节](#13-只修改融合方式的进一步结果)。
+**Round 9 blending update (2026-11-05):** Reuse models and compare 31 blend configurations. Lowest development candidate **441.9591** recent/**450.8650** annual, improving442.7032/451.4310 by 0.7441/0.5660. Nonnegative weights use 24-/36-month support groups, month-centered errors and shrinkage toward global weights; all ten recent months improve. It was selected after viewing later development results and needs Kaggle checking. [New CSV](../../output/submissions/candidates/kaggle_blend_support_centered.csv); see [section13](#13-further-results-from-changing-only-the-blend).
 <!-- ninth-wave-status:end -->
 
 <!-- eighth-wave-status:start -->
-**第八轮实际训练更新（2026-11-05）：** 新候选近期RMSE **442.7032**，原历史主方案为442.9025，降低0.1993；年度为451.4310，原方案451.1810。方法是删去FT-Transformer的5列36个月同期统计，固定3轮训练4个随机种子并等权平均，按原15.9872%权重替换FT成员。共65次新开发拟合、52份保存模型复现、17项测试通过。它是小幅改善候选，仍需Kaggle检验；详见[第12节](#12-小幅优化与实际训练结果)。
+**Round 8 actual-training update (2026-11-05):** New recent RMSE **442.7032**,versus 442.9025, improves0.1993; annual 451.4310 versus 451.1810. Remove five36-month FT fields, train three epochs on four seeds, equally average, and replace the FT member at its original 15.9872% weight. Completed 65 new development fits, 52 saved-model replays and 17 tests. Modest candidate improvement awaits Kaggle; see [section12](#12-small-improvements-and-actual-training-results).
 <!-- eighth-wave-status:end -->
 
 <!-- seventh-wave-status:start -->
-**第七轮Transformer更新：** 已实测TabDPT 1.3（含监督适配）、Nori 1.5/6M和强历史输入TabICLv2；新融合年度/近期RMSE为450.4823/442.9704。完整结果与预算见[第11节](#11-更新的transformer路线)。430目标尚未达到。
+**Round 7 Transformer update:** Measured TabDPT1.3 including supervised adaptation, Nori1.5/6M and strong-history TabICLv2. New blend annual/recent 450.4823/442.9704. See [section11](#11-updated-transformer-routes) for results/budgets. Target 430 remains unmet.
 <!-- seventh-wave-status:end -->
 
 <!-- sixth-wave-status:start -->
-**第六轮更新：** 已完成4类新深度模型实测。新融合年度RMSE为450.4924（此前451.1810），近期为444.6888（此前442.9025）。前文第8项保留此前方案及其组成作为对照；最新结果及范围见[第10节](#10-更强深度表格模型的后续实测)。430目标尚未达到。
+**Round 6 update:** Measured four additional deep-model families. New blend annual 450.4924 versus 451.1810, but recent 444.6888 versus 442.9025. Earlier item 8 remains a control; see [section10](#10-further-evaluation-of-stronger-deep-tabular-models). Target 430 remains unmet.
 <!-- sixth-wave-status:end -->
 
-## 1. 建议采用的模型组合
+## 1. Recommended model set
 
-**正文保留7个同输入单模型，再单独对照历史／宏观／结构融合三条完整管线，另放一行均值基准。** 7个单模型为 Ridge、ExtraTrees、LightGBM、XGBoost、CatBoost、Embedding MLP、FT-Transformer。历史主融合为年度451.18、近期442.90，承担强基线角色；最终结构融合为年度451.03、近期441.83，三份提交中Kaggle显示分数最低415.37529。第八轮候选为近期442.70、年度451.43；第九轮为近期441.96、年度450.87，保留在过程对照中，不掩盖最终方案相对第九轮的年度退步。三份准确提交对照及最终结论见[FINAL_MODEL.md](README.md)。
+**Keep seven same-input standalone models in the body, then separately compare history/macro/structural pipelines and add a mean reference.** Models: Ridge, ExtraTrees, LightGBM, XGBoost, CatBoost, Embedding MLP, FT-Transformer. History blend annual 451.18/recent 442.90 is the strong reference; final structural blend451.03/441.83 has the lowest displayed Kaggle score 415.37529 among three submissions. Retain round 8(442.70/451.43) and round 9(441.96/450.87) as process controls, including final annual deterioration versus round 9. See [FINAL_MODEL.md](README.md).
 
-先用同27输入比较模型，再固定模型解释特征增量，最后单独展示增强特征与融合的性能进展。不要把不同输入、不同截止时间的分数拼成一张架构排名。
+Compare models on 27 shared inputs, then explain feature increments with fixed models, and finally compare enhanced representations/blends. Do not combine different inputs/cutoffs into an architecture ranking.
 
-| 模型 | 同27列年度RMSE | MAE | 偏差（预测−实际） | 在报告中承担的作用 |
+| Model | Annual RMSE with 27 shared inputs | MAE | Bias (predicted−actual) | Role in the report |
 |---|---:|---:|---:|---|
-| Ridge | 513.03 | 363.23 | +194.11 | 线性可解释参照；检验非线性交互是否必要 |
-| ExtraTrees | 468.47 | 341.08 | +4.79 | 随机化树集成；与逐步提升树形成机制对照 |
-| LightGBM | 468.87 | 340.71 | +11.67 | 主特征消融模型；快速迭代、刻画非线性 |
-| XGBoost | 467.03 | 338.87 | +20.64 | 另一种正则化提升树；强性能对照与融合成员 |
-| CatBoost | 468.46 | 343.51 | -3.71 | 直接处理类别信息；验证历史特征在另一树模型上的增量 |
-| Embedding MLP | 483.72 | 358.21 | -11.83 | 神经网络基线；区分Embedding与注意力结构 |
-| FT-Transformer | 476.00 | 339.92 | +87.64 | 特征间注意力；检验复杂结构与融合互补性 |
+| Ridge | 513.03 | 363.23 | +194.11 | Interpretable linear reference; tests need for nonlinear interactions |
+| ExtraTrees | 468.47 | 341.08 | +4.79 | Randomized tree ensemble; mechanistic contrast with boosting |
+| LightGBM | 468.87 | 340.71 | +11.67 | Main feature-ablation learner; fast nonlinear iteration |
+| XGBoost | 467.03 | 338.87 | +20.64 | Alternative regularized boosting reference/blend member |
+| CatBoost | 468.46 | 343.51 | -3.71 | Native categorical handling; checks historical-feature gains on another tree learner |
+| Embedding MLP | 483.72 | 358.21 | -11.83 | Neural baseline; distinguishes embeddings from attention |
+| FT-Transformer | 476.00 | 339.92 | +87.64 | Feature attention; tests complexity and blend complementarity |
 
-### 历史特征主融合：442.90强基线（最终提交的前序方案）
+### History-feature blend: 442.90 strong reference preceding final submission
 
-这是后续优化的强基线，应与最终方案一起保留。前7项用于共同输入下的架构比较，本项用于解释增强历史特征与模型互补性；最终性能结论采用页首所列结构融合及三份提交比较。两类表格的输入条件不同，分别解释。
+Retain this strong reference alongside the final method. The first seven models compare architectures on shared inputs; this item explains enhanced histories/complementarity. Final performance conclusions use the top structural blend/three-submission comparison. Explain the tables separately because inputs differ.
 
-| 验证范围 | 行数 | RMSE（SGD） | MAE（SGD） | 平均偏差 |
+| Validation scope | Rows | RMSE (SGD) | MAE (SGD) | Mean bias |
 |---|---:|---:|---:|---:|
 | 2024-04—2025-03 | 35,158 | **451.1810** | 329.4085 | -2.8559 |
 | 2024-06—2025-03 | 28,995 | **442.9025** | 323.7295 | -20.6662 |
 
-融合组成（预测均先还原成SGD月租，再加权）：
+Blend components (predictions restored to SGD monthly rent before weighting):
 
-| 组成 | 权重 | 主要信息 |
+| Component | Weight | Main information |
 |---|---:|---|
-| 第二轮历史特征树融合（内含7个LightGBM/CatBoost成员） | 76.2602% | 相对市场租金、12/24/36个月同期历史；精确月与邻月、楼栋与更粗粒度 |
-| FT-Transformer残差模型 | 15.9872% | 62列历史特征＋5列过去市场水平/收缩特征 |
-| XGBoost深度5残差模型 | 5.5224% | 同上，预测相对过去基准的残差 |
-| XGBoost深度7直接模型 | 2.2302% | 62列历史特征，直接预测SGD租金 |
+| Round 2 history-tree ensemble (seven LightGBM/CatBoost members) | 76.2602% | Market-relative rents, 12/24/36-month anniversary histories; exact/neighbor months, block/coarser groups |
+| FT-Transformer residual model | 15.9872% | 62 history fields + five past-market/shrinkage fields |
+| Depth5 XGBoost residual model | 5.5224% | Same inputs; predicts residuals from a historical baseline |
+| Depth7 direct XGBoost | 2.2302% | 62 history inputs; direct SGD rent prediction |
 
-所以这是**4个顶层组成、展开后10个模型成员**的融合，不是一个独立的“442.90单模型”。全部展开权重、特征数量、迭代数和检查点位置见`best_ensemble_members.csv`。
+This is a **four-branch blend containing ten underlying models**,not one442.90 standalone model. See `best_ensemble_members.csv` for expanded weights, input counts, iterations and checkpoint locations.
 
-核心解释是：同期历史先降低单模型误差，树模型与FT的不同误差再通过融合进一步降低RMSE。不是单独将FT换进27列主表就能达到442.90。
+Anniversary histories first improve individual models; tree/FT error differences then reduce RMSE through blending. Merely replacing a27-input model with FT does not produce442.90.
 
-该方案使用train和所给auxiliary，符合当前数据范围。组别是在查看后续开发结果后选出的，因此正文应称为“最佳开发方案”；预先锁定完整融合的443.0052可以作为稳健性对照。两个窗口重叠，不能合并样本量。
+This policy uses train/supplied auxiliary data. Groups were selected after later development inspection, so call it the best development policy. The earlier-locked full blend443.0052 is a robustness control. Overlapping windows do not add independent samples.
 
 
-均值基准年度RMSE为846.75。上方同27列单模型表均在114,842条截至2024-03的记录上拟合，预测相同35,158条2024-04至2025-03记录。类别词表、填补与缩放仅在拟合集学习；各模型可采用不同的合法预处理。
+Annual training-mean RMSE is846.75. All27-input standalone models fit114,842 rows through 2024-03 and predict identical35,158 April2024–March2025 rows. Learn vocabularies, imputation and scaling on fitting data only; valid preprocessing may differ by model.
 
-原有同27列对照包含除Ridge外的所有模型。本轮补齐Ridge，alpha在2023-10至2024-03比较1/100/10000后固定。其他模型沿用其相同输入的内部时间选择。由于搜索预算不同、单种子和已查看过验证期，这仍是受控开发比较，不能声称是模型架构的普遍排名。
+The old common27 comparison included every model except Ridge. This round adds Ridge, selecting alpha from 1/100/10000 on 2023-10 through 2024-03. Other models retain their matched-input inner temporal selection. Unequal budgets, one seed and reused validation mean controlled development evidence, not a universal architecture ranking.
 
-**篇幅更紧时**可将ExtraTrees和Embedding MLP移至附录，保留Ridge、LightGBM、XGBoost、CatBoost、FT-Transformer五个共同输入模型；若强调神经结构比较，则保留MLP并压缩XGBoost细节。完整管线另用一张三行表对照历史／宏观／最终结构融合，不把它们混入同输入架构排名。
+**If space is tight**,move ExtraTrees/Embedding MLP to appendix and retain Ridge, LightGBM, XGBoost, CatBoost, FT. For neural-structure emphasis, keep MLP and shorten XGBoost details. Put history/macro/final complete pipelines in a separate three-row table.
 
-## 2. 特征工程：用固定模型与固定轮数讲清楚
+## 2. Explain feature engineering with fixed learners and iterations
 
-四层输入严格嵌套：19列房屋/时间/位置/设施；27列增加楼栋×户型、规划区×户型的历史均值、数量、最近均值和陈旧度；47列再加五种粒度的相对市场租金历史；62列再加楼栋×户型在12/24/36个月前±1月的样本量、原始租金、市场比值、离散度和低租金占比。
+Inputs nest strictly: 19 property/time/location/amenity fields; 27 adds block/type and planning-area/type mean, count, last mean and staleness; 47 adds market-relative histories at five levels; 62 adds block/type support, raw rent, market ratio, dispersion and low-rent share around12/24/36 months earlier(±one month).
 
-本轮补做16次拟合：LightGBM固定353棵、15叶、学习率0.03、L2=10；GPU CatBoost固定535轮、深度6、学习率0.04、L2=10。参数和轮数取自先前较早窗口并在四层特征间完全相同。每个窗口全部验证行保留，验证期间不接收真实租金更新。
+Add16 fits: LightGBM353 trees/15 leaves/lr0.03/L2=10; GPU CatBoost535 iterations/depth6/lr0.04/L2=10. Settings/durations come from earlier windows and stay identical across four levels. Retain all validation rows without rent updates.
 
-本节固定配置与第1节的模型选择配置不同：例如第1节LightGBM为31叶/108棵，CatBoost为CPU配置；这里为15叶/353棵LightGBM和GPU CatBoost。两节的27列分数不同来自训练配置差异，不是结果冲突。只在各自表内解释模型或特征的影响。
+These settings differ from section1's model-selection settings: 31-leaf/108-tree LightGBM and CPU CatBoost there, versus 15-leaf/353-tree LightGBM and GPU CatBoost here. Different27-input scores reflect configuration differences, not contradictions. Attribute effects within each table only.
 
-| 模型 / 窗口 | 19列 | 27列 | 47列 | 62列 | 解释重点 |
+| Model / window | 19 inputs | 27 inputs | 47 inputs | 62 inputs | Interpretation |
 |---|---:|---:|---:|---:|---|
-| LightGBM / 2024-04—2025-03 | 481.60 | 467.80 | 466.97 | 457.84 | 先看历史增量，再看同期历史增量 |
-| CatBoost GPU / 2024-04—2025-03 | 479.33 | 466.43 | 465.99 | 455.17 | 先看历史增量，再看同期历史增量 |
-| LightGBM / 2024-06—2025-03 | 474.18 | 459.15 | 458.43 | 447.17 | 先看历史增量，再看同期历史增量 |
-| CatBoost GPU / 2024-06—2025-03 | 473.11 | 458.60 | 458.06 | 446.16 | 先看历史增量，再看同期历史增量 |
+| LightGBM / 2024-04—2025-03 | 481.60 | 467.80 | 466.97 | 457.84 | First ordinary-history gain, then anniversary-history gain |
+| CatBoost GPU / 2024-04—2025-03 | 479.33 | 466.43 | 465.99 | 455.17 | First ordinary-history gain, then anniversary-history gain |
+| LightGBM / 2024-06—2025-03 | 474.18 | 459.15 | 458.43 | 447.17 | First ordinary-history gain, then anniversary-history gain |
+| CatBoost GPU / 2024-06—2025-03 | 473.11 | 458.60 | 458.06 | 446.16 | First ordinary-history gain, then anniversary-history gain |
 
-这里每一步的Δ可解释为该固定模型/训练方案下新增特征组的预测增量，仍不是因果效应，也不代表某种续约被识别出来。没有单元/租户ID，只有楼栋和户型。早期月份没有足够的两年前历史，计数为0，统计缺失；远期查询只使用预测起点已观测月份。
+Each delta is a predictive feature-group increment for this fixed learner/recipe, not a causal effect or detected contract renewal. There are no unit/tenant IDs, only block/type. Early rows lack two-year history (count0, statistics missing); distant queries use months observed by the forecast origin only.
 
-**报告最有说服力的特征结论**：时间与过去租金信息最关键；同户型市场归一化的收益较小且依赖模型；12/24/36个月同期历史提供了更明显的新信息。更多特征并不保证更好：扩大到±3月、局部归一化与尾部统计，在GPU CatBoost深度8上，早期窗口526.08→525.21，却使年度454.77→458.71、近期445.58→449.53。应保留这个负结果说明过拟合与验证的重要性。
+**Strongest feature conclusion:** time/past rents matter most; market normalization yields smaller model-dependent gains; 12/24/36-month cohorts add clearer information. More fields do not guarantee improvement:±three-month windows, local normalization and tail statistics improve depth8 GPU CatBoost early526.08→525.21 but worsen annual 454.77→458.71 and recent 445.58→449.53. Retain this overfitting/validation counterexample.
 
-早期基础叙事可引用同固定LightGBM的A→H辅助消融：属性758.24，加入时间526.11，加入Town485.09，楼栋480.20，设施476.97；再加COE479.22、股票480.54，没有稳定收益。经济变量涉及额外可获得性问题，不并入本轮批量固定原点模型。19/27/47/62主表更适合严格解释新增历史特征的作用。
+Early fixed-LightGBM A→H ablation supports the basic narrative: property758.24,+time526.11,+town485.09,+block480.20,+amenities476.97; COE479.22/stocks480.54 do not consistently help. Economic availability differs and is excluded from this fixed-origin batch. The19/27/47/62 table more cleanly isolates histories.
 
-原有156次逐列/成组重训用于补充解释：三年度汇总删除“时间＋全部历史”使RMSE增加141.33，删除全部历史增加7.94；删除全部设施只增加0.58。相关特征会替代信息，不能把单列重要性相加或把删掉某列当成完全移除了该源信息。见[特征证据](../02_feature_engineering/FEATURE_ABLATION.md)。
+Existing156 deletion refits supplement interpretation: removing time plus all histories adds141.33 pooled annual RMSE; all histories alone adds7.94; all amenities only 0.58. Correlated inputs substitute, so do not sum individual contributions or equate field deletion with removing source information. See [feature evidence](../02_feature_engineering/FEATURE_ABLATION.md).
 
-## 3. 性能进展与RMSE目标
+## 3. Performance progression and RMSE targets
 
-| 方案 | 年度35,158行 | 近期28,995行 | 结果性质 |
+| Policy | Annual35,158 rows | Recent28,995 rows | Evidence type |
 |---|---:|---:|---|
-| 第一轮搜索融合 | 465.66 | — | 旧开发参考 |
-| Frontier融合 | 463.76 | 456.82 | 较早窗口选权后固定 |
-| 同期历史第二轮融合 | 452.94 | 443.86 | 较早窗口选权后固定 |
-| 第三轮完整融合 | 451.31 | 443.01 | 较早窗口预先锁定 |
-| **推荐第8项：最优历史特征融合** | **451.18** | **442.90** | 第三轮仅保留新增模型组；最佳开发方案 |
-| 本轮正则化扩展融合 | 451.31 | 443.01 | 较早窗口保留原完整融合，新增权重均为0 |
+| Initial search blend | 465.66 | — | Earlier development reference |
+| Frontier blend | 463.76 | 456.82 | Weights selected on earlier windows, then fixed |
+| Round 2 anniversary-history blend | 452.94 | 443.86 | Weights selected on earlier windows, then fixed |
+| Round 3 complete blend | 451.31 | 443.01 | Prespecified on earlier windows |
+| **Recommended item 8:best history-feature blend** | **451.18** | **442.90** | Round 3 with newly added model group only; best development policy |
+| Current regularized extended blend | 451.31 | 443.01 | Earlier window retains original full blend; all added weights0 |
 
-27列主表回答架构差异；上表允许特征、目标表示和融合变化，回答完整方案能达到什么水平。两张表不能据此计算“某架构提升了多少”。固定27列默认400棵LightGBM的468.49与内部早停108棵的468.87属于不同参数，均须如实标注。
+The27-input table addresses architecture; this table permits feature, target and blending changes and evaluates full pipelines. Do not infer an architecture's gain across them. Default400-tree LightGBM468.49 differs from inner-stopped108-tree468.87; label both settings accurately.
 
-400—430仍未达到。第三轮完整融合的年度MAE为331.05、近期324.82，均比第二轮的328.44/322.92略差；只新增模型组的近期MAE为323.73。选择以RMSE为主的方案有明确代价，不应写成所有指标都改善。
+Target 400–430 remains unmet. Round 3 full-blend annual/recent MAE331.05/324.82 worsens round 2's328.44/322.92; new-model-only recent MAE323.73. RMSE-oriented selection has tradeoffs rather than improving every metric.
 
-本轮额外尝试10组配置：CatBoost深度4/5/7/9、增强L2的深度6/8、CPU Ordered深度4/6，以及两种正则化随机阈值LightGBM。候选先在2023-10至2024-03评估，再用固定0.001收缩和每新模型0.25上限选权。新增候选未获得权重，因此没有重训这些候选的后续窗口，也没有把内部偶然最低值写成新纪录。完整结果保存在`optimization/screen/`。
+Ten extra configurations include CatBoost depths4/5/7/9, stronger-L2 depths6/8, CPU Ordered depths4/6, and two regularized random-threshold LightGBMs. Evaluate first on 2023-10 through 2024-03; select weights with fixed 0.001 shrinkage and 0.25 maximum per new model. None receives weight, so no later refits or claimed record from a chance inner minimum. Complete results in `optimization/screen/`.
 
-年度窗和近期窗相互重叠，不能合并计算更多独立样本。较早起点的16个月压力窗，由单独的起点前选参和选权得到第二轮融合479.64，优于同窗旧XGBoost487.58；它不能被替换成更短窗口的442.90来说明长跨度预测已解决。
+Annual/recent windows overlap and cannot be pooled as independent samples. Separate pre-origin selection for the 16-month stress window yields round 2 RMSE 479.64 versus old XGBoost487.58. Replacing it with shorter-window442.90 would falsely imply long-horizon forecasting is solved.
 
-## 4. 所有GitHub分支的审查结论
+## 4. Review of all GitHub branches
 
-已于2026-11-04完成 `git fetch origin --prune`，读取全部10个实际远端分支；`origin/HEAD`仅为main的符号引用，不计作第11个分支。读取Git对象而未切换工作区或覆盖现有修改。分支提交及证据blob存于`branches.json`、`branch_inventory.csv`，小型报告证据去重保存于`branch_evidence/`。
+On2026-11-04,`git fetch origin --prune` refreshed all ten actual remote branches;`origin/HEAD` is a symbolic main reference, not an eleventh branch. Git objects were read without switching workspaces or overwriting edits. Commits/evidence blobs are in `branches.json`,`branch_inventory.csv`; deduplicated small reports in `branch_evidence/`.
 
-| 分支 | 提交 | 独有内容 | 报告处理 |
+| Branch | Commit | Unique content | Report treatment |
 |---|---|---|---|
-| `codex/rnn-lstm-market-features` | `cb167e9f` | RNN/LSTM市场状态、窗口/截点搜索、三种子 | 按月更新真实前月信息；整体未超过自己的树基准 |
-| `experiment/dynamic-rental-surface-plan` | `469e34e3` | 动态市场指数、租金面、PCA、AR/状态空间、CatBoost混合 | 解释市场分解；逐条租金与平滑面误差分开 |
-| `experiment/public-rent-lookup` | `b1429600` | 公开目标记录归一化匹配 | 181.25是目标复原；不符合仅train＋auxiliary预测主线 |
-| `experiment/tabpfn` | `ae9da8e6` | TabPFN 3/3.5、上下文/日历/对齐/适配；官方TabM；空间扩展 | 核心预训练路线；77列冻结455.81，MSE适配455.07；官方TabM463.20 |
-| `feature/midterm-eda-models` | `e56cbf7b` | CatBoost A/B/C、Ridge/RF/LGB，辅助特征和早期深度模型整合 | 报告的基础属性、时间、空间和原始模型证据 |
-| `feature/neural-tabm-experiment` | `21e4ec69` | 自定义TabM-style及历史树融合 | 网络年度561.71，树＋6%网络468.83；不是官方TabM |
-| `feature/temporal-auxiliary-analysis` | `c3c339eb` | 历史空间树、滞后宏观、分组面板 | 固定原点历史与按月更新经济协议分开 |
-| `main` | `b05b17f7` | 代码骨架 | 无可评估模型；不产生分数 |
-| `relu-rental-prediction` | `dde07705` | sklearn ReLU MLP，嵌套选epoch和拟合集IQR | 只有2025Q1：463.97；不与年度表混排 |
-| `ziyuan——spatialfeatures` | `7caf2cb7` | LightGBM/CatBoost/KNN空间基准与控制分析 | 26列LGB477.20；固定效应/匹配分析是解释证据，不是预测榜单 |
+| `codex/rnn-lstm-market-features` | `cb167e9f` | RNN/LSTM market state, window/cutoff search, three seeds | Monthly updates with actual preceding-month data; does not beat its own tree control overall |
+| `experiment/dynamic-rental-surface-plan` | `469e34e3` | Dynamic market index, rental surface, PCA, AR/state-space and CatBoost hybrid | Explain decomposition; separate transaction and smoothed-surface errors |
+| `experiment/public-rent-lookup` | `b1429600` | Normalized matching of public target records | 181.25 measures target reconstruction; outside train+auxiliary-only forecasting |
+| `experiment/tabpfn` | `ae9da8e6` | TabPFN3/3.5, context/calendar/alignment/adaptation; official TabM; spatial extensions | Main pretrained route; frozen77 scores 455.81, MSE adaptation455.07; official TabM463.20 |
+| `feature/midterm-eda-models` | `e56cbf7b` | CatBoost A/B/C, Ridge/RF/LGB, auxiliary features and early deep models | Evidence for basic attributes, time, space and original models |
+| `feature/neural-tabm-experiment` | `21e4ec69` | Custom TabM-style and history-tree blend | Network annual 561.71; tree+6% network468.83; not official TabM |
+| `feature/temporal-auxiliary-analysis` | `c3c339eb` | Historical spatial trees, lagged macro and grouped panels | Separate fixed-origin histories from monthly-updated economic protocols |
+| `main` | `b05b17f7` | Code scaffold | No evaluable model or score |
+| `relu-rental-prediction` | `dde07705` | sklearn ReLU MLP, nested epoch selection and fitting-only IQR | 2025Q1 only: 463.97; not ranked with annual results |
+| `ziyuan——spatialfeatures` | `7caf2cb7` | LightGBM/CatBoost/KNN spatial references and controlled analyses | 26-input LGB477.20; fixed effects/matching explain associations, not predictive rankings |
 
-当前工作区新增的feature_selection、features_ablation_evidence、comparison_model_search、comparison_same_27_features、round_01_history_target_search、round_02_anniversary_history、third_wave等尚未出现在远端当前分支提交中，本报告另行读取本地结果，不把它们伪装成已上传的GitHub成果。所有本地结果路径可从`local_run_index.csv`追溯。
+New local feature_selection, features_ablation_evidence, comparison_model_search, comparison_same_27_features, round_01_history_target_search, round_02_anniversary_history and third_wave results are not yet in the current remote commit. This report separately reads local results without presenting them as uploaded GitHub work. Trace every path through `local_run_index.csv`.
 
-## 5. 附录保留什么、为什么不全塞进正文
+## 5. Additional models and why not put everything in the body
 
-| 路线 | 代表结果及对照 | 建议 |
+| Route | Representative result/control | Recommendation |
 |---|---|---|
-| 官方TabM | 近期463.20；同77列TabPFN冻结455.81。三种子均值462.95、SD2.46 | 展示现代参数共享神经集成；与旧TabM-style分开 |
-| TabPFN | 68列Fast459.81；77列冻结455.81、DiagScale455.21、MSE-only455.07 | 作为预训练路线扩展；主表不是相同27输入，不混排架构 |
-| TabPFN适配、采样与空间外部增强 | Q/K LoRA、原生head、多视图、局部上下文均未稳定超过冻结；MSE-only vs匹配loss对照仅−0.051，区间跨零 | 用一段负结果总结；外部收入/土地覆盖等不属于本次train＋auxiliary范围 |
-| TabICLv2 | 年度488.18，47列/24000上下文 | 保留基础模型并非自动更优的负结果 |
-| HistGradientBoosting | 同27列年度468.02 | 与多个提升树叙事重叠，放完整附表 |
-| ResNet / TabNet / FT-192 | 同27列493.88 / 498.53 / 476.25 | 说明更复杂不必更好；FT-192与FT-96不必各占正文一行 |
-| ReLU MLP | 2025Q1为463.97，本地复现463.78 | 仅3个月，放附录；正文MLP使用同27输入的483.72 |
-| RNN/LSTM市场特征 | 月度更新基准478.52；RNN42为478.89、LSTM42为479.24 | 作为序列表示的负结果，不能冒充固定原点预测比较 |
-| PCA动态租金面＋状态空间 | 年度残差混合467.84，同实验全历史CatBoost466.23；pooled改善集中在早期上涨段 | 解释市场分解，明确中间面误差不等于逐条租金误差 |
-| KNN / Random Forest | 旧特征KNN采样539.58、RF493.77 | 机制或预算与主表不同，保留归档不重复正文 |
-| 公开目标匹配 | 年度已知标签重建181.25；173.41为假设误差尺度 | 仅数据来源审计，不纳入预测排名和目标达成判断 |
+| Official TabM | Recent463.20 versus frozen77-input TabPFN455.81; three-seed mean462.95, SD2.46 | Illustrate modern parameter-sharing ensembles; distinguish old TabM-style |
+| TabPFN | 68-input Fast459.81; 77-input frozen455.81, DiagScale455.21, MSE-only 455.07 | Extend pretrained-model discussion; inputs differ from main27-input table, so no shared architecture ranking |
+| TabPFN adaptation, sampling and spatial/external augmentation | Q/K LoRA, native heads, multiple views and local contexts do not consistently beat frozen controls; MSE-only minus matched loss control is only−0.051 with interval crossing zero | Summarize negative results briefly; external income/land-cover data exceed this train+auxiliary scope |
+| TabICLv2 | Annual488.18 with 47 inputs/24000 context | Retain as a counterexample to automatic foundation-model superiority |
+| HistGradientBoosting | Annual468.02 on common27 inputs | Overlaps the boosted-tree narrative; include in full supplementary table |
+| ResNet / TabNet / FT-192 | Common27 inputs: 493.88 / 498.53 / 476.25 | Complexity need not help; FT-192 and FT-96 need not each occupy a main-text row |
+| ReLU MLP | 2025Q1 score 463.97; local reproduction463.78 | Three months only; appendix result. Main MLP uses common27 inputs and 483.72. |
+| RNN/LSTM market features | Monthly-updated control478.52; RNN42 scores 478.89, LSTM42 scores 479.24 | Negative sequence-representation result, not a fixed-origin comparison |
+| PCA dynamic rental surface + state space | Annual residual hybrid467.84 versus full-history CatBoost466.23; pooled gain concentrates in early growth | Explain decomposition; intermediate surface error differs from transaction error |
+| KNN / Random Forest | Old-feature sampled KNN539.58, RF493.77 | Different mechanisms/budgets; retain archives without repeating main-text comparisons |
+| Public target matching | Annual known-label reconstruction181.25; 173.41 is an assumed error scale | Source audit only; exclude from forecasting rankings and target-achievement claims |
 
-`model_catalog.csv`给出所有以上模型/路线的独立条目及原始证据，`branch_metric_tables.json`与`all_branch_scores.csv`保存分支内数值索引。索引包含分组误差、校准误差、pooled误差和中间目标，不能按全表最小RMSE自动排名。
+`model_catalog.csv` gives independent entries/original evidence for these routes. `branch_metric_tables.json` and `all_branch_scores.csv` index within-branch values, including grouped, calibration, pooled and intermediate-target errors; do not automatically rank the entire table by minimum RMSE.
 
-## 6. 可直接用于报告的叙事草稿
+## 6. Draft narrative for the report
 
-> 我们先在统一的27个输入和固定时间验证集上比较线性模型、随机树集成、梯度提升树及神经网络，以区分模型结构的影响。Ridge提供可解释的线性参照，ExtraTrees反映随机化树集成的能力，LightGBM、XGBoost和CatBoost比较不同提升树实现，Embedding MLP与FT-Transformer检验类别嵌入和特征注意力是否带来增益。在有限搜索预算下，树模型的单模型表现整体优于所测试的神经网络配置；这一结果仅适用于当前数据与训练预算。
+> We first compare linear models, randomized ensembles, boosted trees and neural networks using27 shared inputs and fixed chronological validation. Ridge supplies a linear reference, ExtraTrees tests randomized ensembles, LightGBM/XGBoost/CatBoost compare boosting implementations, and Embedding MLP/FT test embeddings and feature attention. Under the limited search budget, tested trees generally outperform tested neural configurations; the finding applies to these data and budgets.
 
-> 随后，我们固定LightGBM和CatBoost的参数、训练轮数及样本，逐步加入静态属性、普通历史租金、相对市场历史与同期历史统计。两类模型上的变化共同支持历史租金和同期信息具有预测增量，而更复杂的窗口、空间和宏观表示并未稳定改善结果。最后，我们将不同模型的互补误差用于融合，并将预先锁定方案与评估后消融选出的开发最低值分别报告。
+> We then fix LightGBM/CatBoost settings, iterations and samples while adding static attributes, ordinary histories, market-relative histories and anniversary cohorts. Both learners support historical/cohort information, while more elaborate windows, spatial and macro representations do not consistently improve. Finally, we blend complementary errors and distinguish earlier-locked recipes from later-selected development minima.
 
-> 这些实验使用比赛训练数据与所给辅助数据。验证目标属于已多次查看的开发期，不能作为新的独立测试成绩。最终结论以统一时间窗口、全部验证记录上的SGD租金RMSE为准，并同时报告MAE、偏差和长跨度压力窗口，以避免只展示最有利的单个分数。
+> These experiments use competition training and supplied auxiliary data. Repeatedly inspected development targets are not new independent tests. Final comparisons use all validation records within common chronological windows and SGD RMSE, with MAE, bias and long-horizon stress results to avoid highlighting only favorable scores.
 
-## 7. 验证与复现
+## 7. Verification and reproduction
 
-本轮独立核对31份新增逐行预测及10份已有同27列模型预测，全部验证ID、月份、标签、样本数和重算指标一致；重载18个Ridge/特征阶梯模型得到一致预测。31项相关单元测试通过。输入哈希与历史实验一致。GitHub结果属于源分支记录，TabPFN/官方TabM没有在本机重新训练；本报告不把归档核对等同于完整重跑。
+Independently checked31 new row-prediction files and ten existing common27-model files: IDs, months, labels, counts and recomputed metrics match. Reloaded18 Ridge/ladder models reproduce predictions; 31 tests pass and input hashes match history. GitHub results remain source-branch records; TabPFN/official TabM were not retrained locally. Archive checking is not complete rerunning.
 
 ```powershell
 python -m analysis.experiments.report_model_catalog
@@ -176,125 +178,125 @@ python -m analysis.experiments.report_selection_blend june
 python -m analysis.experiments.report_selection_summary
 ```
 
-图表：[模型与特征对照](../03_model_comparison/model_feature_comparison.png)。机器可读主表：`recommended_models.csv`；特征阶梯：`controlled_feature_ladder.csv`；分支清单：`branch_summary.csv`；模型全目录：`model_catalog.csv`。
+Chart:[models/features](../03_model_comparison/model_feature_comparison.png). Machine-readable main table:`recommended_models.csv`; ladder:`controlled_feature_ladder.csv`; branches:`branch_summary.csv`; full catalog:`model_catalog.csv`.
 
-## 8. 本地RMSE 430目标的后续探索
-
-
-后续完成66组较早窗口配置，仍保留相同验证行和租金历史截止。本轮未知未来宏观情景的新融合最低近期RMSE为443.3215，旧最佳为442.9025。
-
-另单列使用比赛所给预测月COE/股票观测的情景，最低近期RMSE为442.8892；其信息条件与真实部署的未知未来宏观不同。
-
-430目标尚未达到。用户现已提供三份提交的截图成绩及对应本地分数，见FINAL_MODEL.md；不能假定固定减20。实验详情及全部负结果见[第四轮报告](../04_optimization_history/04_macro_spatial_diagnostics.md)。
-
-### 已生成可提交预测
-
-已使用全部150,000条训练记录重训，为全部50,000条测试记录导出预测。[历史主方案CSV](../../output/submissions/components/history_macro_ensemble/submission.csv)；[比赛所给宏观增强CSV](../../output/submissions/components/history_macro_ensemble/submission_given_macro.csv)。两份文件已由用户提交，截图显示历史版415.86912、宏观版415.78232；对应本地开发RMSE分别为442.9025和442.8892。详见[第四轮导出记录](../../output/experiment_runs/round_04_macro_spatial_diagnostics/submission_export.json)。
+## 8. Further exploration toward local RMSE 430
 
 
-## 9. 不同模型与新特征组的后续对照
+Completed 66 earlier-window configurations with identical validation rows/history cutoffs. Without future macro observations, the new blend's lowest recent RMSE 443.3215 does not beat442.9025.
+
+Separately, supplied prediction-month COE/stock observations yield best recent 442.8892, under different information availability from prospective forecasting.
+
+Target 430 remains unmet. User screenshots/local scores for three submissions are now in FINAL_MODEL.md; do not assume a fixed 20-point deduction. Details/negative results:[round 4](../04_optimization_history/04_macro_spatial_diagnostics.md).
+
+### Submission-ready predictions
+
+Refit150,000 training records and export50,000 queries: [history CSV](../../output/submissions/components/history_macro_ensemble/submission.csv), [supplied-macro CSV](../../output/submissions/components/history_macro_ensemble/submission_given_macro.csv). User submitted both; screenshots show415.86912/415.78232 versus local442.9025/442.8892. See [round 4 export](../../output/experiment_runs/round_04_macro_spatial_diagnostics/submission_export.json).
 
 
-补做3个固定模型×6种输入×3个时间窗，共54次拟合，检验历史分布和周边建筑结构的新信息，并加入同期历史删减对照。
+## 9. Further models and feature-group controls
 
-| 近期窗口模型 | 原62列 | ＋历史分布 | ＋建筑结构 | 两组合并 | 删36个月 | 只留24个月同期 |
+
+Add three fixed learners×six inputs×three windows=54 fits, testing historical distributions and neighboring-building structure with anniversary-field deletions.
+
+| Recent-window model | Original62 inputs | + Historical distribution | + Building structure | Both additions | Remove36-month fields | Retain24-month anniversary only |
 |---|---:|---:|---:|---:|---:|---:|
 | lgb | 447.1701 | 447.2156 | 447.1111 | 446.9913 | 447.3701 | 448.6101 |
 | cat | 446.1608 | 446.2064 | 446.0444 | 446.1903 | 446.0275 | 447.3196 |
 | xgb | 445.6576 | 445.8572 | 446.0440 | 445.9626 | 445.8147 | 447.5220 |
 
-模型内部固定参数、轮数、样本及信息截止，无验证早停。完整年度/早期对照、负结果和特征边界见[第五轮特征报告](../04_optimization_history/05_feature_interactions.md)。
+Fix settings, iterations, rows and cutoffs within learners; no validation stopping. Annual/early controls, negative results and boundaries:[round 5 feature report](../04_optimization_history/05_feature_interactions.md).
 
-## 10. 更强深度表格模型的后续实测
+## 10. Further evaluation of stronger deep tabular models
 
 
-新增4类深度模型、19组较早窗口配置，含官方TabM、数值嵌入MLP、作者RealMLP独立版和ModernNCA；完整协议见[第六轮报告](../04_optimization_history/06_deep_models.md)。
+Four new families and 19 earlier-window configurations: official TabM, numerical-embedding MLP, authors' standalone RealMLP and ModernNCA. Protocol:[round 6](../04_optimization_history/06_deep_models.md).
 
-| 路线 | 年度RMSE | 近期RMSE |
+| Route | Annual RMSE | Recent RMSE |
 |---|---:|---:|
-| 官方TabM | 456.1612 | 461.0924 |
-| 作者RealMLP独立版 | 458.0752 | 448.4527 |
+| Official TabM | 456.1612 | 461.0924 |
+| Authors' standalone RealMLP | 458.0752 | 448.4527 |
 | MLP-PLR | 475.9378 | 448.0631 |
-| 作者ModernNCA | 461.3778 | 463.9001 |
-| 原历史主融合 | 451.1810 | 442.9025 |
-| 加入新深度模型的融合 | 450.4924 | 444.6888 |
+| Authors' ModernNCA | 461.3778 | 463.9001 |
+| Original history blend | 451.1810 | 442.9025 |
+| Blend with new deep models | 450.4924 | 444.6888 |
 
-较早窗口锁定的新融合近期RMSE为444.6888，原方案为442.9025；430目标尚未达到。后续窗口不用来选epoch或权重，但它们仍是重复查看过的开发数据。
+Earlier-locked new blend recent 444.6888 versus 442.9025; target 430 unmet. Later windows do not select epochs/weights but remain repeatedly inspected development data.
 
-正文仍保留同27输入的基础模型比较；另增增强历史输入的深度模型对照，并在性能进展表同时展示新旧融合。各路线与全部单次配置放扩展表，避免把不同输入的分数混成架构排名。
-新融合没有降低近期窗口RMSE，因此保留此前442.9025的历史主方案；已有可提交CSV不被覆盖。年度窗口的改善单独报告，不宣称所有时间范围均提升。
+Retain common27-input baselines in the body, then separately compare deep models with enhanced histories and old/new blends. Extended tables hold every route/configuration without confusing different inputs with architecture effects.
+Because recent RMSE does not improve, retain history blend442.9025 and existing submission CSVs. Report the annual gain separately rather than claiming universal improvement.
 
-## 11. 更新的Transformer路线
+## 11. Updated Transformer routes
 
 
-新增TabDPT 1.3、Nori 1.5/6M，并将TabICLv2接入强历史特征；详细协议及全部负结果见[第七轮报告](../04_optimization_history/07_pretrained_transformers.md)。
+Add TabDPT1.3, Nori1.5/6M and strong-history TabICLv2. Protocol/all negative results:[round 7](../04_optimization_history/07_pretrained_transformers.md).
 
-| 路线 | 年度RMSE | 近期RMSE |
+| Route | Annual RMSE | Recent RMSE |
 |---|---:|---:|
-| TabDPT 1.3 冻结 | 462.9712 | 476.9916 |
-| TabDPT 1.3 监督适配 | 464.1707 | 463.0065 |
+| Frozen TabDPT1.3 | 462.9712 | 476.9916 |
+| Supervised-adapted TabDPT1.3 | 464.1707 | 463.0065 |
 | Nori | 459.5105 | 462.0088 |
 | TabICLv2 | 460.6730 | 454.6275 |
-| FT-Transformer（此前67列方案） | 471.5338 | 458.6012 |
-| 原历史主融合 | 451.1810 | 442.9025 |
-| 第六轮融合 | 450.4924 | 444.6888 |
-| 加入新Transformer的融合 | 450.4823 | 442.9704 |
+| FT-Transformer (previous67-input policy) | 471.5338 | 458.6012 |
+| Original history blend | 451.1810 | 442.9025 |
+| Round 6 blend | 450.4924 | 444.6888 |
+| Blend with new Transformers | 450.4823 | 442.9704 |
 
-430目标尚未达到。模型容量、预处理及上下文预算不同；这些是重复查看的本地开发结果，不能直接视作Kaggle分数。TabPFN-3.5因需用户本人登录接受模型许可而未实测。
+Target 430 remains unmet. Capacity, preprocessing/context budgets differ; reused local development results are not Kaggle scores. TabPFN-3.5 was not measured because model-license acceptance requires the user's login.
 
 <!-- eighth-wave-details:start -->
-## 12. 小幅优化与实际训练结果
+## 12. Small improvements and actual training results
 
-本轮以实际训练后降低一点也保留为目标。共完成65次新开发拟合：39次二层残差模型、9次CatBoost随机种子、8次神经网络特征删减、9次额外FT种子；另用全部150,000条训练记录重训4个FT模型以导出50,000条测试预测。后续窗口固定训练轮数。
+Retain even modest actual-training gains. Completed 65 development fits: 39 second-level residual models, nine CatBoost seeds, eight neural feature deletions, nine extra FT seeds. Also refit four FT models on 150,000 labels for 50,000 test predictions. Later training durations are fixed.
 
-| 方案 | 年度 RMSE | 近期 RMSE | Kaggle反馈 |
+| Policy | Annual RMSE | Recent RMSE | Kaggle feedback |
 |---|---:|---:|---|
-| 原历史主融合 | 451.1810 | 442.9025 | 用户反馈约415 |
-| 原给定宏观增强 | 451.2081 | 442.8892 | 用户反馈约415，二者仅小数差异 |
-| **FT删减＋四种子平均替换** | **451.4310** | **442.7032** | 新文件尚未提交 |
-| 新FT替换＋原宏观权重 | 451.5252 | 442.7710 | 新文件尚未提交 |
+| Original history blend | 451.1810 | 442.9025 | User reports about 415 |
+| Original supplied-macro augmentation | 451.2081 | 442.8892 | User reports about 415; only decimal-level difference |
+| **Pruned FT + four-seed replacement** | **451.4310** | **442.7032** | New file not yet submitted |
+| New FT replacement + original macro weights | 451.5252 | 442.7710 | New file not yet submitted |
 
-新方案只更换主融合中的FT-Transformer成员：删去5列36个月同期统计，固定3轮，42/43/44/45四个种子等权平均；保留原15.9872%叶子权重及其他成员。在相同28,995行近期窗口降低0.1993；年度35,158行反而升高0.2500。删减特征对TabM没有显示相同收益；新二层模型和CatBoost种子平均也未超过原近期主方案，负结果一并保留。
+Change only the main blend's FT member: remove five36-month cohort fields, three fixed epochs, equal seeds 42/43/44/45, original 15.9872% leaf weight; retain all others. Recent28,995-row RMSE improves0.1993 but annual 35,158-row RMSE worsens0.2500. TabM pruning, second-level models and CatBoost seed averaging do not beat the recent reference; retain these negative results.
 
-近期10个月中5个月改善，描述性月块重采样差值区间[-0.3017,0.0065]跨0，不能宣称稳定提升；两个窗口部分重叠。52份开发保存模型的完整预测复现及17项相关测试均通过。4份全量重训模型也重新加载复现，原始数据哈希均保持一致。
+Five of ten recent months improve; descriptive month-block interval[-0.3017,0.0065] crosses0. No stable-gain claim; windows overlap. All52 saved development models replay and 17 tests pass. Four full refits also reload/replay; raw hashes remain unchanged.
 
-用户于2026-11-05反馈，原历史版与宏观版Kaggle都在415左右、仅小数级差别；正常方案榜上最佳约411，另一些约170的分数被用户描述为cheat方法，故不纳入有效对照。以上均按用户反馈记录，尚无精确小数或榜单类型，不推断本地固定减20或其他固定差距。新方案需在相同榜单上提交比较。
+On2026-11-05, user reports history/macro Kaggle scores near415 with decimal differences, normal-method best near411, and scores near170 described as cheating, excluded from valid comparisons. These are user reports without exact decimals/leaderboard partition; infer no fixed local-to-Kaggle gap. New candidates need same-board submission.
 
-新的可提交文件：优先试[历史版442.7032](../../output/submissions/candidates/kaggle_history_ft_no36_mean.csv)；另有[宏观版442.7710](../../output/submissions/candidates/kaggle_macro_ft_no36_mean.csv)。原文件保留，CSV的分数标签指对应时间验证实验，不是50,000条测试数据的已知成绩。
+New submission candidates: try [history 442.7032](../../output/submissions/candidates/kaggle_history_ft_no36_mean.csv) first; also [macro 442.7710](../../output/submissions/candidates/kaggle_macro_ft_no36_mean.csv). Original files remain. Score labels identify temporal-validation experiments, not known scores on the 50,000 test rows.
 
-详细证据：[第八轮报告](../04_optimization_history/08_feature_pruning_seeds.md)、[对照指标](../../output/experiment_runs/round_08_feature_pruning_seeds/comparison.csv)、[模型复现](../../output/experiment_runs/round_08_feature_pruning_seeds/verification.json)、[Kaggle反馈](../../output/experiment_runs/round_08_feature_pruning_seeds/kaggle_feedback.json)、[全量重训与导出清单](../../output/submissions/components/round_08_ft_seed_average/summary.json)。
+Evidence:[round 8](../04_optimization_history/08_feature_pruning_seeds.md), [metrics](../../output/experiment_runs/round_08_feature_pruning_seeds/comparison.csv), [replay](../../output/experiment_runs/round_08_feature_pruning_seeds/verification.json), [Kaggle feedback](../../output/experiment_runs/round_08_feature_pruning_seeds/kaggle_feedback.json), [full refits/exports](../../output/submissions/components/round_08_ft_seed_average/summary.json).
 <!-- eighth-wave-details:end -->
 
 <!-- ninth-wave-details:start -->
-## 13. 只修改融合方式的进一步结果
+## 13. Further results from changing only the blend
 
-本轮不重新训练基础单模型，使用原主方案10个叶子预测＋第八轮FT四种子平均，共11路预测，学习新的融合权重。初批22种，补充9种分组收缩对照，共31种配置，完整对照和负结果均保留。
+Reuse ten original leaf predictions plus round 8 four-seed FT mean, eleven channels total; no base-model retraining. Test22 initial and nine grouped-shrinkage configurations, 31 total, retaining complete controls/negative results.
 
-| 融合方案 | 年度RMSE | 近期RMSE |
+| Blend policy | Annual RMSE | Recent RMSE |
 |---|---:|---:|
-| 原主融合 | 451.1810 | 442.9025 |
-| 第八轮FT四种子固定替换 | 451.4310 | 442.7032 |
-| 全局月度中心化权重 | 450.9816 | 442.2495 |
-| 仅按24月覆盖分组、较弱收缩 | 450.6221 | 442.0146 |
-| **按24/36月联合覆盖分组、较弱收缩** | **450.8650** | **441.9591** |
+| Original main blend | 451.1810 | 442.9025 |
+| Round 8 fixed four-seed FT replacement | 451.4310 | 442.7032 |
+| Global month-centered weights | 450.9816 | 442.2495 |
+| 24-month-support grouping, weak shrinkage | 450.6221 | 442.0146 |
+| **Joint24-/36-month support grouping, weak shrinkage** | **450.8650** | **441.9591** |
 
-最低近期候选按24个月、36个月同期历史是否存在分为最多4组。首先把历史拟合样本的模型误差减去当月误差均值，以降低整体月份水平偏差对权重选择的影响；再学习非负、和为1、单路不超过0.6的权重。全局权重向原主方案收缩，各组权重向全局权重收缩，正则系数均为0.003。少于500个拟合样本的组及未知组回退到全局权重。预测时直接按已学权重加权，不读取待预测月份租金。
+The lowest recent candidate has at most four24-/36-month support groups. Subtract each month's mean model error before fitting weights to reduce shared level effects. Weights are nonnegative, sum1, and each≤0.6. Global weights shrink toward the original blend, group weights toward global, both regularization0.003. Groups below500 fitting rows/unseen groups use global weights. Inference applies learned weights without query rents.
 
-年度融合权重只使用2024-04前的历史样本外预测；六月融合可再加入4—5月的年度模型预测，标签截止2024-05。与第八轮比较，年度12个月中10个月改善，近期10个月均改善；差值分别为-0.5660/-0.7441。窗口部分重叠，且均为多轮开发数据，不能当作独立测试。
+Annual weights use historical out-of-time predictions before 2024-04; June weights may add April–May forecasts from annual models, with labels through 2024-05. Versus round 8, ten/twelve annual months and all ten recent months improve; deltas−0.5660/−0.7441. Overlapping, repeated development windows are not independent tests.
 
-较早内部窗口选中的是另一方案`support24_mse`，其后期近期分数为442.7381。441.9591是查看后期结果、再补充分组收缩对照后的开发集最低，必须保留这一选择口径，不能标为预先锁定的独立泛化成绩。93份全局/分组融合流程JSON已重新加载并复现完整预测，指标及权重约束重新核对，5项针对性测试通过。
+Earlier inner selection chose `support24_mse`,later recent 442.7381. The441.9591 minimum follows later-result inspection and added shrinkage controls; it is not an earlier-locked independent-generalization result. Reloaded93 global/group blend JSONs reproduce full predictions; metrics/constraints checked; five tests pass.
 
-提交阶段复用全部150,000条标签上训练的单模型及其50,000条测试预测，仅用2025-03及以前的历史样本外预测重新拟合融合权重。新的[可提交CSV](../../output/submissions/candidates/kaggle_blend_support_centered.csv)已经导出并通过ID、数值、重载一致性及数据哈希检查；原文件均保留，新文件尚未上传，Kaggle分数未知。
+Submission reuses base models trained on 150,000 labels and their50,000 test predictions; refit blend weights only on historical out-of-time labels through 2025-03. [New CSV](../../output/submissions/candidates/kaggle_blend_support_centered.csv) passes IDs, numerical/reload consistency and data hashes. Preserve originals; not uploaded, Kaggle score unknown.
 
-证据：[第九轮报告](../04_optimization_history/09_grouped_blending.md)、[全部配置](../../output/experiment_runs/round_09_grouped_blending/comparison.csv)、[开发期权重](../../output/experiment_runs/round_09_grouped_blending/weights_june.csv)、[全量融合权重](../../output/experiment_runs/round_09_grouped_blending/weights_full.csv)、[复现核查](../../output/experiment_runs/round_09_grouped_blending/verification.json)、[提交记录](../../output/submissions/components/round_09_grouped_blend/summary.json)。
+Evidence:[round 9](../04_optimization_history/09_grouped_blending.md), [all configurations](../../output/experiment_runs/round_09_grouped_blending/comparison.csv), [development weights](../../output/experiment_runs/round_09_grouped_blending/weights_june.csv), [full-data weights](../../output/experiment_runs/round_09_grouped_blending/weights_full.csv), [replay checks](../../output/experiment_runs/round_09_grouped_blending/verification.json), [submission record](../../output/submissions/components/round_09_grouped_blend/summary.json).
 <!-- ninth-wave-details:end -->
 
 <!-- tenth-wave-details:start -->
-## 14. 模型结构的实际训练对照
+## 14. Actual architecture training comparisons
 
-神经网络组统一62个输入，训练线性/分段线性/周期数值token的FT-Transformer、全矩阵Deep & Cross、4/8个条件回归专家。FT骨干和数值嵌入使用已有作者包，交叉网络与专家结构为项目实现。9个较早配置先选轮数和5条代表路线，后期固定轮数，共19次网络拟合。另训练2种非对称CatBoost结构，在早期选1种评估后期，共4次树拟合；它们使用原CatBoost的62列window输入，与神经网络的62列内容不同，故不作跨组公平排名。
+Neural models share62 inputs: FT with linear/piecewise-linear/periodic numerical tokens, full-matrix Deep & Cross, and four/eight conditional experts. FT/embeddings use existing author packages; cross/expert models are project implementations. Nine earlier configurations select epochs/five routes, then fixed later durations: 19 neural fits. Two asymmetric CatBoost variants select one earlier for later evaluation: four fits. Their62 window inputs differ from neural62, so no cross-group fairness claim.
 
-| 代表网络 | 年度RMSE | 近期RMSE |
+| Representative network | Annual RMSE | Recent RMSE |
 |---|---:|---:|
 | cat_symmetric_saved | 456.4077 | 446.3793 |
 | cat_depthwise6 | 460.1803 | 448.0859 |
@@ -304,9 +306,9 @@ python -m analysis.experiments.report_selection_summary
 | ft_linear_96_2 | 461.9852 | 458.9254 |
 | moe_plr_8 | 458.6529 | 478.9720 |
 
-固定第九轮融合目标、正则和分组方式，比较不加入新模型、分别加入、全部加入，共9种纳入路线；baseline复现441.9591/450.8650。
+Fix round 9 objective, regularization and grouping; compare no new model, separate additions and all additions: nine inclusion routes. Baseline reproduces441.9591/450.8650.
 
-| 纳入路线 | 年度RMSE | 近期RMSE |
+| Inclusion route | Annual RMSE | Recent RMSE |
 |---|---:|---:|
 | only_ft_plr | 451.0295 | 441.8345 |
 | baseline | 450.8650 | 441.9591 |
@@ -318,11 +320,11 @@ python -m analysis.experiments.report_selection_summary
 | all_new_plus_tree | 450.8121 | 442.5193 |
 | only_moe | 450.8200 | 442.8225 |
 
-新结构加入固定融合后的最低候选近期441.8345、年度451.0295；用户已提交，截图显示Kaggle415.37529，选作三份提交中的final。
+Lowest architecture-augmented blend recent 441.8345/annual 451.0295; user submitted, screenshot 415.37529, selected among three submissions.
 
-早期内部选择的神经路线为`all_new`；树模型加入为额外探索。上表后期最低属于反复查看的开发集探索结果，不能称为预先锁定的独立测试最佳。后期基础模型不使用查询标签早停，融合标签按各预测原点截止；两个窗口部分重叠。19份网络、4份树模型和27份融合权重重新加载复现，9项相关测试通过。
+Earlier neural choice was `all_new`; tree additions are extra exploration. Later minima come from reused development, not locked independent tests. Later base models do not stop on query labels; blend labels respect origins; windows overlap. Reloaded19 networks, four trees and 27 weight sets reproduce predictions; nine tests pass.
 
-[完整结构报告](../04_optimization_history/10_plr_transformer_final.md)、[单模型指标](../../output/experiment_runs/round_10_plr_transformer_final/model_metrics.csv)、[融合对照](../../output/experiment_runs/round_10_plr_transformer_final/blend_comparison.csv)、[复现核查](../../output/experiment_runs/round_10_plr_transformer_final/verification.json)。
+[Full architecture report](../04_optimization_history/10_plr_transformer_final.md), [standalone metrics](../../output/experiment_runs/round_10_plr_transformer_final/model_metrics.csv), [blend controls](../../output/experiment_runs/round_10_plr_transformer_final/blend_comparison.csv), [replay checks](../../output/experiment_runs/round_10_plr_transformer_final/verification.json).
 
-[新结构融合CSV](../../output/submissions/candidates/kaggle_structure_blend.csv)，50,000行，已由用户提交，截图显示Kaggle415.37529。
+[New structural-blend CSV](../../output/submissions/candidates/kaggle_structure_blend.csv),50,000 rows, user-submitted, screenshot Kaggle 415.37529.
 <!-- tenth-wave-details:end -->

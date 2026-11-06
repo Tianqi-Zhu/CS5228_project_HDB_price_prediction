@@ -1,21 +1,23 @@
-# 相同输入下的模型比较
+[Chinese version](PROTOCOL.zh-CN.md)
 
-所有模型使用默认27列、114,842条拟合记录、35,158条验证记录，
-验证期统一为2024-04至2025-03。只从原搜索的compact输入候选中按内部时间验证误差选参数、轮数，
-固定后重训。没有市场残差偏移或历史预热删行。完全匹配的先前外层结果允许复用，
-其他配置重新拟合；每个子目录`results.json`记录选择及来源。
+# Model comparison with identical inputs
 
-`model_metrics.csv`为统一表，`results.json`说明协议与限制。
-各模型允许适配预处理（例如神经网络数值变换和类别Embedding），
-仍存在调参预算不同、仅一随机种子、只一外层窗、历史查看标签等限制。
-配对3个月区块百分位仅描述月份敏感性，不是完整的模型统计显著性结论。
+All models use default27 inputs, 114,842 fitting and 35,158 validation rows,
+April2024–March2025. Select settings/duration from original compact inner-time scores only,
+then refit. No residual offset/warm-up deletion. Reuse exactly matched prior outer results;
+refit others. Each model's `results.json` records selection/provenance.
 
-此表与`comparison_model_search/model_metrics.csv`回答不同问题：后者允许各模型选择自己的特征和残差表示，
-比较整条管线；这里保持原始27个输入一致，更适合讨论模型层面的差异。
+`model_metrics.csv` is the common table;`results.json` explains protocol/limits.
+Preprocessing adapts to models (e.g.,neural numerical transforms/embeddings),
+with unequal tuning budgets, one seed, one outer window and prior label inspection.
+Paired three-month block percentiles describe month sensitivity, not full model significance.
+
+Unlike `comparison_model_search/model_metrics.csv`,which permits model-specific features/residuals
+and compares complete pipelines, this table fixes27 raw inputs to better examine model differences.
 
 ```powershell
 python -m analysis.main common-models
 ```
 
-原内层试验的固定记录已保存在 `../selection_records/`，无需重新搜索；命令和深度依赖见
-[模型说明](../../../../docs/methods/model_comparison.md)。完整分析见 [当前项目报告](../../M03/README.md)。
+Fixed original inner-selection records are in `../selection_records/`, requiring no new search. Commands and deep-learning dependencies are in
+[model guide](../../../../docs/methods/model_comparison.md). Full analysis:[current report](../../M03/README.md).

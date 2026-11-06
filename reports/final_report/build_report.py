@@ -15,6 +15,8 @@ import matplotlib.dates as mdates
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+from build_neural_appendix import build_neural_appendix
+from build_auxiliary_appendix import build_auxiliary_appendix
 
 ROOT = Path(__file__).resolve().parents[2]
 HERE = Path(__file__).resolve().parent
@@ -50,6 +52,11 @@ SOURCES = [
     "reports/half_median_zch_tabpfn_ensemble/comparison_predictions.csv",
     "reports/flat_model_grouping_ensemble/comparison_predictions.csv",
     "reports/final_report/reference_pool.bib",
+    "reports/submissions/tabpfn_ensemble_20261106/publication.json",
+    "review/checks/tabpfn-ensemble/trees_validate_grouped.json",
+    "review/checks/tabpfn-ensemble/tabpfn_validate_grouped.json",
+    "reproduction/f1/validation_evidence/validation_results.csv",
+    "reports/final_report/build_report.py",
 ]
 
 
@@ -64,7 +71,58 @@ def table(name, headers, rows, alignment):
             " & ".join(headers) + r" \\", r"\midrule"]
     text += [" & ".join(map(str, row)) + r" \\" for row in rows]
     text += [r"\bottomrule", r"\end{tabular}"]
-    (TAB / (name + ".tex")).write_text("\n".join(text) + "\n", encoding="utf-8")
+    (TAB / (name + ".tex")).write_bytes(("\n".join(text) + "\n").encode("utf-8"))
+
+
+def ensemble_members(train):
+    """Re-score the exact eight grouped-category members on aligned saved rows."""
+    run = ROOT / "output/tabpfn-ensemble"
+    record = json.loads((ROOT / "review/checks/tabpfn-ensemble/trees_validate_grouped.json").read_text(encoding="utf-8"))
+    tab_record = json.loads((ROOT / "review/checks/tabpfn-ensemble/tabpfn_validate_grouped.json").read_text(encoding="utf-8"))
+    for path, expected in record["identity"]["source_sha256"].items():
+        assert hashlib.sha256((ROOT / path).read_bytes()).hexdigest() == expected, path
+    rows, tree_prediction, row_ids = [], None, None
+    labels = {"compact_ratio15_market_last": "Market-ratio LGB15", "broad_lgb15": "Broad LGB15",
+              "broad_lgb63": "Broad LGB63", "exact_lgb15": "Exact LGB15", "exact_lgb63": "Exact LGB63",
+              "window_cat6": "Window Cat6", "window_lgb63": "Window LGB63"}
+    def read_prediction(path, expected):
+        assert hashlib.sha256(path.read_bytes()).hexdigest() == expected, path
+        frame = pd.read_csv(path)
+        assert len(frame) == 28995 and frame.row_id.is_unique
+        return frame
+    def score(values, ids):
+        error = np.asarray(values, float) - train.loc[ids, "MONTHLY_RENT"].to_numpy(float)
+        return {"rmse_sgd": float(np.sqrt(np.mean(error**2))), "mae_sgd": float(np.abs(error).mean())}
+    for name, member in record["members"].items():
+        path = run / "models/validate/grouped" / name / "prediction.csv"
+        frame = read_prediction(path, member["prediction_sha256"])
+        if row_ids is None:
+            row_ids = frame.row_id.to_numpy()
+            tree_prediction = np.zeros(len(frame))
+        np.testing.assert_array_equal(frame.row_id, row_ids)
+        assert train.loc[row_ids, "RENT_APPROVAL_DATE"].between("2024-06", "2025-03").all()
+        tree_prediction += member["weight"] * frame.predicted.to_numpy(float)
+        rows.append({"member": name, "label": labels[name.split("/")[-1]],
+                     "final_weight": .5 * member["weight"], "iterations": member["iterations"],
+                     **score(frame.predicted, row_ids), "prediction_sha256": member["prediction_sha256"]})
+    path = run / "tabpfn_validate_grouped.csv"
+    tab = read_prediction(path, tab_record["prediction_sha256"])
+    np.testing.assert_array_equal(tab.row_id, row_ids)
+    np.testing.assert_array_equal(tab.actual, train.loc[row_ids, "MONTHLY_RENT"])
+    rows.append({"member": "tabpfn87", "label": "Frozen TabPFN87", "final_weight": .5, "iterations": None,
+                 **score(tab.predicted, row_ids), "prediction_sha256": tab_record["prediction_sha256"]})
+    assert abs(sum(r["final_weight"] for r in rows) - 1) < 1e-12
+    tree_score = score(tree_prediction, row_ids)
+    blend_score = score(.5 * tree_prediction + .5 * tab.predicted.to_numpy(float), row_ids)
+    assert abs(tree_score["rmse_sgd"] - 443.9558745401) < 1e-7
+    assert abs(blend_score["rmse_sgd"] - 440.7707067636) < 1e-7
+    pd.DataFrame(rows).to_csv(HERE / "ensemble_member_scores.csv", index=False, lineterminator="\n")
+    formatted = [[r["label"], f"{100*r['final_weight']:.3f}", f"{r['rmse_sgd']:.3f}", f"{r['mae_sgd']:.3f}"] for r in rows]
+    formatted += [["Seven-tree subtotal", "--", f"{tree_score['rmse_sgd']:.3f}", f"{tree_score['mae_sgd']:.3f}"],
+                  [r"\textbf{Combined ensemble}", "--", r"\textbf{" + f"{blend_score['rmse_sgd']:.3f}" + "}", f"{blend_score['mae_sgd']:.3f}"]]
+    table("ensemble_members", ["Member", "Weight (\\%)", "RMSE", "MAE"], formatted, "lrrr")
+    return {"rows": len(row_ids), "fitting_rows": 121005, "member_scores": rows,
+            "seven_tree": tree_score, "combined": blend_score, "all_member_ids_and_hashes_verified": True}
 
 
 def appendix_outputs(train, pred):
@@ -218,9 +276,20 @@ def main():
         for family,label in (("lgb","LightGBM"),("cat","CatBoost")) for stage,window in (("outer","annual"),("june","recent"))], "lrrrr")
 
     selection = json.loads((ROOT / SOURCES[8]).read_text(encoding="utf-8"))
+    publication = json.loads((ROOT / "reports/submissions/tabpfn_ensemble_20261106/publication.json").read_text(encoding="utf-8"))
+    published_scores = {(r["variant"], r["model"]): r for r in publication["validation_scores"]}
+    f1 = pd.read_csv(ROOT / "reproduction/f1/validation_evidence/validation_results.csv").set_index("window")
+    assert abs(f1.loc["Y", "rmse_sgd"] - selection["recommended_final"]["local_annual_rmse"]) < 1e-8
+    assert abs(f1.loc["J", "rmse_sgd"] - selection["recommended_final"]["local_recent_rmse"]) < 1e-8
     table("submissions", ["Pipeline", "Annual RMSE", "Recent RMSE"], [
+        ["History ensemble", f"{selection['candidates'][0]['local_annual_rmse']:.4f}", f"{selection['candidates'][0]['local_recent_rmse']:.4f}"],
+        ["Tree/Transformer + PLR-FT", f"{f1.loc['Y', 'rmse_sgd']:.4f}", f"{f1.loc['J', 'rmse_sgd']:.4f}"],
+        ["Trees + TabPFN, original categories", "--", f"{published_scores['original', 'ensemble']['rmse_sgd']:.4f}"],
+        ["Trees + TabPFN, grouped flat models", "--", r"\textbf{" + f"{published_scores['grouped', 'ensemble']['rmse_sgd']:.4f}" + "}"],
+    ], "lrr")
+    table("archived_pipelines", ["Archived pipeline", "Annual", "Recent"], [
         [label, f"{c['local_annual_rmse']:.4f}", f"{c['local_recent_rmse']:.4f}"]
-        for c,label in zip(selection["candidates"], ["History ensemble", "Macro-enhanced ensemble", "Grouped ensemble + PLR-FT"])], "lrr")
+        for c,label in zip(selection["candidates"], ["History", "Supplied-macro", "Tree/Transformer + PLR"])], "lrr")
 
     pred = pd.read_csv(ROOT / SOURCES[12])
     assert len(pred) == 28995 and pred.row_id.is_unique
@@ -269,24 +338,32 @@ def main():
         ["Earlier-locked blend", "varied", f"{metrics['locked_blend']['rmse']:.3f}", f"{metrics['locked_blend']['mae']:.3f}"],
         ["Equal blend", "varied", "440.952", "318.888"]], "llrr")
 
+    member_audit = ensemble_members(train)
     supplementary = appendix_outputs(train, pred)
+    neural_appendix, neural_sources = build_neural_appendix(ROOT, HERE, train, table)
+    auxiliary_appendix, auxiliary_sources = build_auxiliary_appendix(ROOT, HERE, train, table)
 
     audit = {"checks": {"raw_row_counts": True, "annual_and_recent_split_sizes": True,
         "duplicate_count": True, "recent_prediction_ids_months_labels": True,
         "latest_tree_tabpfn_metrics_recomputed": True,
         "all_three_tabpfn_cohort_ablation_metrics_recomputed": True,
-        "filter_control_reproduces_unfiltered_blend": True},
+        "filter_control_reproduces_unfiltered_blend": True,
+        "exact_grouped_ensemble_members_rescored": True,
+        "archived_F1_matches_recorded_fresh_fixed_recipe_validation": True},
         "data": {"train": len(train), "test": len(test), "exact_duplicates": int(train.duplicated().sum()),
         "monthly_mean_first": float(monthly['mean'].iloc[0]), "monthly_mean_last": float(monthly['mean'].iloc[-1])},
         "recomputed_recent_metrics": metrics,
         "recomputed_cohort_metrics": cohort_metrics,
+        "exact_grouped_ensemble_members": member_audit,
         "supplementary_diagnostics": supplementary,
+        "supplementary_neural_experiments": neural_appendix,
+        "supplementary_auxiliary_temporal_experiments": auxiliary_appendix,
         "final_selection": selection["recommended_final"],
         "limitations": ["Archived final-structure scores and Kaggle value are read from the saved selection record; the screenshot was not supplied in this turn.",
-            "Root output/ model binaries and final submission CSV are absent from this checkout; no full final-model replay is claimed.",
-            "The report does not train models or upload predictions.",
+            "F1 validation refits and the tree/TabPFN full-data refits have separate recorded evidence; this report builder scores saved predictions and does not rerun training.",
+            "New original/grouped tree-TabPFN test CSVs have no observed Kaggle score; this builder does not upload predictions.",
             "Names, student IDs, confirmed team name and actual workload ownership require the team."],
-        "source_sha256": {p: hashlib.sha256((ROOT/p).read_bytes()).hexdigest() for p in SOURCES}}
+        "source_sha256": {p: hashlib.sha256((ROOT/p).read_bytes()).hexdigest() for p in SOURCES + neural_sources + auxiliary_sources}}
     (HERE / "evidence_audit.json").write_text(json.dumps(audit, indent=2) + "\n", encoding="utf-8")
     print(json.dumps({"audit_checks": audit["checks"], "metrics": metrics,
         "figures": len(list(FIG.glob('*.pdf'))), "tables": len(list(TAB.glob('*.tex')))}, indent=2))

@@ -1,0 +1,17 @@
+\begin{tabular}{lrrrrr}
+\toprule
+Model / setting & Views & Updated weights & RMSE & MAE & $\Delta$RMSE \\
+\midrule
+Frozen control & 1 & 0 & 455.814 & 329.748 & +0.000 \\
+DiagScale, LR 0.003 & 1 & 8,576 & 456.133 & 331.187 & +0.320 \\
+DiagScale, LR 0.005 & 1 & 8,576 & 457.057 & 331.798 & +1.244 \\
+DiagScale, LR 0.01 & 1 & 8,576 & 455.212 & 330.625 & -0.602 \\
+DiagScale, LR 0.05 & 1 & 8,576 & 460.074 & 338.544 & +4.261 \\
+DiagScale, matched CRPS+MSE & 1 & 8,576 & 455.122 & 330.872 & -0.692 \\
+DiagScale, matched MSE only & 1 & 8,576 & 455.071 & 330.790 & -0.743 \\
+ICL Q/K LoRA, rank 2 & 1 & 65,536 & 455.472 & 330.472 & -0.341 \\
+Native regression decoder & 1 & 9,320,328 & 455.990 & 331.042 & +0.176 \\
+Frozen control & 2 & 0 & 455.396 & 327.794 & +0.000 \\
+All-attention Q/K LoRA, rank 8 & 2 & 299,008 & 457.043 & 333.378 & +1.647 \\
+\bottomrule
+\end{tabular}

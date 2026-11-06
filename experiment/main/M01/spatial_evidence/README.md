@@ -1,13 +1,17 @@
-# 空间 EDA：主线选取与来源核验
+[Chinese version](README.zh-CN.md)
 
-| 主线证据 | 内容 | 使用边界 |
+# Spatial EDA: main selections and provenance verification
+
+English reading copies of the source narratives: [feature associations](source/EDA_summary.md) and [facility controls](source/amenities_adjusted_summary.md). Their linked `_zh.md` originals remain the frozen provenance sources.
+
+| Main evidence | Content | Usage boundaries |
 |---|---|---|
-| [原始与调整后关联](raw_adjusted_comparison.csv) | CBD、MRT、商场、小学距离及楼层、楼龄，6 项 | 同时展示 Pearson 与控制月份、户型、面积后的 Pearson；不能把相关当预测增益 |
-| [设施距离分箱对照](facility_bin_controls.csv) | `joint_cbd` 三类设施、18 个分箱 | 149,841 条完整记录，排除 159 条；9,395 栋楼聚类，点态 95% 区间 |
-| [来源与输入核验](../evidence-audit.json) | 原来源文件逐字节哈希、当前原始数据内容身份 | 此处复核来源和统计口径，没有独立重估原回归 |
+| [Raw and adjusted associations](raw_adjusted_comparison.csv) | Six features: CBD, MRT, mall and primary-school distances, floor and building age | Shows Pearson and Pearson adjusted for month, flat type and area; correlation is not predictive gain |
+| [Facility-distance bin comparisons](facility_bin_controls.csv) | Three facility types and 18 bins under `joint_cbd` | 149,841 complete records, 159 excluded; clustered over 9,395 buildings, pointwise 95% intervals |
+| [Source and input verification](../evidence-audit.json) | Byte-level hashes of original sources and content identity of current raw data | Verifies provenance and statistical definitions; does not independently refit the original regressions |
 
-来源：`ziyuan——spatialfeatures @7caf2cb77095f3b99cd242db0074189a355c0aae`。逐文件原路径和 Git blob 哈希见 [imported-evidence.json](../imported-evidence.json)。`source/` 为未改写的历史来源快照，原报告中的旧相对链接和 `OPEN_MRT` 命名保留；当前采用[所给设施快照场景](../../../../docs/methods/prediction-scenario.md)。原始 CSV 的 CRLF 与 Git 源 LF 只在内容身份核验时规范化，不修改训练输入字节。
+Source: `ziyuan——spatialfeatures @7caf2cb77095f3b99cd242db0074189a355c0aae`. Original paths and Git blob hashes are in [imported-evidence.json](../imported-evidence.json). `source/` contains unchanged historical snapshots, retaining old relative links and `OPEN_MRT` naming. The current interpretation uses the [provided-facility snapshot scenario](../../../../docs/methods/prediction-scenario.md). Raw CSV CRLF and Git-source LF are normalized only for content-identity checks, without modifying training-input bytes.
 
-两组调整口径分别记录：关联表的调整为月份、户型、面积；分箱模型另有月份×户型固定效应、town 固定效应、面积及楼龄二次项、楼层和 CBD 距离。分箱参照组为 0–0.3 km。不能将这两种调整合称同一模型，也不能据区间或关联推断设施的因果作用。
+The two adjustments differ: the association table controls month, flat type and area; bin models additionally use month × flat-type fixed effects, town fixed effects, quadratic area and age, floor and CBD distance. The distance reference is 0–0.3 km. These must not be described as one model or interpreted as causal facility effects.
 
-主线仅使用以上两张选表解释空间变量的定义与混杂；完整探索仍服务 appendix X01/X08。来源 26 列方案与主线 static19、common27、adjusted62 的差别见 [特征清单](../../M03/feature_schemas/README.md)。
+Main uses only these two selected tables to explain spatial definitions and confounding; full exploration remains in appendix X01/X08. Differences between the source's 26 columns and main static19, common27 and adjusted62 are in the [feature catalog](../../M03/feature_schemas/README.md).

@@ -1,72 +1,74 @@
-# 第四轮：本地RMSE 430目标探索
+[Chinese version](04_macro_spatial_diagnostics.zh-CN.md)
 
-本轮以相同的2024-06—2025-03全部28,995行、本地最佳442.9025为参照，目标430。只使用train与所给auxiliary，不使用外部公开租金目标，不删除难预测的验证样本。
+# Round 4:exploration toward local RMSE 430
 
-从442.9025降至430，需要RMSE再降2.91%、MSE再降约5.74%。用户没有保存同一提交的本地/Kaggle成对成绩，因此不能验证“本地减20”的固定换算；430只是本地研究目标，不能据此保证Kaggle达到411。
+Reference442.9025 on identical28,995 June2024–March2025 rows; target 430. Train/supplied aux only, no public rent answers or difficult-row deletion.
 
-## 新方法及结果
+Reducing RMSE from 442.9025 to 430 requires a further 2.91% RMSE decrease, or about 5.74% in MSE. No saved same-submission local/Kaggle pairs validate a fixed 20-point conversion. The local target of 430 does not guarantee a Kaggle score of 411.
 
-| 路线 | 较早窗口配置数 | 做法 |
+## New methods/results
+
+| Route | Earlier-window configurations | Approach |
 |---|---:|---|
-| distribution | 8 | 先预测租金区间概率，再积分拟合集区间内均值；比较绝对租金、市场归一化、局部基准和区间宽度。 |
-| experts | 8 | 按户型分别训练LightGBM/CatBoost，稀有户型回退原冻结预测。 |
-| flows | 8 | 仅使用待预测批次内的无标签记录数量，结合历史同期记录数；没有读取目标租金。需整批推理。 |
-| horizons | 18 | 模拟0/3/6/9/12个月信息延迟，冻结所有历史与同期窗口；原始/残差/比值目标；每原始样本总权重不变。 |
-| known_macro | 12 | 单独信息情景：使用比赛提供的预测月份COE和股票观测，租金标签仍在预测起点冻结。 |
-| spatial | 12 | 只从12/24/36个月前±1月寻找其他楼栋可比记录；匹配位置、面积、租约年份；排除本楼栋。 |
+| distribution | 8 | Predict rent-band probabilities and integrate fitting-band means; compare absolute, market-normalized, local-baseline targets/band widths |
+| experts | 8 | Fit type-specific LightGBM/CatBoost; rare types fall back to frozen predictions |
+| flows | 8 | Use unlabelled query-batch counts and historical cohort counts only; requires batch inference, not target rents |
+| horizons | 18 | Simulate0/3/6/9/12-month delays; freeze histories/cohorts; raw/residual/ratio targets with unchanged total weight per source row |
+| known_macro | 12 | Separate scenario: supplied query-month COE/stock observations, with rent labels still frozen at origin |
+| spatial | 12 | Other-block comparables from 12/24/36 months earlier±one month; match location, area, lease year and exclude own block |
 
-所有参数、早停轮数和融合权重仅用2023-10至2024-03较早预测选择；随后按固定轮数在2024-04或2024-06起点之前重新拟合。两种融合目标提前确定：纯RMSE与固定0.001收缩，均为非负、和为1、不加截距的权重。
+Select parameters, early-stopping lengths and blend weights only on 2023-10–2024-03 predictions; then refit for fixed rounds before the 2024-04 or 2024-06 origins. Prespecify pure-RMSE and fixed 0.001-shrinkage objectives, both with nonnegative weights summing to 1 and no intercept.
 
-| 窗口 | 方案 | 旧最佳RMSE | 本轮RMSE | 差值 | MAE | 改善月份 |
+| Window | Policy | Previous best RMSE | Current RMSE | Difference | MAE | Months improved |
 |---|---|---:|---:|---:|---:|---:|
 | outer | conservative | 451.1810 | 451.5005 | +0.3195 | 330.9300 | 5/12 |
 | outer | rmse | 451.1810 | 451.5241 | +0.3431 | 331.2677 | 5/12 |
 | june | conservative | 442.9025 | 443.4141 | +0.5116 | 324.7150 | 3/10 |
 | june | rmse | 442.9025 | 443.3215 | +0.4190 | 324.7018 | 3/10 |
 
-### 比赛已知宏观输入的独立对照
+### Separate supplied-macro control
 
-所给COE和股票文件覆盖测试期。这里允许使用预测月份的宏观观测，符合所给数据范围，但不同于在真实部署时预测完全未知的未来。该情景不与完全未知未来宏观的预测混称；没有读取预测月份租金标签。
+COE/stock files cover test months. Query-month observations are within supplied data but differ from genuinely unknown future deployment conditions. Report separately; query rent labels remain unavailable.
 
-| 窗口 | 融合目标 | 旧最佳RMSE | 已知宏观方案RMSE | 差值 |
+| Window | Blend objective | Previous best RMSE | Known-macro RMSE | Difference |
 |---|---|---:|---:|---:|
 | outer | conservative | 451.1810 | 451.2081 | +0.0270 |
 | outer | rmse | 451.1810 | 451.2310 | +0.0499 |
 | june | conservative | 442.9025 | 442.8892 | -0.0133 |
 | june | rmse | 442.9025 | 442.9041 | +0.0016 |
 
-本轮未知未来宏观情景的新融合最低近期RMSE为 **443.3215**。430目标尚未达到。若新方案更差，保留前轮442.9025，不把一次失败试验替换成所谓新最优。
+Without future macro observations, new best recent blend **443.3215**; target 430 unmet. Retain earlier442.9025 rather than calling a failed trial a new optimum.
 
-## 误差与可行性判断
+## Errors and feasibility
 
-当前最佳模型在近期窗口中，实际租金≤1800的868行仅占约3%，却贡献约22.5%的平方误差；这些标签分组只用于诊断，不能在预测时用于选择模型。另一个高误差组为executive，但其总误差占比约7.4%，只改善该组不足以轻易解决全部差距。
+In the recent best model, 868 rents≤1800 are about 3% of rows but22.5% of SSE. Actual-rent groups are diagnostics, not inference routing. Executive flats contribute about 7.4% of error; fixing that group alone cannot easily close the gap.
 
-现有输入缺少具体单元、装修、租户和合同状态；同月同楼栋户型会有不同租金。因此430值得实验，但不能从现有结果保证可达，更不能用同输入重复记录的组内标准差证明它绝对不可能。需要区分可学习的缺失信息与随机/未观测差异。
+Inputs omit unit, renovation, tenant and contract status; same-month/block/type rents differ. Target 430 merits testing but is neither guaranteed nor disproved by duplicate-group standard deviations. Distinguish learnable missing information from random/unobserved variation.
 
-本轮近期和年度窗口均是已反复研究的开发数据。若继续根据它们挑选方案，最低值会有选择偏差。Kaggle Public也不等于最终Private结果。仓库曾记录2026-10-24的411.75928，当前榜单未能通过网页工具独立读取，故不声称本轮核验了实时名次。
+Recent/annual windows are repeatedly used development sets; continued selection biases minima. Kaggle Public is not final Private. Repository records411.75928 on 2026-10-24, but current rankings were not independently accessible by browsing; no live-rank verification claim.
 
-## 核验与产物
+## Verification and artifacts
 
-已独立核对78份预测的原始行ID、月份、标签、样本数及指标，重载12个入选模型，重新组合8份融合预测；原始文件哈希一致。23项相关测试通过。
+Checked78 prediction files'IDs, months, labels, counts/metrics; reloaded12 selected models, reconstructed eight blends; raw hashes match and 23 tests pass.
 
-- `verified_metrics.csv`：全部成功配置的重算结果，含失败方向。
-- `baseline_error_groups.csv`：误差分组诊断。
-- `ensemble_selection.json`：较早窗口锁定的成员和权重。
-- `ensemble_comparison.csv`：与442.90方案的同窗口对照。
-- `summary.json` / `verification.json`：目标状态和核验记录。
+- `verified_metrics.csv`:recomputed successful configurations, including deterioration.
+- `baseline_error_groups.csv`:grouped error diagnostics.
+- `ensemble_selection.json`:earlier-locked members/weights.
+- `ensemble_comparison.csv`:matched-window442.90 controls.
+- `summary.json` / `verification.json`:target status/check records.
 
-## 全量重训后的可提交文件
+## Full-refit submission files
 
 
-当前最优历史融合已在全部150,000条训练记录上按固定轮数重训，为全部50,000条测试记录生成预测。10个基础成员和1个已知宏观成员的模型均已保存，主方案重载预测一致。租金历史对测试月份逐行排除同月标签，训练结束以后冻结。
+Refit the best history blend on 150,000 labels with fixed durations; predict50,000 queries. Save ten base and one known-macro member; main reloaded predictions match. Test histories exclude same-month labels row by row and freeze after fitting.
 
-| 文件 | 对应本地开发RMSE | 信息条件 |
+| File | Corresponding local development RMSE | Information setting |
 |---|---:|---|
-| `output/submissions/components/history_macro_ensemble/submission.csv` | 442.9025 | 历史主方案 |
-| `output/submissions/components/history_macro_ensemble/submission_given_macro.csv` | 442.8892 | 比赛所给预测期宏观增强 |
+| `output/submissions/components/history_macro_ensemble/submission.csv` | 442.9025 | Main historical policy |
+| `output/submissions/components/history_macro_ensemble/submission_given_macro.csv` | 442.8892 | Supplied prediction-period macro augmentation |
 
-两个文件均为50,000行、列名`Id,Predicted`，ID保持测试原顺序。未向Kaggle上传，真实Kaggle分数未知；表内分数对应本地时间验证方案，不是对这50,000条无标签记录测得的误差。
+Both files contain 50,000 rows with `Id,Predicted` columns and original test ID order. Neither was uploaded; actual Kaggle scores are unknown. Table scores describe local temporal-validation methods, not measured errors on these 50,000 unlabeled queries.
 
-建议先用主方案建立第一组本地/Kaggle成对记录，再决定下一轮针对哪些时间跨度或模型误差继续优化。每份文件及原始输入的SHA-256见`submission_export.json`。
+First establish a local/Kaggle pair for the main policy, then choose horizon/error targets for further work. File/input SHA-256:`submission_export.json`.
 
-复现：`python -m analysis.experiments.best_ensemble_submission`。已完成的组件会按输入哈希与固定轮数复用。
+Reproduce:`python -m analysis.experiments.best_ensemble_submission`; reuse completed components by input hashes/fixed durations.

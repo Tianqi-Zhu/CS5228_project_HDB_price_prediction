@@ -1,0 +1,483 @@
+{
+  "default_language": "en",
+  "additional_language": "zh-CN",
+  "migration_date": "2026-11-07",
+  "scope": "Tracked human-readable documentation containing Chinese prose; original Chinese snapshots retained byte for byte.",
+  "documents": [
+    {
+      "english": "README.md",
+      "chinese": "README.zh-CN.md",
+      "chinese_original_sha256": "eff420576d7c24b4e1b2fe9e7998db5b60619d4c0888623cf2514f5214a2a978"
+    },
+    {
+      "english": "analysis/README.md",
+      "chinese": "analysis/README.zh-CN.md",
+      "chinese_original_sha256": "4b09faf2570f041100f5809f42a54a2f9b6b55e371007bbeb5687b88c2d4662e"
+    },
+    {
+      "english": "analysis/experiments/README.md",
+      "chinese": "analysis/experiments/README.zh-CN.md",
+      "chinese_original_sha256": "e649066d5ab8146169f331208f03f8ff4b3b15d25995e5cd76e5b7a8dd14fc73"
+    },
+    {
+      "english": "analysis/experiments/baselines/README.md",
+      "chinese": "analysis/experiments/baselines/README.zh-CN.md",
+      "chinese_original_sha256": "e785dcce345cc6aab276b368f48711f6da72bfcd89eab10ad5fceab19f05b7fa"
+    },
+    {
+      "english": "analysis/experiments/feature_engineering/README.md",
+      "chinese": "analysis/experiments/feature_engineering/README.zh-CN.md",
+      "chinese_original_sha256": "f720d7627f3b58cdcc5406cc4afa44d1215fe4bf12f12b5e77f76779a4c40de2"
+    },
+    {
+      "english": "analysis/experiments/model_comparison/README.md",
+      "chinese": "analysis/experiments/model_comparison/README.zh-CN.md",
+      "chinese_original_sha256": "74c1c12491f3fa8c61f72cf2b38746e7ff8b86983e404ad3a57e37b600f78d10"
+    },
+    {
+      "english": "analysis/experiments/optimization/README.md",
+      "chinese": "analysis/experiments/optimization/README.zh-CN.md",
+      "chinese_original_sha256": "538be10d70f3640d3b1b47d10f7f5131995751daf1308abf2797d23e70830c7a"
+    },
+    {
+      "english": "analysis/experiments/reporting/README.md",
+      "chinese": "analysis/experiments/reporting/README.zh-CN.md",
+      "chinese_original_sha256": "5cec1fb1f6c85264c3cc4db20bbb6df60217e043662048ffb89517f28df08fc3"
+    },
+    {
+      "english": "analysis/experiments/submissions/README.md",
+      "chinese": "analysis/experiments/submissions/README.zh-CN.md",
+      "chinese_original_sha256": "1d07e69ab6b1f60be9c8de7b794764c059f05d82a8867dfda2a3b8eac2e23e5d"
+    },
+    {
+      "english": "analysis/validation/README.md",
+      "chinese": "analysis/validation/README.zh-CN.md",
+      "chinese_original_sha256": "c633afef31238a1b7ed45f375cce8836bd8d2aa12a19c32c57e1bfb3e1b6917b"
+    },
+    {
+      "english": "data/README.md",
+      "chinese": "data/README.zh-CN.md",
+      "chinese_original_sha256": "d8894b00a4e32423c532ab509adabd81fa9432310a323b451bc1f6ca3870989a"
+    },
+    {
+      "english": "docs/guides/repository_layout.md",
+      "chinese": "docs/guides/repository_layout.zh-CN.md",
+      "chinese_original_sha256": "8e449970c2c48641ba32e117ef79df641e3e7983427c2f7a45d4917f3480cb6e"
+    },
+    {
+      "english": "docs/guides/running_experiments.md",
+      "chinese": "docs/guides/running_experiments.zh-CN.md",
+      "chinese_original_sha256": "7b6ced1b8c7537604d9bec732f761c03e15c14a5131ef0dd2493b3d5c9ca8555"
+    },
+    {
+      "english": "docs/guides/tabpfn_workflow.md",
+      "chinese": "docs/guides/tabpfn_workflow.zh-CN.md",
+      "chinese_original_sha256": "36ff38348e6e8bb5a60fb79a9d4ca7d4b1decf4618b22e14b789c0d4e18932d0"
+    },
+    {
+      "english": "docs/methods/baseline_features.md",
+      "chinese": "docs/methods/baseline_features.zh-CN.md",
+      "chinese_original_sha256": "5e5b48b3dbc8bd6ca3ed95a78ce47406150415b48eb4d74cecb9d21047839858"
+    },
+    {
+      "english": "docs/methods/history_feature_optimization.md",
+      "chinese": "docs/methods/history_feature_optimization.zh-CN.md",
+      "chinese_original_sha256": "e1def0463047f09ed255237665bd0cf5407a1e1793d7f7ca1034318cabde9d7c"
+    },
+    {
+      "english": "docs/methods/model_comparison.md",
+      "chinese": "docs/methods/model_comparison.zh-CN.md",
+      "chinese_original_sha256": "67be206ac79b9f5c70612f3b518030151a4a03332784c9a098ff81a09731e391"
+    },
+    {
+      "english": "docs/methods/prediction-scenario.md",
+      "chinese": "docs/methods/prediction-scenario.zh-CN.md",
+      "chinese_original_sha256": "55a34c2fb56ec740fa74b9cf21ec8ca9ff377439b292cc23ba153e159ed98d40"
+    },
+    {
+      "english": "docs/mlp_eda.md",
+      "chinese": "docs/mlp_eda.zh-CN.md",
+      "chinese_original_sha256": "06f35fcb2ffb147607e433b947823b683456f5039bde2d8b3baf48b330b7ed87"
+    },
+    {
+      "english": "docs/mlp_prediction_report.md",
+      "chinese": "docs/mlp_prediction_report.zh-CN.md",
+      "chinese_original_sha256": "e62a71f913a94d26a0a3345d94c61af10013ca309235de649dfc692aa5121860"
+    },
+    {
+      "english": "docs/planning/main-appendix-experiment-plan.md",
+      "chinese": "docs/planning/main-appendix-experiment-plan.zh-CN.md",
+      "chinese_original_sha256": "39344a06c911704cfcb117e386ceaaaf04426ee6322b803f34b5f85dd1b5ad3e"
+    },
+    {
+      "english": "docs/planning/main-execution-status.md",
+      "chinese": "docs/planning/main-execution-status.zh-CN.md",
+      "chinese_original_sha256": "b909ad5f5c16307147ae51b914c0f2c21104e87db643ed6e5ab68282fa7f18ea"
+    },
+    {
+      "english": "docs/planning/main-five-item-completion.md",
+      "chinese": "docs/planning/main-five-item-completion.zh-CN.md",
+      "chinese_original_sha256": "dd3e5bf6c656b0e19bbaf0d9536b817e50bb01e041576ebfa56c885d8c603ad6"
+    },
+    {
+      "english": "docs/planning/tabpfn-branch-split.md",
+      "chinese": "docs/planning/tabpfn-branch-split.zh-CN.md",
+      "chinese_original_sha256": "569cafe3081a75f569fa2ec96777160d08f786f6766c54057a3bbe223dc9ff92"
+    },
+    {
+      "english": "experiment/01_final/EXPERIMENT_REPORT.md",
+      "chinese": "experiment/01_final/EXPERIMENT_REPORT.zh-CN.md",
+      "chinese_original_sha256": "3253e20d6359cb3946a58403f783c89722e863861a73908bf5699dd59dcbff6b"
+    },
+    {
+      "english": "experiment/01_final/README.md",
+      "chinese": "experiment/01_final/README.zh-CN.md",
+      "chinese_original_sha256": "ccc1d989bcb1642d23d26716ae31476a428a9ce4fbc62d47048497a38849a9fb"
+    },
+    {
+      "english": "experiment/02_feature_engineering/BASELINE_27_FEATURES.md",
+      "chinese": "experiment/02_feature_engineering/BASELINE_27_FEATURES.zh-CN.md",
+      "chinese_original_sha256": "3a007bb5ed8cd3378f1cf20175d5ac500953729f4839ee12e72c9cf9300707e2"
+    },
+    {
+      "english": "experiment/02_feature_engineering/FEATURE_ABLATION.md",
+      "chinese": "experiment/02_feature_engineering/FEATURE_ABLATION.zh-CN.md",
+      "chinese_original_sha256": "824c106cda141a3fca4b3109202b16cd7bc6fccba0c107d62bc170094a59805b"
+    },
+    {
+      "english": "experiment/02_feature_engineering/README.md",
+      "chinese": "experiment/02_feature_engineering/README.zh-CN.md",
+      "chinese_original_sha256": "0be9d3f1000c829af8cd90067d50be8db683b7bd1dfcdc9246e6bfccf09f0f68"
+    },
+    {
+      "english": "experiment/03_model_comparison/PROTOCOL.md",
+      "chinese": "experiment/03_model_comparison/PROTOCOL.zh-CN.md",
+      "chinese_original_sha256": "13c544c551a61b7ca73791400ea18994b1c7704c3cf988141b5afafae0c5fa66"
+    },
+    {
+      "english": "experiment/03_model_comparison/README.md",
+      "chinese": "experiment/03_model_comparison/README.zh-CN.md",
+      "chinese_original_sha256": "e05956dc394d6a1980bead8ad1ccc5187c8ad70a120eb6c5d12f3dfb8da2c0ef"
+    },
+    {
+      "english": "experiment/04_optimization_history/01_history_target_search.md",
+      "chinese": "experiment/04_optimization_history/01_history_target_search.zh-CN.md",
+      "chinese_original_sha256": "a74fd0801bf25b76a3267c6bf86bceb4eb8118daa3eebaf5eff8d7a049df38ad"
+    },
+    {
+      "english": "experiment/04_optimization_history/02_anniversary_history.md",
+      "chinese": "experiment/04_optimization_history/02_anniversary_history.zh-CN.md",
+      "chinese_original_sha256": "cdecc65ad8a89912063e0f94c75825891a9126c7431d767294fbe01e6e7f0216"
+    },
+    {
+      "english": "experiment/04_optimization_history/03_tree_transformer_ensemble.md",
+      "chinese": "experiment/04_optimization_history/03_tree_transformer_ensemble.zh-CN.md",
+      "chinese_original_sha256": "f4bfc603fafffc3101884db82bc8586671b3f7fdf1005fdce3211b2e295de111"
+    },
+    {
+      "english": "experiment/04_optimization_history/04_macro_spatial_diagnostics.md",
+      "chinese": "experiment/04_optimization_history/04_macro_spatial_diagnostics.zh-CN.md",
+      "chinese_original_sha256": "cfd3bddd2a05ab9f0ccc87044a6ac3219708377da559426a8f67d4cd7b84e9a0"
+    },
+    {
+      "english": "experiment/04_optimization_history/05_feature_interactions.md",
+      "chinese": "experiment/04_optimization_history/05_feature_interactions.zh-CN.md",
+      "chinese_original_sha256": "610490bda85da75259c201cf9fc4a6ede8f43fd41b3910d5daf902b604c45e0c"
+    },
+    {
+      "english": "experiment/04_optimization_history/06_deep_models.md",
+      "chinese": "experiment/04_optimization_history/06_deep_models.zh-CN.md",
+      "chinese_original_sha256": "9ae246acaf80bbaaf0e41a5c3880525fffe3a8cf3e31a7828f0fb924498fd810"
+    },
+    {
+      "english": "experiment/04_optimization_history/07_pretrained_transformers.md",
+      "chinese": "experiment/04_optimization_history/07_pretrained_transformers.zh-CN.md",
+      "chinese_original_sha256": "096be9a4cdf0849c9479d521b1be5d3ccebf33a4479e8275975348eedd2bbb06"
+    },
+    {
+      "english": "experiment/04_optimization_history/08_feature_pruning_seeds.md",
+      "chinese": "experiment/04_optimization_history/08_feature_pruning_seeds.zh-CN.md",
+      "chinese_original_sha256": "baff3686533b2213a012efeee250519d7a74967f7e3d188cf3133b3bfbdefbfe"
+    },
+    {
+      "english": "experiment/04_optimization_history/09_grouped_blending.md",
+      "chinese": "experiment/04_optimization_history/09_grouped_blending.zh-CN.md",
+      "chinese_original_sha256": "b6be9e7fd9822a9d4051f087f3544c4197343cde755e8e7df8f361b33af4f91b"
+    },
+    {
+      "english": "experiment/04_optimization_history/10_plr_transformer_final.md",
+      "chinese": "experiment/04_optimization_history/10_plr_transformer_final.zh-CN.md",
+      "chinese_original_sha256": "b5e05bf7e9f3ca0d00b3504f175c5ad6b709e1e382f2b011b969837ba7027ec3"
+    },
+    {
+      "english": "experiment/04_optimization_history/README.md",
+      "chinese": "experiment/04_optimization_history/README.zh-CN.md",
+      "chinese_original_sha256": "17600d7742f2d7b46d06747fc2c2bf365372c253e0c9c83d5d5b20cf37dd9e12"
+    },
+    {
+      "english": "experiment/README.md",
+      "chinese": "experiment/README.zh-CN.md",
+      "chinese_original_sha256": "b71744967cbe3a1cd93408a12366c83d8f53910add14d00dbd6a1d61a759077c"
+    },
+    {
+      "english": "experiment/eda/README.md",
+      "chinese": "experiment/eda/README.zh-CN.md",
+      "chinese_original_sha256": "1b6c0653680ca5fc69454513fba57dbadcc079c791532524b99080005d4ef852"
+    },
+    {
+      "english": "experiment/eda/notes.md",
+      "chinese": "experiment/eda/notes.zh-CN.md",
+      "chinese_original_sha256": "387791dd5b96e472d600e9bcea6d802227547fcd6a334b3296c3590c3e65ba1d"
+    },
+    {
+      "english": "experiment/eda/report.md",
+      "chinese": "experiment/eda/report.zh-CN.md",
+      "chinese_original_sha256": "b8bd06faaaaaad065c837411f1ce61dcfeca0bc313dc082ad4af04bd60dd50b6"
+    },
+    {
+      "english": "experiment/eda/supplementary/auxiliary/report.md",
+      "chinese": "experiment/eda/supplementary/auxiliary/report.zh-CN.md",
+      "chinese_original_sha256": "807353d4b540bd2a40b84807923e66060e0d95c4c0bae7b810d47ba865a0bea5"
+    },
+    {
+      "english": "experiment/main/M01/cleaning_evidence/README.md",
+      "chinese": "experiment/main/M01/cleaning_evidence/README.zh-CN.md",
+      "chinese_original_sha256": "9dd9a2edf4b17ab705ed151ecddfb232a980960aa652ba5c33d34aee64382efc"
+    },
+    {
+      "english": "experiment/main/M01/eda/README.md",
+      "chinese": "experiment/main/M01/eda/README.zh-CN.md",
+      "chinese_original_sha256": "23c6426394e3c52583fecd649ee60392f9a8d03fada91c7f175f48bf57178a57"
+    },
+    {
+      "english": "experiment/main/M01/eda/notes.md",
+      "chinese": "experiment/main/M01/eda/notes.zh-CN.md",
+      "chinese_original_sha256": "6c2b546beb206f37ed67c215918202ae4d400699594df4c9e4c98347a378c384"
+    },
+    {
+      "english": "experiment/main/M01/eda/report.md",
+      "chinese": "experiment/main/M01/eda/report.zh-CN.md",
+      "chinese_original_sha256": "ac9a5da2a42a762eb4cddddf7680232fb968329968324bb30f23a849d4248cca"
+    },
+    {
+      "english": "experiment/main/M01/eda/supplementary/auxiliary/report.md",
+      "chinese": "experiment/main/M01/eda/supplementary/auxiliary/report.zh-CN.md",
+      "chinese_original_sha256": "807353d4b540bd2a40b84807923e66060e0d95c4c0bae7b810d47ba865a0bea5"
+    },
+    {
+      "english": "experiment/main/M01/spatial_evidence/README.md",
+      "chinese": "experiment/main/M01/spatial_evidence/README.zh-CN.md",
+      "chinese_original_sha256": "b883591f415058e61068c7a13272057b83ab84e035ba02759e7c429fd3bf2db9"
+    },
+    {
+      "english": "experiment/main/M01/spatial_evidence/source/EDA_summary.md",
+      "chinese": "experiment/main/M01/spatial_evidence/source/EDA_summary_zh.md",
+      "chinese_original_sha256": "b95120bc4769b45464988a3567078d16d3443d106808529f43b4780251bd3780"
+    },
+    {
+      "english": "experiment/main/M01/spatial_evidence/source/amenities_adjusted_summary.md",
+      "chinese": "experiment/main/M01/spatial_evidence/source/amenities_adjusted_summary_zh.md",
+      "chinese_original_sha256": "38c0fd04a60205f23d3ce798396eabc6fef9879a711c96edf68315cd65f91ade"
+    },
+    {
+      "english": "experiment/main/M03/feature_schemas/README.md",
+      "chinese": "experiment/main/M03/feature_schemas/README.zh-CN.md",
+      "chinese_original_sha256": "557d7bb453ae2d88f1296a738cd42c3c749225b673874d12dfa68c99280a9d86"
+    },
+    {
+      "english": "experiment/main/M05/README.md",
+      "chinese": "experiment/main/M05/README.zh-CN.md",
+      "chinese_original_sha256": "379f592994f073eb75d85343253ad9b22c0157f711c70e70bbaed74dd45ee3c5"
+    },
+    {
+      "english": "experiment/main/M05/common_27/PROTOCOL.md",
+      "chinese": "experiment/main/M05/common_27/PROTOCOL.zh-CN.md",
+      "chinese_original_sha256": "1f8268ca33cd56ef6524754f263b8dca1372d84bbf9f862fb6cf5ea234db0859"
+    },
+    {
+      "english": "experiment/main/README.md",
+      "chinese": "experiment/main/README.zh-CN.md",
+      "chinese_original_sha256": "6cf825587190ed3dcef15deab50dda5a9292a44cd571e94908d4879ce6026d61"
+    },
+    {
+      "english": "experiment/studies/README.md",
+      "chinese": "experiment/studies/README.zh-CN.md",
+      "chinese_original_sha256": "c2b58bfda2e1260a781aa55f5edcc72c6364b48b39ca30980efbd47a93445d74"
+    },
+    {
+      "english": "experiment/studies/source_overlap/README.md",
+      "chinese": "experiment/studies/source_overlap/README.zh-CN.md",
+      "chinese_original_sha256": "e5b55ddb19c38cadf0fbad96681bc422dd2c3812f5e0b713327b313c02841398"
+    },
+    {
+      "english": "experiment/studies/spatial_features/EDA_summary.md",
+      "chinese": "experiment/studies/spatial_features/EDA_summary_zh.md",
+      "chinese_original_sha256": "b44c281f590885adf7511388d00dcec3a6ca7b8739ac365317c96e56ea931ccf"
+    },
+    {
+      "english": "experiment/studies/spatial_features/amenities_adjusted/amenities_adjusted_summary.md",
+      "chinese": "experiment/studies/spatial_features/amenities_adjusted/amenities_adjusted_summary_zh.md",
+      "chinese_original_sha256": "b76d199df2233224e572b73894940ded11aa40323a56ef4e678b3ce8672e0dcb"
+    },
+    {
+      "english": "experiment/studies/spatial_features/mrt_adjusted/MRT_adjusted_summary.md",
+      "chinese": "experiment/studies/spatial_features/mrt_adjusted/MRT_adjusted_summary_zh.md",
+      "chinese_original_sha256": "0bf7d38e0572bc0cee0efb040e3688566e90ecd2fe77442e6bb43001c4a81096"
+    },
+    {
+      "english": "experiment/studies/spatial_features/mrt_matched/notes.md",
+      "chinese": "experiment/studies/spatial_features/mrt_matched/notes_zh.md",
+      "chinese_original_sha256": "e741f07b4c046f345df4077fe25d56dd0484217951585411f9aca6ef3f724954"
+    },
+    {
+      "english": "midterm_report.md",
+      "chinese": "midterm_report.zh-CN.md",
+      "chinese_original_sha256": "b371aeedc80b135a3c8c1511a44f69c39247670a17cb2cc661dddcd940c8156a"
+    },
+    {
+      "english": "reports/auxiliary_data_eda/report.md",
+      "chinese": "reports/auxiliary_data_eda/report.zh-CN.md",
+      "chinese_original_sha256": "8b9bfdfba41b6f956be20448c93b4938423dc7282a7ad69c9d9a8a80adfafcb8"
+    },
+    {
+      "english": "reproduction/f1/README.md",
+      "chinese": "reproduction/f1/README.zh-CN.md",
+      "chinese_original_sha256": "9a8499d7ec0c45192817790cf5a7e326c6bea97964b7a24b59ad887156868f94"
+    },
+    {
+      "english": "reproduction/mlp/README.md",
+      "chinese": "reproduction/mlp/README.zh-CN.md",
+      "chinese_original_sha256": "12a1af5c9892961dd18679d999953108a214d9ebb373f165e02f1dfe2f56f0ea"
+    },
+    {
+      "english": "requirements/README.md",
+      "chinese": "requirements/README.zh-CN.md",
+      "chinese_original_sha256": "5e9d44547911428e2d2b52d649c62f44790ff46a2a5eb10172bb63625624d43c"
+    },
+    {
+      "english": "review/CHECKS.md",
+      "chinese": "review/CHECKS.zh-CN.md",
+      "chinese_original_sha256": "cca3723f3db02da2ef3ba5c51d3e23d24db6cda965780a666076fe8a6e85d9f9"
+    },
+    {
+      "english": "skills/cs5228-final-report/SKILL.md",
+      "chinese": "skills/cs5228-final-report/SKILL.zh-CN.md",
+      "chinese_original_sha256": "bfa1cbbac92a28873b23e743dd059d00646266dc9827314be163727b46cc858b"
+    },
+    {
+      "english": "tests/README.md",
+      "chinese": "tests/README.zh-CN.md",
+      "chinese_original_sha256": "165311f2c3bba52538914267acc9b1f51d3beed99f722917cf233c158beebf19"
+    },
+    {
+      "english": "workflows/tabpfn/README.md",
+      "chinese": "workflows/tabpfn/README.zh-CN.md",
+      "chinese_original_sha256": "f781edcdb255e7df06040f1292fcf8e5554c4cd390e321be66485e1b8bf2a976"
+    },
+    {
+      "english": "workflows/tabpfn/analysis/README.md",
+      "chinese": "workflows/tabpfn/analysis/README.zh-CN.md",
+      "chinese_original_sha256": "e155b89891f285d8cfcf299664dd997203e21f0cfe5158bf2034038b7960cf79"
+    },
+    {
+      "english": "workflows/tabpfn/analysis/experiments/README.md",
+      "chinese": "workflows/tabpfn/analysis/experiments/README.zh-CN.md",
+      "chinese_original_sha256": "b1a7200e9186d2b242754db0fc1a62a5fcde091caff4cbeee0b54d931422d7c6"
+    },
+    {
+      "english": "workflows/tabpfn/analysis/experiments/baselines/README.md",
+      "chinese": "workflows/tabpfn/analysis/experiments/baselines/README.zh-CN.md",
+      "chinese_original_sha256": "f84bc08de51d17712607f0db4c879ef2377cb3d899b67c27c0777b14f96a3065"
+    },
+    {
+      "english": "workflows/tabpfn/analysis/experiments/feature_engineering/README.md",
+      "chinese": "workflows/tabpfn/analysis/experiments/feature_engineering/README.zh-CN.md",
+      "chinese_original_sha256": "5ca3018c2206f9cf3d3bb5bb244faf0357390328a0b6cbaa178e5fdc3605cf39"
+    },
+    {
+      "english": "workflows/tabpfn/analysis/experiments/model_comparison/README.md",
+      "chinese": "workflows/tabpfn/analysis/experiments/model_comparison/README.zh-CN.md",
+      "chinese_original_sha256": "01e99b9766901de67fc1acf60cfd3ef094641f6e3a9be0e2a605c2109596d032"
+    },
+    {
+      "english": "workflows/tabpfn/analysis/experiments/optimization/README.md",
+      "chinese": "workflows/tabpfn/analysis/experiments/optimization/README.zh-CN.md",
+      "chinese_original_sha256": "6a63c6db95161286ea078e2017cd8b8a2d9d554babb31edb66e795e2381de495"
+    },
+    {
+      "english": "workflows/tabpfn/analysis/experiments/reporting/README.md",
+      "chinese": "workflows/tabpfn/analysis/experiments/reporting/README.zh-CN.md",
+      "chinese_original_sha256": "d4c9b8521e97431ea7c44510f78e7d0eb4577b0db8f49c742a31c88b463f5828"
+    },
+    {
+      "english": "workflows/tabpfn/analysis/experiments/submissions/README.md",
+      "chinese": "workflows/tabpfn/analysis/experiments/submissions/README.zh-CN.md",
+      "chinese_original_sha256": "1aeeebdcec62b5fc3aca27860667f7c947ca895b76ccbef3f717b01a20965b41"
+    },
+    {
+      "english": "workflows/tabpfn/archived_tests/README.md",
+      "chinese": "workflows/tabpfn/archived_tests/README.zh-CN.md",
+      "chinese_original_sha256": "9c7a749bfdb28e13fc4030dd3bea3da4947cc451b03f102f3d8ca81ed77247e9"
+    },
+    {
+      "english": "workflows/tabpfn/docs/README.md",
+      "chinese": "workflows/tabpfn/docs/README.zh-CN.md",
+      "chinese_original_sha256": "9eefcddfc067c4df51a275eb11fc792487bfd3cb6a9b5578cb730fb6883484ae"
+    },
+    {
+      "english": "workflows/tabpfn/docs/archive/README.md",
+      "chinese": "workflows/tabpfn/docs/archive/README.zh-CN.md",
+      "chinese_original_sha256": "c72144683a4bf6e67b55b8ca8ecd6a216b8ececeddddf40f08e27a13952d4e33"
+    },
+    {
+      "english": "workflows/tabpfn/docs/archive/branch_integration.md",
+      "chinese": "workflows/tabpfn/docs/archive/branch_integration.zh-CN.md",
+      "chinese_original_sha256": "b79969087d579cedbce940e1b1bf37d176d86fee41c257f247e9abaf1a47dec0"
+    },
+    {
+      "english": "workflows/tabpfn/docs/archive/midterm_report.md",
+      "chinese": "workflows/tabpfn/docs/archive/midterm_report.zh-CN.md",
+      "chinese_original_sha256": "9dc7333a1e40c54e7db42ae85fa4b363199dc157120139c2126146ee28d5db15"
+    },
+    {
+      "english": "workflows/tabpfn/docs/archive/result_consistency.md",
+      "chinese": "workflows/tabpfn/docs/archive/result_consistency.zh-CN.md",
+      "chinese_original_sha256": "4a1a00dce68b85dad91725345cab7ca8151db2b939dad3c95b1e673f3e63c0de"
+    },
+    {
+      "english": "workflows/tabpfn/docs/guides/project_structure.md",
+      "chinese": "workflows/tabpfn/docs/guides/project_structure.zh-CN.md",
+      "chinese_original_sha256": "fbf21fc77833627b08943098b2971964213e3fa2c0b10624f2928343d8471cdd"
+    },
+    {
+      "english": "workflows/tabpfn/docs/guides/running_experiments.md",
+      "chinese": "workflows/tabpfn/docs/guides/running_experiments.zh-CN.md",
+      "chinese_original_sha256": "1596388d358e54c1f015bc99533f7c5a7131e724c9a4fa3928ff7da5c4b7893c"
+    },
+    {
+      "english": "workflows/tabpfn/docs/maintenance/README.md",
+      "chinese": "workflows/tabpfn/docs/maintenance/README.zh-CN.md",
+      "chinese_original_sha256": "39eb32db1f48aca5b9d05d84fd4bfd30808509866553743a1757f5a6ab302621"
+    },
+    {
+      "english": "workflows/tabpfn/docs/methods/baseline_features.md",
+      "chinese": "workflows/tabpfn/docs/methods/baseline_features.zh-CN.md",
+      "chinese_original_sha256": "0e70c2238267b6a835a0c50b13d5ca6b8eb2da20f9ce811efe541fc6f73e3a20"
+    },
+    {
+      "english": "workflows/tabpfn/docs/methods/history_feature_optimization.md",
+      "chinese": "workflows/tabpfn/docs/methods/history_feature_optimization.zh-CN.md",
+      "chinese_original_sha256": "a76a4ad1daec8669019b60d3b177547ac78f653137e470be6ce614f1059229ab"
+    },
+    {
+      "english": "workflows/tabpfn/docs/methods/model_comparison.md",
+      "chinese": "workflows/tabpfn/docs/methods/model_comparison.zh-CN.md",
+      "chinese_original_sha256": "d51c6556b66c4399e09876906bf74ffc89b69854d39f4654f64a543c81780724"
+    },
+    {
+      "english": "workflows/tabpfn/requirements/README.md",
+      "chinese": "workflows/tabpfn/requirements/README.zh-CN.md",
+      "chinese_original_sha256": "3691a2c3de5ba1fc5d54c109706ed6fb308c662f7d622e940df8821a48589a20"
+    }
+  ]
+}

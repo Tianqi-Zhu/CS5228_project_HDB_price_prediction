@@ -1,19 +1,21 @@
-# 当前采用的预测场景
+[Chinese version](prediction-scenario.zh-CN.md)
 
-主实验采用**竞赛所给静态设施快照 + 固定历史原点**的预测场景。机器可读定义见 [prediction-scenario.json](prediction-scenario.json)。它统一主线各表的解释范围，不改变原始训练数据、特征或既有成绩。
+# Current prediction scenario
 
-| 项目 | 采用的边界 | 验收依据 |
+Main experiments use **the supplied static amenity snapshot and a fixed historical origin**. See machine-readable [prediction-scenario.json](prediction-scenario.json). This unifies interpretation across main tables without changing raw training data, features or existing scores.
+
+| Item | Adopted boundary | Verification evidence |
 |---|---|---|
-| 任务 | 预测单条 HDB 月租，SGD | 原始 `MONTHLY_RENT`；保留全部验证记录 |
-| Y | 拟合月份 <2024-04；查询 2024-04—2025-03 | 114,842 / 35,158 行 |
-| J | 拟合月份 <2024-06；查询 2024-06—2025-03 | 121,005 / 28,995 行；与 Y 重叠 |
-| 租金历史 | 训练行只用更早月份；查询历史冻结于原点 | 查询标签移出模型拟合输入；固定轮数、固定权重 |
-| 学习型变换 | 仅拟合集学习编码、填补和缩放 | F1 冻结运行时代码及新 Y/J 生成记录 |
-| 设施 | 使用所给坐标和 STATUS 快照 | 未核实逐月开通日期；原来源字段 `OPEN_MRT` 仅表示来源快照规则 |
-| 宏观 | F1 不使用查询月份实际宏观观测 | 各组件输入清单；不能把其他分支宏观实验的边界转移给 F1 |
-| 全量提交 | 使用全部 150,000 个标签训练，预测 50,000 行 | 其中 380 条测试记录与最新训练标签同属 2025-03；监督模型已见该月份标签，历史聚合仍排除同月 |
-| 选模 | Y/J 为已查看的开发集 | 不把窗口重叠、重复查看后的分数当独立测试 |
-| 清洗对照 | 另用截至 2023-12 的 105,837 行拟合，2024 年一季度校准 | 在自身匹配组内比较；不与 F1 混排 |
-| F2 | 七树＋TabPFN87 等权；近期 J 同行对比，完整输入政策等价性尚未验收 | [F2 清单](../../experiment/main/M07/evaluation/f2_manifest.json)与[配对协议](../../experiment/main/M08/evaluation/protocol_checks.json)；不把同行数值比较当成单架构归因 |
+| Task | Individual HDB monthly rent in SGD | Original `MONTHLY_RENT`; retain every validation record |
+| Y | Fit months <2024-04; query 2024-04 through 2025-03 | 114,842 / 35,158 rows |
+| J | Fit months <2024-06; query 2024-06 through 2025-03 | 121,005 / 28,995 rows; overlaps Y |
+| Rental history | Fitting rows use earlier months only; query histories freeze at the origin | Exclude query labels from model fitting; use fixed training lengths and weights |
+| Learned transforms | Learn encoding, imputation and scaling only on fitting data | Frozen F1 runtime and new Y/J generation records |
+| Amenities | Use supplied coordinate and STATUS snapshots | Monthly opening dates are unverified; original `OPEN_MRT` denotes the source snapshot rule only |
+| Macro inputs | F1 does not use realized query-month macro observations | Component input inventories; other branches' macro information policies do not apply to F1 |
+| Full-data submission | Fit all 150,000 labels and predict 50,000 rows | Of these, 380 test records share 2025-03 with the latest fitting labels. The supervised model sees labels from that month, while history aggregation still excludes same-month labels. |
+| Model selection | Y/J are previously examined development sets | Overlapping, repeatedly inspected windows are not independent tests |
+| Cleaning control | Separately fits 105,837 rows through 2023-12 and calibrates in Q1 2024 | Compare within its matched groups, not against F1 in a combined ranking |
+| F2 | Equal blend of seven trees and TabPFN87; same-row comparison on recent J, with complete input-policy equivalence not yet accepted | [F2 manifest](../../experiment/main/M07/evaluation/f2_manifest.json) and [paired protocol](../../experiment/main/M08/evaluation/protocol_checks.json); same-row numerical comparison does not isolate one architecture's contribution |
 
-严格历史设施可用性属于 appendix X08：需要可靠开通日期、训练与推理同时变更特征、匹配重训。当前结果支持竞赛快照情景；不能据此宣称严格历史部署性能。空间 EDA 中的调整后关联也不构成设施的因果效应。
+Strict historical facility availability belongs to appendix X08 and requires reliable opening dates, matched changes to training/inference features and retraining. Current results support the competition-snapshot setting, not strict historical deployment performance. Adjusted spatial EDA associations are not causal facility effects.

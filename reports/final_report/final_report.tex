@@ -20,7 +20,7 @@
 \maketitle
 
 \begin{abstract}
-Estimating residential rents requires separating property differences from a changing market while respecting the information available at prediction time. We study monthly rental prediction for Singapore Housing and Development Board flats using 150,000 labelled transactions and supplied building, amenity and economic data. Our experiments separate model comparisons with common inputs from controlled feature ablations and comparisons of complete pipelines. On the annual development window, XGBoost achieves a root mean squared error of 467.03 Singapore dollars with 27 common inputs. Adding ordinary, market-relative and anniversary rental histories reduces a fixed LightGBM model's error from 481.60 to 457.84. A grouped tree/Transformer pipeline records annual and recent development errors of 451.03 and 441.83. In a separate recent-window follow-up, anniversary histories reduce frozen TabPFN error from 455.40 to 441.96; an equal blend with a seven-tree ensemble reaches 440.95. Filtering unusually low rents worsens squared error. Repeated reuse of development periods and limited future-horizon coverage constrain generalization claims. The main finding is that carefully bounded historical information contributes more consistently than additional model complexity.
+Estimating residential rents requires separating property differences from a changing market while respecting the information available at prediction time. We study monthly rental prediction for Singapore Housing and Development Board flats using 150,000 labelled transactions and supplied building, amenity and economic data. Our experiments separate model comparisons with common inputs from controlled feature ablations and comparisons of complete pipelines. On the annual development window, XGBoost achieves a root mean squared error of 467.03 Singapore dollars with 27 common inputs. Adding ordinary, market-relative and anniversary rental histories reduces a fixed LightGBM model's error from 481.60 to 457.84. A grouped tree/Transformer pipeline records annual and recent development errors of 451.03 and 441.83. In a separate recent-window follow-up, anniversary histories reduce frozen TabPFN error from 455.40 to 441.96; an equal blend with a seven-tree ensemble reaches 440.95, or 440.77 with coarser flat-model categories. Filtering unusually low rents worsens squared error. Repeated reuse of development periods and limited future-horizon coverage constrain generalization claims. The main finding is that carefully bounded historical information contributes more consistently than additional model complexity.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -184,15 +184,15 @@ Supplementary Figure~\ref{fig:appendixfeatures} visualizes the deletion results 
 
 \subsection{Enhanced pipeline validation and structural ablations}
 \begin{table*}[t]
-\caption{Enhanced pipeline validation in SGD. Annual: April 2024--March 2025, 35,158 rows. Recent: June 2024--March 2025, 28,995 rows. These development windows overlap and have been reused during model selection.}
+\caption{Selected pipeline RMSE (SGD). Annual: 114,842 fit through March 2024 / 35,158 validation in April 2024--March 2025. Recent: 121,005 fit through May 2024 / 28,995 validation in June 2024--March 2025. Overlapping development windows; -- means not evaluated.}
 \label{tab:final}
 \centering\small
 \input{tables/submissions.tex}
 \end{table*}
 
-Among the three archived pipelines in Table~\ref{tab:final}, the grouped tree/Transformer ensemble with PLR-FT has the lowest annual and recent validation RMSE. Relative to the history ensemble, annual RMSE falls from 451.1810 to 451.0295 and recent RMSE from 442.9025 to 441.8345. These differences are small, particularly on the annual window, and reflect complete pipelines rather than an isolated architecture change. The later TabPFN comparisons below provide additional recent-window evidence without establishing superiority across all forecast origins.
+Table~\ref{tab:final} compares selected complete pipelines, not the best standalone result of every model family. Their feature sets and blending rules differ from the common-input configurations in Table~\ref{tab:models}. The tree/Transformer pipeline improves on the history ensemble on both windows; recorded fixed-recipe refits reproduce its annual/recent RMSE of 451.0295/441.8345. The later tree/TabPFN candidates have lower recent-window errors, but were not evaluated on the annual window. Their recent advantage therefore does not establish superiority across forecast origins.
 
-The macro-enhanced variant uses a different information scenario, including supplied prediction-month economic observations. It changes recent local RMSE by only \sgd0.0133 relative to the historical baseline and slightly worsens annual RMSE. It is not part of the grouped structure ensemble and does not justify assuming that future economic data will be available in deployment.
+The supplied-macro variant changes recent RMSE by only \sgd0.0133 and slightly worsens annual RMSE. Because it uses prediction-month economic observations, its separate information scenario and archived results are retained in Appendix~A.
 
 The final-versus-history gain combines several changes: history pruning, seed averaging, conditional blending and PLR output. It cannot all be credited to PLR. Holding the grouped-blending rule fixed, adding only PLR changes recent RMSE from 441.9591 to 441.8345, but worsens annual RMSE from 450.8650 to 451.0295. The improvement is therefore not uniform across origins.
 
@@ -211,6 +211,17 @@ The foundation-model branch uses TabPFN-3.5-Fast~\cite{tabpfn35}, full 121,005-r
 Combining the 87-input TabPFN with the reproduced seven-tree ensemble at equal weights yields 440.952. A TabPFN weight of 0.1893 fitted on October 2023--March 2024 forecasts instead yields 442.302 on the recent window. Thus the attractive equal-blend result should be read alongside the less favorable earlier-locked choice. It improves all ten months relative to TabPFN and nine relative to the tree ensemble, but the same months have already informed multiple experiments.
 
 Replacing direct flat-model categories with a proposed coarser grouping yields a further small blend decrease to 440.771, but its descriptive month-cluster interval includes no improvement and errors worsen among the 126 validation rows whose labels change. This is insufficient to establish a robust grouping benefit. We therefore emphasize the matched cohort ablation and the ungrouped equal-blend result, while retaining the coarser-group result as a sensitivity analysis requiring confirmation at other chronological origins.
+
+\begin{table}[t]
+\caption{Exact grouped-flat-model ensemble members on the recent split. Errors are in SGD; rounded weights are percentages of the final blend. LGB suffixes denote leaf counts; Cat6 denotes depth six. The last two rows are summaries.}
+\label{tab:members}
+\centering\small
+\input{tables/ensemble_members.tex}
+\end{table}
+
+Table~\ref{tab:members} reports the exact enhanced members, distinct from Table~\ref{tab:models}'s common-input models. Six LightGBM models and one CatBoost model share half the final weight; frozen TabPFN receives the other half. All use the same recent split, with tree rounds and blend weights fixed before refitting. Broad cohorts include block, street and area histories; exact/window variants use block cohorts with zero/one-month radii. The locked weights are not standalone-performance rankings or feature importances.
+
+Category preprocessing merges Type S1/S2 into Type S and three maisonette subtypes into maisonette, reducing 20 labels to 16. Train/query mappings match; vocabularies use fitting rows only. Historical keys and all rows are retained. Both grouped component blocks have slightly worse RMSE than their original versions, yet the blend improves by \sgd0.1813: conditional complementarity, not stronger standalone accuracy.
 
 \subsection{Error patterns and training-only cleaning}\label{sec:errors}
 \begin{figure*}[t]
@@ -237,28 +248,28 @@ These results show why removing statistical outliers is not equivalent to repair
 
 \section{Limitations and Reproducibility}
 \subsection{What the evaluation supports}
-All reported development periods have been examined repeatedly. Earlier-only features, train-fitted preprocessing and chronological weight cutoffs prevent important forms of direct leakage, but do not create an untouched final test after extensive adaptive search. Some selected blends were explicitly chosen after inspecting later errors. The displayed Kaggle comparison also informed the archived final selection. Small gains should be treated as development evidence rather than confirmatory significance.
+All development periods were examined repeatedly. Earlier-only features, train-fitted preprocessing and pre-origin weight cutoffs prevent direct leakage, but do not remove adaptive selection bias. Later errors informed blend selection; displayed Kaggle scores also informed the archived final choice. Small gains are development evidence, not confirmatory significance.
 
-Archived uncertainty analyses resample paired errors by months or contiguous month blocks, retaining rentals within each sampled time unit. These recognize shared shocks better than independent-row bootstrap. Nevertheless, ten or twelve months provide limited temporal support; fixed-prediction intervals omit training, selection and future-regime uncertainty. They should not be presented as strong generalization guarantees.
+Paired month/block resampling retains shared market shocks, unlike an independent-row bootstrap. However, ten or twelve months provide limited temporal support, and fixed-prediction intervals omit fitting, selection and future-regime uncertainty.
 
-For the recent matched comparisons, Appendix~B reports a uniform paired three-month-block sensitivity analysis. It preserves candidate/reference alignment and recomputes pooled RMSE within each resample. Month-by-month errors at a single origin confound forecast horizon with calendar conditions; they cannot separately identify the effect of increasing horizon.
+Appendix~B uses paired three-month blocks and recomputes pooled RMSE per resample. At one origin, monthly errors confound horizon with calendar conditions; they cannot isolate horizon effects.
 
 The test spans 17 calendar months and includes horizons longer than the ten-month recent validation. In the full-data TabPFN policy, 18,077 test records lie beyond that validated range; the inherited temporal level and uncertainty plateau at month ten. This is a pragmatic extrapolation policy, not evidence of accuracy at those horizons. The archived 16-month stress tests cover only selected earlier pipelines and cannot validate every final configuration.
 
-Final competition refits use all 150,000 supplied labels, including March 2025, while test records also start in March. This follows the available labelled-context setup, but is not equivalent to forecasting every test record from a strict pre-March deployment origin. Lagged rental-feature cutoffs and the labels supplied to the fitted model are distinct information boundaries. A deployment evaluation should fix a common origin and exclude all labels unavailable then.
+Full refits use all 150,000 supplied labels, including March 2025, while test records also start in March. This labelled-context setup differs from a strict pre-March deployment forecast: feature cutoffs and fitted-model labels are distinct boundaries. A deployment evaluation must exclude every label unavailable at its fixed origin.
 
 \balance
 \subsection{Reproduction and remaining evidence gaps}
-The repository separates preprocessing, feature generation, evaluation and experiment runners, with a core environment specification and optional model dependencies. Source hashes, row IDs, feature schemas, chosen iterations, predictions and blend weights are recorded by the existing workflows. Regression tests cover temporal boundaries, reconstruction, alignment and blending constraints. The workload appendix and source notes support navigation without carrying essential methodological explanation outside the main text.
+The repository separates preprocessing, features, evaluation and fitting. Workflows record source hashes, row IDs, schemas, iterations, predictions and weights; regression checks cover temporal boundaries, reconstruction, alignment and blend constraints. Appendix~A gives ownership placeholders and reproduction commands.
 
-For this report, a deterministic figure/table builder rechecks raw split sizes, duplicate count, saved prediction IDs, months and labels. It independently reconstructs the recent tree/TabPFN metrics and the unfiltered control. The archived final-structure and Kaggle numbers are read from the retained selection record; the original screenshot and root \code{output/} model artifacts are not present in this checkout. We therefore do not claim to have replayed the complete submitted model during report preparation. Restoring those artifacts or retraining the dependency chain is necessary for an end-to-end submission replay.
+The report builder verifies split sizes, duplicate counts, prediction hashes, IDs, dates and labels, then recomputes recent errors. Fixed-recipe tree/Transformer refits reproduce annual/recent RMSE. Both tree/TabPFN category variants have fresh full-data refits and 50,000 aligned test predictions; all 28 validation/full-data tree fits passed checkpoint-reload checks. Document rebuilding does not retrain. New CSVs have no observed Kaggle scores; archived screenshots are not independently verified here.
 
 \section{Conclusion}
-Time-bounded rental histories are the most consistent source of predictive improvement in this study. Controlled comparisons show that tested tree models are strong with common inputs, while ordinary and anniversary histories improve both LightGBM and CatBoost. Conditional blending and numerical embeddings provide smaller, mixed increments rather than a universal architectural advantage. The grouped tree/Transformer pipeline reaches annual/recent validation RMSE of 451.03/441.83; the separate equal tree/TabPFN blend reaches 440.95 on the recent window. These are development results, and additional chronological origins are needed to assess transfer. Future work should prioritize an untouched evaluation, validated longer horizons, source-quality audits and permissible unit-level attributes before expanding the model search.
+Time-bounded histories provide the most consistent gains: ordinary and anniversary features improve both LightGBM and CatBoost. Conditional blending and numerical embeddings add smaller, mixed gains. The tree/Transformer pipeline reaches annual/recent RMSE 451.03/441.83; the tree/TabPFN blend reaches recent RMSE 440.95, or 440.77 with grouped flat models. These reused development results require confirmation at untouched origins, especially longer horizons. Future work should prioritize that evaluation, source-quality audits and permissible unit-level attributes.
 
 \clearpage
 \nobalance
-\begin{thebibliography}{10}
+\begin{thebibliography}{11}
 \bibitem{housing} T. F. Sing, J. J. Yang, and S. M. Yu, ``Boosted tree ensembles for artificial intelligence based automated valuation models (AI-AVM),'' \emph{The Journal of Real Estate Finance and Economics}, vol. 65, no. 4, pp. 649--674, 2022. doi: 10.1007/s11146-021-09861-1.
 \bibitem{treebenchmark} L. Grinsztajn, E. Oyallon, and G. Varoquaux, ``Why do tree-based models still outperform deep learning on typical tabular data?'' in \emph{Advances in Neural Information Processing Systems}, vol. 35, 2022. [Online]. Available: \url{https://arxiv.org/abs/2207.08815}
 \bibitem{forecasting} R. J. Hyndman and G. Athanasopoulos, \emph{Forecasting: Principles and Practice}, 3rd ed. Melbourne, Australia: OTexts, 2021, sec. 5.10. [Online]. Available: \url{https://otexts.com/fpp3/toolbox.html#time-series-cross-validation}
@@ -269,6 +280,7 @@ Time-bounded rental histories are the most consistent source of predictive impro
 \bibitem{numembed} Y. Gorishniy, I. Rubachev, and A. Babenko, ``On embeddings for numerical features in tabular deep learning,'' in \emph{Advances in Neural Information Processing Systems}, vol. 35, 2022. [Online]. Available: \url{https://arxiv.org/abs/2203.05556}
 \bibitem{dcn} R. Wang \emph{et al.}, ``DCN V2: Improved Deep \& Cross Network and practical lessons for web-scale learning to rank systems,'' in \emph{Proc. The Web Conference}, 2021. doi: 10.1145/3442381.3450078.
 \bibitem{tabpfn35} B. J\"ager \emph{et al.}, ``TabPFN-3.5: Technical report,'' arXiv:2609.17895, 2026. [Online]. Available: \url{https://arxiv.org/abs/2609.17895}
+\bibitem{tabpfnprior} N. Hollmann \emph{et al.}, ``Accurate predictions on small data with a tabular foundation model,'' \emph{Nature}, vol. 637, pp. 319--326, 2025. doi: 10.1038/s41586-024-08328-6.
 \end{thebibliography}
 
 \clearpage
@@ -297,6 +309,13 @@ Report, visualizations and reproducibility & To be supplied\\
 \subsection{Supplementary competition record}
 Validation results are the primary evidence in this report. For completeness, the archived November 5, 2026 selection record lists Kaggle displayed scores of 415.86912 for the history ensemble, 415.78232 for the macro variant, and 415.37529 for the grouped ensemble with PLR-FT. Its source screenshot is unavailable here and does not identify the public/private partition. These figures are supplementary archival context, not independently verified test results or a replacement for the chronological comparisons.
 
+\begin{table}[h]
+\caption{Archived pipeline comparison moved from the main table. Annual/recent development RMSE (SGD); the supplied-macro row uses a different information scenario.}
+\label{tab:archivedpipelines}
+\centering\small
+\input{tables/archived_pipelines.tex}
+\end{table}
+
 \subsection{Evidence locations}
 Paths below are relative to the repository root. Model scores in the paper are local project results; method references describe algorithms rather than supplying those scores.
 \begin{itemize}
@@ -316,13 +335,13 @@ python -m analysis.main preflight --profile final
 \end{quote}
 checks required final-model resources without training. Missing ignored model artifacts must be restored or rebuilt; running only the final blending script is insufficient.
 
-The common-input comparison is exposed through \code{analysis.main common-models}. The controlled ladder is exposed through \code{analysis.experiments.report\_selection\_trials ladder}, separately for \code{--stage outer} and \code{--stage june}. The anniversary and cleaning follow-ups have dedicated scripts \path{analysis/compare_tabpfn_anniversary_history_80_20.py}, \path{analysis/compare_zch_anniversary_tabpfn_ensemble.py}, and \path{analysis/compare_half_median_ensemble.py}.
+The common-input comparison is exposed through \code{analysis.main common-models}. The controlled ladder uses \code{analysis.experiments.report\_selection\_trials ladder}, separately for \code{--stage outer} and \code{--stage june}. On main, \path{run_tabpfn_best.py} prepares the isolated TabPFN runtime; \path{run_tabpfn_ensemble.py} refits validation/full-data category variants and exports checked submissions. Exact member scores and blend weights are in \path{reports/final_report/ensemble_member_scores.csv}; submission identities are in \path{reports/submissions/tabpfn_ensemble_20261106/publication.json}.
 
 The paper's tables, plots and evidence hashes are regenerated without model fitting by
 \begin{quote}\footnotesize\ttfamily
 python reports/final\_report/build\_report.py
 \end{quote}
-Compile \path{reports/final_report/final_report.tex} using an IEEEtran-capable LaTeX installation. The report build audit distinguishes recomputed recent prediction metrics from archived final-selection values. This manuscript does not contain any measured score for unlabelled test rows beyond the saved Kaggle displayed comparison.
+Compile \path{reports/final_report/final_report.tex} with IEEEtran. The audit distinguishes recomputed metrics from archival scores; new test submissions remain unscored.
 
 \par\endgroup
 
@@ -353,4 +372,173 @@ These supplementary results retain the main text's information boundaries. No ad
 \end{table}
 
 \noindent The cohort gain is consistent across months; coarser-category and 36-month additions remain uncertain. These descriptive intervals condition on fixed predictions and omit model-fitting and adaptive-selection uncertainty. Ten reused months provide limited temporal support and do not constitute an independent test.
+
+\clearpage
+\section{TabPFN Fine-Tuning Experiments}\label{app:finetuning}
+\begingroup\small
+These experiments adapt TabPFN-3.5-Fast with the original 77 categorical-month inputs and residual target, before the anniversary-feature ablation in Table~\ref{tab:tabpfn}. Every outer score uses the same 28,995 June 2024--March 2025 transactions. Full-context inference uses all 121,005 rows through May 2024. Nine categorical positions are explicit during adaptation and inference; earlier runs with inconsistent handling are excluded.
+
+\subsection{Adapter and decoder comparisons}
+Adapters fit on 102,829 rows through November 2023; 600 sampled, population-weighted December 2023--May 2024 queries select checkpoints. The common recipe uses seed 42, AdamW with weight decay 0.01, BF16, 1,024-row tasks, two training/checkpoint views, an eight-epoch cap and patience three. DiagScale trains diagonal attention scaling; rank-8 LoRA updates Q/K across all attention modules and rank-2 LoRA only within eight in-context-learning (ICL) blocks, both at LR 0.0003. Native decoder tuning (LR 0.00003) updates the pretrained distribution head, distinct from an exported-embedding MLP. Other pretrained weights remain frozen.
+
+\begin{table}[!ht]
+\caption{TabPFN adaptation on the recent development window (SGD). Differences use the frozen control with the same inference-view count. LR denotes learning rate. The two matched DiagScale loss trials share LR 0.01 and a revised, typed one-view checkpoint rule.}
+\label{tab:finetuning}
+\centering\small
+\input{tables/appendix_fine_tuning.tex}
+\end{table}
+
+Corrected LR 0.01 DiagScale lowers RMSE by \sgd0.602 but raises MAE. Lower rates do not help; LR 0.05 worsens RMSE despite the best earlier calibration score. Matched MSE-only tuning reaches 455.071, only \sgd0.051 below its CRPS+MSE control; their saved paired month-bootstrap interval is [\mbox{-0.380}, +0.298]. Comparison with the older 455.212 adapter additionally changes checkpoint selection and initialization seeding. Native decoder tuning and rank-8 LoRA lose to their frozen controls. These runs offer limited evidence of an adaptation benefit across forecast origins.
+
+\subsection{Chronological fine-tuning support}
+A separate experiment replaces mixed-month tasks with month-coherent queries and strictly earlier support. Strategies share identical query IDs, 820 support and 204 query rows per episode, 100 episodes per epoch, LR 0.01 and eight completed epochs. Uniform/recency use patience eight to match the update budget; local/mixed use patience three. The mixture is 40\% local, 35\% recent and 25\% diverse. Query IDs and duplicate transaction groups are excluded from support.
+
+\begin{table}[!ht]
+\caption{Month-coherent DiagScale training: RMSE (SGD) under two inference contexts. These four adapters have equal update budgets. The original adapter uses different query episodes and is a deployment reference rather than a support-only control.}
+\label{tab:finetuningsupport}
+\centering\small
+\input{tables/appendix_fine_tuning_support.tex}
+\end{table}
+
+Local support is best among the new full-context adapters (457.240), yet loses by \sgd2.028 to the original 455.212 adapter. At mixed 10,000-row inference, the new mixture adapter scores 459.324 versus 456.390 for the original adapter. Changing inference context alone is separate from fine-tuning: the latter original-adapter result beats uniform 10,000-row inference (461.266), yet loses to full context. No new support strategy improves the deployment reference.
+
+These comparisons reuse a development period with one training seed and tasks much smaller than deployment context. They cannot rule out better adaptation recipes. Evidence is under \path{reports/tabpfn_components_80_20/}, \path{reports/tabpfn_diagscale_learning_rates_80_20/} and \path{reports/tabpfn_context_sampling/}; the builder rechecks labels, dates, IDs and RMSE without retraining.
+\par\endgroup
+
+\clearpage
+\section{Small Transformers Trained from Scratch versus TabPFN}\label{app:scratch}
+\begingroup\small
+This study asks whether a compact, task-trained Transformer can match a pretrained tabular model on the same recent rental forecasting window. It is separate from the PLR-FT channel in the main grouped pipeline. All scratch models begin with random weights, use the original labels, and predict individual-rental residuals relative to the inherited temporal baseline. Table~\ref{tab:scratch} reports three independent training seeds; its mean is the arithmetic mean of per-seed RMSE, not the error of an ensemble of those seeds.
+
+\subsection{Architecture and chronological training}
+T0 encodes the 77 property/history inputs with two feature-attention blocks, width 128, four heads, dropout 0.1 and spatial Fourier features. It has 1,729,185 trainable parameters. T1 adds a 12-month rental-sequence branch with one attention block, width 32 and two heads; T2 adds COE channels and T3 adds the supplied median Singapore-stock-return proxy. These sequence models have 1,739,331 parameters each. They are small supervised models trained on this dataset, with no foundation-model pretraining.
+
+All rent-derived inputs use the row's forecast cutoff; macro inputs have an additional one-month buffer. Training episodes cover horizons 1--16. The inherited rent baseline plateaus after month ten, while the horizon input continues increasing. AdamW uses learning rate 0.0003, weight decay 0.001, batch size 256, standardized residual MSE and gradient clipping at one. A 30-epoch cap and patience five apply to earlier calibration; the rounded median best epoch across September 2022--June 2023 and July 2023--April 2024 selects each variant's outer training length. Each earlier window contains 2,000 population-weighted query cases. Later validation labels do not select those epochs.
+
+\begin{table}[!ht]
+\caption{Scratch Transformer RMSE (SGD) on the same 28,995 June 2024--March 2025 rows. The last row blends independently trained T0/T1 predictions using a decay chosen on earlier data.}
+\label{tab:scratch}
+\centering\small
+\input{tables/appendix_scratch_transformer.tex}
+\end{table}
+
+\begin{table}[!ht]
+\caption{TabPFN references on the identical recent-window rows (SGD). CDE is the earlier-selected family; ABCDE equal is an equal-weight sensitivity combining an adapter and frozen feature views. Both differ from the later anniversary model. These are complete-pipeline comparisons, not controlled tests of pretraining alone.}
+\label{tab:scratchtabpfn}
+\centering\small
+\input{tables/appendix_transformer_tabpfn.tex}
+\end{table}
+
+\subsection{Results and interpretation}
+T0 averages 461.164 RMSE, \sgd6.460 above the TabPFN ABCDE equal ensemble (454.704) and \sgd5.768 above frozen two-view TabPFN (455.396). The additional sequence branches raise mean RMSE to 465.086--466.777. Extra temporal channels therefore do not improve this scratch-model design, despite causal feature construction. Only 51 labelled calendar months are available; the large transaction count does not supply an equally large number of independent market regimes. Limited temporal support and overlapping engineered histories are plausible explanations, rather than isolated causes.
+
+The earlier-selected forecast blend is
+{\normalsize
+\[
+\widehat y_{\mathrm{decay}}(h)=\widehat y_{T0}(h)+0.5\exp\!\left(-\frac{h-1}{3}\right)
+\left[\widehat y_{T1}(h)-\widehat y_{T0}(h)\right].
+\]
+}
+It lowers mean RMSE to 460.208 and improves all three seeds, but remains \sgd5.504 above ABCDE. On a separate 16-month diagnostic its RMSE changes from 492.408 to 492.554, so the gain does not extend uniformly to the longer window. Because T0 and T1 are trained independently, their forecast difference is not an isolated temporal-branch contribution. A direct internal decay gate failed earlier transfer and did not advance to outer evaluation.
+
+The newer frozen TabPFN with ten anniversary fields reaches 441.959 (Table~\ref{tab:tabpfn}), \sgd19.205 below mean T0. That larger gap also changes the input representation; it cannot be attributed entirely to model size or pretraining. The present evidence favors the tested TabPFN pipelines over these small scratch Transformers, while repeated development-window reuse prevents a confirmatory generalization claim. The scratch series was not promoted to a submission.
+
+Architecture, split and training settings are in \path{reports/spatial_temporal_transformer/settings.json}; per-seed predictions and metrics are in the same directory. The decay comparison is under \path{reports/transformer_ranked_experiments/23_forced_decay/}, and the TabPFN reference is under \path{reports/tabpfn_abcde_ensemble/}. Generated \path{reports/final_report/supplementary_neural_scores.csv} and the evidence audit record independently recomputed results for both new appendices.
+\par\endgroup
+
+\clearpage
+\section{Interpreting TabPFN's Predictive Advantage}\label{app:tabpfninterpretation}
+\begingroup\small
+Appendix~\ref{app:scratch} shows an advantage for the tested TabPFN pipelines over the small scratch Transformers. The mechanisms below are plausible explanations, supported to different degrees by the literature and our ablations. Our experiments compare complete systems and do not identify the causal contribution of pretraining alone.
+
+\subsection{A learned prior reduces what must be learned locally}
+TabPFN is pretrained across synthetic tabular prediction tasks, learning an inference procedure before seeing the target dataset~\cite{tabpfnprior}. Its prior encodes preferences over possible feature--target relationships; the prior-data-fitting objective approximates Bayesian prediction under the synthetic task distribution. This can regularize prediction when local evidence is sparse. We hypothesize that this helps with unevenly supported property cohorts. T0 instead learns its representations and prediction rule from this rental dataset alone. Although it has 121,005 fitting transactions, they span only 41 calendar months, limiting independent evidence about market changes. The prior's suitability for this task is an interpretation, rather than a measured pretraining effect.
+
+\subsection{In-context learning uses labelled examples at prediction time}
+Frozen weights still permit dataset-specific adaptation: TabPFN conditions a query prediction on the feature--label pairs in its supplied context, without gradient updates~\cite{tabpfnprior}. Our scratch model attends across a property's feature tokens and optional monthly sequence; it does not receive the labelled transaction table as inference context. Both methods use fitting labels, but through different computation paths. TabPFN's context can therefore support query-dependent use of historical examples. This is learned inference, and attention weights alone would not establish that it retrieves economically meaningful comparable flats.
+
+\begin{table}[!ht]
+\caption{Local evidence relevant to the proposed mechanisms. All errors are recent-window RMSE in SGD. These comparisons support interpretation without isolating a single cause.}
+\label{tab:tabpfnmechanisms}
+\centering\small
+\begin{tabular}{p{.23\textwidth}p{.35\textwidth}p{.32\textwidth}}
+\toprule
+Proposed contribution & Observed evidence & What remains unresolved\\
+\midrule
+Useful labelled context & Fixed DiagScale: full context 455.212; uniform 10k context 461.266; mixed 10k context 456.390. & Context size and composition matter in this setup; this does not isolate pretraining.\\[3pt]
+Effective frozen inference & Frozen two-view TabPFN scores 455.396 versus mean T0 461.164; rank-8 LoRA worsens TabPFN to 457.043. & Gradient adaptation is unnecessary for this observed advantage; its failure does not prove the prior is optimal.\\[3pt]
+Explicit rental structure & Keeping TabPFN frozen, adding 12/24-month cohort fields lowers RMSE from 455.396 to 441.959. & This directly supports the representation change; it is not an architecture-only gain.\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Tabular representations, capacity and task formulation}
+The 3.5 report describes distribution-aware cell encodings, including column ranks and learned Fourier features, and a synthetic prior emphasizing high-cardinality and grouped data~\cite{tabpfn35}. These designs may help with heterogeneous numeric and categorical inputs. It also lists roughly 84 million parameters for Fast, compared with T0's 1.73 million. Capacity, encodings and prior training are therefore confounded here. We have no ablation showing which encoding or parameter count explains the rental result. Frozen TabPFN still relies on our chronological histories and temporal residual baseline; its success does not demonstrate autonomous discovery of rental dynamics or reliable extrapolation beyond the validated horizon.
+
+\subsection{What would distinguish these explanations?}
+A stronger test would compare pretrained and randomly initialized versions of the same backbone, using matched inputs and a declared training budget, across new chronological origins. Fixed-checkpoint context-size and sampling ablations would separately test reliance on support examples. These are proposed follow-ups, not completed experiments. For now, the evidence supports a useful combination of pretrained inference, labelled context and explicit rental features; it does not establish universal TabPFN superiority or immunity to temporal shift.
+\par\endgroup
+\clearpage
+\section{Auxiliary Temporal-Data Experiments}\label{app:auxiliarytemporal}
+\begingroup\small
+This appendix evaluates the supplied Certificate of Entitlement (COE) auction and stock-price datasets as temporal predictors. COE may proxy changing economic conditions, while stock returns may reflect business activity; these are predictive hypotheses rather than causal channels established by our data. The studies below distinguish individual-rental error from national or flat-type mean-rent error, and distinguish refreshed forecasts from forecasts made once at a fixed origin.
+
+\subsection{Direct economic features in a controlled tree model}
+The first study holds the 29-input property/time/block/amenity baseline and HistGradientBoosting configuration fixed (200 iterations, seed 42). Six COE fields add category A/C monthly median premiums, growth and bids-to-quota ratios. Three stock fields add the median Singapore-listed adjusted-close return, compounded three-month return and rolling volatility. Thus the combined variant has 38 inputs. Approval-month inputs end in the preceding month: this is a monthly-updated information scenario, conditional on publication, rather than one forecast from a common cutoff.
+
+\begin{table}[!ht]
+\caption{Direct auxiliary-feature ablation: individual-rental RMSE (SGD). Expanding-window validation ends in December 2022, June 2023, March 2024 and March 2025, respectively. Feature counts are in parentheses. Each row compares identical fitting/validation records and model settings.}
+\label{tab:auxdirect}
+\centering\small
+\input{tables/appendix_auxiliary_direct.tex}
+\end{table}
+
+COE and stock bundles each improve only one of four windows; their combination worsens all four. A separate decomposition of COE premiums alone found gains below \sgd0.50 in earlier windows and a \sgd0.14 loss in the latest window. These small, inconsistent differences do not support a default addition of realized economic inputs.
+
+Sector-specific follow-ups also fail to transfer. Earlier windows select engineering-stock features for the individual-rental tree; they raise recent RMSE from 471.631 to 472.168 with monthly updates and to 472.196 with fixed-origin stock values. In a separate flat-type mean-rent prototype, adding COE to pooled Ridge raises count-weighted RMSE from 42.987 to 80.842 at the June 2024 origin, and from 227.206 to 402.729 at the November 2023 origin. Those overlapping holdouts measure group means, not individual rentals.
+
+\subsection{Learning national rental dynamics from sequences}
+A second study compares persistence, momentum, EWMA, lag/summary Ridge, MLP and LSTM over rent, rent+COE, rent+stocks and joint histories. The 43 specifications per target use only observations and mature forecast labels available at each origin. Neural models use eight hidden units, 100 fixed epochs, seed 42 and direct multi-horizon outputs. History windows of 3/6/12 months are chosen on earlier data. The target below is the property-adjusted national arithmetic mean, using a frozen 2021 property reference; it remains sensitive to changes in property premiums.
+
+\begin{table}[!ht]
+\caption{Property-adjusted national-mean RMSE (SGD), June 2024--March 2025. Fixed-origin forecasts all ten months using May 2024 information. Rolling pools 1/3/6-month forecasts, averaging squared errors within each target month before averaging months. Each LSTM input set uses its own earlier-selected window.}
+\label{tab:auxsequences}
+\centering\small
+\input{tables/appendix_auxiliary_sequences.tex}
+\end{table}
+
+Rent+COE substantially improves this LSTM's fixed path, and adding stocks does not improve on that information set. However, persistence wins the earlier overall model selection and beats every displayed LSTM in rolling evaluation. Rent+COE uses twelve history months for the fixed path and six for rolling; the joint LSTM uses three. These are input-plus-window comparisons, not fixed-window estimates of COE's incremental effect. An extra month of input delay worsens fixed-origin rent+COE RMSE from 23.244 to 49.118; the delayed persistence control scores 54.521. Availability assumptions materially affect the result.
+
+\clearpage
+\subsection{Transfer from national forecasts to individual rentals}
+An additive correction transfers predicted movement in the adjusted national index to the frozen 29-input tree. Its scale is constrained to zero--one and fitted only on July 2023--May 2024 rental errors. The same 28,995 June 2024--March 2025 rentals evaluate every correction. Rolling corrections can use newly observed rents after the tree fit; fixed-origin corrections use May 2024 information throughout.
+
+\begin{table}[!ht]
+\caption{Individual-rental RMSE (SGD) after an earlier-fitted national-index correction. Both scenarios start from the same uncorrected tree RMSE of 471.631. Negative differences improve that control. Follow-up rows were added after inspection of the aggregate study; their models, windows and scales still use earlier data.}
+\label{tab:auxtransfer}
+\centering\small
+\input{tables/appendix_auxiliary_transfer.tex}
+\end{table}
+
+The fixed-origin joint LSTM improves the tree by \sgd0.726, yet the rent-only LSTM follow-up improves it by \sgd2.233. Rolling persistence improves by \sgd2.013, more than the joint LSTM's \sgd1.360. Thus a better national-mean forecast does not necessarily improve individual-rental prediction, and the tree-correction gains cannot all be credited to external economic data. The correction can partly compensate for bias in the frozen tree. These are tree experiments; they do not measure a gain for the final tree/TabPFN ensemble.
+
+\subsection{Forecast-derived COE inputs in frozen TabPFN}
+The matched TabPFN follow-up preserves the 77 original inputs, residual target, additive temporal baseline, all 121,005 context rows, two estimator views and seed 42. It first adds five missing/sparse-history/unknown-block flags, then a rent-only national LSTM growth forecast and an unavailable flag, then the difference between rent+COE and rent-only forecast growth. Both LSTMs use twelve months, eight hidden units and 100 fixed epochs. Their source observations stop one month before each row's original forecast cutoff; unsupported early forecasts remain missing. No realized future COE values enter these forecasts.
+
+\begin{table}[!ht]
+\caption{Nested forecast-input additions to frozen TabPFN: individual-rental errors in SGD on the identical recent-window rows. Differences use the original 77-input control. The unavailable flag and rent forecast enter together.}
+\label{tab:auxpfn}
+\centering\small
+\input{tables/appendix_auxiliary_tabpfn.tex}
+\end{table}
+
+Rent-only forecast inputs win the earlier feature selection, reducing pooled earlier RMSE from 601.934 to 596.443, but raise later RMSE by \sgd1.311. The incremental COE field adds a further \sgd0.198 loss relative to that rent-forecast variant. This isolates the nested COE addition within this feature pipeline; it does not show that every economic forecasting method would fail. Sparse startup support and changing forecast distributions remain limitations. Appendix~\ref{app:scratch} separately reports the scratch Transformer's rent/COE/stock-sequence comparison, where added channels also fail to improve mean recent RMSE.
+
+\subsection{Interpretation and evidence trail}
+The auxiliary sources provide only 51 labelled calendar months in total, with serial dependence and changing market regimes. Many transactions share the same macro observation. Supplied adjusted-stock prices and constituents are snapshots rather than a reconstructed historical release vintage. The national stock-sequence proxy uses 22 matched historical ETF holdings, not an official STI series; it differs from the median-return basket in the direct-feature study. Monthly updating, fixed-origin prediction and the main text's supplied prediction-month macro experiment are distinct information settings.
+
+The strongest supported finding is mixed transfer: COE helps some aggregate fixed-path forecasts, while direct features and forecast-derived TabPFN inputs do not improve consistently. Reused development windows, many tried specifications, overlapping horizons and uncertain release timing limit generalization claims. No hidden-test score or new submission is inferred from these ablations.
+
+Evidence is retained under \path{reports/economic_feature_ablation/}, \path{reports/stock_sector_signals/}, \path{reports/flat_type_coe_forecast/}, \path{reports/temporal_sequence_ablation/} and \path{reports/tabpfn_reliability_macro_80_20/}. The report builder regenerates these tables and \path{reports/final_report/supplementary_auxiliary_scores.csv}; its audit distinguishes reconstruction from monthly summaries, saved national forecasts and label-checked TabPFN row predictions. No model is refitted during report preparation.
+\par\endgroup
 \end{document}

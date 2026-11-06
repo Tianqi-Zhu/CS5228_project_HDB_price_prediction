@@ -1,12 +1,14 @@
-# 离线实验验收
+[Chinese version](README.zh-CN.md)
 
-| 模块 | 职责 | 依赖 |
+# Offline experiment acceptance checks
+
+| Module | Responsibility | Dependencies |
 |---|---|---|
-| `main.py` | M00/M01/M03/M04/M05/M07/M08/M09 的冻结预测审计与诊断 | main 中的输入 NPZ、原始数据与常规科学计算环境 |
-| `prepare_inputs.py` | 从原历史预测和设置构建冻结输入；重建合法支持与输入相等分组 | 本地历史模型产物；不训练 |
-| `repository_audit.py` | 完整文件哈希、所有已注册 Python 的语法与当前导航链接 | 根目录 manifest；不导入训练器 |
-| `feature_catalog.py` | 有序 schema、组件输入和旧 PLE/PLR 元数据勘误 | 冻结元数据及新 Y/J 保存模型输入记录 |
-| `evidence_audit.py` | 空间来源/版本、设施统计口径、清洗匹配对照与逐行重算 | M01 来源和紧凑 NPZ；不重新训练 |
-| `refit_audit.py` | 新 F1 Y/J 的代码提交/数据身份、模型重载记录与固定融合重组 | 30 次新训练记录和组件数组；审计本身只用 CPU |
+| `main.py` | Frozen-prediction audits and diagnostics for M00/M01/M03/M04/M05/M07/M08/M09 | Main input NPZ files, raw data and standard scientific Python environment |
+| `prepare_inputs.py` | Build frozen inputs from historical predictions/settings; reconstruct permissible support and identical-input groups | Local historical model artifacts; no training |
+| `repository_audit.py` | Full file hashes, syntax of all registered Python files and current navigation links | Root manifest; does not import trainers |
+| `feature_catalog.py` | Ordered schemas, component inputs and corrections to old PLE/PLR metadata | Frozen metadata and new saved-model input records for Y/J |
+| `evidence_audit.py` | Spatial provenance/versions, facility-statistic definitions, matched cleaning controls and row-level recomputation | M01 sources and compact NPZ files; no retraining |
+| `refit_audit.py` | Code/data identities, model-reload records and fixed-blend reconstruction for new F1 Y/J fits | Records of 30 new fits and component arrays; the audit itself uses CPU only |
 
-[当前验收状态](../../docs/planning/main-execution-status.md) · [报告评分依据](../../skills/cs5228-final-report/SKILL.md)
+[Current acceptance status](../../docs/planning/main-execution-status.md) · [Report assessment criteria](../../skills/cs5228-final-report/SKILL.md)

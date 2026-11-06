@@ -1,78 +1,80 @@
-# 公开租金数据匹配审计
+[Chinese version](README.zh-CN.md)
 
-2026-10-24，针对 CS5228-2610 Kaggle Public 榜出现172–183与400以上的断层，
-核验比赛记录是否与公开披露的原始租金记录重合。
+# Public rental-data overlap audit
 
-## 核验来源
+On 2026-10-24, following a gap between scores of 172–183 and above 400 on the CS5228-2610 Kaggle Public leaderboard,
+this audit checks whether competition records overlap publicly disclosed original rental records.
 
-- [比赛 Public 榜](https://www.kaggle.com/competitions/cs-5228-2610-project/leaderboard)：
-  当前前9名为172.42640至183.18108，第10名411.75928；页面说明其使用约50%的测试数据。
-  在用户有权访问的浏览器中读取，没有提交预测或发帖。
-- [HDB官方公开数据](https://data.gov.sg/datasets/d_c9f57187485a850908655db0e8cfe651/view)：
-  212,597条记录，2021-01至2026-09，包括审批月份、Town、Block、街道、户型和月租金。
-  通过官方网页提供的公开API下载，完整快照哈希记录在 `results.json`。
+## Verified sources
 
-匹配键为 **月份 + Town + Block + 规范化街道 + 户型**。只统一大小写、空格和政府地址
-缩写，例如 ROAD/RD、NORTH/NTH、COMMONWEALTH/C'WEALTH、MARKET/MKT。
-目标租金不参与匹配键，不使用模糊匹配。
+- [Competition Public leaderboard](https://www.kaggle.com/competitions/cs-5228-2610-project/leaderboard):
+  the top nine then ranged from 172.42640 to 183.18108, with tenth at 411.75928; the page described approximately 50% test coverage.
+  Read through a browser the user was authorized to access; no predictions submitted or posts made.
+- [Official HDB public dataset](https://data.gov.sg/datasets/d_c9f57187485a850908655db0e8cfe651/view):
+  212,597 records from 2021-01 to 2026-09, including approval month, Town, Block, street, flat type and monthly rent.
+  Downloaded through the public API linked on the official website; full snapshot hashes are in `results.json`.
 
-## 结果
+Matching uses **month + Town + Block + normalized street + flat type**, standardizing only case, whitespace and government address
+abbreviations such as ROAD/RD, NORTH/NTH, COMMONWEALTH/C'WEALTH and MARKET/MKT.
+Target rents are excluded from keys; no fuzzy matching is used.
 
-| 检查 | 结果 |
+## Results
+
+| Check | Result |
 | --- | ---: |
-| 训练记录匹配公开组 | 150,000 / 150,000，100% |
-| 训练真实租金存在于对应公开组 | 150,000 / 150,000，100% |
-| 测试记录匹配公开组 | 50,000 / 50,000，100% |
-| 测试行对应公开组只有一个不同租金值 | 36,487，72.974% |
-| 测试行对应多个不同租金值 | 13,513，27.026% |
+| Training records matching public groups | 150,000 / 150,000, 100% |
+| True training rent present in matching public group | 150,000 / 150,000, 100% |
+| Test records matching public groups | 50,000 / 50,000, 100% |
+| Test rows with a single distinct public-group rent | 36,487, 72.974% |
+| Test rows with multiple distinct public-group rents | 13,513, 27.026% |
 
-这些结果直接表明两份数据的高度重叠。它们支持“利用公开原始记录匹配与消歧”这一
-解释，但没有证明任何具体队伍采用了该方法。
+The results directly show substantial dataset overlap. They support public-record matching and disambiguation as a
+possible explanation, without proving that any particular team used it.
 
-## 同一份已知标签窗口上的对照
+## Comparisons on one known-label window
 
-窗口为2024-04至2025-03，35,158行；这里使用本地训练文件中的已知标签核验机制。
+The window is 2024-04 to 2025-03, with 35,158 rows; known local training labels are used to investigate the mechanism.
 
-| 方法 | RMSE（SGD） |
+| Method | RMSE (SGD) |
 | --- | ---: |
-| 过去信息训练的LightGBM | 466.25 |
-| 直接取对应公开组均价 | 181.25 |
-| 从候选池移除该样本的一笔真实租金，再取均价；无候选时回退LightGBM | 517.88 |
+| LightGBM trained on past information | 466.25 |
+| Direct matching-public-group mean | 181.25 |
+| Remove one occurrence of the row's true rent from the candidate pool, then average; fall back to LightGBM if empty | 517.88 |
 
-公开组均价在全部150,000条训练行上的重建RMSE为179.95。
-低分效果依赖公开候选池中已经包含该样本的目标值。一个公开组只有一个租金值时，
-匹配可以直接返回该值；同组存在多个租约且租金不同时，均价仍留下组内误差。
-这自然可以形成接近170–180的重建误差量级。
+Public-group means reconstruct all 150,000 training rows with RMSE 179.95.
+Low reconstruction error depends on the pool already containing the sample's target. A public group with one distinct rent
+returns it directly; multiple leases with different rents leave within-group error under averaging.
+This can naturally produce reconstruction errors near 170–180.
 
-最后一行只是自标签剔除诊断：因为只有这些本地行有已知标签，才能从候选多重集中
-减去一笔同值记录。它不是拟定的比赛预测方法，也不是全体样本不可约误差的估计。
-测试文件没有真实标签，本审计没有测得真实Kaggle测试RMSE。
+The final row is only a self-label-removal diagnostic: known local labels allow subtraction of one matching-value occurrence
+from the candidate multiset. It is neither a proposed competition prediction method nor an estimate of irreducible error.
+Test labels are unavailable, so this audit does not measure actual Kaggle test RMSE.
 
-正常预测融合的本地RMSE为465.66，详见
-[模型对比](../../../docs/methods/model_comparison.md)。公开记录复原使用了目标月份披露的租金，
-不能作为过去信息预测模型的泛化成绩，也没有纳入上述模型的输入、早停或融合选权。
+Normal predictive blending achieves local RMSE 465.66; see
+[model comparison](../../../docs/methods/model_comparison.md). Public-record reconstruction uses disclosed rents from target months,
+so it is not a past-information generalization score and was excluded from model inputs, early stopping and blend-weight selection.
 
-## 规则边界
+## Rule boundaries
 
-[比赛说明](https://www.kaggle.com/competitions/cs-5228-2610-project/overview)欢迎额外数据收集。
-[规则页](https://www.kaggle.com/competitions/cs-5228-2610-project/rules)给出一般性比赛要求和
-Kaggle基础规则。可见页面没有明确授权“直接从公开源恢复测试期原始租金标签”；课程
-补充要求或组织者解释可能进一步约束此用途。没有将这条技术路线直接认定为违规或合规。
-讨论区当时没有可供核对的讨论。
+The [competition overview](https://www.kaggle.com/competitions/cs-5228-2610-project/overview) welcomes additional data collection.
+The [rules page](https://www.kaggle.com/competitions/cs-5228-2610-project/rules) provides general competition requirements and
+Kaggle rules. Visible pages did not explicitly authorize direct recovery of original test-period rents from public sources; course
+supplements or organizer interpretations may further constrain this use. This audit does not declare the method compliant or prohibited.
+No discussion was available to cross-check at the time.
 
-本次只做本地来源审计，没有生成或上传公开标签回填的Kaggle提交文件。
+This was a local provenance audit only; no public-label-filled Kaggle submission was generated or uploaded.
 
-## 复现
+## Reproduction
 
 ```powershell
-# 第一次下载官方公开数据并审计，缓存位于 .cache/public_rents/
+# First download of official public data and audit; cache: .cache/public_rents/
 python -m analysis.main source-audit --download
 
-# 已有缓存时，无需联网
+# Existing cache: no network required
 python -m analysis.main source-audit
 ```
 
-`results.json` 保存匹配率、标签一致性、重建误差、原始文件哈希。
-`competition_context.json` 保存已核对的比赛页面事实与日期，月度覆盖率另存CSV。
-回退模型和自标签剔除对照需要本地已完成的LightGBM验证预测缓存。
-原始 `data/train.csv`、`data/test.csv` 始终保持不变。
+`results.json` records match rates, label agreement, reconstruction errors and raw-file hashes.
+`competition_context.json` records verified competition-page facts and dates; monthly coverage is a separate CSV.
+Fallback-model and self-label-removal comparisons require the existing local LightGBM validation-prediction cache.
+Original `data/train.csv` and `data/test.csv` remain unchanged throughout.

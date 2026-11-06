@@ -1,79 +1,81 @@
-# HDB 月租预测：EDA 与阶段性结果总结
+[Chinese version](report.zh-CN.md)
 
-本报告基于仓库内实际 CSV 和 `analysis/eda/` 中的可复现脚本。当前成果包括 11 张主图、18 份统计表和简单基线实验；监督式四模型比较见 [中期报告](../../docs/archive/midterm_report.md)。当前结果均为本地分析和验证结果，尚未作为 Kaggle 成绩报告。
+# HDB monthly rent prediction: EDA and interim results
 
-## 1. 研究问题与数据边界
+This report uses the repository's actual CSVs and reproducible scripts in `analysis/eda/`. Current outputs include 11 main figures, 18 statistical tables and simple baseline experiments. See the [midterm report](../../docs/archive/midterm_report.md) for the four supervised models. All results are local analyses and validation, not reported Kaggle scores.
 
-研究问题：房屋属性、地理位置和时间信息能够在多大程度上预测未来 HDB 月租？经济数据是否能提供额外预测价值？
+## 1. Research question and data boundaries
 
-| 数据 | 行数 | 字段数 | 审批月份 |
+Research question: how well can property attributes, location and time predict future HDB monthly rent? Can economic data add predictive value?
+
+| Data | Rows | Field count | Approval month |
 |---|---:|---:|---|
-| 训练集 | 150,000 | 11，包含 MONTHLY_RENT | 2021-01 至 2025-03 |
-| 测试集 | 50,000 | 10，不含目标 | 2025-03 至 2026-07 |
+| Training set | 150,000 | 11, including MONTHLY_RENT | 2021-01 to 2025-03 |
+| Test set | 50,000 | 10, without target | 2025-03 to 2026-07 |
 
-实际测试集覆盖到 **2026 年 7 月**，与建议文字中的 6 月不同。2026 年没有训练标签，因此不能用其作本地有标签验证集。测试集中 49,620 行属于训练未见的 16 个月份，只有 380 行属于共同月份 2025-03。
+The actual test set extends through **July 2026**, rather than June as suggested in the task text. No 2026 training labels exist, so that year cannot form a labeled local validation set. Of the test rows, 49,620 belong to 16 unseen months and only 380 share the training month 2025-03.
 
-来源：[summary.json](summary.json)、[train_test_drift.csv](tables/train_test_drift.csv)。
+Sources: [summary.json](summary.json), [train_test_drift.csv](tables/train_test_drift.csv).
 
-## 2. 数据质量直接影响预处理
+## 2. Data quality directly affects preprocessing
 
-| 观察 | 处理决策 |
+| Observation | Processing decision |
 |---|---|
-| 主训练集和测试集无缺失值 | 当前无需对主表补值，但后续特征连接仍检查缺失 |
-| FURNISHED 恒为 yes，FEE 恒为 0 | 正式模型中移除常量字段 |
-| FLAT_TYPE 从 11 个原始类别归并为 6 个 | 统一大小写、空白及连字符，例如 4-room 与 4 room |
-| STREET 从 1,146 个原始类别归并为 576 个 | 在编码和连接辅助表前统一字符串 |
-| 训练集有 425 行完全重复；测试集有 5,508 行完全重复 | 保留原始记录；尤其测试集必须保持 50,000 行及原顺序 |
-| 13,434 个重复特征组合中，13,191 个对应多个租金 | 相同可见特征不代表同一交易，不能直接删除这些记录 |
-| 按审批年份减去租约起始年份得到 1 条负值 | 标记并进一步核查，不静默裁剪或删除 |
+| No missing values in the main training or test data | No main-table imputation currently needed; continue checking missingness after joins |
+| FURNISHED is always yes; FEE is always 0 | Remove constant fields from formal models |
+| FLAT_TYPE reduces from 11 raw categories to 6 | Standardize case, whitespace and hyphens, such as 4-room and 4 room |
+| STREET reduces from 1,146 raw categories to 576 | Normalize strings before encoding and auxiliary joins |
+| 425 exact duplicate training rows; 5,508 exact duplicate test rows | Keep original records, particularly all 50,000 test rows in original order |
+| Of 13,434 repeated feature combinations, 13,191 have multiple rents | Identical visible features need not identify the same transaction; do not simply delete them |
+| Approval year minus lease commencement year yields one negative value | Flag and investigate; do not silently clip or delete |
 
-重复特征组合覆盖 28,981 条记录；这个数与“重复行数”口径不同。房屋特征相同而租金不同，可能体现未观测差异，但当前数据无法判断具体原因。
+Repeated feature combinations cover 28,981 records, a different definition from duplicate-row counts. Different rents for identical property features may reflect unobserved variation, but these data cannot establish the reasons.
 
-早期训练骨架曾对测试集去重，现已在 `analysis/pipeline/data.py` 中修复为保留全部行及顺序。本次 EDA 没有改动原始数据。运行前后源 CSV 的 SHA256 一致，连接辅助表时验证了行数与顺序。
+An early training scaffold deduplicated the test set; `analysis/pipeline/data.py` now preserves every row and its order. This EDA did not modify raw data. Source CSV SHA256 values match before and after execution, and auxiliary joins verify row count and order.
 
-来源：[数据质量](tables/data_quality.csv)、[类别归并](tables/categorical_normalization.csv)、[重复组合](tables/repeated_feature_rows.csv)。
+Sources: [data quality](tables/data_quality.csv), [category normalization](tables/categorical_normalization.csv), [repeated combinations](tables/repeated_feature_rows.csv).
 
-## 3. 租金分布：轻度右偏，不宜自动删除极端值
+## 3. Rent distribution: mild right skew does not justify automatic outlier removal
 
-训练租金均值为 S$2,719，中位数 S$2,700，标准差约 S$750；中间 50% 位于 S$2,100–3,200，99% 分位数为 S$4,600，范围为 S$300–7,600。偏度为 0.386，属于轻度右偏。
+Training rent has mean S$2,719, median S$2,700 and standard deviation about S$750. The middle 50% spans S$2,100–3,200, the 99th percentile is S$4,600 and the range is S$300–7,600. Skewness of 0.386 indicates mild right skew.
 
-这支持保留原始目标作为基线，再通过时间验证比较 log 目标等方案。高低租金不能仅因为极端就判定为错误；需结合面积、户型、时间及区域检查。
+Retain the raw target as a baseline and compare alternatives such as a log target through temporal validation. Extreme rents are not necessarily errors; inspect them alongside area, flat type, time and location.
 
-![训练租金分布](figures/01_target_distribution.png)
+![Training rent distribution](figures/01_target_distribution.png)
 
-## 4. 时间变化是目前最强的建模线索
+## 4. Time variation is currently the strongest modeling clue
 
-| 年份 | 样本数 | 租金中位数（SGD/月） |
+| Year | Samples | Median rent (SGD/month) |
 |---|---:|---:|
 | 2021 | 37,619 | 2,100 |
 | 2022 | 32,564 | 2,450 |
 | 2023 | 35,654 | 3,000 |
 | 2024 | 35,239 | 3,100 |
-| 2025 年 1–3 月 | 8,924 | 3,150 |
+| January–March 2025 | 8,924 | 3,150 |
 
-2025 年数字仅涵盖第一季度，不能当作全年统计。总体租金在 2022–2023 年明显上升，随后增幅趋缓；按归一化户型分层后，也能观察到时间变化。以上是描述性结果，不代表已经识别了宏观原因或季节性。
+The 2025 figures cover only Q1 and cannot be treated as annual statistics. Rents rose markedly in 2022–2023 before growth slowed; trends also appear within normalized flat types. These descriptive findings do not identify macroeconomic causes or seasonality.
 
-建模决策：构造年、月、距起始月份的月数等时间特征，比较近期窗口与全部历史数据，采用时间验证并按预测月份报告误差。单纯把未来月份当作 one-hot 类别难以表示时间外推。
+Modeling decisions: derive year, month and elapsed-month features; compare recent windows with full history; use temporal validation and report errors by forecast month. One-hot encoding future months alone cannot represent temporal extrapolation well.
 
-![时间趋势](figures/02_monthly_rent_trend.png)
+![Time trends](figures/02_monthly_rent_trend.png)
 
-![按户型分层的时间趋势](figures/09_monthly_rent_by_flat_type.png)
+![Time trends by flat type](figures/09_monthly_rent_by_flat_type.png)
 
-来源：[年度统计](tables/annual_rent_trend.csv)、[月份统计](tables/monthly_rent_trend.csv)。
+Sources: [annual statistics](tables/annual_rent_trend.csv), [monthly statistics](tables/monthly_rent_trend.csv).
 
-## 5. 房屋属性与空间信息
+## 5. Property attributes and spatial information
 
-面积为 31–215 平方米，中位数为 92 平方米；面积与租金的 Spearman 相关系数约为 0.318。面积较大的区间样本稀疏，分箱中位数不能被解释为严格单调关系。由租约年份构造的变量应称“距租约起始的年数”，不等于楼龄；实际竣工年份来自辅助表。
+Area spans 31–215 square meters with median 92 and Spearman rent correlation about 0.318. Large-area bins are sparse, so their medians do not establish strict monotonicity. A lease-year-derived variable should be called years since lease commencement, not building age; actual completion year comes from the auxiliary table.
 
-![面积与租金](figures/05_rent_vs_floor_area.png)
+![Area and rent](figures/05_rent_vs_floor_area.png)
 
-辅助 HDB block 表有 9,464 个唯一连接键，通过规范化的 TOWN、BLOCK、STREET 可匹配全部训练与测试记录。这使经纬度、区域、最高楼层及竣工年份成为可进一步测试的特征。MAX_FLOOR 是楼栋最高楼层，并不是出租单元所在楼层。
+The auxiliary HDB block table has 9,464 unique join keys and matches all training and test records through normalized TOWN, BLOCK and STREET. Coordinates, region, maximum floor and completion year can therefore be tested as features. MAX_FLOOR describes the building's highest floor, not the rental unit's floor.
 
-![楼栋租金空间分布](figures/11_block_rent_map.png)
+![Spatial distribution of building rents](figures/11_block_rent_map.png)
 
-以辅助表标记为 open 的 MRT 点计算球面直线距离，得到：
+Spherical straight-line distances to auxiliary MRT points marked open give:
 
-| 距最近 MRT 的距离 | 训练记录数 | 租金中位数（SGD/月） |
+| Distance to nearest MRT | Training records | Median rent (SGD/month) |
 |---|---:|---:|
 | 0–300m | 24,318 | 2,800 |
 | 300–600m | 63,323 | 2,700 |
@@ -81,57 +83,57 @@
 | 1–2km | 13,309 | 2,600 |
 | 2–5km | 927 | 2,700 |
 
-最近 MRT 距离与租金的原始 Spearman 相关约 −0.086，商场距离约 −0.088，最近小学距离约 −0.011。它们混合了时间、区域、面积和户型差异，**不能据此识别 MRT 的因果溢价，也不能仅凭弱相关就断定空间特征无用**。
+Raw Spearman rent correlations are about −0.086 for nearest MRT distance, −0.088 for malls and −0.011 for primary schools. These mix time, region, area and flat-type differences. **They neither identify a causal MRT premium nor show that spatial features are useless simply because correlations are weak.**
 
-距离是经纬度球面距离，并不是步行时间。MRT 的 open/planned 是辅助表状态，缺少开通日期，不能证明该站在每笔历史交易时已经开放。未来模型需核查历史可用性，或明确将其当作静态区位描述。CBD 距离使用脚本声明的 Raffles Place 近似参考点，不是官方 CBD 边界。
+Distances are spherical geographic distances, not walking times. MRT open/planned status lacks opening dates and cannot establish operation at each historical transaction. Future models must check historical availability or explicitly treat these as static location descriptors. CBD distance uses the declared approximate Raffles Place reference, not an official CBD boundary.
 
-![MRT 距离分组](figures/10_rent_by_open_mrt_distance.png)
+![MRT distance groups](figures/10_rent_by_open_mrt_distance.png)
 
-来源：[空间特征统计](tables/location_feature_summary.csv)、[MRT 距离分组](tables/rent_by_open_mrt_distance.csv)。
+Sources: [spatial feature statistics](tables/location_feature_summary.csv), [MRT distance groups](tables/rent_by_open_mrt_distance.csv).
 
-## 6. Train/test 漂移与辅助经济数据
+## 6. Train/test drift and auxiliary economic data
 
-归一化后，测试集没有未见的 town、street 或 flat type；BLOCK 有 11 个未见标签，但单独的 block 编号并不是全岛唯一地址。面积与租约起始年份的 KS 距离分别约 0.0158、0.0291，说明这两个边际分布差异较小，不能据此认定整体联合分布没有漂移。时间范围仍有明显变化。
+After normalization, test data contain no unseen towns, streets or flat types. There are 11 unseen BLOCK labels, but block numbers alone are not unique island-wide addresses. KS distances of about 0.0158 for area and 0.0291 for lease commencement year indicate small marginal differences, not absence of joint distribution shift. The time range changes substantially.
 
-COE 表有 539 行，股票表有 91,642 行、77 个代码。股票表有 510 个缺失单元格。当前只审计其结构和覆盖情况，未把它们加入基线。后续需约定预测时点、发布时间和滞后窗口；同月经济数据也可能晚于租约审批才可获得。辅助文件包含未来数据不等于预测时可以使用。
+The COE table has 539 rows; stocks have 91,642 rows, 77 symbols and 510 missing cells. Only structure and coverage are audited; these data are not in the baselines. Specify prediction time, release timing and lag windows before using them: even same-month economic data may be released after approval. Inclusion of future values in an auxiliary file does not make them available at prediction time.
 
-来源：[漂移统计](tables/train_test_drift.csv)、[辅助数据审计](tables/auxiliary_data_audit.csv)。
+Sources: [drift statistics](tables/train_test_drift.csv), [auxiliary data audit](tables/auxiliary_data_audit.csv).
 
-## 7. 已完成的基线实验：近期窗口有明显收益
+## 7. Completed baseline experiments: substantial gains from recency
 
-所有基线只从各自训练子集计算中位数。分组为归一化的 TOWN × FLAT_TYPE，遇到训练未见组合时回退到该训练窗口的全局中位数。
+Each baseline calculates medians only within its own training subset, grouped by normalized TOWN × FLAT_TYPE, falling back to that window's global median for unseen combinations.
 
-| 验证区间 | 分组中位数的训练窗口 | 验证行数 | MAE | RMSE |
+| Validation period | Training window for group medians | Validation rows | MAE | RMSE |
 |---|---|---:|---:|---:|
-| 2024-01 至 2025-03 | 全部历史：2021–2023 | 44,163 | 787.0 | 887.8 |
-| 同上 | 最近 12 个月：2023 年 | 44,163 | **384.2** | **518.3** |
-| 2025-01 至 2025-03 | 全部历史：2021–2024 | 8,924 | 612.8 | 712.9 |
-| 同上 | 最近 12 个月：2024 年 | 8,924 | **345.3** | **490.9** |
-| 随机 20%，seed=5228 | 其余随机 80% | 30,000 | 566.6 | 668.4 |
+| 2024-01 to 2025-03 | Full history: 2021–2023 | 44,163 | 787.0 | 887.8 |
+| Same as above | Latest 12 months: 2023 | 44,163 | **384.2** | **518.3** |
+| 2025-01 to 2025-03 | Full history: 2021–2024 | 8,924 | 612.8 | 712.9 |
+| Same as above | Latest 12 months: 2024 | 8,924 | **345.3** | **490.9** |
+| Random 20%, seed=5228 | Remaining random 80% | 30,000 | 566.6 | 668.4 |
 
-在相同的 15 个月验证区间，近期窗口使 RMSE 从 887.8 降至 518.3，约降低 **41.6%**。验证期间没有更新分组中位数，也没有使用验证租金。这个结果支持继续研究时间漂移、近期样本加权和训练窗口，而不是立即增加模型复杂度。
+On the same 15-month validation period, a recent window reduces RMSE from 887.8 to 518.3, about **41.6%**. Group medians remain fixed throughout validation and use no validation rents. This supports investigating time drift, recency weighting and training windows before increasing model complexity.
 
-随机划分的验证人群和时间范围不同，不能把它与时间划分的分数差全部解释为泄漏；也不能直接给两者排模型优劣。两段时间验证有重叠，不是独立测试集。当前结果用于探索和设计，后续模型选择需要固定滚动验证方案，并对反复试验导致的选择偏差保持警惕。
+Random and temporal splits contain different populations and dates, so their entire score gap cannot be attributed to leakage or used directly to rank models. The two temporal periods overlap and are not independent tests. These exploratory results guide design; subsequent model selection needs fixed rolling validation and attention to selection bias from repeated trials.
 
-这些是本地 MAE/RMSE，不是 Kaggle leaderboard 成绩。Median 对 MAE 自然适配，若主要优化 RMSE，后续也应加入均值基线。监督学习模型尚未在本次综合 EDA 的这些切分上比较；仓库中的 Ridge、Random Forest、CatBoost、LightGBM 已在另外一个固定时间窗口完成初步比较，见中期报告。
+These are local MAE/RMSE values, not Kaggle leaderboard scores. Medians naturally optimize MAE; include mean baselines when optimizing RMSE. Supervised models have not been compared on these integrated-EDA splits. Ridge, Random Forest, CatBoost and LightGBM were compared on another fixed temporal window; see the midterm report.
 
-来源：[完整基线结果](tables/baseline_validation.csv)。
+Source: [full baseline results](tables/baseline_validation.csv).
 
-## 8. 对应 Progress Report 的结论与下一步
+## 8. Progress-report conclusions and next steps
 
-目前已经具备数据理解、EDA、预处理依据、初步实验和挑战说明，足以组成阶段性报告。核心结论是：**时间变化及训练窗口选择已经带来可测量的改进；空间特征具有完整覆盖，但其增量价值还需要正式实验检验。**
+Data understanding, EDA, preprocessing rationale, initial experiments and challenges now support a progress report. The key finding is: **time variation and training-window selection yield measurable improvements; spatial features have full coverage, but their incremental value still needs formal experiments.**
 
-下一阶段依次完成：
+Next stages:
 
-1. 已统一正式管线并修复测试集去重，继续使用共用字段、时间切分和实验记录。
-2. 已在同一时间切分上比较 Ridge、Random Forest、CatBoost 和 LightGBM；下一轮增加多时间切点验证。
-3. 做辅助特征消融：楼栋属性、MRT、商场／学校、宏观数据依次加入；经济特征只有在确认预测时点可用时才使用。
-4. 比较全历史、近期窗口及时间加权，覆盖不同预测长度，避免仅凭短期验证决定长周期预测方案。
-5. 检查月份、区域、户型的误差和稀有类别，再对候选 boosting 模型做小范围调参和解释分析。
-6. 确定方案后生成并检查 50,000 行提交文件，核对 `Id,Predicted` 模板，完成最终报告及复现说明。
+1. The formal pipeline is unified and test deduplication fixed; continue using shared fields, temporal splits and experiment logs.
+2. Ridge, Random Forest, CatBoost and LightGBM have been compared on one temporal split; add multiple temporal origins next.
+3. Ablate auxiliary features: building attributes, MRT, malls/schools and then macroeconomic data. Use economic features only after confirming prediction-time availability.
+4. Compare full history, recent windows and time weighting across forecast horizons, avoiding long-horizon decisions based only on short validation.
+5. Inspect errors by month, region, flat type and rare category; then run limited boosting-model tuning and interpretation.
+6. Generate and check the 50,000-row submission against the `Id,Predicted` template, and finish the final report and reproduction instructions.
 
-## 9. 复现与文件位置
+## 9. Reproduction and file locations
 
-从仓库根目录运行 `python -m analysis.eda.run` 或 `python -m analysis.main eda` 可重建全部 EDA；增加 `--scope overview` 可只重建主报告图表。EDA 依赖见 `environment.yml`。PDF 构建实现位于 `analysis/eda/pdf_report.py`，运行 `python -m analysis.main report` 可重新生成 `experiment/eda/progress_report.pdf`。
+Run `python -m analysis.eda.run` or `python -m analysis.main eda` from the repository root to rebuild all EDA; add `--scope overview` for main-report figures only. Dependencies are in `environment.yml`. PDF construction is implemented in `analysis/eda/pdf_report.py`; `python -m analysis.main report` regenerates `experiment/eda/progress_report.pdf`.
 
-源文件校验值、目标描述统计、连接覆盖和基线结果均保存在 [summary.json](summary.json)。所有图表引用本地数据，没有使用未经验证的外部价格或排名。
+Source checksums, target statistics, join coverage and baseline results are in [summary.json](summary.json). All figures use local data, without unverified external prices or rankings.

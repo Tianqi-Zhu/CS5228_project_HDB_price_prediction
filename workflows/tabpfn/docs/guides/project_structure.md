@@ -1,35 +1,37 @@
-# 项目结构：先读结论，再追实现和运行明细
+[Chinese version](project_structure.zh-CN.md)
 
-## 顶层只有三类工作
+# Project structure: conclusions, implementation and run details
 
-- 读研究：从 `README.md` 进入 `experiment/`。
-- 看实现或运行：进入 `analysis/`，用 `docs/` 查命令与依赖。
-- 查明细和模型：进入 `output/`，原始输入仍在 `data/`。
+## Three top-level activities
+
+- Read research: start at `README.md`, then `experiment/`.
+- Inspect or run code: use `analysis/` and consult `docs/` for commands/dependencies.
+- Inspect run details/models: use `output/`; original inputs remain in `data/`.
 
 ```text
 README.md
-environment.yml                  核心Conda环境：17个包，训练版本固定、工具允许范围
-experiment/                         阅读和引用的成果
-  README.md                      阅读顺序
-  01_final/                      最终方法、完整报告、三份提交对照
-  02_feature_engineering/         特征说明、字段字典、消融与阶梯
-  03_model_comparison/            共同输入模型、推荐模型、关键图表
-  04_optimization_history/        十轮探索，每轮一份汇总Markdown
-  eda/                           数据质量、表格和描述图
-  studies/                       经济、空间和面板研究
-analysis/                        实现与运行入口
-  main.py                        统一命令
-  experiment_catalog.py          只读实验索引
-  resource_preflight.py          按任务检查环境、文件和记录哈希
-  artifact_catalog.py            当前模型／参数清单，不加载模型
-  report_bundle.py               更新精选阅读报告
-  pipeline/                      共享数据、特征、模型、评估与路径
+environment.yml                  Core Conda environment: 17 packages, pinned training versions and ranged tools
+experiment/                         Findings for reading and citation
+  README.md                      Reading order
+  01_final/                      Final methods, full report and three-submission comparison
+  02_feature_engineering/         Feature definitions, dictionaries, ablations and ladder
+  03_model_comparison/            Shared-input models, recommendations and key figures
+  04_optimization_history/        Ten waves, one summary Markdown per wave
+  eda/                           Data quality, tables and descriptive figures
+  studies/                       Economic, spatial and panel studies
+analysis/                        Implementation and entry points
+  main.py                        Unified CLI
+  experiment_catalog.py          Read-only experiment index
+  resource_preflight.py          Task-specific environment, file and recorded-hash checks
+  artifact_catalog.py            Current model/parameter catalog without model loading
+  report_bundle.py               Refresh selected reading reports
+  pipeline/                      Shared data, features, models, evaluation and paths
   experiments/
-    baselines/                   基线与早期实验
-    feature_engineering/         特征选择、表示与消融
-    model_comparison/            模型搜索、共同输入与准备工具
-    reporting/                   模型筛选、报告及分支盘点
-    submissions/                 本地导出与最终选择
+    baselines/                   Baselines and early experiments
+    feature_engineering/         Feature selection, representations and ablations
+    model_comparison/            Search, shared inputs and preparation
+    reporting/                   Model selection, reporting and branch inventory
+    submissions/                 Local export and final selection
     optimization/
       round_01_history_target_search/
       round_02_anniversary_history/
@@ -41,70 +43,70 @@ analysis/                        实现与运行入口
       round_08_feature_pruning_seeds/
       round_09_grouped_blending/
       round_10_plr_transformer_final/
-  eda/                           数据分析实现
-  studies/                       解释性研究实现
-  project_review.py              基础27列阶段报告生成器
-docs/                            怎么用、为什么这样组织
+  eda/                           Data-analysis implementation
+  studies/                       Interpretive-study implementation
+  project_review.py              Baseline-27 report generator
+docs/                            Usage and organization rationale
   README.md
   guides/
-    running_experiments.md        环境、命令、前置产物与训练边界
-    project_structure.md         本文件
+    running_experiments.md        Environment, commands, prerequisites and training boundaries
+    project_structure.md         This document
   methods/
-    baseline_features.md         基础27列定义
-    history_feature_optimization.md 历史表示与目标分解
-    model_comparison.md          模型搜索配置与协议
-  archive/                       中期、整合与旧工作流
-  maintenance/                   清理规则和变更摘要
-data/                            原始比赛输入，不改写
-  README.md                      九份CSV、目标字段与信息边界
-requirements/                    同一主环境的可选扩展
-  README.md                      按任务选择安装入口
+    baseline_features.md         Baseline-27 definitions
+    history_feature_optimization.md History representations and target decomposition
+    model_comparison.md          Model-search settings and protocol
+  archive/                       Midterm, integration and old workflows
+  maintenance/                   Cleanup rules and change summaries
+data/                            Raw competition inputs, unchanged
+  README.md                      Nine CSVs, target fields and information boundaries
+requirements/                    Optional extensions to the same main environment
+  README.md                      Installation entries by task
   optional_deep_models.txt       TabM / RealMLP
   optional_pretrained_transformers.txt TabDPT / Nori
-tests/                           自动检查
-  README.md                      测试分类、执行命令与依赖边界
-output/                          运行产物，Git忽略
-  experiment_runs/               所有逐次配置、指标、选择记录、原始报告
-  models/                        模型、融合权重与对齐预测
-    current_catalog.json         当前清单，关联用途与指标来源
-    index.json                   保留的早期索引快照
+tests/                           Automated checks
+  README.md                      Test categories, commands and dependency boundaries
+output/                          Runtime artifacts, ignored by Git
+  experiment_runs/               All trial configurations, metrics, selection records and original reports
+  models/                        Models, blend weights and aligned predictions
+    current_catalog.json         Current catalog linking purpose and metric sources
+    index.json                   Retained earlier index snapshot
   submissions/
-    final/submission.csv         当前final原样副本
-    candidates/                  三份及其他候选CSV
+    final/submission.csv         Exact copy of current final
+    candidates/                  Three selected and other candidate CSVs
     components/
-      history_macro_ensemble/    历史与宏观版全量组件
-      round_08_ft_seed_average/   第八轮种子平均
-      round_09_grouped_blend/     第九轮融合权重
-      round_10_final_structure/   第十轮最终结构
+      history_macro_ensemble/    Full history/macro components
+      round_08_ft_seed_average/   Wave-eight seed averaging
+      round_09_grouped_blend/     Wave-nine blend weights
+      round_10_final_structure/   Wave-ten final structure
     baselines/
-      baseline_27_features/      早期27列参照
+      baseline_27_features/      Early 27-column reference
   checks/
-    runs/                        实际运行核查与日志
-    records/                     按日期的机器核查JSON及来源清单
-    reviews/                     审核结论、差异补丁与执行状态
-  archive/                       此前归档的运行副本
-.cache/                          特征缓存、隔离依赖、作者代码与公开权重
-.integration-work/               其他独立worktree与临时核查
+    runs/                        Actual execution checks and logs
+    records/                     Dated machine-check JSON and source manifests
+    reviews/                     Review findings, patches and execution status
+  archive/                       Earlier archived run copies
+.cache/                          Feature caches, isolated dependencies, author code and public weights
+.integration-work/               Other independent worktrees and temporary checks
 ```
 
-## 命名规则
+## Naming rules
 
-`baseline_*`表示基础参照，`features_*`表示特征实验，`comparison_*`表示模型比较，
-`round_01_*`至`round_10_*`表示按时间推进的性能探索。
-报告阅读目录按叙事顺序排列；运行和模型目录则保留轮次，方便逐一对应。
-问题尝试保留在 `archive_weight_scale_debug`，不参与正式排名。
+`baseline_*` denotes references, `features_*` feature experiments and `comparison_*` model comparisons;
+`round_01_*` through `round_10_*` follow performance exploration chronologically.
+Reading directories follow the narrative; run/model directories retain wave names for traceability.
+Problematic trials remain in `archive_weight_scale_debug`, excluded from official rankings.
 
-Python脚本保留原有模块命令，例如 `analysis.experiments.tenth_wave_structures`。
-源码物理位置已经分组，索引JSON中的 `source`可定位文件。
-保存模型需要的模块名仍可解析，不因目录名改变而重新训练或修改预测。
+Python scripts retain original module commands, such as `analysis.experiments.tenth_wave_structures`.
+Physical source locations are grouped; index JSON `source` locates each file.
+Module names needed by saved models still resolve, without retraining or prediction changes due to renaming.
 
-## 阅读文件和运行文件的区别
+## Reading files versus runtime files
 
-`experiment/`只放精选正文、汇总表和关键图；`output/experiment_runs/`保留全部可追溯明细，
-不会为了简化视图而删除失败试验。
-`python -m analysis.main experiment-refresh`从本地已有结果更新25份阅读文件，不训练，
-手写的各栏目导航不会被覆盖。
+`experiment/` holds selected prose, summaries and key figures; `output/experiment_runs/` retains full traceable details,
+including failed trials rather than deleting them for a simpler view.
+`python -m analysis.main experiment-refresh` updates 25 reading files from existing local results without training;
+handwritten section navigation is not overwritten.
 
-来源清单与本次迁移核查通过[维护目录](../maintenance/README.md)索引，机器明细保存在`output/checks/records/`。
-此前维护记录中的旧路径代表当时布局；当前路径以本次迁移映射为准。
-`.cache/`中的依赖和权重删除后需要重新准备，不能把整个目录都视为无用文件。
+The [maintenance directory](../maintenance/README.md) indexes provenance and migration checks; machine records are in `output/checks/records/`.
+Old maintenance paths describe earlier layouts; current paths follow this migration map.
+Dependencies and weights in `.cache/` require preparation again if deleted; the whole directory is not disposable.
