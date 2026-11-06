@@ -1,0 +1,47 @@
+{
+  "source_commit": "157d7a76b083681bf14d96b2783bc826d838e9cd",
+  "export": "output\\main-refresh\\clean-export",
+  "ignored_caches_or_training_outputs_copied": false,
+  "python_environment": "D:\\miniconda3\\envs\\cs5228\\python.exe",
+  "external_library_paths": [
+    "C:\\Users\\Lenovo\\Desktop\\CS5228\\CS5228_project_HDB_price_prediction\\.cache\\deep-deps",
+    "C:\\Users\\Lenovo\\Desktop\\CS5228\\CS5228_project_HDB_price_prediction\\.cache\\model-deps"
+  ],
+  "new_environment_install": false,
+  "parent_git_history_available_for_pinned_F1_source_audit": true,
+  "checks": [
+    {
+      "check": "static",
+      "returncode": 0,
+      "seconds": 8.141
+    },
+    {
+      "check": "main-tests",
+      "returncode": 0,
+      "seconds": 20.453
+    },
+    {
+      "check": "planned",
+      "returncode": 0,
+      "seconds": 24.547
+    },
+    {
+      "check": "mlp-verify",
+      "returncode": 0,
+      "seconds": 0.703
+    },
+    {
+      "check": "concat-verify",
+      "returncode": 0,
+      "seconds": 0.281
+    },
+    {
+      "check": "tabpfn-verify",
+      "returncode": 0,
+      "seconds": 0.984
+    }
+  ],
+  "all_passed": true,
+  "temporary_export_removed_after_checks": true,
+  "new_scientific_training": false
+}

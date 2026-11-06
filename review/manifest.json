@@ -14544,7 +14544,7 @@
     },
     {
       "path": "review/CHECKS.md",
-      "sha256": "33e2c9aba21bdbaaa96ae30b7ad479d1fc9c8d0a17157c32c71b7bcff1e97808"
+      "sha256": "cca3723f3db02da2ef3ba5c51d3e23d24db6cda965780a666076fe8a6e85d9f9"
     },
     {
       "path": "review/checks/anniversary-merge/f1-replay.json",
@@ -14775,8 +14775,16 @@
       "sha256": "565f7675a5da1db8051438e1007c9028f857471a4bc8914f6b723fea92a63475"
     },
     {
+      "path": "review/checks/main-refresh/clean-export.json",
+      "sha256": "12937e643c001118a710a01ee6d0bc5b27212336f78d711567cb8f01a427b151"
+    },
+    {
+      "path": "review/checks/main-refresh/clean-main-tests.log",
+      "sha256": "7053b01ac86f534725663d806c76d26f03316920df2a2d80cff3823710b652ee"
+    },
+    {
       "path": "review/checks/main-refresh/summary.json",
-      "sha256": "35b4e4b19f650f749a3cfcc7ac8c4405a1a01b8a39b1e2b57d69e08bfb827bca"
+      "sha256": "60b6177e5405b424e607304eb74fc7528735987ebcedc7d1d7f7594a40970153"
     },
     {
       "path": "review/checks/original_csv.log",

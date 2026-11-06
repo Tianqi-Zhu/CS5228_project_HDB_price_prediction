@@ -75,9 +75,10 @@
   "fresh_tabpfn_inference_on_this_machine": false,
   "optional_dependencies": "Existing .cache/deep-deps/.cache/model-deps for MLP; .cache/tabpfn-split-deps for isolated TabPFN tests only",
   "local_gpu": "RTX 4060 Laptop, 8 GiB; source replay used RTX 4080 with 9.13 GiB allocation",
-  "clean_export": "Pending separate check after this source snapshot is committed",
+  "clean_export": "Passed on committed source 157d7a7; see clean-export.json",
   "merged_remote_commit": "c81f77115adf1adfcda1d291f3028d2a06d5b45f",
   "fresh_original_and_grouped_full_inference_source_record": "review/checks/tabpfn-ensemble/audit.json",
   "published_original_and_grouped_csvs_independently_checked": true,
-  "merged_tree_main_tests_passed": 85
+  "merged_tree_main_tests_passed": 85,
+  "clean_export_record": "review/checks/main-refresh/clean-export.json"
 }

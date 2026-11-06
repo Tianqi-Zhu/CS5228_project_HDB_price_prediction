@@ -8,6 +8,8 @@
 
 后续合并保留两份新发布的原类别/分组类别 CSV、28 次树训练重载与完整 TabPFN 推理的来源记录，并独立核对 CSV、运行器和审计文件哈希。近期配对仍使用原类别 F2；grouped 的 440.7707 是另列的开发期敏感性结果，未冒充新的 Kaggle 成绩。
 
+提交 `157d7a7` 的[干净导出验收](checks/main-refresh/clean-export.json)通过：4,297 份文件、671 份 Python 语法、85 项主测试、集成 `planned`、四份 MLP 提交核验、Concat 与 TabPFN 独立包核验。导出不含本地训练缓存，第三方库通过外部依赖路径复用；没有宣称新建 Conda 环境。[主测试日志](checks/main-refresh/clean-main-tests.log)已保留，验证后移除临时导出与压缩包。
+
 下文是不同提交、机器和环境下的历史记录；其中“F2 生成器缺失”和 Python 3.13 字节重组失败不能代替本机当前 Python 3.11 的核验状态。F1 固定生成链在本机已通过；本轮未新跑完整研究模型训练或 TabPFN checkpoint 推理。
 
 本分支保留原项目架构、三个环境文件、requirements/ 和全部九份原始 CSV。数据与原始提交按 SHA256 核对，未重新生成或缩减。
